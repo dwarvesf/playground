@@ -1,6 +1,6 @@
 ---
 tag: mindset, innovation, think long term
-URL:https://medium.com/team-human/true-innovators-dont-just-invent-they-retrieve-fa8cae7e38dc
+URL: https://medium.com/team-human/true-innovators-dont-just-invent-they-retrieve-fa8cae7e38dc
 title: Retrieve the value
 ---
 
