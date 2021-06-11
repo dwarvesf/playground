@@ -1,7 +1,5 @@
 ---
 tag: tool, URL, UTM, privacy
-URL: https://github.com/ClearURLs/Addon/
-title: Remove UTM tracking
 ---
 
 Ever wonder why the current URL on your [[browser]] is too long and contain too many letters? Here's a fact, most of them are *tracking code*. 
@@ -15,3 +13,6 @@ Removing UTM also a method for [[privacy]] protection.
 **Follow up FAQs**
 1. How the UTM works
 2. What can hacker exploit from UTM
+
+#### Citation
+- https://github.com/ClearURLs/Addon/

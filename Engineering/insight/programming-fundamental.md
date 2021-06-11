@@ -1,7 +1,5 @@
 ---
 tag: programming, fundamental, skill
-URL: https://swiftrocks.com/how-necessary-are-the-programming-fundamentals.html
-title: The necessary of programming fundamentals
 ---
 
 The importance of programming fundamental is somehow being underrated. 
@@ -14,5 +12,5 @@ Regular companies are evaluating their candidates based on practical aspects (ho
 
 The fundamental affects how you grow. Short courses land you gigs, but fundamentals offers contexts where you get to explain, assess, analyst, and optimize the resolution. 
 
-**Follow-up FAQs**
-1. I'm a non-tech background and wanna dive more in code. Where should I begin? 
+#### Citation
+- https://swiftrocks.com/how-necessary-are-the-programming-fundamentals.html

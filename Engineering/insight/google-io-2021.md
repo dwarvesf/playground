@@ -1,7 +1,5 @@
 ---
 tag: news, google
-URL: https://www.wired.com/story/google-io-2021-highlights/
-title: What's new in Google I/O
 ---
 
 ### UX Enhancement
@@ -55,3 +53,6 @@ GG Lens: Improve shopping habit
 - search image in screenshot 
 - display pending purchase in carts
 - Shopify integration: products display on search
+
+#### Citation
+- https://www.wired.com/story/google-io-2021-highlights/

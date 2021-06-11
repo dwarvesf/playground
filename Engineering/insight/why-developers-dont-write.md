@@ -1,7 +1,5 @@
 ---
 tag: developer, writing
-URL: https://kislayverma.com/programming/why-programmers-dont-write-documentation/
-title: Why developers don't write
 ---
 
 For many reasons
@@ -15,4 +13,6 @@ Resolution
 
 Input: I'm using Obsidian, a markdown-based [[tool]] to compose documents and store a version on GitHub. The setup step is quite basic. Some alternatives can be iA Writer, Typora, or HackMD, Notion & Dillinger (for team collab).
 
-More reading: https://hackernoon.com/how-improving-writing-skills-can-help-software-developers-succeed-fn1831le
+#### Citation
+- https://kislayverma.com/programming/why-programmers-dont-write-documentation/
+- https://hackernoon.com/how-improving-writing-skills-can-help-software-developers-succeed-fn1831le
