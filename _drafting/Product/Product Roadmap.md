@@ -1,5 +1,5 @@
 ---
-tag: product, vision
+tags: product
 ---
 
 ### What is a product roadmap

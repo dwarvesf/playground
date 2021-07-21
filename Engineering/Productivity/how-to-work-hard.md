@@ -1,5 +1,5 @@
 ---
-tags: 
+tags: productivity
 ---
 tl;dr
 - Work hard can only happen when you've defined the goal. 
@@ -7,8 +7,7 @@ tl;dr
 - Cultivate a sensitivity to what you do, you'll notices when the result starts to drop. it's critical in both directions: either you're being lazy, or you're working too hard. 
 - Understand the shape of real work, then arrange your capability.
 
-http://paulgraham.com/hwh.html
-
 ---
 
 #### Citations
+- http://paulgraham.com/hwh.html

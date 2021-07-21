@@ -1,5 +1,5 @@
 ---
-tag: strategy, build, product
+tags: product, build in public
 ---
 
 ### What is #buildinpublic
