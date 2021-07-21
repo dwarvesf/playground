@@ -1,5 +1,5 @@
 ---
-tag: data, json, xml
+tags: data
 ---
 ### XML
 - Markup language, to store and process data into computer readable-format

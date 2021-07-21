@@ -1,11 +1,11 @@
 ---
-tag: rust, programming, language
+tags: language, rust
 URL: https://utcc.utoronto.ca/~cks/space/blog/programming/RustInOurFuture
 title: Rust is a wave of the future
 ---
 
 Why
-- Because a lot of people are adopting it
+- Because a lot of people are adopting this [[language]]
 - They are writing more things in , and about Rust
 - Some of these things are things that matter to plenty of people
 - Rust in getting waved into many projects (for tech big giants); and for mini actions (fine-tune command line tools)

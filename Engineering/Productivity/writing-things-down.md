@@ -1,6 +1,6 @@
 
 ---
-tag: note, method
+tags: productivity
 ---
 
 

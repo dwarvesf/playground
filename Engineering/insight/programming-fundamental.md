@@ -1,5 +1,5 @@
 ---
-tag: programming, fundamental, skill
+tags: programming, insight
 ---
 
 The importance of programming fundamental is somehow being underrated. 

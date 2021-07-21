@@ -1,5 +1,5 @@
 ---
-tag: think long term, solution, mindset
+tags: productivity
 ---
 
 Cool thoughts on why we should think long term before making any decision. 

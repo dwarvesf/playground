@@ -1,5 +1,5 @@
 ---
-tag: developer
+tags: developer, insight
 URL:
 title: Nerds arent fierce
 ---

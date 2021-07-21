@@ -1,11 +1,11 @@
 ---
-tag: notion, api 
+tags: API
 URL: https://www.reddit.com/r/Notion/comments/nbk5ch/notion_launches_their_api_public_beta/
 title: Notion rolled out its public beta API
 ---
 
 What does it mean for developer?
-- Link Notion function with another [[tool]] and boost interactive experience. For example: Using Notion as email format and connect with Gmail through API/
+- Link Notion function with another tool and boost interactive experience. For example: Using Notion as email format and connect with Gmail through API/
 
 Perks
 - Using Notion as main database/ knowledge hub

@@ -1,5 +1,5 @@
 ---
-tag: programmer, developer
+tags: developer, insight
 URL: https://betterprogramming.pub/when-do-programmers-retire-is-35-the-end-72d173760ee2
 title: Developers' Aging
 ---

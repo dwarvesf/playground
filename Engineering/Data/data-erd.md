@@ -1,5 +1,5 @@
 ---
-tag: data model, ERD
+tags: data
 ---
 
 ### What

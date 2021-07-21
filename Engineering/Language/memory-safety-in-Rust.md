@@ -1,18 +1,15 @@
 ---
-tag: language, rust, memory
+tags: language, rust, memory
 URL: https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/
 title: Memory safety in Rust
 ---
 
-<<<<<<< Updated upstream:language/Memory safety in Rust.md
-=======
-
 ### Memory Safety
 
 >>>>>>> Stashed changes:language/Rust-memory safety.md
-The garbage collector of Golang helps developers by automatically freeing the [[memory]] of their programs when it is not needed anymore. However, keeping track of the memory and cleaning it could impact the performances of our programs.
+The garbage collector of Golang helps developers by automatically freeing the memory of their programs when it is not needed anymore. However, keeping track of the memory and cleaning it could impact the performances of our programs.
 
-Meanwhile, [[Rust]]'s mechanism in memory safety acts different. Dividing in `stack` and `heap`. It predicts when will the data be out of used and automatically drop (remove) it, which reduces the cost of memory management during runtime. 
+Meanwhile, Rust's mechanism in memory safety acts different. Dividing in `stack` and `heap`. It predicts when will the data be out of used and automatically drop (remove) it, which reduces the cost of memory management during runtime. 
 
 The obsolence of garbage collector then enhance and speed up performance, which make this [[language]] become one of the top choices for 2021.
 

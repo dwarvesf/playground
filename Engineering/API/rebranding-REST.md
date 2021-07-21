@@ -1,5 +1,5 @@
 ---
-tag: API. REST
+tags: API
 ---
 
 ### The demand of API

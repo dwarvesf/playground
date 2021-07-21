@@ -1,5 +1,5 @@
 ---
-tag: data model, flow chart
+tags: data
 ---
 ### What
 A graphical resprentation of steps. These steps are made in sequential order that is used to visualize a process, from starting point to end point. 

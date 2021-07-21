@@ -1,5 +1,5 @@
 ---
-tag: integration, development, cicd
+tags: development, process
 URL: https://kylefarmer85.medium.com/what-is-ci-cd-76d71b82898d
 title: CI?CD eli5
 ---
@@ -18,8 +18,6 @@ title: CI?CD eli5
 - passed these tests, code is ready for production
 - CD ensures a safety net for production code
 	- i.e: once code is shipped to production, it can still be tested and notify bugs
-
-
 
 ### The CI/CD pipeline
 - automatic // infinite loop of testing, notifying and building

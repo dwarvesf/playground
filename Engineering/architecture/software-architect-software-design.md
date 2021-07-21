@@ -1,5 +1,5 @@
 ---
-tag: software architecture, software design
+tags: architecture, design
 ---
 
 ## Software Architecture (SA)

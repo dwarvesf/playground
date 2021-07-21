@@ -1,5 +1,5 @@
 ---
-tag: mindset, innovation, think long term
+tags: productivity, innovation, think long term
 ---
 
 Retrieval helps us experience the insight of premodern cultures that nothing is absolutely new; everything is renewal.

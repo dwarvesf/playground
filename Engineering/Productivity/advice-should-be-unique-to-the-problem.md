@@ -1,5 +1,5 @@
 ---
-tag: idea, advice
+tags: productivity
 ---
 The problem of bad advice is the unrelativity between the advice and the situation. 
 
@@ -17,4 +17,3 @@ Fav quote:
 
 #### Citation
 - https://earthly.dev/blog/thought-leaders/
-- 

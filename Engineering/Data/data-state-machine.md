@@ -1,5 +1,5 @@
 ---
-tag: data model, state machine
+tags: data
 ---
 
 ### What

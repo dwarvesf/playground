@@ -1,5 +1,5 @@
 ---
-tag: graphql, api
+tags: API
 ---
 
 ### What
