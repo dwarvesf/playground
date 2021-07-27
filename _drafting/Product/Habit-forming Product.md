@@ -1,5 +1,6 @@
 ---
 tags: product, habit forming
+title: Habit-Forming Product
 ---
 
 ## What is habit-forming product
