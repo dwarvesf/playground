@@ -1,6 +1,5 @@
 ---
 tags: product, habit forming
-title: The Hook Model
 ---
 
 # Definition
