@@ -3,13 +3,12 @@ tags: git, process, software development, basic, git-flow
 ---
  
 # Why are we using git?
-- Git is a revision control system for documents, therefore we usually use this system for tracking the changes in a set of files. It helps groups of developers work collaboratively on software projects.
+- Git is a revision control system for documents, we usually use this system for tracking the changes in a set of files. It helps groups of developers work collaboratively on software projects.
 - Git is a working standard in software development. Almost all company or development teams are using git for daily work, interview sessions.
 - All open sources are using git for development, collaboration. Collaborator or contributor must have experienced with git to contribute to the open-source project.
 
 # What is git?
-- Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds. Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.
-- Git track all versions of your changes from the beginning of a project. We can compare the revision history to track, review the changes for codebase integration. Therefore, we can work and collaborate efficiently.
+Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds. Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Git track all versions of your changes from the beginning of a project. The system manages the revision history for tracing, reviewing, continuous integration to collaborate efficiently.
  
 ## Concept
 - `snapshot` is the content (files and folders) of a repository at some point in time
@@ -86,7 +85,7 @@ Objective: prepare and release a new version for the production
 Using Github flow for a small project or medium project.
 Using Git-flow or DF modified git-flow for collaborative projects, multiple-version projects, large projects.
  
-## Conclution
+## Conclusion
 Git can sometimes be complex to get your head around. Most of us learn Git up to a point where we're happy to use it day-to-day and then stick to the few commands that we are comfortable with without trying anything too fancy. Most of the time it works out, but then everyone on us certainly meets the point when we mess up the repo with rebase or squash. We get panic and go to stackoverflow to seek out help.
 
 There are a number of factors that have held developers back from becoming super productive with Git. But the most common one, I believe, is that they don't have a solid mental model of how Git works. Consider software as an accumulation of changes over a period of time, speaking in terms of Git, a single change is called a commit. Each commit may connect with one or other commits to form a non-binary tree called Git history. Git provides a set of commands to interact with the tree by adding nodes, editing nodes, traveling between nodes, etc. Simple to complex, you need to distinguish:
