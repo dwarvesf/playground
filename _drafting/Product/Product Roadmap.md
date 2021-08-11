@@ -24,7 +24,6 @@ For products that rely on foreign/external investment, product roadmap is what y
 **3. Priority**
 Product roadmap keeps the team on track. Also, the roadmap list out features based on priority level. Developement team can look it up and select out which one to build. It forms a consensus withint and outsie the team. The teammates agree on product feature, and the user knows which one to expect. 
 
-
 ### The structure 
 **1. Product Description**
 Describe what and how the product functions. It portraits the product overview at themost basic concept. 
@@ -41,7 +40,6 @@ The schedule that helps to measure the execution progress and make sure each fea
 
 **5. Product Milestone**
 A product development process must be divided into milestones. It break the large goal into smaller achievements. By doing this, teammate can actively arrange their time and effort to meet the goal effectively. 
-
 
 #### Citation
 - [What is a Product Roadmap? The Ultimate Guide and Resources (productplan.com)](https://www.productplan.com/learn/what-is-a-product-roadmap/)

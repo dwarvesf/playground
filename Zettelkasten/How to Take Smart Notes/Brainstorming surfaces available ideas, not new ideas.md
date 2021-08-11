@@ -1,3 +1,7 @@
+---
+tags: smart-note
+---
+
 Brainstorming is a common suggestion whenever anyone is hunting for ideas. But brainstorming doesn't generate new thinking; it can only bring forward existing, readily available ideas. And it brings them up in their raw, unprocessed form. These aren't necessarily our best ideas. They're just the ones that are top of mind. They may not represent our own, original thought, or the idea best suited to the problem at hand; they're just what's most available to us.
 
 That's dangerous. As human beings, we're attached to our ideas—our first ideas, especially. We're loathe to move past them. The hold us back like anchors, preventing us from looking at them critically. And so, upon brainstorming, we may invest in available ideas and close ourselves off from disconfirming evidence.
@@ -10,12 +14,12 @@ Ideally, you should never be in a position where you _have_ to brainstorm. Inste
 
 ---
 
-#### Related
+**Related**
 
 -   [[Knowledge work means transforming old ideas into new ones]]
 -   [[Optimize to be wrong, not right]]
 
-#### Citation
+**Citation**
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 

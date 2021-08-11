@@ -1,9 +1,5 @@
 ---
-tag: MBTI, model
-URL: https://www.verywellmind.com/the-big-five-personality-dimensions-2795422#:~:text=The%20five%20broad%20personality%20traits,how%20many%20personality%20traits%20exist
-https://www.verywellmind.com/the-big-five-personality-dimensions-2795422#:~:text=The%20five%20broad%20personality%20traits,how%20many%20personality%20traits%20exist
-https://en.wikipedia.org/wiki/Big_Five_personality_traits
-title: OCEAN model
+tag: MBTI
 ---
 
 Bài trắc nghiệm trên 16personalities còn kết hợp với Five Big personalities traits (OCEAN model), nên kết qủa thường có 5 kí tự.
@@ -18,8 +14,12 @@ Bài trắc nghiệm trên 16personalities còn kết hợp với Five Big perso
 
 - Neuroticism (kiểm soát mood, đối phó với stress ntn)
 
-> Note:
+#### Note:
 
 - Traits của một người có thể thay đổi tuỳ theo tuổi tác, và có tính di truyền
 
 - Behavious = person's underlying personality + situational variables 
+
+#### Citation
+[The big five personality dimensions](https://www.verywellmind.com/the-big-five-personality-dimensions-2795422#:~:text=The%20five%20broad%20personality%20traits,how%20many%20personality%20traits%20exist)
+[Wiki](https://en.wikipedia.org/wiki/Big_Five_personality_traits)

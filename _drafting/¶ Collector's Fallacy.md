@@ -14,4 +14,4 @@ We must do more than acquire texts. We need to read them and most importantly as
 
 #### Citations
 
--   Tietze, Christian. "The Collector's Fallacy." Zettelkasten.de. [https://www.instapaper.com/read/1303780347](https://www.instapaper.com/read/1303780347)
+-   Tietze, Christian. "The Collector's Fallacy." Zettelkasten.de. https://www.instapaper.com/read/1303780347

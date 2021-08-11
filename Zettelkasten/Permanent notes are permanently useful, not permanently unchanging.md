@@ -1,8 +1,8 @@
 ---
 tags: 
 - zettelkasten
-- note/permanent
-- note/literature
+- zettelkasten/permanent
+- zettelkasten/literature
 ---
 
 There's much confusion between "permanent" notes and "literature" notes in the zettelkasten world. In fact, permanent notes are not specially appointed by any means; a more productive way to think about it is to think of "permanent" as signifying "permanently useful," regardless of the originality of its content.
@@ -11,7 +11,7 @@ Notes are not carved in stone. They change, evolve, mutate, flex, adapt, shrink,
 
 ---
 
-#### Citations
+**Citations**
 
 @Will. _“All Notes Are Malleable: Strive for Permanently Useful Notes, Not Permanently Unchanging Notes.”_ Zettelkasten Method (blog). Accessed October 21, 2020. https://www.zettelkasten.de/posts/literature-notes-vs-permanent-notes/
 

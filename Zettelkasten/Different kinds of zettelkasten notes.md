@@ -1,10 +1,12 @@
 ---
 tags: 
 - zettelkasten
-- note/permanent
-- note/fleeting
-- note/literature
+- zettelkasten/permanent
+- zettelkasten/fleeting
+- zettelkasten/literature
 ---
+
+### Kinds of notes
 
 In the Zettelkasten method as described by Ahrens in [[≈ How to Take Smart Notes]], there are three kinds of notes:
 
@@ -18,7 +20,7 @@ Notes should never be copied verbatim. Rephrasing ideas creates an immediate fee
 
 ---
 
-#### Citations
+**Citations**
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 

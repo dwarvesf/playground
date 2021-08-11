@@ -8,13 +8,13 @@ For this reason, it is good to read broadly, and to build information systems th
 
 ---
 
-#### Related
+**Related**
 
 -   [[Decontextualize ideas to make them new]]
 -   [[Ideas are constellations]]
 -   [[Fostering serendipity]]
 
-#### Citations
+**Citations**
 
 Luhmann, Niklas. _“Communicating with Slip Boxes.”_ Translated by Manfred Kuehn. Two Essays by Niklas Luhmann. Accessed October 19, 2020. https://luhmann.surge.sh/communicating-with-slip-boxes.
 
