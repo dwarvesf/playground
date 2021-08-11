@@ -6,7 +6,7 @@ tags: ux, design, personas
 
 Teams often create proto-personas as a proxy for persona research; these should be approached with caution, as the fact that they are based on assumptions or guesswork may get lost in transmission, or overlooked when design work begins in earnest.
 
-Personas in general are a form of narrative. This means that they must be approached carefully, as [[narratives generate real-world effects]].
+Personas in general are a form of narrative. This means that they must be approached carefully, as [[Narratives generate real-world effects]].
 
 ---
 
