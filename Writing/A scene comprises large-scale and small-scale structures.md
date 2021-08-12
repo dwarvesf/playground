@@ -6,7 +6,7 @@ A well-crafted scene comprises both a large-scale structure and a small-scale st
 
 ![The-Overall-Scene-Structure-by-Better-Novel-Project.png](https://publish-01.obsidian.md/access/5bf4c22f8416d93237aa3630d0fd9c7c/assets/The-Overall-Scene-Structure-by-Better-Novel-Project.png)
 
-## Large-scale structure
+### Large-scale structure
 
 At the larger scale, a scene is either a _scene_ or a _sequel_. A scene has the following three-part structure:
 
@@ -20,7 +20,7 @@ The sequel follows the scene. It adheres to this structure:
 2.  Dilemma: A situation with no good options. The protagonist must be caught between two undesirable options. If there are obvious, good options, then the disaster wasn't dire enough. The character must come to the least bad option.
 3.  Decision: A choice is made from among the available options. The character becomes proactive again.
 
-## Small-scale structure
+### Small-scale structure
 
 The small scale structure of the scene facilitates execution of the actual paragraphs within the scene. These comprise what Dwight Swain calls "motivation-reaction units" (MRUs). MRUs are written by alternating between a motivation—an external, tangible objective that the character can see, feel, smell, taste, or touch—followed by a reaction, which is internal and subjective.
 
@@ -38,10 +38,10 @@ Each scene and sequel is a series of MRUs.
 
 ---
 
-#### Related
+**Related**
 
 -   [[§ Writing]]
 
-#### Citation
+**Citation**
 
 Ingermanson, Randy. “Writing The Perfect Scene: Advanced Fiction Writing Tips.” _Advanced Fiction Writing_ (blog). Accessed January 9, 2021. [Link](https://www.advancedfictionwriting.com/articles/writing-the-perfect-scene/).

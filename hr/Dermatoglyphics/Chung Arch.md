@@ -12,6 +12,7 @@ Chủng núi (Arch) chiếm 5% (5 loại chính): ko có giao điểm
 ![[van nui.png]]
 
 ---
-#### Citations
-[Nhận diện, phân loại dấu vân tay](https://lindanga.com/nhan-dien-phan-loai-dau-van-tay/)
-[Classify Fingerprints](https://www.youtube.com/watch?v=D-vJ7jylkf8)
+
+**Citations**
+- [Nhận diện, phân loại dấu vân tay](https://lindanga.com/nhan-dien-phan-loai-dau-van-tay/)
+- [Classify Fingerprints](https://www.youtube.com/watch?v=D-vJ7jylkf8)

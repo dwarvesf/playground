@@ -37,10 +37,6 @@ In _Mastering the Process: From Idea to Novel_, Elizabeth George offers a prompt
 
 ---
 
-#### Related
-
+**Related**
 -   [[§ Writing]]
-
-#### Related
-
-George, Elizabeth. _Mastering the Process: From Idea to Novel_. Viking, 2020.
+-   George, Elizabeth. _Mastering the Process: From Idea to Novel_. Viking, 2020.

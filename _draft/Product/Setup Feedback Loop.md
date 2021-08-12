@@ -27,6 +27,7 @@ title: Feedback Loop
 
 ### Create feedback loop
 Feedback loop can be created through 3 purposes
+
 1. gather data
 - select relevant channels where user interact
 - customer interviews

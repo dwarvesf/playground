@@ -17,7 +17,7 @@ Schmidt suggests that the essential characteristics of Luhmann's #zettelkasten w
 Schmidt adds that Luhmann used three specific kinds of links: 
 1) **references** in the context of a larger structural outline (similar to a table of contents or _outline_ or **_MOC_**); 
 2) a **subject-area** index of references or **_tag_**; 
-3) individual references from one note zettel to another or **_related link_**. 
+3) individual references from one note zettel to another or **_related link_**.
 
 Understanding effective linking is important, because without links, it's easy for a note to get lost.
 

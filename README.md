@@ -25,6 +25,7 @@ graph TB
 	- [[§ Zettelkasten]]
 	- [[§ Writing]]
 	- [[§ Innovation]]
+	- [[§ MBTI]]
 - Build a software
  	- [[§ UX Research]]
 	- [[§ Personas]]

@@ -7,7 +7,7 @@ Zettelkästen describes a method of personal knowledge management inspired by pr
 -   [[¶ Luhmann's zettelkasten]]
 -   [[Purpose of zettelkasten]]: producing insight
 -   [[Different kinds of zettelkasten notes]]: fleeting, permanent, project
-	-   [[Permanent notes are permanently useful, not permanently unchanging]]
+	-   [[Permanent notes are permanently useful]]
 -   [[Build randomness into knowledge generation systems]]
 -   [[Learning is enhanced by surprise]]
 -   [[Writing with a zettelkasten]]

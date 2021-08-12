@@ -1,5 +1,5 @@
 ---
-tags: product, features, kano model
+tags: product, features, kano
 title: the Kano Model
 ---
 
