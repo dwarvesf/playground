@@ -9,7 +9,7 @@ The goal of fleeting notes are to **capture thoughts** on the go, using any capt
 -   Fleeting notes need to be absolutely painless, short and spontaneous. It's just a starting point for growing a new idea and a reminder of thoughts you couldn't processed yet. 
 -   Fleeting notes aim to be deleted within the 2 or 3 days once they were written. Though, they must be deleted especialy if you can't recall the context anymore, make no sense or became banal. 
 -   Fleeting note don't need to be written with destination or purpose. The usage and the purpose of a fleeting note can and will be decide later, once it will become a Permanent note
--   Fleeting notes has to be reviewed everyday. This is an habit to take in order to have a performant zettelkasten system. By reviewed, I mean tagged, processed, reformulated and connected to Literature note in order to create Permanent note.
+-   **Fleeting notes has to be reviewed everyday**. This is an habit to take in order to have a performant zettelkasten system. By reviewed, I mean tagged, processed, reformulated and connected to Literature note in order to create Permanent note.
 -   Fleeting notes must all be formatted the same to be reviewed easier.
 
 ---

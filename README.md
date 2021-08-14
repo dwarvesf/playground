@@ -1,6 +1,6 @@
 # The Dwarves Brainery
 
-Welcome to the Dwarves Brainery. Dwarves are a group of technology innovation advocates. This project is a part of our continuous learning engine, where we want to build up the 1% improvement habit.
+Welcome to the Dwarves Brainery. Dwarves are a group of technology innovation advocates. This project is a part of our continuous learning engine, where we want to build up the 1% improvement habit, learning in public.
 
 We believe that behind every success comes great preparation, accumulate and compound every single day. This brain repo contains our notes and studies for any upcoming challenges.
 

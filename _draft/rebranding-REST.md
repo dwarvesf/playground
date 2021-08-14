@@ -16,7 +16,6 @@ tag: API. REST
 
 and standards are hard to set due to the creative space (website layout, UI)
 
-
 ### Benefit of APIs
 - APIs allows browsers to speak multiple request to servers > fetch back data without reloading 
 - The contract between FE/BE: transfer state
