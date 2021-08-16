@@ -1,5 +1,5 @@
 ---
-tags: 
+tags: tool
 ---
 Automation Tool mới đến từ vị trí của M$, được viết public version đầu tiên vào đầu năm ngoái
 So sánh với Puppeteer:
@@ -33,9 +33,8 @@ Có 1 điểm thú vị là top contributor của Puppeteer giờ đã trở th�
 
 /graphs/contributors
 
----
 
-Ref
+**Source**
 - [GitHub - microsoft/playwright: Node.js library to automate Chromium](https://github.com/microsoft/playwright)
 - [Contributors to puppeteer/puppeteer](https://github.com/puppeteer/puppeteer/graphs/contributors)
 - [Contributors to microsoft/playwright](https://github.com/microsoft/playwright/graphs/contributors)

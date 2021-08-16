@@ -1,5 +1,5 @@
 ---
-tags: fingerprint
+tags: fingerprint, HR
 ---
 
 #### Whorl
@@ -11,6 +11,6 @@ Chủng Đại bàng (Whorl) chiếm 30 -35% (9 loại): có vân xoáy và 2 g
 
 ![[van dai bang.jpeg]]
 
-#### Citations
-[Nhận diện, phân loại dấu vân tay](https://lindanga.com/nhan-dien-phan-loai-dau-van-tay/)
-[Classify Fingerprints](https://www.youtube.com/watch?v=D-vJ7jylkf8)
+**Source**
+- [Nhận diện, phân loại dấu vân tay](https://lindanga.com/nhan-dien-phan-loai-dau-van-tay/)
+- [Classify Fingerprints](https://www.youtube.com/watch?v=D-vJ7jylkf8)

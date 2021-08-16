@@ -10,7 +10,7 @@ Book: My True Type, page 33 - 38
 - More concerned with the facts, details, or particulars than the connections between them
 - Most effective on the back end of the creative process, with enacting and implementing
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

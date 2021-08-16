@@ -13,6 +13,6 @@ tags: insight
 - Producers might consider selling their silicon to higher-paying buyers
 - Manufacturer will tend to protect their most profitable product line > Like VinGroup has to cut down VinSmart and invest more on VinFast. 
 
----
-Source:
+
+**Source**
 - https://www.zdnet.com/article/the-global-chip-shortage-is-a-bigger-problem-than-everyone-realised-and-it-will-go-on-for-longer-too/

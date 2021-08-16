@@ -1,8 +1,9 @@
 ---
-tags: communication
+tags: productivity
 ---
 
-Author's PoV: Dev should spend more effort on nurturing the mindset on clarity in communcation. 
+POV
+- Dev should spend more effort on nurturing the mindset on clarity in communcation. 
 
 Rules
 1. Explain the underlying problems
@@ -17,5 +18,4 @@ Why they should
 - Misunderstanding in context leads to wrong assumption, cause roadblocks and rework.
 
 ---
-Source: 
-https://tomgamon.com/posts/clarity/
+**Source** : https://tomgamon.com/posts/clarity/

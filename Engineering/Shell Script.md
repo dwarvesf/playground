@@ -1,5 +1,5 @@
 ---
-tag: shell
+tags: shell
 ---
 
 ### Shell
@@ -25,8 +25,7 @@ A list of commands that describes the steps that need to be executed. Those step
 - save as filename.sh 
 - executing: open terminal. type bash filename.sh
 
----
-Citation
+**Source**
 - https://www.tutorialspoint.com/what-is-shell-script
 - https://linuxhint.com/30_bash_script_examples/
 - https://www.tutorialspoint.com/unix/shell_scripting.htm

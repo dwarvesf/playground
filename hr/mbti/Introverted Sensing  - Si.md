@@ -13,7 +13,7 @@ Si is more interested in the routine and familiar. It is a careful and conservat
 
 ISJs take their responsibilities seriously, down to the last detail.
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

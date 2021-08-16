@@ -10,7 +10,7 @@ Book: My True Type, page 39 - 45
 - Less concerned with the needs and feelings of others
 - Focus more on their own work and interests
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

@@ -16,4 +16,4 @@ Fav quote:
 "The more universal a solution someone claims to have to whatever software engineering problem exists, and the more confident they are that it is a fully generalized solution, the more you should question them."
 
 ---
-Source: https://earthly.dev/blog/thought-leaders/
+**Source**: https://earthly.dev/blog/thought-leaders/

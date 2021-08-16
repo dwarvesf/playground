@@ -7,7 +7,7 @@ tag: MBTI
 - More attuned and responsive to feelings, both their own and those of others Generally more caring, compassionate, and nurturing
 - More apt to divide time among work, relationships, and/or caregiving
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

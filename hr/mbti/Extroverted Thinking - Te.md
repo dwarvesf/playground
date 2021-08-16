@@ -11,7 +11,7 @@ Book: My True Type, page 98 - 102
 
 - Famous ETJs: Henry Ford, Bill O’Reily
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

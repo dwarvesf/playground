@@ -26,8 +26,7 @@ Industry: ecommerce, finance, service, security, healthcare, supplychain, data-o
 
 [Tempus](https://www.tempus.com) 
 -	uses AI to gather and analyze massive pools of medical and clinical data at scale. The company, with the assistance of AI, provides precision medicine that personalizes and optimizes treatments to each individual’s specific health needs; relying on everything from genetic makeup to past medical history to diagnose and treat. Tempus is currently focusing on using AI to create breakthroughs in cancer research.
----
 
-Source: 
+**Citation**
 - https://www.simplilearn.com/top-technology-trends-and-jobs-article
 - https://www.information-age.com/industries-ai-impact-123475559/

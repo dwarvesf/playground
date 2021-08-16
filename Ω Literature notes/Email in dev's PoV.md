@@ -12,7 +12,5 @@ tags: development, email
 	- form submission, purchase invoice, password reset
 	-> users want to receive, actively know when
 	
-A-Z walkthrough for email development 
-
----
-Source: https://hackernoon.com/the-a-z-of-email-development-and-sending-d9w33h4
+**Source**
+[A-Z walkthrough for email development](https://hackernoon.com/the-a-z-of-email-development-and-sending-d9w33h4)

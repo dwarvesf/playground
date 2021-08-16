@@ -10,7 +10,7 @@ seeking diversity and novelty. Si perceives more narrowly, drawing on past exper
 
 - Se types are also more concerned with physical appearances.
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

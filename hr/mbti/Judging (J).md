@@ -13,7 +13,7 @@ tag: MBTI
 - Not necessarily neat, tidy, organized, uptight, or punctual
 - Less restless and less dependent on a breadth of activities for stimulation (especially IJs)
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

@@ -1,12 +1,11 @@
 ---
-tags: data
+tags: data, diagram
 ---
 
 ### What
 ERD stands for Entity Relationship Diagram, a structural diagram that contains symbols nad connectors that visualizes 2 types of information
 - The major Entities
 - The Relationship between those entities
-
 
 When we talk bout Entities, we are referring to the business objects within the system: people/role, tangile object (product).
 
@@ -31,15 +30,7 @@ ERDs are mostly developed during concept visualization, database design, databas
 	- many:1
 	- many:many
 
-#### Example
-![[Screen Shot 2021-06-15 at 16.10.23.png]]
-
--> [the diagram]([Homework-04 - dbdiagram.io](https://dbdiagram.io/d/5f994c163a78976d7b798240))
-
-![[Screen Shot 2021-06-15 at 16.11.14.png]]
-
-
-#### Citation
+**Source**
 - [Explaning the ERD](https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/#erd-data-models-conceptual)
 - [Difference of the relationship](https://stackoverflow.com/questions/3113885/difference-between-one-to-many-many-to-one-and-many-to-many)
 - [Example of ERD](https://www.guru99.com/er-diagram-tutorial-dbms.html)

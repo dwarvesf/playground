@@ -1,5 +1,5 @@
 ---
-tags: sql, database
+tags: sql, data
 ---
 
 ### ORM vs Plain SQL
@@ -72,8 +72,7 @@ Get row with Greatest value per group. Follow the Single-Value rule to build the
 - third-party search engines - right tool for the right job
 - implement from scratch: XXX, Keywords, XXXKeywords. Create a procedure for searching. Make a trigger for update Keywords and XXXKeywords when Update or Insert data to XXX table
 
---- 
-Source:
+**Source**
 - https://pragprog.com/titles/bksqla/sql-antipatterns/
 - https://www.enterprisedb.com/blog/postgresql-query-optimization-performance-tuning-with-explain-analyze
 - https://www.technical-recipes.com/2011/ieee-754-floating-point-to-binary-conversion/

@@ -1,5 +1,5 @@
 ---
-tags: modeling, state-machine
+tags: diagram
 ---
 
 ### What
@@ -29,17 +29,8 @@ Gamers will go through 3 states
 - Game Running
 - Game Pause
 - Game Over
-
-![[state-machine.jpeg]]
-
 - start
 - end
 
--> fortress/ turing alley
-- tsao co nhieu loai diagram
-	- serve muc dich gi
-	- use case cho moi diagram
-
----
-Citation:
+**Source**
 - [Chapter 5 State Machine Diagrams | System Analysis (fhv.at)](https://homepages.fhv.at/thjo/lecturenotes/sysan/state-machine-diagrams.html)

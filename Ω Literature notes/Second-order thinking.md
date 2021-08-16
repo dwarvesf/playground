@@ -9,5 +9,5 @@ A top notch solution might work at the moment, but it isn't maintainable. It's q
 Take things in `solution mode` means to evaluate the `context`, define long term value and make the decision more inheritant. 
 
 ---
-Source:
+**Source**
 - https://world.hey.com/joaoqalves/i-could-build-this-during-the-weekend-aa093c5e

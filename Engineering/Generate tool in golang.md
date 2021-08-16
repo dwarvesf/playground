@@ -50,7 +50,6 @@ $ go generate ./...
 
 This tool will help we generate a new mock file in our project at `myapp/model/mocks/user_repo.go`. We don't make our `makefile` become messy anymore
 
----
-Ref
+**Source**
 - https://blog.golang.org/generate
 - https://pkg.go.dev/std

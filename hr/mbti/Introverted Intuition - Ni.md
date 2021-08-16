@@ -12,8 +12,7 @@ Book: My True Type, page 58 - 69
 
 > Ni thích tìm hiểu "tảng băng chìm" của vấn đề 
 
-#### Citation
-
+**Source**
 Book: My True Type  
 Clarifying Your Personality Type, Preferences & Functions  
 Copyright © 2014  

@@ -16,7 +16,7 @@ Ne often present as open-minded, receptive, creative, inquisitive, random, distr
 
 > Ne qua manh la nguoi ca them chong chan
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

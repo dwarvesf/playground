@@ -9,5 +9,5 @@ Type <> Trait
 Type: bên nào > 50% thì gán 1 type cho loại đó
 Trait: dựa trên Degree của mỗi loại tính cách, ko phân chia loại
 
-#### Citation
+**Source**
 [Our Theory](https://www.16personalities.com/articles/our-theory)

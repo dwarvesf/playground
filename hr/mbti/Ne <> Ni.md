@@ -13,5 +13,5 @@ tag: MBTI, function
 
 - Ne is good at producing words, while Ni struggles to verbalize thoughts
 
-#### Citation
+**Source**
 [The difference between Ne and Ni](https://practicaltyping.com/2020/02/24/7-differences-between-ne-and-ni-users/#)

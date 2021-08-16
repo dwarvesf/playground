@@ -1,5 +1,5 @@
 ---
-tags: development, process
+tags: development
 ---
 
 ### What
@@ -29,8 +29,7 @@ This file can be edit/ adjust using crontab command
 
 task: Auto update database at 09:30AM on every day of August
 
----
-#### Citation
+**Source**
 - https://ostechnix.com/a-beginners-guide-to-cron-jobs/
 - https://www.marksanborn.net/linux/learning-cron-by-example/
 - https://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/

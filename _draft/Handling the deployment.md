@@ -6,35 +6,32 @@ We use Kubernetes as a mainly orchestrator for most of infrastructures. In Kuber
   
 In development environment, we prefer to use Recreate strategy for deployment which will terminate all the running instances then recreate them with the newer version.  
   
-Pro:
+**Pro**
 -   application state entirely renewed
 
-Cons:
+**Cons**
 -   downtime that depends on both shutdown and boot duration of the application
 
-  
 In production environment, we use RollingUpdate strategy, a secondary ReplicaSet is created with the new version of the application, then the number of replicas of the old version is decreased and the new version is increased until the correct number of replicas is reached.  
   
 When setup together with horizontal pod autoscaling it can be handy to use a percentage based value instead of a number for maxSurge and maxUnavailable.  
 If you trigger a deployment while an existing rollout is in progress, the deployment will pause the rollout and proceed to a new release by overriding the rollout.  
   
-Pro:
+**Pro**
 -   version is slowly released across instances
 -   convenient for stateful applications that can handle rebalancing of the data
 -   zero-downtime
 
-Cons:
+**Cons**
 -   rollout/rollback can take time
 -   supporting multiple APIs is hard
 -   no control over traffic
-
-----
 
 web apps mostly are hosted on netlify, vercel, google cloud run. They are very convenient to develop web apps which have changes frequently, easy for management, rolling back if needed and low cost  
   
 servers & 3rd party services are managed by k8s which solved many issues like nearly zero downtime, even when servers get crash, they will be automated recover instantly. we apply blue-green deployment to make sure we don't have downtime when deploying new version, this will reduce traffic lost as much as possible  
   
-security:  
+**Security**
 - https cert is renew periodically by cert-manager, so servers are always protected  
 - database is only available for internal network, which only be reach by valid services, so we won't be attacked and leaked sensitive data from the outside  
   

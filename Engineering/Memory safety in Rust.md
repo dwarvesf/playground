@@ -9,7 +9,7 @@ Meanwhile, Rust's mechanism in memory safety acts different. Dividing in `stack`
 The obsolence of garbage collector then enhance and speed up performance, which make this language become one of the top choices for 2021.
 
 ---
-**Citation**
+**Source**
 - https://stackoverflow.blog/2020/01/20/what-is-rust-and-why-is-it-so-popular/
 - https://serokell.io/blog/rust-guide
 - https://blog.rust-lang.org/2021/05/11/edition-2021.html

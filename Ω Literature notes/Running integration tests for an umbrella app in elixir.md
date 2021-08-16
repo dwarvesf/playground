@@ -9,5 +9,5 @@ The umbrella project is meant to be an umbrella facility really, you can't add c
     
 In any case, remember that ExUnit has the concept of tags and you can tag all integration tests as such and use the tag system to include/exclude tests at will. This should help you manage tests as they grow in number.
 
----
-Source: https://stackoverflow.com/questions/32825944/running-integration-acceptance-tests-for-an-umbrella-app-in-elixir
+**Source**
+- https://stackoverflow.com/questions/32825944/running-integration-acceptance-tests-for-an-umbrella-app-in-elixir

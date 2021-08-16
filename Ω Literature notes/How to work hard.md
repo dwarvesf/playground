@@ -7,5 +7,5 @@ tags: productivity
 - Cultivate a sensitivity to what you do, you'll notices when the result starts to drop. it's critical in both directions: either you're being lazy, or you're working too hard. 
 - Understand the shape of real work, then arrange your capability.
 
----
-Source: http://paulgraham.com/hwh.html
+**Source**
+- [HTWH](http://paulgraham.com/hwh.html)

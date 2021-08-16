@@ -34,6 +34,5 @@ He described his problem more in `general` which is that he wants to keep his ex
 [10:18]  
 @david.antaramian @alanpeabody ah yes, you should be able to do it similarly but within the existing repo
 
----
-Source
+**Source**
 - https://elixir-lang.slack.com/archives/phoenix/p1472921051000134

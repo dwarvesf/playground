@@ -1,5 +1,5 @@
 ---
-tags: data
+tags: diagram
 ---
 
 ### What
@@ -27,5 +27,3 @@ Hotel booking Flow
 7. Payment
 8. Renewal 
 	1. yes - ask for awaiting
-
-![[hotel-booking-flow.jpeg]]

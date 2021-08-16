@@ -4,12 +4,9 @@ tags: elixir
 
 What we have found is that, since you have to do the `mix firmware` step from the “firmware” application directory anyway, it’s less surprising to have a separate, non-umbrella project for building firmware. This application can use a `path: "../your_business_logic"` dependency to achieve the same result as the `in_umbrella: true` convenience if you keep them side-by-side. We call it a “poncho project” because it protects you from things leaking in from the sides rather than from above.
 
----
 
 - The difference is that an umbrella is a single mix project, which combines multiple nested “mix projects” into one – starting any of them by default, 
 - while poncho’s approach is developing each application in it’s own mix project and using simple `{:dep, path: "…"}` dependencies between each other, where there’s one “root” application, which depends on all the sub applications.
-
----
 
 In elixir you basically have two kinds of “structure”. Structure of code – which should be handled by modules and folders in your source code – and structure of runtime concerns, like dependencies or being able to run parts of your application independently from others – which is what drives how you set up supervision trees or multiple otp applications.
 
@@ -29,7 +26,6 @@ Then I think, other people realized that actually, Umbrella applications are jus
 
 I think that's basically the same thing that a Poncho project is. **What makes it an Umbrella is really just the config.exs structure auto includes everything, like using a file system glob**. That's basically what gives you an Umbrella application. Then there's some fancy aliasing and stuff that happens. Basically, I think the Umbrella structure was invented as a convenience, but it isn't actually necessary. I think that's where I usually steer people away from using it. Is, you can build exactly the same thing and when you're done, you'll understand it. Or you can just use the Umbrella thing that's already there if you want to and either one's fine.
 
----
 ### Add project as dependency
 
 #### Using a poncho project structure
@@ -61,7 +57,6 @@ Now, we add the Phoenix-based `my_app_ui` project to the `my_app_firmware` proje
 
 If we're using the poncho project structure, we can skip ahead to the section where we [configure networking](https://hexdocs.pm/nerves/user-interfaces.html#configure-networking).
 
----
 
 #### Using an umbrella project structure
 
@@ -115,7 +110,6 @@ import_config "../apps/my_app_firmware/config/config.exs"
 ```
 
 
----
 ### Configure Phoenix
 
 In order to deploy the `my_app_ui` Phoenix-based project along with the Nerves-based `my_app_firmware` project, we need to configure our Phoenix `Endpoint` using appropriate settings for deployment on an embedded device. 
@@ -144,7 +138,6 @@ config :my_app_ui, MyAppUiWeb.Endpoint,
   url: [host: "nerves.local", port: 80]
 ```
 
----
-Source
+**Source**
 - https://embedded-elixir.com/post/2017-05-19-poncho-projects/
 - https://hexdocs.pm/nerves/user-interfaces.html

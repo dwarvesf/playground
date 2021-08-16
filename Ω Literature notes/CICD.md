@@ -22,5 +22,5 @@ tags: ci, cd
 - provides constant feedback
 - the pipeline keeps traverse between production // source code for bug tracking
 
----
-Source: https://kylefarmer85.medium.com/what-is-ci-cd-76d71b82898d
+**Source**
+- https://kylefarmer85.medium.com/what-is-ci-cd-76d71b82898d

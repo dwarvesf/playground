@@ -15,5 +15,5 @@ Fix your own pain point -> that how you prove your product works
 - solve it once for yourself
 - then reuse it, end up saving for everybody
 
----
-Source: https://web.eecs.utk.edu/~azh/blog/makinguselessstuff.html
+**Source**
+- https://web.eecs.utk.edu/~azh/blog/makinguselessstuff.html

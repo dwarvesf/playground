@@ -28,6 +28,6 @@ Vd: ENFJ
 3 Se
 4 Ti
 
-#### Citation
+**Source**
 [Functional stack theory](https://personalityjunkie.com/functional-stack-type-dynamics-theory/)
 [Functional stack 101](https://www.youtube.com/watch?v=9xf13VRNPp8)

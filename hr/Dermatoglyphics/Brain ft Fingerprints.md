@@ -1,5 +1,5 @@
 ---
-tags: fingerprint
+tags: fingerprint, HR
 ---
 
 Mỗi ngón tay đều liên quan đến một thùy trên não bộ của chúng ta. Đặc trưng của nó là: độc nhất và ko thay đổi.
@@ -15,7 +15,6 @@ Mỗi ngón tay đều liên quan đến một thùy trên não bộ của chún
 
 ![[Screenshot 2021-06-30 at 16.41.36 1.png]]
 
-#### Citations
-
+**Source**
 - [Science in your hands](https://www.bbvaopenmind.com/en/science/research/science-in-your-hands-what-your-fingerprints-say-about-you/)
 - [Principles](http://www.forensicsciencesimplified.org/prints/principles.html)

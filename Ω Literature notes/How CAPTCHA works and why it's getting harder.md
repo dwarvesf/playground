@@ -14,6 +14,5 @@ Once user behavior seems to resemble a bot's behavior, a test may be triggered a
 1. What happened if CAPTCHA is too strong and people find it hard to break
 2. Some opinion state that using physical privacy key (like YubiKey) will help, but how, and will it work
 
----
-Source:
-https://www.vox.com/22436832/captchas-getting-harder-ai-artificial-intelligence
+**Source**
+- [CAPTCHA is getting harder](https://www.vox.com/22436832/captchas-getting-harder-ai-artificial-intelligence)

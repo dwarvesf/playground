@@ -9,7 +9,7 @@ Book: My True Type, page 86 - 91
 - Associated with: Sensation-seeking, kinesthetic intelligence, an “eye for detail,”attunement to style and appearances, hands-on activities, effortless performance
 - Famous ESPs: George W. Bush, Lebron James, Beyoncé, Shakira, Donald Trump
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

@@ -1,5 +1,5 @@
 ---
-tag: innovation
+tags: productivity
 ---
 
 Retrieval helps us experience the insight of premodern cultures that nothing is absolutely new; everything is renewal.
@@ -12,5 +12,5 @@ The mindset of retrieval is important because nothing happens from the air. It w
 
 It means we extract the good from our age, and bring it to the next generation. 
 
----
-Source: https://medium.com/team-human/true-innovators-dont-just-invent-they-retrieve-fa8cae7e38dc
+
+**Source**: https://medium.com/team-human/true-innovators-dont-just-invent-they-retrieve-fa8cae7e38dc

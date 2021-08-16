@@ -1,5 +1,5 @@
 ---
-tag: technology
+tags: technology
 ---
 
 ### Technology Trend Awareness

@@ -12,7 +12,7 @@ communication skills, talkativeness, attunement to social norms, advice-giving
 
 - Famous EFJs: Dr. Martin Luther King, Dr. Phil McGraw, Frasier Crane (television)
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

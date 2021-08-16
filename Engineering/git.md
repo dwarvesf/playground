@@ -17,7 +17,6 @@ Git is a mature, actively maintained open source project originally developed in
 - `repository` (or repo for short) contains all of the project files and the entire revision history. There are 2 types of repositories: local repository and remote repository. A local repository is storing data in a computer gives you a personal working environment. A remote repository is storing a copy of your Git repo with an online host (such as GitHub or Bitbucket) gives you a centrally located place where you can upload your changes and download changes from others, letting you collaborate more easily with other developers.
  
 ### How to use git effectively?
- 
 #### GitHub flow
 GitHub flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly. Using only one `master` branch for tracking your project. There are 4 steps in the GitHub flow: implement, create merge request & review, deploy to production, merge to the codebase:
 - When we get a new feature, we check out from `master` branch to another branch. Working on that branch and create a merge request to `master` branch.
@@ -116,8 +115,7 @@ There are a number of factors that have held developers back from becoming super
 
 Overall, Git acts like a time machine. When you travel from A to B in time, you should always expect there is a button to come back to A.
 
----
-References
+**Source**
 - https://learngitbranching.js.org
 - https://nvie.com/posts/a-successful-git-branching-model/
 - https://danielkummer.github.io/git-flow-cheatsheet/

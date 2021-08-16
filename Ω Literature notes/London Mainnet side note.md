@@ -9,6 +9,5 @@ lost track of the time for this. london hardfork sẽ go live ở mainnet vào b
 - Nhìn chung thì fee mà miner nhận được sẽ giảm nên update này còn vài cái để balance lại là tăng block size lên gấp đôi (x2 transaction trong 1 block) việc này cũng sẽ giảm congestion trong network -> tăng giá trị của ETH
 - anw in my opinion thì hard fork này là 1 stepping stone tương đối lớn cho ETH2.0, vì với cơ chế tx_fee này sẽ phù hợp với 1 network nhiều tx + ít congestion của eth2.0 hơn
 
----
-More
+**Source**
 [London Mainnet Announcement](https://blog.ethereum.org/2021/07/15/london-mainnet-announcement/)

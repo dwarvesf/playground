@@ -15,7 +15,7 @@ Book: My True Type, page 46 - 57
 - Not necessarily messy, disorganized, procrastinating, or chronically late
 - Often restless, turning to a breadth of activities for stimulation (especially EPs)
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

@@ -5,14 +5,13 @@ tags: micro-frontend
 ### What is Micro-frontend?
 An architectural style where independently deliverable frontend applications are composed into a greater whole
 
-Benefits
+**Benefits**
 - Smaller, more cohesive and maintainable codebases
 - More scalable organisations with decoupled, autonomous teams
 - The ability to upgrade, update, or even rewrite parts of the frontend in a more incremental fashion than was previously possible
 - Easier maintenance: Keeping frontend repositories small and specialized allows them to be more easily understood, and this simplifies long-term maintenance and testing.
 
 ### Micro-Frontend in actions
-
 #### Build-time integration
 -    Publish each micro frontend as a package and have the container application include them all as library dependencies.
 ``` js
@@ -148,8 +147,7 @@ Cons
 - Learning curve
 - Only suitable for medium, large projects
 
----
-References
+**Source**
 - https://micro-frontends.org/
 - https://martinfowler.com/articles/micro-frontends.html
 - https://www.tomsoderlund.com/programming/micro-frontends-a-microservice-approach-to-front-end-web-development

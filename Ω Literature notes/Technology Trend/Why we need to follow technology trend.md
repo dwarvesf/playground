@@ -22,8 +22,8 @@ trend awareness as a,in the market or industry.&text=Ideal technology trend awar
 
 -   Enhancing your visibility to the customers
 
----
-Source: 
+
+**Citation**
 - https://www.bigfin.com/blog/why-it-is-important-to-keep-up-with-changing-technology-trends/
 - https://smallbusiness.chron.com/target-market-technology-have-13818.html
 - https://www.cleverism.com/skills-and-tools/technology-trend-awareness/#:~:text=Technology

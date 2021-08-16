@@ -9,7 +9,7 @@ Book: My True Type, page 92 - 97
 
 - Famous ITPs: Einstein, Bill Gates, Henri Bergson, Robert Pirsig, Robert Nozick, Ken Wilber, Lance Armstrong
 
-#### Citation
+**Source**
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

@@ -30,6 +30,6 @@ Từ tâm đến Delta lớn hơn 5 đường vân
 - Dễ bị kích động về mặt cảm xúc
 > Con khỉ
 
-#### Citation
-[Sinh trắc dấu vân tay](https://trobi.vn/sinhtracvantay/sinh%20trac%20dau%20van%20tay.htm)
-[Tính cách qua chủng vân tay](http://dmit.vn/phan-tich-van-tay/cach-xem-tinh-cach-qua-chung-van-tay)
+**Source**
+- [Sinh trắc dấu vân tay](https://trobi.vn/sinhtracvantay/sinh%20trac%20dau%20van%20tay.htm)
+- [Tính cách qua chủng vân tay](http://dmit.vn/phan-tich-van-tay/cach-xem-tinh-cach-qua-chung-van-tay)

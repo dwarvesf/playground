@@ -13,7 +13,6 @@ Resolution
 
 Input: I'm using Obsidian, a markdown-based tool to compose documents and store a version on GitHub. The setup step is quite basic. Some alternatives can be iA Writer, Typora, or HackMD, Notion & Dillinger (for team collab).
 
----
-Source:
+**Source**
 - https://kislayverma.com/programming/why-programmers-dont-write-documentation/
 - https://hackernoon.com/how-improving-writing-skills-can-help-software-developers-succeed-fn1831le

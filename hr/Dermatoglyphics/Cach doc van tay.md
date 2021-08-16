@@ -1,5 +1,5 @@
 ---
-tags: fingerprint
+tags: fingerprint, HR
 ---
 
 ![[nhan dien van tay.png]]

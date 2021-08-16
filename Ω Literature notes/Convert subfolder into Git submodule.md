@@ -34,6 +34,5 @@ $ git add .gitmodules sub/module/path
 $ git commit -m "Added in submodules for removed folders"
 ```
 
----
-Source:
+**Source**
 - https://gist.github.com/korya/9047870

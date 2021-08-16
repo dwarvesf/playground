@@ -32,6 +32,6 @@ Control the consumption of resources used by an instance of an application, an i
 ![[Pattern_Throttling.png]]
 
 ---
-Ref
+**Source**
  - https://docs.microsoft.com/en-us/azure/architecture/patterns/throttling
  - https://docs.firstdecode.com/microservices-architecture-style/design-patterns-for-microservices/throttling-pattern/

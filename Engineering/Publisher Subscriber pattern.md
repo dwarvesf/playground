@@ -37,7 +37,6 @@ Introduce an asynchronous messaging subsystem that includes the following:
 
 ![[pubsub.png]]
 
----
-Ref
+**Source**
  - https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber
  - https://hackernoon.com/publish-subscribe-design-pattern-introduction-to-scalable-messaging-781k3tae

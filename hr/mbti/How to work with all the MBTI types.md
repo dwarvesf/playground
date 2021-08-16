@@ -88,8 +88,7 @@ The best practices to work with all MBTI types, ref from Atlassian
 -   They don’t always see the finer details when implementing plans, that puts them at greater risk of pushing through decisions without properly taking in the views of others.
 -   Need to remember the necessary balance between directing and consulting.
 
-### Citations
-
+**Source**
 [How to work with all the Myers-Briggs personality types](https://www.atlassian.com/blog/leadership/every-myers-briggs-personality-type)
 
 [Can personality tests help your team?](https://www.youtube.com/watch?v=pxlX7_ie49Q&t=66s)

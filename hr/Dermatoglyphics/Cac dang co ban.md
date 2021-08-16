@@ -1,5 +1,5 @@
 ---
-tags: fingerprint
+tags: fingerprint, HR
 ---
 
 ## Các dạng cơ bản

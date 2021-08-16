@@ -9,9 +9,7 @@ tags: fingerprint, HR
 - Cái tôi cá nhân cao, khó bị thuyết phục hay ảnh hưởng
 
 ### Đặc điểm riêng
-
 **Wt / Ws**
-
 - Tính mục tiêu, tập trung cao
 - Cầu toàn
 - Thắng thắn
@@ -46,6 +44,6 @@ tags: fingerprint, HR
 - Tính cá nhân cao
 > Con công
 
-#### Citation
-[Sinh trắc dấu vân tay](https://trobi.vn/sinhtracvantay/sinh%20trac%20dau%20van%20tay.htm)
-[Tính cách qua chủng vân tay](http://dmit.vn/phan-tich-van-tay/cach-xem-tinh-cach-qua-chung-van-tay)
+**Source**
+- [Sinh trắc dấu vân tay](https://trobi.vn/sinhtracvantay/sinh%20trac%20dau%20van%20tay.htm)
+- [Tính cách qua chủng vân tay](http://dmit.vn/phan-tich-van-tay/cach-xem-tinh-cach-qua-chung-van-tay)

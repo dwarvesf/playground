@@ -19,6 +19,6 @@ marketing, or preparing a sales case to be implemented by other colleagues.
 5.  ISTP (The Virtuoso)
 strategy, good sales managers and team leaders
 
-#### Citations
-[Huspot](https://blog.hubspot.com/sales/manage-salespeople-myers-briggs)
-[emlteam](https://blog.emlteam.com/sales-personality-myers-briggs-test/)
+**Source**
+- [Hubspot](https://blog.hubspot.com/sales/manage-salespeople-myers-briggs)
+- [emlteam](https://blog.emlteam.com/sales-personality-myers-briggs-test/)

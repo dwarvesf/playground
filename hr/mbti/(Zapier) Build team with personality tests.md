@@ -9,5 +9,5 @@ Here are a few ways you can use personality assessments to improve your teams an
 - Rotate roles based on project stages
 - Know your own style
 
-#### Citation
+**Source**
 [Practices from Zapier](https://zapier.com/blog/personality-tests/)

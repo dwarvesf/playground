@@ -1,5 +1,5 @@
 ---
-tag: API. REST
+tags: API, REST
 ---
 
 ### The demand of API
@@ -30,7 +30,10 @@ and standards are hard to set due to the creative space (website layout, UI)
 -> Multiple APIs should be adopted
 -> Throw out the reusability
 
-#### Citation
+**Imo**
+REST is specifically made for distributed system (for multipe devices). Web-service APIs are documented as REST APIs, not RESTful > The reason for rebranding REST is to differentiate it with RESTful APIs. 
+
+**Source**
 - https://medium.com/hackinghabits/rest-api-guidelines-are-insufficient-we-need-something-better-f56d91d195f2
 - [distinguish URI and URL](https://danielmiessler.com/study/difference-between-uri-url/)
-- [rebranding REST](https://kieranpotts.com/rebranding-rest/): REST is specifically made for distributed system (for multipe devices). Web-service APIs are documented as REST APIs, not RESTful > The reason for rebranding REST is to differentiate it with RESTful APIs. 
+- [rebranding REST](https://kieranpotts.com/rebranding-rest/)

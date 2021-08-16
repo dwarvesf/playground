@@ -14,5 +14,5 @@ tag: MBTI
 
 2x2x2x2 = 16 personality types trong MBTI
 
-#### Citation
+**Source**
 [Typhology 101](https://personalityjunkie.com/typology-101/#anchor1)

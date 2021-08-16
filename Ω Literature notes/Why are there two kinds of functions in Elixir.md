@@ -75,5 +75,5 @@ This is also why Elixir uses a dot for calling anonymous functions. Since you ca
 
 Overall, those are the reasons why we have two functions and why they behave differently.
 
----
-Source: https://stackoverflow.com/questions/18011784/why-are-there-two-kinds-of-functions-in-elixir?rq=1
+**Source**
+- https://stackoverflow.com/questions/18011784/why-are-there-two-kinds-of-functions-in-elixir?rq=1

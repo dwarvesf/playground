@@ -1,13 +1,13 @@
 ---
-tag: software architecture, software design
+tags: architecture
 ---
 
-## Software Architecture (SA)
+### Software Architecture (SA)
 **Sum up**
 - structure the software
 - Answer for: what we are building
 
-**WHAT**
+**What**
 Software Architecture (SA) 
 create a complete system architecture. 
 
@@ -17,33 +17,33 @@ A software must have the charateristics (based on biz requirement). SA helps con
 
 SA prevents the accumulation of technical debts.
 
-**EXAMPLE**
+**Example**
 - Microservices 
 - Monolith
 - Event-Driven
 - Serverless
 
-**HOW**
+**How**
 The architecture descision must based on business requirement (scaling/ traffice volume, ...etc) 
 Helps achieve biz goal and tech strategy
 
-## Software Design (SD)
+### Software Design (SD)
 **Sum up**
 - implement the software
 - answer for: how we are building
 
-**WHAT**
+**What**
 Software Design (SD) arranging the order of component is called software design. 
 
 SD responsible for code-level design. 
 - what each module is doing
 - what problem does each module esolve
 
-**EXAMPLE**
+**Example**
 - Factory pattern
 - Adapter pattern
 
-**HOW**
+**How**
 - Decide the function of each component and how they interact with others.
 - Create the specifications of software artifacts. How individual modules/ components are amde and interact with each other
 - Follows the SOLID principle
@@ -53,6 +53,5 @@ SD responsible for code-level design.
 	- catergorize the interfaces <> structure the code so that a class won't be forced to implement a redundant function
 	- decoupling the code 
 
-
-#### Citation
+**Source**
 - https://codeburst.io/software-architecture-the-difference-between-architecture-and-design-7936abdd5830

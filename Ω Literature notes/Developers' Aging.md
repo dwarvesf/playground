@@ -1,10 +1,10 @@
 ---
-tags: career
+tags: growth
 ---
 
 The truth is Asia is generating more software developers, and day by day, the average age of software developers will be decreased even more.
 
-Why we don't often see developer after the age of 40
+#### Why we don't often see developer after the age of 40
 - senior expect higher salary expectation (developers are underpaid?)
 - job switching: make money without coding
 - older developer can't catch up with the endless learning
@@ -14,11 +14,11 @@ Why we don't often see developer after the age of 40
 How-to survive
 - update: the tech and the self
 
-Endgame after `developer` role
+#### Endgame after `developer` role
 - management
 - consultancy
 - niche market > specialized
 - trainer
 
----
-Source: https://betterprogramming.pub/when-do-programmers-retire-is-35-the-end-72d173760ee2
+**Source**
+https://betterprogramming.pub/when-do-programmers-retire-is-35-the-end-72d173760ee2

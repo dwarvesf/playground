@@ -10,5 +10,6 @@ Rust was considered as a new born [[language]] since 2010, and its adoption was 
 
 Some keyplayers started to touch Rust since last year. Like Discord, or Morzilla. But not until the move of [[Google]] - the backbone behind Golang - that Rust begins to be taken seriously. There has been a long term debate between the domination of Go and Rust, and the fact that Google chose to migrate some of their services into Rust somehow turned the table.
 
----
-Source: https://deprogrammaticaipsum.com/the-great-rewriting-in-rust/
+
+**Source**
+https://deprogrammaticaipsum.com/the-great-rewriting-in-rust/

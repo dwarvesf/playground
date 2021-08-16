@@ -27,7 +27,6 @@ Note: The authorization server may be the same server as the resource server or 
 #### Authorization Grant
 
 Have 4 types
-
 - Authorization code
   - Using an authorization server as intermediary between client and resource owner
   - Authorization code is a temporary code that the client will exchange for an access token
@@ -123,8 +122,8 @@ How to resolve or decrease this problem?
   +--------+           & Optional Refresh Token        +———————--+
 
 ```
----
-Ref
+
+**Source**
 - https://datatracker.ietf.org/doc/html/rfc6749
 - https://gaynwinters.wordpress.com/tag/user-agent-based-application/
 - https://www.oauth.com/oauth2-servers/server-side-apps/authorization-code/

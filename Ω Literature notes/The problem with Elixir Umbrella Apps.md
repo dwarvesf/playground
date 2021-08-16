@@ -24,6 +24,5 @@ In fact, in [Elixir's official documentation](https://elixir-lang.org/getting-st
 
 > While it provides a degree of separation between applications, those applications are not fully decoupled, as they are assumed to share the same configuration and the same dependencies.
 
----
-Source:
+**Source**
 - https://dev.to/jackmarchant/the-problem-with-elixir-umbrella-apps-850

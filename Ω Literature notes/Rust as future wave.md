@@ -19,12 +19,9 @@ The issue
 1. One of Rust's highlight is parallelism. We once endorsed Go for its `concurrency`. What's the difference between these twos? And what kind of scenario is suitable for both?
 
 ---
-More reading source:
+**Source**
 - [Concurrency and Parallelism in Go](https://mayurwadekar2.medium.com/concurrency-and-parallelism-in-golang-c8327701fd94)
 - [Difference in Concurrency and Parallelism](https://viblo.asia/p/phan-biet-khai-niem-xu-ly-concurrency-dong-thoi-va-parallelism-song-song-4P856nBO5Y3)
 - garbage collector
 - rust: different mechanism (rust borrowing mechanism)
-
----
-Source:
-https://utcc.utoronto.ca/~cks/space/blog/programming/RustInOurFuture
+- https://utcc.utoronto.ca/~cks/space/blog/programming/RustInOurFuture
