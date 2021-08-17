@@ -6,12 +6,9 @@ The job of personas is to make abstract findings from research feel more concret
 
 A name and photo may be included if they help the team remember the persona. However, [take care that this information is actually useful](https://publish.obsidian.md/mobydiction/notes/Omit+needless+demographic+information+when+creating+personas).
 
----
-
 #### Related
 
 -   [[Omit needless demographic information when creating personas]]
 
-#### Citations
-
+**Source**
 Harley, Aurora. _“Personas Make Users Memorable for Product Team Members.”_ Nielsen Norman Group (blog). Accessed October 10, 2020. [Link](https://www.nngroup.com/articles/persona/)

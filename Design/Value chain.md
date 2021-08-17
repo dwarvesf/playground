@@ -1,5 +1,5 @@
 ---
-tags: #ux, #design, #value_chain
+tags: ux, design, value chain
 ---
 
 After analyzing [[Human needs]], we all understand where humans incentive comes from. However, we do not work alone, but with many people. Each person in a group of people has their own needs to motivate their action, actions are linked together to form a chain of activities, creating things, images, it called a **value chain**. For example, a project's value chain includes management design, implementation, quality assurance, and delivery to users. Each participant in the project provides value so that the product is fully built, if one of those values is lost, the product will not deliver well, or sometimes cannot be made. 
@@ -14,7 +14,6 @@ To make it easier to understand, we have looked at an example together. Talking 
 
 We can see whether there is an implicit relationship between nodes, if not then why no one has solved that problem. Usually, this is how to form an idea. We have understood the motivations of a person and an organization to make things happen, and how ideas are formed. Applying to domain research, we can broaden the scope of knowledge about that industry, seek new opportunities in the industry, see and find ways to solve problems in the market. At a higher level, understanding where the idea comes from and the dynamics of the society, we will easily empathize and understand with the founders and users, thereby we can make decisions more quickly correctly during designing products.
 
----
 #### Relations
 - [[Human needs]]
 - [[Domain Research Framework]]

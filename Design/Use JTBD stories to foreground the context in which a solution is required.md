@@ -27,8 +27,7 @@ Job stories do not offer solutions; they describe the context for which the solu
 -   [[Methods to overcome the limitations of personas]]
 -   [[JTBD Job Interview Structure]]
 
-#### Citations
-
+**Source**
 Kalbach, Jim, and Michael Schrage. The Jobs To Be Done Playbook: Align Your Markets, Organization, and Strategy Around Customer Needs. New York: Two Waves Books, 2020.
 
 Klement, Alan. “Replacing The User Story With The Job Story.” JTBD.Info (blog), July 3, 2018. [Link](https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27).

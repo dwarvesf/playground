@@ -8,10 +8,7 @@ Teams often create proto-personas as a proxy for persona research; these should 
 
 Personas in general are a form of narrative. This means that they must be approached carefully, as [[Narratives generate real-world effects]].
 
----
-
 #### Related
-
 -   [[Focus personas on tasks, goals, and motivations]]
 -   [[Personas document shared understanding about users]]
 -   [[Personas may create space for assumptions]]
@@ -20,8 +17,7 @@ Personas in general are a form of narrative. This means that they must be approa
 -   [[¶ Persona]]
 -   [[§ Personas]]
 
-#### Citations
-
+**Source**
 Harley, Aurora. _“Personas Make Users Memorable for Product Team Members.”_ Nielsen Norman Group (blog). Accessed October 10, 2020. [Link](https://www.nngroup.com/articles/persona/).
 
 Laubheimer, Page. _“3 Persona Types: Lightweight, Qualitative, and Statistical.”_ Nielsen Norman Group (blog). Accessed October 12, 2020. [Link](https://www.nngroup.com/articles/persona-types/).

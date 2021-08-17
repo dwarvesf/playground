@@ -1,5 +1,5 @@
 ---
-tags: #ux, #design, #process
+tags: ux, design, process
 ---
 
 We’ve all already known about **design thinking methodology** and been applying it in our daily work, so, comparing design thinking to other famous frameworks in software development will help us to understand developers' terms and fill in missing knowledge in this industry.
@@ -63,14 +63,10 @@ RUP organizes the development of software into four phases:
 
 In fact, this process is only applied to products or systems which require high precision (FPT, KMS,...). There are many software products launched every day, however, most of them do not have a great impact on society. If there are errors in the process of making them, they will not cause a great loss of money, assets and human society. Therefore, we often use other processes to cut off costs and effort to build a product.
 
-
----
-
 #### Related
 
 - [[Building product process from product manager's perspective]]
 
-#### Citations
-
+**Source**
 - [RUP ( Rational Unified Process )](https://theexplorationofmyworlds.wordpress.com/2012/07/02/rup-rational-unified-process/)
 - [Rational Unified Process](https://sceweb.uhcl.edu/helm/RationalUnifiedProcess/process/templates.htm)

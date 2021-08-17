@@ -1,5 +1,5 @@
 ---
-tags: #ux, #human_needs, #process, #skandhas
+tags: ux, process, skandhas
 ---
 
 
@@ -17,12 +17,10 @@ The five aggregates or heaps are: **form** (or material image, impression, **sen
 
 The five aggregates are often interpreted in the later tradition as an explanation of the constituents of person and personality. According to this interpretation, in each skandha – body, sensations, perceptions, mental formations and consciousness – there is emptiness and no substance.
 
----
-
 #### Related
 - [[Human needs]]
 - [[Maslow's hierarchy of needs]]
 - [[Seven deadly sins]]
 
-#### Citations
+**Source**
 - [What are the five skandhas] (https://www.lionsroar.com/what-are-the-five-skandhas/)

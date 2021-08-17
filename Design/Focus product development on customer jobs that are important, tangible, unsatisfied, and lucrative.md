@@ -1,5 +1,5 @@
 ---
-tags: ux, research, design, personas, jtbd
+tags: ux, design, personas, jtbd
 ---
 
 In value proposition design, focus your strongest efforts on customer jobs that fit in the middle of a Venn diagram comprising
@@ -12,9 +12,8 @@ In value proposition design, focus your strongest efforts on customer jobs that 
 ---
 
 #### Related
-
 -   [[¶ Jobs to be done]]
 
-#### Citations
+**Source**
 
 Osterwalder, Alexander. “The High Value Customer Jobs You Need to Focus On.” Strategyzer (blog). Accessed November 8, 2020. [Link](https://www.strategyzer.com/blog/the-high-value-customer-jobs-you-need-to-focus-on).

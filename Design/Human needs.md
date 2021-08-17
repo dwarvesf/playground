@@ -1,5 +1,5 @@
 ---
-tags: #ux, #design, #human_needs
+tags: ux, design
 ---
 
 We had already known about the software development process which helped all team members have an overview of building a product. To get a better insight into startup CEO/founders' incentive, we continued to learn about where ideas come from, why people want to bring an idea into reality, and what a good idea is.

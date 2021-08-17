@@ -3,7 +3,6 @@ tags: ux, design, personas
 ---
 
 Personas have a number of shortcomings:
-
 -   [[Personas alone can't help teams achieve empathy]]
 -   [[Personas lack rich context]]
 -   [[Personas may create space for assumptions]]
@@ -17,15 +16,12 @@ In addition, a large body of work has emerged around the Jobs to be Done framewo
 
 -   [[¶ Jobs to be done]]
 
----
-
 #### Related
 
 -   [[§ Personas]]
 -   [[¶ Persona]]
     
-
-#### Citations
+**Source**
 
 Cooper, Alan. _The Inmates Are Running the Asylum_. Sams Publishing, 2004.
 

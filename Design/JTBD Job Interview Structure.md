@@ -1,5 +1,5 @@
 ---
-tags: ux, research, design, personas, jbtd
+tags: ux, design, jbtd
 ---
 
 This interview structure can be used to uncover customer jobs-to-be-done.
@@ -37,10 +37,9 @@ This interview structure can be used to uncover customer jobs-to-be-done.
 ---
 
 #### Related
-
 -   [[¶ Persona]]
 -   [[Methods to overcome the limitations of personas]]
 
-#### Citations
 
+**Source**
 Kalbach, Jim, and Michael Schrage. _The Jobs To Be Done Playbook: Align Your Markets, Organization, and Strategy Around Customer Needs_. New York: Two Waves Books, 2020.

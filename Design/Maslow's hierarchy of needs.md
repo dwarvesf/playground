@@ -1,5 +1,5 @@
 ---
-tags: #ux, #design, #human_needs, #maslow
+tags: ux, design, maslow
 ---
 
 ![](https://www.simplypsychology.org/maslow-5.jpg)
