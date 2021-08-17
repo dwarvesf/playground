@@ -20,11 +20,11 @@ tags: cloudflare, worker
 - Request routing made easy, just inspect incoming `request` url/method/.etc like you normally did on browser
     - for AWS you'll have to mess with Route53 to get the right behavior (and eventually got slapped with CORS issues)
 - **Service Worker** is a web standard created specifically for intercepting request/response, and has been around for some times
-- By implementing CF Worker after Service Worker api, Cloudflare made it familiar for JS web devs to easily get used to the api, why avoiding re-invent yet another serverless api like AWS Lambda or Google Cloud functions .etc
+- By implementing CF Worker after Service Worker api, Cloudflare made it familiar for JS web devs to easily get used to the api, while avoid re-inventing yet another serverless api like AWS Lambda or Google Cloud functions .etc
 
 #### Batteries included
 - built-in fast KV store with async api
-    - in contrast AWS/Google/Azure require you to use their platform services .eg RDS, SQS bla bla with their own setup ceremonies to complex your setup
+    - in contrast AWS/Google/Azure require you to use their platform services .eg RDS, SQS bla bla with their own setup ceremonies to further complex your setup
 - ScheduledEvent, WebSocket, Stream, HTML rewriter, rate limit
 - [Durable Objects](https://developers.cloudflare.com/workers/runtime-apis/durable-objects): a transactional, key-value storage API
 
