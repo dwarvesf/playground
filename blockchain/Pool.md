@@ -1,3 +1,7 @@
+---
+tags: blockchain, pool
+---
+
 [Pool](https://kiemtienblog.com/pool-trong-coin/) là nơi mà các thợ đào gặp nhau, cùng nhau giải quyết những công việc gọi là Hashrate để nhận được các loại phần thưởng khác nhau. Thông thường là các loại tiền điện tử.
 
 Hashrate ->*tìm cách để nhận các coin free/lowgasfee. Đó là giải quyết các thuật toán trong chuỗi khối, hay còn gọi là “Đào”.*

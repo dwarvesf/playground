@@ -1,5 +1,5 @@
 ---
-tags: programming, practice
+tags: development, practice
 ---
 
 ### Shell

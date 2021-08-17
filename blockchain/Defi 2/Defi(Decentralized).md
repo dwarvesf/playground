@@ -1,6 +1,8 @@
+---
+tags: blockchain, defi
+---
 
-
-# DeFi
+### DeFi
 Một hệ sinh thái các dịch vụ tài chính xây dựng bằng [[dwarves/brain/_drafting/Crypto/Blockchain]]
 Mã nguồn mở, không cần sự cho phép của bất kì bên thứ 3 nào và minh bạch --> mạng ngang hàng P2P và dapp
 
@@ -48,14 +50,12 @@ Mặt trái của các traditional finances:
 
 > \>>>Next: Current App, Competitors, [finematics](https://www.youtube.com/channel/UCh1ob28ceGdqohUnR7vBACA) Get REKT (Defi Hacks)???
 
---------------------------------------------------------------------
-
 ##### App:
 [Debank.com](http://Debank.com) (e-wallet)
 [[Zapper]]
 
 
-##### Refer:
+##### Refer
  [**Open sea:**](https://opensea.io/collection/llamaz/?gclid=EAIaIQobChMI9pmdxJCR8QIVB6yWCh0pjw_iEAAYAiAAEgIa7fD_BwE). sàn giao dịch vật phẩm kỹ thuật số [[1. Community Owned Characters]] phi tập trung, hỗ trợ cn blockchain -> Sưu tập các tài sản (để check assets làm UI)
 —> giống tryshowtime [https://tryshowtime.com](https://tryshowtime.com)
 
@@ -66,6 +66,5 @@ Mặt trái của các traditional finances:
 
 **Gas Fee**
 
----
-#### Citation
+**Source**
 https://future.a16z.com/cryptos-fourth-wave-defi-poised-for-breakthrough/

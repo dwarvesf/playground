@@ -1,4 +1,6 @@
-(https://defirate.com/dex/)
+---
+tags: blockchain, defi
+---
 
 Năm 2020, bắt đầu phát triển 
 Năm 2021, tăng trưởng và trở thành xu hướng chủ đạo
@@ -18,3 +20,7 @@ Số liệu ngày 7/7/2021
 8. 1inch Exchange - 2.6461%
 9. Perpetual Protocol - 2.0179%
 10. Quick Swap - 1.8149%
+
+
+**Source**
+https://defirate.com/dex/

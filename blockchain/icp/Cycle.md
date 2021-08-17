@@ -1,5 +1,5 @@
 ---
-tags: cycle
+tags: blockchain, icp
 ---
 
 Lượng cycle tiêu thụ, chi trả phản ánh chi phí để run [[WebAsm]].

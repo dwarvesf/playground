@@ -1,5 +1,5 @@
 ---
-tags: canister
+tags: blockchain, icp
 ---
 
 Canister contains program and state. It's like a container.
@@ -9,8 +9,6 @@ Canister middleware sử dụng resources (CPU, network, etc.) của các nodes 
 There are 2 type of calls:
 - non-committing query calls: read/get --> không thay đổi dữ liệu
 - committing update call: update --> thay đổi dữ liệu
-
----
 
 1.  The "Login with DFINITY" service is something we call [Internet Identity](https://sdk.dfinity.org/docs/ic-identity-guide/what-is-ic-identity.html) and it securely authenticates users on the Internet Computer. It doesn't do anything for your app other than allow you to know that the user is authenticated on our network, and that we trust they are who they say they are.  
     You still manage your own users and access control, you just have the (highly recommended) option to integrate our auth solution to save you that part of the work.
@@ -22,7 +20,7 @@ There are 2 type of calls:
     You connect your ICP wallet to your `dfx identity` on the command line and can then convert ICP to cycles to power your canisters.
     
 
-Here are some other resources that should help you get started:
+**Source**
 -   SDK quickstart: [https://sdk.dfinity.org/docs/quickstart/quickstart-intro.html](https://sdk.dfinity.org/docs/quickstart/quickstart-intro.html)
 -   DFINITY examples: [https://github.com/dfinity/awesome-dfinity](https://github.com/dfinity/awesome-dfinity)
 -   CanCan (demo app): [https://github.com/dfinity/cancan](https://github.com/dfinity/cancan)

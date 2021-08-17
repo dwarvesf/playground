@@ -1,3 +1,7 @@
+---
+tags: blockchain, defi
+---
+
 ### Smart contract
 **Liquidity**
 A market broker or institution, which behaves as a market maker in a chosen asset class. 
@@ -20,7 +24,6 @@ gives you an idea what slippage to actually expect based on the size of the orde
 Khoản chênh lệch giữa giá lý thuyết và giá nhận thực tế
 
 ### Token list
-
 ENS = ethereum name service
 domain host trên ethereum chain 
 

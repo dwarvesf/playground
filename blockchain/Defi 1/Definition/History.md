@@ -1,3 +1,7 @@
+---
+tags: blockchain, defi
+---
+
 ### Bitcoin
 Invented in 2009, bắt đầu với Bitcoin, mang đến distributed ledger/blockchain --> peer-to-peer transfer (P2P) & non-sovereign digital asset (không chủ quyền)
 

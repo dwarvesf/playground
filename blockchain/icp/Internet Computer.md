@@ -1,7 +1,5 @@
 ---
-aliases:
-- ICP
-tags: ICP
+tags: blockchain, icp
 ---
 
 Internet Computer is a layer-1 protocol.

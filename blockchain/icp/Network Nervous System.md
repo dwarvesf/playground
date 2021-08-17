@@ -1,5 +1,5 @@
 ---
-aliases: NNS
+tags: blockchain, icp, nss
 ---
 
 NNS là software trung tâm, điều khiển việc voting các proposal của network.

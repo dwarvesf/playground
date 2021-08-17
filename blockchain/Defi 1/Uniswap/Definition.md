@@ -1,3 +1,7 @@
+---
+tags: blockchain, defi
+---
+
 Uniswap is a leading decentralized crypto exchange that runs on the Ethereum blockchain.
 The vast majority of crypto trading takes place on centralized exchanges such as Coinbase and Binance. These platforms are governed by a single authority (the company that operates the exchange), require users to place funds under their control and use a traditional order book system to facilitate trading.
 

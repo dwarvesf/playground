@@ -1,9 +1,8 @@
 ---
-tags: blockchain, bitcoin, hack
+tags: blockchain, bitcoin
 ---
 
 ### Unstoppable Code
-
 ![](https://1.bp.blogspot.com/-zWFZRWenTF4/YK8QIqIPtGI/AAAAAAAAGT4/_uzk1N8qm4YPVDQxnxs9wceKQjgMTAbfQCLcBGAsYHQ/s930/Defi100ExitScam.jpeg) 
 
 This is the website of DeFi100, a "decentralized finance" system running on the Binance Smart Chain, after the promoters pulled a $32M exit scam. Their message sums up the ethos of cryptocurrencies:  
@@ -155,6 +154,5 @@ Kelly addresses the [government attacker](https://joekelly100.medium.com/how-to-
 
 There are two further problems. First, Bitcoin is only one, albeit the most important, of almost 10,000 cryptocurrencies. Second, some of these other cryptocurrencies don't use Proof-of-Work. Ethereum, the second most important cryptocurrency, after nearly seven years work, is promising shortly to [transition from Proof-of-Work to Proof-of-Stake](https://blog.ethereum.org/2021/05/18/country-power-no-more/). The resources needed to perform a 51% attack on a Proof-of-Stake blockchain are not physical, and thus are not subject to seizure in the way Kelly assumes. I have written before on possible attacks in [_Economic Limits Of Proof-of-Stake Blockchains_](https://blog.dshr.org/2020/02/economic-limits-of-proof-of-stake.html), but only in the context of double-spending attacks. I plan to do a follow-up post discussing sabotage attacks on Proof-of-Stake blockchains once I've caught up with the literature
 
----
-
+**Source**
 https://blog.dshr.org/2021/06/unstoppable-code.html

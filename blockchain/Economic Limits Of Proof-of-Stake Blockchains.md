@@ -71,6 +71,5 @@ The authors cite a couple of papers I should have found earlier:
     
     This paper will repay further study.
 	
----
-
+**Source**
 https://blog.dshr.org/2020/02/economic-limits-of-proof-of-stake.html
