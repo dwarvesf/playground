@@ -1,5 +1,5 @@
 ---
-tags: microservice
+tags: microservice, pattern
 ---
 
 ### Two-phase commit pattern
@@ -14,7 +14,6 @@ tags: microservice
 - synchronous, delay during calling services, blocking resources -> bottleneck, deadlock
 
 **Q&A**  
-
 how do we handling errors during commit phrase -> retry on commit error?!, global transaction context tracking and calling delete all committed objects?!
 
 ### Saga pattern
@@ -27,7 +26,6 @@ how do we handling errors during commit phrase -> retry on commit error?!, globa
 **Cons**
 - difficult to bug and maintain event messages as system grows
 - no read isolation: committed data of a service might be gone after a second due to compensation transaction
-
 
 **Source**
 https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture

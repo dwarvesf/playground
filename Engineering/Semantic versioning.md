@@ -1,5 +1,5 @@
 ---
-tags: versioning
+tags: versioning, practice
 ---
 
 Versioning system that represents the product version, using a formal convention based on 3 parts in alpha numerics. 

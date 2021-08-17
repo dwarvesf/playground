@@ -1,5 +1,5 @@
 ---
-tags: sql, data
+tags: sql, data, practice
 ---
 
 ### ORM vs Plain SQL

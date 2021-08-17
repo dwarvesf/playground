@@ -1,5 +1,5 @@
 ---
-tags: elixir, garbage-collector
+tags: elixir, garbage
 ---
 
 BEAM process has its own stack and heap for small data binaries(<64bytes)

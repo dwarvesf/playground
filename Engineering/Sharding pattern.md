@@ -1,5 +1,5 @@
 ---
-tags: sharding
+tags: pattern
 ---
 
 ### What

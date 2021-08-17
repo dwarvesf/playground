@@ -1,5 +1,5 @@
 ---
-tags: strangler
+tags: architecture, strangler
 ---
 
 ### Context

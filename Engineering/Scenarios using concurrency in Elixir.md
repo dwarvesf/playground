@@ -3,7 +3,6 @@ tags: elixir, concurrency
 ---
 
 ### Fire and forget
-
 Tell the system to execute some code asynchronously and not care about when it finishes, nor the result.
 
 Solution: `Task` abstraction in elixir. Tasks are processes meant to run a single action within their life-cycle
@@ -37,7 +36,6 @@ Implementation:
 - Using Enum.map/2 and Task.await/1 to wait all of processes are done
 
 ### Scheduling work
-
 Tell the system run some work periodically every N minutes/hours/etc.
 
 Solution: GenServer abstraction. We save the period rule in the genserver. Using `Process.send_after/3` to trigger the `handle_info/2` processing function.
@@ -45,7 +43,6 @@ Solution: GenServer abstraction. We save the period rule in the genserver. Using
 Library: [Quantum](https://github.com/quantum-elixir/quantum-core)
 
 ### Caching data
-
 Tell the system cache the frequently data. Such as: caching the frequently response, temperature data.
 
 Solution:

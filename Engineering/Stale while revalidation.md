@@ -1,5 +1,5 @@
 ---
-tags: stale-while-validation, cache-control
+tags: practice, HTTP, cache
 ---
 
 - The **`Cache-Control`** HTTP header holds _directives_ (instructions) for caching (https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching) in both requests and responses.
