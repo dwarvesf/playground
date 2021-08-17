@@ -19,5 +19,5 @@ We often hear CEOs share that their products provide some values for users such 
 - [[Maslow's hierarchy of needs]]
 - [[Skandhas - the five aggregates]]
 
-**Source**
-- [Sevel Deadly Sins](https://en.wikipedia.org/wiki/Seven_deadly_sins)
+#### Citations
+- [Seven Deadly Sins](https://en.wikipedia.org/wiki/Seven_deadly_sins)
