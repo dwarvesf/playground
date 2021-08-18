@@ -27,5 +27,7 @@ how do we handling errors during commit phrase -> retry on commit error?!, globa
 - difficult to bug and maintain event messages as system grows
 - no read isolation: committed data of a service might be gone after a second due to compensation transaction
 
-**Source**
+---
+
+**Citation**
 https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture

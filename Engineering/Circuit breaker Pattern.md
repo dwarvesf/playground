@@ -25,6 +25,6 @@ When using the circuit breaker, we might need to care about:
 ![[circuit-breaker-diagram.png]]
 
 ---
-**Source**
+**Citation**
  - https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker
  - https://martinfowler.com/bliki/CircuitBreaker.html

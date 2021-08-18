@@ -32,5 +32,7 @@ Gamers will go through 3 states
 - start
 - end
 
-**Source**
+---
+
+**Citation**
 - [Chapter 5 State Machine Diagrams | System Analysis (fhv.at)](https://homepages.fhv.at/thjo/lecturenotes/sysan/state-machine-diagrams.html)

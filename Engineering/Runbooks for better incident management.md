@@ -21,5 +21,7 @@ tags: devops
 -   Give an explanation of why the component of the system was designed as it appears to runbook user
 -   Some runbooks have sub-processes - it's important to clarify what are these and how they relate to the process they are children of
 
-**Source**
+---
+
+**Citation**
 https://five9sclub.substack.com/p/runbooks-for-better-incident-management

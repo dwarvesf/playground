@@ -30,6 +30,8 @@ tags: pattern, cqrs
  - Messaging
  - Eventual consistency: Read and Write DB need to be consistent
 
-**Source**
+---
+
+**Citation**
 - https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs
 - https://martinfowler.com/bliki/CQRS.html

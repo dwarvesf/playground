@@ -26,7 +26,9 @@ The saga design pattern is a way to manage data consistency across microservices
 
 ![[From_2PC_To_Saga.png]]
 
-**Source**
+---
+
+**Citation**
  - https://microservices.io/patterns/data/saga.html
  - https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga
  - https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/

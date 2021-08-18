@@ -115,7 +115,9 @@ There are a number of factors that have held developers back from becoming super
 
 Overall, Git acts like a time machine. When you travel from A to B in time, you should always expect there is a button to come back to A.
 
-**Source**
+---
+
+**Citation**
 - https://learngitbranching.js.org
 - https://nvie.com/posts/a-successful-git-branching-model/
 - https://danielkummer.github.io/git-flow-cheatsheet/

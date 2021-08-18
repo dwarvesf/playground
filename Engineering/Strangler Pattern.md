@@ -20,7 +20,9 @@ tags: architecture, strangler
 
 ![[strangler.png]]
 
-**Source**
+---
+
+**Citation**
  - https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig
  - https://dzone.com/articles/monolith-to-microservices-using-the-strangler-patt
  - https://martinfowler.com/bliki/StranglerFigApplication.html

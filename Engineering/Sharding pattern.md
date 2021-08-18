@@ -50,7 +50,8 @@ Each strategy should suite with specific requirements, we should carefully choos
 
 ![[DB_image_1_cropped.png]]
 
+---
 
-**Source**
+**Citation**
  - https://www.digitalocean.com/community/tutorials/understanding-database-sharding
  - https://docs.microsoft.com/en-us/azure/architecture/patterns/sharding

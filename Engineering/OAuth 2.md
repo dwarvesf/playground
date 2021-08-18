@@ -119,7 +119,9 @@ How to resolve or decrease this problem?
 
 ```
 
-**Source**
+---
+
+**Citation**
 - https://datatracker.ietf.org/doc/html/rfc6749
 - https://gaynwinters.wordpress.com/tag/user-agent-based-application/
 - https://www.oauth.com/oauth2-servers/server-side-apps/authorization-code/
