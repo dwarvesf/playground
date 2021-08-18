@@ -1,3 +1,6 @@
+---
+tags: business, strategy
+---
 
 ### Notes
 

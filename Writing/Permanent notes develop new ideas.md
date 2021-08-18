@@ -1,3 +1,7 @@
+---
+tags: writing, permanent-note, zettelkasten
+---
+
 Permanent notes are not intended just for the [[¶ Collector's Fallacy | collection of ideas]]; instead, they help us develop ideas.
 
 Therefore, it's important to be selective when creating permanent notes. Treating everything as thought it may be a permanent note can dilute the value of the Zettelkasten as a whole. Instead, write them (as always) with an [[Take notes with connection in mind | eye toward connection]]. Think about how they relate to your own thinking and writing. Let ideas emerge organically, but make explicit connections to other notes wherever possible.
