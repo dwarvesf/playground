@@ -32,5 +32,7 @@ Cho phép ẩn danh, không cần xác thực (KYC)
 **Giao dịch nhanh chóng**
 Không cần đặt lệnh mua/bán và đợi khớp lệnh (order), sử dụng [[Smart Contracts]]
 
+---
+
 **Source**
 https://academy.binance.com/en/articles/what-is-a-decentralized-exchange-dex

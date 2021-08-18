@@ -1,8 +1,11 @@
 ---
 tags: tool
 ---
+
+### M$ Automation Tool 
 Automation Tool mới đến từ vị trí của M$, được viết public version đầu tiên vào đầu năm ngoái
-So sánh với Puppeteer:
+
+### So sánh với Puppeteer
 - API  methods khá giống nhau
 - Puppeteer chỉ hỗ trợ chrome, Playwright hỗ trợ thêm cả webkit và firefox
 - API của Playwright có phần dễ sử dụng hơn (vd: page.click sẽ tự động đợi cho element available và visible)
@@ -33,6 +36,7 @@ Có 1 điểm thú vị là top contributor của Puppeteer giờ đã trở th�
 
 /graphs/contributors
 
+---
 
 **Source**
 - [GitHub - microsoft/playwright: Node.js library to automate Chromium](https://github.com/microsoft/playwright)

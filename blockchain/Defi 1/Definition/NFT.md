@@ -26,6 +26,8 @@ Lưu trữ:
 - "Nội dung" của NFT (graphic, image,...) được lưu off-chain. Dữ liệu trong NFT sẽ lưu nơi NFT đang được lưu trữ trên một server nào đó, hoặc IPFS 
 	- IPFS:  (InterPlanetary File System):  decentralized, dữ liệu tải lên được mã hoá và tải lên các máy tính khác cùng tham gia với mạng => ko sợ máy chủ sập + truy cập nhanh hơn, có thể tải dữ liệu từ máy chứa dữ liệu gần nhất. 
 	
+---
+
 **Source**
 https://www.christies.com/features/NFT-101-Collection-Guide-to-NFT-11654-7.aspx
 https://finematics.com/what-are-nfts-and-how-can-they-be-used-in-defi/

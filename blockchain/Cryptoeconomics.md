@@ -34,6 +34,8 @@ Vấn đề này thường được gọi là [Vấn đề Chung của Byzantine
 
 Với việc sáng tạo ra Bitcoin, Satoshi Nakamoto đã đưa các đòn bẩy kinh tế vào mạng ngang hàng và đã giải quyết được vấn đề này.
 
+---
+
 **Source**
 https://www.placeholder.vc/blog/2019/1/5/the-cryptoeconomic-circle
 https://www.placeholder.vc/blog/2019/1/10/funding-cryptonetworks

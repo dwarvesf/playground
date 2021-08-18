@@ -29,6 +29,8 @@ This file can be edit/ adjust using crontab command
 
 task: Auto update database at 09:30AM on every day of August
 
+---
+
 **Source**
 - https://ostechnix.com/a-beginners-guide-to-cron-jobs/
 - https://www.marksanborn.net/linux/learning-cron-by-example/

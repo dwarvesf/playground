@@ -2,7 +2,7 @@
 tags: rust
 ---
 
-Why
+### Why
 - Because a lot of people are adopting this language
 - They are writing more things in , and about Rust
 - Some of these things are things that matter to plenty of people
@@ -10,7 +10,7 @@ Why
 - Most of these projects are open-sourced -> It means they're calling for more hands to increase, feedback and optimize
 - Rust really resolved the problems. People see the good part of it and it get widely used (another example is Go with lightweight for scaling app)
 
-The issue
+### The issue
 - Dealing with Rust maybe more complex and needs adaptability
 - Developers may not write application in Rust; but they msut deal with the program that uses Rust
 - Talent pool: hiring with Rust skill may be a highlight on resume
@@ -19,6 +19,7 @@ The issue
 1. One of Rust's highlight is parallelism. We once endorsed Go for its `concurrency`. What's the difference between these twos? And what kind of scenario is suitable for both?
 
 ---
+
 **Source**
 - [Concurrency and Parallelism in Go](https://mayurwadekar2.medium.com/concurrency-and-parallelism-in-golang-c8327701fd94)
 - [Difference in Concurrency and Parallelism](https://viblo.asia/p/phan-biet-khai-niem-xu-ly-concurrency-dong-thoi-va-parallelism-song-song-4P856nBO5Y3)

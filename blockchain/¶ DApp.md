@@ -39,6 +39,7 @@ A Dapp is an application that is **mostly** or **entirely** decentralized. The p
 - The *Inter-Planetary File System* (IPFS) is a decentralized content-addressable storage system that distributes stored objects among peers in a P2P network. 
 - Content addressable” means that each piece of content (file) is hashed and the hash is used to identify that file. You can then retrieve any file from any IPFS node by requesting it by its hash.
 
+---
 
 **Source**
 [ethereumbook chap12](https://github.com/ethereumbook/ethereumbook/blob/develop/12dapps.asciidoc)

@@ -10,6 +10,7 @@ In DEX, orders are executed on-chain with [[Smart Contract]] and [[Atomic Swap]]
 user do not lost control of their funds
 
 ---
+
 #### Related
 - Blockchain
 - [[Market share - DEX]]

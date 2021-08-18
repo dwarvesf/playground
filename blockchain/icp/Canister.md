@@ -19,6 +19,7 @@ There are 2 type of calls:
 3.  Your dapp is hosted _on_ the Internet Computer. No need for hosting anything locally or on (what we refer to as) legacy infrastructure like AWS. All of its state, logic, and UI are held in canisters on "nodes" in data centers around the globe, and can be accessed by a web browser just like any other website/app.  
     You connect your ICP wallet to your `dfx identity` on the command line and can then convert ICP to cycles to power your canisters.
     
+---
 
 **Source**
 -   SDK quickstart: [https://sdk.dfinity.org/docs/quickstart/quickstart-intro.html](https://sdk.dfinity.org/docs/quickstart/quickstart-intro.html)

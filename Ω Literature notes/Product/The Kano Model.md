@@ -3,7 +3,7 @@ tags: product, features, kano
 title: the Kano Model
 ---
 
-### definition
+### Definition
 - a model to define the essential level of the next features
 - based on Kano model, product's features are created out of 3 level
 	- Threshold Attributes: the basic functions. users expect this
@@ -11,7 +11,7 @@ title: the Kano Model
 	- Excitement Attributes: additional function, make the product different.
 
 
-### example & execution
+### Example & execution
 **example** of 3 level in a cellphone camera function
 
 |attributes|description|example|purpose|
@@ -34,7 +34,7 @@ the Kano model then applies these 3 types into 2 metrics:
 - assess user segment <> cost they can afford
 - map them into product roadmap 
 
-### use cases to apply
+### Use cases to apply
 goal: prioritize which feature to work on next
  limited time
  limited resources

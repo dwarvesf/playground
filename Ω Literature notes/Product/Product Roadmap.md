@@ -41,6 +41,8 @@ The schedule that helps to measure the execution progress and make sure each fea
 **5. Product Milestone**
 A product development process must be divided into milestones. It break the large goal into smaller achievements. By doing this, teammate can actively arrange their time and effort to meet the goal effectively. 
 
+---
+
 #### Citation
 - [What is a Product Roadmap? The Ultimate Guide and Resources (productplan.com)](https://www.productplan.com/learn/what-is-a-product-roadmap/)
 - [What Is a Product Roadmap? Definition and Product Roadmap Examples (airfocus.com)](https://airfocus.com/glossary/what-is-a-product-roadmap/)

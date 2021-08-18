@@ -20,5 +20,7 @@ How-to survive
 - niche market > specialized
 - trainer
 
-**Source**
+---
+
+**Citation**
 https://betterprogramming.pub/when-do-programmers-retire-is-35-the-end-72d173760ee2

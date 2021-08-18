@@ -8,5 +8,7 @@ tags: blockchain
 - này cơ bản là sẽ có 1 contract làm Proxy (contract này immutable) config dc 1 target contract (real contract handle logic của mình). End user sẽ luôn connect vào proxy contract, proxy contract sẽ sử dụng 1 kỹ thuật là `delegatecall` để fwd nó sang target contract.
 - khi mình cần thay đổi code contract thì mình chỉ cần deploy contract mới lên chain, config proxy contract call sang contract mới là được.
 
+---
+
 **Source**
 - https://blog.openzeppelin.com/proxy-patterns/

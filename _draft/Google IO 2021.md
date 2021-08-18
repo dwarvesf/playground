@@ -53,5 +53,7 @@ GG Lens: Improve shopping habit
 - display pending purchase in carts
 - Shopify integration: products display on search
 
+---
+
 **Source**
 - https://www.wired.com/story/google-io-2021-highlights/

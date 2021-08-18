@@ -66,5 +66,7 @@ Mặt trái của các traditional finances:
 
 **Gas Fee**
 
+---
+
 **Source**
 https://future.a16z.com/cryptos-fourth-wave-defi-poised-for-breakthrough/

@@ -1,6 +1,8 @@
 ---
 tags: example
 ---
+### Example
+
 Để giải quyết vấn đề này thì đầu tiên mình nghĩ  đến chuyện sử dụng hàm: 
 `export async function getServerSideProps(context)`
 Dùng biến `context` (cái này kiểu như `*gin.Context` trong golang) ta có thể access đc property `req` (chính là http request) sau đó lấy ra được hostname.

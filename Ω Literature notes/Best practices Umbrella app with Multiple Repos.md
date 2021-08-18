@@ -2,7 +2,8 @@
 tags: elixir
 ---
 
-Brief: about the db connection issue in umbrella app
+#### Brief
+About the db connection issue in umbrella app
 - Solution 1: Normally you’d do that by inversion of control. Create a behaviour in each app, which handles the concern of “accessing a db” and use configuration to let it use `MyApp.Repo` in prod and some other implementation in development/testing.
 - Solution 2: Your apps can depend on each other, so you could have a shared Repo app that is used by all the different components, and yet each of those can have their own schemas, which may overlap or not depending on your architecture.
 
@@ -37,5 +38,7 @@ They must have a consistent set of dependencies, and they have a mix.exs file, b
 
 This sounds like you’re missing some abstraction here. For me `MyApp.Repo` is mostly a runtime construct handling db connections to a certain database (pooling and all that stuff). And it sounds like you want to reduce coupling to the app holding that module. Normally you’d do that by inversion of control. Create a behaviour in each app, which handles the concern of “accessing a db” and use configuration to let it use `MyApp.Repo` in prod and some other implementation in development/testing. If you want you could even reuse `Ecto.Repo` as the needed behaviour, as ecto already has a behaviour in front of the actual implementation within the library.
 
-Citation
+---
+
+**Citation**
 - https://elixirforum.com/t/best-practices-umbrella-app-with-multiple-repos/21113

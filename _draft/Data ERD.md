@@ -30,6 +30,8 @@ ERDs are mostly developed during concept visualization, database design, databas
 	- many:1
 	- many:many
 
+---
+
 **Source**
 - [Explaning the ERD](https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/#erd-data-models-conceptual)
 - [Difference of the relationship](https://stackoverflow.com/questions/3113885/difference-between-one-to-many-many-to-one-and-many-to-many)

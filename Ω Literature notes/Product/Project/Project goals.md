@@ -10,7 +10,6 @@ Typically, software project have three common goals:
 * complete all required functions, 
 * and have low defects (High quality). 
 
-
 In my experience, it is difficult to meet all three goals so I advise people to identify one as the top priority to work on. This will help them to stay focus rather than spend too much effort on something they can not control. To deliver what the customer considers the most important is what success means to software project and in order to do that, project manager must ask the customer which is the highest priority.
 
 Many people do not agree with me that they have one top priority so let me explain this in a simple case study: Assume that its is three weeks before the scheduled delivery date but the defect count is high and the last function is not quite finished yet. What would you do? If you decide to deliver the software at the scheduled date then do you think the customer is happy with the unfinished product and high defect count? If you choose to deliver the product as soon as all functions are completed then do you think the customer is happy when the product is late although it meets all functionality? If you decide to add few more weeks to fix all the defects and functionality then do you think the customer would be happy if the delivery is late even the product has high quality?

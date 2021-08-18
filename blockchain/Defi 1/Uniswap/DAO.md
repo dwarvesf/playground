@@ -38,5 +38,7 @@ DAO là tổ chức của một nhóm người tương tác với nhau theo self
 	- Bất kể khả năng các chính phủ sẽ sớm điều hành các quốc gia trên chuỗi, nhiều trường hợp sử dụng cho DAO cho thấy rằng khả năng kết hợp với các option dựa trên blockchain khác sẽ góp phần lớn trong việc làm DAO phổ biến hơn.
 	- Khi các giải pháp trên chuỗi và các ứng dụng dApps ngày càng phát triển, thì khả năng tiếp cận và các tiện ích của các DAO cũng sẽ theo sau.
 
+---
+
 **Source**
 https://d-core.net/decetranlized-autonomous-organizations-explained/

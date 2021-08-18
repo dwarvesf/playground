@@ -1,7 +1,8 @@
 ---
 tags: thought
 ---
-PoV
+
+### What make useless stuff fun
 - out of passion
 - practice based on interest
 - no expectation or obligation to ever become more. It is just for fun, learning, and curiousity.
@@ -10,10 +11,13 @@ PoV
 - no harassment / judgement 
 - thee satisfaction from having people actually use the code would greatly outweigh the inconvenience of being pestered about new features.
 
-Fix your own pain point -> that how you prove your product works
+#### Fix your own pain point 
+-> that how you prove your product works
 - because it works for you
 - solve it once for yourself
 - then reuse it, end up saving for everybody
+
+---
 
 **Source**
 - https://web.eecs.utk.edu/~azh/blog/makinguselessstuff.html

@@ -11,7 +11,8 @@ tags: API
 - Link with CRM tools for database storage
 - Link with form management tool for application status management.
 
-More reading: https://www.notion.so/What-s-New-157765353f2c4705bd45474e5ba8b46c
+---
 
-**Source**
+**Citation**
 - https://www.reddit.com/r/Notion/comments/nbk5ch/notion_launches_their_api_public_beta/
+- https://www.notion.so/What-s-New-157765353f2c4705bd45474e5ba8b46c

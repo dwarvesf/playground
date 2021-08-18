@@ -2,10 +2,10 @@
 tags: productivity
 ---
 
-POV
+### Point of view
 - Dev should spend more effort on nurturing the mindset on clarity in communcation. 
 
-Rules
+### Rules
 1. Explain the underlying problems
 2. Explain them concisely
 3. Use pronouns.
@@ -14,8 +14,10 @@ Rules
 2. Succcint - explain ngắn gọn: Dựa vào bối cảnh (context) và đối tượng communicate -> Lọc ra thông tin liên quan/ không liên quan -> Tránh dùng 1 msg cho nhiều audience 
 3. Trong context có nhiều hơn 1 đối tượng > Dùng đại từ/ tên riêng để định danh.
 
-Why they should
+### Why they should
 - Misunderstanding in context leads to wrong assumption, cause roadblocks and rework.
 
 ---
-**Source** : https://tomgamon.com/posts/clarity/
+
+**Citation**
+https://tomgamon.com/posts/clarity/

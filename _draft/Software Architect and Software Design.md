@@ -53,5 +53,7 @@ SD responsible for code-level design.
 	- catergorize the interfaces <> structure the code so that a class won't be forced to implement a redundant function
 	- decoupling the code 
 
+---
+
 **Source**
 - https://codeburst.io/software-architecture-the-difference-between-architecture-and-design-7936abdd5830

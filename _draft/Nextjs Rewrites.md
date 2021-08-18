@@ -1,7 +1,10 @@
 ---
 tags: nextjs
 ---
+
+### Nextjs Rewrites
 Bế tắc => googling => sau 1 thời gian research thì tìm ra được một solution ntn.
+
 Nextjs có 1 feature là `Rewrites`. Rewrites cho phép chúng ta map 1 cái income request  path cho một cái destination request path khác.  Chúng ta sẽ Rewrite ntn:
 
 ```async rewrites() {

@@ -1,6 +1,5 @@
 ---
 tags: product, feedback
-title: Feedback Loop
 ---
 
 ### What is feedback-loop

@@ -23,5 +23,7 @@ First, as previously mentioned, while XML is a markup language, JSON, on the ot
 
 However, JSON vs. XML is not entirely a fair comparison. JSON is often wrongly perceived as a substitute for XML, but while JSON is a great choice to make simple data transfers, it does not perform any processing or computation. XML might be "old" and complex, but its complexity is what enables this language to not only transfer data but also to process and format objects and documents.
 
+---
+
 **Source**
 - https://dzone.com/articles/json-vs-xml-which-one-is-better

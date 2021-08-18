@@ -6,5 +6,7 @@ tags: blockchain, defi
 
 *Yield tạm dịch là lợi nhuận, Farming tạm dịch là canh tác. Yield Farming tạm dịch là canh tác lợi nhuận. Trong bài này mình sẽ giữ nguyên thuật ngữ “Yield Farming", “Yield”, “Farming”, “Farm”.*
 
+---
+
 **Source**
 https://academy.binance.com/vi/articles/what-is-yield-farming-in-decentralized-finance-defi

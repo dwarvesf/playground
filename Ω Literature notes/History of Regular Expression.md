@@ -72,5 +72,6 @@ After yesterday’s Fastly outage, [this XKCD seems appropriate](https://xkcd.co
 -   [Sponsored Link] If you’re at a SaaS company, check out [Variance](https://www.variance.com/). It’s a tool to help grow customers (some people are calling it a [PLG CRM](https://www.variance.com/land/plg-crm)). If you have questions or want to try it, [get in touch](https://www.variance.com/contact). (_NRB_)
 
 ---
-Source: 
+
+**Citation**
 https://whyisthisinteresting.substack.com/p/the-regular-expression-edition

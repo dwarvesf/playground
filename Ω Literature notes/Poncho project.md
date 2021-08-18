@@ -138,6 +138,8 @@ config :my_app_ui, MyAppUiWeb.Endpoint,
   url: [host: "nerves.local", port: 80]
 ```
 
-**Source**
+---
+
+**Citation**
 - https://embedded-elixir.com/post/2017-05-19-poncho-projects/
 - https://hexdocs.pm/nerves/user-interfaces.html

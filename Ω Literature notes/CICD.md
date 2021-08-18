@@ -1,5 +1,5 @@
 ---
-tags: ci, cd
+tags: development
 ---
 
 ### CI
@@ -22,5 +22,7 @@ tags: ci, cd
 - provides constant feedback
 - the pipeline keeps traverse between production // source code for bug tracking
 
-**Source**
+---
+
+**Citation**
 - https://kylefarmer85.medium.com/what-is-ci-cd-76d71b82898d

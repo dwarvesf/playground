@@ -28,6 +28,8 @@ Madsbjerg argues that our culture—especially in the business world—has becom
 -   [Spend more time in the problem space](https://publish.obsidian.md/mobydiction/notes/Spend+more+time+in+the+problem+space)
 -   [Design thinking promotes superficial ways of knowing](https://publish.obsidian.md/mobydiction/notes/Design+thinking+promotes+superficial+ways+of+knowing)
 
+---
+
 #### Citation
 
 Madsbjerg, Christian. Sensemaking: The Power of the Humanities in the Age of the Algorithm. Hachette Books, 2017.

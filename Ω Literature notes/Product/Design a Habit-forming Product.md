@@ -1,7 +1,8 @@
 ---
 tags: product, habit forming
 ---
-## Design habit-forming products
+
+### Design habit-forming products
 According to Nir Eyal, there are 6 **Hooks Elements** for entrepreneur to consider before start building engaging & habit-forming products
 
 **1. Associates with users' pains.**
@@ -25,5 +26,7 @@ The more people discuss on the product, the better impact it creates. Somewhere 
 **6. Engagement isn't everything.**
 Engagement isn't the only metric for startup success. When investing, look for"GEMs," which are companies that have "Growth, Engagement, and Monetization." 
 
-### Citation
+---
+
+#### Citation
 - [Hooked](http://www.nirandfar.com/hooked) by Nir Eyal

@@ -70,6 +70,8 @@ The authors cite a couple of papers I should have found earlier:
     > Despite common arguments about the prevalence of blockchain technology, in terms of security, privacy, and immutability, in reality, several attacks can be launched against them. This paper provides a systematic literature review on long-range attacks for proof of stake protocols. If successful, these attacks may take over the main chain and partially, or even completely, rewrite the history of transactions that are stored in the blockchain. To this end, we describe how proof of stake protocols work, their fundamental properties, their drawbacks, and their attack surface. After presenting long-range attacks, we discuss possible countermeasures and their applicability.
     
     This paper will repay further study.
-	
+
+---
+
 **Source**
 https://blog.dshr.org/2020/02/economic-limits-of-proof-of-stake.html

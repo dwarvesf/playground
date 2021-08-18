@@ -1,5 +1,5 @@
 ---
-tag: developer, writing
+tag: productivity
 ---
 
 For many reasons
@@ -12,6 +12,8 @@ Resolution
 - Write simply. Note the keyword. Then link them into sentences. Then group sentences into paragraph. 
 
 Input: I'm using Obsidian, a markdown-based tool to compose documents and store a version on GitHub. The setup step is quite basic. Some alternatives can be iA Writer, Typora, or HackMD, Notion & Dillinger (for team collab).
+
+---
 
 **Source**
 - https://kislayverma.com/programming/why-programmers-dont-write-documentation/

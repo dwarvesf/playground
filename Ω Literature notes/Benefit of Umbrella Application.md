@@ -10,6 +10,8 @@ In my opinion there can also be drawbacks to this. A drawback to the umbrella is
 
 In many cases I find that an umbrella app is not necessary for the project I'm working on, because the applications in the umbrella are never going to run standalone anyway. Often I prefer having projects with different namespaces in the `lib/` folder while still treating them as applications with separate responsiblities. 
 
-**Source**
+---
+
+**Citation**
 - [Docs for "Dependencies and umbrella projects" at elixir-lang.org](https://elixir-lang.org/getting-started/mix-otp/dependencies-and-umbrella-projects.html)
 - [Benefit of Umbrella Application](https://stackoverflow.com/questions/59958055/what-are-the-benefits-of-umbrella-applications)

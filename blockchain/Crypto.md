@@ -9,6 +9,8 @@ Hoạt động dựa vào 3 quá trình chính:
 * **Market**: Sàn giao dịch chính là nơi có trang web và bạn có thể mua/ bán cũng như thực hiện giao dịch tiền điện tử. [[Defi(Decentralized)]] and [[Centralized]]
 * **E-wallet**  Bộ phận ví này là những chương trình phần mềm có lưu trữ khóa công khai hoặc khóa riêng, nó sẽ cho phép người sử dụng có thể gửi/nhận tiền điện tử hoặc theo dõi các số dư của họ.
 
+---
+
 #### Related
 [[Blockchain/Defi 1/Uniswap/Definition]]
 [[ERC-20]]

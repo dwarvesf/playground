@@ -21,6 +21,7 @@ Số liệu ngày 7/7/2021
 9. Perpetual Protocol - 2.0179%
 10. Quick Swap - 1.8149%
 
+---
 
 **Source**
 https://defirate.com/dex/
