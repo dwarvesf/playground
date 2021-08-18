@@ -1,4 +1,5 @@
-## Notes
+
+### Notes
 
 -   [¶ Finite and infinite games](https://publish.obsidian.md/mobydiction/notes/%C2%B6+Finite+and+infinite+games)
 -   [Build organizations around a long-term narrative](https://publish.obsidian.md/mobydiction/notes/Build+organizations+around+a+long-term+narrative)

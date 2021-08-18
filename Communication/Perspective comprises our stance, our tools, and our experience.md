@@ -1,3 +1,6 @@
+---
+tags: communication
+---
 According to Roger Martin, perspective on a given issue is formed by the interaction between three things: our **stance**, our **tools**, and our **experience**.
 
 **Stance** describes our personal domain of knowledge as well as our sense of ourselves and our purpose. This frames our personal perspective and approach to the problem space.

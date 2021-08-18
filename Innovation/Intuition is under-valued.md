@@ -1,0 +1,3 @@
+---
+tags: innovation, intuition
+---
