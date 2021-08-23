@@ -1,9 +1,5 @@
 ---
-tags: 
-- zettelkasten
-- zettelkasten/permanent
-- zettelkasten/fleeting
-- zettelkasten/literature
+tags: writing, zettelkasten
 ---
 
 ### Kinds of notes
@@ -19,6 +15,12 @@ Some approaches to zettelkasten include "[[Literature note to quote and referenc
 Notes should never be copied verbatim. Rephrasing ideas creates an immediate feedback loop: it requires one to wrestle with the idea and ensure that they understand it enough to articulate it in a new way. This requires understanding.
 
 ---
+**Related**
+- [[Fleeting notes to capture thoughts]]
+- [[Permanent notes develop new ideas]]
+- [[Literature note to quote and reference content]]
+- [[Permanent notes are permanently useful]]
+- [[§ Zettelkasten]]
 
 **Citations**
 

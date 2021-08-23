@@ -1,7 +1,7 @@
 ---
 tags: writing, zettelkasten
 ---
-
+### Fleeting notes
 The goal of fleeting notes are to **capture thoughts** on the go, using any capture method.
 
 -   Fleeting notes need to be absolutely painless, short and spontaneous. It's just a starting point for growing a new idea and a reminder of thoughts you couldn't processed yet. 
@@ -22,17 +22,17 @@ Forms of capture like highlighting or underlining passages in a book and margina
 Because fleeting notes are reminders, they can be trashed after they've been processed.
 
 
-
 ---
 
 **Related**
-
--   [[Make notes in your own words]]
--   [[Permanent notes develop new ideas]]
--   [[Literature note to quote and reference content]]
+- [[Make notes in your own words]]
+- [[Permanent notes develop new ideas]]
+- [[Literature note to quote and reference content]]
+- [[Writing is thinking]]
+- [[§ Writing]]
+- [[§ Zettelkasten]]
 
 **Citations**
-
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 
 Luhmann, Niklas. “Communicating with Slip Boxes.” Translated by Manfred Kuehn. Two Essays by Niklas Luhmann. Accessed October 19, 2020. https://luhmann.surge.sh/communicating-with-slip-boxes.

@@ -11,8 +11,9 @@ The zettelkasten served as a constant source of ideas and inspiration, ensuring 
 ---
 
 **Related**
-
 - [[¶ Collector's Fallacy]]
+- [[Knowledge work means transforming old ideas into new ones]]
+- [[§ Zettelkasten]]
 
 **Citations**
 

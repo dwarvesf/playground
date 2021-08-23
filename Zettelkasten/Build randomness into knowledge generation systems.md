@@ -1,5 +1,5 @@
 ---
-tags: zettelkasten
+tags: writing, zettelkasten
 ---
 
 It's tempting to structure our knowledge systematically; but, this has significant pitfalls. Systematizing knowledge forces us to make decisions early on that may confine us to narrow lanes of inquiry, rather than confront us with novel information and connections we would not otherwise have expected. 
@@ -10,9 +10,10 @@ Better, then, to incorporate the possibility of randomness into our knowledge ma
 
 **Related**
 
--   [[Brainstorming surfaces available ideas, not new ideas]]
--   [[Novel metaphors create novel ways of thinking]]
--   [[Design environments to facilitate behaviours]]
+- [[Brainstorming surfaces available ideas, not new ideas]]
+- [[Novel metaphors create novel ways of thinking]]
+- [[Design environments to facilitate behaviours]]
+- [[§ Zettelkasten]]
 
 **Citation**
 
