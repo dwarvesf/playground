@@ -13,6 +13,8 @@ The publication of a strategy signals the end of its useful life. In a dynamic e
 -   [[Base strategy on leading, not lagging, indicators]]
 -   [Our vision of the future is always constrained by our view of the past.](https://publish.obsidian.md/mobydiction/notes/Our+vision+of+the+future+is+always+constrained+by+our+view+of+the+past.)
 -   [Strategy is time-sensitive](https://publish.obsidian.md/mobydiction/notes/Strategy+is+time-sensitive)
+- [[¶ OODA Loop]]
+- [[¶ Strategy]]
 
 #### Citations
 

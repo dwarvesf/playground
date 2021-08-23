@@ -7,6 +7,9 @@ Good strategy simplifies. It is focused around a limited number of critical insi
 This is the essence of strategy: it determines the right fulcrum point and then applies the appropriate pressure required to move an object. It creates leverage.
 
 ---
+#### Related
+- [[≈ Good Strategy Bad Strategy]]
+- [[¶ Strategy]]
 
 #### Citations
 

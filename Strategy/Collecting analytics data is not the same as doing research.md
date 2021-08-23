@@ -12,7 +12,8 @@ The abundance of data available to use has led to us spending more time creating
 
 #### Related
 
--  [Abundant data makes us jump to quantitative data as the solution to every problem.](https://publish.obsidian.md/mobydiction/notes/Abundant+data+makes+us+jump+to+quantitative+data+as+the+solution+to+every+problem.)
+- [Abundant data makes us jump to quantitative data as the solution to every problem.](https://publish.obsidian.md/mobydiction/notes/Abundant+data+makes+us+jump+to+quantitative+data+as+the+solution+to+every+problem.)
+- [[¶ Strategy]]
 
 #### Citations
 

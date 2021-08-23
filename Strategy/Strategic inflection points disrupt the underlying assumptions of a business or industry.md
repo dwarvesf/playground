@@ -14,7 +14,8 @@ Subsequently, in the emergent phase, stable players recognize how the world is c
 
 #### Related
 
--   [[Change happens gradually, then suddenly]]
+- [[Change happens gradually, then suddenly]]
+- [[¶ Strategy]]
 
 #### Citations
 

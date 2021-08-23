@@ -12,12 +12,14 @@ There is a roughly inverse relationship between strategic degrees of freedom and
 
 #### Related:
 
--   [[Inflection points reveal themselves first at the edges]]
--   [[Narratives generate real-world effects]]
--   [[Our vision of the future is always constrained by our view of the past]]
--   [Quantitative analysis is not inherently more reliable than qualitative data](https://publish.obsidian.md/mobydiction/notes/Quantitative+analysis+is+not+inherently+more+reliable+than+qualitative+data)
--   [Qualitative research creates mental models about the problem space.](https://publish.obsidian.md/mobydiction/notes/Qualitative+research+creates+mental+models+about+the+problem+space.)
--   [Sensemaking MOC](https://publish.obsidian.md/mobydiction/Sensemaking+MOC)
--   [strategy is about developing perspective](https://publish.obsidian.md/mobydiction/strategy+is+about+developing+perspective)
--   [Strategy is time-sensitive](https://publish.obsidian.md/mobydiction/notes/Strategy+is+time-sensitive)
--   [Winning strategies result from good sensemaking](https://publish.obsidian.md/mobydiction/notes/Winning+strategies+result+from+good+sensemaking)
+- [[Inflection points reveal themselves first at the edges]]
+- [[Narratives generate real-world effects]]
+- [[Our vision of the future is always constrained by our view of the past]]
+- [Quantitative analysis is not inherently more reliable than qualitative data](https://publish.obsidian.md/mobydiction/notes/Quantitative+analysis+is+not+inherently+more+reliable+than+qualitative+data)
+- [Qualitative research creates mental models about the problem space.](https://publish.obsidian.md/mobydiction/notes/Qualitative+research+creates+mental+models+about+the+problem+space.)
+- [Sensemaking MOC](https://publish.obsidian.md/mobydiction/Sensemaking+MOC)
+- [strategy is about developing perspective](https://publish.obsidian.md/mobydiction/strategy+is+about+developing+perspective)
+- [Strategy is time-sensitive](https://publish.obsidian.md/mobydiction/notes/Strategy+is+time-sensitive)
+- [Winning strategies result from good sensemaking](https://publish.obsidian.md/mobydiction/notes/Winning+strategies+result+from+good+sensemaking)
+- [[≈ Good Strategy Bad Strategy]]
+- [[¶ Strategy]]

@@ -10,8 +10,8 @@ The term "garbage in, garbage out" derives from programming. Bad input data yiel
 ---
 
 #### Related
-
--   [[Base strategy on leading, not lagging, indicators]]
--   [[Knowledge is a compounding investment]]
--   [[UX researchers should care about strength of evidence]]
--   [[Winning strategies result from good sensemaking]]
+- [[¶ Strategy]]
+- [[Base strategy on leading, not lagging, indicators]]
+- [[Knowledge is a compounding investment]]
+- [[UX researchers should care about strength of evidence]]
+- [[Winning strategies result from good sensemaking]]

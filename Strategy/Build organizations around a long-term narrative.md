@@ -17,6 +17,9 @@ One possible explanation for the bias toward the short-term may be an increased 
 Similar concepts include Jay Acunzo's notion of "aspirational anchors" and the "shared value" model described by Jim Kalbach, Michael Tanamachi, and Michael Schrage in the context of [jobs to be done](https://publish.obsidian.md/mobydiction/notes/%C2%B6+Jobs+to+be+done+(JTBD)).
 
 ---
+#### Related
+- [[≈ The Infinite Game]]
+- [[¶ Strategy]]
 
 #### Citation
 

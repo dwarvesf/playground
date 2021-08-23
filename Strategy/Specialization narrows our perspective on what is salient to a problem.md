@@ -12,9 +12,10 @@ When faced with challenges, we often turn to specialists for their finely honed 
 
 #### Related
 
--   [[Narratives enable us to act decisively in conditions of uncertainty]] - Specialization inures us to specific narratives about the world.
--   [People fill information gaps with assumptions](https://publish.obsidian.md/mobydiction/notes/People+fill+information+gaps+with+assumptions) \- Specialization conditions the assumptions we apply to conditions of uncertainty
--   [Situations of radical uncertainty cannot be resolved through probabilistic thinking alone](https://publish.obsidian.md/mobydiction/notes/Situations+of+radical+uncertainty+cannot+be+resolved+through+probabilistic+thinking+alone) \- Example of how we rely on familiar mental models when facing conditions of radical uncertainty
+- [[Narratives enable us to act decisively in conditions of uncertainty]] - Specialization inures us to specific narratives about the world.
+- [People fill information gaps with assumptions](https://publish.obsidian.md/mobydiction/notes/People+fill+information+gaps+with+assumptions) \- Specialization conditions the assumptions we apply to conditions of uncertainty
+- [Situations of radical uncertainty cannot be resolved through probabilistic thinking alone](https://publish.obsidian.md/mobydiction/notes/Situations+of+radical+uncertainty+cannot+be+resolved+through+probabilistic+thinking+alone) \- Example of how we rely on familiar mental models when facing conditions of radical uncertainty
+- [[¶ Strategy]]
 
 #### Citations
 

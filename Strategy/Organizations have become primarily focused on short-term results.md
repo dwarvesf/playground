@@ -16,9 +16,10 @@ Real change requires delayed gratification. Many things that are the most valuab
 
 #### Related:
 
--   [Fixating on metric data biases us to the short term](https://publish.obsidian.md/mobydiction/notes/Fixating+on+metric+data+biases+us+to+the+short+term)
--   [Efficiency is over-valued](https://publish.obsidian.md/mobydiction/Efficiency+is+over-valued)
--   [Loss aversion creates tension between the need to innovate and the need to protect the status quo in large organizations](https://publish.obsidian.md/mobydiction/notes/Loss+aversion+creates+tension+between+the+need+to+innovate+and+the+need+to+protect+the+status+quo+in+large+organizations)
+- [Fixating on metric data biases us to the short term](https://publish.obsidian.md/mobydiction/notes/Fixating+on+metric+data+biases+us+to+the+short+term)
+- [Efficiency is over-valued](https://publish.obsidian.md/mobydiction/Efficiency+is+over-valued)
+- [Loss aversion creates tension between the need to innovate and the need to protect the status quo in large organizations](https://publish.obsidian.md/mobydiction/notes/Loss+aversion+creates+tension+between+the+need+to+innovate+and+the+need+to+protect+the+status+quo+in+large+organizations)
+- [[¶ Strategy]]
 
 #### Citations
 

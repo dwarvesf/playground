@@ -8,10 +8,12 @@ Sensemaking is the practice of interpreting disparate sources of observed inform
 
 #### Related
 
--   [[¶ OODA Loop]]
--   [[Rationalistic models of human behaviour are limiting]]
--   [[Qualitative research creates mental models about the problem space]]
--   ! [[Perspective is the most important differentiator]]
+- [[¶ OODA Loop]]
+- [[≈ Good Strategy Bad Strategy]]
+- [[Rationalistic models of human behaviour are limiting]]
+- [[Qualitative research creates mental models about the problem space]]
+- ! [[Perspective is the most important differentiator]]
+- [[¶ Strategy]]
 
 #### Citations
 

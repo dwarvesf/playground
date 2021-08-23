@@ -7,9 +7,7 @@ tags: writing, memory
 ---
 
 #### Related
-
--   Memory
--   [[§ Writing]]
+[[§ Writing]]
 
 #### Citations
 

@@ -32,11 +32,12 @@ To gain an advantage over an opponent, focus on the Orient phase. You can do thi
 
 #### Related
 
--   [[¶ Abductive reasoning]]
--   [[¶ Deductive reasoning]]
--   [[Strategic inflection points disrupt the underlying assumptions of a business or industry]]
--   [[Strategy is time-sensitive]]
--   [[Winning strategies result from good sensemaking]]
+- [[¶ Abductive reasoning]]
+- [[¶ Deductive reasoning]]
+- [[Strategic inflection points disrupt the underlying assumptions of a business or industry]]
+- [[Strategy is time-sensitive]]
+- [[Winning strategies result from good sensemaking]]
+- [[¶ Strategy]]
 
 #### Citations
 

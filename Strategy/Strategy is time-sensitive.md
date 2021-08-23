@@ -10,7 +10,8 @@ Moreover, strategies have a shelf life: the longer they are in the wild, the mor
 
 #### Related
 
--   [[¶ OODA Loop]]
+- [[¶ OODA Loop]]
+- [[¶ Strategy]]
 
 #### Citations
 

@@ -12,6 +12,7 @@ Finally, write permanent notes as though they will be permanent. They should be 
 
 ---
 #### Related
+- [[§ Zettelkasten]]
 - [[§ Writing]]
 
 #### Citations

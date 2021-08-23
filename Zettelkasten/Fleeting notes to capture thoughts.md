@@ -1,7 +1,5 @@
 ---
-tags: 
-- zettelkasten
-- zettelkasten/fleeting
+tags: writing, zettelkasten
 ---
 
 The goal of fleeting notes are to **capture thoughts** on the go, using any capture method.

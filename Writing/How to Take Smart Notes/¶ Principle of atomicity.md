@@ -1,5 +1,5 @@
 ---
-tags: zettelkasten, atomicity
+tags: writing, zettelkasten, atomicity, idea
 ---
 
 The principle of atomicity is a governing idea of the #Zettelkasten method of notetaking and knowledge management.
@@ -17,6 +17,7 @@ But, notes should not be so narrowly focused that they become fragments. If note
 -   [[Ideas are constellations]]
 -   [[People fill information gaps with assumptions]]
 -   [[Writing is thinking]]
+-   [[§ Writing]]
    
 #### Citations
 
