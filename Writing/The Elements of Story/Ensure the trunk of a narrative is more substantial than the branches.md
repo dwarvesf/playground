@@ -11,6 +11,9 @@ When writing, ensure that the core theme of an idea isn't overshadowed by subord
 -   [[Build organizations around a long-term narrative]] - An extension of narrative to business development: for businesses, as for a good story, there will be things that must be left aside or skimmed over to pursue what really matters
 -   [[Good strategy simplifies a complex problem space]] - A strategy is a narrative that makes judicious cuts to avoid distraction
 
+-   [[≈ The Elements of Story]]
+-   [[§ Writing]]
+-   
 #### Citations
 
 Flaherty, Francis. _The Elements of Story: Field Notes on Nonfiction Writing._ Reprint edition. Harper Perennial, 2010.

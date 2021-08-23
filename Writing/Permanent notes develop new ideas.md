@@ -11,6 +11,8 @@ One way to facilitate connection is by [[Decontextualize ideas to make them new 
 Finally, write permanent notes as though they will be permanent. They should be written such that if you encounter one years from now, completely absent of any other context, the note should be completely understandable (including relevant citations!).
 
 ---
+#### Related
+- [[§ Writing]]
 
 #### Citations
 

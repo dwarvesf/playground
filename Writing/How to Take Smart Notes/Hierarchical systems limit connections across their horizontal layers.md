@@ -1,5 +1,5 @@
 ---
-tags: zettelkasten
+tags: writing, zettelkasten
 ---
 
 Hierarchical systems direct the flow of information and connection vertically, and inhibit horizontal connections. For instance, in hierarchical organizations, information and leadership usually moves from the top down. In information systems, hierarchical systems create knowledge silos that put walls between potentially related facts that don't roll up to the same parent folder or structural unit. Whether in organizations or in file folder structures, this makes it far more difficult to share information in that the number of relationships a node can have is effectively limited to to its parent and those other nodes with which it shares a parent.
@@ -11,6 +11,9 @@ Hierarchical systems direct the flow of information and connection vertically, a
 -   [[Innovation thrives in open environments]] - Open societies tend to be more innovative than rigidly hierarchical societies.
 -   [[Rigid systems are fragile systems]] - Hierarchical systems may be more rigid than flat or horizontally organized systems.
 -   [[§ Zettelkasten]] - A method of knowledge management that eschews hierarchies and instead emphasizes connections between notes
+-   [[¶ Principle of atomicity]]
+-   [[≈ How to Take Smart Notes]]
+-   [[§ Writing]]
 
 **Citations**
 

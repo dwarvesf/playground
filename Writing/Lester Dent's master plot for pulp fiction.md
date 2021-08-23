@@ -1,5 +1,5 @@
 ---
-tags: writing
+tags: writing, story-telling
 ---
 
 Prolific pulp writer Lester Dent (Doc Savage) outlines a simple master plot for crafting short (6000-word) stories.
@@ -42,3 +42,8 @@ Avoid monotony. Change up the physical threats. Build atmosphere with sensual im
 -   The hero must extricate himself from his troubles through his own skills, training, or strength
 -   Introduce a final twist, e.g. the villain is an unexpected person; the treasure is worthless
 -   Have a great punch line at the end that leaves the reader with a warm feeling
+
+---
+
+#### Related
+- [[§ Writing]]

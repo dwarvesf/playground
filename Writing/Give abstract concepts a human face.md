@@ -13,6 +13,7 @@ But this doesn't mean just conveying an anecdote, or interviewing any person thi
 #### Related
 
 -   [[Personas make abstract research concrete for design teams]] - A persona is an example of this concept applied to user research
+-   [[§ Writing]]
 
 #### Citations
 

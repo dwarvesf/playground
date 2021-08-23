@@ -8,6 +8,8 @@ Effective system design accepts the inevitability of change and rather than resi
 
 - [[Different kinds of uncertainty]]
 - [[Change is disorienting because it is constant]]
+- [[≈ How to Take Smart Notes]]
+- [[§ Writing]]
 
 #### Citations
 

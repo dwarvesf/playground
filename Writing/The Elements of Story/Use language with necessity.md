@@ -10,6 +10,9 @@ Writing demands a certain economy. Extraneous words, flowery phrases, unnecessar
 
 -   [[Ensure the trunk of a narrative is more substantial than the branches]] - This concept extrapolated to the larger sense of a work
 -   [[Marry form with function]] - Every part of a creative work has purpose and should support the larger theme
+-   [[≈ The Elements of Story]]
+-   [[§ Writing]]
+
 
 #### Citations
 

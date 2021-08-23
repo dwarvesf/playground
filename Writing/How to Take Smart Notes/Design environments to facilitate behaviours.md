@@ -1,5 +1,5 @@
 ---
-tags: smart-note
+tags: writing, smart-note
 ---
 
 Willpower is a finite resource, and difficult to sustain. Designing environments to facilitate desire behaviour is a much more effective approach in the long run.
@@ -14,6 +14,9 @@ Design environments to reduce friction associated with the behaviours we wish to
 
 -   [[Rigid systems are fragile systems]]
 -   [[Writing by hand is a forcing function]]
+-   [[¶ Principle of atomicity]]
+-   [[≈ How to Take Smart Notes]]
+-   [[§ Writing]]
 
 #### Citations
 

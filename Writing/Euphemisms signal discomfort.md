@@ -11,6 +11,7 @@ Simon Sinek suggests that in business, euphemisms are used to discuss matters th
 #### Related
 
 -   [[Vague language signals imprecise thinking]] - The way we express an idea is a symptom of how we feel about that idea.
+-   [[§ Writing]]
 
 #### Citations
 

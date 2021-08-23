@@ -8,6 +8,8 @@ However, also read broadly to help create connections across different contexts 
 
 - [[Take notes with connection in mind]]
 - [[Optimize to be wrong, not right]]
+- [[≈ How to Take Smart Notes]]
+- [[§ Writing]]
 
 #### Citations
 

@@ -1,10 +1,5 @@
 ---
-tags: 
-- zettelkasten
-- zettelkasten/fleeting
-- zettelkasten/literature
-- zettelkasten/permanent
-- writing
+tags: writing, method, zettelkasten
 ---
 
 Sönke Ahrens describes his method for writing an article with a zettelkasten. Writing should not start with a blank sheet of paper, but emerge from the bottom up through conversation with one's notes. Writing does not begin with a blank page.
@@ -23,13 +18,16 @@ The translation phase is critical; an essay that is assembled from modular notes
 
 ---
 
-**Related**
+#### Related
 
--   [[Narrative sequencing informs meaning]] - The sequence in which the zettelkasten forms ideas may not make for a good reading experience
--   [[Good research starts with a good question]] - Look to the zettelkasten first to see how it might inform your answer and guide your subsequent research
--   [[≈ The Elements of Story]] - Flaherty, Francis. The Elements of Story: Field Notes on Nonfiction Writing. Reprint edition. Harper Perennial, 2010.
+- [[Narrative sequencing informs meaning]] - The sequence in which the zettelkasten forms ideas may not make for a good reading experience
+- [[Good research starts with a good question]] - Look to the zettelkasten first to see how it might inform your answer and guide your subsequent research
+- [[≈ The Elements of Story]] - Flaherty, Francis. The Elements of Story: Field Notes on Nonfiction Writing. Reprint edition. Harper Perennial, 2010.
+- [[≈ How to Take Smart Notes]]
+- [[§ Writing]]
 
-**Citations**
+
+#### Citations
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 

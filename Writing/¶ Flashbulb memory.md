@@ -9,6 +9,7 @@ tags: writing, memory
 #### Related
 
 -   Memory
+-   [[§ Writing]]
 
 #### Citations
 

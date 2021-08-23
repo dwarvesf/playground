@@ -19,6 +19,10 @@ A manual on the craft of nonfiction writing from a "story doctor" for the _New Y
 -   [[Marry form with function]]
 -   [[Give abstract concepts a human face]]
 
+---
+#### Related
+[[§ Writing]]
+
 #### Citation
 
 Flaherty, Francis. _The Elements of Story: Field Notes on Nonfiction Writing._ Reprint edition. Harper Perennial, 2010.

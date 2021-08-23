@@ -11,6 +11,8 @@ Writing further provides a productive feedback loop: to be able write something 
 #### Related
 
 - [[Make notes in your own words]]
+- [[≈ How to Take Smart Notes]]
+- [[§ Writing]]
 
 #### Citations
 

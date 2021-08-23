@@ -38,10 +38,10 @@ Each scene and sequel is a series of MRUs.
 
 ---
 
-**Related**
+#### Related
 
 -   [[§ Writing]]
 
-**Citation**
+#### Citation
 
 Ingermanson, Randy. “Writing The Perfect Scene: Advanced Fiction Writing Tips.” _Advanced Fiction Writing_ (blog). Accessed January 9, 2021. [Link](https://www.advancedfictionwriting.com/articles/writing-the-perfect-scene/).

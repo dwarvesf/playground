@@ -15,6 +15,7 @@ We must do more than acquire texts. We need to read them and most importantly as
 -   [[Knowledge is a compounding investment]]
 -   [[Knowledge work means transforming old ideas into new ones]]
 -   [[Writing is thinking]]
+-   [[§ Writing]]
 
 #### Citations
 

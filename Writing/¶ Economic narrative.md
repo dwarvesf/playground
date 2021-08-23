@@ -26,6 +26,7 @@ As Shiller puts it, "new contagious narratives cause economic events, and econom
 
 -   [[Narratives generate real-world effects]]
 -   [[Metaphors structure our interpretation of the world]]
+-   [[§ Writing]]
 
 #### Citations
 

@@ -12,7 +12,10 @@ This is a key tenet of how a Zettelkasten is organized; its heavily linked struc
 
 #### Related
 
--   [[Design environments to facilitate behaviours]]
+- [[Design environments to facilitate behaviours]]
+- [[§ Zettelkasten]]
+- [[≈ How to Take Smart Notes]]
+- [[§ Writing]]
 
 #### Citations
 
