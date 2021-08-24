@@ -11,6 +11,7 @@ tags: communication, story-telling, metaphor
 - [[Metaphors structure our interpretation of the world]]
 - [[Narratives generate real-world effects]]
 - [[≈ Metaphors We Live By]]
+- [[§ Writing]]
 
 #### Citations
 

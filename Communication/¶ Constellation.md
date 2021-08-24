@@ -11,6 +11,8 @@ According to Robert Shiller, large-scale [[¶ Economic narrative | economic narr
 -   [[Ideas are constellations]]
 -   [[Economic narratives spread like diseases]]
 -   [[Narrative helps the human mind make sense of events]]
+-   [[≈ Narrative Economics]]
+
 
 #### Citations
 

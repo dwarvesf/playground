@@ -22,6 +22,9 @@ Metaphors are not simply linguistic flourishes that we use to artfully describe 
 -   [Experientialism suggests that truth is relative to our interactions with the world](https://publish.obsidian.md/mobydiction/notes/Experientialism+suggests+that+truth+is+relative+to+our+interactions+with+the+world)
 
 ---
+**Related**
+- [[≈ Metaphors We Live By]]
+- [[commu]]
 
 **Citation**
 Lakoff, George, and Mark Johnson. _Metaphors We Live By_. University of Chicago Press, 2008.
