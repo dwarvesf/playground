@@ -8,7 +8,7 @@ For example, a provider wants to put 2 ETH into ETH/USDT pool, he has to put bot
 
 ---
 #### Relation
-- [[Decentralized Exchange]]
+- [[¶ Decentralized Exchange]]
 - [[Atomic Swap]]
 
 

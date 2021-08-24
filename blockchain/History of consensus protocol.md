@@ -15,6 +15,8 @@ History of [[consensus protocol]]:
 - But in 2009, which a birth of [[Bitcoin]], people started to realize that pBFT is a thing
 
 ---
+**Related**
+- 
 
-**Source**
+**Citation**
 https://softwareengineeringdaily.com/wp-content/uploads/2018/03/SED547-Tendermint.pdf

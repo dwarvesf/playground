@@ -18,7 +18,7 @@ Two main criterias:
 #### Related
 - Blockchain
 - [[DeFi Application]]
-- [[Decentralized Exchange]]
+- [[¶ Decentralized Exchange]]
 
 #### Citation
 [Decentralized Finance: What It Is, Why It Matters](https://future.a16z.com/cryptos-fourth-wave-defi-poised-for-breakthrough/)

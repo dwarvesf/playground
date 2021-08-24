@@ -17,7 +17,7 @@ Thuộc tính của NFT:
 
 NFT được mint bằng smart contract, trong đó quy định một số thuộc tính của NFT như TokenID (unique), owner address và một số thuộc tính khác để nhận dạng NFT (graphic, image,...). NFT được giao dịch trên blockchain, nên tất cả các history transaction từ lúc được mint đến các giao dịch qua nhiều owner sẽ được minh bạch.
 
-Mặc dù NFT có thể được thực hiện trên bất kì blockchain nào hỗ trợ smart contract, nhưng hiện nay phổ biến nhất là ERC-721 và ERC-1155 trên Ethereum
+Mặc dù NFT có thể được thực hiện trên bất kì blockchain nào hỗ trợ smart contract, nhưng hiện nay phổ biến nhất là [[¶ ERC]]-721 và ERC-1155 trên Ethereum
 - ERC-721 là tiêu chuẩn chung để tạo NFT, ERC-721 cho phép tạo contract có thể được sử dụng để tạo các token có thể phân biệt với các thuộc tính khác nhau. ERC721 được tạo ra bằng cách viết code trong smart contract theo một chuẩn chung, bằng ngôn ngữ như Solidity.
 - ERC-1155 là tiêu chuẩn để tạo cả NFT và token có thể thay thế. VD: game có 2 loại asset, non-fungibility và fungibility. 
 

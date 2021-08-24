@@ -10,9 +10,10 @@ Thick data is often overlooked because it is less universally applicable than th
 
 #### Related
 
--   [[Qualitative research creates mental models about the problem space]]
--   [[Quantitative analysis is not inherently more reliable than qualitative data]]
--   [Quant data is lossy](https://publish.obsidian.md/mobydiction/notes/Quant+data+is+lossy)
+- [[Qualitative research creates mental models about the problem space]]
+- [[Quantitative analysis is not inherently more reliable than qualitative data]]
+- [Quant data is lossy](https://publish.obsidian.md/mobydiction/notes/Quant+data+is+lossy)
+- [[¶ Sensemaking]]
 
 #### Citations
 

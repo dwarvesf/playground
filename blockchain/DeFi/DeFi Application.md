@@ -18,7 +18,7 @@ DeFi allows any individual to take out or supply a loan without approval from a 
 - [Nuo Network]
 
 ## Decentralized Exchange
-[[Decentralized Exchange]] allow users to swap their assets without having to transfer custody of the underlying collateral
+[[¶ Decentralized Exchange]] allow users to swap their assets without having to transfer custody of the underlying collateral
 - [0x Protocol]
 - [1inch]
 - [Bancor]

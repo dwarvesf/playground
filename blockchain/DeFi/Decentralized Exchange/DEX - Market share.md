@@ -19,7 +19,7 @@ Report on 7/7/2021
 
 ---
 #### Relation
-- [[Decentralized Exchange]]
+- [[¶ Decentralized Exchange]]
 
 #### Citation
 - [Decentralized Exchanges News 2021]((https://defirate.com/dex/))

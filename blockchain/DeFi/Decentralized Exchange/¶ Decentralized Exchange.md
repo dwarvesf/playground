@@ -14,8 +14,8 @@ user do not lost control of their funds
 #### Related
 - Blockchain
 - [[Market share - DEX]]
-- [[History of Defi]]
-- [[Liquidity Pool]]
+- [[¶ History of Defi]]
+- [[¶ Liquidity Pool]]
 - [[Yield Farming]]
 
 #### Citation

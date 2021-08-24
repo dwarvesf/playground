@@ -5,7 +5,7 @@ tags: blockchain, nft
 ### Vấn đề hiện tại
 *'Chưa đủ thị trường và nhu cầu để phát triển'*
 
-Một khi [[NFT]] có thể duy trì một cộng đồng gồm những người sưu tập sớm đầy nhiệt huyết, những người có nội dung về nhân vật, thì thách thức sau đó là làm thế nào để phát triển cộng đồng đó, phát triển nhân vật và phân phối nó đến một lượng lớn khán giả trên các nền tảng truyền thông chính thống
+Một khi NFT có thể duy trì một cộng đồng gồm những người sưu tập sớm đầy nhiệt huyết, những người có nội dung về nhân vật, thì thách thức sau đó là làm thế nào để phát triển cộng đồng đó, phát triển nhân vật và phân phối nó đến một lượng lớn khán giả trên các nền tảng truyền thông chính thống
 
 ### Questions
 **1. Những loại quyết định nào nên được tối ưu hóa [[DAO]]?**

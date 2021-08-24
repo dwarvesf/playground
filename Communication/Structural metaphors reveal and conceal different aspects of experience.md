@@ -15,8 +15,9 @@ Some examples of structural metaphors:
 
 #### Related
 
--   [[Metaphors create coherent systems of meaning]]
--   [[Metaphors structure our interpretation of the world]]
+- [[Metaphors create coherent systems of meaning]]
+- [[Metaphors structure our interpretation of the world]]
+- [[≈ Metaphors We Live By]]
 
 #### Citations
 

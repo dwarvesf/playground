@@ -1,5 +1,5 @@
 ---
-tags: communication
+tags: communication, narrative
 ---
 
 Researchers sharing results should strive to inform their audiences rather than persuade them with partisan reporting. The goal should not be to change beliefs, but to provide people with information that they can determine themselves how best to respond to. This means avoiding neat, tidy narratives and focusing instead of honesty and transparency.

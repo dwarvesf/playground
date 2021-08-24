@@ -1,5 +1,5 @@
 ---
-tags: communication, story-telling 
+tags: communication, story-telling, narrative
 ---
 
 The human mind crafts its understanding of events by forming them into a narrative. Kahnemann and Tversky’s “representativeness heuristic” suggests that people form expectations based on an idealized story or model, and evaluate expectations based on how well it fits that model rather than probabilities.
@@ -18,7 +18,8 @@ Amy Webb suggests that narratives are powerful tools for communicating future sc
 
 #### Related
 
--   [[Metaphors structure our interpretation of the world]]
+- [[Metaphors structure our interpretation of the world]]
+- [[≈ Narrative Economics]]
 
 #### Citations
 

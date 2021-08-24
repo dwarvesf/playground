@@ -10,10 +10,11 @@ This sense of salience can vary dramatically between different people: it is inf
 
 #### Related
 
--   [[Cognitive diversity enhances team problem solving capabilities]] - Building a team that is cognitively diverse expends our sense of salience
--   [[Specialization narrows our perspective on what is salient to a problem]] - Specialization frames what we view as salient
--   [[Our vision of the future is always constrained by our view of the past]] - Our past experience and training constrains our vision
--   [[Perspective comprises our stance, our tools, and our experience]] - Describes elements that form our perspective
+- [[Cognitive diversity enhances team problem solving capabilities]] - Building a team that is cognitively diverse expends our sense of salience
+- [[Specialization narrows our perspective on what is salient to a problem]] - Specialization frames what we view as salient
+- [[Our vision of the future is always constrained by our view of the past]] - Our past experience and training constrains our vision
+- [[Perspective comprises our stance, our tools, and our experience]] - Describes elements that form our perspective
+- [[≈ The Opposable Mind]]
 
 #### Citations
 

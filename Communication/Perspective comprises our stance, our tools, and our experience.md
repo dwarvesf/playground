@@ -15,8 +15,9 @@ These different elements do not flow linearly from one to another; they mutually
 
 #### Related
 
--   [Honing intuition](https://publish.obsidian.md/mobydiction/notes/Honing+intuition) \- We can hone our intuition by acquiring new knowledge and experiences.
--   [Salience is subjective](https://publish.obsidian.md/mobydiction/notes/Salience+is+subjective) \- What we view as salient to a problem or situation is informed by our subjective experiences
+- [Honing intuition](https://publish.obsidian.md/mobydiction/notes/Honing+intuition) \- We can hone our intuition by acquiring new knowledge and experiences.
+- [Salience is subjective](https://publish.obsidian.md/mobydiction/notes/Salience+is+subjective) \- What we view as salient to a problem or situation is informed by our subjective experiences
+- [[≈ The Opposable Mind]]
 
 #### Citations
 

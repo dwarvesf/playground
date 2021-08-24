@@ -8,10 +8,11 @@ Orientational metaphors organize concepts in relation to one another, typically 
 
 #### Related
 
--   [[Metaphors structure our interpretation of the world]]
--   [[Metaphors create coherent systems of meaning]]
--   [[Structural metaphors reveal and conceal different aspects of experience]]
+- [[Metaphors structure our interpretation of the world]]
+- [[Metaphors create coherent systems of meaning]]
+- [[Structural metaphors reveal and conceal different aspects of experience]]
+- [[≈ Metaphors We Live By]]
 
 #### Citations
 
--   [[≈ Metaphors We Live By | Lakoff, George, and Mark Johnson. Metaphors We Live By. University of Chicago Press, 2008.]]
+- [[≈ Metaphors We Live By | Lakoff, George, and Mark Johnson. Metaphors We Live By. University of Chicago Press, 2008.]]

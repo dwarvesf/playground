@@ -48,7 +48,7 @@ Sự kiện cuối cùng: Token UNI. Tất cả người dùng trước đây c�
 ---
 #### Relation
 - [[¶  DeFi (Decentralized Finance)]]
-- [[Decentralized Exchange]]
+- [[¶ Decentralized Exchange]]
 
 #### Citation
 [History Of DeFi – From Inception To 2021 And Beyond](https://finematics.com/history-of-defi-explained/)

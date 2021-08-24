@@ -8,8 +8,9 @@ tags: communication
 
 #### Related
 
--   [[Four Theories of Truth]]
--   [[Rationalistic models of human behaviour are limiting]]
+- [[Four Theories of Truth]]
+- [[Rationalistic models of human behaviour are limiting]]
+- [[≈ Metaphors We Live By]]
 
 #### Citations
 
