@@ -1,7 +1,7 @@
 ---
-tags: ux, design, research, skeuomorphism
+tags: ux, design, research, skeuomorphism, innovation
 ---
-
+### Skeuomorphism
 Skeuomorphism in design describes the rendering of digital items in terms of their real-life counterparts. For example, skeuomorphic design might render a notebook application such that it resembles a physical notebook.
 
 These metaphors can limit our capacity for understanding the possibility of digital and non-organic tools and agents. They constrain our understanding of the nature of the digital creation based on physical limitations that may not apply to a digital setting.
@@ -18,6 +18,7 @@ Lakoff and Johnson use the term "radial metaphors" to discuss how metaphors can 
 -   [Metaphors structure our interpretation of the world](https://publish.obsidian.md/mobydiction/notes/Metaphors+structure+our+interpretation+of+the+world) - The metaphors we use to understand thing structures our thoughts about them.
 -   [Novel metaphors create novel ways of thinking](https://publish.obsidian.md/mobydiction/notes/Novel+metaphors+create+novel+ways+of+thinking) \- Applying new metaphors can expand our perspective on familiar problems or situations
 -   [Our vision of the future is always constrained by our view of the past.](https://publish.obsidian.md/mobydiction/notes/Our+vision+of+the+future+is+always+constrained+by+our+view+of+the+past.) \- The lens of the past limits our ability to see future possibilities
+-   [[§ Innovation]]
 
 #### Citations
 

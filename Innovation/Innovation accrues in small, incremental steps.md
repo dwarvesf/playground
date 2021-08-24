@@ -1,6 +1,7 @@
 ---
-tags: innovation
+tags: innovation, writing
 ---
+### Innovation accrues in small, incremental steps
 
 Innovation doesn't typically happen in great leaps forward, or in sudden "eureka" moments of inspiration. More commonly, it accrues over time with small, incremental steps.
 
@@ -11,6 +12,9 @@ Innovation doesn't typically happen in great leaps forward, or in sudden "eureka
 -   [[Innovation cascades]]
 -   [[De-risk innovation by making smaller bets]]
 -   [[Knowledge is a compounding investment]]
+-   [[≈ How to Take Smart Notes]]
+-   [[§ Writing]]
+-   [[§ Innovation]]
 
 #### Citations
 

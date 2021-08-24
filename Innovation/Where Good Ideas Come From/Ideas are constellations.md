@@ -1,7 +1,7 @@
 ---
 tags: writing, idea, innovation, decontextualizing
 ---
-
+### Ideas are constellations
 Ideas are not self-contained, discrete objects. Rather, they emerge as connections between different thoughts and concepts.
 
 Walter Benjamin wrote that "ideas are to objects as constellations are to stars." That is, ideas emerge out of seemingly random proximity between one thought or another until we begin to perceive a pattern.
@@ -14,10 +14,14 @@ It's useful to facilitate this process by following the [[¶ Principle of atomic
 
 #### Related
 
--   [[Integrate innovation functions with the broader organization]]
--   [[Knowledge work means transforming old ideas into new ones]]
--   [[¶ Principle of atomicity]]
--   [[Take notes with connection in mind]]
+- [[Integrate innovation functions with the broader organization]]
+- [[Knowledge work means transforming old ideas into new ones]]
+- [[¶ Principle of atomicity]]
+- [[Take notes with connection in mind]]
+- [[Decontextualize ideas to make them new]]
+- [[§ Innovation]]
+- [[§ Writing]]
+- [[≈ Where Good Ideas Come From]]
 
 #### Citations
 

@@ -10,10 +10,10 @@ Martec's law describes a conflict between the pace at which technology changes a
 
 #### Related
 
--   [[Change happens gradually, then suddenly]]
--   [Organizations have become primarily focused on short-term results](https://publish.obsidian.md/mobydiction/notes/Organizations+have+become+primarily+focused+on+short-term+results)
--   [[Our vision of the future is always constrained by our view of the past]]
+- [[Change happens gradually, then suddenly]]
+- [Organizations have become primarily focused on short-term results](https://publish.obsidian.md/mobydiction/notes/Organizations+have+become+primarily+focused+on+short-term+results)
+- [[Our vision of the future is always constrained by our view of the past]]
+- [[§ Innovation]]
 
 #### Citations
-
 Brinker, Scott. “Martec’s Law: Technology Changes Exponentially, Organizations Change Logarithmically.” _Chief Marketing Technologist_ (blog), June 13, 2013. [https://chiefmartec.com/2013/06/martecs-law-technology-changes-exponentially-organizations-change-logarithmically/](https://chiefmartec.com/2013/06/martecs-law-technology-changes-exponentially-organizations-change-logarithmically/).

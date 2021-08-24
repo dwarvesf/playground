@@ -1,7 +1,7 @@
 ---
-tags: innovation
+tags: innovation, strategy
 ---
-
+### Inflection points reveal themselves first at the edges
 Because strategic inflection points transform the fundamental assumptions under which a business operates, it can be difficult for organizations to fathom the new possibilities that they create. The signs of an inflection point begin on the fringes; only those who are directly in contact with the signs will be able to identify them. It’s important to have an apparatus for identifying them early.
 
 Organizations and their leaders can easily become prisoners of their own frames of reference. To spot inflection points early, they need to embrace diverse points of view and modes of thinking. Organizations need to find ways to speak with the future(s). They must identify the places and people who represent the strategic shift and learn from their perspectives. Direct exposure to actual customers is the best way to help organizations identify the early signs of strategic inflection points. Nevertheless, organizations need to enable the flow of information from those on the periphery back to the center.
@@ -18,10 +18,12 @@ By carefully observing and testing these patterns, a futurist can offer a valuab
 
 #### Related
 
--   [Strategic inflection points disrupt the underlying assumptions of a business or industry](https://publish.obsidian.md/mobydiction/notes/Strategic+inflection+points+disrupt+the+underlying+assumptions+of+a+business+or+industry)
--   [Change happens gradually, then suddenly.](https://publish.obsidian.md/mobydiction/notes/Change+happens+gradually%2C+then+suddenly.)
--   [Innovation cascades](https://publish.obsidian.md/mobydiction/notes/Innovation+cascades)
--   [Sensemaking MOC](https://publish.obsidian.md/mobydiction/Sensemaking+MOC)
+- [Strategic inflection points disrupt the underlying assumptions of a business or industry](https://publish.obsidian.md/mobydiction/notes/Strategic+inflection+points+disrupt+the+underlying+assumptions+of+a+business+or+industry)
+- [Change happens gradually, then suddenly.](https://publish.obsidian.md/mobydiction/notes/Change+happens+gradually%2C+then+suddenly.)
+- [Innovation cascades](https://publish.obsidian.md/mobydiction/notes/Innovation+cascades)
+- [Sensemaking MOC](https://publish.obsidian.md/mobydiction/Sensemaking+MOC)
+-  [[≈ The Signals are Talking]]
+-  [[§ Innovation]]
 
 #### Citations
 

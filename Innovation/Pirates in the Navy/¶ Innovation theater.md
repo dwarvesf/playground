@@ -9,8 +9,7 @@ It can take also place at the executive level, conducted by leaders who are insp
 ---
 
 #### Related
-
--   [[§ Innovation]]
+- [[§ Innovation]]
 
 #### Citations
 

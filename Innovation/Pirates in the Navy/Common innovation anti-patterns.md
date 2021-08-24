@@ -1,3 +1,7 @@
+---
+tags: innovation, pattern
+---
+### Common innovation anti-patterns
 There are a number of common anti-patterns among large organizations that stifle innovation. These include:
 
 -   expecting innovators to just come up with “[cool stuff](https://publish.obsidian.md/mobydiction/notes/%C2%B6+Innovation+theater)” without a guiding objective or strategy;
@@ -11,8 +15,8 @@ There are a number of common anti-patterns among large organizations that stifle
 ---
 
 #### Related
-
--   [[§ Innovation]]
+- [[≈ Pirates in the Navy]]
+- [[§ Innovation]]
 
 #### Citation
 

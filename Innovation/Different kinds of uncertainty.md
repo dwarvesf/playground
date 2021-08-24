@@ -1,7 +1,7 @@
 ---
 tags: innovation, brain-behaviour
 ---
-
+### Different kinds of uncertainty
 [[Brains have evolved to minimize surprise|Our brains have evolved to deal with uncertainty]]. Knowing the different kinds can help us better deal with uncertainty.
 
 The different kinds of uncertainty include:
@@ -15,8 +15,9 @@ The different kinds of uncertainty include:
 ---
 
 #### Related
-
--   [[¶ OODA Loop]]
+- [[¶ OODA Loop]]
+- [[Brains have evolved to minimize surprise]]
+- [[§ Innovation]]
 
 #### Citations
 

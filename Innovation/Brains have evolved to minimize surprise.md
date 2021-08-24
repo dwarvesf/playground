@@ -7,6 +7,9 @@ Neuroscientists who support the theory of "predictive processing" argue that our
 But, there are [[Different kinds of uncertainty]].
 
 ---
+#### Related
+- [[§ Innovation]]
+- [[Different kinds of uncertainty]]
 
 #### Citation
 
