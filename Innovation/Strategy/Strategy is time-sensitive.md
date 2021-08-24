@@ -1,7 +1,7 @@
 ---
 tags: business, strategy
 ---
-
+### Strategy is time-sensitive
 Developing an effective strategy is time-sensitive work. The longer you take to respond to changing conditions, the more constrained your options become. And, as soon as you react to the conditions, you change the conditions. You must be ready and willing to continually read the landscape and adjust your perspective accordingly.
 
 Moreover, strategies have a shelf life: the longer they are in the wild, the more time your competitors have to respond and adjust their own mental models. This, too, changes the conditions, again necessitating a [revision to your mental model](https://publish.obsidian.md/mobydiction/strategy+is+about+developing+perspective).
@@ -12,6 +12,7 @@ Moreover, strategies have a shelf life: the longer they are in the wild, the mor
 
 - [[¶ OODA Loop]]
 - [[¶ Strategy]]
+- [[§ Innovation]]
 
 #### Citations
 

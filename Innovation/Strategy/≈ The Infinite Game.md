@@ -14,3 +14,4 @@ tags: business, strategy
 - [¶ Existential flexibility](https://publish.obsidian.md/mobydiction/notes/%C2%B6+Existential+flexibility)
 - [Euphemisms signal discomfort](https://publish.obsidian.md/mobydiction/notes/Euphemisms+signal+discomfort)
 - [[¶ Strategy]]
+- [[§ Innovation]]

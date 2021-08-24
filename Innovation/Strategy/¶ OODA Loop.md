@@ -38,6 +38,7 @@ To gain an advantage over an opponent, focus on the Orient phase. You can do thi
 - [[Strategy is time-sensitive]]
 - [[Winning strategies result from good sensemaking]]
 - [[¶ Strategy]]
+- [[§ Innovation]]
 
 #### Citations
 

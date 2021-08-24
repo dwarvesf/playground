@@ -1,7 +1,7 @@
 ---
 tags: business, strategy
 ---
-
+### Reading about strategy won't produce a winning strategy
 Good strategies are doomed by their own success. An especially effective strategy will be studied, repackaged by consultancies, adopted by competitors, and ultimately become a best practice. And, a best practice is never a winning strategy. After all, the core of strategy is differentiation.
 
 The publication of a strategy signals the end of its useful life. In a dynamic environment, it can reflect only the past. In other words, using a published strategy is like fighting with the rules of the last war.
@@ -10,11 +10,12 @@ The publication of a strategy signals the end of its useful life. In a dynamic e
 
 #### Related
 
--   [[Base strategy on leading, not lagging, indicators]]
--   [Our vision of the future is always constrained by our view of the past.](https://publish.obsidian.md/mobydiction/notes/Our+vision+of+the+future+is+always+constrained+by+our+view+of+the+past.)
--   [Strategy is time-sensitive](https://publish.obsidian.md/mobydiction/notes/Strategy+is+time-sensitive)
+- [[Base strategy on leading, not lagging, indicators]]
+- [Our vision of the future is always constrained by our view of the past.](https://publish.obsidian.md/mobydiction/notes/Our+vision+of+the+future+is+always+constrained+by+our+view+of+the+past.)
+- [Strategy is time-sensitive](https://publish.obsidian.md/mobydiction/notes/Strategy+is+time-sensitive)
 - [[¶ OODA Loop]]
 - [[¶ Strategy]]
+- [[§ Innovation]]
 
 #### Citations
 

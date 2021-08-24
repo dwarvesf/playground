@@ -34,6 +34,7 @@ Rumelt argues that having a strategy is itself a competitive advantage, in that 
 
 #### Related
 - [[¶ Strategy]]
+- [[§ Innovation]]
 
 #### Citation
 Rumelt, Richard. _Good Strategy Bad Strategy: The Difference and Why It Matters_. Illustrated edition. New York: Currency, 2011.

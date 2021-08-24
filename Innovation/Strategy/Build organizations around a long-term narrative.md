@@ -1,7 +1,7 @@
 ---
 tags: business, strategy
 ---
-
+### Build organizations around a long-term narrative
 In order for an organization to be sustainable over the long term, it needs to have a long-term objective that it is working toward—a mission or vision that provides its reason for existence and animates all of its activities. Simon Sinek refers to this as the organization's "just cause": it helps orient the organization to longer horizons than the quarterly or annual report and provides its people with a sense of purpose. Moreover, a "just cause" helps serve as a first filter against unethical or counter-productive ideas. [[Narratives enable us to act decisively in conditions of uncertainty]]; Sinek's concept applies this at an organization level and emphasizes how the "just cause," a kind of narrative, guides decision making and strategy. It may help [express strategy as simple rules](https://publish.obsidian.md/mobydiction/notes/Express+strategy+as+simple+rules), as a kind of shorthand that guides action.
 
 A just cause, Sinek writes, is never money; money is simply the means to achieving the end of the cause. To me, the "just cause" is almost an ideology; Sinek cites the example of Apple's positioning of itself against a "worthy foe" in IBM. Whereas IBM was conservative and business-like, Apple defined itself as creative and individualistic.
@@ -20,6 +20,7 @@ Similar concepts include Jay Acunzo's notion of "aspirational anchors" and the "
 #### Related
 - [[≈ The Infinite Game]]
 - [[¶ Strategy]]
+- [[§ Innovation]]
 
 #### Citation
 
