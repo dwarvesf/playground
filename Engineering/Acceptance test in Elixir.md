@@ -1,5 +1,5 @@
 ---
-tags: elixir, testing
+tags: engineering, elixir, testing
 ---
 
 Acceptance tests help ensure that applications we develop are deployed with minimal bugs. Manual acceptance testing is extremely valuable, but it can also be tedious and time-consuming. At DF, we've applied the automation End2End testing for our development process. In End2End test, we can open the web page, navigate on the web like a real user.

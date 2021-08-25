@@ -9,6 +9,8 @@ tag: MBTI, function
  + Auxiliary
  + Tertiary
  + Inferior
+ 
+![[Screenshot 2021-07-15 at 12.06.17.png]]
 
  Mỗi personality type có 1 stack nhất định và ko thay đổi. 2 cái đầu biểu hiện ra ngoài rõ ràng nhất, cái mà người ngoài thấy (dominant và auxiliary). Ngược lại, tertiary và inferior biểu hiện weakness và điểm mù của chúng ta. Cái chúng ta cần cải thiện để đạt được sự hài lòng và cân bằng trong cuộc sống.
 
