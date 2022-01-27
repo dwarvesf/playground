@@ -2,6 +2,8 @@
 tags: ux, research/qualitative, research/quantitative
 ---
 
+# Qualitative and Quantitative Research Represent Different Philosophiesof Knowledge
+
 The difference between qualitative and quantitative research is more than the kinds or amount of data they work with.
 
 Quantitative research, [Sam Ladner](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Ladner+-+Mixed+Methods) writes, "begins with the assumption that reality is a stable, objective thing," whereas qualitative researches view meaning as subjective.
@@ -14,10 +16,10 @@ Mixed-methods research means combining philosophical points of view. Whereas qua
 
 #### Related
 
--   [[Four Theories of Truth]]
--   [[Quant data is lossy]]
--   [[Quantitative analysis is not inherently more reliable than qualitative data]]
+- [[Four Theories of Truth]]
+- [[Quant data is lossy]]
+- [[Quantitative analysis is not inherently more reliable than qualitative data]]
 
-#### Citations
+#### Reference
 
--   [[≈ Mixed Methods]]
+- [[≈ Mixed Methods]]
