@@ -20,7 +20,7 @@ Lakoff and Johnson use the term "radial metaphors" to discuss how metaphors can 
 -   [Our vision of the future is always constrained by our view of the past.](https://publish.obsidian.md/mobydiction/notes/Our+vision+of+the+future+is+always+constrained+by+our+view+of+the+past.) \- The lens of the past limits our ability to see future possibilities
 -   [[§ Innovation]]
 
-#### Citations
+#### Reference
 
 Lakoff, George, and Mark Johnson. Metaphors We Live By. University of Chicago Press, 2008.
 

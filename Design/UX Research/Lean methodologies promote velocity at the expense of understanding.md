@@ -1,3 +1,9 @@
+---
+tags: ux, research, method
+---
+
+# Lean Methodologies Promote Velocity at The Expense of Understanding
+
 Design and product development methodologies like Lean are biased toward delivery. They're intended to limit waste and drive efficiency through "just in time" delivery of minimum viable solutions. This approach is intended to rapidly gather feedback from the market in order to drive continuous iteration on the product.
 
 Yet, this rapid pace means that decisions may be made without crucial information. Erika Hall argues that Lean methodologies are often used to promote velocity without providing the time necessary for contemplation and critique, or consideration of longer-term implications of a release. The consequences may not be fully considered.
@@ -10,11 +16,11 @@ Making good decision decisions, Hall says, means assessing the impact of design 
 
 #### Related
 
--   [User experience is only as good as the action it enables](https://publish.obsidian.md/mobydiction/notes/User+experience+is+only+as+good+as+the+action+it+enables)
--   [Focusing too narrowly on efficiency creates risk](https://publish.obsidian.md/mobydiction/notes/Focusing+too+narrowly+on+efficiency+creates+risk)
--   [Ethical design requires a new definition of business value](https://publish.obsidian.md/mobydiction/notes/Ethical+design+requires+a+new+definition+of+business+value)
+- [User experience is only as good as the action it enables](https://publish.obsidian.md/mobydiction/notes/User+experience+is+only+as+good+as+the+action+it+enables)
+- [Focusing too narrowly on efficiency creates risk](https://publish.obsidian.md/mobydiction/notes/Focusing+too+narrowly+on+efficiency+creates+risk)
+- [Ethical design requires a new definition of business value](https://publish.obsidian.md/mobydiction/notes/Ethical+design+requires+a+new+definition+of+business+value)
 -   [User-centric design is not necessarily human-centric design](https://publish.obsidian.md/mobydiction/User-centric+design+is+not+necessarily+human-centric+design)
 
-#### Citations
+#### Reference
 
 Hall, Erika. “Thinking in Triplicate.” Medium, April 30, 2020. [https://medium.com/mule-design/a-three-part-plan-to-save-the-world-98653a20a12f](https://medium.com/mule-design/a-three-part-plan-to-save-the-world-98653a20a12f).

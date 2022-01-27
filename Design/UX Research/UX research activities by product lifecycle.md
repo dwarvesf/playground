@@ -2,6 +2,8 @@
 tags: ux, research
 ---
 
+# UX Research Activities by Product Lifecycle
+
 Different UX research methods align with different phases of the product lifecycle. The earlier in the process UX research is incorporated, the greater the value it can deliver. When possible, focus your budget, time, and energy on Discovery and Explore research tasks. However, there is useful information to gather at any point in development.
 
 ## Discover
@@ -30,12 +32,12 @@ If you can do only one thing, do qualitative (think-aloud) usability testing. Ni
 
 #### Related
 
--   [[Landscape of UX research methods]]
--   [Base strategy on leading, not lagging, indicators](https://publish.obsidian.md/mobydiction/notes/Base+strategy+on+leading%2C+not+lagging%2C+indicators)
--   [De-risk innovation by making smaller bets](https://publish.obsidian.md/mobydiction/notes/De-risk+innovation+by+making+smaller+bets)
--   [Qualitative research creates mental models about the problem space.](https://publish.obsidian.md/mobydiction/notes/Qualitative+research+creates+mental+models+about+the+problem+space.)
--   [Qualitative researchers care more about data saturation than sample size](https://publish.obsidian.md/mobydiction/notes/Qualitative+researchers+care+more+about+data+saturation+than+sample+size)
+- [[Landscape of UX research methods]]
+- [Base strategy on leading, not lagging, indicators](https://publish.obsidian.md/mobydiction/notes/Base+strategy+on+leading%2C+not+lagging%2C+indicators)
+- [De-risk innovation by making smaller bets](https://publish.obsidian.md/mobydiction/notes/De-risk+innovation+by+making+smaller+bets)
+- [Qualitative research creates mental models about the problem space.](https://publish.obsidian.md/mobydiction/notes/Qualitative+research+creates+mental+models+about+the+problem+space.)
+- [Qualitative researchers care more about data saturation than sample size](https://publish.obsidian.md/mobydiction/notes/Qualitative+researchers+care+more+about+data+saturation+than+sample+size)
 
-#### Citations
+#### Reference
 
 Rohrer, Christian. “When to Use Which User-Experience Research Methods.” Nielsen Norman Group (blog). Accessed October 13, 2020. [https://www.nngroup.com/articles/which-ux-research-methods/](https://www.nngroup.com/articles/which-ux-research-methods/).
