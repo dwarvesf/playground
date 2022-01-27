@@ -2,6 +2,8 @@
 tags: communication
 ---
 
+# Expressing Uncertainty Doesn't Undermind Authority
+
 When reporting their findings, researchers should not be reluctant to admitting what they don't know. What we know might remain in flux as new evidence comes to light, and identifying remaining uncertainties is more informative than presenting false confidence in an assertion. Indeed, uncertainty may be a critical part of the message that needs to be shared, such as when reporting on dynamic situations (like COVID guidelines and trends).
 
 Blastland et al. found that expressing uncertainty did not have a negative impact on the trustworthiness of reporting. They further add that there's little downside in expressing findings in a range rather than as an absolute number. Blastland et al. suggest that audiences are more sophisticated at evaluating arguments and evidence than popular media tend to give them credit for and that they will, in fact, evaluate claims based on strength of evidence more than clarity of message.
@@ -12,6 +14,6 @@ Blastland et al. found that expressing uncertainty did not have a negative impac
 
 -   [[Inform rather than persuade]]
 
-#### Citations
+#### Reference
 
 Blastland, Michael, Alexandra L. J. Freeman, Sander van der Linden, Theresa M. Marteau, and David Spiegelhalter. _“Five Rules for Evidence Communication.”_ Nature 587, no. 7834 (November 2020): 362–64. [Link](https://doi.org/10.1038/d41586-020-03189-1).

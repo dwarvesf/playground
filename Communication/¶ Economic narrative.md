@@ -22,13 +22,14 @@ Confluences of narratives, or groups of narratives that do not seem associated w
 As Shiller puts it, "new contagious narratives cause economic events, and economic events cause changed narratives."
 
 ---
+
 #### Related
 
--   [[Narratives generate real-world effects]]
--   [[Metaphors structure our interpretation of the world]]
--   [[¶ Economic narrative]]
--   [[§ Writing]]
+- [[Narratives generate real-world effects]]
+- [[Metaphors structure our interpretation of the world]]
+- [[¶ Economic narrative]]
+- [[§ Writing]]
 
-#### Citations
+#### Reference
 
 Shiller, Robert J. _Narrative Economics: How Stories Go Viral and Drive Major Economic Events_. Princeton: Princeton University Press, 2019.
