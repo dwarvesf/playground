@@ -2,6 +2,8 @@
 tags: ux, design, process
 ---
 
+# Building Products Process from Developer's Perspective
+
 We’ve all already known about **design thinking methodology** and been applying it in our daily work, so, comparing design thinking to other famous frameworks in software development will help us to understand developers' terms and fill in missing knowledge in this industry.
 
 In this training session, we learned about **Rational Unified Process (RUP)**, the considered-to-be-the-very-first framework in building a software product.
@@ -10,23 +12,23 @@ In this training session, we learned about **Rational Unified Process (RUP)**, 
 
 RUP organizes the development of software into four phases:
 
--   Inception: requirement, idea validation, the scope of work, cost and resource
--   Elaboration: analytics & architecture foundation
--   Construction: implement & testing
--   Transition: maintenance & feedback
+- Inception: requirement, idea validation, the scope of work, cost and resource
+- Elaboration: analytics & architecture foundation
+- Construction: implement & testing
+- Transition: maintenance & feedback
 
 ### Business Modelling
--   Define users, stakeholders, decision-makers
--   Assure a common understanding among all stakeholders
--   Analyze financial models/reports and modeling into the economics units.
--   Analyze and understand how to support business processes
+- Define users, stakeholders, decision-makers
+- Assure a common understanding among all stakeholders
+- Analyze financial models/reports and modeling into the economics units.
+- Analyze and understand how to support business processes
 
-=>  Equal to Empathize and Define in Design Thinking
++>  Equal to Empathize and Define in Design Thinking
 
 ### Requirements
--   Allow team and client agree on what the product should do
--   Identify use cases
--   Feature list
+- Allow team and client agree on what the product should do
+- Identify use cases
+- Feature list
 
 =>  Equal to Ideate in Design Thinking
 
@@ -63,10 +65,13 @@ RUP organizes the development of software into four phases:
 
 In fact, this process is only applied to products or systems which require high precision (FPT, KMS,...). There are many software products launched every day, however, most of them do not have a great impact on society. If there are errors in the process of making them, they will not cause a great loss of money, assets and human society. Therefore, we often use other processes to cut off costs and effort to build a product.
 
+---
+
 #### Related
 
 - [[Building product process from product manager's perspective]]
 
-**Source**
+#### Reference
+
 - [RUP ( Rational Unified Process )](https://theexplorationofmyworlds.wordpress.com/2012/07/02/rup-rational-unified-process/)
 - [Rational Unified Process](https://sceweb.uhcl.edu/helm/RationalUnifiedProcess/process/templates.htm)
