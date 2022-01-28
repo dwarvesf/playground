@@ -2,6 +2,8 @@
 tags: practice, HTTP, cache
 ---
 
+# Stale while Revalidation
+
 ### Concept
 - The **`Cache-Control`** HTTP header holds _directives_ (instructions) for caching (https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching) in both requests and responses.
 - **`stale-while-revalidation`** is an extension **`Cache-Control`** directives which are not part of the core HTTP caching standards document.
@@ -24,8 +26,8 @@ Cache-Control: max-age=1, stale-while-revalidate=59
 
 ---
 
-**Citation**
+#### Reference
+
 - https://web.dev/stale-while-revalidate
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
 - https://nextjs.org/blog/next-9-5
-

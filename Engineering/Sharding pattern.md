@@ -2,6 +2,8 @@
 tags: pattern
 ---
 
+# Sharding Pattern
+
 ### What
 This advanced pattern focuses on horizontally scaling data through sharding.
 
@@ -52,6 +54,7 @@ Each strategy should suite with specific requirements, we should carefully choos
 
 ---
 
-**Citation**
+#### Reference
+
  - https://www.digitalocean.com/community/tutorials/understanding-database-sharding
  - https://docs.microsoft.com/en-us/azure/architecture/patterns/sharding

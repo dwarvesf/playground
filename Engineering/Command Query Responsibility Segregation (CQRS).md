@@ -2,6 +2,8 @@
 tags: engineering, pattern, cqrs
 ---
 
+# Command Query Responsibility Segregation
+
 ### What
  - a pattern that separates read and update operations for a data store
 
@@ -32,6 +34,7 @@ tags: engineering, pattern, cqrs
 
 ---
 
-**Citation**
+#### Reference
+
 - https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs
 - https://martinfowler.com/bliki/CQRS.html

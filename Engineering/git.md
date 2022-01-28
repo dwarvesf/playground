@@ -1,6 +1,8 @@
 ---
 tags: git, git-flow
 ---
+
+# Git
  
 ### What is git?
 Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds. Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Git track all versions of your changes from the beginning of a project. The system manages the revision history for tracing, reviewing, continuous integration to collaborate efficiently.
@@ -93,6 +95,7 @@ There are 4 environments for the development of live-cycle in the Dwarves Founda
 - Person in-charge: developer or leader
 - Objective: fix the urgent issue and release a new version of the software
 - Developers check out from the `release/*` branch a hot-fix branch. After working on the source code, they should pump the version and update the changelog. Developers merge the change to `release/*` branches after being reviewed. Additionally, We must merge to `master` branch when the current branch is the production release branch
+
 #### Practices
 - Using Github flow for a small project or medium project.
 - Using Git-flow or DF modified git-flow for collaborative projects, multiple-version projects, large projects.
@@ -117,7 +120,8 @@ Overall, Git acts like a time machine. When you travel from A to B in time, you 
 
 ---
 
-**Citation**
+#### Reference
+
 - https://learngitbranching.js.org
 - https://nvie.com/posts/a-successful-git-branching-model/
 - https://danielkummer.github.io/git-flow-cheatsheet/

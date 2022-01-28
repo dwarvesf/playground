@@ -2,6 +2,8 @@
 tags: versioning, practice
 ---
 
+# Semantic Versioning
+
 Versioning system that represents the product version, using a formal convention based on 3 parts in alpha numerics. 
 
 #### Format
@@ -31,6 +33,7 @@ A website depends on Hugo platform. In the event that these twos both follow Sem
 
 ---
 
-**Citation**
+#### Reference
+
 - https://www.researchgate.net/publication/333333382_What_Do_Package_Dependencies_Tell_Us_About_Semantic_Versioning
 - https://docs.npmjs.com/about-semantic-versioning

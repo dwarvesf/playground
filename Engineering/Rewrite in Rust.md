@@ -2,6 +2,8 @@
 tags: rust
 ---
 
+# Rewrite in Rust
+
 Each decade comes with a modern language that resolve a problem at the time. the blog author is guessing who is the winner for the 20s, and it's neither C or Java - despite these twos are trying to come back. It's not Go either, since he claimed Go can only work in cloud-native tools and cross platform interfaces.
 
 The author shifts his focus to Rust, a candidate who manages to satisfy both high and low level programming, and contains the sign of modernity, such as open source and generics.
@@ -12,5 +14,5 @@ Some keyplayers started to touch Rust since last year. Like Discord, or Morzilla
 
 ---
 
-**Citation**
+#### Reference
 https://deprogrammaticaipsum.com/the-great-rewriting-in-rust/

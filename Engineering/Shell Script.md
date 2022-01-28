@@ -2,6 +2,8 @@
 tags: development, practice
 ---
 
+# Shell Script
+
 ### Shell
 A program, takes command from the keyboard and give it to the OS -> execute task/ function.
 
@@ -27,7 +29,8 @@ A list of commands that describes the steps that need to be executed. Those step
 
 ---
 
-**Citation**
+#### Reference
+
 - https://www.tutorialspoint.com/what-is-shell-script
 - https://linuxhint.com/30_bash_script_examples/
 - https://www.tutorialspoint.com/unix/shell_scripting.htm

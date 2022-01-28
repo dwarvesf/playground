@@ -2,32 +2,35 @@
 tags: microservice, pattern
 ---
 
+# Transaction Patterns in Microservice
+
 ### Two-phase commit pattern
-- global transaction context
-- prepare phrase, lock resources -> commit phase
-- abort if error
+- Global transaction context
+- Prepare phrase, lock resources -> commit phase
+- Abort if error
 
 **Pros**
-- atomic transaction, read-write isolation
+- Atomic transaction, read-write isolation
 
 **Cons**
-- synchronous, delay during calling services, blocking resources -> bottleneck, deadlock
+- Synchronous, delay during calling services, blocking resources -> bottleneck, deadlock
 
 **Q&A**  
-how do we handling errors during commit phrase -> retry on commit error?!, global transaction context tracking and calling delete all committed objects?!
+How do we handling errors during commit phrase -> retry on commit error?!, global transaction context tracking and calling delete all committed objects?!
 
 ### Saga pattern
-- local transaction, communicate through event bus
-- send rollback event to rollback changes (compensation transaction)
+- Local transaction, communicate through event bus
+- Send rollback event to rollback changes (compensation transaction)
 
 **Pros**
-- asynchronous, local transaction so there is no lock on any object/row
+- Asynchronous, local transaction so there is no lock on any object/row
 
 **Cons**
-- difficult to bug and maintain event messages as system grows
-- no read isolation: committed data of a service might be gone after a second due to compensation transaction
+- Difficult to bug and maintain event messages as system grows
+- No read isolation: committed data of a service might be gone after a second due to compensation transaction
 
 ---
 
-**Citation**
+#### Reference
+
 https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture

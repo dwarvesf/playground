@@ -2,6 +2,8 @@
 tags: rust
 ---
 
+# Rust as Future Wave
+
 ### Why
 - Because a lot of people are adopting this language
 - They are writing more things in , and about Rust
@@ -20,7 +22,8 @@ tags: rust
 
 ---
 
-**Citation**
+#### Reference
+
 - [Concurrency and Parallelism in Go](https://mayurwadekar2.medium.com/concurrency-and-parallelism-in-golang-c8327701fd94)
 - [Difference in Concurrency and Parallelism](https://viblo.asia/p/phan-biet-khai-niem-xu-ly-concurrency-dong-thoi-va-parallelism-song-song-4P856nBO5Y3)
 - garbage collector
