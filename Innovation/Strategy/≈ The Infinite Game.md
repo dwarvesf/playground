@@ -2,6 +2,8 @@
 tags: business, strategy
 ---
 
+# The Infinite Game
+
 ### Notes
 
 - [¶ Finite and infinite games](https://publish.obsidian.md/mobydiction/notes/%C2%B6+Finite+and+infinite+games)

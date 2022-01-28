@@ -1,7 +1,8 @@
 ---
 tags: business, strategy
 ---
-### Base strategy on leading, not lagging, indicators
+# Base Strategy on Leading, not Lagging, Indicators
+
 Many organizations rely too heavily on lagging indicators for their strategic decision-making—measurements that inform us about what has happened in the past rather than indicating what may happen in the future. Relying on lagging indicators for strategic decisions means you will react too late.
 
 Leading indicators look very different from lagging indicators. They’re more qualitative, and often come to us in stories, not charts. These data are less concrete, but no less important: these narratives show us where the future is.
@@ -10,7 +11,7 @@ There is a roughly inverse relationship between strategic degrees of freedom and
 
 ---
 
-#### Related:
+#### Related
 
 - [[Inflection points reveal themselves first at the edges]]
 - [[Narratives generate real-world effects]]

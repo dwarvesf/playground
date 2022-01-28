@@ -1,3 +1,0 @@
----
-tags: strategy, productivity, concept
----
