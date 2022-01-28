@@ -1,7 +1,8 @@
 ---
 tags: writing, idea, innovation, decontextualizing
 ---
-### Ideas are constellations
+# Ideas Are Constellations
+
 Ideas are not self-contained, discrete objects. Rather, they emerge as connections between different thoughts and concepts.
 
 Walter Benjamin wrote that "ideas are to objects as constellations are to stars." That is, ideas emerge out of seemingly random proximity between one thought or another until we begin to perceive a pattern.
@@ -23,7 +24,7 @@ It's useful to facilitate this process by following the [[¶ Principle of atomic
 - [[§ Writing]]
 - [[≈ Where Good Ideas Come From]]
 
-#### Citations
+#### Reference
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 
