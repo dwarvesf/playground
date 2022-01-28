@@ -2,6 +2,8 @@
 tags: blockchain, defi
 ---
 
+# DeFi
+
 DeFi is an ecosystem of financial services built on Blockchain technologies, typically using [[Smart Contract]]. DeFi consists of applications and peer-to-peer protocols developed on decentralized blockchain networks that require no access rights for easy lending, borrowing, or trading of financial tools.
 
 DeFi is built from 3 waves of blockchain innovation:
@@ -15,10 +17,12 @@ Two main criterias:
 - **Transparency**: all documents can be inspected and reviewed because they are open source. Every transaction is recorded on a blockchain -> data discovery for investment or investigation
 
 ---
+
 #### Related
+
 - Blockchain
 - [[DeFi Application]]
 - [[¶ Decentralized Exchange]]
 
-#### Citation
+#### Reference
 [Decentralized Finance: What It Is, Why It Matters](https://future.a16z.com/cryptos-fourth-wave-defi-poised-for-breakthrough/)

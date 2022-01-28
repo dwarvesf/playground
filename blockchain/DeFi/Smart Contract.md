@@ -2,6 +2,8 @@
 tags: blockchain, defi
 ---
 
+# Smart Contract
+
 ## Design by contract
 Also known as **contract programming**, **programming by contract** and **design-by-contract programming**, is an approach for designing software.
 
@@ -17,6 +19,8 @@ First, the terms of the contract will be written in a programming language, then
 After receiving the deployment order, the contract will be deployed according to the predetermined terms. At the same time, Smart Contract will also automatically check the implementation of the commitments and terms stated in the contract.
 
 ---
-#### Citations
+
+#### Reference
+
 - [Design by contract](https://en.wikipedia.org/wiki/Design_by_contract#Description)
 - [SMART CONTRACT (HỢP ĐỒNG THÔNG MINH) LÀ GÌ? CÁCH HOẠT ĐỘNG, ỨNG DỤNG, LỢI ÍCH CỦA NÓ LÀ GÌ?](https://vicogroup.vn/cong-nghe-moi/smart-contract-hop-dong-thong-minh-la-gi-cach-hoat-dong-ung-dung-loi-ich-cua-no-la-gi-22746.html)
