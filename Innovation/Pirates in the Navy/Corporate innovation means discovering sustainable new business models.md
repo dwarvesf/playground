@@ -1,7 +1,7 @@
 ---
 tags: innovation, corporate
 ---
-### Corporate innovation
+# Corporate Innovation
 
 Innovation doesn't mean simply coming with the newest shiny thing; it means discovering new business models that yield long-term profit for the organization. Businesses will often promote "innovation" but generate ideas that aren't sustainable. It may be that the organization is unable to absorb the innovation into its existing structures; it may be that it has no place in the broader corporate strategy; or, it may be that the innovation, as good as it sounds in a press release, doesn't actually have a profitable business model behind it.
 
@@ -10,6 +10,7 @@ Business models developed through innovation activities must meet standards for 
 ---
 
 #### Related
+
 - [De-risk innovation by making smaller bets](https://publish.obsidian.md/mobydiction/notes/De-risk+innovation+by+making+smaller+bets)
 - [Work backwards from a long-term vision of the future to define proximate objectives](https://publish.obsidian.md/mobydiction/notes/Work+backwards+from+a+long-term+vision+of+the+future+to+define+proximate+objectives)
 - [Integrate innovation functions with the broader organization](https://publish.obsidian.md/mobydiction/notes/Integrate+innovation+functions+with+the+broader+organization)
@@ -18,6 +19,6 @@ Business models developed through innovation activities must meet standards for 
 - [[≈ Pirates in the Navy]]
 - [[§ Innovation]]
 
-#### Citations
+#### Reference
 
--   [≈ Viki - Pirates in the Navy](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Viki+-+Pirates+in+the+Navy)
+- [≈ Viki - Pirates in the Navy](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Viki+-+Pirates+in+the+Navy)

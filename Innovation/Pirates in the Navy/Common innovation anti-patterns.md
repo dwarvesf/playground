@@ -1,6 +1,9 @@
 ---
 tags: innovation, pattern
 ---
+
+# Common Innovation Anti-Patterns
+
 ### Common innovation anti-patterns
 There are a number of common anti-patterns among large organizations that stifle innovation. These include:
 
@@ -18,6 +21,6 @@ There are a number of common anti-patterns among large organizations that stifle
 - [[≈ Pirates in the Navy]]
 - [[§ Innovation]]
 
-#### Citation
+#### Reference
 
 [Viki, Tendayi. Pirates In the Navy How Innovators Lead Transformation. Unbound, 2020.](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Viki+-+Pirates+in+the+Navy)
