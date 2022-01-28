@@ -1,7 +1,8 @@
 ---
 tags: innovation, intuition
 ---
-### Honing intuition
+# Honing Intuition
+
 In Sönke Ahrens words, intuition is the "sedimented experience on which we build our conscious, explicit knowledge." To intuit good ideas, we must first consume good ideas.
 
 As Daniel Kahnemann argues, we can hone our intuition through the acquisition of and mastery of knowledge. No idea comes from nowhere; they are built from the The more information we have at our fingertips, the more receptive we are to flashes of insight. Knowledge accrues compounding returns. Each idea creates multiple connections with other ideas, as our constellations of thought grow exponentially vast and complex.
@@ -13,11 +14,12 @@ Not only that, we need to be able to process that information. According to Hube
 ---
 
 #### Related
+
 - [[Garbage in, garbage out]]
 - [[§ Innovation]]
 - [[≈ How to Take Smart Notes]]
 
-#### Citations
+#### Reference
 
 [Ahrens, Sönke. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers. Sönke Ahrens, 2017.](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Ahrens+-+How+to+Take+Smart+Notes)
 
