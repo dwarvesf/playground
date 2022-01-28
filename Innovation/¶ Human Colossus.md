@@ -2,7 +2,7 @@
 tags: innovation, human-progress, human-colossus
 ---
 
-### Human Colossus
+# Human Colossus
 
 We evolved from blobs of cells that did nothing, to humans who learned to communicate with language to people who could mass produce books and share them across the world; at which point humanity became the **Human Colossus**, essentially one large organism with shared knowledge. 
 
@@ -13,5 +13,6 @@ To elaborate, computers and then the internet turbocharged that knowledge (and t
 The takeaway is that **human knowledge compounds**, we build new things on the shoulders of giants at a faster and faster pace, and our brains are not good at understanding all of that in the moment. If you pause, though, you can feel it happening all around us, right now.
 
 ---
-Source:
+
+#### Reference
 https://www.notboring.co/p/compounding-crazy
