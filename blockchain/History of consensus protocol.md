@@ -2,6 +2,8 @@
 tags: blockchain
 ---
 
+# History of Consensus Protocol
+
 A bit of rabbit hole leads me here, but great podcast sofar:
 
 History of [[consensus protocol]]:
@@ -14,9 +16,8 @@ History of [[consensus protocol]]:
 - Move forward a bit until late 90s or early 00s. Barbara Liskov came out with [[pBFT]], the first practical and implemtable version to handle consensus protocol, but at that time, it is only a hot acedamic topic since there is no real application on it at all
 - But in 2009, which a birth of [[Bitcoin]], people started to realize that pBFT is a thing
 
----
-**Related**
-- 
+--- 
 
-**Citation**
+#### Reference
+
 https://softwareengineeringdaily.com/wp-content/uploads/2018/03/SED547-Tendermint.pdf

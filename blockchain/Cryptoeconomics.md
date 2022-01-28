@@ -2,6 +2,8 @@
 tags: blockchain, crypto
 ---
 
+# Cryptoeconomics
+
 ### Cryptoeconomics
 Kinh tế học tiền điện tử mang đến một cách thức để điều phối hành vi của các thành viên trong mạng nhằm giải quyết các vấn đề về sự điều phối các thành viên trong hệ sinh thái kỹ thuật số bằng cách sử dụng mật mã và các đòn bẩy kinh tế.
 
@@ -38,7 +40,8 @@ Với việc sáng tạo ra Bitcoin, Satoshi Nakamoto đã đưa các đòn bẩ
 
 ---
 
-**Source**
-https://www.placeholder.vc/blog/2019/1/5/the-cryptoeconomic-circle
-https://www.placeholder.vc/blog/2019/1/10/funding-cryptonetworks
-https://academy.binance.com/vi/articles/what-makes-a-blockchain-secure
+#### Reference
+
+- https://www.placeholder.vc/blog/2019/1/5/the-cryptoeconomic-circle
+- https://www.placeholder.vc/blog/2019/1/10/funding-cryptonetworks
+- https://academy.binance.com/vi/articles/what-makes-a-blockchain-secure

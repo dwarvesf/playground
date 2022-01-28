@@ -2,6 +2,8 @@
 tags: blockchain, dapp
 ---
 
+# DApps
+
 ### DApps 
 ![](https://github.com/ethereumbook/ethereumbook/raw/develop/images/web3suite.png)
 
@@ -41,5 +43,5 @@ A Dapp is an application that is **mostly** or **entirely** decentralized. The p
 
 ---
 
-**Source**
+#### Reference
 [ethereumbook chap12](https://github.com/ethereumbook/ethereumbook/blob/develop/12dapps.asciidoc)
