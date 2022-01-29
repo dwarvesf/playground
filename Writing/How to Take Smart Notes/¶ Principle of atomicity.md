@@ -2,6 +2,8 @@
 tags: writing, zettelkasten, atomicity, idea
 ---
 
+# Principle of Atomicity
+
 The principle of atomicity is a governing idea of the #Zettelkasten method of notetaking and knowledge management.
 
 The principle suggests that each note should address a single unit of thought—that is, that each note card contains just one idea. To paraphrase Andy Matuschak, notes should be about one thing, but capture the entirety of that thing.
@@ -14,12 +16,12 @@ But, notes should not be so narrowly focused that they become fragments. If note
 
 #### Related
 
--   [[Ideas are constellations]]
--   [[People fill information gaps with assumptions]]
--   [[Writing is thinking]]
--   [[§ Writing]]
+- [[Ideas are constellations]]
+- [[People fill information gaps with assumptions]]
+- [[Writing is thinking]]
+- [[§ Writing]]
    
-#### Citations
+#### Reference
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 

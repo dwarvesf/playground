@@ -2,6 +2,8 @@
 tags: zettelkasten, note
 ---
 
+# How To Take Smart Notes
+
 ## Summary
 
 Ahrens outlines the #zettelkasten, or slip box, method of note taking. More than a note taking system, the slip box approach might be more aptly characterized as a system for knowledge generation. 
