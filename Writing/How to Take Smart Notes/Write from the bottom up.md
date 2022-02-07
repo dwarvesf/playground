@@ -2,6 +2,8 @@
 tags: writing, method
 ---
 
+# Write From The Bottom Up
+
 A lot of writing advice, especially that given to students, suggests writing from the top down: start with a topic, create a hypothesis, and then begin research. But it's better to write from the bottom up, starting with notes and ideas that we've already accumulated, and let clusters of ideas naturally and organically guide our focus. And, we'll be looking at ideas that must intrigue us, otherwise we would not have accumulated clusters of notes around them.
 
 Writing from the bottom up lets us build on information that we have already thought about. We don't have to guess about what our claim ought to be; we're standing already on the shoulders of thinking that we've done previously. The ideas are embedded in a latticework of rich context and content.
@@ -19,6 +21,6 @@ As well, this approach is more likely to surface disconfirming ideas and informa
 - [[≈ How to Take Smart Notes]]
 - [[§ Writing]]
 
-#### Citations
+#### Reference
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
