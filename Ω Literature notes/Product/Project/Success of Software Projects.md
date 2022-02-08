@@ -1,7 +1,8 @@
 ---
 tags: project, success, pm
 ---
-### Success of Software Projects
+# Success of Software Projects
+
 There are three important key factors that can determine the successful of software project: People, Process, and Tools.
 
 Software project needs processes to accomplish development works and tools to support these processes but it is people that do the work by following these processes and using these tools. Therefore, people are responsible for the success or failure of the project.
