@@ -2,6 +2,8 @@
 tags: writing
 ---
 
+# A Scene Comprises Large-scale and Small-scale Structures
+
 A well-crafted scene comprises both a large-scale structure and a small-scale structure.
 
 ![The-Overall-Scene-Structure-by-Better-Novel-Project.png](https://publish-01.obsidian.md/access/5bf4c22f8416d93237aa3630d0fd9c7c/assets/The-Overall-Scene-Structure-by-Better-Novel-Project.png)
@@ -26,9 +28,9 @@ The small scale structure of the scene facilitates execution of the actual parag
 
 The small structure follows this pattern.
 
--   Feeling
--   Reflex
--   Rational action and/or speech
+- Feeling
+- Reflex
+- Rational action and/or speech
 
 The reaction operates on a different time scale than the motivation; structure it in terms of the fastest time scale to the slowest: feeling, reflex, rational action. Some of these might be left out, but there must be at least one and if there are multiples they must be presented in the correct order.
 
@@ -42,6 +44,6 @@ Each scene and sequel is a series of MRUs.
 
 -   [[§ Writing]]
 
-#### Citation
+#### Reference
 
 Ingermanson, Randy. “Writing The Perfect Scene: Advanced Fiction Writing Tips.” _Advanced Fiction Writing_ (blog). Accessed January 9, 2021. [Link](https://www.advancedfictionwriting.com/articles/writing-the-perfect-scene/).
