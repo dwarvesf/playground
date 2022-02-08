@@ -2,7 +2,9 @@
 tags: elixir
 ---
 
-#### Brief
+# Best Practices Umbrella App with Multiple Repos
+
+## Brief
 About the db connection issue in umbrella app
 - Solution 1: Normally you’d do that by inversion of control. Create a behaviour in each app, which handles the concern of “accessing a db” and use configuration to let it use `MyApp.Repo` in prod and some other implementation in development/testing.
 - Solution 2: Your apps can depend on each other, so you could have a shared Repo app that is used by all the different components, and yet each of those can have their own schemas, which may overlap or not depending on your architecture.
@@ -40,5 +42,6 @@ This sounds like you’re missing some abstraction here. For me `MyApp.Repo` is 
 
 ---
 
-**Citation**
+#### Reference
+
 - https://elixirforum.com/t/best-practices-umbrella-app-with-multiple-repos/21113

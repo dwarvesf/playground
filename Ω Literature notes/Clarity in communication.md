@@ -2,6 +2,8 @@
 tags: productivity
 ---
 
+# Clarity in Communication
+
 ### Point of view
 - Dev should spend more effort on nurturing the mindset on clarity in communcation. 
 
@@ -19,5 +21,6 @@ tags: productivity
 
 ---
 
-**Citation**
+#### Reference
+
 https://tomgamon.com/posts/clarity/

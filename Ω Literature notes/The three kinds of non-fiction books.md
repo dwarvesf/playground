@@ -2,6 +2,8 @@
 tags: reading, book
 ---
 
+# The Three kinds of Non-fiction Book
+
 There are three kinds of non-fiction book: 💁‍♀️ narrative, 🌳 tree, and 🌿 branch.
 
 ### 💁‍♀️ Narrative Books
@@ -53,5 +55,6 @@ The best approach with these kinds of books are to: buy them second hand, read t
 
 ---
 
-#### Citations
+#### Reference
+
 - Cedric Chin. The three kinds of non-fiction books. [Link](https://commoncog.com/blog/the-3-kinds-of-non-fiction-book)

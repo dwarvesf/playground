@@ -2,6 +2,8 @@
 tags: data
 ---
 
+# Data Life Cycle
+
 #### Explaining
 Like human, data goes through a circle of life. from the derive until the collapse. 
 - capturing: raw data get acquired from multiple sources
@@ -16,5 +18,6 @@ By knowing which stage the data is currently in, we get to decide what's best to
 
 ---
 
-**Citation**
+#### Reference
+
 https://www.thinkautomation.com/eli5/the-data-lifecycle-explained/

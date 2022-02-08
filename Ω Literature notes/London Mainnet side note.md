@@ -2,6 +2,8 @@
 tags: blockchain, ethereum
 ---
 
+# London Mainnet Side Note
+
 ### POV
 
 lost track of the time for this. london hardfork sẽ go live ở mainnet vào block 1296500 (Aug 3-5)

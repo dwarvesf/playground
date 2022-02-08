@@ -2,6 +2,8 @@
 tags: git
 ---
 
+# Convert Subfolder in Git Submodule
+
 Clone new repository
 ``` shell
 $ git clone --no-hardlinks original-repo copied-repo
@@ -36,5 +38,6 @@ $ git commit -m "Added in submodules for removed folders"
 
 ---
 
-**Citation**
+#### Reference
+
 - https://gist.github.com/korya/9047870

@@ -2,7 +2,7 @@
 tags: tool
 ---
 
-### M$ Automation Tool 
+# M$ Automation Tool 
 Automation Tool mới đến từ vị trí của M$, được viết public version đầu tiên vào đầu năm ngoái
 
 ### So sánh với Puppeteer

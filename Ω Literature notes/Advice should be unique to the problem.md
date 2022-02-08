@@ -2,6 +2,8 @@
 tags: productivity
 ---
 
+# Advice Should Be Unique to The Problem
+
 The problem of bad advice is the unrelativity between the advice and the situation. 
 
 When it comes to decision making and advices that elad to decision making, advices can come from 2 types of leaders
@@ -17,4 +19,6 @@ Fav quote:
 
 ---
 
-**Citation**: https://earthly.dev/blog/thought-leaders/
+#### Reference
+
+https://earthly.dev/blog/thought-leaders/
