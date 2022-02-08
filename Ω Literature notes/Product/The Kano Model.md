@@ -1,18 +1,19 @@
 ---
 tags: product, features, kano
-title: the Kano Model
 ---
 
-### Definition
-- a model to define the essential level of the next features
-- based on Kano model, product's features are created out of 3 level
+# The Kano Model
+
+## Definition
+- A model to define the essential level of the next features
+- Based on Kano model, product's features are created out of 3 level
 	- Threshold Attributes: the basic functions. users expect this
 	- Performance Attributes: unnecessary, but it increase user's retention.
 	- Excitement Attributes: additional function, make the product different.
 
 
-### Example & execution
-**example** of 3 level in a cellphone camera function
+## Example & execution
+**Example** of 3 level in a cellphone camera function
 
 |attributes|description|example|purpose|
 |---|---|---|---|
@@ -20,25 +21,25 @@ title: the Kano Model
 |performance|update UX|front camera| maintain the market|
 |excitement|delight users|QR code scan| exceed as pioneer|
 
-the Kano model then applies these 3 types into 2 metrics: 
+The Kano model then applies these 3 types into 2 metrics: 
 - Customer Delight: how it increase customer's UX
 - Implementation Investment: the cost to build & maintain features
 
-**execution**
-- brainstorming all possible features
-- catergorize them into 3 levels
-- make sure you keep the basic functions
-- remove irrelevant/ indifferent/ duplicate features
-- consider turning *performance* features to *excitement*
-- evaluate implementing cost
-- assess user segment <> cost they can afford
-- map them into product roadmap 
+**Execution**
+- Brainstorming all possible features
+- Catergorize them into 3 levels
+- Make sure you keep the basic functions
+- Remove irrelevant/ indifferent/ duplicate features
+- Consider turning *performance* features to *excitement*
+- Evaluate implementing cost
+- Assess user segment <> cost they can afford
+- Map them into product roadmap 
 
-### Use cases to apply
-goal: prioritize which feature to work on next
- limited time
- limited resources
- marketing testing
- minimum feature
+## Use cases to apply
+Goal: prioritize which feature to work on next
+- Limited time
+- Limited resources
+- Marketing testing
+- Minimum feature
 
--> my best guess is startup/ MVP
+-> My best guess is startup/ MVP

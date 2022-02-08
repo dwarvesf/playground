@@ -2,11 +2,14 @@
 tags: product, habit forming
 ---
 
-### Definition
+# The Hook Model
+
+## Definition
 A four-phase process that companies use to form user's habit.
 
-### Phase of Hook Model
-#### 1. Trigger
+## Phase of Hook Model
+
+### 1. Trigger
 A trigger is the actuator of behavior — the spark plug in the engine. Triggers come in two types: external and internal. Habit-forming products start by alerting users with external triggers like an email, a website link, or the app icon on a phone.
 ->
 Triggers move the user to take action. It prompts to certain behaviours, Triggers come in 2 types
@@ -25,21 +28,21 @@ Triggers move the user to take action. It prompts to certain behaviours, Trigger
 
 When users start to automatically cue their next behavior, the new habit becomes part of their everyday routine. 
 
-#### 2. Action
+### 2. Action
 The behavior done in anticipation of a reward. Action is the use of the product, based on 03 factors: Motivation, Ability and SImplicity. Behaviour done in anticipation of reward. If the user doesn’t take action, the trigger is useless. 
 **Motivation**: The level of desire. How much do user want to do it
 **Ability**: The capacity of taking action. Is there any obstacle?
 **Simplicity**: The effort level of the process. How many steps are there until user fulfill their needs
 
 
-#### 3. Variable reward
+### 3. Variable reward
 Products need to reinforce the motivation of indulging in the form of rewards. Meaning: The value users get every time they get back to the product.
 
 What distinguishes the Hook Model from a plain vanilla feedback loop is the hook’s ability to create a craving. Feedback loops are all around us, but predictable ones don’t create desire. 
 
 It's the same with a different treat magically appears in your fridge every time you open it. By preparing that treat, your intrigue is created to open the fridge over again and again. 
 
-#### 4. Investment
+### 4. Investment
 Where the user does a bit of work. The investment occurs when the user puts something into the product or service such as time, data, effort, social capital, or money.
 
 However, the investment phase isn’t about users opening up their wallets and moving on with their day. Rather, the investment implies an action that improves the service for the next go-around. Inviting friends, stating preferences , building virtual assets, and learning to use new features are all investments users make to improve their experience. These commitments can be leveraged to make the trigger more engaging, the action easier, and the reward more exciting with every pass through the hook cycle. …

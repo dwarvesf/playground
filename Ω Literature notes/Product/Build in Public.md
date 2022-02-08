@@ -2,12 +2,14 @@
 tags: product, build-in-public
 ---
 
-### What is #buildinpublic
+# Build in Public
+
+## What is #buildinpublic
 #buildinpublic in a process where creators are being transparent about their product building process.
 
 It happens through the narration of how they got there. What they do in the creating phase. Publish everything transpiration, even if it gets nasty and lame.
 
-### The purpose
+## The purpose
 A problem with tradition launching - where makers publish their product once it's ***done & ready***, is they might talke a while for user to get familiar, finding the mutual rhythm, acknowledge the useful points and start adopting the product.
 
 Meanwhile, build in public enables testing for beta users. By bringing thing in public, makers get to receive the feedback and adjust accordingly. People love to hear stories, and be a part of the story. 
@@ -16,8 +18,8 @@ By the time the product is ready, makers get two things:
 - A finetune, market-fit product
 - A community who loves and expect to put the product in real use
 
-### The process
-Simplys, when you do something, share it. Publicly share it. Currently I'm trialling build in public with Readify - a reading platform that features hightlight articles based on interest. 
+## The process
+It's simple. When you do something, share it. Publicly share it. Currently I'm trialling build in public with Readify - a reading platform that features hightlight articles based on interest. 
 
 Adopting #buildinpublic for Readify goes through these steps:
 
@@ -46,6 +48,7 @@ Adopting #buildinpublic for Readify goes through these steps:
 
 ---
 
-#### Citation
+#### Reference
+
 - [Product Hunt 101: How To Launch Your Product From Early Idea To Revenue | by Martijn Verbove | The Startup | Medium](https://medium0.com/swlh/product-hunt-101-how-to-launch-your-product-from-early-idea-to-revenue-c3f01864cdde)
 - [Launching digital products 101. Put theory to practice. These workable… | by Justyna Aptowicz-Aydın | Agile Insider | Medium](https://medium0.com/agileinsider/launching-digital-products-101-af566104f6aa)
