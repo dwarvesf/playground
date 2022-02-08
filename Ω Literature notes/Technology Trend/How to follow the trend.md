@@ -2,6 +2,8 @@
 tags: technology
 ---
 
+# How To Follow The Trend
+
 ### Technology Trend Awareness
 
 Technology trend awareness as a skill refers to being mindful of the technology that is recently becoming popular and is readily accepted in the market or industry. It also encompasses one’s ability to recognize and understand the usefulness of any such technology for the success of his business.
@@ -11,6 +13,8 @@ The industry-wide acceptance of a particular technology can be seen either as an
 -   Increasing opportunities with new ideas and new ventures
 
 ---
-Source:
+
+#### Reference
+
 - https://www.newgenapps.com/blog/how-to-stay-on-top-of-the-latest-business-technology-innovations/
 - https://www.cleverism.com/skills-and-tools/technology-trend-awareness/#:~:text=Technology
