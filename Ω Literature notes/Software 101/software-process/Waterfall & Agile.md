@@ -1,7 +1,8 @@
 ---
 tags: software101, engineering, process, waterfall, agile
 ---
-### Waterfall & Agile
+# Waterfall & Agile
+
 Each software lifecycle is designed for a particular type of development. There is no one lifecycle that fits everything. The Waterfall life cycle has advantages and disadvantages and so does the Agile approach. In this case you cannot say who is right and who is wrong.
 
 Although there are disadvantages, the Waterfall lifecycle is still a popular development approach in the industry and is still being taught in most universities. It is simple, easy to understand, and still being used in many types of project, especially large project. For students who do not have a lot of experience, this model is very good to learn how software development works. Once the students understand the Waterfall model well, they can learn about other models such as Spiral, Incremental, and Agile etc.

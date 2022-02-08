@@ -1,9 +1,11 @@
 ---
 tags: software101, engineering, syllabus, machine learning
 ---
-### Machine learning
 
-#### Deep learning
+# Machine learning
+
+## Deep learning
+
 - ![](https://s3-ap-southeast-1.amazonaws.com/dwarvesf-outline/uploads/34adb8ba-29bc-4ab8-b128-fea45fade09c/35801af4-7c14-4971-8cbf-6ea4dc9518c7/1_tHpSPgqwqnXFe8gzi_7jrQ.gif)
 - ![](https://s3-ap-southeast-1.amazonaws.com/dwarvesf-outline/uploads/34adb8ba-29bc-4ab8-b128-fea45fade09c/91f3ec00-d7fa-4e80-b574-9dc2009afa66/1_e24G5LIj0aTOLe8sHTIrUQ.png)
 - ![](https://s3-ap-southeast-1.amazonaws.com/dwarvesf-outline/uploads/34adb8ba-29bc-4ab8-b128-fea45fade09c/196f0707-a857-4c72-bbe5-d40c9dbeb101/1_CE2SbDrbSFKZtcuTX-XUlA.png)
@@ -37,6 +39,9 @@ We’ve already seen 5 major aspects in the Deep learning process,
 * Prediction
 * The trained model.
 
+---
+
+#### Reference
 
 Here are some exerts from the Tensorflow official site which gives an amazing explanation about Machine learning
 ![](https://s3-ap-southeast-1.amazonaws.com/dwarvesf-outline/uploads/34adb8ba-29bc-4ab8-b128-fea45fade09c/b4580941-649f-47f4-b390-30fdd8247f78/1_RhpMl4F795rhWlk-LcFQ8g.png)
@@ -46,6 +51,6 @@ Here are some exerts from the Tensorflow official site which gives an amazing ex
 ![](https://s3-ap-southeast-1.amazonaws.com/dwarvesf-outline/uploads/34adb8ba-29bc-4ab8-b128-fea45fade09c/63d0ce1d-54d8-4591-bd4b-5aa4c78e1025/1_Rzug5Ggbb4A8oiBXYk9_KA.png)
 
 
-#### How machines learn
+#### How Machines Learn
 
 [https://www.youtube.com/watch?v=R9OHn5ZF4Uo](https://www.youtube.com/watch?v=R9OHn5ZF4Uo)
