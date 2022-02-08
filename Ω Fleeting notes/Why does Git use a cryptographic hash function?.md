@@ -2,16 +2,18 @@
 tags: git, practice
 ---
 
+# Why Does Git Use a Cryptographic Hash Function
+
 Why does Git use [SHA-1](http://en.wikipedia.org/wiki/SHA-1), a cryptographic hash function, instead of a faster non-cryptographic hash function?
 
-**Related question:**
+## Related Question
 
 Stack Overflow question _[Why does Git use SHA-1 as version numbers?](https://stackoverflow.com/questions/11233591)_ asks why Git uses SHA-1 as opposed to sequential numbers for commits.
 
 TLDR; 
 
--   from 2005 up to 2018/Git 2.18: [SHA-1](https://en.wikipedia.org/wiki/SHA-1) (see below) 
--   [2019, will switch at some point](https://stackoverflow.com/a/47838703/6309) to [SHA-256](https://en.wikipedia.org/wiki/SHA-2)
+- From 2005 up to 2018/Git 2.18: [SHA-1](https://en.wikipedia.org/wiki/SHA-1) (see below) 
+- [2019, will switch at some point](https://stackoverflow.com/a/47838703/6309) to [SHA-256](https://en.wikipedia.org/wiki/SHA-2)
 
 ---
 
@@ -47,7 +49,7 @@ You can also read "[Consider use of non-cryptographic hash algorithm for hashing
 
 Discussions around changing the hash in Git are not new:
 
--   either [to optimize it (August 2009)](http://www.mail-archive.com/bug-coreutils@gnu.org/msg17297.html), but you have to take license issue:
+-  Either [to optimize it (August 2009)](http://www.mail-archive.com/bug-coreutils@gnu.org/msg17297.html), but you have to take license issue:
 
 (Linus Torvalds)
 
@@ -61,7 +63,7 @@ And you need to be careful about [how to measure the actual optimization gain](h
 
 > I pretty much can guarantee you that it improves things only because it makes gcc generate crap code, which then hides some of the P4 issues.
 
--   or to [change it altogether (January 2010)](http://lwn.net/Articles/370907/)  
+- Or to [change it altogether (January 2010)](http://lwn.net/Articles/370907/)  
     (for instance to SHA-3, but that would apply to any other hash):
 
 (John Tapsell - [`johnflux`](https://github.com/johnflux))

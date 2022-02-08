@@ -4,9 +4,10 @@ tags: nextjs
 
 # Nextjs Rewrites
 
-Bế tắc => googling => sau 1 thời gian research thì tìm ra được một solution ntn.
+After Googling, I've come uo with a solution
 
-Nextjs có 1 feature là `Rewrites`. Rewrites cho phép chúng ta map 1 cái income request  path cho một cái destination request path khác.  Chúng ta sẽ Rewrite ntn:
+
+Nextjs has a feature called `Rewrites`. Rewrites allows us to map an income request for a different destination request path.  We're going to Rewrite it as below:
 
 ```async rewrites() {
     return [
@@ -22,14 +23,13 @@ Nextjs có 1 feature là `Rewrites`. Rewrites cho phép chúng ta map 1 cái inc
       }
     ];
   },```
-Sau khi apply rewrite, mỗi lần user truy cập `<username>.example.com` => request sẽ được rewrite lại thành `example.com/hosts/<username>`, ta hoàn toàn có thể sử dụng hàm `getStaticProps`  ( cơ chế SG) để get ra `username` => query user info => render html. => cải thiện performance 
+After applying Rewrite, every time a user logs in `<username>.example.com` => The request will be rewritten as `example.com/hosts/<username>`, we can also use `getStaticProps`  (SG mechanism) to get a `username` => Query user info => Render html. => Improve performance 
 
-P/s: bài viết liên quan đến nextjs nên bạn nào k làm với nextjs sẽ thấy khá khó hiểu. Mình thấy hay nên note lại, sau này a/c/e có gặp trường hợp tương tự có thể tham khảo .
-
-Ref:
-- https://nextjs.org/docs/basic-features/data-fetching
-- https://nextjs.org/docs/api-reference/next.config.js/rewrites
+P/s: This post refers to Next.js users. So for non-Next.js, it might be hard to understand. I found this a very interested topic to note down. I figure it might make a good reference.
 
 ---
 
-#### Citations
+#### Reference
+
+- https://nextjs.org/docs/basic-features/data-fetching
+- https://nextjs.org/docs/api-reference/next.config.js/rewrites
