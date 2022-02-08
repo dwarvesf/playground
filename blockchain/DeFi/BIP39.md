@@ -4,10 +4,10 @@ tags: blockchain, bitcoin, protocol
 
 # Bip39 Protocol
 
-- BIP39 là protocol để generate ra mnemonic sentence (e.g seed phrase trong metamask)
-- under the hood thì từ seed phrase đó sẽ generate một key wallet, muốn generate tiếp các key sau thì sẽ đc input từ seed phrases + (key1+key2) (ví dụ với metamask mình có thể generate đc nhieều key wallet, sau này khi sang máy khác import lại seed phrases thì các key đó cũng sẽ dc re-generate từ seed phrases chứ ko cần phải nhớ)
-- dictionary bank của bip39 có 2048 word
-- entropy của 1 metamask voi 12 phrase là 128 -> có 2^128 possible phrases. Nếu brute force 1 seed / 1 microsecond thì cũng sẽ mất 1,07 * 10^23 năm
+- BIP39 is the protocol to generate mnemonic sentence (e.g seed phrase in metamask)
+- Under the hood, from that seed phrase will generate a key wallet, if you want to generate the following keys, you will be input from seed phrases + (key1+key2) (for example with metamask I can generate many key wallets, later on When you re-import the seed phrases on another device, those keys will also be re-generate from the seed phrases without having to remember them)
+- Bip39's dictionary bank has 2048 words
+- Entropy of 1 metamask with 12 phrases is 128 -> There are 2^128 possible phrases. If we brute force 1 seed / 1 microsecond it will also take 1.07 * 10^23 years
 
 ---
 

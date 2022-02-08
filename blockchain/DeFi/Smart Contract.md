@@ -23,4 +23,4 @@ After receiving the deployment order, the contract will be deployed according to
 #### Reference
 
 - [Design by contract](https://en.wikipedia.org/wiki/Design_by_contract#Description)
-- [SMART CONTRACT (HỢP ĐỒNG THÔNG MINH) LÀ GÌ? CÁCH HOẠT ĐỘNG, ỨNG DỤNG, LỢI ÍCH CỦA NÓ LÀ GÌ?](https://vicogroup.vn/cong-nghe-moi/smart-contract-hop-dong-thong-minh-la-gi-cach-hoat-dong-ung-dung-loi-ich-cua-no-la-gi-22746.html)
+- [SMART CONTRACT](https://vicogroup.vn/cong-nghe-moi/smart-contract-hop-dong-thong-minh-la-gi-cach-hoat-dong-ung-dung-loi-ich-cua-no-la-gi-22746.html)
