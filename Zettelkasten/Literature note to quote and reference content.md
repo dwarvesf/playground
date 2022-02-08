@@ -1,7 +1,8 @@
 ---
 tags: writing, zettelkasten
 ---
-### Literature notes
+
+# Literature Notes to Quote and Reference Content
 
 Literature notes to quote and reference content. Literature notes must be reformulated rather than strictly quoted in order to be valuable and reminded.
 
@@ -13,7 +14,8 @@ Always make literature notes with consideration for what other [[Take notes with
 
 ---
 
-**Related**
+#### Related
+
 - [[Make notes in your own words]]
 - [[¶ Collector's Fallacy]]
 - [[Take notes with connection in mind]]
@@ -21,7 +23,7 @@ Always make literature notes with consideration for what other [[Take notes with
 - [[§ Writing]]
 - [[Permanent notes develop new ideas]]
 
-**Citations**
+#### Reference
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 

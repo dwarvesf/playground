@@ -1,8 +1,8 @@
 ---
-tags: zettelkasten
+tags: writing, zettelkasten
 ---
 
-### Purpose of Zettelkasten
+# Purpose of Zettelkasten
 
 The purpose of the Zettelkasten is not just to store notes. Rather, it helps facilitate thinking. A well-maintained zettelkasten isn't just a notebook; it provokes new ideas by bringing disparate sources into conversation with one another and the researcher. It frees the brain up from having to remember dry facts so that it can spend its effort on the more important work of [[Knowledge work means transforming old ideas into new ones|generating new insight]].
 
@@ -10,11 +10,12 @@ The zettelkasten served as a constant source of ideas and inspiration, ensuring 
 
 ---
 
-**Related**
+#### Related
+
 - [[¶ Collector's Fallacy]]
 - [[Knowledge work means transforming old ideas into new ones]]
 - [[§ Zettelkasten]]
 
-**Citations**
+#### Reference
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
