@@ -2,6 +2,8 @@
 tags: blockchain, defi, block
 ---
 
+# Block
+
 **Block height** aka block number, the length of blockchain
 **Time stamp** date and time that block is mined
 **Transaction** number of transctions in the block. 

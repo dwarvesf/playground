@@ -2,14 +2,16 @@
 tags: blockchain, defi
 ---
 
-Năm 2020, bắt đầu phát triển 
-Năm 2021, tăng trưởng và trở thành xu hướng chủ đạo
+# Market Share
 
-Hiện nay, các sàn DEX đang ra sức cạnh tranh để chiếm thị phần trong diễn biến thị trường đang phát triển rapidly.
+In 2020, the market started to develop
+In 2021, it grew and became the mainstream
+
+Currently, DEX exchanges are competing for market share in the rapidly growing market.
 
 ### Market share
 (https://coinmarketcap.com/rankings/exchanges/dex/)
-Số liệu ngày 7/7/2021
+Number on 7/7/2021
 1. Uniswap (V3)  - 20.1411%
 2. Pancaseswap (V2) - 12.3713%
 3. MDEX - 9.7715%
@@ -23,5 +25,5 @@ Số liệu ngày 7/7/2021
 
 ---
 
-**Source**
+#### Reference
 https://defirate.com/dex/

@@ -2,6 +2,8 @@
 tags: blockchain, defi
 ---
 
+# DeFi Application
+
 ### Lending
 DeFi allows any individual to take out or supply a loan without approval from a third party.
 - [AAVE](https://app.aave.com/markets)
