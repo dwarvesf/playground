@@ -2,10 +2,15 @@
 tags: blockchain, icp
 ---
 
-[[Canister]] middleware sử dụng resources (CPU, network, etc.) của các nodes và pay back bằng '[[Cycle]]'.
+# Canister Middleware
 
-Lượng cycle tiêu thụ, chi trả phản ánh chi phí để run [[WebAsm]].
+[[Canister]] middleware uses resources (CPU, network, etc.) of nodes và pay back using '[[Cycle]]'.
 
-Cycle == tiền phải thanh toán cho host provider.
+The amount of cycles consumed and paid reflects the cost to run [[WebAsm]].
 
-Gọi là cycle bởi vì computing power cuối cùng là 1 dạng của CPU cycle / tick.
+## Cycle
+
+Cycle == payment to host provider.
+
+We called it cycle because the computing power is ultimately a form of CPU cycle/tick.
+
