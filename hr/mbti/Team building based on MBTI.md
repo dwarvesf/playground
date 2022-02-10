@@ -1,6 +1,9 @@
 ---
 tags: MBTI, teambuilding
 ---
+
+# Team Building Based On MBTI
+
 To use the idea of temperament most effectively, it is important to understand that the** four temperaments** are not simply arbitrary collections of characteristics, but spring from an interaction of the two basic dimensions of human behavior: **our communication** and**our action**, our words and our deeds, or, simply, what we say and what we do.
 
 - Communication: Concrete (talk about reality) and Abstract (talk about ideas)
@@ -15,24 +18,26 @@ Psychologist David Keirsey introduced a new perspective on the Myers-Briggs type
 - Value duty, commitment, and established hierarchies 
 - Seek service, respect, and a sense of community
 
- **Artisans (Sensation + Perception) **
+ **Artisans (Sensation + Perception)**
 - Excel at tactics 
 - Tend to be cheerful, spontaneous, and resourceful 
 - Value artistry, improvisation, and results 
 - Seek mastery, fun, and a competitive advantage
 
- **Idealists (Intuition + Feeling) **
+ **Idealists (Intuition + Feeling)**
 - Excel at diplomacy
 - Tend to be kind, encouraging, and impassioned 
 - Value empathy, integrity, and self-expression 
 - Seek understanding, spiritual knowledge, and personal growth 
 
- **Rationals (Intuition + Thinking) **
+ **Rationals (Intuition + Thinking)**
 - Excel at strategy 
 - Tend to be calm, practical, and skeptical 
 - Value technical knowledge, inventiveness, and success 
 - Seek expertise, autonomy, and self-sufficiency
 
-**Source**
+---
+
+#### Reference
 [Four temperaments overview](https://keirsey.com/temperament-overview/)
 [Building Effective Teams Using the Myers-Briggs Personality Types](http://www.cmcgc.com/media/handouts/300502/0140-Wenger.pdf)

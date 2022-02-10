@@ -1,6 +1,9 @@
 ---
 tag: MBTI
 ---
+
+# Extrovert
+
 #### Common Extraverted Traits:
 - Outer/world-focus
 - More collective-minded
@@ -12,7 +15,8 @@ tag: MBTI
 - More world-reflective and world-aware 
 - Require less time to themselves
 
-**Source**
+---
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

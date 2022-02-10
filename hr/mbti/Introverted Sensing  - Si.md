@@ -1,6 +1,9 @@
 ---
 tag: MBTI, function
 ---
+
+# Introverted Sensing
+
 Book: My True Type, page 79 - 85
 
 - Primary roles: To retain, condense, and recollect information; to consult past experiences, routines, and traditions; to perceive inner bodily sensations
@@ -13,7 +16,9 @@ Si is more interested in the routine and familiar. It is a careful and conservat
 
 ISJs take their responsibilities seriously, down to the last detail.
 
-**Source**
+---
+
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

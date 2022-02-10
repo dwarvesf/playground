@@ -1,6 +1,9 @@
 ---
 tag: MBTI, function
 ---
+
+# extroverted Feeling - Fe
+
 Book: My True Type, page 109 - 114
  
 - Primary roles: To survey a breadth of human emotions, values, and morals, striving toward interpersonal or group consensus; to directly express feelings and judgments; to instruct or motivate others toward growth and excellence
@@ -12,7 +15,8 @@ communication skills, talkativeness, attunement to social norms, advice-giving
 
 - Famous EFJs: Dr. Martin Luther King, Dr. Phil McGraw, Frasier Crane (television)
 
-**Source**
+---
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

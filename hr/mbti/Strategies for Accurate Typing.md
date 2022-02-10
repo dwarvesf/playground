@@ -1,6 +1,9 @@
 ---
 tag: MBTI
 ---
+
+# Strategy for Accurate Typing
+
 Book: My True Type, page 18 - 22
 
 #### Core:
@@ -17,7 +20,9 @@ Book: My True Type, page 18 - 22
 - Put Inconsistencies in Perspective
 - Avoid Over-Focusing on Particulars
 
-**Source**
+---
+
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

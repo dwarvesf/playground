@@ -2,24 +2,23 @@
 tag: MBTI
 ---
 
-Bài trắc nghiệm trên 16personalities còn kết hợp với Five Big personalities traits (OCEAN model), nên kết qủa thường có 5 kí tự.
+# OCEAN Model
 
-- Openness > khả năng tưởng tượng, có insight (thích cái mới ko, thích concept trừu tượng ko, có nhiều sở thích ko)
+The test on 16personalities is also combined with Five Big personality traits (OCEAN model), so the results are usually 5 characters.
 
-- Conscientiousness > thái độ khi làm task (có chuẩn bị trc/lên kế hoạch không, details hay ko, thường trể deadline ko )
-
-- Extraversion 
-
-- Agreeableness (có cảm thông, quan tâm, thích giúp đỡ ng khác không)
-
-- Neuroticism (kiểm soát mood, đối phó với stress ntn)
+- Openness > imagination, insight (do you like new things, do you like abstract concepts, do you have many interests)
+- Conscientiousness > attitude when doing tasks (do you prepare in advance/plan, details or not, often late to deadline)
+- Extraversion
+- Agreeableness (have sympathy, concern, like to help others)
+- Neuroticism (control mood, deal with stress ntn)
 
 #### Note:
 
-- Traits của một người có thể thay đổi tuỳ theo tuổi tác, và có tính di truyền
+- A person's Traits can change with age, and are hereditary
+- Behavious = person's underlying personality + situational variables
 
-- Behavious = person's underlying personality + situational variables 
+---
 
-**Source**
+#### Reference
 [The big five personality dimensions](https://www.verywellmind.com/the-big-five-personality-dimensions-2795422#:~:text=The%20five%20broad%20personality%20traits,how%20many%20personality%20traits%20exist)
 [Wiki](https://en.wikipedia.org/wiki/Big_Five_personality_traits)

@@ -1,6 +1,8 @@
 ---
 tag: MBTI, function
 ---
+
+# Extroverted Thinking
 Book: My True Type, page 98 - 102
 
 - Primary roles: To succinctly express logic-based judgments; to understand or render systems and operations more rational, efficient, and effective
@@ -11,7 +13,8 @@ Book: My True Type, page 98 - 102
 
 - Famous ETJs: Henry Ford, Bill O’Reily
 
-**Source**
+---
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

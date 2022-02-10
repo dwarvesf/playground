@@ -1,6 +1,8 @@
 ---
 tag: MBTI, function
 ---
+
+# Extroverted Intuition
 Book: My True Type, page 70 - 78
 
 - Primary Role: To broadly explore, synthesize, and express ideas, associations, and possibilities
@@ -16,7 +18,8 @@ Ne often present as open-minded, receptive, creative, inquisitive, random, distr
 
 > Ne qua manh la nguoi ca them chong chan
 
-**Source**
+---
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

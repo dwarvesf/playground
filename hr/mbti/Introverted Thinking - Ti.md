@@ -1,6 +1,9 @@
 ---
 tag: MBTI, function
 ---
+
+# Introverted Thinking
+
 Book: My True Type, page 92 - 97
 
  - Primary role: To examine practical or conceptual issues using deep, implicit, and nuanced logic; to develop and refine subjective methods, strategies, or concepts
@@ -9,7 +12,9 @@ Book: My True Type, page 92 - 97
 
 - Famous ITPs: Einstein, Bill Gates, Henri Bergson, Robert Pirsig, Robert Nozick, Ken Wilber, Lance Armstrong
 
-**Source**
+---
+
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

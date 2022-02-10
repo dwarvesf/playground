@@ -1,6 +1,9 @@
 ---
 tag: MBTI
 ---
+
+# Sensing (S)
+
 Book: My True Type, page 33 - 38
 
 #### Characteristics of Sensors:
@@ -10,7 +13,9 @@ Book: My True Type, page 33 - 38
 - More concerned with the facts, details, or particulars than the connections between them
 - Most effective on the back end of the creative process, with enacting and implementing
 
-**Source**
+---
+
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

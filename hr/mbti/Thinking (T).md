@@ -1,6 +1,9 @@
 ---
 tag: MBTI
 ---
+
+# Thinking (T)
+
 Book: My True Type, page 39 - 45
 
 #### Characteristics of Thinkers:
@@ -10,7 +13,9 @@ Book: My True Type, page 39 - 45
 - Less concerned with the needs and feelings of others
 - Focus more on their own work and interests
 
-**Source**
+---
+
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

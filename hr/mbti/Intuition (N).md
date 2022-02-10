@@ -1,6 +1,9 @@
 ---
 tag: MBTI
 ---
+
+# Intuition (N)
+
 Book: My True Type, page 33 - 38
 
 #### Characteristics of Intuitives:
@@ -11,7 +14,9 @@ Book: My True Type, page 33 - 38
 - More interested in the connections between things (especially abstract things) than in the things themselves
 - Most effective on the front end of the creative process, with generating ideas or insights
 
-**Source**
+---
+
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

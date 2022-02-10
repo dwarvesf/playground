@@ -2,6 +2,8 @@
 tag: MBTI
 ---
 
+# Introvert (I)
+
 Book: My True Type, page 24 - 32
 
 #### Common Introverted Traits:
@@ -15,7 +17,9 @@ Book: My True Type, page 24 - 32
 - More self-reflective and self-aware
 - Require more time to themselves
 
-**Source**
+---
+
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  
