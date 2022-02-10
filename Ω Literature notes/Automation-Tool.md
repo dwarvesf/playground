@@ -3,13 +3,13 @@ tags: tool
 ---
 
 # M$ Automation Tool 
-Automation Tool mới đến từ vị trí của M$, được viết public version đầu tiên vào đầu năm ngoái
+The new Automation Tool comes from M$, wrote the first public version early last year
 
-### So sánh với Puppeteer
-- API  methods khá giống nhau
-- Puppeteer chỉ hỗ trợ chrome, Playwright hỗ trợ thêm cả webkit và firefox
-- API của Playwright có phần dễ sử dụng hơn (vd: page.click sẽ tự động đợi cho element available và visible)
-- Điểm mới hơn của Playwright là cho phép simulate nhiều thiết bị trên 1 browser:
+### In comparison with Puppeteer
+- API methods are quite similar
+- Puppeteer only supports chrome, Playwright supports both webkit and firefox
+- Playwright's API is somewhat easier to use (eg: page.click will automatically wait for the element to be available and visible)
+- Newer feature of Playwright is to allow simulate multiple devices on 1 browser:
 
 ``` js
 const { chromium, devices } = require("playwright");
@@ -32,13 +32,12 @@ const { chromium, devices } = require("playwright");
 })();
 ```
 
-Có 1 điểm thú vị là top contributor của Puppeteer giờ đã trở thành top contributor của Playwright
-
+An interesting point: The top contributor of Puppeteer has now become the top contributor of Playwright
 /graphs/contributors
 
 ---
 
-**Source**
+#### Reference
 - [GitHub - microsoft/playwright: Node.js library to automate Chromium](https://github.com/microsoft/playwright)
 - [Contributors to puppeteer/puppeteer](https://github.com/puppeteer/puppeteer/graphs/contributors)
 - [Contributors to microsoft/playwright](https://github.com/microsoft/playwright/graphs/contributors)
