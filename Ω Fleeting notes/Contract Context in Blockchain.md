@@ -3,13 +3,13 @@ tags: blockchain
 ---
 # Contract Context in Blockchain
 
-- Contract khi được deploy lên thì sẽ luôn immutable (không đc chỉnh sửa edit). Nhưng real life thì sẽ luôn có vấn đề cần edit contract đó (fix bug, upgrade). 
-- thông thường khi muốn thay đổi thì flow sẽ là: deploy contract mới -> move state contract cũ sang contract mới -> năn nỉ end-user đổi sang contract mới.
-- có 1 hướng tiếp cận khác là proxy patterns, hướng này thì chủ yếu architecture contract để đạt được mục đích là có thể update contract sau khi đã deploy lên chain.
-- này cơ bản là sẽ có 1 contract làm Proxy (contract này immutable) config dc 1 target contract (real contract handle logic của mình). End user sẽ luôn connect vào proxy contract, proxy contract sẽ sử dụng 1 kỹ thuật là `delegatecall` để fwd nó sang target contract.
-- khi mình cần thay đổi code contract thì mình chỉ cần deploy contract mới lên chain, config proxy contract call sang contract mới là được.
+- When contract is deployed, it will always be immutable (cannot be edited). But in real life, there will always be problems to edit that contract (fix bugs, upgrade).
+- Normally when you want to change, the flow will be: deploy new contract -> move the old contract state to the new contract -> beg the end-user to change to the new contract.
+- There is another approach, proxy patterns, which is mainly about architecture contracts to achieve the goal of being able to update the contract after it has been deployed to the chain.
+- This will basically have 1 contract as Proxy (this contract immutable) config dc 1 target contract (real contract handle logic). The end user will always connect to the proxy contract, the proxy contract will use a technique called `delegatecall` to fwd it to the target contract.
+- When I need to change the contract code, I just need to deploy the new contract to the chain, configure the proxy contract call to the new contract.
 
 ---
 
-**Source**
+#### Reference
 - https://blog.openzeppelin.com/proxy-patterns/
