@@ -4,11 +4,12 @@ tags: blockchain
 
 # Fantom
 
-Fantom là một nền tảng sử dụng công nghệ sổ cái phân tán.
-Mục đích của team dev khi xây dựng Fantom là tạo ra một nền tảng thế hệ mới dựa trên công nghệ Directed Acrylic Graph (DAG).
-Nó cho phép xây dựng các dApps cải tiến các vấn đề về mở rộng mạng lưới mà các nền tảng Blockchain hiện nay đang gặp phải.
-Về mặt bản chất, Fantom sử dụng cấu trúc DAG ( không phải là Blockchain), nhưng cùng sổ cái phân tán.
+Fantom is a platform that uses distributed ledger technology.
+The purpose of the dev team when building Fantom is to create a new generation platform based on Directed Acrylic Graph (DAG) technology.
+It allows the construction of dApps that improve the network scaling problems faced by current Blockchain platforms.
+In essence, Fantom uses a DAG structure (not a Blockchain), but the same distributed ledger.
 
 ---
+
 #### Reference
 https://coin98.net/fantom-ftm
