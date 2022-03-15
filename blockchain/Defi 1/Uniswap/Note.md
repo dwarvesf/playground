@@ -2,6 +2,8 @@
 tags: blockchain, defi
 ---
 
+# Note
+
 ### Uniswap
 - Uniswap is a leading decentralized crypto exchange that runs on the Ethereum blockchain.
 - DEX, Decentralized exchange, in which, all transactions are made automatically and directly between users (peer-to-peer network) without depending on a third-party. In other way, users have full control of their assets and transactions without rely on any intermediary to avoid ricks, hackers or scams. 

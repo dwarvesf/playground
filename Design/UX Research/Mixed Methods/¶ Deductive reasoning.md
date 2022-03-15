@@ -1,3 +1,9 @@
+---
+tags: ux, research
+---
+
+# Deductive Reasoning
+
 In contrast to [[¶ Inductive reasoning | inductive research]], deductive research seeks to test a theory or hypothesis based on the observation of data. It begins with the general theory, and gathers data in order to validate or invalidate it. It necessarily leads to a concrete conclusion: the proposition is either true or it is false. Deductive research cannot increase human knowledge; it can only determine if existing knowledge is accurate. It can't be used to predict future events, or to provide insight into unobserved phenomena.
 
 A deductive study begins with a [[¶ Falsifiability | falsifiable]] hypothesis that will be proven or disproven. In contrast, an inductive study explores open-ended questions to determine what is important and what counts. Bringing these things together is very complicated.
@@ -8,12 +14,12 @@ Roger Martin has argued that Western education favours deductive (and inductive)
 
 #### Related
 
--   [[¶ Abductive reasoning]]
--   [[¶ Inductive reasoning]]
--   [[Objectivism assumes a concrete, knowable world]]
--   [[Rationalistic models of human behaviour are limiting]]
+- [[¶ Abductive reasoning]]
+- [[¶ Inductive reasoning]]
+- [[Objectivism assumes a concrete, knowable world]]
+- [[Rationalistic models of human behaviour are limiting]]
 
-#### Citations
+#### Reference
 
 [[≈ Mixed Methods | Ladner, Sam. Mixed Methods: A Short Guide to Applied Mixed Methods Research. Sam Ladner, 2019.]]
 

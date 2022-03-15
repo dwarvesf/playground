@@ -1,7 +1,8 @@
 ---
 tags: strategy, data
 ---
-### Collecting analytics data is not the same as doing research
+# Collecting Analytics Data Is Not The Same as Doing Research
+
 Devices and software create what Davis and Davidson call “data exhaust,” the detritus of our interactions with various interfaces. But this information is not designed with [[¶ Falsifiability | falsifiability]] in mind. It’s a by-product. Collecting it is not the same as doing research.
 
 [Data from analytics cannot measure intentionality](https://publish.obsidian.md/mobydiction/notes/Quant+data+is+lossy). They require a interpretation from the analyst, and one analyst’s interpretation may not match another’s. Each analyst brings their own values to their interpretation.
@@ -16,6 +17,6 @@ The abundance of data available to use has led to us spending more time creating
 - [[¶ Strategy]]
 - [[§ Innovation]] 
 
-#### Citations
+#### Reference
 
 [Ladner, Sam. Mixed Methods: A Short Guide to Applied Mixed Methods Research. Sam Ladner, 2019.](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Ladner+-+Mixed+Methods)

@@ -1,3 +1,9 @@
+---
+tags: ux, research
+---
+
+# Quantitative Analysis Is Not Inherently More Reliable Than Qualitative Data
+
 It’s naive to assume that quantitative analysis is inherently a more reliable or scientific than human judgment. Quantitative data, too, is the product of bias.
 
 Choices must be made about why, how, and what data is selected, collected, and weighed. Human beings are responsible for establishing the criteria for what “counts” from among the data available, and may be biased toward data that is easy to find and measure. As well, each analyst brings their own perspective to their interpretation of the data. Two analysts may well interpret the same date set in very different ways.
@@ -12,12 +18,12 @@ This isn't to say that quantitative analysis is not without merit; however, it m
 
 #### Related
 
--   [[Quant data is lossy]]
--   [[Qualitative and quantitative research represent different philosophies of knowledge]]
+- [[Quant data is lossy]]
+- [[Qualitative and quantitative research represent different philosophies of knowledge]]
 
-#### Citations
+#### Reference
 
--   [[≈ Mixed Methods]]
--   [Madsbjerg, Christian. Sensemaking: The Power of the Humanities in the Age of the Algorithm. Hachette Books, 2017.](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Madsbjerg+-+Sensemaking)
--   [≈ Muller - The Tyranny of Metrics](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Muller+-+The+Tyranny+of+Metrics)
--   [Sutherland - Alchemy](https://publish.obsidian.md/mobydiction/Sutherland+-+Alchemy)
+- [[≈ Mixed Methods]]
+- [Madsbjerg, Christian. Sensemaking: The Power of the Humanities in the Age of the Algorithm. Hachette Books, 2017.](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Madsbjerg+-+Sensemaking)
+- [≈ Muller - The Tyranny of Metrics](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Muller+-+The+Tyranny+of+Metrics)
+- [Sutherland - Alchemy](https://publish.obsidian.md/mobydiction/Sutherland+-+Alchemy)

@@ -2,6 +2,8 @@
 tags: blockchain, bitcoin
 ---
 
+# Unstoppable Code
+
 ### Unstoppable Code
 ![](https://1.bp.blogspot.com/-zWFZRWenTF4/YK8QIqIPtGI/AAAAAAAAGT4/_uzk1N8qm4YPVDQxnxs9wceKQjgMTAbfQCLcBGAsYHQ/s930/Defi100ExitScam.jpeg) 
 
@@ -156,5 +158,5 @@ There are two further problems. First, Bitcoin is only one, albeit the most impo
 
 ---
 
-**Source**
+#### Reference
 https://blog.dshr.org/2021/06/unstoppable-code.html

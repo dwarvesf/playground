@@ -1,7 +1,8 @@
 ---
 tags: software101, engineering, quality
 ---
-### High Quality software
+# High Quality Software
+
 What is the best way to build high quality software product? How can we reduce the time it takes to build software?
 
 Answer: In my opinion, getting the correct requirements at the beginning of the project is the best way. It will help build better quality software, reduce the effort in re-works and much less testing time. The more changes to a software project during design, coding or testing phases will result in the possibility of more defects in the software product. Once defects get into the software, you must test and remove them and it takes time which may delay the project. Having quality requirements will help the delivery of quality software.

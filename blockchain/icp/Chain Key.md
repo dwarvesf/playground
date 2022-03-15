@@ -2,6 +2,8 @@
 tags: blockchain, icp
 ---
 
-Chain Key là thuật toán mã hoá public 48 byte.
-Chain Key cho phép thực hiện tx ở tốc độ 1-2 sec, bitcoin là 30 - 60 min, ethereum thì nhanh hơn bitcoin nhưng chưa đạt được web speed.
-Mục tiêu để đạt được web speed.
+# Chain Key
+
+Chain Key is a 48-byte public encryption algorithm.
+Chain Key allows to execute tx at 1-2 sec, bitcoin is 30 - 60 min, ethereum is faster than bitcoin but not yet web speed.
+Aim to achieve web speed.

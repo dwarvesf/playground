@@ -2,14 +2,16 @@
 tags: product, roadmap
 ---
 
-### What is a product roadmap
+# Product Roadmap
+
+## What is a product roadmap
 Product roadmap is created at the beginning of product development. It is a list of features with execution timeline. 
 
 A product roadmap outlines the vision, direction, priorities, and progress of a product over time. It’s a plan of action that aligns the organization around short- and long-term goals for the product or project, and how they will be achieved.
 
 From a product roadmap, development team can create a list of follow-up todos, detailedly analyze the priority and execute the core features first. 
 
-### Why it's vital
+## Why it's vital
 Product roadmap is essential for some reasons 
 
 **1. Remove the uncertainties**
@@ -24,7 +26,7 @@ For products that rely on foreign/external investment, product roadmap is what y
 **3. Priority**
 Product roadmap keeps the team on track. Also, the roadmap list out features based on priority level. Developement team can look it up and select out which one to build. It forms a consensus withint and outsie the team. The teammates agree on product feature, and the user knows which one to expect. 
 
-### The structure 
+## The structure 
 **1. Product Description**
 Describe what and how the product functions. It portraits the product overview at themost basic concept. 
 
@@ -43,7 +45,8 @@ A product development process must be divided into milestones. It break the larg
 
 ---
 
-#### Citation
+#### Reference
+
 - [What is a Product Roadmap? The Ultimate Guide and Resources (productplan.com)](https://www.productplan.com/learn/what-is-a-product-roadmap/)
 - [What Is a Product Roadmap? Definition and Product Roadmap Examples (airfocus.com)](https://airfocus.com/glossary/what-is-a-product-roadmap/)
 - [A complete guide to product roadmaps (with examples) | Aha!](https://www.aha.io/roadmapping/guide/product-roadmap)

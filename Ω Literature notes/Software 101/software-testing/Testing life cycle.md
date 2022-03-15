@@ -1,7 +1,7 @@
 ---
 tags: software101, engineering, testing, lifecycle
 ---
-### Testing life cycle
+# Testing Life Cycle
 Several of you have asked me about testing and its relationship to the software development life cycle. Basically testing follows a life cycle that corresponds to every phase of the development life cycle.
 
 During the project planning phase, the project manager must decide what things to be tested based on the Software Requirements Specification (SRS). This is the time where the test leader and the project manager work together to create the Software Test Plan (STP) that describe the scope, the testing framework, test method, test schedule, function to be tested or not tested, what types of test to be done at different phases of the life cycle, the environment for testing, and the assignment for each tester.

@@ -2,6 +2,8 @@
 tags: programming, fundamental
 ---
 
+# Programming Fundamental
+
 The importance of programming fundamental is somehow being underrated. 
 
 Ever wonder why big tech giants recruit their employees based on fundamentals and focus more on programming theory? 
@@ -15,4 +17,6 @@ The fundamental affects how you grow. Short courses land you gigs, but fundament
 
 ---
 
-**Citation**: https://swiftrocks.com/how-necessary-are-the-programming-fundamentals.html
+#### Reference
+
+https://swiftrocks.com/how-necessary-are-the-programming-fundamentals.html

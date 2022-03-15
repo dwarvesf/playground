@@ -2,6 +2,8 @@
 tags: writing, communication, story-telling, narrative
 ---
 
+# Narrative Helps The Human Mind Make Sense of Events
+
 The human mind crafts its understanding of events by forming them into a narrative. Kahnemann and Tversky’s “representativeness heuristic” suggests that people form expectations based on an idealized story or model, and evaluate expectations based on how well it fits that model rather than probabilities.
 
 There is a powerful social aspect to narratives: when confronting an ambiguous situation, humans may turn to narrative to adapt a role that they have heard of to help govern their response. When facing a difficult situation with no clear, logical answer, the human brain may rely on memories of past experience—as well as others’ experiences that have been related through narrative—to determine the action to be taken.
@@ -22,6 +24,6 @@ Amy Webb suggests that narratives are powerful tools for communicating future sc
 - [[≈ Narrative Economics]]
 - [[§ Writing]]
 
-#### Citations
+#### Reference
 
 [[≈ Narrative Economics | Shiller, Robert J. Narrative Economics: How Stories Go Viral and Drive Major Economic Events. Princeton: Princeton University Press, 2019.]]

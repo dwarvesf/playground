@@ -2,14 +2,16 @@
 tags: blockchain, defi
 ---
 
+# Smart Contracts
+
 ### What
 Computer software designed as an automated self-enforcing contract (thực thi tự động), trigger khi có một hoạt động đáp ứng các nhu cầu đã define trước. 
 basically lines of code that execute a specific function once certain conditions are met. If... then...
 ex: music => nếu có lượt nghe đáp ứng đủ điều kiện (70% thời lượng) => artist nhận tiền 
 
-- process auto => more efficient, less prone to human error
-- no third party, trustless 
-- cost effective (?)
+- Process auto => more efficient, less prone to human error
+- No third party, trustless 
+- Cost effective (?)
 
 Another area in which smart contracts are suitable is the financial services industry. For instance, the technology may be used to automate the clearing and settlement of trades, the payment of bond coupons, or even the calculation and payout of insurance claims.
 

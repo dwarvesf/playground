@@ -2,7 +2,7 @@
 tags: elixir
 ---
 
-### What’s the problem with this application?
+# The Problem with Elixire Umbrella App
 
 The main issue with this architecture is that the apps aren’t really split for the right reason. In a growing (in terms of code added over time) application it will most likely slow you down the more code you add as the boundaries become more brittle and blurred.  
 The reason for this effect is that umbrella child apps are intended to be created as a way to **deploy** each of them separately, hence the individual configuration and mix project. So unless you’re deploying the apps separately, there is no benefit from using an umbrella app.
@@ -11,7 +11,7 @@ There may come a time when you need to, but I can guarantee moving into an umbre
 
 > Umbrella child apps are intended to be created as a way to **deploy** each of them separately
 
-### A better alternative
+## A better alternative
 
 I’m not advocating to never use umbrella apps, but I think in most cases it’s better not to use one until you have the requirement to deploy a child app separately.
 
@@ -24,5 +24,8 @@ In fact, in [Elixir's official documentation](https://elixir-lang.org/getting-st
 
 > While it provides a degree of separation between applications, those applications are not fully decoupled, as they are assumed to share the same configuration and the same dependencies.
 
-**Source**
+---
+
+#### Reference
+
 - https://dev.to/jackmarchant/the-problem-with-elixir-umbrella-apps-850

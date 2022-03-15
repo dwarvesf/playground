@@ -2,32 +2,36 @@
 tag: MBTI, function
 ---
 
+# Calculate Function Stack
+
 #### Rule
-- Chữ cái đầu tiên (I hoặc E) cho biết xu hướng (nội - ngoại) của 4 functions. Nếu là Exxx, bộ function sẽ là E-I-E-I. Ngược lại nếu là Ixxx, bộ function sẽ là I-E-I-E
+The first letter (I or E) indicates the trend (internal - external) of the 4 functions. If it is Exxx, the set of functions will be E-I-E-I. Otherwise, if it is Ixxx, the function set will be I-E-I-E
 
-> Nguyên nhân: type E sẽ biểu hiện cái nổi trội nhất của họ ra ngoài. Cái người ngoài thấy rõ thấy là signature trait của họ. Ngc lại với type I, cái người ngoài thấy chỉ đứng ở auxiliary. Vì signature trait họ dấu bên trong.
+> Cause: type E will show their most dominant out. What outsiders can clearly see is their signature trait. Go back to type I, what outsiders see only as auxiliary. Because the signature trait they hide inside.
 
-- Chữ cái thứ 2 (N hoặc S) và 3 (F hoặc T) cho biết 2 functions đầu tiên là functions gì. Ví dụ: xNFx thì sẽ là N & F. Còn xSTx sẽ là S & T là 2 functions đầu tiên.
+The 2nd (N or S) and 3 (F or T) letters indicate what the first 2 functions are. For example, xNFx would be N & F. And xSTx would be S & T being the first 2 functions.
 
-- Chữ cái cuối cùng (P hoặc J) cho biết chức năng hướng ngoại đầu tiên là perceiving (tiếp nhận thông tin) hay judging (xử lý thông tin). Nếu là xxxP thì 1 trong 2 chức năng đầu tiên sẽ là Ne hoặc Se. Còn nếu là xxxJ thì 1 trong 2 chức năng đó sẽ là Te hoặc Fe.
+The last letter (P or J) indicates that the first extrovert function is perceiving or judging. If it is xxxP, then 1 of the first 2 functions will be Ne or Se. If it is xxxJ, then one of the two functions will be Te or Fe.
 
-Ta có các functions đối nghịch là dominant <> interior ; auxiliary <>tertiary
+We have the opposite functions dominant <> interior ; auxiliary <>tertiary
 
-> có 4 functions pairs đối nghịch nhau:
+> has four opposing function pairs:
 Si <> Ne
 Ni <> Se
 Ti <> Fe
 Fi <> Te
 
-Một stack đc cấu thành từ 2 function pairs. Tuỳ vào vị trí mà nó biểu hiện khác nhau (strong or weak). Mỗi combo như vậy sẽ tạo thành 1 thế giới nội tâm của một PT.
+A stack is made up of two function pairs. Depending on the position, it manifests differently (strong or weak). Each such combo will form an inner world of a PT.
 
-Vd: ENFJ
+Ex: ENFJ
 
 1 Fe
 2 Ni
 3 Se
 4 Ti
 
-**Source**
+---
+
+#### Reference
 [Functional stack theory](https://personalityjunkie.com/functional-stack-type-dynamics-theory/)
 [Functional stack 101](https://www.youtube.com/watch?v=9xf13VRNPp8)

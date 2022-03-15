@@ -2,6 +2,8 @@
 tags: sql, data, practice
 ---
 
+# SQL Practices
+
 ### ORM vs Plain SQL
 - Raw: make all query by self from scratch
 - ORM: Object relational mapping: programing technique for converting data between incompatible type systems using OOP
@@ -74,7 +76,8 @@ Get row with Greatest value per group. Follow the Single-Value rule to build the
 
 ---
 
-**Citation**
+#### Reference
+
 - https://pragprog.com/titles/bksqla/sql-antipatterns/
 - https://www.enterprisedb.com/blog/postgresql-query-optimization-performance-tuning-with-explain-analyze
 - https://www.technical-recipes.com/2011/ieee-754-floating-point-to-binary-conversion/

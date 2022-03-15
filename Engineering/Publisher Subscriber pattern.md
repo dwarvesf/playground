@@ -2,6 +2,8 @@
 tags: microservice
 ---
 
+# Publisher Subscriber Pattern
+
 ### Context
   - In cloud-based and distributed applications, components of the system often need to provide information to other components as events happen.
   - Asynchronous messaging is an effective way to decouple senders from consumers, and avoid blocking the sender to wait for a response.
@@ -39,6 +41,7 @@ Introduce an asynchronous messaging subsystem that includes the following:
 
 ---
 
-**Citation**
+#### Reference
+
  - https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber
  - https://hackernoon.com/publish-subscribe-design-pattern-introduction-to-scalable-messaging-781k3tae

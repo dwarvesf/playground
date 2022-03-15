@@ -9,5 +9,5 @@ Metaphors allow us to organize and manage our experiences, and, by extension, re
 ---
 
 #### Related
--   [[Narratives generate real-world effects]]
--   [[§ Writing]]
+- [[Narratives generate real-world effects]]
+- [[§ Writing]]

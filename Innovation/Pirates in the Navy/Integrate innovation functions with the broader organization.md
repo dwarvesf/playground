@@ -1,7 +1,8 @@
 ---
 tags: innovation, orgarnization
 ---
-### Integrate innovation functions with the broader organization
+# Integrate Innovation Functions with The Broader Organization
+
 Organizations need to consider how innovation fits into their org chart, including defining clear career paths for innovators.
 
 Launching innovation labs or separate teams to focus on innovation rarely produces the desired results. As Sunil Gupta argues, launching an independent innovation or transformation unit within the organization "is like launching a speedboat to turn around a large ship. Often the speedboat takes off but does little to move the ship." This metaphor is also shared by [[≈ Pirates in the Navy| Tendayi Viki]].
@@ -18,12 +19,12 @@ The tools of innovation, adopted from agile development, new business models, le
 
 #### Related
 
--   [[Organizations have become primarily focused on short-term results]]
--   [[Organizations that depend on tolerability are ripe for disruption]]
--   [[≈ Pirates in the Navy]]
--   [[≈ Where Good Ideas Come From]]
--   [[§ Innovation]]
+- [[Organizations have become primarily focused on short-term results]]
+- [[Organizations that depend on tolerability are ripe for disruption]]
+- [[≈ Pirates in the Navy]]
+- [[≈ Where Good Ideas Come From]]
+- [[§ Innovation]]
 
-#### Citations
+#### Reference
 
 Gupta, Sunil. _Driving Digital Strategy: A Guide to Reimagining Your Business_. Boston, Massachusetts: Harvard Business Review Press, 2018.

@@ -2,6 +2,8 @@
 tags: architecture
 ---
 
+# Software Architect and Software Design
+
 ### Software Architecture (SA)
 **Sum up**
 - structure the software
@@ -55,5 +57,6 @@ SD responsible for code-level design.
 
 ---
 
-**Source**
+#### Reference
+
 - https://codeburst.io/software-architecture-the-difference-between-architecture-and-design-7936abdd5830

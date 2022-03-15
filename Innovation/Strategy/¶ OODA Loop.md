@@ -2,6 +2,8 @@
 tags: business, strategy
 ---
 
+# OODA Loop
+
 The OODA (observe, orient, decide, act) loop is a decision-making concept that was developed by military strategist John Boyd to describe the means by which an enemy can be defeated or a goal can be achieved even in the face of an imbalance of strength. Since its initial application in combat operations, it has been applied frequently in business, litigation, law enforcement, and other venues.
 
 ![1000px-OODA.Boyd.svg.png](https://publish-01.obsidian.md/access/5bf4c22f8416d93237aa3630d0fd9c7c/assets/1000px-OODA.Boyd.svg.png)
@@ -40,9 +42,9 @@ To gain an advantage over an opponent, focus on the Orient phase. You can do thi
 - [[¶ Strategy]]
 - [[§ Innovation]]
 
-#### Citations
+#### Reference
 
--   [Chin - Much Ado About the OODA Loop](https://publish.obsidian.md/mobydiction/Chin+-+Much+Ado+About+the+OODA+Loop)
--   [Chin - Good Synthesis is the Start of Good Sensemaking](https://publish.obsidian.md/mobydiction/Chin+-+Good+Synthesis+is+the+Start+of+Good+Sensemaking)
--   [Farnam Street](https://fs.blog/2018/01/john-boyd-ooda-loop/)
--   [Wikipedia](https://en.wikipedia.org/wiki/OODA_loop)
+- [Chin - Much Ado About the OODA Loop](https://publish.obsidian.md/mobydiction/Chin+-+Much+Ado+About+the+OODA+Loop)
+- [Chin - Good Synthesis is the Start of Good Sensemaking](https://publish.obsidian.md/mobydiction/Chin+-+Good+Synthesis+is+the+Start+of+Good+Sensemaking)
+- [Farnam Street](https://fs.blog/2018/01/john-boyd-ooda-loop/)
+- [Wikipedia](https://en.wikipedia.org/wiki/OODA_loop)

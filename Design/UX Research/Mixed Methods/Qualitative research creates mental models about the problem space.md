@@ -2,6 +2,8 @@
 tags: ux, research/qualitative
 ---
 
+# Qualitative Research Creates Mental Models About The Problem Space
+
 Qualitative research helps us build mental models about the contexts, problems, and motivations our products and designs must account for. It helps us understand what is important at a high level—what matters to people and how they understand their relationship to the world.
 
 The questions are more open-ended. When we do qualitative research, we're trying to synthesize a narrative about our subject. It's closer to Sensemaking than quantitative methods: it builds a perspective based on the available evidence that can later be measured through quantitative methods.
@@ -12,11 +14,11 @@ A strong foundation of qualitative research can help us have a better intuition 
 
 #### Related
 
--   [[¶ Inductive reasoning]]
--   [[¶ Abductive reasoning]]
--   [[Questions about the sample size for qualitative research may indicate trust concerns]]
+- [[¶ Inductive reasoning]]
+- [[¶ Abductive reasoning]]
+- [[Questions about the sample size for qualitative research may indicate trust concerns]]
 
-#### Citations
+#### Reference
 
 Ladner, Sam. _Mixed Methods: A Short Guide to Applied Mixed Methods Research_. Sam Ladner, 2019.
 

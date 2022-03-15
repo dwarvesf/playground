@@ -1,6 +1,9 @@
 ---
 tags: writing
 ---
+
+# Knowledge Work Means Transforming Old Ideas Into New Ones
+
 Knowledge work is not about coming up with some random insight; it’s about transforming existing ideas into something new. “Every intellectual effort starts with an already existing preconception,” Ahrens writes, “that can be transformed during further inquiries and can serve as a starting point for following endeavours.”
 
 No idea comes from nowhere; the more information we have at our fingertips, the more receptive we are to flashes of insight. Knowledge accrues compounding returns. Each idea creates multiple connections with other ideas, as our constellations of thought grow exponentially vast and complex.
@@ -13,14 +16,14 @@ Note-taking is therefore critical for knowledge work. By capturing ideas as note
 
 #### Related
 
--   [[Ideas are constellations]]
--   [[Decontextualize ideas to make them new]]
--   [[Ideas are remixes]]
--   [[¶ Principle of atomicity]]
--   [[§ Writing]]
--   [[≈ How to Take Smart Notes]]
+- [[Ideas are constellations]]
+- [[Decontextualize ideas to make them new]]
+- [[Ideas are remixes]]
+- [[¶ Principle of atomicity]]
+- [[§ Writing]]
+- [[≈ How to Take Smart Notes]]
 
-#### Citations
+#### Reference
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 

@@ -2,6 +2,8 @@
 tags: oauth
 ---
 
+# OAuth 2
+
 Traditional client-server authentication model: resource owner provides credentials for client to access resource
 
 ### Problems & Limitations
@@ -121,7 +123,8 @@ How to resolve or decrease this problem?
 
 ---
 
-**Citation**
+#### Reference
+
 - https://datatracker.ietf.org/doc/html/rfc6749
 - https://gaynwinters.wordpress.com/tag/user-agent-based-application/
 - https://www.oauth.com/oauth2-servers/server-side-apps/authorization-code/

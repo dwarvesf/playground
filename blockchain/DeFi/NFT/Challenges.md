@@ -2,20 +2,23 @@
 tags: blockchain, nft
 ---
 
-### Vấn đề hiện tại
-*'Chưa đủ thị trường và nhu cầu để phát triển'*
+# Challenges
 
-Một khi NFT có thể duy trì một cộng đồng gồm những người sưu tập sớm đầy nhiệt huyết, những người có nội dung về nhân vật, thì thách thức sau đó là làm thế nào để phát triển cộng đồng đó, phát triển nhân vật và phân phối nó đến một lượng lớn khán giả trên các nền tảng truyền thông chính thống
+### Current Problem
+*'The market and its demand are not enough to develop'*
+
+Once an NFT can maintain a community with enthusiastic early collectors who have insight on the NFT character, the challenge is how to grow the community, develop that character and distribute it to a wider audience base on omnichanels.
 
 ### Questions
-**1. Những loại quyết định nào nên được tối ưu hóa [[DAO]]?**
-Nếu cộng đồng cần bỏ phiếu cho từng chi tiết nhỏ của một nhân vật, trải nghiệm sẽ kém thú vị hơn, kém hiệu quả hơn và có khả năng sẽ có tỷ lệ tham gia thấp hơn. Tuy nhiên, nếu các quyết định được biểu quyết ở cấp quá cao, các thành viên cộng đồng có thể không cảm thấy như họ có đủ quyền kiểm soát và quyền sở hữu.
+**1. What kind of decision can optimize [[DAO]]?**
+If the community needs to vote on every detail of a character, the experience is less exciting, less in effectiveness and leads to a big chance in low ratio of participants. Howver, if the decision gets voted by a higher level, the member of BOD might feel like they don't have enough authorization or ownership.
 
-**2. Ai sẽ quản lý các chức năng quản lý hành chính và cộng đồng hàng ngày?**
-DAO sẽ hiệu quả hơn khi có nhiều “creator board”, bỏ phiếu cho các quyết định và vai trò chiến lược cấp cao quan trọng trong khi thuê ngoài quản lý sản phẩm và phát triển sáng tạo cho các bên thứ ba thông qua RFP (tài liệu mời đấu thầu)
+**2. Who will be in charge of daily administration and community management?**
+DAO will be effective once there are more "creator board" - who will vote for key decision and play as strategic roles in business decision, while product management and creative development can be outsourced from third-parties through RFP.
 
-**3. Các DAO sẽ duy trì kiểm soát chất lượng xung quanh IP như thế nào?**
-Các thương hiệu nhân vật có các quy tắc nghiêm ngặt về những gì nhân vật có thể và không thể làm hoặc nói, để thiết lập tính nhất quán, bản sắc, cả chất lượng. Các cộng đồng sẽ cần thiết lập các **'hướng dẫn'** hoặc **'nguyên tắc'** riêng cho các nhân vật của họ mà các thành viên có thể sử dụng để đánh giá các đề xuất mới. Cuối cùng, nếu các cộng đồng theo đuổi nhiều hoạt động khác nhau của nhân vật trên các hình thức truyền thông khác nhau cùng một lúc, một số trong số này sẽ thành công hơn và trải nghiệm tốt hơn những người khác. --> Chìa khóa ở đây là tất cả những thử nghiệm này có thể xảy ra theo cách mà chúng không thể xảy ra trong các công ty.
+**3. How can DAO maintain the quality output of IP?**
 
-**4. Các DAO sẽ chuyển đổi doanh thu được tạo ra từ IP off-chain trở lại on-chain như thế nào?**
-Các DAO có thể 'cần third-party' cung cấp các dịch vụ thanh toán và hợp đồng theo chỉ đạo của DAO để làm cầu nối ngoài chuỗi (ví dụ: thế giới thực) và quản lý doanh thu, chi phí và ngân quỹ trên chuỗi.
+Character brands have strict rules about what characters can and cannot do or say, to establish consistency, identity, and quality. Communities will need to establish separate **'guidelines'** or **'rules'** for their characters that members can use to evaluate new proposals. Ultimately, if communities pursue a variety of character activities across different forms of media at the same time, some of these will be more successful and a better experience than others. --> The key here is that all of these experiments can happen in a way that they can't in companies.
+
+**4. How DAOs convert revenue from IP off-chain back to on-chain?**
+DAOs may need a **third-party** that provides DAO-directed contract and payment services to bridge off-chain (e.g. real world) and manage revenue, expenses, and budgets. on the chain.

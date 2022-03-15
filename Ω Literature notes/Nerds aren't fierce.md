@@ -2,6 +2,8 @@
 tags: developer, insight
 ---
 
+# Nerds Aren't Fierce
+
 `to be a nerd is to be socially awkward` 
 
 Nerds looks fiece because they were observe by the ordinary, in ordinary situations.

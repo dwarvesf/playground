@@ -2,15 +2,15 @@
 tags: software101, engineering
 ---
 
-### Peer Review
+# Peer Review
 To improve quality and to reduce defects, developers often ask other team members to review their work to determine whether they have defects or not. The reason is to avoid “personal bias” because if developers are doing their own review, they may follow the same logic that they used to do the work and will not be able to detect any error that they made. Another person could do better in finding defects because he has different perspective. In “Peer Review”, team members examine each other’s work and provide feedback to the authors. Peer Review can be informal or formal, depending on the purpose of the review.
 
-### Informal Review
+## Informal Review
 In an “Informal Review” the author asks one team member to examine his work. He does not know how the other team member conducts the review and how comprehensively the review is done. The “Informal Review” is depending on the knowledge and skill of the reviewer so the result varies greatly. Some do a good job but other may not. When finish, the reviewer can tell the author the number of defects or bugs that he must fix.
 
 In “Pair programming” (Mostly use in Extreme Programming) two developers work on the same product simultaneously at the same place. One do the work, the other observes and provide comments, after a while they switch side.  The idea is two persons is better than one and it helps better discussion between team members, and provide opportunity for continuous review of each person’s ideas. In Pair programming, every line of code is written by two people working together which leads to higher quality products. Pair programming can be used to create any software product, not just code. From the “Extreme programming” view, pair programming promotes collaboration, teamwork, and a shared commitment to the quality of the product.
 
-### Formal Review
+## Formal Review
 
 In “Software Inspection” or “Formal Review” the project team follows a well-defined process with specific roles assigned to individual participants. The inspection process has several phases: 
 * Planning

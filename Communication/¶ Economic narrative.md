@@ -2,13 +2,14 @@
 tags: writing, story-telling
 ---
 
+# Economic Narrative
 An "economic narrative" is a contagious story that has the potential to change how people make economic decisions, such as how, why, and where to invest; how much to spend and to save; and whether to buy a home or take a certain job.
 
 An economic narrative, according to Robert Shiller, has the following characteristics:
 
--   it reminds people of facts they might have forgotten
--   It offers an explanation about how things work in the economy
--   it affects how people think about the justification or purpose of economic actions
+-  It reminds people of facts they might have forgotten
+-  It offers an explanation about how things work in the economy
+-  It affects how people think about the justification or purpose of economic actions
 
 When these stories are virulent enough, they can have a significant impact on the economy. For instance, narratives in the latter half of the twentieth century that used efficiency to describe free markets helped contribute to a public reaction against regulation and government intervention in the economy.
 
@@ -24,11 +25,11 @@ As Shiller puts it, "new contagious narratives cause economic events, and econom
 
 #### Related
 
--   [[Narratives generate real-world effects]]
--   [[Metaphors structure our interpretation of the world]]
--   [[¶ Economic narrative]]
--   [[§ Writing]]
+- [[Narratives generate real-world effects]]
+- [[Metaphors structure our interpretation of the world]]
+- [[¶ Economic narrative]]
+- [[§ Writing]]
 
-#### Citations
+#### Reference
 
 Shiller, Robert J. _Narrative Economics: How Stories Go Viral and Drive Major Economic Events_. Princeton: Princeton University Press, 2019.

@@ -2,6 +2,8 @@
 tags: ux, design, personas, jtbd
 ---
 
+# Use JTBD Stories to Foreground The Context In Which A Solution Is Required
+
 A "job story" is an alternative to the traditional user story format. In contrast to the user story, which foregrounds the persona performing an action, a job story highlights the context in which the action is performed.
 
 For example, where a user story may be written like this:
@@ -22,12 +24,13 @@ Job stories do not offer solutions; they describe the context for which the solu
 
 #### Related
 
--   [[Focus personas on tasks, goals, and motivations]]
--   [[Personas make abstract research concrete for design teams]]
--   [[Methods to overcome the limitations of personas]]
--   [[JTBD Job Interview Structure]]
+- [[Focus personas on tasks, goals, and motivations]]
+- [[Personas make abstract research concrete for design teams]]
+- [[Methods to overcome the limitations of personas]]
+- [[JTBD Job Interview Structure]]
 
-**Source**
+#### Reference
+
 Kalbach, Jim, and Michael Schrage. The Jobs To Be Done Playbook: Align Your Markets, Organization, and Strategy Around Customer Needs. New York: Two Waves Books, 2020.
 
 Klement, Alan. “Replacing The User Story With The Job Story.” JTBD.Info (blog), July 3, 2018. [Link](https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27).

@@ -1,10 +1,8 @@
 ---
-tags: 
-- zettelkasten
-- zettelkasten/link
+tags: writing, zettelkasten
 ---
 
-### What is Zettelkasten
+# What is Zettelkasten
 
 Zettelkästen is the German word for "_slip box_". Whenver Luhmann read something, he would record the bibliographic information on the source and some brief descriptive notes about the content on either side of a note card. He would store these in one box. Then, he would think about what he had read and its relevance to his work. He would record these thoughts on other cards, and store them in a second slip box. These represented [[¶ Principle of atomicity | atomic units]] of thought: one idea per card. Each note would include a unique identifier.
 
@@ -12,12 +10,12 @@ When writing his notes, Luhmann would think about what was already in his slip b
 
 Schmidt suggests that the essential characteristics of Luhmann's #zettelkasten was that it involved a specific system of organization and card integration based on specific rules of numbering, an internal system of linking, and a comprehensive keyword index.
 
-### Kinds of Links
+## Kinds of Links
 
 Schmidt adds that Luhmann used three specific kinds of links: 
-1) **references** in the context of a larger structural outline (similar to a table of contents or _outline_ or **_MOC_**); 
-2) a **subject-area** index of references or **_tag_**; 
-3) individual references from one note zettel to another or **_related link_**.
+1) **References** in the context of a larger structural outline (similar to a table of contents or _outline_ or **_MOC_**); 
+2) A **subject-area** index of references or **_tag_**; 
+3) Individual references from one note zettel to another or **_related link_**.
 
 Understanding effective linking is important, because without links, it's easy for a note to get lost.
 
@@ -25,7 +23,7 @@ Luhmann described his zettelkasten as a conversant and thought partner; he value
 
 ---
 
-**Citations**
+#### Reference
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 

@@ -1,8 +1,12 @@
 ---
 tags: blockchain, defi
 ---
+
+# Atomic Swap
+
 ### What
-Atomic swap là hoán đổi 2 loại coin trên hệ thống blockchain riêng biệt, dựa trên [[Smart Contracts]], cho phép người dùng trade coin trực tiếp từ ví. => giao dịch peer to peer giữa các blockchain khác nhau.
+Atomic swap is the swap of 2 coins on a separate blockchain system, based on [[Smart Contracts]], allowing users to trade coins directly from the wallet. => Peer-to-peer transactions between different blockchains.
+
 
 ### Why
 Cross-chain trading can eventually solve many of the problems that are part of most centralized exchanges 
@@ -12,14 +16,21 @@ Cross-chain trading can eventually solve many of the problems that are part of m
 **Inefficiency in regards to volume demands:** khối lượng giao dịch nhiều => thường bị nghẽn do ko giải quyết được hết
 **Regulation** legal
 
+Cross-chain trading can eventually solve many of the problems that are part of most centralized exchanges 
+**Greater vulnerability**  keeping many valuable resources in one location makes them more vulnerable to hacking, and centralized exchanges are prime targets for digital heists. => Big cash flow -> Big chance of getting hacked
+**Funds mismanagement and human error**  maintain by human => cause error sometimes
+**Higher operational costs**
+**Inefficiency in regards to volume demands:** High transaction volume => Cause blocking in transaction 
+**Regulation** legal
 
-#### Advantage
+
+### Advantage
 By removing the need for a centralized exchange or any other kind of mediator, cross-chain swaps can be executed by two (or more) parties without requiring them to trust each other
 - increased level of security because users don’t need to give their funds to a centralized exchange or third party
 - lower operational costs as trading fees are either very low or absent
 - happen quickly (altcoins can be swapped directly without making use of Bitcoin or Ethereum as an intermediary coin.)
 
-#### Limit
+### Limit
 For instance, to perform an atomic swap, the two cryptocurrencies need to be based on blockchains that share the same hashing algorithm (e.g., SHA-256 for Bitcoin). Also, they also need to be compatible with HTLC and other programmable functionalities.
 bring up concerns about users privacy (?) -> on-chain swaps and transactions can be quickly tracked on a blockchain explorer, making it easy to link the addresses.
 
@@ -41,6 +52,6 @@ Happen on either of the currency's network. (In this case, it's Bitcoin and Lite
 Off-chain atomic swaps, on the other hand, take place on a [secondary layer]. This kind of atomic swaps is usually based on bidirectional payment channels, similar to the ones used in the [Lightning Network]
 
 **Hash Time Lock Contracts**
-Hash Lock: ngăn không cho tiền được chi tiêu trừ phần dữ liệu đã được define trước
-Time Lock: đảm bảo hợp đồng chỉ được thực hiện trong một khung thời gian nhất định
-=> Tạo ra bộ quy tắc ngăn chặn swap một phần.
+Hash Lock: prevents money from being spent except for predefined data
+Time Lock: ensures the contract is only executed within a certain time frame
+=> Create a set of rules to prevent partial swap.

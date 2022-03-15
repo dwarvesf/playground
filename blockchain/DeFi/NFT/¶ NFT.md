@@ -2,32 +2,38 @@
 tags: blockchain, defi, nft
 ---
 
-NFT là viết tắt của non-fungibility tokens và chúng là một trong những loại token có thể đại diện cho quyền sở hữu hàng hóa kỹ thuật số khan hiếm như tác phẩm nghệ thuật hoặc đồ sưu tầm.
-Trong kinh tế học, tính thay thế là đặc tính của hàng hóa hoặc hàng hóa mà mỗi đơn vị riêng biệt có thể thay thế cho nhau và không thể phân biệt được với nhau. 
-VD: hàng hóa, tiền tệ.
+# NFT
+
+NFT is an abbreviation for non-fungible token. It's one the tokens that represents an ownership of rare digital goods such as digital artworks or collectibles. 
+
+In economics, fungibility is the property of a good or a commodity whose individual units are essentially interchangeable and each of whose parts is indistinguishable from another part
+
+Example: Goods, currency
 
 ![](https://finematics.com/wp-content/uploads/2020/09/nfts-fungibility-2048x1122.png)
 
-Không thay thế được: 
-VD: Tranh vẽ gốc. 
+Non-fungible: 
+VD: Original artwork
 
-Thuộc tính của NFT: 
-- Unique: Mỗi NFT là duy nhất, không có bản sao thay thế tương đương
-- Indivisible: không thể phân chia NFT thành nhiều phần có mệnh giá nhỏ hơn, không thể trade một phần NFT
+Attributes of NFT: 
+- Unique: Each NFT is unique and can't be replaced
+- Indivisible: NFTs can't be separated into smaller parts with lower valuation. NFTs can't be traded as parts.
 
-NFT được mint bằng smart contract, trong đó quy định một số thuộc tính của NFT như TokenID (unique), owner address và một số thuộc tính khác để nhận dạng NFT (graphic, image,...). NFT được giao dịch trên blockchain, nên tất cả các history transaction từ lúc được mint đến các giao dịch qua nhiều owner sẽ được minh bạch.
+NFTs are minted through smart contracts, in which specifies some attributes of NFTs such as TokenID (unique), owner address and other attributes to help identify an NFT (graphic, image,...). NFT transactions are based on blockchain. Therefore, all the transaction histories of owners are transparency from the beginning to the end. 
 
-Mặc dù NFT có thể được thực hiện trên bất kì blockchain nào hỗ trợ smart contract, nhưng hiện nay phổ biến nhất là [[¶ ERC]]-721 và ERC-1155 trên Ethereum
-- ERC-721 là tiêu chuẩn chung để tạo NFT, ERC-721 cho phép tạo contract có thể được sử dụng để tạo các token có thể phân biệt với các thuộc tính khác nhau. ERC721 được tạo ra bằng cách viết code trong smart contract theo một chuẩn chung, bằng ngôn ngữ như Solidity.
-- ERC-1155 là tiêu chuẩn để tạo cả NFT và token có thể thay thế. VD: game có 2 loại asset, non-fungibility và fungibility. 
+Although NFT can be created on any blockchain network that supports smart contracts, but the most common-used networks are [[¶ ERC]]-721 and ERC-1155 on Ethereum
 
-Lưu trữ:
-- NFT được lưu on-chain, thường là blockchain đầu tiên nơi NFT được mint. NFT được mint trên blockchain này có thể không được transfer sang chain khác. 
-- "Nội dung" của NFT (graphic, image,...) được lưu off-chain. Dữ liệu trong NFT sẽ lưu nơi NFT đang được lưu trữ trên một server nào đó, hoặc IPFS 
-	- IPFS:  (InterPlanetary File System):  decentralized, dữ liệu tải lên được mã hoá và tải lên các máy tính khác cùng tham gia với mạng => ko sợ máy chủ sập + truy cập nhanh hơn, có thể tải dữ liệu từ máy chứa dữ liệu gần nhất. 
-	
+- The ERC-721 non-fungible token standard is written in Solidity language on the Ethereum blockchain and it allows developers to tokenize ownership of any arbitrary data.
+- ERC-1155, an improved standard beyond ERC-721, is another token standard on the Ethereum blockchain that facilitates the creation of both kinds of tokens, fungible and non-fungible. The goal is to create a smart contract interface that can represent both types.
+
+Storage:
+- NFT is stored on-chain, normally is the blockchain where that NFT first minted. NFT that minted on this blockchain network might not be transferable.
+- NFT content (graphic, image,...) is stored off-chain. The data of this NFT will be saved at where the NFT is stored on any server, or IPFS.
+	- IPFS:  (InterPlanetary File System):  Decentralized, the data will be encoded and uploaded on other computers. This prevents the server to be disrupted and improves loading performance. It also enables data to be transferred from the current computer to the closest computer.
+
 ---
 
-**Source**
-https://www.christies.com/features/NFT-101-Collection-Guide-to-NFT-11654-7.aspx
-https://finematics.com/what-are-nfts-and-how-can-they-be-used-in-defi/
+#### Reference
+
+- https://www.christies.com/features/NFT-101-Collection-Guide-to-NFT-11654-7.aspx
+- https://finematics.com/what-are-nfts-and-how-can-they-be-used-in-defi/

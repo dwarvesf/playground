@@ -2,10 +2,13 @@
 tags: blockchain
 ---
 
-### Automated Market Maker
-* Công cụ tạo lập thị trường tự động (con người ko thể can thiệp)
-* Hoạt động trên các sàn giao dịch phi tập trung DEX [[¶ Decentralized Exchange]]
-* Dựa trên các công thức toán học (x*y=z) để định giá giá trị của một Token
+# AMM
 
-x*y= z:hằng số
-giúp tạo ra sự cân bằng cho hệ thống
+### Automated Market Maker
+
+* Tools to create automated market
+* Operate on Decentralized Exchange Platform [[¶ Decentralized Exchange]]
+* Based on mathematics formulas (x*y=z) to estimate/ evaluate a Token's value
+
+x*y= z: A constant number
+that helps create a balance status for the system

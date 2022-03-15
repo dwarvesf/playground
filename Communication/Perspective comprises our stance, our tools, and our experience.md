@@ -1,6 +1,9 @@
 ---
 tags: communication
 ---
+
+# Perspective Comprises Our Stance, Our Tools and Our Experience
+
 According to Roger Martin, perspective on a given issue is formed by the interaction between three things: our **stance**, our **tools**, and our **experience**.
 
 **Stance** describes our personal domain of knowledge as well as our sense of ourselves and our purpose. This frames our personal perspective and approach to the problem space.
@@ -19,6 +22,6 @@ These different elements do not flow linearly from one to another; they mutually
 - [Salience is subjective](https://publish.obsidian.md/mobydiction/notes/Salience+is+subjective) \- What we view as salient to a problem or situation is informed by our subjective experiences
 - [[≈ The Opposable Mind]]
 
-#### Citations
+#### Reference
 
 Martin, Roger L. The Opposable Mind: How Successful Leaders Win Through Integrative Thinking. 1st edition. Boston, Mass: Harvard Business Review Press, 2007.

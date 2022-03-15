@@ -1,7 +1,8 @@
 ---
 tags: innovation, strategy
 ---
-### Work backwards from a long-term vision of the future to define proximate objectives
+
+# Work Backwards From a Long-term Vision of The Future to Define Proximate Objectives
 
 Discovery-driven planning is a technique whereby you define the parameters of a future state and then work backward to understand what would have to be true for that future to come about. Before making a big commitment, you can then make “little bets” that are designed to yield new intelligence, breaking the big inflection point down into smaller, more manageable pieces. Identify checkpoints: points at which you can learn something and determine whether you should continue to move forward or pivot away from the plan.
 
@@ -13,16 +14,16 @@ A related concept is Richard Rumelt's notion of the "proximate objective," an ob
 
 #### Related
 
--   [[Base strategy on leading, not lagging, indicators]]
--   [[Change happens gradually, then suddenly]]
--   [[De-risk innovation by making smaller bets]]
--   [[¶ Falsifiability]]
--   [Inflection points reveal themselves first at the edges](https://publish.obsidian.md/mobydiction/notes/Inflection+points+reveal+themselves+first+at+the+edges)
--   [Winning strategies result from good sensemaking](https://publish.obsidian.md/mobydiction/notes/Winning+strategies+result+from+good+sensemaking)
--   [[§ Innovation]]
--   [[≈ Good Strategy Bad Strategy]]
+- [[Base strategy on leading, not lagging, indicators]]
+- [[Change happens gradually, then suddenly]]
+- [[De-risk innovation by making smaller bets]]
+- [[¶ Falsifiability]]
+- [Inflection points reveal themselves first at the edges](https://publish.obsidian.md/mobydiction/notes/Inflection+points+reveal+themselves+first+at+the+edges)
+- [Winning strategies result from good sensemaking](https://publish.obsidian.md/mobydiction/notes/Winning+strategies+result+from+good+sensemaking)
+- [[§ Innovation]]
+- [[≈ Good Strategy Bad Strategy]]
 
-#### Citations
+#### Reference
 
 McGrath, Rita Gunther. _Seeing around Corners: How to Spot Inflection Points in Business before They Happen_. Boston, Massachusetts: Houghton Mifflin Harcourt, 2019.
 

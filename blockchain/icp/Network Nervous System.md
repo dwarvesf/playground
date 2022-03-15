@@ -2,7 +2,9 @@
 tags: blockchain, icp, nss
 ---
 
-NNS là software trung tâm, điều khiển việc voting các proposal của network.
-NNS giữ public key để validate hết tất cả tx của network.
+# Network Nervous System
 
-Khi NNS nhận một proposal và đưa lên, những người giữ ICP token sẽ tham gia vote.
+NNS is the central software that controls the voting of network proposals.
+NNS holds the public key to validate all network tx.
+
+When NNS receives a proposal and submits it, ICP token holders will participate in voting.

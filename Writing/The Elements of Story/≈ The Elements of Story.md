@@ -1,6 +1,7 @@
 ---
 tags: story-telling, communication, narrative, writing
 ---
+#
 
 ## Summary
 
@@ -8,7 +9,7 @@ A manual on the craft of nonfiction writing from a "story doctor" for the _New Y
 
 ## Notes
 
--   [[Narrative sequencing informs meaning]]
+- [[Narrative sequencing informs meaning]]
 -   [[Good endings make a story memorable]]
 -   [[Good story leads entice and inform]]
 -   [[Good writing makes the familar new]]
@@ -20,9 +21,10 @@ A manual on the craft of nonfiction writing from a "story doctor" for the _New Y
 -   [[Give abstract concepts a human face]]
 
 ---
+
 #### Related
 [[§ Writing]]
 
-#### Citation
+#### Reference
 
 Flaherty, Francis. _The Elements of Story: Field Notes on Nonfiction Writing._ Reprint edition. Harper Perennial, 2010.

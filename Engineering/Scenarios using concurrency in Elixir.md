@@ -2,6 +2,8 @@
 tags: elixir, concurrency
 ---
 
+# Scenarios Using Concurrency in Elixir
+
 ### Fire and forget
 Tell the system to execute some code asynchronously and not care about when it finishes, nor the result.
 
@@ -54,6 +56,7 @@ Library: https://github.com/sasa1977/con_cache
 
 ---
 
-**Citation**
+#### Reference
+
 - https://gist.github.com/hieuphq/f949e2a7074b0f23edb5f7dee2ad2533
 - https://functional.works-hub.com/learn/elixir-practical-concurrency-3794f

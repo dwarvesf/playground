@@ -2,6 +2,8 @@
 tags: ux, design, personas
 ---
 
+# Personas May Cause Space for Assumption
+
 Personas have come under fire for including extraneous information that, beyond simply being unnecessary, can distract or contribute to misunderstandings about users and their contexts. For instance, Alan Klement suggests that by describing a set of attributes, personas distract teams from the actual problems their users are hoping to solve.
 
 Much of the critique of personas has centered around their inclusion of demographic information and photography to represent the user. Indi Young and Klement have, in their own ways, suggested that including demographic information can instigate subconscious reactions and biases in team members. They may therefore inspire "anti-empathy." At best, demographic data may provoke divergent understanding as different members of the team interpret even soft descriptors like "low-income," "middle-aged," or "college student" in different ways. This is not to say that there are never situations when this kind of information is useful; but, these are likely exceptions rather than the norm.
@@ -16,10 +18,13 @@ Personas may also become too strong a stand-in for actual user research. That is
 
 Better than any persona is ongoing exposure to actual users.
 
+---
+
 #### Related
 
--   [[People fill information gaps with assumptions]]
--   [[Personas lack rich context]]
+- [[People fill information gaps with assumptions]]
+- [[Personas lack rich context]]
 
-**Source**
+#### Reference
+
 Klement, Alan. “Replacing Personas With Characters.” Medium (blog), September 2, 2017. [Link](https://medium.com/down-the-rabbit-hole/replacing-personas-with-characters-aa72d3cf6c69).

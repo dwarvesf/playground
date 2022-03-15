@@ -2,7 +2,7 @@
 tags: API, graphql
 ---
 
-### About GraphQL
+# About GraphQL
 A query language to write schema on backend server. Unlike SQL (query language for database), GraphQL follows a stricter format and gets utilized on API, which, usually gets compared to RESTful API. 
 
 For query language for API from backend side.
@@ -13,11 +13,12 @@ For query language for API from backend side.
 - Notify update when data is changed
 
 #### Cons
-- rare on adoption
-- hard to pick up
-- inappropriate for constantly fectch data system
+- Rare on adoption
+- Hard to pick up
+- Inappropriate for constantly fectch data system
 
 ---
 
-**Citation**
+#### Reference
+
 https://exarhouleasjohn.medium.com/what-is-graphql-6dcc27a18914

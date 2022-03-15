@@ -2,6 +2,8 @@
 tags: ux, design, personas
 ---
 
+# Focus Personas on Task, Goals and Motivations
+
 Personas shouldn't be created so much as discovered. First and foremost, personas document research. Personas articulate patterns of thought and feeling. These are attributes that can't easily be quantified. Effective user personas should be an outcome of qualitative research. Personas should be the result of [[≈ Sensemaking | sensemaking]], not measurement.
 
 This is [[¶ Abductive reasoning | abductive research]]: it doesn't start with a supposition or hypothesis, but begins instead with an openness to evidence that can be assembled into a theory. Persons require attention to what Christian Madsbjerg calls "thick data"—the rich context below the surface that details what an experience feels like rather than simply noting that it occurs. Personas should describe not just what kinds of people use the product, but help teams understand how they understand their relationship to the product and the problem space it occupies.
@@ -14,11 +16,14 @@ Alan Cooper emphasizes the importance of selecting a primary persona—the user 
 
 Personas should be living, breathing documents. As knowledge about the user or customer evolves, so should the personas.
 
+---
+
 #### Related
 
 - [[Personas communicate research or they communicate assumptions]]
 
-**Source**
+#### Reference
+
 Cooper, Alan. _The Inmates Are Running the Asylum_. Sams Publishing, 2004.
 
 Spool, Jared M. _“Customers Request Solutions. We Need to Understand Their Problems.”_ Medium (blog), August 16, 2019. [Link](https://medium.com/@jmspool/customers-request-solutions-we-need-to-understand-their-problems-41db3b5c6d4d).

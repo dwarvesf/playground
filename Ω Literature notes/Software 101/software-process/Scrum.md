@@ -1,7 +1,8 @@
 ---
 tags: software101, engineering, process, scrum
 ---
-### Scrum
+# Scrum
+
 Scrum is the most popular Agile approach and is being used in software companies worldwide. It is a simple but very effective management process for software development. Scrum can help project team to manage changes in scope of the project. Scrum iterations help the team to develop products in several incremental steps called **Sprint** (1 to 4 weeks) where the team can get feedback from users quickly. Scrum process is simple, clear and easy to learn, its “**Daily Standup**” meetings allow the team to share information effectively; the “**Burndown chart**” helps team members to check status easily.
 
 The most common issue of project that uses Scrum is they do not follow the process but often skip some steps as they see fit. For example, team members may say to each other: “We already know what to do, why bother to update the sprint backlog? It is a waste of time.” Every process is defined for a purpose, if you do not follow it than you do not use Scrum accordingly. In that case, you may have problems but it is not because of Scrum.
@@ -12,7 +13,7 @@ Scrum is excellent for Web project, for project that need fast update but NOT fo
 
 Software company should have several development methodologies not just one. Project managers should select appropriate methods for each project accordingly. Scrum might not be correct method so company must chose wisely.
 
-### Scrum team
+## Scrum team
 A person wrote to me: “I have been working as software developer for three years and just got promoted to project manager. Recently my company is adopting agile development (Scrum method). There is a rumor that they do not need project manager anymore and I could be laid-off. What can I do to maintain my position? Please advice.
 
 Answer: The transition from traditional development to agile approach takes time and trainings to do it right. Everybody must understand their roles, responsibilities and be accounted for their works. This will require changes in the way the company operates from top to bottom where managers must understand which the “ideal situation” is and which is not. It is easy to say something like we do not need project manager anymore but in practice it does not happen that easily. Do not expect the transition from traditional development to agile approach to happen within few weeks or few months, there are many things your company must learn from this transition, and it will require a lot of efforts to do thing correctly. Personally, I think Scrum is a very good approach to software development. It differs from the traditional waterfall approach which requirements must be clear and understood. Scrum accepts that requirements may not be well defined up-front so they may change and the goal is to respond in a good manner to these changes by produce a working software incrementally to customers.
@@ -34,5 +35,9 @@ At the end of each Sprint, the team gets together and discusses what works and w
 If you compare the roles of traditional Project Manager with Scrum Master, you could see that there are certain tasks missing in Scrum Master because in an ideal situation, everything can be done by the Self-organized Team, assume that the team consists of experienced and well trained members. However in practice, it may not happen that way. The role of the Scrum Master could be expanding to cover some of these weaknesses. In Scrum approach, the process is facilitated by a Scrum Master whose primary responsibility is to guide and remove issues that prevent the team from meeting the goal. Although the Scrum Master is not the manager of the team (The team is self-organizing and self-managed) but in reality and during the transition, the Scrum Master could acts as a facilitator for issues resolution and communication and sometime must play a more active role in making sure that the team follows the Scrum process, facilitates collaboration, and acts as a “mentor” for the team.
 
 Of course in Scrum, you do not act as a Project Manager, direct everything, manage everything and be responsible for everything. In Scrum everybody shares responsibility for the project’s success. However, in practice somebody must be concerned with the schedule, the cost and budget and I think as project manager, people would expect you to fulfill that role. My advice is to learn as much as possible about Scrum because with your experience, your company will need someone like you.
+
+---
+
+#### Reference
 
 [https://www.youtube.com/watch?v=9TycLR0TqFA](https://www.youtube.com/watch?v=9TycLR0TqFA)

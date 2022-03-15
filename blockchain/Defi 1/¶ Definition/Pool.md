@@ -2,15 +2,15 @@
 tags: blockchain, defi, pool
 ---
 
-### Liquidity Pool
-Liquidity Pool: a collection of funds locked in a smart contract. 
-Centralized: Khi trade thì người bán và người mua đồng thuận trên cùng 1 giá => Khớp lệnh
-Decentralized: thực hiện giao dịch mà ko có một bên tập trung giữ tiền, mỗi lần order đều yêu cầu phí gas => nâng giá giao dịch
-	phí gas: phí được đưa để đo lường công việc tính toán của các giao dịch, giá Gas được xác định bởi các miner. 
-Tóm lại, phí Gas là các khoản thanh toán được thực hiện bởi người dùng để đổi lấy năng lượng tính toán cần thiết nhằm xử lí và xác thực các giao dịch trên chuỗi khối Ethereum.
+# Pool
 
+### Liquidity Pool
+Liquidity Pool: a collection of funds locked in a smart contract.
+Centralized: When trading, the seller and buyer agree on the same price => Order execution
+Decentralized: perform transactions without a centralized party to keep money, each order requires gas fees => raise the transaction price
+Gas fees: fees are given to measure the computational work of transactions, gas prices are determined by miners.
+In a nutshell, Gas fees are payments made by users in exchange for the computing power needed to process and validate transactions on the Ethereum blockchain.
 
 ### Add liquidity
-Provider tạo ra 1 pool cho 1 cặp asset, VD như ETH + USDT. Khi Pool được tạo, provider sẽ đặt vào pool số lượng coin với giá ngang nhau. VD: 1 ETH = 2484.52 USDT, thì số lượng coin bỏ vào pool phải tương ứng. Với mỗi pool được tạo ra, provider  sẽ nhận được một Token mới đại diện cho Cổ phần của họ, được gọi là Token Pool. Phần phí giao dịch sẽ được trả trên mỗi giao dịch Swap, được chia theo Cổ phần. VD, nếu phí giao dịch là 0.3%, nếu provider đã đóng góp 10% vào Pool ETH+USDT thì họ sẽ nhận được 10% của 0.3% đó. 
-
+Provider creates a pool for an asset pair, eg ETH + USDT. When the Pool is created, the provider will put the same amount of coins in the pool with the same price. For example: 1 ETH = 2484.52 USDT, then the amount of coins put into the pool must correspond. For each pool created, the provider will receive a new Token representing their Share, called Token Pool. The part of the transaction fee will be paid on each Swap transaction, divided by the Shares. For example, if the transaction fee is 0.3%, if the provider has contributed 10% to the ETH+USDT Pool, they will receive 10% of that 0.3%.
 

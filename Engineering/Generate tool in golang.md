@@ -2,6 +2,8 @@
 tags: go, generator
 ---
 
+# Generate Tool in Golang
+
 ### Story about generate a file
 We usually run a command line in the golang project to generate a file, such as: the mock implementation for an interface.
 
@@ -52,6 +54,7 @@ This tool will help we generate a new mock file in our project at `myapp/model/m
 
 ---
 
-**Citation**
+#### Reference
+
 - https://blog.golang.org/generate
 - https://pkg.go.dev/std

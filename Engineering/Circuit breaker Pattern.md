@@ -2,6 +2,8 @@
 tags: engineering, cloud-pattern, microservice
 ---
 
+# Circuit Breaker Pattern
+
 ### Context
   - In a distributed environment, there can be situations where faults are due to unanticipated events, and that might take much longer to fix. Result the complete failure of a service. In these situations it might be pointless for an application to continually retry an operation that is unlikely to succeed, and instead the application should quickly accept that the operation has failed and handle this failure accordingly.
    - Sometime, failed service could have bad effect to other services about: delay, performance and reduce UX of users
@@ -25,6 +27,7 @@ When using the circuit breaker, we might need to care about:
 ![[circuit-breaker-diagram.png]]
 
 ---
-**Citation**
+#### Reference
+
  - https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker
  - https://martinfowler.com/bliki/CircuitBreaker.html

@@ -1,7 +1,8 @@
 ---
 tags: software101, engineering
 ---
-### A system perspective
+## A system perspective
+
 From early 20th century, manufacturing processes based on “assembly line” created by Henry Ford has become the standard. The idea is breaking down complex processes into the smallest and simplest tasks so workers can be trained to do is more efficiency and effective. This task segmentation was essential at that time due to the limitations of the skills of labor workers and the efficiency needed of the car industry. Henry Ford said: “The only way for a groups of workers to work in complex processes such as building a car is to give each of them only one thing to do and let them focus on doing that as efficiently and quickly as possible.”
 
 This method also manifests itself into the way people organize things into functions and specialization. It works very well throughout the 20th century, especially in manufacturing sectors with manual labor workers. However, it does not work well in technology area with knowledge workers of the 21st century. Today, most works requires intensive knowledge, especially technology works. That is why there is a big gap between skilled workers and unskilled workers. Unfortunately many IT companies are still operating like when they are still in the 20th century. They divide works into functional groups, each only know one things based on technologies and platforms. For example, networks, servers, databases, desk top, and applications. Very few people know how the entire system works and how it impacts the business. In software development, workers are divided into many functions, each specializes in one such as planning, designing, coding, or testing but few know how the entire software work. That is why many projects failed during integration.

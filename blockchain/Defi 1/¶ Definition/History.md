@@ -2,45 +2,47 @@
 tags: blockchain, defi
 ---
 
+# History
+
 ### Bitcoin
-Invented in 2009, bắt đầu với Bitcoin, mang đến distributed ledger/blockchain --> peer-to-peer transfer (P2P) & non-sovereign digital asset (không chủ quyền)
+Invented in 2009, starting with Bitcoin, brings distributed ledger/blockchain --> peer-to-peer transfer (P2P) & non-sovereign digital asset (non-sovereign)
 
 ### Ethereum
-Bitcoin - ngôn ngữ Script => hạn chế câu lệnh
-Ethereum, ra mắt 2015, ngôn ngữ Solidity, nhanh chóng trở thành một nền tảng hợp đồng thông minh phổ biến  vì đáp ứng được các tiêu chí.
+Bitcoin - Script language => command restrictions
+Ethereum, launched in 2015, Solidity language, quickly became a popular smart contract platform  because it met the criteria.
 
 ### Maker
-Một trong những dự án lâu đời nhất trên Ethereum là Maker – một giao thức cho phép đúc ra stablecoin phi tập trung đầu tiên, DAI. Lúc đầu, DAI chỉ được đúc bằng tài sản thế chấp là ETH, tuy nhiên số lượng tài sản thế chấp được chấp nhận đã mở rộng vào cuối năm 2019.
+One of the oldest projects on Ethereum is Maker – a protocol for minting the first decentralized stablecoin, DAI. At first, DAI was minted only with ETH as collateral, however the number of accepted collateral expanded in late 2019.
 
 ### EtherDelta Decentralized Exchange
-Xuất hiện từ năm 2017, EtherDelta cho phép trao đổi các token thuộc chuẩn ERC20 thông qua cơ chế order-book tương tự các sàn tập trung.
-Ít người biết đến do UX kém và phức tạp, người dùng chủ yếu sử dụng EtherDelta để giao dịch các token sau khi ICO nhưng chưa được niêm yết trên các sàn giao dịch tập trung.
-Hacker giành được quyền truy cập vào giao diện của EtherDelta và redirect họ đến một trang web lừa đảo – ước tính 800 nghìn USD đã bị đánh cắp.
+Appearing since 2017, EtherDelta allows the exchange of tokens of the ERC20 standard through an order-book mechanism similar to centralized exchanges.
+Little known due to poor and complicated UX, users mainly use EtherDelta to trade tokens after ICO but not yet listed on centralized exchanges.
+Hackers gained access to EtherDelta's interface and redirected them to a phishing site – an estimated $800,000 was stolen.
 
 ### ICO - Initial Coin Offering
-ICO, gọi vốn cộng đồng. Phát hành Token để đổi lấy ETH => tạo nên nhiều dự án ma
-Một trong những đột phá chính vào thời điểm đó là ý tưởng về việc người dùng tương tác với các hợp đồng thông minh chứa tài sản của những người dùng khác, thay vì tương tác ngang hàng p2p. Ý tưởng này đã tạo ra một mô hình mới “user-to-contract”, định hình DeFi trong tương lai.
-Sau đó trend ICO kết thúc, DeFi trải qua thời gian khá im hơi lặng tiếng
+ICO, crowdfunding. Issuing Tokens in exchange for ETH => creating many ghost projects
+One of the major breakthroughs at the time was the idea of ​​users interacting with smart contracts containing other users' assets, rather than p2p peer-to-peer interaction. This idea created a new “user-to-contract” model, shaping the future of DeFi.
+After the ICO trend ended, DeFi went through a rather quiet time.
 
 ### Uniswap
-Ra mắt vào ngày 2 tháng 11 năm 2018, trái ngược với EtherDelta, Uniswap được xây dựng dựa trên các khái niệm hoàn toàn mới như “liquidity provider” , “automate market maker”. Tận dụng mô hình “user-to-contract” trước đó.
+Launched on November 2, 2018, in contrast to EtherDelta, Uniswap is built on completely new concepts such as “liquidity provider”, “automate market maker”. Leverage the previous “user-to-contract” model.
 
 ### Back Thursday
-Ngày 12 tháng 3 năm 2020, giá ETH giảm mạnh hơn 30% trong vòng chưa đầy 24h trong bối cảnh đại dịch Corona bùng phát. 
-Phí GAS tăng đến 200 gwei do nhiều người dùng cố gắng gửi thêm tài sản thế chấp của họ để bảo đảm các khoản vay khác nhau hoặc đang cố gắng tháo chạy khỏi bể máu. 
-Maker chịu ảnh hưởng nhiều nhất. => bổ sung thêm token MKR để bù đắp.
+On March 12, 2020, ETH price plummeted more than 30% in less than 24 hours amid the outbreak of the Corona pandemic.
+GAS fees increased to 200 gwei as many users tried to deposit more of their collateral to secure various loans or were trying to escape from the bloodbath.
+Maker is the most affected. => add MKR tokens to compensate.
 
 ### Defi Timeline
-Tháng 5 năm 2020, Compound đề xuất Liquidity Mining. Người dùng DeFi được thưởng khi cho vay và vay trên Compound. Phần thưởng là token COMP, dẫn đến việc cung cấp thanh khoản vay và cho vay tăng lên đáng kể. Điều này cũng cho phép sự phát triển của “Yield Farming” vì người dùng có thể sử dụng các token giữa các giao thức để tối ưu hóa lợi nhuận.
+May 2020, Compound proposes Liquidity Mining. DeFi users are rewarded for lending and borrowing on Compound. The reward is COMP tokens, resulting in significantly increased lending and borrowing liquidity. This also allows the growth of “Yield Farming” as users can use tokens between protocols to optimize profits.
 
-Mô hình quản trị mới (DAO), người dùng có các token thưởng có thể tham gia đề xuất hoặc bỏ phiếu cho các đề xuất với giao thức.
+New governance model (DAO), users with reward tokens can participate in proposals or vote on proposals with the protocol.
 
-Đầu năm 2020, Yearn ra mắt là một trong những công cụ tối ưu hóa năng suất bằng việc tự động chuyển đổi giữa các giao thức cho vay khác nhau. Andre, nhà phát triển Yearn đã quyết định phân phối token quản trị – YFI 0 cho cộng đồng sử dụng Yearn vào tháng 7 năm 2020. Token được phân phối hoàn toàn qua liquidity mining – không có các quỹ, không có phần thưởng cho nhà tài trợ, không có dev fund. Mô hình này đã thu hút nhiều sự ủng hộ từ cộng đồng DeFi, với dòng tiền trong các nhóm thanh khoản đạt đến mức hơn 600 triệu USD. YFI tăng từ 6 USD khi mới được niêm yết trên Uniswap và đỉnh điểm là hơn 40000 USD sau khi được niêm yết lên Binance.  => Nhiều nơi nhảy vào clone YFI 
+In early 2020, Yearn launched as one of the tools to optimize productivity by automatically switching between different lending protocols. Andre, the developer of Yearn decided to distribute the governance token – YFI 0 to the Yearn user community in July 2020. Tokens are distributed entirely via liquidity mining – no funds, no home rewards funding, no dev fund. This model has attracted much support from the DeFi community, with cash flows in liquidity pools reaching over $600 million. YFI grew from 6 USD when it was first listed on Uniswap and peaked to over 40000 USD after being listed on Binance. => Many places jump to clone YFI, 
 
-Ngày 11/9/2020, ra mắt YAM. Token YAM cũng được phân phối theo tinh thần fair launch của YFI. Chính YAM là giao thức giúp các dự án COMP, LEND(AAVE), LINK, MKR, SNX và YFI thu hút được sự chú ý của cộng đồng tiền điện tử nhiều hơn khi khuyến khích họ đặt các token này trên nền tảng của YAM. Chưa đầy 2 ngày sau khi ra mắt, một lỗi nghiêm trọng trong cơ chế rebase được tìm thấy. => Nhận thức rủi ro ở những prod có APY cao
+September 11, 2020, YAM was launched. YAM tokens are also distributed in the spirit of YFI's fair launch. It is YAM that is the protocol that helps COMP, LEND(AAVE), LINK, MKR, SNX and YFI projects attract more attention of the crypto community by encouraging them to place these tokens on YAM's platform. . Less than 2 days after launch, a critical bug in the rebase mechanism was found. => Risk perception in prods with high APY
 
-Tháng 8 năm 2020, Sushiswap ra mắt, bắt đầu chuyển số lượng lớn liquidity từ Uniswap sang.
+In August 2020, Sushiswap launched, began to transfer large amounts of liquidity from Uniswap.
 
-Sau đó cũng xuất hiện thêm nhiều bản clone khác.
+After that, many more clones appeared.
 
-Sự kiện cuối cùng: Token UNI. Tất cả người dùng trước đây của Uniswap bỗng nhận được một khoản tiền trị giá hơn 1000 USD (tại thời điểm đó) => giành lại liquidity từ Sushiswap
+Last event: Token UNI. All previous users of Uniswap suddenly received an amount of more than 1000 USD (at that time) => regain liquidity from Sushiswap.

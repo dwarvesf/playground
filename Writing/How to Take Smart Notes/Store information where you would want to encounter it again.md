@@ -1,6 +1,8 @@
 ---
-tags: zettelkasten
+tags: zettelkasten, note, writing
 ---
+
+# Store Information Where You Would Want To Encounter It Again
 
 The most important question is not where we store the information, but where we would like to come across it again.
 
@@ -17,6 +19,6 @@ This is a key tenet of how a Zettelkasten is organized; its heavily linked struc
 - [[≈ How to Take Smart Notes]]
 - [[§ Writing]]
 
-#### Citations
+#### Reference
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.

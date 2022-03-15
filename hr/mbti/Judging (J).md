@@ -1,6 +1,9 @@
 ---
 tag: MBTI
 ---
+
+# Judging (J)
+
 #### Characteristics of J Types:
 - Outwardly firm, direct, and opinionated
 - Undeterred from directly expressing their views or wishes (especially EJs); utilize declarative statements
@@ -13,7 +16,9 @@ tag: MBTI
 - Not necessarily neat, tidy, organized, uptight, or punctual
 - Less restless and less dependent on a breadth of activities for stimulation (especially IJs)
 
-**Source**
+---
+
+#### Reference
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
 Copyright © 2014  

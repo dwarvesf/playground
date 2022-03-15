@@ -2,6 +2,8 @@
 tags: blockchain, defi, dex
 ---
 
+# History of DeFi
+
 ### Bitcoin
 Invented in 2009, bắt đầu với Bitcoin, mang đến distributed ledger/blockchain --> peer-to-peer transfer (P2P) & non-sovereign digital asset (không chủ quyền)
 
@@ -46,9 +48,10 @@ Sau đó cũng xuất hiện thêm nhiều bản clone khác.
 Sự kiện cuối cùng: Token UNI. Tất cả người dùng trước đây của Uniswap bỗng nhận được một khoản tiền trị giá hơn 1000 USD (tại thời điểm đó) => giành lại liquidity từ Sushiswap
 
 ---
-#### Relation
+#### Related
+
 - [[¶  DeFi (Decentralized Finance)]]
 - [[¶ Decentralized Exchange]]
 
-#### Citation
+#### Reference
 [History Of DeFi – From Inception To 2021 And Beyond](https://finematics.com/history-of-defi-explained/)

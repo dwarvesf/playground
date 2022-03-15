@@ -2,6 +2,8 @@
 tags: elixir
 ---
 
+# Move An Existing Phoenix App Under An Unbrella App
+
 chrismccord [10:14 PM]  
 @alanpeabody yes, it's straightforward
 1) mix new my_umbrella --umbrella
@@ -36,5 +38,6 @@ He described his problem more in `general` which is that he wants to keep his ex
 
 ---
 
-**Source**
+#### Reference
+
 - https://elixir-lang.slack.com/archives/phoenix/p1472921051000134

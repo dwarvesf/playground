@@ -1,7 +1,7 @@
 ---
 tags: innovation, orgarnization
 ---
-### Loss aversion creates tension between the need to innovate and the need to protect the status quo in large organizations
+# Loss Aversion Creates Tension Between The Need to Innovate and The Need to Protect the Status Quo in Large Organizations
 
 Organizations, like people, are loss averse. They will instinctively seek to protect what they have, even at the cost of future opportunities. The effects of this are compounded because the enterprise is invested in maintaining the status quo. They are, by nature and by habit, defensive. But this makes it difficult for them to do what it takes to innovate and succeed in the future.
 
@@ -13,6 +13,6 @@ Organizations, like people, are loss averse. They will instinctively seek to pro
 - [[≈ Pirates in the Navy]]
 - [[§ Innovation]]
 
-#### Citations
+#### Reference
 
 Viki, Tendayi. _Pirates In the Navy How Innovators Lead Transformation_. Unbound, 2020.

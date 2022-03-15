@@ -2,6 +2,8 @@
 tags: communication
 ---
 
+# Orientational Metaphors Organize Concepts Relationally
+
 Orientational metaphors organize concepts in relation to one another, typically using spatial orientations. Orientational metaphors are especially useful for conceptualizing emotions, which typically lack a clearly defined conceptual structure in and of themselves. For instance, "happy" is up while "sad" is down. These are structured in large part from deep-seated cultural values.
 
 ---
@@ -13,6 +15,6 @@ Orientational metaphors organize concepts in relation to one another, typically 
 - [[Structural metaphors reveal and conceal different aspects of experience]]
 - [[≈ Metaphors We Live By]]
 
-#### Citations
+#### Reference
 
 - [[≈ Metaphors We Live By | Lakoff, George, and Mark Johnson. Metaphors We Live By. University of Chicago Press, 2008.]]

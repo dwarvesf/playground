@@ -1,7 +1,8 @@
 ---
 tags: project, risk, pm
 ---
-### Risk management
+# Risk management
+
 Today, most software projects are large and more complex therefore they are more riskier than before. Project managers must take time to manage project risks because it is a key factor in determining a project’s success. To managing risks, managers must identify all risks, plan prevention, monitor risks, and managing changes. By understanding risk management, project manager can avoid and reduce the impact of risks, provide better schedule and budget estimations and achieve customer satisfaction.
 
 Risk management also involves continuous communication about risks to the project team and monitor all identified risks to stay on top of anything that may happen during the project. In order to identify risks, managers can consider typical software project issues such as technical risks, personnel risks and estimation risks.  In addition to common risks there can be specific risks unique to a project. Any data from similar projects can be helpful in identifying these unique risks. Based on this information, plans can be made to handle the risks. Most software projects have the following risks: Size estimation, Budget limitation, New technology implementation, Limited customer involvement, Market changes, Staff turnover, Scope changes, Hardware dependency issues, Network dependency issues, Project team’s skills issues, and Teamwork issues. Project manager must determine risks that are likely to occur or risks that will cause a great impact and monitor them carefully and handled as early as possible.  The earlier that risks are mitigated, the less costly the impact.
@@ -12,10 +13,10 @@ A good project manager must balance the team’s working schedules with customer
 
 Every software project has request for changes but a good software project managers know how to handle change issues by using risk management skills to prevent them or lessen their impact. This includes identifying change risks, assessing them, determining solutions, taking action and constantly monitoring the project for impact.  I strongly believe that risk management along with good estimation and negotiation skills are the minimum skills needed by all software project managers.
 
-#### 1) Construction industry:  Dependency risks
+## 1) Construction industry:  Dependency risks
 Construction projects often consist of many specialized contractors who work together to build a new house.  The contractors’ timelines often depend on other workers which can create risk if there is a bottleneck.  If people work on the foundation is not finish, you can not build walls and without walls and columns, you can not put on the roof These dependencies should be determined as early as possible and monitored in order to adjust the schedule as necessary.
 
-#### 2) Automobile industry:  Market change risks
+## 2) Automobile industry:  Market change risks
 Recent news has shown how market changes have impacted the automobile industries’ projects.  Though large vehicles have been popular in the recent years; the demand for fuel efficient cars has increased.  These risks are particularly difficult to predict but they can have a huge impact and should be monitored and addressed if possible.
 
 #### 3) Pharmaceutical research and development :  Experimentation risks

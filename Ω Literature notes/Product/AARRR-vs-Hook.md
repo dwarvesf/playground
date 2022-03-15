@@ -2,6 +2,8 @@
 tags: product, model, framework
 ---
 
+# AARRR vs Hook
+
 |type/function |aarrr |hook
 |-----|-----|-----|
 |purpose |strategy to build user journey |process to create habitual productly
@@ -12,7 +14,7 @@ tags: product, model, framework
 |step 4 |referral |investment
 |step 5 |revenue |-
 
-### Comparison
+## Comparison
 ![[growth-loop-hook-model.png]]
 
 While the AARRR is a strategy focus on bringing new users, the Hook model is the process to ensure current customer to keep using the products.
@@ -22,7 +24,7 @@ They both have the initial input as getting user to engage and drive them toward
 - Hook: internal action to establish habit & improve the product itself.
 
 
-### Can they both exist in product development?
+## Can they both exist in product development?
 Yes. 
 The twos contain variances end goals. Despite the difference, it came toward to one thing: Product Growth.
 - AARRR ensures that your existing users are helping you to grow.
@@ -36,14 +38,14 @@ At which stage
 |step |activation|action
 
 
-### Take-away
+## Take-away
 Product should be built based on the synergy between aarrr and hook. Specifically, it must serve these below things
 - Easy & approachable action
 - Customizable experience
 - Variable reward 
 
 
-### Personal input
+## Personal input
 IMHO, this somehows reflect 'Agile' in product strategy. Nothing goes straight from point A to point B with a smooth and error-free plan. It faces changes in requirement and market demand.
 
 It relies heavily on **user** - and how they interact with the product. 

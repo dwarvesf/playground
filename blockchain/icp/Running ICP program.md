@@ -2,7 +2,8 @@
 tags: blockchain, icp
 ---
 
-Running ICP Program
+# Running ICP Program
+
 - Start local network: `$ dfx start`
 - Create a canister: `$ dfx canister create --all`
 - Build source code: `$ dfx build`
@@ -15,4 +16,3 @@ On the first time deployment, it will create default 'identity'
 
 Calling motoko func: 
 `$ dfx canister call <canister name> <func name> <args>`
-

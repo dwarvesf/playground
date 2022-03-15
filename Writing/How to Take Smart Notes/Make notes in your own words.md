@@ -2,6 +2,8 @@
 tags: zettelkasten, note, writing
 ---
 
+# Make Notes in Your Own Words
+
 When we are reading a text, it can be difficult to identify and remember what is most important. Especially when reading theoretical texts, we must balance our short-term and long-term memories so that we can focus on what is truly important.
 
 Reformulating what we read in our own words can help facilitate this understanding. Re-framing ideas in this way forces us to consider what is meant, and compels us to think about what is emphasized and what is left out in the text we are reading.
@@ -16,12 +18,12 @@ One of the benefits of the #Zettelkasten method is that it involves multiple act
 
 #### Related
 
--   [[Decontextualize ideas to make them new]]
--   [[§ Zettelkasten]]
--   [[≈ How to Take Smart Notes]]
--   [[§ Writing]]
+- [[Decontextualize ideas to make them new]]
+- [[§ Zettelkasten]]
+- [[≈ How to Take Smart Notes]]
+- [[§ Writing]]
 
-#### Citations
+#### Reference
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 

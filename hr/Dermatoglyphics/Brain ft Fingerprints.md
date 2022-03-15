@@ -2,19 +2,24 @@
 tags: fingerprint, HR
 ---
 
-Mỗi ngón tay đều liên quan đến một thùy trên não bộ của chúng ta. Đặc trưng của nó là: độc nhất và ko thay đổi.
+# Brain ft Fingerprint
 
-> Não phải điều khiển tay trái
-> Não trái điều khiển tay phải
+Each finger is related to a lobe of our brain. Its characteristics are: unique and unchanging.
 
-- Ngón cái – Thùy trước trán (chức năng nhận thức, hành vi, tính cách) 
-- Ngón trỏ - Thùy trán (chức năng tư duy, suy nghĩ, ý tưởng, tưởng tượng) 
-- Ngón giữa – Thùy đỉnh (chức năng vận động, xúc giác) 
-- Ngón áp út – Thùy thái dương (chức năng cảm thụ âm thanh, thính giác, ngôn ngữ) 
-- Ngón út – Thùy chẩm (chức năng quan sát hình ảnh, xử lý thị giác)
+> Right brain controls left hand
+> Left brain controls right hand
+
+- Thumb – Prefrontal lobe (cognitive function, behavior, personality)
+- Index finger - Frontal lobe (function of thinking, thinking, idea, imagining)
+- Middle finger - Parietal lobe (motor function, touch)
+- Little finger - temporal lobe (function of sensing sound, hearing, language)
+- Little finger - occipital lobe (image observation function, visual processing)
 
 ![[Screenshot 2021-06-30 at 16.41.36 1.png]]
 
-**Source**
+---
+
+#### Reference
+
 - [Science in your hands](https://www.bbvaopenmind.com/en/science/research/science-in-your-hands-what-your-fingerprints-say-about-you/)
 - [Principles](http://www.forensicsciencesimplified.org/prints/principles.html)

@@ -2,12 +2,16 @@
 tag: MBTI
 ---
 
-MBTI (Myers-Briggs Type Indicator) > 1920s theo theory của nhà tâm lý học Carl Jung và nhiều framework khác vào những thập kỉ sau. Trong đó quan trọng nhất là Five Big Personalities Traits.
+# History
+
+MBTI (Myers-Briggs Type Indicator) > 1920s according to the theory of psychologist Carl Jung and many other frameworks in the following decades. The most important of which is the Five Big Personalities Traits.
 
 Type <> Trait
 
-Type: bên nào > 50% thì gán 1 type cho loại đó
-Trait: dựa trên Degree của mỗi loại tính cách, ko phân chia loại
+Type: which side is > 50% then assign 1 type to that type
+Trait: based on Degree of each personality type, no classification.
 
-**Source**
+---
+
+#### Reference
 [Our Theory](https://www.16personalities.com/articles/our-theory)

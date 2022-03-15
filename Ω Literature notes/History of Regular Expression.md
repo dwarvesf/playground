@@ -2,6 +2,8 @@
 tags: regex
 ---
 
+# History of Regular Expression
+
 _Buzz Andersen (BA) is an interesting builder on the internet (and has been for some time, with stints at Apple, Square, Tumblr, and more) but has also emerged as an important and moral voice in technology’s evolution. He’s an incredible [twitter follow](https://mobile.twitter.com/buzz) and I always feel smarter for having interacted with him. - Colin (CJN)_
 
 _**Buzz here.**_ On March 10, 2021, many Russian Internet users suddenly found they were having trouble accessing parts of the web. Kentik, a US-based network analysis company, [reported](https://twitter.com/DougMadory/status/1369648537634545673) that network traffic to Rostelecom, the Russian state telecom, was down as much as 24%, and cybersecurity Twitter was abuzz with speculation about the causes. 
@@ -73,5 +75,6 @@ After yesterday’s Fastly outage, [this XKCD seems appropriate](https://xkcd.co
 
 ---
 
-**Citation**
+#### Reference
+
 https://whyisthisinteresting.substack.com/p/the-regular-expression-edition

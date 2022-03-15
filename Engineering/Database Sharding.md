@@ -2,6 +2,8 @@
 tags: engineering, database, sharding
 ---
 
+# Database Sharding
+
 ### Why?
 Data-driven app need ability to scale dynamically to against significant growth in the future
 

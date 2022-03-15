@@ -1,7 +1,8 @@
 ---
 tags: software101, engineering, process, waterfall
 ---
-### Waterfall & Iterative
+# Waterfall & Iterative
+
 When do we use the Waterfall and when do we use the Iterative approach? How do we select which is best for software project?
 
 Both of these approaches follow a well defined process with specific details. You select the Waterfall approach when the requirements are well understood and the project must follow certain rules and regulations (i.e. large critical project or government projects) where it requires high level of quality and documentation. You complete everything in the project and release the product all at once to customers. However, there are risks involved in this approach if the requirements change, many thing have to be reworked; and if the project is too big and takes too long, technology may change and make the project obsolete.

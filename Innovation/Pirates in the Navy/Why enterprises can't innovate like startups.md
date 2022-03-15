@@ -2,7 +2,8 @@
 tags: innovation, enterprise, organization
 ---
 
-### Why enterprises can't innovate like startups
+# Why Enterprises Can't Innovate Like Startups
+
 - A large organization isn't a startup; nor should it try to act like one. The enterprise operates in a wholly different context. It must able to execute an existing business model while searching for a new one, two activities that rely on entirely different management structures.
 - Large companies typically have more rules to follow
 - Innovation efforts need to avoid getting distracted by side quests like trying to transform the business from the inside out. Innovation labs and teams need focus and need to contribute to the bottom line.
@@ -19,5 +20,5 @@ tags: innovation, enterprise, organization
 - [[≈ Pirates in the Navy]]
 - [[§ Innovation]]
 
-#### Citations
+#### Reference
 [Viki, Tendayi. Pirates In the Navy How Innovators Lead Transformation. Unbound, 2020.](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Viki+-+Pirates+in+the+Navy)

@@ -2,6 +2,8 @@
 tags: ux, design, personas
 ---
 
+# Personas Start with Qualitative Research
+
 Personas shouldn't be created so much as discovered. First and foremost, personas document research. Personas articulate patterns of thought and feeling. These are attributes that can't easily be quantified. Effective user personas should be an outcome of qualitative research. Personas should be the result of [sensemaking](https://publish.obsidian.md/mobydiction/Sensemaking+MOC), not measurement.
 
 This is [[¶ Abductive reasoning | abductive research]]: it doesn't start with a supposition or hypothesis, but begins instead with an openness to evidence that can be assembled into a theory. Persons require attention to what [Christian Madsbjerg](https://publish.obsidian.md/mobydiction/notes/%E2%89%88+Madsbjerg+-+Sensemaking) calls "thick data"—the rich context below the surface that details what an experience feels like rather than simply noting that it occurs. Personas should describe not just what kinds of people use the product, but help teams understand how they understand their relationship to the product and the problem space it occupies.
@@ -14,14 +16,17 @@ Teams and organizations will sometimes create personas based on their best curre
 
 Personas should be living, breathing documents. As knowledge about the user or customer evolves, so should the personas.
 
+---
+
 #### Related
 
--   [[§ Personas]]
--   [[Personas make abstract research concrete for design teams]]
--   [[Personas document shared understanding about users]]
--   [[Personas communicate research or they communicate assumptions]]
+- [[§ Personas]]
+- [[Personas make abstract research concrete for design teams]]
+- [[Personas document shared understanding about users]]
+- [[Personas communicate research or they communicate assumptions]]
 
-**Source**
+#### Reference
+
 Cooper, Alan. _The Inmates Are Running the Asylum_. Sams Publishing, 2004.
 
 Laubheimer, Page. _“3 Persona Types: Lightweight, Qualitative, and Statistical.”_ Nielsen Norman Group (blog). Accessed October 12, 2020. [Link](https://www.nngroup.com/articles/persona-types/).

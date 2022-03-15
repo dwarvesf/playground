@@ -1,8 +1,9 @@
 ---
 tags: software101, engineering
 ---
-### SE & CS
-#### History
+# SE & CS
+
+## History
 There are several differences between “Computer Science” and “Software Engineering”. Please read previous articles in the SEGVN website. To understand why there are different names we need to go back in history. About sixty or seventy years ago, when computer was still a new invention, only few scientists could use them in the laboratory. At that time, hardware was the most important thing and programming was very difficult to learn. Scientists who program the computer did not follow any methodology but just “do something” that make the computer work. Coding and testing were the main activities and the field was named “Computer Science”.
 
 During this time, due to high demand of people to program computer, universities began to open new department to train software developers for a degree called “Computer Science”. Because this was still a relatively new field, most people who taught computer were mathematic professors, the training program was heavily focus on mathematics.
@@ -19,7 +20,7 @@ Since then software engineering degrees have been made available from many more 
 
 Traditionally, most software people called themselves programmers or software developers. However, in the U.S and Europe, the term “programmer” has often been used to refer to people without the degree or proper education, who are trained from vocational schools for few months and cannot do good quality works. In response, many software people called themselves software developers or software engineers to avoid being “called” programmer. In many U.S companies, the titles software developer refers to people who has a computer science degree and software engineer refers to people who has a degree in software engineering.
 
-### Focus & Aspects
+## Focus & Aspects
  “Why do I need to study Software Engineering instead of Computer Science? Aren't they the same?
 
 Software Engineer and Computer Science are NOT the same. Each field focuses on different aspects of computing technology and lead to different careers in the software industry. In the past, most software are small and simple, so the focusing is on the “Science of algorithm development” or efficient code to run on computers. For example, storing information or automate a mathematic formula or process. That is why most Computer Science programs require many years of mathematics and several programming languages. Today, software are larger and more complex, so the focusing is on the “Engineering of process management” or efficient software development to solve complex issues. For example, one of the principle of software complexity is: “For every ten percent increase in problem complexity, there is an increase of one hundred percent in software solution complexity. The more complex the problem, the solution will be much more complex than previously thought. That is why you need to “Engineer the process” to solve the problem rather than relying on the “science of algorithm” to create efficient code.

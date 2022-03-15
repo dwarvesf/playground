@@ -1,7 +1,8 @@
 ---
 tags: innovation, idea
 ---
-### Innovation thrives in open environment
+# Innovation Thrives in Open Environment
+
 New ideas are built from the scraps of other ideas that we've encountered. When we piece those scraps together in new ways, we innovate and create. In contrast, siloed societies and organizations prevent flow of ideas between minds, what Johnson describes as "information spillover."
 
 For example, rigid hierarchies that centralized authority tend to be less innovative than marketplace societies that promote the circulation of people and ideas. The marketplace expands the pool of minds that can generate, share, and riff on good ideas already in circulation. This also helps put ideas in contact with other ideas, perspectives, and ways of thinking, helping to [[Decontextualize ideas to make them new | put them in revealing new contexts]]. As well, the cross-pollination of ideas can promote [[¶ Exaptation | exaptation]], or the adaption of traits identified in one context to a wholly new use in a different context.
@@ -14,13 +15,13 @@ Notably, innovative systems ride a tight line between order and chaos. They allo
 
 #### Related
 
--   [[Integrate innovation functions with the broader organization]] - Siloing innovation onto specialized teams limits likely adoption.
--   [[Hierarchical systems limit connections across their horizontal layers]] - Hierarchies close off relationships between potentially related nodes.
--   [[Fostering serendipity]]
--   [[Decontextualize ideas to make them new]]
--   [[§ Innovation]]
--   [[≈ Where Good Ideas Come From]]
+- [[Integrate innovation functions with the broader organization]] - Siloing innovation onto specialized teams limits likely adoption.
+- [[Hierarchical systems limit connections across their horizontal layers]] - Hierarchies close off relationships between potentially related nodes.
+- [[Fostering serendipity]]
+- [[Decontextualize ideas to make them new]]
+- [[§ Innovation]]
+- [[≈ Where Good Ideas Come From]]
 
-#### Citations
+#### Reference
 
 [[≈ Where Good Ideas Come From]]

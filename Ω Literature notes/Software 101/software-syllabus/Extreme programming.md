@@ -1,7 +1,7 @@
 ---
 tags: software101, engineering, syllabus
 ---
-### Extreme programming
+# Extreme Programming
 In Extreme programming, which steps we need in the development process and what are documents for each steps?
 
 Answer: eXtreme Programming (XP) is one method of the Agile approach. It shares the same principles of Agile which focuses on continuous development and release software in small piece at a time. Instead of delivering everything according to a fixed schedule date, XP process focuses on deliver the software to customers in pieces as they need it.
@@ -17,6 +17,10 @@ One major rule of XP is “Test first, code later”. Before coding, programmer 
 The unique feature of XP is pair programming. All works in XP is done by two programmers working side by side. One person code, the other follows the coding logic and make sure that there is no mistake or error is made. After a while, they switch roles. According to Ken Beck, the author of XP, Pair programming increases software quality and having two people working together will add as much functionality as two working separately except that it will be much higher in quality. However, I found that this is a difficult skill to master. It requires both people to work together in a cooperative way on an equal basis. This also facilitates more communication among programmers as they can discuss several ideas and try on to see which is better. Please note that for pair programming to be successful, both people should have equal skills and experience. This is NOT a mentoring or teaching where an experienced person teaching a less experienced person. Both must work together to ensure that the work is done in a most efficient and productive way. I have tried this technique many times but did not do well. Many programmers also told me that it takes a long time to do it well.
 
 Since most XP projects are small (2 to 8 persons), the time to complete the project is short (Few weeks to few months). The value of XP is it can meet customers’ needs quickly. Even if requirements are not well defined, it can still deliver something to customers in small pieces. If the customer may not know what they need, it is still possible to do an XP project due to the nature of fast changing and iterative process. The XP code is mostly of high quality because all code must pass unit tests before it can be released. If a bug is found, a test must be created and the team must work on it immediately to ensure that the software is released with high quality. As with all Agile approach, XP requires very experienced programmers to work together. This is not a project for beginners because teamwork, experience, skills, communication, and commitment are required.
+
+---
+
+#### Reference
 
 Following are websites that you can check for more information:
 * http://en.wikipedia.org/wiki/Extreme_Programming

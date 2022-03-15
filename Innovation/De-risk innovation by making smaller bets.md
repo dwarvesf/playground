@@ -1,7 +1,8 @@
 ---
 tags: innovation
 ---
-### De-risk innovation by making smaller bets
+# De-risk Innovation by Making Smaller Bets
+
 Organizations should stake a balance between type 1 decisions, which are big, significant and risky; and type 2 decisions, which are low-risk, reversible, and offer new insights. At Amazon, for example, small teams are empowered to make decisions and act on type 2 decisions without heavy bureaucratic control; this helps ensure Amazon has a steady stream of new insights.
 
 Many organizations make significant, type-1 decisions based on large assumptions that may or may not hold true. But as information comes back and some of these assumptions are called into question, they succumb to the sunk cost fallacy: they’re unwilling to concede the considerable capital they’ve expended on their idea and so double-down on their efforts until it is far too late to save the project.
@@ -22,7 +23,7 @@ Relatedly, Richard Rumelt advocates the pursuit of "proximate objectives"—obje
 - [[§ Innovation]]
 - [[≈ Good Strategy Bad Strategy]]
 
-#### Citations
+#### Reference
 
 [McGrath, Rita Gunther. Seeing around Corners: How to Spot Inflection Points in Business before They Happen. Boston, Massachusetts: Houghton Mifflin Harcourt, 2019.](https://publish.obsidian.md/mobydiction/McGrath+-+Seeing+Around+Corners)
 

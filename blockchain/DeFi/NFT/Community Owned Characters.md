@@ -1,38 +1,42 @@
-
 ---
 tags: blockchain, nft
 ---
 
-### Xu hướng làm chủ "character"
-Các tổ chức tự trị phi tập trung - decentralized autonomous organizations [[DAO]] này cung cấp cho những người sáng tạo trên toàn thế giới một cơ chế để hình thành cộng đồng và các nhân vật NFT mới, bằng tiền thật - giống như các môn thể thao giả tưởng hấp dẫn mong muốn thế thân vào người hâm mộ thể thao về quyền sở hữu đội (và có khả năng thu được lợi nhuận tài chính).
+# Community Owned Characters
 
-#### How DAO make this happen?
-Có một thị trường phiên bản phi tập trung mang tên "Fantasy Hollywood"
-- Hoạt động dựa trên smart contract và self-executing code của blockchain
-- Phát hành tokens dựa vào sự đóng góp của thành viên
-- Các tokens này có thể dùng để trao quyền biểu quyết hay quyền quản trị, cũng như có thể tăng giá trị khi có nhiều người tham gia --> giống với cổ phần
+## The trend of owning a character
 
+These decentralized autonomous organizations [[DAO]] provide creators around the world with a mechanism to form new NFT characters and communities, with real money - just like compelling fantasy sports that want to take the place of sports fans in terms of team ownership (and potentially financial returns).
 
-#### Xây dựng cộng đồng xung quanh các nhân vật
- Hiện tại đang có 2 con đường:
- 1. Thiết lập nhân vật và đổi mới IP
- 2. Hưởng lợi tài chính dựa trên chính character của mình
+## How DAO make this happen?
+
+There is a decentralized version market called "Fantasy Hollywood"
+- Works based on smart contract and self-executing code of blockchain
+- Issue tokens based on members' contributions
+- These tokens can be used to give voting or governance rights, as well as can increase in value when there are many participants --> Same as shares
 
 
-#### Một số NFT phổ biến:
+## Build a community around those characters 
+ There are currently 2 approaches:
+ 1. Character setting and IP renewal
+ 2. Financial benefit based on your own character
+
+
+## Some common NFT characters
 
 **1. CryptoKitties**
-Một trong những dự án NFT đầu tiên đạt được sức hút đáng kể là CryptoKitties. Trò chơi này được xây dựng trên Ethereum cho phép người chơi thu thập, lai tạo và trao đổi các chú mèo ảo.
+One of the first NFT projects to gain significant traction was CryptoKitties. This game built on Ethereum allows players to collect, breed and trade virtual cats.
 
-**2. CryptoPunks** Hướng đến phong cách 8-bit, tất cả đều có các đặc trưng không trùng lặp. Phát triển tiêu chuẩn token ERC-721 cho các bộ sưu tập kỹ thuật số sau này. Dự án này đã trở nên phổ biến hơn vào năm 2021, sau khi một số CryptoPunks được bán với giá hàng triệu đô-la, khiến chúng trở thành một trong những NFT đắt nhất.
+**2. CryptoPunks** 
+Aimed at 8-bit style, all with unique features. Development of the ERC-721 token standard for future digital collections. This project became even more popular in 2021, after several CryptoPunks sold for millions of dollars, making them one of the most expensive NFTs.
 
 **3. Gods Unchained**
-Một trò chơi sưu tầm thẻ kỹ thuật số. Trong đó, thẻ được phát hành dưới dạng NFT trên blockchain. Vì mỗi thẻ sưu tầm kỹ thuật số là duy nhất, người chơi có thể sở hữu và giao dịch chúng giống như những chiếc thẻ vật lý.
-
+A digital card collecting game. In it, tokens are issued as NFTs on the blockchain. Since each digital collectible card is unique, players can own and trade them just like physical cards.
 
 ---
 
-**Source**
+#### Reference
+
 https://academy.binance.com/vi/articles/what-are-cryptopunks
 https://academy.binance.com/vi/articles/a-guide-to-crypto-collectibles-and-non-fungible-tokens-nfts
 

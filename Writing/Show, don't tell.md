@@ -2,7 +2,9 @@
 tags: sharing, communication, story-telling, writing
 ---
 
-"Show, don't tell" is common advice for writers. It means that you present your audience with information, rather than simply telling them what the information means. For instance, in fiction you might say that a character frowned and snarled, rather than stating that they were angry.
+# Show, don't tell
+
+"Show, don't tell" is a common advice for writers. It means that you present your audience with information, rather than simply telling them what the information means. For instance, in fiction you might say that a character frowned and snarled, rather than stating that they were angry.
 
 Emotion is better conveyed through a gesture, a nervous tic, than through simply telling the audience that someone was nervous. Common body language is good; individualized signs of emotion are better, advises Francis Flaherty. Quotations, used well, are another example of showing rather than telling.
 
@@ -18,15 +20,15 @@ However, [providing perspective is still critical](https://publish.obsidian.md/m
 
 #### Related
 
--   [[Metaphors structure our interpretation of the world]]
--   [[Narratives generate real-world effects]]
--   [[Use language with necessity]] - Use words that count.
--   [Give abstract concepts a human face](https://publish.obsidian.md/mobydiction/notes/Give+abstract+concepts+a+human+face) \- Abstraction can tend toward telling; adding a human element can help to "show" their meaning.
--   [Place characters within a landscape](https://publish.obsidian.md/mobydiction/notes/Place+characters+within+a+landscape)
--   [Dialogue illustrates the nature of the character](https://publish.obsidian.md/mobydiction/notes/Dialogue+illustrates+the+nature+of+the+character)
--   [[§ Writing]]
+- [[Metaphors structure our interpretation of the world]]
+- [[Narratives generate real-world effects]]
+- [[Use language with necessity]] - Use words that count.
+- [Give abstract concepts a human face](https://publish.obsidian.md/mobydiction/notes/Give+abstract+concepts+a+human+face) \- Abstraction can tend toward telling; adding a human element can help to "show" their meaning.
+- [Place characters within a landscape](https://publish.obsidian.md/mobydiction/notes/Place+characters+within+a+landscape)
+- [Dialogue illustrates the nature of the character](https://publish.obsidian.md/mobydiction/notes/Dialogue+illustrates+the+nature+of+the+character)
+- [[§ Writing]]
 
-#### Citations
+#### Reference
 
 Flaherty, Francis. _The Elements of Story: Field Notes on Nonfiction Writing._ Reprint edition. Harper Perennial, 2010.
 

@@ -1,3 +1,8 @@
+---
+tags: writing, zettelkasten
+---
+
+# What Are Fleeting Notes
 
 Fleeting notes are tiny notes that I took here and there about ideas and thoughts I had at a specific moment. These were triggered from books, conversations, thinking or writing things down. 
 
