@@ -25,7 +25,7 @@ SPA isn't technically a bad thing, it makes navigation feels more "native" and s
 
 However, SPA does come with a cost that is not so obvious at first glance: **a large initial bundle size**.
 
-## The SPA story
+### The SPA story
 The way most SPAs works is that (almost) everything in our web UI is composed with JavaScript (with or without frameworks). JavaScript is run this way to create HTML at run-time, with the most basic form of this pattern being `document.createElement("div")`. Now, imagine if every text, button, section, popup, and relevant UI components of our website were built using this pattern. Why is it not-so-good to use SPA?
 
 The answer: [It's the cost of JavaScript](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/). Unlike raw HTML, using JavaScript to create HTML implies unseen overhead. This amounts to the cost of downloading, parsing, and executing JavaScript. Even before we can see anything on the screen, the browser has to run all of this to completion in order to show us something meaningful. Depending on the context, this effect can cause long delays between when a user visits a site and when a meaningful content is visible to that user. Nowadays, web performance tools measures and categorizes this delay as one of the most [important metric for frontends: (LCP)](https://web.dev/lcp/).
@@ -36,7 +36,7 @@ Then we have SSR "Server Side Rendering" - used to improve LCP and provide bette
 
 Now we have the best of both worlds, with SPA & SSR - an app-like experience with fast content delivery time!
 
-Not so fast; we're still forgetting one issue - the raw HTML returned by our server won't become fully interactive (e.g: the "counter" state won't change when we click buttons). In order to make our page interactive, we have to "hydrate" it.
+Not so fast. We’re still missing one final piece - the raw HTML returned by our server won't be fully interactive (e.g: the "counter" state won't change when we click buttons). In order to make our page interactive, we have to "hydrate" it.
 
 **Hydration** is the process of turning the raw HTML we returned earlier to a fully interactive React tree of components. For React, this can be done using the `ReactDOM.hydrate` method. So full process would be:
 
