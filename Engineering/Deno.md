@@ -3,8 +3,6 @@ tags: engineering, javascript, typescript
 author: Giang Ngoc Huy
 ---
 
-# Deno
-
 ## What
 - A new JavaScript runtime, written in Rust (JsVM 💃🏻)
 - Built to follow the standard Web API

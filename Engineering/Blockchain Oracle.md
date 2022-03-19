@@ -3,8 +3,6 @@ tags: engineering, blockchain
 author: Vy Tran Khac
 ---
 
-# Blockchain Oracle
-
 ## The blockchain oracle problem
 
 Blockchains have a fundamental limitation: they cannot natively communicate with systems of the outside world. This lack of external connectivity, known as "the oracle problem", prevents smart contracts from verifying external events, trigger actions on existing systems, and providing users the full range of functionality.
