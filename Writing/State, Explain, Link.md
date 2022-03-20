@@ -21,11 +21,19 @@ Given any general statement, we can construct more detailed points and give exam
 
 Here is a simple example concerning quality assurance through six sigma:
 
-> <span style="color:blue">In an attempt to exceed the expectations of customers, many businesses have adopted the Six Sigma approach to quality assurance.</span> <span style="color:orange">Six sigma is a data-driven approach derived from statistical theory that uses methodologies to identify and drive out waste through lowering the amount of variation between business processes.</span> <span style="color:purple">Companies like Motorola and General Electric use six sigma to streamline processes like for contract pipelines and reviewing steps to ultimately reduce spending on inefficiencies</span>
+```diff
++ In an attempt to exceed the expectations of customers, many businesses have adopted the Six Sigma approach to quality assurance.
+! Six sigma is a data-driven approach derived from statistical theory that uses methodologies to identify and drive out waste through lowering the amount of variation between business processes.
+@@ Companies like Motorola and General Electric use six sigma to streamline processes like for contract pipelines and reviewing steps to ultimately reduce spending on inefficiencies.@@
+```
 
 For a more complex example that may take more sentences to explain a topic, take this statement:
 
-> <span style="color:blue">Products that do not meet the needs or expectations of customers and producers are said to be substandard, and such products can be very costly to a business.</span> <span style="color:orange">If stakeholders depend on a company's attention to detail in their products, when the company releases a new product with poor quality, stakeholders will begin to lose trust in it. Customers will likely view products from competitors or wait on purchases. Since fewer customers are purchasing, producers won’t output as many goods and may have to change their product line or produce free goods to pay back customers.</span> <span style="color:purple">For example, Samsung had an issue with their Note 7 lineup which caused their phones to explode. This has forced Samsung to stop sales, recall, and compensate consumers, which has ultimately caused them to lose $10 billion in damage costs.</span>
+```diff
++ Products that do not meet the needs or expectations of customers and producers are said to be substandard, and such products can be very costly to a business.
+! If stakeholders depend on a company's attention to detail in their products, when the company releases a new product with poor quality, stakeholders will begin to lose trust in it. Customers will likely view products from competitors or wait on purchases. Since fewer customers are purchasing, producers won’t output as many goods and may have to change their product line or produce free goods to pay back customers.
+@@ For example, Samsung had an issue with their Note 7 lineup which caused their phones to explode. This has forced Samsung to stop sales, recall, and compensate consumers, which has ultimately caused them to lose $10 billion in damage costs.@@
+```
 
 # Other applications
 
