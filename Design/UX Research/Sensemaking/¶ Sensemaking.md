@@ -12,8 +12,8 @@ Sensemaking helps us identify the most appropriate contexts for data collection,
 
 #### Related
 
--   [[¶ Abductive reasoning]]
--   [[Different forms of empathy]]
+- [[¶ Abductive reasoning]]
+- [[Different forms of empathy]]
 
 #### Citations
 

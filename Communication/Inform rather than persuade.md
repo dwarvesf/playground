@@ -2,8 +2,6 @@
 tags: communication, narrative
 ---
 
-# Inform Rather Than Persuade
-
 Researchers sharing results should strive to inform their audiences rather than persuade them with partisan reporting. The goal should not be to change beliefs, but to provide people with information that they can determine themselves how best to respond to. This means avoiding neat, tidy narratives and focusing instead of honesty and transparency.
 
 This approach, dubbed "evidence communication" by Blastland et al., is characterized by transparency around the motivation of the researchers, a frank depiction of uncertainties, and open identification of conflicts and contradictions. The aim is to "inform rather than persuade" and to promote trust in the researchers and their work.

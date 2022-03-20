@@ -1,6 +1,7 @@
 ---
 tags: innovation, brain-behaviour
 ---
+
 ### Different forms of empathy
 
 "Empathy" is a complex, multifaceted concept that can often be applied in a reductive way, especially in the world of design and UX.
@@ -23,9 +24,10 @@ Madsbjerg describes three forms of empathy:
 ---
 
 #### Related
--   [[§ Personas]]
--   [[Personas alone can't help teams achieve empathy]]
--   [[≈ Sensemaking]]
+
+- [[§ Personas]]
+- [[Personas alone can't help teams achieve empathy]]
+- [[≈ Sensemaking]]
 
 #### Citations
 

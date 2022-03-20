@@ -2,8 +2,6 @@
 tags: ux, design, personas
 ---
 
-# Personas Lack Rich Context
-
 [[§ Personas]] are popular design artifacts. But, they can be hollow. While they often provide some basic attributes, tasks, or descriptors, they often lack rich contextual information that explains why the persona's need arose in the first place.
 
 This can be problematic. As Alan Klement argues, in the absence of this information, team members may fill in the information themselves—whether they are aware of it or not. This creates conditions for misalignment within the team.

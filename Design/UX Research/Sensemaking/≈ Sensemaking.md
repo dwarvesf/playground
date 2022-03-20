@@ -6,27 +6,27 @@ Madsbjerg argues that our culture—especially in the business world—has becom
 
 ### What is sensemaking
 
--   [[¶ Sensemaking]]
--   [Sensemaking produces thick data](https://publish.obsidian.md/mobydiction/notes/Sensemaking+produces+thick+data)
--   [Four types of knowledge (Madsbjerg)](https://publish.obsidian.md/mobydiction/notes/Four+types+of+knowledge+(Madsbjerg))
--   [Different forms of empathy](https://publish.obsidian.md/mobydiction/notes/Different+forms+of+empathy)
--   [Honing intuition](https://publish.obsidian.md/mobydiction/notes/Honing+intuition)
+- [[¶ Sensemaking]]
+- [Sensemaking produces thick data](https://publish.obsidian.md/mobydiction/notes/Sensemaking+produces+thick+data)
+- [Four types of knowledge (Madsbjerg)](<https://publish.obsidian.md/mobydiction/notes/Four+types+of+knowledge+(Madsbjerg)>)
+- [Different forms of empathy](https://publish.obsidian.md/mobydiction/notes/Different+forms+of+empathy)
+- [Honing intuition](https://publish.obsidian.md/mobydiction/notes/Honing+intuition)
 
 ### Critique of "algorithmic thinking"
 
--   [Cultural bias toward scientific models leaves us less equipped to interpret qualitative information.](https://publish.obsidian.md/mobydiction/notes/Cultural+bias+toward+scientific+models+leaves+us+less+equipped+to+interpret+qualitative+information.)
--   [People can't be reduced to computational processes](https://publish.obsidian.md/mobydiction/notes/People+can't+be+reduced+to+computational+processes)
+- [Cultural bias toward scientific models leaves us less equipped to interpret qualitative information.](https://publish.obsidian.md/mobydiction/notes/Cultural+bias+toward+scientific+models+leaves+us+less+equipped+to+interpret+qualitative+information.)
+- [People can't be reduced to computational processes](https://publish.obsidian.md/mobydiction/notes/People+can't+be+reduced+to+computational+processes)
 
 ### CS Peirce
 
--   [Peirce identifies four offences we commit when reasoning](https://publish.obsidian.md/mobydiction/Peirce+identifies+four+offences+we+commit+when+reasoning)
--   [Only abductive reasoning can produce new ideas (Peirce)](https://publish.obsidian.md/mobydiction/notes/Only+abductive+reasoning+can+produce+new+ideas+(Peirce))
--   [Four offenses we commit when reasoning (Peirce)](https://publish.obsidian.md/mobydiction/notes/Four+offenses+we+commit+when+reasoning+(Peirce))
+- [Peirce identifies four offences we commit when reasoning](https://publish.obsidian.md/mobydiction/Peirce+identifies+four+offences+we+commit+when+reasoning)
+- [Only abductive reasoning can produce new ideas (Peirce)](<https://publish.obsidian.md/mobydiction/notes/Only+abductive+reasoning+can+produce+new+ideas+(Peirce)>)
+- [Four offenses we commit when reasoning (Peirce)](<https://publish.obsidian.md/mobydiction/notes/Four+offenses+we+commit+when+reasoning+(Peirce)>)
 
 ### Critique of design thinking
 
--   [Spend more time in the problem space](https://publish.obsidian.md/mobydiction/notes/Spend+more+time+in+the+problem+space)
--   [Design thinking promotes superficial ways of knowing](https://publish.obsidian.md/mobydiction/notes/Design+thinking+promotes+superficial+ways+of+knowing)
+- [Spend more time in the problem space](https://publish.obsidian.md/mobydiction/notes/Spend+more+time+in+the+problem+space)
+- [Design thinking promotes superficial ways of knowing](https://publish.obsidian.md/mobydiction/notes/Design+thinking+promotes+superficial+ways+of+knowing)
 
 ---
 

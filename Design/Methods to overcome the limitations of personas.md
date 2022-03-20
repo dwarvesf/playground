@@ -2,9 +2,8 @@
 tags: ux, design, personas
 ---
 
-# Methods to Overcome The Limitations of Personas
-
 Personas have a number of shortcomings:
+
 - [[Personas alone can't help teams achieve empathy]]
 - [[Personas lack rich context]]
 - [[Personas may create space for assumptions]]
@@ -24,7 +23,7 @@ In addition, a large body of work has emerged around the Jobs to be Done framewo
 
 - [[§ Personas]]
 - [[¶ Persona]]
-    
+
 #### Reference
 
 Cooper, Alan. _The Inmates Are Running the Asylum_. Sams Publishing, 2004.

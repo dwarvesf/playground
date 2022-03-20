@@ -24,6 +24,7 @@ SPA isn't technically a bad thing, it makes navigation feels more "native" and s
 However, SPA does come with a cost that is not so obvious at first glance: **a large initial bundle size**.
 
 ### The SPA story
+
 The way most SPAs works is that (almost) everything in our web UI is composed with JavaScript (with or without frameworks). JavaScript is run this way to create HTML at run-time, with the most basic form of this pattern being `document.createElement("div")`. Now, imagine if every text, button, section, popup, and relevant UI components of our website were built using this pattern. Why is it not-so-good to use SPA?
 
 The answer: [It's the cost of JavaScript](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/). Unlike raw HTML, using JavaScript to create HTML implies unseen overhead. This amounts to the cost of downloading, parsing, and executing JavaScript. Even before we can see anything on the screen, the browser has to run all of this to completion in order to show us something meaningful. Depending on the context, this effect can cause long delays between when a user visits a site and when a meaningful content is visible to that user. Nowadays, web performance tools measures and categorizes this delay as one of the most [important metric for frontends: (LCP)](https://web.dev/lcp/).
@@ -40,10 +41,10 @@ Not so fast. We’re still missing one final piece - the raw HTML returned by ou
 
 1. `renderToString` & send the (html) string to clients on the server
 2. Loads the corresponding React component and hydrate it on the client:
-    - `import Page from "pages/home"`
-    - `hydrate(Page, document.getElementById("app"))`
+   - `import Page from "pages/home"`
+   - `hydrate(Page, document.getElementById("app"))`
 
-"Sooo that’s still all good!". Yes, except for one thing: do we really need ALL our components to be interactive? Probably not, especially for cases when we're building a basic landing/marketing site using React, where most of our content is static except for subscribe forms, sliders, etc. Hydrating the whole page in this scenario is called *hydration waste*: only some components are actual interactive components, yet we hydrate everything from the top down, which in turn makes our [time-to-interactive (TTI)](https://web.dev/interactive/) longer.
+"Sooo that’s still all good!". Yes, except for one thing: do we really need ALL our components to be interactive? Probably not, especially for cases when we're building a basic landing/marketing site using React, where most of our content is static except for subscribe forms, sliders, etc. Hydrating the whole page in this scenario is called _hydration waste_: only some components are actual interactive components, yet we hydrate everything from the top down, which in turn makes our [time-to-interactive (TTI)](https://web.dev/interactive/) longer.
 
 ## Partial hydration
 

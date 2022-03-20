@@ -12,11 +12,10 @@ But, keep in mind your purpose: if your goal is to inform rather than to persuad
 
 #### Related
 
--   [[Ensure the trunk of a narrative is more substantial than the branches]] - Emphasize what is actually important to the story.
--   [[Inform rather than persuade]] - When reporting on research and matters of public health, write to inform rather than to persuade.
--   [[≈ The Elements of Story]]
--   [[§ Writing]]
-
+- [[Ensure the trunk of a narrative is more substantial than the branches]] - Emphasize what is actually important to the story.
+- [[Inform rather than persuade]] - When reporting on research and matters of public health, write to inform rather than to persuade.
+- [[≈ The Elements of Story]]
+- [[§ Writing]]
 
 #### Citations
 

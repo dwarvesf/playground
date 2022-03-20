@@ -1,7 +1,7 @@
 ---
 tags: brainstorm, communication
 ---
-# Pyramic Principle
+
 The Pyramid Principle, popularized by McKinsey's Barbara Minto, is a framework for organizing information.
 
 The pyramid has two core principles:
@@ -51,5 +51,6 @@ However, if you fear pushback, you may use indirect storytelling to ease the aud
 ---
 
 #### Reference
--   https://strategyu.co/structure-your-ideas-pyramid-principle-part-1/
--   https://strategyu.co/pyramid-principle-part-2-communicate-top-down/
+
+- https://strategyu.co/structure-your-ideas-pyramid-principle-part-1/
+- https://strategyu.co/pyramid-principle-part-2-communicate-top-down/

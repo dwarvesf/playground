@@ -2,8 +2,6 @@
 tags: ux, research, cognitive
 ---
 
-# Cognitive Diversity Enhances Team Problem Solving Capabilities
-
 A study conducted by Alison Reynolds and David Lewis found that teams that comprised individuals representing a variety of thinking or information processing styles (i.e. cognitive diversity) solved problems faster than cognitively homogeneous groups. This suggests that organizations or teams that hire for "fit" may be hampering their own problem-solving capabilities and creative acuity.
 
 Roger L. Martin suggests that organizing teams for diverse specializations can also broaden their sense of salience when considering a problem; this affords a stronger, more holistic view of the problem or situation.

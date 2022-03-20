@@ -1,7 +1,6 @@
 ---
 tags: ux, design, process
 ---
-# Building Process from Product Manager's Perspective
 
 ### Project management triangle
 
@@ -15,7 +14,6 @@ The project management triangle is a model of the constraints of project managem
 
 The **quality** of work is constrained by these three constraints, if there is any change in one constraint, the quality will suffer. In fact, not every stakeholder/client defines the right problem and solution at the beginning, a project manager must be able to manage these constraints to minimize risks.
 
-
 ### Project management process
 
 ![](https://s3-ap-southeast-1.amazonaws.com/dwarvesf-outline/uploads/34adb8ba-29bc-4ab8-b128-fea45fade09c/3365204e-12fb-4ac9-b81e-dfd1be7cdee3/project-management-phases.png)
@@ -25,4 +23,5 @@ Typically, the project management process has 5 phases, work process of the desi
 ---
 
 #### Related
+
 - [[Building product process from developer's perspective]]

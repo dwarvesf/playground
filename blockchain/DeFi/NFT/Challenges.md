@@ -2,14 +2,14 @@
 tags: blockchain, nft
 ---
 
-# Challenges
-
 ### Current Problem
-*'The market and its demand are not enough to develop'*
+
+_'The market and its demand are not enough to develop'_
 
 Once an NFT can maintain a community with enthusiastic early collectors who have insight on the NFT character, the challenge is how to grow the community, develop that character and distribute it to a wider audience base on omnichanels.
 
 ### Questions
+
 **1. What kind of decision can optimize [[DAO]]?**
 If the community needs to vote on every detail of a character, the experience is less exciting, less in effectiveness and leads to a big chance in low ratio of participants. Howver, if the decision gets voted by a higher level, the member of BOD might feel like they don't have enough authorization or ownership.
 

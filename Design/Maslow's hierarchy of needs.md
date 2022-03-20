@@ -2,8 +2,6 @@
 tags: ux, design, maslow
 ---
 
-# Maslow Hierarchy of Needs
-
 ![](https://www.simplypsychology.org/maslow-5.jpg)
 
 Maslow's hierarchy of needs is a motivational theory in psychology comprising a five-tier model of human needs, often depicted as hierarchical levels within a pyramid. From the bottom of the hierarchy upwards, the needs are: physiological (food and clothing), safety (job security), love and belonging needs (friendship), esteem, and self-actualization.Needs lower down in the hierarchy must be satisfied before individuals can attend to needs higher up. In general, humans are made of 3 main components: **physical**, **psychological** and **consciousness**, Maslow's hierarchy of needs is a ladder to bring certainty for these components.

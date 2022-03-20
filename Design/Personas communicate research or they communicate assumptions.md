@@ -2,8 +2,6 @@
 tags: ux, design, personas
 ---
 
-# Personas Communicate Research or They Communicate Assumptions
-
 [[§ Personas]] should communicate insights generated through user research. If they contain information not uncovered through research, that information should be treated as an assumption and subject to research and evaluation.
 
 Teams often create proto-personas as a proxy for persona research; these should be approached with caution, as the fact that they are based on assumptions or guesswork may get lost in transmission, or overlooked when design work begins in earnest.
@@ -13,6 +11,7 @@ Personas in general are a form of narrative. This means that they must be approa
 ---
 
 #### Related
+
 - [[Focus personas on tasks, goals, and motivations]]
 - [[Personas document shared understanding about users]]
 - [[Personas may create space for assumptions]]

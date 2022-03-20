@@ -2,8 +2,6 @@
 tags: communication, thinking/integrative
 ---
 
-# Put Mental Model in Conversation with One Another
-
 Mental models are tools that help us more efficiently arrive at decisions: they filter information and give it narrative shape. But they always represent a particular lens. They help make meaning, but meaning comes at the expense of information.
 
 Relying on only one mental model limits our view of the problem space. To overcome this limitation, try to apply multiple mental models to the situation. Select models that are potentially antagonistic with one another and use them to find salience or causal relationships among the data that cannot be anticipated by any model alone.

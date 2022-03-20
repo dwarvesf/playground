@@ -2,8 +2,6 @@
 tags: ux, design, personas, jtbd
 ---
 
-# Focus Product Development on Customer Jobs That Are Important, Tangible, Unsatisfied and Lucrative
-
 In value proposition design, focus your strongest efforts on customer jobs that fit in the middle of a Venn diagram comprising
 
 - Important: The customer's success or failure at completing the job leads to significant gains or pains
@@ -15,7 +13,7 @@ In value proposition design, focus your strongest efforts on customer jobs that 
 
 #### Related
 
--   [[¶ Jobs to be done]]
+- [[¶ Jobs to be done]]
 
 #### Reference
 

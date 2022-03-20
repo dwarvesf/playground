@@ -2,8 +2,6 @@
 tags: ux, design, personas
 ---
 
-# Persona
-
 User personas are research artifacts that describe patterns of needs, behaviour, and attributes of users. Usually presented as a character or a description of a specific, individual user, personas are commonly used to help product design teams understand and empathize with likely users. Personas draw attention to some aspects of the user and make concrete the abstract findings of research.
 
 Notably, different disciplines use personas in different ways. A persona developed and used by a marketing group, for instance, may describe a desired buyer of the product and include a great deal of demographic detail; user personas, on the other hand, tend to describe people who are likely to encounter the problem the product or design is meant to solve. Marketing personas and user personas may look similar, but they're not interchangeable. They do different jobs for different people.

@@ -12,8 +12,8 @@ In contrast, qualitative data is highly compressed. In Farsighted, Steven Johnso
 
 #### Related
 
--   [[Quantitative analysis is not inherently more reliable than qualitative data]]
--   [[Qualitative and quantitative research represent different philosophies of knowledge]]
+- [[Quantitative analysis is not inherently more reliable than qualitative data]]
+- [[Qualitative and quantitative research represent different philosophies of knowledge]]
 
 #### Citations
 

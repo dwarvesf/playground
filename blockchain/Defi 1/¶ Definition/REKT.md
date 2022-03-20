@@ -2,8 +2,6 @@
 tags: blockchain, defi
 ---
 
-# REKT
-
 Different types of hacks
 How can you minimize your chances of being negatively affected by a hack?
 
@@ -22,6 +20,7 @@ Flash Loan: allows to borrow large amounts in a very short time frame. This loan
 Flash loans are non-decentralized and secure loans that must be paid back before the blockchain transaction ends. If not repaid, the smart contract reverses the transaction => the loan never happened in the first place. Because a loan's smart contract must be executed in the same transaction for which it is lent, the borrower must use other smart contracts to execute instant transactions with the loan prior to delivery. translation ends.
 
 Most flash loan attacks involve manipulating token prices using large amounts of capital (Example: Harvest finance)
+
 1. Flash Loan **50M USDT**
 2. Swap **11.4 million USDC** to USDT => USDT price increases
 3. Deposit **60.6 million USDT** into volts, exchange **11.4 USDT** to USDC => USDT price decreases
@@ -29,10 +28,11 @@ Most flash loan attacks involve manipulating token prices using large amounts of
 5. Convert to BTC and exit with BTC through Tornado Cash, a service that allows anonymous transactions on Ethereum => Hides traces of attackers. Attacker can withdraw more USDT in step 4 due to USDT price change
 
 Flashloan is used for price manipulation, allowing arbitrage where it is not possible.
+
 - How to avoid it? Protocols should use trusted oracles
 - Flashloan is used for other attack methods: reentrancy, front running, arbitrage
 
 ### Arbitrage
+
 - Arbitrage: Taking advantage of price differences between different markets to make a profit.
 - Arbitrage opportunities tend to decrease as liquidity increases and the market becomes more efficient. If the pool is manipulated by flashloan, allow room for arbitrage then this may also be considered as an exploit.
-

@@ -2,8 +2,6 @@
 tags: blockchain, icp
 ---
 
-# Internet Computer
-
 Internet Computer is a layer-1 protocol.
 
 Using Internet Computer to deploy server, web directly on data node, no need to use cloud service.

@@ -2,8 +2,6 @@
 tags: ux, design, process
 ---
 
-# Building Products Process from Developer's Perspective
-
 We’ve all already known about **design thinking methodology** and been applying it in our daily work, so, comparing design thinking to other famous frameworks in software development will help us to understand developers' terms and fill in missing knowledge in this industry.
 
 In this training session, we learned about **Rational Unified Process (RUP)**, the considered-to-be-the-very-first framework in building a software product.
@@ -18,6 +16,7 @@ RUP organizes the development of software into four phases:
 - Transition: maintenance & feedback
 
 ### Business Modelling
+
 - Define users, stakeholders, decision-makers
 - Assure a common understanding among all stakeholders
 - Analyze financial models/reports and modeling into the economics units.
@@ -26,6 +25,7 @@ RUP organizes the development of software into four phases:
 +>  Equal to Empathize and Define in Design Thinking
 
 ### Requirements
+
 - Allow team and client agree on what the product should do
 - Identify use cases
 - Feature list
@@ -33,35 +33,42 @@ RUP organizes the development of software into four phases:
 =>  Equal to Ideate in Design Thinking
 
 ### Analysis & Design
--   Analyze and design how products work to fulfill requirements.
--   The build-up system is often very well weighed and measured (**measure twice build once**)
--   _Should prepare ourselves with the full amount of knowledge to be able to design correctly in a short time_
+
+- Analyze and design how products work to fulfill requirements.
+- The build-up system is often very well weighed and measured (**measure twice build once**)
+- _Should prepare ourselves with the full amount of knowledge to be able to design correctly in a short time_
 
 =>  Equal to Prototype in Design Thinking
 
 ### Implementation
--   Implement
+
+- Implement
 
 ### Test
--   Verification: reliability, functionality, application performance and system performance
--   Validation
+
+- Verification: reliability, functionality, application performance and system performance
+- Validation
 
 =>   Equal to Test in Design Thinking
 
 ### Deployment
--   Package and Deliver
+
+- Package and Deliver
 
 ### Configuration & Change management
--   Control artifacts
--   Manage versions
--   Change request management
+
+- Control artifacts
+- Manage versions
+- Change request management
 
 ### Project Management
--   Plan, execute, and monitor projects
--   Ensure that the delivered products meet the needs of both clients (business goals) and users
+
+- Plan, execute, and monitor projects
+- Ensure that the delivered products meet the needs of both clients (business goals) and users
 
 ### Environment
--   Configure the process in the context of a project
+
+- Configure the process in the context of a project
 
 In fact, this process is only applied to products or systems which require high precision (FPT, KMS,...). There are many software products launched every day, however, most of them do not have a great impact on society. If there are errors in the process of making them, they will not cause a great loss of money, assets and human society. Therefore, we often use other processes to cut off costs and effort to build a product.
 

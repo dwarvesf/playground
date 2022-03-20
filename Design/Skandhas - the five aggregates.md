@@ -2,8 +2,6 @@
 tags: ux, process, skandhas
 ---
 
-# Skandhas
-
 ![](http://payattention.ca/wp-content/uploads/2020/09/5aggregates-1080x675.jpg)
 
 **Skandhas** means "heaps, aggregates, collections, groupings". In Buddhism, it refers to the **five aggregates of clinging**, the five material and mental factors that take part in the rise of craving and clinging. They are also explained as the five factors that constitute and explain a sentient being’s person and personality.
@@ -21,9 +19,11 @@ The five aggregates are often interpreted in the later tradition as an explanati
 ---
 
 #### Related
+
 - [[Human needs]]
 - [[Maslow's hierarchy of needs]]
 - [[Seven deadly sins]]
 
 #### Reference
+
 - [What are the five skandhas] (https://www.lionsroar.com/what-are-the-five-skandhas/)

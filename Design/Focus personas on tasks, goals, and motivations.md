@@ -2,8 +2,6 @@
 tags: ux, design, personas
 ---
 
-# Focus Personas on Task, Goals and Motivations
-
 Personas shouldn't be created so much as discovered. First and foremost, personas document research. Personas articulate patterns of thought and feeling. These are attributes that can't easily be quantified. Effective user personas should be an outcome of qualitative research. Personas should be the result of [[≈ Sensemaking | sensemaking]], not measurement.
 
 This is [[¶ Abductive reasoning | abductive research]]: it doesn't start with a supposition or hypothesis, but begins instead with an openness to evidence that can be assembled into a theory. Persons require attention to what Christian Madsbjerg calls "thick data"—the rich context below the surface that details what an experience feels like rather than simply noting that it occurs. Personas should describe not just what kinds of people use the product, but help teams understand how they understand their relationship to the product and the problem space it occupies.

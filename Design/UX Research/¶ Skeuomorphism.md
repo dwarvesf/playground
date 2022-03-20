@@ -19,9 +19,9 @@ Skeuomorphism can help create affordances that help us learn about or understand
 
 #### Related
 
--   [[Skeuoumorphic models limit possibilities for innovation]] - Skeuomorphic models can anchor us and limit the imagination, especially when moving from analog to digital
--   [[Metaphors structure our interpretation of the world]] - Skeuomorphism creates metaphors between objects and therefore structure how we understand them
+- [[Skeuoumorphic models limit possibilities for innovation]] - Skeuomorphic models can anchor us and limit the imagination, especially when moving from analog to digital
+- [[Metaphors structure our interpretation of the world]] - Skeuomorphism creates metaphors between objects and therefore structure how we understand them
 
 #### Reference
 
-Norman, Donald. “Affordances and Design.” Jnd.Org (blog), November 17, 2008. [https://jnd.org/affordances\_and\_design/](https://jnd.org/affordances_and_design/).
+Norman, Donald. “Affordances and Design.” Jnd.Org (blog), November 17, 2008. [https://jnd.org/affordances_and_design/](https://jnd.org/affordances_and_design/).

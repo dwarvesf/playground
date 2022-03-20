@@ -14,8 +14,8 @@ Instead of rushing to a prototype, spend more time in the problem space.
 
 #### Related
 
--   [[Spend more time in the problem space]] - Invest in building a strong understanding of the problem before starting to converge around a solution
--   [[Lean methodologies promote velocity at the expense of understanding]] - Lean methodologies prioritize "shipping" artifacts quickly, but don't leave enough time for developing deep understanding
+- [[Spend more time in the problem space]] - Invest in building a strong understanding of the problem before starting to converge around a solution
+- [[Lean methodologies promote velocity at the expense of understanding]] - Lean methodologies prioritize "shipping" artifacts quickly, but don't leave enough time for developing deep understanding
 
 #### Reference
 

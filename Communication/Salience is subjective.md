@@ -2,8 +2,6 @@
 tags: communication
 ---
 
-# Salience is Subjective
-
 Problem solving, Roger Martin writes, involves first identifying the features of a problem that are most important. We can't possibly consider every facet of the challenge ahead, so we must pick and choose what we will care about. We therefore have to assess the salience of available information to the problem at hand.
 
 This sense of salience can vary dramatically between different people: it is informed, Martin says, by each individual's _stance_—our personal domain of knowledge, sense of self, and sense of purpose—their _tools_—including literal tools but also the theories, models, processes, and rules of thumb that we bring to the problem space—and their _experience_—the accrued practical, tangible knowledge that has honed their intuition and sensitivity to different elements of the problem.

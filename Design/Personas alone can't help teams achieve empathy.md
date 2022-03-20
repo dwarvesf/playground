@@ -2,8 +2,6 @@
 tags: ux, design, personas
 ---
 
-# Personas Alone Can't Help Teams Achieve Empathy
-
 Personas are frequently cited as helping development teams achieve empathy for their users.
 
 It's worth noting that achieving empathy isn't as easy as some might suggest. It's means much more than just considering the user's perspective; it requires a concerted effort to imagine the world through the user's eyes. Real empathy requires effort and even training.
@@ -15,4 +13,5 @@ There is also the risk that the creation and use of personas provides the design
 ---
 
 #### Reference
+
 Haag, Maren, and Nicola Marsden. _“Exploring Personas as a Method to Foster Empathy in Student IT Design Teams.”_ International Journal of Technology and Design Education, April 24, 2018. [Link](https://doi.org/10.1007/s10798-018-9452-5).

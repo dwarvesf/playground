@@ -19,7 +19,7 @@ Making good decision decisions, Hall says, means assessing the impact of design 
 - [User experience is only as good as the action it enables](https://publish.obsidian.md/mobydiction/notes/User+experience+is+only+as+good+as+the+action+it+enables)
 - [Focusing too narrowly on efficiency creates risk](https://publish.obsidian.md/mobydiction/notes/Focusing+too+narrowly+on+efficiency+creates+risk)
 - [Ethical design requires a new definition of business value](https://publish.obsidian.md/mobydiction/notes/Ethical+design+requires+a+new+definition+of+business+value)
--   [User-centric design is not necessarily human-centric design](https://publish.obsidian.md/mobydiction/User-centric+design+is+not+necessarily+human-centric+design)
+- [User-centric design is not necessarily human-centric design](https://publish.obsidian.md/mobydiction/User-centric+design+is+not+necessarily+human-centric+design)
 
 #### Reference
 

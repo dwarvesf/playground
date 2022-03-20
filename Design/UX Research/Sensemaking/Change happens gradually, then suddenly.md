@@ -14,15 +14,15 @@ William Gibson wrote, "The future is already here—it's not not evenly distribu
 
 #### Related
 
--   [Base strategy on leading, not lagging, indicators](https://publish.obsidian.md/mobydiction/notes/Base+strategy+on+leading%2C+not+lagging%2C+indicators)
--   [[Work backwards from a long-term vision of the future to define proximate objectives]]
--   [[Innovation cascades]]
--   [[De-risk innovation by making smaller bets]]
--   [[Strategic inflection points disrupt the underlying assumptions of a business or industry]]
--   [[¶ OODA Loop]]
+- [Base strategy on leading, not lagging, indicators](https://publish.obsidian.md/mobydiction/notes/Base+strategy+on+leading%2C+not+lagging%2C+indicators)
+- [[Work backwards from a long-term vision of the future to define proximate objectives]]
+- [[Innovation cascades]]
+- [[De-risk innovation by making smaller bets]]
+- [[Strategic inflection points disrupt the underlying assumptions of a business or industry]]
+- [[¶ OODA Loop]]
 
 #### Citation
 
 Madsbjerg, Christian. Sensemaking: The Power of the Humanities in the Age of the Algorithm. Hachette Books, 2017.
 
--   [McGrath - Seeing Around Corners](https://publish.obsidian.md/mobydiction/McGrath+-+Seeing+Around+Corners)
+- [McGrath - Seeing Around Corners](https://publish.obsidian.md/mobydiction/McGrath+-+Seeing+Around+Corners)

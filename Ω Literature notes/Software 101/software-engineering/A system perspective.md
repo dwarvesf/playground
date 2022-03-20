@@ -1,6 +1,7 @@
 ---
 tags: software101, engineering
 ---
+
 ## A system perspective
 
 From early 20th century, manufacturing processes based on “assembly line” created by Henry Ford has become the standard. The idea is breaking down complex processes into the smallest and simplest tasks so workers can be trained to do is more efficiency and effective. This task segmentation was essential at that time due to the limitations of the skills of labor workers and the efficiency needed of the car industry. Henry Ford said: “The only way for a groups of workers to work in complex processes such as building a car is to give each of them only one thing to do and let them focus on doing that as efficiently and quickly as possible.”

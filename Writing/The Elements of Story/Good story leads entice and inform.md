@@ -10,9 +10,9 @@ One common approach to a lead is to use an anecdote. But for this to be effectiv
 
 #### Related
 
--   [[Stories need action and commentary]]
--   [[≈ The Elements of Story]]
--   [[§ Writing]]
+- [[Stories need action and commentary]]
+- [[≈ The Elements of Story]]
+- [[§ Writing]]
 
 #### Citations
 

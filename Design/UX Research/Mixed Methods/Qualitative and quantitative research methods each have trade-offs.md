@@ -16,8 +16,8 @@ Qualitative research tends to be divergent, and quantitative research convergent
 
 #### Related
 
--   [[§ UX Research]]
--   [[¶ Sensemaking]]
+- [[§ UX Research]]
+- [[¶ Sensemaking]]
 
 #### Reference
 

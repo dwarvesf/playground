@@ -12,7 +12,7 @@ This suggests the importance of continued investment in fostering "delight" (aft
 
 #### Related
 
--   [[Test digital experiences longitudinally]]
+- [[Test digital experiences longitudinally]]
 
 #### Reference
 
