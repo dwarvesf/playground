@@ -10,3 +10,14 @@
 # Add below lines to exclude OS settings and caches
 .trash/
 .DS_Store
+
+# dependencies
+/node_modules
+
+# IDE
+.vscode
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
