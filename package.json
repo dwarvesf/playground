@@ -3,9 +3,22 @@
   "version": "1.0.0",
   "repository": "git@github.com:dwarvesf/brain.git",
   "scripts": {
-    "format": "prettier -c --write \"*/**\""
+    "format": "prettier -c --write \"*/**\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.7",
     "prettier": "^2.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{json,md,yml}": [
+      "prettier --write"
+    ]
   }
 }
