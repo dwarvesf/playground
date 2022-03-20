@@ -2,12 +2,10 @@
 tags: writing, zettelkasten, permanent, literature
 ---
 
-# Permanent Notes Are Permanently Useful
-
 Permanent notes to link and develop.
-The permanent notes are the most important kind of notes. They aim to connect Fleeting notes and Literature notes together to create new ideas and new questions. 
+The permanent notes are the most important kind of notes. They aim to connect Fleeting notes and Literature notes together to create new ideas and new questions.
 
-Better to be once a day: going through the inbox to review all the captured materials and connect things that can be connected together. 
+Better to be once a day: going through the inbox to review all the captured materials and connect things that can be connected together.
 
 The permanent will then be added to the slipbox, where it will be archived and tagged. These will then be connected together to create bigger materials that could end up becoming posts, papers or even books.
 

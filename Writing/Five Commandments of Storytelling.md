@@ -2,8 +2,6 @@
 tags: writing, story-telling
 ---
 
-# Five Commandments of Storytelling
-
 In his _Story Grid_ approach to writing a novel, Shawn Coyne lists five commandments that he argues are essential to effective fiction. These elements, he says, determine whether or not a scene works:
 
 1. **Inciting Incident**: An event or disturbance that sets the scene into action

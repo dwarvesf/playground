@@ -2,11 +2,10 @@
 tag: MBTI
 ---
 
-# Intuition (N)
-
 Book: My True Type, page 33 - 38
 
 #### Characteristics of Intuitives:
+
 - Often lost in thought, their minds are “somewhere else”
 - May struggle to attend to the concrete details of daily life (especially INJs and ENPs)
 - Prefer to deal in theoretical, imaginative, or speculative realms; love working with ideas
@@ -17,7 +16,8 @@ Book: My True Type, page 33 - 38
 ---
 
 #### Reference
+
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
-Copyright © 2014  
+Copyright © 2014
 A.J. Drenth

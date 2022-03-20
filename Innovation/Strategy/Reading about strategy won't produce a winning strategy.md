@@ -2,8 +2,6 @@
 tags: business, strategy
 ---
 
-# Reading About Strategy Won't Produce a Winning Strategy
-
 Good strategies are doomed by their own success. An especially effective strategy will be studied, repackaged by consultancies, adopted by competitors, and ultimately become a best practice. And, a best practice is never a winning strategy. After all, the core of strategy is differentiation.
 
 The publication of a strategy signals the end of its useful life. In a dynamic environment, it can reflect only the past. In other words, using a published strategy is like fighting with the rules of the last war.

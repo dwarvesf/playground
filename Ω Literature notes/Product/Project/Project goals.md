@@ -2,13 +2,13 @@
 tags: project, goal, pm
 ---
 
-# Project goals
 Most software engineers want their project to be successful but do not know how. One technique that I teach them is to define a priority goal at the start of the project and continually review the progress toward the goal during the project.
 
-Typically, software project have three common goals: 
-* Deliver the product on time, 
-* complete all required functions, 
-* and have low defects (High quality). 
+Typically, software project have three common goals:
+
+- Deliver the product on time,
+- complete all required functions,
+- and have low defects (High quality).
 
 In my experience, it is difficult to meet all three goals so I advise people to identify one as the top priority to work on. This will help them to stay focus rather than spend too much effort on something they can not control. To deliver what the customer considers the most important is what success means to software project and in order to do that, project manager must ask the customer which is the highest priority.
 
@@ -18,7 +18,6 @@ The main idea here is the success of software project is a perception dictated b
 
 Most university professors only teach students that the successful factor is low defects (high quality) and focus on teaching more testing. Although quality is important but I think it is not adequate to define project success based on quality alone. Today we are living in a highly competitive market, sometime to have the product on the market first is a strategic advantage (For example Microsoft chooses this strategy because when they put a new product on the market, they want to capture the entire market so no one can create a similar product or compete with them, although the product still have defects but they fix defects later).
 
-In the market economy, customers will buy the first products available on the market because they like the new technology and want to get their hands on it.  As long as the product does something well, they will be happy. As long as the defects do not get in the way they can live with a few smaller defects.
-
+In the market economy, customers will buy the first products available on the market because they like the new technology and want to get their hands on it. As long as the product does something well, they will be happy. As long as the defects do not get in the way they can live with a few smaller defects.
 
 My conclusion on software success is the ability to ask the customer which goal is the top priority then makes plan to achieve it.

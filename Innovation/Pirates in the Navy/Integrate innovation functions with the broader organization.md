@@ -1,7 +1,6 @@
 ---
 tags: innovation, orgarnization
 ---
-# Integrate Innovation Functions with The Broader Organization
 
 Organizations need to consider how innovation fits into their org chart, including defining clear career paths for innovators.
 

@@ -1,7 +1,6 @@
 ---
 tags: innovation
 ---
-# Innovation accounting
 
 Supporting innovation requires organizations adopt new methods of investment decision-making and innovation accounting. This means linking investing to specific, incremental goals rather than funding a long-term project up front.
 
@@ -10,7 +9,9 @@ Making [incremental bets with metered funding can de-risk](https://publish.obsid
 ---
 
 #### Related
+
 - [[§ Innovation]]
 
 #### Reference
+
 Viki, Tendayi. _Pirates In the Navy How Innovators Lead Transformation_. Unbound, 2020.

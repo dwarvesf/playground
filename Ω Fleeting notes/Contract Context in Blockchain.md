@@ -1,7 +1,6 @@
 ---
 tags: blockchain
 ---
-# Contract Context in Blockchain
 
 - When contract is deployed, it will always be immutable (cannot be edited). But in real life, there will always be problems to edit that contract (fix bugs, upgrade).
 - Normally when you want to change, the flow will be: deploy new contract -> move the old contract state to the new contract -> beg the end-user to change to the new contract.
@@ -12,4 +11,5 @@ tags: blockchain
 ---
 
 #### Reference
+
 - https://blog.openzeppelin.com/proxy-patterns/

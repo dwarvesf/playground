@@ -2,8 +2,6 @@
 tags: moc, ux, research
 ---
 
-# UX Research
-
 ## General
 
 - [[Good research starts with a good question]]
@@ -17,19 +15,19 @@ tags: moc, ux, research
 - [[UX research activities by product lifecycle]]
 - [[Qualitative and quantitative research represent different philosophies of knowledge]]
 - Qualitative methods
-    - [[Qualitative research creates mental models about the problem space]]
-    - [[Qualitative researchers care more about data saturation than sample size]]
+  - [[Qualitative research creates mental models about the problem space]]
+  - [[Qualitative researchers care more about data saturation than sample size]]
 - Quantitative methods
-    - [[Measuring behaviour changes behaviour]]
-    - [[Abundant data makes us jump to quantitative data as the solution to every problem]]
-    - [[Quant data is lossy]]
+  - [[Measuring behaviour changes behaviour]]
+  - [[Abundant data makes us jump to quantitative data as the solution to every problem]]
+  - [[Quant data is lossy]]
 - [[Prototypes help test ideas that are already refined]]
 
 ## Data quality and sample sizes
 
 - What is a good sample size?
-    - [[How many users should you interview]]
-    - [[Qualitative researchers care more about data saturation than sample size]]
+  - [[How many users should you interview]]
+  - [[Qualitative researchers care more about data saturation than sample size]]
 - [[UX researchers should care about strength of evidence]]
 
 ## Interpretation and reasoning

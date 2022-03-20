@@ -2,8 +2,6 @@
 tags: technology
 ---
 
-# Why We Need to Follow Trend
-
 ## Why It is Important to Keep up with Changing Technology Trends
 
 - Remain Relevant

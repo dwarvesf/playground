@@ -2,8 +2,6 @@
 tags: writing, zettelkasten
 ---
 
-# Learning is Enhanced by Surprise
-
 Information is created through the juxtaposition of one idea with another. But insight emerges when that juxtaposition creates a sense of surprise. When we are surprised—when we are confronted not with the expected message but a novel perspective—it expands our understanding by provoking comparison and contrast, evaluation and re-imagination.
 
 For this reason, it is good to read broadly, and to build information systems that include an [[Build randomness into knowledge generation systems | element of randomness]]. Luhmann's zettelkasten, Schmidt points out, facilitated the creation of new knowledge by systematically connecting ideas that do not necessarily have an obvious connection to one another.

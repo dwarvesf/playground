@@ -2,8 +2,6 @@
 tags: zettelkasten, note, writing
 ---
 
-# Store Information Where You Would Want To Encounter It Again
-
 The most important question is not where we store the information, but where we would like to come across it again.
 
 When archiving our notes or other information, we typically organize it into a box that makes sense to the archivist. It makes logical sense from the perspective of storage. This is fine for librarians whose business is archiving. But someone who is looking for information that will inspire them and help them achieve new insights, they should consider instead when they would most like to encounter the idea again.

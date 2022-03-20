@@ -2,14 +2,11 @@
 tags: nextjs
 ---
 
-# Nextjs Rewrites
+After Googling, I've come up with a solution
 
-After Googling, I've come uo with a solution
+Nextjs has a feature called `Rewrites`. Rewrites allows us to map an income request for a different destination request path. We're going to Rewrite it as below:
 
-
-Nextjs has a feature called `Rewrites`. Rewrites allows us to map an income request for a different destination request path.  We're going to Rewrite it as below:
-
-```async rewrites() {
+````async rewrites() {
     return [
       {
         has: [
@@ -23,7 +20,7 @@ Nextjs has a feature called `Rewrites`. Rewrites allows us to map an income requ
       }
     ];
   },```
-After applying Rewrite, every time a user logs in `<username>.example.com` => The request will be rewritten as `example.com/hosts/<username>`, we can also use `getStaticProps`  (SG mechanism) to get a `username` => Query user info => Render html. => Improve performance 
+After applying Rewrite, every time a user logs in `<username>.example.com` => The request will be rewritten as `example.com/hosts/<username>`, we can also use `getStaticProps`  (SG mechanism) to get a `username` => Query user info => Render html. => Improve performance
 
 P/s: This post refers to Next.js users. So for non-Next.js, it might be hard to understand. I found this a very interested topic to note down. I figure it might make a good reference.
 
@@ -33,3 +30,4 @@ P/s: This post refers to Next.js users. So for non-Next.js, it might be hard to 
 
 - https://nextjs.org/docs/basic-features/data-fetching
 - https://nextjs.org/docs/api-reference/next.config.js/rewrites
+````

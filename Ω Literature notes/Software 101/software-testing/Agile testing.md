@@ -1,7 +1,7 @@
 ---
 tags: software101, engineering, testing, agile
 ---
-# Agile Testing
+
 Do we need an independent test group for agile project? Some people said if the company uses agile they do not need testers anymore. Is it true?
 
 Answer: Agile approach works well for small project (Four to ten people). Because the team is small it may not need to have an independent test group. Developers should be able to test their own software and verify the test results during the daily meeting. Developers must do the unit testing to ensure that their code is functioning correctly. As a team, it is possible to have developers test each others’ works, therefore it may not need to have test group. With Agile, developers are also testers. Companies usually have both small and large projects. For larger project, there is still a need to have an independent test group so company still need testers.

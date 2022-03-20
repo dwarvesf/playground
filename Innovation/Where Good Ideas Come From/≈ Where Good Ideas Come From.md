@@ -2,8 +2,6 @@
 tags: innovation, idea
 ---
 
-# Where Good Ideas Come From
-
 ## Summary
 
 Innovation doesn't emerge in a flash of sudden insight, but through a longer, ongoing process across networks of adjacent possibilities. Silos and walls inhibit innovation; ideas spread more quickly in open environments that makes them accessible to others who can react to and build on them. In this way, ideas can be quickly recontextualized and connected in surprising ways, promoting serendipity.

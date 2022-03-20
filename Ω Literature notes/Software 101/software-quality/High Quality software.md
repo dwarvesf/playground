@@ -1,7 +1,6 @@
 ---
 tags: software101, engineering, quality
 ---
-# High Quality Software
 
 What is the best way to build high quality software product? How can we reduce the time it takes to build software?
 

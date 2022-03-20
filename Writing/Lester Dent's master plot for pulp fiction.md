@@ -2,8 +2,6 @@
 tags: writing, story-telling
 ---
 
-# Lester Dent's Master Pilot for Pulp Fiction
-
 Prolific pulp writer Lester Dent (Doc Savage) outlines a simple master plot for crafting short (6000-word) stories.
 
 A story needs at least one of 1) a different murder method for the villain to use; 2) a different thing for the villain to be seeking; 3) a different locale; and/or 4) a menace that hangs over the hero.

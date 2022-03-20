@@ -2,9 +2,7 @@
 tag: MBTI
 ---
 
-# Why Do We Need Personality Test
-
-- Better understanding yourself/others 
+- Better understanding yourself/others
 - How they tend to interact/think
 - Bring insights to clarify life path (including career)
 

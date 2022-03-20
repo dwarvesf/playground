@@ -1,7 +1,6 @@
 ---
 tags: business, strategy
 ---
-# Strategic Inflection Points Disrupt The Underlying Assumptions of A Business or Industry
 
 A strategic inflection point is the moment when a business’s fundamentals shift, calling into question the basic assumptions that structure its relationship to its environment. Strategic inflection points feel as though they happen all at once, but usually gestate over longer periods of time. If you are able to spot the signs of a coming inflection point, it may be a gift. It can create new opportunities and open up new possibilities for those who are able to capitalize on it. Companies that respond well to inflection points aren’t forced to rapidly restructure themselves.
 
@@ -21,4 +20,4 @@ Subsequently, in the emergent phase, stable players recognize how the world is c
 
 #### Reference
 
--   [McGrath - Seeing Around Corners](https://publish.obsidian.md/mobydiction/McGrath+-+Seeing+Around+Corners)
+- [McGrath - Seeing Around Corners](https://publish.obsidian.md/mobydiction/McGrath+-+Seeing+Around+Corners)

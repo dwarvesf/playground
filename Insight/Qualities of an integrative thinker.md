@@ -2,8 +2,6 @@
 tags: insight
 ---
 
-# Qualities of An Integrative Thinker
-
 An integrative thinker, according to Roger Martin, rejects binary frameworks and either/or decision-making, instead seeking synthesis between apparently opposed options.
 
 The integrative thinker evinces four key qualities:

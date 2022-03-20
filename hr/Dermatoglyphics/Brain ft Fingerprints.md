@@ -2,8 +2,6 @@
 tags: fingerprint, HR
 ---
 
-# Brain ft Fingerprint
-
 Each finger is related to a lobe of our brain. Its characteristics are: unique and unchanging.
 
 > Right brain controls left hand

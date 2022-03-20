@@ -2,8 +2,6 @@
 tags: MBTI, teambuilding
 ---
 
-# Build Team with Personality Tests
-
 Here are a few ways you can use personality assessments to improve your teams and optimize for more successful projects:
 
 - Make personality assessments part of onboarding
@@ -14,4 +12,5 @@ Here are a few ways you can use personality assessments to improve your teams an
 ---
 
 #### Reference
+
 [Practices from Zapier](https://zapier.com/blog/personality-tests/)

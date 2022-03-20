@@ -2,15 +2,13 @@
 tags: moc, ux, design
 ---
 
-# UX Design
-
 - [[Three clicks rule is a myth]]
 - [[§ Personas]]
-    - [[¶ Persona]]
+  - [[¶ Persona]]
 - [[¶ Skeuomorphism]]
-    - [[Skeuoumorphic models limit possibilities for innovation]]
+  - [[Skeuoumorphic models limit possibilities for innovation]]
 - [[Human needs]]
-	- [[Maslow's hierarchy of needs]]
-	- [[Seven deadly sins]]
-	- [[Skandhas - the five aggregates]]
+  - [[Maslow's hierarchy of needs]]
+  - [[Seven deadly sins]]
+  - [[Skandhas - the five aggregates]]
 - [[Value chain]]

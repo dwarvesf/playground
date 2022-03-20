@@ -2,8 +2,6 @@
 tags: writing, zettelkasten
 ---
 
-# What is Zettelkasten
-
 Zettelkästen is the German word for "_slip box_". Whenver Luhmann read something, he would record the bibliographic information on the source and some brief descriptive notes about the content on either side of a note card. He would store these in one box. Then, he would think about what he had read and its relevance to his work. He would record these thoughts on other cards, and store them in a second slip box. These represented [[¶ Principle of atomicity | atomic units]] of thought: one idea per card. Each note would include a unique identifier.
 
 When writing his notes, Luhmann would think about what was already in his slip box. He would draw links between his new notes and his old ones, connecting them using the identifier. In so doing, he was able to develop chains of ideas and arguments.
@@ -12,10 +10,11 @@ Schmidt suggests that the essential characteristics of Luhmann's #zettelkasten w
 
 ## Kinds of Links
 
-Schmidt adds that Luhmann used three specific kinds of links: 
-1) **References** in the context of a larger structural outline (similar to a table of contents or _outline_ or **_MOC_**); 
-2) A **subject-area** index of references or **_tag_**; 
-3) Individual references from one note zettel to another or **_related link_**.
+Schmidt adds that Luhmann used three specific kinds of links:
+
+1. **References** in the context of a larger structural outline (similar to a table of contents or _outline_ or **_MOC_**);
+2. A **subject-area** index of references or **_tag_**;
+3. Individual references from one note zettel to another or **_related link_**.
 
 Understanding effective linking is important, because without links, it's easy for a note to get lost.
 

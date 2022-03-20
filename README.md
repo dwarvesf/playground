@@ -10,7 +10,7 @@ Applying the Zettelkasten method to construct our reference neuron network, we c
 
 ```mermaid
 graph TB
-	A[Stuff] --> Z[Insight?]	
+	A[Stuff] --> Z[Insight?]
 	A[Stuff] --> B[Question?]
 	A[Stuff] --> C[Thought?]
 	Z[Insight?] --> D[Memo]
@@ -21,23 +21,24 @@ graph TB
 ```
 
 #### MOC
+
 - Learning and metacognition
-	- [[§ Zettelkasten]]
-	- [[§ Writing]]
-	- [[§ Innovation]]
-	- [[§ MBTI]]
+  - [[§ Zettelkasten]]
+  - [[§ Writing]]
+  - [[§ Innovation]]
+  - [[§ MBTI]]
 - Build a software
- 	- [[§ UX Research]]
-	- [[§ Personas]]
-	- [[§ UX Design]]
-	- [[§ Blockchain]]
-	- [[§ Software]]
+  - [[§ UX Research]]
+  - [[§ Personas]]
+  - [[§ UX Design]]
+  - [[§ Blockchain]]
+  - [[§ Software]]
 - Invest in business
-	- [[§ Branding]]
+  - [[§ Branding]]
 
 #### Love what we are doing?
+
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
 - Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-

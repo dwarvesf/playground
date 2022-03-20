@@ -2,8 +2,6 @@
 tags: writing, zettelkasten
 ---
 
-# Different Kinds of Zettelkasten Notes
-
 ### Kinds of notes
 
 In the Zettelkasten method as described by Ahrens in [[≈ How to Take Smart Notes]], there are three kinds of notes:
@@ -17,6 +15,7 @@ Some approaches to zettelkasten include "[[Literature note to quote and referenc
 Notes should never be copied verbatim. Rephrasing ideas creates an immediate feedback loop: it requires one to wrestle with the idea and ensure that they understand it enough to articulate it in a new way. This requires understanding.
 
 ---
+
 #### Related
 
 - [[Fleeting notes to capture thoughts]]

@@ -1,7 +1,7 @@
 ---
 tags: software101, engineering, syllabus
 ---
-# Extreme Programming
+
 In Extreme programming, which steps we need in the development process and what are documents for each steps?
 
 Answer: eXtreme Programming (XP) is one method of the Agile approach. It shares the same principles of Agile which focuses on continuous development and release software in small piece at a time. Instead of delivering everything according to a fixed schedule date, XP process focuses on deliver the software to customers in pieces as they need it.
@@ -23,7 +23,8 @@ Since most XP projects are small (2 to 8 persons), the time to complete the proj
 #### Reference
 
 Following are websites that you can check for more information:
-* http://en.wikipedia.org/wiki/Extreme_Programming
-* http://www.informit.com/articles/article.aspx?p=20972
-* http://xprogramming.com/index.php
-* http://c2.com/cgi/wiki?ExtremeProgrammingImplementationIssues
+
+- http://en.wikipedia.org/wiki/Extreme_Programming
+- http://www.informit.com/articles/article.aspx?p=20972
+- http://xprogramming.com/index.php
+- http://c2.com/cgi/wiki?ExtremeProgrammingImplementationIssues

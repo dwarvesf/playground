@@ -1,7 +1,6 @@
 ---
 tags: innovation, idea
 ---
-# Innovation Thrives in Open Environment
 
 New ideas are built from the scraps of other ideas that we've encountered. When we piece those scraps together in new ways, we innovate and create. In contrast, siloed societies and organizations prevent flow of ideas between minds, what Johnson describes as "information spillover."
 

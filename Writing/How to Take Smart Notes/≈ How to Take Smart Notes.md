@@ -2,17 +2,15 @@
 tags: zettelkasten, note
 ---
 
-# How To Take Smart Notes
-
 ## Summary
 
-Ahrens outlines the #zettelkasten, or slip box, method of note taking. More than a note taking system, the slip box approach might be more aptly characterized as a system for knowledge generation. 
+Ahrens outlines the #zettelkasten, or slip box, method of note taking. More than a note taking system, the slip box approach might be more aptly characterized as a system for knowledge generation.
 
 It involves building a database of focused notes that are interlinked with one another. This helps foster the continuous, serendipitous discovery of new ideas as the slip box grows.
 
 ## Notes
 
--   [[§ Zettelkasten]] MOC
+- [[§ Zettelkasten]] MOC
 
 ### Principles
 

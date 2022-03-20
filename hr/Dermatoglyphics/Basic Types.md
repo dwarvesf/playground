@@ -2,9 +2,8 @@
 tags: fingerprint, HR
 ---
 
-## Basic Types
-
 Fingerprints are divided into 3 types: Whorl, Loop, Arch.
+
 - Whorl (vortex/circle): has 2 intersections
 - Loop (hook shape): has 1 intersection
 - Arch (arch form): no intersection

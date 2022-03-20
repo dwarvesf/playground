@@ -1,10 +1,10 @@
 ---
 tags: software101, engineering, testing, integrationg
 ---
-# Integration Testing
+
 Today, information systems such as Enterprise Resource Planning (ERP), Customer Relation Management (CRM) and Supply Chain Management (SCM are very large, inter-linked through a number of applications and platforms, and spread over different organizations. These large and complex systems must be designed and tested carefully. If this kind of systems is only being tests by the traditional method such as unit test, functional test, then it is impossible to determine whether the whole system will work well or not. Finding defects after the entire system is fully implemented will be very costly, especially because several organizations will have to be involved in the finding and fixing problems. An integration test is needed as its objective is to gain insight into the quality of the implementation of the entire system. By adding an integration test to the traditional set of tests, many risks could be identified and fixed.
 
-## An integration test consists of several steps. 
+## An integration test consists of several steps.
 
 **The first step** is determining a testing strategy. The purpose is to construct a “cooperating testing approach”, because there are often several organizations involved in the development of the total systems. Without a testing strategy, no one will be responsible for the entire systems, and there is a chance that systems will work well on their own but not in combination with other systems. Therefore, integration test is necessary to test the actual integration of the entire systems as an objective, and to make one central group responsible for testing. Another thing to consider in the strategy is that the functional working of systems should be proven before the start of the integration test. In this case the integration test can focus on testing the implementation of specifications and the testing of infrastructure. If this precondition is not met, the integration test is often become a mere functional test of the systems. It is also important that the scope for the integration test has to be clearly defined or else various unrelated things may be included in the integration test and make it more complex than it has to be.
 

@@ -2,12 +2,12 @@
 tags: fingerprint, HR
 ---
 
-# Whorl
 Eagle type (Whorl) accounts for 30-35% (9 types): has a swirl pattern and 2 intersections
-+ Plain Whorl (WT, WS, WE) = 24%,
-+ Central Pocket/ Peacock eye (WP, WL) = 2%,
-+ Double Loop/Composite (WC, WD, WI) = 4%,
-+ Accidental (WA) = 0.01%.
+
+- Plain Whorl (WT, WS, WE) = 24%,
+- Central Pocket/ Peacock eye (WP, WL) = 2%,
+- Double Loop/Composite (WC, WD, WI) = 4%,
+- Accidental (WA) = 0.01%.
 
 ![[van dai bang.jpeg]]
 

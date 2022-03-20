@@ -2,8 +2,6 @@
 tag: MBTI
 ---
 
-# Perceiving
-
 Book: My True Type, page 46 - 57
 
 #### Characteristics of P Types:
@@ -22,8 +20,8 @@ Book: My True Type, page 46 - 57
 ---
 
 #### Reference
+
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
-Copyright © 2014  
+Copyright © 2014
 A.J. Drenth
- 

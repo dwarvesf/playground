@@ -2,8 +2,6 @@
 tags: sharing, communication, story-telling, writing
 ---
 
-# Show, don't tell
-
 "Show, don't tell" is a common advice for writers. It means that you present your audience with information, rather than simply telling them what the information means. For instance, in fiction you might say that a character frowned and snarled, rather than stating that they were angry.
 
 Emotion is better conveyed through a gesture, a nervous tic, than through simply telling the audience that someone was nervous. Common body language is good; individualized signs of emotion are better, advises Francis Flaherty. Quotations, used well, are another example of showing rather than telling.
@@ -12,7 +10,7 @@ Showing is generally more vivid than telling; but, this does not mean that there
 
 ## Show, don't tell in business
 
--   [Teresa Torres](https://publish.obsidian.md/mobydiction/Teresa+Torres) suggests that sharing information rather than conclusions or recommendations with senior stakeholders is a more effective means to engage them than expecting them to accept your conclusions. Draw a line from your findings toward (but not to) the action you want them to take.
+- [Teresa Torres](https://publish.obsidian.md/mobydiction/Teresa+Torres) suggests that sharing information rather than conclusions or recommendations with senior stakeholders is a more effective means to engage them than expecting them to accept your conclusions. Draw a line from your findings toward (but not to) the action you want them to take.
 
 However, [providing perspective is still critical](https://publish.obsidian.md/mobydiction/Perspective+is+the+most+important+differentiator).
 

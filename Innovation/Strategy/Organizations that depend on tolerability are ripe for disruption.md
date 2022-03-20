@@ -1,7 +1,6 @@
 ---
 tags: business, strategy
 ---
-# Organizations That Depend on Tolerability Are Ripe for Disruption
 
 Some organizations rely on “tolerable” attributes—basic features that customers put up with, but view negatively. Customers will put up with these, but only until a viable alternative presents itself. Then, what was once tolerable may become a dissatisfier, or worse. Often, customers aren’t even able to articulate these points; they simply put up with them or unconsciously rely on workarounds. These friction points are the places most vulnerable to inflection points. Understanding them are key to survival.
 
@@ -13,8 +12,8 @@ Organizations should strive to identify points at which, if constraints were to 
 
 #### Related
 
-[Strategic inflection points disrupt the underlying assumptions of a business or industry](https://publish.obsidian.md/mobydiction/notes/Strategic+inflection+points+disrupt+the+underlying+assumptions+of+a+business+or+industry)  
-[Change happens gradually, then suddenly.](https://publish.obsidian.md/mobydiction/notes/Change+happens+gradually%2C+then+suddenly.)  
+[Strategic inflection points disrupt the underlying assumptions of a business or industry](https://publish.obsidian.md/mobydiction/notes/Strategic+inflection+points+disrupt+the+underlying+assumptions+of+a+business+or+industry)
+[Change happens gradually, then suddenly.](https://publish.obsidian.md/mobydiction/notes/Change+happens+gradually%2C+then+suddenly.)
 [Innovation cascades](https://publish.obsidian.md/mobydiction/notes/Innovation+cascades)
 [[§ Innovation]]
 

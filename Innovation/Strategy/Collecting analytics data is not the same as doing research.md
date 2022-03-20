@@ -1,7 +1,6 @@
 ---
 tags: strategy, data
 ---
-# Collecting Analytics Data Is Not The Same as Doing Research
 
 Devices and software create what Davis and Davidson call “data exhaust,” the detritus of our interactions with various interfaces. But this information is not designed with [[¶ Falsifiability | falsifiability]] in mind. It’s a by-product. Collecting it is not the same as doing research.
 
@@ -15,7 +14,7 @@ The abundance of data available to use has led to us spending more time creating
 
 - [Abundant data makes us jump to quantitative data as the solution to every problem.](https://publish.obsidian.md/mobydiction/notes/Abundant+data+makes+us+jump+to+quantitative+data+as+the+solution+to+every+problem.)
 - [[¶ Strategy]]
-- [[§ Innovation]] 
+- [[§ Innovation]]
 
 #### Reference
 

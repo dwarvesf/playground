@@ -2,7 +2,6 @@
 tags: software101, engineering, testing, UAT
 ---
 
-# User Acceptance Testing
 Today customers expect software companies to deliver quality software at lowest costs and shorter time to meet their business needs. However many software companies only focus on the functional aspects via several tests such as unite test, integration test, system test etc. in their development environment. Few pay attention on how the software will work in the users environment. Many times, the software meet all functional requirements but failed during the user acceptance test because of incompatible testing environment.
 
 User Acceptance Testing (UAT) helps users to assure themselves that the software meet their needs and operate well in their environment. It is designed to find out if a software fulfills the acceptance criteria and ready for use. UAT identifies how compliant the software is with the business requirements when it operate in the real business environment.

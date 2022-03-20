@@ -2,8 +2,6 @@
 tags: zettelkasten, note, writing
 ---
 
-# Make Notes in Your Own Words
-
 When we are reading a text, it can be difficult to identify and remember what is most important. Especially when reading theoretical texts, we must balance our short-term and long-term memories so that we can focus on what is truly important.
 
 Reformulating what we read in our own words can help facilitate this understanding. Re-framing ideas in this way forces us to consider what is meant, and compels us to think about what is emphasized and what is left out in the text we are reading.

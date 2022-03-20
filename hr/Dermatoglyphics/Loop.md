@@ -2,8 +2,8 @@
 tags: fingerprint, HR
 ---
 
-# Loop
 Water (Loop) type accounts for 60 - 65% (3 main types): has a center and an intersection.
+
 - UL (Ulnar Loop): The direction of the heart flows to the little finger
 - RL (Radial Loop): The direction of the heart flows to the thumb
 - ULS (Sharp Ulnar): UL ridges are vertical
@@ -13,5 +13,6 @@ Water (Loop) type accounts for 60 - 65% (3 main types): has a center and an inte
 ![[van nuoc.jpeg]]
 
 **Source**
+
 - [Identify & Catergorize Fingerprints](https://lindanga.com/nhan-dien-phan-loai-dau-van-tay/)
 - [Classify Fingerprints](https://www.youtube.com/watch?v=D-vJ7jylkf8)

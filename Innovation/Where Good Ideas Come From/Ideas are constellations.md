@@ -1,7 +1,6 @@
 ---
 tags: writing, idea, innovation, decontextualizing
 ---
-# Ideas Are Constellations
 
 Ideas are not self-contained, discrete objects. Rather, they emerge as connections between different thoughts and concepts.
 
@@ -28,4 +27,4 @@ It's useful to facilitate this process by following the [[¶ Principle of atomic
 
 Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
 
--   [[≈ Where Good Ideas Come From]]
+- [[≈ Where Good Ideas Come From]]

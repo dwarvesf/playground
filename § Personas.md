@@ -2,8 +2,6 @@
 tags: moc, personas
 ---
 
-# Personas
-
 ## General information
 
 - [[¶ Persona]]

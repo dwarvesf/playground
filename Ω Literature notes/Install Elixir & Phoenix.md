@@ -2,9 +2,7 @@
 tags: elixir
 ---
 
-# Install Elixir & Phoenix
-
-``` shell
+```shell
 $ mix local.hex
 $ mix archive.install hex phx_new
 $ mix help phx.new

@@ -2,8 +2,6 @@
 tags: business, strategy
 ---
 
-# Good Strategy
-
 ### Summary
 
 Rumelt argues that having a strategy is itself a competitive advantage, in that few organizations actually have strategies. Strategy depends on a three-part kernel consisting of a diagnosis, a guiding policy, and of coordinated action.
@@ -22,9 +20,9 @@ Rumelt argues that having a strategy is itself a competitive advantage, in that 
 #### The kernel of strategy
 
 - [Strategy revolves around a diagnosis, a guiding policy, and coherent action.](https://publish.obsidian.md/mobydiction/notes/Strategy+revolves+around+a+diagnosis%2C+a+guiding+policy%2C+and+coherent+action.)
-    - [Strategic diagnosis is a clear, honest description of the challenge at hand](https://publish.obsidian.md/mobydiction/notes/Strategic+diagnosis+is+a+clear%2C+honest+description+of+the+challenge+at+hand)
-    - [Guiding policy is a general approach to overcoming a challenge](https://publish.obsidian.md/mobydiction/notes/Guiding+policy+is+a+general+approach+to+overcoming+a+challenge)
-    - [Strategy defines coherent action -- a set of coordinated moves that enact a guiding principle](https://publish.obsidian.md/mobydiction/notes/Strategy+defines+coherent+action+--+a+set+of+coordinated+moves+that+enact+a+guiding+principle)
+  - [Strategic diagnosis is a clear, honest description of the challenge at hand](https://publish.obsidian.md/mobydiction/notes/Strategic+diagnosis+is+a+clear%2C+honest+description+of+the+challenge+at+hand)
+  - [Guiding policy is a general approach to overcoming a challenge](https://publish.obsidian.md/mobydiction/notes/Guiding+policy+is+a+general+approach+to+overcoming+a+challenge)
+  - [Strategy defines coherent action -- a set of coordinated moves that enact a guiding principle](https://publish.obsidian.md/mobydiction/notes/Strategy+defines+coherent+action+--+a+set+of+coordinated+moves+that+enact+a+guiding+principle)
 
 #### Inertia and entropy in organizations
 
@@ -35,8 +33,10 @@ Rumelt argues that having a strategy is itself a competitive advantage, in that 
 ---
 
 #### Related
+
 - [[¶ Strategy]]
 - [[§ Innovation]]
 
 #### Reference
+
 Rumelt, Richard. _Good Strategy Bad Strategy: The Difference and Why It Matters_. Illustrated edition. New York: Currency, 2011.

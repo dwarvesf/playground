@@ -2,31 +2,32 @@
 tags: software101, engineering, syllabus
 ---
 
-# Software 101
 In this section we try to cover a few parts of software development. You can't expect much except some keywords or starting pieces that you have to do your our study over the internet and get back with questions (and lots of questions). We try to get them align in some forms of hierarchy.
 
 ## The impact of software
+
 Before getting here, you may know about the market that we are targeting. People are crazy about software. For the next decades, there will be a lot of inventions and half of them will involve software development. Industries are controlled by software systems, as the financial systems, scientific labs, infrastructures and utilities, games, film, television, and the list goes on. The modern world can’t operate without software.
 
 > Program = Data Structure + Algorithm
 
-
 A software is a **computer programs** along with the associated documents and the configuration data that make these programs operate correctly. A program is a set of instructions (written in form of human-readable code) that performs a specific task.
 
-* First software was proposed by Alan Turing in 1935
-* The term **software** was first used in print by John Tukey in 1958
-* Often used to mean application software.
-* Academic fields studying software are Computer Science and Software Engineering
+- First software was proposed by Alan Turing in 1935
+- The term **software** was first used in print by John Tukey in 1958
+- Often used to mean application software.
+- Academic fields studying software are Computer Science and Software Engineering
 
 ## A few types of software
-* System software: provides basic functions for computer usage and helps run the Computer Hardware and System, e.g., hardware driver, operating system, server, utility.
-* Programming software: provides tools to assist a programmer in writing programs, and software using different languages in more convenient way e.g., compiler & interpreter, debugger, linker, editor.
-* Application software: developed to aid in any task that benefits from computation. e.g., business software, database, image editing, internet browser, industrial automation, bitcoin, exchange.
 
-- [https://www.youtube.com/watch?v=O5nskjZ_GoI](https://www.youtube.com/watch?v=O5nskjZ_GoI)
-- [https://www.youtube.com/watch?v=LN0ucKNX0hc](https://www.youtube.com/watch?v=LN0ucKNX0hc)
+- System software: provides basic functions for computer usage and helps run the Computer Hardware and System, e.g., hardware driver, operating system, server, utility.
+- Programming software: provides tools to assist a programmer in writing programs, and software using different languages in more convenient way e.g., compiler & interpreter, debugger, linker, editor.
+- Application software: developed to aid in any task that benefits from computation. e.g., business software, database, image editing, internet browser, industrial automation, bitcoin, exchange.
+
+* [https://www.youtube.com/watch?v=O5nskjZ_GoI](https://www.youtube.com/watch?v=O5nskjZ_GoI)
+* [https://www.youtube.com/watch?v=LN0ucKNX0hc](https://www.youtube.com/watch?v=LN0ucKNX0hc)
 
 ## A brief history of software development
+
 History of modern computer technology is very short, it is only about 70 years. History of software is shorter, it is about 50 years. Most software development methods do not fully take shape until 1970s. Basically, there are two ways to develop software:
 
 The “Classical way” or the “Product-driven way” considers develop software is a building activity with each brick (Code) putting on top of each other until they become the software product. It considers that anyone with programming skills can build software and that activities leading to a software product are “free form” as each programmer know what he is doing. This view came from the early days of computer, a time in which software was still a mystery that depended on programmers to code software. It relies on the individual techniques and knowledge that is in his head and not documented.
@@ -45,9 +46,9 @@ The fact is for large and complex project, you do need the discipline process to
 
 #### Reference
 
-* [Software](https://en.m.wikipedia.org/wiki/Software)
-* [A Short History of Software](http://www.thecorememory.com/SHOS.pdf) (!!)
-* [History of Software](https://en.wikipedia.org/wiki/History_of_software)
-* [Introduction to Software History](https://www.thocp.net/software/software_reference/introduction_to_software_history.htm)
-* [Timeline of Software & Languages](https://www.computerhistory.org/timeline/software-languages/)
-* [Crash Course Computer Science](https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
+- [Software](https://en.m.wikipedia.org/wiki/Software)
+- [A Short History of Software](http://www.thecorememory.com/SHOS.pdf) (!!)
+- [History of Software](https://en.wikipedia.org/wiki/History_of_software)
+- [Introduction to Software History](https://www.thocp.net/software/software_reference/introduction_to_software_history.htm)
+- [Timeline of Software & Languages](https://www.computerhistory.org/timeline/software-languages/)
+- [Crash Course Computer Science](https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)

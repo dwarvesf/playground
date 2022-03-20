@@ -2,8 +2,6 @@
 tags: writing
 ---
 
-# A Scene Comprises Large-scale and Small-scale Structures
-
 A well-crafted scene comprises both a large-scale structure and a small-scale structure.
 
 ![The-Overall-Scene-Structure-by-Better-Novel-Project.png](https://publish-01.obsidian.md/access/5bf4c22f8416d93237aa3630d0fd9c7c/assets/The-Overall-Scene-Structure-by-Better-Novel-Project.png)
@@ -42,7 +40,7 @@ Each scene and sequel is a series of MRUs.
 
 #### Related
 
--   [[§ Writing]]
+- [[§ Writing]]
 
 #### Reference
 

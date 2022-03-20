@@ -2,11 +2,10 @@
 tag: MBTI
 ---
 
-# Introvert (I)
-
 Book: My True Type, page 24 - 32
 
 #### Common Introverted Traits:
+
 - Inner/self-focus
 - More independent-minded
 - More cautious, conservative, and discriminating; “look before they leap”; rely heavily on forethought (especially IJs)
@@ -20,8 +19,8 @@ Book: My True Type, page 24 - 32
 ---
 
 #### Reference
+
 Book: My True Type
 Clarifying Your Personality Type, Preferences & Functions
-Copyright © 2014  
+Copyright © 2014
 A.J. Drenth
- 

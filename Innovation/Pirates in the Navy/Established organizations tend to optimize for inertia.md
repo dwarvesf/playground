@@ -1,7 +1,6 @@
 ---
 tags: innovation, organization
 ---
-# Established Organizations Tend to Optimize for Inertia
 
 Large, established organizations evolved to succeed in a particular context. As a result, they tend to be invested in maintaining those conditions for which they have already been optimized. This means that that they resist change. From top to bottom, members of the organization are incentivized to maintain the status quo.
 

@@ -1,7 +1,6 @@
 ---
 tags: business, strategy
 ---
-# Specialization Narrows Our Perspective on What Is Salient to A Problem
 
 Problem-solving involves identifying the salient features of a problem. This is a subjective activity; different thinkers will identify different matters of salience.
 

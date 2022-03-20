@@ -2,11 +2,9 @@
 tags: regex
 ---
 
-# History of Regular Expression
-
 _Buzz Andersen (BA) is an interesting builder on the internet (and has been for some time, with stints at Apple, Square, Tumblr, and more) but has also emerged as an important and moral voice in technology’s evolution. He’s an incredible [twitter follow](https://mobile.twitter.com/buzz) and I always feel smarter for having interacted with him. - Colin (CJN)_
 
-_**Buzz here.**_ On March 10, 2021, many Russian Internet users suddenly found they were having trouble accessing parts of the web. Kentik, a US-based network analysis company, [reported](https://twitter.com/DougMadory/status/1369648537634545673) that network traffic to Rostelecom, the Russian state telecom, was down as much as 24%, and cybersecurity Twitter was abuzz with speculation about the causes. 
+_**Buzz here.**_ On March 10, 2021, many Russian Internet users suddenly found they were having trouble accessing parts of the web. Kentik, a US-based network analysis company, [reported](https://twitter.com/DougMadory/status/1369648537634545673) that network traffic to Rostelecom, the Russian state telecom, was down as much as 24%, and cybersecurity Twitter was abuzz with speculation about the causes.
 
 Eventually, a Russian artist and Twitter user named Gregory Khodyrev [realized](https://twitter.com/GregoryKhodyrev/status/1369658173334884360) what was going on: someone at Russia’s state Internet censor, Roscomnadzor, had attempted to block the Internet domain “t.co” (used by Twitter’s URL shortener), but had instead managed to cut off access to _any_ domain containing the text pattern “t.co.” This meant that sites such as “microsoft.com,” “reddit.com,” and even Russia’s own state media outlet “rt.com” were rendered suddenly inaccessible.
 
@@ -20,17 +18,17 @@ A regular expression, or “regex,” is a kind of algebraic shorthand for speci
 
 > _s[aiu]nk_
 
-The brackets indicate that either “a,” “i,” or “u” are acceptable matches for the second character in the series. 
+The brackets indicate that either “a,” “i,” or “u” are acceptable matches for the second character in the series.
 
 Now, to make things slightly more interesting, we can add an optional element:
 
 > _st?[aiu]nk_
 
-The question mark makes “t” optional in the pattern, and means our expression can now match not only “sink,” “sank,” and “sunk,” but also “stink,” “stank,” and “stunk.” 
+The question mark makes “t” optional in the pattern, and means our expression can now match not only “sink,” “sank,” and “sunk,” but also “stink,” “stank,” and “stunk.”
 
 Finally, to dramatically expand the number of text “strings” our expression can match, we can add a period (meaning “any character”) followed by an asterisk (meaning “as many as possible”).
 
-> _s.*nk_
+> _s.\*nk_
 
 Now our regex can match “stonk,” “slink,” or indeed any other word starting with “s” and ending with “nk.”
 
@@ -40,9 +38,9 @@ Most regular expression implementations also support a feature called “anchors
 
 The above expression matches the pattern “t.co”—but only if the “t” is the first character in the string and the “o” is the last. Without the “^” and “$,” by contrast, the expression would, as our anonymous Russian censor learned, match the pattern no matter where it appears in the string.
 
-The concept of a regular expression has a surprisingly interesting history that dates back to the optimistic, mid-20th Century heyday of artificial intelligence research. 
+The concept of a regular expression has a surprisingly interesting history that dates back to the optimistic, mid-20th Century heyday of artificial intelligence research.
 
-The term itself originated with mathematician [Stephen Kleene](https://en.wikipedia.org/wiki/Stephen_Cole_Kleene). In 1943, neuroscientist Warren McCulloch and logician Walter Pitts had just [described](https://web.csulb.edu/~cwallis/382/readings/482/mccolloch.logical.calculus.ideas.1943.pdf) the first mathematical model of an artificial neuron, and Kleene, who specialized in theories of computation, wanted to investigate what networks of these artificial neurons could, well, theoretically compute. 
+The term itself originated with mathematician [Stephen Kleene](https://en.wikipedia.org/wiki/Stephen_Cole_Kleene). In 1943, neuroscientist Warren McCulloch and logician Walter Pitts had just [described](https://web.csulb.edu/~cwallis/382/readings/482/mccolloch.logical.calculus.ideas.1943.pdf) the first mathematical model of an artificial neuron, and Kleene, who specialized in theories of computation, wanted to investigate what networks of these artificial neurons could, well, theoretically compute.
 
 In a 1951 [paper](https://www.rand.org/content/dam/rand/pubs/research_memoranda/2008/RM704.pdf) for the RAND Corporation, Kleene reasoned about the types of patterns neural networks were able to detect by applying them to very simple toy languages—so-called “regular languages.” For example: given a language whose “grammar” allows only the letters “A” and “B”, is there a neural network that can detect whether an arbitrary string of letters is valid within the “A/B” grammar or not? Kleene developed an algebraic notation for encapsulating these “regular grammars” (for example, a*b* in the case of our “A/B” language), and the regular expression was born.
 
@@ -66,12 +64,13 @@ After yesterday’s Fastly outage, [this XKCD seems appropriate](https://xkcd.co
 
 ![](https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F794f1269-8ef9-4ef0-b324-e5743212053b_770x978.png)
 
-**Quick Links:**	
--	[What is the 'magic' brake setting cost Hamilton in Baku – and why do Mercedes struggle at low-grip tracks?](https://www.formula1.com/en/latest/article.tech-tuesday-what-is-the-magic-brake-setting-that-cost-hamilton-in-baku-and.79Mw4XSrxksy7jen3CE8FX.html) (_NRB_)
-    
--   [The Design History of Athens Iconic Apartments](https://www.bloomberg.com/news/features/2020-07-15/the-design-history-of-athens-iconic-apartments) (_NRB_)
-    
--   [Sponsored Link] If you’re at a SaaS company, check out [Variance](https://www.variance.com/). It’s a tool to help grow customers (some people are calling it a [PLG CRM](https://www.variance.com/land/plg-crm)). If you have questions or want to try it, [get in touch](https://www.variance.com/contact). (_NRB_)
+**Quick Links:**
+
+- [What is the 'magic' brake setting cost Hamilton in Baku – and why do Mercedes struggle at low-grip tracks?](https://www.formula1.com/en/latest/article.tech-tuesday-what-is-the-magic-brake-setting-that-cost-hamilton-in-baku-and.79Mw4XSrxksy7jen3CE8FX.html) (_NRB_)
+
+- [The Design History of Athens Iconic Apartments](https://www.bloomberg.com/news/features/2020-07-15/the-design-history-of-athens-iconic-apartments) (_NRB_)
+
+- [Sponsored Link] If you’re at a SaaS company, check out [Variance](https://www.variance.com/). It’s a tool to help grow customers (some people are calling it a [PLG CRM](https://www.variance.com/land/plg-crm)). If you have questions or want to try it, [get in touch](https://www.variance.com/contact). (_NRB_)
 
 ---
 

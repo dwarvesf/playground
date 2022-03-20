@@ -1,13 +1,14 @@
 ---
 tag: MBTI
 ---
-# 8 Available Preferences 
 
 - I (introverted) >< E (extroverted)
 - N (Intution) >< S (Sensing)
 - T (Thinking) >< F (Feeling)
 - P (Perceiving) >< J (Judging)
+
 ---
+
 - 1st place: I or E (mind)
 - 2nd place: S or N (energy)
 - 3rd place: T or F (nature)
@@ -18,4 +19,5 @@ tag: MBTI
 ---
 
 #### Reference
+
 [Typhology 101](https://personalityjunkie.com/typology-101/#anchor1)

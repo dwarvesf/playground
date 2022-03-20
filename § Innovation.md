@@ -2,8 +2,6 @@
 tags: moc, innovation
 ---
 
-# Innovation
-
 ## What is innovation?
 
 - [[Corporate innovation means discovering sustainable new business models]]

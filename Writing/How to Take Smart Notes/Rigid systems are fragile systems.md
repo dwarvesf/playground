@@ -2,8 +2,6 @@
 tags: zettelkasten, note, writing
 ---
 
-# Rigid Systems Are Fragile Systems
-
 Systems that are unnecessarily rigid are prone to failure. They are threatened by what is unexpected or what does not conform to the environment that was considered during the system's design. Rigid systems, therefore, are poor tools in situations of uncertainty or volatility.
 
 Effective system design accepts the inevitability of change and rather than resisting friction channels it or redirects it in productive directions.

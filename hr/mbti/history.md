@@ -2,8 +2,6 @@
 tag: MBTI
 ---
 
-# History
-
 MBTI (Myers-Briggs Type Indicator) > 1920s according to the theory of psychologist Carl Jung and many other frameworks in the following decades. The most important of which is the Five Big Personalities Traits.
 
 Type <> Trait
@@ -14,4 +12,5 @@ Trait: based on Degree of each personality type, no classification.
 ---
 
 #### Reference
+
 [Our Theory](https://www.16personalities.com/articles/our-theory)

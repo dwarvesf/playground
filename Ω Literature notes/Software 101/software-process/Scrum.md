@@ -1,7 +1,6 @@
 ---
 tags: software101, engineering, process, scrum
 ---
-# Scrum
 
 Scrum is the most popular Agile approach and is being used in software companies worldwide. It is a simple but very effective management process for software development. Scrum can help project team to manage changes in scope of the project. Scrum iterations help the team to develop products in several incremental steps called **Sprint** (1 to 4 weeks) where the team can get feedback from users quickly. Scrum process is simple, clear and easy to learn, its “**Daily Standup**” meetings allow the team to share information effectively; the “**Burndown chart**” helps team members to check status easily.
 
@@ -14,6 +13,7 @@ Scrum is excellent for Web project, for project that need fast update but NOT fo
 Software company should have several development methodologies not just one. Project managers should select appropriate methods for each project accordingly. Scrum might not be correct method so company must chose wisely.
 
 ## Scrum team
+
 A person wrote to me: “I have been working as software developer for three years and just got promoted to project manager. Recently my company is adopting agile development (Scrum method). There is a rumor that they do not need project manager anymore and I could be laid-off. What can I do to maintain my position? Please advice.
 
 Answer: The transition from traditional development to agile approach takes time and trainings to do it right. Everybody must understand their roles, responsibilities and be accounted for their works. This will require changes in the way the company operates from top to bottom where managers must understand which the “ideal situation” is and which is not. It is easy to say something like we do not need project manager anymore but in practice it does not happen that easily. Do not expect the transition from traditional development to agile approach to happen within few weeks or few months, there are many things your company must learn from this transition, and it will require a lot of efforts to do thing correctly. Personally, I think Scrum is a very good approach to software development. It differs from the traditional waterfall approach which requirements must be clear and understood. Scrum accepts that requirements may not be well defined up-front so they may change and the goal is to respond in a good manner to these changes by produce a working software incrementally to customers.

@@ -2,8 +2,6 @@
 tags: zettelkasten, note, writing
 ---
 
-# Read Broadly with Purpose
-
 Read (and consume any information) with purpose: approaching a text with intention can help focus our attention on the most important information. Read looking for connections with information you have already processed, and look explicitly for limitations, elisions, and contradictions.
 
 However, also read broadly to help create connections across different contexts and to help evolve ideas over time. And, be wary of confirmation bias. Don't be afraid to actively seek disconfirming evidence.

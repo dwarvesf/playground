@@ -1,7 +1,6 @@
 ---
 tags: software101, engineering, process, waterfall, agile
 ---
-# Waterfall & Agile
 
 Each software lifecycle is designed for a particular type of development. There is no one lifecycle that fits everything. The Waterfall life cycle has advantages and disadvantages and so does the Agile approach. In this case you cannot say who is right and who is wrong.
 
@@ -11,10 +10,10 @@ The Waterfall lifecycle organized development activities into distinct phases so
 
 Of course in reality, requirements are not clearly defined and changes happen quite often so developers must go back and change their works (re-works). This problem often causes the project to slip schedule, needs more efforts and causes higher costs and lower quality. It may create badly structured system which is difficult to maintain. Sometime due to strict schedule, not all problems are solved so released software still has defects. When customers’ requirements are added later in the development, they disrupt the works and not all requirements are done correctly. These things create low quality products and make customer not very happy.
 
-Agile is a good development approach for **smaller project** but it has some disadvantages too. 
-* Agile assumes that users will actively involve and collaborate with developers. In reality, users are often busy and may not have the time or skills to participate in the project. Without users involve, Agile may not work. 
-* The best thing in Agile is it welcomes changes but it can also be a negative thing too. As more changes are being added and the scope keeps changing, the project may never finish accordingly (Scope creep).  Agile is an evolving process and constantly being adjusted to meet customers’ changes, therefore it is difficult to plan how much it will costs for the project budget. 
-* Agile requires a highly skilled and experienced developers that can assume many roles, from interact with customers, set priority, write code and continuously testing. Most companies do not have enough of these workers and inexperienced workers often fail in Agile, especially if they do not have enough proper training and good Agile coaches to help them.
+Agile is a good development approach for **smaller project** but it has some disadvantages too.
 
+- Agile assumes that users will actively involve and collaborate with developers. In reality, users are often busy and may not have the time or skills to participate in the project. Without users involve, Agile may not work.
+- The best thing in Agile is it welcomes changes but it can also be a negative thing too. As more changes are being added and the scope keeps changing, the project may never finish accordingly (Scope creep). Agile is an evolving process and constantly being adjusted to meet customers’ changes, therefore it is difficult to plan how much it will costs for the project budget.
+- Agile requires a highly skilled and experienced developers that can assume many roles, from interact with customers, set priority, write code and continuously testing. Most companies do not have enough of these workers and inexperienced workers often fail in Agile, especially if they do not have enough proper training and good Agile coaches to help them.
 
 There is NO “Perfect method” or “Perfect way” to develop software. Anyone who says Agile is better than waterfall or waterfall is better than Agile than that person knows nothing. It is better to say that we MUST select the best approach depending on certain circumstances, certain environment, and certain project to deliver quality software that meet customers’ expectations, be it waterfall or agile or anything else.

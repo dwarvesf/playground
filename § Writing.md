@@ -2,8 +2,6 @@
 tags: moc, writing
 ---
 
-# Writing
-
 ## Write better
 
 - [[Give abstract concepts a human face]]

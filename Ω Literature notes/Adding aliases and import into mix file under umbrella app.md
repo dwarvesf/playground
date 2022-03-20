@@ -2,11 +2,9 @@
 tags: elixir
 ---
 
-# Adding Aliases and Import Into Mix File Under Umbrella App
-
 Here is the content of my mix file: `.iex.exs`
 
-``` elixir
+```elixir
 alias Db.{ Repo, Document }
 ```
 

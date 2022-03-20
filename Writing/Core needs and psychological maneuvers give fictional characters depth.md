@@ -2,8 +2,6 @@
 tags: writing, story-telling
 ---
 
-# Core Needs and Psychological Maneuvers Give Fictional Characters Depth
-
 In _Mastering the Process: From Idea to Novel_ Elizabeth George suggests that wo ingredients that help understand characters are their **core need** and their **psychopathology** or psychological maneuver.
 
 Core needs are emotional, physical, or psychological. The core need grows out of the character analysis; knowing what need is driving the character can help give depth and shading to a character, making him or her multidimensional.
@@ -12,7 +10,7 @@ Examples of core needs include:
 
 1. The need for approval
 
-2. The need for perfection or 
+2. The need for perfection or
 
 - to be seen as perfect
 - to be seen as empathetic
@@ -20,10 +18,12 @@ Examples of core needs include:
 - to be competent
 
 3. To control events and people
+
 - for nurturance
 - for excitement
 
 4. To be seen as authentic
+
 - for admiration
 - for attention
 - to be of service

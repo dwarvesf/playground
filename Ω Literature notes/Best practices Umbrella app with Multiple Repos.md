@@ -2,23 +2,21 @@
 tags: elixir
 ---
 
-# Best Practices Umbrella App with Multiple Repos
-
 ## Brief
+
 About the db connection issue in umbrella app
+
 - Solution 1: Normally you’d do that by inversion of control. Create a behaviour in each app, which handles the concern of “accessing a db” and use configuration to let it use `MyApp.Repo` in prod and some other implementation in development/testing.
 - Solution 2: Your apps can depend on each other, so you could have a shared Repo app that is used by all the different components, and yet each of those can have their own schemas, which may overlap or not depending on your architecture.
 
 One potential problem I’ve noticed came when we deployed the app: because many of the individual apps have their own repository, that means that the app requires more connections. We’re using Gigalixir and the basic first tier database supports 25 connections, but between 6 or 10 apps, that gets gobbled up pretty quickly, so for each app I had to whittle down the connections to 2 or 4 connections per app before the error messages went away.
 
-
 > The idea of a poncho app is really simple. It’s just like an umbrella app but instead of a single OTP app ruling everything, you have mulitple mix.lock files instead of a single mix.lock that can cause issues.
 
-Just to make this clear, there’s not a “single OTP app” in an umbrella. The top abstractions on the beam is an otp app and umbrella and poncho are both ways to compose multiple otp applications together. 
+Just to make this clear, there’s not a “single OTP app” in an umbrella. The top abstractions on the beam is an otp app and umbrella and poncho are both ways to compose multiple otp applications together.
 
-- The difference is that an umbrella is a single mix project, which combines multiple nested “mix projects” into one – starting any of them by default, 
+- The difference is that an umbrella is a single mix project, which combines multiple nested “mix projects” into one – starting any of them by default,
 - while poncho’s approach is developing each application in it’s own mix project and using simple `{:dep, path: "…"}` dependencies between each other, where there’s one “root” application, which depends on all the sub applications.
-
 
 This seems like a bad idea for umbrellas. Umbrellas are one app. They are. They are not one repo with multiple different apps. **They are one app with multiple concerns**. They are one app.
 
@@ -28,10 +26,11 @@ As per the DB, this means memory usage will increase for each new app. If that�
 
 I agree that what you describe sounds more like poncho projects, which was pioneered by the Nerves team and also something Dave Thomas has used with his component-focused approach. The original writeup I’m familiar with is here https://embedded-elixir.com/post/2017-05-19-poncho-projects/
 
-In my understanding I make a distinction between apps and projects. 
-- Projects are how code at rest (on the filesystem) are organized. 
-- Apps (in the OTP sense) are a runtime concern – basically a branch of a supervision tree. 
-- You can have a 1-to-1 mapping of project to app, or a 1-to-many. Umbrellas are projects with a 1-to-many mapping to apps. 
+In my understanding I make a distinction between apps and projects.
+
+- Projects are how code at rest (on the filesystem) are organized.
+- Apps (in the OTP sense) are a runtime concern – basically a branch of a supervision tree.
+- You can have a 1-to-1 mapping of project to app, or a 1-to-many. Umbrellas are projects with a 1-to-many mapping to apps.
 - Things get more flexible when you also start **thinking about releases**. Releases are deployable units of apps. You can have multiple releases out of one umbrella, each using some subset of the contained apps. Distillery supports multiple release targets specifically for this purpose.
 
 I like umbrellas. They fit well with the type of app I’m familiar with. I make one mitigating change from default umbrella setup to run each app’s tests in a separate BEAM to suss out any improper coupling early. Umbrellas may not fit everyone, but I’ve also heard a lot of misinformation.

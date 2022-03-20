@@ -2,8 +2,6 @@
 tags: fingerprint, HR
 ---
 
-# How To Read Fingerprints
-
 ![[nhan dien van tay.png]]
 
 Step 1: Classify the strains in the previous 4 personality fingers (Left/right, left/right index)

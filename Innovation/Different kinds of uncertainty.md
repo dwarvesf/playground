@@ -1,7 +1,6 @@
 ---
 tags: innovation, brain-behaviour
 ---
-# Different Kinds of Uncertainty
 
 [[Brains have evolved to minimize surprise|Our brains have evolved to deal with uncertainty]]. Knowing the different kinds can help us better deal with uncertainty.
 

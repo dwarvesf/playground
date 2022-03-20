@@ -2,24 +2,26 @@
 tags: development, practice
 ---
 
-# CRON Job
-
 ### What
+
 A system daemon to execute task on designed times.
 
-*daemon*: run in linux system. works underlying in background
+_daemon_: run in linux system. works underlying in background
 
 It's a long-running process to execute command at specifice date/time
 
 ### How it works
+
 Using crontab file.
-A configed text file, contains a list of command to schedule tasks. 
+A configed text file, contains a list of command to schedule tasks.
 This file can be edit/ adjust using crontab command
 
-*Crontab Command*: List of action you wish to execute
+_Crontab Command_: List of action you wish to execute
 
 ### Example
+
 **Format**
+
 - Minute
 - Hour
 - Day

@@ -2,12 +2,11 @@
 tags: innovation, signal, ux, future
 ---
 
-# The Signals are Talking
-
 ### Notes
+
 #### Trendspotting
 
-- [¶ Trend (foresight)](https://publish.obsidian.md/mobydiction/notes/%C2%B6+Trend+(foresight))
+- [¶ Trend (foresight)](<https://publish.obsidian.md/mobydiction/notes/%C2%B6+Trend+(foresight)>)
 - [Future trends emerge when a fundamental human need is met by a new enabling technology.](https://publish.obsidian.md/mobydiction/Future+trends+emerge+when+a+fundamental+human+need+is+met+by+a+new+enabling+technology.)
 - [Inflection points reveal themselves first at the edges](https://publish.obsidian.md/mobydiction/notes/Inflection+points+reveal+themselves+first+at+the+edges)
 - [¶ The genie problem](https://publish.obsidian.md/mobydiction/notes/%C2%B6+The+genie+problem)
@@ -28,9 +27,11 @@ tags: innovation, signal, ux, future
 - [Market research is a poor tool for trendspotting](https://publish.obsidian.md/mobydiction/notes/Market+research+is+a+poor+tool+for+trendspotting)
 
 #### Communicating about the future
+
 - [Narrative helps the human mind make sense of events](https://publish.obsidian.md/mobydiction/notes/Narrative+helps+the+human+mind+make+sense+of+events)
 
 ---
+
 #### Related
 
 - [[§ Innovation]]

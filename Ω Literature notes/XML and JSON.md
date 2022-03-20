@@ -2,8 +2,6 @@
 tag: data
 ---
 
-# XML and JSON
-
 ### XML
 
 - Markup language, to store and process data into computer readable-format

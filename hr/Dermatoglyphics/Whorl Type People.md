@@ -2,24 +2,24 @@
 tags: fingerprint, HR
 ---
 
-# Whorl Type People
-
 ![[chung-van-tay-Whorl.gif]]
 
 ### General features
 
 - Active, strong, with opinions
-Always set goals when taking action.
+  Always set goals when taking action.
 - High ego, hard to persuade or influence
 
 ### Unique features
+
 **Wt / Ws**
+
 - Targeted, highly focused
 - Perfectionism
 - Win straight
 - Hot-tempered aka stubborn
 - Putting pressure on co-workers
-> Lions
+  > Lions
 
 **We**
 
@@ -28,7 +28,7 @@ Always set goals when taking action.
 - Likes to direct
 - Negative
 - Hot-tempered
-> Sad face lion :(
+  > Sad face lion :(
 
 **Wd /Wi**
 
@@ -37,7 +37,7 @@ Always set goals when taking action.
 - Flexible
 - Easy to lose concentration
 - Easily influenced by others
-> Gecko
+  > Gecko
 
 **Wp**
 
@@ -46,10 +46,11 @@ Always set goals when taking action.
 - Confident, optimistic
 - Hand flower
 - High individuality
-> Peacock
+  > Peacock
 
 ---
 
 #### Reference
+
 - [Identify & Catergorize Fingerprints](https://lindanga.com/nhan-dien-phan-loai-dau-van-tay/)
 - [Classify Fingerprints](https://www.youtube.com/watch?v=D-vJ7jylkf8)
