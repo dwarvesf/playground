@@ -13,7 +13,7 @@ State, explain, link is a basic style for organizing and explaining ideas in an 
 | Explain | depth | go into depth about what you want to cover |
 | Link | relation | link a related item such as giving an example |
 
-Although this originally emerged to write concise paragraphs, the semantic style of the technique is seen almost everywhere from theses to C4 diagrams.
+Although this originally emerged to write concise paragraphs, the semantic style of the technique is seen almost everywhere, from theses to C4 diagrams.
 
 # How does it work?
 
