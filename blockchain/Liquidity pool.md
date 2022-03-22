@@ -3,9 +3,7 @@ tags: blockchain, liquidity
 author: Hien Le
 ---
 
-### Liquidity pools
-
-#### 1. What is a Liquidity Pool?
+### 1. What is a Liquidity Pool?
 
 Basically, a liquidity pool is a pool of tokens that are locked in a smart contract. Liquidity refers to the ease with which a token can be swapped with another. Anybody can provide liquidity into this single giant pool and earn a share of the trading fees based on their stake in it.
 
@@ -13,7 +11,7 @@ The process could be illustrated by the picture below:
 
 ![[Pasted image 20220322220453.png]]
 
-#### 2. How do Liquidity Pools work?
+### 2. How do Liquidity Pools work?
 
 Liquidity pools form the backbone of DEX by applying the automated market maker (AMM) system. Here’s the main formula that mathematically determines what the market price of the token in the pool should be:
 
@@ -29,19 +27,19 @@ $$ 10 ETH * 1,000 DAI = 10,000 $$
 
 If the buyer withdraws 1 ETH, he has to deposit some DAI into the pool so that k remains constant.
 
-$$ (10 - 1) ETH * (1,000 - y) = 10,000$$ $$1,000 - y = 10,000/(10-1)$$ $$y = 111.11 $$
+$$ (10 - 1) ETH * (1,000 - y) = 10,000$$$$1,000 - y = 10,000/(10-1)$$$$y = 111.11 $$
 
 And because we have no limit orders in AMM, the smart contract would automatically compute y to determine the price to pay and that is approximately 111.11 DAI.
 
 Now the liquidity pool would have 9 ETH and 1,111.11 DAI after someone buys 1 ETH.
 
-##### 2.1. Roles of Arbitragers in AMM
+#### 2.1. Roles of Arbitragers in AMM
 
 Arbitragers play an important role in AMM. They are used in order to take advantage of the price differences and drive the price back towards market equilibrium.
 
 If the price of ETH in the pool is higher than it is on Coinbase, arbitragers would sell ETH into this pool and make a profit on the price discrepancies. Thus, the price of ETH in the pool would always be incentivized towards the market price as closely as possible.
 
-##### 2.2. Depth of Pool and Slippage
+#### 2.2. Depth of Pool and Slippage
 
 The price difference between the pool and market is known as slippage. How big your slippage is depends on the size of your trade relative to the size or depth of the pool.
 
@@ -53,7 +51,7 @@ In reality, the pool will be much deeper and bigger as there will be hundreds an
 
 Suppose we use a pool that has 100 ETH and 10,000 DAI and someone wants to buy 1 ETH from this pool, how much would it cost? Plugging in the same equation would give you $101, a 1% price slippage.
 
-#### 3. How to provide Liquidity into a Pool?
+### 3. How to provide Liquidity into a Pool?
 
 Anyone can provide liquidity and become a Liquidity Provider (LP). When supplying a pair of tokens into the pool, the ratio price of both tokens must be 50-50. So if you want to provide $5,000 of ETH-DAI pair, you will need $2,500 DAI and $2,500 worth of ETH.
 
@@ -65,7 +63,7 @@ However, you may not get back the exact amount of tokens you deposited initially
 
 In a bull market, more people would want ETH as prices are rising. Hence the supply of ETH in the pool would drop while DAI would increase since more people are exchanging their dollars for ETH. When you withdraw out your LP, you would end up with less ETH than you started out with and more DAI. The reverse holds true in a bear market.
 
-#### 4. What is Impermanent Loss?
+### 4. What is Impermanent Loss?
 
 Impermanent loss refers to the situation where you could have made more if you have done nothing and hold on for dear life rather than providing LP.
 
@@ -73,7 +71,7 @@ Suppose the price of ETH in our LP is $100. What if the price of ETH on Coinbase
 
 Let’s use a pool that has 100 ETH and 10,000 DAI. The relation between x, y, k, and ETH price could be shown by:
 
-$$ x * y = k$$ $$x = ETH\ price * y $$
+$$ x * y = k$$$$x = ETH\ price * y $$
 
 We could easily calculate x and y by k and ETH price:
 
@@ -82,7 +80,7 @@ $$y = \sqrt{k * ETH\ price} $$
 
 Assume someone supplies 1 ETH and 100 DAI into the pool. How much ETH and DAI he could get back if the ETH price pumps to $120?
 
-$$ k = 100 * 10,000 = 1,000,000 $$ $$x = \sqrt{1,000,000 \over 120} = 91.29$$ $$y = \sqrt{1,000,000 * 120} = 10,954.45 $$
+$$ k = 100 * 10,000 = 1,000,000 $$$$x = \sqrt{1,000,000 \over 120} = 91.29$$$$y = \sqrt{1,000,000 * 120} = 10,954.45 $$
 
 Since his share in the pool is 1%, the LP gets back 0.9129 ETH and 109.5445 DAI if he wants to withdraw his stake in the pool. The total value of his stake would be 0.9129 ETH * $120 + $109.54, which totals up to be $219.09.
 
