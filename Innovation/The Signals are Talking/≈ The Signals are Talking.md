@@ -16,8 +16,7 @@ tags: innovation, signal, ux, future
 - [Change is disorienting because it is constant](https://publish.obsidian.md/mobydiction/notes/Change+is+disorienting+because+it+is+constant)
 - [¶ Paradox of the present](https://publish.obsidian.md/mobydiction/notes/%C2%B6+Paradox+of+the+present)
 - [Market research](https://publish.obsidian.md/mobydiction/Market+research)
-- [Protect dissent](https://publish.obsidian.md/mobydiction/notes/Protect+dissent)
-  \- To overcome our “belief bias,” we must engage in deliberate disagreement
+- [Protect dissent](https://publish.obsidian.md/mobydiction/notes/Protect+dissent) \- To overcome our “belief bias,” we must engage in deliberate disagreement
 - [We understimate the importance of things not directly relevant to us](https://publish.obsidian.md/mobydiction/We+understimate+the+importance+of+things+not+directly+relevant+to+us)
 
 #### Methods and frameworks

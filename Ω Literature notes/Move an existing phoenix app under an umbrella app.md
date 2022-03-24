@@ -28,12 +28,9 @@ chrismccord [10:14 PM] @alanpeabody yes, it's straightforward
 5. shipit
 6. if using brunch/node, update package.json paths that reference phoenix
 
-david.antaramian [10:16 PM] He described his problem more in `general` which is
-that he wants to keep his existing git history. Though, that should really just
-involve inverting what you suggested
+david.antaramian [10:16 PM] He described his problem more in `general` which is that he wants to keep his existing git history. Though, that should really just involve inverting what you suggested
 
-[10:18] @david.antaramian @alanpeabody ah yes, you should be able to do it
-similarly but within the existing repo
+[10:18] @david.antaramian @alanpeabody ah yes, you should be able to do it similarly but within the existing repo
 
 ---
 

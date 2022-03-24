@@ -2,17 +2,14 @@
 tags: tool
 ---
 
-The new Automation Tool comes from M$, wrote the first public version early last
-year
+The new Automation Tool comes from M$, wrote the first public version early last year
 
 ### In comparison with Puppeteer
 
 - API methods are quite similar
 - Puppeteer only supports chrome, Playwright supports both webkit and firefox
-- Playwright's API is somewhat easier to use (eg: page.click will automatically
-  wait for the element to be available and visible)
-- Newer feature of Playwright is to allow simulate multiple devices on 1
-  browser:
+- Playwright's API is somewhat easier to use (eg: page.click will automatically wait for the element to be available and visible)
+- Newer feature of Playwright is to allow simulate multiple devices on 1 browser:
 
 ```js
 const { chromium, devices } = require('playwright')
@@ -35,8 +32,7 @@ const { chromium, devices } = require('playwright')
 })()
 ```
 
-An interesting point: The top contributor of Puppeteer has now become the top
-contributor of Playwright /graphs/contributors
+An interesting point: The top contributor of Puppeteer has now become the top contributor of Playwright /graphs/contributors
 
 ---
 

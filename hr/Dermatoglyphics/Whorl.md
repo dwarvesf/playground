@@ -2,8 +2,7 @@
 tags: fingerprint, HR
 ---
 
-Eagle type (Whorl) accounts for 30-35% (9 types): has a swirl pattern and 2
-intersections
+Eagle type (Whorl) accounts for 30-35% (9 types): has a swirl pattern and 2 intersections
 
 - Plain Whorl (WT, WS, WE) = 24%,
 - Central Pocket/ Peacock eye (WP, WL) = 2%,

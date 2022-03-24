@@ -4,15 +4,9 @@ tags: innovation, idea
 
 ## Summary
 
-Innovation doesn't emerge in a flash of sudden insight, but through a longer,
-ongoing process across networks of adjacent possibilities. Silos and walls
-inhibit innovation; ideas spread more quickly in open environments that makes
-them accessible to others who can react to and build on them. In this way, ideas
-can be quickly recontextualized and connected in surprising ways, promoting
-serendipity.
+Innovation doesn't emerge in a flash of sudden insight, but through a longer, ongoing process across networks of adjacent possibilities. Silos and walls inhibit innovation; ideas spread more quickly in open environments that makes them accessible to others who can react to and build on them. In this way, ideas can be quickly recontextualized and connected in surprising ways, promoting serendipity.
 
-Johnson draws heavily on biological metaphors to describe how creativity and
-innovation emerge. For example, the adjacent possible is a biological metaphor.
+Johnson draws heavily on biological metaphors to describe how creativity and innovation emerge. For example, the adjacent possible is a biological metaphor.
 
 ## Notes
 
@@ -31,5 +25,4 @@ innovation emerge. For example, the adjacent possible is a biological metaphor.
 
 #### Reference
 
-Johnson, Steven. _Where Good Ideas Come from: The Seven Patterns of Innovation_.
-London: Penguin, 2011.
+Johnson, Steven. _Where Good Ideas Come from: The Seven Patterns of Innovation_. London: Penguin, 2011.

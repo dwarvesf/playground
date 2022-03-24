@@ -2,13 +2,9 @@
 tags: zettelkasten, note, writing
 ---
 
-Rather than the result of thinking, writing _is_ thinking. Translating the ideas
-of others into _one's own words_ forces deep consideration of what is being
-said, and thinking through any contradictions, gaps in logic, or elisions in the
-text.
+Rather than the result of thinking, writing _is_ thinking. Translating the ideas of others into _one's own words_ forces deep consideration of what is being said, and thinking through any contradictions, gaps in logic, or elisions in the text.
 
-Writing further provides a productive feedback loop: to be able write something
-clearly in our own words, we must be able to understand it.
+Writing further provides a productive feedback loop: to be able write something clearly in our own words, we must be able to understand it.
 
 ---
 
@@ -20,6 +16,4 @@ clearly in our own words, we must be able to understand it.
 
 #### Reference
 
-Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing,
-Learning and Thinking – for Students, Academics and Nonfiction Book Writers_.
-Sönke Ahrens, 2017.
+Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.

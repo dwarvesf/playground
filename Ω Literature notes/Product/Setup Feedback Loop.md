@@ -11,8 +11,7 @@ tags: product, feedback
 - Generate the pros and cins
 - Pivot to improve
 
--> Feedback Loop happens by collecting user's opinion on your product. Then use
-it to grow your product better.
+-> Feedback Loop happens by collecting user's opinion on your product. Then use it to grow your product better.
 
 ## How is helps driven business growth
 
@@ -50,6 +49,4 @@ Feedback loop can be created through 3 purposes
 
 ## Personal Input
 
-Hubspot and Traveloka are the two best example for CS and feedback loop I
-suppose. they're in quickly response and follow up when the service awaiting
-time is extended. user knows exactyly where to drop a feedback or asking FAQs.
+Hubspot and Traveloka are the two best example for CS and feedback loop I suppose. they're in quickly response and follow up when the service awaiting time is extended. user knows exactyly where to drop a feedback or asking FAQs.

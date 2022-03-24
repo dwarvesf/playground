@@ -4,12 +4,7 @@ tags: psychology, integrative-thinking
 
 ## Summary
 
-The most successful leaders practice what Martin calls "integrative thinking":
-an approach to problem-solving that embraces complexity and eschews binary,
-either/or thinking. Integrative thinkers are able to consider the problem
-holistically, rather than as a series of discrete decisions or trade-offs, and
-adopt a broad view of salience to develop unique, creative approaches to the
-problem space.
+The most successful leaders practice what Martin calls "integrative thinking": an approach to problem-solving that embraces complexity and eschews binary, either/or thinking. Integrative thinkers are able to consider the problem holistically, rather than as a series of discrete decisions or trade-offs, and adopt a broad view of salience to develop unique, creative approaches to the problem space.
 
 ## Notes
 
@@ -28,6 +23,4 @@ problem space.
 
 #### Reference
 
-Martin, Roger L. The Opposable Mind: How Successful Leaders Win Through
-Integrative Thinking. 1st edition. Boston, Mass: Harvard Business Review
-Press, 2007.
+Martin, Roger L. The Opposable Mind: How Successful Leaders Win Through Integrative Thinking. 1st edition. Boston, Mass: Harvard Business Review Press, 2007.

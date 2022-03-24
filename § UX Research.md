@@ -35,28 +35,16 @@ tags: moc, ux, research
 - [[¶ Abductive reasoning]]
 - [[¶ Deductive reasoning]]
 - [[¶ Inductive reasoning]]
-- [[¶ Falsifiability]] - We shouldn't try to validate ideas but seek
-  invalidating evidence.
-- [[Four Theories of Truth]] - Epistemology offers four theories governing how
-  to evaluate if something is true or not.
+- [[¶ Falsifiability]] - We shouldn't try to validate ideas but seek invalidating evidence.
+- [[Four Theories of Truth]] - Epistemology offers four theories governing how to evaluate if something is true or not.
 
 ## Sharing research
 
-- [[Show, don't tell]] - When working with senior stakeholders who wield
-  considerable authority, it may be more effective to share with them and
-  discuss the data that you uncovered rather than fighting to make the decision
-  yourself.
-- [[Inform rather than persuade]] - Researchers should strive to deliver
-  information rather than persuade audiences to help foster trust in the results
-  and in research as a practice.
-- [[Expressing uncertainty doesn't undermine authority]] - Identifying areas of
-  uncertainty is a positive practice that hasn't been shown to undermine
-  confidence in research reporting.
-- [[¶ Pyramid Principle]] - McKinsey's presentation structure, consisting of a
-  key insight that decomposes into subordinate, mutually exclusive but
-  comprehensively exhausted, supporting points.
-- [[Research repositories should generate new knowledge]] - A repository isn't
-  just a catalogue; it should facilitate the collision of ideas
+- [[Show, don't tell]] - When working with senior stakeholders who wield considerable authority, it may be more effective to share with them and discuss the data that you uncovered rather than fighting to make the decision yourself.
+- [[Inform rather than persuade]] - Researchers should strive to deliver information rather than persuade audiences to help foster trust in the results and in research as a practice.
+- [[Expressing uncertainty doesn't undermine authority]] - Identifying areas of uncertainty is a positive practice that hasn't been shown to undermine confidence in research reporting.
+- [[¶ Pyramid Principle]] - McKinsey's presentation structure, consisting of a key insight that decomposes into subordinate, mutually exclusive but comprehensively exhausted, supporting points.
+- [[Research repositories should generate new knowledge]] - A repository isn't just a catalogue; it should facilitate the collision of ideas
 
 ## Research Org Design
 

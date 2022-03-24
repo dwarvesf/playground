@@ -1,18 +1,10 @@
 # The Dwarves Brainery
 
-Welcome to the Dwarves Brainery. Dwarves are a group of technology innovation
-advocates. This project is a part of our continuous learning engine, where we
-want to build up the 1% improvement habit, learning in public.
+Welcome to the Dwarves Brainery. Dwarves are a group of technology innovation advocates. This project is a part of our continuous learning engine, where we want to build up the 1% improvement habit, learning in public.
 
-We believe that behind every success comes great preparation, accumulate and
-compound every single day. This brain repo contains our notes and studies for
-any upcoming challenges.
+We believe that behind every success comes great preparation, accumulate and compound every single day. This brain repo contains our notes and studies for any upcoming challenges.
 
-Applying the Zettelkasten method to construct our reference neuron network, we
-collect learning pieces from articles, books, papers, videos and then put them
-here to evaluate before boarding them to our technology adoption radar. We also
-adopted the LYT method with an initial setup and notes from Moby Diction
-Publish. It sets a great standard and we find it very helpful.
+Applying the Zettelkasten method to construct our reference neuron network, we collect learning pieces from articles, books, papers, videos and then put them here to evaluate before boarding them to our technology adoption radar. We also adopted the LYT method with an initial setup and notes from Moby Diction Publish. It sets a great standard and we find it very helpful.
 
 #### Workflow
 

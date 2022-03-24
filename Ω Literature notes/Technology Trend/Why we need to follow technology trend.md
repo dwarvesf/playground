@@ -19,9 +19,7 @@ tags: technology
 
 ## Why is technology trend awareness important
 
-Trend awareness as a,in the market or industry.&text=Ideal technology trend
-awareness skills,technology adoption or surpass it. It helps enhancing your
-visibility to the customers
+Trend awareness as a,in the market or industry.&text=Ideal technology trend awareness skills,technology adoption or surpass it. It helps enhancing your visibility to the customers
 
 ---
 

@@ -4,8 +4,7 @@ tags: go, generator
 
 ### Story about generate a file
 
-We usually run a command line in the golang project to generate a file, such as:
-the mock implementation for an interface.
+We usually run a command line in the golang project to generate a file, such as: the mock implementation for an interface.
 
 ```go
 type UserRepo interface {
@@ -15,8 +14,7 @@ type UserRepo interface {
 }
 ```
 
-The old way, we make script in makefile and declare a step to generate the mock
-files. It's look like that
+The old way, we make script in makefile and declare a step to generate the mock files. It's look like that
 
 ```shell
 gen-mock:
@@ -27,16 +25,14 @@ gen-mock:
 
 ### Problem
 
-- We need to update the `makefile` for the new one. It make our `makefile`
-  become huge
+- We need to update the `makefile` for the new one. It make our `makefile` become huge
 - We can make the typo mistake when we type the long file path
 
 ### Solution
 
 Using the generate tool from go tool:
 
-1. Setup the CLI application for generate file. In this case, we are using
-   mockgen
+1. Setup the CLI application for generate file. In this case, we are using mockgen
 2. Declare the generate tag in our source code `user_repo.go`
 
 ```go
@@ -58,9 +54,7 @@ type UserRepo interface {
 $ go generate ./...
 ```
 
-This tool will help we generate a new mock file in our project at
-`myapp/model/mocks/user_repo.go`. We don't make our `makefile` become messy
-anymore
+This tool will help we generate a new mock file in our project at `myapp/model/mocks/user_repo.go`. We don't make our `makefile` become messy anymore
 
 ---
 

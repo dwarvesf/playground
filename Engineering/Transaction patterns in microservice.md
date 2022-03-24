@@ -14,12 +14,9 @@ tags: microservice, pattern
 
 **Cons**
 
-- Synchronous, delay during calling services, blocking resources -> bottleneck,
-  deadlock
+- Synchronous, delay during calling services, blocking resources -> bottleneck, deadlock
 
-**Q&A** How do we handling errors during commit phrase -> retry on commit
-error?!, global transaction context tracking and calling delete all committed
-objects?!
+**Q&A** How do we handling errors during commit phrase -> retry on commit error?!, global transaction context tracking and calling delete all committed objects?!
 
 ### Saga pattern
 
@@ -33,8 +30,7 @@ objects?!
 **Cons**
 
 - Difficult to bug and maintain event messages as system grows
-- No read isolation: committed data of a service might be gone after a second
-  due to compensation transaction
+- No read isolation: committed data of a service might be gone after a second due to compensation transaction
 
 ---
 

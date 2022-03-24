@@ -2,8 +2,7 @@
 tags: MBTI, teambuilding
 ---
 
-Here are a few ways you can use personality assessments to improve your teams
-and optimize for more successful projects:
+Here are a few ways you can use personality assessments to improve your teams and optimize for more successful projects:
 
 - Make personality assessments part of onboarding
 - Strive for diversity

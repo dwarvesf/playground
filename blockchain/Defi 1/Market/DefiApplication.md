@@ -4,8 +4,7 @@ tags: blockchain, defi
 
 ### Lending
 
-DeFi allows any individual to take out or supply a loan without approval from a
-third party.
+DeFi allows any individual to take out or supply a loan without approval from a third party.
 
 - [AAVE](https://app.aave.com/markets)
 - [FulCrum](https://fulcrum.trade/)
@@ -22,8 +21,7 @@ third party.
 
 ### Decentralized Exchange
 
-Decentralized exchanges allow users to swap their assets without having to
-transfer custody of the underlying collateral
+Decentralized exchanges allow users to swap their assets without having to transfer custody of the underlying collateral
 
 - [0x Protocol]
 - [1inch]
@@ -37,8 +35,7 @@ transfer custody of the underlying collateral
 
 ### Derivatives
 
-In traditional finance, a derivative represents a contract where the value is
-derived from an agreement based on the performance of an underlying asset.
+In traditional finance, a derivative represents a contract where the value is derived from an agreement based on the performance of an underlying asset.
 
 - [Augur]
 - [dY/dX]
@@ -73,8 +70,7 @@ Tools are in place to better track and manage assets
 
 ### Savings
 
-Offer unique and novel ways to earn a return by saving cryptocurrencies. This
-differs from lending as there is no borrower on the other side of the table.
+Offer unique and novel ways to earn a return by saving cryptocurrencies. This differs from lending as there is no borrower on the other side of the table.
 
 - [DAI Saving Rate]
 - [Dharma]

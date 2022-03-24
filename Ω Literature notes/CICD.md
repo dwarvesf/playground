@@ -16,8 +16,7 @@ tags: development
 - Code is moved to another env for more test
 - Passed these tests, code is ready for production
 - CD ensures a safety net for production code
-  - i.e: once code is shipped to production, it can still be tested and notify
-    bugs
+  - i.e: once code is shipped to production, it can still be tested and notify bugs
 
 ### The CI/CD pipeline
 

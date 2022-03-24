@@ -4,9 +4,7 @@ tags: nextjs
 
 After Googling, I've come up with a solution
 
-Nextjs has a feature called `Rewrites`. Rewrites allows us to map an income
-request for a different destination request path. We're going to Rewrite it as
-below:
+Nextjs has a feature called `Rewrites`. Rewrites allows us to map an income request for a different destination request path. We're going to Rewrite it as below:
 
 ````async rewrites() {
     return [

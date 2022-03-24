@@ -4,25 +4,20 @@ tags: development, practice
 
 ### Shell
 
-A program, takes command from the keyboard and give it to the OS -> execute
-task/ function.
+A program, takes command from the keyboard and give it to the OS -> execute task/ function.
 
 **Main function**: Interact with the operating system (OS)
 
 #### How human use shell program
 
-- Users: GUI (_graphical user interfaces_): button, icon, pointer, menu, scroll
-  bar -> Anything that helps users to interact with the computer.
-- Developers: CLI (_command line interfaces_): Interact with the computer
-  through _terminal_: cd, ls, rm,... -> Text-based interfaces.
+- Users: GUI (_graphical user interfaces_): button, icon, pointer, menu, scroll bar -> Anything that helps users to interact with the computer.
+- Developers: CLI (_command line interfaces_): Interact with the computer through _terminal_: cd, ls, rm,... -> Text-based interfaces.
 
-_bash_ is an enhanced version of Shell program, the same with _ksh_, _tcsh_,
-_zsh_
+_bash_ is an enhanced version of Shell program, the same with _ksh_, _tcsh_, _zsh_
 
 ### Shell Script
 
-A list of commands that describes the steps that need to be executed. Those
-steps can be program execution, file manipulation or text printing.
+A list of commands that describes the steps that need to be executed. Those steps can be program execution, file manipulation or text printing.
 
 **To create Shell Script**
 

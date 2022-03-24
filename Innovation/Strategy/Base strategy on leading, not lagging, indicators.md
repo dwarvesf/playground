@@ -2,23 +2,11 @@
 tags: business, strategy
 ---
 
-Many organizations rely too heavily on lagging indicators for their strategic
-decision-making—measurements that inform us about what has happened in the past
-rather than indicating what may happen in the future. Relying on lagging
-indicators for strategic decisions means you will react too late.
+Many organizations rely too heavily on lagging indicators for their strategic decision-making—measurements that inform us about what has happened in the past rather than indicating what may happen in the future. Relying on lagging indicators for strategic decisions means you will react too late.
 
-Leading indicators look very different from lagging indicators. They’re more
-qualitative, and often come to us in stories, not charts. These data are less
-concrete, but no less important: these narratives show us where the future is.
+Leading indicators look very different from lagging indicators. They’re more qualitative, and often come to us in stories, not charts. These data are less concrete, but no less important: these narratives show us where the future is.
 
-There is a roughly inverse relationship between strategic degrees of freedom and
-signal strength. In other words, the longer you wait to act on a signal, the
-fewer options you will have available to you. Early on, signals are weak, and it
-would be foolish to make a big move at that level of uncertainty. But, If you
-wait too long, the inflection point will be obvious, and you will be too late to
-take advantage. In the centre, where signal strength and degrees of freedom
-cross, is the period of optimum warning. It is vital to stay on top of signals
-to identify the right moment to act.
+There is a roughly inverse relationship between strategic degrees of freedom and signal strength. In other words, the longer you wait to act on a signal, the fewer options you will have available to you. Early on, signals are weak, and it would be foolish to make a big move at that level of uncertainty. But, If you wait too long, the inflection point will be obvious, and you will be too late to take advantage. In the centre, where signal strength and degrees of freedom cross, is the period of optimum warning. It is vital to stay on top of signals to identify the right moment to act.
 
 ---
 

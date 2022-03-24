@@ -4,8 +4,7 @@ tags: story-telling, communication, narrative, writing
 
 ## Summary
 
-A manual on the craft of nonfiction writing from a "story doctor" for the _New
-York Times_.
+A manual on the craft of nonfiction writing from a "story doctor" for the _New York Times_.
 
 ## Notes
 
@@ -28,5 +27,4 @@ York Times_.
 
 #### Reference
 
-Flaherty, Francis. _The Elements of Story: Field Notes on Nonfiction Writing._
-Reprint edition. Harper Perennial, 2010.
+Flaherty, Francis. _The Elements of Story: Field Notes on Nonfiction Writing._ Reprint edition. Harper Perennial, 2010.

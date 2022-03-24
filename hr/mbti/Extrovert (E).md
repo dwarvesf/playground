@@ -18,5 +18,4 @@ tag: MBTI
 
 #### Reference
 
-Book: My True Type Clarifying Your Personality Type, Preferences & Functions
-Copyright © 2014 A.J. Drenth
+Book: My True Type Clarifying Your Personality Type, Preferences & Functions Copyright © 2014 A.J. Drenth

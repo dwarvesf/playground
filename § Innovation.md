@@ -15,8 +15,7 @@ tags: moc, innovation
 - [[Why enterprises can't innovate like startups]]
 - [[¶ Martec's Law]]
 - [[Common innovation anti-patterns]]
-- [[Tom Brady Principle]] - Organizations often promote top performers out of
-  positions in which they can make the greatest impact.
+- [[Tom Brady Principle]] - Organizations often promote top performers out of positions in which they can make the greatest impact.
 
 ## Innovation thrives on connection
 

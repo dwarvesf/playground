@@ -2,18 +2,12 @@
 tags: MBTI, teambuilding
 ---
 
-To use the idea of temperament most effectively, it is important to understand
-that the** four temperaments** are not simply arbitrary collections of
-characteristics, but spring from an interaction of the two basic dimensions of
-human behavior: **our communication** and**our action**, our words and our
-deeds, or, simply, what we say and what we do.
+To use the idea of temperament most effectively, it is important to understand that the** four temperaments** are not simply arbitrary collections of characteristics, but spring from an interaction of the two basic dimensions of human behavior: **our communication** and**our action**, our words and our deeds, or, simply, what we say and what we do.
 
 - Communication: Concrete (talk about reality) and Abstract (talk about ideas)
 - Action: Cooperative (Do what's right) and Utilitalian (Do what works)
 
-Psychologist David Keirsey introduced a new perspective on the Myers-Briggs
-types by grouping the types into four temperaments. He named these temperaments
-as follows:
+Psychologist David Keirsey introduced a new perspective on the Myers-Briggs types by grouping the types into four temperaments. He named these temperaments as follows:
 
  **Guardians (Sensation + Judgment)**
 
@@ -47,5 +41,4 @@ as follows:
 
 #### Reference
 
-[Four temperaments overview](https://keirsey.com/temperament-overview/)
-[Building Effective Teams Using the Myers-Briggs Personality Types](http://www.cmcgc.com/media/handouts/300502/0140-Wenger.pdf)
+[Four temperaments overview](https://keirsey.com/temperament-overview/) [Building Effective Teams Using the Myers-Briggs Personality Types](http://www.cmcgc.com/media/handouts/300502/0140-Wenger.pdf)

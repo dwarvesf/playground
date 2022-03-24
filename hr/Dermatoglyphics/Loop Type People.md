@@ -2,8 +2,7 @@
 tags: fingerprint, HR
 ---
 
-![[Screenshot 2021-07-07 at 16.19.00.png]] From center to Delta greater than 5
-ridges
+![[Screenshot 2021-07-07 at 16.19.00.png]] From center to Delta greater than 5 ridges
 
 #### General features
 
