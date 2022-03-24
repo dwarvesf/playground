@@ -2,15 +2,18 @@
 tag: MBTI, function
 ---
 
-Personality type (PT) only shows the surface of our pesonality.
-eg: mine is INFP, if read full description on 16personalities, it will say that your characteristics are:
+Personality type (PT) only shows the surface of our pesonality. eg: mine is
+INFP, if read full description on 16personalities, it will say that your
+characteristics are:
 
 - I: introverted
 - N: institution
 - F: feeling
 - P: preceiving
 
-But if we go deeper, what determines the characteristics of the personality type and why is it so? And how does it have more features and trends? That's when I learned about cognitive functions..
+But if we go deeper, what determines the characteristics of the personality type
+and why is it so? And how does it have more features and trends? That's when I
+learned about cognitive functions..
 
 ---
 

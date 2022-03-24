@@ -4,15 +4,23 @@ tags: product, build-in-public
 
 ## What is #buildinpublic
 
-#buildinpublic in a process where creators are being transparent about their product building process.
+#buildinpublic in a process where creators are being transparent about their
+product building process.
 
-It happens through the narration of how they got there. What they do in the creating phase. Publish everything transpiration, even if it gets nasty and lame.
+It happens through the narration of how they got there. What they do in the
+creating phase. Publish everything transpiration, even if it gets nasty and
+lame.
 
 ## The purpose
 
-A problem with tradition launching - where makers publish their product once it's **_done & ready_**, is they might talke a while for user to get familiar, finding the mutual rhythm, acknowledge the useful points and start adopting the product.
+A problem with tradition launching - where makers publish their product once
+it's **_done & ready_**, is they might talke a while for user to get familiar,
+finding the mutual rhythm, acknowledge the useful points and start adopting the
+product.
 
-Meanwhile, build in public enables testing for beta users. By bringing thing in public, makers get to receive the feedback and adjust accordingly. People love to hear stories, and be a part of the story.
+Meanwhile, build in public enables testing for beta users. By bringing thing in
+public, makers get to receive the feedback and adjust accordingly. People love
+to hear stories, and be a part of the story.
 
 By the time the product is ready, makers get two things:
 
@@ -21,7 +29,9 @@ By the time the product is ready, makers get two things:
 
 ## The process
 
-It's simple. When you do something, share it. Publicly share it. Currently I'm trialling build in public with Readify - a reading platform that features hightlight articles based on interest.
+It's simple. When you do something, share it. Publicly share it. Currently I'm
+trialling build in public with Readify - a reading platform that features
+hightlight articles based on interest.
 
 Adopting #buildinpublic for Readify goes through these steps:
 
@@ -36,8 +46,10 @@ Adopting #buildinpublic for Readify goes through these steps:
 
 3. Explain the Purpose
 
-- A community is made out of things in **_common_**. Either they fancy or against something.
-- We find this, we take it as the purpose, and we serve it to the community. That's how loyalty user gets convinced.
+- A community is made out of things in **_common_**. Either they fancy or
+  against something.
+- We find this, we take it as the purpose, and we serve it to the community.
+  That's how loyalty user gets convinced.
 
 4. Confirm the Process:
 
@@ -51,7 +63,8 @@ Adopting #buildinpublic for Readify goes through these steps:
 
 6. Update the Change:
 
-- Update the features and changelog: At this step, we show the user their feedback matters. Our improvement based on this.
+- Update the features and changelog: At this step, we show the user their
+  feedback matters. Our improvement based on this.
 - Update the using status: Numbers, geographic and the status quo
 
 ---

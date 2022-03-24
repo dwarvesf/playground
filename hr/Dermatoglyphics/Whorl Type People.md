@@ -6,8 +6,7 @@ tags: fingerprint, HR
 
 ### General features
 
-- Active, strong, with opinions
-  Always set goals when taking action.
+- Active, strong, with opinions Always set goals when taking action.
 - High ego, hard to persuade or influence
 
 ### Unique features

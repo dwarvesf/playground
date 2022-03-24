@@ -12,5 +12,5 @@ To classify and identify fingerprints, the first thing we need to know is
 
 [xác định được tâm và giao điểm.](https://lindanga.com/nhan-dien-phan-loai-dau-van-tay/)
 
-**Focus:** Core is the center of a vortex or ridge
-**Intersection**: Delta is the intersection of the three ridges that make up a point triangle.
+**Focus:** Core is the center of a vortex or ridge **Intersection**: Delta is
+the intersection of the three ridges that make up a point triangle.

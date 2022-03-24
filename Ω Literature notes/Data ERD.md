@@ -4,31 +4,39 @@ tags: data, diagram
 
 ### What
 
-ERD stands for Entity Relationship Diagram, a structural diagram that contains symbols nad connectors that visualizes 2 types of information
+ERD stands for Entity Relationship Diagram, a structural diagram that contains
+symbols nad connectors that visualizes 2 types of information
 
 - The major Entities
 - The Relationship between those entities
 
-When we talk bout Entities, we are referring to the business objects within the system: people/role, tangile object (product).
+When we talk bout Entities, we are referring to the business objects within the
+system: people/role, tangile object (product).
 
-When we talk about Relationship, we are referring how those entities relate with each other.
+When we talk about Relationship, we are referring how those entities relate with
+each other.
 
 ### Primary key & Foreign key
 
 - Primary key: Use to uniquely define a record in database table
-- Foreign key: a foreign key of a table is used aas a navigation to a primary key of another table
+- Foreign key: a foreign key of a table is used aas a navigation to a primary
+  key of another table
 
 ### When
 
-ERDs are mostly developed during concept visualization, database design, database debugging, requirement information system.
+ERDs are mostly developed during concept visualization, database design,
+database debugging, requirement information system.
 
 ### How-to
 
 - Answer the purpose: What is this ERD for
-- Clarify the model scope. This prevents the model from having too many redundant entities. Onyl select the entities that is critical and relevant to the business model.
+- Clarify the model scope. This prevents the model from having too many
+  redundant entities. Onyl select the entities that is critical and relevant to
+  the business model.
 - Define the models/ major entities
 - Define the attribute of that entities (related information)
-- Decide the relationship between those entities (which one might affect one another)
+- Decide the relationship between those entities (which one might affect one
+  another)
 - Decide the kind of relationship
   - 1:1
   - 1:many

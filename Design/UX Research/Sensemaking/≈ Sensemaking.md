@@ -1,6 +1,13 @@
 ## Summary
 
-Madsbjerg argues that our culture—especially in the business world—has become to taken with a bias toward scientific or algorithmic thinking. This obsession with data has limited our ability to build deep understanding and intuition about people and culture, which are not so easily quantified. Madsbjerg describes sensemaking, a humanities-based method inspired by phenomenology, as an alternative approach that helps understand not just what people do but helps us understand how people relate to contexts around them through the acquisition of thick data.
+Madsbjerg argues that our culture—especially in the business world—has become to
+taken with a bias toward scientific or algorithmic thinking. This obsession with
+data has limited our ability to build deep understanding and intuition about
+people and culture, which are not so easily quantified. Madsbjerg describes
+sensemaking, a humanities-based method inspired by phenomenology, as an
+alternative approach that helps understand not just what people do but helps us
+understand how people relate to contexts around them through the acquisition of
+thick data.
 
 ## Notes
 
@@ -32,4 +39,5 @@ Madsbjerg argues that our culture—especially in the business world—has becom
 
 #### Citation
 
-Madsbjerg, Christian. Sensemaking: The Power of the Humanities in the Age of the Algorithm. Hachette Books, 2017.
+Madsbjerg, Christian. Sensemaking: The Power of the Humanities in the Age of the
+Algorithm. Hachette Books, 2017.

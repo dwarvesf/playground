@@ -4,7 +4,9 @@ tags: business, strategy
 
 ### Summary
 
-Rumelt argues that having a strategy is itself a competitive advantage, in that few organizations actually have strategies. Strategy depends on a three-part kernel consisting of a diagnosis, a guiding policy, and of coordinated action.
+Rumelt argues that having a strategy is itself a competitive advantage, in that
+few organizations actually have strategies. Strategy depends on a three-part
+kernel consisting of a diagnosis, a guiding policy, and of coordinated action.
 
 ### Notes
 
@@ -39,4 +41,5 @@ Rumelt argues that having a strategy is itself a competitive advantage, in that 
 
 #### Reference
 
-Rumelt, Richard. _Good Strategy Bad Strategy: The Difference and Why It Matters_. Illustrated edition. New York: Currency, 2011.
+Rumelt, Richard. _Good Strategy Bad Strategy: The Difference and Why It
+Matters_. Illustrated edition. New York: Currency, 2011.

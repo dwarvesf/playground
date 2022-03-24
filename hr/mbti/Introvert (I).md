@@ -8,7 +8,8 @@ Book: My True Type, page 24 - 32
 
 - Inner/self-focus
 - More independent-minded
-- More cautious, conservative, and discriminating; “look before they leap”; rely heavily on forethought (especially IJs)
+- More cautious, conservative, and discriminating; “look before they leap”; rely
+  heavily on forethought (especially IJs)
 - Prefer a slower, quieter, reflective life
 - More easily overwhelmed by external stimuli
 - Feel somewhat alien, uncomfortable, or inadequate in the world
@@ -20,7 +21,5 @@ Book: My True Type, page 24 - 32
 
 #### Reference
 
-Book: My True Type
-Clarifying Your Personality Type, Preferences & Functions
-Copyright © 2014
-A.J. Drenth
+Book: My True Type Clarifying Your Personality Type, Preferences & Functions
+Copyright © 2014 A.J. Drenth

@@ -2,9 +2,13 @@
 tags: innovation
 ---
 
-“Exaptation” describes how a trait developed by a given organism may be adapted for a completely different function than its original purpose.
+“Exaptation” describes how a trait developed by a given organism may be adapted
+for a completely different function than its original purpose.
 
-Steven Johnson borrows this concept from Stephen Jay Gould and Elisabeth Vrba's work in evolutionary biology to describe how shared environments can promote creativity and innovation. The collision of distinction interests and passions overlap and intermingle, producing new perspectives and ideas.
+Steven Johnson borrows this concept from Stephen Jay Gould and Elisabeth Vrba's
+work in evolutionary biology to describe how shared environments can promote
+creativity and innovation. The collision of distinction interests and passions
+overlap and intermingle, producing new perspectives and ideas.
 
 ---
 

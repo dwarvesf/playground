@@ -11,5 +11,4 @@ Or we can simply deploy with `$ dfx deploy`
 
 On the first time deployment, it will create default 'identity'
 
-Calling motoko func:
-`$ dfx canister call <canister name> <func name> <args>`
+Calling motoko func: `$ dfx canister call <canister name> <func name> <args>`

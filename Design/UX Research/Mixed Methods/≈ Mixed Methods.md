@@ -6,7 +6,12 @@ tags: ux, research
 
 ## Summary
 
-Ladner outlines the different strengths and weaknesses of qualitative and quantitative research methods, providing a framework for leveraging the strengths of each approach. She suggests that the differences are more fundamental than simply an issue of data types; rather, they are informed by fundamental differences in the epistemological and ontological lenses that each approach takes.
+Ladner outlines the different strengths and weaknesses of qualitative and
+quantitative research methods, providing a framework for leveraging the
+strengths of each approach. She suggests that the differences are more
+fundamental than simply an issue of data types; rather, they are informed by
+fundamental differences in the epistemological and ontological lenses that each
+approach takes.
 
 ## Notes
 

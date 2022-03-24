@@ -12,9 +12,8 @@ It's a long-running process to execute command at specifice date/time
 
 ### How it works
 
-Using crontab file.
-A configed text file, contains a list of command to schedule tasks.
-This file can be edit/ adjust using crontab command
+Using crontab file. A configed text file, contains a list of command to schedule
+tasks. This file can be edit/ adjust using crontab command
 
 _Crontab Command_: List of action you wish to execute
 

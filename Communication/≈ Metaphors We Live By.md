@@ -4,7 +4,9 @@ tags: communication
 
 ## Summary
 
-Metaphors are not simply linguistic flourishes that we use to artfully describe the world around us. They are conceptual tools that help us interpret and even construct the meanings of our experiences and interactions.
+Metaphors are not simply linguistic flourishes that we use to artfully describe
+the world around us. They are conceptual tools that help us interpret and even
+construct the meanings of our experiences and interactions.
 
 ## Notes
 
@@ -27,4 +29,5 @@ Metaphors are not simply linguistic flourishes that we use to artfully describe 
 
 #### Reference
 
-Lakoff, George, and Mark Johnson. _Metaphors We Live By_. University of Chicago Press, 2008.
+Lakoff, George, and Mark Johnson. _Metaphors We Live By_. University of Chicago
+Press, 2008.

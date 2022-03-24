@@ -2,11 +2,17 @@
 tags: writing, smart-note
 ---
 
-Willpower is a finite resource, and difficult to sustain. Designing environments to facilitate desire behaviour is a much more effective approach in the long run.
+Willpower is a finite resource, and difficult to sustain. Designing environments
+to facilitate desire behaviour is a much more effective approach in the long
+run.
 
-A well-designed environment demands less of our limited mental resources, enabling us to better focus resources where they will deliver the most impact. As well, the right environment can nudge us toward virtuous activity without forcing us to become virtuous.
+A well-designed environment demands less of our limited mental resources,
+enabling us to better focus resources where they will deliver the most impact.
+As well, the right environment can nudge us toward virtuous activity without
+forcing us to become virtuous.
 
-Design environments to reduce friction associated with the behaviours we wish to encourage, and to add friction to those we wish to discourage.
+Design environments to reduce friction associated with the behaviours we wish to
+encourage, and to add friction to those we wish to discourage.
 
 ---
 
@@ -20,4 +26,6 @@ Design environments to reduce friction associated with the behaviours we wish to
 
 #### Reference
 
-Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers_. Sönke Ahrens, 2017.
+Ahrens, Sönke. _How to Take Smart Notes: One Simple Technique to Boost Writing,
+Learning and Thinking – for Students, Academics and Nonfiction Book Writers_.
+Sönke Ahrens, 2017.

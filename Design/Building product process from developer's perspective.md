@@ -2,9 +2,13 @@
 tags: ux, design, process
 ---
 
-We’ve all already known about **design thinking methodology** and been applying it in our daily work, so, comparing design thinking to other famous frameworks in software development will help us to understand developers' terms and fill in missing knowledge in this industry.
+We’ve all already known about **design thinking methodology** and been applying
+it in our daily work, so, comparing design thinking to other famous frameworks
+in software development will help us to understand developers' terms and fill in
+missing knowledge in this industry.
 
-In this training session, we learned about **Rational Unified Process (RUP)**, the considered-to-be-the-very-first framework in building a software product.
+In this training session, we learned about **Rational Unified Process (RUP)**,
+the considered-to-be-the-very-first framework in building a software product.
 
 ![](https://lh5.googleusercontent.com/pcB7jhyFSlHJZKaQmnhdLqHBB_HurAh_8kSPNnC1oyxIf9zhkNkKCvgqfjF7dHoffliYrTqupi9PxTUpodtmE3pmpmWl2CNl2OniNPUZLn185ryKKAA_CBFDWTZW1_FfrTybvNAd)
 
@@ -35,8 +39,10 @@ RUP organizes the development of software into four phases:
 ### Analysis & Design
 
 - Analyze and design how products work to fulfill requirements.
-- The build-up system is often very well weighed and measured (**measure twice build once**)
-- _Should prepare ourselves with the full amount of knowledge to be able to design correctly in a short time_
+- The build-up system is often very well weighed and measured (**measure twice
+  build once**)
+- _Should prepare ourselves with the full amount of knowledge to be able to
+  design correctly in a short time_
 
 =>  Equal to Prototype in Design Thinking
 
@@ -46,7 +52,8 @@ RUP organizes the development of software into four phases:
 
 ### Test
 
-- Verification: reliability, functionality, application performance and system performance
+- Verification: reliability, functionality, application performance and system
+  performance
 - Validation
 
 =>   Equal to Test in Design Thinking
@@ -64,13 +71,19 @@ RUP organizes the development of software into four phases:
 ### Project Management
 
 - Plan, execute, and monitor projects
-- Ensure that the delivered products meet the needs of both clients (business goals) and users
+- Ensure that the delivered products meet the needs of both clients (business
+  goals) and users
 
 ### Environment
 
 - Configure the process in the context of a project
 
-In fact, this process is only applied to products or systems which require high precision (FPT, KMS,...). There are many software products launched every day, however, most of them do not have a great impact on society. If there are errors in the process of making them, they will not cause a great loss of money, assets and human society. Therefore, we often use other processes to cut off costs and effort to build a product.
+In fact, this process is only applied to products or systems which require high
+precision (FPT, KMS,...). There are many software products launched every day,
+however, most of them do not have a great impact on society. If there are errors
+in the process of making them, they will not cause a great loss of money, assets
+and human society. Therefore, we often use other processes to cut off costs and
+effort to build a product.
 
 ---
 

@@ -2,7 +2,8 @@
 tags: zettelkasten, moc
 ---
 
-Zettelkästen describes a method of personal knowledge management inspired by prolific sociologist Niklas Luhmann.
+Zettelkästen describes a method of personal knowledge management inspired by
+prolific sociologist Niklas Luhmann.
 
 - [[¶ Luhmann's zettelkasten]]
 - [[Purpose of zettelkasten]]: producing insight

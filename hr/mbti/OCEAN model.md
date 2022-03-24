@@ -2,10 +2,13 @@
 tag: MBTI
 ---
 
-The test on 16personalities is also combined with Five Big personality traits (OCEAN model), so the results are usually 5 characters.
+The test on 16personalities is also combined with Five Big personality traits
+(OCEAN model), so the results are usually 5 characters.
 
-- Openness > imagination, insight (do you like new things, do you like abstract concepts, do you have many interests)
-- Conscientiousness > attitude when doing tasks (do you prepare in advance/plan, details or not, often late to deadline)
+- Openness > imagination, insight (do you like new things, do you like abstract
+  concepts, do you have many interests)
+- Conscientiousness > attitude when doing tasks (do you prepare in advance/plan,
+  details or not, often late to deadline)
 - Extraversion
 - Agreeableness (have sympathy, concern, like to help others)
 - Neuroticism (control mood, deal with stress ntn)

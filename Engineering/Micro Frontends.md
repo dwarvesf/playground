@@ -4,20 +4,25 @@ tags: micro-frontend
 
 ### What is Micro-frontend?
 
-An architectural style where independently deliverable frontend applications are composed into a greater whole
+An architectural style where independently deliverable frontend applications are
+composed into a greater whole
 
 **Benefits**
 
 - Smaller, more cohesive and maintainable codebases
 - More scalable organisations with decoupled, autonomous teams
-- The ability to upgrade, update, or even rewrite parts of the frontend in a more incremental fashion than was previously possible
-- Easier maintenance: Keeping frontend repositories small and specialized allows them to be more easily understood, and this simplifies long-term maintenance and testing.
+- The ability to upgrade, update, or even rewrite parts of the frontend in a
+  more incremental fashion than was previously possible
+- Easier maintenance: Keeping frontend repositories small and specialized allows
+  them to be more easily understood, and this simplifies long-term maintenance
+  and testing.
 
 ### Micro-Frontend in actions
 
 #### Build-time integration
 
-- Publish each micro frontend as a package and have the container application include them all as library dependencies.
+- Publish each micro frontend as a package and have the container application
+  include them all as library dependencies.
 
 ```js
 {
@@ -34,7 +39,8 @@ An architectural style where independently deliverable frontend applications are
 
 Cons
 
-- Have to re-compile and release every single micro frontend in order to release a change to any individual part of the product.
+- Have to re-compile and release every single micro frontend in order to release
+  a change to any individual part of the product.
 
 #### Run-time integration via iframes
 
@@ -52,13 +58,13 @@ Cons
 
     <script type="text/javascript">
       const microFrontendsByRoute = {
-        "/": "https://products.shop.com/index.html",
-        "/order": "https://order.shop.com/index.html",
-        "/user-profile": "https://profile.shop.com/index.html",
-      };
+        '/': 'https://products.shop.com/index.html',
+        '/order': 'https://order.shop.com/index.html',
+        '/user-profile': 'https://profile.shop.com/index.html',
+      }
 
-      const iframe = document.getElementById("app-container");
-      iframe.src = microFrontendsByRoute[window.location.pathname];
+      const iframe = document.getElementById('app-container')
+      iframe.src = microFrontendsByRoute[window.location.pathname]
     </script>
   </body>
 </html>
@@ -67,11 +73,15 @@ Cons
 Cons
 
 - Difficult to make page responsive
-- Difficult to integrate between different parts of application, make routing, history, and deep-linking more complicated
+- Difficult to integrate between different parts of application, make routing,
+  history, and deep-linking more complicated
 
 #### Run-time integration via JavaScript
 
-- Each micro frontend is included onto the page using a `<script>` tag, and upon load exposes a global function as its entry-point. The container application then determines which micro frontend should be mounted, and calls the relevant function to tell a micro frontend when and where to render itself.
+- Each micro frontend is included onto the page using a `<script>` tag, and upon
+  load exposes a global function as its entry-point. The container application
+  then determines which micro frontend should be mounted, and calls the relevant
+  function to tell a micro frontend when and where to render itself.
 
 ```html
 <html>
@@ -92,15 +102,15 @@ Cons
     <script type="text/javascript">
       // These global functions are attached to window by the above scripts
       const microFrontendsByRoute = {
-        "/": window.renderProducts,
-        "/order": window.renderOrder,
-        "/user-profile": window.renderUserProfile,
-      };
-      const renderFunction = microFrontendsByRoute[window.location.pathname];
+        '/': window.renderProducts,
+        '/order': window.renderOrder,
+        '/user-profile': window.renderUserProfile,
+      }
+      const renderFunction = microFrontendsByRoute[window.location.pathname]
 
       // Having determined the entry-point function, we now call it,
       // giving it the ID of the element where it should render itself
-      renderFunction("app");
+      renderFunction('app')
     </script>
   </body>
 </html>
@@ -108,7 +118,8 @@ Cons
 
 #### Run-time integration via Web Components
 
-- Define each micro frontend as an HTML custom element for the container to instantiate.
+- Define each micro frontend as an HTML custom element for the container to
+  instantiate.
 
 ```html
 <html>
@@ -129,17 +140,17 @@ Cons
     <script type="text/javascript">
       // These element types are defined by the above scripts
       const webComponentsByRoute = {
-        "/": "micro-frontend-products",
-        "/order": "micro-frontend-order",
-        "/user-profile": "micro-frontend-user-profile",
-      };
-      const webComponentType = webComponentsByRoute[window.location.pathname];
+        '/': 'micro-frontend-products',
+        '/order': 'micro-frontend-order',
+        '/user-profile': 'micro-frontend-user-profile',
+      }
+      const webComponentType = webComponentsByRoute[window.location.pathname]
 
       // Having determined the right web component custom element type,
       // we now create an instance of it and attach it to the document
-      const root = document.getElementById("app");
-      const webComponent = document.createElement(webComponentType);
-      root.appendChild(webComponent);
+      const root = document.getElementById('app')
+      const webComponent = document.createElement(webComponentType)
+      root.appendChild(webComponent)
     </script>
   </body>
 </html>
@@ -158,7 +169,8 @@ Cons
 #### Serverside Rendering / Universal Rendering
 
 - Server-side rendering is always tricky problem.
-- Use [Server Side Includes](https://en.wikipedia.org/wiki/Server_Side_Includes) to plug in page-specific content from fragment HTML files:
+- Use [Server Side Includes](https://en.wikipedia.org/wiki/Server_Side_Includes)
+  to plug in page-specific content from fragment HTML files:
 
 #### Cons of Micro-frontend
 

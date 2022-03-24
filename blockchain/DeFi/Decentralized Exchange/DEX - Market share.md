@@ -2,7 +2,8 @@
 tags: blockchain, defi, dex
 ---
 
-Currently, DEX exchanges are competing for market share in the rapidly growing market.
+Currently, DEX exchanges are competing for market share in the rapidly growing
+market.
 
 Report on 7/7/2021
 

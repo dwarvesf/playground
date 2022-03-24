@@ -2,7 +2,10 @@
 tags: innovation, future, strategy
 ---
 
-When we try to exercise foresight and predict what may or may not happen in the future, our vision is always obscured by the past. We lack the vocabulary and the concepts we need to talk about the past, never mind the difficulties we face understanding what patterns of the past or present will carry over.
+When we try to exercise foresight and predict what may or may not happen in the
+future, our vision is always obscured by the past. We lack the vocabulary and
+the concepts we need to talk about the past, never mind the difficulties we face
+understanding what patterns of the past or present will carry over.
 
 ---
 
