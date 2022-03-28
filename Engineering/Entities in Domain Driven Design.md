@@ -14,9 +14,9 @@ A software design focusing on the **Domain**, one of the keys to a program succe
 
 *A set of fingerprints or traces of an object when going through multiple systems.*
 
-## Example
+### Examples
 
-### Real case world view
+#### Real case world view
 
 - **Banking(A)**, a banknote(paper money) will have an ID that identifies it on the digital systems or a physical log book even if all of its attributes are the same as another banknote(value, printing date, printing batch, etc..).
 
@@ -25,7 +25,7 @@ A software design focusing on the **Domain**, one of the keys to a program succe
     - After payment completes, the system calls the Shipping service API to generate shipment with a tracking ID.
     - On the shopping website, from the order detail page, the user can check payment, shipping status. In the payment, shipping system, order ID, and details can be viewed. When receiving the package, order ID, shipping fee, and total items, prices can be viewed.
 
-### In-System implementation
+#### In-System implementation
 
 - **Generated ID(A)**.
 
@@ -38,7 +38,7 @@ A software design focusing on the **Domain**, one of the keys to a program succe
 
 - **A online shopping site for Furniture**, the user only check brand name, model number, maybe design, and color for comparison between chairs or tables. Having a separate ID for each item might impact the decision on how to implement checkout(that item with ID is sold out so the user will need to find a similar item with a different ID).
 
-## References
+#### References
 
 - https://herbertograca.com/category/development/book-notes/domain-driven-design-by-eric-evans/
 
