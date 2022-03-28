@@ -3,42 +3,25 @@ tags: engineering, domain-driven-design, DDD
 author: M.Vu Cuong(Jim)
 ---
 
-## Recap on DDD
+### What is domain-driven-design
 A software design focusing on the **Domain**, one of the keys to a program success, by removing *communication lag* between **Developers** and **Domain Experts**, *separate important Domain-specific components* for maintenance and scalability.
 
-## A) Entities Defined by **Identity**
+### What is an Entity
 
-*ID or Identity, identify 2 objects with the same attributes* (2 persons with the same name, DoB but different ID card number).
+- **An Object with ID or Identity**, identify it with another objects with the same attributes. Examples:
+	- A banknote(paper money) will have an **ID** that identifies it on the digital systems or a physical log book even if all of its attributes are the same as another banknote(value, printing date, printing batch, etc..).
+	-  **Combination of attributes** that make an object unique, a batch of newspapers identify by *name, city, and publish date*.
+	
+- **An Object has a set of fingerprints or traces**  when going through multiple systems. Examples:
+	- An online shopping service with an external payment and shipping system. You can see and identify the order in each step(checkout, payment, shipping) on the shopping site or external service.
+	- To send an anonymous donation, the flow includes: *Sender -> API_1 -> API_2 -> API_3 -> Receiver*. There is no way to indentify the donation so each API will log the request ID for debugging purposes or when they need to make a refund. 
 
-## B) Entities Defined by **Thread of continuity**
-
-*A set of fingerprints or traces of an object when going through multiple systems.*
-
-### Examples
-
-#### Real case world view
-
-- **Banking(A)**, a banknote(paper money) will have an ID that identifies it on the digital systems or a physical log book even if all of its attributes are the same as another banknote(value, printing date, printing batch, etc..).
-
-- **Online shopping service(A, B)**, an order has ID. 
-    - After checkout, the system sends the order ID to the payment service.
-    - After payment completes, the system calls the Shipping service API to generate shipment with a tracking ID.
-    - On the shopping website, from the order detail page, the user can check payment, shipping status. In the payment, shipping system, order ID, and details can be viewed. When receiving the package, order ID, shipping fee, and total items, prices can be viewed.
-
-#### In-System implementation
-
-- **Generated ID(A)**.
-
-- **Combination of attributes(A)**, a batch of newspapers identify by name, city, and publish date.
-
-- **Logging Request time(B)**, when calling to a service, that service will log the request and identify it by request time in combination with an IP address (not recommended if the caller is a middleware service or gateway).
-
-## Entities's role in DDD
-*Establish continuity so that behavior can be clear and predictable*, We need to focus on how the system revolves around that entity and decide the identifier, not the reverse.
+### Entities's role in DDD
+**Domain** includes Entities performing business-related actions or interacting with each other so They _must be clear and predictable_. We need to focus on how the system revolves around that entity and decide the identifier, not the reverse. Example:
 
 - **A online shopping site for Furniture**, the user only check brand name, model number, maybe design, and color for comparison between chairs or tables. Having a separate ID for each item might impact the decision on how to implement checkout(that item with ID is sold out so the user will need to find a similar item with a different ID).
 
-#### References
+### References
 
 - https://herbertograca.com/category/development/book-notes/domain-driven-design-by-eric-evans/
 
