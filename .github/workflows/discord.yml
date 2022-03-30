@@ -26,7 +26,7 @@ jobs:
           utcOffset: '+07:00'
 
       - name: Discord notification
-        if: steps.split.outputs._1 && steps.split.outputs._0 != 'fix' && steps.split.outputs._0 != 'chore'
+        if: steps.split.outputs._1 && steps.split.outputs._0 != 'fix' && steps.split.outputs._0 != 'chore' && steps.split.outputs._0 != 'docs'
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_USERNAME: Brainery
