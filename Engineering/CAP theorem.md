@@ -1,5 +1,6 @@
 ---
 tags: engineering, database, transaction, distributed
+author: Nguyen Xuan Anh
 ---
 
 # What is CAP theorem

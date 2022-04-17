@@ -1,5 +1,6 @@
 ---
 tags: engineering, database, transaction
+author: Nguyen Xuan Anh
 ---
 
 # What is the BASE model?
