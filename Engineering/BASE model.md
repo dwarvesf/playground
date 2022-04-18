@@ -3,7 +3,7 @@ tags: engineering, database, transaction
 author: Nguyen Xuan Anh
 ---
 
-# What is the BASE model?
+## What is the BASE model?
 BASE is an acronym for describing a flexible way to manipulate data. With requirements for NoSQL databases, the BASE model came to be as a less pessimistic approach of the [[ACID model]] when handling data. The acronym stands for:
 - **Basic Availability:** The database is available and should work most of the time.
 - **Soft-state:** Data stores don't have to be completely write-consistent or require mutual consistency between replicas.
