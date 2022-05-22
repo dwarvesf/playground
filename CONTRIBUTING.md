@@ -14,7 +14,7 @@
 
 ## Manual of style
 
-### Writing, semantics, grammer
+### Writing, semantics, grammar
 
 We aren't actually too strict on grammar or semantics in your notes, given that it is easy to read and relatively skimmable. As for note structure, we will follow Wikipedia and previous SEO standards:
 
