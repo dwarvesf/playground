@@ -9,7 +9,7 @@
   - @zlatanpham
   - @monotykamary
 
-4. You may merge the Pull Request in once you have the sign-off of our reviewers, or if you do not have permission to do that, you may request the reviewer to merge it for you.
+3. You may merge the Pull Request in once you have the sign-off of our reviewers, or if you do not have permission to do that, you may request the reviewer to merge it for you.
 
 
 ## Manual of style
