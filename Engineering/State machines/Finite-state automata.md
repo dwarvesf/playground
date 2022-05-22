@@ -21,7 +21,7 @@ State machines are definitely a step up from [[Algebraic data types]] as it solv
 
 Luckily, we can solve this with Harel [[Statecharts]]; you may know and refer to them as [UML state machines](https://en.wikipedia.org/wiki/UML_state_machine) In essence, statecharts are a combination of [Mealy machines](https://en.wikipedia.org/wiki/Mealy_machine) and [Moore machines](https://en.wikipedia.org/wiki/Moore_machine).
 
-Although it is conventional to think $\delta$ as a [partial function](https://en.wikipedia.org/wiki/Partial_function), i.e: $\delta(s,x)$, the operator precedence relative to the data is, almost in all cases, left associative. This means asynchronously *parallel* application of the partial function will result in broken logic, that is unless all events are completely valid and it is possible combine partial and illegal transitions of states into a proper finite state (theory to apply for [[TimescaleDB]] [continuous aggregates](https://docs.timescale.com/timescaledb/latest/how-to-guides/continuous-aggregates/)) c
+Although it is conventional to think $\delta$ as a [partial function](https://en.wikipedia.org/wiki/Partial_function), i.e: $\delta(s,x)$, the operator precedence relative to the data is, almost in all cases, left associative. This means asynchronously *parallel* application of the partial function will result in broken logic, that is unless all events are completely valid and it is possible combine partial and illegal transitions of states into a proper finite state (theory to apply for [[TimescaleDB]] [continuous aggregates](https://docs.timescale.com/timescaledb/latest/how-to-guides/continuous-aggregates/)).
 
 # References
 - https://en.wikipedia.org/wiki/Finite-state_machine
