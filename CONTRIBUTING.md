@@ -18,7 +18,11 @@
 
 We aren't actually too strict on grammar or semantics in your notes. Our only requirement is that it is easy to read and is relatively skimmable. As for note structure, we will follow Wikipedia and previous SEO standards:
 
-1. Each page should only have one H1 `#` header. All subsequent headers should be nested as H2 `##` headers.
+1. Each page should only have one H1 `#` header.
+
+2. All subsequent headers should be nested as H2 `##` headers.
+
+3. Avoid separating topics with `---` unless absolutely necessary.
 
 **Notes on Plagiarism**: Please don't plagiarize. If you have similar ideas to the article you're referencing your notes from, at the very least paraphrase or compose your notes in a way that makes it your own.
 
