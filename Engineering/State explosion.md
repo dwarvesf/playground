@@ -4,6 +4,7 @@ author: Nguyen Xuan Anh
 ---
 
 ## What is state explosion?
+
 The main problem that’s stopping widespread usage of state machines is the fact that beyond very simple examples, state machines often end up with numerous states, a lot of them with identical transitions. [[Statecharts]] solve this _state explosion_ problem.
 
 ![State explosion](https://statecharts.dev/valid-invalid-enabled-disabled-changed-unchanged.svg)
@@ -28,8 +29,8 @@ Reorganizing nested finite states into a hierarchy, such that the finite state o
 
 Guards here serve as a pre-condition to a transition, which essentially prevents a transition from occurring based on a condition:
 
-![[Pasted image 20220522163854.png]]
-![Guard conditions](https://statecharts.dev/valid-invalid-enabled-disabled-changed-unchanged-parallel-guarded.svg)
+![[Pasted image 20220522163854.png]] ![Guard conditions](https://statecharts.dev/valid-invalid-enabled-disabled-changed-unchanged-parallel-guarded.svg)
 
 #### Reference
+
 - https://statecharts.dev/state-machine-state-explosion.html

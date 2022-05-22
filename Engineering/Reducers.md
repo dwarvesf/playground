@@ -3,7 +3,7 @@ tags: engineering, state, domain
 author: Nguyen Xuan Anh
 ---
 
-*This note refers to frontend reducers, and not to be confused with other reducers like from MapReduce.*
+_This note refers to frontend reducers, and not to be confused with other reducers like from MapReduce._
 
 ## Prior art
 
@@ -48,9 +48,10 @@ export let transition = (state, event) =>
 
 ### Tradeoffs vs a regular state machine
 
-Here a reducer  has no concept of a "finite" state here, such that state can be represented finitely with a string. This is an inherent tradeoff that also gives us a useful advantage. Assuming the "context" or non-deterministic state of the reducer uses addition/multiplication, the reducer itself would follow the associative law. This gives us the benefit of converting any reducer that follows the associative law to parallelize its operations.
+Here a reducer has no concept of a "finite" state here, such that state can be represented finitely with a string. This is an inherent tradeoff that also gives us a useful advantage. Assuming the "context" or non-deterministic state of the reducer uses addition/multiplication, the reducer itself would follow the associative law. This gives us the benefit of converting any reducer that follows the associative law to parallelize its operations.
 
 #### Reference
+
 - https://en.wikipedia.org/wiki/Union_(set_theory)
 - https://guide.elm-lang.org/types/custom_types.html
 - https://erikras.com/blog/reducer-single-state-machine
