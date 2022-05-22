@@ -20,6 +20,8 @@ We aren't actually too strict on grammar or semantics in your notes, given that 
 
 1. Each page should only have one H1 `#` header. All subsequent headers should be nested as H2 `##` headers.
 
+**Notes on Plagiarism**: Please don't plagiarize. If you have similar ideas to the article you're referencing your notes from, at the very least paraphrase or compose your notes in a way that makes it your own.
+
 ### Folder structure
 
 1. We only have 1-level folders; we don't use nested folders, so no need to create them. They may make the main folder a bit messy to find articles, but it eases the barrier to entry for new writers.
