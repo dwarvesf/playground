@@ -16,7 +16,7 @@
 
 ### Writing, semantics, grammar
 
-We aren't actually too strict on grammar or semantics in your notes, given that it is easy to read and relatively skimmable. As for note structure, we will follow Wikipedia and previous SEO standards:
+We aren't actually too strict on grammar or semantics in your notes. Our only requirement is that it is easy to read and is relatively skimmable. As for note structure, we will follow Wikipedia and previous SEO standards:
 
 1. Each page should only have one H1 `#` header. All subsequent headers should be nested as H2 `##` headers.
 
