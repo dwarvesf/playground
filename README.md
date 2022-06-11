@@ -2,9 +2,9 @@
 
 Welcome to the Dwarves Brainery. Dwarves are a group of technology innovation advocates. This project is a part of our continuous learning engine, where we want to build up the 1% improvement habit, learning in public.
 
-We believe that behind every success comes great preparation, accumulate and compound every single day. This brain repo contains our notes and studies for any upcoming challenges.
+We believe that behind every success comes great preparation, accumulation and compound every single day. This brain repo contains our notes and studies for any upcoming challenges.
 
-Applying the Zettelkasten method to construct our reference neuron network, we collect learning pieces from articles, books, papers, videos and then put them here to evaluate before boarding them to our technology adoption radar. We also adopted the LYT method with an initial setup and notes from Moby Diction Publish. It sets a great standard and we find it very helpful.
+Applying the Zettelkasten method to construct our reference neuron network, we collect learning pieces from articles, books, papers, videos and then put them here to evaluate before boarding them on our technology adoption radar. We also adopted the LYT method with an initial setup and notes from Moby Diction Publish. It sets a great standard and we find it very helpful.
 
 #### Workflow
 
@@ -20,21 +20,9 @@ graph TB
 	E[Permanent note] --> F[Map of Content]
 ```
 
-#### MOC
+#### Contributing
 
-- Learning and metacognition
-  - [[§ Zettelkasten]]
-  - [[§ Writing]]
-  - [[§ Innovation]]
-  - [[§ MBTI]]
-- Build a software
-  - [[§ UX Research]]
-  - [[§ Personas]]
-  - [[§ UX Design]]
-  - [[§ Blockchain]]
-  - [[§ Software]]
-- Invest in business
-  - [[§ Branding]]
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 #### Love what we are doing?
 
