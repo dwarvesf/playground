@@ -21,16 +21,16 @@ In the React 18 version, the `useEffect` hook has been updated to called twice c
 
 We can confirm the behavior by using the cleanup function of the useEffect hook.
 
-```
+```js
 useEffect(() => {
-  console.log("Hello Dwarves!");
-  return () => console.log("Cleanup..");
-}, []);
+  console.log('Hello Dwarves!')
+  return () => console.log('Cleanup..')
+}, [])
 ```
 
 The output to the console should look like this:
 
-```
+```sh
 Hello Dwarves!
 Cleanup..
 Hello Dwarves!
