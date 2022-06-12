@@ -8,9 +8,9 @@ In the React 18 version, the `useEffect` hook has been updated to called twice c
 ### What are the changes and why?
 
 - Beginning with React 18, when in development mode, the components will be mounted, unmounted, and then mounted once again in StrictMode.
-- In the future, the React team like to add a feature that allows React to add and remove sections of the UI while preserving state. For example, when a user tabs away from a screen and back, React should be able to immediately show the previous screen. To do this, React would unmount and remount trees using the same component state as before.
-- This feature will give React apps better performance out-of-the-box, but requires components to be resilient to effects being mounted and destroyed multiple times. Most effects will work without any changes, but some effects assume they are only mounted or destroyed once (which means the new behavior might cause trouble for the existing use of useEffect that intends to trigger mount and unmount once.).
-- To help surface these issues, React 18 introduces a new development-only check to Strict Mode. This new check will automatically unmount and remount every component, whenever a component mounts for the first time, restoring the previous state on the second mount.
+- In the future, React would support a functionality that allows React to add and remove sections of the UI while maintaining state in the future. For example, when a user back history from a screen and then revisit it, React should be able to show the previous screen right away. React would do this by un-mounting and re-mounting trees with the same component state as before.
+- This functionality will improve the performance of React projects out of the box, but necessitate components to be resilient to effects being mounted and un-mounted several times. The majority of effects will operate as-is, however some will presume they are only mounted or destroyed once (which means the new behavior might cause trouble for the existing use of useEffect that intends to trigger mount and unmount once).
+- React 18 adds a new development-only check in StrictMode to identify these issues. After a component mounts for the first time, this new check will immediately unmount and remount it, restoring the previous state on the second mount.
 
 ### What are the differences?
 
