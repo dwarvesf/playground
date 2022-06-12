@@ -75,6 +75,6 @@ We aren't actually too strict on grammar or semantics in your notes. Our only re
   - [https://coin98.net/what-is-blockchain-oracle](https://coin98.net/what-is-blockchain-oracle)
   ```
 
-### Editing tools
+## Editing tools
 
 As notes are based on the markdown format, you can literally use any text editor to write down your thought. However, we started the Second Brain with [Obsidian](https://obsidian.md/) and most of us continue using it daily for note taking. We recommend you to use Obsidian too since the tool offers a robust way of linking documents together as well as providing an incredible searching experience.
