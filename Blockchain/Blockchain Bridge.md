@@ -19,7 +19,7 @@ All blockchains have their limits. In order for Ethereum to scale and keep up wi
 However, all blockchains operate in an isolated environment and have different rules and consensus mechanisms. This means that they cannot communicate natively and tokens cannot move freely between blockchains (Networks can only send messages in one direction so it will not be able to talk to the other network directly). Bridges born to connect blockchains, allowing for the trustless transfer of message and tokens between them. Bridges need an authentication mechanism, so there are different types of bridges.
 ![](https://miro.medium.com/max/1400/1*q1-lEQ57JCmuxQxeM9ZHdw.png)
 
-## Bridge use-case ?
+## Bridge use-case?
 - Transfer of assets and message across the chains
 - Lower transaction fees
 - Dapps on other blockchains
@@ -33,7 +33,7 @@ However, all blockchains operate in an isolated environment and have different r
 Basically a bridge works between 2 networks by listening for events arising from one network and forwarding information to the other network.
 So the basic problem is in the mechanism to ensure safety when forwarding information as well as message authentication and message monitoring.
 
-### What are bridge components ?
+### What are bridge components?
 - Monitor: There is usually an actor, either a “oracle”, a “validator” or a “relayer”, that monitors the state on the source chain.
 - Message Passing/Forwarding: After an agent selects an event, it needs to pass information from the source chain to the destination chain.
 - Consensus: In some models, consensus is required between the parties monitoring the source chain to forward that information to the destination chain.
@@ -88,8 +88,8 @@ The [PolyNetwork hack](https://edition.cnn.com/2021/08/11/tech/crypto-hack/index
 - Thorchain
 
 ## Reference
-https://en.wikipedia.org/wiki/Ethereum
-[What Are Blockchain Bridges And How Can We Classify Them?](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) Feb 18, 2021 - Arjun Chand
-[Multichain Users Lose $1.4M Due to Bridge Bug](https://cryptobriefing.com/multichain-users-lose-1-4m-due-bridge-bug/)
-[Vitalik Buterin Skeptical of Cross-Chain Bridges](https://cryptobriefing.com/vitalik-buterin-skeptical-of-cross-chain-bridges/)
-[Latest DeFi bridge exploit results in $4.4M losses for Meter](https://cointelegraph.com/news/latest-defi-bridge-exploit-results-in-4-4m-losses-for-meter)
+- https://en.wikipedia.org/wiki/Ethereum
+- [What Are Blockchain Bridges And How Can We Classify Them?](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) Feb 18, 2021 - Arjun Chand
+- [Multichain Users Lose $1.4M Due to Bridge Bug](https://cryptobriefing.com/multichain-users-lose-1-4m-due-bridge-bug/)
+- [Vitalik Buterin Skeptical of Cross-Chain Bridges](https://cryptobriefing.com/vitalik-buterin-skeptical-of-cross-chain-bridges/)
+- [Latest DeFi bridge exploit results in $4.4M losses for Meter](https://cointelegraph.com/news/latest-defi-bridge-exploit-results-in-4-4m-losses-for-meter)
