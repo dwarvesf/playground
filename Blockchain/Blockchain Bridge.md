@@ -2,7 +2,6 @@
 tags: blockchain, blockchain-bridge
 author: Pham Ngoc Thanh
 ---
-# Blockchain bridge
 
 ![](https://blockruption.com/wp-content/uploads/2019/04/blockruption-blockchain-300h.png)
 
@@ -91,3 +90,6 @@ The [PolyNetwork hack](https://edition.cnn.com/2021/08/11/tech/crypto-hack/index
 ## Reference
 https://en.wikipedia.org/wiki/Ethereum
 [What Are Blockchain Bridges And How Can We Classify Them?](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) Feb 18, 2021 - Arjun Chand
+[Multichain Users Lose $1.4M Due to Bridge Bug](https://cryptobriefing.com/multichain-users-lose-1-4m-due-bridge-bug/)
+[Vitalik Buterin Skeptical of Cross-Chain Bridges](https://cryptobriefing.com/vitalik-buterin-skeptical-of-cross-chain-bridges/)
+[Latest DeFi bridge exploit results in $4.4M losses for Meter](https://cointelegraph.com/news/latest-defi-bridge-exploit-results-in-4-4m-losses-for-meter)
