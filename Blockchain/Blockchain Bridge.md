@@ -20,7 +20,7 @@ All blockchains have their limits. In order for Ethereum to scale and keep up wi
 However, all blockchains operate in an isolated environment and have different rules and consensus mechanisms. This means that they cannot communicate natively and tokens cannot move freely between blockchains (Networks can only send messages in one direction so it will not be able to talk to the other network directly). Bridges born to connect blockchains, allowing for the trustless transfer of message and tokens between them. Bridges need an authentication mechanism, so there are different types of bridges.
 ![](https://miro.medium.com/max/1400/1*q1-lEQ57JCmuxQxeM9ZHdw.png)
 
-## Bridge use-case ?
+## Bridge use-case?
 - Transfer of assets and message across the chains
 - Lower transaction fees
 - Dapps on other blockchains
