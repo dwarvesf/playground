@@ -89,5 +89,5 @@ The [PolyNetwork hack](https://edition.cnn.com/2021/08/11/tech/crypto-hack/index
 - Thorchain
 
 ## Reference
-https://en.wikipedia.org/wiki/Ethereum
-[What Are Blockchain Bridges And How Can We Classify Them?](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) Feb 18, 2021 - Arjun Chand
+- https://en.wikipedia.org/wiki/Ethereum
+- [What Are Blockchain Bridges And How Can We Classify Them?](https://blog.li.finance/what-are-blockchain-bridges-and-how-can-we-classify-them-560dc6ec05fa) Feb 18, 2021 - Arjun Chand
