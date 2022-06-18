@@ -34,7 +34,7 @@ However, all blockchains operate in an isolated environment and have different r
 Basically a bridge works between 2 networks by listening for events arising from one network and forwarding information to the other network.
 So the basic problem is in the mechanism to ensure safety when forwarding information as well as message authentication and message monitoring.
 
-### What are bridge components ?
+### What are bridge components?
 - Monitor: There is usually an actor, either a “oracle”, a “validator” or a “relayer”, that monitors the state on the source chain.
 - Message Passing/Forwarding: After an agent selects an event, it needs to pass information from the source chain to the destination chain.
 - Consensus: In some models, consensus is required between the parties monitoring the source chain to forward that information to the destination chain.
