@@ -15,7 +15,7 @@ Domain expert speaks in business term while developer speaks in technical. DDD i
 Through the drawn out **Domain model, Domain events** important aspects of the business are clarified, speculated for potential features, issues, and critical business flow can be prioritized for enhancement and scalability.
 
 ### Technology independent
-The core of DDD is about the design decisions and transitions that were made in modeling the domain, so. Without being too involved in the technical aspects, the development team has more options to select or adopt new technology
+The core of DDD is about the design decisions and transitions that were made in modeling the domain. So, Without being too involved in the technical aspects, the development team has more options to select or adopt new technology.
 
 ### Human aspects
 With the output diagrams and conversation, stakeholders/PMs have a better statistic to measure the success of the project.
