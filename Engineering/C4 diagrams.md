@@ -21,5 +21,6 @@ The C4 model isn't strictly static when it comes to these levels and also suppor
 The C4 model was created by Simon Brown, designed with the goal for it to be a developer friendly approach to diagramming. The high level representations of these diagrams incidentally also allowed it to assist in communication between software development teams and product teams. The abstractions make it suitable for software consulting and allows us to do architecture evaluations and risk identification.
 
 #### Reference
+
 - https://c4model.com/
 - https://en.wikipedia.org/wiki/C4_model

@@ -15,7 +15,7 @@ The process could be illustrated by the picture below:
 
 Liquidity pools form the backbone of DEX by applying the automated market maker (AMM) system. Here’s the main formula that mathematically determines what the market price of the token in the pool should be:
 
-$$ x*y=k $$
+$$ x\*y=k $$
 
 x and y represent the respective token balance of a pairing and **k is a constant that will never change**.
 
@@ -23,11 +23,11 @@ Let’s use the ETH-DAI pair as an example, with 10 ETH and 1,000 DAI in the liq
 
 The k constant is 10,000 since there are 10 ETH and 1,000 DAI.
 
-$$ 10 ETH * 1,000 DAI = 10,000 $$
+$$ 10 ETH \* 1,000 DAI = 10,000 $$
 
 If the buyer withdraws 1 ETH, he has to deposit some DAI into the pool so that k remains constant.
 
-$$ (10 - 1) ETH * (1,000 - y) = 10,000$$$$1,000 - y = 10,000/(10-1)$$$$y = 111.11 $$
+$$ (10 - 1) ETH \* (1,000 - y) = 10,000$$$$1,000 - y = 10,000/(10-1)$$$$y = 111.11 $$
 
 And because we have no limit orders in AMM, the smart contract would automatically compute y to determine the price to pay and that is approximately 111.11 DAI.
 
@@ -76,15 +76,15 @@ $$ x _ y = k$$$$x = ETH\ price _ y $$
 We could easily calculate x and y by k and ETH price:
 
 $$ x = \sqrt{k \over ETH\ price}$$
-$$y = \sqrt{k * ETH\ price} $$
+$$y = \sqrt{k \* ETH\ price} $$
 
 Assume someone supplies 1 ETH and 100 DAI into the pool. How much ETH and DAI he could get back if the ETH price pumps to $120?
 
 $$ k = 100 _ 10,000 = 1,000,000 $$$$x = \sqrt{1,000,000 \over 120} = 91.29$$$$y = \sqrt{1,000,000 _ 120} = 10,954.45 $$
 
-Since his share in the pool is 1%, the LP gets back 0.9129 ETH and 109.5445 DAI if he wants to withdraw his stake in the pool. The total value of his stake would be 0.9129 ETH * $120 + $109.54, which totals up to be $219.09.
+Since his share in the pool is 1%, the LP gets back 0.9129 ETH and 109.5445 DAI if he wants to withdraw his stake in the pool. The total value of his stake would be 0.9129 ETH \* $120 + $109.54, which totals up to be $219.09.
 
-If he did not provide his liquidity into the pool and held on for dear life instead, his initial asset would be worth 1 ETH * $120 + $100 = $220, which also means he would have made an extra $0.91.
+If he did not provide his liquidity into the pool and held on for dear life instead, his initial asset would be worth 1 ETH \* $120 + $100 = $220, which also means he would have made an extra $0.91.
 
 That is what we call impermanent loss. It is impermanent because it only becomes permanent when you withdraw out your LP.
 

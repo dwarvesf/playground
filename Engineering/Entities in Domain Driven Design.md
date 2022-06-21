@@ -4,15 +4,16 @@ author: M.Vu Cuong(Jim)
 ---
 
 ## Recap on DDD
-A software design focusing on the **Domain**, one of the keys to a program success, by removing *communication lag* between **Developers** and **Domain Experts**, *separate important Domain-specific components* for maintenance and scalability.
+
+A software design focusing on the **Domain**, one of the keys to a program success, by removing _communication lag_ between **Developers** and **Domain Experts**, _separate important Domain-specific components_ for maintenance and scalability.
 
 ## A) Entities Defined by **Identity**
 
-*ID or Identity, identify 2 objects with the same attributes* (2 persons with the same name, DoB but different ID card number).
+_ID or Identity, identify 2 objects with the same attributes_ (2 persons with the same name, DoB but different ID card number).
 
 ## B) Entities Defined by **Thread of continuity**
 
-*A set of fingerprints or traces of an object when going through multiple systems.*
+_A set of fingerprints or traces of an object when going through multiple systems._
 
 ### Examples
 
@@ -20,10 +21,10 @@ A software design focusing on the **Domain**, one of the keys to a program succe
 
 - **Banking(A)**, a banknote(paper money) will have an ID that identifies it on the digital systems or a physical log book even if all of its attributes are the same as another banknote(value, printing date, printing batch, etc..).
 
-- **Online shopping service(A, B)**, an order has ID. 
-    - After checkout, the system sends the order ID to the payment service.
-    - After payment completes, the system calls the Shipping service API to generate shipment with a tracking ID.
-    - On the shopping website, from the order detail page, the user can check payment, shipping status. In the payment, shipping system, order ID, and details can be viewed. When receiving the package, order ID, shipping fee, and total items, prices can be viewed.
+- **Online shopping service(A, B)**, an order has ID.
+  - After checkout, the system sends the order ID to the payment service.
+  - After payment completes, the system calls the Shipping service API to generate shipment with a tracking ID.
+  - On the shopping website, from the order detail page, the user can check payment, shipping status. In the payment, shipping system, order ID, and details can be viewed. When receiving the package, order ID, shipping fee, and total items, prices can be viewed.
 
 #### In-System implementation
 
@@ -34,7 +35,8 @@ A software design focusing on the **Domain**, one of the keys to a program succe
 - **Logging Request time(B)**, when calling to a service, that service will log the request and identify it by request time in combination with an IP address (not recommended if the caller is a middleware service or gateway).
 
 ## Entities's role in DDD
-*Establish continuity so that behavior can be clear and predictable*, We need to focus on how the system revolves around that entity and decide the identifier, not the reverse.
+
+_Establish continuity so that behavior can be clear and predictable_, We need to focus on how the system revolves around that entity and decide the identifier, not the reverse.
 
 - **A online shopping site for Furniture**, the user only check brand name, model number, maybe design, and color for comparison between chairs or tables. Having a separate ID for each item might impact the decision on how to implement checkout(that item with ID is sold out so the user will need to find a similar item with a different ID).
 
