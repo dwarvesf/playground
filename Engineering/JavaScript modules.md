@@ -5,20 +5,20 @@ author:  Tran Hoang Nam
 
 **Modules** have always been a part of JavaScript development and providing mechanisms for splitting JavaScript programs up into separate modules that can be imported when needed was the absolutely necessity for JavaScript developers.
 
-> "Modules are like legos that we can create software by combining them."
+> "Modules are like building blocks that we can create software by combining."
 
 ### So what is a module?
 A module is just simply a file that exports it's own code.
 
 ### Why do we need it?
 - Modules gives our code **structure** and **boundaries**. One's code will be hard to organize and maintain if they don't use modules and no one wants all the codes mingling with each others.
-- Modules also allow developers to share code to the world through a package manager like npm.
+- Modules also allow developers share code to the world through a package manager like npm.
 
 
 
 ## History of JavaScript's modules 
 
-To understand about the development of JavaScipt's modules, we need to walk through 4 stages: Vanilla, IIFEs, CommonJS and ESM.
+In order understand about the development of JavaScipt's modules, we need to walk through 4 stages: Vanilla, IIFEs, CommonJS and ESM.
 
 ### Vanilla (1990s - early 2000s)
 When JavaScript was first invented by Brendan Eich in 1995, it was known to have been created in 10 days and the creator himself doesn't think that his programing language would be as popular as today.
@@ -142,7 +142,7 @@ ESM has a specfic module type in the browser which they are processed differentl
 
 ### Conclusion
 
-Eventhough CommonJS can still be use for server development since synchronous wasn't really an issue and was built by Node, using ESM is still the better way a to keep the syntax consistance of you going to develop client-side and server-side with JavaScript.
+Although CommonJS can still be used for server development since synchronous wasn't an issue and it was built by Node, using ESM is still the better way to keep the syntax consistent if you were to develop client-side and server-side with JavaScript.
 
 ####  Reference
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
