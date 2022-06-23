@@ -18,7 +18,7 @@ A module is just simply a file that exports it's own code.
 
 ## History of JavaScript's modules 
 
-In order understand about the development of JavaScipt's modules, we need to walk through 4 stages: Vanilla, IIFEs, CommonJS and ESM.
+In order to understand about the development of JavaScipt's modules, we need to walk through 4 stages: Vanilla, IIFEs, CommonJS and ESM.
 
 ### Vanilla (1990s - early 2000s)
 When JavaScript was first invented by Brendan Eich in 1995, it was known to have been created in 10 days and the creator himself doesn't think that his programing language would be as popular as today.
