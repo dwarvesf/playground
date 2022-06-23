@@ -1,10 +1,8 @@
 ---
-
 tags:  engineering, javascript, modules, iife, commonjs, esm
-
 author:  Tran Hoang Nam 
-
 ---
+
 **Modules** have always been a part of JavaScript development and providing mechanisms for splitting JavaScript programs up into separate modules that can be imported when needed was the absolutely necessity for JavaScript developers.
 
 > "Modules are like legos that we can create software by combining them."
@@ -12,18 +10,18 @@ author:  Tran Hoang Nam
 ### So what is a module?
 A module is just simply a file that exports it's own code.
 
-### What is it purpose?
+### Why do we need it?
 - Modules gives our code **structure** and **boundaries**. One's code will be hard to organize and maintain if they don't use modules and no one wants all the codes mingling with each others.
 - Modules also allow developers to share code to the world through a package manager like npm.
 
 
 
-## JavaScript's modules history 
+## History of JavaScript's modules 
 
 To understand about the development of JavaScipt's modules, we need to walk through 4 stages: Vanilla, IIFEs, CommonJS and ESM.
 
 ### Vanilla (1990s - early 2000s)
-When JavaScript was first invented by Bredan Eich in 1995 which was known to have been created in 10 days and the creator him self doesn't really think that his programing language would be that popular as today.
+When JavaScript was first invented by Brendan Eich in 1995, it was known to have been created in 10 days and the creator himself doesn't think that his programing language would be as popular as today.
 
 > “No one thought JavaScript would be used at the wide scale it is. Not just reaching lots of people on the Web, but large application like Gmail… To write large code, you don’t just want this little snippet language that I made for beginners…“ 
 > Bredan Eich (Creator of JavaScript) [Source](https://www.infoworld.com/article/2653798/javascript-creator-ponders-past--future.html)
