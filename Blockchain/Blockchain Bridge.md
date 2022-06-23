@@ -17,7 +17,9 @@ Blockchain bridges work just like a physical bridge connecting two physical loca
 
 All blockchains have their limits. In order for Ethereum to scale and keep up with demand, it needs to have rollouts. In addition, L1s such as Solana and Avalanche are designed differently to allow higher throughput but at the expense of decentralization.
 
-However, all blockchains operate in an isolated environment and have different rules and consensus mechanisms. This means that they cannot communicate natively and tokens cannot move freely between blockchains (Networks can only send messages in one direction so it will not be able to talk to the other network directly). Bridges born to connect blockchains, allowing for the trustless transfer of message and tokens between them. Bridges need an authentication mechanism, so there are different types of bridges. ![](https://miro.medium.com/max/1400/1*q1-lEQ57JCmuxQxeM9ZHdw.png)
+However, all blockchains operate in an isolated environment and have different rules and consensus mechanisms. This means that they cannot communicate natively and tokens cannot move freely between blockchains (Networks can only send messages in one direction so it will not be able to talk to the other network directly). Bridges born to connect blockchains, allowing for the trustless transfer of message and tokens between them. Bridges need an authentication mechanism, so there are different types of bridges.
+
+![](https://miro.medium.com/max/1400/1*q1-lEQ57JCmuxQxeM9ZHdw.png)
 
 ## Bridge use-case?
 
@@ -72,7 +74,9 @@ Security: Assumptions about reliability and viability, tolerance to malicious ac
 
 ## Interoperability dilemma
 
-![](https://miro.medium.com/max/1400/1*ZNfiJ8soPdl5EKH-T-S3_w.png) Similar to Trilemma in terms of scalability, there exists a Trilemma of interoperability in the Ethereum ecosystem. The Interop protocol can only have two of the following three properties:
+![](https://miro.medium.com/max/1400/1*ZNfiJ8soPdl5EKH-T-S3_w.png)
+
+Similar to Trilemma in terms of scalability, there exists a Trilemma of interoperability in the Ethereum ecosystem. The Interop protocol can only have two of the following three properties:
 
 - Untrusted: has the same security as basic domains.
 - Scalability: can be supported on any domain.
@@ -91,12 +95,13 @@ Security: Assumptions about reliability and viability, tolerance to malicious ac
 
 One recent hack was Solana's Wormhole Bridge, where 120k wETH ($325 million USD) was stolen in the hack. And Vitalik himself must have a reputation for the lack of safety of the bridges.
 
-- The [[multiple]](https://decrypt.co/76117/thorchains-rune-token-slides-following-multi-million-exploit) [Thorchain hacks](https://www.coindesk.com/markets/2021/07/23/blockchain-protocol-thorchain-suffers-8m-hack/).
-- The [PolyNetwork hack](https://edition.cnn.com/2021/08/11/tech/crypto-hack/index.html).
+- [The multiple million exploit](https://decrypt.co/76117/thorchains-rune-token-slides-following-multi-million-exploit)
+- [Thorchain hacks](https://www.coindesk.com/markets/2021/07/23/blockchain-protocol-thorchain-suffers-8m-hack/).
+- [The PolyNetwork hack](https://edition.cnn.com/2021/08/11/tech/crypto-hack/index.html).
 
-## Case study:
+## Case study
 
-- One of our product: icrosschain.io
+- One of our product - [icrosschain.io](https://icrosschain.io/)
 - Wormhole
 - Thorchain
 
