@@ -5,7 +5,7 @@ We'd love to accept your contributions to the project. There are just a few smal
 ## Pull Request Process
 
 1. Put your note into a Pull Request and submit it to https://github.com/dwarvesf/brain.
-2. Ensure to prefix your **pull request naming** AND **commit naming** with the main tag and folder it is associated to. This is to allow us to easily find and categorize commits to ping and post on our changelogs. For instance:
+2. Ensure to prefix your **pull request naming** AND **initial commit naming** with the main tag and folder it is associated to. This is to allow us to easily find and categorize commits to ping and post on our changelogs. For instance:
 
 - `engineering: Edsger Dijkstra interview`
 - `writing: question tree`
