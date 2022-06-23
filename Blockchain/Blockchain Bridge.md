@@ -11,7 +11,7 @@ Web3 or Dapp has evolved into an ecosystem of L1 blockchains and L2 scaling solu
 
 Blockchain bridges work just like a physical bridge connecting two physical locations, a blockchain bridge connecting two blockchain ecosystems. Bridges facilitate communication between blockchains through the transfer of message and assets.
 
-![](https://miro.medium.com/max/1400/1*jels5svnpAiMkWe2NFSB3w.png)
+![[blockchain bridge.png]]
 
 ## Why do we need bridges?
 
@@ -19,7 +19,7 @@ All blockchains have their limits. In order for Ethereum to scale and keep up wi
 
 However, all blockchains operate in an isolated environment and have different rules and consensus mechanisms. This means that they cannot communicate natively and tokens cannot move freely between blockchains (Networks can only send messages in one direction so it will not be able to talk to the other network directly). Bridges born to connect blockchains, allowing for the trustless transfer of message and tokens between them. Bridges need an authentication mechanism, so there are different types of bridges.
 
-![](https://miro.medium.com/max/1400/1*q1-lEQ57JCmuxQxeM9ZHdw.png)
+![[offchain actors.png]]
 
 ## Bridge use-case?
 
@@ -30,7 +30,7 @@ However, all blockchains operate in an isolated environment and have different r
 - Developers from different blockchain ecosystems to collaborate and build new platforms for users.
 - Own natural crypto assets
 
-![](https://miro.medium.com/max/1400/1*xdsBHimSi2-M2ONsAul6vQ.png)
+![[bridge use cases.png]]
 
 ## How does the bridge work?
 
@@ -45,19 +45,19 @@ Basically a bridge works between 2 networks by listening for events arising from
 
 ## Classification of Bridges
 
-![](https://miro.medium.com/max/1400/1*EQtK-K1MiK9kVV5MD-p9LA.png)
+![[classify bridge.png]]
 
 ### External links & validators
 
 There is usually a group of validators that monitor the "mailbox" address on the source chain, by consensus perform an action on the destination chain. Content transfer is usually done by locking the message in the mailbox and generating an equivalent message on the destination thread. These are usually bonded validators with a separate token as the security model.
 
-![](https://miro.medium.com/max/1400/1*rAUNyDVR8r-y2WZ0gM75tw.png)
+![[blockchain bridge external links.png]]
 
 ### Lightweight Client & Relays
 
 Agents monitor events on the source chain and generate cryptographic proof of past events that have been recorded on that chain. These proofs are then relayed, along with block headers, to contracts (i.e. "clients") on the target chain, which then verify that a given event was logged and executed. perform an action after that verification. There is a requirement for some actors to "forward" block headers and proofs. Although users can “self-forward” transactions, there is a realistic assumption that forwarders will continuously forward data. This is a relatively secure bridge design because it ensures trustless validating distribution without trusting intermediate entities, but it is also resource intensive because developers have to build build a new smart contract on each new destination chain that parses the proofs of state from the source chain and the confirmation itself is a lot of gas.
 
-![](https://miro.medium.com/max/1400/1*a1LWv24MZiBLQAqjiDYKow.png)
+![[Lightweight Client & Relays.png]]
 
 ### Liquidity Network
 
@@ -74,7 +74,7 @@ Security: Assumptions about reliability and viability, tolerance to malicious ac
 
 ## Interoperability dilemma
 
-![](https://miro.medium.com/max/1400/1*ZNfiJ8soPdl5EKH-T-S3_w.png)
+![[Interoperability dilemma.png]]
 
 Similar to Trilemma in terms of scalability, there exists a Trilemma of interoperability in the Ethereum ecosystem. The Interop protocol can only have two of the following three properties:
 
@@ -91,7 +91,7 @@ Similar to Trilemma in terms of scalability, there exists a Trilemma of interope
 - The user makes a mistake when manipulating.
 - Congested or hacked chains will affect bridging.
 
-![](https://miro.medium.com/max/1400/0*azwoexZtNChrsTAO)
+![[lock, mint and burn.png]]
 
 One recent hack was Solana's Wormhole Bridge, where 120k wETH ($325 million USD) was stolen in the hack. And Vitalik himself must have a reputation for the lack of safety of the bridges.
 
