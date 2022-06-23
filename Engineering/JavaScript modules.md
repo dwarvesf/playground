@@ -83,7 +83,7 @@ This was design for server development.
 ```js
 //dialogue.js
 var getDialog (function (){
-	console.log("Hello Dwarves!");
+    console.log("Hello Dwarves!");
 })
 module.exports = getDialogue;
 ```
@@ -148,3 +148,4 @@ Eventhough CommonJS can still be use for server development since synchronous wa
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 - https://dev.to/adamcoster/commonjs-and-esm-importexport-compatibility-by-simple-example-50pl
 - https://www.w3schools.com/js/js_modules.asp
+- https://nodejs.org/api/modules.html
