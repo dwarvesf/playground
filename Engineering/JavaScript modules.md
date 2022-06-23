@@ -33,7 +33,7 @@ Around 2006, a global manifesto was raised by a team of UI developers from YAHOO
 
 ####  YAHOO Solution?
 Create a huge Global namespace object and parse all the variables in that object. 
-> **Exemaple**: YAHOO.value.getValue
+> **Example**: YAHOO.value.getValue
 
 ### IIFEs (early to late 2000s)
 IFFEs or Immediately invoked function expression was used with closures to keep the private data hidden, basically the ideal is that you only need to care of what the function returns and not what happen inside it.
