@@ -142,7 +142,7 @@ ESM has a specfic module type in the browser which they are processed differentl
 
 ### Conclusion
 
-Eventhough CommonJS can still be use for server development since synchronous wasn't really a issue and was built by Node, using ESM is still the better way a to keep the syntax consistance of you going to develop client-side and server-side with JavaScript.
+Eventhough CommonJS can still be use for server development since synchronous wasn't really an issue and was built by Node, using ESM is still the better way a to keep the syntax consistance of you going to develop client-side and server-side with JavaScript.
 
 ####  Reference
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
