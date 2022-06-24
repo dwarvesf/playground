@@ -26,7 +26,7 @@ When JavaScript was first invented by Brendan Eich in 1995, it was known to have
 > “No one thought JavaScript would be used at the wide scale it is. Not just reaching lots of people on the Web, but large application like Gmail… To write large code, you don’t just want this little snippet language that I made for beginners…“ 
 > Bredan Eich (Creator of JavaScript) [Source](https://www.infoworld.com/article/2653798/javascript-creator-ponders-past--future.html)
 
-So modules aren't a thing back then, developers would mostly used inline-scripting and script-tags and no one would think of scalibity, maintaining a large code base would be a nightmare because there is no structures and organizations.
+So modules aren't a thing back then, developers would mostly used inline-scripting and script-tags and no one would think of scalability, maintaining a large code base would be a nightmare because there is no structures and organizations.
 
 #### YAHOO manifesto
 Around 2006, a global manifesto was raised by a team of UI developers from YAHOO which was **"Global Variable are dangerous"**. The point they trying to make is that using global variable is a risky practice and all the people back then are engaging in. Global variables can spark conflict between naming if there are many people involving in developing the same program and since everyone can access it, it is not very secure.
@@ -134,9 +134,9 @@ ESM has a specfic module type in the browser which they are processed differentl
 <script nomodule src="bundle.js"></script>
 ```
 ### CommonJS vs ESM
- - Right now ESM was supported on all browsers and the latest version of Node except version bellow version 12.
+ - Right now ESM was supported on all browsers and the latest version of Node except version below version 12.
  - ESM waits to execute any code in a module until all of it's imports have been loaded and parsed, then does the binding/side-effects stuff in the relative order that they happen.
- - ESM imports are asynchronous  (which also allows for  [top-level  `await`).
+ - ESM imports are asynchronous  (which also allows for top-level  `await`).
  - CJS executes imports as it finds them, blocking until they finish.
  - CJS works in Node but does  **not**  work in browsers.
 
