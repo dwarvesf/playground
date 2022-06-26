@@ -90,6 +90,39 @@ function Counter() {
 }
 ```
 
+We can take our example from [[Finite-state automata]] and wrap it in a way that encapsulates both state, inputs and outputs (in Rescript):
+
+```typescript
+// elapsed represents our arbitrary output
+type elapsed = float;
+
+// elapsed here is used in a constructor as an arbitrary output
+type taskStatus =
+  | NotStarted
+  | Running(elapsed)
+  | Paused(elapsed)
+  | Done(elapsed);
+
+// elapsed here is used in a constructor as an arbitrary input
+type input =
+  | Start
+  | Pause
+  | Resume
+  | Finish
+  | Tick(elapsed);
+
+let transition = (state, input) =>
+  switch (state, input) {
+  | (NotStarted, Start) => Running(0.0)
+  | (Running(elapsed), Pause) => Paused(elapsed)
+  | (Running(elapsed), Finish) => Done(elapsed)
+  | (Paused(elapsed), Resume) => Running(elapsed)
+  | (Paused(elapsed), Finish) => Done(elapsed)
+  | (Running(elapsed), Tick(tick)) => Running(elapsed +. tick)
+  | _ => state
+  };
+```
+
 ## Reference
 - https://en.wikipedia.org/wiki/Turing_machine
 - https://t-pl.io/ddd-aggregates-processes-state-machines-and-transducers

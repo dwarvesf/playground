@@ -32,6 +32,40 @@ $$
 \omega: s_0 \times \Sigma \rightarrow \Gamma
 $$
 
+## Examples of basic Mealy machines
+
+Our example from [[Finite-state transducer]]s fits perfectly here as our transition and output function are coalesced as a single function.
+
+```typescript
+// expiry represents our arbitrary output (in seconds)
+type expiry = float;
+
+// expiry here is used in a constructor as an arbitrary output
+type trafficLightStatus =
+  | Red(expiry)
+  | Amber(expiry)
+  | Green(expiry)
+  | FlashingRed(expiry)
+
+// elapsed here is used in a constructor as an arbitrary input
+type input =
+  | ExpireTime
+  | Error
+  | Restart
+
+let transition = (state, input) =>
+  switch (state, input) {
+  | (Red(expiry), ExpireTime) => Green(60.0)
+  | (Red(expiry), Error) => FlashingRed(30.0)
+  | (Green(expiry), ExpireTime) => Amber(60.0)
+  | (Green(expiry), Error) => FlashingRed(30.0)
+  | (Amber(expiry), ExpireTime) => Red(60.0)
+  | (Amber(expiry), Error) => FlashingRed(30.0)
+  | (FlashingRed(expiry), Restart) => Red(60.0)
+  | _ => state
+  };
+```
+
 ## Differences between
 
 ### With formal [[Finite-state transducer]]s

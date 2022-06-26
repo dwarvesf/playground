@@ -3,8 +3,7 @@ tags: engineering, state, diagram, machines
 author: Nguyen Xuan Anh
 ---
 
-## What are finite state automata?
-
+## What are finite-state automata?
 A **finite state automaton (FSM)** (**FSA**, plural: automata), or better known as a state machine, is a mathematical model of with a constraint such that the abstract machine can be only and exactly be one of a finite number of states at any point in time. Finite state here is typically represented as a string or equivalent enumeration.
 
 ## Mathematical Model
@@ -41,25 +40,24 @@ type elapsed = float;
 
 type taskStatus =
   | NotStarted
-  | Running(elapsed)
-  | Paused(elapsed)
-  | Done(elapsed);
+  | Running
+  | Paused
+  | Done;
 
 type input =
   | Start
   | Pause
   | Resume
-  | Finish
-  | Tick(elapsed);
+  | Finish;
 
-let transition = (input, state) =>
+let transition = (state, input) =>
   switch (state, input) {
-  | (NotStarted, Start) => Running(0.0)
-  | (Running(elapsed), Pause) => Paused(elapsed)
-  | (Running(elapsed), Finish) => Done(elapsed)
-  | (Paused(elapsed), Resume) => Running(elapsed)
-  | (Paused(elapsed), Finish) => Done(elapsed)
-  | (Running(elapsed), Tick(tick)) => Running(elapsed +. tick)
+  | (NotStarted, Start) => Running
+  | (Running, Pause) => Paused
+  | (Running, Finish) => Done
+  | (Paused, Resume) => Running
+  | (Paused, Finish) => Done
+  | (Running, Tick) => Running
   | _ => state
   };
 ```

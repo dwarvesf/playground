@@ -3,8 +3,6 @@ tags: engineering, state, diagram, machines
 author: Nguyen Xuan Anh
 ---
 
-# Moore machine
-
 ## What is a Moore machine?
 A Moore machine is a [[Finite-state automata]] where the output values are determined by only its current state. Moore machines are a restricted type of a [[Finite-state transducer]].
 
@@ -27,6 +25,46 @@ $$
 $$
 \omega: s_0 \rightarrow \Gamma
 $$
+
+## Examples of basic Moore machines
+
+Unlike a Mealy machine, we can't coalesce the transition and output functions together as a single transition function. The behavior of the output function is **synchronous** to the state change. As such, we end up with something like this (in Rescript):
+
+```typescript
+type trafficLightStatus =
+  | Red
+  | Amber
+  | Green
+  | FlashingRed
+
+type input =
+  | ExpireTime
+  | Error
+  | Restart
+
+
+type outputFn = (state) =>
+  switch (state) {
+  |  Red => (Red, 60.0)
+  |  Green => (Green, 60.0)
+  |  Amber => (Amber, 60.0)
+  |  FlashingRed => (FlashingRed, 30.0)
+  }
+
+let transitionFn = (state, input) =>
+  switch (state, input) {
+  | (Red, ExpireTime) => Green(60.0)
+  | (Red, Error) => FlashingRed(30.0)
+  | (Green, ExpireTime) => Amber(60.0)
+  | (Green, Error) => FlashingRed(30.0)
+  | (Amber, ExpireTime) => Red(60.0)
+  | (Amber, Error) => FlashingRed(30.0)
+  | (FlashingRed, Restart) => Red(60.0)
+  | _ => state
+  };
+
+let output = outputFn(transitionFn(Red, ExpireTime)) // (Green, 60.0)
+```
 
 ## Differences between
 
