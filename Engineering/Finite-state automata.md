@@ -8,25 +8,67 @@ author: Nguyen Xuan Anh
 A **finite state automaton (FSM)** (**FSA**, plural: automata), or better known as a state machine, is a mathematical model of with a constraint such that the abstract machine can be only and exactly be one of a finite number of states at any point in time. Finite state here is typically represented as a string or equivalent enumeration.
 
 ## Mathematical Model
+As per the general classification noted on the [Wikipedia page on finite-state machines](https://en.wikipedia.org/wiki/Finite-state_machine), deterministic finite-state machine has 5 main variables associated with its definition (a quintuple): $(\Sigma, S, s_0, \delta, F)$.
+- $\Sigma$ is the *input alphabet* (a finite non-empty set of symbols) -> our events;
+- $S$ is a finite non-empty set of states;
+- $s_0$ is an *initial state*, an element of $S$;
+- $\delta$ is the state-transition function: $\delta: S \times \Sigma \rightarrow S$; and
+- $F$ is the set of *final states*, a (possibly empty) subset of $S$.
 
-A _deterministic finite-state machine_ or _deterministic finite-state acceptor_ is a [quintuple](https://en.wikipedia.org/wiki/Tuple 'Tuple') $(\sum, S, s_0, \delta, F)$
+Given an initial state $s_0$, to transition our state to the next state, our transition would simply be:
+$$
+\delta: s_0 \times \Sigma \rightarrow S
+$$
+If we were to reach a final state starting from a known set of states, our transition would look like:
+$$
+\delta: S \times \Sigma \rightarrow F
+$$
+### Simplified meaning
+For our purposes, we just need to understand that a `transition` function takes a `state` and an `event` to move on to a **new** `state`. What type of state and what subset it belongs to is up to the developer's discretion.
 
-- $\sum$ is the input alphabet (a finite non-empty set of symbols) -> our events
-- $S$ is a finite non-empty set of states
-- $s_0$ is an initial state, an element of $S$
-- $\delta$ is the state-transition function: $\delta: S \times \sum \rightarrow S$
-  - in a [nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton 'Nondeterministic finite automaton') it would be $\delta: S \times \sum \rightarrow P(S)$
-- $F$ is the set of final states, a (possibly empty) subset of $S$
+```typescript
+type State = string
+type Event = string
+
+const transition = (state: State, event: Event): State => ...
+```
 
 ## Coming from Algebraic Data Types
+If you're coming from algebraic data types (ADTs), you may have noticed that state machines are nested ADTs that encode states and events as data types. In this case, we take advantage of nesting or combining pairs of sum/union types (example in Rescript):
 
-State machines are definitely a step up from [[Algebraic data types]] as it solves type/event explosion with nested [[Sum types]], however, it still has some limitations given that they can only solve a very flat domain problem. This is because the more nested states you want to represent in a finite state machine, the more combinatorially complex it becomes, causing a [[State explosion]].
+```typescript
+type elapsed = float;
 
-Luckily, we can solve this with Harel [[Statecharts]]; you may know and refer to them as [UML state machines](https://en.wikipedia.org/wiki/UML_state_machine) In essence, statecharts are a combination of [Mealy machines](https://en.wikipedia.org/wiki/Mealy_machine) and [Moore machines](https://en.wikipedia.org/wiki/Moore_machine).
+type taskStatus =
+  | NotStarted
+  | Running(elapsed)
+  | Paused(elapsed)
+  | Done(elapsed);
 
-Although it is conventional to think $\delta$ as a [partial function](https://en.wikipedia.org/wiki/Partial_function), i.e: $\delta(s,x)$, the operator precedence relative to the data is, almost in all cases, left associative. This means asynchronously _parallel_ application of the partial function will result in broken logic, that is unless all events are completely valid and it is possible combine partial and illegal transitions of states into a proper finite state (theory to apply for [[TimescaleDB]] [continuous aggregates](https://docs.timescale.com/timescaledb/latest/how-to-guides/continuous-aggregates/)).
+type input =
+  | Start
+  | Pause
+  | Resume
+  | Finish
+  | Tick(elapsed);
 
-#### References
+let transition = (input, state) =>
+  switch (state, input) {
+  | (NotStarted, Start) => Running(0.0)
+  | (Running(elapsed), Pause) => Paused(elapsed)
+  | (Running(elapsed), Finish) => Done(elapsed)
+  | (Paused(elapsed), Resume) => Running(elapsed)
+  | (Paused(elapsed), Finish) => Done(elapsed)
+  | (Running(elapsed), Tick(tick)) => Running(elapsed +. tick)
+  | _ => state
+  };
+```
 
+## States and relevance in the *domain*
+In [[Domain Driven Design]] (DDD) and in [[Event storming]], there doesn't seem to be space for states in the domain. This is most likely because there is a separation of concern between the behavior of commands against what gets updated in the aggregate. DDD does allow classification of entities, such as classifying customer statuses, and these of course have business meaning. However, DDD doesn't specify any technical concerns such as the persistence of state or where a state transition should occur and what effects should happen.
+
+# References
 - https://en.wikipedia.org/wiki/Finite-state_machine
+- https://wickstrom.tech/finite-state-machines/2017/11/10/finite-state-machines-part-1-modeling-with-haskell.html
+- https://dev.to/margaretkrutikova/modelling-domain-with-state-machines-in-reasonml-n29
 - https://blog.honosoft.com/2019/10/31/partial-state-machine/
