@@ -26,7 +26,7 @@ type state = int
 type action = Increment | Decrement
 
 export let transition = (state, action) =>
-  switch (event) {
+  switch (action) {
     | Increment => state + 1
     | Decrement => state - 1
   }
