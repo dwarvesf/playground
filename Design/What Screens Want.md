@@ -28,7 +28,8 @@ In this regard, when we analyze what makes software unique, it is not the differ
 - Purposes are normative. 
 - What we want is what screens need, not the other way around.
 ## Screens as a medium
-- If something can be anything, it usually becomes everything.
+> If something can be anything, it usually becomes everything.
+> -Frank Chimero
 - Screens are containers of aesthetics. 
 - Screens are tangible yet atemporal and ahistorical. 
 - Screens do not have boundaries. We are the boundaries of screens. 
