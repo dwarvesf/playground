@@ -13,16 +13,19 @@ These are mainly divided into: **Domain events**, **Commands**, **Aggregates**, 
 Exp: Order submitted, Shopping cart updated
 ### Commands
 *A verb in present tense* describes the action that triggers the corresponding **domain event**. It is either user or system actions.
-Exp: **Add product(Command)** -> Shopping cart updated(Domain event)
+- Exp: `Add product`(Command) -> `Shopping cart updated`(Domain event)
 ### Aggregrates
-It is represented by a cluster of events with corresponding commands and the responsible actor.
-Exp: Checkout process
-User(Actor) ->  Checkout -> Checkout completed -> Shipping address validated -> Payment completed -> Inventory updated
+Represented by a *minimal cluster* of associated objects(domain events, commands, and actors) that we treat as a unit for data change. Each has a boundary and only exposes its root(**Aggregate Root**) which allows other objects to reference it.
+- Exp: A team wants to update its member role according to each project:
+`Project, Update member role` (Aggregate Root) -> `Project's member role updated`
+By having only an aggregate root and boundary, we can ensure that the project's member role is only updated if the project actor is present with the corresponding update member role command.
 ### Bounded context
 A high-level structure consists of categorizations of functionality, represents a circle or square, that groups related entities together. It can bound parts of an aggregate or multiple aggregates.
-Exp: In an aggregate for the shopping process,  we draw the bounded contexts for **Shopping cart**, and **Offers**.
-**Shopping cart**(User -> Add product to cart -> Cart updated) -> **Offers**(Promotiational Offers Identified -> Offers added)
+- Exp: In an aggregate for the shopping process,  we draw the bounded contexts for **Shopping cart**, and **Offers**.
+Shopping cart(`User` -> `Add product to cart` -> `Cart updated`) -> Offers(`Promotiational Offers Identified` -> `Offers added`)
 ### References
 - https://herbertograca.com/category/development/book-notes/domain-driven-design-by-eric-evans/
 - Domain-driven design by Eric Evans
 - https://creately.com/blog/diagrams/event-storming/
+- https://www.jamesmichaelhickey.com/domain-driven-design-aggregates/
+- https://serialized.io/java/working-with-aggregates/
