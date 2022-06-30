@@ -141,6 +141,28 @@ To deploy this program run:
   $ solana program deploy /Volumes/WORKS/Dropbox/Blockchain/solana/SolTwit/target/deploy/sol_twit.so
 ```
 
+#### test program
+You can testing your program by write test, Update any use-case in test file and run command ```anchor test```
+For example:
+```
+ it('setup new tweet!', async () => {
+        const tweetKeypair = anchor.web3.Keypair.generate();
+        const user = program.provider.wallet;
+        await program.rpc.setupTweeter({
+            accounts: {
+                tweet: tweetKeypair.publicKey,
+                user: user.publicKey,
+                systemProgram: anchor.web3.SystemProgram.programId
+            },
+            signers: [tweetKeypair]
+        });
+
+        let tweet = await program.account.tweet.fetch(tweetKeypair.publicKey);
+        expect(tweet.likes).to.equal(0);
+        expect(tweet.message).to.equal('');
+    });
+```
+
 #### Anchor CLI
 ```
 USAGE:
@@ -198,6 +220,7 @@ SUBCOMMANDS:
 
 #### Example and template code
 - https://github.com/thanhpn/solana-anchor-template
+- https://github.com/coral-xyz/anchor/tree/master/examples/tutorial
 
 #### Reference
 - https://docs.rs/anchor-lang/latest/anchor_lang/accounts/account/struct.Account.html
