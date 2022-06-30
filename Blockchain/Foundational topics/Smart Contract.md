@@ -1,5 +1,5 @@
 ---
-tags: blockchain, foundational topics
+tags: blockchain, foundational topics, smart-contract
 author: Pham Ngoc Thanh
 ---
 
