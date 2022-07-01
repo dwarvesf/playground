@@ -5,7 +5,7 @@ tags:  frontend, native-modules, vitejs, esm
 author:  Tran Hoang Nam
 
 ---
-Before ES modules was supported in the browser, we have no native mechanism for authoring JavaScript in a modularized fashion. That is why the concept of **"bundling"** and tools like webpack, Rollup and Parcel exists to improved the development experience for frontend developers.
+Before ES modules was supported in the browser, we have no native mechanism for authoring [[JavaScript modules]] in a modularized fashion. That is why the concept of **"bundling"** and tools like webpack, Rollup and Parcel exists to improved the development experience for frontend developers.
 
 Howerver, when our project started to expand more, the amount of modules might increase from a hundred to thousands of modules which lead to performance bottleneck for **JavaScript-based** toolings. 
 
@@ -38,6 +38,3 @@ While `esbuild` is lightning-quick and a very capable bundler for libraries, som
 
 - https://vitejs.dev/guide/why.html
 - https://www.telerik.com/blogs/whats-vite-guide-modern-super-fast-project-tooling
-
-
-
