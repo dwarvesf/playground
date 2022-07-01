@@ -34,7 +34,7 @@ Rebuilding the whole bundle after making changes to your source code in a bundle
 ### Native modules in production
 While `esbuild` is lightning-quick and a very capable bundler for libraries, some crucial features required for bundling apps, specifically code-splitting and CSS handling, are still **under development**. `Rollup` is currently more capable and adaptable in several areas and being used in production.
 
-#### References
+### References
 
 - https://vitejs.dev/guide/why.html
 - https://www.telerik.com/blogs/whats-vite-guide-modern-super-fast-project-tooling
