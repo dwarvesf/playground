@@ -50,7 +50,7 @@ basic_0 = "2Fcoq3dKjpZiKko9Ho4NZguunJsd9AiGHheF8VHPnk7D"
 test = "yarn run mocha -t 1000000 tests/"
 ```
 
-If you want to deploy testnet, you need to move cluster to testnet. View cluster list:
+If you want to deploy testnet, you need to move cluster to testnet, view cluster list:
 
 ```
 anchor cluster list
@@ -93,7 +93,7 @@ Step 2: Create a program
 anchor init <new-project-name>
 ```
 
-Note, you need to choose the appropriate Anchor version for the sample project or you may get an error when building because the old versions are no longer compatible. Let's take the example of creating a program that accepts a key-value pair start with declaring the program you declare in the lib.rs . directory
+Note, you need to choose the appropriate Anchor version for the sample project or you may get an error when building because the old versions are no longer compatible. Let's take the example of creating a program that accepts a key-value pair start with declaring the program you declare in the `lib.rs` directory
 
 ```
 use anchor_lang::prelude::*;
