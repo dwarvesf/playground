@@ -30,11 +30,11 @@ Anchor is a framework as well as a set of libraries that make developing applica
 
 An Anchor program consists of 3 main parts:
 
-1. Program: where the logic of the program is stored
-2. Account struct: where the account struct is defined, marked with #[derive(Accounts)]
-3. declare_id: Declare the address of the program, it uses this id for security checks as well as allowing other programs to access your key field
+1. **Program**: where the logic of the program is stored
+2. **Account struct**: where the account struct is defined, marked with `#[derive(Accounts)]`
+3. **declare_id**: Declare the address of the program, it uses this id for security checks as well as allowing other programs to access your key field
 
-Like other networks Solana also develops RPC, creating IDLs and client apps from IDL similar to ABI on ethereum.
+Like other networks Solana also develops RPC, creating IDLs and client apps from IDL similar to ABI on Ethereum.
 
 In the anchor you need to setup workspace for your project, example workspace for devnet
 
@@ -220,14 +220,14 @@ SUBCOMMANDS:
 
 #### Basic concepts to know before starting development
 
-- Account: A record in Solana Ledger to store information or a executable program, Save funds called lamports. expressed through an address by a key aka public key
-- Account owner: The address of the program that owns the account. Only the owner program can edit the account
-- Block: A block of data, continuously generated and covered by votes. Contains transaction information.
-- BPF loader: The Solana program that owns and loads BPF smart contract programs, allowing the program to interface with the runtime.
-- keypair: A public key and corresponding private key for accessing an account.
-- lamport: A fractional native token with the value of 0.000000001 sol.
-- leader: The role of a validator when it is appending entries to the ledger.
-- leader schedule: A sequence of validator public keys mapped to slots. The cluster uses the leader schedule to determine which validator is the leader at any moment in time.
+- **Account**: A record in Solana Ledger to store information or a executable program, Save funds called lamports. expressed through an address by a key aka public key
+- **Account owner**: The address of the program that owns the account. Only the owner program can edit the account
+- **Block**: A block of data, continuously generated and covered by votes. Contains transaction information.
+- **BPF loader**: The Solana program that owns and loads BPF smart contract programs, allowing the program to interface with the runtime.
+- **keypair**: A public key and corresponding private key for accessing an account.
+- **lamport**: A fractional native token with the value of 0.000000001 sol.
+- **leader**: The role of a validator when it is appending entries to the ledger.
+- **leader schedule**: A sequence of validator public keys mapped to slots. The cluster uses the leader schedule to determine which validator is the leader at any moment in time.
 
 #### Example and template code
 
