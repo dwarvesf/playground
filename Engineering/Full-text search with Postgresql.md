@@ -203,16 +203,16 @@ It will be no sense if the result (performance) of this approach isn't better th
 
 ```sql
                                                                                                         
-EXPLAIN ANALYZE SELECT * FROM tweets WHERE content ILIKE '%needles%well%' OR content ILIKE '%well%needles%';
+EXPLAIN ANALYZE SELECT * FROM tweets WHERE content ILIKE '%needles%' OR content ILIKE '%well%';
 ```
 
-| QUERY PLAN                                                                                                   |
-|--------------------------------------------------------------------------------------------------------------|
-| Seq Scan on tweets  (cost=0.00..134808.31 rows=40 width=1257) (actual time=775.639..1248.623 rows=4 loops=1) |
-|   Filter: (((content)::text ~~* '%needles%well%'::text) OR ((content)::text ~~* '%well%needles%'::text))     |
-|   Rows Removed by Filter: 206995                                                                             |
-| Planning Time: 0.962 ms                                                                                      |
-| Execution Time: 1248.754 ms                                                                                  |
+| QUERY PLAN                                                                                                    |
+|------------------------------------------------------------------------------------------------------------------|
+| Seq Scan on tweets  (cost=0.00..134808.31 rows=10232 width=1257) (actual time=1.744..1384.645 rows=6502 loops=1) |
+|   Filter: (((content)::text ~~* '%needles%'::text) OR ((content)::text ~~* '%well%'::text))                      |
+|   Rows Removed by Filter: 200497                                                                                 |
+| Planning Time: 1.777 ms                                                                                          |
+| Execution Time: 1445.618 ms                                                                                      |                                                                         |
 
 </td>
 <td>
