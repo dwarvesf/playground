@@ -174,7 +174,7 @@ For now, we will assume it is same as the regular HDD which is 122 MBs and hence
 With all that in mind, you give him an ETA about three hours but it could be easily over three hours since you're not sure about the computation time.
 
 <p align="center"> 
-Data Access Rate + Program Computation Time (~60 min) + Network Bandwidth, etc = >3 hours
+Data Access Rate + Program Computation Time (~60 min) + Network Bandwidth, etc. = (>3 hours)
 </p>
 
 Unsuprisingly, your business user is so shocked to hear three hours for an ETA, he has the next question: can we get it sooner than three hours? Maybe in 30 minutes. 
