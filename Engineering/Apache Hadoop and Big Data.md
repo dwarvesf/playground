@@ -136,4 +136,154 @@ The gaps between Hadoop and RDBMS are closing in. Hadoop offers a cost-effective
 
 ## Understanding Big Data Problem
 
+### Sample Big Data Problem
+
+Imagine you work at one of the major exchanges like New York Stock Exchange or NASDAQ.
+One morning someone from your Risk Department stops by your desk and asks you to calculate the maximum closing price of every stock symbol that is ever traded in the exchange since inception.
+Also assume the size of the data set you are given is 1 TB so your data set would look like the below image.
+
+<p align="center">
+  <img width="300" src="images/Apache%20Hadoop%20and%20Big%20Data/nasdaq-stock.png" alt="NADAQ Stock">
+</p>
+
+Each line in this data set is an information about a stock for a given date.
+Immediately the business user who gave this problem asks you for an ETA on when he can expect the results. 
+There is a lot to think here, so you ask him to give you some time and you start to work. 
+What would be your next steps? You have two things to figure out: storage and computation.
+
+Let's consider about the storage first. Your workstation has only 20 GB of free space but the size of the data set is 1 TB.
+Thus, you go to your storage team and ask them to copy the data set to a NAS (Network Attached Storage) server or even a SAN (Storage Area Network) server. 
+Once the data set is copied you ask them to give you the location of the data set. 
+Because a NASA or san is connected to your network, any computer with access to the network can access the data providing if their permission to see the data. Thus, the data is stored and you have access to the data. 
+
+Now, the next problem is computation. You're a Java programmer, so you wrote an optimized Java program to parse the data set and perform the computation. And you're now ready to execute the program against the data set. 
+Unfortunately, you realize it's already noon, the business user who gave you this request stopped by for an ETA.
+Then, you start to think what is the ETA for this whole operation to complete and you come up with the result set.
+
+### Execution Time
+
+For the program to work on the data set, first, the data set needs to be copied from the storage to the working memory or Ram. 
+How long does it take to copy a one terabyte data set from Storage?
+Let's take our traditional hard disk drive which is the one that is connected to a laptop or workstation, etc.
+HDDs (Hard Disk Drive) have magnetic platters in which the data is stored.
+When you request to read data, the head in the hard disk first position itself on the platter and start transferring the data from the platter to the head. 
+The speed in which the data is transferred from the platter to the head is called the data access rate. Average data access rates in HDDs is usually about 122 MBs. So, to read a 1 TB from a HDD, you need 2 hours and 22 minutes. That is for a HDD that is connected to your workstation.
+
+When you transfer a file from a NAS server or from your SAN server, you should know the transfer rate of the hard disk drives in the NAS servers.
+For now, we will assume it is same as the regular HDD which is 122 MBs and hence it would take 2 hours and 22 minutes. Next, what about the computation time? Since you have not executed the program yet at least once, you cannot say for sure. Additionally, your data comes from a storage server that is attached to the network, you have to consider the network bandwidth also. 
+With all that in mind, you give him an ETA about three hours but it could be easily over three hours since you're not sure about the computation time.
+
+<p align="center"> 
+Data Access Rate + Program Computation Time (~60 min) + Network Bandwidth, etc = >3 hours
+</p>
+
+Unsuprisingly, your business user is so shocked to hear three hours for an ETA, he has the next question: can we get it sooner than three hours? Maybe in 30 minutes. 
+You know there is no way you can execute the results in 30 minutes. 
+Of course, the business cannot wait for three hours, especially in finance for time is money.
+
+How can we calculate the result in less than 30 minutes? Majority of the time you spend in calculating the result set will be attributed to two tasks:
+
+- Transferring the data from storage or hard disk drive which is about two and a half hours and 
+- the computation time that is the time to perform the actual calculation by your program (~ 60 minutes), it could be more or it could be less.
+
+What if we replace HDDs by SSDs (Solid State Drives)? SSDs are very powerful alternative for HDD, SSD does not have magnetic platters, heads and any moving components. And, it's based on flash memory, so it's extremely fast.
+By doing that we can significantly reduce the time it would take to read the data from the storage. 
+But here's the problem SSD comes with a price they usually five to six times in price than your regular HDD. 
+Although the price continues to go down given the data volume that we are talking about with respect to Big Data, it is not a viable option. Therefore, for now we are stuck with HDDs.
+
+Let's consider about how we can reduce the computation time. Hypothetically, the program will take 60 Minutes to complete and is also already optimized for execution. We can divide the 1TB data set into 100 equal size chunks/blocks and have 100 computers/nodes to the computation parallely. Theoritically, we cut the data access by the factor of 100 as well as the computation time. Hence, the data access time is reduced to less than 2 minutes ( = 142 mins / 100) and the computation time is in less than 1 minute (= 60 mins / 100). 
+
+<p align="center">
+  <img width="500" src="images/Apache%20Hadoop%20and%20Big%20Data/100-nodes.png" alt="100 nodes">
+</p>
+
+Futhermore, if you have more than one chunk of your data set stored in the same hard drive, you cannot get a true parallel read because there is only one head in your hard disk which does the actual read.
+For the sake of the argument, asuming that we get a true parallel read, which means we have 100 nodes trying to read trying to read data at the same time. 
+Assuming the data can be read parallely, we will now have (100 x 122) MBs of data flowing through the network. 
+Imagine that what would happen when each one of your family member at home starts to stream their favorite TV show or movie at the same time using a single internet connection at your home? 
+It would result in a very poor streaming experience with a lot of buffering such that no one in the family can enjoy their show.
+What we have essentially done is choked up your network, the download speed is requested by each one of the devices combinedly exceeded the download speed offered by the internet connection resulting in a poor service.
+This is exactly what will happen when 100 nodes trying to transfer the data over the network at the same time.
+
+<p align="center">
+  <img width="700" src="images/Apache%20Hadoop%20and%20Big%20Data/100-nodes-sol.png" alt="100 nodes sol">
+</p>
+
+To solve this, we can bring the data closer to the computation, i.e. store the data locally in each node's hard disk.
+Thus, you would store Block 1 of data in Node 1, block 2 of data in node 2, etc., as shown in the above image.
+Now we can achieve a true parallel read on all 100 nodes and also we have eliminated the network bandwidth issue.
+That's a significant improvement or design. 
+
+How can we protect our data from hard disk failure or data loss, data corruption, etc. ? For example, you have a photo of your loved ones and you treasure that picture. 
+In your mind, there is no way you can lose the picture, how would you protect it? You would keep copies of your picture in different places, maybe one in your personal laptop, one copy in Picasa, one copy in your external hard drive, etc. 
+If your laptop crashes you can still get that picture from Picasa or your external hard drive.
+From the idea, we copy each block of data to two more nodes, in other words, we can replicate the block in two more nodes. 
+In total, we have three copies of each block. 
+
+<p align="center">
+  <img width="500" src="images/Apache%20Hadoop%20and%20Big%20Data/replication.png" alt="100 nodes sol">
+</p>
+
+As shown in the above image, Node 1 has Block 1, 7 and 10. Node 2 has Blocked 7, 11 and 42. Node 3 has blocks 1, 7 and 10.
+If block one is unavailable in Node 2 due to a hard disk failure or corruption in the block, it can be easily fetched From node 3. 
+This means that Node 1, 2 and 3 must have access to one another and they should be connected in a network.
+But there are some challenges implementing it, how does Node 1 knows that Node 3 has Block 1? And who decides Block 7, for instance, should be stored in Node 1, 2 and 3. First of all, who will break the 1TB into 100 blocks? 
+
+That's just the storage part, computation brings other challenges. Node 1 can only compute the maximum close price from just Block 1. 
+Similarly, Node 2 can only compute the maximum close price from Block 2. This brings up a problem because for example, data for stock GE (a stock symbol) can be in Block 1 and can also be in Block 2 and could also be on block 82 for instance right. 
+Then, you have to consolidate the result from all the nodes together to compute the final result, who is going to coordinate all that? The solution we are proposing is distributed computing and as we are seeing there are several complexities involved in implementing the solution both at the storage layer and also at the computation layer. 
+
+<p align="center">
+  <img width="500" src="images/Apache%20Hadoop%20and%20Big%20Data/hadoop.png" alt="100 nodes sol">
+</p>
+
+The answer to all these open questions and complexities is Hadoop. Hadoop offers a framework for distributed computing. 
+Hadoop has two core components HDFS and MapReduce. HDFS stands for Hadoop Distributed File System and it takes care of all your storage related complexities like splitting your data set into blocks, replicating each block to more than one node and also keep track of which block is stored on which node, etc. MapReduce is a programming model and Hadoop implements MapReduce and it takes care of all the computational complexities.
+Therefore, Hadoop framework takes care of bringing all the intermediate results from every single node to offer a consolidated output. 
+
+What is Hadoop? Hadoop is a framework for distributed processing of large data sets across clusters of commodity computers
+The last two words in the definition is what makes Hadoop even more special, commodity computers, that means all the hundred nodes that we have in the cluster does not have to have any specialized hardware, i.e. their enterprise grade server nodes with the processor, hard disk and RAM in each of them.There's nothing more pecial about that. But don't confuse commodity computers with cheap hardware. 
+Commodity computers mean inexpensive hardware and not cheap hardware
+
+Now, you know what Hadoop is and how it can offer an efficient solution to your maximum close price problem against the 1TB data set. So, you can go back to the business and propose Hadoop to solve the problem and to achieve the execution time that your users are expecting. But if you propose a 100 node cluster to your business expect to get some crazy looks, that's the beauty :)). 
+
+You don't need to have a 100 node cluster, we have seen successful Hadoop production environments from small 10 node cluster all the way to 100 to 1000 node cluster. 
+You can simply even start with a 10 node cluster and if you want to reduce the execution time even further, all you have to do is add more nodes to your cluster. That's simple. In other words, Hadoop will horizontally scale.
+
 ## History of Hadoop
+
+<p align="center">
+  <img width="500" src="images/Apache%20Hadoop%20and%20Big%20Data/hadoop-history.png" alt="100 nodes sol">
+</p>
+
+In 2002, an excellent and a smart programmer named Doug Cutting was working on an open source project named Nutch. 
+The purpose of nudge is to crawl the internet, collect web pages then rank and index them so that we can run searches against the indexed web pages.
+That is exactly what google search engine does.
+Google's proprietary crawlers and algorithms crawl through the internet collect web pages rank and index them and run searches against them.
+Nutch is a very similar project to that idea but it's an open source.
+
+Soon, Doug Cutting realizes that he was hitting scalability issues both in terms of storage and in terms of computation because he was collecting and trying to analyze massive amount of data. 
+While he was trying to solve the scalability issues, in 2003, Google published a paper about their proprietary homegrown file system named Google File System (GFS) and how it can be used to store massive amount of data and offer redundancy and scalability at the same time.
+And in 2004, Doug created an open source version of GFS and called it Nutch Distributed File System in (NDFS).
+In 2004, Google published a paper on a programming model named MapReduce that addressed how Google achieved computational efficiency with Big Data.
+That is exactly what Doug was looking for in terms of computation.
+And in 2005, Doug managed to run Nutch on top of NDFS and an open source implementation of MapReduce. 
+
+In Feb 2006, a sub project named Hadoop was found. Hadoop is the name of Doug's kids - Yellow stuffed elephant doll. 
+He chose to use the name because it was easy to spell and meaningless.
+Around 2006, Yahoo started funding the efforts by Doug Cutting and building Hadoop and hired Doug.
+On Feb 19 2008, Yahoo announced that they have the world's largest Hadoop production cluster. 
+And in Jan 2008, Hadoop was made top level Apache project.
+On april 2008 hadoop broke the world record and soldered a terabyte of data in 209 seconds.
+Later that year in November, Google broke that same record and sorted a terabyte of data in just 68 seconds.
+Since inception to date, Hadoop and its community has grown leaps and bounds and soon embraced by several companies as a solution in analyzing Big Data. 
+
+Hadoop was truly given the ability to analyze volumes and volumes of data and helped unlock key valuable insights that would go unfound if it wasn't for this awesome technology.
+More importantly, Hadoop brought massive parallel distributed computing to mainstream and since it is an open source and can be implemented using commodity computers. 
+And since it's an open source and can be implemented using commodity computers, Hadoop sets the bar very low in terms of cost of entry which enabled even smaller companies to work with and analyze big data.
+
+## References
+
+- Hadoop's Homepage: https://hadoop.apache.org/
+- https://en.wikipedia.org/wiki/Apache_Hadoop
+- Hadoop: The Definitive Guide: Storage and Analysis at Internet Scale: https://www.amazon.com/Hadoop-Definitive-Storage-Analysis-Internet/dp/1491901632/ref=sr_1_2?crid=2LTQHKE9WNBNC&keywords=Hadoop&qid=1657604708&sprefix=hadoop%2Caps%2C127&sr=8-2
