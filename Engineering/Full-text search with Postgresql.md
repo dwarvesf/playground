@@ -5,17 +5,17 @@ author: Hoang Nguyen
 
 ## What is Full-text search?
 
-Full Text Search refers to a technique in which you search for a single computer-stored document or a collection in your full-text database. It provides you with the capability to identify natural languages documents that satisfy a query..
+Full-Text Search refers to a technique in which you search for a single computer-stored document or a collection in your full-text database. It provides you with the capability to identify natural-language documents that satisfy a query.
 
 ## Why need Full-text search?
 
-Normally when we want to search some words or text in a long sentence, we usually use `LIKE` operator
+Normally when we want to search for some words or text in a long sentence, we usually use `LIKE` operator.
 
 ```sql
 SELECT * FROM tweets WHERE content ILIKE '%something%';
 ```
 
-However, using `LIKE` operator with leading wildcard will make postgresql perform `Seq Scan` which mean database will skip using index for finding matched records. It will cause very low performance for big data table. Therefore, it's where `FTS` can be used to boost up the performance in query.
+However, using `LIKE` operator with the leading wildcard will make PostgreSQL perform `Seq Scan` which means database will skip using index for finding matched records. It will cause very low performance for big data tables. Therefore, it's where `FTS` can be used to boost the performance in queries.
 
 ## Indexing
 
@@ -23,11 +23,11 @@ For normal columns, using [B-Tree index](https://dzone.com/articles/database-btr
 
 ## Stop words
 
-For most human languages, there are some words which are not have any value in searching or analysing, those words is called stop-words. For example, In English some stop-words can be: `is, the, and, in, so,... etc`. Therefore, when we filter text, it should not count in out search string.
+For most human languages, there are some words that do not have any value in searching or analyzing, those words are called stop-words. For example, In English, some stop-words can be: `is, the, and, in, so,... etc`. Therefore, when we filter text, it should not count in our search string.
 
-## Hands on
+## Hands-on
 
-Following are the step-by-step instruction to implement Full-text search in Postgres:
+Following are the step-by-step instruction to implement Full-text search in PostgresSQL:
 
 #### 1. Create `GIN INDEX` for `vector` column:
 
@@ -35,7 +35,7 @@ Following are the step-by-step instruction to implement Full-text search in Post
 CREATE INDEX idx_vector ON tweets USING GIN(vector);
 ```
 
-#### 2. Insert data to `vector` column
+#### 2. Insert data into `vector` column
 
 ```sql
 UPDATE
@@ -49,7 +49,7 @@ UPDATE
             generate_series(1, length(lexeme)) len));
 ```
 
-To explore what is exactly above query does? Let's split it into smaller parts to better explain:
+To explore what is exactly the above query does? Let's split it into smaller parts to better explain:
 
 **Convert sentence to vector**
 
@@ -57,7 +57,7 @@ To explore what is exactly above query does? Let's split it into smaller parts t
 SELECT to_tsvector(LOWER('.@TataSky on which channel #WorldCupFinal #football is showing which ever is being tuned its paid channel.'));
 ```
 
-It will returns a vector where every token is a lexeme (a unit of lexical meaning) with its position in sentence.
+It will return a vector where every token is a lexeme (a unit of lexical meaning) with its position in the sentence.
 
 ```sql
 'channel':4,16 'ever':10 'footbal':6 'paid':15 'show':8 'tataski':1 'tune':13 'worldcupfin':5
@@ -82,7 +82,7 @@ It will return a table-like structure for above vector:
 | tune        | {13}      | {D}     |
 | worldcupfin | {5}       | {D}     |
 
-**Get every substrings for each lexeme**
+**Get every substring for each lexeme**
 
 ```sql
 SELECT
@@ -92,7 +92,7 @@ FROM
   generate_series(1, length(lexeme)) len;
 ```
 
-It will return every distinct substrings for every lexemes in the vector:
+It will return every distinct substring for every lexeme in the vector:
 
 ```sql
 ever
@@ -144,7 +144,7 @@ t
 footba
 ```
 
-Therefore, at the end, every vector column record will have value like below:
+Therefore, in the end, every vector column record will have a value like the below:
 
 ```sql
 'c' 'ch' 'cha' 'chan' 'chann' 'channe' 'channel' 'e' 'ev' 'eve' 'ever' 'f' 'fo' 'foo' 'foot' 'footb' 'footba' 'footbal' 'p' 'pa' 'pai' 'paid' 's' 'sh' 'sho' 'show' 't' 'ta' 'tat' 'tata' 'tatas' 'tatask' 'tataski' 'tu' 'tun' 'tune' 'w' 'wo' 'wor' 'worl' 'world' 'worldc' 'worldcu' 'worldcup' 'worldcupf' 'worldcupfi' 'worldcupfin'
@@ -158,7 +158,7 @@ SELECT * FROM tweets WHERE vector @@ to_tsquery(REPLACE(LOWER('multiple words wi
 
 #### 4. Custom Search configuration (OPTIONAL)
 
-We can also configure the search configuration by our own like custom stop-words template:
+We can also configure the search configuration on our own like a custom stop-words template:
 
 ```sql
 CREATE TEXT SEARCH DICTIONARY english_stem_nostop (
@@ -180,7 +180,7 @@ SELECT * FROM tweets WHERE vector @@ to_tsquery('english_nostop',REPLACE(LOWER('
 
 ## Result
 
-It will be no sense if the result (performance) of this approach isn't better than normal way which using `LIKE` operator. So, let have a comparation:
+It will be no sense if the result (performance) of this approach isn't better than the normal way which uses `LIKE` operator. So, let have a comparison:
 
 ### LIKE operator
 
@@ -213,7 +213,7 @@ EXPLAIN ANALYZE SELECT * FROM tweets WHERE vector @@ to_tsquery(REPLACE(LOWER('n
 | Planning Time: 0.230 ms                                                                                               |
 | Execution Time: 0.231 ms                                                                                              |
 
-The result shows that the planning time and execution time of `LIKE` operator is worse than `FTS` method. Because the demo is just an illustration of 200k records table. For a larger table (millions records), the performance of using `LIKE` operator is much more worse than using `FTS` method. Furthermore, you can notice that, with `FTS` we can search words with no orders required when in `LIKE` operator method, the words's order is also count to the result.
+The result shows that the planning time and execution time of `LIKE` operator are worse than `FTS` method. Because the demo is just an illustration of 200k records table. For a larger table (millions of records), the performance of using `LIKE` operator is much worse than using `FTS` method. Furthermore, you can notice that, with `FTS` we can search words with no orders required when in `LIKE` operator method, the words' order is also counted to the result.
 
 ## Note
 
