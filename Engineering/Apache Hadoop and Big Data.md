@@ -184,7 +184,7 @@ Of course, the business cannot wait for three hours, especially in finance for t
 How can we calculate the result in less than 30 minutes? Majority of the time you spend in calculating the result set will be attributed to two tasks:
 
 - Transferring the data from storage or hard disk drive which is about two and a half hours and 
-- the computation time that is the time to perform the actual calculation by your program (~ 60 minutes), it could be more or it could be less.
+- The computation time that is the time to perform the actual calculation by your program (~ 60 minutes), it could be more or it could be less.
 
 What if we replace HDDs by SSDs (Solid State Drives)? SSDs are very powerful alternative for HDD, SSD does not have magnetic platters, heads and any moving components. And, it's based on flash memory, so it's extremely fast.
 By doing that we can significantly reduce the time it would take to read the data from the storage. 
@@ -284,6 +284,6 @@ And since it's an open source and can be implemented using commodity computers, 
 
 ## References
 
-- Hadoop's Homepage: https://hadoop.apache.org/
-- https://en.wikipedia.org/wiki/Apache_Hadoop
-- Hadoop: The Definitive Guide: Storage and Analysis at Internet Scale: https://www.amazon.com/Hadoop-Definitive-Storage-Analysis-Internet/dp/1491901632/ref=sr_1_2?crid=2LTQHKE9WNBNC&keywords=Hadoop&qid=1657604708&sprefix=hadoop%2Caps%2C127&sr=8-2
+- [Hadoop's Homepage](https://hadoop.apache.org/)
+- [Wikipedia](https://en.wikipedia.org/wiki/Apache_Hadoop)
+- [Hadoop: The Definitive Guide: Storage and Analysis at Internet Scale](https://www.amazon.com/Hadoop-Definitive-Storage-Analysis-Internet/dp/1491901632/ref=sr_1_2?crid=2LTQHKE9WNBNC&keywords=Hadoop&qid=1657604708&sprefix=hadoop%2Caps%2C127&sr=8-2)
