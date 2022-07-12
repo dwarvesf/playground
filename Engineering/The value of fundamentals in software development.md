@@ -12,7 +12,7 @@ There are always fundamental concepts lying in a particular technology. For exam
 
 Knowing those fundamental concepts backward can benefit us in two different ways. First, by learning the fundamentals, you know how to write more efficient code, especially, when dealing with time complexity and memory usage. Debugging can be much easier if you fundamentally know how things work. Secondly, having a solid grip on the fundamentals can ease your path of learning new technologies. Often, the more technologies you know, the better decisions you can make. Technological breadth can provide you with valid data to decide which technologies to use and which ones to avoid based on the goals and constraints of any project.
 
-Practically speaking, it is hard to learn everything at the beginning of your career. You will have to make choices about what you should learn and when, based on what you want to achieve. Concepts and ideas are nothing without execution. The best approach is to pick the technology to help you do your job, then, learn the fundamentals that shape the technology along the way. It can help you go that much farther.
+Practically speaking, it is hard to learn everything at the beginning of your career. You will have to make choices about what you should learn and when, based on what you want to achieve. Concepts and ideas are nothing without execution. The best approach is to pick the technology to help you do your job, then, learn the fundamentals that shape the technology along the way. It can help you go much farther.
 
 ## Reference
 
