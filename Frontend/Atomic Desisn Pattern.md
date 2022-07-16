@@ -48,7 +48,7 @@ There are 5 distinct levels of atomic design which are: atoms, molecules, organi
 ![pages](https://bradfrost.com/wp-content/uploads/2013/06/page1.jpg)
 
 **Atomic design folder structure**
-- This is an example of an application folder structure using atomic design, as you can see there are 5 distinct layers and you can organize them in anyway you want following your own interest.
+- This is an example of an application folder structure using atomic design, as you can see there are 5 distinct layers and you can organize them in anyway you want following your own preference.
 
 ![folder-structure](https://andela.com/wp-content/uploads/2019/10/Screenshot-2019-10-25-at-2.33.30-PM.png)
 
