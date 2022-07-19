@@ -3,7 +3,7 @@ tags: engineering, frontend, atomic-design
 author: Tran Hoang Nam
 ---
 
-### Atomic design pattern
+## Atomic design pattern
 
 Atomic design is a methodology for crafting design systems with five key fundamental building blocks, which, when combined, promote consistency, modularity, and scalability.
 
@@ -12,7 +12,7 @@ Atomic design is a methodology for crafting design systems with five key fundame
 - We can move from the abstract to the concrete thanks to atomic design. As a result, we can design systems that encourage consistency and scalability while also displaying information in its final context. Additionally, by putting a system together rather than taking it apart, we avoid picking out the best patterns later.
 - The method fits incredibly well with component-based architectures like React, Vue,...
 
-### How does it work?
+## How does it work?
 There are 5 distinct levels of atomic design which are: atoms, molecules, organisms, templates and pages.
 
 ![atomic-design-structure](https://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png)
@@ -52,7 +52,7 @@ There are 5 distinct levels of atomic design which are: atoms, molecules, organi
 
 ![folder-structure](https://andela.com/wp-content/uploads/2019/10/Screenshot-2019-10-25-at-2.33.30-PM.png)
 
-#### Reference
+## Reference
 
 - https://bradfrost.com/blog/post/atomic-web-design/#atoms
 - https://andela.com/insights/structuring-your-react-application-atomic-design-principles/
