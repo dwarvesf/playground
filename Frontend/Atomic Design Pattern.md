@@ -18,6 +18,7 @@ Atomic design is a methodology for crafting design systems with five key fundame
 There are 5 distinct levels of atomic design which are: atoms, molecules, organisms, templates, and pages.
 
 ![[atom-design-structure.png]]
+
 **Atoms**
 
 - Atoms are the basic building blocks of matter. When applied to web interfaces, they are our `HTML` tags like an `input` or a `button`.
