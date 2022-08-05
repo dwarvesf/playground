@@ -37,7 +37,7 @@ let vStack = UIVStack {
 }
 ```
 
-### **How can we build a UI using Builder pattern**
+### How can we build a UI using Builder pattern
 
 To write a simple Login form in the UIKit, we usually do:
 
@@ -93,7 +93,7 @@ extension UITextField {
 
 However, what happens if we need to customize other properties of UITextField or add a new custom function? How can we sync with the design and reuse code?
 
-### **Introduce to `@discardableResult`.**
+### Introduce to `@discardableResult`
 
 Swift language offers `@discardableResult`, a feature that allows you to use or ignore the return value of a function without compiler or editor complaints.
 
