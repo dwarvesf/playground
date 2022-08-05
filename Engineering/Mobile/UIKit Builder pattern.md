@@ -1,53 +1,65 @@
 ---
-tags: iOS, MacOS, Swift
+
+tags: iOS, MacOS, Swift, UIKit
+
 author: Phan Viet Trung
+
 ---
 
-SwiftUI introduces a way to write UI code declaratively. Can we use the same paradigm with UIKit? We will show you how. There are two parts of this tutorial: "How can we build a UI using Builder pattern" and "How can we wrap the container element using Swift builder?" In the end of this tutorial, you will be able to build UIs like this one:
+SwiftUI introduces a declarative way to write UI. Can we use the same paradigm with UIKit?
+We will show you how. There are two parts of this tutorial.
 
-![[ios_uikit_builder_pattern_banner.png]]
+The first part is: `How can we build a UI using Builder pattern` and second part is `How can we wrap the container element using Swift builder`.
 
-Below is sample code for your reference.
+In the end of the serials you can build UI like this:
+<p align="center">
+	<img src="../../_assets/ios_uikit_builder_pattern_banner.png" width="350">
+</p>
+
+By below sample code:
 
 ```swift
- let vStack = UIVStack {
-            UIImageView(image: UIImage(named:"banner"))
-            UIView()
-                .backgroundColor(.clear)
-                .heightAnchor(height: 20)
-            UILabel()
-                .text(title)
-                .font(UIFont.systemFont(ofSize: UIFont.largeSize))
-                .textAlignment(.center)
-                .color(.black60)
-            UILabel()
-                .text(subtitle)
-                .font(UIFont.systemFont(ofSize: UIFont.normalSize))
-                .textAlignment(.center)
-                .color(.black60)
-                .numberOfLines(0)
+let vStack = UIVStack {
+    UIImageView(image: UIImage(named:"banner"))
+    UIView()
+        .backgroundColor(.clear)
+        .heightAnchor(height: 20)
+    UILabel()
+        .text(title)
+        .font(UIFont.systemFont(ofSize: UIFont.largeSize))
+        .textAlignment(.center)
+        .color(.black60)
+    UILabel()
+        .text(subtitle)
+        .font(UIFont.systemFont(ofSize: UIFont.normalSize))
+        .textAlignment(.center)
+        .color(.black60)
+        .numberOfLines(0)
+    
+    UIButton()
+        .spStyle()
+        .title("Update Now")
+        .tap(action: { [weak self] in
+            self?.navigateToAppStore()
+        })
+        .heightAnchor(height: 44)
+}
 
-            UIButton()
-                .spStyle()
-                .title("Update Now")
-                .tap(action: { [weak self] in
-                    self?.navigateToAppStore()
-                })
-                .heightAnchor(height: 44)
-        }
 
 ```
 
+
+
 ### **How can we build a UI using Builder pattern**
 
-To write a simple Login form in the UIKit, we usually do:
+With the UIKit, to write a simple Login form we're usually do:
 
 ```swift
 let txtUserName = UITextField()
 txtUserName.placeHolder = "User Name"
 txtUserName.textColor = .black8
 //For text change event.
-txtUserName.delegate = self
+txtUserName.delegate = self 
 
 let txtPassword = UITextField()
 txtPassword.placeHolder = "Password"
@@ -57,63 +69,51 @@ txtPassword.style = .password
 txtPassword.delegate = self
 ```
 
-For a small project, it is acceptable to use your own design. However, with a large project, it is important to use standard design techniques so that the code can be reused and so that the application will be easy to maintain.
 
-Usually, the original data type will be overridden and new components created following the style that the designer gives us. For example:
+For the small project, it totally fine. However, with a large project, we have a standard design. How can we reuse our code, keep it simple to use, and keep flexible?
 
+Normally we will override the Original data type and create our own components following the style that the designer gives us. For example:
 ```swift
 class MyStyleBlackTextFiled: UITextField {
-	func setupUI() {
-		self.textColor = .black8
-		self.font = UIFont(systemFontOfSize: 18)
-		self.backgroundColor = .white
-	}
+    func setupUI() {
+        self.textColor = .black8
+        self.font = UIFont(systemFontOfSize: 18)
+        self.backgroundColor = .white
+    }
 }
 
 
 let txtUserName = MyStyleBlackTextFiled()
 let password = MyStyleBlackTextFiled()
+
 ```
 
-Everything is fine until one day the designer presents us with a new page, which contains different text, background color and font size.
+Everything is fine until one day the designer gives us a new page with different text, background color, different font size.
 
-We can create a new `MyStyleRedTextField` with the above implementation, but cannot reuse it as flexibly as we would like. How can we fix this?
+We are continue create a new `MyStyleRedTextField`
+With the above implementation, we can reuse our code but losing the flexibility of customisation. How can we fix it?
 
-One way is to use configuration settings like:
-
+One way is using config like:
 ```swift
 let textField = UITextField()
 textField.config(textColor: .red, font: .system, backgroundColor: .white)
 
 extension UITextField {
-	func config(textColor: UIColor, font: UIFont, backgroundColor: UIColor) {
-		//set
-	}
+    func config(textColor: UIColor, font: UIFont, backgroundColor: UIColor) {
+        //set
+    }
 }
-```
 
-However, what happens if we need to customize other properties of UITextField or add a new custom function? How can we sync with the design and reuse code?
+```
+The question is: What if we need to custom other properties of `UITextField` or add a new config function? How to sync with design and reuse code?
 
 ### **Introduce to `@discardableResult`.**
 
-Swift language offers `@discardableResult`, a feature that allows you to use or ignore the return value of a function without compiler or editor complaints.
+Swift programming language has @discardableResult. The beauty of @discardableResult is you can use or unuse the return value of the function without compiler, editor complaint.
 
-For example, the following function returns a String:
-
+For example:
+We have a function that return a String
 ```swift
-func hello() -> String {
-	"Hello"
-}
-```
-
-Declare `hello()` then—The editor will warn you that hello() is not being used.
-
-To silence it we can use the underscore character: `_ = hello()` or `let _ = hello()`
-
-With `@discardableResult`
-
-```swift
-@discardableResult()
 func hello() -> String {
 	"Hello"
 }
@@ -121,23 +121,43 @@ func hello() -> String {
 
 Use:
 
-Declare `hello()`, and no warning happens
+`hello()` <-- The editor will warning you hello() is unuse.
 
-And you can assign a value to a variable with `let helloString = hello()`.
+To silent it we can using `_` to silent:
 
-### Introduce to `Extension`
+`_ = hello()`
+or 
+`let _ = hello()`
 
-The iOS-MacOS developer is familiar with the concept of Extensions. With an Extension, we can add more functionality to existing Objects. For example:
+With @discardableResult:
+```
+@discardableResult()
+func hello() -> String {
+	"Hello"
+}
+```
+Use:
+
+`hello()` <- No warning
+
+`let helloString = hello()` <- Can assign value
+
+
+
+### **Introduce to `Extension`**
+
+The iOS-MacOS developer is family with `Extension`. With `Extension`, we can add more functionality to the existing Object. For example:
 
 ```swift
-Extension UILabel {
-	func textColor(_ color: UIColor) {
-		self.textColor = color
-	}
-	func backgroundColor(_ color: UIColor) {
-		self.backgroundColor = color
-	}
+extension UILabel {
+    func textColor(_ color: UIColor) {
+        self.textColor = color
+    }
+    func backgroundColor(_ color: UIColor) {
+        self.backgroundColor = color
+    }
 }
+
 
 use:
 let label = UILabel()
@@ -145,55 +165,54 @@ label.textColor = .red
 label .backgroundColor = .blue
 ```
 
-Mixing `@discardableResult` with `Extension` is `Builder`.
+**The Beauty of mixing `Extension` with `@discardableResult `= Builder**
 
 ```swift
-Extension UILabel {
-	@discardableResult
-	func text(_ string: String) -> UILabel {
-		self.text = text
-		return self
-	}
+extension UILabel {
+    @discardableResult
+    func text(_ string: String) -> UILabel {
+        self.text = text
+        return self
+    }
 
-	@discardableResult
-	func textColor(_ color: UICOlor) -> UILabel {
-		self.textColor = color
-		return self
-	}
+    @discardableResult
+    func textColor(_ color: UICOlor) -> UILabel {
+        self.textColor = color
+        return self
+    }
 }
 
-
 ```
 
-Through the implementation of the above ideas, we can achieve:
 
+
+With above implement we can archive:
 ```swift
 let label = UILabel()
-					.textColor(.red)
-					.text("Hello")
+    .textColor(.red)
+    .text("Hello")
+
 ```
-
-Because `label` is a UILabel, you can still use any of its built-in functions and methods. For example, you can access information about it and set new properties.
-
+Because `label` just a UILabel, you can still use any built-in properties, methods. Like access to get info, set new property. For example: 
 ```swift
 let text = label.text
 let background = text.backgroundColor
 
 label.text = "ABC"
 ```
-
-Create your own style by making an extension using the same technique.
+To create your style, simply make an extension using the same technique 
 
 ```swift
-Extension UILabel {
-	@discardableResult
-	func myRedStyle() -> UILabel {
-		self.textColor(.red).backgroundColor(.green)
-		return self
-	}
+extension UILabel {
+    @discardableResult
+    func myRedStyle() -> UILabel {
+        self.textColor(.red).backgroundColor(.green)
+        return self
+    }
 }
 
 let redLabel = UILabel().text("I'm red").myRedStyle()
+
 ```
 
-Using `@discardableResult` with `Extension` gives us all of the benefits of reusability, flexibility, maintainability, and the ability to expand our code while retaining the original data type.
+Adding more functions to `Extension` with `@discardableResult` we have all benefits of reusability, flexibility, maintainability, and the ability to expand our code as well as keep the original data type.
