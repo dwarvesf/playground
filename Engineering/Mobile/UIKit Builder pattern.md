@@ -13,7 +13,7 @@ The first part is: `How can we build a UI using Builder pattern` and second part
 
 In the end of the serials you can build UI like this:
 <p align="center">
-	<img src="_assets/ios_uikit_builder_pattern_banner.png" width="350">
+	<img src="../../_assets/ios_uikit_builder_pattern_banner.png" width="350">
 </p>
 
 By below sample code:
