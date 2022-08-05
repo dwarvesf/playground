@@ -37,7 +37,7 @@ We aren't actually too strict on grammar or semantics in your notes. Our only re
 
 ### Folder structure
 
-1. We only have 1-level folders; we don't use nested folders, so no need to create them. They may make the main folder a bit messy to find articles, but it eases the barrier to entry for new writers.
+1. We prefer to use 1-level folders unless necessary. If you feel that your content belongs to a specific nested folder or would like to create one, we'll have a look at it.
 
 2. Any notes or articles in the folder should also have the related tag mentioned in the metadata. For instance, if the note is placed `Writing` folder, the metadata must have at least:
 
