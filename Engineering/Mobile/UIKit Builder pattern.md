@@ -10,32 +10,31 @@ SwiftUI introduces a way to write UI code declaratively. Can we use the same par
 Below is sample code for your reference.
 
 ```swift
- let vStack = UIVStack {
-            UIImageView(image: UIImage(named:"banner"))
-            UIView()
-                .backgroundColor(.clear)
-                .heightAnchor(height: 20)
-            UILabel()
-                .text(title)
-                .font(UIFont.systemFont(ofSize: UIFont.largeSize))
-                .textAlignment(.center)
-                .color(.black60)
-            UILabel()
-                .text(subtitle)
-                .font(UIFont.systemFont(ofSize: UIFont.normalSize))
-                .textAlignment(.center)
-                .color(.black60)
-                .numberOfLines(0)
+let vStack = UIVStack {
+    UIImageView(image: UIImage(named:"banner"))
+    UIView()
+        .backgroundColor(.clear)
+        .heightAnchor(height: 20)
+    UILabel()
+        .text(title)
+        .font(UIFont.systemFont(ofSize: UIFont.largeSize))
+        .textAlignment(.center)
+        .color(.black60)
+    UILabel()
+        .text(subtitle)
+        .font(UIFont.systemFont(ofSize: UIFont.normalSize))
+        .textAlignment(.center)
+        .color(.black60)
+        .numberOfLines(0)
 
-            UIButton()
-                .spStyle()
-                .title("Update Now")
-                .tap(action: { [weak self] in
-                    self?.navigateToAppStore()
-                })
-                .heightAnchor(height: 44)
-        }
-
+    UIButton()
+        .spStyle()
+        .title("Update Now")
+        .tap(action: { [weak self] in
+            self?.navigateToAppStore()
+        })
+        .heightAnchor(height: 44)
+}
 ```
 
 ### **How can we build a UI using Builder pattern**
@@ -64,12 +63,11 @@ Usually, the original data type will be overridden and new components created fo
 ```swift
 class MyStyleBlackTextFiled: UITextField {
 	func setupUI() {
-		self.textColor = .black8
-		self.font = UIFont(systemFontOfSize: 18)
-		self.backgroundColor = .white
-	}
+        self.textColor = .black8
+        self.font = UIFont(systemFontOfSize: 18)
+        self.backgroundColor = .white
+    }
 }
-
 
 let txtUserName = MyStyleBlackTextFiled()
 let password = MyStyleBlackTextFiled()
@@ -83,12 +81,13 @@ One way is to use configuration settings like:
 
 ```swift
 let textField = UITextField()
+
 textField.config(textColor: .red, font: .system, backgroundColor: .white)
 
 extension UITextField {
 	func config(textColor: UIColor, font: UIFont, backgroundColor: UIColor) {
-		//set
-	}
+        //set
+    }
 }
 ```
 
@@ -130,13 +129,13 @@ And you can assign a value to a variable with `let helloString = hello()`.
 The iOS-MacOS developer is familiar with the concept of Extensions. With an Extension, we can add more functionality to existing Objects. For example:
 
 ```swift
-Extension UILabel {
-	func textColor(_ color: UIColor) {
-		self.textColor = color
-	}
-	func backgroundColor(_ color: UIColor) {
-		self.backgroundColor = color
-	}
+extension UILabel {
+    func textColor(_ color: UIColor) {
+        self.textColor = color
+    }
+    func backgroundColor(_ color: UIColor) {
+        self.backgroundColor = color
+    }
 }
 
 use:
@@ -148,29 +147,26 @@ label .backgroundColor = .blue
 Mixing `@discardableResult` with `Extension` is `Builder`.
 
 ```swift
-Extension UILabel {
-	@discardableResult
-	func text(_ string: String) -> UILabel {
-		self.text = text
-		return self
-	}
-
-	@discardableResult
-	func textColor(_ color: UICOlor) -> UILabel {
-		self.textColor = color
-		return self
-	}
+extension UILabel {
+    @discardableResult
+    func text(_ string: String) -> UILabel {
+        self.text = text
+        return self
+    }
+    @discardableResult
+    func textColor(_ color: UICOlor) -> UILabel {
+        self.textColor = color
+        return self
+    }
 }
-
-
 ```
 
 Through the implementation of the above ideas, we can achieve:
 
 ```swift
 let label = UILabel()
-					.textColor(.red)
-					.text("Hello")
+    .textColor(.red)
+    .text("Hello")
 ```
 
 Because `label` is a UILabel, you can still use any of its built-in functions and methods. For example, you can access information about it and set new properties.
@@ -185,12 +181,12 @@ label.text = "ABC"
 Create your own style by making an extension using the same technique.
 
 ```swift
-Extension UILabel {
-	@discardableResult
-	func myRedStyle() -> UILabel {
-		self.textColor(.red).backgroundColor(.green)
-		return self
-	}
+extension UILabel {
+    @discardableResult
+    func myRedStyle() -> UILabel {
+        self.textColor(.red).backgroundColor(.green)
+        return self
+    }
 }
 
 let redLabel = UILabel().text("I'm red").myRedStyle()
