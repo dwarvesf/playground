@@ -3,7 +3,7 @@ tags: ux, blockchain, web3
 author: Nam Bui
 ---
 
-For most users in Web3 not excepting me, they are exposed to the tip of the iceberg which got them interested in space like Bitcoin, Defi, and NFT - these are simple terms that people know but when they dig deeper it's actually a whole lot term like "Gas Fees", "Private Key", "Public address",... It's not very user-friendly and people just give up halfway when you ask them about private key or others. So we want a familiar easy to understand way for users, I compose the Triple S of UX to make web3 accessible.
+The Triple S of UX is a paradigm used to simplify key approaches to user experience for Web3 and allows it to be more accessible for others. It addresses concerns on user-friendliness, as a lot of terminology and know-how required to navigate through Web3 makes it difficult for the average user to be engaged in a product. For instance, terms such as "Gas Fees", "Private Key", and "Public address" are not day-to-day terms that most users would be familiar with. The Triple S of UX focuses on these three concepts:
 
 ## Simple
 
