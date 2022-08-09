@@ -9,15 +9,15 @@ Under the hood, virtual DOM is a mapping of JavaScript objects to actual DOM. In
 
 ```js
 {
-    tag: "ul",
-    props: {},
-    children: [{
-      tag: "li",
-      props: {
-        className: "item"
-      },
-      children: ["item", 1]
-	}]
+  tag: "ul",
+  props: {},
+  children: [{
+    tag: "li",
+    props: {
+      className: "item"
+    },
+    children: ["item", 1]
+  }]
 }
 ```
 
@@ -42,11 +42,11 @@ Now let's consider the initial Virtual DOM is the previous state and the below i
 
 ```js
 {
-    tag: "ul",
-    props: {
-	  className: 'list'
+  tag: "ul",
+  props: {
+    className: 'list'
 	},
-    children: []
+  children: []
 }
 ```
 
