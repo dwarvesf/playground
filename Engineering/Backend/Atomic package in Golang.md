@@ -8,6 +8,7 @@ We often run some functions asynchronously in real projects using the go routine
 ## Problem
 
 We need to add a value to an integer value. It's elementary logic until we run the logic many times and asynchronously. Run three times with a loop of 2000; our expectation is 6000. However, the result is not stable: many times with values less than 6000.
+
 ```go
 package main
 
@@ -19,20 +20,20 @@ import (
 func main() {
 	var i int32
 	var wg sync.WaitGroup
-	
+
 	wg.Add(3)
-	
+
 	go Process(&i, &wg)
 	go Process(&i, &wg)
 	go Process(&i, &wg)
-	
+
 	wg.Wait()
 	fmt.Println("i:", i)
 }
 
 func Process(variable *int32, wg *sync.WaitGroup) {
 	defer wg.Done()
-	
+
 	for i := 0; i < 2000; i++ {
 		*variable++ // The race condition makes the result NOT always equal 6000
 	}
@@ -42,6 +43,7 @@ func Process(variable *int32, wg *sync.WaitGroup) {
 ## Solutions
 
 ### Using Mutex
+
 We run three go routines in the above example code to update the same `i` variable. Our expectation: The value always equals 6000. However, we got the race condition. The simple solution is to pass a `mutex` lock to update the value synchronously.
 
 ```go
@@ -123,14 +125,14 @@ func SyncConfig() {
 }
 ```
 
-`SyncConfig` is invoked as a go routine. The `MetabaseConn` object will be created by the inline method and swapped out for the current connection object. This is feasible with only variables, but doing so would necessitate putting in place a **lock-unlock** implementation.
-The atomic package abstracts this and ensures that each load and save is handled one after the other. This is a simple example of a not-so-common usage scenario.
+`SyncConfig` is invoked as a go routine. The `MetabaseConn` object will be created by the inline method and swapped out for the current connection object. This is feasible with only variables, but doing so would necessitate putting in place a **lock-unlock** implementation. The atomic package abstracts this and ensures that each load and save is handled one after the other. This is a simple example of a not-so-common usage scenario.
 
 ## Conclusion
-Atomic types in Go are a simple approach to handling shared resources. It eliminates the need to maintain a mutex to limit resource access. This is not to say that mutexes are obsolete, as they are still useful in other cases.
-Finally, `atomic.Pointer` is an excellent approach to incorporate atomic memory primitives into your program. It is a simple approach to prevent data races without the use of complicated mutex code.
 
-#### Reference
+Atomic types in Go are a simple approach to handling shared resources. It eliminates the need to maintain a mutex to limit resource access. This is not to say that mutexes are obsolete, as they are still useful in other cases. Finally, `atomic.Pointer` is an excellent approach to incorporate atomic memory primitives into your program. It is a simple approach to prevent data races without the use of complicated mutex code.
+
+## Reference
+
 - https://pkg.go.dev/sync/atomic
 - https://www.geeksforgeeks.org/atomic-variable-in-golang/
 - https://betterprogramming.pub/atomic-pointers-in-go-1-19-cad312f82d5b
