@@ -37,7 +37,6 @@ func Process(variable *int32, wg *sync.WaitGroup) {
 		*variable++ // The race condition makes the result NOT always equal 6000
 	}
 }
-
 ```
 
 ## Solutions
@@ -71,7 +70,7 @@ func Process(variable *int32, wg *sync.WaitGroup) {
 
 ### Benchmark solutions
 
-I make a benchmark test for three implementations. The logic using `atomic` quite fast than `mutex lock`, around 0.33 % in this case.
+Below is a benchmark test for three implementations. The logic using `atomic` is faster than `mutex lock`, around 0.33 % in this case.
 
 | Benchmark                         | Run   | Speed           |
 | --------------------------------- | ----- | --------------- |
@@ -79,11 +78,11 @@ I make a benchmark test for three implementations. The logic using `atomic` quit
 | BenchmarkAddValueWithMutex-8      | 10000 | 126994 ns/op    |
 | BenchmarkAddValueWithAtomic-8     | 14080 | **84896 ns/op** |
 
-In the meantime, this package support functions to interact with some types in golang: int32, int64, uint32, uint64, and the pointer. The implementation with Pointer is an excellent feature. It can get easier to apply the help of the atomic package for other types. It provides an interface to store, update, and retrieve a value of a specific type and is asynchronously included.
+In the meantime, this package support functions to interact with some types in Golang: int32, int64, uint32, uint64, and the pointer. The implementation with Pointer is an excellent feature. It can get easier to apply the help of the atomic package for other types. It provides an interface to store, update, and retrieve a value of a specific type and is asynchronously included.
 
 ## Atomic Pointer use case
 
-We build our system using Metabase as a reporting service. Metabase provides the API to interact with the dashboard via RESTful. A jwt token is used to authenticate the request. We need a logic to update the jwt token while the other business logic uses the jwt token.
+We build our system using Metabase as a reporting service. Metabase provides the API to interact with the dashboard via RESTful. A JWT token is used to authenticate the request. We need a logic to update the JWT token while the other business logic uses the JWT token.
 
 ```go
 package main
@@ -97,7 +96,6 @@ func main() {
 }
 
 func ShowConnection(p *atomic.Value) {
-
 	for {
 		time.Sleep(2 * time.Second)
 		fmt.Println(p, p.Load())
