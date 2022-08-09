@@ -72,7 +72,7 @@ func Process(variable *int32, wg *sync.WaitGroup) {
 
 ### Benchmark solutions
 
-Below is a benchmark test for three implementations. The logic using `atomic` is faster than `mutex lock`, around 33.14 % in this case.
+Below is a benchmark test for three implementations. The logic using `atomic` is faster than `mutex lock`, around 33.14% in this case.
 
 | Benchmark                         | Run   | Speed           |
 | --------------------------------- | ----- | --------------- |
