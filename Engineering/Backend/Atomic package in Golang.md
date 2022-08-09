@@ -13,30 +13,30 @@ We need to add a value to an integer value. It's elementary logic until we run t
 package main
 
 import (
-	"fmt"
-	"sync"
+  "fmt"
+  "sync"
 )
 
 func main() {
-	var i int32
-	var wg sync.WaitGroup
+  var i int32
+  var wg sync.WaitGroup
 
-	wg.Add(3)
+  wg.Add(3)
 
-	go Process(&i, &wg)
-	go Process(&i, &wg)
-	go Process(&i, &wg)
+  go Process(&i, &wg)
+  go Process(&i, &wg)
+  go Process(&i, &wg)
 
-	wg.Wait()
-	fmt.Println("i:", i)
+  wg.Wait()
+  fmt.Println("i:", i)
 }
 
 func Process(variable *int32, wg *sync.WaitGroup) {
-	defer wg.Done()
+  defer wg.Done()
 
-	for i := 0; i < 2000; i++ {
-		*variable++ // The race condition makes the result NOT always equal 6000
-	}
+  for i := 0; i < 2000; i++ {
+    *variable++ // The race condition
+  }
 }
 ```
 
@@ -48,12 +48,12 @@ We run three go routines in the above example code to update the same `i` variab
 
 ```go
 func Process(variable *int32, wg *sync.WaitGroup, mu *sync.Mutex) {
-	defer wg.Done()
-	for i := 0; i < 2000; i++ {
-		mu.Lock()
-		*variable++
-		mu.Unlock()
-	}
+  defer wg.Done()
+  for i := 0; i < 2000; i++ {
+    mu.Lock()
+    *variable++
+    mu.Unlock()
+  }
 }
 ```
 
@@ -63,16 +63,16 @@ Package `sync/atomic` offers primitives for atomic memory that are low-level and
 
 ```go
 func Process(variable *int32, wg *sync.WaitGroup) {
-	defer wg.Done()
-	for i := 0; i < 2000; i++ {
-		atomic.AddInt32(variable, 1)
-	}
+  defer wg.Done()
+  for i := 0; i < 2000; i++ {
+    atomic.AddInt32(variable, 1)
+  }
 }
 ```
 
 ### Benchmark solutions
 
-Below is a benchmark test for three implementations. The logic using `atomic` is faster than `mutex lock`, around 0.33 % in this case.
+Below is a benchmark test for three implementations. The logic using `atomic` is faster than `mutex lock`, around 33.14 % in this case.
 
 | Benchmark                         | Run   | Speed           |
 | --------------------------------- | ----- | --------------- |
@@ -90,38 +90,38 @@ We build our system using Metabase as a reporting service. Metabase provides the
 package main
 
 type MetabaseConn struct {
-	Token string
+  Token string
 }
 
 func main() {
-	SyncConfig()
+  SyncConfig()
 }
 
 func ShowConnection(p *atomic.Value) {
-	for {
-		time.Sleep(2 * time.Second)
-		fmt.Println(p, p.Load())
-	}
+  for {
+    time.Sleep(2 * time.Second)
+    fmt.Println(p, p.Load())
+  }
 }
 
 func SyncConfig() {
-	c := make(chan bool)
-	s := MetabaseConn{Token: "init jwt token"}
-	p := atomic.Value{}
-	p.Store(&s)
+  c := make(chan bool)
+  s := MetabaseConn{Token: "init jwt token"}
+  p := atomic.Value{}
+  p.Store(&s)
 
-	go ShowConnection(&p)
+  go ShowConnection(&p)
 
-	go func() {
-		for {
-			time.Sleep(5 * time.Second)
-			newToken := fmt.Sprintf("updated %d", time.Now().Unix())
-			newConn := MetabaseConn{Token: newToken}
-			p.Swap(&newConn)
-		}
-	}()
+  go func() {
+    for {
+      time.Sleep(5 * time.Second)
+      newToken := fmt.Sprintf("updated %d", time.Now().Unix())
+      newConn := MetabaseConn{Token: newToken}
+      p.Swap(&newConn)
+    }
+  }()
 
-	<-c
+  <-c
 }
 ```
 
