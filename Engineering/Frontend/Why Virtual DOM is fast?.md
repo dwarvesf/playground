@@ -52,17 +52,17 @@ Now let's consider the initial Virtual DOM is the previous state and the below i
 
 When you map the steps to compare an initial virtual DOM with the new virtual DOM, you can see that a series of changes occur:
 
-- Check `ul` tag; nothing has changed, so keep it untouched
-- Check `ul` props, a new `className` prop appears, register the change in the diff object
-- Check `children`; the array of children is now empty; register the change in the diff object
-- Traverse the diff object and do a batch update to modify the actual DOM (which probably invokes `classList.add` and `removeChildren` method)
+- Check `ul` tag; nothing has changed, so keep it untouched.
+- Check `ul` props; a new `className` prop appears, register the change in the diff object.
+- Check `children`; the array of children is now empty; register the change in the diff object.
+- Traverse the diff object and do a batch update to modify the actual DOM (which probably invokes `classList.add` and `removeChildren` method).
 
 After all, building a new JavaScript object tree and then running a diffing algorithm on the two trees does not sound like it would be performant at all. Why would we need to go through all of those extra steps if, in the end, we are still making the same DOM changes? The purpose of the whole process is to limit the number of times you call a method, and the frequency with which DOM updates occur. We can see this most clearly through the following two scenarios:
 
-- Grouping all updates together and applying them in one batch is a better idea than synchronizing the updates as they occur
-- Be able to identify unnecessary changes. For example, when a state makes a change to an attribute of an element and the subsequent state change causes the removal of that element, it's easy to see that the former update is unnecessary
+- Grouping all updates together and applying them in one batch is a better idea than synchronizing the updates as they occur.
+- Be able to identify unnecessary changes. For example, when a state makes a change to an attribute of an element, and the subsequent state change causes the removal of that element, it's easy to see that the former update is unnecessary.
 
-And minimizing DOM updates is a big win in performance optimization because it reduces the number of computations that must be performed in order to render the page. Because [[Why DOM manipulation is slow? | DOM manipulation invokes complex algorithms]], "diffing" the virtual DOM is much cheaper than performing all of those calculations.
+Minimizing DOM updates is a big win in performance optimization because it reduces the number of computations that must be performed in order to render the page. Because [[Why DOM manipulation is slow? | DOM manipulation invokes complex algorithms]], "diffing" the virtual DOM is much cheaper than performing all of those calculations.
 
 An important point to note here is that we need to correct the assumption that the Virtual DOM is fast. This isn't actually the case—it's slow. However, it is faster than performing unnecessary real DOM updates.
 
