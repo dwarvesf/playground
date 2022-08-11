@@ -35,6 +35,9 @@ CSS-in-JS definitely has a learning curve, especially if you have used neither c
 - Automatically generated selectors significantly worsen code readability. This can be a huge concern for you if you regularly use your browser’s developer tools for debugging. 
 - Currently, many CSS-in-JS libraries try to provide meaningful class names based on the declaration name or component name in development mode. Some of them even let you customize the class name generator function. In production mode though, the class names still hard to read and debug.
 
+### Extra bundle size
+Adding library => more code => increase bundle size.
+
 ## Reference
 - https://en.wikipedia.org/wiki/CSS-in-JS
 - https://webdesign.tutsplus.com/articles/an-introduction-to-css-in-js-examples-pros-and-cons--cms-33574
