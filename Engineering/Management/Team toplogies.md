@@ -5,7 +5,7 @@ author: Pham Duc Thanh
 
 Many organizations experience problems with software delivery because they have an unhelpful model of what software development is really about. An obsession with “feature delivery” ignores human-related and team-related dynamics inherent in modern software development, leading to disengagement from staff, especially when there are high cognitive loads.
 
-The Team Topologies pattern enables teams to address all these points by establishing a team-first approach to software delivery based on four fundamental team types, three patterns of interaction between teams, and ways of turning difficulties in delivery into signals for the self-steering organization.
+The Team Topologies pattern enables teams to address all these points by establishing a [[Team first thinking | team-first approach]] to software delivery based on four fundamental team types, three patterns of interaction between teams, and ways of turning difficulties in delivery into signals for the self-steering organization.
 
 A software organization can be run with only four team types:
 
