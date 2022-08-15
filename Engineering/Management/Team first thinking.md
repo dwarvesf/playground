@@ -43,13 +43,13 @@ For software delivery teams, a team-first approach to cognitive load means limit
 
 With stable, long-lived teams owning specific bits of the software systems, we can begin to build a stable team API: an API for interacting with each team. The team API includes:
 
-- Code: runtime endpoints, libraries, clients, UI, etc. produced by the team
-- Versioning: how the team communicates changes to its code and services (e.g., using semantic versioning [SemVer] as a “team promise” not to break things)
-- Wiki and documentation: especially how-to guides for the software owned by the team
-- Practices and principles: the team’s preferred ways of working
-- Communication: the team’s approach to remote communication tools, such as chat tools and video conferencing
-- Work information: what the team is working on now, what’s coming next, and overall priorities in the short to medium term
-- Other: anything else that other teams need to use to interact with the team
+- **Code**: runtime endpoints, libraries, clients, UI, etc. produced by the team
+- **Versioning**: how the team communicates changes to its code and services (e.g., using semantic versioning [SemVer] as a “team promise” not to break things)
+- **Wiki and documentation**: especially how-to guides for the software owned by the team
+- **Practices and principles**: the team’s preferred ways of working
+- **Communication**: the team’s approach to remote communication tools, such as chat tools and video conferencing
+- **Work information**: what the team is working on now, what’s coming next, and overall priorities in the short to medium term
+- **Other**: anything else that other teams need to use to interact with the team
 
 ## Facilitate team interactions for Trust, Awareness, and Learning
 
