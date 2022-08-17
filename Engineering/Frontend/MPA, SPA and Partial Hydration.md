@@ -1,6 +1,7 @@
 ---
-tags: engineering, frontend
+tags: engineering/frontend, frontend
 author: Giang Ngoc Huy
+date: 2022-03-24
 ---
 
 If you've been on Twitter lately, you might've seen the term "Partial Hydration" as well as MPA going along and hyped by web advocates, wondering what about them?

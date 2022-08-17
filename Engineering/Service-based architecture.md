@@ -1,6 +1,7 @@
 ---
 tags: engineering, architecture, diagram, service, domain
 author: Nguyen Xuan Anh
+date: 2022-06-21
 ---
 
 ## What is service-based architecture?

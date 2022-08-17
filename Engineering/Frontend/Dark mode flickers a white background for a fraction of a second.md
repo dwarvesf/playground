@@ -1,6 +1,7 @@
 ---
-tags: frontend, tip, dark-mode, engineering
+tags: frontend, tip, dark-mode, engineering/frontend
 author: Pham Duc Thanh
+date: 2022-08-11
 ---
 
 The dark mode feature uses local storage to store a user's preference for future usage. The problem is that when the dark mode is enabled and the page is reloaded, there's a flicker of white background all over the page before it turns dark. This happens for a fraction of a second and doesn't look natural.
@@ -40,7 +41,7 @@ To fix this, put the scripts inside the `<head>` tag, even before the `<link>` o
         if(window.localStorage.getItem('theme') === 'dark'){
          document.documentElement.classList.add('dark');
         }
-      </script> 
+      </script>
     ...
     <link href="./light.css" />
     <link href="./dark.css" />

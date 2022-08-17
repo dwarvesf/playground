@@ -1,5 +1,6 @@
 ---
-tags: micro-frontend
+tags: micro-frontend, engineering/frontend
+date: 2021-08-27
 ---
 
 ### What is Micro-frontend?

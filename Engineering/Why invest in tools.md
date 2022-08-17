@@ -1,6 +1,7 @@
 ---
 tags: engineering, long-terms, philosophy, engineering-management
 author: Pham Duc Thanh
+date: 2022-03-21
 ---
 
 When being asked why Facebook is able to consistently produce new technology that alter the way we build software in the industry. [Lee Byron](https://leebyron.com/) noted down his thought on that statement.

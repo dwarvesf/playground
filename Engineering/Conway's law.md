@@ -1,5 +1,7 @@
 ---
 tags: engineering, principle, conway-law, engineering/management
+author: Pham Duc Thanh
+date: 2022-06-12
 ---
 
 > Any organization that designs a system will produce a **design** whose structure is a **copy of the organization's communication structure**.

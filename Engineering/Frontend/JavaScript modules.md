@@ -1,6 +1,7 @@
 ---
-tags: engineering, javascript, modules, iife, commonjs, esm
+tags: engineering/frontend, javascript, modules, iife, commonjs, esm
 author: Tran Hoang Nam
+date: 2022-06-27
 ---
 
 **Modules** have always been a part of JavaScript development and providing mechanisms for splitting JavaScript programs up into separate modules that can be imported when needed was the absolutely necessity for JavaScript developers.

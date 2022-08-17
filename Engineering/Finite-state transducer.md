@@ -1,6 +1,7 @@
 ---
 tags: engineering, state, diagram, machines, transducers
 author: Nguyen Xuan Anh
+date: 2022-06-28
 ---
 
 ## What is finite-state transducer?
