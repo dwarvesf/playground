@@ -10,7 +10,6 @@ tR += te.value;
 ## Big data
 ---
 <%*
-const dv1 = this.app.plugins.plugins["dataview"].api ;
 const te1 = await dv.queryMarkdown(`LIST FROM "" WHERE contains(tags, "big-data")`);
 tR += te1.value;
 %>
