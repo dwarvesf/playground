@@ -3,7 +3,7 @@ tags: engineering/management, enabling-team, team-topologies
 author: Pham Duc Thanh
 ---
 
-To succeed in a competitive environment, stream-aligned teams must continually learn and improve their capabilities. But with constant pressure to deliver and respond to change quickly, how can a stream-aligned team with end-to-end ownership find time to do research, read about new skills, practice them, and then integrate the new knowledge into its service delivery?
+To succeed in a competitive environment, [[Stream-aligned team | stream-aligned teams]] must continually learn and improve their capabilities. But with constant pressure to deliver and respond to change quickly, how can a stream-aligned team with end-to-end ownership find time to do research, read about new skills, practice them, and then integrate the new knowledge into its service delivery?
 
 An enabling team is composed of experts who bridge the capability gap between the stream-aligned teams and the technical (or product) domain. Such a team can provide valuable input and advice to the stream-aligned teams to help them acquire and evolve capabilities without having to invest as much effort or time in doing so.
 

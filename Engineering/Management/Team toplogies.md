@@ -9,7 +9,7 @@ The Team Topologies pattern enables teams to address all these points by establi
 
 A software organization can be run with only four team types:
 
-- **Stream aligned**: a team that is aligned with the main flow of business change, with cross-functional skills and the ability to deliver significant increments, can move forward without waiting on another team..
+- **[[Stream-aligned team | Stream aligned]]**: a team that is aligned with the main flow of business change, with cross-functional skills and the ability to deliver significant increments, can move forward without waiting on another team..
 - **Platform**: a team that develops the underlying platform supporting stream-aligned teams in delivery, thereby simplifying otherwise complex technology and reducing cognitive load for teams that use it.
 - **[[Enabling team | Enabling]]**: a team that trains and supports other teams in adopting and modifying software as part of a transition or learning period.
 - **Complicated subsystem**: a team that is responsible for a subsystem too complicated (mathematics/calculation/...) to be handled by a normal stream-aligned team or platform team. Optional and only used when necessary.
