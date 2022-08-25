@@ -4,8 +4,6 @@ author: Nguyen Xuan Anh
 date: 2022-08-24
 ---
 
-# Double-entry accounting
-
 ## Introduction
 
 Double-entry accounting states that every financial transaction has equal and opposite effects in at least two different accounts. There are 3 main accounting types associated with this: *assets*, *liabilities*, and *equity*.
