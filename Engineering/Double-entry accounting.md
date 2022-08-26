@@ -6,7 +6,7 @@ date: 2022-08-24
 
 ## Introduction
 
-Double-entry accounting states that every financial transaction has equal and opposite effects in at least two different accounts. There are 3 main accounting types associated with this: *assets*, *liabilities*, and *equity*.
+Double-entry accounting states that every financial transaction has equal and opposite effects in at least two different accounts. There are 3 main accounting types associated with this: _assets_, _liabilities_, and _equity_.
 
 Accountants have an **accounting equation**, and it is used to check whether the bookkeeper has made a mistake if it is ever out of balance. This equation is commonly used in balance sheets/statement of affairs:
 
@@ -14,8 +14,8 @@ $$
 \text{Assets} = \text{Liabilities} + \text{Equity}
 $$
 
-> [!INFO]
-> We can derive a person's net worth to be the total equity they have:
+> [!INFO] We can derive a person's net worth to be the total equity they have:
+>
 > $$
 > \text{Equity (Net Worth)} = \text{Assets} - \text{Liabilities}
 > $$
@@ -42,6 +42,7 @@ The single-entry example allows us to calculate a closing balance, but it doesn'
 | Jan 27, 2022 | Taxes                        | -300         |
 |              |                              |              |
 |              | **Closing Balance**          | 2693         |
+
 <!-- TBLFM: @>$3=sum(@I..@-1) -->
 
 ### Double-entry example
@@ -72,6 +73,7 @@ The double-entry example allows us to derive balances for our assets and liabili
 |              |                              | Assets:Bank                 |             | 15           |
 |              |                              |                             |             |              |
 |              |                              | **Total**                   | 7322        | 7322         |
+
 <!-- TBLFM: @>$4=sum(@I..@-1) -->
 <!-- TBLFM: @>$5=sum(@I..@-1) -->
 
@@ -94,10 +96,11 @@ For database design, refer to [[Database design for double-entry accounting | da
 > **"How much do I have?"**
 
 Assets refer to anything of value that an entity owns. They are represented as a **debit balance**. Assets are generally divided into 2 categories:
+
 - **Current assets**: anything that can be consumed, sold, or converted into cash within a year
-	- *Inventory*: stocked goods you intend to sell
-	- *Receivables*: payments your clients and customers owe you
-	- *Cheques*: a document that orders a bank to pay out money to a person's account
+  - _Inventory_: stocked goods you intend to sell
+  - _Receivables_: payments your clients and customers owe you
+  - _Cheques_: a document that orders a bank to pay out money to a person's account
 - **Fixed assets**: assets which are purchased for long-term use and are not likely to be converted quickly into cash within a year; these include, but are not limited to: buildings, land, machinery, vehicles, software, etc.
 
 ### Liabilities
@@ -105,18 +108,19 @@ Assets refer to anything of value that an entity owns. They are represented as a
 > **"How much do I owe?"**
 
 Liabilities refer to any debts the entity has. They are represented as a **credit balance**. Liabilities are divided into 3 categories:
+
 - **Current liabilities**: any debts that you owe within the next 12 months
-	- *Taxes*: a debt owed to a taxing authority; these include, but are not limited to income tax, sales tax, and capital gains tax
-	- *Credit cards*: a debt owed to the bank through the medium of a scannable card
-	- *Salaries and wages payable*: agreements of payment to employees as a form of debt
-	- *Short-term loans*: loans taken from an institution to be paid within the year
-	- *Overdrafts*: a deficit in a bank account allowed by a bank to draw more money than the account holds
+  - _Taxes_: a debt owed to a taxing authority; these include, but are not limited to income tax, sales tax, and capital gains tax
+  - _Credit cards_: a debt owed to the bank through the medium of a scannable card
+  - _Salaries and wages payable_: agreements of payment to employees as a form of debt
+  - _Short-term loans_: loans taken from an institution to be paid within the year
+  - _Overdrafts_: a deficit in a bank account allowed by a bank to draw more money than the account holds
 - **Non-current liabilities**: long-term debt that goes beyond 12 months
-	- *Long-term loans*:  loans with repayment terms usually longer than five years
-	- *Mortgages*: a loan to purchase or maintain real estate from a financial institution
+  - _Long-term loans_: loans with repayment terms usually longer than five years
+  - _Mortgages_: a loan to purchase or maintain real estate from a financial institution
 - **Contingent liabilities**: liabilities that may occur depending on the outcome of a future event
-	- *Lawsuits*: a claim or dispute brought to the court of law
-	- *Product warrenties*: a guarantee a manufacture or similar party regarding the condition of the product
+  - _Lawsuits_: a claim or dispute brought to the court of law
+  - _Product warrenties_: a guarantee a manufacture or similar party regarding the condition of the product
 
 ### Equity
 
@@ -127,12 +131,14 @@ If we follow the equation for net worth, assets minus liabilities would give us 
 If you have a kidney worth $262,000, then you have $262,000 in equity in that kidney. To convert the kidney (a commodity) into cash or to **credit** your bank account, you will have to **debit** your kidney by selling it.
 
 > [!INFO]
-> Types such as *expenses*, *revenue*, and *income* are considered **subcategories** of *equity*.
+>
+> Types such as _expenses_, _revenue_, and _income_ are considered **subcategories** of _equity_.
 
 There are quite a lot of subcategories of equity. This includes, but is not limited to:
-- *Expenses*: the cost of money spent on something
-- *Revenue*: money received generated from business operations
-- *Income*: money received from an agreement, either through work or investment
+
+- _Expenses_: the cost of money spent on something
+- _Revenue_: money received generated from business operations
+- _Income_: money received from an agreement, either through work or investment
 
 Equity also reflects all kinds of assets that have not been debited as assets. In this case, equity is represented as a **credit balance**.
 
@@ -142,9 +148,9 @@ Equity also reflects all kinds of assets that have not been debited as assets. I
 
 | Basis for comparison | Debit                                                 | Credit                                                  |
 | -------------------- | ----------------------------------------------------- | ------------------------------------------------------- |
-| Meaning              | Refers to a record of money flowing *into* an account | Refers to a record of money flowing *out of* an account |
+| Meaning              | Refers to a record of money flowing _into_ an account | Refers to a record of money flowing _out of_ an account |
 
-In accounting, every financial transaction of an entity is kept inside a ***journal***. The entries inside the journal are used to create a general ***ledger***. The differences between them are listed in the table below:
+In accounting, every financial transaction of an entity is kept inside a **_journal_**. The entries inside the journal are used to create a general **_ledger_**. The differences between them are listed in the table below:
 
 | Basis for comparison               | Journal                                                         | Ledger                                                                           |
 | ---------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------- |
@@ -155,8 +161,7 @@ In accounting, every financial transaction of an entity is kept inside a ***jour
 | Debit and credit                   | Can be separated by columns or by entries                       | The left side of a ledger is often the debit side while the right side is credit |
 | Narration (comment or description) | Required                                                        | Not required                                                                     |
 | Balancing                          | Balancing is not done                                           | All accounts are balanced based on the 5 main accounting types                   |
-| Granularity                        | Offers the highest granularity as all transactions are recorded | Offers little granularity in comparison as it only shows account data                                                                                |
-
+| Granularity                        | Offers the highest granularity as all transactions are recorded | Offers little granularity in comparison as it only shows account data            |
 
 ## Appendix
 
@@ -226,6 +231,7 @@ $ hledger -f transactions.journal balance -t
 ```
 
 ## Reference
+
 - https://www.freshbooks.com/hub/accounting/an-accounting-journal
 - https://bench.co/blog/accounting/double-entry-accounting/
 - https://online-accounting.net/single-entry-bookkeeping-system/
