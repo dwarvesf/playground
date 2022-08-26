@@ -1,6 +1,7 @@
 ---
 tags: engineering, domain-driven-design, DDD
 author: M.Vu Cuong(Jim)
+date: 2022-03-28
 ---
 
 ## Recap on DDD

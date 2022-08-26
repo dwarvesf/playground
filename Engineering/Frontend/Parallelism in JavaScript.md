@@ -1,6 +1,7 @@
 ---
-tags: javascript, concurrency, parallelism, engineering
+tags: javascript, concurrency, parallelism, engineering/frontend
 author: Pham Duc Thanh
+date: 2022-04-04
 ---
 
 Most of applications nowadays are created with the aim to be on the web. JavaScript has become a mainstream programming language to support the direction. However, being designed as a single-threaded language doesn't give JavaScript the power to support heavyweight applications as when we talk about image/video processing, online games or even data mining. This naturally creates a demand to support Parallelism in the language.

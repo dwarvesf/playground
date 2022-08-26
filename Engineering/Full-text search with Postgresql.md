@@ -1,6 +1,7 @@
 ---
 tags: engineering, database, SQL
 author: Hoang Nguyen
+date: 2022-07-12
 ---
 
 ## What is Full-text search?

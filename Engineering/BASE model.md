@@ -1,6 +1,7 @@
 ---
 tags: engineering, database, transaction
 author: Nguyen Xuan Anh
+date: 2022-04-18
 ---
 
 ## What is the BASE model?

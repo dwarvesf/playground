@@ -1,6 +1,7 @@
 ---
 tags: engineering, architecture, diagram
 author: Nguyen Xuan Anh
+date: 2022-04-17
 ---
 
 # What are C4 diagrams?

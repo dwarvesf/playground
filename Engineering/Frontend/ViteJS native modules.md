@@ -1,6 +1,7 @@
 ---
-tags: frontend, native-modules, vitejs, esm
+tags: frontend, native-modules, vitejs, esm, engineering/frontend
 author: Tran Hoang Nam
+date: 2022-07-04
 ---
 
 Before ES modules was supported in the browser, we have no native mechanism for authoring [[JavaScript modules]] in a modularized fashion. That is why the concept of **"bundling"** and tools like Webpack, Rollup, and Parcel exist to improve the development experience for frontend developers.

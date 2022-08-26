@@ -1,6 +1,7 @@
 ---
-tags: data, big-data, hadoop
+tags: engineering/data, big-data, hadoop
 author: Dung Ho
+date: 2022-06-12
 ---
 
 ## What is Big Data?

@@ -1,3 +1,9 @@
+---
+tags: engineering/data, big-data, hadoop
+author: Dung Ho
+date: 2022-06-15
+---
+
 ## HDFS - Why Another FileSystem?
 
 HDFS (Hadoop Distributed File System) takes care of all the storage related complexities in Hadoop. Why is there a need for another file system like HDFS?

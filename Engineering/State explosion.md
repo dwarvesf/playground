@@ -1,6 +1,7 @@
 ---
 tags: engineering, state, diagram
 author: Nguyen Xuan Anh
+date: 2022-05-22
 ---
 
 ## What is state explosion?

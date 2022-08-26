@@ -1,6 +1,7 @@
 ---
 tags: engineering, state, domain
 author: Nguyen Xuan Anh
+date: 2022-05-22
 ---
 
 _This note refers to frontend reducers, and not to be confused with other reducers like from MapReduce._

@@ -1,6 +1,7 @@
 ---
-tags: html, a11y, accessibility
+tags: html, a11y, accessibility, engineering/frontend
 author: Pham Duc Thanh
+date: 2022-06-12
 ---
 
 `inert` is a boolean HTML property that makes the browser ignore the user input events for an element, including focus events and events from assistive technologies.

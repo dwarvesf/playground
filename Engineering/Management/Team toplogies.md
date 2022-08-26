@@ -1,6 +1,7 @@
 ---
 tags: engineering/management, team-topologies, conway, enabling-team, team-design, team-structure
 author: Pham Duc Thanh
+date: 2022-08-15
 ---
 
 Many organizations experience problems with software delivery because they have an unhelpful model of what software development is really about. An obsession with “feature delivery” ignores human-related and team-related dynamics inherent in modern software development, leading to disengagement from staff, especially when there are high cognitive loads.

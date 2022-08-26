@@ -1,6 +1,7 @@
 ---
 tags: engineering, state, diagram, machines
 author: Nguyen Xuan Anh
+date: 2022-06-28
 ---
 
 ## What are finite-state automata?

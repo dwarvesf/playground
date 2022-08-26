@@ -1,6 +1,7 @@
 ---
-tags: engineering, frontend, atomic-design
+tags: engineering/frontend, frontend, atomic-design
 author: Tran Hoang Nam
+date: 2022-06-15
 ---
 
 ## Atomic design pattern
