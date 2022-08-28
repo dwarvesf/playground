@@ -34,4 +34,4 @@ Generally, stream-aligned teams require capabilities to progress work from its i
 
 ## Reference
 
-- Team Topologies: Organizing Business and Technology Teams for Fast Flow by Manuel Pais and Matthew Skelton
+- _Team Topologies: Organizing Business and Technology Teams for Fast Flow by Manuel Pais and Matthew Skelton_

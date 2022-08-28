@@ -37,7 +37,7 @@ In the context of changing requirements and technologies, teams must find creati
 
 ## Minimize Cognitive Load
 
-When establishing a team, organizations should also ensure that the cognitive load of the software is not too high. A team working with high-cognitive load systems cannot effectively own or safely evolve the software.
+When establishing a team, organizations should also ensure that the [[Cognitive load | cognitive load]] of the software is not too high. A team working with high-cognitive load systems cannot effectively own or safely evolve the software.
 
 For software delivery teams, a team-first approach to cognitive load means limiting the size of the software system that a team is expected to work with, and not overloading individual members of the team by giving them too many responsibilities at once.
 
@@ -61,4 +61,4 @@ Organizational structures that provide time and space for intercommunication and
 
 ## Reference
 
-- Team Topologies: Organizing Business and Technology Teams for Fast Flow by Manuel Pais and Matthew Skelton
+- _Team Topologies: Organizing Business and Technology Teams for Fast Flow by Manuel Pais and Matthew Skelton_
