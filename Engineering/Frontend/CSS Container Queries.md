@@ -54,7 +54,7 @@ or shorthand syntax
 Then, to query a specific container, we can use `@container` with `container-name`.
 
 ```css
-@container my-sidebar (min-width: 120px) {
+@container my-sidebar (min-width: 300px) {
   .content {
     display: none;
   }
