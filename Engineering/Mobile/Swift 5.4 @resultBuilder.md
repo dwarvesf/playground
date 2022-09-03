@@ -1,16 +1,16 @@
 ---
 tags: iOS, MacOS, Swift
 author: Phan Viet Trung
+date: 2022-08-31
 ---
 
-In the last article `How can we build a UI using Builder pattern`, we are build the UIKit components by using builder pattern. This is the second part `How can we wrap the container element using Swift builder`. Feel free to read it before we are continue on this.
-<https://github.com/dwarvesf/brain/blob/master/Engineering/Mobile/UIKit%20Builder%20pattern.md>
+The [[UIKit Builder pattern]] enables us to create and configure a UIView object. This article is part two of the series that explains how we can wrap a container element in Swift by using the builder pattern.
 
 ## How can we wrap the container elements using Swift builder?
 
 ### Function Builder
 
-Function Builders introduced in Swift 5.1 to support SwiftUI. If you heared about VStack it builded using Function Builder.
+Function Builders are used in SwiftUI to create VStacks. If you've heard about the VStack component, it was built using Function Builders.
 
 ```Swift
 VStack {
@@ -21,17 +21,15 @@ VStack {
 
 ### `@resultBuilder`
 
-Swift 5.4 make it even better with the introduce of @resultBuilder. It's not only the foundation of SwiftUI but also extend DSL to standard Swift language. You can apply it anywhere to take advantage of DSL.
+Swift 5.4 introduces @resultBuilder, a new feature that makes it even easier to use SwiftUI. This new feature also extends Swift's DSL capabilities to standard Swift language, allowing you to take advantage of DSLs in more areas of your codebase (the detail can be found [here](https://github.com/apple/swift-evolution/blob/main/proposals/0289-result-builders.md)).
 
-More details at: <https://github.com/apple/swift-evolution/blob/main/proposals/0289-result-builders.md>
-
-From now on you can easily write HTML form with Swift like this:
+From now on you can easily write HTML forms in Swift as follows:
 
 ```Swift
 HTML {
     Body {
         P { "Hello HTML" }
-        DIV { 
+        DIV {
             P{}
             P{}
             DIV{}
@@ -40,13 +38,9 @@ HTML {
 }
 ```
 
-Let extend our UIKit to write an UI in DSL style.
-In the last article we using Builder Pattern to archived UILabel().text("ABC").textColor(.red), let's add a container View to make it even better.
-UIKit have Stack View, Stack view hepling us to arrange subviews by horizontaly or vertially.
+Let's extend UIKit to write an app in a DSL style. In the [[UIKit Builder pattern|previous tutorial]], we used Builder Pattern to create `UILabel("ABC", red)`. Let's add a container View to make it even better. UIKit has Stack Views, which help us arrange subviews horizontally or vertically.
 
-Let make it
-
-From:
+Let's make it from:
 
 ```Swift
 let label = UILabel().text("ABC").backgroundColor(.red)
@@ -67,7 +61,7 @@ UIHStack {
 
 ### Turn UIKit into DSL styling
 
-Let define our base UIViewBuilder. UIViewBuilder turn DSL UIView into list of UIView.
+Let's define a DSL UIViewBuilder. A DSL UIViewBuilder turns a list of UIViews into a UIView.
 
 ```Swift
 @resultBuilder
@@ -88,12 +82,11 @@ let views = UIViewBuilder.buildBlock(UILabel(), UIImageView(), UIView())
 }
 ```
 
-**Note:** You may asking "Why is the return type is [UIView] instead of UIView ?" I will explain it later.
+**Note:** You may ask "_Why is `[UIView]` being the return type instead of UIView?_" We will discuss that later.
 
-With above UIViewBuilder we get a array of views from DSL syntax. It helping us write the code naturally without constaly write addSubview code.
+With above UIViewBuilder we get a array of views from DSL syntax. It helps us to write the code naturally without constant `addSubview` code writing.
 
-We can write in DSL style but above code look not cool at all. Let's write some popular UI
-wrapper for convenience use.
+It is possible to write in DSL style, but the above code is not pretty. Let's write some popular UI wrapper for convenience usage.
 
 ```Swift
 public class UIVStack: UIStackView {
@@ -116,7 +109,7 @@ UIStackView {
 }
 ```
 
-As you can see, using array of UIView instead of UIView we can add them to StackView instead of call `addSubView` multiple times.
+As you can see, replacing UIView with the array of UIViews allows us to add them directly to the StackView instead of calling `addSubview` multiple times.
 
 Let's add some more components.
 
@@ -142,11 +135,9 @@ public class UIZStack: UIView {
 }
 ```
 
-With the technique in the last article mix with `@resultBuilder` we can fully write UI using UIKit just like SwiftUI
+By combining the technique from the last article with @resultBuilder, we can write UI using UIKit that closely matches Swift.
 
-<p align="center">
- <img src="../../_assets/ios_uikit_builder_pattern_banner.png" width="350">
-</p>
+![[ios_uikit_builder_pattern_banner.png]]
 
 ```Swift
 UIZStack(spacing: 16) {
@@ -166,7 +157,7 @@ UIZStack(spacing: 16) {
             .textAlignment(.center)
             .color(.black60)
             .numberOfLines(0)
-        
+
         UIButton()
             .mintStyle()
             .title("Update Now")
@@ -181,10 +172,9 @@ UIZStack(spacing: 16) {
 
 ### Bonus parts
 
-**Support `if-else` and `loop`**
+#### Support `if-else` and `loop`
 
-`@resultBuilder` have static function `buildEither` helping you add `if-else` stagement to DSL as well as `builderArray` heping you add looping to DSL.
-The define just like a `buildBlock`:
+The `@resultBuilder` module has a static function named `buildEither` that can be used to add if-else statements to your DSL as well as a function named `builderArray` that can be used to loop through data. These two functions work just like `buildBlock` does:
 
 ```Swift
 public static func buildEither(first component: [UIView]) -> [UIView] {
@@ -209,9 +199,9 @@ UIHStack {
 }
 ```
 
-**Config container:**
+#### Config container
 
-Adding config to the init to settings container view.
+Adding configuration to the init method to set the container view.
 
 ```Swift
 public class UIVStack: UIStackView {

@@ -4,7 +4,9 @@ author: Phan Viet Trung
 date: 2022-08-05
 ---
 
-SwiftUI introduces a way to write UI code declaratively. Can we use the same paradigm with UIKit? We will show you how. There are two parts of this tutorial: "How can we build a UI using Builder pattern" and "How can we wrap the container element using Swift builder?" In the end of this tutorial, you will be able to build UIs like this one:
+SwiftUI introduces a way to write UI code declaratively. Can we use the same paradigm with UIKit? We will show you how.
+
+In this tutorial, we will explain how to create a user interface using the builder pattern, and [[UIKit Builder pattern|the second part]] will show how to wrap a container element in Swift builder. In the end of this tutorial, you will be able to build UIs like this one:
 
 ![[ios_uikit_builder_pattern_banner.png]]
 

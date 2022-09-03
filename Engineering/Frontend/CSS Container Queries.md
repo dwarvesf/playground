@@ -8,11 +8,11 @@ Published on August 30, 2022, Chrome 105 included Container Queries, one of the 
 
 ## The Problem With Media Queries
 
-  When we want to create a responsive layout, we usually use media queries. Media queries are a great tool for creating responsive layouts. However, they have some limitations. For example, we can't use media queries to style a component based on its parent width. We can only use media queries to style the entire page. This is a problem because we can't create responsive components. We can only create responsive pages.
+When we want to create a responsive layout, we can use media queries to adjust styles based on the screen size of the device viewing our site. However, media queries have some limitations. For example, we cannot use them to style individual components based on their parent's width; we can only adjust the entire page. This is problematic because we cannot create responsive components; only responsive pages.
 
 ## What is Container Queries?
 
-  Container Queries allows us to style elements according to the size of a container element. It is similar to a Media Queries, except it evaluates against the size of a container instead of the size of the viewport.
+The CSS3 property "container queries" allows us to style elements based on the size of a container. It is similar to a Media Query, except it evaluates against the size of a container instead of the size of the viewport.
 
 ## How to use Container Queries?
 
@@ -27,7 +27,7 @@ To query a component based on its parent width, we need to use the `container-ty
 Now we can start to query a container using `@container`. This will query the nearest containment context.
 
 ```css
-@container (min-width: 300px){
+@container (min-width: 300px) {
   .content {
     display: none;
   }
@@ -63,10 +63,13 @@ Then, to query a specific container, we can use `@container` with `container-nam
 
 ## Browser Support
 
-https://caniuse.com/?search=Container%20Queries
-  - Chrome 105
-  - Safari 15
-  - Edge 105
+Currently, Container Queries is only available in [modern browsers](https://caniuse.com/?search=Container%20Queries):
+
+- Chrome 105+
+- Safari 15+
+- Edge 105+
+
+Universal support can be achieved by using [Polyfill](https://github.com/GoogleChromeLabs/container-query-polyfill).
 
 ## Reference
 
