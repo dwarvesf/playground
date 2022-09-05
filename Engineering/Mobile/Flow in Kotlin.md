@@ -35,7 +35,7 @@ class MainViewModel: ViewModel() {
 }
 ```
 
-![Countdown.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e6ef0f04-35ef-4fc0-bdd4-0df4d58a5bc7/Countdown.png)
+![Countdown.png](https://khanhth-public-image-raw.s3.ap-southeast-1.amazonaws.com/work/brainery-assets/Countdown+(1).png)
 
 The above image shows how flow emits data every second. But when and where those data will arrive to?
 
@@ -48,15 +48,14 @@ On the downstream of flow, we have plenty of ways to collect results, like `coll
 
 **Diff between Collect and CollectLatest**
 
-You may wonder what is the different between `Collect` and `CollectLatest`. The behavior of `Collect` is that while the collector is doing his work, all emitting work will be pending. On the other hand `CollectLatest` forcing the collector to start over.
+You may wonder what is the different between `Collect` and `CollectLatest`. 
+- The behavior of `Collect` is that while the collector is doing his work, all emitting work will be pending. 
+![PendingWhileCollect.png](https://khanhth-public-image-raw.s3.ap-southeast-1.amazonaws.com/work/brainery-assets/CountDownCollectPendin+(1).png)
+- But `CollectLatest` forcing the collector to start over.
+![CollectLatest](https://khanhth-public-image-raw.s3.ap-southeast-1.amazonaws.com/work/brainery-assets/CoutnDownCollectLatest+(1).png)
 
 So using `CollectLatest` on UI observation will be the better choice to reflect the state.
         
-- `CollectLatest` instead, won’t block the flow, forcing the `collector` to start over. Use this on UI observation so that it only reflects the latest state.
-    
-    ![CoutnDownCollectLatest.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6c7183f-e5ca-4b67-b9a3-094a8abda992/CoutnDownCollectLatest.png)
-    
-
 ### Flow operations
 
 In real life, we can see a lot of different cases/problems, and not many of them can resolve in the same way. So let me introduce you to some of the operators that can help to organize data.
@@ -82,8 +81,10 @@ In real life, we can see a lot of different cases/problems, and not many of them
 
 - `Cold flow` means that this flow won’t gonna do its job until one collector starts to observe it.
     - `Flow` itself is the cold flow
+    ![ColdFlow](https://khanhth-public-image-raw.s3.ap-southeast-1.amazonaws.com/work/brainery-assets/ColdFlow+(1).png)
 - `Hot flow` On the other hand, hot flow stands for a flow that doesn’t care about the `collector`, after it `initializes`, it will start its own job and emit data for the collector when they start to `observe` or after the `emission`
     - `StateFlow` is one of the basic hot flow
+    ![HotFlow](https://khanhth-public-image-raw.s3.ap-southeast-1.amazonaws.com/work/brainery-assets/HotFlow+(1).png)
 
 ### StateFlow
 
@@ -164,8 +165,8 @@ But this will not be applicable if you have work that requires CPU-consuming com
     }
     ```
     **Notes:** This approach has a limitation, that you will end up with a lot of boilerplate code.
-- `flowOn` is an operation that allows us to change the context of this flow but is only applied to the flow before `flowOn` operator.
-    The below example will clarify what I mean. `postFlow` itself will always run on the Background thread, but emit data to a collector on the Main thread where it being collected.
+- `flowOn` is an operator that allows us to change the context of this flow but it's only applied to the flow before `flowOn` operator.
+    - The below example will clarify what I mean. `postFlow` itself will always run on the Background thread, but emit data to a collector on the Main thread where it being collected.
     ```kotlin
     val postFlow = flow {
     	// postFlow will run on IO thread
@@ -181,8 +182,7 @@ But this will not be applicable if you have work that requires CPU-consuming com
     	}
     }
     ```
-    
-    You can also apply many `flowOn` operators, to perform different jobs in different contexts.
+    - You can also apply many `flowOn` operators, to perform different jobs in different contexts.
     ```kotlin
     val userFlow = flow {
     	// network call on IO thread
@@ -217,13 +217,16 @@ For the above problem, Flow in Android supports lifecycle-aware. You can launch 
     class MyViewModel: ViewModel() {
         init {
             viewModelScope.launch {
-                // Coroutine that will be canceled when the ViewModel is cleared.
+                // Will be clear right after viewModel invalidated
+                postFlow.collect {
+                    // ...
+                }
             }
         }
     }
     ```
     
-- `lifecycleScope` is defined for each [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle) object. Any coroutine launched in this scope is canceled when the Lifecycle is destroyed. But remember to wrap the code with `repeatOnLifecycle(Lifecycle.State.STARTED)`.
+- `lifecycleScope` is defined for each [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle) object. Any coroutine launched in this scope is canceled when the Lifecycle is destroyed. But remember to wrap the code with `repeatOnLifecycle(Lifecycle.State.STARTED)` if you are programming on Android.
     
     ```kotlin
     class MyFragment: Fragment() {
