@@ -4,7 +4,7 @@ tags: management, writing, time
 author: Tran Hoang Nam
 ---
 
-**12 Most Effective Time Management Principles**
+**12 Principles Of Time Management**
 
  - Determine what is urgent
  - Don’t over commit
