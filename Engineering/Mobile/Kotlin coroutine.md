@@ -1,5 +1,5 @@
 ---
-tags: Mobile, Kotlin
+tags: mobile, kotlin, android
 author: Truong Hung Khanh
 date: 2022-09-06
 ---
@@ -62,7 +62,7 @@ Let's me explain some basic functions:
 - `launch {...}` is also a coroutine builder. Use this when you want to launch a new coroutine concurrently with the rest of the code, that can continues to work independently.
 - `delay()` is a suspend function, this work almost the same as `sleep()` function from Java. But because this is a suspend function, it does not block the current thread and allows other coroutines code to run and use the current thread.
 
-As we know [[structured concurrency]] principle, all sub-tasks cannot outlive their parent task. The example above shows exactly this when the child's task can only print count 3 times before its parent canceled. 
+As we know `structured concurrency` principle, all sub-tasks cannot outlive their parent task. The example above shows exactly this when the child's task can only print count 3 times before its parent canceled. 
 
 But if we have a very important task that has to be completed even if its parent is going to cancel, can we do that? The answer is yes, but we have to understand why child tasks is canceled in the first place.
 
@@ -166,5 +166,5 @@ fun main() {
 
 ## References
 
-[Article - Structured concurrency](https://proandroiddev.com/structured-concurrency-in-action-97c749a8f755#:~:text=%E2%80%9CStructured%20concurrency%E2%80%9D%20refers%20to%20a,scope%20of%20a%20parent%20operation.)
-[Kotlin doc - Coroutine basic](https://kotlinlang.org/docs/coroutines-basics.html)
+- [Article - Structured concurrency](https://proandroiddev.com/structured-concurrency-in-action-97c749a8f755#:~:text=%E2%80%9CStructured%20concurrency%E2%80%9D%20refers%20to%20a,scope%20of%20a%20parent%20operation.)
+- [Kotlin doc - Coroutine basic](https://kotlinlang.org/docs/coroutines-basics.html)
