@@ -1,5 +1,5 @@
 ---
-tags: engineering/software/database, finance, accounting, technique, design, database
+tags: engineering, finance, accounting, technique, design, database
 author: Nguyen Xuan Anh
 date: 2022-09-07
 ---
