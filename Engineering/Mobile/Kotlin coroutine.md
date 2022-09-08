@@ -134,7 +134,7 @@ Parent job completed
 
 ## Light-weight thread
 
-The final thing to keep in mind, coroutines are light-weight threads which means they will use fewer resources than the JVM threads. One way to check this behavior is that spamming threads and coroutines at the same time and checking with one uses more memory than the other. I have copy paste a block code from the Kotlin doc below, you can try to run it on the playground and see what happens lul.
+The final thing to keep in mind, coroutines are light-weight threads which means they will use fewer resources than the JVM threads. One way to check this behavior is to spam threads and coroutines and check check with one that uses more memory than the other. I have copy paste a block code from the Kotlin doc below, you can try to run it on the playground and see what happens lul.
 
 Try to launch 1000 coroutines:
 ```kotlin
