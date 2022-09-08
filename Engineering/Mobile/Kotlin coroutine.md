@@ -14,9 +14,10 @@ Coroutine, an instance of suspendable computation that takes a block of code and
 
 Before we dive into how we can use Coroutine in Kotlin, let me first introduce Structured concurrency, the principle of coroutine.
 
->Due to [wikipedia](https://en.wikipedia.org/wiki/Structured_concurrency), the core concept is to encapsulate the concurrent threads of execution, so that we can control the flow construct with clear entry and exit points. Also, ensure all children must be completed before exit. A scenario that proves this pattern:
+> Due to [wikipedia](https://en.wikipedia.org/wiki/Structured_concurrency), the core concept is to encapsulate the concurrent threads of execution, so that we can control the flow construct with clear entry and exit points. Also, ensure all children must be completed before exit. A scenario that proves this pattern:
 
 Let's say you want to make breakfast with fried eggs and bread. I assume that we have a total of 3 tasks that need to be done:
+
 - Frying the eggs
 - Put our bread into the toaster
 - Bring everything on a disk
@@ -58,17 +59,19 @@ Cancelling parent job
 ```
 
 Let's me explain some basic functions:
+
 - `runBlocking {...}` is a coroutine builder. It is designed to bridge the non-coroutine code of a regular `fun main()` with all coroutine code inside `runBlocking` lambda.
 - `launch {...}` is also a coroutine builder. Use this when you want to launch a new coroutine concurrently with the rest of the code, that can continues to work independently.
 - `delay()` is a suspend function, this work almost the same as `sleep()` function from Java. But because this is a suspend function, it does not block the current thread and allows other coroutines code to run and use the current thread.
 
-As we know `structured concurrency` principle, all sub-tasks cannot outlive their parent task. The example above shows exactly this when the child's task can only print count 3 times before its parent canceled. 
+As we know `structured concurrency` principle, all sub-tasks cannot outlive their parent task. The example above shows exactly this when the child's task can only print count 3 times before its parent canceled.
 
 But if we have a very important task that has to be completed even if its parent is going to cancel, can we do that? The answer is yes, but we have to understand why child tasks is canceled in the first place.
 
 ## Cancellation
 
 Not always the code inside the coroutine is canceled when its parent finish. We have two bullet points that need to be clear:
+
 - First, we are the one who chooses to continue to execute the child's task or not, even when the parent's task has been canceled
 - Second, a child's task that runs after its parent cancels is not prove our principle wrong. Because the parent task does not actually close, it will wait until it child tasks finish before the cancellation can start.
 
@@ -89,6 +92,7 @@ Below is a state machine diagram that shows every state a coroutine could have i
                  | Cancelling | --------------------------------> | Cancelled |
                  +------------+                                   +-----------+
 ```
+
 > Ref: Job states - [Kotlin document](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-job/)
 
 As you can see in the diagram, when the state is `Active` and want to transition to `Completed` it has to wait for children to complete their work before finishing. It's weire right, you may ask why example above work different with this diagram, but the truth is that parent would wait its children state all changes to `completed` before it can `completed`. The example is using one special suspend function in the code that is the `delay()` function.
@@ -96,6 +100,7 @@ As you can see in the diagram, when the state is `Active` and want to transition
 Delay function is a `suspendCancellableCoroutine`. This means during the delay, if the parent task cancellation happens, this child task also cancels itself at the same time. So the next time you want to use the build-in suspend function, make sure you read it carefully.
 
 To prove what I jsut said, consider run the following code:
+
 ```kotlin
 import kotlinx.coroutines.*
 
@@ -137,6 +142,7 @@ Parent job completed
 The final thing to keep in mind, coroutines are light-weight threads which means they will use fewer resources than the JVM threads. One way to check this behavior is to spam threads and coroutines and check check with one that uses more memory than the other. I have copy paste a block code from the Kotlin doc below, you can try to run it on the playground and see what happens lul.
 
 Try to launch 1000 coroutines:
+
 ```kotlin
 import kotlinx.coroutines.*
 
@@ -151,6 +157,7 @@ fun main() = runBlocking {
 ```
 
 Try to launch 1000 threads:
+
 ```kotlin
 import kotlin.concurrent.thread
 
