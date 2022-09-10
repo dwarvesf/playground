@@ -7,6 +7,7 @@ date: 2022-09-09
 One thing that I realized after few years doing iOS application development. iOS developer seem not handle secret management properly. Secret management is one of important aspects which we should think about when doing the software development. And while other side (like backend/frontend) have no problem with it, or they already have a common standard for doing it. in iOS world, people do it in many different ways or worst, not do it at all.
 
 There is few reasons I can think of:
+
 - Apple does not give us the good document (best practices) for handling this.
 - The sandbox mechanism on iOS, which makes reverse-engineering an application is really hard.
 
@@ -37,7 +38,7 @@ API_KEY = 6a0f0731d84afa4082031e3a72354991
 
 // Release.xcconfig
 API_KEY = d9b3c5d63229688e4ddbeff6e1a04a49
-``` 
+```
 
 ```swift
 // Environment.swift
@@ -48,7 +49,7 @@ public enum Environment {
             static let apiKey = "API_KEY"
         }
     }
-    
+
     // MARK: - Plist
     private static let infoDictionary: [String: Any] = {
         guard let dict = Bundle.main.infoDictionary else {
@@ -56,7 +57,7 @@ public enum Environment {
         }
         return dict
     }()
-    
+
     // MARK: - Plist values
     static let apiKey: String = {
         guard let url = Environment.infoDictionary[Keys.Plist.apiKey] as? String else {
