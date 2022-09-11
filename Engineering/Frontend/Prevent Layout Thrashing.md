@@ -67,7 +67,7 @@ function resizeAllParagraphsToMatchBoxWidth(paragraphs, box) {
 Open `Performance Tab` on Dev tool, slow down your CPU and click `Start Profiling`
 ![[layout-thrashing-debug.png]]
 
-Look for puple task and get info in detail
+Find purple tasks and get info in detail
 <video src="https://afarkas.github.io/layout-thrashing/material/layout-thrashing-debug.mp4" controls></video>
 
 
