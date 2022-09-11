@@ -25,7 +25,7 @@ document.body.appendChild(someBox);
 const color = getComputedStyle(someOtherBox).color;
 ```
 
-Mixing Layout Read & Layout Mutation needs to wait browser to recaculate layout & reflow to return you Layout value
+Mixing Layout Read & Layout Mutation needs to wait for browser to recalculate layout & reflow to return you Layout value
 
 ![[dont-touch-me.png]]
 
@@ -71,7 +71,7 @@ Look for puple task and get info in detail
 <video src="https://afarkas.github.io/layout-thrashing/material/layout-thrashing-debug.mp4" controls></video>
 
 
-### List of command cause Layout Thrashing we need to careful when use it
+### List of commands cause Layout Thrashing we need to be careful when using it
 
 Generally, all APIs that synchronously provide layout metrics will trigger forced reflow / layout. Read on for additional cases and details.
 
