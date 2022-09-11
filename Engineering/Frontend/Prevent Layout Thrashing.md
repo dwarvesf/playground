@@ -63,6 +63,14 @@ function resizeAllParagraphsToMatchBoxWidth(paragraphs, box) {
 }
 ```
 
+### How to debug
+Open `Performance Tab` on Dev tool, slow down your CPU and click `Start Profiling`
+![[layout-thrashing-debug.png]]
+
+Look for puple task and get info in detail
+<video src="https://afarkas.github.io/layout-thrashing/material/layout-thrashing-debug.mp4" controls></video>
+
+
 ### List of command cause Layout Thrashing we need to careful when use it
 
 Generally, all APIs that synchronously provide layout metrics will trigger forced reflow / layout. Read on for additional cases and details.
