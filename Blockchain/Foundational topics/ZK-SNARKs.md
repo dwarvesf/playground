@@ -5,7 +5,7 @@ author: Pham Ngoc Thanh
 
 Before you start, you need to have a basic understanding of zero-knowledge (ZK) and how Block works and the PoS or PoW consensus mechanism.
 
-### ZK-SMARKs?
+## ZK-SMARKs?
 
 ZK-SNARK is an acronym for Zero-Knowledge Succinct Non-Interactive Argument of Knowledge. The ZK-SNARK protocol has the following qualities:
 - Zero-knowledge: A verifier can validate the integrity of a statement without knowing anything else about the statement. The only knowledge the verifier has of the statement is whether it is true or false.
