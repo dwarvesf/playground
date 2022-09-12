@@ -1,5 +1,5 @@
 ---
-tags: engineering/frontend, frontend, html, css
+tags: engineering/frontend, frontend, html, css, animation, parallax
 author: Ngo Lap Nguyen
 date: 2022-09-10
 ---
