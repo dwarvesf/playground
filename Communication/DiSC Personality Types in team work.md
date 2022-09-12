@@ -18,7 +18,7 @@ DiSC is an acronym that stands for the four main personality profiles described 
 
 > A person primarily in this DiSC quadrant places emphasis on accomplishing results and “seeing the big picture.” They are confident, sometimes blunt, outspoken, and demanding.
 
-*Keywords: Keep distance from others, have powerful handshakes, lean forward aggressively, use direct eye contact, use controlling gestures, strong voice, quick*
+_Keywords: Keep distance from others, have powerful handshakes, lean forward aggressively, use direct eye contact, use controlling gestures, strong voice, quick_
 
 #### How to work with Red
 
@@ -37,7 +37,7 @@ DiSC is an acronym that stands for the four main personality profiles described 
 
 > A person in this DiSC quadrant places emphasis on influencing or persuading others. They tend to be enthusiastic, optimistic, open, trusting, and energetic.
 
-*Keywords: Are tactile, are relaxed and jocular, show friendly eye contact, use expressive gestures, often come close, laughter, fun, intensity, energy, tempo*
+_Keywords: Are tactile, are relaxed and jocular, show friendly eye contact, use expressive gestures, often come close, laughter, fun, intensity, energy, tempo_
 
 #### How to work with Yellow
 
@@ -58,7 +58,7 @@ DiSC is an acronym that stands for the four main personality profiles described 
 
 > A person in this DiSC quadrant places emphasis on cooperation, sincerity, loyalty, and dependability. They tend to have calm, deliberate dispositions and don’t like to be rushed.
 
-*Keywords: Are relaxed and come close, act methodically, tend to lead backward, use very friendly eye contact, prefer small-scale gestures, soft, warmth, slower pace, care about how people feel*
+_Keywords: Are relaxed and come close, act methodically, tend to lead backward, use very friendly eye contact, prefer small-scale gestures, soft, warmth, slower pace, care about how people feel_
 
 #### How to work with Green
 
@@ -73,7 +73,7 @@ DiSC is an acronym that stands for the four main personality profiles described 
 
 > A person in this DiSC quadrant places emphasis on quality and accuracy, expertise and competency. They enjoy their independence, demand the details, and often fear being wrong.
 
-*Keywords: Prefer to keep others at a distance, either stand or sit, often have closed body language, use direct eye contact, speak without gestures, restrained, subdued, controlled impression, slow*
+_Keywords: Prefer to keep others at a distance, either stand or sit, often have closed body language, use direct eye contact, speak without gestures, restrained, subdued, controlled impression, slow_
 
 #### How to work with Blue
 
