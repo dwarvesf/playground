@@ -11,6 +11,7 @@ This article demonstrates how to use CSS transforms, perspective and some scalin
 Although using Javascript will give us more flexibility on how we want to construct our parallax effect, it also comes with the cost of performance & implementation complexity. We listen to the `scroll` event & modify the DOM with the handler, triggering needless reflows and paints.
 
 For more simple use cases, with pure CSS, we can:
+
 - Avoid messing with the browser's rendering pipeline
 - Allow browsers to leverage hardware acceleration while rendering, ensuring consistent frame rates & a smooth scrolling experience
 - Combine with other CSS features (e.g. responsive)
@@ -21,57 +22,54 @@ First, let's establish some barebones markup:
 
 ```html
 <div class="parallax">
-	<div class="layer layer-1"> ... </div>
-	<div class="layer layer-2"> ... </div>
-	...
+  <div class="layer layer-1">...</div>
+  <div class="layer layer-2">...</div>
+  ...
 </div>
 ```
 
 And the basic styles:
 
 ```css
-.parallax { 
-	perspective: 1px;
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: auto;
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .layer {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-} 
-
-.layer-1 { 
-	transform: translateZ(0); 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.layer-2 { 
-	transform: translateZ(-1px); 
+.layer-1 {
+  transform: translateZ(0);
+}
+
+.layer-2 {
+  transform: translateZ(-1px);
 }
 ```
 
 The `parallax` class is where the parallax magic happens:
+
 - Defining the `height` and `perspective` style properties of an element will lock the perspective to its centre, creating a fixed origin 3D viewport.
 - Setting `overflow-y: auto` will allow the content inside the element to scroll in the usual way, but now descendant elements will be rendered relative to the fixed perspective. This is the key to creating the parallax effect.
 
 The `layer` class defines a layer of content to which the parallax effect will be applied. The `absolute` position is optional, for the sake of display. You'll see what I meant in a moment.
 
-Finally, the `layer-{{n}}`  class is used to set Z offset of the layers. If we consider the `parallax` container is a camera viewport, the Z offset will determine whether a layer is farther away, or closer to the viewport. **The farther away a layer is, the slower it'll appear to be scrolling.**
+Finally, the `layer-{{n}}` class is used to set Z offset of the layers. If we consider the `parallax` container is a camera viewport, the Z offset will determine whether a layer is farther away, or closer to the viewport. **The farther away a layer is, the slower it'll appear to be scrolling.**
 
 Check it out in the CodePen below:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wvjGRRp" data-user="ngolapnguyen" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/ngolapnguyen/pen/wvjGRRp">
-  Pure CSS Parallax</a> by Ngo Lap Nguyen (<a href="https://codepen.io/ngolapnguyen">@ngolapnguyen</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="400" style="width:100%" scrolling="no" title="Pure CSS Parallax (1) - Barebones" src="https://codepen.io/ngolapnguyen/embed/wvjGRRp?default-tab=result" frameborder="no"></iframe>
 
 ## Common practices
+
 ### Parallax with multiple sections
 
 Most parallax sites break the page into distinct sections where different effects can be applied. Here's how to do that.
@@ -81,13 +79,12 @@ First, we need a `group` element to group our layers together:
 ```html
 <div class="parallax">
   <div class="group">
-    <div class="layer layer-1"> Layer 1.1 </div>
-    <div class="layer layer-2"> Layer 1.2 </div>
-    <div class="layer layer-3"> Layer 1.3 </div>
+    <div class="layer layer-1">Layer 1.1</div>
+    <div class="layer layer-2">Layer 1.2</div>
+    <div class="layer layer-3">Layer 1.3</div>
   </div>
   ...
 </div>
-
 ```
 
 And now the styles:
@@ -109,7 +106,7 @@ True to 3D transforms, elements that are farther away from the viewport will app
 
 ```css
 .layer-2 {
-	transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
 }
 ```
 
@@ -125,18 +122,13 @@ When you are working with parallax, it can be easier to get lost among the diffe
 
 ```css
 .group {
-	transform: translate3d(700px, 0, -800px) rotateY(30deg);
+  transform: translate3d(700px, 0, -800px) rotateY(30deg);
 }
 ```
 
 You can try out all the common practices I have mentioned in the CodePen below:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XWqdOJr" data-user="ngolapnguyen" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/ngolapnguyen/pen/XWqdOJr">
-  Pure CSS Parallax (2) - With Groups</a> by Ngo Lap Nguyen (<a href="https://codepen.io/ngolapnguyen">@ngolapnguyen</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="400" style="width: 100%;" scrolling="no" title="Pure CSS Parallax (2) - Common Practices" src="https://codepen.io/ngolapnguyen/embed/XWqdOJr?default-tab=result" frameborder="no" allowfullscreen="true"></iframe>
 
 ## References
 
