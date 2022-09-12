@@ -3,7 +3,7 @@ tags: blockchain, evm, zk, zk-starks
 author: Pham Ngoc Thanh
 ---
 
-### ZK-STARKs là gì?
+### What is ZK-STARKs?
 
 Like ZK-SNARKs, ZK-STARKs demonstrate the validity of off-chain computation without revealing the input. However, ZK-STARK is considered an improvement on ZK-SNARK because of their scalability and transparency.
 - Scalable: ZK-STARK is faster than ZK-SNARK in generating and verifying evidence when witness size is larger. With STARK proofs, verification and proverb times only increase slightly as the witness grows (the times of the proverb and SNARK verifier increase linearly with witness size).

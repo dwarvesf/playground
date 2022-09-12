@@ -18,20 +18,19 @@ Zero-knowledge Rollups (ZK-rollups) is a layer 2 scaling solution that increases
 - L2 transaction is completed only when L1 accepts valid proof.
 - Transactions cannot be reversed once completed on L1.
 - Increased risk of malicious operators censoring users by denying more transactions in batches.
-- Users can actively submit transactions to the ZL-rollup contract on ethereum.
+- Users can actively submit transactions to the ZK-rollup contract on ethereum.
 
 #### How [[ZK]] works?
 
 Zero-knowledge rollups (ZK-rollups) bundle (or 'roll up') into batches that are executed off-chain. Off-chain computation reduces the amount of data that has to be posted to the blockchain. ZK-rollup operators send a summary of the changes needed to represent all transactions in a batch instead of sending each transaction individually. They also present valid evidence to prove the correctness of their changes. Valid proof that demonstrates cryptographic certainty that the proposed changes to the state of Ethereum are indeed the end result of executing all transactions in the batch.
 
-The state of the ZK-rollup is maintained by a smart contract deployed on the Ethereum mainnet. To update this status, ZK scrolling buttons must submit a valid proof for verification. This means that ZK-rollups only need to provide valid proofs to complete transactions on Ethereum instead of posting all transaction data on-chain as optimistic aggregates would.
+The state of the ZK-rollup is maintained by a smart contract deployed on the Ethereum mainnet. To update this status, ZK scrolling must submit a valid proof for verification. This means that ZK-rollups only need to provide valid proofs to complete transactions on Ethereum instead of posting all transaction data on-chain as optimistic aggregates would.
 
-- On-chain contracts: the ZK-rollup protocol is controlled by smart contracts running on Ethereum such as: the main contract stores roll-up blocks, tracks deposits, and keeps track of state updates. Another online contract (verifier contract) verifies zero-knowledge proofs submitted by block producers.
+- On-chain contracts: The ZK-rollup protocol is controlled by smart contracts running on Ethereum such as: the main contract stores roll-up blocks, tracks deposits, and keeps track of state updates. Another online contract (verifier contract) verifies zero-knowledge proofs submitted by block producers.
 - Off-chain virtual machine (VM): A separate virtual machine that processes off-chain transactions to store state, valid proofs of off-chain transactions are guaranteed by Ethereum mainnet.
-- Transactions: Use POS validator to aggregate and create rollup batch, if operator performs malicious behavior will be punished.
-- State commitments: The summary changes to a new state after executing a new set of transactions. The moderator that initiated the state transition is required to compute the new state root and submit the contract on-chain. If the valid proof associated with the batch is validated by the verifier contract, the new Merkle root becomes the ZK-rollup canonical state root.
+- Transactions: Use PoS validator to aggregate and create rollup batch, if operator performs malicious behavior will be punished.
+- State commitments: The summary changes to a new state after executing a new set of transactions. The moderator that initiated the state transition is required to compute the new state root and submit to the contract on-chain. If the valid proof associated with the batch is validated by the verifier contract, the new Merkle root becomes the ZK-rollup canonical state root.
 - Validity proofs: The new state of the ZK-rollup root submitted to the L1 contract is an update of the rollup state.
-
 
 #### How do validity proofs work in ZK-rollups?
 
@@ -88,6 +87,7 @@ Below, we have a couple tables depicting some of the high-level differences betw
 
 ![](https://i.imgur.com/zxUNEzT.png)
 Source: Matter Labs
+
 ![](https://i.imgur.com/fdBKwXp.png)
 Source: Beanstalk
 
@@ -99,14 +99,15 @@ SNARKs are estimated to require only 24% of that  gas that STARKs would require,
 - Polygon Miden
 - Poligon Hermez
 - StarkEx
+- Starknet
 - ZKSync
 - Zkyber
-- Starknet
 - Loopring
+- Aztec
 
 ### Referral
 
-- [ZK engine]()
+- [ZK rollup directory](https://www.zkrollups.xyz/)
 - [An Incomplete Guide to Rollups](https://vitalik.ca/general/2021/01/05/rollup.html)
 - [zkEVM Scroll](https://scroll.io/blog/zkEVM)
 - [Optimistic vs. ZK Rollup: Deep Dive](https://blog.matter-labs.io/optimistic-vs-zk-rollup-deep-dive-ea141e71e075)
