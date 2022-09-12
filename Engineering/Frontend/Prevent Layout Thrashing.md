@@ -34,8 +34,7 @@ Mixing Layout Read & Layout Mutation must wait for the browser to recalculate th
 
 ## How to fix
 
-SEPARATE YOUR READS FROM YOUR WRITES AND THE PROBLEM IS SOLVED
-
+We can resolve the problem by isolating your reads from your writes. The steps would be:
 - Batch Read Layout first
 - Then Mutate Layout later
 
@@ -49,7 +48,7 @@ document.body.classList.add('foo')
 document.body.appendChild(someBox)
 ```
 
-Or use library
+Or use a library such as [fastdom](https://github.com/wilsonpage/fastdom) which abstracts those steps:
 
 ```js
 import fastdom from 'fastdom'
@@ -69,18 +68,18 @@ function resizeAllParagraphsToMatchBoxWidth(paragraphs, box) {
 
 ## How to debug
 
-Open `Performance Tab` on Dev tool, slow down your CPU and click `Start Profiling` 
+Open `Performance Tab` on Dev tool, slow down your CPU, and click `Start Profiling`.
 
 ![[layout-thrashing-debug.png]]
 
-Find purple tasks and get info in detail 
+Find purple tasks and get info in detail: 
 
 
 <video src="https://afarkas.github.io/layout-thrashing/material/layout-thrashing-debug.mp4" controls></video>
 
 ## List of commands causing Layout Thrashing we need to be careful when using it
 
-Generally, all APIs that synchronously provide layout metrics will trigger forced reflow/layout. Read on https://gist.github.com/paulirish/5d52fb081b3570c81e3a for additional cases and details.
+Generally, all APIs that synchronously provide layout metrics will trigger forced reflow/layout. Check out [this gist](https://gist.github.com/paulirish/5d52fb081b3570c81e3a) for additional cases and details.
 
 
 ## Reference
