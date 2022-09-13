@@ -17,6 +17,7 @@ Before we dive into how we can use Coroutine in Kotlin, let me first introduce `
 > Due to [wikipedia](https://en.wikipedia.org/wiki/Structured_concurrency), the core concept is to encapsulate the concurrent threads of execution, so that we can control the flow construct with clear entry and exit points. Also, ensure all children must be completed before exit. A scenario that proves this pattern:
 
 Let's say you want to make breakfast with fried eggs and bread. I assume that we have a total of 3 tasks that need to be done:
+
 - Put our bread into the toaster
 - Frying the eggs
 - Bring everything on a disk
