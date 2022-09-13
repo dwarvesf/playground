@@ -20,7 +20,7 @@ Let's say you want to make breakfast with fried eggs and bread. I assume that we
 
 - Put our bread into the toaster
 - Frying the eggs
-- Bring everything on a disk
+- Bring everything on a dish
 
 While you put your bread into the toaster, you can start frying eggs while waiting. And you cannot finish breakfast until all 3 tasks are completed.
 
