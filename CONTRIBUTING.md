@@ -15,6 +15,7 @@ We'd love to accept your contributions to the project. There are just a few smal
 
 - @zlatanpham
 - @monotykamary
+- @trankhacvy
 - @duynglam
 
 4. You may merge the Pull Request in once you have the sign-off of our reviewers, or if you do not have permission to do that, you may request the reviewer to merge it for you.
