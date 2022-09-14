@@ -48,12 +48,13 @@ We aren't actually too strict on grammar or semantics in your notes. Our only re
   ---
   ```
 
-3. All notes should have metadata pertaining to the content of the note and its author:
+3. All notes should have metadata pertaining to the content of the note, its author, and date of publish:
 
 - ```md
   ---
   tags: engineering, database, transaction
   author: Nguyen Xuan Anh
+  date: 2022-08-10
   ---
   ```
 
@@ -80,3 +81,7 @@ We aren't actually too strict on grammar or semantics in your notes. Our only re
 ## Editing tools
 
 As notes are based on the markdown format, you can literally use any text editor to write down your thought. However, we started the Second Brain with [Obsidian](https://obsidian.md/) and most of us continue using it daily for note taking. We recommend you to use Obsidian too since the tool offers a robust way of linking documents together as well as providing an incredible searching experience.
+
+## Map of Content (MoC) Management
+
+If you are responsible for managing an MoC, make sure to occasionally check in on what areas of interest within a topic is worth connecting and making sure entries have their appropriate tags.
