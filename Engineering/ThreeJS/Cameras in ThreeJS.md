@@ -10,7 +10,7 @@ This article gives basic information about characteristics of the frequently use
 
 ## Most commonly used types of camera in ThreeJS
 
-You cannot use the `Camera` class directly to initialize a new camera in ThreeJS. Instead, use the `PerspectiveCamera` or `OrthographicCamera` specifically. The **perspective camera** gives information about *depth*, *distances*, etc. since it represents perspective in **real life**. On the other hand, with an **orthographic camera**, all *sizes* are projected the same way and we can easily compare them accurately.
+You cannot use the `Camera` class directly to initialize a new camera in ThreeJS. Instead, use the `PerspectiveCamera` or `OrthographicCamera` specifically. The **perspective camera** gives information about depth, distances, etc. since it represents perspective in **real life**. On the other hand, with an **orthographic camera**, all sizes are projected the same way and we can easily compare them accurately.
 
 The image below shows the object viewed in **perspective camera** (upper) and in **orthographic camera** (lower).
 
@@ -53,7 +53,7 @@ const camera = new THREE.OrthographicCamera(-2, 2, 1, -1, 1, 1000)
 scene.add(camera)
 ```
 
-In the example above, an orthographic camera is initialized with `left`, `right`, `top` and `bottom` equals -2, 2, 1 and -1 respectively. The last 2 numbers represent `near` and `far`.
+In the example above, an orthographic camera is initialized with `left`, `right`, `top` and `bottom` equal -2, 2, 1 and -1 respectively. The last 2 numbers represent `near` and `far`.
 
 Orthographic camera visualization from [r105.threejsfundamentals.org](https://r105.threejsfundamentals.org/threejs/threejs-cameras-orthographic-2-scenes.html) with [`CameraHelper`](https://threejs.org/docs/index.html?q=camera#api/en/helpers/CameraHelper):
 
