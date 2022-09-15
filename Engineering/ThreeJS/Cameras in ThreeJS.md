@@ -1,10 +1,10 @@
 ---
 tags: engineering/threejs, threejs, camera
 author: Nguyen Dinh Nam
-date: 2022-09-14
+date: 2022-09-15
 ---
 
-ThreeJS is a JavaScript 3D library that allows developers to program and describe data in 3 dimensions, and then convert them into 2 dimensions and display them on HTML Canvas. **Camera** is one of the core elements of a ThreeJS project, beside Scene, Renderer and 3D objects.
+ThreeJS is a JavaScript 3D library that allows developers to develop and describe data in 3 dimensions, and then convert them into 2 dimensions and display them on HTML Canvas. **Camera** is one of the core elements of a ThreeJS project, beside Scene, Renderer and 3D objects.
 
 This article gives basic information about characteristics of the frequently used types of camera in ThreeJS.
 
@@ -33,7 +33,7 @@ const camera = new THREE.PerspectiveCamera(45, 16 / 9, 1, 1000)
 scene.add(camera)
 ```
 
-In the example above, a perspective camera is initialized with `fov` of 45 degree, `aspect-ratio` of 16 / 9, `near` and `far` are 1 and 1000 respectively.
+In the example above, a perspective camera is initialized with `fov` of 45 degree, `aspect-ratio` of 16 / 9, `near` and `far` of 1 and 1000 respectively.
 
 Perspective camera visualization from [r105.threejsfundamentals.org](https://r105.threejsfundamentals.org/threejs/threejs-cameras-perspective-2-scenes.html) with [`CameraHelper`](https://threejs.org/docs/index.html?q=camera#api/en/helpers/CameraHelper):
 
@@ -44,7 +44,7 @@ Perspective camera visualization from [r105.threejsfundamentals.org](https://r10
 ![](https://i.imgur.com/cX1U9zI.png)
 
 Some crucial attributes:
-- **left**, **right**, **top** and **bottom**: Horizontal and vertical position of 4 vertices of the view.
+- **left**, **right**, **top** and **bottom**: Horizontal and vertical position of 4 segments of the view.
 - **near** and **far**: Same as for perspective camera.
 
 ```javascript
