@@ -56,7 +56,7 @@ In the example above, an orthographic camera is initialized with `left`, `right`
 
 Orthographic camera visualization with from [r105.threejsfundamentals.org](https://r105.threejsfundamentals.org/threejs/threejs-cameras-orthographic-2-scenes.html) with [`CameraHelper`](https://threejs.org/docs/index.html?q=camera#api/en/helpers/CameraHelper):
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="ThreeJS - Cameras - Perspective 2 views" src="https://codepen.io/nguyend-nam/embed/BaxLrWv?default-tab=result" frameborder="no" allowfullscreen="true"></iframe>
+<iframe height="400" style="width: 100%;" scrolling="no" title="ThreeJS - Cameras - Orthographic 2 views" src="https://codepen.io/nguyend-nam/embed/BaxLrWv?default-tab=result" frameborder="no" allowfullscreen="true"></iframe>
 
 ## Other types of camera
 Beside those 2 most frequently used cameras, ThreeJS also provides various options:
