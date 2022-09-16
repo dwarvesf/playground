@@ -4,6 +4,9 @@
 # OR only to exclude workspace cache
 .obsidian/workspace
 
+# exclude publish.json to avoid account conflicts
+.obsidian/publish.json
+
 # This file is used to keep track of last auto backup/pull
 .obsidian-git-data
 
