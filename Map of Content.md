@@ -6,7 +6,7 @@ It is essentially a note containing links to other notes and helps locate conten
 
 ## How we expect to manage it
 
-There should be a Map of Content for every folder topic in our brainery. In the event there are a ton of MoCs, we also intend to have an MoC for our MoCs to help readers and contributors navigate through our second brain.
+There should be a Map of Content for every folder topic in our brainery. In the event there are a ton of MoCs, we also intend to have an MoC for our MoCs to help readers and contributors navigate through our second brain and help us organize our thoughts.
 
 ## Reference
 - https://dsebastien.net/blog/2022-05-15-maps-of-content
