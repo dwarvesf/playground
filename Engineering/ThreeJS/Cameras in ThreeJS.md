@@ -14,19 +14,19 @@ You cannot use the `Camera` class directly to initialize a new camera in ThreeJS
 
 The image below shows the object viewed in **perspective camera** (upper) and in **orthographic camera** (lower).
 
-![](https://i.imgur.com/Va74b4E.png)
+![](_assets/Va74b4E.png)
 
 Place them into the **Oxyz** coordinate...
 
-![](https://i.imgur.com/uIocTAX.png)
+![](_assets/uIocTAX.png)
 
 ### Perspective camera
 
-![](https://i.imgur.com/OIpfGw7.png)
+![](_assets/OIpfGw7.png)
 
 Some crucial attributes:
 - **fov** (field of view): Camera frustum **vertical** field of view, i.e. the angle of the view in the yOz plane, in degree. The lower the number, the narrower the view.
-![](https://i.imgur.com/ZKOiIim.png)
+![](_assets/ZKOiIim.png)
 - **near** and **far**: Clipping planes at 2 points on the z axis. Note that objects with z position outside the `(near, far)` interval will **not** be displayed.
 
 ```javascript
@@ -42,7 +42,7 @@ Perspective camera visualization from [r105.threejsfundamentals.org](https://r10
 
 ### Orthographic camera
 
-![](https://i.imgur.com/cX1U9zI.png)
+![](_assets/cX1U9zI.png)
 
 Some crucial attributes:
 - **left**, **right**, **top** and **bottom**: Horizontal and vertical position of 4 segments of the view.
