@@ -1,6 +1,7 @@
 ---
 tags: blockchain, solana
 author: Tran Khac Vy
+date: 2022-06-07
 ---
 
 ## How tokens work on solana - explain for EVM developers

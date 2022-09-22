@@ -1,6 +1,7 @@
 ---
 tags: blockchain, foundational topics, PoS
 author: Pham Ngoc Thanh
+date: 2022-06-16
 ---
 
 ## The Proof of Stake
