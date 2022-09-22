@@ -13,7 +13,7 @@ date: 2022-03-17
 
 ## Why
 
-![](https://i.imgur.com/kFo8ECL.png)
+![](_assets/kFo8ECL.png)
 
 - Deno follows the standard Web API [and is leading the industry in implementing them](https://github.com/denoland/deno/pull/11941)
   - This is with the aim to make JS/TS project ideally more universal
@@ -59,7 +59,7 @@ Similar to Cloudflare Workers, Deno Deploy is a serverless deployment platform u
 
 What's really cool about Deno Deploy is that it only requires a link to your entry file to deploy, and deploy time is super fast.
 
-![](https://i.imgur.com/GygtLWs.png)
+![](_assets/GygtLWs.png)
 
 Interesting projects to follow:
 

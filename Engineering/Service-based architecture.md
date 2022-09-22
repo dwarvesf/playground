@@ -8,7 +8,7 @@ date: 2022-06-21
 
 Service-based architecture is a kind of hybrid or middle-ground architecture between microservices and a monolith and is noted as a pragmatic architecture style due to its flexibility. Like a microservice architecture, it is essentially a distributed architecture, but it doesn't come with the cost of or complexity of other distributed architectures.
 
-![service based architecture diagram](<https://imgopt.infoq.com/fit-in/1200x2400/filters:quality(80)/filters:no_upscale()/news/2016/10/service-based-architecture/en/resources/figure1.jpg>)
+![[Pasted image 20220922153254.png]]
 
 ### What are the differences between microservices, service-oriented, and service-based architectures?
 

@@ -12,7 +12,7 @@ CAP theorem, or also named Brewer's theorem (from scientist Eric Brewer), states
 - **Availability:** In a distributed data store, any and all working nodes in the system should return a valid response for any request, without exception.
 - **Partition tolerance**: This refers to tolerance for an event that causes a network or power disturbance between 2 or more nodes. Tolerance here means that the cluster should continue to work despite drops in communication between nodes.
 
-![cap theorem diagram](https://hazelcast.com/wp-content/uploads/2021/12/cap-theorem-diagram-800x753-1.png)
+![cap theorem diagram](_assets/cap_theorem_diagram.png)
 
 ## CAP theorem database types
 

@@ -8,7 +8,7 @@ date: 2022-06-28
 
 A Moore machine is a [[Finite-state automata]] where the output values are determined by only its current state. Moore machines are a restricted type of a [[Finite-state transducer]].
 
-![Moore Machine](https://d8it4huxumps7.cloudfront.net/uploads/images/61d43f4652280_block_diagram_of_moore_machine.jpg)
+![Moore Machine](_assets/Moore_Machine.jpg)
 
 ## Mathematical Model
 

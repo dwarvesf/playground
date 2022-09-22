@@ -10,7 +10,7 @@ _This note refers to frontend reducers, and not to be confused with other reduce
 
 Although reducers can be represented as a simple switch case of events, the mainstream application of reducers happens either in React's `useReducer` hook, or on Redux in which many of its qualities were motivated from Facebook's Flux architecture.
 
-![Flux architecture](https://facebook.github.io/flux/img/overview/flux-simple-f8-diagram-with-client-action-1300w.png)
+![Flux architecture](_assets/Flux_architecture.png)
 
 Along with Elm, the composition of these architectures are very similar to union types (called custom types in Elm) in algebraic data types (ADTs). Unlike normal state machines, we don't encode state in our ADT and assume the initial state of the reducer is the only state.
 
@@ -18,7 +18,7 @@ Along with Elm, the composition of these architectures are very similar to union
 
 With regard to state management, reducers are essentially single state machines. Although dispatched events doesn't change the initial state, we expect the events to progress the data "context" of the machine. We can refer this as non-deterministic states. For instance, the non-deterministic state of the counter is the incremented `value`:
 
-![Counter reducer state machine](https://erikras.com/_next/image?url=%2Fimages%2Fsingle-state-machine.png&w=1920&q=75)
+![Counter reducer state machine](_assets/Counter_reducer_state_machine.png)
 
 We will use ReScript in our example to better represent our reducers as ADTs. In ReScript, the average reducer would look as such:
 

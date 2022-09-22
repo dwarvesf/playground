@@ -13,7 +13,7 @@ C4 diagrams, or the [C4 model](https://c4model.com/), is used to diagram domain 
 3. **Component diagram** - decompose containers into components to show implementation abstractions
 4. **Code** - shows how the component is implemented as programmable code
 
-![c4-overview](https://c4model.com/img/c4-overview.png)
+![c4-overview](_assets/c4-overview.png)
 
 The C4 model isn't strictly static when it comes to these levels and also supports supplementary diagrams, such as **system landscape diagrams**, **dynamic diagrams**, **deployment diagrams**, etc.
 

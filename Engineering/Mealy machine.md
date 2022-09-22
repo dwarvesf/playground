@@ -8,7 +8,7 @@ date: 2022-06-28
 
 A Mealy machine is a [[Finite-state automata]] where the output values are determined by its current state and current inputs. It is the closest definition to a deterministic [[Finite-state transducer]].
 
-![Mealy Machine](https://d8it4huxumps7.cloudfront.net/uploads/images/61d43f837b738_mealy_machines_characteristics.jpg)
+![Mealy Machine](_assets/Mealy_Machine.jpg)
 
 ## Mathematical Model
 

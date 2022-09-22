@@ -13,7 +13,7 @@ ACID is an acronym that generally describes the necessity for consistency of a t
 - **Isolation**: Transactions cannot affect or jeopardize the integrity of other transactions by interacting with them while they are still in progress. This means a majority of transactions that are ACID should run concurrently.
 - **Durability**: After a commit of a completed transaction, we can be assured that the transaction itself will be persisted in the event of a network partition or a power outage. _This does not assume or take in consideration single-upset events._
 
-![acid acronym diagram](https://phoenixnap.com/kb/wp-content/uploads/2021/04/acid-acronym.png)
+![acid acronym diagram](_assets/acid_acronym_diagram.png)
 
 ## Why use ACID?
 

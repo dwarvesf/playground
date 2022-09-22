@@ -20,6 +20,7 @@ Separating nested finite states into individual states that can be progressed wi
 
 ![Parallel state machine](https://statecharts.dev/valid-invalid-enabled-disabled-changed-unchanged-parallel.svg)
 
+
 ### Hierarchical states
 
 Reorganizing nested finite states into a hierarchy, such that the finite state of a child state machine is dependent on the transition between the parent and child machines:
@@ -30,7 +31,7 @@ Reorganizing nested finite states into a hierarchy, such that the finite state o
 
 Guards here serve as a pre-condition to a transition, which essentially prevents a transition from occurring based on a condition:
 
-![[Pasted image 20220522163854.png]] ![Guard conditions](https://statecharts.dev/valid-invalid-enabled-disabled-changed-unchanged-parallel-guarded.svg)
+![Guard conditions](https://statecharts.dev/valid-invalid-enabled-disabled-changed-unchanged-parallel-guarded.svg)
 
 #### Reference
 
