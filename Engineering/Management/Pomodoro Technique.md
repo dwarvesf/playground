@@ -33,7 +33,7 @@ You can also do it the canonical way:
 3. Once a pomodoro is set, it must ring. The pomodoro is an indivisible unit of time and can not be broken, especially not to check incoming emails, team chats, or text messages. Any ideas, tasks, or requests that come up should be taken note of to come back to later. A digital task manager like Todoist is a great place for these, but pen and paper will do too.
 
 #### Why does it useful?
-The Pomodoro technique is extremely efficient because it allows you to properly manage your time and work on a subject without interruptions. It is also advantageous since it assists you in becoming more disciplined and thinking about your task. This method is intended to reduce multitasking and boost concentration. Multitasking is far more difficult than it appears, and it leads to distraction and tiredness. The Pomodoro method is a simple and efficient strategy that helps you to focus on one job at a time.
+The arbitrary silliness of using a tomato as a stand-in for units of time belies the Pomodoro Technique's serious effectiveness when it comes to helping people get things done.
 
 #### Reference
 
