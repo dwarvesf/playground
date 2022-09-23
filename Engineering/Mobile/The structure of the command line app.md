@@ -1,22 +1,22 @@
 ---
-tags: iOS, MacOS, Swift, engineering/mobile
+tags: iOS, MacOS, Swift, engineering/mobile, cli
 author: Phan Viet Trung
-date: 2022-09-018
+date: 2022-09-18
 ---
 
 # How to create an XCode build tools with Swift
 
-As a developer, we are using command line tools(app) frequently, like a simple task such as: navigation between directories with `cd /Desktop`, make a new folder with `mkdir newfolder` , delete files with `rm -f filename` to friendly GIT commands: `git checkout master` `git pull`. Command line tools is easy to use, very lite weight and running fast (by bypass user interface).
+As a developer, we are using command line tool apps frequently, like for simple tasks such as: navigation between directories with `cd /Desktop`, making a new folder with `mkdir newfolder` , deleting files with `rm -f filename` - as well as friendly GIT commands: `git checkout master`,  `git pull`, etc. Command line tools are easy to use, very lightweight and run very fast, by avoiding to use a full user interface.
 
-Bunch of them build in in your machine. You can easly to find them at following paths: `/usr/bin` and `/usr/local/bin`
+A lot of them are built directly in your machine. You can easly find them in the following paths: `/usr/bin` and `/usr/local/bin`
 
-Command line tools are powerful and flexible. Not only using it directly in `Terminal` we can also embed it to support automation task, create build tools, release tools (like Jenkin, Fastlane...) or wrap it to use with any language and create a friendly user interface (GitHuh Desktop, Source tree...). The limitation of command line tools is just your imagnation.
+Command line tools are powerful and flexible. Not only can we use it directly in the `Terminal`, we can also embed it to support automation tasks, create build tools, release tools (like Jenkin, Fastlane...), or wrap it to use with any language and create friendly user interfaces (e.g: GitHub Desktop, Source tree...). The limitation of command line tools is just your imagination.
 
-In the end of this serial, the sample CommandLine tools can automaticaly convert all assert catalog in the Xcode project to Swift file to eliminated all typing error, get free benefits of SDK auto completion and take advantage of Compiler to safety check all assert at the compile time.
+This is an introductory part in a series of notes regarding CommandLine tools. At the end of this series, we will have sample CommandLine tools that can automatically convert all assert catalogs in the Xcode project to a Swift file to eliminate typing errors, get free benefits of SDK auto completion, and take advantage of the Compiler to safety check all asserts at compile time.
 
-Not only apply in XCode, the SwiftCLI can using in anywhere by mixing with `shell` script.
+Not only applicable to XCode, the SwiftCLI can be used anywhere by mixing in a `shell` script.
 
-In this serial of `Command line tools` brainery we go though three main topics:
+In this series of `Command line tools`, we cover through three main topics:
 
     1. The structure of the CommandLine tool app.
     2. Build a CommandLine app using Swift.
@@ -30,32 +30,32 @@ Ex: `git push origin master -f`
 
 ### Command
 
-`command` is the begin to start a CLI command, we also call it main command (because we have subcommand and default command later). Think it like the way we open an app.
+`command` is the beginning or start of a CLI command, we also call it the main command, because we have a subcommand and default command later. Think it like the way we open an app.
 
-Ex: `git, cd, ls, mkdir` are very popular command.
+Ex: `git, cd, ls, mkdir` are very popular commands.
 
-_Note: Somewhere may call main command is `app` and subcommand is `command`_
+_Note: Somewhere may call the main command as `app` and subcommand as `command`_
 
-### Argruments
+### Arguments
 
-`arguments` are using to parse data to commandline app.
+`arguments` are used to pass data to commandline app.
 
-`command agr1 agr2`
+`command arg1 arg2`
 
-The position of agruments is master, we can't change it.
+The position of arguments are not arbitrary and we cannot change it.
 
 Ex: `adb push /User/Download/sample.ipk /installs`
 
-The Android NDK adb push sample packge from `/User/Download` folder to device `/installs` folder. You can't swap position of args.
+The Android NDK `adb push` populates a sample package from the `/User/Download` folder to the device `/installs` folder. You can't swap position of args here.
 
-They are may required or not. If not the default value will be apply.
+They may or not be required. If not, a default value will be applied.
 
 Ex: We are in master branch, default remote is origin and run:
 
- `git fetch` => fetch default remote origin branch, it equal with:
+`git fetch` => fetch default remote origin branch, it equal with:
 `git fetch origin` fetch the remote origin (master) branch.
 
-In the example above the arg `origin` is not required and it auto set base on current checkout branch.
+In this example, the above argument `origin` is not required and is automatically set based on the current checkout branch.
 
 ### Options
 
@@ -63,13 +63,13 @@ In the example above the arg `origin` is not required and it auto set base on cu
 
 `Options` are generally preceded by a hyphen (-), and for most commands, more than one option can be strung together.
 
-`Options` position is not importance.
+`Options` position is not important.
 
 If the parameter is required, using `Arguments` instead.
 
 `command -[option][option][option]`
 
-Ex:```git commit --message "commit message"```
+Ex: ```git commit --message "commit message"```
 
 `--message` is the key and `"commit message"` is the value.
 
@@ -81,39 +81,40 @@ Ex: `git push -f`. `-f` is the optional to tell we want force push, ignore and r
 
 ### Long and sort options
 
-Unlike `Agruments` using position to determite what agruments is it, the position of `Optional` is not master, we are using 'Key' to filter what is the type of Option, hence the name may long to type.
+Unlike `Arguments` using its position to determine what the argument is intended for, the position of `Optional` does not matter. We use 'Key' to filter the type of Option, hence the name may be long to type.
 
-To quick and easy to type we can add a sort version of 'Key'
+To quick and easy to type we can add a shorter version of the 'Key' with Flags
 
-Ex: `git push --force` | `git push -f`,
-`npm install --help`
+Ex: 
+- `git push --force` or `git push -f`,
+- `npm install --help`
 
-Here we can see many forms of `--help` flag like: `-h, -?, -H`, that is the sort version of `--help`
+Here we can see many forms of `--help` flag like: `-h, -?, -H`, that is the shorter version of `--help`.
 
 ### The Subcommands
 
-The CommanLine tool app usually have many feature, to easy to use and seprated them we're using subcommands to seprated it.
+The CommandLine tool app usually have many features, is easy to use, and especially uses subcommands to separate intent.
 
-A subcommand is passed follow the main command. It have it own set of `Option(s)` and `Flag(s)`.
+A subcommand is passed following the main command. It has its own set of `Option(s)` and `Flag(s)`.
 
 Ex:
-`git checkout`
-`git commit`
+- `git checkout`
+- `git commit`
 
-`checkout` and `commit` are two commond subcommands of git.
+`checkout` and `commit` are two subcommands of the main command `git`.
 
-The subcommand `commit` have an `optional` message `-m` (`git commit -m "Hello"`) that `checkout` doesn't have. That is they own `Optionals` and `Flags`
+The subcommand `commit` has an `optional` message flag `-m` (`git commit -m "Hello"`), whereas `checkout` does not have this. That is they their own respective `Options` and `Flags`.
 
-Using subcommand not only easy to use, easy to read, but also helping us easy to learn how to use it with the `--help` flags instead of print all the help of the app and lookup in the very long text.
+Using subcommands are not only easy to use and read, but also helps us to easily learn how to use it with through relative `--help` flags instead of printing the entire manual and having us to lookup very long texts.
 
-You going to learn about `Help` command and flag later.
+The `Help` command and related flags will be covered later.
 
 ### The default command
 
-The default command is the command call when you parse nothing to the the app
+The default command is the command called when you pass nothing to the app.
 
 Ex: `git`
-will print out the help which is equal with `git help`. `help` is very poppular default command for many CLI app.
+will print out the help which is equivalent with `git help`. `help` is very popular default command for many CLI app.
 
 ```shell
 git                                                                                                                            [20:13:35]
@@ -124,12 +125,12 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
 
 ### The `help` command/flags for documentation
 
-The lack of user interface required some guild on how to use the command line app.
+The lack of a user interface means we require some guide on how to use the command line app.
 There are 2 types of help: the subcommand and the flag.
 
 **[command `help`]**
 
-This `help` subcommand usually using when you begin with a new CLI app. It will print out the details how to use the app, all the commands, subcommands, options, flags.
+This `help` subcommand usually used when you start out with a new CLI app. It will print out details on how to use the app, all the commands, subcommands, options, and flags.
 
 Ex: `git help`
 
@@ -152,7 +153,7 @@ start a working area (see also: git help tutorial)
 
 **[command [subcommand] [option] `-h`]**
 
-The `--help` `-h` `-?` or `-H` flags depend on app like `git checkout -h` provice the help for Subcommand/Options. Those flags print out the guild for related command/optional only. It's save you from digging in the whole long documents of the main app.
+The `--help` `-h` `-?` or `-H` flags depends on the app, like `git checkout -h`, to provide the help as a Subcommand/Options. These flags print out the guide for the related command/optional only. It's to save you from digging in the whole manual of the main app.
 
 When you type in the wrong command, option, flag, the help may also automatically print out to show us how to use related function.
 
@@ -175,7 +176,7 @@ Commit message options
 ............
 ```
 
-_Note: The include of `help`  does not required but we're highly recommend to have it in your CLI app._
+_Note: The inclusion of `help`  is not required, but is highly recommended to have it in your CLI app._
 
 #### Reference
 
