@@ -35,6 +35,8 @@ You can also do it the canonical way:
 #### Why does it useful?
 The arbitrary silliness of using a tomato as a stand-in for units of time belies the Pomodoro Technique's serious effectiveness when it comes to helping people get things done.
 
+The pomodoro approach urges you to do precisely that: break down your huge activities, projects, or ambitions into something you only have to perform for the next 25 minutes. It keeps you focused on the next task at hand rather than becoming overwhelmed by the vastness of what you're undertaking. Don't be concerned about the outcome; instead, take it one pomodoro at a time.
+
 #### Reference
 
 Wikipedia Pomodoro_Technique [Link](https://en.wikipedia.org/wiki/Pomodoro_Technique).
