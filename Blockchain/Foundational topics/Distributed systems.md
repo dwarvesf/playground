@@ -1,9 +1,10 @@
 ---
 tags: blockchain, foundational-topics, distributed-systems
 author: Pham Ngoc Thanh
+date: 2022-06-16
 ---
 
-![](https://blockruption.com/wp-content/uploads/2019/04/blockruption-blockchain-300h.png)
+![](_assets/blockruption-blockchain-300h.png)
 
 ## Distributed systems on blockchain
 
@@ -41,7 +42,7 @@ A computer network is also a physical product and so problems can also occur. A 
 
 ## Distributed systems in blockchain
 
-![](https://i.imgur.com/c7XYHH1.png) Blockchain is a distributed ledger, which simply means that a ledger is spread across the network among all peers (nodes) in the network. Every node has a copy of the Blockchain and once a block reaches a certain number of approved transactions then a new block is formed
+![](_assets/c7XYHH1.png) Blockchain is a distributed ledger, which simply means that a ledger is spread across the network among all peers (nodes) in the network. Every node has a copy of the Blockchain and once a block reaches a certain number of approved transactions then a new block is formed
 
 Any computer can join the blockchain network and become a validator by connecting to the internet and launching applications. The difference is that to become a node on the network, a computer needs to meet certain requirements in terms of connection speed, storage speed, and storage space. For the current bitcoin network, due to too many miners participating in the operation, the network requires a huge amount of computing power, If you want to participate in the network you need to run the service through the mines to contribute strength.
 

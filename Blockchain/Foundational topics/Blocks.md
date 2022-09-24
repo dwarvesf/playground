@@ -1,17 +1,18 @@
 ---
 tags: blockchain, foundational topics
 author: Pham Ngoc Thanh
+date: 2022-06-16
 ---
 
 ### Blocks
 
-![](https://i.imgur.com/LZRYlGx.png)
+![](_assets/LZRYlGx.png)
 
 ## 1. Define block in the blockchain
 
 A block is thus a permanent store of records that, once written, cannot be altered or removed. A Block has a limited size and transaction to avoid All Block are verified on the blockchain by all nodes and stored on the blockchain Block data are batches of transactions with a hash of the previous block in the chain. This links blocks together (in a chain) because hashes are cryptographically derived from the block data. This prevention fraud, because one change in any block in history would invalidate all the following blocks as all subsequent hashes would change and everyone running the blockchain would notice.
 
-![](https://i.imgur.com/sVIhd1p.png)
+![](_assets/sVIhd1p.png)
 
 ## 2. Block data
 
@@ -48,7 +49,7 @@ Block explorers provide information about uncle blocks like:
 - Who mined it.
 - The ETH reward.
 
-![](https://i.imgur.com/eqHPGHW.png)
+![](_assets/eqHPGHW.png)
 
 ## 3. Block Time
 
@@ -64,7 +65,7 @@ A final important note is that blocks themselves are bounded in size. Each block
 
 Mining is the term used for solving the number that is the nonce, the only number that can be changed in a block header. It is also the process the cryptocurrency's network uses if proof-of-work is used in the protocol.
 
-![](https://i.imgur.com/qI5JTRd.png)
+![](_assets/qI5JTRd.png.jpg)
 
 Cryptocurrency mining is commonly thought to be a complex mathematical problem; it is actually a random number generated through hashing. Hashing is the process of encrypting information using the encryption method a cryptocurrency uses. For example, Bitcoin uses SHA256 for its encryption algorithm. For a miner to generate the "winning" number, the mining program must use SHA 256 to hash random numbers and place them into the nonce to see if it is a match.
 

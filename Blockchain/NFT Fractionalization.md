@@ -12,7 +12,7 @@ author: Tran Khac Vy
 
 To break this NFT into fractions, it must first be locked in a smart contract, which will split the ERC-721 token into multiple ERC-20 tokens as per the instructions the NFT owner has given. The owner specifies everything, from the number of ERC-20 tokens to be created, to their prices, to the metadata to be used, to any other property they deem important. Each fraction or ERC-20 token created represents partial ownership of the NFT. The fractions can then be put up for sale at a fixed price for a particular time or until they get sold out.
 
-![](https://i.imgur.com/Y8tFCaq.png)
+![](_assets/Y8tFCaq.png)
 
 ## Benefits of fractional NFT
 

@@ -1,6 +1,7 @@
 ---
 tags: blockchain, foundational topics, PoS
 author: Pham Ngoc Thanh
+date: 2022-06-16
 ---
 
 ## The Proof of Stake
@@ -13,7 +14,7 @@ PoS indicates that a person can mine or confirm block transactions according to 
 
 The first cryptocurrency to adopt the PoS method was Peercoin. Nxt, Blackcoin and then ShadowCoin.
 
-![](https://i.imgur.com/JOUVtNM.png)
+![](_assets/JOUVtNM.png.jpg)
 
 ## How proof of stake works
 
@@ -31,7 +32,7 @@ PoS seeks to solve the problem by reducing mining power to the percentage of coi
 
 #### Compare PoW and PoS
 
-![](https://i.imgur.com/XiUwh4m.png)
+![](_assets/XiUwh4m.png.jpg)
 
 ## About security
 

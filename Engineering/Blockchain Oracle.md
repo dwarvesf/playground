@@ -12,7 +12,7 @@ Blockchains have a fundamental limitation: they cannot natively communicate with
 
 A blockchain oracle is a third-party service that connects smart contracts with the outside world, primarily to feed information in about the world around, but the reverse is also true.
 
-![ins and outs of the blockchain ecosystem](https://i.imgur.com/JS9ezGw.png) _Blockchain oracles connect blockchains to inputs and outputs of the real world (Image source: [Chainlink](https://chain.link/))_
+![ins and outs of the blockchain ecosystem](_assets/ins_and_outs_of_the_blockchain_ecosystem.png) _Blockchain oracles connect blockchains to inputs and outputs of the real world (Image source: [Chainlink](https://chain.link/))_
 
 ## Types of blockchain oracles
 
