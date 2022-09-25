@@ -4,7 +4,7 @@ author: Phan Viet Trung
 date: 2022-09-18
 ---
 
-# How to create an XCode build tools with Swift
+## How to create an XCode build tools with Swift
 
 As a developer, we are using command line tool apps frequently, like for simple tasks such as: navigation between directories with `cd /Desktop`, making a new folder with `mkdir newfolder` , deleting files with `rm -f filename` - as well as friendly GIT commands: `git checkout master`,  `git pull`, etc. Command line tools are easy to use, very lightweight and run very fast, by avoiding to use a full user interface.
 
@@ -178,6 +178,6 @@ Commit message options
 
 _Note: The inclusion of `help`  is not required, but is highly recommended to have it in your CLI app._
 
-#### Reference
+## Reference
 
 - <https://dev.to/paulasantamaria/command-line-interfaces-structure-syntax-2533>
