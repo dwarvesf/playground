@@ -2,7 +2,9 @@
 tags: management, time, pomodoro
 author: Tran Hoang Nam
 ---
+
 ## Pomodoro Technique
+
 ### What is Pomodoro Technique?
 
 The Pomodoro Technique is a time-management philosophy that aims to give the user maximum focus and creative freshness, enabling them to finish projects more quickly and with less mental exhaustion.
@@ -27,11 +29,11 @@ You can also do it the canonical way:
 2. Small tasks go together. Any tasks that will take less than one Pomodoro should be combined with other simple tasks. For example, "write rent check," "set vet appointment," and "read Pomodoro article" could go together in one session.
 3. Once a pomodoro is set, it must ring. The pomodoro is an indivisible unit of time and can not be broken, especially not to check incoming emails, team chats, or text messages. Any ideas, tasks, or requests that come up should be taken note of to come back to later. A digital task manager like Todoist is a great place for these, but pen and paper will do too.
 
-### Why does it useful?
+### Why is it useful?
 The arbitrary silliness of using a tomato as a stand-in for units of time belies the Pomodoro Technique's serious effectiveness when it comes to helping people get things done.
 
 The pomodoro approach urges you to do precisely that: break down your huge activities, projects, or ambitions into something you only have to perform for the next 25 minutes. It keeps you focused on the next task at hand rather than becoming overwhelmed by the vastness of what you're undertaking. Don't be concerned about the outcome; instead, take it one pomodoro at a time.
 
 ## Reference
 
-Wikipedia Pomodoro_Technique [Link](https://en.wikipedia.org/wiki/Pomodoro_Technique).
+- Wikipedia Pomodoro_Technique [Link](https://en.wikipedia.org/wiki/Pomodoro_Technique).
