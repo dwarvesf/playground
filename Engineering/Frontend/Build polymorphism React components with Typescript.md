@@ -1,3 +1,9 @@
+---
+tags: frontend, polymorphism component, reactjs, typescript, engineering/frontend
+author: Tran khac Vy
+date: 2022-09-26
+---
+
 Let's say we want to create a `Text` component with React and Typescript. A basic implementation could look like:
 
 ```typescript
