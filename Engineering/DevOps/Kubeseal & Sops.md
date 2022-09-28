@@ -12,9 +12,7 @@ date: 2022-09-28
 
 ## How it works
 
-<p align="center">
-  <img src="../../_assets/kubeseal_&_sops.png" alt="drawing" width="1000" />
-</p>
+![[_assets/kubeseal_&_sops.png|1000]]
 
 - Source code repo: contains secret was encrypted by `sops`
 - Github action: use `sops` to decrypt secret and `kubeseal` to seal secret and push it to infrastructure repo
