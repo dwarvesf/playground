@@ -12,7 +12,7 @@ date: 2022-09-28
 
 ## How it works
 
-![[_assets/kubeseal_&_sops.png|1000]]
+![[_assets/kubeseal_&_sops.png]]
 
 - Source code repo: contains secret was encrypted by `sops`
 - Github action: use `sops` to decrypt secret and `kubeseal` to seal secret and push it to infrastructure repo
