@@ -204,8 +204,8 @@ type PropWithAs<C extends React.ElementType, P = {}> = P & AsProp<C>
 export type PolymorphicComponentProps<
   C extends React.ElementType,
   Props = {} // adding one more generic type
-> = PropWithAs &
-  Omit<React.ComponentPropsWithoutRef<C>, keyof PropWithAs>;
+> = PropWithAs<C, Props> &
+  Omit<React.ComponentPropsWithoutRef<C>, keyof PropWithAs<C, Props>>;
 
 ```
 
