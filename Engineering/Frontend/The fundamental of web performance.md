@@ -1,7 +1,7 @@
 ---
 tags: engineering/frontend, frontend, frontend/performance, performance, fundamental
 author: Pham Duc Thanh
-date: 2022-02-10
+date: 2022-10-02
 ---
 
 The key to improving your website speed is to understand where the bottlenecks are, and how much time each step takes. When we talk about web performance basically we talk about either the two aspects: network latency and browser rendering.
