@@ -1,8 +1,9 @@
 ---
-tags: engineering
+tags: engineering, quality, quality-assurance
 author: Ngo Trong Khoi
 date: 2022-10-04
 ---
+
 ## Definition of Software Quality Assurance
 `Software Quality` is the degree of conformance to explicit or implicit requirements and expectations. This leads to 2 levels of Software Quality:
 - Functional: the product’s compliance with functional (explicit) requirements and design specifications. This aspect focuses on the practical use of software, from the point of view of the user: its features, performance, ease of use, absence of defects.
