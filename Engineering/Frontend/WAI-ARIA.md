@@ -11,10 +11,12 @@ Web Accessibility Initiative’s Accessible Rich Internet Applications or simply
 ## What is WAI-ARIA?
 Before semantic elements like `<nav>` or `<footer>` were introduced that define specific features of a web page, some developers would rely on JavaScript libraries that generate a bunch of **nested `<div>`s**, then styled them with CSS and controlled with JavaScript. 
 
-The website still works fine and behaves normally. The problem comes when the site is used by a user dependent on assistive technologies, tools that help users with disabilities interact with websites (by speaking the content or information out loud, zoom into the content at the cursor position etc.). If those tools cannot make any sense of what the components are since no semantics were provided, they cannot assist their users. WAI-ARIA provides 3 main features: [**Roles**](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles), [**States** and **Properties**](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes) to solve this problem, giving an opportunity to add attributes to content and components that make them **meaningful** and enhance **accessibility**.
+The website still works fine and behaves normally. The problem comes when the site is used by a user dependent on assistive technologies, tools that help users with disabilities interact with websites (by speaking the content or information out loud, zoom into the content at the cursor position etc.). If those tools cannot make any sense of what the components are since no semantics were provided, they cannot assist their users. WAI-ARIA provides 3 main features: **Roles**, **States** and **Properties** to solve this problem, giving an opportunity to add attributes to content and components that make them **meaningful** and enhance **accessibility**.
 
 ### Roles:
 WAI-ARIA roles define **what that HTML is or does**, add the required additional information in cases the markup does not provide the required role. If we write `<a role="button">`, the screen reader will recognize it as a button. You can also use roles to describe sections on a web page such as `navigation`, `main` or `banners` etc.
+
+> Detailed documentation about **WAI-ARIA Roles** from MDN [[here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)]
 
 ```javascript
 <ul role="menu">
@@ -28,6 +30,8 @@ We can have `button`s, `tab`s,... representing widget roles working as part of l
 
 ### Properties:
 Represent the **data value associated** with the object. When combined with roles, the user agent can supply the assistive technologies with user interface information to convey to the user at any time. Properties are **less** likely to change. `aria-label`, `aria-required` and `aria-describedby` are some instances for WAI-ARIA properties.
+
+> Detailed documentation about **WAI-ARIA States & Properties** from MDN [[here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes)]
 
 ```javascript
 <form>
@@ -57,13 +61,15 @@ Below is a small demonstration, you can add this [Screen Reader extension](https
 <iframe height="400" style="width: 100%;" scrolling="no" title="WAI-ARIA" src="https://codepen.io/nguyend-nam/embed/XWqZPPE?default-tab=result" frameborder="no" allowfullscreen="true"></iframe>
 
 ## Why use WAI-ARIA?
-Note that WAI-ARIA attributes **do not** change the behavior of the supplied component, they don't affect anything about the web page. The difference is that the [browser's accessibility APIs](https://wiki.mozilla.org/Accessibility/WebAccessibilityAPI) will expose that information and the assistive technologies can rely on that information to enhance users' accessibility.
+Note that WAI-ARIA attributes **do not** change the behavior of the supplied component, they do not affect anything about the web page. The difference is that the [browser's accessibility APIs](https://wiki.mozilla.org/Accessibility/WebAccessibilityAPI) will expose that information and the assistive technologies can rely on that information to enhance users' accessibility.
 
 WAI-ARIA will become handy in some cases as listed below:
 - WAI-ARIA roles are useful when defining specific **regions on a web page** (e.g. banner, navigation, main,...).
 ![](https://i.imgur.com/R1s3rBm.jpg)
 
 - `aria-live` can inform screen reader users when a component is **dynamically updated**.
+<iframe height="400" style="width: 100%;" scrolling="no" title="WAI-ARIA" src="https://codepen.io/nguyend-nam/embed/WNJKEvy?default-tab=result" frameborder="no" allowfullscreen="true"></iframe>
+
 - Strong support **keyboard users**: some HTML elements already have built-in keyboard accessibility (e.g. `<buttons>`, `<inputs>`,... where users can navigate to using tab key), but some need JavaScript along with to do that. WAI-ARIA provides `tabindex` attribute to allow focusing on those elements.
 - **Improve accessibility** of non-semantic components: as modern web pages are getting more and more complex, UI components might have a bunch of nested `<div>`s inside. WAI-ARIA helps cover that with roles (e.g. button, tablist), it also improves functionality (e.g. `aria-required`).
 
