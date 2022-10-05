@@ -4,41 +4,45 @@ author: Nguyen Dinh Nam
 date: 2022-09-30
 ---
 
-Since modern websites and applications contain huge amounts of dynamic content and complex components with no semantics to describe what they mean, users with **no mouse** equiped or those dependent on technologies such as **[Screen Reader](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn/related?hl=en)** might not be able to interact with those components.
+Since modern websites and applications contain huge amounts of dynamic content and complex components with no semantics to describe what they mean, users with disabilities, those dependent on **assistive technologies** such as **[Screen Reader](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn/related?hl=en)**, text-to-speech or screen magnification tools might suffer to interact with those components.
 
 Web Accessibility Initiative’s Accessible Rich Internet Applications or simply **WAI-ARIA** is a technology that can help with such problems.
 
 ## What is WAI-ARIA?
 Before semantic elements like `<nav>` or `<footer>` were introduced that define specific features of a web page, some developers would rely on JavaScript libraries that generate a bunch of **nested `<div>`s**, then styled them with CSS and controlled with JavaScript. 
 
-Even though they work fine, screen readers cannot make any sense of what those components are, no semantics provided so that they can assist their users. WAI-ARIA has **roles**, **states** and **properties** to solve this problem, giving an opportunity to add attributes to content and components that make them **meaningful** and enhance **accessibility**.
+The website still works fine and behaves normally. The problem comes when the site is used by a user dependent on assistive technologies, tools that help users with disabilities interact with websites (by speaking the content or information out loud, zoom into the content at the cursor position etc.). If those tools cannot make any sense of what the components are since no semantics were provided, they cannot assist their users. WAI-ARIA provides 3 main features: [**Roles**](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles), [**States** and **Properties**](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes) to solve this problem, giving an opportunity to add attributes to content and components that make them **meaningful** and enhance **accessibility**.
 
 ### Roles:
-[WAI-ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) define **what that HTML is or does**, add the required additional information in cases the markup does not provide the required role. If we write `<a role="button">`, the screen reader will recognize it as a button.
+WAI-ARIA roles define **what that HTML is or does**, add the required additional information in cases the markup does not provide the required role. If we write `<a role="button">`, the screen reader will recognize it as a button. You can also use roles to describe sections on a web page such as `navigation`, `main` or `banners` etc.
 
 ```javascript
-<div role="button" aria-pressed="false" tabindex="0">Button 1</div>
+<ul role="menu">
+	<li role="menuitem" aria-selected="true" tabindex="0">Home</li>
+	<li role="menuitem" aria-selected="false" tabindex="0">About</li>
+	...
+</ul>
 ```
 
 We can have `button`s, `tab`s,... representing widget roles working as part of larger components, or `heading`, `row`, `rowgroup`,... describing content structure in a page.
 
 ### Properties:
-Represent the **data value associated** with the object. When combined with roles, the user agent can supply the assistive technologies with user interface information to convey to the user at any time. Properties are **less** likely to change. `aria-label`, `aria-required` and `aria-describedby` are some instances for [WAI-ARIA properties](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes).
+Represent the **data value associated** with the object. When combined with roles, the user agent can supply the assistive technologies with user interface information to convey to the user at any time. Properties are **less** likely to change. `aria-label`, `aria-required` and `aria-describedby` are some instances for WAI-ARIA properties.
 
 ```javascript
 <form>
 	<label for="name">Enter your name:</label>
-	<input type="text" name="name" aria-label="Your name" aria-required="true" placeholder="Your name">
+	<input type="text" name="name" aria-label="Name input" aria-required="true" placeholder="Your name">
 
 	<label for="age">Enter your age:</label>
-	<input type="number" name="age" aria-label="Your age" aria-required="true" placeholder="Your age">
+	<input type="number" name="age" aria-label="Age input" aria-required="true" placeholder="Your age">
 
 	<input type="submit">
 </form>
 ```
 
 ### States:
-Have the same characteristics as properties, except for one thing that states are frequently changed during the life cycle of the component. Some commonly used [WAI-ARIA states](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes) are `aria-pressed`, `aria-expanded`, `aria-selected`,...
+Have the same characteristics as properties, except for one thing that states are frequently changed during the life cycle of the component. Some commonly used WAI-ARIA states are `aria-pressed`, `aria-expanded`, `aria-selected`,...
 
 ```javascript
   
