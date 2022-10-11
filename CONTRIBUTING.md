@@ -48,13 +48,13 @@ We aren't actually too strict on grammar or semantics in your notes. Our only re
   ---
   ```
 
-3. All notes should have metadata pertaining to the content of the note, its author, and date of publish:
+3. All notes should have metadata pertaining to the content of the note, its author, and date of publish (YYYY-MM-DD):
 
 - ```md
   ---
   tags: engineering, database, transaction
   author: Nguyen Xuan Anh
-  date: 2022-08-10
+  date: 2022-08-23
   ---
   ```
 
