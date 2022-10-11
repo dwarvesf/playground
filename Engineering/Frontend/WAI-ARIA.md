@@ -65,7 +65,7 @@ Note that WAI-ARIA attributes **do not** change the behavior of the supplied com
 
 WAI-ARIA will become handy in some cases as listed below:
 - WAI-ARIA roles are useful when defining specific **regions on a web page** (e.g. banner, navigation, main,...).
-![](https://i.imgur.com/R1s3rBm.jpg)
+![](_assets/R1s3rBm.jpg)
 
 - `aria-live` can inform screen reader users when a component is **dynamically updated**.
 <iframe height="400" style="width: 100%;" scrolling="no" title="WAI-ARIA" src="https://codepen.io/nguyend-nam/embed/WNJKEvy?default-tab=result" frameborder="no" allowfullscreen="true"></iframe>
