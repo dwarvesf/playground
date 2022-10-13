@@ -1,34 +1,15 @@
-## Engineering
+## Brainery submissions this month
 ```dataview
 TABLE author, date, tags
-FROM #engineering
+FROM #engineering OR #writing OR #design OR #communication OR #blockchain
 WHERE author != NULL
+	AND date.month = (date(today)).month
 ```
 
-## Writing
+## Brainery submissions last month
 ```dataview
 TABLE author, date, tags
-FROM #writing
+FROM #engineering OR #writing OR #design OR #communication OR #blockchain
 WHERE author != NULL
-```
-
-## Design
-```dataview
-TABLE author, date, tags
-FROM #design
-WHERE author != NULL
-```
-
-## Communication
-```dataview
-TABLE author, date, tags
-FROM #communication 
-WHERE author != NULL
-```
-
-## Blockchain
-```dataview
-TABLE author, date, tags
-FROM #blockchain 
-WHERE author != NULL
+	AND date.month = (date(today) - dur(1 month)).month
 ```
