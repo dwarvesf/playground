@@ -6,14 +6,14 @@ date: 2022-10-13
 
 ## Overview & When to use IndexedDB
 
-**IndexedDB** is a low-level API for client-side storage inside a browser like *localStorage* and *cookies*. But this built-in **non-relational database** is much more powerful than those 2 counterparts.
+**IndexedDB** is a low-level API for client-side storage like [*localStorage*](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) and [*cookies*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies). But this built-in **non-relational database** is much more powerful than those 2 counterparts.
 
 If you want to build a traditional client-server app with a moderate amount of data needed to store in the client side (browser), simply use localStorage or cookies for their ease of implementation and usage. IndexedDB is intended for **offline** apps, when you want to store and retrieve some data even without connection to the Internet. An example might be a to-do list or saved games that are played locally. In this case, the user data is in local side, and the web site is just the vehicle for delivering it.
 
-IndexedDB has some important characteristics and much more powerful supplementations:
+Beside that, IndexedDB has some important characteristics and much more powerful supplementations:
 - Stores almost any kind of key-value pairs, including **complex objects**
 - It is mostly **asynchronous**
-- Can store **significant volumes** of structured data, much bigger than `localStorage`
+- Can store **significant volumes** of structured data, much bigger than localStorage
 - Supports **transactions** for reliability
 - Does not use Structured Query Language (SQL)
 
