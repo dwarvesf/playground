@@ -1,6 +1,7 @@
 ---
 tags: writing, english
 author: Nguyen Xuan Anh
+date: 2022-03-21
 ---
 
 # Introduction
