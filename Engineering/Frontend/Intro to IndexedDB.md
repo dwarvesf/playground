@@ -65,20 +65,20 @@ const objStore = trans.objectStore("books")
 const book = {
 	id: 'Remote - Office not required',
 	price: 10,
-};
+}
 
 const request = objStore.add(book /* value */) // operations must happen in a transaction
 
-request.onsuccess = () => { 
+request.onsuccess = () => {
 	...
-};
+}
 ```
 
 > [Read more](https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction) about **IDBTransaction**, an interface of the IndexedDB API that provides a static, asynchronous transaction on a database.
 
 ### Index
 
-An **index** is a specialized object store for looking up records in another object store (often called the *referenced object store*). The **index** is a key-value storage where all its values are the keys of the referenced object store. Hence all its records are automatically populated when a new record is inserted, updated or deleted.
+An **index** is a specialized object store for looking up records in another object store (often called the *referenced object store*). The **index** is a key-value storage where all its values are the keys of the referenced object store. Hence all its records are automatically populated when a new record is inserted, updated or deleted.  
 
 > [Read more](https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex) about **IDBIndex** interface of the IndexedDB API.
 
@@ -95,7 +95,7 @@ openRequest.onupgradeneeded = () => {
 Search the `books` object store by `price` key:
 ![](https://i.imgur.com/TjHErHh.png)
 
-### Cursor
+### Cursor  
 
 With a huge object store, bigger than the available memory, `getAll` might fail to get all records as an array. Cursors provide the means to work around that.
 
@@ -112,13 +112,17 @@ const request = store.openCursor('id' /* query */, ['next' /* or 'prev', 'nextun
 ## Limitation
 
 IndexedDB is designed to cover most cases that need client-side storage. However, it is not designed for a few cases like the following:
+- Not all languages sort strings in the same way, so internationalized sorting is not supported
 - The API is not designed for synchronizing with a server-side database
 - It does not have an equivalent of the `LIKE` operator in SQL for full text searching
-- The database can be wiped out in cases like the browser is in private mode or the disk limit has been reached
 
+Moreover, errors that are **out of developers' control** can happen for a variety of reasons. For example, some browsers like **Firefox** or **Edge** currently don't allow writing to IndexedDB when in private browsing mode. There's also the possibility that a user is on a device that's almost out of disk space, and the browser might not allow storing anything else at all.
+
+Using IndexedDB is also likely to require **a lot more coding** than localStorage or cookies. But if the values you’re storing are complex JavaScript objects that would be difficult to serialize, or if you need a transactional model, then it may be worthwhile.
+  
 > Detailed information about Limitations of IndexedDB from MDN site [[here](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology#limitations)]
 
-## Reference
+## Reference  
 
 - https://javascript.info/indexeddb
 - https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB
