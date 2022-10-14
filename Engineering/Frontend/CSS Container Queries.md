@@ -1,5 +1,5 @@
 ---
-tags: CSS, guides, responsive design, engineering/frontend
+tags: CSS, guides, responsive-design, engineering/frontend
 author: Tran Tien An
 date: 2022-09-02
 ---

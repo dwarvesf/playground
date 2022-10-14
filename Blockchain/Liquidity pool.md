@@ -1,6 +1,7 @@
 ---
 tags: blockchain, liquidity
 author: Hien Le
+date: 2022-03-24
 ---
 
 ## 1. What is a Liquidity Pool?

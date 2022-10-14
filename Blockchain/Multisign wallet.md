@@ -1,6 +1,7 @@
 ---
 tags: blockchain, multisign-wallet
 author: Pham Ngoc Thanh
+date: 2022-08-10
 ---
 
 ![[multisign-wallet-hero-image.png]]

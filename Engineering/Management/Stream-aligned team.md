@@ -1,6 +1,7 @@
 ---
 tags: engineering/management, team-topologies
 author: Pham Duc Thanh
+date: 2022-09-19
 ---
 
 A stream is the continuous flow of work aligned to a business domain or organizational capability. A stream requires clear goals and responsibilities so that multiple teams can coexist, each with their own flow of work.

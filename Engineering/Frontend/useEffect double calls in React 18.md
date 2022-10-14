@@ -1,6 +1,6 @@
 ---
 tags: engineering/frontend, frontend, react-18, react, hooks, useEffect
-author: T.Hoang Nam (Nigel)
+author: Tran Hoang Nam
 date: 2022-06-11
 ---
 
