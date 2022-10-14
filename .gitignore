@@ -3,6 +3,7 @@
 
 # OR only to exclude workspace cache
 .obsidian/workspace
+.obsidian/workspace.json
 
 # exclude publish.json to avoid account conflicts
 .obsidian/publish.json
