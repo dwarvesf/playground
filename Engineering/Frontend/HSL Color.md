@@ -1,6 +1,6 @@
 ---
 tags: frontend, hsl, engineering/frontend
-author: Tran khac Vy
+author: Tran Khac Vy
 date: 2022-09-02
 ---
 

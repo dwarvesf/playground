@@ -1,5 +1,5 @@
 ---
-tags: frontend, polymorphic component, reactjs, typescript, engineering/frontend
+tags: frontend, polymorphic-component, reactjs, typescript, engineering/frontend
 author: Tran Khac Vy
 date: 2022-09-26
 ---

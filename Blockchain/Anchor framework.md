@@ -1,6 +1,7 @@
 ---
 tags: blockchain, solana, anchor, tutorial
 author: Pham Ngoc Thanh
+date: 2022-07-01
 ---
 
 This article features a short tutorial to start smart contract development on Solana using Anchor framework. Before you get started, we assume you already had the experience with:

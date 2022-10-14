@@ -1,6 +1,7 @@
 ---
 tags: blockchain, blockchain-bridge
 author: Pham Ngoc Thanh
+date: 2022-06-21
 ---
 
 ![](https://blockruption.com/wp-content/uploads/2019/04/blockruption-blockchain-300h.png)

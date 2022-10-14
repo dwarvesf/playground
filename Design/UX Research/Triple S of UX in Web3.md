@@ -1,6 +1,7 @@
 ---
 tags: ux, blockchain, web3
 author: Nam Bui
+date: 2022-08-05
 ---
 
 For most users in Web3 not excepting me, they are exposed to the tip of the iceberg which got them interested in space like Bitcoin, Defi, and NFT - these are simple terms that people know but when they dig deeper it's actually a whole lot term like "Gas Fees", "Private Key", "Public address",... It's not very user-friendly and people just give up halfway when you ask them about private key or others. So we want a familiar easy to understand way for users, I compose the Triple S of UX to make web3 accessible.

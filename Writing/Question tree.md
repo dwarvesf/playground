@@ -1,6 +1,7 @@
 ---
 tags: writing, consulting, research
 author: Nguyen Xuan Anh
+date: 2022-04-18
 ---
 
 ## What is a question tree?
