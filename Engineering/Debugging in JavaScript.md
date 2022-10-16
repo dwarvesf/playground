@@ -120,3 +120,4 @@ When the `debugger` is invoked, execution is paused at the `debugger` statement 
  - [Console Object - Developer Mozilla Organization](https://developer.mozilla.org/en-US/docs/Web/API/console)
  - [What is assert in JavaScript? - StackOverflow](https://stackoverflow.com/questions/15313418/what-is-assert-in-javascript)
  - [What is the difference between console.dir() and console.log()? - StackOverflow](https://stackoverflow.com/questions/11954152/whats-the-difference-between-console-dir-and-console-log)
+ - [Tips and Tricks for Debugging JavaScript - James Q Quick](https://www.youtube.com/watch?v=_QtUGdaCb1c&t=701s)
