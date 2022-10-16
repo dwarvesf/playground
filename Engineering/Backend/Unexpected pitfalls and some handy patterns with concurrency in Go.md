@@ -4,12 +4,10 @@ author: Khoi Nguyen
 date: 2022-10-11
 ---
 
-# Unexpected pitfalls and some handy patterns with concurrency in Go
-
 ## Preamble
 If we look around in the world at large, what you see is a lot of independently executing things like there's people doing their own things out side, there's cars going by, all of those things are independent agents in side the world. If you think about writting a computer program, if you want to simulate or interact with that environment, a single sequential execution is not a very good approach. So concurrency is really a way of writting or structuring your program to deal with the real world, may be simulate the real world or behave as an agent inisde the real world and be a good actor in that environment. By definition, concurrency is defined as the composition of independently executing computations. First of all, I want to stress that concurrency is not parallelism, but today we're not going to talk about this, if you interest, please let me know and I will write one about this topic later on.
 
-## Unexpected Go concurrency  pitfalls
+## Unexpected Go concurrency pitfalls
 With concurrency primitives built-in to the language. By using the  `go` keyword to create goroutines, and by using channels together with other concurrency synchronization techniques provided in Go, concurrent programming become easy, flexible, enjoyable. On the other hand, Go doesn't prevent programmers from making some concurrent programming mistakes which are caused by either carelessness or lacking of experience. Below is some unexpected pitfalls when using the concurrency features provided by the Go programming language.
 
 ### No Synchronizations When Synchronizations Are Needed
