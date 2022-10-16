@@ -1,5 +1,5 @@
 ---
-tags: engineering/frontend, client-side storage, indexedDB
+tags: engineering/frontend, client-side, storage, indexedDB
 author: Nguyen Dinh Nam
 date: 2022-10-13
 ---
