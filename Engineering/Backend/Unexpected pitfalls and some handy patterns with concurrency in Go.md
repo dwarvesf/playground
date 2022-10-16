@@ -1,7 +1,7 @@
 ---
 tags: engineering/backend, golang, concurrency
 author: Khoi Nguyen
-date: 2022-11-10
+date: 2022-10-11
 ---
 
 # Unexpected pitfalls and some handy patterns with concurrency in Go
@@ -384,7 +384,7 @@ func fanIn(input1, input2 <-chan string) <-chan string {
 
 To do that, we can implement a "fan-in" function as above which actually stitch 2 guys together with the `fanIn`  function and construct a single channel, from which we can receive from both of them
 
-![[fan-in-pattern.png.png]]
+![[fan-in-pattern.png]]
 
 Again, using the "generator" pattern, the `fanIn` function is itself a function that returns a channel, it takes 2 channels as inputs and return another channel as it return value. What we do is again, make the channel and return it, but internally we launched 2 independent goroutines, one copy the ouput from input1 to the channel, and the other one copy from input2 to the channel
 
@@ -653,7 +653,7 @@ Speaking of round-trips, we can also make this crazy by having a ridiculously lo
 
 Think of it like this
 
-![[daisy-chain-goroutines.png.png]]
+![[daisy-chain-pattern.png]]
 
 We've got a bunch of gophers who want to do a Chinese Whispers game. You see the idea, here the first guy (on the right most at the top) sends a message to the next left one, and keep forwards it in the same direction until the last guy receives the message then prints it out. Firstly, I want to stress that this is not a loop, this is just going all the way around the chain, back to the answer here. 
 
