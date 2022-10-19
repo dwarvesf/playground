@@ -1,5 +1,5 @@
 ---
-tags: engineering/qa, testing type, qa terms
+tags: engineering/qa, testing type, qa-terms
 author: Binh Le
 date: 2022-10-15
 ---
