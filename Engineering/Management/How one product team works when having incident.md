@@ -4,7 +4,7 @@ author: Nhut Huynh
 date: 2022-10-15
 ---
 
-*The following entry is from the thoughts, compositions, and conclusions from field work by our QA manager.*
+*The following entry is from the thoughts, compositions, and conclusions from field work by one of our leads.*
 
 During the software development, we will definitely meet the incident which is raised by our customer due to the issue they are met when using the product.
 
