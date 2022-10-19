@@ -4,6 +4,8 @@ author: Nhut Huynh
 date: 2022-10-15
 ---
 
+*The following entry is from the thoughts, compositions, and conclusions from field work by our QA manager.*
+
 During the software development, we will definitely meet the incident which is raised by our customer due to the issue they are met when using the product.
 
 And, when having those issue, firstly, they mostly raised directly to the higher role in one company, for example: Engineering Manager. Then, after that is Product Owner, to Project Manager, to Quality Assurance, and final is Developer. That cycle might be take a lot of time since we need some time to invest on the incident or transfer the incident to the member as well.
