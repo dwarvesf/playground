@@ -1,5 +1,5 @@
 ---
-tags: frontend, singleton-design-pattern, engineering/frontend
+tags: frontend, design pattern, engineering/frontend
 author: Le Duc Chinh
 date: 2022-10-16
 ---
@@ -95,6 +95,7 @@ main();
 ### Cons
 
 - The Singleton is violate to the Single Responsibility Principle, via the SRP definition that a class only should only have one responsibility. But with the singleton pattern, it can carry too many responsibilities at the same time, this can make a deadlock when used in concurrency / multi-threads.
+- The singleton design is getting us difficult to write the unit test.
 
 ## Conclusion
 
