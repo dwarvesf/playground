@@ -95,7 +95,7 @@ function Foo () {
 //do something
 };
 console.timeEnd("foo");
-//=> default: 0.00... ms
+//=> foo: 0.00... ms
 ```
 
 ## The `debugger` statement
