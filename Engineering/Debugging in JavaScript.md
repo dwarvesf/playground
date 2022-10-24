@@ -90,11 +90,11 @@ time(label)
 #### Use-case
 These methods can be used to calculate how much time a function takes to run.
 ```js
-console.time();
+console.time("foo");
 function Foo () {
 //do something
 };
-console.timeEnd();
+console.timeEnd("foo");
 //=> default: 0.00... ms
 ```
 
