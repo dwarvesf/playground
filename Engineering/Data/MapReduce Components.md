@@ -1,6 +1,18 @@
-# MapReduce Components
+---
+tags: engineering/data, mapreduce, distributed, hadoop
+author: Dung Ho
+date: 2022-10-24
+---
 
-![](mapreduce-components/stock-problem.png)
+## Introduction
+
+[[MapReduce]] consists of four components:
+- Map Phase
+- Reduce Phase
+- Shuffle Phase
+- Combiner
+
+![](stock-problem.png)
 
 Here's a problem we'd like to solve. We have a data set with information about several fictitious stock symbol.
 In each line in the data set, we have information about a stock symbol for a day: opening price, closing price, high, low, volume, etc.
@@ -11,7 +23,7 @@ This data set is about 400 MB, not too big but good enough for our experimentati
 Now, it is about the problem we would like to solve with this data set.
 For every stock symbol in the data set, we would like to find out its maximum closing price across several days.
 
-![](mapreduce-components/stock-algorithm.png)
+![](stock-algorithm.png)
 
 The above diagram shows the algorithm. We'll read a line, get the symbol on closing price from the line, then we need to check if the closing price is greater than the closing price we have for that symbol.
 If not, go to the next line. Otherwise, the closing price is greater than the closing price that you already have for that symbol, save the closing price as the maximum closing price for that symbol and move on to the next record in the data set.
@@ -19,7 +31,7 @@ If the end of the file is reached, print the results.
 The problem with this approach is that there is no parallelization. 
 Thus, if we have a huge data set, we will have extremely long computation time which is not ideal.
 
-![](mapreduce-components/distributed.png)
+![](distributed.png)
 
 Let's consider how we have worked out the same problem in the mapreduce world.
 From the article `What MapReduce is`, we got introduced to the faces of mapreduce, so we'll take this problem and go over each phase and see the technical details involved in the map phase, reduce phase and shuffle phase.
@@ -28,7 +40,7 @@ The chunks are called input splits and the process working on the chunks are cal
 Each mapper would process a record at a time and each mapper would execute the same set of code on every single record.
 The output of the mapper would be a key-value pair. 
 
-![](mapreduce-components/input-splits-vs-blocks.png)
+![](input-splits-vs-blocks.png)
 
 Is it true that input split is same as the block? Input split is not same as the block.
 A block is a hard division of data at the block size. If the block size in your cluster is 128 MB.
@@ -50,7 +62,7 @@ So that is why we have a concept of input split.
 Input split respects logical record boundary.
 During mapreduce execution hadoop scans through the blocks and create input splits which respects record boundaries.
 
-![](mapreduce-components/map-phase.png)
+![](map-phase.png)
 
 With the understanding about input splits, we can take a look about the mapper in detail.
 A mapper in hadoop can be written in many different programming languages, it can be written in C++, python Scala and Java.
@@ -65,7 +77,7 @@ In our sample stock data set, every line is a record for us and we need to parse
 The stock symbol and the closing price becomes the output from each execution of the mapper: the symbol is going to be the key and the closing price is going to be the value in your key value pair. 
 But how do we decide what should be the key and what should be the value in our key value pair? 
 
-![](mapreduce-components/reduce-phase.png)
+![](reduce-phase.png)
 
 The reduce phase that will give us an answer.
 The reducers work on the output of the mappers.
@@ -92,7 +104,7 @@ Now we have only one reducer to process all the output from 100 mappers.
 In some cases it might be okay but we might run into performance bottleneck at the reduced phase because we're trying to reduce output from 100 mappers in one reducer. 
 So if we're dealing with large amount of data in the reduced phase it is advisable to have more than one reducer.
 
-![](mapreduce-components/multiple-reducers.png)
+![](multiple-reducers.png)
 
 In the above picture, we have multiple reducers.
 Let's consider how the output of the individual mappers got grouped by symbols and reached the reducer.
@@ -137,7 +149,7 @@ Similarly you can find key value pairs for symbol `STT` in mapper 1 and also in 
 Each run will print the symbol and its maximum closing price. 
 That's the end to end process in mapreduce.
 
-![](mapreduce-components/combiner.png)
+![](combiner.png)
 
 We could also have an optional combiner at the map phase. 
 Combiners can be used to reduce the amount of data that is sent to the reduce phase.
