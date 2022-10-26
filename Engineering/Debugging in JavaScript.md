@@ -3,7 +3,8 @@ tags: engineering, debug, console, debugger, javascript
 author: Tran Hoang Nam
 date: 2022-10-16
 ---
-  This note focus on utilizing some of the **` console`** object methods and the **` debugger`** statement to better debug JavaScript application in the [Chrome DevTools](https://developer.chrome.com/docs/devtools/). 
+
+  *This note focus on utilizing some of the **` console`** object methods and the **` debugger`** statement to better debug JavaScript application in the [Chrome DevTools](https://developer.chrome.com/docs/devtools/).* 
   
 ## The `console` object
 The **` console`** object provides access to the browser's debugging console. You can view it by right-clicking on your Chrome browser, selecting **Inspect**, and choosing **Console** in the tab.
@@ -39,14 +40,14 @@ console.assert(_expression_, _message_);
 #### Use-case
 Let's say you wanted to check for a condition of a user id, you might be checking using the `console.log()` like this:
 ```js
-if (!user.id){
-	console.log("User does not exist!") \
+if (!user.id) {
+	console.log("User does not exist!");
 	// user.id = false? => User does not exist!
 }
 ```
 Instead, you can check the condition using the `console.assert()`:
 ```js
-console.assert(user.id, "User does not exist!") 
+console.assert(user.id, "User does not exist!"); 
 // user.id = false? => Assertion failed: User does not exist!
 ```
 Using `console.assert()` provide a much cleaner and better way for conditional logging in your application.
@@ -85,7 +86,7 @@ The `console.time()` method launches a timer that you may use to track the durat
 
 #### Syntax
 ```js
-time(label)
+console.time(label)
 ```
 #### Use-case
 These methods can be used to calculate how much time a function takes to run.
