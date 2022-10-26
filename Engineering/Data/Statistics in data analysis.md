@@ -24,11 +24,11 @@ Other distribution is normal distribution, which is an arrangement of a data set
 
 Another type of distribution applied in data analytic is Pareto distribution. It measures the case that a small value event occur frequently and high value event occur rarely. In marketing analyst, they can use this distribution to find customer segmentation, which lead them to focus on important customer. Other instance is in risk modelling. Risk modeler need to define and calculate probability, stress test of some low probability event that can cause serious effect on system
 
-#### Conclusion
+## Conclusion
 
 From my point of view, mastering distribution will bring huge benefit in understanding data. Then, a good decision can be made for your business 
 
 
-#### Reference
+## Reference
 - https://thebusinessprofessor.com/en_US/research-analysis-decision-science/normal-distribution-definition
 - https://www.sciencedirect.com/topics/computer-science/pareto-distribution
