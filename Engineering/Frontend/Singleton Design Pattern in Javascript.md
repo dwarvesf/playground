@@ -1,5 +1,5 @@
 ---
-tags: frontend, design pattern, engineering/frontend
+tags: frontend, design-pattern, engineering/frontend
 author: Le Duc Chinh
 date: 2022-10-16
 ---
