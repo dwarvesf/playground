@@ -24,6 +24,17 @@ Usually, when a developer finish their ticket for the feature enhancement from D
     - Test scenario(s): provide test cases for the ticket.
 
 ![Mobile-Testing-Document-Format](_assets/Mobile_testing_document_format.png)
+
+![Mobile-Testing-Document-Sample](_assets/Mobile_testing_doc_sample.png)
     
 - **For BackEnd/FrontEnd testing:**
-  - Test
+  - Reference information(s)
+    - Ticket(s): we will include the ticket that the team is working with on the development and testing.
+    - Related document(s): we will include the related document to the ticket from this section.
+  - Test report(s)
+    - Testing status - there are 4 common statues: Failed, Passed, N/A, and Haven't.
+    - Test scenario(s): provide test cases for the ticket.
+
+![BackEnd-FrontEnd-Testing-Document-Format](_assets/BE_FE_testing_doc_format.png)
+
+![BackEnd-FrontEnd-Testing-Document-Sample](_assets/BE_FE_testing_doc_sample.png)
