@@ -1,5 +1,5 @@
 ---
-tags: engineering/backend, elixir, k8s, service account, libcluster
+tags: engineering/backend, elixir, k8s, kubernetes, service-account, libcluster
 author: Hieu Phan
 date: 2022-11-02
 ---
