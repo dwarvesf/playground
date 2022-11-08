@@ -1,5 +1,5 @@
 ---
-tags: engineering/management, process, quality assurance
+tags: engineering/management, process, quality-assurance
 author: Nhut Huynh
 date: 2022-10-31
 ---
