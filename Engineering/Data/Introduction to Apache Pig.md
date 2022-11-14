@@ -4,8 +4,6 @@ author: Dung Ho
 date: 2022-11-14
 ---
 
-# Introduction to Apache Pig
-
 In short, Apache Pig takes a set of instructions from the user and converts those instructions into MapReduce jobs and execute the MapReduce jobs in Hadoop cluster.
 
 Let's start by asking what's wrong with writing a MapReduce program and why do we need a tool like Apache Pig to translate our instructions into MapReduce jobs.
