@@ -1,7 +1,7 @@
 ---
-tags: mobile, kotlin
-author: Lampard
-date: 2022-10-31
+tags: mobile, kotlin, jetpack
+author: Nguyen Xuan Truong
+date: 2022-11-14
 ---
 
 In the past, to implement based on fragment navigation, we used `FragmentManager` and `FragmentTransaction` to 
