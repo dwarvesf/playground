@@ -4,8 +4,6 @@ author: Dung Ho
 date: 2022-11-10
 ---
 
-# Introduction to Apache Hive
-
 Welcome to one of the widely used tools in the Hadoop ecosystem! To get the best understanding about this tool, please visit the related articles about MapReduce, Apache Pig. In this article, we're going to see a brief introduction to Hive and we're going to create a Hive table and query a dataset using the newly created Hive table. 
 
 As usual, let's start with the question, when we think of analyzing data, for most of us, a database and a table immediately come to our mind.  It's not a surprise because we're so used to visualizing data in a table format that is in a row, columnar fashion.  And also, almost all of us are familiar with SQL. Data in Hadoop cluster is represented as files and so far MapReduce programming or Pig doesn't allow us to view the data in a table format. Therefore, it makes sense to have a tool in Hadoop ecosystem to represent the data sets in table structure and run SQL queries against it. Hive does exactly that. 
