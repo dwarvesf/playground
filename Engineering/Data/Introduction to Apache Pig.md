@@ -1,7 +1,7 @@
 ---
 tags: engineering/data, mapreduce, distributed, hadoop, Apache Pig
 author: Dung Ho
-date: 2022-10-26
+date: 2022-11-14
 ---
 
 # Introduction to Apache Pig
