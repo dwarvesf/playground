@@ -4,8 +4,6 @@ author: Dung Ho
 date: 2022-11-16
 ---
 
-# Managed Table vs. External Table
-
 In this article, we're going to take a look to two different types of Hive tables and the significance of each. There are two types of tables in Hive: Managed table and External table. Managed table has full control over its data, i.e. when we drop the table, the tables, data set or files will be also deleted from HDFS. External table, however, does not have full control over its data set, i.e. when we drop the table, the data set is not deleted from HDFS. 
 
 Now, the above explanation brings up a very important question: when do we use managed table? And when do we use external table? We would choose to use managed table when Hive is the only application using the data set, whereas we would choose to use external table when the underlying data set pointed by Hive table is shared by many applications like Pig, MapReduce jobs, etc. When multiple applications are interested in a data set, would we keep multiple copies of the same data set one for each application? No, we wouldn't because most likely our data set will be in the magnitude of gigabytes or terabytes and so it does not make sense to keep multiple copies of the data set. That means when a single copy of the data set is shared between application, we don't want Hive to delete the data set when the table is dropped. 
