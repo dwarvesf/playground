@@ -12,11 +12,11 @@ Now, the above explanation brings up a very important question: when do we use m
 
 Now, we understand the difference between managed table and external table. Let's see how to create a managed table and how to create an external table. By default, when we create a table, it is a managed table. If we want to create an external table, we have to specify the keyword `EXTERNAL` when creating the table. 
 
-![](images/managed-table.png)
+![](managed-table.png)
 
 Assume that the stocks table from "Behind a Hive table" article is already on our cluster. So, we can describe formatted on the stocks table, `DESCRIBE FORMATTED stocks_db.stocks` and check out the table type on the output screen shown in the above screenshot. It says `MANAGED_TABLE`, which means our stocks table under `stocks_db` database is a managed table. 
 
-![](images/managed-table-check.png)
+![](managed-table-check.png)
 
 Let's check out the data set under the location attribute with the command `!hadoop fs -ls /user/hive/warehouse/stocks_db.db/stocks;`. We can see the data set under the location specified in the location attribute in HDFS. Now what we're going to do is we're going to drop the table and check the location again let's drop the table using the drop table command `drop table stocks_db.stocks;`. The table is now dropped now and check the location again. The above screenshot shows `No such file or directory`, which means that data set is now dropped as well. If anyone tries referring to this data set, it fails since we deleted the data set. That is the behavior of managed table.
 
@@ -38,7 +38,7 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
 
 Let's execute the command and do a described formatted command on this table. 
 
-![](images/external-table.png)
+![](external-table.png)
 
 As shown in the screenshot, the table type is mentioned as external table. Next, we can load this table using this load instruction `LOAD DATA INPATH 'input/hive/stocks_db' INTO TABLE stocks_ext;`. The table is now loaded, let's verify the location of this table before, `!hadoop fs -ls /user/hive/warehouse/stocks_ext/stocks;` and after dropping the table, `DROP TABLE stocks_ext;`. Now that the table is dropped and let's do a listing on the location again. The screenshot show that the data set which is exactly what we expect to see with external table. 
 
