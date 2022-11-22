@@ -24,16 +24,16 @@ Let's now look at the external table. The following command is the create table 
 
 ```sql
 CREATE EXTERNAL TABLE IF NOT EXISTS stocks_ext (
-exch string,
-symbol string,
-ymd string,
-price_open float,
-price_high float,
-price_low float,
-price_close float,
-volume int,
-price_adj_close float)
-ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
+	exch string,
+	symbol string,
+	ymd string,
+	price_open float,
+	price_high float,
+	price_low float,
+	price_close float,
+	volume int,
+	price_adj_close float
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
 ```
 
 Let's execute the command and do a described formatted command on this table. 
