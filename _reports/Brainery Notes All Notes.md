@@ -1,34 +1,8 @@
-## Engineering
-```dataview
-TABLE author, date, "#" + regexreplace(tags, ", ", " #") as tags
-FROM #engineering
-WHERE author != NULL
-```
 
-## Writing
-```dataview
-TABLE author, date, "#" + regexreplace(tags, ", ", " #") as tags
-FROM #writing
-WHERE author != NULL
-```
+```dataviewjs
+const query = dv.page("_queries").structured_permanent_notes_all;
+const pagesQuery = await dv.query(query);
+const { headers, values } = pagesQuery.value
 
-## Design
-```dataview
-TABLE author, date, "#" + regexreplace(tags, ", ", " #") as tags
-FROM #design
-WHERE author != NULL
-```
-
-## Communication
-```dataview
-TABLE author, date, "#" + regexreplace(tags, ", ", " #") as tags
-FROM #communication 
-WHERE author != NULL
-```
-
-## Blockchain
-```dataview
-TABLE author, date, "#" + regexreplace(tags, ", ", " #") as tags
-FROM #blockchain 
-WHERE author != NULL
+dv.table(headers, values);
 ```

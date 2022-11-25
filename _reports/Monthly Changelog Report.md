@@ -1,49 +1,42 @@
 ## Notes submitted within past month
 
-```dataview
-TABLE
-	"https://brain.d.foundation/%CE%A9+Fleeting+notes/" + rows.file.name as entries,
-	rows.file.tags as tags,
-	sum(rows.icy) + " ICY" as reward
-FROM "Ω Fleeting notes"
-WHERE discord_id != NULL
-	AND date.weekyear >= (date(today)).weekyear - 3
-GROUP BY discord_id
+```dataviewjs
+const query = dv.page("_queries").fleeting_monthly;
+const pagesQuery = await dv.query(query);
+const { headers, values } = pagesQuery.value
+
+dv.table(headers, values);
 ```
 
 ### Literature & Permanent Notes
 
+
 #### Structured Permanent Notes
 
-```dataview
-TABLE
-	rows.file.link as entries, 
-	rows.file.tags as tags
-FROM #engineering OR #writing OR #design OR #communication OR #blockchain
-WHERE author != NULL
-	AND date.weekyear >= (date(today)).weekyear - 3
-GROUP BY author
+```dataviewjs
+const query = dv.page("_queries").structured_permanent_notes_monthly;
+const pagesQuery = await dv.query(query);
+const { headers, values } = pagesQuery.value
+
+dv.table(headers, values);
 ```
 
 #### Literature Notes
-```dataview
-TABLE
-	"https://brain.d.foundation/%CE%A9+Literature+notes/" + rows.file.name as entries,
-	rows.file.tags as tags,
-	sum(rows.icy) + " ICY" as reward
-FROM "Ω Literature notes"
-WHERE discord_id != NULL
-	AND date.weekyear >= (date(today)).weekyear - 3
-GROUP BY discord_id
+
+```dataviewjs
+const query = dv.page("_queries").literature_notes_monthly;
+const pagesQuery = await dv.query(query);
+const { headers, values } = pagesQuery.value
+
+dv.table(headers, values);
 ```
 
 #### Permanent Notes
-```dataview
-TABLE
-	"https://brain.d.foundation/%CE%A9+Permanent+notes/" + rows.file.name as entries,
-	sum(rows.icy) + " ICY" as reward
-FROM "Ω Permanent notes"
-WHERE discord_id != NULL
-	AND date.weekyear >= (date(today)).weekyear - 3
-GROUP BY discord_id
+
+```dataviewjs
+const query = dv.page("_queries").permanent_notes_monthly;
+const pagesQuery = await dv.query(query);
+const { headers, values } = pagesQuery.value
+
+dv.table(headers, values);
 ```

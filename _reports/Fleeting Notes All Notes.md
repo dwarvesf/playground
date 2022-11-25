@@ -1,6 +1,9 @@
 ## Fleeting Notes
-```dataview
-TABLE discord_id, discord_channel, date, "#" + regexreplace(tags, ", ", " #") as tags, icy
-FROM "Ω Fleeting notes"
-WHERE discord_id != NULL
+
+```dataviewjs
+const query = dv.page("_queries").fleeting_notes_all;
+const pagesQuery = await dv.query(query);
+const { headers, values } = pagesQuery.value
+
+dv.table(headers, values);
 ```
