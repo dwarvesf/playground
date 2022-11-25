@@ -4,7 +4,7 @@ author: Nhut Huynh
 date: 2022-11-18
 ---
 
-*The following entry is from the reality experience that I'm doing in the Setel team with Project Manager, and Portfolio Manager.*
+*The following entry is from the reality experience that I'm doing in the team project that is running with Agile.*
 
 For one Agile team, Backlog Grooming is one of the most important meeting that we should have. With that meeting, we can be able to understand what is our next plan for the product in the future, what should we do for that plan, discuss about the require works from the Backlog for the future plan, and make sure that those works are ready to bring up during the Spring Planning meeting.
 
@@ -25,7 +25,7 @@ After the meeting is done, Project Manager will prepare a document for Backlog G
 
 Then, this document will be sent out to the team members. So that they can take a look on it to have an overview, an idea for their future works or have any questions as well for the future's works.
 
-![Backlog-Grooming-Note-Sample](_assets/backlog_grooming_note_sample.png)
+![Backlog-Grooming-Note-Example](_assets/backlog_grooming_note_example.png)
 
 After everything is done, the team will start the Backlog Grooming as fast as possible since every members are already awared about the document which is provided before the meeting date. And, it also save everyone time as well.
 
