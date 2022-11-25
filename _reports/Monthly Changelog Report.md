@@ -1,4 +1,4 @@
-## Notes submitted within past week
+## Notes submitted within past month
 
 ```dataview
 TABLE
@@ -7,11 +7,23 @@ TABLE
 	sum(rows.icy) + " ICY" as reward
 FROM "Ω Fleeting notes"
 WHERE discord_id != NULL
-	AND date.weekyear >= (date(today)).weekyear
+	AND date.weekyear >= (date(today)).weekyear - 3
 GROUP BY discord_id
 ```
 
 ### Literature & Permanent Notes
+
+#### Structured Permanent Notes
+
+```dataview
+TABLE
+	rows.file.link as entries, 
+	rows.file.tags as tags
+FROM #engineering OR #writing OR #design OR #communication OR #blockchain
+WHERE author != NULL
+	AND date.weekyear >= (date(today)).weekyear - 3
+GROUP BY author
+```
 
 #### Literature Notes
 ```dataview
@@ -21,7 +33,7 @@ TABLE
 	sum(rows.icy) + " ICY" as reward
 FROM "Ω Literature notes"
 WHERE discord_id != NULL
-	AND date.weekyear >= (date(today)).weekyear
+	AND date.weekyear >= (date(today)).weekyear - 3
 GROUP BY discord_id
 ```
 
@@ -32,18 +44,6 @@ TABLE
 	sum(rows.icy) + " ICY" as reward
 FROM "Ω Permanent notes"
 WHERE discord_id != NULL
-	AND date.weekyear >= (date(today)).weekyear
+	AND date.weekyear >= (date(today)).weekyear - 3
 GROUP BY discord_id
 ```
-
-#### Structured Permanent Notes
-```dataview
-TABLE
-	rows.file.link as entries, 
-	rows.file.tags as tags
-FROM #engineering OR #writing OR #design OR #communication OR #blockchain
-WHERE author != NULL
-	AND date.weekyear >= (date(today)).weekyear
-GROUP BY author
-```
-

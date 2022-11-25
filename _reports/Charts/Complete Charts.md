@@ -203,6 +203,7 @@ options:
         lineWidth: 2
 ```
 
+
 ## Top Contributors
 
 ```chartsview
