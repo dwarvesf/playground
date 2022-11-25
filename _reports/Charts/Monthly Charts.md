@@ -158,66 +158,87 @@ options:
   area: {}
 ```
 
-## Weighted Topic Treemap
+## Fleeting Notes
 
 ```chartsview
 #-----------------#
 #- chart type    -#
 #-----------------#
-type: Treemap
+type: DualAxes
 
 #-----------------#
 #- chart data    -#
 #-----------------#
 data: |
   dataviewjs:
-    const children = dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
-           .where(p => !!p.file.frontmatter.date)
-           .where(p => dv.date(p.file.frontmatter.date) !== null)
-           .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 4)
-           .flatMap(p => p.file.etags)
-           .filter(p => p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)
-           .map(p => p.replace(/#(\w*)(.*)/, "$1")).values
-           .reduce((a, p) => {
-               switch (p) {
-                   case "engineering": a[0].value += 1; break;
-                   case "writing": a[1].value += 10; break;
-                   case "design": a[2].value += 10; break;
-                   case "communication": a[3].value += 10; break;
-                   case "blockchain": a[4].value += 1; break;
-               }
-               return a;
-           }, [
-               {
-                   name: "Engineering",
-                   value: 0
-               },
-               {
-                   name: "Writing",
-                   value: 0
-               },
-               {
-                   name: "Design",
-                   value: 0
-               },
-               {
-                   name: "Communication",
-                   value: 0
-               },
-               {
-                   name: "Blockchain",
-                   value: 0
-               },
-           ])
-    return {
-        name: 'root',
-        children,
-    }
+    const fleetingNotesQuery = dv.pages('"Ω Fleeting notes"')
+        .where(p => !!p.file.frontmatter.date && !!p.file.frontmatter.discord_id)
+        .where(p => dv.date(p.file.frontmatter.date) !== null)
+        .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 4)
+        .groupBy(p => {
+            const noteDate = dv.date(p.file.frontmatter.date);
+            return `${noteDate.c.year}-${noteDate.c.month}-${noteDate.c.day}`
+        })
+        .map(p => {
+            const time = p.key
+            const notes = p.rows.length
+            const icy = p.rows.length * 5
+
+            return { time, notes, icy }
+        })
+    return [fleetingNotesQuery, fleetingNotesQuery]
 
 #-----------------#
 #- chart options -#
 #-----------------#
 options:
-  colorField: "name"
+  xField: 'time'
+  yField: ['notes', 'icy']
+  yAxis:
+    value:
+      min: 0
+      label:
+        formatter:
+          function formatter(val) {
+            return ''.concat(val, '个');
+          }
+  geometryOptions:
+    - geometry: 'column'
+    - geometry: 'line'
+      lineStyle:
+        lineWidth: 2
 ```
 
+## Top Contributors
+
+```chartsview
+#-----------------#
+#- chart type    -#
+#-----------------#
+type: Bar
+
+#-----------------#
+#- chart data    -#
+#-----------------#
+data: |
+  dataviewjs:
+    return dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
+        .where(p => !!p.file.frontmatter.date && !!p.file.frontmatter.author)
+        .where(p => dv.date(p.file.frontmatter.date) !== null)
+        .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 4)
+        .groupBy(p => p.file.frontmatter.author)
+        .sort(p => p.rows.length, "desc")
+        .map(p => {
+            const author = p.key
+            const notes = p.rows.length
+            return { author, notes }
+        })
+
+#-----------------#
+#- chart options -#
+#-----------------#
+options:
+  xField: "notes"
+  yField: "author"
+  conversionTag: {}
+```
