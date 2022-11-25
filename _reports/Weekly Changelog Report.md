@@ -40,7 +40,7 @@ GROUP BY discord_id
 ```dataview
 TABLE
 	rows.file.link as entries, 
-	rows.file.tags as tags,
+	rows.file.tags as tags
 FROM #engineering OR #writing OR #design OR #communication OR #blockchain
 WHERE author != NULL
 	AND date.weekyear >= (date(today)).weekyear
