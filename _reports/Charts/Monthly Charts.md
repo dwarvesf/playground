@@ -14,7 +14,7 @@ data: |
     return dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
            .where(p => !!p.file.frontmatter.date)
            .where(p => dv.date(p.file.frontmatter.date) !== null)
-           .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 4)
+           .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 3)
            .flatMap(p => p.file.etags)
            .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1))
            .groupBy(p => p)
@@ -49,7 +49,7 @@ data: |
     const query = dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
         .where(p => !!p.file.frontmatter.date)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
-        .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 4)
+        .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 3)
         .flatMap(p => p.file.etags)
         .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)).values
         .reduce((a, p) => {
@@ -94,7 +94,7 @@ data: |
     return dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
            .where(p => !!p.file.frontmatter.date)
            .where(p => dv.date(p.file.frontmatter.date) !== null)
-           .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 4)
+           .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 3)
            .flatMap(p => p.file.etags)
            .filter(p => p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)
            .map(p => p.replace(/#(\w*)(.*)/, "$1")).values
@@ -174,7 +174,7 @@ data: |
     const fleetingNotesQuery = dv.pages('"Ω Fleeting notes"')
         .where(p => !!p.file.frontmatter.date && !!p.file.frontmatter.discord_id)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
-        .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 4)
+        .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 3)
         .groupBy(p => {
             const noteDate = dv.date(p.file.frontmatter.date);
             return `${noteDate.c.year}-${noteDate.c.month}-${noteDate.c.day}`
@@ -225,7 +225,7 @@ data: |
     return dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
         .where(p => !!p.file.frontmatter.date && !!p.file.frontmatter.author)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
-        .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 4)
+        .where(p => dv.date(p.file.frontmatter.date).weekNumber >= dv.date('today').weekNumber - 3)
         .groupBy(p => p.file.frontmatter.author)
         .sort(p => p.rows.length, "desc")
         .map(p => {
