@@ -7,8 +7,6 @@ const recursiveJoin = (item) => {
 	}
 	return '\"' + item + '\"'
 }
-const toTitleCase = (s) =>
-  s.replace(/^_*(.)|_+(.)/g, (s, c, d) => c ? c.toUpperCase() : ' ' + d.toUpperCase())
 
 const dv = this.app.plugins.plugins["dataview"].api;
 const page = dv.page("_queries")
