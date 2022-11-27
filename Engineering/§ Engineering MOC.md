@@ -1,3 +1,8 @@
+---
+recurringTemplate: true
+recurringTemplateName: engineering-moc
+---
+
 This is a [[Map of Content]] related to the engineering.
 
 ## Engineering
