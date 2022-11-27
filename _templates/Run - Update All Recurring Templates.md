@@ -22,7 +22,6 @@ for (const element of matchingNotes) {
 	// delete the file
 	await app.vault.trash(filePath, true);
 
-	console.log({ element, filePath, templatePath, template });
 	// create a new file with the matching template
 	await tp.file.create_new(template, element.file.name, false, folder);
 }
