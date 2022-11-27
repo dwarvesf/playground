@@ -1,6 +1,6 @@
 ---
 tags: frontend, css-in-js, engineering/frontend
-author: Tran khac Vy
+author: Tran Khac Vy
 date: 2022-08-11
 ---
 
