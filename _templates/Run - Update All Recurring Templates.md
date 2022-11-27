@@ -1,4 +1,5 @@
 <%*
+const dv = this.app.plugins.plugins["dataview"].api;
 const recurringTemplatesList = dv.pages(`"_templates"`)
 	.where(e => e.file.frontmatter.recurringTemplate);
 const mappedRecurringTemplateNames = recurringTemplatesList.array().reduce((a, c) => {
