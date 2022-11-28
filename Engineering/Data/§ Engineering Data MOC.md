@@ -9,6 +9,7 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 ---
 - [[Engineering/Data/Statistics in data analysis.md|Statistics in data analysis]]
 - [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
+- [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
 - [[Engineering/Data/MapReduce.md|MapReduce]]
 - [[Engineering/Data/MapReduce Components.md|MapReduce Components]]
 - [[Engineering/Data/Managed Table vs External Table.md|Managed Table vs External Table]]
@@ -33,4 +34,4 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/State explosion.md|State explosion]]
 
 
-*This page was last modified at 2022-11-27T11:06:33.042Z*.
+*This page was last modified at 2022-11-28T12:19:34.285Z*.
