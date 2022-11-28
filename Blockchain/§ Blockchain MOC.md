@@ -28,4 +28,4 @@ This is a [[Map of Content]] related to the blockchain.
 - [[Blockchain/Blockchain Bridge.md|Blockchain Bridge]]
 
 
-*This page was last modified at 2022-11-28T12:14:27.814Z*.
+*This page was last modified at 2022-11-28T12:19:34.310Z*.
