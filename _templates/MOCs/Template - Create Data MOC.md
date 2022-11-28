@@ -1,3 +1,8 @@
+---
+recurringTemplate: true
+recurringTemplateName: engineering-data-moc
+---
+
 This is a [[Map of Content]] related to the engineering concepts around data.
 
 ## General data

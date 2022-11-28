@@ -49,7 +49,7 @@ data: |
     const query = dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
         .where(p => !!p.file.frontmatter.date)
         .flatMap(p => p.file.etags)
-        .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)).values
+        .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)).array()
         .reduce((a, p) => {
             if (!(p in a)) {
                 a[p] = 0;
@@ -93,7 +93,7 @@ data: |
            .where(p => !!p.file.frontmatter.date)
            .flatMap(p => p.file.etags)
            .filter(p => p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)
-           .map(p => p.replace(/#(\w*)(.*)/, "$1")).values
+           .map(p => p.replace(/#(\w*)(.*)/, "$1")).array()
            .reduce((a, p) => {
                switch (p) {
                    case "engineering": a[0].score += 1; break;
