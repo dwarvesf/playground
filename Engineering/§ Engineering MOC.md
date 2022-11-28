@@ -1,3 +1,8 @@
+---
+recurringTemplate: true
+recurringTemplateName: engineering-moc
+---
+
 This is a [[Map of Content]] related to the engineering.
 
 ## Engineering
@@ -12,38 +17,46 @@ This is a [[Map of Content]] related to the engineering.
 - [[Ω Literature notes/Software 101/software-syllabus/Software architecture.md|Software architecture]]
 - [[Ω Literature notes/Software 101/software-syllabus/Software 101.md|Software 101]]
 - [[Ω Literature notes/Software 101/software-syllabus/Machine learning.md|Machine learning]]
-- [[Ω Literature notes/Software 101/software-syllabus/Extreme programming.md|Extreme programming]]
 - [[Ω Literature notes/Software 101/software-syllabus/Business Intelligence.md|Business Intelligence]]
+- [[Ω Literature notes/Software 101/software-syllabus/Extreme programming.md|Extreme programming]]
 - [[Ω Literature notes/Software 101/software-quality/Software Quality Assurance.md|Software Quality Assurance]]
 - [[Ω Literature notes/Software 101/software-quality/High Quality software.md|High Quality software]]
-- [[Ω Literature notes/Software 101/software-process/Waterfall & Iterative.md|Waterfall & Iterative]]
-- [[Ω Literature notes/Software 101/software-process/WBS.md|WBS]]
-- [[Ω Literature notes/Software 101/software-process/Waterfall & Agile.md|Waterfall & Agile]]
-- [[Ω Literature notes/Software 101/software-process/Scrum.md|Scrum]]
-- [[Ω Literature notes/Software 101/software-process/Process for software project.md|Process for software project]]
 - [[Ω Literature notes/Software 101/software-engineering/Software engineering.md|Software engineering]]
 - [[Ω Literature notes/Software 101/software-engineering/SE & CS.md|SE & CS]]
 - [[Ω Literature notes/Software 101/software-engineering/A system perspective.md|A system perspective]]
+- [[Ω Literature notes/Software 101/software-process/Waterfall & Iterative.md|Waterfall & Iterative]]
+- [[Ω Literature notes/Software 101/software-process/Waterfall & Agile.md|Waterfall & Agile]]
+- [[Ω Literature notes/Software 101/software-process/WBS.md|WBS]]
+- [[Ω Literature notes/Software 101/software-process/Scrum.md|Scrum]]
+- [[Ω Literature notes/Software 101/software-process/Process for software project.md|Process for software project]]
 - [[Ω Literature notes/Software 101/engineering-standard/Peer Review.md|Peer Review]]
-- [[Engineering/State explosion.md|State explosion]]
 - [[Engineering/Why invest in tools.md|Why invest in tools]]
 - [[Engineering/The value of fundamentals in software development.md|The value of fundamentals in software development]]
 - [[Engineering/Tackling complexity.md|Tackling complexity]]
+- [[Engineering/State explosion.md|State explosion]]
+- [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
 - [[Engineering/Service-based architecture.md|Service-based architecture]]
-- [[Engineering/Overview of Domain Driven Design.md|Overview of Domain Driven Design]]
 - [[Engineering/Reducers.md|Reducers]]
+- [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
+- [[Engineering/Overview of Domain Driven Design.md|Overview of Domain Driven Design]]
+- [[Engineering/Moore machine.md|Moore machine]]
 - [[Engineering/Mealy machine.md|Mealy machine]]
 - [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
-- [[Engineering/Moore machine.md|Moore machine]]
-- [[Engineering/Edsger Dijkstra interview.md|Edsger Dijkstra interview]]
-- [[Engineering/Cold start problem.md|Cold start problem]]
 - [[Engineering/Finite-state transducer.md|Finite-state transducer]]
 - [[Engineering/Finite-state automata.md|Finite-state automata]]
 - [[Engineering/Entities in Domain Driven Design.md|Entities in Domain Driven Design]]
+- [[Engineering/Edsger Dijkstra interview.md|Edsger Dijkstra interview]]
+- [[Engineering/Double-entry accounting.md|Double-entry accounting]]
 - [[Engineering/Domain Model in Domain Driven Design.md|Domain Model in Domain Driven Design]]
+- [[Engineering/DevOps/Progressive Delivery.md|Progressive Delivery]]
+- [[Engineering/DevOps/Kubeseal & Sops.md|Kubeseal & Sops]]
+- [[Engineering/DevOps/Feature flags.md|Feature flags]]
 - [[Engineering/Deno.md|Deno]]
+- [[Engineering/Debugging in JavaScript.md|Debugging in JavaScript]]
 - [[Engineering/Database Sharding.md|Database Sharding]]
+- [[Engineering/Concurrency in Javascript.md|Concurrency in Javascript]]
 - [[Engineering/Command Query Responsibility Segregation (CQRS).md|Command Query Responsibility Segregation (CQRS)]]
+- [[Engineering/Cold start problem.md|Cold start problem]]
 - [[Engineering/Cloudflare Worker (CF Worker).md|Cloudflare Worker (CF Worker)]]
 - [[Engineering/Circuit breaker Pattern.md|Circuit breaker Pattern]]
 - [[Engineering/CAP theorem.md|CAP theorem]]
@@ -54,4 +67,4 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/ACID model.md|ACID model]]
 
 
-*This page was last modified at 2022-08-20T11:21:45.324Z*.
+*This page was last modified at 2022-11-27T11:06:32.903Z*.

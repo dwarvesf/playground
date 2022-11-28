@@ -1,3 +1,8 @@
+---
+recurringTemplate: true
+recurringTemplateName: engineering-mobile-moc
+---
+
 This is a [[Map of Content]] related to the engineering concepts around mobile.
 
 ## Mobile
