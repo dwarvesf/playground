@@ -4,8 +4,6 @@ author: Dung Ho
 date: 2022-11-23
 ---
 
-# Order By vs. Sort By vs. Distribute By vs. Cluster By
-
 These are very interesting concepts which are about ordering records in a data set. What is so special about ordering? If we want to order the records in the stocks data set by closing price in descending order, we can write a simple query like 
 
 ```sql 
