@@ -2,7 +2,7 @@
 const dv = this.app.plugins.plugins["dataview"].api;
 const page = dv.page("_env");
 
-const pageFields = Object.keys(page).filter(e => e !== "file");
+const pageFields = Object.keys(page).filter(e => e.contains("discord_webhook"));
 const field = await tp.system.suggester(items = pageFields, text_items = pageFields, throw_on_cancel=true, placeholder = "")
 const webhookURL = page[field];
 
