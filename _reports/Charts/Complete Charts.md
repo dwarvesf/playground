@@ -13,7 +13,7 @@ data: |
   dataviewjs:
     const now = new Date(Date.now());
     const today_date = dv.date(now.toISOString())
-    return dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
+    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR "Ω Fleeting notes"`)
            .where(p => !!p.file.frontmatter.date)
            .flatMap(p => p.file.etags)
            .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1))
