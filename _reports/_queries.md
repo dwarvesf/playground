@@ -6,7 +6,7 @@ fleeting_monthly: |
     sum(rows.icy) + " ICY" as reward
   FROM "Ω Fleeting notes"
   WHERE discord_id != NULL
-    AND date.weekyear >= (date(today)).weekyear - 3
+    AND date.month = (date(today)).month
   GROUP BY discord_id
 
 structured_permanent_notes_monthly: |
@@ -15,7 +15,7 @@ structured_permanent_notes_monthly: |
     rows.file.tags as tags
   FROM #engineering OR #writing OR #design OR #communication OR #blockchain
   WHERE author != NULL
-    AND date.weekyear >= (date(today)).weekyear - 3
+    AND date.month = (date(today)).month
   GROUP BY author
 
 literature_notes_monthly: |
@@ -25,7 +25,7 @@ literature_notes_monthly: |
     sum(rows.icy) + " ICY" as reward
   FROM "Ω Literature notes"
   WHERE discord_id != NULL
-    AND date.weekyear >= (date(today)).weekyear - 3
+    AND date.month = (date(today)).month
   GROUP BY discord_id
 
 permanent_notes_monthly: |
@@ -34,12 +34,13 @@ permanent_notes_monthly: |
     sum(rows.icy) + " ICY" as reward
   FROM "Ω Permanent notes"
   WHERE discord_id != NULL
-    AND date.weekyear >= (date(today)).weekyear - 3
+    AND date.month = (date(today)).month
   GROUP BY discord_id
 
 fleeting_notes_all: |
   TABLE discord_id, discord_channel, date, "#" + regexreplace(tags, ", ", " #") as tags, icy
   FROM "Ω Fleeting notes"
+  SORT date DESC
   WHERE discord_id != NULL
 
 structured_permanent_notes_all: |
@@ -48,5 +49,6 @@ structured_permanent_notes_all: |
     date,
     "#" + regexreplace(tags, ", ", " #") as tags
   FROM #engineering OR #blockchain OR #design OR #communication OR #writing
+  SORT date DESC
   WHERE author != NULL
 ---
