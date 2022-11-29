@@ -1,5 +1,5 @@
 ---
-tags: engineering/data, mapreduce, distributed, hadoop, Apache Pig
+tags: engineering/data, mapreduce, distributed, hadoop, Apache-Pig
 author: Dung Ho
 date: 2022-11-14
 ---
