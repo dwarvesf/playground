@@ -11,7 +11,7 @@ type: WordCloud
 #-----------------#
 data: |
   dataviewjs:
-    return dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
+    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR "Ω Fleeting notes"`)
            .where(p => !!p.file.frontmatter.date)
            .where(p => dv.date(p.file.frontmatter.date) !== null)
            .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
@@ -46,7 +46,7 @@ type: Treemap
 data: |
   dataviewjs:
     const children = []
-    const query = dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
+    const query = dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR "Ω Fleeting notes"`)
         .where(p => !!p.file.frontmatter.date)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
         .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
