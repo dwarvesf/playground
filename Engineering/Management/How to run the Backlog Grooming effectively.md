@@ -1,5 +1,5 @@
 ---
-tags: engineering/management, process, backlog grooming
+tags: engineering/management, process, backlog-grooming
 author: Nhut Huynh
 date: 2022-11-18
 ---
