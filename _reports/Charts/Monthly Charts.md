@@ -110,27 +110,27 @@ data: |
            }, [
                {
                    item: "Engineering",
-                   user: "a",
+                   user: "notes",
                    score: 0
                },
                {
                    item: "Writing",
-                   user: "a",
+                   user: "notes",
                    score: 0
                },
                {
                    item: "Design",
-                   user: "a",
+                   user: "notes",
                    score: 0
                },
                {
                    item: "Communication",
-                   user: "a",
+                   user: "notes",
                    score: 0
                },
                {
                    item: "Blockchain",
-                   user: "a",
+                   user: "notes",
                    score: 0
                },
            ])
