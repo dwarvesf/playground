@@ -2,6 +2,7 @@
 tags: engineering/backend, elixir, k8s, kubernetes, service-account, libcluster
 author: Hieu Phan
 date: 2022-11-02
+icy: 10
 ---
 
 In the Dwarves Foundation, we applied some practices to decrease the operation cost. We set up the runtime environments in the team. 

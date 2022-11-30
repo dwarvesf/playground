@@ -2,6 +2,7 @@
 tags: engineering/backend, elixir, pg, process
 author: Hieu Phan
 date: 2022-11-01
+icy: 10
 ---
 
 pg2 is an erlang module that implements **process groups**. Each message may be sent to one, some, or all group members.
