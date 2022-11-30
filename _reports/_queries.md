@@ -13,7 +13,7 @@ structured_permanent_notes_monthly: |
   TABLE
     rows.file.link as entries, 
     rows.file.tags as tags
-  FROM #engineering OR #writing OR #design OR #communication OR #blockchain
+  FROM #engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile 
   WHERE author != NULL
     AND date.month = (date(today)).month
   GROUP BY author
@@ -48,7 +48,7 @@ structured_permanent_notes_all: |
     author,
     date,
     "#" + regexreplace(tags, ", ", " #") as tags
-  FROM #engineering OR #blockchain OR #design OR #communication OR #writing
+  FROM #engineering OR #blockchain OR #design OR #communication OR #writing OR #mobile
   SORT date DESC
   WHERE author != NULL
 ---
