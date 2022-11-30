@@ -11,7 +11,7 @@ type: WordCloud
 #-----------------#
 data: |
   dataviewjs:
-    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR "Ω Fleeting notes"`)
+    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR "Ω Fleeting notes"`)
            .where(p => !!p.file.frontmatter.date)
            .where(p => dv.date(p.file.frontmatter.date) !== null)
            .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
@@ -46,7 +46,7 @@ type: Treemap
 data: |
   dataviewjs:
     const children = []
-    const query = dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR "Ω Fleeting notes"`)
+    const query = dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR "Ω Fleeting notes"`)
         .where(p => !!p.file.frontmatter.date)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
         .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
@@ -91,7 +91,7 @@ type: Radar
 #-----------------#
 data: |
   dataviewjs:
-    return dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
+    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR "Ω Fleeting notes"`)
            .where(p => !!p.file.frontmatter.date)
            .where(p => dv.date(p.file.frontmatter.date) !== null)
            .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
@@ -222,7 +222,7 @@ type: Bar
 #-----------------#
 data: |
   dataviewjs:
-    return dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
+    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile`)
         .where(p => !!p.file.frontmatter.date && !!p.file.frontmatter.author)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
         .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
