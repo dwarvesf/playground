@@ -2,6 +2,7 @@
 tags: engineering/management, process, quality-assurance
 author: Nhut Huynh
 date: 2022-11-08
+icy: 10
 ---
 
 *The following entry is from the thoughts, compositions, and conclusions from field work by one of our leads.*

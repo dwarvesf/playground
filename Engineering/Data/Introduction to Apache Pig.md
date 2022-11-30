@@ -2,6 +2,7 @@
 tags: engineering/data, mapreduce, distributed, hadoop, Apache-Pig
 author: Dung Ho
 date: 2022-11-14
+icy: 10
 ---
 
 In short, Apache Pig takes a set of instructions from the user and converts those instructions into MapReduce jobs and execute the MapReduce jobs in Hadoop cluster.

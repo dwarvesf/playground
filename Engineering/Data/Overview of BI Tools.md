@@ -2,6 +2,7 @@
 tags: engineering/data, BI-Tools, Power-BI, Tableau, Google-Data-Studio
 author: Bach Phuong
 date: 2022-11-21
+icy: 10
 ---
 
 Data visualization is one of most important skill of data analytic. Companies utilize the software for data visualization to have a greater insight into their company data. By using Business Intelligence software, one can do lots of excellent operations with the data, like interact, interpret, and exhibit it. There are several data visualization tools on market such as: Power BI, Sap, Oracle BI,..Power BI , Tableau, Google data studio are the most popular tools. I have chances to work with all of them in my career, so I will review the pros and cons of each tools in this article. 

@@ -12,7 +12,8 @@ fleeting_monthly: |
 structured_permanent_notes_monthly: |
   TABLE
     rows.file.link as entries, 
-    rows.file.tags as tags
+    rows.file.tags as tags,
+    sum(rows.icy) + " ICY" as reward
   FROM #engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile 
   WHERE author != NULL
     AND date.month = (date(today)).month
