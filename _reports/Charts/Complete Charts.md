@@ -13,7 +13,7 @@ data: |
   dataviewjs:
     const now = new Date(Date.now());
     const today_date = dv.date(now.toISOString())
-    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR "Ω Fleeting notes"`)
+    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR "Ω Fleeting notes"`)
            .where(p => !!p.file.frontmatter.date)
            .flatMap(p => p.file.etags)
            .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1))
@@ -46,7 +46,7 @@ type: Treemap
 data: |
   dataviewjs:
     const children = []
-    const query = dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
+    const query = dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR "Ω Fleeting notes"`)
         .where(p => !!p.file.frontmatter.date)
         .flatMap(p => p.file.etags)
         .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)).array()
@@ -89,7 +89,7 @@ type: Radar
 #-----------------#
 data: |
   dataviewjs:
-  return dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
+  return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR "Ω Fleeting notes"`)
            .where(p => !!p.file.frontmatter.date)
            .flatMap(p => p.file.etags)
            .filter(p => p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)
@@ -217,7 +217,7 @@ type: Bar
 #-----------------#
 data: |
   dataviewjs:
-    return dv.pages("#engineering OR #writing OR #design OR #communication OR #blockchain")
+    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile`)
         .where(p => !!p.file.frontmatter.date && !!p.file.frontmatter.author)
         .groupBy(p => p.file.frontmatter.author)
         .sort(p => p.rows.length, "desc")
