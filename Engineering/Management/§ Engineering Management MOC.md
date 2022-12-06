@@ -7,16 +7,16 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 
 ## Management
 ---
-- [[Engineering/Management/Team first thinking.md|Team first thinking]]
 - [[Engineering/Management/Team toplogies.md|Team toplogies]]
+- [[Engineering/Management/Team first thinking.md|Team first thinking]]
+- [[Engineering/Management/Stream-aligned team.md|Stream-aligned team]]
+- [[Engineering/Management/Quality Assurance works in the product team.md|Quality Assurance works in the product team]]
+- [[Engineering/Management/Story point estimation.md|Story point estimation]]
+- [[Engineering/Management/How one product team works when having incident.md|How one product team works when having incident]]
+- [[Engineering/Management/How to run the Backlog Grooming effectively.md|How to run the Backlog Grooming effectively]]
 - [[Engineering/Management/Enabling team.md|Enabling team]]
 - [[Engineering/Management/Cognitive load.md|Cognitive load]]
 - [[Engineering/Conway's law.md|Conway's law]]
-- [[Engineering/Management/How one product team works when having incident.md|How one product team works when having incident]]
-- [[Engineering/Management/How to run the Backlog Grooming effectively.md|How to run the Backlog Grooming effectively]]
-- [[Engineering/Management/Story point estimation.md|Story point estimation]]
-- [[Engineering/Management/Quality Assurance works in the product team.md|Quality Assurance works in the product team]]
-- [[Engineering/Management/Stream-aligned team.md|Stream-aligned team]]
 
 ## Fundamentals
 ---
@@ -25,4 +25,4 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 
 
-*This page was last modified at 2022-11-28T12:19:34.220Z*.
+*This page was last modified at 2022-12-06T15:29:16.499Z*.
