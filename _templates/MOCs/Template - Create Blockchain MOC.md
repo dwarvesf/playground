@@ -9,7 +9,7 @@ This is a [[Map of Content]] related to the blockchain.
 ---
 <%*
 const query = `LIST FROM #blockchain AND #foundational-topics`
-const dv = this.app.plugins.plugins["dataview"].api ;
+const dv = this.app.plugins.plugins["dataview"].api;
 const te = await dv.queryMarkdown(query);
 tR += te.value;
 %>

@@ -8,7 +8,7 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 ## General data
 ---
 <%*
-const dv = this.app.plugins.plugins["dataview"].api ;
+const dv = this.app.plugins.plugins["dataview"].api;
 const te = await dv.queryMarkdown(`LIST FROM #engineering/data AND -#big-data AND -#state`);
 tR += te.value;
 %>
