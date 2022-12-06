@@ -8,7 +8,7 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 ## Management
 ---
 <%*
-const dv = this.app.plugins.plugins["dataview"].api ;
+const dv = this.app.plugins.plugins["dataview"].api;
 const te = await dv.queryMarkdown(`LIST FROM #engineering/management`);
 tR += te.value;
 %>
