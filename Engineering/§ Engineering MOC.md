@@ -40,4 +40,4 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/ACID model.md|ACID model]]
 
 
-*This page was last modified at 2022-12-06T17:12:53.530Z*.
+*This page was last modified at 2022-12-06T17:22:00.095Z*.
