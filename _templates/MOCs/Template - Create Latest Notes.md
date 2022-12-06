@@ -14,14 +14,6 @@ tR += te.value;
 ## Newest Contributors
 ---
 <%*
-const authoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
-	.where(p => !!p.file.frontmatter.author)
-	.where(p => !!p.file.frontmatter.date)
-    .where(p => dv.date(p.file.frontmatter.date) !== null)
-    .sort(p => p.date, "desc")
-	.groupBy(p => p.author)
-	.filter(p => p.rows.length === 1);
-	
 const discordNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
 	.where(p => !!p.file.frontmatter.discord_id)
 	.where(p => !!p.file.frontmatter.date)
@@ -37,6 +29,15 @@ for (let group of discordNotes) {
 	}
 }
 tR += "\n---\n"
+%><%*
+const authoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
+	.where(p => !!p.file.frontmatter.author)
+	.where(p => !!p.file.frontmatter.date)
+    .where(p => dv.date(p.file.frontmatter.date) !== null)
+    .sort(p => p.date, "desc")
+	.groupBy(p => p.author)
+	.filter(p => p.rows.length === 1);
+
 for (let group of authoredNotes) {
 	tR += `- **${group.key}**: `
 	for (let row of group.rows) {
