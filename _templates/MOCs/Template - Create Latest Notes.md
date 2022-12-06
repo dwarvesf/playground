@@ -28,8 +28,9 @@ for (let group of discordNotes) {
 		tR += `${row.file.link}\n`
 	}
 }
-tR += "\n---\n"
-%><%*
+%>
+---
+<%*
 const authoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
 	.where(p => !!p.file.frontmatter.author)
 	.where(p => !!p.file.frontmatter.date)
