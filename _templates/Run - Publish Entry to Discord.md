@@ -10,6 +10,7 @@ const contentNoFrontmatter = tp.file.content
 	.split("\n").slice(5).join("\n")
 const bareContent = contentNoFrontmatter
 	.replace(/^(#+(.*))$/gm, "\n")
+	.replace(/(\[\[|\]\])/gm, "")
 	.replace(/(\r\n|\n|\r)/gm, "")
 const description = bareContent.split(" ").slice(0, 35).join(' ') + "..."
 
