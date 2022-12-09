@@ -1,10 +1,9 @@
 ---
-tags: blockchain, network
+tags: blockchain, network, ethereum
 author: Bien Vo
 date: 2022-12-06
+icy: 10
 ---
-
-# Layer 2
 
 ## What?
 
