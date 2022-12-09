@@ -5,8 +5,6 @@ date: 2022-12-02
 icy: 10
 ---
 
-# Partitions on Apache Hive
-
 Have you ever been in a situation where you are trying to optimize a slow running query to make it run faster? In our case, we have been looking at that query for hours and realized that the query is scanning the entire table and we are thinking that this query will be super fast if it only targets specific set of records instead of the entire table. Thus, what we really want, hopefully you too, in such cases is partitions.
 
 Let's find out about partitions in Hive with the following two parts:
@@ -45,7 +43,7 @@ In the `stocks_partition` table, we are naming the partition column as `sym` as 
 DESCRIBE FORMATTED stocks_partition;
 ```
 
-![](images/describe_stocks_partition.png)
+![](describe_stocks_partition.png)
 
 As the above screenshot, the describe information for this table shows partition information the column name for our partition is `sym` and the data type of that is string. To load data into the partition table, it is slightly different from loading a regular table, we're selecting all the records from the `stocks` table with simple `B7J` and inserting those records into the `stocks_partition` table. The important thing to note here is that we're assigning `B7J` to be the value of the partition column `sym`.
 
@@ -56,7 +54,7 @@ SELECT * FROM stocks s
 WHERE s.symbol = 'B7J';
 ```
 
-![](images/inserting-B7J.png)
+![](inserting-B7J.png)
 
 When the execution of the above command is completed, as shown in the screenshot, Hive created a partition in `stocks_partition` table with the name `sym` equals `B7J`. Assume that another partition for symbol `BB3` is created with the following command:
 
@@ -69,11 +67,11 @@ WHERE s.symbol = 'BB3';
 
 We can list the partitions for a given table with `SHOW PARTITIONS stocks_partition;`, tthere are two partitions.
 
-![](images/show-partitions.png)
+![](show-partitions.png)
 
 How the data is physically structured for this table `stocks_partition` in HDFS? We can get the value from the location attribute with the command `DESCRIBE FORMATTED stocks_partition;`.
 
-![](images/location.png)
+![](location.png)
 
 Usually, we will see files under the tables directory, but the partition tables are structured and stored slightly differently. As shown in the above screenshot, under the directory `stocks_partitions`, we see two more directories one for symbol `B7J` and the other one for symbol `BB3`. These are partition directorie. In the directory `B7J`, there is a file which will have just the records for symbol `B7J` nicely stored in the partition directory. When we query the data for symbol `B7J` using the partition column `sym`, the MapReduce job will only scan this specific directory and that is quite powerful. Since we are not scanning the entire data set anymore, the execution time of this query will be much faster. 
 
@@ -196,7 +194,7 @@ For symbol that starts with `B`, this insert command will create partitions for 
 
 Let's check how the directories are structured for each partition. Since we have more than one partition columns in the table, so we do HDFS listing on the table first.
 
-![](images/check-dynamic-partitions.png)
+![](check-dynamic-partitions.png)
 
 Under this table, we see the high level partition which is exchange name equals `ABCSE`. We can go into that partition and see what is inside that partition. As expected as shown in the above screenshot, there are three partitions under the first partition `ABCSE`: one for year 2001, 2002 and 2003. If we go into 2003 directory, there are several directories or partitions, one for each symbol. The symbol directories will have the files for that corresponding symbol.
 
