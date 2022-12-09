@@ -5,6 +5,9 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Blockchain/Layer 2.md|Layer 2]]
+- [[Engineering/Event sourcing overview.md|Event sourcing overview]]
+- [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
 - [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
 - [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 - [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
@@ -12,9 +15,6 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Management/How to run the Backlog Grooming effectively.md|How to run the Backlog Grooming effectively]]
 - [[Blockchain/Solana Account.md|Solana Account]]
 - [[Engineering/Data/Managed Table vs External Table.md|Managed Table vs External Table]]
-- [[Ω Fleeting notes/202211141513 - Materialized View Pattern.md|202211141513 - Materialized View Pattern]]
-- [[Ω Fleeting notes/202211141287 - Go JSON Parsing.md|202211141287 - Go JSON Parsing]]
-- [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
 
 
 ## Newest Contributors
@@ -26,6 +26,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **hollow#3333**: [[Ω Fleeting notes/202210162154 - The Best of CSS TLDR.md|202210162154 - The Best of CSS TLDR]]
 
 ---
+- **Bien Vo**: [[Blockchain/Layer 2.md|Layer 2]]
 - **Binh Le**: [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 - **Cao Nguyen Huy Hoang**: [[Design/What Screens Want.md|What Screens Want]]
 - **Hien Le**: [[Blockchain/Liquidity pool.md|Liquidity pool]]
@@ -43,4 +44,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **Tran Tien An**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 
 
-*This page was last modified at 2022-12-06T17:23:14.276Z*.
+*This page was last modified at 2022-12-09T09:42:14.950Z*.
