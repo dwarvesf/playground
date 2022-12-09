@@ -1,7 +1,8 @@
 ---
-tags: engineering, event-sourcing, DDD
+tags: engineering, event-sourcing, DDD, e-commerce, event-store, aggregation, requirement
 author: M.Vu Cuong(Jim)
 date: 2022-12-05
+icy: 10
 ---
 
 ## What is Event sourcing
@@ -33,17 +34,17 @@ An Event mainly consists of `Entity_ID`, `Type`,  `Data`,  `Metadata`, and  `Ver
   Exp:  `order_created`, `product_added`, `product_removed`,...
 - `Data` saves changes that happened to the domain object.
   Exp: 
-	```
+```
 	product_added_event: { 
 	    data: [
 		    { product_id: book_1, quantity: 3 } 
 		]
 	}
-	```
+```
 
 - `Metadata` saves all user interactions and system metrics.
   Exp:
-  	```
+```
   	product_added_event: {
 		metadata: {
 			user_ip: 192.168.1.1
@@ -52,7 +53,7 @@ An Event mainly consists of `Entity_ID`, `Type`,  `Data`,  `Metadata`, and  `Ver
 			response_time: 405ms
 		}
 	}
-	```
+```
 
 ### Event Store
 
@@ -97,7 +98,7 @@ These are **State Projection**. Through **Projector**, we present states that fi
 
 And through our business process, we build states to validate if an event is valid to append to the event store with **Aggregation**.
 
-%%### Apend event to Event store%%
+%%### Append event to Event store%%
 
 %%From FE, Client application's request, need to transform into an event%%
 
