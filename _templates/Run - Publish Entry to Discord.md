@@ -7,7 +7,7 @@ const field = await tp.system.suggester(items = pageFields, text_items = pageFie
 const webhookURL = page[field];
 
 const contentNoFrontmatter = tp.file.content
-	.split("\n").slice(5).join("\n")
+	.split("\n").slice(6).join("\n")
 const bareContent = contentNoFrontmatter
 	.replace(/^(#+(.*))$/gm, "\n")
 	.replace(/(\[\[|\]\])/gm, "")
