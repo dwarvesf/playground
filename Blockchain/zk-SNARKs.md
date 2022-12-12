@@ -2,6 +2,7 @@
 tags: blockchain, network, ethereum, zero-knowledge, snarks
 author: Bien Vo
 date: 2022-12-09
+icy: 10
 ---
 
 ## What is this?
