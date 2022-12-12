@@ -12,6 +12,7 @@ const bareContent = contentNoFrontmatter
 	.replace(/^(#+(.*))$/gm, "\n")
 	.replace(/(\[\[|\]\])/gm, "")
 	.replace(/(\r\n|\n|\r)/gm, "")
+	.replace(/- (\w*)/gm, "");
 const description = bareContent.split(" ").slice(0, 50).join(' ') + "..."
 
 const currentPage = tp.file.folder();
