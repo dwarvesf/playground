@@ -6,6 +6,7 @@ recurringTemplateName: latest-notes
 This is where we keep track of our top 10 latest Brainery notes:
 
 - [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
+- [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
 - [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
 - [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
 - [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
@@ -14,7 +15,6 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
 - [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
 - [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
-- [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
 
 
 ## Top Contributors this month
@@ -25,6 +25,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **Binh Le**: 
 	- [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
 - **Dung Ho**: 
+	- [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
 	- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
 	- [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
 - **M.Vu Cuong(Jim)**: 
@@ -60,4 +61,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **Tran Tien An**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 
 
-*This page was last modified at 2022-12-12T08:04:46.870Z*.
+*This page was last modified at 2022-12-12T08:54:07.379Z*.

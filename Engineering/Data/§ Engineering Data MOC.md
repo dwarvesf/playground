@@ -7,6 +7,7 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 
 ## General data
 ---
+- [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
 - [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
 - [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
 - [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
@@ -36,4 +37,4 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/State explosion.md|State explosion]]
 
 
-*This page was last modified at 2022-12-12T08:04:46.932Z*.
+*This page was last modified at 2022-12-12T08:54:07.434Z*.
