@@ -7,8 +7,9 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 
 ## General data
 ---
-- [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
+- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
 - [[Engineering/Data/Statistics in data analysis.md|Statistics in data analysis]]
+- [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
 - [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
 - [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
 - [[Engineering/Data/MapReduce.md|MapReduce]]
@@ -35,4 +36,4 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/State explosion.md|State explosion]]
 
 
-*This page was last modified at 2022-12-09T09:42:15.016Z*.
+*This page was last modified at 2022-12-12T07:00:32.630Z*.
