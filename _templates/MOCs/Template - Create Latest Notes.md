@@ -11,6 +11,26 @@ const te = await dv.queryMarkdown(`LIST FROM -"_templates" AND -"_reports" AND -
 tR += te.value;
 %>
 
+## Top Contributors this month
+
+<%*
+const topAuthoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
+	.where(p => !!p.file.frontmatter.author)
+	.where(p => !!p.file.frontmatter.date)
+    .where(p => dv.date(p.file.frontmatter.date) !== null)
+    .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
+    .sort(p => p.date, "desc")
+	.groupBy(p => p.author);
+
+for (let group of topAuthoredNotes) {
+	tR += `- **${group.key}**: \n`
+	for (let row of group.rows) {
+		tR += `\t- ${row.file.link}\n`
+	}
+}
+%>
+
+
 ## Newest Contributors
 ---
 <%*
@@ -20,7 +40,7 @@ const discordNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
     .where(p => dv.date(p.file.frontmatter.date) !== null)
     .sort(p => p.date, "desc")
 	.groupBy(p => p.discord_id)
-	.filter(p => (p.rows.length <= 1) || (dv.date(p.rows.file.frontmatter.date).month === dv.date('today').month));
+	.filter(p => p.rows.length <= 1);
 
 for (let group of discordNotes) {
 	tR += `- **${group.key}**: `
@@ -37,7 +57,7 @@ const authoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
     .where(p => dv.date(p.file.frontmatter.date) !== null)
     .sort(p => p.date, "desc")
 	.groupBy(p => p.author)
-	.filter(p => (p.rows.length <= 1) || (dv.date(p.rows.file.frontmatter.date).month === dv.date('today').month));
+	.filter(p => p.rows.length <= 1);
 
 for (let group of authoredNotes) {
 	tR += `- **${group.key}**: `
