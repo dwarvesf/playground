@@ -5,6 +5,7 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
 - [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
 - [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
 - [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
@@ -14,15 +15,15 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
 - [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 - [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
-- [[Engineering/Data/DBT - The Good Solution to Accelerate Data Transformation.md|DBT - The Good Solution to Accelerate Data Transformation]]
 
 
 ## Top Contributors this month
 ---
-
 - **Bien Vo**: 
 	- [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
 	- [[Blockchain/Layer 2.md|Layer 2]]
+- **Binh Le**: 
+	- [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
 - **Dung Ho**: 
 	- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
 	- [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
@@ -42,7 +43,6 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **hollow#3333**: [[Ω Fleeting notes/202210162154 - The Best of CSS TLDR.md|202210162154 - The Best of CSS TLDR]]
 
 ---
-- **Binh Le**: [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 - **Cao Nguyen Huy Hoang**: [[Design/What Screens Want.md|What Screens Want]]
 - **Hien Le**: [[Blockchain/Liquidity pool.md|Liquidity pool]]
 - **Hoang Nguyen**: [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
@@ -60,4 +60,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **Tran Tien An**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 
 
-*This page was last modified at 2022-12-12T07:58:03.656Z*.
+*This page was last modified at 2022-12-12T08:04:46.870Z*.
