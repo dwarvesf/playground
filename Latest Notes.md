@@ -5,6 +5,7 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
 - [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
 - [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
 - [[Blockchain/Layer 2.md|Layer 2]]
@@ -14,10 +15,10 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 - [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
 - [[Engineering/Data/DBT - The Good Solution to Accelerate Data Transformation.md|DBT - The Good Solution to Accelerate Data Transformation]]
-- [[Engineering/Management/How to run the Backlog Grooming effectively.md|How to run the Backlog Grooming effectively]]
 
 
 ## Top Contributors this month
+---
 
 - **Bien Vo**: 
 	- [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
@@ -27,6 +28,8 @@ This is where we keep track of our top 10 latest Brainery notes:
 	- [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
 - **M.Vu Cuong(Jim)**: 
 	- [[Engineering/Event sourcing overview.md|Event sourcing overview]]
+- **Pham The Hung**: 
+	- [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
 
 
 
@@ -50,10 +53,11 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **Nguyen Huu Nguyen**: [[Engineering/DevOps/Kubeseal & Sops.md|Kubeseal & Sops]]
 - **Nguyen Tran Khanh**: [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
 - **Nguyen Xuan Truong**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
+- **Pham The Hung**: [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
 - **Phat G Ha**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 - **Phuc Le Dien**: [[Engineering/Mobile/Secret Management on iOS.md|Secret Management on iOS]]
 - **Tieu Quang Huy**: [[Communication/DiSC Personality Types in team work.md|DiSC Personality Types in team work]]
 - **Tran Tien An**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 
 
-*This page was last modified at 2022-12-12T07:00:32.560Z*.
+*This page was last modified at 2022-12-12T07:58:03.656Z*.

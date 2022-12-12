@@ -12,7 +12,7 @@ tR += te.value;
 %>
 
 ## Top Contributors this month
-
+---
 <%*
 const topAuthoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
 	.where(p => !!p.file.frontmatter.author)
