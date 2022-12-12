@@ -7,6 +7,8 @@ This is a [[Map of Content]] related to the engineering.
 
 ## Engineering
 ---
+- [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
+- [[Engineering/Event sourcing overview.md|Event sourcing overview]]
 - [[Engineering/git.md|git]]
 - [[Engineering/Why invest in tools.md|Why invest in tools]]
 - [[Engineering/Tackling complexity.md|Tackling complexity]]
@@ -14,14 +16,12 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
 - [[Engineering/Service-based architecture.md|Service-based architecture]]
 - [[Engineering/Reducers.md|Reducers]]
-- [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 - [[Engineering/Overview of Domain Driven Design.md|Overview of Domain Driven Design]]
 - [[Engineering/Moore machine.md|Moore machine]]
 - [[Engineering/Mealy machine.md|Mealy machine]]
 - [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
 - [[Engineering/Finite-state transducer.md|Finite-state transducer]]
 - [[Engineering/Finite-state automata.md|Finite-state automata]]
-- [[Engineering/Event sourcing overview.md|Event sourcing overview]]
 - [[Engineering/Entities in Domain Driven Design.md|Entities in Domain Driven Design]]
 - [[Engineering/Edsger Dijkstra interview.md|Edsger Dijkstra interview]]
 - [[Engineering/Double-entry accounting.md|Double-entry accounting]]
@@ -41,4 +41,4 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/ACID model.md|ACID model]]
 
 
-*This page was last modified at 2022-12-12T07:00:32.572Z*.
+*This page was last modified at 2022-12-12T07:58:03.690Z*.
