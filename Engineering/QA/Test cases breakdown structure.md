@@ -1,20 +1,20 @@
 ---
-tags: engineering/qa, writing test cases
+tags: engineering/qa, writing-test-cases, test-cases, breakdown
 author: Binh Le
 date: 2022-12-12
 icy: 10
 ---
 
 
-### Note
+## Note
 
 The self-experience on managing test cases which is using both manual and automation tests in the same project.
 
-### Purpose
+## Purpose
 
 Use 1 documentation for the whole testing team (both manual and automation), reduce the effort for writing and maintenance the test cases checklist.
 
-### Strategy
+## Strategy
 
 - Use the same term and naming convention as what less changes through time. For example, the requirement (AC). For the project NOT to have much requirement, based on the page's name.
 - Separate test cases into 2 parts: functional and non-functional.
@@ -23,7 +23,7 @@ Use 1 documentation for the whole testing team (both manual and automation), red
   - For both, any validation point shows more than 1 time, used as a common validation.
 - Start writing test cases as soon as possible ( best cases are parallel by the time the initial stage of requirement).
 
-### Example
+## Example
 
 Update test cases for feature about the payment flow, through 4 p​​ages, including:
 
