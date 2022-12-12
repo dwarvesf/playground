@@ -1,10 +1,8 @@
 ---
-tags: blockchain, network, ethereum
+tags: blockchain, network, ethereum, zero-knowledge, snarks
 author: Bien Vo
 date: 2022-12-09
 ---
-
-# ZK-SNARKs
 
 ## What is this?
 
