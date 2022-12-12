@@ -1,8 +1,10 @@
 ---
-tags: mobile, swift
+tags: mobile, swift, race, race-condition, multi-threaded, concurrency
 author: Pham The Hung
 date: 2022-12-11
+icy: 10
 ---
+
 This article will present a concept, which is `Data Race`. And what are we going to do to ensure data safety in multithreaded programming.
 
 Also, a concept quite related to this topic is `Race Condition`. If you don't know yet, try to learn it.
