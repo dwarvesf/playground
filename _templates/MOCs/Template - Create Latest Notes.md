@@ -20,7 +20,7 @@ const discordNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
     .where(p => dv.date(p.file.frontmatter.date) !== null)
     .sort(p => p.date, "desc")
 	.groupBy(p => p.discord_id)
-	.filter(p => p.rows.length <= 1);
+	.filter(p => (p.rows.length <= 1) || (dv.date(p.rows.file.frontmatter.date).month === dv.date('today').month));
 
 for (let group of discordNotes) {
 	tR += `- **${group.key}**: `
@@ -37,7 +37,7 @@ const authoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
     .where(p => dv.date(p.file.frontmatter.date) !== null)
     .sort(p => p.date, "desc")
 	.groupBy(p => p.author)
-	.filter(p => p.rows.length === 1);
+	.filter(p => (p.rows.length <= 1) || (dv.date(p.rows.file.frontmatter.date).month === dv.date('today').month));
 
 for (let group of authoredNotes) {
 	tR += `- **${group.key}**: `

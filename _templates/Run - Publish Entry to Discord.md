@@ -12,13 +12,13 @@ const bareContent = contentNoFrontmatter
 	.replace(/^(#+(.*))$/gm, "\n")
 	.replace(/(\[\[|\]\])/gm, "")
 	.replace(/(\r\n|\n|\r)/gm, "")
-const description = bareContent.split(" ").slice(0, 35).join(' ') + "..."
+const description = bareContent.split(" ").slice(0, 50).join(' ') + "..."
 
 const currentPage = tp.file.folder();
 const title = tp.file.title;
 const braineryURL = "https://brain.d.foundation/" + encodeURIComponent(`${currentPage}/${title}`)
 const author = tp.frontmatter.author;
-const topic = tp.file.tags[0]
+const topic = tp.file.tags.slice(0, 5).join("\n") + " ..."
 const footerText = `Added at ${tp.date.now("MMMM D, YYYY h:mm A")} 🎉🎉🎉` ;
 
 const webhookBody = {
@@ -31,7 +31,7 @@ const webhookBody = {
 			description,
 			fields: [
 			  { name: "Author", value: author, inline: true },
-			  { name: "Topic", value: topic, inline: true },
+			  { name: "Tags", value: topic, inline: true },
 			],
 			footer: {
 				text: footerText
