@@ -5,6 +5,8 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
+- [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
 - [[Blockchain/Layer 2.md|Layer 2]]
 - [[Engineering/Event sourcing overview.md|Event sourcing overview]]
 - [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
@@ -13,8 +15,19 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
 - [[Engineering/Data/DBT - The Good Solution to Accelerate Data Transformation.md|DBT - The Good Solution to Accelerate Data Transformation]]
 - [[Engineering/Management/How to run the Backlog Grooming effectively.md|How to run the Backlog Grooming effectively]]
-- [[Blockchain/Solana Account.md|Solana Account]]
-- [[Engineering/Data/Managed Table vs External Table.md|Managed Table vs External Table]]
+
+
+## Top Contributors this month
+
+- **Bien Vo**: 
+	- [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
+	- [[Blockchain/Layer 2.md|Layer 2]]
+- **Dung Ho**: 
+	- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
+	- [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
+- **M.Vu Cuong(Jim)**: 
+	- [[Engineering/Event sourcing overview.md|Event sourcing overview]]
+
 
 
 ## Newest Contributors
@@ -26,7 +39,6 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **hollow#3333**: [[Ω Fleeting notes/202210162154 - The Best of CSS TLDR.md|202210162154 - The Best of CSS TLDR]]
 
 ---
-- **Bien Vo**: [[Blockchain/Layer 2.md|Layer 2]]
 - **Binh Le**: [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 - **Cao Nguyen Huy Hoang**: [[Design/What Screens Want.md|What Screens Want]]
 - **Hien Le**: [[Blockchain/Liquidity pool.md|Liquidity pool]]
@@ -44,4 +56,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **Tran Tien An**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 
 
-*This page was last modified at 2022-12-09T09:42:14.950Z*.
+*This page was last modified at 2022-12-12T07:00:32.560Z*.
