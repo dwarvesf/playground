@@ -7,7 +7,7 @@ icy: 10
 
 # Buckets on Apache Hive
 
-With the understanding about partitions, the benefits of partitions and how to work with partitions from the article ![Partitions on Hive](Partitions%20on%20Apache%20Hive.md), we are going to see a couple of potential problems that we may see with partitions, especially, with dynamic partitions. And, of course, how to address them using buckets. In this article, we'll discuss about:
+With the understanding about partitions, the benefits of partitions and how to work with partitions from the article [[Partitions on Apache Hive]], we are going to see a couple of potential problems that we may see with partitions, especially, with dynamic partitions. And, of course, how to address them using buckets. In this article, we'll discuss about:
 - What are buckets?
 - The differences between buckets and partitions.
 - The benefits of using buckets in Hive.
@@ -15,11 +15,11 @@ With the understanding about partitions, the benefits of partitions and how to w
 
 Assume that we created a partition table named `stocks_dynamic_partition` which is partitioned by three columns: exchange name `exch_name`, year `yr` and symbol `sym`. Thus, we dynamically created hundreds of partitions on the table. Let's execute `SHOW PARTITIONS stocks_dynamic_partition;` to list all the partitions from the table. 
 
-![](images/listofpartitions.png)
+![](listofpartitions.png)
 
 The screenshot shows that this table has about 362 partitions. We see a lot of partitions a lot of partitions for just 2003 and similarly for 2002 and similarly for 2001. Let's pick a symbol and go into the directory for a specific year.
 
-![](images/lsapartition.png)
+![](lsapartition.png)
 
 As shown in the screenshot, there is a tiny file under the partition symbol `BUB` under year 2003.
 There are two problems here: 
@@ -46,7 +46,7 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
 
 In this table, we are partitioning the table by exchange name and year, then we are saying `CLUSTERED BY (symbol) INTO 5 BUCKETS` which is that in first partition, the data is set by exchange name and year and once the data set is partitioned by year, the records for the year are stored into five buckets. In other words, five files using the symbol as our bucketing column. Each symbol is assigned to a bucket number using a hash function and all the records for that symbol will be stored into the assigned bucket. For example, if symbol `XYZ` is assigned bucket number 3, all records for `XYZ` will be stored in bucket number 3.
 
-![](images/bucketingdemo.png)
+![](bucketingdemo.png)
 
 If we execute the describe command on the table as shown in the screenshot, and we can see the table is partitioned with two columns: exchange name and year, and the bucketed column symbol and the number of buckets is set to 5. Let's insert records into this table.
 
@@ -69,13 +69,13 @@ SET hive.exec.max.dynamic.partitions.pernode=500;
 SET hive.enforce.bucketing = true;
 ```
 
-![](images/insertdata.png)
+![](insertdata.png)
 
-![](images/insertdone.png)
+![](insertdone.png)
 
 As shown in the screenshot, the number of reduced tasks determined at compile time equals 5 which equals to the number of buckets on this table which is also 5. When the insert is complete, three partitions got created for this table and under each partition, there are five buckets, so the number of files is 15 (five buckets under each partition). Let's look at the partition for year 2002.
 
-![](images/lsbucketing.png)
+![](lsbucketing.png)
 
 As shown in the above screnshot, there are only five files or five buckets as opposed to too many tiny partitions. This is the benefit of buckets, we will get a constant number of buckets and also avoid tiny files. The second benefit of buckets is `sampling`. Sampling is beneficial when we don't want to query the entire data set and we would only like to analyze a random sample. 
 
