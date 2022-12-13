@@ -8,18 +8,18 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 ## General data
 ---
 - [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
-- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
+- [[Engineering/Data/Statistics in data analysis.md|Statistics in data analysis]]
 - [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
 - [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
 - [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
+- [[Engineering/Data/MapReduce.md|MapReduce]]
+- [[Engineering/Data/MapReduce Components.md|MapReduce Components]]
 - [[Engineering/Data/Managed Table vs External Table.md|Managed Table vs External Table]]
 - [[Engineering/Data/Introduction to Apache Pig.md|Introduction to Apache Pig]]
 - [[Engineering/Data/Introduction to Apache Hive.md|Introduction to Apache Hive]]
 - [[Engineering/Data/DBT - The Good Solution to Accelerate Data Transformation.md|DBT - The Good Solution to Accelerate Data Transformation]]
+- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
 - [[Engineering/Data/Behind a Hive table.md|Behind a Hive table]]
-- [[Engineering/Data/Statistics in data analysis.md|Statistics in data analysis]]
-- [[Engineering/Data/MapReduce.md|MapReduce]]
-- [[Engineering/Data/MapReduce Components.md|MapReduce Components]]
 
 ## Big data
 ---
@@ -37,4 +37,4 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/State explosion.md|State explosion]]
 
 
-*This page was last modified at 2022-12-12T08:54:07.434Z*.
+*This page was last modified at 2022-12-13T12:12:40.778Z*.
