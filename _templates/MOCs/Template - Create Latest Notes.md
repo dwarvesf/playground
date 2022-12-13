@@ -14,6 +14,14 @@ tR += te.value;
 ## Top Contributors this month
 ---
 <%*
+const topDiscordNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
+	.where(p => !!p.file.frontmatter.discord_id)
+	.where(p => !!p.file.frontmatter.date)
+    .where(p => dv.date(p.file.frontmatter.date) !== null)
+    .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
+    .sort(p => p.date, "desc")
+	.groupBy(p => p.discord_id)
+
 const topAuthoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
 	.where(p => !!p.file.frontmatter.author)
 	.where(p => !!p.file.frontmatter.date)
@@ -22,11 +30,23 @@ const topAuthoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge
     .sort(p => p.date, "desc")
 	.groupBy(p => p.author);
 
-for (let group of topAuthoredNotes) {
-	tR += `- **${group.key}**: \n`
+tR += "| authors | notes |\n"
+tR += "| ------- | ----- |\n"
+
+for (let group of topDiscordNotes) {
+	tR += `| ${group.key} | `
 	for (let row of group.rows) {
-		tR += `\t- ${row.file.link}\n`
+		tR += ` [[${row.file.name}]]<br>`
 	}
+	tR += "|\n"
+}
+
+for (let group of topAuthoredNotes) {
+	tR += `| ${group.key} | `
+	for (let row of group.rows) {
+		tR += ` [[${row.file.name}]]<br>`
+	}
+	tR += "|\n"
 }
 %>
 
