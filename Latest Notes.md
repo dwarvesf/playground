@@ -5,6 +5,7 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Ω Fleeting notes/202212131609 - How to deal with Technical debt in Scrum.md|202212131609 - How to deal with Technical debt in Scrum]]
 - [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
 - [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
 - [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
@@ -14,30 +15,23 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Event sourcing overview.md|Event sourcing overview]]
 - [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
 - [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
-- [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 
 
 ## Top Contributors this month
 ---
-- **Bien Vo**: 
-	- [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
-	- [[Blockchain/Layer 2.md|Layer 2]]
-- **Binh Le**: 
-	- [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
-- **Dung Ho**: 
-	- [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
-	- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
-	- [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
-- **M.Vu Cuong(Jim)**: 
-	- [[Engineering/Event sourcing overview.md|Event sourcing overview]]
-- **Pham The Hung**: 
-	- [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
+| authors | notes |
+| ------- | ----- |
+| 0xLight#0002 |  [[202212131609 - How to deal with Technical debt in Scrum]]<br>|
+| Bien Vo |  [[zk-SNARKs]]<br> [[Layer 2]]<br>|
+| Binh Le |  [[Test cases breakdown structure]]<br>|
+| Dung Ho |  [[Hive Window and Analytic functions]]<br> [[Buckets on Apache Hive]]<br> [[Partitions on Apache Hive]]<br>|
+| M.Vu Cuong(Jim) |  [[Event sourcing overview]]<br>|
+| Pham The Hung |  [[Data race and race condition]]<br>|
 
 
 
 ## Newest Contributors
 ---
-- **0xLight#0002**: [[Ω Fleeting notes/202210131000 - Behavior Driven Development.md|202210131000 - Behavior Driven Development]]
 - **antran#3200**: [[Ω Fleeting notes/202210150019 - Migration Planning.md|202210150019 - Migration Planning]]
 - **haongo1#3632**: [[Ω Fleeting notes/202211141513 - Materialized View Pattern.md|202211141513 - Materialized View Pattern]]
 - **hieuvd#4261**: [[Ω Fleeting notes/202211141287 - Go JSON Parsing.md|202211141287 - Go JSON Parsing]]
@@ -61,4 +55,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **Tran Tien An**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 
 
-*This page was last modified at 2022-12-12T08:54:07.379Z*.
+*This page was last modified at 2022-12-13T12:12:40.720Z*.
