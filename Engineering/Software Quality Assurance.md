@@ -1,6 +1,7 @@
 ---
 tags: engineering, quality, quality-assurance
 author: Ngo Trong Khoi
+github_id: trkhoi
 date: 2022-10-04
 ---
 

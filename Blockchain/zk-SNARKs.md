@@ -1,6 +1,7 @@
 ---
 tags: blockchain, network, ethereum, zero-knowledge, snarks
 author: Bien Vo
+github_id: vhbien000
 date: 2022-12-09
 icy: 10
 ---
@@ -66,7 +67,7 @@ icy: 10
     - `pk` and `vk` are public parameters that only need to be generated once for a given program `C`.
     - Can assume that:
       - **From `pk`, we can create a `proof` that can be verified by using `vk` in a pre-defined way.**
-  
+
   - **Prover function** aka `P`
     - `P(pk,x,w) = prf`
       - `pk`: proving key issued from `G`

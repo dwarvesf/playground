@@ -1,6 +1,7 @@
 ---
 tags: engineering/management, process, quality-assurance
 author: Nhut Huynh
+github_id: nhuthm
 date: 2022-11-08
 icy: 10
 ---
@@ -9,7 +10,7 @@ icy: 10
 
 From one development team, we have quite a lot of different roles like: BackEnd engineers, FrontEnd engineers, Mobile engineers (include Android and iOS), Quality Assurance engineers, etc. For the developer's side, they can keep track on their works based on the Merge Request that they have been created, and also they have something to filter for their searching better when they want to take a look for the things they have already developed.
 
-On the other hands, from the QA's side, every time they finished on their test, they just made a comment for the record on the ticket only. At this point, I can see that when they want to find the testing record again, they will found a little bit struggle to filter it from the Jira's site. 
+On the other hands, from the QA's side, every time they finished on their test, they just made a comment for the record on the ticket only. At this point, I can see that when they want to find the testing record again, they will found a little bit struggle to filter it from the Jira's site.
 
 At this point, I will share a way that my team is using to record their testing and managing their test as well.
 
@@ -27,7 +28,7 @@ Usually, when a developer finish their ticket for the feature enhancement from D
 ![Mobile-Testing-Document-Format](_assets/Mobile_testing_document_format.png)
 
 ![Mobile-Testing-Document-Sample](_assets/Mobile_testing_doc_sample.png)
-    
+
 - **For BackEnd/FrontEnd testing:**
   - Reference information(s)
     - Ticket(s): we will include the ticket that the team is working with on the development and testing.

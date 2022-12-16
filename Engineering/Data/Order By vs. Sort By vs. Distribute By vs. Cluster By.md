@@ -1,14 +1,15 @@
 ---
 tags: engineering/data, mapreduce, distributed, hadoop, apache-hive
 author: Dung Ho
+github_id: dudaka
 date: 2022-11-23
 icy: 10
 ---
 
-These are very interesting concepts which are about ordering records in a data set. What is so special about ordering? If we want to order the records in the stocks data set by closing price in descending order, we can write a simple query like 
+These are very interesting concepts which are about ordering records in a data set. What is so special about ordering? If we want to order the records in the stocks data set by closing price in descending order, we can write a simple query like
 
-```sql 
-SELECT * 
+```sql
+SELECT *
 FROM stocks
 ORDER BY price_close DESC;
 ```
@@ -32,32 +33,32 @@ WHERE year(ymd) = '2003'
 SORT BY symbol ASC, price_close DESC;
 ```
 
-For simplicity, we are filtering only records from year 2003 and we are sorting the records by symbol in ascending order and closing price in descending order. To review the results from this query execution, we are storing the results of the query in the local file system using the following `INSERT` command: 
+For simplicity, we are filtering only records from year 2003 and we are sorting the records by symbol in ascending order and closing price in descending order. To review the results from this query execution, we are storing the results of the query in the local file system using the following `INSERT` command:
 
 ```sql
 INSERT OVERWRITE LOCAL DIRECTORY '/home/dungho/output/hive/stocks'
-ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' 
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 SELECT ymd, symbol, price_close
-FROM stocks 
+FROM stocks
 WHERE year(ymd) = '2003'
 SORT BY symbol ASC, price_close DESC;
 ```
 
-We're saying `INSERT OVERWRITE LOCAL DIRECTORY` and we are giving the location in the local file system and we're also saying the output has to be delimited by comma. Now the output of this select statement will be written into this directory delimited by comma. Before we execute this query, let's set the number of reducers to 3. 
+We're saying `INSERT OVERWRITE LOCAL DIRECTORY` and we are giving the location in the local file system and we're also saying the output has to be delimited by comma. Now the output of this select statement will be written into this directory delimited by comma. Before we execute this query, let's set the number of reducers to 3.
 
 ![](order-by-output-screenshot-sort-by.png)
 
 As shown in the above screenshot, the number of reducers is now set to 3. When the job is complete, the output of this job is copied to the local directory. We can go to the local directory and review the output. There are three files where are one for each reducer. If we open one of these files, we can see the records in this file are sorted by symbol first in ascending order and then sorted by closing price in descending order.
 
-Unfortunately, there is a problem. Let's pick the symbol `B3B` in the first file, we can find records for `B3B` in this file. And we can also find the records for `B3B` in other files.In this second file as well as the third file, we see the records are sorted by symbol first in ascending order and then sorted by closing price and descending order. In other words, the problem is the symbols from the first file also appearing in other files. They're not duplicates, it is just that the records for the same symbol are distributed between the reducers and then sorted in each reducer. That is not ideal. For true logical ordering, we want all the records from the same symbol to go to the same reducer and end up in one file. 
+Unfortunately, there is a problem. Let's pick the symbol `B3B` in the first file, we can find records for `B3B` in this file. And we can also find the records for `B3B` in other files.In this second file as well as the third file, we see the records are sorted by symbol first in ascending order and then sorted by closing price and descending order. In other words, the problem is the symbols from the first file also appearing in other files. They're not duplicates, it is just that the records for the same symbol are distributed between the reducers and then sorted in each reducer. That is not ideal. For true logical ordering, we want all the records from the same symbol to go to the same reducer and end up in one file.
 
 How do we make all the records from the same symbol go to the same reducer and finally end up in the same file? The answer is `DISTRIBUTE BY` along with `SORT BY`. In the `DISTRIBUTE BY` clause, it specifies the column that should be treated as the key for the reducers. In our case, we would like all the records for the same symbol to go to the same reducer, so we will specify the symbol column in `DISTRIBUTE BY`. The previous query is revised as follows:
 
 ```sql
 INSERT OVERWRITE LOCAL DIRECTORY '/home/dungho/output/hive/stocks'
-ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' 
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 SELECT ymd, symbol, price_close
-FROM stocks 
+FROM stocks
 WHERE year(ymd) = '2003'
 DISTRIBUTE BY symbol
 SORT BY symbol ASC, price_close DESC;

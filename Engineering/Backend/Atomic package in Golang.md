@@ -1,6 +1,7 @@
 ---
 tags: engineering/backend, golang, concurrency, race-condition
 author: Hieu Phan
+github_id: hieuphq
 date: 2022-08-09
 ---
 

@@ -1,6 +1,7 @@
 ---
 tags: mobile, swift, race, race-condition, multi-threaded, concurrency
 author: Pham The Hung
+github_id: pthung1311
 date: 2022-12-11
 icy: 10
 ---

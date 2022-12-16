@@ -1,11 +1,12 @@
 ---
 tags: engineering, debug, console, debugger, javascript
 author: Tran Hoang Nam
+github_id: namtrhg
 date: 2022-10-16
 ---
 
-  *This note focus on utilizing some of the **` console`** object methods and the **` debugger`** statement to better debug JavaScript application in the [Chrome DevTools](https://developer.chrome.com/docs/devtools/).* 
-  
+  *This note focus on utilizing some of the **` console`** object methods and the **` debugger`** statement to better debug JavaScript application in the [Chrome DevTools](https://developer.chrome.com/docs/devtools/).*
+
 ## The `console` object
 The **` console`** object provides access to the browser's debugging console. You can view it by right-clicking on your Chrome browser, selecting **Inspect**, and choosing **Console** in the tab.
 ![Chrome DevTools's console tab](_assets/Chrome_DevTools's_console_tab.png)
@@ -47,7 +48,7 @@ if (!user.id) {
 ```
 Instead, you can check the condition using the `console.assert()`:
 ```js
-console.assert(user.id, "User does not exist!"); 
+console.assert(user.id, "User does not exist!");
 // user.id = false? => Assertion failed: User does not exist!
 ```
 Using `console.assert()` provide a much cleaner and better way for conditional logging in your application.

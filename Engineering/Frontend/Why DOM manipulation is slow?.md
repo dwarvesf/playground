@@ -1,6 +1,7 @@
 ---
 tags: javascript, DOM, fundamental, frontend, engineering/frontend
 author: Pham Duc Thanh
+github_id: zlatanpham
 date: 2022-08-09
 ---
 

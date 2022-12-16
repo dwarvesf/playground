@@ -1,6 +1,7 @@
 ---
 tags: engineering, principle, conway-law, engineering/management
 author: Pham Duc Thanh
+github_id: zlatanpham
 date: 2022-06-12
 ---
 

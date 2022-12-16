@@ -1,6 +1,7 @@
 ---
 tags: blockchain, solana
 author: Tran Khac Vy
+github_id: trankhacvy
 date: 2022-11-17
 icy: 10
 ---
@@ -18,7 +19,7 @@ There are 3 kinds of accounts:
 Each account has an address (usually a public key) and an owner (address of a program account). The full field list an account stores is found below.
 
 | Field |	Description |
-| ----- | ------------- | 
+| ----- | ------------- |
 | lamports | The number of lamports owned by this account |
 | owner	| The program owner of this account |
 | executable | Whether this account can process instructions |
