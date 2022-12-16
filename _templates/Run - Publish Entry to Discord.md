@@ -9,10 +9,12 @@ const webhookURL = page[field];
 const contentNoFrontmatter = tp.file.content
 	.replace(/---((.|\n)*)---/g, "")
 const bareContent = contentNoFrontmatter
-	.replace(/^(#+(.*))$/gm, "\n")
-	.replace(/(\[\[|\]\])/gm, "")
+	.replace(/^(#+(.*))$/gm, "\n ")
+	.replace(/!\[\[.*\]\]/, "")
+	.replace(/\[\[(.*)\]\]/gm, "$1")
 	.replace(/(\r\n|\n|\r)/gm, "")
-	.replace(/- (\w*)/gm, "");
+	.replace(/- ((\s|\w)*)/gm, " $1,")
+	.replace(/\> (\w*)/gm, " $1");
 const description = bareContent.split(" ").slice(0, 35).join(' ') + "..."
 
 const currentPage = tp.file.folder();
