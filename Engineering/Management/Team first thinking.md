@@ -1,6 +1,7 @@
 ---
 tags: engineering/management, team-topologies, team-design
 author: Pham Duc Thanh
+github_id: zlatanpham
 date: 2022-08-15
 ---
 

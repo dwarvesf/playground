@@ -1,6 +1,7 @@
 ---
 tags: frontend, design-pattern, engineering/frontend
 author: Le Duc Chinh
+github_id: chinhld12
 date: 2022-10-16
 ---
 

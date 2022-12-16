@@ -1,6 +1,7 @@
 ---
 tags: blockchain, foundational-topics, distributed-systems
 author: Pham Ngoc Thanh
+github_id: thanhpn
 date: 2022-06-16
 ---
 

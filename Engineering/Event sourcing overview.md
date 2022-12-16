@@ -1,6 +1,7 @@
 ---
 tags: engineering, event-sourcing, DDD, e-commerce, event-store, aggregation, requirement
 author: M.Vu Cuong(Jim)
+github_id: R-Jim
 date: 2022-12-05
 icy: 10
 ---
@@ -25,19 +26,19 @@ With the never-ending changes in business trends. We/Skateholders/Sellers/Buyers
 
 ### Event
 
-Event sourcing saves all information that happens in our system as **Events**. From the e-commerce platform scenario, an order's **event** is when something happens to the order (`order_created_event`, `product_added_event`, `product_removed_event`,...). 
+Event sourcing saves all information that happens in our system as **Events**. From the e-commerce platform scenario, an order's **event** is when something happens to the order (`order_created_event`, `product_added_event`, `product_removed_event`,...).
 
 An Event mainly consists of `Entity_ID`, `Type`,  `Data`,  `Metadata`, and  `Version`:
-- `Entity_ID`  is the identifier of the event's domain object. 
-  Exp:  `order: {id: 1}` -> `order_event: {entity_id: 1}` 
+- `Entity_ID`  is the identifier of the event's domain object.
+  Exp:  `order: {id: 1}` -> `order_event: {entity_id: 1}`
 - `Type` defines what happened to the domain object.
   Exp:  `order_created`, `product_added`, `product_removed`,...
 - `Data` saves changes that happened to the domain object.
-  Exp: 
+  Exp:
 ```
-	product_added_event: { 
+	product_added_event: {
 	    data: [
-		    { product_id: book_1, quantity: 3 } 
+		    { product_id: book_1, quantity: 3 }
 		]
 	}
 ```

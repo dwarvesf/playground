@@ -1,6 +1,7 @@
 ---
 tags: engineering/data, statistics, data-analysis, distribution, pareto
 author: Bach Phuong
+github_id: Bachpx2911
 date: 2022-10-24
 ---
 
@@ -14,7 +15,7 @@ Statistical methods are mainly useful to ensure that your data are interpreted c
 
 #### Uniform distribution
 
-A distribution in statistics is a function that shows the possible values for a variable and how often they occur. One of the basic distribution is uniform distribution, which measure for events having the same probability of happening. For instance, if your company create a marketing campaign for 100 first customers get the reward an Iphone Promax, the probability of each customer winning the price is equal 1 %. 
+A distribution in statistics is a function that shows the possible values for a variable and how often they occur. One of the basic distribution is uniform distribution, which measure for events having the same probability of happening. For instance, if your company create a marketing campaign for 100 first customers get the reward an Iphone Promax, the probability of each customer winning the price is equal 1 %.
 
 #### Normal distribution
 
@@ -26,7 +27,7 @@ Another type of distribution applied in data analytic is Pareto distribution. It
 
 ## Conclusion
 
-From my point of view, mastering distribution will bring huge benefit in understanding data. Then, a good decision can be made for your business 
+From my point of view, mastering distribution will bring huge benefit in understanding data. Then, a good decision can be made for your business
 
 
 ## Reference

@@ -1,6 +1,7 @@
 ---
 tags: engineering, state, diagram, machines, transducers
 author: Nguyen Xuan Anh
+github_id: monotykamary
 date: 2022-06-28
 ---
 

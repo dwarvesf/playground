@@ -1,6 +1,7 @@
 ---
 tags: iOS, MacOS, Swift, engineering/mobile, cli
 author: Phan Viet Trung
+github_id: viettrungphan
 date: 2022-09-18
 ---
 
@@ -85,7 +86,7 @@ Unlike `Arguments` using its position to determine what the argument is intended
 
 To quick and easy to type we can add a shorter version of the 'Key' with Flags
 
-Ex: 
+Ex:
 - `git push --force` or `git push -f`,
 - `npm install --help`
 
@@ -119,8 +120,8 @@ will print out the help which is equivalent with `git help`. `help` is very popu
 ```shell
 git                                                                                                                            [20:13:35]
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] 
-........           
+           [--exec-path[=<path>]] [--html-path] [--man-path]
+........
 ```
 
 ### The `help` command/flags for documentation

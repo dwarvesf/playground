@@ -1,6 +1,7 @@
 ---
 tags: engineering/mobile, flutter, stateless, stateful
 author: Nguyen Tran Khanh
+github_id: knguyenuit
 date: 2022-09-12
 ---
 

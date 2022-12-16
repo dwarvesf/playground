@@ -1,15 +1,16 @@
 ---
 tags: engineering/qa, testing-type, qa-terms
 author: Binh Le
+github_id: binhle59
 date: 2022-11-22
 icy: 10
 ---
 
 ## Overview
 ### Functional testing
-- Functional testing consists of a sequence of tests that define entry values for an operation and observe if the result is what was expected. 
-- Functional tests may be run without any knowledge of the programming code that implements the operation; only its behavior is observed. 
-- The quantity of tests to be conducted in order to assure that an operation is correct may be virtually infinite. 
+- Functional testing consists of a sequence of tests that define entry values for an operation and observe if the result is what was expected.
+- Functional tests may be run without any knowledge of the programming code that implements the operation; only its behavior is observed.
+- The quantity of tests to be conducted in order to assure that an operation is correct may be virtually infinite.
 - Functional testing may use techniques to reduce the number of necessary tests without losing coverage. The most useful techniques for accomplishing that goal are equivalence partitioning and limit value analysis, which are explained in the following subsections.
 
 
@@ -59,7 +60,7 @@ Here is the test condition (Partitions):
 
 We **cannot test all the possible values** because if done, the number of test cases will be more than 100. To address this problem, we use equivalence partitioning hypothesis where we divide the possible values of tickets into groups or sets as shown below where the system behavior can be considered the same.
 
-The divided sets are called Equivalence Partitions or Equivalence Classes. Then we pick only one value from each partition for testing. 
+The divided sets are called Equivalence Partitions or Equivalence Classes. Then we pick only one value from each partition for testing.
 
 The hypothesis behind this technique is that if one condition/value in a partition passes all others will also pass. Likewise, if one condition in a partition fails, all other conditions in that partition will fail.
 

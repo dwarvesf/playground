@@ -1,7 +1,8 @@
 ---
 tags: team, personality, communication, collaboration, disc, teamwork
-date: 2022-09-10
 author: Tieu Quang Huy
+github_id: huytieu
+date: 2022-09-10
 ---
 
 ## What is DiSC?
