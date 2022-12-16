@@ -13,7 +13,7 @@ const bareContent = contentNoFrontmatter
 	.replace(/(\[\[|\]\])/gm, "")
 	.replace(/(\r\n|\n|\r)/gm, "")
 	.replace(/- (\w*)/gm, "");
-const description = bareContent.split(" ").slice(0, 50).join(' ') + "..."
+const description = bareContent.split(" ").slice(0, 35).join(' ') + "..."
 
 const currentPage = tp.file.folder();
 const title = tp.file.title;
@@ -30,9 +30,12 @@ const webhookBody = {
 			title,
 			url: braineryURL,
 			description,
+			thumbnail: {
+				url: `https://github.com/${tp.frontmatter.github_id}.png`
+			},
 			fields: [
-			  { name: "Author", value: author, inline: true },
-			  { name: "Tags", value: tags, inline: true },
+				{ name: "Author", value: author, inline: true, },
+				{ name: "Tags", value: tags, inline: true },
 			],
 			footer: {
 				text: footerText
