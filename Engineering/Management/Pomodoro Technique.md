@@ -1,6 +1,7 @@
 ---
 tags: management, time, pomodoro
 author: Tran Hoang Nam
+github_id: namtrhg
 date: 2022-09-25
 ---
 
@@ -14,7 +15,7 @@ A "pomodoro" is a 25-minute work block, so named after the Italian word for toma
 
 You mark your progress with a "X" after each completed pomodoro and keep track of how many times throughout each 25-minute period you were tempted to delay or switch to working on anything else.
 
-## The technique steps 
+## The technique steps
 The original technique has six steps:
 1. Decide on the task to be done.
 2. Set the pomodoro timer (typically for 25 minutes).

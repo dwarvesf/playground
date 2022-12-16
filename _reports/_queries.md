@@ -47,6 +47,7 @@ fleeting_notes_all: |
 structured_permanent_notes_all: |
   TABLE
     author,
+    github_id,
     date,
     "#" + regexreplace(tags, ", ", " #") as tags
   FROM #engineering OR #blockchain OR #design OR #communication OR #writing OR #mobile

@@ -1,6 +1,7 @@
 ---
 tags: engineering/frontend, frontend, frontend/performance, performance, fundamental
 author: Pham Duc Thanh
+github_id: zlatanpham
 date: 2022-10-02
 ---
 

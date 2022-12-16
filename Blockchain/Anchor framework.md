@@ -1,6 +1,7 @@
 ---
 tags: blockchain, solana, anchor, tutorial
 author: Pham Ngoc Thanh
+github_id: thanhpn
 date: 2022-07-01
 ---
 

@@ -1,6 +1,7 @@
 ---
 tags: engineering/frontend, web-performance, performance
 author: Le Minh Thanh
+github_id: thanhlmm
 date: 2022-09-11
 ---
 

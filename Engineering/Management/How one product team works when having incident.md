@@ -1,6 +1,7 @@
 ---
 tags: engineering/management, process, solving-issue
 author: Nhut Huynh
+github_id: nhuthm
 date: 2022-10-15
 ---
 
@@ -21,4 +22,3 @@ But, there is one defect for this team, because they are likely appears in every
 From my perspective, I might be prefer this way rather than having a SWAT team. The reason is, when having an incident, maybe it's still need to go with the higher level role first, but at this time, they can help to create a common channel. So, all of the members of the project can be able to join and help to investigate on the issue as fast as possible.
 
 To have a direct members in that product response to the issue is better since they are the one whose have a specific view on the domain knowledges of the product. But, the communication is also the key that is needed, so the team can work on the incident better.
-

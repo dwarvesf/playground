@@ -1,6 +1,7 @@
 ---
 tags: engineering, javascript, typescript
 author: Giang Ngoc Huy
+github_id: huygn
 date: 2022-03-17
 ---
 

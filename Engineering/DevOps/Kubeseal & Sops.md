@@ -1,6 +1,7 @@
 ---
 tags: engineering/devops, secret, kubeseal, sops
 author: Nguyen Huu Nguyen
+github_id: nguyennh4522
 date: 2022-09-28
 ---
 

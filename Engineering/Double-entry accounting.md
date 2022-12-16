@@ -1,6 +1,7 @@
 ---
 tags: engineering, finance, accounting, technique, design
 author: Nguyen Xuan Anh
+github_id: monotykamary
 date: 2022-08-24
 ---
 

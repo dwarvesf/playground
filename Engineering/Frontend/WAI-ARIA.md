@@ -1,6 +1,7 @@
 ---
 tags: engineering/frontend, wai-aria, accessibility
 author: Nguyen Dinh Nam
+github_id: nguyend-nam
 date: 2022-09-30
 ---
 
@@ -9,7 +10,7 @@ Since modern websites and applications contain huge amounts of dynamic content a
 Web Accessibility Initiative’s Accessible Rich Internet Applications or simply **WAI-ARIA** is a technology that can help with such problems.
 
 ## What is WAI-ARIA?
-Before semantic elements like `<nav>` or `<footer>` were introduced that define specific features of a web page, some developers would rely on JavaScript libraries that generate a bunch of **nested `<div>`s**, then styled them with CSS and controlled with JavaScript. 
+Before semantic elements like `<nav>` or `<footer>` were introduced that define specific features of a web page, some developers would rely on JavaScript libraries that generate a bunch of **nested `<div>`s**, then styled them with CSS and controlled with JavaScript.
 
 The website still works fine and behaves normally. The problem comes when the site is used by a user dependent on assistive technologies, tools that help users with disabilities interact with websites (by speaking the content or information out loud, zoom into the content at the cursor position etc.). If those tools cannot make any sense of what the components are since no semantics were provided, they cannot assist their users. WAI-ARIA provides 3 main features: **Roles**, **States** and **Properties** to solve this problem, giving an opportunity to add attributes to content and components that make them **meaningful** and enhance **accessibility**.
 
@@ -49,7 +50,7 @@ Represent the **data value associated** with the object. When combined with rol
 Have the same characteristics as properties, except for one thing that states are frequently changed during the life cycle of the component. Some commonly used WAI-ARIA states are `aria-pressed`, `aria-expanded`, `aria-selected`,...
 
 ```javascript
-  
+
 <ul role="tablist">
 	<li class="active" role="tab" aria-selected="true" tabindex="0">Tab 1</li>
 	<li role="tab" aria-selected="false" tabindex="0">Tab 2</li>

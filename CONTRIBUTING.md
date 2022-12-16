@@ -54,6 +54,7 @@ We aren't actually too strict on grammar or semantics in your notes. Our only re
   ---
   tags: engineering, database, transaction
   author: Nguyen Xuan Anh
+  github_id: monotykamary
   date: 2022-08-23
   ---
   ```

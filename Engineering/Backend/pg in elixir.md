@@ -1,6 +1,7 @@
 ---
 tags: engineering/backend, elixir, pg, process
 author: Hieu Phan
+github_id: hieuphq
 date: 2022-11-01
 icy: 10
 ---
@@ -27,7 +28,7 @@ sequenceDiagram
 	participant Web
 	participant MessageService
 	participant Backend
-	
+
 	Web->>Backend: request WebSocket connection
 	Backend->>MessageService: init connection with the client
 	MessageService -->> Backend: response the connection
@@ -37,7 +38,7 @@ sequenceDiagram
 	Backend->>Backend: complete the task
 	Backend->>MessageService: invoke the success message to users
 	MessageService->>Web: send the success message to users
-	
+
 ```
 The Message service is deployed on K8s infrastructure. The good news is we can scale the service to treat the huge of users. The BAD issues are:
 - How can we broadcast the message to all users?
@@ -66,7 +67,7 @@ In the origin pg document, we need to init the supervisor before interacting wit
 # lib/pgdemo/application.ex
 defmodule Pgdemo.Application do
   use Application
-  
+
   def start(_type, _args) do
     children = [
         %{
@@ -93,7 +94,7 @@ defmodule Pgdemo.Synchronization do
 
   def init([]) do
     :pg.join(:internal_channel, self())
-    
+
     {:ok, []}
   end
 
@@ -109,7 +110,7 @@ defmodule Pgdemo.Synchronization do
   def handle_info({:broadcast, {:update, some_param}}, state) do
     IO.puts("Received update with data:}")
     IO.inspect(some_param)
-    
+
     {:noreply, state}
   end
 
@@ -140,11 +141,11 @@ iex(1@127.0.0.1)1> Pgdemo.update()
 In some cases, we can restart the GenServer. PG provides `:pg.leave/2`, `:pg.leave/3` for this purpose.
 ```elixir
 defmodule Pgdemo.Synchronization do
-  def handle_info({:EXIT, _pid, :client_down}, state) do  
+  def handle_info({:EXIT, _pid, :client_down}, state) do
     :pg.leave(:internal_channel, self())
-    
-    {:noreply, state}  
-  end  
+
+    {:noreply, state}
+  end
 end
 ```
 
@@ -157,11 +158,11 @@ PG library provides features to monitor the global process group. The changes ar
 ```elixir
 defmodule Pgdemo.Synchronization do
   ...
-  
+
   def init([]) do
     :pg.join(:internal_channel, self())
     {ref, pid} = :pg.monitor(:internal_channel)
-    
+
     IO.inspect(ref)
     IO.inspect(pid)
     {:ok, []}
@@ -172,7 +173,7 @@ defmodule Pgdemo.Synchronization do
     IO.inspect(join)
     IO.inspect(group)
     IO.inspect(pids)
-    
+
     {:noreply, state}
   end
 end

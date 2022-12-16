@@ -7,19 +7,19 @@ const field = await tp.system.suggester(items = pageFields, text_items = pageFie
 const webhookURL = page[field];
 
 const contentNoFrontmatter = tp.file.content
-	.split("\n").slice(6).join("\n")
+	.replace(/---((.|\n)*)---/g, "")
 const bareContent = contentNoFrontmatter
 	.replace(/^(#+(.*))$/gm, "\n")
 	.replace(/(\[\[|\]\])/gm, "")
 	.replace(/(\r\n|\n|\r)/gm, "")
 	.replace(/- (\w*)/gm, "");
-const description = bareContent.split(" ").slice(0, 50).join(' ') + "..."
+const description = bareContent.split(" ").slice(0, 35).join(' ') + "..."
 
 const currentPage = tp.file.folder();
 const title = tp.file.title;
 const braineryURL = "https://brain.d.foundation/" + encodeURIComponent(`${currentPage}/${title}`)
-const author = tp.frontmatter.author;
-const topic = tp.file.tags.slice(0, 5).join("\n") + " ..."
+const author = `${tp.frontmatter.author}\n\n\*\*GitHub\*\*\n[${tp.frontmatter.github_id}](https://github.com/${tp.frontmatter.github_id})`;
+const tags = tp.file.tags.slice(0, 5).join("\n") + " ..."
 const footerText = `Added at ${tp.date.now("MMMM D, YYYY h:mm A")} 🎉🎉🎉` ;
 
 const webhookBody = {
@@ -30,9 +30,12 @@ const webhookBody = {
 			title,
 			url: braineryURL,
 			description,
+			thumbnail: {
+				url: `https://github.com/${tp.frontmatter.github_id}.png`
+			},
 			fields: [
-			  { name: "Author", value: author, inline: true },
-			  { name: "Tags", value: topic, inline: true },
+				{ name: "Author", value: author, inline: true, },
+				{ name: "Tags", value: tags, inline: true },
 			],
 			footer: {
 				text: footerText

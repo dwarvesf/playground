@@ -1,6 +1,7 @@
 ---
 tags: iOS, MacOS, Swift
 author: Phan Viet Trung
+github_id: viettrungphan
 date: 2022-08-31
 ---
 

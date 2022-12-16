@@ -1,6 +1,7 @@
 ---
 tags: engineering/data, DBT, ETL
 author: Bach Phuong
+github_id: Bachpx2911
 date: 2022-11-21
 icy: 10
 ---
@@ -9,10 +10,10 @@ Transformation is one of the most important process in building data warehouse. 
 According to DBT documentation, the tool is a development framework that combines modular SQL with software engineering best practices to make data transformation reliable, fast, and fun. It makes data engineering activities accessible to people with data analyst skills to transform the data in the warehouse using simple select statements,  effectively creating your entire transformation process with code. You can write custom business logic using SQL, automate data quality testing, deploy the code, and deliver trusted data with data documentation side-by-side with the code. In short, DBT (data build tool) turns your data analysts into engineers and allows them to own the entire  analytics engineering workflow.
 
 
-So what make DBT more powerful than other tools? There are some advantage when Data Engineer or Data Analyst using DBT: 
+So what make DBT more powerful than other tools? There are some advantage when Data Engineer or Data Analyst using DBT:
 1.	DBT is an open-source application written in Python, giving the users the power to customize it as needed. By using Jinja macro and SQL, your code in DBT will be simple
-and short. We can see it in below example: 
-Normal SQL 
+and short. We can see it in below example:
+Normal SQL
 ```sql
 select
 order_id,
@@ -38,13 +39,13 @@ group by 1
 2.	 It also offers a lot of flexibility to the users. Say, for example, the resultant project structure is not a match for your organizational needs. You can customize it by
 editing the dbt_project.yml file or the configuration file and rearranging the folders.
 
-3.	 It Apply software engineering practices—such as modular code, version control, testing, and continuous integration/continuous deployment (CI/CD)—to analytics code. 
+3.	 It Apply software engineering practices—such as modular code, version control, testing, and continuous integration/continuous deployment (CI/CD)—to analytics code.
 Controlling code version may be useful to manage logic in building data warehouse
 
 4.	 Data documentation is accessible, easily updated, and allows you to deliver trusted data across the organization. DBT automatically generates documentation around descriptions, models dependencies, model SQL, sources, and tests. DBT creates lineage graphs of the data pipeline, providing transparency and visibility into what the data is describing, how it was produced, as well as how it maps to business logic.
 
-Beside these features, DBT also provide other features as other transformation tool. However, it also have some cons. Firstly, you will still need an additional tool or 
-tools to do the extract and load steps to carry out the process since the Data Build Tool only handles the T aspect of ETL. Secondly, due to DBT it is SQL-based, it provides less readability than tools with an interactive UI. And lastly, if you want to transform with database statement such as merge loop model, DBT may not support this. 
+Beside these features, DBT also provide other features as other transformation tool. However, it also have some cons. Firstly, you will still need an additional tool or
+tools to do the extract and load steps to carry out the process since the Data Build Tool only handles the T aspect of ETL. Secondly, due to DBT it is SQL-based, it provides less readability than tools with an interactive UI. And lastly, if you want to transform with database statement such as merge loop model, DBT may not support this.
 
 In conclusion, I think DBT is a good tool for transforming data. I think that this tool will continue developing more and becoming popular in the future
 

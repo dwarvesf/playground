@@ -1,6 +1,7 @@
 ---
 tags: programming, engineering, principles, wisdom
 author: Pham Duc Thanh
+github_id: zlatanpham
 date: 2022-05-09
 ---
 
