@@ -37,4 +37,4 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/State explosion.md|State explosion]]
 
 
-*This page was last modified at 2022-12-16T10:13:41.582Z*.
+*This page was last modified at 2022-12-16T23:35:38.581Z*.
