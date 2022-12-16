@@ -12,8 +12,8 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/Tackling complexity.md|Tackling complexity]]
 - [[Engineering/State explosion.md|State explosion]]
 - [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
-- [[Engineering/Reducers.md|Reducers]]
 - [[Engineering/Service-based architecture.md|Service-based architecture]]
+- [[Engineering/Reducers.md|Reducers]]
 - [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
 - [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 - [[Engineering/Overview of Domain Driven Design.md|Overview of Domain Driven Design]]
@@ -22,10 +22,10 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
 - [[Engineering/Finite-state transducer.md|Finite-state transducer]]
 - [[Engineering/Finite-state automata.md|Finite-state automata]]
-- [[Engineering/Double-entry accounting.md|Double-entry accounting]]
-- [[Engineering/Entities in Domain Driven Design.md|Entities in Domain Driven Design]]
 - [[Engineering/Event sourcing overview.md|Event sourcing overview]]
+- [[Engineering/Entities in Domain Driven Design.md|Entities in Domain Driven Design]]
 - [[Engineering/Edsger Dijkstra interview.md|Edsger Dijkstra interview]]
+- [[Engineering/Double-entry accounting.md|Double-entry accounting]]
 - [[Engineering/Domain Model in Domain Driven Design.md|Domain Model in Domain Driven Design]]
 - [[Engineering/Deno.md|Deno]]
 - [[Engineering/DevOps/Progressive Delivery.md|Progressive Delivery]]
@@ -34,12 +34,12 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/Debugging in JavaScript.md|Debugging in JavaScript]]
 - [[Engineering/Concurrency in Javascript.md|Concurrency in Javascript]]
 - [[Engineering/Cold start problem.md|Cold start problem]]
-- [[Engineering/Blockchain Oracle.md|Blockchain Oracle]]
 - [[Engineering/CAP theorem.md|CAP theorem]]
+- [[Engineering/Blockchain Oracle.md|Blockchain Oracle]]
 - [[Engineering/C4 diagrams.md|C4 diagrams]]
 - [[Engineering/BASE model.md|BASE model]]
 - [[Engineering/Acceptance test in Elixir.md|Acceptance test in Elixir]]
 - [[Engineering/ACID model.md|ACID model]]
 
 
-*This page was last modified at 2022-12-13T12:12:40.733Z*.
+*This page was last modified at 2022-12-16T10:13:41.537Z*.
