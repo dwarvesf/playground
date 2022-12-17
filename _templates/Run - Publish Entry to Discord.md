@@ -26,7 +26,8 @@ const commit = await tp.user.sh(`cd ${root} && git rev-parse --short HEAD`);
 
 const braineryURL = "https://brain.d.foundation/" + encodeURIComponent(`${currentPage}/${title}`)
 const author = `${tp.frontmatter.author}\n\n\*\*GitHub\*\*\n[${tp.frontmatter.github_id}](https://github.com/${tp.frontmatter.github_id})`;
-const tags = tp.file.tags.slice(0, 5).join("\n") + " ..."
+const tags = tp.file.tags.slice(0, 5).join("\n") + " ...";
+const icy = `${tp.frontmatter.icy || 0}`;
 const footerText = `Revision at ${commit.out}\nAdded at ${tp.date.now("MMMM D, YYYY h:mm A")} 🎉🎉🎉` ;
 
 const webhookBody = {
@@ -41,8 +42,9 @@ const webhookBody = {
 				url: `https://github.com/${tp.frontmatter.github_id}.png`
 			},
 			fields: [
-				{ name: "Author", value: author, inline: true, },
+				{ name: "Author", value: author, inline: true },
 				{ name: "Tags", value: tags, inline: true },
+				{ name: "ICY 🧊", value: icy, inline: true },
 			],
 			footer: {
 				text: footerText
