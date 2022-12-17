@@ -11,11 +11,11 @@ const contentNoFrontmatter = tp.file.content
 console.log(contentNoFrontmatter);
 const bareContent = contentNoFrontmatter
 	.replace(/^(#+(.*))$/gm, "\n ")
-	.replace(/\|(.*)\|/g, " ")
-	.replace(/!\[\[.*\]\]/, "")
+	.replace(/\|(.*)\|/gm, " ")
+	.replace(/!\[\[.*\]\]/gm, "")
 	.replace(/\[\[(.*)\]\]/gm, "$1")
 	.replace(/(\r\n|\n|\r)/gm, "")
-	.replace(/- ((\s|\w)*)/gm, " $1,")
+	.replace(/^(\s|\t)*- (\s)*(.*)/gm, "$3,")
 	.replace(/\> (\w*)/gm, " $1");
 const description = bareContent.split(" ").slice(0, 35).join(' ') + "..."
 
