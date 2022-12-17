@@ -21,10 +21,13 @@ const description = bareContent.split(" ").slice(0, 35).join(' ') + "..."
 
 const currentPage = tp.file.folder();
 const title = tp.file.title;
+const root = app.vault.adapter.getBasePath().replace(/(\s)/g, '\\$1');
+const commit = await tp.user.sh(`cd ${root} && git rev-parse --short HEAD`);
+
 const braineryURL = "https://brain.d.foundation/" + encodeURIComponent(`${currentPage}/${title}`)
 const author = `${tp.frontmatter.author}\n\n\*\*GitHub\*\*\n[${tp.frontmatter.github_id}](https://github.com/${tp.frontmatter.github_id})`;
 const tags = tp.file.tags.slice(0, 5).join("\n") + " ..."
-const footerText = `Added at ${tp.date.now("MMMM D, YYYY h:mm A")} 🎉🎉🎉` ;
+const footerText = `Revision at ${commit.out}\nAdded at ${tp.date.now("MMMM D, YYYY h:mm A")} 🎉🎉🎉` ;
 
 const webhookBody = {
 	username: "Brainery",
