@@ -10,15 +10,21 @@ data platform. While there are several traditional methodologies to consider whe
 presents a unique opportunity:  Data Vault. In this article, I will show basic knowledge of data vault and some pros and cons of it.
 
 ## Overview of data vault
-Data Vault is created by Dan Linstedt and his team at Lockheed Martin in the early 90s. It includes 3 main cores: Hub, Link and Satellite. Hub represents a core business
-concept, such as they represent Customer Id/Product Number/Vehicle identification number (VIN). Users will use a business key to get information about a Hub. Hubs don’t
-contain any context data or details about the entity. They only contain the defined business key and a few mandated Data Vault fields. A critical attribute of a Hub is
-that they contain only one row per key. Meanwhile, A Link defines the relationship between business keys from two or more Hubs. Just like the Hub, a Link structure
-contains no contextual information about the entities. There should also be only one row representing the relationship between two entities. In order to represent a
-relationship that no longer exists, we would need to create a satellite table off this Link table which would contain an is_deleted flag; this is known as an Effectivity
-Satellite.  
+Data Vault is created by Dan Linstedt and his team at Lockheed Martin in the early 90s. Data Vault is a data modelling technique for primarily structured data. It
+comprises a set of patterns and modelling guidelines that are used to represent the data in the model. There are 3 main components in data vault model: business entities
+(hub), relationship(links) and additional context information (satellites). While Data Vault directly represents features of business entities, the result model reflect
+business knowledge. I will explain detail characteristic of 3 main components through below example: 
 
 ## Example of data vault
+Firstly, we need to define steps to modelling data vault: 
+1.Define relationship database
+2.Define hub table
+3.Define link table ( type of link table: HAL link or standard link..)
+4.Define sat table (type of sat table: effective sat table, change log sat,..)
+5.Create dim/fact table in business vault
+6.Tunning performance
+7.Data mart
+
 We can have an example of data vault model here. For example, we have relationship database as example: 
 Employee table: employee_id(PK),job_id(FK),department_id(FK), hire_Date,salary,first_name,last_name,manager_id
 Job table: job_id(PK) , job_name, min_salary,max_salary
@@ -34,22 +40,23 @@ Link_department: Dep_Loc_HK(Hask key of department_id,location_id),department_id
 HAL_link: HAL_HK(hask key of manager_id,employee_id),manager_id,employee_id,load_Dts,source
 Sat_employee: HK_employee(hask key of employee_id),first_name,last_name, email,phone_number
 Sat_location: HK_location(hash key of location_id), street,city,district
-Each hub will represent for entity in database. The primary key of each table is hask key of business key. Then we will create dimension and fact table through join
-between link, hub and sat table
+
+Each hub will represent for entity in database, so the primary key is the hash key of business key. By using hash key, the query performance will be faster than
+using business key to join in database. We have some rules applying in hub model: a hub must not have direct connection with other hubs,any connections must be
+modelled by link, hubs are to be loaded from both master data and transactional data. While hub cann't connect to other hub, link is connected to at least 2 hubs and
+can be connected to other links.We have different type of links for different connections: hierarchy link , same as link,standard link,..Last but not least, sat table
+add context information for hub table. Sat table can only be connected to links or hubs and only has source system as source
+
+From the raw vault above, we can create dimensional and fact model. And then, end user can create some views or aggregate table from models in data warehouse.
 
 ## Props and cons of data vault
-Props: flexibility, maintainability and scalability both in terms of semantic complexity and sheer volume.
-It aims to facilitate the above by introducing three major design principles that set it apart from an EDW based on 3NF or on dimensional modelling:
-- It decouples management of business keys from any attributes of business entities (Hubs/Links and their Satellites).
-- It expects any relationship between business entities within the system to be modelled as many-to-many (a link table is introduced for any such relationship).
-- It assumes that all attributes are maintained in a way, similar to type 2 slowly changing dimension of Kimball-style dimensional modelling.
-These design principles allow the system to use MPP for any ETL processes (all entities can be loaded at the same time), facilitate Master Data Management (it offers
-great flexibility in adding/removing data sources) and provides a robust framework for recording historical data
-
-Cons: 
- - Two to three-fold explosion of the number of tables compared to 3NF modelling
- - Data Vault EDW does not focus on read performance: large number of relationships between tables and complexity of joins often require separate layer of bridging
- tables to be maintained as materialised views of the data vault
+So why we using data vault model rather than 3Nf model ? Firstly, extensibility is a good advantage of data vault. Our model can easily be extended if the need arise
+without modificaions to the existing table. In this case, we just need to add different and diverse source system to our model. The benefit may not be seen in small 
+volume data, but it can bring huge benefit with large complex system.Another prop is that data can be audited. By using data vault, data is stored historical so full 
+data is alway available. Change only apply for business vault, so you can track all change log of your data. In addtion to 2 biggest benefit, the stability and load-
+efficiency (parallel loaded data to raw data vault) also improve performance of model. However, we also face some challenge for data vault. Firstly, the number of
+raw table will be doubled or 3-fold higher than source table, which lead to high effort to maintain it. Sometime, performance of querying is also affected because of 
+large number of tables. Lastly, data vault is rarely supported by analytic tool, so we need to convert it in data mart before using analytic tool.
 
 ## References
  - https://www.phdata.io/blog/building-modern-data-platform-with-data-vault/
