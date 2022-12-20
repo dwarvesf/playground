@@ -5,9 +5,9 @@ date: 2022-12-15
 ---
 
 ## Introduction
-When looking to build out a new data lake, one of the most important factors is to establish the warehousing architecture that will be used as the foundation for the
-data platform. While there are several traditional methodologies to consider when establishing a new data lake (from Inmon and Kimball, for example), one alternative
-presents a unique opportunity:  Data Vault. In this article, I will show basic knowledge of data vault and some pros and cons of it.
+Modelling data is one of the most important when engineer build data lake.In the past, we have several ways to build and model data such as : 3NF, star schema model,
+snowflake model. However, there are some limitations when using these models such as: cann't track historical data, problem when change relationship of source table.
+In order to solve these problem, new substitute is designed :Data Vault.In this article, I will show basic knowledge of data vault and some pros and cons of it.
 
 ## Overview of data vault
 Data Vault is created by Dan Linstedt and his team at Lockheed Martin in the early 90s. Data Vault is a data modelling technique for primarily structured data. It
