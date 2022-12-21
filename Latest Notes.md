@@ -5,6 +5,7 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Data/Data Vault modelling.md|Data Vault modelling]]
 - [[Ω Fleeting notes/202212131609 - How to deal with Technical debt in Scrum.md|202212131609 - How to deal with Technical debt in Scrum]]
 - [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
 - [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
@@ -14,7 +15,6 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Blockchain/Layer 2.md|Layer 2]]
 - [[Engineering/Event sourcing overview.md|Event sourcing overview]]
 - [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
-- [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
 
 
 ## Top Contributors this month
@@ -22,6 +22,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 | authors | notes |
 | ------- | ----- |
 | 0xLight#0002 |  [[202212131609 - How to deal with Technical debt in Scrum]]<br>|
+| Bach Phuong |  [[Data Vault modelling]]<br>|
 | Bien Vo |  [[zk-SNARKs]]<br> [[Layer 2]]<br>|
 | Binh Le |  [[Test cases breakdown structure]]<br>|
 | Dung Ho |  [[Hive Window and Analytic functions]]<br> [[Buckets on Apache Hive]]<br> [[Partitions on Apache Hive]]<br>|
@@ -55,4 +56,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **Tran Tien An**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 
 
-*This page was last modified at 2022-12-16T23:35:38.526Z*.
+*This page was last modified at 2022-12-21T10:00:52.825Z*.
