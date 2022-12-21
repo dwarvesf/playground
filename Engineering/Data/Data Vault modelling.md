@@ -1,5 +1,5 @@
 ---
-tags: engineering/data, data-warehouse, data-vault, data-modelling.
+tags: engineering/data, data-warehouse, data-vault, data-modelling, dimension-table, fact-table
 author: Bach Phuong
 github_id: Bachpx2911
 date: 2022-12-15
@@ -135,7 +135,7 @@ district
 ```
 
 Each hub will represent for entity in database. The primary key of each table is hask key of business key. Then we will create dimension and fact table through join
-between link, hub and sat table
+between link, hub and sat table.
 
 ## Pros and cons of data vault
 
