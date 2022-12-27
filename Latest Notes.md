@@ -5,6 +5,7 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Blockchain/StarkNet architecture.md|StarkNet architecture]]
 - [[Engineering/Data/Data Vault modelling.md|Data Vault modelling]]
 - [[Ω Fleeting notes/202212131609 - How to deal with Technical debt in Scrum.md|202212131609 - How to deal with Technical debt in Scrum]]
 - [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
@@ -14,7 +15,6 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
 - [[Blockchain/Layer 2.md|Layer 2]]
 - [[Engineering/Event sourcing overview.md|Event sourcing overview]]
-- [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
 
 
 ## Top Contributors this month
@@ -27,6 +27,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 | Binh Le |  [[Test cases breakdown structure]]<br>|
 | Dung Ho |  [[Hive Window and Analytic functions]]<br> [[Buckets on Apache Hive]]<br> [[Partitions on Apache Hive]]<br>|
 | M.Vu Cuong(Jim) |  [[Event sourcing overview]]<br>|
+| Pham Ngoc Thanh |  [[StarkNet architecture]]<br>|
 | Pham The Hung |  [[Data race and race condition]]<br>|
 
 
@@ -56,4 +57,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **Tran Tien An**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 
 
-*This page was last modified at 2022-12-21T10:00:52.825Z*.
+*This page was last modified at 2022-12-27T14:53:20.602Z*.
