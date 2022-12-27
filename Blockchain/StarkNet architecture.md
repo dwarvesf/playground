@@ -1,8 +1,9 @@
 ---
-tags: blockchain, evm, zk-rollup, zk, StarkNet
+tags: blockchain, evm, zk-rollup, zk, StarkNet, architecture
 author: Pham Ngoc Thanh
 github_id: thanhpn
 date: 2022-12-26
+icy: 10
 ---
 ## StarkNet layer 2 solution
 
