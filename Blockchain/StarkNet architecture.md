@@ -5,6 +5,7 @@ github_id: thanhpn
 date: 2022-12-26
 icy: 10
 ---
+
 ## StarkNet layer 2 solution
 
 StarkNet is a layer 2 blockchain solution using ZK rollup, it provides StarkDex technology for well-known applications such as dYdX, ImmutableX, Sorare. It allows decentralized exchanges to process transactions with fast speed and low costs. Its essence is to reduce computations, store on-chain, replace with off-chain computations and store off-chain, Store balance using merkle tree with root merkle tree stored on-chain
