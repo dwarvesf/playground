@@ -43,7 +43,7 @@ We still don't have a _type_ for our 'data,' as you can see. It remains 'any/unk
 #### Example with Typecast
 ```ts
 let userSchema = yup.object().shape({
-	name: yup.string().required(),
+    name: yup.string().required(),
 	age: yup.number().required().positive().integer(),
 	email: yup.string().email(),
 });
