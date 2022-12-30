@@ -22,13 +22,13 @@ This is where we keep track of our top 10 latest Brainery notes:
 | authors | notes |
 | ------- | ----- |
 | 0xLight#0002 |  [[202212131609 - How to deal with Technical debt in Scrum]]<br>|
-| Bach Phuong |  [[Data Vault modelling]]<br>|
-| Bien Vo |  [[zk-SNARKs]]<br> [[Layer 2]]<br>|
-| Binh Le |  [[Test cases breakdown structure]]<br>|
-| Dung Ho |  [[Hive Window and Analytic functions]]<br> [[Buckets on Apache Hive]]<br> [[Partitions on Apache Hive]]<br>|
-| M.Vu Cuong(Jim) |  [[Event sourcing overview]]<br>|
-| Pham Ngoc Thanh |  [[StarkNet architecture]]<br>|
-| Pham The Hung |  [[Data race and race condition]]<br>|
+| Bachpx2911 |  [[Data Vault modelling]]<br>|
+| binhle59 |  [[Test cases breakdown structure]]<br>|
+| dudaka |  [[Hive Window and Analytic functions]]<br> [[Buckets on Apache Hive]]<br> [[Partitions on Apache Hive]]<br>|
+| pthung1311 |  [[Data race and race condition]]<br>|
+| R-Jim |  [[Event sourcing overview]]<br>|
+| thanhpn |  [[StarkNet architecture]]<br>|
+| vhbien000 |  [[zk-SNARKs]]<br> [[Layer 2]]<br>|
 
 
 
@@ -40,21 +40,20 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **hollow#3333**: [[Ω Fleeting notes/202210162154 - The Best of CSS TLDR.md|202210162154 - The Best of CSS TLDR]]
 
 ---
-- **Cao Nguyen Huy Hoang**: [[Design/What Screens Want.md|What Screens Want]]
-- **Hien Le**: [[Blockchain/Liquidity pool.md|Liquidity pool]]
-- **Hoang Nguyen**: [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
-- **Khoi Nguyen**: [[Engineering/Backend/Unexpected pitfalls and some handy patterns with concurrency in Go.md|Unexpected pitfalls and some handy patterns with concurrency in Go]]
-- **Le Duc Chinh**: [[Engineering/Frontend/Singleton Design Pattern in Javascript.md|Singleton Design Pattern in Javascript]]
-- **Le Minh Thanh**: [[Engineering/Frontend/Prevent Layout Thrashing.md|Prevent Layout Thrashing]]
-- **Ngo Trong Khoi**: [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
-- **Nguyen Huu Nguyen**: [[Engineering/DevOps/Kubeseal & Sops.md|Kubeseal & Sops]]
-- **Nguyen Tran Khanh**: [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
-- **Nguyen Xuan Truong**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
-- **Pham The Hung**: [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
-- **Phat G Ha**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
-- **Phuc Le Dien**: [[Engineering/Mobile/Secret Management on iOS.md|Secret Management on iOS]]
-- **Tieu Quang Huy**: [[Communication/DiSC Personality Types in team work.md|DiSC Personality Types in team work]]
-- **Tran Tien An**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
+- **chinhld12**: [[Engineering/Frontend/Singleton Design Pattern in Javascript.md|Singleton Design Pattern in Javascript]]
+- **cnhhoang850**: [[Design/What Screens Want.md|What Screens Want]]
+- **huytieu**: [[Communication/DiSC Personality Types in team work.md|DiSC Personality Types in team work]]
+- **knguyenuit**: [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
+- **leduyhien152**: [[Blockchain/Liquidity pool.md|Liquidity pool]]
+- **mirageruler**: [[Engineering/Backend/Unexpected pitfalls and some handy patterns with concurrency in Go.md|Unexpected pitfalls and some handy patterns with concurrency in Go]]
+- **nguyennh4522**: [[Engineering/DevOps/Kubeseal & Sops.md|Kubeseal & Sops]]
+- **nnhuyhoang**: [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
+- **pthung1311**: [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
+- **thanhlmm**: [[Engineering/Frontend/Prevent Layout Thrashing.md|Prevent Layout Thrashing]]
+- **tienan92it**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
+- **trkhoi**: [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
+- **truong-dwarvesv**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
+- **yyyyaaa**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2022-12-27T14:53:20.602Z*.
+*This page was last modified at 2022-12-30T03:47:04.841Z*.

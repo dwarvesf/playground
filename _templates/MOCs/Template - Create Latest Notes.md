@@ -23,12 +23,12 @@ const topDiscordNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"
 	.groupBy(p => p.discord_id)
 
 const topAuthoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
-	.where(p => !!p.file.frontmatter.author)
+	.where(p => !!p.file.frontmatter.github_id)
 	.where(p => !!p.file.frontmatter.date)
     .where(p => dv.date(p.file.frontmatter.date) !== null)
     .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
     .sort(p => p.date, "desc")
-	.groupBy(p => p.author);
+	.groupBy(p => p.github_id);
 
 tR += "| authors | notes |\n"
 tR += "| ------- | ----- |\n"
@@ -72,11 +72,11 @@ for (let group of discordNotes) {
 ---
 <%*
 const authoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
-	.where(p => !!p.file.frontmatter.author)
+	.where(p => !!p.file.frontmatter.github_id)
 	.where(p => !!p.file.frontmatter.date)
     .where(p => dv.date(p.file.frontmatter.date) !== null)
     .sort(p => p.date, "desc")
-	.groupBy(p => p.author)
+	.groupBy(p => p.github_id)
 	.filter(p => p.rows.length <= 1);
 
 for (let group of authoredNotes) {

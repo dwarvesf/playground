@@ -40,4 +40,4 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
 
 
-*This page was last modified at 2022-12-27T14:53:20.668Z*.
+*This page was last modified at 2022-12-30T03:47:04.904Z*.
