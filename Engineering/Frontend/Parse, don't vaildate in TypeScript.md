@@ -11,14 +11,12 @@ Parsing is better than validation because it requires you to explicitly handle e
 ## Overview
 
 ### What is parsing?
-
 - **Parsing** is the process of analyzing a string or symbol either in natural language ,computer languages or data structures, conforming to the rules of a formal grammar.
 - The **"_process of analyzing_"** and **"_conforming to the rules of a_ [_thingy_]"** are crucial here. _Thingy_ is our schema and type, which in this instance may be thought of as forming our _formal grammar_ (don't worry if you don't know what it means). _Process of analyzing_ is the work our code does when trying to fit data to the schema & type. The reason why we are saying “schema & type” is that we want them somehow to be the same thing, instead of two separate things that may or may not be in sync.
 
 ### Examples in Typescript with yup
 
 #### Example
-
 ```ts
 import * as yup from "yup";
 
@@ -45,7 +43,6 @@ console.log('isValid?', valid); // => true
 We still don't have a _type_ for our 'data,' as you can see. It remains 'any/unknown'. Sure, we can typecast it, but it introduces a problem: we now have to maintain a'schema' and a 'type' separately, by hand, with nothing ensuring they match.
 
 #### Example with Typecast
-
 ```ts
 let userSchema = yup.object().shape({
 	name: yup.string().required(),
@@ -66,6 +63,7 @@ const user = data as UserType // it's valid so let's cast!
 });
 ``` 
 Still, how can you ensure that 'userSchema' and 'UserType' are in sync? Do they even stand for the same thing?
+
 #### Example with parsing function
 ```ts
 // Let's use some custom type aliases for readability
