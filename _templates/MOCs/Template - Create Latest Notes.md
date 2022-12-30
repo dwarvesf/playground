@@ -42,7 +42,7 @@ for (let group of topDiscordNotes) {
 }
 
 for (let group of topAuthoredNotes) {
-	tR += `| ${group.key} | `
+	tR += `| [${group.key}](https://github.com/${group.key}) | `
 	for (let row of group.rows) {
 		tR += ` [[${row.file.name}]]<br>`
 	}
@@ -80,7 +80,7 @@ const authoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
 	.filter(p => p.rows.length <= 1);
 
 for (let group of authoredNotes) {
-	tR += `- **${group.key}**: `
+	tR += `- **[${group.key}](https://github.com/${group.key})**: `
 	for (let row of group.rows) {
 		tR += `${row.file.link}\n`
 	}
