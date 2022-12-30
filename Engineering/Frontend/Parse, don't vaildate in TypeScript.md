@@ -33,10 +33,8 @@ const data: any = {
 	age: 24,
 }
 // check validity
-schema
-	.isValid(data)
-	.then(function (valid) {
-console.log('isValid?', valid); // => true
+schema.isValid(data).then(function (valid) {
+    console.log('isValid?', valid); // => true
 // do something with the data, however, it's still `any`/`unkown`....
 });
 ```
