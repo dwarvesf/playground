@@ -23,10 +23,10 @@ WebAssembly isn’t interpreted but, rather, is compiled into the WebAssembly bi
 
 ### High-Level Goals
 
-- Be executed at near-native speeds.
-- Be readable and easily debuggable.
-- Be secure.
-- Don’t break the web.
+- Be fast, efficient, and portable -- WebAssembly code can run at near-native speed regardless of platform.
+- Be readable and easily debuggable -- although WebAssembly is a low-level assembler-like language, it has a human-readable text format. This makes it possible to write, read and debug code yourself.
+- Be secure -- Actually, WebAssembly is specified to be run during a safe and sandboxed execution environment. Like other web code, it'll enforce the browser's same-origin and permissions policies.
+- Don’t break the web -- WebAssembly is designed so that it plays nicely with other web technologies and maintains backwards compatibility.
 
 ### Use Cases
 
