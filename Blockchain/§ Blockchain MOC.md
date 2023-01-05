@@ -18,17 +18,18 @@ This is a [[Map of Content]] related to the blockchain.
 ---
 - [[Engineering/Blockchain Oracle.md|Blockchain Oracle]]
 - [[Design/UX Research/Triple S of UX in Web3.md|Triple S of UX in Web3]]
-- [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
+- [[Blockchain/Polygon zkEVM architecture.md|Polygon zkEVM architecture]]
 - [[Blockchain/StarkNet architecture.md|StarkNet architecture]]
+- [[Blockchain/Layer 2.md|Layer 2]]
+- [[Blockchain/Blockchain Bridge.md|Blockchain Bridge]]
+- [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
+- [[Blockchain/Anchor framework.md|Anchor framework]]
 - [[Blockchain/Solana Account.md|Solana Account]]
 - [[Blockchain/NFT Fractionalization.md|NFT Fractionalization]]
 - [[Blockchain/Multisign wallet.md|Multisign wallet]]
-- [[Blockchain/Layer 2.md|Layer 2]]
 - [[Blockchain/Liquidity pool.md|Liquidity pool]]
 - [[Blockchain/How Tokens Work on Solana.md|How Tokens Work on Solana]]
 - [[Blockchain/Foundational topics/Zero-knowledge Proofs.md|Zero-knowledge Proofs]]
-- [[Blockchain/Blockchain Bridge.md|Blockchain Bridge]]
-- [[Blockchain/Anchor framework.md|Anchor framework]]
 
 
-*This page was last modified at 2022-12-30T03:52:31.029Z*.
+*This page was last modified at 2023-01-05T12:22:20.293Z*.

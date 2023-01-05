@@ -5,30 +5,26 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Frontend/Webassembly.md|Webassembly]]
+- [[Engineering/Frontend/Parse, don't vaildate in TypeScript.md|Parse, don't vaildate in TypeScript]]
+- [[Engineering/Management/Analysis document.md|Analysis document]]
+- [[Blockchain/Polygon zkEVM architecture.md|Polygon zkEVM architecture]]
 - [[Blockchain/StarkNet architecture.md|StarkNet architecture]]
 - [[Engineering/Data/Data Vault modelling.md|Data Vault modelling]]
 - [[Ω Fleeting notes/202212131609 - How to deal with Technical debt in Scrum.md|202212131609 - How to deal with Technical debt in Scrum]]
 - [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
 - [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
 - [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
-- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
-- [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
-- [[Blockchain/Layer 2.md|Layer 2]]
-- [[Engineering/Event sourcing overview.md|Event sourcing overview]]
 
 
 ## Top Contributors this month
 ---
 | authors | notes |
 | ------- | ----- |
-| 0xLight#0002 |  [[202212131609 - How to deal with Technical debt in Scrum]]<br>|
-| [Bachpx2911](https://github.com/Bachpx2911) |  [[Data Vault modelling]]<br>|
-| [binhle59](https://github.com/binhle59) |  [[Test cases breakdown structure]]<br>|
-| [dudaka](https://github.com/dudaka) |  [[Hive Window and Analytic functions]]<br> [[Buckets on Apache Hive]]<br> [[Partitions on Apache Hive]]<br>|
-| [pthung1311](https://github.com/pthung1311) |  [[Data race and race condition]]<br>|
-| [R-Jim](https://github.com/R-Jim) |  [[Event sourcing overview]]<br>|
-| [thanhpn](https://github.com/thanhpn) |  [[StarkNet architecture]]<br>|
-| [vhbien000](https://github.com/vhbien000) |  [[zk-SNARKs]]<br> [[Layer 2]]<br>|
+| [namtrhg](https://github.com/namtrhg) |  [[Parse, don't vaildate in TypeScript]]<br>|
+| [nhuthm](https://github.com/nhuthm) |  [[Analysis document]]<br>|
+| [thanhpn](https://github.com/thanhpn) |  [[Polygon zkEVM architecture]]<br>|
+| [tienan92it](https://github.com/tienan92it) |  [[Webassembly]]<br>|
 
 
 
@@ -50,10 +46,9 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[nnhuyhoang](https://github.com/nnhuyhoang)**: [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
 - **[pthung1311](https://github.com/pthung1311)**: [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
 - **[thanhlmm](https://github.com/thanhlmm)**: [[Engineering/Frontend/Prevent Layout Thrashing.md|Prevent Layout Thrashing]]
-- **[tienan92it](https://github.com/tienan92it)**: [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 - **[trkhoi](https://github.com/trkhoi)**: [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
 - **[truong-dwarvesv](https://github.com/truong-dwarvesv)**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2022-12-30T03:52:30.935Z*.
+*This page was last modified at 2023-01-05T12:22:20.197Z*.

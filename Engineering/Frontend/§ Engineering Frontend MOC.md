@@ -7,6 +7,8 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 
 ## General frontend
 ---
+- [[Engineering/Frontend/Webassembly.md|Webassembly]]
+- [[Engineering/Frontend/Parse, don't vaildate in TypeScript.md|Parse, don't vaildate in TypeScript]]
 - [[Engineering/Frontend/useEffect double calls in React 18.md|useEffect double calls in React 18]]
 - [[Engineering/Frontend/Zaplib post-mortem.md|Zaplib post-mortem]]
 - [[Engineering/Frontend/WAI-ARIA.md|WAI-ARIA]]
@@ -23,8 +25,8 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/HSL Color.md|HSL Color]]
 - [[Engineering/Frontend/Dark mode flickers a white background for a fraction of a second.md|Dark mode flickers a white background for a fraction of a second]]
 - [[Engineering/Frontend/CSS in JS.md|CSS in JS]]
-- [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 - [[Engineering/Frontend/Build polymorphic React components with Typescript.md|Build polymorphic React components with Typescript]]
+- [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 - [[Engineering/Frontend/Atomic Design Pattern.md|Atomic Design Pattern]]
 - [[Engineering/Frontend/An Introduction to Atomic CSS.md|An Introduction to Atomic CSS]]
 
@@ -40,4 +42,4 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
 
 
-*This page was last modified at 2022-12-30T03:52:30.992Z*.
+*This page was last modified at 2023-01-05T12:22:20.254Z*.

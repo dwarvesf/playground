@@ -17,6 +17,7 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Management/Enabling team.md|Enabling team]]
 - [[Engineering/Management/Cognitive load.md|Cognitive load]]
 - [[Engineering/Conway's law.md|Conway's law]]
+- [[Engineering/Management/Analysis document.md|Analysis document]]
 
 ## Fundamentals
 ---
@@ -25,4 +26,4 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 
 
-*This page was last modified at 2022-12-30T03:52:30.982Z*.
+*This page was last modified at 2023-01-05T12:22:20.243Z*.
