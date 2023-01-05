@@ -1,8 +1,11 @@
 ---
-tags: engineering/frontend, frontend, parse, validation
+tags: engineering/frontend, frontend, parse, validation, typescript
 author: Tran Hoang Nam
-date: 2022-12-30
+github_id: namtrhg
+date: 2023-01-05
+icy: 10
 ---
+
 The _**"parse, don't validate"**_ approach is all about processing incoming data and failing in a controlled manner if parsing fails. It is all about leveraging trustworthy, secure, and typed data structures within your code and ensuring that all incoming data is handled at the very edges of your systems. Instead of passing receiving data deep into your code, parse it immediately and fail quickly if necessary.
 
 Parsing is better than validation because it requires you to explicitly handle every incoming data. It provides a type-safe method of working and makes it difficult to spread harmful material throughout your apps and data storage. However, it is true that parsing frequently incorporates data validation.
@@ -11,7 +14,7 @@ Parsing is better than validation because it requires you to explicitly handle e
 ## Overview
 
 ### What is parsing?
-- **Parsing** is the process of analyzing a string or symbol either in natural language ,computer languages or data structures, conforming to the rules of a formal grammar.
+- **Parsing** is the process of analyzing a string or symbol either in natural language, computer languages or data structures, conforming to the rules of a formal grammar.
 - The **"_process of analyzing_"** and **"_conforming to the rules of a_ [_thingy_]"** are crucial here. _Thingy_ is our schema and type, which in this instance may be thought of as forming our _formal grammar_ (don't worry if you don't know what it means). _Process of analyzing_ is the work our code does when trying to fit data to the schema & type. The reason why we are saying “schema & type” is that we want them somehow to be the same thing, instead of two separate things that may or may not be in sync.
 
 ### Examples in Typescript with yup

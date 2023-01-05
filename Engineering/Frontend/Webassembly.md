@@ -1,7 +1,9 @@
 ---
-tags: engineering/frontend, webassembly, performance
+tags: engineering/frontend, webassembly, performance, sandbox
 author: Tran Tien An
-date: 2022-12-24
+github_id: tienan92it
+date: 2023-01-05
+icy: 10
 ---
 
 ### What
