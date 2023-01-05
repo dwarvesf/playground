@@ -1,7 +1,9 @@
 ---
 tags: engineering/management, process, analysis, documentation, requirements, enhancements
 author: Nhut Huynh
+github_id: nhuthm
 date: 2023-01-03
+icy: 10
 ---
 
 *The following entry is taken from field experience that I'm doing in a team project.*
