@@ -1,10 +1,10 @@
 ---
-tags: engineering/management, process
+tags: engineering/management, process, analysis, documentation, requirements, enhancements
 author: Nhut Huynh
 date: 2023-01-03
 ---
 
-*The following entry is from the reality experience that I'm doing in the team project.*
+*The following entry is taken from field experience that I'm doing in a team project.*
 
 In one Product team, we will receive quite a lot of requirements to do the enhancement for our current system, or will be receiving a request to do a new feature based on the existing system from the product. At this point, there is 1 document that we can rely before working on the requirement - Analysis Documentation.
 
