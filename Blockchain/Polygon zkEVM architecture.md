@@ -3,6 +3,7 @@ tags: blockchain, evm, zk-rollup, zk, zkevm, polygon
 author: Pham Ngoc Thanh
 github_id: thanhpn
 date: 2023-01-03
+icy: 10
 ---
 
 ## Polygon zkEVM Architecture
