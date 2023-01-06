@@ -4,7 +4,7 @@ author: Tran Hoang Nam
 github_id: namtrhg
 date: 2022-06-01
 ---
- **A record** and **CNAME record** are one of the most common types of records when you want to deploy your `domain` or `subdomain` on the internet.
+ **A record** and **CNAME** are one of the most common types of records when you want to deploy your `domain` or `subdomain` on the internet.
 
 ## Use-cases and restrictions
 
