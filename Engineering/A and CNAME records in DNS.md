@@ -1,8 +1,9 @@
 ---
-tags: engineering, DNS, network, A record, CNAME record
+tags: engineering, dns, network, a-record, cname-record, domain, subdomain, ip-address
 author: Tran Hoang Nam
 github_id: namtrhg
-date: 2022-06-01
+date: 2022-01-06
+icy: 10
 ---
 
  **A record** and **CNAME** are one of the most common types of records when you want to deploy your `domain` or `subdomain` on the internet.
