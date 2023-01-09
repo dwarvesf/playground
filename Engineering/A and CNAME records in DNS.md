@@ -4,6 +4,7 @@ author: Tran Hoang Nam
 github_id: namtrhg
 date: 2022-06-01
 ---
+
  **A record** and **CNAME** are one of the most common types of records when you want to deploy your `domain` or `subdomain` on the internet.
 
 ## Use-cases and restrictions
@@ -12,7 +13,8 @@ date: 2022-06-01
 
 `A` record is an abbreviation for "Address". The address you type when you go to a website, send an email or connect to Twitter or Facebook.
 You can do a lot with `A` records, including using multiple `A` records for the same domain in order to provide redundancy and fallbacks. Additionally, multiple names could point to the same address, in which case each would have its own `A` record pointing to that same IP address.
-![A record config picture](https://www.elegantthemes.com/blog/wp-content/uploads/2020/09/a-record-example.jpg)
+
+![A record config picture](_assets/A_record_config_picture.jpg)
 
 #### Use-cases
 
@@ -21,7 +23,8 @@ You can do a lot with `A` records, including using multiple `A` records for the 
 ### CNAME record
 
 A canonical name `CNAME` is a type of database record in the Domain Name System (DNS) that shows that one domain name is a nickname or alias for another domain name. The `CNAME`, which is also called the "true name," is especially important when more than one service runs from the same IP address.
-![CNAME record config picture](https://www.elegantthemes.com/blog/wp-content/uploads/2020/09/cname-example-1024x305.jpg)
+
+![CNAME record config picture](_assets/CNAME_record_config_picture.jpg)
 
 #### Use-cases
 
