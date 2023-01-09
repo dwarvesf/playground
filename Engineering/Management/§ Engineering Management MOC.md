@@ -16,8 +16,8 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Management/How one product team works when having incident.md|How one product team works when having incident]]
 - [[Engineering/Management/Enabling team.md|Enabling team]]
 - [[Engineering/Management/Cognitive load.md|Cognitive load]]
-- [[Engineering/Conway's law.md|Conway's law]]
 - [[Engineering/Management/Analysis document.md|Analysis document]]
+- [[Engineering/Conway's law.md|Conway's law]]
 
 ## Fundamentals
 ---
@@ -26,4 +26,4 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 
 
-*This page was last modified at 2023-01-05T12:22:20.243Z*.
+*This page was last modified at 2023-01-09T03:51:15.574Z*.
