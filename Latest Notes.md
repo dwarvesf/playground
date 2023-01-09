@@ -21,7 +21,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 ---
 | authors | notes |
 | ------- | ----- |
-| [namtrhg](https://github.com/namtrhg) |  [[Parse, don't vaildate in TypeScript]]<br>|
+| [namtrhg](https://github.com/namtrhg) |  [[Parse, don't vaildate in TypeScript]]<br> [[A and CNAME records in DNS]]<br>|
 | [nhuthm](https://github.com/nhuthm) |  [[Analysis document]]<br>|
 | [thanhpn](https://github.com/thanhpn) |  [[Polygon zkEVM architecture]]<br>|
 | [tienan92it](https://github.com/tienan92it) |  [[Webassembly]]<br>|
@@ -51,4 +51,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-01-05T12:22:20.197Z*.
+*This page was last modified at 2023-01-09T03:51:15.523Z*.
