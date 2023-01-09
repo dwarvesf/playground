@@ -22,7 +22,7 @@ There are many things you can do with `A` records, including using multiple `A` 
 
 ### CNAME record
 
-`A CNAME` is a database entry in the Domain Name System (DNS) that indicates that one domain name is a alias for another. The `CNAME`, often known as the "true name," is especially crucial when multiple services are running from the same IP address.
+`A CNAME` is a database entry in the Domain Name System (DNS) that indicates that one domain name is a alias for another. The `CNAME`, often known as the "true name" is especially crucial when multiple services are running from the same IP address.
 
 ![CNAME record config picture](_assets/CNAME_record_config_picture.jpg)
 
