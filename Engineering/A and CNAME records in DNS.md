@@ -11,8 +11,8 @@ date: 2022-06-01
 
 ### A record
 
-`A` record is an abbreviation for "Address". The address you type when you go to a website, send an email or connect to Twitter or Facebook.
-You can do a lot with `A` records, including using multiple `A` records for the same domain in order to provide redundancy and fallbacks. Additionally, multiple names could point to the same address, in which case each would have its own `A` record pointing to that same IP address.
+`A` record is an abbreviation for "Address". The address you type when you go to a website, send an email or connect to Twitter, Facebook or Instagram.
+There are many things you can do with `A` records, including using multiple `A` records for the same domain to offer redundancy and fallbacks. Furthermore, many names may point to the same IP address, in which case each will have its own `A` record pointing to the same IP address.
 
 ![A record config picture](_assets/A_record_config_picture.jpg)
 
@@ -22,7 +22,7 @@ You can do a lot with `A` records, including using multiple `A` records for the 
 
 ### CNAME record
 
-A canonical name `CNAME` is a type of database record in the Domain Name System (DNS) that shows that one domain name is a nickname or alias for another domain name. The `CNAME`, which is also called the "true name," is especially important when more than one service runs from the same IP address.
+`A CNAME` is a database entry in the Domain Name System (DNS) that indicates that one domain name is a alias for another. The `CNAME`, often known as the "true name," is especially crucial when multiple services are running from the same IP address.
 
 ![CNAME record config picture](_assets/CNAME_record_config_picture.jpg)
 
