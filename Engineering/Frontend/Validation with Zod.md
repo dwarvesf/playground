@@ -2,7 +2,7 @@
 tags: engineering, frontend, validation, parsing, typescript, zod, yup
 author: Tran Hoang Nam
 github_id: namtrhg
-date: 2022-01-12
+date: 2023-01-12
 ---
 **Zod** is the TypeScript-first schema validation library with static type inference. It's functional approach to data validation is [[Parse, don't vaildate in TypeScript]] which parses the data in order to validate and catch errors.
 
