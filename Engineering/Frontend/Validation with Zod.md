@@ -29,7 +29,7 @@ const schema = z.object({
 // Input data to be validated and coerced
 const input = {
   name: 'Dwarves Foundation',
-  phonenumber: '123456',
+  phonenumber: 123456,
   email: 'team@dwarves.foundation',
 };
 
@@ -62,14 +62,14 @@ const z = require('zod');
 // Define a schema for the input data
 const schema = z.object({
   name: z.string(),
-  age: z.number().min(0).max(150),
+  phonenumber: z.number().min(0).max(12),
   email: z.string().email(),
 });
 
 // Input data to be parsed and validated
 const input = {
   name: 'Dwarves Foundation',
-  phone: '123456'
+  phonenumber: 123456
   email: 'team@dwarves.foundation',
   extra_property: 'This should not be included in the output'
 };
