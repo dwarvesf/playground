@@ -103,7 +103,7 @@ It's also worth mentioning that, like `validate()`, if the incoming data does no
 
 Both Zod and Yup are robust validation libraries, and the choice between them is based on your project's specific demands, syntax preference, and the capabilities that you require.
 
-## Reference
+## References
 - https://zod.dev/
 - https://github.com/jquense/yup
 - https://blog.logrocket.com/comparing-schema-validation-libraries-zod-vs-yup/
