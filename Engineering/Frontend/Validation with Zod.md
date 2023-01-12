@@ -7,6 +7,7 @@ date: 2022-01-12
 **Zod** is the TypeScript-first schema validation library with static type inference. It's functional approach to data validation is [[Parse, don't vaildate in TypeScript]] which parses the data in order to validate and catch errors.
 
 ## Why use Zod?
+
 - **TypeScript Support:** Zod has TypeScript support, which lets developers to detect type issues early on, making it easier to discover and repair bugs.
 - **Improved data quality:** Developers may guarantee that the data they are working with is in the right format and fulfills particular restrictions by utilizing Zod to validate and coerce input data. This can assist to reduce mistakes and enhance data quality overall.
 - **Simplified code:** Developers may easily design and maintain validation code because to Zod's clear and simple syntax for constructing schemas. This can assist to decrease the amount of boilerplate code required and make it easier to reason about the data flowing through an application.
@@ -15,7 +16,9 @@ date: 2022-01-12
 - **Cross-platform:** Zod works in both browser and Node.js, allowing it to be utilized in a wide range of applications and environments.
 
 ## How to use Zod
+
 ### Example using validate method
+
 ```ts
 const z = require('zod');
 
@@ -54,6 +57,7 @@ It also ensure that the email is valid email.
 This way the application can be sure that the data it is receiving is in the correct format, and that any issues with the data will be caught early on.
 
 ### Example using parse method
+
 The `parse()` method in the Zod validation library is used to parse and validate input data, and return the parsed data in the correct format. It is similar to the `validate()` method, but it also removes any extra properties from the input data that are not defined in the schema.
 
 ```ts
@@ -93,18 +97,21 @@ In this example, the input data contains an extra property `extra_property` whic
 It's also worth mentioning that, like `validate()`, if the incoming data does not match the schema, `parse()` will throw an exception indicating the validity issues.
 
 ## Zod vs Yup
+
 **Zod** and **Yup** are both JavaScript libraries for data validation, but they have some key differences:
--   Syntax: Zod and Yup have different syntax for defining schemas. Zod uses a fluent interface with a chainable API, while Yup uses a plain object to define the schema.
--   TypeScript Support: Zod is built with TypeScript, which means it has excellent typings, making it easy to use in a TypeScript environment. Yup does not have built-in TypeScript support, but it can be used in a TypeScript environment with the use of an additional package.
--   Error message: Yup allows to specify custom error messages for each field, which can be useful for displaying error messages to the end-user. Zod, on the other hand, does not provide a way to specify custom error messages. 
--   Utility functions: Zod provides a number of utility functions such as the ability to extract values from an object based on a schema, and to create an object with default values based on a schema. Yup does not have similar utility functions.
--   Performance: Zod is smaller in size and it's faster than Yup, which means it could be a better choice for applications that need to handle a large amount of data validation.
--   Popularity: Yup is more popular than Zod because it's been around longer and has a larger community of developers.
+
+- Syntax: Zod and Yup have different syntax for defining schemas. Zod uses a fluent interface with a chainable API, while Yup uses a plain object to define the schema.
+- TypeScript Support: Zod is built with TypeScript, which means it has excellent typings, making it easy to use in a TypeScript environment. Yup does not have built-in TypeScript support, but it can be used in a TypeScript environment with the use of an additional package.
+- Error message: Yup allows to specify custom error messages for each field, which can be useful for displaying error messages to the end-user. Zod, on the other hand, does not provide a way to specify custom error messages.
+- Utility functions: Zod provides a number of utility functions such as the ability to extract values from an object based on a schema, and to create an object with default values based on a schema. Yup does not have similar utility functions.
+- Performance: Zod is smaller in size and it's faster than Yup, which means it could be a better choice for applications that need to handle a large amount of data validation.
+- Popularity: Yup is more popular than Zod because it's been around longer and has a larger community of developers.
 
 Both Zod and Yup are robust validation libraries, and the choice between them is based on your project's specific demands, syntax preference, and the capabilities that you require.
 
 ## References
-- https://zod.dev/
-- https://github.com/jquense/yup
-- https://blog.logrocket.com/comparing-schema-validation-libraries-zod-vs-yup/
-- https://blog.logrocket.com/schema-validation-typescript-zod/
+
+- <https://zod.dev/>
+- <https://github.com/jquense/yup>
+- <https://blog.logrocket.com/comparing-schema-validation-libraries-zod-vs-yup/>
+- <https://blog.logrocket.com/schema-validation-typescript-zod/>
