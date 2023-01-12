@@ -1,5 +1,5 @@
 ---
-tags: engineer, frontend, validation, parsing, typescript, zod, yup
+tags: engineering, frontend, validation, parsing, typescript, zod, yup
 author: Tran Hoang Nam
 github_id: namtrhg
 date: 2022-01-12
