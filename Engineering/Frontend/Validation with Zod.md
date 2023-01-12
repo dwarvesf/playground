@@ -25,14 +25,14 @@ const z = require('zod');
 // Define a schema for the input data
 const schema = z.object({
   name: z.string(),
-  phonenumber: z.number().min(0).max(12),
+  phone_number: z.number().min(0).max(12),
   email: z.string().email(),
 });
 
 // Input data to be validated and coerced
 const input = {
   name: 'Dwarves Foundation',
-  phonenumber: 123456,
+  phone_number: 123456,
   email: 'team@dwarves.foundation',
 };
 
@@ -42,7 +42,7 @@ console.log(data);
 /*
 {
   name: 'Dwarves Foundation',
-  phonenumber: 123456,
+  phone_number: 123456,
   email: 'team@dwarves.foundation',
 }
 */
@@ -66,14 +66,14 @@ const z = require('zod');
 // Define a schema for the input data
 const schema = z.object({
   name: z.string(),
-  phonenumber: z.number().min(0).max(12),
+  phone_number: z.number().min(0).max(12),
   email: z.string().email(),
 });
 
 // Input data to be parsed and validated
 const input = {
   name: 'Dwarves Foundation',
-  phonenumber: 123456
+  phone_number: 123456
   email: 'team@dwarves.foundation',
   extra_property: 'This should not be included in the output'
 };
@@ -84,7 +84,7 @@ console.log(data);
 /*
 {
   name: 'Dwarves Foundation',
-  phonenumber: 123456,
+  phone_number: 123456,
   email: 'team@dwarves.foundation',
 }
 */
