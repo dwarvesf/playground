@@ -39,7 +39,7 @@ console.log(data);
 /*
 {
   name: 'Dwarves Foundation',
-  phonenumber: '123456',
+  phonenumber: 123456,
   email: 'team@dwarves.foundation',
 }
 */
@@ -80,7 +80,7 @@ console.log(data);
 /*
 {
   name: 'Dwarves Foundation',
-  phonenumber: '123456',
+  phonenumber: 123456,
   email: 'team@dwarves.foundation',
 }
 */
