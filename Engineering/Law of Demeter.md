@@ -2,7 +2,7 @@
 tags: engineering, oop, software, javascript
 author: Tran Hoang Nam
 github_id: namtrhg
-date: 2023-01-15
+date: 2023-01-14
 ---
 
 **The Law of Demeter (LoD)**, also known as the Philosophy of Least Knowledge, is a program design principle that states that an object should only communicate with objects that are close to it in the object graph. This concept contributes to reducing object dependency and making code more manageable and testable.
