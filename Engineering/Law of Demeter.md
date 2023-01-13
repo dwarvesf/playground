@@ -40,7 +40,7 @@ class Employee {
         this.company = company;
     }
 
-    getCompany() {
+    getCompanyName() {
         return this.company.name;
     }
 }
@@ -58,7 +58,7 @@ console.log(info.getEmployeeCompanyname()); // "Dwarves Foundation"
 
 In this example, the Info class has a method `getEmployeeCompanyName()` which originally violates the Law of Demeter, as it directly accesses the `name` property of the `company` object. This creates a tight coupling between the Info and Company classes, making it more difficult to change or test one class without affecting the other.
 
-The Law of Demeter is followed by adding a new method `getCompanyName()` to the Employee class, which the Order class calls instead. The Info class no longer has to know anything about the Company class, it only needs to know that the employee has a `getCity()` method. This makes the code more flexible and easier to change or test.
+The Law of Demeter is followed by adding a new method `getCompanyName()` to the Employee class, which the Order class calls instead. The Info class no longer has to know anything about the Company class, it only needs to know that the employee has a `getCompanyName()` method. This makes the code more flexible and easier to change or test.
 
 ## Pros and cons
 
