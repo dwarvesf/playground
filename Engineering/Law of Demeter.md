@@ -74,7 +74,7 @@ The Law of Demeter is followed by adding a new method `getCompanyName()` to the 
 - Can make it more difficult to enforce business rules that span multiple objects.
 - This may lead to code duplication if the same data needs to be passed through several layers of objects.
 
-## Notes
+## What should you take into consideration?
 
 It's important to note that the Law of Demeter should be applied with discretion, as it is not always possible or desirable to completely eliminate all direct interactions between objects. The idea is to reduce the number of direct interactions as much as possible while still keeping the code readable and maintainable.
 
