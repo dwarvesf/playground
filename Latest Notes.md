@@ -5,24 +5,25 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Law of Demeter.md|Law of Demeter]]
+- [[Engineering/Management/Difference between Project-Program-Portfolio manager.md|Difference between Project-Program-Portfolio manager]]
+- [[Engineering/Frontend/Validation with Zod.md|Validation with Zod]]
+- [[Ω Fleeting notes/202301091379 - Invoking Component Functions in React.md|202301091379 - Invoking Component Functions in React]]
 - [[Engineering/Frontend/Webassembly.md|Webassembly]]
 - [[Engineering/Frontend/Parse, don't vaildate in TypeScript.md|Parse, don't vaildate in TypeScript]]
 - [[Engineering/Management/Analysis document.md|Analysis document]]
 - [[Blockchain/Polygon zkEVM architecture.md|Polygon zkEVM architecture]]
 - [[Blockchain/StarkNet architecture.md|StarkNet architecture]]
 - [[Engineering/Data/Data Vault modelling.md|Data Vault modelling]]
-- [[Ω Fleeting notes/202212131609 - How to deal with Technical debt in Scrum.md|202212131609 - How to deal with Technical debt in Scrum]]
-- [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
-- [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
-- [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
 
 
 ## Top Contributors this month
 ---
 | authors | notes |
 | ------- | ----- |
-| [namtrhg](https://github.com/namtrhg) |  [[Parse, don't vaildate in TypeScript]]<br> [[A and CNAME records in DNS]]<br>|
-| [nhuthm](https://github.com/nhuthm) |  [[Analysis document]]<br>|
+| namth#6640 |  [[202301091379 - Invoking Component Functions in React]]<br>|
+| [namtrhg](https://github.com/namtrhg) |  [[Law of Demeter]]<br> [[Validation with Zod]]<br> [[Parse, don't vaildate in TypeScript]]<br> [[A and CNAME records in DNS]]<br>|
+| [nhuthm](https://github.com/nhuthm) |  [[Difference between Project-Program-Portfolio manager]]<br> [[Analysis document]]<br>|
 | [thanhpn](https://github.com/thanhpn) |  [[Polygon zkEVM architecture]]<br>|
 | [tienan92it](https://github.com/tienan92it) |  [[Webassembly]]<br>|
 
@@ -34,6 +35,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **haongo1#3632**: [[Ω Fleeting notes/202211141513 - Materialized View Pattern.md|202211141513 - Materialized View Pattern]]
 - **hieuvd#4261**: [[Ω Fleeting notes/202211141287 - Go JSON Parsing.md|202211141287 - Go JSON Parsing]]
 - **hollow#3333**: [[Ω Fleeting notes/202210162154 - The Best of CSS TLDR.md|202210162154 - The Best of CSS TLDR]]
+- **namth#6640**: [[Ω Fleeting notes/202301091379 - Invoking Component Functions in React.md|202301091379 - Invoking Component Functions in React]]
 
 ---
 - **[chinhld12](https://github.com/chinhld12)**: [[Engineering/Frontend/Singleton Design Pattern in Javascript.md|Singleton Design Pattern in Javascript]]
@@ -51,4 +53,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-01-09T03:51:15.523Z*.
+*This page was last modified at 2023-01-17T03:37:11.918Z*.

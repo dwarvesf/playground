@@ -18,6 +18,7 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Management/Cognitive load.md|Cognitive load]]
 - [[Engineering/Management/Analysis document.md|Analysis document]]
 - [[Engineering/Conway's law.md|Conway's law]]
+- [[Engineering/Management/Difference between Project-Program-Portfolio manager.md|Difference between Project-Program-Portfolio manager]]
 
 ## Fundamentals
 ---
@@ -26,4 +27,4 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 
 
-*This page was last modified at 2023-01-09T03:51:15.574Z*.
+*This page was last modified at 2023-01-17T03:37:11.951Z*.
