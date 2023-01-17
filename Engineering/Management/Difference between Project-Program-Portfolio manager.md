@@ -2,15 +2,16 @@
 tags: engineering/management, process, analysis, documentation, requirements, enhancements
 author: Nhut Huynh
 github_id: nhuthm
-date: 2023-01-11
+date: 2023-01-17
+icy: 10
 ---
 
 When working in the Software Development team, especially for those Product team, we might recognize several manager roles: Project Manager - Product Manager, Program Manager, and Portfolio Manager. On the Internet, we can find those definition for them, on this note, it just a short summarize on what I understand after reading from the specific source.
 
-##Project Manager - Product Manager
+## Project Manager - Product Manager
 For this person, we can see that he/she will be the one who is incharge of planning, scheduling, budgeting, execution, and delivery of the product. Basically, they are the one who will run the team based on their leadership skills, technical knowledge, and experiences to direct their members. Also, the most important is, the software is meet with the client's requirements.
 
-##Program Manager
+## Program Manager
 In the Product team, we might have quite a lot of team to work on the different features that are working on the big system. Right now, the Program Manager is the one who is incharge of the work for the team project. Basically, for this role, it's just higher than Project Manager. If the Project Manager is the one who want to make sure the project's goal reach client's requirement, the Program Manager is the one who will decide which team will work on the requirement.
 
 For example: if your product are having about 5 or 6 teams, the Program Manager is assigned to manage the team number 2nd and 3rd. When receiving the request, the Program Manager will think about which team that is he/she is incharged, to work on this request so the team can deliver successfully.
