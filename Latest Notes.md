@@ -5,6 +5,7 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Ω Fleeting notes/202301191192 - Multi-column index in DB.md|202301191192 - Multi-column index in DB]]
 - [[Engineering/Law of Demeter.md|Law of Demeter]]
 - [[Engineering/Management/Difference between Project-Program-Portfolio manager.md|Difference between Project-Program-Portfolio manager]]
 - [[Engineering/Frontend/Validation with Zod.md|Validation with Zod]]
@@ -14,13 +15,13 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Management/Analysis document.md|Analysis document]]
 - [[Blockchain/Polygon zkEVM architecture.md|Polygon zkEVM architecture]]
 - [[Blockchain/StarkNet architecture.md|StarkNet architecture]]
-- [[Engineering/Data/Data Vault modelling.md|Data Vault modelling]]
 
 
 ## Top Contributors this month
 ---
 | authors | notes |
 | ------- | ----- |
+| hmhoang13#5280 |  [[202301191192 - Multi-column index in DB]]<br>|
 | namth#6640 |  [[202301091379 - Invoking Component Functions in React]]<br>|
 | [namtrhg](https://github.com/namtrhg) |  [[Law of Demeter]]<br> [[Validation with Zod]]<br> [[Parse, don't vaildate in TypeScript]]<br> [[A and CNAME records in DNS]]<br>|
 | [nhuthm](https://github.com/nhuthm) |  [[Difference between Project-Program-Portfolio manager]]<br> [[Analysis document]]<br>|
@@ -34,6 +35,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **antran#3200**: [[Ω Fleeting notes/202210150019 - Migration Planning.md|202210150019 - Migration Planning]]
 - **haongo1#3632**: [[Ω Fleeting notes/202211141513 - Materialized View Pattern.md|202211141513 - Materialized View Pattern]]
 - **hieuvd#4261**: [[Ω Fleeting notes/202211141287 - Go JSON Parsing.md|202211141287 - Go JSON Parsing]]
+- **hmhoang13#5280**: [[Ω Fleeting notes/202301191192 - Multi-column index in DB.md|202301191192 - Multi-column index in DB]]
 - **hollow#3333**: [[Ω Fleeting notes/202210162154 - The Best of CSS TLDR.md|202210162154 - The Best of CSS TLDR]]
 - **namth#6640**: [[Ω Fleeting notes/202301091379 - Invoking Component Functions in React.md|202301091379 - Invoking Component Functions in React]]
 
@@ -53,4 +55,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-01-17T03:37:11.918Z*.
+*This page was last modified at 2023-01-19T04:51:47.086Z*.
