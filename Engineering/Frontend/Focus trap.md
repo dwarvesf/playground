@@ -1,6 +1,7 @@
 ---
 tags: html, accessibility, modal, a11y, engineering/frontend
 author: Pham Duc Thanh
+github_id: zlatanpham
 date: 2022-06-12
 ---
 

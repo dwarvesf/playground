@@ -3,6 +3,7 @@
 
 # OR only to exclude workspace cache
 .obsidian/workspace
+.obsidian/workspace.json
 
 # exclude publish.json to avoid account conflicts
 .obsidian/publish.json
@@ -24,3 +25,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# exclude history folder in local vscode
+.history/*
+
+# exclude _env file
+_env.md

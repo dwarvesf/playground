@@ -1,6 +1,8 @@
 ---
 tags: writing, english
 author: Nguyen Xuan Anh
+github_id: monotykamary
+date: 2022-03-21
 ---
 
 # Introduction

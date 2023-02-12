@@ -1,6 +1,7 @@
 ---
-tags: blockchain, foundational topics, PoS
+tags: blockchain, foundational-topics, PoS
 author: Pham Ngoc Thanh
+github_id: thanhpn
 date: 2022-06-16
 ---
 

@@ -1,6 +1,7 @@
 ---
-tags: frontend, polymorphic component, reactjs, typescript, engineering/frontend
+tags: frontend, polymorphic-component, reactjs, typescript, engineering/frontend
 author: Tran Khac Vy
+github_id: trankhacvy
 date: 2022-09-26
 ---
 
@@ -35,7 +36,7 @@ type TextProps = {
 const Text = ({ children, as, ...rest }: TextProps) => {
     // other code
     ...
-    
+
     const Component = as || 'p';
 
     return (
@@ -72,7 +73,7 @@ type TextProps<C extends React.ElementType> = {
 const Text = <C extends React.ElementType>({ children, as }: TextProps<C>) => {
   // other code
     ...
-    
+
   const Component = as || 'p';
 
   return <Component>{children}</Component>;
@@ -88,7 +89,7 @@ Now typescript will complain if you try to pass an invalid html tag
 <Text as='vincenzo'>Hello world</Text>
 ```
 
-To solve second issue, once again, React provides us a useful type `React.ComponentPropsWithoutRef`. 
+To solve second issue, once again, React provides us a useful type `React.ComponentPropsWithoutRef`.
 
 ```typescript
 type TextProps<C extends React.ElementType> = {
@@ -119,7 +120,7 @@ Our component is looking good right now but we still have an issue. The `as` pro
 <Text htmlFor='username'>User</Text>
 ```
 
-To fix this issue, we need to assign a default type for type parameters in a generic type. 
+To fix this issue, we need to assign a default type for type parameters in a generic type.
 
 ```typescript
 const Text = <C extends React.ElementType = 'p' /* default type */>({
@@ -129,7 +130,7 @@ const Text = <C extends React.ElementType = 'p' /* default type */>({
 }: TextProps<C>) => {
   // other code
    ...
-   
+
   const Component = as || 'p';
 
   return <Component {...rest}>{children}</Component>;
@@ -145,7 +146,7 @@ We still can improve our `Text` component. As we know, some html tags have some 
 // our custom text properties
 type Props {
     color?: 'primary' | 'secondary',
-    size?: 'sm' | 'md' | 'lg'     
+    size?: 'sm' | 'md' | 'lg'
 }
 // omit internal properties
 Omit<React.ComponentPropsWithoutRef<C>, keyOf Props>
@@ -159,7 +160,7 @@ type Props<C extends React.ElementType> = {
   as?: C;
   color?: 'primary' | 'secondary';
   size?: 'sm' | 'md' | 'lg';
-  // other properties...  
+  // other properties...
 };
 
 type TextProps<C extends React.ElementType> = Props<C> &
@@ -172,7 +173,7 @@ const Text = <C extends React.ElementType = 'p'>({
 }: TextProps<C>) => {
   // other code
     ...
-    
+
   const Component = as || 'p';
 
   return <Component {...rest}>{children}</Component>;
@@ -217,7 +218,7 @@ type TextProps = {
   children: React.ReactNode;
   color?: 'primary' | 'secondary';
   size?: 'sm' | 'md' | 'lg';
- // other properties...  
+ // other properties...
 };
 
 const Text = <C extends React.ElementType = 'p'>({
@@ -227,7 +228,7 @@ const Text = <C extends React.ElementType = 'p'>({
 }: PolymorphicComponentProps<C, TextProps>) => {
     // other code
     ...
-    
+
   const Component = as || 'p';
 
   return <Component {...rest}>{children}</Component>;
@@ -244,7 +245,7 @@ type ButtonProps = {
   children: React.ReactNode;
   color?: 'primary' | 'secondary';
   size?: 'sm' | 'md' | 'lg';
- // other properties...  
+ // other properties...
 };
 
 const Button = <C extends React.ElementType = 'button'>({
@@ -254,7 +255,7 @@ const Button = <C extends React.ElementType = 'button'>({
 }: PolymorphicComponentProps<C, ButtonProps>) => {
     // other code
     ...
-    
+
   const Component = as || 'button';
 
   return <Component {...rest}>{children}</Component>;
@@ -357,7 +358,7 @@ type ButtonProps<C extends React.ElementType> = PolymorphicComponentPropsWithRef
   C,
   CustomButtonProps
 >
-    
+
 type ButtonComponent = <C extends React.ElementType = 'button'>(
   props: ButtonProps<C>,
 ) => React.ReactElement | null
@@ -368,7 +369,7 @@ const Button: ButtonComponent = React.forwardRef(
     ref: PolymorphicRef<C>
   ) => {
     const { as, children, ...rest } = props;
-    
+
     const Component = as || 'button';
     return (
       <Component ref={ref} {...rest}>
@@ -433,7 +434,7 @@ const Text = <C extends React.ElementType = 'p'>({
   as,
   ...rest
 }: TextProps<C>) => {
-   
+
   const Component = as || 'p';
 
   return <Component {...rest}>{children}</Component>;
@@ -450,10 +451,10 @@ type ButtonProps<C extends React.ElementType> = PolymorphicComponentPropsWithRef
   C,
   CustomButtonProps
 >
-    
+
 type ButtonComponent = <C extends React.ElementType = 'button'>(
   props: ButtonProps<C>,
-) => React.ReactElement | null   
+) => React.ReactElement | null
 
 const Button: ButtonComponent = React.forwardRef(
   <C extends React.ElementType = 'button'>(
@@ -461,7 +462,7 @@ const Button: ButtonComponent = React.forwardRef(
     ref: PolymorphicRef<C>
   ) => {
     const { as, children, ...rest } = props;
-    
+
     const Component = as || 'button';
     return (
       <Component ref={ref} {...rest}>
@@ -474,4 +475,3 @@ const Button: ButtonComponent = React.forwardRef(
 ```
 
 Congratulation, we have successfully built a strongly typed Polymorphic React Component with Typescript. 🎉🎉🎉🎉
-

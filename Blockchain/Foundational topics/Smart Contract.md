@@ -1,6 +1,7 @@
 ---
-tags: blockchain, foundational topics, smart-contract
+tags: blockchain, foundational-topics, smart-contract
 author: Pham Ngoc Thanh
+github_id: thanhpn
 date: 2022-06-16
 ---
 

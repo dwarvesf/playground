@@ -1,6 +1,7 @@
 ---
 tags: engineering/management, team-topologies, conway, enabling-team, team-design, team-structure
 author: Pham Duc Thanh
+github_id: zlatanpham
 date: 2022-08-15
 ---
 

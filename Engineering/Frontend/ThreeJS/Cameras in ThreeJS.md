@@ -1,6 +1,7 @@
 ---
 tags: engineering/frontend/threejs, threejs, camera
 author: Nguyen Dinh Nam
+github_id: nguyend-nam
 date: 2022-09-15
 ---
 

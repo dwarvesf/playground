@@ -1,6 +1,7 @@
 ---
 tags: frontend, native-modules, vitejs, esm, engineering/frontend
 author: Tran Hoang Nam
+github_id: namtrhg
 date: 2022-07-04
 ---
 

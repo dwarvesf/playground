@@ -1,6 +1,8 @@
 ---
 tags: ux, design, ui
 author: Cao Nguyen Huy Hoang
+github_id: cnhhoang850
+date: 2022-06-28
 ---
 
 Frank Chimero has been branding for over 20 years in New York. Recently, he was creative director at FictiveKin.

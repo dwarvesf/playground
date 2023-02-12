@@ -1,6 +1,7 @@
 ---
 tags: frontend, hsl, engineering/frontend
-author: Tran khac Vy
+author: Tran Khac Vy
+github_id: trankhacvy
 date: 2022-09-02
 ---
 

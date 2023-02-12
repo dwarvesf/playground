@@ -1,6 +1,7 @@
 ---
 tags: engineering/frontend, frontend, html, css, animation, parallax
 author: Ngo Lap Nguyen
+github_id: ngolapnguyen
 date: 2022-09-10
 ---
 

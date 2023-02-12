@@ -1,6 +1,7 @@
 ---
 tags: engineering/management, team-topologies
 author: Nhut Huynh
+github_id: nhuthm
 date: 2022-09-15
 ---
 
@@ -10,7 +11,7 @@ So, at this point, story points estimation is one of the important part when def
 
 ## Collaborate with your project manager, product owner
 Usually, before the sprint planning happens, PM/PO will take time to prepare for the tickets are going to do in the future sprint - most of the tickets are captured based on the desired features and fixs for a product from customer's requirements.
- 
+
 Hence, those tickets are in the very common statement since most of the PM/PO does not understand much from the technical site for the implementation. Leading to hard for all of the members to estimate their work.
 
 So, to separate works precisely and more easy to estimate, a team members can give PMs new insight into the level of effort for each work item. Like, can giving PMs a definition of their work for example.
