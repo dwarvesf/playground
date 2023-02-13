@@ -74,5 +74,5 @@ You can observe all the events created by the users.
 
 ## References
 
-<https://developer.mixpanel.com/docs>
-<https://www.npmjs.com/package/mixpanel-browser>
+- <https://developer.mixpanel.com/docs>
+- <https://www.npmjs.com/package/mixpanel-browser>
