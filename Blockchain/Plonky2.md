@@ -1,5 +1,5 @@
 ---
-tags: blockchain, zk, plonky2, proof-of-knowledge, scalability, polygon, polygon-zero
+tags: blockchain, zk, plonky2, proof-of-knowledge, nipopok, scalability, polygon, polygon-zero, merkle-tree
 author: Pham Ngoc Thanh
 github_id: thanhpn
 date: 2023-02-28
