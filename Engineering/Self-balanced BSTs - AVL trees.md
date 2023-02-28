@@ -4,6 +4,7 @@ github_id: mirageruler
 author: Khoi Nguyen
 date: 2023-02-13
 ---
+
 ## What are trees?
 - A **tree** is a non-linear data structure used to represent the hierarchical relationship between a paretn node and a child node. Each node in the tree is connected to another node by directed edges.
 - ![[A tree representation of a team.png]]
