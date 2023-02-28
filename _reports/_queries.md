@@ -2,8 +2,8 @@
 fleeting_monthly: |
   TABLE
     "https://brain.d.foundation/%CE%A9+Fleeting+notes/" + rows.file.name as entries,
-    rows.file.tags as tags,
-    sum(rows.icy) + " ICY" as reward
+    sum(rows.icy) + " ICY" as reward,
+    "" + rows.file.tags as tags
   FROM "Ω Fleeting notes"
   WHERE discord_id != NULL
     AND date.month = (date(today)).month
@@ -11,9 +11,9 @@ fleeting_monthly: |
 
 structured_permanent_notes_monthly: |
   TABLE
-    rows.file.link as entries, 
-    rows.file.tags as tags,
-    sum(rows.icy) + " ICY" as reward
+    rows.file.link as entries,
+    sum(rows.icy) + " ICY" as reward,
+    "" + rows.file.tags as tags
   FROM #engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile 
   WHERE author != NULL
     AND date.month = (date(today)).month
@@ -39,7 +39,12 @@ permanent_notes_monthly: |
   GROUP BY discord_id
 
 fleeting_notes_all: |
-  TABLE discord_id, discord_channel, date, "#" + regexreplace(tags, ", ", " #") as tags, icy
+  TABLE
+     discord_id,
+     discord_channel,
+     date,
+     icy,
+     "" + tags as tags
   FROM "Ω Fleeting notes"
   SORT date DESC
   WHERE discord_id != NULL
@@ -49,7 +54,7 @@ structured_permanent_notes_all: |
     author,
     github_id,
     date,
-    "#" + regexreplace(tags, ", ", " #") as tags
+    "" + tags as tags
   FROM #engineering OR #blockchain OR #design OR #communication OR #writing OR #mobile
   SORT date DESC
   WHERE author != NULL
