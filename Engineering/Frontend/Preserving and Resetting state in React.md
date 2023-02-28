@@ -1,8 +1,9 @@
 ---
-tags: engineering/frontend, frontend, react, hooks,
+tags: engineering/frontend, frontend, react, hooks, state, state-management
 author: Ho Quang Toan
 github_id: toanbku
 date: 2023-02-27
+icy: 10
 ---
 
 ## Why should you read this article?
