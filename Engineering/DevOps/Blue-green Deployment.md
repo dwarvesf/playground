@@ -1,8 +1,9 @@
 ---
-tags: engineering/devops
+tags: engineering/devops, blue-green-deployement, deployment-strategy, production-traffic
 author: Nguyen Huu Nguyen
 github_id: nguyennh4522
 date: 2022-02-16
+icy: 10
 ---
 
 **Blue-green** deployment is a software deployment strategy that involves creating two identical environments: one **blue** environment serving production traffic, and another **green** environment that doesn't serve any traffic. Once the **green** environment is fully tested and verified, traffic is switched from the **blue** environment to the **green** environment, making it the new production environment. This approach reduces downtime, improves reliability and resilience, and provides a backup in case of issues.
