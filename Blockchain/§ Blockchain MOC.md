@@ -32,4 +32,4 @@ This is a [[Map of Content]] related to the blockchain.
 - [[Blockchain/Foundational topics/Zero-knowledge Proofs.md|Zero-knowledge Proofs]]
 
 
-*This page was last modified at 2023-02-28T03:57:12.134Z*.
+*This page was last modified at 2023-02-28T04:14:09.549Z*.
