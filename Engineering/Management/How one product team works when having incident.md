@@ -1,5 +1,5 @@
 ---
-tags: engineering/management, process, solving-issue
+tags: engineering/management, management, process, solving-issue
 author: Nhut Huynh
 github_id: nhuthm
 date: 2022-10-15

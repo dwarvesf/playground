@@ -1,5 +1,5 @@
 ---
-tags: engineering/management, enabling-team, team-topologies
+tags: engineering/management, management, enabling-team, team-topologies
 author: Pham Duc Thanh
 github_id: zlatanpham
 date: 2022-08-15

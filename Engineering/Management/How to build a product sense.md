@@ -1,5 +1,5 @@
 ---
-tags: engineering/management, process, documentation, enhancements, management-skills, product-sense
+tags: engineering/management, management, process, documentation, enhancements, management-skills, product-sense
 author: Nhut Huynh
 github_id: nhuthm
 date: 2023-02-23

@@ -1,5 +1,5 @@
 ---
-tags: engineering/management, process, analysis, documentation, requirements, enhancements
+tags: engineering/management, management, process, analysis, documentation, requirements, enhancements
 author: Nhut Huynh
 github_id: nhuthm
 date: 2023-01-17

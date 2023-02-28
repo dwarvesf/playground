@@ -1,5 +1,5 @@
 ---
-tags: engineering/management, team-topologies
+tags: engineering/management, management, team-topologies
 author: Nhut Huynh
 github_id: nhuthm
 date: 2022-09-15

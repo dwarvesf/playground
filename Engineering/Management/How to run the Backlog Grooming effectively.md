@@ -1,5 +1,5 @@
 ---
-tags: engineering/management, process, backlog-grooming
+tags: engineering/management, management, process, backlog-grooming
 author: Nhut Huynh
 github_id: nhuthm
 date: 2022-11-18

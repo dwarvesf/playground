@@ -1,5 +1,5 @@
 ---
-tags: engineering/management, process, quality-assurance
+tags: engineering/management, management, process, quality-assurance
 author: Nhut Huynh
 github_id: nhuthm
 date: 2022-11-08
