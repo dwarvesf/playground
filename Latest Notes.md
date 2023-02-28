@@ -5,34 +5,33 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Ω Fleeting notes/202302281019 - Case study - Write-heavy scalable and reliable inventory platform.md|202302281019 - Case study - Write-heavy scalable and reliable inventory platform]]
+- [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
+- [[Engineering/Management/How to build a product sense.md|How to build a product sense]]
+- [[Engineering/Self-balanced BSTs - AVL trees.md|Self-balanced BSTs - AVL trees]]
+- [[Engineering/Frontend/Mixpanel.md|Mixpanel]]
 - [[Ω Fleeting notes/202301191192 - Multi-column index in DB.md|202301191192 - Multi-column index in DB]]
 - [[Engineering/Law of Demeter.md|Law of Demeter]]
 - [[Engineering/Management/Difference between Project-Program-Portfolio manager.md|Difference between Project-Program-Portfolio manager]]
 - [[Engineering/Frontend/Validation with Zod.md|Validation with Zod]]
 - [[Ω Fleeting notes/202301091379 - Invoking Component Functions in React.md|202301091379 - Invoking Component Functions in React]]
-- [[Engineering/Frontend/Webassembly.md|Webassembly]]
-- [[Engineering/Frontend/Parse, don't vaildate in TypeScript.md|Parse, don't vaildate in TypeScript]]
-- [[Engineering/Management/Analysis document.md|Analysis document]]
-- [[Blockchain/Polygon zkEVM architecture.md|Polygon zkEVM architecture]]
-- [[Blockchain/StarkNet architecture.md|StarkNet architecture]]
 
 
 ## Top Contributors this month
 ---
 | authors | notes |
 | ------- | ----- |
-| hmhoang13#5280 |  [[202301191192 - Multi-column index in DB]]<br>|
-| namth#6640 |  [[202301091379 - Invoking Component Functions in React]]<br>|
-| [namtrhg](https://github.com/namtrhg) |  [[Law of Demeter]]<br> [[Validation with Zod]]<br> [[Parse, don't vaildate in TypeScript]]<br> [[A and CNAME records in DNS]]<br>|
-| [nhuthm](https://github.com/nhuthm) |  [[Difference between Project-Program-Portfolio manager]]<br> [[Analysis document]]<br>|
-| [thanhpn](https://github.com/thanhpn) |  [[Polygon zkEVM architecture]]<br>|
-| [tienan92it](https://github.com/tienan92it) |  [[Webassembly]]<br>|
+| antran#3200 |  [[202302281019 - Case study - Write-heavy scalable and reliable inventory platform]]<br>|
+| [mirageruler](https://github.com/mirageruler) |  [[Self-balanced BSTs - AVL trees]]<br>|
+| [namtrhg](https://github.com/namtrhg) |  [[Mixpanel]]<br>|
+| [nguyennh4522](https://github.com/nguyennh4522) |  [[Blue-green Deployment]]<br>|
+| [nhuthm](https://github.com/nhuthm) |  [[How to build a product sense]]<br>|
+| [toanbku](https://github.com/toanbku) |  [[Preserving and Resetting state in React]]<br>|
 
 
 
 ## Newest Contributors
 ---
-- **antran#3200**: [[Ω Fleeting notes/202210150019 - Migration Planning.md|202210150019 - Migration Planning]]
 - **haongo1#3632**: [[Ω Fleeting notes/202211141513 - Materialized View Pattern.md|202211141513 - Materialized View Pattern]]
 - **hieuvd#4261**: [[Ω Fleeting notes/202211141287 - Go JSON Parsing.md|202211141287 - Go JSON Parsing]]
 - **hmhoang13#5280**: [[Ω Fleeting notes/202301191192 - Multi-column index in DB.md|202301191192 - Multi-column index in DB]]
@@ -45,14 +44,13 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[huytieu](https://github.com/huytieu)**: [[Communication/DiSC Personality Types in team work.md|DiSC Personality Types in team work]]
 - **[knguyenuit](https://github.com/knguyenuit)**: [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
 - **[leduyhien152](https://github.com/leduyhien152)**: [[Blockchain/Liquidity pool.md|Liquidity pool]]
-- **[mirageruler](https://github.com/mirageruler)**: [[Engineering/Backend/Unexpected pitfalls and some handy patterns with concurrency in Go.md|Unexpected pitfalls and some handy patterns with concurrency in Go]]
-- **[nguyennh4522](https://github.com/nguyennh4522)**: [[Engineering/DevOps/Kubeseal & Sops.md|Kubeseal & Sops]]
 - **[nnhuyhoang](https://github.com/nnhuyhoang)**: [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
 - **[pthung1311](https://github.com/pthung1311)**: [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
 - **[thanhlmm](https://github.com/thanhlmm)**: [[Engineering/Frontend/Prevent Layout Thrashing.md|Prevent Layout Thrashing]]
+- **[toanbku](https://github.com/toanbku)**: [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
 - **[trkhoi](https://github.com/trkhoi)**: [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
 - **[truong-dwarvesv](https://github.com/truong-dwarvesv)**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-01-19T04:51:47.086Z*.
+*This page was last modified at 2023-02-28T03:57:12.036Z*.
