@@ -1,8 +1,9 @@
 ---
-tags: engineering/management, process, documentation, enhancements, management skills
+tags: engineering/management, process, documentation, enhancements, management-skills, product-sense
 author: Nhut Huynh
 github_id: nhuthm
 date: 2023-02-23
+icy: 10
 ---
 
 Product sense is one of the skill that we has been hearing until today for the Project Manager when he/she is wanting to improve the management skill better and better. On this note, I will summarize with my understanding after reading the documentation from the internet, the full link to the document will be including from the reference section.
