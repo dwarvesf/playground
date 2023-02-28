@@ -1,5 +1,5 @@
 ---
-tags: engineering/devops, blue-green-deployement, deployment-strategy, production-traffic
+tags: engineering/devops, devops, blue-green-deployement, deployment-strategy, production-traffic
 author: Nguyen Huu Nguyen
 github_id: nguyennh4522
 date: 2022-02-16
