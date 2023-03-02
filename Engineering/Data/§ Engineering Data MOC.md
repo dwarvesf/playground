@@ -29,14 +29,15 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 
 ## State
 ---
-- [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
 - [[Engineering/Finite-state automata.md|Finite-state automata]]
 - [[Engineering/Finite-state transducer.md|Finite-state transducer]]
-- [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
+- [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
+- [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
 - [[Engineering/Mealy machine.md|Mealy machine]]
+- [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
 - [[Engineering/Moore machine.md|Moore machine]]
 - [[Engineering/Reducers.md|Reducers]]
 - [[Engineering/State explosion.md|State explosion]]
 
 
-*This page was last modified at 2023-02-28T04:14:09.535Z*.
+*This page was last modified at 2023-03-02T14:17:20.243Z*.

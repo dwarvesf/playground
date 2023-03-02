@@ -7,9 +7,9 @@ This is a [[Map of Content]] related to the engineering concepts around mobile.
 
 ## Mobile
 ---
-- [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
-- [[Engineering/Mobile/The structure of the command line app.md|The structure of the command line app]]
 - [[Engineering/Mobile/UIKit Builder pattern.md|UIKit Builder pattern]]
+- [[Engineering/Mobile/The structure of the command line app.md|The structure of the command line app]]
+- [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
 
 
-*This page was last modified at 2023-02-28T04:14:09.487Z*.
+*This page was last modified at 2023-03-02T14:17:20.200Z*.

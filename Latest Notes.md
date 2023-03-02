@@ -5,28 +5,28 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
 - [[Ω Fleeting notes/202302281019 - Case study - Write-heavy scalable and reliable inventory platform.md|202302281019 - Case study - Write-heavy scalable and reliable inventory platform]]
+- [[Blockchain/Plonky2.md|Plonky2]]
 - [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
 - [[Engineering/Management/How to build a product sense.md|How to build a product sense]]
 - [[Engineering/Self-balanced BSTs - AVL trees.md|Self-balanced BSTs - AVL trees]]
 - [[Engineering/Frontend/Mixpanel.md|Mixpanel]]
 - [[Ω Fleeting notes/202301191192 - Multi-column index in DB.md|202301191192 - Multi-column index in DB]]
-- [[Engineering/Law of Demeter.md|Law of Demeter]]
 - [[Engineering/Management/Difference between Project-Program-Portfolio manager.md|Difference between Project-Program-Portfolio manager]]
-- [[Engineering/Frontend/Validation with Zod.md|Validation with Zod]]
-- [[Ω Fleeting notes/202301091379 - Invoking Component Functions in React.md|202301091379 - Invoking Component Functions in React]]
+- [[Engineering/Law of Demeter.md|Law of Demeter]]
 
 
 ## Top Contributors this month
 ---
 | authors | notes |
 | ------- | ----- |
-| antran#3200 |  [[202302281019 - Case study - Write-heavy scalable and reliable inventory platform]]<br>|
-| [mirageruler](https://github.com/mirageruler) |  [[Self-balanced BSTs - AVL trees]]<br>|
-| [namtrhg](https://github.com/namtrhg) |  [[Mixpanel]]<br>|
-| [nguyennh4522](https://github.com/nguyennh4522) |  [[Blue-green Deployment]]<br>|
-| [nhuthm](https://github.com/nhuthm) |  [[How to build a product sense]]<br>|
-| [toanbku](https://github.com/toanbku) |  [[Preserving and Resetting state in React]]<br>|
+| [huygn](https://github.com/huygn) |  [[MPA, SPA and Partial Hydration]]<br> [[Deno]]<br>|
+| [leduyhien152](https://github.com/leduyhien152) |  [[When should we use useReducer instead of useState?]]<br> [[Liquidity pool]]<br>|
+| [monotykamary](https://github.com/monotykamary) |  [[State, Explain, Link]]<br>|
+| [R-Jim](https://github.com/R-Jim) |  [[Entities in Domain Driven Design]]<br>|
+| [trankhacvy](https://github.com/trankhacvy) |  [[Blockchain Oracle]]<br>|
+| [zlatanpham](https://github.com/zlatanpham) |  [[Cold start problem]]<br> [[Tackling complexity]]<br> [[Why invest in tools]]<br>|
 
 
 
@@ -43,7 +43,6 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[cnhhoang850](https://github.com/cnhhoang850)**: [[Design/What Screens Want.md|What Screens Want]]
 - **[huytieu](https://github.com/huytieu)**: [[Communication/DiSC Personality Types in team work.md|DiSC Personality Types in team work]]
 - **[knguyenuit](https://github.com/knguyenuit)**: [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
-- **[leduyhien152](https://github.com/leduyhien152)**: [[Blockchain/Liquidity pool.md|Liquidity pool]]
 - **[nnhuyhoang](https://github.com/nnhuyhoang)**: [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
 - **[pthung1311](https://github.com/pthung1311)**: [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
 - **[thanhlmm](https://github.com/thanhlmm)**: [[Engineering/Frontend/Prevent Layout Thrashing.md|Prevent Layout Thrashing]]
@@ -53,4 +52,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-02-28T04:14:09.448Z*.
+*This page was last modified at 2023-03-02T14:17:20.160Z*.
