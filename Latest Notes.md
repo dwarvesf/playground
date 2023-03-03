@@ -18,7 +18,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 
 
 ## Top Contributors this month
----
+
 | authors | notes |
 | ------- | ----- |
 | [leduyhien152](https://github.com/leduyhien152) |  [[When should we use useReducer instead of useState?]]<br>|
@@ -26,7 +26,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 
 
 ## Newest Contributors
----
+
 - **haongo1#3632**: [[Ω Fleeting notes/202211141513 - Materialized View Pattern.md|202211141513 - Materialized View Pattern]]
 - **hieuvd#4261**: [[Ω Fleeting notes/202211141287 - Go JSON Parsing.md|202211141287 - Go JSON Parsing]]
 - **hmhoang13#5280**: [[Ω Fleeting notes/202301191192 - Multi-column index in DB.md|202301191192 - Multi-column index in DB]]
@@ -47,4 +47,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-03-03T02:31:04.693Z*.
+*This page was last modified at 2023-03-03T03:02:05.555Z*.

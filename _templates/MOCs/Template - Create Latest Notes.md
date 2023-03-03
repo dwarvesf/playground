@@ -12,7 +12,7 @@ tR += te.value;
 %>
 
 ## Top Contributors this month
----
+
 <%*
 const topDiscordNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
 	.where(p => !!p.file.frontmatter.discord_id)
@@ -54,7 +54,7 @@ for (let group of topAuthoredNotes) {
 
 
 ## Newest Contributors
----
+
 <%*
 const discordNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
 	.where(p => !!p.file.frontmatter.discord_id)
