@@ -21,12 +21,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 ---
 | authors | notes |
 | ------- | ----- |
-| [huygn](https://github.com/huygn) |  [[MPA, SPA and Partial Hydration]]<br> [[Deno]]<br>|
-| [leduyhien152](https://github.com/leduyhien152) |  [[When should we use useReducer instead of useState?]]<br> [[Liquidity pool]]<br>|
-| [monotykamary](https://github.com/monotykamary) |  [[State, Explain, Link]]<br>|
-| [R-Jim](https://github.com/R-Jim) |  [[Entities in Domain Driven Design]]<br>|
-| [trankhacvy](https://github.com/trankhacvy) |  [[Blockchain Oracle]]<br>|
-| [zlatanpham](https://github.com/zlatanpham) |  [[Cold start problem]]<br> [[Tackling complexity]]<br> [[Why invest in tools]]<br>|
+| [leduyhien152](https://github.com/leduyhien152) |  [[When should we use useReducer instead of useState?]]<br>|
 
 
 
@@ -52,4 +47,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-03-02T14:17:20.160Z*.
+*This page was last modified at 2023-03-03T02:31:04.693Z*.

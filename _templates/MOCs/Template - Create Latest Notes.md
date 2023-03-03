@@ -19,6 +19,7 @@ const topDiscordNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"
 	.where(p => !!p.file.frontmatter.date)
     .where(p => dv.date(p.file.frontmatter.date) !== null)
     .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
+    .where(p => dv.date(p.file.frontmatter.date).year === dv.date('today').year)
     .sort(p => p.date, "desc")
 	.groupBy(p => p.discord_id)
 
@@ -27,6 +28,7 @@ const topAuthoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge
 	.where(p => !!p.file.frontmatter.date)
     .where(p => dv.date(p.file.frontmatter.date) !== null)
     .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
+    .where(p => dv.date(p.file.frontmatter.date).year === dv.date('today').year)
     .sort(p => p.date, "desc")
 	.groupBy(p => p.github_id);
 
