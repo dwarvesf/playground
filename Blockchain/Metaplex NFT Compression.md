@@ -1,5 +1,5 @@
 ---
-tags: blockchain, solana, metaplex, nft
+tags: blockchain, solana, metaplex, nft-compression
 author: Tran Khac Vy
 date: 2023-03-13
 ---
