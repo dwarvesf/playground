@@ -1,8 +1,9 @@
 ---
-tags: engineering/management, management, process, documentation, management-knowledges
+tags: engineering/management, management, process, documentation, management-knowledge, agile, burndown
 author: Nhut Huynh
 github_id: nhuthm
 date: 2023-02-28
+icy: 10
 ---
 
 From the team product, when the Project Manager want to report with their client for the question: "How is our project coming along?", to have a catch-up on the product's process.
