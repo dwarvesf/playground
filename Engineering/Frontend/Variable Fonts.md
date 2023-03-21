@@ -1,8 +1,9 @@
 ---
-tags: engineering/frontend, frontend, css, fonts
+tags: engineering/frontend, frontend, css, fonts, variable-fonts, typography, typeface
 author: Ngo Lap Nguyen
 github_id: ngolapnguyen
 date: 2023-03-06
+icy: 10
 ---
 
 ## What's variable font?
