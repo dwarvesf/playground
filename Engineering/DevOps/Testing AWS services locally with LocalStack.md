@@ -11,7 +11,7 @@ date: 2023-03-17
 
 **AWS** is a flexible, scalable, and cost-effective cloud computing platform that offers a wide range of services to help individuals, startups, and enterprises build and manage their applications and infrastructure.
 
-> Learn more about [AWS](https://aws.amazon.com/) (or just ask ChatGPT).
+> Learn more about [AWS](https://aws.amazon.com/).
 
 **LocalStack** supports many AWS services, including S3, Kinesis, and DynamoDB, etc., and provides a simple API for interacting with them. It is available for use in many programming languages or customize the environment. With LocalStack, you can test and develop your applications without incurring any costs, making it an ideal solution for developers who want to learn and experiment with AWS services without committing to a full-scale deployment.
 
@@ -127,6 +127,22 @@ awslocal s3api get-bucket-replication --bucket sample-bucket
     }
 }
 ```
+
+## Other services
+
+Some of the emulation services for other AWS APIs that LocalStack supports:
+
+- [Elastic Compute Cloud (EC2)](https://docs.localstack.cloud/user-guide/aws/elastic-compute-cloud/)
+
+- [CloudFront](https://docs.localstack.cloud/user-guide/aws/cloudfront/)
+
+- [Lambda](https://docs.localstack.cloud/user-guide/aws/lambda/)
+
+- [Kinesis](https://docs.localstack.cloud/user-guide/aws/kinesis/)
+
+- [DynamoDB](https://docs.localstack.cloud/user-guide/aws/dynamodb/)
+
+> See the [Service Feature Coverage](https://docs.localstack.cloud/user-guide/aws/feature-coverage/) on LocalStack's documentation for further information of the AWS APIs that LocalStack has covered.
 
 ## Benefits
 
