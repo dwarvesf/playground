@@ -1,9 +1,11 @@
 ---
-tags: engineering, go, software, backend, basic
+tags: engineering, go, software, backend, basic, profiling, debugging
 author: Nguyen Toan Thang
 github_id: thangnt294
 date: 2023-03-28
+icy: 10
 ---
+
 # Profiling in Go: Gotta catch 'em all
 
 
