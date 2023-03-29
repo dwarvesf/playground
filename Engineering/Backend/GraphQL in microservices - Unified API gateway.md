@@ -1,4 +1,10 @@
-
+---
+tags: engineering/backend, backend, graphql, unified-api-gateway, microservices, stitching, federation, apollo, bramble
+github_id: mirageruler
+author: Khoi Nguyen
+date: 2023-03-29
+icy: 10
+---
 
 ## Preamble
 
@@ -7,6 +13,7 @@ Ideally, we want to expose [one graph](https://principledgraphql.com/integrity#
 Currently, GraphQL proposes two approachs with detailed specification to create a unified GraphQL API from multiple GraphQL APIs which are:
 - **Schema stiching**: Schema stitching involves combining multiple GraphQL schemas into a single schema. It involves merging schema types, resolvers, and query definitions to form a single schema. In this approach, each sub-schema defines its own types and resolvers, and these are then combined into a single schema that can be queried. The advantage of schema stitching is that it is relatively easy to implement, and it allows you to combine multiple schemas without having to modify the underlying services. However, one of the disadvantages of schema stitching is that it can lead to tight coupling between the sub-schemas, which can make it difficult to maintain and evolve the schema over time. Stitching assumes our company’s schema should be a centralized responsibility
 - **Schema federation**: On the other hand, schema federation involves creating a gateway that sits between the client and multiple GraphQL services. In this approach, each sub-schema defines its own types and resolvers, and the gateway is responsible for combining the schemas and routing the queries to the appropriate service. The advantage of schema federation is that it allows you to evolve the schema over time without affecting the underlying services, and it can provide better performance by allowing each service to handle its own queries. However, the disadvantage of schema federation is that it can be more complex to implement, and it may require additional infrastructure to support. Federation assumes a company’s schema should be a distributed responsibility
+
 Schema stitching is a good choice when:
 - You have a limited number of APIs that you need to integrate, and the APIs have overlapping data.
 - You need to have a unified API that can be queried from a single endpoint.
@@ -26,15 +33,15 @@ I would like to introduce [Bramble](https://github.com/movio/bramble), an open-s
 ## Bramble
 
 As a GraphQL API gateway, Bramble supports the following features:
-**GraphQL federation**  
+- **GraphQL federation**  
 	Bramble allows you to federate the schemas of multiple services together, i.e. to create a single GraphQL API out of smaller ones. Note that this is different from schema stitching, in that federation allows multiple services to contribute fields to common types. The Apollo team [pioneered the concept of GraphQL federation](https://www.apollographql.com/blog/apollo-federation-f260cf525d21/) in mid-2019, and Bramble is largely inspired by their work.
-**Fine-grained authorization system**  
+- **Fine-grained authorization system**  
 	Bramble supports [fine-grained access control](https://movio.github.io/bramble/#/access-control) which allows you to restrict and hide parts of the schema depending on which client is making a request. 
-**Pluggable architecture**  
+- **Pluggable architecture**  
 	Bramble has been designed [to be easily extended via plugins](https://movio.github.io/bramble/#/plugins). By default, Bramble contains a number of built-in plugins that offer a wide range of functionality such as a web UI, CORS support, Jaeger tracing support, etc. Writing a Bramble plugin is quite simple, see [how to write a plugin](https://movio.github.io/bramble/#/write-plugin), and [Bramble's built-in plugins](https://github.com/movio/bramble/tree/main/plugins).
-**Single-binary deployment**  
+- **Single-binary deployment**  
 	Bramble is a single binary and is very easy to deploy in most environments.
-**Stateless and horizontally-scalable architecture**  
+- **Stateless and horizontally-scalable architecture**  
 	Bramble is stateless, doesn't require any third-party services, and scales out easily for added reliability and performance.
 
 The Bramble documentation has an easy to follow [getting started guide](https://movio.github.io/bramble/#/getting-started). In the rest of this blog post, we'll go through the history of the project, the motivations for creating it, and some comparisons to existing tools.
@@ -53,13 +60,13 @@ For the sake of brevity, let's don't dwell too much on the pain points of the ab
 _Legacy infrastructure_
 
 When they began ideating the outline of a new architecture, they started by enumerating a number of requirements that were important to they:
-**Consistent across teams**  
+- **Consistent across teams**  
 	First, they recognised the need for a standard and uniform way of defining and documenting internal APIs. They were spending way too much time synchronising the development across team boundaries and a unified API platform was priority number one.
-**Language agnostic**  
+- **Language agnostic**  
 	They wanted their API platform to work seamlessly across multiple programming languages and environments. They have teams using Go, Javascript/Typescript, Python, Scala, all for different and valid reasons and they wanted to accommodate each equally well.
-**Universal**  
+- **Universal**  
 	They did not want to have to maintain different kinds of APIs for different kinds of use cases. Ideally, the frontend APIs and backend APIs should use the same technology. They have found in the past that maintaining services that have a public API in say, REST, and a private API in say, gRPC creates a very large overhead. As a result, they choose to have an API technology that is a "least common denominator" in terms of performance but has the benefit of being universal for the whole company.
-**Human-readable**  
+- **Human-readable**  
 	Finally, they wanted to have an API platform that was easy to evolve and introspect. They wanted to stay away from binary formats and favored technologies that allowed to add functionality easily.
 
 ![[Backend architecture with GraphQL gateway example.png]]
