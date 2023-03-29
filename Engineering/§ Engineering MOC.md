@@ -7,16 +7,18 @@ This is a [[Map of Content]] related to the engineering.
 
 ## Engineering
 ---
+- [[Engineering/Profiling in Go.md|Profiling in Go]]
+- [[Engineering/Cold start problem.md|Cold start problem]]
 - [[Engineering/git.md|git]]
 - [[Engineering/Why invest in tools.md|Why invest in tools]]
-- [[Engineering/Tackling complexity.md|Tackling complexity]]
 - [[Engineering/State explosion.md|State explosion]]
+- [[Engineering/Tackling complexity.md|Tackling complexity]]
 - [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
 - [[Engineering/Service-based architecture.md|Service-based architecture]]
 - [[Engineering/Self-balanced BSTs - AVL trees.md|Self-balanced BSTs - AVL trees]]
 - [[Engineering/Reducers.md|Reducers]]
-- [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 - [[Engineering/QA/Test cases breakdown structure.md|Test cases breakdown structure]]
+- [[Engineering/QA/Boundary and Equivalence Partitioning Testing.md|Boundary and Equivalence Partitioning Testing]]
 - [[Engineering/Overview of Domain Driven Design.md|Overview of Domain Driven Design]]
 - [[Engineering/Moore machine.md|Moore machine]]
 - [[Engineering/Mealy machine.md|Mealy machine]]
@@ -31,14 +33,14 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/Edsger Dijkstra interview.md|Edsger Dijkstra interview]]
 - [[Engineering/Double-entry accounting.md|Double-entry accounting]]
 - [[Engineering/Domain Model in Domain Driven Design.md|Domain Model in Domain Driven Design]]
+- [[Engineering/Deno.md|Deno]]
+- [[Engineering/DevOps/Testing AWS services locally with LocalStack.md|Testing AWS services locally with LocalStack]]
 - [[Engineering/DevOps/Progressive Delivery.md|Progressive Delivery]]
 - [[Engineering/DevOps/Kubeseal & Sops.md|Kubeseal & Sops]]
 - [[Engineering/DevOps/Feature flags.md|Feature flags]]
 - [[Engineering/DevOps/Blue-green Deployment.md|Blue-green Deployment]]
-- [[Engineering/Deno.md|Deno]]
 - [[Engineering/Debugging in JavaScript.md|Debugging in JavaScript]]
 - [[Engineering/Concurrency in Javascript.md|Concurrency in Javascript]]
-- [[Engineering/Cold start problem.md|Cold start problem]]
 - [[Engineering/CAP theorem.md|CAP theorem]]
 - [[Engineering/C4 diagrams.md|C4 diagrams]]
 - [[Engineering/Blockchain Oracle.md|Blockchain Oracle]]
@@ -48,4 +50,4 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/A and CNAME records in DNS.md|A and CNAME records in DNS]]
 
 
-*This page was last modified at 2023-03-03T03:02:05.566Z*.
+*This page was last modified at 2023-03-29T14:18:10.328Z*.

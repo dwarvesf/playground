@@ -20,6 +20,7 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Management/Cognitive load.md|Cognitive load]]
 - [[Engineering/Management/Analysis document.md|Analysis document]]
 - [[Engineering/Conway's law.md|Conway's law]]
+- [[Engineering/Management/Burnup and Burndown chart.md|Burnup and Burndown chart]]
 
 ## Fundamentals
 ---
@@ -28,4 +29,4 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 
 
-*This page was last modified at 2023-03-03T03:02:05.594Z*.
+*This page was last modified at 2023-03-29T14:18:10.350Z*.
