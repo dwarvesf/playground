@@ -7,6 +7,7 @@ fleeting_monthly: |
   FROM "Ω Fleeting notes"
   WHERE discord_id != NULL
     AND date.month = (date(today)).month
+    AND date.year = (date(today)).year
   GROUP BY discord_id
 
 structured_permanent_notes_monthly: |
@@ -17,6 +18,7 @@ structured_permanent_notes_monthly: |
   FROM #engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile 
   WHERE author != NULL
     AND date.month = (date(today)).month
+    AND date.year = (date(today)).year
   GROUP BY author
 
 literature_notes_monthly: |
@@ -27,6 +29,7 @@ literature_notes_monthly: |
   FROM "Ω Literature notes"
   WHERE discord_id != NULL
     AND date.month = (date(today)).month
+    AND date.year = (date(today)).year
   GROUP BY discord_id
 
 permanent_notes_monthly: |
@@ -36,6 +39,7 @@ permanent_notes_monthly: |
   FROM "Ω Permanent notes"
   WHERE discord_id != NULL
     AND date.month = (date(today)).month
+    
   GROUP BY discord_id
 
 fleeting_notes_all: |

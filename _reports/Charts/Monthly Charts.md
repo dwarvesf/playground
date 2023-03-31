@@ -15,6 +15,7 @@ data: |
            .where(p => !!p.file.frontmatter.date)
            .where(p => dv.date(p.file.frontmatter.date) !== null)
            .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
+           .where(p => dv.date(p.file.frontmatter.date).year === dv.date('today').year)
            .flatMap(p => p.file.etags)
            .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1))
            .groupBy(p => p)
@@ -50,6 +51,7 @@ data: |
         .where(p => !!p.file.frontmatter.date)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
         .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
+        .where(p => dv.date(p.file.frontmatter.date).year === dv.date('today').year)
         .flatMap(p => p.file.etags)
         .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)).array()
         .reduce((a, p) => {
@@ -95,6 +97,7 @@ data: |
            .where(p => !!p.file.frontmatter.date)
            .where(p => dv.date(p.file.frontmatter.date) !== null)
            .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
+           .where(p => dv.date(p.file.frontmatter.date).year === dv.date('today').year)
            .flatMap(p => p.file.etags)
            .filter(p => p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)
            .map(p => p.replace(/#(\w*)(.*)/, "$1")).array()
@@ -175,6 +178,7 @@ data: |
         .where(p => !!p.file.frontmatter.date && !!p.file.frontmatter.discord_id)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
         .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
+        .where(p => dv.date(p.file.frontmatter.date).year === dv.date('today').year)
         .groupBy(p => {
             const noteDate = dv.date(p.file.frontmatter.date);
             return `${noteDate.c.year}-${noteDate.c.month}-${noteDate.c.day}`
@@ -226,6 +230,7 @@ data: |
         .where(p => !!p.file.frontmatter.date && !!p.file.frontmatter.author)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
         .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
+        .where(p => dv.date(p.file.frontmatter.date).year === dv.date('today').year)
         .groupBy(p => p.file.frontmatter.author)
         .sort(p => p.rows.length, "desc")
         .map(p => {
