@@ -47,7 +47,7 @@ type: Treemap
 data: |
   dataviewjs:
     const children = []
-    const query = dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR "Ω Fleeting notes"`)
+    const query = dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR #ai OR "Ω Fleeting notes"`)
         .where(p => !!p.file.frontmatter.date)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
         .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
@@ -93,13 +93,13 @@ type: Radar
 #-----------------#
 data: |
   dataviewjs:
-    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR "Ω Fleeting notes"`)
+    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR #ai OR "Ω Fleeting notes"`)
            .where(p => !!p.file.frontmatter.date)
            .where(p => dv.date(p.file.frontmatter.date) !== null)
            .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
            .where(p => dv.date(p.file.frontmatter.date).year === dv.date('today').year)
            .flatMap(p => p.file.etags)
-           .filter(p => p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)
+           .filter(p => p.search(/#engineering|#writing|#design|#communication|#blockchain|#mobile|#ai/g) > -1)
            .map(p => p.replace(/#(\w*)(.*)/, "$1")).array()
            .reduce((a, p) => {
                switch (p) {
@@ -108,6 +108,8 @@ data: |
                    case "design": a[2].score += 10; break;
                    case "communication": a[3].score += 10; break;
                    case "blockchain": a[4].score += 1; break;
+                   case "mobile": a[5].score += 1; break;
+                   case "ai": a[6].score += 1; break;
                }
                return a;
            }, [
@@ -133,6 +135,16 @@ data: |
                },
                {
                    item: "Blockchain",
+                   user: "notes",
+                   score: 0
+               },
+               {
+                   item: "Mobile",
+                   user: "notes",
+                   score: 0
+               },
+               {
+                   item: "AI",
                    user: "notes",
                    score: 0
                },
@@ -226,7 +238,7 @@ type: Bar
 #-----------------#
 data: |
   dataviewjs:
-    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile`)
+    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR #ai`)
         .where(p => !!p.file.frontmatter.date && !!p.file.frontmatter.author)
         .where(p => dv.date(p.file.frontmatter.date) !== null)
         .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)

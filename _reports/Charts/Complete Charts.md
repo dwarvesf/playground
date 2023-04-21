@@ -49,7 +49,7 @@ data: |
     const query = dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR "Ω Fleeting notes"`)
         .where(p => !!p.file.frontmatter.date)
         .flatMap(p => p.file.etags)
-        .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)).array()
+        .filter(p => !(p.search(/#engineering|#writing|#design|#communication|#blockchain|#mobile|#ai/g) > -1)).array()
         .reduce((a, p) => {
             if (!(p in a)) {
                 a[p] = 0;
@@ -89,10 +89,10 @@ type: Radar
 #-----------------#
 data: |
   dataviewjs:
-  return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR "Ω Fleeting notes"`)
+  return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR #ai OR "Ω Fleeting notes"`)
            .where(p => !!p.file.frontmatter.date)
            .flatMap(p => p.file.etags)
-           .filter(p => p.search(/#engineering|#writing|#design|#communication|#blockchain/g) > -1)
+           .filter(p => p.search(/#engineering|#writing|#design|#communication|#blockchain|#mobile|#ai/g) > -1)
            .map(p => p.replace(/#(\w*)(.*)/, "$1")).array()
            .reduce((a, p) => {
                switch (p) {
@@ -101,6 +101,8 @@ data: |
                    case "design": a[2].score += 10; break;
                    case "communication": a[3].score += 10; break;
                    case "blockchain": a[4].score += 1; break;
+                   case "mobile": a[5].score += 1; break;
+                   case "ai": a[6].score += 10; break;
                }
                return a;
            }, [
@@ -126,6 +128,16 @@ data: |
                },
                {
                    item: "Blockchain",
+                   user: "notes",
+                   score: 0
+               },
+               {
+                   item: "Mobile",
+                   user: "notes",
+                   score: 0
+               },
+               {
+                   item: "AI",
                    user: "notes",
                    score: 0
                },
@@ -217,7 +229,7 @@ type: Bar
 #-----------------#
 data: |
   dataviewjs:
-    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile`)
+    return dv.pages(`#engineering OR #writing OR #design OR #communication OR #blockchain OR #mobile OR #ai`)
         .where(p => !!p.file.frontmatter.date && !!p.file.frontmatter.author)
         .groupBy(p => p.file.frontmatter.author)
         .sort(p => p.rows.length, "desc")
