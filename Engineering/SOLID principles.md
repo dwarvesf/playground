@@ -86,7 +86,7 @@ int main() {
 
 Some developers might define the method `printCitation` inside the `Book` class, but this code violates the single responsibility principle. When following the practice as the code snippets above, not only the code is much cleaner, but we will also separate those classes by concerns ([SoC - Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns#:~:text=In%20computer%20science%2C%20separation%20of,code%20of%20a%20computer%20program.)). Later on, if there are classes representing the arts or videos that we may need to print their information, we can leverage the `Printer` class implemented before by adding methods such as `artInfoPrinter`.
 
-<iframe src="https://replit.com/@NguyenD-Nam/Single-Responsibility" width="100%" height="680"></iframe>
+<iframe src="https://replit.com/@NguyenD-Nam/Single-Responsibility?lite=true" width="100%" height="680"></iframe>
 
 ## O - Open-Closed Principle
 
@@ -163,7 +163,7 @@ int main() {
 
 By creating a brand new class for the new behavior, we would know that the stuff we already built isn't affected and we can totally focus on designing the class to suit the new requirement.
 
-<iframe src="https://replit.com/@NguyenD-Nam/Open-Closed" width="100%" height="680"></iframe>
+<iframe src="https://replit.com/@NguyenD-Nam/Open-Closed?lite=true" width="100%" height="680"></iframe>
 
 ## L - Liskov Substitution Principle
 
@@ -226,7 +226,7 @@ int main() {
 
 The idea behind the Liskov Substitution principle is that a derived class should be able to replace its base class in any code that uses the base class, without causing unexpected behavior or violating any assumptions made about the base class. In the example above, the `ElectricCar` is defined to be a derived class from `MeansOfTransport`, but unlike the engine in the base class, it uses an electrical motor. It could be either mistaken when defining attributes or methods in the base class or when we leverage it and make the derived class, but after all, the use above is an example that violates the Liskov Substitution principle.
 
-<iframe src="https://replit.com/@NguyenD-Nam/Liskov-Substitution" width="100%" height="680"></iframe>
+<iframe src="https://replit.com/@NguyenD-Nam/Liskov-Substitution?lite=true" width="100%" height="680"></iframe>
 
 ## I - Interface Segregation Principle
 
@@ -329,7 +329,7 @@ int main() {
 
 We can see the message has been logged into a "log.txt" file and another one in the console. Now let's dive into the code. The **abstract** class `ILogger` is responsible for the base of all the logger approaches, in this example we have `ConsoleLogger` and `FileLogger`. Our application will be able to takes in any logger and based on the one we provide, the message will then be export to the file or logged into the console.
 
-<iframe src="https://replit.com/@NguyenD-Nam/Dependency-Inversion" width="100%" height="680"></iframe>
+<iframe src="https://replit.com/@NguyenD-Nam/Dependency-Inversion?lite=true" width="100%" height="680"></iframe>
 
 ## Benefits
 
