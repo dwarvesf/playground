@@ -1,8 +1,9 @@
 ---
-tags: engineering, solid-principles, object-oriented-programming, oop
+tags: engineering, solid-principles, solid, clean-code, clean-architecture, object-oriented-programming, oop
 author: Nguyen Dinh Nam
 github_id: nguyend-nam
 date: 2023-04-20
+icy: 10
 ---
 
 ## What & Why?
