@@ -23,7 +23,7 @@ A few strategies that Langchain uses, and that we can also create and customize,
 
 Essentially, if you can stuff your resource or document within the 4K token limit, you'll be able to get a valid and full response back. Most simplest method and usually only works for short documents or resources.
 
-![[Pasted image 20230421174036.png]]
+![[openai-token-limit.png]]
 
 ### Map-Reduce
 
@@ -31,7 +31,7 @@ For documents or prompts that are over the limit, you can use map-reduce to spli
 
 This is good for larger documents and due to how its designed with map-reduce, it can also be parallelized. On the other hand, this creates quite a few API calls and is prone to loss of information as we are contexting the summary as opposed to the original document.
 
-![[Pasted image 20230421175012.png]]
+![[openai-map-reduce.png]]
 
 ### Refining
 
@@ -39,7 +39,7 @@ The idea of refining is that you send multiple prompts to OpenAI's ChatGPT to re
 
 You get much more accurate data this way. In contrast, this also means a ton more independent API calls to OpenAI.
 
-![[Pasted image 20230421175831.png]]
+![[openai-refining.png]]
 
 ### Map-Rerank
 
@@ -47,7 +47,7 @@ Map-rerank essentially splits documents into prompts which are rated for their r
 
 This is very convenient for single-answer questions as well as very well-sectioned documents that have manageable chunks of information. The drawback to this method is that we cannot combine information between these chunks, meaning any shared context between them is lost when map-reranking them.
 
-![[Pasted image 20230421180852.png]]
+![[openai-map-rerank.png]]
 
 ## Conclusion
 
