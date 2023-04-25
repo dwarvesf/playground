@@ -9,7 +9,7 @@ date: 2023-04-21
 
 ## What are document loaders in Langchain?
 
-The [document loaders](https://python.langchain.com/en/latest/modules/indexes/document_loaders.html) in Langchain are used to get around the ~4K token limit on OpenAI by using several strategies such as stuffing, map-reduce, refining, and map-rerank. These strategies are used to split documents into smaller sections or summaries that can fit into the 4K token limit and consolidate them as a summary that can fit into the 4K token limit. These strategies are also used to refine prompts to ChatGPT to refine its context prior to composing a final summary that will then be used to prime the conversation for the response.
+The [document loaders](https://python.langchain.com/en/latest/modules/indexes/document_loaders.html) in Langchain are used to get around the [[Workaround with OpenAI's token limit with Langchain|~4K token limit on OpenAI]] by using several strategies such as stuffing, map-reduce, refining, and map-rerank. These strategies are used to split documents into smaller sections or summaries that can fit into the 4K token limit and consolidate them as a summary that can fit into the 4K token limit. These strategies are also used to refine prompts to ChatGPT to refine its context prior to composing a final summary that will then be used to prime the conversation for the response.
 
 These data are saved and indexed as vectors in a [[Vector Database|vector database]]. Vector indexes are used to capture word meaning and represent it in a continuous space. This helps the model to understand the context and generate more accurate responses.
 
@@ -99,6 +99,10 @@ openai_agent.run(query)
 
 # The username is An Tran and the age in Roman numerics is MMXXI.
 ```
+
+## Conclusion
+
+Hopefully, this gives you an idea of how langchain can be used to create an agent that take indexes and data from our transient vector database. A lot of the processing for generating these prompts happens behind the scenes, so that we only need to worry about loading and consolidating which data we need to use as indexes for LLMs.
 
 ## References
 - https://python.langchain.com/en/latest/modules/indexes/getting_started.html
