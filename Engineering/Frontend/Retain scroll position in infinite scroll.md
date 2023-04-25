@@ -1,8 +1,9 @@
 ---
-tags: engineering, frontend, infinite-scroll, swr, swr-infinite
+tags: engineering/frontend, frontend, infinite-scroll, swr, swr-infinite, web-design, accessibility, usability, client-side-storage, session-storage
 author: Nguyen Dinh Nam
 github_id: nguyend-nam
 date: 2023-04-24
+icy: 10
 ---
 
 ## Infinite scroll - Benefits and Challenges
