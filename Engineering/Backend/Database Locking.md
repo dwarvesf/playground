@@ -1,8 +1,9 @@
 ---
-tags: sql, database, locking, concurrency control
+tags: engineering/backend, backend, sql, database, locking, concurrency-control, advisory-locks, explicit-locking
 author: Bien Vo
 github_id: vhbien000
 date: 2023-04-22
+icy: 10
 ---
 
 Some of us had built a game, while others were familiar with e-commerce platforms, dapps, or even all of these types of applications, and more. Each type of software that we were working on needed different techniques, some of which were similar. So the same problem can happen in every software product. In this post, we will discuss an issue in high workload databases together. It is **Concurrency Control**.
@@ -202,8 +203,8 @@ In general, advisory locks should be used sparingly and only when necessary. The
 Explicit locking is the most accessible way to resolve concurrency control in high workload databases. Depending on the context of your application or feature, you can choose the proper type/level of database locking to avoid data conflicts, considering the pros and cons. However, this is not the only option. You can also choose other methods, such as implementing a queue or a separate service that divides and rules every request to your database. I hope this post helps you choose the right way to implement your application in the future.
 
 ## REFERENCES
-<a id="1">[1]</a> “Documentation: 15: 13.3. Explicit Locking.”, Table 13.2. Conflicting Lock Modes, PostgreSQL, https://www.postgresql.org/docs/current/explicit-locking.html. Accessed 23 April 2023.
-<a id="2">[2]</a> “Documentation: 15: 13.3. Explicit Locking.”, Table 13.3. Conflicting Row-Level Locks, PostgreSQL, https://www.postgresql.org/docs/current/explicit-locking.html. Accessed 23 April 2023.
-<a id="3">[3]</a> “Advisory Locks and How to Use Them.” shiroyasha.io, 16 November 2017, https://shiroyasha.io/advisory-locks-and-how-to-use-them.html. Accessed 23 April 2023.
-<a id="4">[4]</a>“Richard Clayton - Distributed Locking with Postgres Advisory Locks.” Richard Clayton, 16 February 2020, https://rclayton.silvrback.com/distributed-locking-with-postgres-advisory-locks. Accessed 23 April 2023.
-<a id="5">[5]</a>“Locking in Databases and Isolation Mechanisms | by Denny Sam | inspiringbrilliance.” Medium, https://medium.com/inspiredbrilliance/what-are-database-locks-1aff9117c290. Accessed 23 April 2023.
+- <a id="1">[1]</a> “Documentation: 15: 13.3. Explicit Locking.”, Table 13.2. Conflicting Lock Modes, PostgreSQL, https://www.postgresql.org/docs/current/explicit-locking.html. Accessed 23 April 2023.
+- <a id="2">[2]</a> “Documentation: 15: 13.3. Explicit Locking.”, Table 13.3. Conflicting Row-Level Locks, PostgreSQL, https://www.postgresql.org/docs/current/explicit-locking.html. Accessed 23 April 2023.
+- <a id="3">[3]</a> “Advisory Locks and How to Use Them.” shiroyasha.io, 16 November 2017, https://shiroyasha.io/advisory-locks-and-how-to-use-them.html. Accessed 23 April 2023.
+- <a id="4">[4]</a>“Richard Clayton - Distributed Locking with Postgres Advisory Locks.” Richard Clayton, 16 February 2020, https://rclayton.silvrback.com/distributed-locking-with-postgres-advisory-locks. Accessed 23 April 2023.
+- <a id="5">[5]</a>“Locking in Databases and Isolation Mechanisms | by Denny Sam | inspiringbrilliance.” Medium, https://medium.com/inspiredbrilliance/what-are-database-locks-1aff9117c290. Accessed 23 April 2023.
