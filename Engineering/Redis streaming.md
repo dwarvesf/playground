@@ -1,13 +1,14 @@
 ---
-tags: engineering, redis, streaming, event-sourcing
+tags: engineering, redis, streaming, event-sourcing, append-only, logging, messaging
 author: M.Vu Cuong(Jim)
 github_id: R-Jim
-date: 2023-21-04
+date: 2023-04-21
+icy: 10
 ---
 
 ## What is Redis
 
-Redis is an in-memory key-value database.
+Redis is an in-memory key-value database. It is open-source software that can be used as a database, cache, and message broker. Redis supports a wide range of data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, and geospatial indexes with radius queries.
 
 ## What is Redis Streaming
 
