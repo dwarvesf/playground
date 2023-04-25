@@ -3,6 +3,7 @@ tags: engineering/ai, ai, langchain, tuning-llm, llm, document-loaders
 author: Nguyen Xuan Anh
 github_id: monotykamary
 date: 2023-04-21
+icy: 10
 ---
 
 [Langchain](https://python.langchain.com/) is a framework that enables the development of applications that utilize language models. It provides support for various main modules, including Models, Prompts, Memory, Indexes, Chains, and Agents. LangChain believes that applications with the greatest power and differentiation will not only rely on calling out to a language model via an API but will also be aware of data and allow a language model to interact with its environment.

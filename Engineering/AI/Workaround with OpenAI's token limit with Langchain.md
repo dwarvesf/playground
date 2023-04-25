@@ -3,6 +3,7 @@ tags: engineering/ai, ai, openai, chatgpt, langchain, tuning-llm, llm
 author: Nguyen Xuan Anh
 github_id: monotykamary
 date: 2023-04-21
+icy: 10
 ---
 
 ## Problem
