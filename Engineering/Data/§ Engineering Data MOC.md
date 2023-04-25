@@ -12,8 +12,8 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
 - [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
 - [[Engineering/Data/MapReduce.md|MapReduce]]
-- [[Engineering/Data/Managed Table vs External Table.md|Managed Table vs External Table]]
 - [[Engineering/Data/MapReduce Components.md|MapReduce Components]]
+- [[Engineering/Data/Managed Table vs External Table.md|Managed Table vs External Table]]
 - [[Engineering/Data/Introduction to Apache Pig.md|Introduction to Apache Pig]]
 - [[Engineering/Data/Introduction to Apache Hive.md|Introduction to Apache Hive]]
 - [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
@@ -32,8 +32,8 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Finite-state automata.md|Finite-state automata]]
 - [[Engineering/Finite-state transducer.md|Finite-state transducer]]
 - [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
-- [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
 - [[Engineering/Frontend/Tackling Server State complexity in Frontend Development.md|Tackling Server State complexity in Frontend Development]]
+- [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
 - [[Engineering/Mealy machine.md|Mealy machine]]
 - [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
 - [[Engineering/Moore machine.md|Moore machine]]
@@ -41,4 +41,4 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/State explosion.md|State explosion]]
 
 
-*This page was last modified at 2023-03-29T14:18:10.383Z*.
+*This page was last modified at 2023-04-25T02:58:44.716Z*.

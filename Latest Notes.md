@@ -5,29 +5,26 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
+- [[Engineering/Backend/Database Locking.md|Database Locking]]
+- [[Engineering/Redis streaming.md|Redis streaming]]
+- [[Engineering/AI/Working with langchain document loaders.md|Working with langchain document loaders]]
+- [[Engineering/AI/Workaround with OpenAI's token limit with Langchain.md|Workaround with OpenAI's token limit with Langchain]]
+- [[Engineering/SOLID principles.md|SOLID principles]]
 - [[Engineering/Backend/GraphQL in microservices - Unified API gateway.md|GraphQL in microservices - Unified API gateway]]
 - [[Engineering/Profiling in Go.md|Profiling in Go]]
 - [[Engineering/DevOps/Testing AWS services locally with LocalStack.md|Testing AWS services locally with LocalStack]]
 - [[Blockchain/Metaplex NFT Compression.md|Metaplex NFT Compression]]
-- [[Engineering/Frontend/Tackling Server State complexity in Frontend Development.md|Tackling Server State complexity in Frontend Development]]
-- [[Engineering/Frontend/Variable Fonts.md|Variable Fonts]]
-- [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
-- [[Ω Fleeting notes/202302281019 - Case study - Write-heavy scalable and reliable inventory platform.md|202302281019 - Case study - Write-heavy scalable and reliable inventory platform]]
-- [[Engineering/Management/Burnup and Burndown chart.md|Burnup and Burndown chart]]
-- [[Blockchain/Plonky2.md|Plonky2]]
 
 
 ## Top Contributors this month
 
 | authors | notes |
 | ------- | ----- |
-| [leduyhien152](https://github.com/leduyhien152) |  [[When should we use useReducer instead of useState?]]<br>|
-| [mirageruler](https://github.com/mirageruler) |  [[GraphQL in microservices - Unified API gateway]]<br>|
-| [ngolapnguyen](https://github.com/ngolapnguyen) |  [[Variable Fonts]]<br>|
-| [nguyend-nam](https://github.com/nguyend-nam) |  [[Testing AWS services locally with LocalStack]]<br>|
-| [thangnt294](https://github.com/thangnt294) |  [[Profiling in Go]]<br>|
-| [trankhacvy](https://github.com/trankhacvy) |  [[Metaplex NFT Compression]]<br>|
-| [zlatanpham](https://github.com/zlatanpham) |  [[Tackling Server State complexity in Frontend Development]]<br>|
+| [monotykamary](https://github.com/monotykamary) |  [[Working with langchain document loaders]]<br> [[Workaround with OpenAI's token limit with Langchain]]<br>|
+| [nguyend-nam](https://github.com/nguyend-nam) |  [[Retain scroll position in infinite scroll]]<br> [[SOLID principles]]<br>|
+| [R-Jim](https://github.com/R-Jim) |  [[Redis streaming]]<br>|
+| [vhbien000](https://github.com/vhbien000) |  [[Database Locking]]<br>|
 
 
 
@@ -54,4 +51,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-03-29T14:18:10.289Z*.
+*This page was last modified at 2023-04-25T02:58:44.648Z*.
