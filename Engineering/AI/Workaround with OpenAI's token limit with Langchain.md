@@ -7,7 +7,7 @@ date: 2023-04-21
 
 ## Problem
 
-Tuning OpenAI's ChatGPT comes as a very finicky problem as we don't have access to the model and other forms of tuning GPT for our needs are very limited. Not to mention that OpenAI has a token limit, as of time of writing, of ~4,000 tokens (with each token being ~1.2 words). This limit is applied on both the prompt and response of the answer.
+Tuning OpenAI's ChatGPT comes as a very finicky problem as we don't have access to the model and other forms of tuning GPT are very limited. Not to mention that OpenAI has a token limit, as of time of writing, of ~4,000 tokens (with each token being ~1.2 words). This limit is applied on both the prompt and response of the answer.
 
 ![[openai-token-limit-prompts.png]]
 
