@@ -1,12 +1,12 @@
 ---
-tags: engineering/ai, ai, chatbot, tuning-llm, llm, alpaca, gpt4
+tags: engineering/ai, ai, chatbot, tuning-llm, llm, alpaca, gpt4, open-source, chatgpt
 author: Pham Ngoc Thanh
 github_id: thanhpn
 date: 2023-04-27
 icy: 10
 ---
 
-Currently, AI chatbot services like ChatGPT are being widely used, but these services are banned in many countries and also prohibited by many schools due to the high quality of results they produce compared to the level of students’ knowledge. Additionally, these services also require high costs to generate results. Therefore, I think that if we can run a personal chatbot for use with acceptable results and without hardware costs, you can run it on your personal computer with a minimum requirement of 8GB of RAM. In this post, I will guide you on how to run a personal chatbot with an open model like Alpaca 7b or gpt4all model.
+Currently, AI chatbot services like ChatGPT are being widely used, but these services are restricted in many countries and also prohibited by many schools due to the high quality of results they produce compared to the level of students’ knowledge. Additionally, these services also require high costs to generate results. Therefore, I think that if we can run a personal chatbot for use with acceptable results and without hardware costs, you can run it on your personal computer with a minimum requirement of 8GB of RAM. In this post, I will guide you on how to run a personal chatbot with an open model like Alpaca 7b or gpt4all model.
 
 ## What is pre-trained models?
 
@@ -52,7 +52,7 @@ To fine tune your model you need create your dataset depend on your data, you ca
 
 We are using Google colab to train pre-trained model, you can follow the code example at [here](https://colab.research.google.com/drive/1TbV-Enz4O__GFXtqUWEFK0snYedOwPTh?usp=sharing)
 
-## Compare chatbot with ChatGPT3
+## Comparing the chatbot with ChatGPT3
 
 For models with a large number of parameters, such as 30 billion or more, the results generated can be used as a suggestion for further research, but the quality of the answers will not be comparable to ChatGPT3.
 
