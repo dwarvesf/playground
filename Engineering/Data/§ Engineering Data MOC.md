@@ -17,10 +17,10 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Data/Introduction to Apache Pig.md|Introduction to Apache Pig]]
 - [[Engineering/Data/Introduction to Apache Hive.md|Introduction to Apache Hive]]
 - [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
-- [[Engineering/Data/Data Vault modelling.md|Data Vault modelling]]
 - [[Engineering/Data/DBT - The Good Solution to Accelerate Data Transformation.md|DBT - The Good Solution to Accelerate Data Transformation]]
-- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
+- [[Engineering/Data/Data Vault modelling.md|Data Vault modelling]]
 - [[Engineering/Data/Behind a Hive table.md|Behind a Hive table]]
+- [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
 
 ## Big data
 ---
@@ -34,11 +34,11 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
 - [[Engineering/Frontend/Tackling Server State complexity in Frontend Development.md|Tackling Server State complexity in Frontend Development]]
 - [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
-- [[Engineering/Mealy machine.md|Mealy machine]]
 - [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
 - [[Engineering/Moore machine.md|Moore machine]]
 - [[Engineering/Reducers.md|Reducers]]
 - [[Engineering/State explosion.md|State explosion]]
+- [[Engineering/Mealy machine.md|Mealy machine]]
 
 
-*This page was last modified at 2023-04-25T02:58:44.716Z*.
+*This page was last modified at 2023-05-19T07:46:11.428Z*.

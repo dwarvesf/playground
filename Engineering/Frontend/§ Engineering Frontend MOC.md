@@ -7,7 +7,6 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 
 ## General frontend
 ---
-- [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
 - [[Engineering/Frontend/useEffect double calls in React 18.md|useEffect double calls in React 18]]
 - [[Engineering/Frontend/Zaplib post-mortem.md|Zaplib post-mortem]]
 - [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
@@ -16,6 +15,7 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/ViteJS native modules.md|ViteJS native modules]]
 - [[Engineering/Frontend/Variable Fonts.md|Variable Fonts]]
 - [[Engineering/Frontend/ThreeJS/Cameras in ThreeJS.md|Cameras in ThreeJS]]
+- [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
 - [[Engineering/Frontend/Tackling Server State complexity in Frontend Development.md|Tackling Server State complexity in Frontend Development]]
 - [[Engineering/Frontend/Singleton Design Pattern in Javascript.md|Singleton Design Pattern in Javascript]]
 - [[Engineering/Frontend/Pure CSS Parallax.md|Pure CSS Parallax]]
@@ -47,4 +47,4 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
 
 
-*This page was last modified at 2023-04-25T02:58:44.700Z*.
+*This page was last modified at 2023-05-19T07:46:11.411Z*.

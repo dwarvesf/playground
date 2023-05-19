@@ -5,6 +5,9 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/AI/Select Vector Database for LLM.md|Select Vector Database for LLM]]
+- [[Engineering/Redis streaming concurrency with master and consumers.md|Redis streaming concurrency with master and consumers]]
+- [[Engineering/AI/Build your chatbot with open source Large Language Models.md|Build your chatbot with open source Large Language Models]]
 - [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
 - [[Engineering/Backend/Database Locking.md|Database Locking]]
 - [[Engineering/Redis streaming.md|Redis streaming]]
@@ -12,19 +15,14 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/AI/Workaround with OpenAI's token limit with Langchain.md|Workaround with OpenAI's token limit with Langchain]]
 - [[Engineering/SOLID principles.md|SOLID principles]]
 - [[Engineering/Backend/GraphQL in microservices - Unified API gateway.md|GraphQL in microservices - Unified API gateway]]
-- [[Engineering/Profiling in Go.md|Profiling in Go]]
-- [[Engineering/DevOps/Testing AWS services locally with LocalStack.md|Testing AWS services locally with LocalStack]]
-- [[Blockchain/Metaplex NFT Compression.md|Metaplex NFT Compression]]
 
 
 ## Top Contributors this month
 
 | authors | notes |
 | ------- | ----- |
-| [monotykamary](https://github.com/monotykamary) |  [[Working with langchain document loaders]]<br> [[Workaround with OpenAI's token limit with Langchain]]<br>|
-| [nguyend-nam](https://github.com/nguyend-nam) |  [[Retain scroll position in infinite scroll]]<br> [[SOLID principles]]<br>|
-| [R-Jim](https://github.com/R-Jim) |  [[Redis streaming]]<br>|
-| [vhbien000](https://github.com/vhbien000) |  [[Database Locking]]<br>|
+| [R-Jim](https://github.com/R-Jim) |  [[Redis streaming concurrency with master and consumers]]<br>|
+| [thanhpn](https://github.com/thanhpn) |  [[Select Vector Database for LLM]]<br>|
 
 
 
@@ -51,4 +49,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-04-25T02:58:44.648Z*.
+*This page was last modified at 2023-05-19T07:46:11.330Z*.
