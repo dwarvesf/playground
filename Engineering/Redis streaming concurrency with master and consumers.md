@@ -3,16 +3,12 @@ tags: engineering, redis, streaming, event-sourcing, append-only, logging, messa
 author: M.Vu Cuong(Jim)
 github_id: R-Jim
 date: 2023-05-16
+icy: 10
 ---
-
-## Prerequisites
-- [Redis streaming introduction](https://brain.d.foundation/Engineering/Redis+streaming)
-
-<br/>
 
 ## The Problem Statement
 
-Redis streaming is to have multiple consumers processing incoming messages simultaneously. 
+[[Redis streaming]] is to have multiple consumers processing incoming messages simultaneously. 
 
 The current system uses Redis streaming to quickly process incoming messages and is required to have the ability to scale up the processing power with concurrency, given specific time frames (exp: duplicating consumer pods). The order of processing incoming messages is ignored to push POC releases.
 
