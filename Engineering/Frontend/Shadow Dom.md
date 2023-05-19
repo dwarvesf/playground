@@ -5,7 +5,7 @@ github_id: trankhacvy
 date: 2023-05-16
 ---
 
-Recently, I have endeavored to develop an application on the platform of chat GPT, bearing the name Javis. It functions as a chrome extension, serving as an AI assistant to aid users during their web browsing experience. Upon testing the application on Chrome, I encountered an issue where Javis's CSS conflicted with the CSS of the running webpage, resulting in both my application and the webpage occasionally displaying inaccurately compared to their original interfaces. After conducting an extensive online search, I discovered a viable solution known as shadow dom. In this article, I shall introduce you to the concept of shadow dom and elucidate the myriad benefits it bestows.
+I'm currently working on a new application called Javis, which operates as a Chrome extension. Functioning as an AI assistant, Javis is designed to facilitate a smooth and enriching web browsing experience for users. During its testing phase in Chrome, I faced a unique challenge - **Javis's CSS clashed with the webpage's CSS**. The result was a distortion of both the application's and the webpage's interfaces. Following an extensive research, I unearthed a potent solution - the Shadow DOM. In this piece, I aim to explain the concept of Shadow DOM and shed light on the numerous advantages it offers.
 
 ## What is Shadow DOM?
 Shadow DOM is a web standard that allows encapsulation of HTML, CSS, and JavaScript within a specific context. Shadow DOM allows hidden DOM trees to be attached to elements in the regular DOM tree — this shadow DOM tree starts with a shadow root, underneath which you can attach any element, in the same way as the normal DOM.
@@ -33,6 +33,8 @@ const shadowClosed = host.attachShadow({ mode: "closed" });
 - `open`: The shadow DOM/ internal DOM of the component is accessible from outside JavaScript.
 - `closed`: The shadow DOM/ internal DOM of the component is not accessible outside JavaScript. The ``<video>`` tag is an example of closed-mode shadow root.
 
+## Conclusion
+Shadow DOM provides a powerful tool for developers creating website extensions, widgets, and similar interactive components. It offers the benefit of encapsulation, ensuring styles and scripts do not clash with the host page. Utilizing Shadow DOM can significantly enhance the reliability and user experience of your applications.
 
 ## References
 - https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM
