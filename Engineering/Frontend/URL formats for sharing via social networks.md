@@ -1,8 +1,9 @@
 ---
-tags: engineering/frontend, social-networks, share, facebook, zalo
+tags: engineering/frontend, frontend, social-networks, share, facebook, zalo, url, uri
 author: Nguyen Dinh Nam
 github_id: nguyend-nam
 date: 2023-05-26
+icy: 10
 ---
 
 ## Why?
