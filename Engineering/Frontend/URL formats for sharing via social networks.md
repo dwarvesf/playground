@@ -18,7 +18,7 @@ With the rise of social platforms like Facebook, Twitter and LinkedIn, it's e
 
 This format allows you to share a specific URL with your [Facebook](https://about.meta.com/technologies/facebook-app/) friends and followers. By replacing `url` with the actual URL, you can create a link that shows a dialog with the content you want to share.
 
-![](https://i.imgur.com/HMiJfth.png)
+![](_assets/HMiJfth.png)
 
 ## Messenger
 
@@ -32,7 +32,7 @@ To use this format, you'll need to replace `${appId}` with your Facebook app 
 
 > Follow this [documentation](https://developers.facebook.com/docs/development/create-an-app) to create a Facebook app and get the app ID.
 
-![](https://i.imgur.com/YRQ15EM.png)
+![](_assets/YRQ15EM.png)
 
 ## Zalo
 
@@ -48,7 +48,7 @@ const sharingUrl = `https://button-share.zalo.me/share_external?d=${encodeB64(
 )}`
 ```
 
-![](https://i.imgur.com/5gTiFrK.png)
+![](_assets/5gTiFrK.png)
 
 ## Other platforms
 
