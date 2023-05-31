@@ -1,8 +1,9 @@
 ---
-tags: engineering/frontend, frontend, react, nextjs, server component, caching data
+tags: engineering/frontend, frontend, react, nextjs, server-component, caching-data, react-server-components, server-side-rendering
 author: Le Duc Chinh
 github_id: chinhld12
 date: 2023-05-28
+icy: 10
 ---
 
 # React Server Components, NextJs Route and Data Fetching
