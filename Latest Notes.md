@@ -5,24 +5,27 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Frontend/React Server Component.md|React Server Component]]
+- [[Engineering/Frontend/URL formats for sharing via social networks.md|URL formats for sharing via social networks]]
 - [[Engineering/AI/Select Vector Database for LLM.md|Select Vector Database for LLM]]
 - [[Engineering/Redis streaming concurrency with master and consumers.md|Redis streaming concurrency with master and consumers]]
+- [[Engineering/Frontend/Shadow DOM.md|Shadow DOM]]
 - [[Engineering/AI/Build your chatbot with open source Large Language Models.md|Build your chatbot with open source Large Language Models]]
 - [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
 - [[Engineering/Backend/Database Locking.md|Database Locking]]
 - [[Engineering/Redis streaming.md|Redis streaming]]
 - [[Engineering/AI/Working with langchain document loaders.md|Working with langchain document loaders]]
-- [[Engineering/AI/Workaround with OpenAI's token limit with Langchain.md|Workaround with OpenAI's token limit with Langchain]]
-- [[Engineering/SOLID principles.md|SOLID principles]]
-- [[Engineering/Backend/GraphQL in microservices - Unified API gateway.md|GraphQL in microservices - Unified API gateway]]
 
 
 ## Top Contributors this month
 
 | authors | notes |
 | ------- | ----- |
+| [chinhld12](https://github.com/chinhld12) |  [[React Server Component]]<br>|
+| [nguyend-nam](https://github.com/nguyend-nam) |  [[URL formats for sharing via social networks]]<br>|
 | [R-Jim](https://github.com/R-Jim) |  [[Redis streaming concurrency with master and consumers]]<br>|
 | [thanhpn](https://github.com/thanhpn) |  [[Select Vector Database for LLM]]<br>|
+| [trankhacvy](https://github.com/trankhacvy) |  [[Shadow DOM]]<br>|
 
 
 
@@ -35,7 +38,6 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **namth#6640**: [[Ω Fleeting notes/202301091379 - Invoking Component Functions in React.md|202301091379 - Invoking Component Functions in React]]
 
 ---
-- **[chinhld12](https://github.com/chinhld12)**: [[Engineering/Frontend/Singleton Design Pattern in Javascript.md|Singleton Design Pattern in Javascript]]
 - **[cnhhoang850](https://github.com/cnhhoang850)**: [[Design/What Screens Want.md|What Screens Want]]
 - **[huytieu](https://github.com/huytieu)**: [[Communication/DiSC Personality Types in team work.md|DiSC Personality Types in team work]]
 - **[knguyenuit](https://github.com/knguyenuit)**: [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
@@ -49,4 +51,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-05-19T07:46:11.330Z*.
+*This page was last modified at 2023-05-31T08:22:58.230Z*.
