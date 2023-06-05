@@ -1,3 +1,10 @@
+---
+tags: engineering/frontend, frontend, graphql
+author: Ngo Lap Nguyen
+github_id: ngolapnguyen
+date: 2023-06-04
+---
+
 When working with complex GraphQL schemas, it's common to have shared fields across different types. A fragment colocation pattern allows us to define fragments alongside their corresponding components, resulting in a more cohesive and maintainable codebase. 
 
 By colocating fragments, we can easily reuse them across components that share common fields, reducing redundant code and promoting consistency. This can be further enhanced by using other layers of tooling, i.e. converting fragments into Typescript interfaces or auto generating React hooks for queries & mutations.
@@ -67,11 +74,11 @@ interface AnimalModel {
 }
 
 interface CatModel extends AnimalModel {
-	age
+	age: number;
 }
 
 interface DogModel extends AnimalModel {
-	weight
+	weight: number;
 }
 ```
 
@@ -128,15 +135,15 @@ export type AnimalFragment {
 }
 
 export type CatFragment {
-	__typename?: 'AnimalModel';
+	__typename?: 'CatModel';
 	id: Scalars['String'];
 	name: Scalars['String'];
 	bread: Scalars['String'];
 	age: Scalars['Int'];
 }
 
-export type AnimalFragment {
-	__typename?: 'AnimalModel';
+export type DogFragment {
+	__typename?: 'DogModel';
 	id: Scalars['String'];
 	name: Scalars['String'];
 	bread: Scalars['String'];
@@ -197,8 +204,8 @@ gql`
 
 Then we run  `@graphql-codegen/cli` again. Depending on how we set-up the CLI, output will vary so the below are what I normally work with:
 - `useGetCatListQuery`: A hook that fires a request to fetch cat list & return the data.
-- `useGetCatListQueryLazy`: A hook that returns a function to fetch cat list in case we want to manually get the list
-- A variety of Typescript types for query document, variables or return result
+- `useGetCatListQueryLazy`: A hook that returns a function to fetch cat list in case we want to manually get the list.
+- A variety of Typescript types for query document, variables or return result.
 
 Core features of Apollo such as request state management, caching & revalidating are all functional through these custom hooks.
 
