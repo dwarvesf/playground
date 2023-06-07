@@ -20,7 +20,7 @@ A **Scroll Progress Timeline** is an animation timeline that is linked to progre
 
 The starting scroll position represents 0% progress and the ending scroll position represents 100% progress. In the following visualization, you can see that the progress counts up from 0% to 100% as you scroll the scroller from top to bottom.
 
-https://storage.googleapis.com/web-dev-uploads/video/AeNB0cHNDkYPUYzDuv8gInYA9rY2/xdU4YJ6cxjNYpec1XcE6.mp4
+<video src="https://storage.googleapis.com/web-dev-uploads/video/AeNB0cHNDkYPUYzDuv8gInYA9rY2/xdU4YJ6cxjNYpec1XcE6.mp4" controls></video>
 
 Visualization of a Scroll Progress Timeline. As you scroll down to the bottom of the scroller, the progress value counts up from 0% to 100%.
 Source: https://developer.chrome.com/articles/scroll-driven-animations/
@@ -32,7 +32,7 @@ Just like **IntersectionObserver**, this feature tracks how much of an element i
 
 A View Progress Timeline starts when the subject enters the scroll container and ends when it leaves. In the visualization, the progress begins at 0% when the subject enters and reaches 100% when it exits the container.
 
-https://storage.googleapis.com/web-dev-uploads/video/AeNB0cHNDkYPUYzDuv8gInYA9rY2/rvPTFW2277KBTuWiZFj1.mp4
+<video src="https://storage.googleapis.com/web-dev-uploads/video/AeNB0cHNDkYPUYzDuv8gInYA9rY2/rvPTFW2277KBTuWiZFj1.mp4" controls></video>
 
 Visualization of a View Progress Timeline. The progress counts up from 0% to 100% as the subject (green box) crosses the scroller.
 Source: https://developer.chrome.com/articles/scroll-driven-animations/
