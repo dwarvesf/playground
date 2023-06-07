@@ -14,6 +14,15 @@ tR += te.value;
 ## Top Contributors this month
 
 <%*
+const totalICY = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
+	.where(p => !!p.file.frontmatter.date)
+    .where(p => dv.date(p.file.frontmatter.date) !== null)
+    .where(p => dv.date(p.file.frontmatter.date).month === dv.date('today').month)
+    .where(p => dv.date(p.file.frontmatter.date).year === dv.date('today').year)
+    .sort(p => p.date, "desc")
+    .values
+    .reduce((acc, cur) => acc + cur.icy, 0);
+
 const topDiscordNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge"`)
 	.where(p => !!p.file.frontmatter.discord_id)
 	.where(p => !!p.file.frontmatter.date)
@@ -32,6 +41,7 @@ const topAuthoredNotes = dv.pages(`-"_templates" AND -"_reports" AND -"challenge
     .sort(p => p.date, "desc")
 	.groupBy(p => p.github_id);
 
+tR += `*Total ICY given out this month: **${totalICY} ICY***\n\n`
 tR += "| authors | notes |\n"
 tR += "| ------- | ----- |\n"
 
