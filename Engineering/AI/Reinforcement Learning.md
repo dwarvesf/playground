@@ -1,8 +1,9 @@
 ---
-tags: engineering/ai, ai, chatgpt, llm, reinforcement learning, mdp,
+tags: engineering/ai, ai, chatgpt, llm, reinforcement learning, mdp, algorithms, 
 author: Pham Ngoc Thanh
 github_id: thanhpn
 date: 2023-06-05
+icy: 10
 ---
 
 ## Introduction
@@ -26,7 +27,7 @@ RL algorithms typically employ a techique called “exploration-exploitation” 
 
 RL algorithms can utilize Q-Learning, where the agent learns to evaluate actions based on a Q-Table that stores the estimated values of state-action pairs. The policy gradient algorithm focuses on learning the optimal policy by maximizing the expected reward value. Deep Q-Network (DQN) uses deep learning networks to estimate Q-values and enhances learning through reinforcement learning techniques and replay memory.
 
-## How to training model incorporate with LLM?
+## How to train models incorporated with LLMs?
 
 Example of building a reinforcement learning algorithm for a stock trading application. We will use LLM (chatgpt) to evaluate the data and actions 
 
@@ -39,7 +40,7 @@ Example of building a reinforcement learning algorithm for a stock trading appli
 - Train and improve: Use historical data and the RL training algorithm to improve the model and trading strategy. This process may require multiple iterations to achieve optimal performance. Use LLM to evaluate the input from environment and output of actions.
 - Test and evaluate: Test the trained model and trading strategy on real-world data or a back test with dataset to evaluate performance and make adjustment if necessary. Continuously update the model and strategy over time to ensue ongoing performance and optimize trading outcomes.
 
-## To be continue
+## To be continued
 
 While RL can be applied to various domains, it requires significant time and computational resources to train the model. However, with its ability to learn and explore from experience, RL can achieve optimal performance in complex and uncertain tasks and purpose.
 
