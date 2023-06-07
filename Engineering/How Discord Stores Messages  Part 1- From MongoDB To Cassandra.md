@@ -1,7 +1,9 @@
 ---
-tags: engineering, database
+tags: engineering, database, discord, monogodb, cassandra, distributed-storage, migration, sql, nosql
 author: Phat Nguyen
 github_id: fuatto
+date: 2023-06-02
+icy: 10
 ---
 
 ## Introduction
