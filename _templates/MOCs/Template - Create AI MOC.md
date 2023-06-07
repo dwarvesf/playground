@@ -3,10 +3,10 @@ recurringTemplate: true
 recurringTemplateName: engineering-ai-moc
 ---
 
-This is a [[Map of Content]] related to the engineering concepts around backend.
+This is a [[Map of Content]] related to the engineering concepts around AI.
 
-## Backend
----
+## AI
+
 <%*
 const dv = this.app.plugins.plugins["dataview"].api;
 const te = await dv.queryMarkdown(`LIST FROM #engineering/ai`);

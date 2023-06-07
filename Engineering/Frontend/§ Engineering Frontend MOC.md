@@ -6,7 +6,7 @@ recurringTemplateName: engineering-frontend-moc
 This is a [[Map of Content]] related to the engineering concepts around frontend.
 
 ## General frontend
----
+
 - [[Engineering/Frontend/Scroll-driven animations.md|Scroll-driven animations]]
 - [[Engineering/Frontend/A Fragment Colocation Pattern with React & Apollo GraphQL.md|A Fragment Colocation Pattern with React & Apollo GraphQL]]
 - [[Engineering/Frontend/React Server Component.md|React Server Component]]
@@ -41,15 +41,15 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/An Introduction to Atomic CSS.md|An Introduction to Atomic CSS]]
 
 ## Fundamentals
----
+
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 - [[Engineering/Frontend/Why Virtual DOM is fast?.md|Why Virtual DOM is fast?]]
 - [[Engineering/Frontend/Why DOM manipulation is slow?.md|Why DOM manipulation is slow?]]
 
 ## Accessibility
----
+
 - [[Engineering/Frontend/Focus trap.md|Focus trap]]
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
 
 
-*This page was last modified at 2023-06-07T09:40:57.004Z*.
+*This page was last modified at 2023-06-07T09:42:53.259Z*.

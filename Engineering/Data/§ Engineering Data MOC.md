@@ -6,7 +6,7 @@ recurringTemplateName: engineering-data-moc
 This is a [[Map of Content]] related to the engineering concepts around data.
 
 ## General data
----
+
 - [[Engineering/Data/DBT - The Good Solution to Accelerate Data Transformation.md|DBT - The Good Solution to Accelerate Data Transformation]]
 - [[Engineering/Data/Statistics in data analysis.md|Statistics in data analysis]]
 - [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
@@ -23,12 +23,12 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Data/Behind a Hive table.md|Behind a Hive table]]
 
 ## Big data
----
+
 - [[Engineering/Data/Apache Hadoop and Big Data.md|Apache Hadoop and Big Data]]
 - [[Engineering/Data/Hadoop Distributed File System (HDFS).md|Hadoop Distributed File System (HDFS)]]
 
 ## State
----
+
 - [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
 - [[Engineering/Frontend/Tackling Server State complexity in Frontend Development.md|Tackling Server State complexity in Frontend Development]]
 - [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
@@ -41,4 +41,4 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/State explosion.md|State explosion]]
 
 
-*This page was last modified at 2023-06-07T09:40:57.030Z*.
+*This page was last modified at 2023-06-07T09:42:53.283Z*.

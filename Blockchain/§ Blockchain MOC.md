@@ -6,7 +6,7 @@ recurringTemplateName: blockchain-moc
 This is a [[Map of Content]] related to the blockchain.
 
 ## Foundational Topics
----
+
 - [[Blockchain/Foundational topics/Topics.md|Topics]]
 - [[Blockchain/Foundational topics/Smart Contract.md|Smart Contract]]
 - [[Blockchain/Foundational topics/PoS.md|PoS]]
@@ -15,7 +15,7 @@ This is a [[Map of Content]] related to the blockchain.
 
 
 ## General
----
+
 - [[Engineering/Blockchain Oracle.md|Blockchain Oracle]]
 - [[Design/UX Research/Triple S of UX in Web3.md|Triple S of UX in Web3]]
 - [[Blockchain/Plonky2.md|Plonky2]]
@@ -34,4 +34,4 @@ This is a [[Map of Content]] related to the blockchain.
 - [[Blockchain/Anchor framework.md|Anchor framework]]
 
 
-*This page was last modified at 2023-06-07T09:40:57.078Z*.
+*This page was last modified at 2023-06-07T09:42:53.327Z*.

@@ -6,7 +6,7 @@ recurringTemplateName: engineering-moc
 This is a [[Map of Content]] related to the engineering.
 
 ## Engineering
----
+
 - [[Engineering/How Discord Stores Messages  Part 1 - From MongoDB To Cassandra.md|How Discord Stores Messages  Part 1 - From MongoDB To Cassandra]]
 - [[Engineering/Profiling in Go.md|Profiling in Go]]
 - [[Engineering/git.md|git]]
@@ -59,4 +59,4 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/ACID model.md|ACID model]]
 
 
-*This page was last modified at 2023-06-07T09:40:56.953Z*.
+*This page was last modified at 2023-06-07T09:42:53.217Z*.
