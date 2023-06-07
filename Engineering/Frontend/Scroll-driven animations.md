@@ -1,8 +1,9 @@
 ---
-tags: frontend, scroll-driven animations, engineering/frontend
+tags: frontend, scroll-driven-animations, animations, intersection-observer, svg, keyframes, engineering/frontend
 author: Tran Khac Vy
 github_id: trankhacvy
 date: 2023-06-01
+icy: 10
 ---
 
 Scroll-driven animations are popular effects used in web design. They are animations that are connected to the scroll position of a scroll container. So, as you scroll up or down, the animation moves accordingly. For example, think of background images that move with your scroll or indicators that show your progress as you read through a page. Another type of scroll-driven animation is linked to an element's position within its scroll container. With this, elements can smoothly fade in as they become visible.
