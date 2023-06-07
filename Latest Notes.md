@@ -5,27 +5,27 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/AI/Reinforcement Learning.md|Reinforcement Learning]]
+- [[Engineering/Frontend/A Fragment Colocation Pattern with React & Apollo GraphQL.md|A Fragment Colocation Pattern with React & Apollo GraphQL]]
+- [[Engineering/How Discord Stores Messages  Part 1 - From MongoDB To Cassandra.md|How Discord Stores Messages  Part 1 - From MongoDB To Cassandra]]
+- [[Engineering/Frontend/Scroll-driven animations.md|Scroll-driven animations]]
+- [[Engineering/Backend/Redis Rate Limiter.md|Redis Rate Limiter]]
 - [[Engineering/Frontend/React Server Component.md|React Server Component]]
 - [[Engineering/Frontend/URL formats for sharing via social networks.md|URL formats for sharing via social networks]]
 - [[Engineering/AI/Select Vector Database for LLM.md|Select Vector Database for LLM]]
 - [[Engineering/Redis streaming concurrency with master and consumers.md|Redis streaming concurrency with master and consumers]]
 - [[Engineering/Frontend/Shadow DOM.md|Shadow DOM]]
-- [[Engineering/AI/Build your chatbot with open source Large Language Models.md|Build your chatbot with open source Large Language Models]]
-- [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
-- [[Engineering/Backend/Database Locking.md|Database Locking]]
-- [[Engineering/Redis streaming.md|Redis streaming]]
-- [[Engineering/AI/Working with langchain document loaders.md|Working with langchain document loaders]]
 
 
 ## Top Contributors this month
 
 | authors | notes |
 | ------- | ----- |
-| [chinhld12](https://github.com/chinhld12) |  [[React Server Component]]<br>|
-| [nguyend-nam](https://github.com/nguyend-nam) |  [[URL formats for sharing via social networks]]<br>|
-| [R-Jim](https://github.com/R-Jim) |  [[Redis streaming concurrency with master and consumers]]<br>|
-| [thanhpn](https://github.com/thanhpn) |  [[Select Vector Database for LLM]]<br>|
-| [trankhacvy](https://github.com/trankhacvy) |  [[Shadow DOM]]<br>|
+| [fuatto](https://github.com/fuatto) |  [[How Discord Stores Messages  Part 1 - From MongoDB To Cassandra]]<br>|
+| [ngolapnguyen](https://github.com/ngolapnguyen) |  [[A Fragment Colocation Pattern with React & Apollo GraphQL]]<br>|
+| [thanhpn](https://github.com/thanhpn) |  [[Reinforcement Learning]]<br>|
+| [trankhacvy](https://github.com/trankhacvy) |  [[Scroll-driven animations]]<br>|
+| [Tuanpm31](https://github.com/Tuanpm31) |  [[Redis Rate Limiter]]<br>|
 
 
 
@@ -39,6 +39,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 
 ---
 - **[cnhhoang850](https://github.com/cnhhoang850)**: [[Design/What Screens Want.md|What Screens Want]]
+- **[fuatto](https://github.com/fuatto)**: [[Engineering/How Discord Stores Messages  Part 1 - From MongoDB To Cassandra.md|How Discord Stores Messages  Part 1 - From MongoDB To Cassandra]]
 - **[huytieu](https://github.com/huytieu)**: [[Communication/DiSC Personality Types in team work.md|DiSC Personality Types in team work]]
 - **[knguyenuit](https://github.com/knguyenuit)**: [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
 - **[nnhuyhoang](https://github.com/nnhuyhoang)**: [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
@@ -48,7 +49,8 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[toanbku](https://github.com/toanbku)**: [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
 - **[trkhoi](https://github.com/trkhoi)**: [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
 - **[truong-dwarvesv](https://github.com/truong-dwarvesv)**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
+- **[Tuanpm31](https://github.com/Tuanpm31)**: [[Engineering/Backend/Redis Rate Limiter.md|Redis Rate Limiter]]
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-05-31T08:22:58.230Z*.
+*This page was last modified at 2023-06-07T07:52:47.833Z*.

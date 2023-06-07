@@ -7,6 +7,8 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 
 ## General frontend
 ---
+- [[Engineering/Frontend/Scroll-driven animations.md|Scroll-driven animations]]
+- [[Engineering/Frontend/A Fragment Colocation Pattern with React & Apollo GraphQL.md|A Fragment Colocation Pattern with React & Apollo GraphQL]]
 - [[Engineering/Frontend/React Server Component.md|React Server Component]]
 - [[Engineering/Frontend/URL formats for sharing via social networks.md|URL formats for sharing via social networks]]
 - [[Engineering/Frontend/Shadow DOM.md|Shadow DOM]]
@@ -50,4 +52,4 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
 
 
-*This page was last modified at 2023-05-31T08:22:58.316Z*.
+*This page was last modified at 2023-06-07T07:52:47.878Z*.
