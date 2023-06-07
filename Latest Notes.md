@@ -19,6 +19,8 @@ This is where we keep track of our top 10 latest Brainery notes:
 
 ## Top Contributors this month
 
+*Total ICY given out this month: **50 ICY***
+
 | authors | notes |
 | ------- | ----- |
 | [fuatto](https://github.com/fuatto) |  [[How Discord Stores Messages  Part 1 - From MongoDB To Cassandra]]<br>|
@@ -53,4 +55,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-06-07T07:52:47.833Z*.
+*This page was last modified at 2023-06-07T09:39:36.813Z*.

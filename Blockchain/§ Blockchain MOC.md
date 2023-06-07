@@ -34,4 +34,4 @@ This is a [[Map of Content]] related to the blockchain.
 - [[Blockchain/Anchor framework.md|Anchor framework]]
 
 
-*This page was last modified at 2023-06-07T07:52:47.954Z*.
+*This page was last modified at 2023-06-07T09:39:36.921Z*.
