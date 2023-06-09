@@ -1,8 +1,9 @@
 ---
-tags: engineering/backend, nghenhan, hedge-foundation, binance
+tags: engineering/backend, nghenhan, hedge-foundation, binance, caching, data-processing, cryptocurrency
 author: Minh Tran
 github_id: thminhVN
-date: 2023-05-07
+date: 2023-06-07
+icy: 10
 ---
 
 ## Introduction
@@ -43,9 +44,7 @@ The implementation of this approach consists of the following steps:
 4. Set up a cron job to periodically update the cached data, ensuring that the table remains up to date.
 5. The diagram below illustrates the flow of creating the market data table:
 
-<p align="center">
-  <img width="500" align="center" src="../../_assets/utilizing-cached-table-for-binance-kline-api-data-processing.png" alt="Create market data table flow diagram">
-</p>
+![[../../_assets/utilizing-cached-table-for-binance-kline-api-data-processing.png|500]]
 
 ## Results and Limitation
 
