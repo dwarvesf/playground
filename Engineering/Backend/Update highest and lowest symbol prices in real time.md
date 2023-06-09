@@ -2,7 +2,8 @@
 tags: engineering/backend, nghenhan, hedge-foundation, binance, web-socket
 author: Minh Tran
 github_id: thminhVN
-date: 2023-05-07
+date: 2023-06-07
+icy: 10
 ---
 
 ## Introduction
@@ -41,9 +42,7 @@ The implementation of the approach involves the following steps:
 
 A diagram depicting the flow of the implementation can be included here.
 
-<p align="center">
-  <img width="500" align="center" src="../../_assets/update-highest-and-lowest-symbol-prices-in-real-time.png" alt="Update price flow diagram">
-</p>
+![[../../_assets/update-highest-and-lowest-symbol-prices-in-real-time.png|500]]
 
 ## Results and Limitations
 
