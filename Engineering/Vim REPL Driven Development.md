@@ -117,19 +117,19 @@ a code block from Neovim to the second pane of tmux.
 
 ### Python
 
-![repl-driven-development-python](../images/repl-driven-development-python.gif)
+![[repl-driven-development-python.gif]]
 
 ### JavaScript
 
-![repl-driven-development-javascript](../images/repl-driven-development-javascript.gif)
+![[repl-driven-development-javascript.gif]]
 
 ### OCaml
 
-![repl-driven-development-ocaml](../images/repl-driven-development-ocaml.gif)
+![[repl-driven-development-ocaml.gif]]
 
 ### Shell
 
-![repl-driven-development-shell](../images/repl-driven-development-shell.gif)
+![[repl-driven-development-shell.gif]]
 
 ## Conclusion
 
