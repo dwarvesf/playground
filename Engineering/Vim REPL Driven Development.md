@@ -2,14 +2,7 @@
 author: Thanh Nguyen
 github_id: thanhnguyen2187
 date: 2023-06-09
-tags:
-  - vim
-  - repl
-  - bash
-  - ocaml
-  - python
-  - javascript
-  - vim-slime
+tags: vim, repl, bash, ocaml, python, javascript, vim-slime
 ---
 
 ## Introduction
