@@ -313,7 +313,7 @@ The implementation of this approach consists of the following steps:
          ...
    ```
 
-   |> For the build steps from install Vercel CLI to Vercel Deploy we can refactor them into an action and reuse them for workflows like below:
+   For the build steps from install Vercel CLI to Vercel Deploy we can refactor them into an action and reuse them for workflows like below:
 
    ```yaml
    # .github/actions/build/action.yml
@@ -393,9 +393,7 @@ The implementation of this approach consists of the following steps:
              build-env-args: ${{ needs.check-app.outputs.branch == 'main' && '--prod' || '' }}
    ```
 
-   For the `push` and `pull_request` workflow events, we can reuse the same build jobs as mentioned earlier. The approach would involve detecting the changes and adding a job with a condition to build each application. The deployment has no comments for the PR by default, we can use a third-party action to comment and deploy replace for `vercel deploy` is `amondnet/vercel-action`.
-
-   ![comment-pr](../../_assets/action-comment-pr.png)
+   For the `push` and `pull_request` workflow events, we can reuse the same build jobs as mentioned earlier. The approach would involve detecting the changes and adding a job with a condition to build each application. The deployment has no comments for the PR by default, we can use a third-party action to comment and deploy replace for `vercel deploy` is `amondnet/vercel-action`. ![comment-pr](../../_assets/action-comment-pr.png)
 
 ## Diagrams
 
