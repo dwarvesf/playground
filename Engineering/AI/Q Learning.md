@@ -11,7 +11,9 @@ Q-learning is a model-free reinforcement learning algorithm used to learn an opt
 ![[q-learning-demo.png]]
 
 ## The main components of Q-learning are:
+
 ![[Reinforcement-learning-architecture.png]]
+
 - Agent: The entity that interacts with the environment and learns from it.
 - Environment: The external environment in which the agent operates and receives feedback.
 - State: The current situation or configuration of the environment.

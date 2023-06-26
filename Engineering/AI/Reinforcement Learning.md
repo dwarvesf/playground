@@ -25,7 +25,7 @@ In essence, the operation process of RL is as follows:
 
 RL algorithms typically employ a techique called “exploration-exploitation” to learn and improve the agent's strategy. During the exploration phase, the agent tries random actions to explore the environment and learn new information. In the exploitation phase, the agent selects actions based on the learned experience to maximize the obtained rewards.
 
-RL algorithms can utilize Q-Learning, where the agent learns to evaluate actions based on a Q-Table that stores the estimated values of state-action pairs. The policy gradient algorithm focuses on learning the optimal policy by maximizing the expected reward value. Deep Q-Network (DQN) uses deep learning networks to estimate Q-values and enhances learning through reinforcement learning techniques and replay memory.
+RL algorithms can utilize [[Q Learning | Q-Learning]], where the agent learns to evaluate actions based on a Q-Table that stores the estimated values of state-action pairs. The policy gradient algorithm focuses on learning the optimal policy by maximizing the expected reward value. Deep Q-Network (DQN) uses deep learning networks to estimate Q-values and enhances learning through reinforcement learning techniques and replay memory.
 
 ## How to train models incorporated with LLMs?
 
