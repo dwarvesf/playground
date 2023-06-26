@@ -10,7 +10,7 @@ Q-learning is a model-free reinforcement learning algorithm used to learn an opt
 
 ![[q-learning-demo.png]]
 
-## The main components of Q-learning are:
+## Main components
 
 ![[Reinforcement-learning-architecture.png]]
 
@@ -22,7 +22,9 @@ Q-learning is a model-free reinforcement learning algorithm used to learn an opt
 - Episode: A sequence of interactions between the agent and the environment, starting from the initial state until a terminal state or goal is reached.
 - Policy: The strategy or set of rules that the agent uses to determine its actions in different states.
 
-## The working of Q-learning involves the following steps:
+## How it works
+
+The working of Q-learning involves the following steps:
 
 - Initialize a Q-table: Create a table with rows representing states and columns representing actions. Initialize the Q-values arbitrarily.
 - Choose an action: Based on the current state and the Q-values, select an action using an exploration-exploitation strategy.
@@ -34,7 +36,7 @@ Deep Q-Learning extends Q-learning by using a deep neural network as a function 
 
 Q-learning has applications in various domains, including autonomous robotics, traffic signal control, resource management, and more. However, it has limitations, such as the need for large storage space for state-action pairs, difficulties in handling complex and interdependent environments, and challenges in dealing with continuous states (approximation techniques may be required).
 
-## **Disadvantages of Q-learning**
+## Potential drawbacks
 
 - Large state and action spaces in complex environments: Q-learning requires storing Q-values for every state-action pair, which can become impractical in environments with a large number of states and actions.
 - Difficulty in handling complex and interdependent environments: Q-learning may struggle to find optimal strategies in environments where actions have high dependencies and consequences, as it only considers immediate rewards and may not capture long-term dependencies effectively.
