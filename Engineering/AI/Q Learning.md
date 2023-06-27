@@ -9,19 +9,20 @@ icy: 10
 Q-learning is a model-free reinforcement learning algorithm used to learn an optimal policy in a Markov Decision Process (MDP). It is an off-policy method, meaning that it learns by observing and updating a value function based on the maximum expected future rewards.
 
 Q-learning has applications in various domains, including autonomous robotics, traffic signal control, resource management, and more. The core idea behind Q-learning is to iteratively update the Q-values based on the agent's experiences. The agent explores the environment, takes actions, and receives rewards. With each interaction, the Q-values are updated using a formula that incorporates the reward received, the maximum Q-value of the next state, and a learning rate.
-![[q-learning-demo.png]]
+
+![[q-learning-demo.jpg]]
 
 ## Main components
 
 ![[Reinforcement-learning-architecture.png]]
 
-- Agent: The entity that interacts with the environment and learns from it.
-- Environment: The external environment in which the agent operates and receives feedback.
-- State: The current situation or configuration of the environment.
-- Action: The decision or choice made by the agent in a given state.
-- Reward: The feedback or reinforcement signal received by the agent after taking an action in a particular state.
-- Episode: A sequence of interactions between the agent and the environment, starting from the initial state until a terminal state or goal is reached.
-- Policy: The strategy or set of rules that the agent uses to determine its actions in different states.
+- **Agent**: The entity that interacts with the environment and learns from it.
+- **Environment**: The external environment in which the agent operates and receives feedback.
+- **State**: The current situation or configuration of the environment.
+- **Action**: The decision or choice made by the agent in a given state.
+- **Reward**: The feedback or reinforcement signal received by the agent after taking an action in a particular state.
+- **Episode**: A sequence of interactions between the agent and the environment, starting from the initial state until a terminal state or goal is reached.
+- **Policy**: The strategy or set of rules that the agent uses to determine its actions in different states.
 
 ## How it works
 
