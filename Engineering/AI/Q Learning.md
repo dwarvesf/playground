@@ -8,6 +8,7 @@ icy: 10
 
 Q-learning is a model-free reinforcement learning algorithm used to learn an optimal policy in a Markov Decision Process (MDP). It is an off-policy method, meaning that it learns by observing and updating a value function based on the maximum expected future rewards.
 
+Q-learning has applications in various domains, including autonomous robotics, traffic signal control, resource management, and more. The core idea behind Q-learning is to iteratively update the Q-values based on the agent's experiences. The agent explores the environment, takes actions, and receives rewards. With each interaction, the Q-values are updated using a formula that incorporates the reward received, the maximum Q-value of the next state, and a learning rate.
 ![[q-learning-demo.png]]
 
 ## Main components
@@ -32,19 +33,17 @@ The working of Q-learning involves the following steps:
 - Update the Q-value: Update the Q-value of the current state-action pair using the Bellman equation, which combines the immediate reward and the maximum expected future rewards from the next state.
 - Repeat steps 2-4 until convergence or a predefined number of iterations.
 
-Deep Q-Learning extends Q-learning by using a deep neural network as a function approximator to handle high-dimensional state spaces. It allows for learning in complex environments and can achieve better performance.
-
-Q-learning has applications in various domains, including autonomous robotics, traffic signal control, resource management, and more. However, it has limitations, such as the need for large storage space for state-action pairs, difficulties in handling complex and interdependent environments, and challenges in dealing with continuous states (approximation techniques may be required).
+However, it has limitations, such as the need for large storage space for state-action pairs, difficulties in handling complex and interdependent environments, and challenges in dealing with continuous states (approximation techniques may be required). Thus Deep Q-Learning extends Q-learning was born by using a deep neural network as a function approximator to handle high-dimensional state spaces. It allows for learning in complex environments and can achieve better performance.The algorithm employs an epsilon-greedy action selection strategy to balance exploration and exploitation of the environment. The learning process is based on the Bellman equation, which updates the Q-value according to an optimal learning rule.
 
 ## Potential drawbacks
 
-- Large state and action spaces in complex environments: Q-learning requires storing Q-values for every state-action pair, which can become impractical in environments with a large number of states and actions.
-- Difficulty in handling complex and interdependent environments: Q-learning may struggle to find optimal strategies in environments where actions have high dependencies and consequences, as it only considers immediate rewards and may not capture long-term dependencies effectively.
-- Inability to handle continuous states: Q-learning is not directly applicable to problems with continuous state spaces. Approximation techniques, such as discretization or function approximation, may be employed, but they can reduce the performance and accuracy of the algorithm.
+- Storage limitations in complex environments: The storage requirements of Q-learning can become overwhelming when dealing with large state and action spaces, making it impractical for such scenarios.
+- Challenges in complex and interdependent environments: Q-learning may face difficulties in finding optimal strategies when actions have strong dependencies and long-term consequences, as it primarily focuses on immediate rewards and may not effectively capture long-term dependencies.
+- Incompatibility with continuous states: Q-learning is not directly applicable to problems with continuous state spaces. While approximation techniques like discretization or function approximation can be used, they often come at the cost of reduced performance and accuracy.
 
 It's important to note that while Q-learning has these limitations, there are techniques and variations, such as Deep Q-learning, that aim to address some of these challenges and improve its applicability in complex and continuous environments.
 
 ## References
 
-- [https://www.techtarget.com/searchenterpriseai/definition/Q-learning](https://www.techtarget.com/searchenterpriseai/definition/Q-learning#:~:text=Q%2Dlearning%20is%20a%20machine,way%20animals%20or%20children%20learn).
+- https://www.techtarget.com/searchenterpriseai/definition/Q-learning
 - https://huggingface.co/learn/deep-rl-course/unit2/introduction
