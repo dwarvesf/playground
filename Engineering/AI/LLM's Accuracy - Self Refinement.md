@@ -1,5 +1,5 @@
 ---
-tags: engineering/ai, llm, accuracy, self-refinement, prompt-engineering
+tags: engineering/ai, llm, accuracy, self-refinement, prompt-engineering, chatgpt
 author: Pham Duc Thanh
 github_id: zlatanpham
 date: 2023-06-29
@@ -16,7 +16,7 @@ For instance, if the model is asked to write a tweet, it can then be prompted to
 
 ![[llm self-refinement step 3.png]]
 
-Notably, this technique does not require supervised data or reinforcement learning. The model's ability to self-evaluate and refine its output is inherent, making this a powerful and efficient method for improving LLM's accuracy.
+Notably, this technique does not require supervised data or [[Reinforcement Learning | reinforcement learning]]. The model's ability to self-evaluate and refine its output is inherent, making this a powerful and efficient method for improving LLM's accuracy.
 
 Key Points:
 
