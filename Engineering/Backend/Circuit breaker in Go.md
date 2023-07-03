@@ -32,7 +32,7 @@ First, we need to init a new go project with [go mod init](https://go.dev/doc/tu
 Libraries included in this example:
 
 - [go circuit breaker](https://github.com/sony/gobreaker) for using circuit breaker
-- [go server with echo](github.com/labstack/echo/v4) for endpoint settings
+- [go server with echo](https://github.com/labstack/echo) for endpoint settings
 
 ### Init the circuit breaker
 
