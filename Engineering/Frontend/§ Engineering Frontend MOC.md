@@ -27,7 +27,7 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/Pure CSS Parallax.md|Pure CSS Parallax]]
 - [[Engineering/Frontend/Prevent Layout Thrashing.md|Prevent Layout Thrashing]]
 - [[Engineering/Frontend/Parallelism in JavaScript.md|Parallelism in JavaScript]]
-- [[Engineering/Frontend/Parse, don't vaildate in TypeScript.md|Parse, don't vaildate in TypeScript]]
+- [[Engineering/Frontend/Parse, don't validate in TypeScript.md|Parse, don't validate in TypeScript]]
 - [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 - [[Engineering/Frontend/MPA, SPA and Partial Hydration.md|MPA, SPA and Partial Hydration]]
 - [[Engineering/Frontend/JavaScript modules.md|JavaScript modules]]

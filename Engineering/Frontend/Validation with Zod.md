@@ -6,7 +6,7 @@ date: 2023-01-17
 icy: 10
 ---
 
-**Zod** is the TypeScript-first schema validation library with static type inference. It's functional approach to data validation is [[Parse, don't vaildate in TypeScript]] which parses the data in order to validate and catch errors.
+**Zod** is the TypeScript-first schema validation library with static type inference. It's functional approach to data validation is [[Parse, don't validate in TypeScript]] which parses the data in order to validate and catch errors.
 
 ## Why use Zod?
 
