@@ -22,7 +22,7 @@ To configure the worker:
 ```js
 // src/mocks/browser.js
 import { setupWorker } from 'msw'
-import { handlers } from './handlers' // list of request handers
+import { handlers } from './handlers' // list of request handlers
 
 // This configures a Service Worker with the given request handlers.
 export const worker = setupWorker(...handlers)
@@ -62,7 +62,7 @@ function App() {
 }
 ```
 
-Now, we can mock api response by adding MSW handers
+Now, we can mock api response by adding MSW handlers
 
 ```js
 // src/mocks/handlers.js
@@ -140,7 +140,7 @@ you also can add additional handlers during runtime to handle different scenario
 ```js
 test('handle error responses', async () => {
   render(<App />)
-  // a runtime hander which
+  // a runtime handler which
   server.use(
     rest.get('https:/example.com/api/usage', (req, res, ctx) => {
       return res(ctx.json({ message: 'Internal Server Error' }))
