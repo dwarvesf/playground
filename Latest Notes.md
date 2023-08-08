@@ -5,7 +5,6 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
-- [[Engineering/Frontend/Optimizing images with next image for improved performance.md|Optimizing images with next image for improved performance]]
 - [[Engineering/Backend/Testing Made Simple Best Practices for Golang Test.md|Testing Made Simple Best Practices for Golang Test]]
 - [[Engineering/Backend/Test Doubles.md|Test Doubles]]
 - [[Engineering/Backend/Level up Your Testing game with Gomock.md|Level up Your Testing game with Gomock]]
@@ -15,16 +14,16 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Backend/Circuit breaker in Go.md|Circuit breaker in Go]]
 - [[Engineering/AI/LLM's Accuracy - Self Refinement.md|LLM's Accuracy - Self Refinement]]
 - [[Engineering/AI/Reward Model.md|Reward Model]]
+- [[Engineering/AI/Q Learning.md|Q Learning]]
 
 
 ## Top Contributors this month
 
-*Total ICY given out this month: **50 ICY***
+*Total ICY given out this month: **40 ICY***
 
 | authors | notes |
 | ------- | ----- |
 | [datphamcode295](https://github.com/datphamcode295) |  [[Testing Made Simple Best Practices for Golang Test]]<br> [[Test Doubles]]<br> [[Level up Your Testing game with Gomock]]<br>|
-| [trankhacvy](https://github.com/trankhacvy) |  [[Optimizing images with next image for improved performance]]<br>|
 
 
 
@@ -54,4 +53,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-08-08T01:41:57.133Z*.
+*This page was last modified at 2023-08-08T01:47:23.558Z*.

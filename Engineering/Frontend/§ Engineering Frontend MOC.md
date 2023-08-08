@@ -7,7 +7,6 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 
 ## General frontend
 
-- [[Engineering/Frontend/Optimizing images with next image for improved performance.md|Optimizing images with next image for improved performance]]
 - [[Engineering/Frontend/Parse, don't validate in TypeScript.md|Parse, don't validate in TypeScript]]
 - [[Engineering/Frontend/Applying Mock Service Worker (MSW) for Seamless Web Development.md|Applying Mock Service Worker (MSW) for Seamless Web Development]]
 - [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
@@ -54,4 +53,4 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
 
 
-*This page was last modified at 2023-08-08T01:41:57.216Z*.
+*This page was last modified at 2023-08-08T01:47:23.631Z*.
