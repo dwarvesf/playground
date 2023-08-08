@@ -30,8 +30,17 @@ const discordId = mention ? `<@${mention}>\n` : ""
 const author = `${tp.frontmatter.author}\n${discordId}\n\*\*GitHub\*\*\n[${tp.frontmatter.github_id}](https://github.com/${tp.frontmatter.github_id})`;
 const tags = tp.file.tags.slice(0, 5).join("\n") + " ...";
 const icy = `${tp.frontmatter.icy || 0}`;
-//const footerText = `Revision at ${commit.out}\nAdded at ${tp.date.now("MMMM D, YYYY h:mm A")} 🎉🎉🎉` ;
+const blog = `${tp.frontmatter.blog || ""}`;
 const footerText = `?help to see all commands • ${tp.date.now("MM/DD/YYYY h:mm A")}`
+const fields = [
+	{ name: "Author", value: author, inline: true },
+	{ name: "Tags", value: tags, inline: true },
+	{ name: "ICY 🧊", value: icy, inline: true },
+]
+
+if (blog) {
+	fields.push({ name: "Blog", value: blog, inline: true })
+}
 
 const webhookBody = {
 	username: "Fortress",
@@ -45,11 +54,7 @@ const webhookBody = {
 			thumbnail: {
 				url: `https://github.com/${tp.frontmatter.github_id}.png`
 			},
-			fields: [
-				{ name: "Author", value: author, inline: true },
-				{ name: "Tags", value: tags, inline: true },
-				{ name: "ICY 🧊", value: icy, inline: true },
-			],
+			fields,
 			footer: {
 				icon_url: "https://i.imgur.com/DwLfRwn.png",
 				text: footerText
