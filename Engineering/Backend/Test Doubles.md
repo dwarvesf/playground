@@ -1,5 +1,5 @@
 ---
-tags: backend, engineering/backend, testing, golang, best-practise
+tags: backend, engineering/backend, testing, golang, best-practices, patterns, test-cases
 author: Pham Van Dat
 github_id: datphamcode295
 date: 2023-07-06
@@ -420,6 +420,6 @@ In conclusion, the article delves into the concept of Test Doubles and their sig
 
 ## References
 
-[https://jesusvalerareales.com/testing-with-test-doubles/](https://jesusvalerareales.com/testing-with-test-doubles/)
-[https://ieftimov.com/posts/testing-in-go-test-doubles-by-example/](https://ieftimov.com/posts/testing-in-go-test-doubles-by-example/)
-[https://abseil.io/resources/swe-book/html/ch13.html#basic_concepts](https://abseil.io/resources/swe-book/html/ch13.html#basic_concepts)
+- [https://jesusvalerareales.com/testing-with-test-doubles/](https://jesusvalerareales.com/testing-with-test-doubles/)
+- [https://ieftimov.com/posts/testing-in-go-test-doubles-by-example/](https://ieftimov.com/posts/testing-in-go-test-doubles-by-example/)
+- [https://abseil.io/resources/swe-book/html/ch13.html#basic_concepts](https://abseil.io/resources/swe-book/html/ch13.html#basic_concepts)
