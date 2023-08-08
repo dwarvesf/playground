@@ -2,7 +2,8 @@
 tags: engineering/backend, backend, redis, sorted-set, hash, lua, leaderboard, data-structures
 author: Pham Minh Tuan
 github_id: Tuanpm31
-date: 2023-08-03
+date: 2023-08-08
+icy: 10
 ---
 
 In this post, we're going to explore how to implement a user leaderboard system using Redis. The leaderboard will keep track of user scores and profile information such as username and avatar. 
