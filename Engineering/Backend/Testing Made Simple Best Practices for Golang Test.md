@@ -2,7 +2,7 @@
 tags: backend, engineering/backend, testing, golang, best-practices, maintainability, readability, test-cases, patterns, debugging
 author: Pham Van Dat
 github_id: datphamcode295
-date: 2023-08-07
+date: 2023-08-08
 icy: 10
 ---
 
