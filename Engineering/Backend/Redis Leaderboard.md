@@ -1,10 +1,11 @@
 ---
-tags: engineering/backend, backend, redis, sorted-set, hash, lua
+tags: engineering/backend, backend, redis, sorted-set, hash, lua, leaderboard, data-structures
 author: Pham Minh Tuan
+github_id: Tuanpm31
 date: 2023-08-03
 ---
-In this blog post, we're going to explore how to implement a user leaderboard system using Redis. The leaderboard will keep track of user scores and profile information such as username and avatar. 
 
+In this post, we're going to explore how to implement a user leaderboard system using Redis. The leaderboard will keep track of user scores and profile information such as username and avatar. 
 
 ## Introduction
 
@@ -56,7 +57,7 @@ HGETALL user:user1
 
 Before we look at the specific commands to update both the sorted set and hash when a user achieves a new score, let's visualize the whole flow with the diagram below:
 
-![Flow Diagram](https://i.imgur.com/qbciU8O.png)
+![Flow Diagram](_assets/Flow_Diagram.png)
 
 This diagram depicts the flow as follows:
 - The user achieves a new score and sends it to the application.
