@@ -29,4 +29,4 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 
 
-*This page was last modified at 2023-08-08T01:47:23.619Z*.
+*This page was last modified at 2023-08-08T02:32:50.793Z*.

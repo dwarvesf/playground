@@ -5,6 +5,7 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Backend/Redis Leaderboard.md|Redis Leaderboard]]
 - [[Engineering/Backend/Testing Made Simple Best Practices for Golang Test.md|Testing Made Simple Best Practices for Golang Test]]
 - [[Engineering/Backend/Test Doubles.md|Test Doubles]]
 - [[Engineering/Backend/Level up Your Testing game with Gomock.md|Level up Your Testing game with Gomock]]
@@ -14,16 +15,16 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Backend/Circuit breaker in Go.md|Circuit breaker in Go]]
 - [[Engineering/AI/LLM's Accuracy - Self Refinement.md|LLM's Accuracy - Self Refinement]]
 - [[Engineering/AI/Reward Model.md|Reward Model]]
-- [[Engineering/AI/Q Learning.md|Q Learning]]
 
 
 ## Top Contributors this month
 
-*Total ICY given out this month: **40 ICY***
+*Total ICY given out this month: **50 ICY***
 
 | authors | notes |
 | ------- | ----- |
 | [datphamcode295](https://github.com/datphamcode295) |  [[Testing Made Simple Best Practices for Golang Test]]<br> [[Test Doubles]]<br> [[Level up Your Testing game with Gomock]]<br>|
+| [Tuanpm31](https://github.com/Tuanpm31) |  [[Redis Leaderboard]]<br>|
 
 
 
@@ -49,8 +50,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[toanbku](https://github.com/toanbku)**: [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
 - **[trkhoi](https://github.com/trkhoi)**: [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
 - **[truong-dwarvesv](https://github.com/truong-dwarvesv)**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
-- **[Tuanpm31](https://github.com/Tuanpm31)**: [[Engineering/Backend/Redis Rate Limiter.md|Redis Rate Limiter]]
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-08-08T01:47:23.558Z*.
+*This page was last modified at 2023-08-08T02:32:50.688Z*.
