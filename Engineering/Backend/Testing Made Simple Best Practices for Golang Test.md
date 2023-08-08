@@ -3,6 +3,7 @@ tags: backend, engineering/backend, testing, golang, best-practices, maintainabi
 author: Pham Van Dat
 github_id: datphamcode295
 date: 2023-08-07
+icy: 10
 ---
 
 This article focuses on the best practices for testing in Golang. By following these recommended approaches, you can ensure the effectiveness and efficiency of your testing efforts. We will explore various aspects such as writing effective test cases, organizing tests and using test doubles. Implementing these best practices will help you write reliable, maintainable, and high-quality tests for your Golang projects.

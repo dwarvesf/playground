@@ -3,6 +3,8 @@ tags: backend, engineering/backend, testing, golang, best-practices, patterns, t
 author: Pham Van Dat
 github_id: datphamcode295
 date: 2023-08-08
+icy: 15
+blog: https://dwarvesf.hashnode.dev/understanding-test-doubles-an-in-depth-look
 ---
 
 In the world of software development, testing plays a vital role in ensuring the reliability and stability of our applications. When writing tests, we often come across situations where certain dependencies need to be simulated or replaced to isolate the behavior of the code under test. This is where Test Doubles come into play.
