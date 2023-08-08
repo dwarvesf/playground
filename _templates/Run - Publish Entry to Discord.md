@@ -25,28 +25,38 @@ const root = app.vault.adapter.getBasePath().replace(/(\s)/g, '\\$1');
 const commit = await tp.user.sh(`cd ${root} && git rev-parse --short HEAD`);
 
 const braineryURL = "https://brain.d.foundation/" + encodeURIComponent(`${currentPage}/${title}`)
-const author = `${tp.frontmatter.author}\n\n\*\*GitHub\*\*\n[${tp.frontmatter.github_id}](https://github.com/${tp.frontmatter.github_id})`;
+const mention = await tp.system.prompt("Mention")
+const discordId = mention ? `<@${mention}>\n` : ""
+const author = `${tp.frontmatter.author}\n${discordId}\n\*\*GitHub\*\*\n[${tp.frontmatter.github_id}](https://github.com/${tp.frontmatter.github_id})`;
 const tags = tp.file.tags.slice(0, 5).join("\n") + " ...";
 const icy = `${tp.frontmatter.icy || 0}`;
-const footerText = `Revision at ${commit.out}\nAdded at ${tp.date.now("MMMM D, YYYY h:mm A")} 🎉🎉🎉` ;
+const blog = `${tp.frontmatter.blog || ""}`;
+const footerText = `?help to see all commands • ${tp.date.now("MM/DD/YYYY h:mm A")}`
+const fields = [
+	{ name: "Author", value: author, inline: true },
+	{ name: "Tags", value: tags, inline: true },
+	{ name: "ICY 🧊", value: icy, inline: true },
+]
+
+if (blog) {
+	fields.push({ name: "Blog", value: blog, inline: true })
+}
 
 const webhookBody = {
-	username: "Brainery",
-	avatar_url:  "https://cdn.discordapp.com/icons/462663954813157376/79ac3a24cf98b3c89be3902ca6fe168f.webp?size=96",
+	username: "Fortress",
+	avatar_url: "https://i.imgur.com/DwLfRwn.png",
 	embeds: [
 		{
 			title,
 			url: braineryURL,
 			description,
+			color: 12669794,
 			thumbnail: {
 				url: `https://github.com/${tp.frontmatter.github_id}.png`
 			},
-			fields: [
-				{ name: "Author", value: author, inline: true },
-				{ name: "Tags", value: tags, inline: true },
-				{ name: "ICY 🧊", value: icy, inline: true },
-			],
+			fields,
 			footer: {
+				icon_url: "https://i.imgur.com/DwLfRwn.png",
 				text: footerText
 			}
 		}
