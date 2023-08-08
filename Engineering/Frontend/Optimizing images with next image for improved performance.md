@@ -3,6 +3,7 @@ tags: frontend, engineering/frontend, next/image, engineering/frontend, image-op
 author: Tran Khac Vy
 github_id: trankhacvy
 date: 2023-08-08
+icy: 10
 ---
 
 Images are incredibly valuable on the internet. They help convey information, break up text, and showcase creative work, making websites more engaging for users. However, it's important to consider the impact of images on your website's performance. Higher resolution images have larger file sizes, leading to slower loading times. This can negatively affect your site's performance, which defeats the purpose of using images to enhance the user experience or drive sales.
