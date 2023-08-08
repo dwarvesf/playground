@@ -34,4 +34,4 @@ This is a [[Map of Content]] related to the blockchain.
 - [[Engineering/Blockchain Oracle.md|Blockchain Oracle]]
 
 
-*This page was last modified at 2023-08-08T00:53:51.747Z*.
+*This page was last modified at 2023-08-08T01:41:57.163Z*.

@@ -7,6 +7,8 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 
 ## General frontend
 
+- [[Engineering/Frontend/Optimizing images with next image for improved performance.md|Optimizing images with next image for improved performance]]
+- [[Engineering/Frontend/Parse, don't validate in TypeScript.md|Parse, don't validate in TypeScript]]
 - [[Engineering/Frontend/Applying Mock Service Worker (MSW) for Seamless Web Development.md|Applying Mock Service Worker (MSW) for Seamless Web Development]]
 - [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
 - [[Engineering/Frontend/useEffect double calls in React 18.md|useEffect double calls in React 18]]
@@ -27,8 +29,7 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/React Server Component.md|React Server Component]]
 - [[Engineering/Frontend/Pure CSS Parallax.md|Pure CSS Parallax]]
 - [[Engineering/Frontend/Prevent Layout Thrashing.md|Prevent Layout Thrashing]]
-- [[Engineering/Frontend/Parallelism in JavaScript.md|Parallelism in JavaScript]]
-- [[Engineering/Frontend/Parse, don't validate in TypeScript.md|Parse, don't validate in TypeScript]]
+- [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
 - [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 - [[Engineering/Frontend/MPA, SPA and Partial Hydration.md|MPA, SPA and Partial Hydration]]
 - [[Engineering/Frontend/JavaScript modules.md|JavaScript modules]]
@@ -53,4 +54,4 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
 
 
-*This page was last modified at 2023-08-08T00:53:51.812Z*.
+*This page was last modified at 2023-08-08T01:41:57.216Z*.

@@ -41,4 +41,4 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Mealy machine.md|Mealy machine]]
 
 
-*This page was last modified at 2023-08-08T00:53:51.847Z*.
+*This page was last modified at 2023-08-08T01:41:57.246Z*.
