@@ -121,7 +121,7 @@ With `@graphql-codegen/cli`, we can convert these fragments into Typescript inte
 Basically `@graphql-codegen/cli` will:
 - Call our GraphQL backend to fetch the schema
 - Scan our codebase for query, mutation and fragment definitions to convert
-- Put the output into a file that we have specificed
+- Put the output into a file that we have specified
 
 After running the CLI, the typing output will look like below:
 
@@ -148,7 +148,7 @@ export type DogFragment {
 	id: Scalars['String'];
 	name: Scalars['String'];
 	bread: Scalars['String'];
-	weigth: Scalars['Int'];
+	weight: Scalars['Int'];
 }
 ```
 
