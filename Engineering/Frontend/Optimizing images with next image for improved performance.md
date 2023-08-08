@@ -1,8 +1,8 @@
 ---
-tags: frontend, next/image, engineering/frontend, image optimization, performance
+tags: frontend, engineering/frontend, next/image, engineering/frontend, image-optimization, performance, nextjs, react, reactjs
 author: Tran Khac Vy
 github_id: trankhacvy
-date: 2023-06-15
+date: 2023-08-08
 ---
 
 Images are incredibly valuable on the internet. They help convey information, break up text, and showcase creative work, making websites more engaging for users. However, it's important to consider the impact of images on your website's performance. Higher resolution images have larger file sizes, leading to slower loading times. This can negatively affect your site's performance, which defeats the purpose of using images to enhance the user experience or drive sales.
@@ -100,7 +100,7 @@ Note: AVIF generally takes 20% longer to encode but it compresses 20% smaller co
 
 Note: If you self-host with a Proxy/CDN in front of Next.js, you must configure the Proxy to forward the `Accept` header.
 
-## Limitations and pricings
+## Limitations and pricing
 While the `next/image` component is excellent, there are certain limitations to be aware of when optimizing images with Vercel:
 - The maximum size for an optimized image is **10 MB**, as set out in the Cacheable Responses limits. If this limit is exceeded, a `500` status code will be returned.
 - Each source image has a maximum width and height of **8192 pixels**.
