@@ -1,5 +1,5 @@
 ---
-tags: backend, engineering/backend, testing, golang, best-practise
+tags: backend, engineering/backend, testing, golang, best-practices, maintainability, readability, test-cases, patterns, debugging
 author: Pham Van Dat
 github_id: datphamcode295
 date: 2023-07-06
@@ -204,9 +204,9 @@ By iterating over the **`testCases`** table, we run subtests using **`t.Run`** w
 The test function invokes **`IsValidEmailAddress`** with the provided input arguments and compares the returned error with the expected error. Any mismatch is reported as a test failure.
 By using this table-driven approach, you can easily add more test cases and maintain a clear overview of the scenarios being covered.
 
-## 3. Test Doubles and Mocking
+## 3. [[Test Doubles]] and Mocking
 
-Test doubles are objects that mimic the behavior of real dependencies in a controlled manner during testing. They are used to isolate the code under test from its actual dependencies, ensuring that the behavior of the code being tested can be observed and verified independently. Here are five common types of test doubles: 
+[[Test Doubles|Test doubles]] are objects that mimic the behavior of real dependencies in a controlled manner during testing. They are used to isolate the code under test from its actual dependencies, ensuring that the behavior of the code being tested can be observed and verified independently. Here are five common types of test doubles: 
 
 1. **Test Stubs:** Predefined responses to method calls used for simulating specific behaviors during testing.
 2. **Mocks:** Objects or functions that simulate real dependencies and allow you to define expectations and verify interactions during testing.
@@ -234,5 +234,5 @@ This article outlines best practices for testing in Golang, including writing ef
 
 ## References
 
-[https://google.github.io/styleguide/go/best-practices.html#tests](https://google.github.io/styleguide/go/best-practices.html#tests)
-[https://climbtheladder.com/10-golang-testing-best-practices/](https://climbtheladder.com/10-golang-testing-best-practices/)
+- [https://google.github.io/styleguide/go/best-practices.html#tests](https://google.github.io/styleguide/go/best-practices.html#tests)
+- [https://climbtheladder.com/10-golang-testing-best-practices/](https://climbtheladder.com/10-golang-testing-best-practices/)
