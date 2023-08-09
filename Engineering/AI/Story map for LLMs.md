@@ -1,9 +1,8 @@
 ---
-tags: engineering/ai, ai, openai, chatgpt, langchain, tuning-llm, llm
+tags: engineering/ai, ai, openai, chatgpt, langchain, tuning-llm, llm, prompt-engineering, fine-tuning, rlhf
 author: Nguyen Xuan Anh
 github_id: monotykamary
-date: 2023-04-21
-icy: 10
+date: 2023-08-09
 ---
 
 ## Story Map: Journey for Engineers Developing Applications on top of Large Language Models (LLMs)
