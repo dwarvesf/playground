@@ -1,5 +1,5 @@
 ---
-tags: engineering/ai, ai, openai, chatgpt, langchain, tuning-llm, llm, prompt-engineering, fine-tuning, rlhf
+tags: engineering/ai, ai, openai, chatgpt, langchain, tuning-llm, llm, prompt-engineering, fine-tuning, rlhf, story-map
 author: Nguyen Xuan Anh
 github_id: monotykamary
 date: 2023-08-09
@@ -7,22 +7,31 @@ date: 2023-08-09
 
 ## Story Map: Journey for Engineers Developing Applications on top of Large Language Models (LLMs)
 
+Below is a story map of a kind of simplified learning and execution path for engineers starting out in developing AI. Not every engineering story follows the same path, but hopefully below will give you a general idea as to where you are in your story and what is left ahead.
+
+![[storymap_llm.jpg]]
+
 ### 1. Understanding AI, Machine Learning, and LLMs
 Most of us begin by learning about artificial intelligence (AI), machine learning, and their capabilities. We explore various applications, such as natural language processing, computer vision, and recommendation systems. Developing a strong foundation is needed in large language models and understanding the basics of LLMs will help us appreciate their potential and the wide range of applications they can be used for.
 
-It's best to follow step-by-step guides and tutorials on various AI topics, including LLMs like ChatGPT, LLaMA, GPT-J, and HuggingGPT. We can deepen our understanding of AI, machine learning, and LLMs through guides, tutorials, videos, or courses. Continuous learning and staying up-to-date with the latest advancements in AI will help in understanding the landscape of LLMs in the market and what we can apply with it.
+It's best to follow step-by-step guides and tutorials on various AI topics, including LLMs like ChatGPT, LLaMA, GPT-J, and HuggingGPT. We can deepen our understanding of AI, machine learning, and LLMs through guides, tutorials, videos, or courses. Continuous learning and staying up-to-date with the latest advancements in AI will help in understanding the landscape of LLMs in the market and what we can apply with it. You can learn on YouTube through:
+- [Standford's YouTube playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
+- [MIT's YouTube playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
+- [DeepLearning.AI's YouTube playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
+- [Lex Fridman's up-to-date deep learning course](https://www.youtube.com/watch?v=0VH1Lim8gL8&list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf&ab_channel=LexFridman)
 
 #### a. Understand prompt engineering and why it's important for LLMs and generative AI
-Prompt engineering involves providing enough context, instruction, and examples to the model at inference time without changing the underlying weights of the model. It focuses on coaxing the model's latent space to produce the desired output. Prompt engineering uses manually-provided "hard prompts" to guide the model's behavior. It is about getting the model to do what you want without updating the model parameters.
+Prompt engineering involves providing enough context, instruction, and examples to the model at inference time without changing the underlying weights of the model. It focuses on coaxing the model's latent space to produce the desired output. Prompt engineering uses manually-provided "hard prompts" to guide the model's behavior. It is about getting the model to do what you want without updating the model parameters. You can learn more about prompt engineering at:
+- https://learnprompting.org/docs/intro
 
 ### 2. Building AI Applications from on top of existing models
-Learn how to create AI applications using popular frameworks and libraries. Understand the process of building, testing, and deploying AI applications, which will enable you to create custom AI solutions tailored to specific use cases and requirements. Developing AI applications from scratch will give you the flexibility to create unique and innovative solutions that leverage the power of AI.
+Most startups using LLMs like ChatGPT in their applications ultimately build on top of the model without the need to fine-tune it. Understand the process of building, testing, and deploying AI applications, which will enable you to create custom AI solutions tailored to specific use cases and requirements. Developing AI applications from scratch will give you the flexibility to create unique and innovative solutions that leverage the power of AI.
 
 #### a. Building Chatbots with LLMs
-Study how to create chatbots using LLMs like ChatGPT and LLaMA-based models, such as Vicuna. Explore various APIs for machine learning-based chatbot development and familiarize yourself with chatbot templates for a quick start. Building chatbots with LLMs will enable you to create more advanced and interactive conversational agents that can handle complex tasks and provide better user experiences.
+Most often, the first step to working with LLMs is by creating a chatbot to enable conversations with it. This requires exploring various APIs for machine learning-based chatbot development and familiarizing yourself with chatbot templates like [OpenAssistant](https://open-assistant.io/) or creating your own. Building chatbots with LLMs will enable to create more advanced and interactive conversational agents that can handle complex tasks and provide better user experiences.
 
-#### b. Personal Assistant Development
-Roles for AI assistants are highly dependant on the industry and domain of the person that it is assisting. Workflow patterns, certain communication and interpersonal skills are often required for various AI assistant roles. These communication nuances are essential for creating AI applications that effectively interact with users and provide valuable assistance. Good examples that are heavily nuanced is anything related to law, programming, human resources, etc.
+#### b. Building Personal Assistants
+Eventually, chatbots turn into personal assistants to handle more nuanced roles. Roles for AI assistants are highly dependent on the industry and domain of the person that it is assisting. Workflow patterns, certain communication and interpersonal skills are often required for modeling AI assistant roles. These communication nuances are essential for creating AI applications that effectively interact with users and provide valuable assistance. Good examples that are heavily nuanced is anything related to law, programming, human resources, etc.
 
 ### 3. Automating Data Collection
 Data collection is particularly important for AI, and especially LLMs. Data collection is important for LLMs for several reasons:
@@ -37,8 +46,18 @@ Data collection is particularly important for AI, and especially LLMs. Data coll
 
 5. **Efficiency**: LLMs are trained on large datasets, which allows them to have a broader understanding and generate text similar to human-produced content. The availability of large-scale data sets and the use of LLMs can make data search and analysis more efficient and effective for data scientists.
 
+#### a. Through Prompt collection
+We can collect internal data through prompts inputted by users. Data collection of prompts in large language models refers to the process of gathering and curating input prompts that are used to guide the behavior and output of the language model. Prompts are the starting questions or instructions given to the model to condition its predictions for a specific task.
+
+![[prompt-data-collection.png]]
+
+#### b. Through Data scraping
+We can gather external data through data scraping. Data scraping is commonly used to gather large amounts of data from websites for various purposes, such as market research, competitor analysis, price comparison, data analysis, and more. It allows users to extract specific information from websites without manually visiting each page and copying the data.
+
+![[data-scraping-n8n.png]]
+
 ### 4. Reinforcement Learning
-Although a more advanced approach to training a model, understanding the concept of reinforcement learning and its applications in AI is important. Reinforcement Learning from Human Feedback (RLHF) is important for Large Language Models (LLMs) for several reasons:
+Eventually, we want to reward certain behaviors from our augmented models. Although a more advanced approach to training a model, understanding the concept of reinforcement learning and its applications in AI is important for the following reasons::
 
 1. **Steering LLMs in the right direction**: RLHF helps guide LLMs by treating language generation as a reinforcement learning problem. The LLM acts as the reinforcement learning agent and learns to produce optimal text output based on human feedback.
 
@@ -58,6 +77,8 @@ Fine-tuning, involves updating the model parameters directly using a dataset tha
 - Fine-tuning is preferred when you have a specific dataset or task that you want the model to perform well on. It allows for more precise control over the model's behavior and can lead to better performance on the specific task or domain. Things like instruction LLMs (for domains such as emails, stories, poems, etc.) or chat LLMs (for conversational responses) are behaviors that are achieved through fine-tuning
 
 It's also best to learn the process of fine-tuning AI models and LLMs like ChatGPT, LLaMA, and other alternatives for specific tasks and applications. Understand the benefits and challenges of fine-tuning AI models and LLMs, which will help optimize their performance and create more effective AI applications.
+
+![[fine-tuning-steps.png]]
 
 ## Conclusion
 The general idea of this story map is to help engineers develop a strong foundation in researching and creating AI applications, such as chatbots, code automation, personal assistants, and fine-tuning AI models with LLMs like ChatGPT and LLaMA. A lot of these skills involve a bit of ad-hoc ingenuity, but will help has a basic foundation of patterns we see in AI development.
