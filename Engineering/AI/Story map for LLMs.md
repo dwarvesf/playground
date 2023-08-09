@@ -83,7 +83,7 @@ It's also best to learn the process of fine-tuning AI models and LLMs like ChatG
 ## Conclusion
 The general idea of this story map is to help engineers develop a strong foundation in researching and creating AI applications, such as chatbots, code automation, personal assistants, and fine-tuning AI models with LLMs like ChatGPT and LLaMA. A lot of these skills involve a bit of ad-hoc ingenuity, but will help has a basic foundation of patterns we see in AI development.
 
-References:
+## References
 - https://en.wikipedia.org/wiki/LLaMA
 - https://ai.meta.com/llama/
 - https://lmsys.org/blog/2023-03-30-vicuna/
