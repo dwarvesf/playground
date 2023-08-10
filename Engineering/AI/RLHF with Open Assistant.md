@@ -1,3 +1,10 @@
+---
+tags: engineering/ai, ai, reinforcement-learning, supervised-fine-tuning, reward-model, open-assistant, pytorch, python, data-science, llm, pythia, redmond, cuda, nvidia
+author: Ho Quang Toan
+github_id: toanbku
+date: 2023-08-10
+---
+
 ## What is Open Assistant?
 Open Assistant (abbreviated as OA) is a chat-based and open-source assistant. The vision of the project is to make a large language model that can run on a single high-end consumer GPU. With some modifications, Open Assistant should also be able to interface with other third-party applications easily as well as retrieve information from databases and the Internet.
 
