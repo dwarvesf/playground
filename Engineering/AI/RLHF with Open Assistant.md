@@ -1,3 +1,11 @@
+### Open Assistant
+Open Assistant (abbreviated as OA) is a chat-based and open-source assistant. The vision of the project is to make a large language model that can run on a single high-end consumer GPU. With some modifications, Open Assistant should also be able to interface with other third-party applications easily as well as retrieve information from databases and the Internet.
+
+### How OA works
+Consists in three steps:
+- Collect demonstration data and train a supervised policy.
+- Collect comparison data and train a reward model
+- Optimize a policy against the reward model using reinforcement learning (RL)
 ### Open Assistant RLHF flow
 ![](../../_assets/oa-rlhf-flow.png)
 
@@ -5,7 +13,8 @@
 - https://redmond.ai/
 
 ### System requirements:
-- 8xA100 80GB (224 vCPU 768gb ram)
+- 8xA100 80GB (224 vCPU 768gb ram) (recommended)
+- depend on the selected base model
 
 ### Setup environment
 
