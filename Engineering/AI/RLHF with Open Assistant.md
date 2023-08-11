@@ -5,6 +5,8 @@ github_id: toanbku
 date: 2023-08-10
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9wNsV3TTo-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## What is Open Assistant?
 Open Assistant (abbreviated as OA) is a chat-based and open-source assistant. The vision of the project is to make a large language model that can run on a single high-end consumer GPU. With some modifications, Open Assistant should also be able to interface with other third-party applications easily as well as retrieve information from databases and the Internet.
 
