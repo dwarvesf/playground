@@ -16,6 +16,7 @@ const bareContent = contentNoFrontmatter
 	.replace(/\[\[(.*)\]\]/gm, "$1")
 	.replace(/(\r\n|\n|\r)/gm, "")
 	.replace(/^(\s|\t)*- (\s)*(.*)/gm, "$3,")
+	.replace(/(<([^>]+)>)/gi, "")
 	.replace(/\> (\w*)/gm, " $1");
 const description = bareContent.split(" ").slice(0, 35).join(' ') + "..."
 
