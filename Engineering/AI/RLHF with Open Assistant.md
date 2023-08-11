@@ -3,6 +3,7 @@ tags: engineering/ai, ai, reinforcement-learning, supervised-fine-tuning, reward
 author: Ho Quang Toan
 github_id: toanbku
 date: 2023-08-10
+icy: 10
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9wNsV3TTo-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
