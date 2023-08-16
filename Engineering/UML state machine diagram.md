@@ -37,7 +37,7 @@ At their core, UML State Machine Diagrams capture the state transitions and beha
 7. **Final State:** Bullseye-like symbol representing the final state.
 
 ![](https://hackmd.io/_uploads/rJ2dU_qnn.png)
-
+![Sample UML State machine diagram](_assets/uml-state-machine-diagram.png)
 
 ### Applications of UML State Machine Diagrams
 
