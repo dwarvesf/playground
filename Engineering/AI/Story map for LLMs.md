@@ -3,6 +3,8 @@ tags: engineering/ai, ai, openai, chatgpt, langchain, tuning-llm, llm, prompt-en
 author: Nguyen Xuan Anh
 github_id: monotykamary
 date: 2023-08-09
+icy: 15
+blog: https://dwarvesf.hashnode.dev/an-engineering-story-map-for-llms
 ---
 
 ## Story Map: Journey for Engineers Developing Applications on top of Large Language Models (LLMs)
