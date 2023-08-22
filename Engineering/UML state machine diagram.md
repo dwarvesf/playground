@@ -3,6 +3,7 @@ tags: engineering, software-modeling, behavior-model, state-machine-diagram, fin
 author: Tran khac Vy
 github_id: trankhacvy
 date: 2023-08-16
+icy: 10
 ---
 
 ## UML state machine diagram
