@@ -5,6 +5,7 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/UML state machine diagram.md|UML state machine diagram]]
 - [[Engineering/AI/RLHF with Open Assistant.md|RLHF with Open Assistant]]
 - [[Engineering/AI/Story map for LLMs.md|Story map for LLMs]]
 - [[Engineering/Backend/Testing Made Simple Best Practices for Golang Test.md|Testing Made Simple Best Practices for Golang Test]]
@@ -14,18 +15,18 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/AI/Adversarial Prompting.md|Adversarial Prompting]]
 - [[Engineering/AI/Chunking strategies to overcome context limitation in LLM.md|Chunking strategies to overcome context limitation in LLM]]
 - [[Engineering/AI/Dealing with Long-Term Memory in AI Chatbot.md|Dealing with Long-Term Memory in AI Chatbot]]
-- [[Engineering/Backend/Circuit breaker in Go.md|Circuit breaker in Go]]
 
 
 ## Top Contributors this month
 
-*Total ICY given out this month: **75 ICY***
+*Total ICY given out this month: **85 ICY***
 
 | authors | notes |
 | ------- | ----- |
 | [datphamcode295](https://github.com/datphamcode295) |  [[Testing Made Simple Best Practices for Golang Test]]<br> [[Test Doubles]]<br> [[Level up Your Testing game with Gomock]]<br>|
 | [monotykamary](https://github.com/monotykamary) |  [[Story map for LLMs]]<br>|
 | [toanbku](https://github.com/toanbku) |  [[RLHF with Open Assistant]]<br>|
+| [trankhacvy](https://github.com/trankhacvy) |  [[UML state machine diagram]]<br>|
 | [Tuanpm31](https://github.com/Tuanpm31) |  [[Redis Leaderboard]]<br>|
 
 
@@ -54,4 +55,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-08-17T04:57:21.188Z*.
+*This page was last modified at 2023-08-22T07:44:43.426Z*.

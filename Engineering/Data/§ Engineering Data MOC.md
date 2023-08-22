@@ -39,6 +39,7 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Moore machine.md|Moore machine]]
 - [[Engineering/Reducers.md|Reducers]]
 - [[Engineering/State explosion.md|State explosion]]
+- [[Engineering/UML state machine diagram.md|UML state machine diagram]]
 
 
-*This page was last modified at 2023-08-17T04:57:21.306Z*.
+*This page was last modified at 2023-08-22T07:44:43.524Z*.

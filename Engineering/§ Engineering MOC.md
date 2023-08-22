@@ -7,6 +7,7 @@ This is a [[Map of Content]] related to the engineering.
 
 ## Engineering
 
+- [[Engineering/UML state machine diagram.md|UML state machine diagram]]
 - [[Engineering/git.md|git]]
 - [[Engineering/Why invest in tools.md|Why invest in tools]]
 - [[Engineering/Tackling complexity.md|Tackling complexity]]
@@ -72,4 +73,4 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/A and CNAME records in DNS.md|A and CNAME records in DNS]]
 
 
-*This page was last modified at 2023-08-17T04:57:21.232Z*.
+*This page was last modified at 2023-08-22T07:44:43.453Z*.
