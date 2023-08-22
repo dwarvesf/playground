@@ -1,5 +1,5 @@
 ---
-tags: software modeling, state machine diagram
+tags: engineering, software-modeling, behavior-model, state-machine-diagram, finite-state-machine, state-machine, state, diagram
 author: Tran khac Vy
 github_id: trankhacvy
 date: 2023-08-16
@@ -74,4 +74,3 @@ UML State Machine Diagrams are a powerful tool for modeling and understanding th
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-state-machine-diagram/
 - https://sparxsystems.com/resources/tutorials/uml2/state-diagram.html
 - https://www.lucidchart.com/pages/uml-state-machine-diagram
-
