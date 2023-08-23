@@ -17,8 +17,8 @@ When working with web development, communicating between a main window and an em
 
 On the other hand, these URLs do not share the same origin:
 
-- http://www.example.com (different domain: `www.`)
 - http://example.org (different domain: `.org`)
+- http://www.example.com (different subdomain: `www.`)
 - https://example.com (different protocol: `https`)
 - http://example.com:8080 (different port: `8080`)
 
