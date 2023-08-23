@@ -3,6 +3,7 @@ tags: frontend, engineering/frontend, iframe, postMessage, technique, cors, cros
 author: Pham Duc Thanh
 github_id: zlatanpham
 date: 2023-08-20
+icy: 10
 ---
 
 When working with web development, communicating between a main window and an embedded iframe is often necessary for various tasks, such as content creation or widget implementation. This communication can occur between windows and iframes with the same origin or across different origins.
