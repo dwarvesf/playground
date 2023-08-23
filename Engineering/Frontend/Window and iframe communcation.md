@@ -1,5 +1,5 @@
 ---
-tags: frontend, engineering/frontend, iframe, postMessage, technique
+tags: frontend, engineering/frontend, iframe, postMessage, technique, cors, cross-origin-resource-sharing, cross-window-communication, javascript
 author: Pham Duc Thanh
 github_id: zlatanpham
 date: 2023-08-20
