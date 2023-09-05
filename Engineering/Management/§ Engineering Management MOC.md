@@ -28,5 +28,4 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Frontend/Why DOM manipulation is slow?.md|Why DOM manipulation is slow?]]
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 
-
-*This page was last modified at 2023-08-23T08:28:08.451Z*.
+_This page was last modified at 2023-08-23T08:28:08.451Z_.

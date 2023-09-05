@@ -7,7 +7,7 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 
 ## General frontend
 
-- [[Engineering/Frontend/Window and iframe communcation.md|Window and iframe communcation]]
+- [[Window and iframe communication|Window and iframe communcation]]
 - [[Engineering/Frontend/useEffect double calls in React 18.md|useEffect double calls in React 18]]
 - [[Engineering/Frontend/Zaplib post-mortem.md|Zaplib post-mortem]]
 - [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
@@ -53,5 +53,4 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/Focus trap.md|Focus trap]]
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
 
-
-*This page was last modified at 2023-08-23T08:28:08.479Z*.
+_This page was last modified at 2023-08-23T08:28:08.479Z_.

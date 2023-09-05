@@ -5,7 +5,7 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
-- [[Engineering/Frontend/Window and iframe communcation.md|Window and iframe communcation]]
+- [[Window and iframe communication|Window and iframe communication]]
 - [[Engineering/UML state machine diagram.md|UML state machine diagram]]
 - [[Engineering/AI/RLHF with Open Assistant.md|RLHF with Open Assistant]]
 - [[Engineering/AI/Story map for LLMs.md|Story map for LLMs]]
@@ -16,21 +16,18 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/AI/Adversarial Prompting.md|Adversarial Prompting]]
 - [[Engineering/AI/Chunking strategies to overcome context limitation in LLM.md|Chunking strategies to overcome context limitation in LLM]]
 
-
 ## Top Contributors this month
 
-*Total ICY given out this month: **95 ICY***
+\*Total ICY given out this month: **95 ICY\***
 
-| authors | notes |
-| ------- | ----- |
-| [datphamcode295](https://github.com/datphamcode295) |  [[Testing Made Simple Best Practices for Golang Test]]<br> [[Test Doubles]]<br> [[Level up Your Testing game with Gomock]]<br>|
-| [monotykamary](https://github.com/monotykamary) |  [[Story map for LLMs]]<br>|
-| [toanbku](https://github.com/toanbku) |  [[RLHF with Open Assistant]]<br>|
-| [trankhacvy](https://github.com/trankhacvy) |  [[UML state machine diagram]]<br>|
-| [Tuanpm31](https://github.com/Tuanpm31) |  [[Redis Leaderboard]]<br>|
-| [zlatanpham](https://github.com/zlatanpham) |  [[Window and iframe communcation]]<br>|
-
-
+| authors                                             | notes                                                                                                                          |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| [datphamcode295](https://github.com/datphamcode295) | [[Testing Made Simple Best Practices for Golang Test]]<br> [[Test Doubles]]<br> [[Level up Your Testing game with Gomock]]<br> |
+| [monotykamary](https://github.com/monotykamary)     | [[Story map for LLMs]]<br>                                                                                                     |
+| [toanbku](https://github.com/toanbku)               | [[RLHF with Open Assistant]]<br>                                                                                               |
+| [trankhacvy](https://github.com/trankhacvy)         | [[UML state machine diagram]]<br>                                                                                              |
+| [Tuanpm31](https://github.com/Tuanpm31)             | [[Redis Leaderboard]]<br>                                                                                                      |
+| [zlatanpham](https://github.com/zlatanpham)         | [[Window and iframe communication]]<br>                                                                                        |
 
 ## Newest Contributors
 
@@ -41,6 +38,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **namth#6640**: [[Ω Fleeting notes/202301091379 - Invoking Component Functions in React.md|202301091379 - Invoking Component Functions in React]]
 
 ---
+
 - **[cnhhoang850](https://github.com/cnhhoang850)**: [[Design/What Screens Want.md|What Screens Want]]
 - **[fuatto](https://github.com/fuatto)**: [[Engineering/How Discord Stores Messages  Part 1 - From MongoDB To Cassandra.md|How Discord Stores Messages  Part 1 - From MongoDB To Cassandra]]
 - **[hthai2201](https://github.com/hthai2201)**: [[Engineering/Frontend/Applying Mock Service Worker (MSW) for Seamless Web Development.md|Applying Mock Service Worker (MSW) for Seamless Web Development]]
@@ -55,5 +53,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[truong-dwarvesv](https://github.com/truong-dwarvesv)**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
-
-*This page was last modified at 2023-08-23T08:28:08.398Z*.
+_This page was last modified at 2023-08-23T08:28:08.398Z_.
