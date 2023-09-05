@@ -7,19 +7,19 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 
 ## Management
 
-- [[Engineering/Management/Analysis document.md|Analysis document]]
-- [[Engineering/Management/Team toplogies.md|Team toplogies]]
-- [[Engineering/Management/Quality Assurance works in the product team.md|Quality Assurance works in the product team]]
+- [[Engineering/Management/Enabling team.md|Enabling team]]
 - [[Engineering/Management/Team first thinking.md|Team first thinking]]
+- [[Engineering/Management/Team toplogies.md|Team toplogies]]
 - [[Engineering/Management/Stream-aligned team.md|Stream-aligned team]]
 - [[Engineering/Management/Story point estimation.md|Story point estimation]]
-- [[Engineering/Management/How to build a product sense.md|How to build a product sense]]
+- [[Engineering/Management/Quality Assurance works in the product team.md|Quality Assurance works in the product team]]
 - [[Engineering/Management/How to run the Backlog Grooming effectively.md|How to run the Backlog Grooming effectively]]
+- [[Engineering/Management/How to build a product sense.md|How to build a product sense]]
 - [[Engineering/Management/How one product team works when having incident.md|How one product team works when having incident]]
-- [[Engineering/Management/Burnup and Burndown chart.md|Burnup and Burndown chart]]
-- [[Engineering/Management/Enabling team.md|Enabling team]]
 - [[Engineering/Management/Difference between Project-Program-Portfolio manager.md|Difference between Project-Program-Portfolio manager]]
 - [[Engineering/Management/Cognitive load.md|Cognitive load]]
+- [[Engineering/Management/Burnup and Burndown chart.md|Burnup and Burndown chart]]
+- [[Engineering/Management/Analysis document.md|Analysis document]]
 - [[Engineering/Conway's law.md|Conway's law]]
 
 ## Fundamentals
@@ -28,4 +28,5 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Frontend/Why DOM manipulation is slow?.md|Why DOM manipulation is slow?]]
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 
-_This page was last modified at 2023-08-23T08:28:08.451Z_.
+
+*This page was last modified at 2023-09-05T02:02:19.585Z*.
