@@ -1,11 +1,16 @@
 ---
-tags: engineering, web, URL Redirect, URL Rewrite
+tags:
+  - engineering
+  - web
+  - url-redirect
+  - url-rewrite
+  - http
 author: Tran khac Vy
 github_id: trankhacvy
-date: 2023-08-24
+date: 2023-09-06
 ---
 
-In the exciting world of creating websites and managing the computers that show them, we have two important ideas: redirect URLs and rewrite URLs. These ideas are like tools that help us make websites work better for people. They help us make websites easier to find on search engines, and they help us make the paths on websites smoother. In this guide, we're going to explore these tools together. We'll learn what makes them different and how we can use them to make websites even cooler.
+When working with websites and managing the computers that show them, we run into two important ideas: redirect URLs and rewrite URLs. These ideas are like tools that help us make websites work better for people. They help us make websites easier to find on search engines, and they help us make the paths on websites smoother. In this guide, we're going to explore these tools together. We'll learn what makes them different and how we can use them to make websites even cooler.
 
 ## Redirect URLs: Navigating the Path
 
@@ -31,7 +36,13 @@ If redirect URLs are signposts, then rewrite URLs are masterful illusions. URL r
 Rewrite URLs can transform complex, dynamic URLs into clean, human-readable versions. For instance, converting `https://example.com/products.php?id=123` into `https://example.com/products/123`.
 
 ### 2. SEO Enhancement
-Clean, concise URLs not only appeal to users but also win favor with search engines. Rewriting URLs to include relevant keywords can boost SEO efforts and improve search engine ranking.
+Clean, concise URLs not only appeal to users but also win favor with search engines. Rewriting URLs to include relevant keywords can boost SEO efforts and improve search engine ranking. For instance:
+
+|Good URL|Bad URL|
+|---|---|
+|https://ahrefs.com/blog/seo-friendly-urls/|https://ahrefs.com/blog/seo-friendly-urls/?utm_source=google&utm_medium=cpc&utm_campaign=seo|
+|https://moz.com/blog/15-seo-best-practices-for-structuring-urls|https://moz.com/blog/15-seo-best-practices-for-structuring-urls?ref=homepage&date=2023-09-05|
+|https://seranking.com/blog/create-seo-friendly-url/|https://seranking.com/blog/index.php?post_id=1234&create-seo-friendly-url|
 
 ### 3. Improved User Experience
 Rewrite URLs can enhance the user experience by making URLs more memorable, shareable, and aesthetically pleasing. A user is more likely to click on `https://example.com/contact` than a convoluted URL.
@@ -54,7 +65,7 @@ Redirect URLs and rewrite URLs share a common goal: to lead users to the right p
 **Choosing the Right Approach**: If you're moving or restructuring content, use redirect URLs. If you want cleaner, SEO-friendly URLs without changing the content's location, opt for URL rewriting.
 
 ## Conclusion
-In the grand tapestry of web development, redirect URLs and rewrite URLs are threads that weave together seamless user experiences, enhanced SEO, and organized website structures. By understanding the step-by-step processes of these techniques, you hold the power to guide users through the digital landscape and leave an indelible mark on the virtual world.
+Redirect URLs and rewrite URLs are threads that weave together seamless user experiences, enhanced SEO, and organized website structures. By understanding the step-by-step processes of these techniques, you hold the power to guide users through the digital landscape and leave an indelible mark on the virtual world.
 
 ## References
 - https://en.wikipedia.org/wiki/URL_redirection
