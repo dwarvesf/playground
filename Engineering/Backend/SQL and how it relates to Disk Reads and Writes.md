@@ -13,6 +13,7 @@ tags:
 author: Nguyen Xuan Anh
 github_id: monotykamary
 date: 2023-09-06
+icy: 10
 ---
 
 ## What are random and sequential reads and writes?
