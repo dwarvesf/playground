@@ -67,7 +67,7 @@ To optimize PostgreSQL database performance for sequential reads and writes, you
 
 6. **Write-Ahead Log (WAL) configuration**: Adjust WAL configuration parameters, such as wal_buffers, checkpoint_timeout, and checkpoint_completion_target, to optimize write performance.
 
-7. **Filesystem optimization**: Disable `atime` (the timestamp at which the file was last accessed) for the data files to save CPU cycles.
+7. **Filesystem optimization**: Disable `atime` (the timestamp at which the file was last accessed) for the data files to save CPU cycles).
 
 8. **Use CLUSTER or pg_repack**: Reorganize the table data to match the index order, which can improve the performance of sequential scans.
 
