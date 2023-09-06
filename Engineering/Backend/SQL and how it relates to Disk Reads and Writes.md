@@ -15,8 +15,6 @@ github_id: monotykamary
 date: 2023-09-06
 ---
 
-## Introduction
-
 ## What are random and sequential reads and writes?
 
 Random and sequential reads and writes refer to the way data is accessed, read, and written on hard disks
