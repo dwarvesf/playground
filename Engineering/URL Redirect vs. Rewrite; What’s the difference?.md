@@ -1,5 +1,11 @@
 ---
-tags: engineering, web, url-redirect, url-rewrite, http, seo
+tags:
+  - engineering
+  - web
+  - url-redirect
+  - url-rewrite
+  - http
+  - seo
 author: Tran khac Vy
 github_id: trankhacvy
 date: 2023-09-06
