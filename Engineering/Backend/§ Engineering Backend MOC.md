@@ -20,6 +20,7 @@ This is a [[Map of Content]] related to the engineering concepts around backend.
 - [[Engineering/Backend/GraphQL in microservices - Unified API gateway.md|GraphQL in microservices - Unified API gateway]]
 - [[Engineering/Backend/Database Locking.md|Database Locking]]
 - [[Engineering/Backend/Atomic package in Golang.md|Atomic package in Golang]]
+- [[Engineering/Backend/SQL and how it relates to Disk Reads and Writes.md|SQL and how it relates to Disk Reads and Writes]]
 
 
-*This page was last modified at 2023-09-05T02:02:19.638Z*.
+*This page was last modified at 2023-09-07T03:31:30.633Z*.

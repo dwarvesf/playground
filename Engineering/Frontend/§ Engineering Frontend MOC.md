@@ -8,10 +8,8 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 ## General frontend
 
 - [[Engineering/Frontend/Window and iframe communication.md|Window and iframe communication]]
-- [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
 - [[Engineering/Frontend/useEffect double calls in React 18.md|useEffect double calls in React 18]]
 - [[Engineering/Frontend/Zaplib post-mortem.md|Zaplib post-mortem]]
-- [[Engineering/Frontend/Shadow DOM.md|Shadow DOM]]
 - [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
 - [[Engineering/Frontend/Webassembly.md|Webassembly]]
 - [[Engineering/Frontend/WAI-ARIA.md|WAI-ARIA]]
@@ -21,7 +19,9 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/ThreeJS/Cameras in ThreeJS.md|Cameras in ThreeJS]]
 - [[Engineering/Frontend/Tackling Server State complexity in Frontend Development.md|Tackling Server State complexity in Frontend Development]]
 - [[Engineering/Frontend/Singleton Design Pattern in Javascript.md|Singleton Design Pattern in Javascript]]
+- [[Engineering/Frontend/Shadow DOM.md|Shadow DOM]]
 - [[Engineering/Frontend/Scroll-driven animations.md|Scroll-driven animations]]
+- [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
 - [[Engineering/Frontend/React Server Component.md|React Server Component]]
 - [[Engineering/Frontend/Pure CSS Parallax.md|Pure CSS Parallax]]
 - [[Engineering/Frontend/Prevent Layout Thrashing.md|Prevent Layout Thrashing]]
@@ -54,4 +54,4 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
 
 
-*This page was last modified at 2023-09-05T02:02:19.608Z*.
+*This page was last modified at 2023-09-07T03:31:30.579Z*.

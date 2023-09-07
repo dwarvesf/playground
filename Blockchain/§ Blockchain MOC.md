@@ -18,14 +18,14 @@ This is a [[Map of Content]] related to the blockchain.
 
 - [[Engineering/Blockchain Oracle.md|Blockchain Oracle]]
 - [[Design/UX Research/Triple S of UX in Web3.md|Triple S of UX in Web3]]
-- [[Blockchain/Plonky2.md|Plonky2]]
-- [[Blockchain/Metaplex NFT Compression.md|Metaplex NFT Compression]]
 - [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
 - [[Blockchain/StarkNet architecture.md|StarkNet architecture]]
-- [[Blockchain/Solana Account.md|Solana Account]]
 - [[Blockchain/Polygon zkEVM architecture.md|Polygon zkEVM architecture]]
+- [[Blockchain/Solana Account.md|Solana Account]]
+- [[Blockchain/Plonky2.md|Plonky2]]
 - [[Blockchain/NFT Fractionalization.md|NFT Fractionalization]]
 - [[Blockchain/Multisign wallet.md|Multisign wallet]]
+- [[Blockchain/Metaplex NFT Compression.md|Metaplex NFT Compression]]
 - [[Blockchain/Liquidity pool.md|Liquidity pool]]
 - [[Blockchain/Layer 2.md|Layer 2]]
 - [[Blockchain/How Tokens Work on Solana.md|How Tokens Work on Solana]]
@@ -34,4 +34,4 @@ This is a [[Map of Content]] related to the blockchain.
 - [[Blockchain/Anchor framework.md|Anchor framework]]
 
 
-*This page was last modified at 2023-09-05T02:02:19.659Z*.
+*This page was last modified at 2023-09-07T03:31:30.665Z*.

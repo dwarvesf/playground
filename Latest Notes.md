@@ -5,6 +5,8 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/URL Redirect vs. Rewrite; What’s the difference?.md|URL Redirect vs. Rewrite; What’s the difference?]]
+- [[Engineering/Backend/SQL and how it relates to Disk Reads and Writes.md|SQL and how it relates to Disk Reads and Writes]]
 - [[Engineering/Frontend/Window and iframe communication.md|Window and iframe communication]]
 - [[Engineering/UML state machine diagram.md|UML state machine diagram]]
 - [[Engineering/AI/RLHF with Open Assistant.md|RLHF with Open Assistant]]
@@ -13,16 +15,16 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Backend/Test Doubles.md|Test Doubles]]
 - [[Engineering/Backend/Redis Leaderboard.md|Redis Leaderboard]]
 - [[Engineering/Backend/Level up Your Testing game with Gomock.md|Level up Your Testing game with Gomock]]
-- [[Engineering/AI/Adversarial Prompting.md|Adversarial Prompting]]
-- [[Engineering/AI/Chunking strategies to overcome context limitation in LLM.md|Chunking strategies to overcome context limitation in LLM]]
 
 
 ## Top Contributors this month
 
-*Total ICY given out this month: **0 ICY***
+*Total ICY given out this month: **20 ICY***
 
 | authors | notes |
 | ------- | ----- |
+| [monotykamary](https://github.com/monotykamary) |  [[SQL and how it relates to Disk Reads and Writes]]<br>|
+| [trankhacvy](https://github.com/trankhacvy) |  [[URL Redirect vs. Rewrite; What’s the difference?]]<br>|
 
 
 
@@ -50,4 +52,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-09-05T02:02:19.530Z*.
+*This page was last modified at 2023-09-07T03:31:30.460Z*.
