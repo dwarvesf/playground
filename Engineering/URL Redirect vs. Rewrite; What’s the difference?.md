@@ -6,7 +6,7 @@ tags:
   - url-rewrite
   - http
   - seo
-author: Tran khac Vy
+author: Tran Khac Vy
 github_id: trankhacvy
 date: 2023-09-06
 icy: 10
