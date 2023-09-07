@@ -1,5 +1,7 @@
 # to exclude Obsidian workspace settings (including plugin and hotkey configurations)
 #.obsidian/
+obsidian.zip
+
 
 # OR only to exclude workspace cache
 .obsidian/workspace
