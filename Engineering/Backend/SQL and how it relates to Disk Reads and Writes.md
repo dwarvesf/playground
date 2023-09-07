@@ -1,15 +1,5 @@
 ---
-tags:
-  - engineering
-  - engineering/backend
-  - sql
-  - disk
-  - io
-  - data-engineering
-  - sequential-reads
-  - sequential-writes
-  - random-reads
-  - random-writes
+tags: engineering, engineering/backend, sql, disk, io, data-engineering, sequential-reads, sequential-writes, random-reads, random-writes
 author: Nguyen Xuan Anh
 github_id: monotykamary
 date: 2023-09-06
