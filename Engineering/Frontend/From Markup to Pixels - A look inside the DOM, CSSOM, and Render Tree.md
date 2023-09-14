@@ -1,8 +1,16 @@
 ---
-tags: engineering/frontend, frontend, web-browser, rendering, dom, cssom, render-tree
+tags:
+  - engineering/frontend
+  - frontend
+  - web-browser
+  - rendering
+  - dom
+  - cssom
+  - render-tree
 author: Nguyen Dinh Nam
 github_id: nguyend-nam
 date: 2023-09-11
+icy: 10
 ---
 
 Inside a web browser, there exists a software component responsible for determining the content to show you based on the data it receives. This component is known as the browser engine.
