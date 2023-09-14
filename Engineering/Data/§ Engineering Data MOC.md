@@ -7,6 +7,7 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 
 ## General data
 
+- [[Engineering/Data/Introduction to Apache Pig.md|Introduction to Apache Pig]]
 - [[Engineering/Data/Statistics in data analysis.md|Statistics in data analysis]]
 - [[Engineering/Data/Partitions on Apache Hive.md|Partitions on Apache Hive]]
 - [[Engineering/Data/Overview of BI Tools.md|Overview of BI Tools]]
@@ -14,7 +15,6 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Data/MapReduce.md|MapReduce]]
 - [[Engineering/Data/MapReduce Components.md|MapReduce Components]]
 - [[Engineering/Data/Managed Table vs External Table.md|Managed Table vs External Table]]
-- [[Engineering/Data/Introduction to Apache Pig.md|Introduction to Apache Pig]]
 - [[Engineering/Data/Introduction to Apache Hive.md|Introduction to Apache Hive]]
 - [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
 - [[Engineering/Data/Data Vault modelling.md|Data Vault modelling]]
@@ -30,10 +30,10 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 ## State
 
 - [[Engineering/Finite-state automata.md|Finite-state automata]]
+- [[Engineering/Finite-state transducer.md|Finite-state transducer]]
 - [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
 - [[Engineering/Frontend/Tackling Server State complexity in Frontend Development.md|Tackling Server State complexity in Frontend Development]]
 - [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
-- [[Engineering/Finite-state transducer.md|Finite-state transducer]]
 - [[Engineering/Mealy machine.md|Mealy machine]]
 - [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
 - [[Engineering/Moore machine.md|Moore machine]]
@@ -42,4 +42,4 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/UML state machine diagram.md|UML state machine diagram]]
 
 
-*This page was last modified at 2023-09-07T03:31:30.608Z*.
+*This page was last modified at 2023-09-14T04:08:57.393Z*.

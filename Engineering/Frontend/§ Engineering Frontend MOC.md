@@ -7,21 +7,22 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 
 ## General frontend
 
+- [[Engineering/Frontend/From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree.md|From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree]]
+- [[Engineering/Frontend/WAI-ARIA.md|WAI-ARIA]]
+- [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
 - [[Engineering/Frontend/Window and iframe communication.md|Window and iframe communication]]
 - [[Engineering/Frontend/useEffect double calls in React 18.md|useEffect double calls in React 18]]
 - [[Engineering/Frontend/Zaplib post-mortem.md|Zaplib post-mortem]]
 - [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
 - [[Engineering/Frontend/Webassembly.md|Webassembly]]
-- [[Engineering/Frontend/WAI-ARIA.md|WAI-ARIA]]
+- [[Engineering/Frontend/Shadow DOM.md|Shadow DOM]]
 - [[Engineering/Frontend/ViteJS native modules.md|ViteJS native modules]]
 - [[Engineering/Frontend/Variable Fonts.md|Variable Fonts]]
 - [[Engineering/Frontend/URL formats for sharing via social networks.md|URL formats for sharing via social networks]]
 - [[Engineering/Frontend/ThreeJS/Cameras in ThreeJS.md|Cameras in ThreeJS]]
 - [[Engineering/Frontend/Tackling Server State complexity in Frontend Development.md|Tackling Server State complexity in Frontend Development]]
 - [[Engineering/Frontend/Singleton Design Pattern in Javascript.md|Singleton Design Pattern in Javascript]]
-- [[Engineering/Frontend/Shadow DOM.md|Shadow DOM]]
 - [[Engineering/Frontend/Scroll-driven animations.md|Scroll-driven animations]]
-- [[Engineering/Frontend/Retain scroll position in infinite scroll.md|Retain scroll position in infinite scroll]]
 - [[Engineering/Frontend/React Server Component.md|React Server Component]]
 - [[Engineering/Frontend/Pure CSS Parallax.md|Pure CSS Parallax]]
 - [[Engineering/Frontend/Prevent Layout Thrashing.md|Prevent Layout Thrashing]]
@@ -35,12 +36,12 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/HSL Color.md|HSL Color]]
 - [[Engineering/Frontend/Dark mode flickers a white background for a fraction of a second.md|Dark mode flickers a white background for a fraction of a second]]
 - [[Engineering/Frontend/CSS in JS.md|CSS in JS]]
-- [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
-- [[Engineering/Frontend/Build polymorphic React components with Typescript.md|Build polymorphic React components with Typescript]]
 - [[Engineering/Frontend/Atomic Design Pattern.md|Atomic Design Pattern]]
+- [[Engineering/Frontend/Build polymorphic React components with Typescript.md|Build polymorphic React components with Typescript]]
+- [[Engineering/Frontend/CSS Container Queries.md|CSS Container Queries]]
 - [[Engineering/Frontend/Applying Mock Service Worker (MSW) for Seamless Web Development.md|Applying Mock Service Worker (MSW) for Seamless Web Development]]
-- [[Engineering/Frontend/An Introduction to Atomic CSS.md|An Introduction to Atomic CSS]]
 - [[Engineering/Frontend/A Fragment Colocation Pattern with React & Apollo GraphQL.md|A Fragment Colocation Pattern with React & Apollo GraphQL]]
+- [[Engineering/Frontend/An Introduction to Atomic CSS.md|An Introduction to Atomic CSS]]
 
 ## Fundamentals
 
@@ -54,4 +55,4 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
 
 
-*This page was last modified at 2023-09-07T03:31:30.579Z*.
+*This page was last modified at 2023-09-14T04:08:57.370Z*.

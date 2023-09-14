@@ -5,6 +5,7 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Frontend/From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree.md|From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree]]
 - [[Engineering/URL Redirect vs. Rewrite; What’s the difference?.md|URL Redirect vs. Rewrite; What’s the difference?]]
 - [[Engineering/Backend/SQL and how it relates to Disk Reads and Writes.md|SQL and how it relates to Disk Reads and Writes]]
 - [[Engineering/Frontend/Window and iframe communication.md|Window and iframe communication]]
@@ -14,16 +15,16 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Backend/Testing Made Simple Best Practices for Golang Test.md|Testing Made Simple Best Practices for Golang Test]]
 - [[Engineering/Backend/Test Doubles.md|Test Doubles]]
 - [[Engineering/Backend/Redis Leaderboard.md|Redis Leaderboard]]
-- [[Engineering/Backend/Level up Your Testing game with Gomock.md|Level up Your Testing game with Gomock]]
 
 
 ## Top Contributors this month
 
-*Total ICY given out this month: **20 ICY***
+*Total ICY given out this month: **30 ICY***
 
 | authors | notes |
 | ------- | ----- |
 | [monotykamary](https://github.com/monotykamary) |  [[SQL and how it relates to Disk Reads and Writes]]<br>|
+| [nguyend-nam](https://github.com/nguyend-nam) |  [[From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree]]<br>|
 | [trankhacvy](https://github.com/trankhacvy) |  [[URL Redirect vs. Rewrite; What’s the difference?]]<br>|
 
 
@@ -52,4 +53,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-09-07T03:31:30.460Z*.
+*This page was last modified at 2023-09-14T04:08:57.484Z*.

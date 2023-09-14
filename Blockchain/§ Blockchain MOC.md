@@ -20,8 +20,8 @@ This is a [[Map of Content]] related to the blockchain.
 - [[Design/UX Research/Triple S of UX in Web3.md|Triple S of UX in Web3]]
 - [[Blockchain/zk-SNARKs.md|zk-SNARKs]]
 - [[Blockchain/StarkNet architecture.md|StarkNet architecture]]
-- [[Blockchain/Polygon zkEVM architecture.md|Polygon zkEVM architecture]]
 - [[Blockchain/Solana Account.md|Solana Account]]
+- [[Blockchain/Polygon zkEVM architecture.md|Polygon zkEVM architecture]]
 - [[Blockchain/Plonky2.md|Plonky2]]
 - [[Blockchain/NFT Fractionalization.md|NFT Fractionalization]]
 - [[Blockchain/Multisign wallet.md|Multisign wallet]]
@@ -34,4 +34,4 @@ This is a [[Map of Content]] related to the blockchain.
 - [[Blockchain/Anchor framework.md|Anchor framework]]
 
 
-*This page was last modified at 2023-09-07T03:31:30.665Z*.
+*This page was last modified at 2023-09-14T04:08:57.514Z*.
