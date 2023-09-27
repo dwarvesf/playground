@@ -6,7 +6,7 @@ tags:
   - kafka
   - raft-consensus
   - raft
-auth: Phat Nguyen
+author: Phat Nguyen
 github_id: fuatto
 date: 2023-09-13
 icy: 10
