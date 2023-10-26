@@ -11,14 +11,14 @@ for (const element of pages) {
 	const ctaFile = app.vault.getAbstractFileByPath(ctaTemplate.file.path);
 	const ctaContent = await app.vault.read(ctaFile);
 
-	const ctaRegex = /<!-- CTA -->/
+	const ctaRegex = /<!-- cta -->/
 	const hasCTA = ctaRegex.test(content);
 
 	if (!hasCTA) {
 		const joinedContent = content + ctaContent;
 		await app.vault.modify(file, joinedContent);
 	} else {
-		const joinedContent = content.split("---\n<!-- CTA -->")[0] + ctaContent;
+		const joinedContent = content.split("---\n<!-- cta -->")[0] + ctaContent;
 		await app.vault.modify(file, joinedContent);
 	}
 }
