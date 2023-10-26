@@ -148,11 +148,12 @@ In this article, we know the difference between `Race Condition` and `Data Race`
 ## References
 - [Race condition vs. Data Race: the differences explained](https://www.avanderlee.com/swift/race-condition-vs-data-race)
 - [Data race và Mutual exclusion](https://viblo.asia/p/007-data-race-va-mutual-exclusion-4dbZNGvmlYM)
+
 ---
 <!-- CTA -->
 ### Contributing
 
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
 

@@ -293,11 +293,12 @@ In the meantime, we can take advantage of Elixir's power. We can easy to scale t
 - https://mbuffa.github.io/tips/20201022-elixir-clustering-on-kubernetes/
 - https://github.com/hieuphq/ex_cluster
 
+
 ---
 <!-- CTA -->
 ### Contributing
 
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
 

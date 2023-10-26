@@ -85,11 +85,12 @@ It's important to note that the Law of Demeter should be applied with discretion
 - <https://gist.github.com/k1paris/14548413e57c190d3701b5fcb095e061>
 - <https://www.infoworld.com/article/3136224/demystifying-the-law-of-demeter-principle.html#:~:text=The%20Law%20of%20Demeter%20(or,internal%20details%20of%20other%20objects>
 
+
 ---
 <!-- CTA -->
 ### Contributing
 
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
 

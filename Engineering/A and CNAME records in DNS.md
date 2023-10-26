@@ -47,11 +47,12 @@ There are many things you can do with `A` records, including using multiple `A` 
 - <https://www.elegantthemes.com/blog/wordpress/what-is-an-a-record-and-how-is-it-different-from-cname-and-mx>
 - <https://www.cloudflare.com/learning/dns/dns-records/#:~:text=What%20is%20a%20DNS%20record,handle%20requests%20for%20that%20domain>.
 
+
 ---
 <!-- CTA -->
 ### Contributing
 
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
 

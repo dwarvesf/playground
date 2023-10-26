@@ -209,11 +209,12 @@ Explicit locking is the most accessible way to resolve concurrency control in hi
 - <a id="4">[4]</a>“Richard Clayton - Distributed Locking with Postgres Advisory Locks.” Richard Clayton, 16 February 2020, https://rclayton.silvrback.com/distributed-locking-with-postgres-advisory-locks. Accessed 23 April 2023.
 - <a id="5">[5]</a>“Locking in Databases and Isolation Mechanisms | by Denny Sam | inspiringbrilliance.” Medium, https://medium.com/inspiredbrilliance/what-are-database-locks-1aff9117c290. Accessed 23 April 2023.
 
+
 ---
 <!-- CTA -->
 ### Contributing
 
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
 

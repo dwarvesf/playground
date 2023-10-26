@@ -73,11 +73,12 @@ Redirect URLs and rewrite URLs are threads that weave together seamless user exp
 - https://en.wikipedia.org/wiki/URL_redirection
 - https://en.wikipedia.org/wiki/Rewrite_engine
 - https://weblogs.asp.net/owscott/rewrite-vs-redirect-what-s-the-difference
+
 ---
 <!-- CTA -->
 ### Contributing
 
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
 

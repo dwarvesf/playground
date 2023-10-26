@@ -1,7 +1,7 @@
 <%*
 const dv = this.app.plugins.plugins["dataview"].api;
 const pages = dv.pages(`"Blockchain" or "Communication" or "Design" or "Engineering" or "Writing"`);
-const ctaTemplatePages = dv.pages(`"_templates/Template - CTA"`);
+const ctaTemplatePages = dv.pages(`"_templates/Component - CTA"`);
 const ctaTemplate = ctaTemplatePages[0];
 
 for (const element of pages) {
