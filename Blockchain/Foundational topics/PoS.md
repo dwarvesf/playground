@@ -49,3 +49,17 @@ In 2017, Ethereum (ETH) started its full transition from PoW to PoS system and b
 - PoS does not harm the environment.
 - Not vulnerable to government attacks: don't need huge amounts of electricity.
 - Can be performed on smaller and weaker devices because there is no need to download the entire blockchain, and because it does not require a lot of computing power, it can be
+
+---
+<!-- CTA -->
+### Contributing
+
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+
+### Love what we are doing?
+
+- Check out our [products](https://superbits.co)
+- Hire us to [build your software](https://d.foundation)
+- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
+- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
+- Visit our [GitHub](https://github.com/dwarvesf)

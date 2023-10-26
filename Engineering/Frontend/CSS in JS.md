@@ -52,3 +52,17 @@ Adding another library to a web page increases the page size, which can negative
 - https://webdesign.tutsplus.com/articles/an-introduction-to-css-in-js-examples-pros-and-cons--cms-33574
 - https://medium.com/dailyjs/what-is-actually-css-in-js-f2f529a2757
 - https://github.com/styled-components/styled-components/issues/2377
+
+---
+<!-- CTA -->
+### Contributing
+
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+
+### Love what we are doing?
+
+- Check out our [products](https://superbits.co)
+- Hire us to [build your software](https://d.foundation)
+- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
+- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
+- Visit our [GitHub](https://github.com/dwarvesf)

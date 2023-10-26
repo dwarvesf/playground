@@ -103,3 +103,17 @@ In summary, SQL operations can result in either sequential or random read/write 
 -  https://condusiv.com/sequential-io-always-outperforms-random-io-on-hard-disk-drives-or-ssds/
 -  https://www.linkedin.com/pulse/how-cqrs-solves-problem-overloading-transactional-database-gontu-1e
 -  https://dba.stackexchange.com/questions/285809/do-databases-optimize-random-write-and-read-operations
+
+---
+<!-- CTA -->
+### Contributing
+
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+
+### Love what we are doing?
+
+- Check out our [products](https://superbits.co)
+- Hire us to [build your software](https://d.foundation)
+- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
+- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
+- Visit our [GitHub](https://github.com/dwarvesf)

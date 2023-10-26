@@ -124,3 +124,17 @@ When the `debugger` is invoked, execution is paused at the `debugger` statement 
  - [What is assert in JavaScript? - StackOverflow](https://stackoverflow.com/questions/15313418/what-is-assert-in-javascript)
  - [What is the difference between console.dir() and console.log()? - StackOverflow](https://stackoverflow.com/questions/11954152/whats-the-difference-between-console-dir-and-console-log)
  - [Tips and Tricks for Debugging JavaScript - James Q Quick](https://www.youtube.com/watch?v=_QtUGdaCb1c&t=701s)
+
+---
+<!-- CTA -->
+### Contributing
+
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+
+### Love what we are doing?
+
+- Check out our [products](https://superbits.co)
+- Hire us to [build your software](https://d.foundation)
+- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
+- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
+- Visit our [GitHub](https://github.com/dwarvesf)

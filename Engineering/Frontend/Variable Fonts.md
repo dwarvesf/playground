@@ -104,3 +104,17 @@ Beyond that, we depends on how the fonts were built & what custom axes they are 
 - https://www.youtube.com/watch?v=0fVymQ7SZw0&list=WL&index=1&t=247s&ab_channel=KevinPowell
 - https://fonts.google.com/knowledge/introducing_type/introducing_variable_fonts
 - https://web.dev/variable-fonts/
+
+---
+<!-- CTA -->
+### Contributing
+
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+
+### Love what we are doing?
+
+- Check out our [products](https://superbits.co)
+- Hire us to [build your software](https://d.foundation)
+- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
+- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
+- Visit our [GitHub](https://github.com/dwarvesf)

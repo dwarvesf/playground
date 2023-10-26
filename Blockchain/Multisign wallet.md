@@ -265,3 +265,17 @@ There is no universal standard for writing Multisig Wallet, but we can refer to 
 - https://www.binance.vision/security/what-is-a-multisig-wallet
 - https://medium.com/hellogold/ethereum-multi-signature-wallets-77ab926ab63b
 - https://www.gemini.com/cryptopedia/what-is-a-multi-sig-wallet-crypto-multi-signature-wallet
+
+---
+<!-- CTA -->
+### Contributing
+
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+
+### Love what we are doing?
+
+- Check out our [products](https://superbits.co)
+- Hire us to [build your software](https://d.foundation)
+- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
+- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
+- Visit our [GitHub](https://github.com/dwarvesf)

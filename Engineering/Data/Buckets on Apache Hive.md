@@ -91,3 +91,17 @@ FROM stocks_bucket TABLESAMPLE(BUCKET 3 OUT OF 5 ON symbol) s;
 In the first select, we're doing a table sample on a table `stocks` which is not bucketed and asking for bucket 3 out of 5 buckets based on the column symbol. Since this table is not bucketed, Hive has to randomly assign symbols into five buckets and rows which belong to the third bucket will be returned. The problem with this query is that: to return bucket number 3, the table sample needs to scan the entire table because the table is not bucketed and this is time intensive. On the other hand, the second select on the bucketized `stocks_buckets` table is efficient than the first one as the table we are sampling is bucketized and also the sampling is done on the bucketized column `symbol`. Hence, this query will be more efficient than the first one. The other benefits of buckets is its efficiency during map side joints. We'll look more detail into that in other article about optimizations.
 
 In summary, we now understood what buckets are. We saw the difference between buckets and partitions. And we also know how to work with buckets. There are three benefits of buckets: (1) unlike partitions the number of buckets is constant and solves the tiny files issue, (2) buckets are very efficient when sampling tables and (3) finally the benefit of using bucket is during map site joints which we'll discuss in more detail later.
+
+---
+<!-- CTA -->
+### Contributing
+
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+
+### Love what we are doing?
+
+- Check out our [products](https://superbits.co)
+- Hire us to [build your software](https://d.foundation)
+- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
+- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
+- Visit our [GitHub](https://github.com/dwarvesf)

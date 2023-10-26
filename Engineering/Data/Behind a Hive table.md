@@ -47,3 +47,17 @@ Now we know about SerDe, we've also created a table and know the details and the
 Here is the contents of `hive-site.xml`, the very first property is the connection URL property will list the URL for MySQL, where the metastore database will be stored. This file also has information about the JDBC driver to be used and other connection properties like username and password to connect to the database. Therefore, now reading this file, Hive knows exactly how to connect to the metastore database, where just the metadata for the hive tables and databases are stored.
 
 Now we know how to create a table and where the metadata for the table resides. Let's finish this article by looking at a few drop commands. We can drop the database with drop database command, i.e. `DROP DATABASE stocks_db` and can drop the table with drop table command, i.e. `DROP TABLE stocks`. However, we can drop a database only when the database is empty. If the database already has tables, we will either have to drop the tables first before attempting to drop the database or do a cascade drop with command `DROP DATABASE  <the database name> CASCADE;`.
+
+---
+<!-- CTA -->
+### Contributing
+
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+
+### Love what we are doing?
+
+- Check out our [products](https://superbits.co)
+- Hire us to [build your software](https://d.foundation)
+- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
+- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
+- Visit our [GitHub](https://github.com/dwarvesf)

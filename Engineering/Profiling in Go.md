@@ -585,3 +585,16 @@ In conclusion, profiling is an essential tool for any Go developer looking to bu
 As you continue to work on your Go projects, keep in mind the importance of profiling and the various tools and techniques available to help you optimize your code. By doing so, you'll be well on your way to becoming a more efficient and effective developer.
 
 So go ahead, catch 'em all!
+---
+<!-- CTA -->
+### Contributing
+
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [contributing to the Brainery](./CONTRIBUTING.md) is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+
+### Love what we are doing?
+
+- Check out our [products](https://superbits.co)
+- Hire us to [build your software](https://d.foundation)
+- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
+- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
+- Visit our [GitHub](https://github.com/dwarvesf)
