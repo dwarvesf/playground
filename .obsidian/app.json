@@ -5,5 +5,7 @@
     "landscape": true,
     "margin": "0",
     "downscalePercent": 50
-  }
+  },
+  "livePreview": false,
+  "promptDelete": false
 }
