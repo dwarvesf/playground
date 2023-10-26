@@ -1,0 +1,35 @@
+{
+  "name": "Obsidian",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "shd101wyy.markdown-preview-enhanced"
+      ]
+    }
+  },
+  // Use 'features' to configure features.
+  "features": {
+    // add desktop-lite to allow Obsidian GUI over VNC web & desktop
+    // https://github.com/devcontainers/features/tree/main/src/desktop-lite
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [
+    6080,
+    5901
+  ],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "make setup",
+  // Use 'postStartCommand' to run commands after the container starts.
+  "postStartCommand": {
+    "safeDir": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+  },
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "vscode"
+}
