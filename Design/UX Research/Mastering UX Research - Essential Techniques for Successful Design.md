@@ -1,5 +1,11 @@
 ---
-tags: design, user-experience, ux, research, techniques
+tags:
+  - design
+  - user-experience
+  - ux
+  - research
+  - techniques
+  - ux-research
 author: Nam Bui
 github_id: Maniub102
 date: 2023-11-09
