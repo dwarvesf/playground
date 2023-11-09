@@ -6,6 +6,6 @@
     "margin": "0",
     "downscalePercent": 50
   },
-  "livePreview": false,
+  "livePreview": true,
   "promptDelete": false
 }
