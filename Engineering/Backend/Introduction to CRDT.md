@@ -60,3 +60,4 @@ Unlike systems relying on algorithms utilized by platforms such as Google Docs, 
 - https://crdt.tech/
 - https://redis.com/blog/diving-into-crdts/
 - https://jakelazaroff.com/words/an-interactive-intro-to-crdts/#user-content-fn-cvrdt
+- https://www.infoq.com/presentations/crdt-production/
