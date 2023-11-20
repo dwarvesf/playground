@@ -1,8 +1,14 @@
 ---
-tag:
-    - engineering
-    - engineering/backend
-    - distributed-system
+tags:
+  - engineering
+  - engineering/backend
+  - distributed-system
+  - crdt
+  - eventual-consistency
+  - coordination
+  - replication
+  - data-types
+  - data-structures
 author: Nguyen Tan Phat
 github_id: fuatto
 date: 2023-11-5
