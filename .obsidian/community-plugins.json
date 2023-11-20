@@ -2,5 +2,6 @@
   "templater-obsidian",
   "dataview",
   "obsidian-chartsview-plugin",
-  "obsidian-local-images-plus"
+  "obsidian-local-images-plus",
+  "editing-toolbar"
 ]
