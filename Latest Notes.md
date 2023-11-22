@@ -5,6 +5,8 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
+- [[Engineering/Backend/Introduction to CRDT.md|Introduction to CRDT]]
+- [[Design/UX Research/Mastering UX Research - Essential Techniques for Successful Design.md|Mastering UX Research - Essential Techniques for Successful Design]]
 - [[Engineering/Backend/SQL Sargable Queries and Their Impact on Database Performance.md|SQL Sargable Queries and Their Impact on Database Performance]]
 - [[Engineering/Backend/The removal of Apache Kafka's dependency on Zookeeper.md|The removal of Apache Kafka's dependency on Zookeeper]]
 - [[Engineering/Frontend/From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree.md|From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree]]
@@ -13,20 +15,15 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Frontend/Window and iframe communication.md|Window and iframe communication]]
 - [[Engineering/UML state machine diagram.md|UML state machine diagram]]
 - [[Engineering/AI/RLHF with Open Assistant.md|RLHF with Open Assistant]]
-- [[Engineering/AI/Story map for LLMs.md|Story map for LLMs]]
-- [[Engineering/Backend/Testing Made Simple Best Practices for Golang Test.md|Testing Made Simple Best Practices for Golang Test]]
 
 
 ## Top Contributors this month
 
-*Total ICY given out this month: **NaN ICY***
+*Total ICY given out this month: **10 ICY***
 
 | authors | notes |
 | ------- | ----- |
-| [fuatto](https://github.com/fuatto) |  [[The removal of Apache Kafka's dependency on Zookeeper]]<br>|
-| [monotykamary](https://github.com/monotykamary) |  [[SQL Sargable Queries and Their Impact on Database Performance]]<br> [[SQL and how it relates to Disk Reads and Writes]]<br>|
-| [nguyend-nam](https://github.com/nguyend-nam) |  [[From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree]]<br>|
-| [trankhacvy](https://github.com/trankhacvy) |  [[URL Redirect vs. Rewrite; What’s the difference?]]<br>|
+| [Maniub102](https://github.com/Maniub102) |  [[Mastering UX Research - Essential Techniques for Successful Design]]<br>|
 
 
 
@@ -53,4 +50,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-09-27T06:45:50.967Z*.
+*This page was last modified at 2023-11-22T11:16:07.898Z*.
