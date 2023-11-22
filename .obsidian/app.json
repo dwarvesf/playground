@@ -7,5 +7,6 @@
     "downscalePercent": 50
   },
   "livePreview": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }

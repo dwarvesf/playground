@@ -10,7 +10,7 @@
   "filesizeLimit": 0,
   "tryCount": 2,
   "realTimeUpdateInterval": 5,
-  "addNameOfFile": true,
+  "addNameOfFile": false,
   "showNotifications": true,
   "include": ".*\\.md",
   "mediaRootDir": "_assets/${notename}",
@@ -18,8 +18,8 @@
   "useMD5ForNewAtt": true,
   "removeMediaFolder": true,
   "removeOrphansCompl": false,
-  "PngToJpeg": true,
-  "PngToJpegLocal": true,
+  "PngToJpeg": false,
+  "PngToJpegLocal": false,
   "JpegQuality": 80,
   "DoNotCreateObsFolder": false
 }
