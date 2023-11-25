@@ -1,8 +1,12 @@
 ---
-tags: engineering, architecture, code-generating, quality
+tags:
+  - engineering
+  - architecture
+  - code-generating
+  - quality
 author: An Tran
 github_id: tienan92it
-date: 2023-12-22
+date: 2023-11-22
 ---
 
 ### Motivation
