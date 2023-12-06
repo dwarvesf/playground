@@ -4,38 +4,43 @@ tags:
   - architecture
   - code-generating
   - quality
+  - fullstack
 author: An Tran
 github_id: tienan92it
-date: 2023-11-22
+date: 2023-12-06
+icy: 10
 ---
 
 ### Motivation
 
 In traditional software development, defining models and API clients is a fundamental step when using strongly-typed languages.
+
 - **Models**: represent various data structures such as objects, request parameters, and response types.
 - **API client**: acts as an intermediary, handling requests to the backend and binding the data to the models.
 
 Syncing these elements between the backend and frontend is important in the software development process.However, this synchronization is often manual and error-prone, leading to inconsistencies that can cause runtime failures and bugs. 
 To address this challenge, typesafe client-server architecture introduces a code generation layer that bridges the gap between frontend and backend more effectively.
+
 Using API definitions in JSON or YAML format as the single source of truth, the code generator automatically validates and generates the necessary models and API clients for the frontend and corresponding models and API endpoints for the backend. This ensures that both ends of the application speak the same "data language," and any changes in the API are reflected on both sides promptly and accurately.
 
 ![[typesafe-client-server.png]]
 
 This automated approach not only minimizes human error but also streamlines the development process, as developers can now focus on building features rather than fixing mismatches between the FE and BE. By adopting this typesafe client-server system, teams can enhance collaboration, accelerate time-to-market, and deliver a more reliable product.
 ### Benefits
-- Enhanced Reliability
-- Early Error Detection
-- Improved Developer Productivity
-- Security Enhancements
-- Documentation and Collaboration
-- Refactoring and Scalability
+
+- **Enhanced Reliability**: The automatic code generation ensures consistency between the frontend and backend, reducing the risk of runtime failures.
+- **Early Error Detection**: Any inconsistencies or errors in the API are detected during the code generation process, allowing for early detection and resolution.
+- **Improved Developer Productivity**: Developers can focus on feature development instead of manual synchronization tasks, increasing overall productivity.
+- **Security Enhancements**: The typesafe client-server architecture helps prevent security vulnerabilities by ensuring that data is properly handled and transferred between the frontend and backend.
+- **Documentation and Collaboration**: API definitions serve as documentation and a common language for developers and stakeholders, facilitating collaboration and understanding.
+- **Refactoring and Scalability**: When changes are made to the API, the code generation process helps identify and update affected areas, making refactoring and scalability easier.
 ### How to use effectively
-- **API First Development**: Begin with designing API definitions.
-- **Automate Code Generation**: Set up automation tools to generate code whenever the API definitions change. This keeps the frontend and backend in sync.
-- **Continuous Integration**: As part of CI/CD pipeline, validate the API definitions and ensure that auto-generated code doesn't have manual edits.
-- **Testing**: Ensure that both frontend and backend have thorough unit and integration tests. Because we're using Swagger, we can also use tools to automatically generate and run tests based on the API definitions.
-- **Documentation**: Use Swagger UI or ReDoc to provide interactive API documentation. This not only helps developers but also non-tech stakeholders to understand and try out the API.
-- **Version Control**: As your API evolves, make sure to version it.
+- **API First Development**: Start by designing API definitions that accurately represent the desired functionality and data structures.
+- **Automate Code Generation**: Set up automation tools to generate code whenever changes are made to the API definitions. This ensures that the frontend and backend stay in sync.
+- **Continuous Integration**: As part of the CI/CD pipeline, validate the API definitions and ensure that the auto-generated code does not have manual edits. This maintains the integrity of the synchronization process.
+- **Testing**: Conduct thorough unit and integration tests for both the frontend and backend. With Swagger, automated tests can be generated and run based on the API definitions, further ensuring the reliability of the system.
+- **Documentation**: Utilize tools like Swagger UI or ReDoc to provide interactive API documentation. This helps developers and non-technical stakeholders understand and experiment with the API.
+- **Version Control**: As the API evolves, make sure to version it to manage changes effectively and maintain backward compatibility.
 
 ### Supported frameworks/tools
 
