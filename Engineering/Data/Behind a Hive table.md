@@ -49,8 +49,9 @@ Here is the contents of `hive-site.xml`, the very first property is the connecti
 Now we know how to create a table and where the metadata for the table resides. Let's finish this article by looking at a few drop commands. We can drop the database with drop database command, i.e. `DROP DATABASE stocks_db` and can drop the table with drop table command, i.e. `DROP TABLE stocks`. However, we can drop a database only when the database is empty. If the database already has tables, we will either have to drop the tables first before attempting to drop the database or do a cascade drop with command `DROP DATABASE  <the database name> CASCADE;`.
 
 
+
 ---
-<!-- CTA -->
+<!-- cta -->
 ### Contributing
 
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.

@@ -66,8 +66,9 @@ While the proposed solution offers significant advantages, it also has certain l
 By employing a cached table to store and retrieve Binance Kline API data, the challenges of working with limited records and requests can be addressed effectively.
 
 
+
 ---
-<!-- CTA -->
+<!-- cta -->
 ### Contributing
 
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.

@@ -84,8 +84,9 @@ CLUSTER BY symbol;
 In summary, `ORDER BY` does global ordering and will always use one reducer, which is problematic because it will lead to performance problems. We can use `SORT BY` along with `DISTRIBUTE BY` to use multiple reducers and send records from a certain key column to the same reducer. Finally, `CLUSTER BY` can be used when the same set of columns are used in `SORT BY` and `DISTRIBUTE BY`.
 
 
+
 ---
-<!-- CTA -->
+<!-- cta -->
 ### Contributing
 
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.

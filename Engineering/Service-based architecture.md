@@ -29,8 +29,9 @@ It is quite arguably a one-size fits a lot of stuff architecture. It is very sui
 - https://nofluffjuststuff.com/magazine/2015/10/the_challenges_of_service_based_architecture
 
 
+
 ---
-<!-- CTA -->
+<!-- cta -->
 ### Contributing
 
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.

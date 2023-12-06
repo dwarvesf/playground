@@ -42,8 +42,9 @@ Usually, when a developer finish their ticket for the feature enhancement from D
 ![BackEnd-FrontEnd-Testing-Document-Sample](_assets/BE_FE_testing_doc_sample.png)
 
 
+
 ---
-<!-- CTA -->
+<!-- cta -->
 ### Contributing
 
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.

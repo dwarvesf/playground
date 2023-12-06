@@ -170,8 +170,9 @@ In the query above, it is completely transparent for the user that  `title`  
 - https://github.com/movio/bramble
 - https://medium.com/@aaivazis/a-guide-to-graphql-schema-federation-part-1-995b639ac035
 
+
 ---
-<!-- CTA -->
+<!-- cta -->
 ### Contributing
 
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
