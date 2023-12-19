@@ -1,18 +1,24 @@
 ---
-tags: engineering, frontend, Htmx, Web
+tags:
+  - engineering
+  - frontend
+  - htmx
+  - web
+  - engineering/frontend
 author: Bui Ngoc Nam Anh
 github_id: tonible14012002
-date: 2023-10-14
+date: 2023-12-18
+icy: 10
 ---
 
 ## What is HTMX
-Htmx is a hypermedia-oriented Javscript library for creating dynamic website with minimal Javascript code. Specifically, it extend HTML as a hypermedia and address the issues with legacy HTML applications.
+HTMX is a hypermedia-oriented Javscript library for creating dynamic website with minimal Javascript code. Specifically, it extend HTML as a hypermedia and address the issues with legacy HTML applications.
 Giving user access to `AJAX`, `Websocket`, `Server Sent Event (SSE)`, `Css Transition`, ...
 
 ## Hypermedia-Oriented
 
-`Hypermedia-Oriented` approach involves clients and servers sharing a common understanding of a set of hypermedia elements in data representations. Clients are anable to use elements to trigger requests, navigate states while Servers provide the necessary hypermedia options in the responses. 
-In this way, any modification in server side wont break the client application as long as the client can recognise the defined hypermedia options.
+`Hypermedia-Oriented` approach involves clients and servers sharing a common understanding of a set of hypermedia elements in data representations. Clients can use elements to trigger requests, navigate states while Servers provide the necessary hypermedia options in the responses. 
+In this way, any modification in server side wont break the client application as long as the client can recognize the defined hypermedia options.
 
 ## The Core Concept Of HTMX
 ### Extending HTML with Attributes
@@ -34,11 +40,11 @@ HTMX extend the core idea of HTML as a hypertext by adding additional anchor att
 >
 <div id="search-results"></div>
 ```
-- `hx-get` attribute holding the api endpoint and HTTP method for sending request after triggered.
-- `hx-trigger` define the condition for the event to be triggered. In this case, it will fire a GET request 500 miliseconds after key up event only if the input has been changed.
-- `hx-target` attribute target the element that will be inserted into by server response data.
+- `hx-get` attribute holds the API endpoint and HTTP method for sending request after triggered.
+- `hx-trigger` defines the condition for the event to be triggered. In this case, it will fire a GET request 500 milliseconds after key up event only if the input has been changed.
+- `hx-target` targets the element that will be inserted into by server response data.
 
-This example showcases how HTMX simplifies the creation of interactive user interfaces. It replaces the need for extensive Js (or ReactJs) code in various common UI techniques, including infinite scrolling, toasts, conditional rendering, loading indicators, error handling, paging, and Websocket and SSE integration. HTMX offers a more streamlined approach to web development. [Explore more examples](https://htmx.org/examples/)
+This example showcases how HTMX simplifies the creation of interactive user interfaces. It replaces the need for extensive JavaScript (or the need for React) code in various common UI techniques, including infinite scrolling, toasts, conditional rendering, loading indicators, error handling, paging, and [[WebSocket]] and SSE integration. HTMX offers a more streamlined approach to web development. [Explore more examples](https://htmx.org/examples/)
 
 ### The role of Javascript in Htmx
 While HTMX aims to minimize the need for JavaScript, it still provides a small set of APIs for interaction with HTMX.
@@ -87,17 +93,17 @@ HTMX reduces an amount of Javascript code needed to create a dynamic Web applica
 
 ### Improved Performance
 
-HTMX is lightweight, leading to faster initial page loads and reduced client-side processing. This results in a better user experience, especially for web applications with frequent UI updates. However, in large-scale applications with frequent UI updates, React is better in performance thank to its virtual DOM.
+HTMX is lightweight, leading to faster initial page loads and reduced client-side processing. This results in a better user experience, especially for web applications with frequent UI updates. However, in large-scale applications with frequent UI updates, React is better in performance thanks to its virtual DOM.
 
-### Locality of Behaviour (Lob)
+### Locality of Behaviour (LoB)
 
 HTMX emphasizes the locality of behavior, enabling developers to understand code functionality within a small, self-contained portion. This enhances code transparency and maintainability while streamlining development efforts.
 
 ### Product Agility
-HTMX do work and improve product agility alot as it has been proved by [a real-world transition from React to htmx](https://htmx.org/essays/a-real-world-react-to-htmx-port/).
+HTMX works in improving product agility as it has been proven in [a real-world transition from React to htmx](https://htmx.org/essays/a-real-world-react-to-htmx-port/).
 
 ## The Concerns With HTMX
-### Violate Seperate of Concerns (SOC)
+### Violation of Separation of Concerns (SOC)
 
 HTMX can blur the lines between data management and presentation, as backends must respond with HTMX content rather than traditional RESTful APIs with Json. As a result, some many different clients such as mobile app, browser, ... might not able to consume the API.
 
@@ -118,7 +124,7 @@ HTMX may not be the best fit when:
 - Your team is not yet HTMX-savvy.
 
 ## Conclusion
-Htmx offers a fresh approach to web development, enhancing product agility and simplifying the creation of dynamic, interactive web applications. While it comes with some considerations, it opens up new possibilities in web development and offers an appealing alternative to traditional JavaScript frameworks.
+HTMX offers a fresh approach to web development, enhancing product agility and simplifying the creation of dynamic, interactive web applications. While it comes with some considerations, it opens up new possibilities in web development and offers an appealing alternative to traditional JavaScript frameworks.
 
 ## References
 - https://www.youtube.com/watch?v=3GObi93tjZI&t=1406s
