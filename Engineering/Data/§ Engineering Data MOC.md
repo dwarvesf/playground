@@ -13,10 +13,10 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Data/Order By vs. Sort By vs. Distribute By vs. Cluster By.md|Order By vs. Sort By vs. Distribute By vs. Cluster By]]
 - [[Engineering/Data/MapReduce.md|MapReduce]]
 - [[Engineering/Data/MapReduce Components.md|MapReduce Components]]
-- [[Engineering/Data/Managed Table vs External Table.md|Managed Table vs External Table]]
 - [[Engineering/Data/Introduction to Apache Pig.md|Introduction to Apache Pig]]
-- [[Engineering/Data/Introduction to Apache Hive.md|Introduction to Apache Hive]]
+- [[Engineering/Data/Managed Table vs External Table.md|Managed Table vs External Table]]
 - [[Engineering/Data/Hive Window and Analytic functions.md|Hive Window and Analytic functions]]
+- [[Engineering/Data/Introduction to Apache Hive.md|Introduction to Apache Hive]]
 - [[Engineering/Data/Data Vault modelling.md|Data Vault modelling]]
 - [[Engineering/Data/DBT - The Good Solution to Accelerate Data Transformation.md|DBT - The Good Solution to Accelerate Data Transformation]]
 - [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
@@ -34,26 +34,12 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
 - [[Engineering/Frontend/Tackling Server State complexity in Frontend Development.md|Tackling Server State complexity in Frontend Development]]
 - [[Engineering/Frontend/When should we use useReducer instead of useState?.md|When should we use useReducer instead of useState?]]
-- [[Engineering/Mealy machine.md|Mealy machine]]
 - [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
+- [[Engineering/Mealy machine.md|Mealy machine]]
 - [[Engineering/Moore machine.md|Moore machine]]
 - [[Engineering/Reducers.md|Reducers]]
 - [[Engineering/State explosion.md|State explosion]]
 - [[Engineering/UML state machine diagram.md|UML state machine diagram]]
 
 
-*This page was last modified at 2023-11-22T11:16:07.988Z*.
-
----
-<!-- cta -->
-### Contributing
-
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)
+*This page was last modified at 2023-12-19T10:34:09.858Z*.
