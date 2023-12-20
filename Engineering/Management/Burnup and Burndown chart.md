@@ -43,7 +43,6 @@ Basically, when wanting to see what is left to be completed on the giving timeli
 - [Burndown and Burnup charts: What's the Difference and How to use them](https://rindle.com/blog/burndown-and-burnup-charts-whats-the-difference-and-how-to-use-them)
 - [Burndown vs Burnup Chart](https://www.projectmanagement.com/blog/blogPostingView.cfm?blogPostingID=40731&thisPageURL=/blog-post/40731/Burndown-vs-Burnup-Chart#_=_)
 
-
 ---
 <!-- cta -->
 ### Contributing

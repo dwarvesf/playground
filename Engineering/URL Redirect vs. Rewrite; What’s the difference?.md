@@ -74,7 +74,6 @@ Redirect URLs and rewrite URLs are threads that weave together seamless user exp
 - https://en.wikipedia.org/wiki/Rewrite_engine
 - https://weblogs.asp.net/owscott/rewrite-vs-redirect-what-s-the-difference
 
-
 ---
 <!-- cta -->
 ### Contributing

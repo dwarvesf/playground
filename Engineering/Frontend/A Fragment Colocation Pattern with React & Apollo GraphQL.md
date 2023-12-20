@@ -273,7 +273,6 @@ On the other hand, we also need to keep in mind its limitations, such as potenti
 
 All in all, personally I think this a pattern that's *easy to adopt, hard to master* (thus also easy to mess up). It's true to the sprit of GraphQL, and worth a try to see for ourselves how it can give us a different approach to building optimized, well-organized code-bases.
 
-
 ---
 <!-- cta -->
 ### Contributing

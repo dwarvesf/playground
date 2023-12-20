@@ -344,7 +344,6 @@ Applying the Single Responsibility or Liskov Substitution principle helps us to 
 - https://dev.to/galwaycoder/the-solid-principles-in-software-design-explained-53n
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -121,7 +121,6 @@ To reduce composing time when number of events start to grow. Snapshot is a Stat
 - [Diagram about the thought process from normal CRUD operation into event sourcing](https://miro.com/app/board/uXjVPZswY00=/?share_link_id=338629629501)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

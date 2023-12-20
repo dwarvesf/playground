@@ -192,7 +192,6 @@ We can automatically claim any pending messages in `mystream` that has the minim
 - [Redis Streams tutorial](https://redis.io/docs/data-types/streams-tutorial/)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

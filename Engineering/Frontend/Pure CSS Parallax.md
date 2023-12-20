@@ -138,7 +138,6 @@ You can try out all the common practices I have mentioned in the CodePen below:
 - https://www.youtube.com/watch?v=1wfeqDyMUx4
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -84,7 +84,6 @@ Like ZK-SNARKs, ZK-STARKs demonstrate the validity of off-chain computation with
 - [Snarks-vs-starks](https://www.alchemy.com/overviews/snarks-vs-starks)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

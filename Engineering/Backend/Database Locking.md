@@ -210,7 +210,6 @@ Explicit locking is the most accessible way to resolve concurrency control in hi
 - <a id="5">[5]</a>“Locking in Databases and Isolation Mechanisms | by Denny Sam | inspiringbrilliance.” Medium, https://medium.com/inspiredbrilliance/what-are-database-locks-1aff9117c290. Accessed 23 April 2023.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

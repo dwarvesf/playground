@@ -218,7 +218,6 @@ Implementing blue-green deployment in Kubernetes requires preparation, including
 - https://viblo.asia/p/kubernetes-practice-english-automating-bluegreen-deployment-with-argo-rollouts-GAWVpoGaL05
 
 
-
 ---
 <!-- cta -->
 ### Contributing

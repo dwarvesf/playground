@@ -170,7 +170,6 @@ In the query above, it is completely transparent for the user that  `title`  
 - https://github.com/movio/bramble
 - https://medium.com/@aaivazis/a-guide-to-graphql-schema-federation-part-1-995b639ac035
 
-
 ---
 <!-- cta -->
 ### Contributing

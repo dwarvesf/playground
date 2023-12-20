@@ -25,7 +25,6 @@ Basically, for those 3 roles: Project Manager, Program Manager, and Portfolio Ma
 ## References
 - https://www.northeastern.edu/graduate/blog/project-management-vs-portfolio-management-vs-program-management/
 
-
 ---
 <!-- cta -->
 ### Contributing

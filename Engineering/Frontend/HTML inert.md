@@ -32,7 +32,6 @@ The born of `inert` helps to eliminate the need for [[Focus trap | focus trap]] 
 - https://patrickhlauke.github.io/aria/demos/modal/index-aria-inert.html
 
 
-
 ---
 <!-- cta -->
 ### Contributing

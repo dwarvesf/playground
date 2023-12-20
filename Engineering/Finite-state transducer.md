@@ -147,7 +147,6 @@ let transition = (state, input) =>
 - https://web.stanford.edu/~laurik/publications/ciaa-2000/fst-in-nlp/fst-in-nlp.html
 
 
-
 ---
 <!-- cta -->
 ### Contributing

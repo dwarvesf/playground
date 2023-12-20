@@ -109,7 +109,6 @@ Hopefully, this gives you an idea of how langchain can be used to create an agen
 - https://python.langchain.com/en/latest/modules/indexes/getting_started.html
 - https://github.com/kenhuangus/ChatGPT-FAQ/blob/main/vectorDB.md
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -178,7 +178,6 @@ Although CommonJS can still be used for server development since synchronous was
 - https://www.infoworld.com/article/2653798/javascript-creator-ponders-past--future.html
 
 
-
 ---
 <!-- cta -->
 ### Contributing

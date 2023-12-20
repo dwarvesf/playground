@@ -24,7 +24,6 @@ From my perspective, I might be prefer this way rather than having a SWAT team. 
 To have a direct members in that product response to the issue is better since they are the one whose have a specific view on the domain knowledges of the product. But, the communication is also the key that is needed, so the team can work on the incident better.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

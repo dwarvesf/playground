@@ -56,7 +56,6 @@ In conclusion, I think DBT is a good tool for transforming data. I think that th
 - https://docs.getdbt.com/docs/get-started/learning-more/using-jinja
 
 
-
 ---
 <!-- cta -->
 ### Contributing

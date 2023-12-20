@@ -24,7 +24,6 @@ In reverse words, the way a company or a team is structured will determine how i
 - http://www.melconway.com/Home/Conways_Law.htmlConway
 
 
-
 ---
 <!-- cta -->
 ### Contributing

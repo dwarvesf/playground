@@ -586,7 +586,6 @@ As you continue to work on your Go projects, keep in mind the importance of prof
 
 So go ahead, catch 'em all!
 
-
 ---
 <!-- cta -->
 ### Contributing

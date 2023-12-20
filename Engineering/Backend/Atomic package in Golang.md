@@ -140,7 +140,6 @@ Atomic types in Go are a simple approach to handling shared resources. It elimin
 - https://betterprogramming.pub/atomic-pointers-in-go-1-19-cad312f82d5b
 
 
-
 ---
 <!-- cta -->
 ### Contributing

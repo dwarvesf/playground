@@ -50,7 +50,6 @@ It's important to note that while Q-learning has these limitations, there are te
 - https://huggingface.co/learn/deep-rl-course/unit2/introduction
 
 
-
 ---
 <!-- cta -->
 ### Contributing

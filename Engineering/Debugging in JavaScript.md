@@ -126,7 +126,6 @@ When the `debugger` is invoked, execution is paused at the `debugger` statement 
  - [Tips and Tricks for Debugging JavaScript - James Q Quick](https://www.youtube.com/watch?v=_QtUGdaCb1c&t=701s)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

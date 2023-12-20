@@ -80,7 +80,6 @@ However, determining a suitable reward model is not always easy. Sometimes, defi
 - https://openai.com/blog/chatgpt
 
 
-
 ---
 <!-- cta -->
 ### Contributing

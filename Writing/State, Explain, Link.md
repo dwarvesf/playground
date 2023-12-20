@@ -48,7 +48,6 @@ You can basically apply this semantic technique anywhere there is English. It is
 - [https://www.youtube.com/watch?v=x2-rSnhpw0g](https://www.youtube.com/watch?v=x2-rSnhpw0g)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -86,7 +86,6 @@ It's important to note that the Law of Demeter should be applied with discretion
 - <https://www.infoworld.com/article/3136224/demystifying-the-law-of-demeter-principle.html#:~:text=The%20Law%20of%20Demeter%20(or,internal%20details%20of%20other%20objects>
 
 
-
 ---
 <!-- cta -->
 ### Contributing

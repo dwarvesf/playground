@@ -12,7 +12,6 @@ Focus trap is a web technique to improve accessibility by forcing keyboard focus
 - https://css-tricks.com/a-css-approach-to-trap-focus-inside-of-an-element/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

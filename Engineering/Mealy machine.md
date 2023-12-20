@@ -92,7 +92,6 @@ oth Mealy and Moore machines are generator-type state machines and can be used t
 - https://unstop.com/blog/difference-between-mealy-and-moore-machine
 
 
-
 ---
 <!-- cta -->
 ### Contributing

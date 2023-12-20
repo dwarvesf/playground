@@ -88,7 +88,6 @@ export const useEffectOnce = (effect: () => void | (() => void)) => {
 - https://dev.to/ag-grid/react-18-avoiding-use-effect-getting-called-twice-4i9e
 
 
-
 ---
 <!-- cta -->
 ### Contributing

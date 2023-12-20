@@ -96,7 +96,6 @@ That's it! We've created a simple but effective leaderboard system using Redis' 
 - https://redis.io/docs/data-types/sorted-sets/
 - https://redis.io/docs/data-types/hashes/
 
-
 ---
 <!-- cta -->
 ### Contributing

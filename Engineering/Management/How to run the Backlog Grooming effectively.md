@@ -35,7 +35,6 @@ After everything is done, the team will start the Backlog Grooming as fast as po
 - https://www.productplan.com/glossary/backlog-grooming/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

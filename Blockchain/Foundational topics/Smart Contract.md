@@ -67,7 +67,6 @@ Take for example a smart contract when deployed When a Decentralized Autonomous 
 https://ethereum.org/vi/developers/docs/smart-contracts/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

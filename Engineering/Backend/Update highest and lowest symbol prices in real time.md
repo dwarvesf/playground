@@ -67,7 +67,6 @@ To mitigate the limitations mentioned above and ensure accurate updates of the s
 - By reducing the interval between data retrievals, the likelihood of missing price movements during rapid market changes can be minimized, thus ensuring more accurate updates of the second and third peaks.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

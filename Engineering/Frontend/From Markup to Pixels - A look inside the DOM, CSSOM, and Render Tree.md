@@ -96,7 +96,6 @@ Once the Layer tree is established and the orders of rendering are determined, t
 - https://twitter.com/alexxubyte/status/1534201516063461376
 
 
-
 ---
 <!-- cta -->
 ### Contributing

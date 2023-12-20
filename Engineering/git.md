@@ -145,7 +145,6 @@ Overall, Git acts like a time machine. When you travel from A to B in time, you 
 - https://github.com/k88hudson/git-flight-rules
 
 
-
 ---
 <!-- cta -->
 ### Contributing

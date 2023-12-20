@@ -48,7 +48,6 @@ When it comes through the high level business flow, the user selects the product
 - [Software Testing Techniques with Test Case Design Examples](https://www.guru99.com/software-testing-techniques.html)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

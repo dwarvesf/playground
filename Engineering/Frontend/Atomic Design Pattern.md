@@ -69,7 +69,6 @@ This is an example of an application folder structure using atomic design, as yo
 - https://blog.ippon.tech/atomic-design-in-practice/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

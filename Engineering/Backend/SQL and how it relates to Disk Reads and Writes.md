@@ -105,7 +105,6 @@ In summary, SQL operations can result in either sequential or random read/write 
 -  https://dba.stackexchange.com/questions/285809/do-databases-optimize-random-write-and-read-operations
 
 
-
 ---
 <!-- cta -->
 ### Contributing

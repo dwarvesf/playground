@@ -234,7 +234,6 @@ In conclusion, this article explores Gomock, a widely used Go framework designed
 
 You can find full source code in the repo: [gomock_testing_example](https://github.com/datphamcode295/gomock_testing_example)
 
-
 ---
 <!-- cta -->
 ### Contributing

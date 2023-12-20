@@ -174,7 +174,6 @@ In general, developers prefer `useState` to `useReducer`. It is not their fault 
 - https://dev.to/builderio/a-cure-for-react-usestate-hell-1ldi
 
 
-
 ---
 <!-- cta -->
 ### Contributing

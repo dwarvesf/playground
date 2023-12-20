@@ -109,7 +109,6 @@ You can create many amazing animations with Scroll-driven Animation. To discover
 - https://developer.chrome.com/articles/scroll-driven-animations
 - https://www.youtube.com/watch?v=oDcb3fvtETs&t=335s
 
-
 ---
 <!-- cta -->
 ### Contributing

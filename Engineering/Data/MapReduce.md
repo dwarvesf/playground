@@ -61,7 +61,6 @@ MapReduce is:
 - Hadoop implements Mapreduce so that the Mapreduce system in Hadoop manages the communicationsm, data transfer, parallel execution across the distributed servers or nodes.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

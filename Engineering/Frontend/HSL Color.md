@@ -74,7 +74,6 @@ hsla(349, 73%, 56%, 0.5)
 - https://tsh.io/blog/why-should-you-use-hsl-color-representation-in-css/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

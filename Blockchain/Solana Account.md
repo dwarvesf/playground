@@ -50,7 +50,6 @@ For example, if you create a counter program that lets you increment a counter, 
 - https://solanacookbook.com/core-concepts/accounts.html
 
 
-
 ---
 <!-- cta -->
 ### Contributing

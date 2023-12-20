@@ -48,7 +48,6 @@ This type of oracle provides decentralized services with secure, off-chain compu
 - [https://coin98.net/what-is-blockchain-oracle](https://coin98.net/what-is-blockchain-oracle)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

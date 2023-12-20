@@ -46,7 +46,6 @@ Here are some example domains that used DDD:
 - Domain-driven design by Eric Evans
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -95,7 +95,6 @@ end
 Before run test we MUST start the web driver first https://hexdocs.pm/hound/Hound.Helpers.Navigation.html
 
 
-
 ---
 <!-- cta -->
 ### Contributing

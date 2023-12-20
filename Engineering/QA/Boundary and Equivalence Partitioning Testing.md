@@ -76,7 +76,6 @@ The hypothesis behind this technique is that if one condition/value in a partiti
 - [Functional Testing Guide](https://www.softwaretestinghelp.com/guide-to-functional-testing/)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -243,7 +243,6 @@ $ hledger -f transactions.journal balance -t
 - https://www.ledger-cli.org/3.0/doc/ledger3.html#Understanding-Equity
 
 
-
 ---
 <!-- cta -->
 ### Contributing

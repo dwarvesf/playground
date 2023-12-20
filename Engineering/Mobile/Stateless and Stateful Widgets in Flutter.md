@@ -116,7 +116,6 @@ The `_MyAppState` class will override the `Widget build(BuildContext context)` m
   * For Example: Checkbox, Radio Button, Slider are Stateful Widgets
 
 
-
 ---
 <!-- cta -->
 ### Contributing

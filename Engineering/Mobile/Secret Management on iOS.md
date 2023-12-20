@@ -135,7 +135,6 @@ The answer is: “Don’t (but if you must, obfuscation wouldn’t hurt).”
 - https://nshipster.com/secrets/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

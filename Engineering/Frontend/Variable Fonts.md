@@ -106,7 +106,6 @@ Beyond that, we depends on how the fonts were built & what custom axes they are 
 - https://web.dev/variable-fonts/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

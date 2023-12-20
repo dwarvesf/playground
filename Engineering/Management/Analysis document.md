@@ -22,7 +22,6 @@ With this document, there are 2 things that we can be confident with:
 - We can finalize again the requirement from our client again before starting to work on the development.
 - Every members will have the chance to think and make the plan before developing and testing, to prepare their works as good as possible.
 
-
 ---
 <!-- cta -->
 ### Contributing

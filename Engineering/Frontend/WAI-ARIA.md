@@ -81,7 +81,6 @@ WAI-ARIA will become handy in some cases as listed below:
 - https://pressbooks.library.torontomu.ca/wafd/chapter/wai-aria-landmarks/#:~:text=WAI%2DARIA%20landmarks%20are%20used,bypass%20links%20and%20page%20headings
 
 
-
 ---
 <!-- cta -->
 ### Contributing

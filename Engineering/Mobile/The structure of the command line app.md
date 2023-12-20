@@ -184,7 +184,6 @@ _Note: The inclusion of `help`  is not required, but is highly recommended to ha
 - <https://dev.to/paulasantamaria/command-line-interfaces-structure-syntax-2533>
 
 
-
 ---
 <!-- cta -->
 ### Contributing

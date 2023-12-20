@@ -80,7 +80,6 @@ Universal support can be achieved by using [Polyfill](https://github.com/GoogleC
 - https://developer.chrome.com/docs/devtools/css/container-queries/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

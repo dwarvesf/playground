@@ -69,7 +69,6 @@ In conclusion, adversarial prompting poses significant challenges in the realm o
 - https://twitter.com/m1guelpf/status/1598203861294252033
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -116,7 +116,6 @@ icy: 10
 - https://vitalik.ca/general/2022/06/15/using_snarks.html
 
 
-
 ---
 <!-- cta -->
 ### Contributing

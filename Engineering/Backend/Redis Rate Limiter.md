@@ -63,7 +63,6 @@ Above are 2 simple examples exploring the usefulness of data types to help handl
 - https://redis.io/docs/data-types/lists/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

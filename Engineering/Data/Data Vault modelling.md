@@ -157,7 +157,6 @@ Cons:
  - https://www.databricks.com/glossary/data-vault
 
 
-
 ---
 <!-- cta -->
 ### Contributing

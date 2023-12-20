@@ -76,7 +76,6 @@ UML State Machine Diagrams are a powerful tool for modeling and understanding th
 - https://www.lucidchart.com/pages/uml-state-machine-diagram
 
 
-
 ---
 <!-- cta -->
 ### Contributing

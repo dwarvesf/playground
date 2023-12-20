@@ -62,7 +62,6 @@ Here a reducer has no concept of a "finite" state here, such that state can be r
 - https://github.com/jas-chen/rx-redux
 
 
-
 ---
 <!-- cta -->
 ### Contributing

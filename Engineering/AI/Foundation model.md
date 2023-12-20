@@ -26,7 +26,6 @@ It's noteworthy that the use of foundation models isn't confined to language tas
 - [What are Generative AI models](https://www.youtube.com/watch?v=hfIUstzHs9A)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

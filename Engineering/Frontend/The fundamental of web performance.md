@@ -56,7 +56,6 @@ The goal of delivering a fast, smooth transition web application is **to do less
 - https://web.dev/critical-rendering-path-render-tree-construction/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

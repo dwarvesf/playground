@@ -63,7 +63,6 @@ Otherwise, if it's your landing site, similar to [netlify.com](http://netlify.co
 For MPA, if you prefer to keep building your site with React, you can still make it with an MPA. Just do SSR on the server and AVOID hydrating the whole page on the client. Obviously interactive components won't be interactive, but at least it's a good start.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

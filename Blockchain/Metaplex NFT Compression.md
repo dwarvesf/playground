@@ -33,7 +33,6 @@ This is just a brief overview of Compression for NFTs. There is much more to exp
 - https://metaplex.notion.site/Compression-for-NFTs-Public-94f9faa25f034110b513414a11a85bbe
 
 
-
 ---
 <!-- cta -->
 ### Contributing

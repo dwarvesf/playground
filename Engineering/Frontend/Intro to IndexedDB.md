@@ -131,7 +131,6 @@ Using IndexedDB is also likely to require **a lot more coding** than localStorag
 - https://web.dev/indexeddb/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -79,7 +79,6 @@ You can observe all the events created by the users.
 - <https://www.npmjs.com/package/mixpanel-browser>
 
 
-
 ---
 <!-- cta -->
 ### Contributing

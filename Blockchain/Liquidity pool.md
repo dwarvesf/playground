@@ -98,7 +98,6 @@ That is what we call impermanent loss. It is impermanent because it only becomes
 - https://www.theancientbabylonians.com/what-is-liquidity-pool-lp-in-defi/#:~:text=To%20sum%20up%20what%20liquidity,%3A%20x%20*%20y%20%3D%20k
 
 
-
 ---
 <!-- cta -->
 ### Contributing

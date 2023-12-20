@@ -102,7 +102,6 @@ main();
 
 With the only initialized once and can use in the global context, the singleton design pattern is very useful for some specific cases where we only need to store the data that using in the global and fewer changes like database connection, user profile account config...
 
-
 ---
 <!-- cta -->
 ### Contributing

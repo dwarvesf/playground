@@ -92,7 +92,6 @@ In summary, communication between a window and an iframe is facilitated through 
 - [Two way iframe communication](https://gist.github.com/pbojinov/8965299)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

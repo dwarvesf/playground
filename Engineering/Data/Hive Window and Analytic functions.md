@@ -74,7 +74,6 @@ The window and analytical functions are now powerful with frames, each record in
 In summary, we understand the need for window and analytical functions. Then, we introduced the basics of window and frames. Finally, we learned the syntax for creating windows and using analytical functions in Hive by calculating a 10-day moving average with stocks data set.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -199,7 +199,6 @@ let redLabel = UILabel().text("I'm red").myRedStyle()
 Using `@discardableResult` with `Extension` gives us all of the benefits of reusability, flexibility, maintainability, and the ability to expand our code while retaining the original data type.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

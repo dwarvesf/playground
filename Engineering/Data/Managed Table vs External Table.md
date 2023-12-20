@@ -47,7 +47,6 @@ Knowing when to use managed table and when to use external table is crucial. Que
 In summary, there are two types of tables in Hive: managed table and external table. When a manage table is dropped, the underlying data will also be dropped. But dropping an external table doesn't drop the data set. Thus, the external table is a good choice when the Hive table is pointing to a data set which is shared by other applications.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

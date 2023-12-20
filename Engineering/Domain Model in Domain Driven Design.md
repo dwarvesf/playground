@@ -44,7 +44,6 @@ A high-level structure consists of categorizations of functionality, represents 
 - https://serialized.io/java/working-with-aggregates/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

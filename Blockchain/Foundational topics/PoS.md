@@ -51,7 +51,6 @@ In 2017, Ethereum (ETH) started its full transition from PoW to PoS system and b
 - Can be performed on smaller and weaker devices because there is no need to download the entire blockchain, and because it does not require a lot of computing power, it can be
 
 
-
 ---
 <!-- cta -->
 ### Contributing

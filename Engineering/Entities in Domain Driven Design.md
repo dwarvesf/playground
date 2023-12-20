@@ -49,7 +49,6 @@ _Establish continuity so that behavior can be clear and predictable_, We need to
 - Domain-driven design by Eric Evans
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -60,7 +60,6 @@ In this regard, when we analyze what makes software unique, it is not the differ
 - https://web.mit.edu/allanmc/www/mcluhan.mediummessage.pdf
 
 
-
 ---
 <!-- cta -->
 ### Contributing

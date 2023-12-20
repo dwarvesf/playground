@@ -237,7 +237,6 @@ Examples in this post are demonstrated with `Postgresql >= 11.x` and use `tweets
 - SQL Performance Explained by Markus Winand (Book)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

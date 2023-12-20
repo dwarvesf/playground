@@ -65,7 +65,6 @@ Organizational structures that provide time and space for intercommunication and
 - _Team Topologies: Organizing Business and Technology Teams for Fast Flow by Manuel Pais and Matthew Skelton_
 
 
-
 ---
 <!-- cta -->
 ### Contributing

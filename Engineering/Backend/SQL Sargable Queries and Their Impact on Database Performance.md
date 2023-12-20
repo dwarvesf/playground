@@ -103,7 +103,6 @@ By understanding how sargable queries can take advantage and efficiently use ind
 - https://www.mssqltips.com/sqlservertip/6795/improve-sql-server-query-performance-searchable-arguments/
 - https://dba.stackexchange.com/questions/162263/what-does-the-word-sargable-really-mean
 
-
 ---
 <!-- cta -->
 ### Contributing

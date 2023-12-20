@@ -215,7 +215,6 @@ Refer back to [this section](#Reusability) for a sample scenario. Utility classe
 - https://css-tricks.com/growing-popularity-atomic-css/
 - https://css-tricks.com/lets-define-exactly-atomic-css/
 
-
 ---
 <!-- cta -->
 ### Contributing

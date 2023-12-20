@@ -119,7 +119,6 @@ Both Zod and Yup are robust validation libraries, and the choice between them is
 - <https://blog.logrocket.com/schema-validation-typescript-zod/>
 
 
-
 ---
 <!-- cta -->
 ### Contributing

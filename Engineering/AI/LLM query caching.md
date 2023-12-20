@@ -23,7 +23,6 @@ The advantages of this strategy are manifold, with substantial savings in comput
 - https://github.com/zilliztech/GPTCache
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -29,7 +29,6 @@ It is quite arguably a one-size fits a lot of stuff architecture. It is very sui
 - https://nofluffjuststuff.com/magazine/2015/10/the_challenges_of_service_based_architecture
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -10,7 +10,6 @@ When a team is struggling with implementation of a solution, more often than not
 So whenever you want to tackle complexity, think about simplicity. If you want to change the quality of code that an engineer is writing, first of all, you don't change the way that they code, you change the way that they think and the way that they think about code, as a result, their code will get better.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

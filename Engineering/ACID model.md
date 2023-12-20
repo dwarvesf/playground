@@ -46,7 +46,6 @@ Most relational databases are ACID compliant, such as MySQL, PostgreSQL, Oracle,
 - https://www.indeed.com/career-advice/career-development/acid-database
 
 
-
 ---
 <!-- cta -->
 ### Contributing

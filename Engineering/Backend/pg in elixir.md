@@ -196,7 +196,6 @@ Before OTP 23, we can use [pg2](https://www.erlang.org/docs/18/man/pg2.html) to 
 - https://stackoverflow.com/questions/67957826/what-is-the-correct-way-to-start-pgs-default-scope-in-an-elixir-1-12-applica
 
 
-
 ---
 <!-- cta -->
 ### Contributing

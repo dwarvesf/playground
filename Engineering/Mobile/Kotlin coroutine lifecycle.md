@@ -132,7 +132,6 @@ In this article, we know the difference between CoroutineScope and CoroutineCont
 - [Kotlin-doc: Cancellation](https://kotlinlang.org/docs/cancellation-and-timeouts.html#cancellation-is-cooperative)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

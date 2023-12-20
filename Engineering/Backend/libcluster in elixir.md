@@ -294,7 +294,6 @@ In the meantime, we can take advantage of Elixir's power. We can easy to scale t
 - https://github.com/hieuphq/ex_cluster
 
 
-
 ---
 <!-- cta -->
 ### Contributing

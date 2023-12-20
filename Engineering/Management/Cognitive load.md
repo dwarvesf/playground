@@ -16,7 +16,6 @@ When we talk about cognitive load, it’s easy to understand that any one person
 - _Team Topologies: Organizing Business and Technology Teams for Fast Flow by Manuel Pais and Matthew Skelton_
 
 
-
 ---
 <!-- cta -->
 ### Contributing

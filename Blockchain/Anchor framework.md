@@ -243,7 +243,6 @@ SUBCOMMANDS:
 - https://docs.rs/solana/latest/solana/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

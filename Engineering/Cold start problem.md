@@ -24,7 +24,6 @@ While keeping the function size small or increasing the memory could partly spee
 - https://www.serverless.com/blog/keep-your-lambdas-warm/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

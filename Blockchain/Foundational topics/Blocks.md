@@ -79,7 +79,6 @@ Gas is used to estimate the difficulty of all transactions in the block. Every f
 https://ethereum.org/en/developers/docs/blocks/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

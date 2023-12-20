@@ -25,7 +25,6 @@ Key Points:
 - It outperforms baselines in many use cases without the need for supervised data or reinforcement learning.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

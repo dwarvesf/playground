@@ -89,7 +89,6 @@ Generally, all APIs that synchronously provide layout metrics will trigger force
 - https://afarkas.github.io/layout-thrashing/#/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

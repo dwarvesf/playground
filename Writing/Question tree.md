@@ -29,7 +29,6 @@ Here are some examples of question trees of topics which have been investigated 
 - [](https://wals.info/chapter/93)[https://wals.info/chapter/93](https://wals.info/chapter/93)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

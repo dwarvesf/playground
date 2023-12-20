@@ -42,7 +42,6 @@ Usually, when a developer finish their ticket for the feature enhancement from D
 ![BackEnd-FrontEnd-Testing-Document-Sample](_assets/BE_FE_testing_doc_sample.png)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

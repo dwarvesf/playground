@@ -166,7 +166,6 @@ In summary, React Server Components (RSCs) provide a powerful way to render Reac
 - [Introducing Zero-Bundle-Size React Server Components – React](https://react.dev/blog/2020/12/21/data-fetching-with-react-server-components)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

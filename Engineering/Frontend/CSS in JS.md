@@ -54,7 +54,6 @@ Adding another library to a web page increases the page size, which can negative
 - https://github.com/styled-components/styled-components/issues/2377
 
 
-
 ---
 <!-- cta -->
 ### Contributing

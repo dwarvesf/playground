@@ -85,7 +85,6 @@ In [[Domain Driven Design]] (DDD) and in [[Event storming]], there doesn't seem 
 - https://blog.honosoft.com/2019/10/31/partial-state-machine/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

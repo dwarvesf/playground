@@ -49,7 +49,6 @@ Feature flags are one of the core components of progressive delivery. Without th
 - https://www.cloudbees.com/blog/progressive-delivery-vs-continuous-delivery
 
 
-
 ---
 <!-- cta -->
 ### Contributing

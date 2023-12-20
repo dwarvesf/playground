@@ -57,7 +57,6 @@ While RL can be applied to various domains, it requires significant time and com
 - MDP: Markov decision process
 - LLM: Large language model
 
-
 ---
 <!-- cta -->
 ### Contributing

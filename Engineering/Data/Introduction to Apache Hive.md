@@ -70,7 +70,6 @@ LIMIT 100;
 - The Ultimate Guide To Programming Apache Hive: A Reference Guide Document – Straight from the trenches, with real world lessons, tips and tricks included to help you start analyzing BigData, Fru Nde
 
 
-
 ---
 <!-- cta -->
 ### Contributing

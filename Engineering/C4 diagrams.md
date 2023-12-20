@@ -28,7 +28,6 @@ The C4 model was created by Simon Brown, designed with the goal for it to be a d
 - https://en.wikipedia.org/wiki/C4_model
 
 
-
 ---
 <!-- cta -->
 ### Contributing

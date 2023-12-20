@@ -75,7 +75,6 @@ In some instances, especially when having very large datasets, structural sharin
 - https://swr.vercel.app/docs/advanced/performance
 - https://tanstack.com/query/latest/docs/react/guides/caching
 
-
 ---
 <!-- cta -->
 ### Contributing

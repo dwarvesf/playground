@@ -142,7 +142,6 @@ In conclusion, Open Assistant (OA) is a chat-based, open-source assistant design
 - https://huggingface.co/EleutherAI
 
 
-
 ---
 <!-- cta -->
 ### Contributing

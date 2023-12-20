@@ -93,7 +93,6 @@ In the first select, we're doing a table sample on a table `stocks` which is not
 In summary, we now understood what buckets are. We saw the difference between buckets and partitions. And we also know how to work with buckets. There are three benefits of buckets: (1) unlike partitions the number of buckets is constant and solves the tiny files issue, (2) buckets are very efficient when sampling tables and (3) finally the benefit of using bucket is during map site joints which we'll discuss in more detail later.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

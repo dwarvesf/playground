@@ -73,7 +73,6 @@ An important point to note here is that we need to correct the assumption that t
 - [Rich Harris - Rethinking reactivity talk at YGLF 2019](https://www.youtube.com/watch?v=AdNJ3fydeao)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

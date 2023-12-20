@@ -105,7 +105,6 @@ State implement a Merkle Tree and connect to DB backend. it checks integrity of 
 - [Repo zkevm](https://github.com/0xPolygonHermez/zkevm-node)
 - [Polygon zkEVM](https://mirror.xyz/msfew.eth/JJudP_Kf-IS6VhbF-qU0BUor1Ap6SFEb0TzYOHZ34Rc)
 
-
 ---
 <!-- cta -->
 ### Contributing

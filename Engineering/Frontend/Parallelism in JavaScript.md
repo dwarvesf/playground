@@ -56,7 +56,6 @@ However, most of OpenCL based frameworks developed during the period are no long
 - https://intellabs.github.io/RiverTrail/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

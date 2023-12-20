@@ -162,7 +162,6 @@ class EntryFragment : Fragment() {
 - [Jetpack Navigation Documentation](https://developer.android.com/jetpack/androidx/releases/navigation)
 - [Firebase Analytics with Jetpack Navigation](https://techdroid.kbeanie.com/2020/08/30/jetpack-navigation-and-firebase-analytics/)
 
-
 ---
 <!-- cta -->
 ### Contributing

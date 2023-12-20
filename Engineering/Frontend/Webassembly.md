@@ -48,7 +48,6 @@ https://webassembly.org/
 https://livebook.manning.com/book/webassembly-in-action/chapter-1/
 https://www.xenonstack.com/insights/a-beginners-guide-to-webassembly
 
-
 ---
 <!-- cta -->
 ### Contributing

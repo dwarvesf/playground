@@ -34,7 +34,6 @@ Effective software delivery requires the combination of specific team types, but
 - https://teamtopologies.com/key-concepts
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -91,7 +91,6 @@ These vector databases offer various features and optimizations to handle large-
 - [https://qdrant.tech/benchmarks/?gad=1&gclid=Cj0KCQjwsIejBhDOARIsANYqkD0ZtNrEujSDsjGPsOmSGRtJaIYvQct3kvojBEQPJxrcdL7lC9IaLVQaAnMjEALw_wcB](https://qdrant.tech/benchmarks/?gad=1&gclid=Cj0KCQjwsIejBhDOARIsANYqkD0ZtNrEujSDsjGPsOmSGRtJaIYvQct3kvojBEQPJxrcdL7lC9IaLVQaAnMjEALw_wcB)
 - [https://slashdot.org/software/comparison/Embeddinghub-vs-Milvus-Database-vs-chroma/](https://slashdot.org/software/comparison/Embeddinghub-vs-Milvus-Database-vs-chroma/)
 
-
 ---
 <!-- cta -->
 ### Contributing

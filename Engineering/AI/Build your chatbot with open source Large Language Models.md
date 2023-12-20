@@ -61,7 +61,6 @@ For models with a large number of parameters, such as 30 billion or more, the re
 - https://github.com/EwingYangs/awesome-open-gpt/tree/main
 - https://github.com/nomic-ai/gpt4all
 
-
 ---
 <!-- cta -->
 ### Contributing

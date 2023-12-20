@@ -56,7 +56,6 @@ So, ES6 generator allows us to run code and yield values whenever we like but it
 - https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback
 
 
-
 ---
 <!-- cta -->
 ### Contributing

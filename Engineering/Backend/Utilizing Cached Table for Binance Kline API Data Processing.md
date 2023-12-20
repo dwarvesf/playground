@@ -66,7 +66,6 @@ While the proposed solution offers significant advantages, it also has certain l
 By employing a cached table to store and retrieve Binance Kline API data, the challenges of working with limited records and requests can be addressed effectively.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

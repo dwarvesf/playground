@@ -188,7 +188,6 @@ Hadoop was truly given the ability to analyze volumes and volumes of data and he
 - [Hadoop: The Definitive Guide: Storage and Analysis at Internet Scale](https://www.amazon.com/Hadoop-Definitive-Storage-Analysis-Internet/dp/1491901632/ref=sr_1_2?crid=2LTQHKE9WNBNC&keywords=Hadoop&qid=1657604708&sprefix=hadoop%2Caps%2C127&sr=8-2)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

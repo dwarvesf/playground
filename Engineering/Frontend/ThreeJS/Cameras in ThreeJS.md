@@ -74,7 +74,6 @@ Beside those 2 most frequently used cameras, ThreeJS also provides various optio
 - https://www.celestron.com/blogs/knowledgebase/what-is-the-field-of-view-of-a-pair-of-binoculars
 
 
-
 ---
 <!-- cta -->
 ### Contributing

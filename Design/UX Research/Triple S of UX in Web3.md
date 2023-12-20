@@ -36,7 +36,6 @@ Ensure design communicates the empowerment users should have; allow them to bene
 - https://medium.com/@lyricalpolymath/web3-design-principles-f21db2f240c1
 
 
-
 ---
 <!-- cta -->
 ### Contributing

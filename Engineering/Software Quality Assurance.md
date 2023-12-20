@@ -90,7 +90,6 @@ We have known the importance of SQA then we should have effective plan for our s
 - [Altexsoft whitepapers](https://www.altexsoft.com/whitepapers/quality-assurance-quality-control-and-testing-the-basics-of-software-quality-management/)
 - [Blogs of Danlew](https://blog.danlew.net/2022/06/22/maintaining-software-correctness/)
 
-
 ---
 <!-- cta -->
 ### Contributing

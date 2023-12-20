@@ -228,7 +228,6 @@ And this query with the where condition exchange name and volume will execute wi
 - https://stackoverflow.com/questions/21876837/not-able-to-apply-dynamic-partitioning-for-a-huge-data-set-in-hive
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -54,7 +54,6 @@ This automated approach not only minimizes human error but also streamlines the 
 - https://swagger.io/specification
 - https://trpc.io
 
-
 ---
 <!-- cta -->
 ### Contributing

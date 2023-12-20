@@ -149,7 +149,6 @@ In this article, we know the difference between `Race Condition` and `Data Race`
 - [Race condition vs. Data Race: the differences explained](https://www.avanderlee.com/swift/race-condition-vs-data-race)
 - [Data race và Mutual exclusion](https://viblo.asia/p/007-data-race-va-mutual-exclusion-4dbZNGvmlYM)
 
-
 ---
 <!-- cta -->
 ### Contributing

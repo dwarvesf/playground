@@ -238,7 +238,6 @@ This article outlines best practices for testing in Golang, including writing ef
 - [https://google.github.io/styleguide/go/best-practices.html#tests](https://google.github.io/styleguide/go/best-practices.html#tests)
 - [https://climbtheladder.com/10-golang-testing-best-practices/](https://climbtheladder.com/10-golang-testing-best-practices/)
 
-
 ---
 <!-- cta -->
 ### Contributing

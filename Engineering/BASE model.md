@@ -25,7 +25,6 @@ The BASE model loosely refers to distributed data stores, which means these data
 - https://neo4j.com/blog/acid-vs-base-consistency-models-explained/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

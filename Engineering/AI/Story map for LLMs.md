@@ -138,7 +138,6 @@ The general idea of this story map is to help engineers develop a strong foundat
 - https://www.assemblyai.com/blog/the-full-story-of-large-language-models-and-rlhf/
 
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -35,7 +35,6 @@ From my point of view, mastering distribution will bring huge benefit in underst
 - https://www.sciencedirect.com/topics/computer-science/pareto-distribution
 
 
-
 ---
 <!-- cta -->
 ### Contributing

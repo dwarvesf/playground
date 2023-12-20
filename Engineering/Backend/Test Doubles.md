@@ -451,7 +451,6 @@ In conclusion, the article delves into the concept of Test Doubles and their sig
 - [https://ieftimov.com/posts/testing-in-go-test-doubles-by-example/](https://ieftimov.com/posts/testing-in-go-test-doubles-by-example/)
 - [https://abseil.io/resources/swe-book/html/ch13.html#basic_concepts](https://abseil.io/resources/swe-book/html/ch13.html#basic_concepts)
 
-
 ---
 <!-- cta -->
 ### Contributing

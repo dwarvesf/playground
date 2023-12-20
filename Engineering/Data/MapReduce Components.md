@@ -157,7 +157,6 @@ Intuitively, combiner is like a mini reducer that runs at the map phase. Combine
 - the benefit of using a combiner.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

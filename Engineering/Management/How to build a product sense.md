@@ -40,7 +40,6 @@ This one can be the most difficult way from my point of view. But, it's still ve
 ## Reference
 - [How to develop product sense](https://www.lennysnewsletter.com/p/product-sense)
 
-
 ---
 <!-- cta -->
 ### Contributing

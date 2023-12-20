@@ -50,7 +50,6 @@ graph TD;
 Remember, this is a general overview of the process and the exact details might differ based on the specific requirements of your application and the specifics of your chatbot's design.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

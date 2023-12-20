@@ -163,7 +163,6 @@ There are several advantages of using LocalStack over the original AWS solutions
 - https://aws.amazon.com/s3/?nc2=h_ql_prod_st_s3
 
 
-
 ---
 <!-- cta -->
 ### Contributing

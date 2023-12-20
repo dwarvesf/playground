@@ -62,7 +62,6 @@ Check out some other formats that allow you to share a URL via some social netwo
 | Reddit   | <pre>`https://www.reddit.com/submit?url=${url}&title=${title}`</pre>    |
 
 
-
 ---
 <!-- cta -->
 ### Contributing

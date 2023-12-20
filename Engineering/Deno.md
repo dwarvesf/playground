@@ -68,7 +68,6 @@ Interesting projects to follow:
 - https://github.com/lucacasonato/fresh
 
 
-
 ---
 <!-- cta -->
 ### Contributing

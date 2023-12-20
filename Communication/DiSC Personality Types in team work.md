@@ -124,7 +124,6 @@ https://www.notion.so/huytieu/DiSC-Personality-Types-in-team-work-ee16782a9c2f4d
 - [https://www.amazon.com/Surrounded-by-Idiots-audiobook/dp/B07VCV4QMH/ref=sr_1_1?keywords=surrounded+by+idiots&qid=1662797546&sprefix=surrounded+b%2Caps%2C312&sr=8-1](https://www.amazon.com/Surrounded-by-Idiots-audiobook/dp/B07VCV4QMH/ref=sr_1_1?keywords=surrounded+by+idiots&qid=1662797546&sprefix=surrounded+b%2Caps%2C312&sr=8-1)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

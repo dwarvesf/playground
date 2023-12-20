@@ -159,7 +159,6 @@ The `server.use` function allows us to add a runtime handler to our mock server.
 - [MSW Documentation](https://mswjs.io/docs/)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

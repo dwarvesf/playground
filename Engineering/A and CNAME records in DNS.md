@@ -48,7 +48,6 @@ There are many things you can do with `A` records, including using multiple `A` 
 - <https://www.cloudflare.com/learning/dns/dns-records/#:~:text=What%20is%20a%20DNS%20record,handle%20requests%20for%20that%20domain>.
 
 
-
 ---
 <!-- cta -->
 ### Contributing

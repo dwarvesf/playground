@@ -151,7 +151,6 @@ We should apply the circuit breaker pattern when the application trying to invok
 - [sony/gobreaker](https://github.com/sony/gobreaker)
 
 
-
 ---
 <!-- cta -->
 ### Contributing

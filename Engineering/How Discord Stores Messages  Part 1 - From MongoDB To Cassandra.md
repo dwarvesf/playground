@@ -131,7 +131,6 @@ At the time, Discord were running 12-node cluster with a replica factor of 3. Co
 - https://en.wikipedia.org/wiki/CAP_theorem
 - https://discord.com/blog/how-discord-stores-billions-of-messages
 
-
 ---
 <!-- cta -->
 ### Contributing

@@ -72,7 +72,6 @@ For simple local setup, can refer to [Apache Kafka's quickstart guide](https://k
 - [https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Self-Managed+Metadata+Quorum](https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Self-Managed+Metadata+Quorum "https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Self-Managed+Metadata+Quorum")
 - [https://kafka.apache.org/documentation/#zk](https://kafka.apache.org/documentation/#zk "https://kafka.apache.org/documentation/#zk")
 
-
 ---
 <!-- cta -->
 ### Contributing
