@@ -6,7 +6,6 @@ title: "Rust Trait"
 date: 2024-07-03
 author: 
     - trankhacvy
-
 ---
 Rust's **trait** system is a powerful feature that enables developers to define shared behavior across different types. Traits play a crucial role in achieving code reusability, abstraction, and flexibility.
 
