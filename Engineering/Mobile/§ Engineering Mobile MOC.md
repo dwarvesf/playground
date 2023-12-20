@@ -12,4 +12,4 @@ This is a [[Map of Content]] related to the engineering concepts around mobile.
 - [[Engineering/Mobile/UIKit Builder pattern.md|UIKit Builder pattern]]
 
 
-*This page was last modified at 2023-12-19T10:34:09.803Z*.
+*This page was last modified at 2023-12-20T10:20:26.232Z*.

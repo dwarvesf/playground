@@ -9,10 +9,10 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 
 - [[Engineering/Conway's law.md|Conway's law]]
 - [[Engineering/Management/Analysis document.md|Analysis document]]
-- [[Engineering/Management/Burnup and Burndown chart.md|Burnup and Burndown chart]]
 - [[Engineering/Management/Cognitive load.md|Cognitive load]]
 - [[Engineering/Management/Difference between Project-Program-Portfolio manager.md|Difference between Project-Program-Portfolio manager]]
 - [[Engineering/Management/Enabling team.md|Enabling team]]
+- [[Engineering/Management/Burnup and Burndown chart.md|Burnup and Burndown chart]]
 - [[Engineering/Management/How one product team works when having incident.md|How one product team works when having incident]]
 - [[Engineering/Management/How to build a product sense.md|How to build a product sense]]
 - [[Engineering/Management/How to run the Backlog Grooming effectively.md|How to run the Backlog Grooming effectively]]
@@ -29,4 +29,4 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Frontend/Why Virtual DOM is fast?.md|Why Virtual DOM is fast?]]
 
 
-*This page was last modified at 2023-12-19T10:34:09.813Z*.
+*This page was last modified at 2023-12-20T10:20:26.236Z*.

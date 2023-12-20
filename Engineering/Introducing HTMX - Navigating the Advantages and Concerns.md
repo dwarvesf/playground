@@ -44,7 +44,7 @@ HTMX extend the core idea of HTML as a hypertext by adding additional anchor att
 - `hx-trigger` defines the condition for the event to be triggered. In this case, it will fire a GET request 500 milliseconds after key up event only if the input has been changed.
 - `hx-target` targets the element that will be inserted into by server response data.
 
-This example showcases how HTMX simplifies the creation of interactive user interfaces. It replaces the need for extensive JavaScript (or the need for React) code in various common UI techniques, including infinite scrolling, toasts, conditional rendering, loading indicators, error handling, paging, and [[WebSocket]] and SSE integration. HTMX offers a more streamlined approach to web development. [Explore more examples](https://htmx.org/examples/)
+This example showcases how HTMX simplifies the creation of interactive user interfaces. It replaces the need for extensive JavaScript (or the need for React) code in various common UI techniques, including infinite scrolling, toasts, conditional rendering, loading indicators, error handling, paging, and [[WebSockets]] and SSE integration. HTMX offers a more streamlined approach to web development. [Explore more examples](https://htmx.org/examples/)
 
 ### The role of Javascript in Htmx
 While HTMX aims to minimize the need for JavaScript, it still provides a small set of APIs for interaction with HTMX.
@@ -132,3 +132,17 @@ HTMX offers a fresh approach to web development, enhancing product agility and s
 - https://www.reddit.com/r/htmx/comments/r13e9i/xtmx_limitations_and_pitfalls/
 - https://www.builder.io/blog/htmx-vs-react
 - https://htmx.org/examples/
+
+---
+<!-- cta -->
+### Contributing
+
+At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
+
+### Love what we are doing?
+
+- Check out our [products](https://superbits.co)
+- Hire us to [build your software](https://d.foundation)
+- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
+- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
+- Visit our [GitHub](https://github.com/dwarvesf)

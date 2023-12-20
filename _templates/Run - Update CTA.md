@@ -18,7 +18,7 @@ for (const element of pages) {
 		const joinedContent = content + ctaContent;
 		await app.vault.modify(file, joinedContent);
 	} else {
-		const joinedContent = content.split("---\n<!-- cta -->")[0] + ctaContent;
+		const joinedContent = content.split("\n---\n<!-- cta -->")[0] + ctaContent;
 		await app.vault.modify(file, joinedContent);
 	}
 }

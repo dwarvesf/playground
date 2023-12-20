@@ -8,8 +8,8 @@ This is a [[Map of Content]] related to the blockchain.
 ## Foundational Topics
 
 - [[Blockchain/Foundational topics/Blocks.md|Blocks]]
-- [[Blockchain/Foundational topics/Distributed systems.md|Distributed systems]]
 - [[Blockchain/Foundational topics/PoS.md|PoS]]
+- [[Blockchain/Foundational topics/Distributed systems.md|Distributed systems]]
 - [[Blockchain/Foundational topics/Smart Contract.md|Smart Contract]]
 - [[Blockchain/Foundational topics/Topics.md|Topics]]
 
@@ -34,4 +34,4 @@ This is a [[Map of Content]] related to the blockchain.
 - [[Blockchain/Anchor framework.md|Anchor framework]]
 
 
-*This page was last modified at 2023-12-19T10:34:09.883Z*.
+*This page was last modified at 2023-12-20T10:20:26.297Z*.
