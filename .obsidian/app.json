@@ -8,5 +8,6 @@
   },
   "livePreview": true,
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "_assets"
 }
