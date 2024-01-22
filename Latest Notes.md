@@ -6,6 +6,8 @@ recurringTemplateName: latest-notes
 This is where we keep track of our top 10 latest Brainery notes:
 
 - [[Engineering/Backend/Introduction to CRDT.md|Introduction to CRDT]]
+- [[Engineering/Data/Google Dataproc.md|Google Dataproc]]
+- [[Engineering/Data/Google Data Fusion.md|Google Data Fusion]]
 - [[Engineering/Introducing HTMX - Navigating the Advantages and Concerns.md|Introducing HTMX - Navigating the Advantages and Concerns]]
 - [[Engineering/Frontend/WebSockets.md|WebSockets]]
 - [[Engineering/Typesafe Client-Server.md|Typesafe Client-Server]]
@@ -13,18 +15,15 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Backend/SQL Sargable Queries and Their Impact on Database Performance.md|SQL Sargable Queries and Their Impact on Database Performance]]
 - [[Engineering/Backend/The removal of Apache Kafka's dependency on Zookeeper.md|The removal of Apache Kafka's dependency on Zookeeper]]
 - [[Engineering/Frontend/From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree.md|From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree]]
-- [[Engineering/URL Redirect vs. Rewrite; What’s the difference?.md|URL Redirect vs. Rewrite; What’s the difference?]]
-- [[Engineering/Backend/SQL and how it relates to Disk Reads and Writes.md|SQL and how it relates to Disk Reads and Writes]]
 
 
 ## Top Contributors this month
 
-*Total ICY given out this month: **30 ICY***
+*Total ICY given out this month: **20 ICY***
 
 | authors | notes |
 | ------- | ----- |
-| [tienan92it](https://github.com/tienan92it) |  [[Typesafe Client-Server]]<br>|
-| [tonible14012002](https://github.com/tonible14012002) |  [[Introducing HTMX - Navigating the Advantages and Concerns]]<br> [[WebSockets]]<br>|
+| [mickwan1234](https://github.com/mickwan1234) |  [[Google Dataproc]]<br> [[Google Data Fusion]]<br>|
 
 
 
@@ -51,4 +50,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
 
-*This page was last modified at 2023-12-20T10:20:26.179Z*.
+*This page was last modified at 2024-01-22T06:13:43.365Z*.
