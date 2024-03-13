@@ -24,11 +24,11 @@ This is where we keep track of our top 10 latest Brainery notes:
 | [mickwan1234](https://github.com/mickwan1234) |  [[playground/Engineering/Google Dataproc]]<br> [[playground/Engineering/Google Data Fusion]]<br>|
 
 ## Newest Contributors
-- **haongo1#3632**: [[Ω Fleeting notes/202211141513 - Materialized View Pattern.md|202211141513 - Materialized View Pattern]]
-- **hieuvd#4261**: [[Ω Fleeting notes/202211141287 - Go JSON Parsing.md|202211141287 - Go JSON Parsing]]
-- **hmhoang13#5280**: [[Ω Fleeting notes/202301191192 - Multi-column index in DB.md|202301191192 - Multi-column index in DB]]
-- **hollow#3333**: [[Ω Fleeting notes/202210162154 - The Best of CSS TLDR.md|202210162154 - The Best of CSS TLDR]]
-- **namth#6640**: [[Ω Fleeting notes/202301091379 - Invoking Component Functions in React.md|202301091379 - Invoking Component Functions in React]]
+- **haongo1#3632**: [[202211141513 - Materialized View Pattern|202211141513 - Materialized View Pattern]]
+- **hieuvd#4261**: [[202211141287 - Go JSON Parsing|202211141287 - Go JSON Parsing]]
+- **hmhoang13#5280**: [[202301191192 - Multi-column index in DB|202301191192 - Multi-column index in DB]]
+- **hollow#3333**: [[202210162154 - The Best of CSS TLDR|202210162154 - The Best of CSS TLDR]]
+- **namth#6640**: [[202301091379 - Invoking Component Functions in React|202301091379 - Invoking Component Functions in React]]
 
 ---
 - **[cnhhoang850](https://github.com/cnhhoang850)**: [[Design/What Screens Want.md|What Screens Want]]
