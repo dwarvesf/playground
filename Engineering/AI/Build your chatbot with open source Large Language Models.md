@@ -9,19 +9,16 @@ icy: 10
 Currently, AI chatbot services like ChatGPT are being widely used, but these services are restricted in many countries and also prohibited by many schools due to the high quality of results they produce compared to the level of students’ knowledge. Additionally, these services also require high costs to generate results. Therefore, I think that if we can run a personal chatbot for use with acceptable results and without hardware costs, you can run it on your personal computer with a minimum requirement of 8GB of RAM. In this post, I will guide you on how to run a personal chatbot with an open model like Alpaca 7b or gpt4all model.
 
 ## What is pre-trained models?
-
 The LLM pre-trained model is designed to generate more coherent and contextually relevant text than traditional language models. By using latent variables, the model can better capture the complex relationships between words and phrases in natural language. Additionally, the LLM model is highly customizable, allowing users to specify the structure and complexity of the latent variables to suit their specific needs.
 
 Overall, the LLM pre-trained model is a powerful tool for natural language processing tasks and has been used successfully in a variety of applications, including machine translation, summarization, and dialogue generation, chatbot, virtual assistant.
 
 ## **Preparing for build AI chatbot:**
-
 - Use HuggingFace to download the model: Download the model from HuggingFace.
 - Download the chatbot interface source code: requires skill of git, running Node.js, and installing with yarn.
 - Update the model and run the chatbot: Update config.
 
 ## Install chatbot UI
-
 - Clone chatbot web ui from this repository: [here](https://github.com/ngxson/alpaca.cpp-webui)
 - Download chat binding library and open model:
     - Download binding library from:
@@ -47,13 +44,11 @@ Overall, the LLM pre-trained model is a powerful tool for natural language proce
         ![[_assets/build-chatbot-3.png]]
 
 ## Fine-tune your model
-
 To fine tune your model you need create your dataset depend on your data, you can clone our example at [here](https://github.com/thanhpn/df-dataset)
 
 We are using Google colab to train pre-trained model, you can follow the code example at [here](https://colab.research.google.com/drive/1TbV-Enz4O__GFXtqUWEFK0snYedOwPTh?usp=sharing)
 
 ## Comparing the chatbot with ChatGPT3
-
 For models with a large number of parameters, such as 30 billion or more, the results generated can be used as a suggestion for further research, but the quality of the answers will not be comparable to ChatGPT3.
 
 ## References
@@ -63,12 +58,11 @@ For models with a large number of parameters, such as 30 billion or more, the re
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

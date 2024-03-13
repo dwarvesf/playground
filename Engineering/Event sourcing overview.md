@@ -7,15 +7,12 @@ icy: 10
 ---
 
 ## What is Event sourcing
-
 A database design revolves around **Events**. **Events** retain all business-critical information for auditing, market simulations, and future requirements that scale with the growth of the business.
 
 ## Problem scenario: e-commerce platform
-
 We build an e-commerce platform. From all orders that successfully checked out, we generated a detailed report for sellers to improve their product's attraction to buyers.
 
 ### Change to the requirement
-
 To be competitive with other platforms. We need to generate analytics for product retention when in the buyer's cart. So we need to have `order_log` to have data each time product's quantity changes in the cart.
 
 But we only have the analytics when the implementation launches in production, and all previous data before the implementation is lost. This cycle will repeat everytime a new requirement coming in.
@@ -23,9 +20,7 @@ But we only have the analytics when the implementation launches in production, a
 With the never-ending changes in business trends. We/Skateholders/Sellers/Buyers, can **never know which data is critical for the business survival in the future**.
 
 ## Event sourcing
-
 ### Event
-
 Event sourcing saves all information that happens in our system as **Events**. From the e-commerce platform scenario, an order's **event** is when something happens to the order (`order_created_event`, `product_added_event`, `product_removed_event`,...).
 
 An Event mainly consists of `Entity_ID`, `Type`,  `Data`,  `Metadata`, and  `Version`:
@@ -57,11 +52,9 @@ An Event mainly consists of `Entity_ID`, `Type`,  `Data`,  `Metadata`, and  `Ver
 ```
 
 ### Event Store
-
 A `database_table` stores events. **Only allowed Append** new event and **Read** from an event store. Event store naming will follow the domain object (`order_event_store`, `product_event_store`).
 
 ### State
-
 When composing events, we get a State of a domain object.
 
 Exp:  Get current products in order with `id == 1`.
@@ -110,25 +103,21 @@ And through our business process, we build states to validate if an event is val
 Projector handle how we compose the event to get the usuable State of the domain oject
 
 #### Snapshot
-
 To reduce composing time when number of events start to grow. Snapshot is a State in a specifict time. To get the latest state, with a snapshot as base, with just need to compose rest of event from snapshot to now%%
 
 ## References
-
 - [Beginner's Guide to Event Sourcing | Event Store](https://www.eventstore.com/event-sourcing)
 - [Keynote: Event sourcing - Greg Young - DPC2016](https://www.youtube.com/watch?v=I3uH3iiiDqY)
 - [Learning-topics: Event sourcing](https://discord.com/channels/462663954813157376/1009812700022456400)
 - [Diagram about the thought process from normal CRUD operation into event sourcing](https://miro.com/app/board/uXjVPZswY00=/?share_link_id=338629629501)
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -125,7 +125,6 @@ SINGULARITYENV_CUDA_VISIBLE_DEVICES=6 singularity run --nv --bind .triton_models
 export TRITON_HOST_RM=localhost:8002/<RM_MODEL_NAME>
 export TRITON_HOST_REF=localhost:8005/<REF_MODEL_NAME>
 
-
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 OMP_NUM_THREADS=1 accelerate launch --main_process_port 29501 --config_file configs/accelerate_config.yaml --num_processes 6 trainer_rl.py --configs defaults defaults_rlhf <your config> <your dataset>
 ```
 
@@ -141,15 +140,13 @@ In conclusion, Open Assistant (OA) is a chat-based, open-source assistant design
 - https://open-assistant.io/
 - https://huggingface.co/EleutherAI
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

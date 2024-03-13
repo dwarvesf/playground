@@ -9,7 +9,6 @@ icy: 10
 In this post, we're going to explore how to implement a user leaderboard system using Redis. The leaderboard will keep track of user scores and profile information such as username and avatar. 
 
 ## Introduction
-
 Redis is a powerful in-memory data structure store that is used as a database, cache, and message broker. We'll be leveraging two particular data types in Redis: **sorted sets** and **hashes**.
 
 - **Sorted Sets**: In Redis, a sorted set is a data type that has a set of unique elements where each element is associated with a score. It provides us with an efficient way to maintain a list of elements based on their scores, which is perfect for a leaderboard system.
@@ -17,11 +16,9 @@ Redis is a powerful in-memory data structure store that is used as a database, c
 - **Hashes**: Redis hashes are the perfect data structure to store object-like items. We'll use hashes to store user's information like username, avatar type, etc.
 
 ## Let's Get Started
-
 First, ensure you have Redis installed and running on your system.
 
 ### Storing and Retrieving User Scores
-
 We use the `ZADD` command to add users to the sorted set. The command takes the sorted set name, the score, and the user's ID. For example, to add a user with the ID 'user1' and a score of 150, we can use:
 
 ```bash
@@ -43,7 +40,6 @@ ZADD leaderboard XX GT 200 user1
 This command will update 'user1's score to 200 only if 200 is greater than their current score.
 
 ### Storing and Retrieving User Information
-
 We can use the `HSET` command to store user information. For example, to set the username and avatar type for 'user1':
 ```
 HSET user:user1 username "John Doe" avatar "TypeA"
@@ -55,7 +51,6 @@ HGETALL user:user1
 ```
 
 ## Tying It All Together
-
 Before we look at the specific commands to update both the sorted set and hash when a user achieves a new score, let's visualize the whole flow with the diagram below:
 
 ![Flow Diagram](_assets/Flow_Diagram.png)
@@ -66,7 +61,6 @@ This diagram depicts the flow as follows:
 - The application also updates the score in the Redis Sorted Set (the leaderboard).
 - The Redis hash and sorted set return the updated user info and leaderboard to the application.
 - The application displays the updated leaderboard to the user.
-
 
 Now that we know how to store and retrieve user scores and profile information, we can tie it all together. 
 
@@ -89,7 +83,6 @@ HGETALL user:user1
 ```
 
 ## Conclusion
-
 That's it! We've created a simple but effective leaderboard system using Redis' sorted sets and hashes. Redis is a powerful tool for such use cases due to its speed and efficient data structures.
 
 ## Reference
@@ -98,12 +91,11 @@ That's it! We've created a simple but effective leaderboard system using Redis' 
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

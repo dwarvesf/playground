@@ -213,7 +213,6 @@ doSomethingWithFutureArguments(<-ca, <-cb)
 ```
 
 ## Some handy concurrency patterns in Go
-
 ### Launching our first goroutine
  Here we have a trivial Go program, which launch a single additional goroutine. By using a trick `time.Sleep` we can show that both main and the launched goroutine are running.
  
@@ -698,7 +697,6 @@ func fakeSearch(kind string) Search {
 type Result string
 ```
 
-
 Well, let's fake it, completely. Let's construct a thing caleld a `fakeSearch`, all our `fakeSearch` is going to do is sleep for a while then return whatever the fake answer is that it wants, which is very uninteresting, it says, here's your result. But the point is that there's multiple of them. Notice here, this `Search` is a new type of a function that takes a query an returns a `Result`, so that's sort of a type definition for what a search actually does. We construct these functions for a web, an image, and a video service. Very simple, all they do is pause for a while, then print. They're set to wait for up to 100 milliseconds.
 
 ### Google Search 1.0
@@ -923,15 +921,13 @@ More important, the individual elements of the program are all just straightforw
 - https://go101.org/article/concurrent-common-mistakes.html
 - https://pkg.go.dev/time
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

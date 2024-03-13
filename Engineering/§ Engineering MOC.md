@@ -6,7 +6,6 @@ recurringTemplateName: engineering-moc
 This is a [[Map of Content]] related to the engineering.
 
 ## Engineering
-
 - [[Engineering/URL Redirect vs. Rewrite; What’s the difference?.md|URL Redirect vs. Rewrite; What’s the difference?]]
 - [[Engineering/UML state machine diagram.md|UML state machine diagram]]
 - [[Engineering/Why invest in tools.md|Why invest in tools]]
@@ -73,6 +72,5 @@ This is a [[Map of Content]] related to the engineering.
 - [[Engineering/Acceptance test in Elixir.md|Acceptance test in Elixir]]
 - [[Engineering/A and CNAME records in DNS.md|A and CNAME records in DNS]]
 - [[Engineering/ACID model.md|ACID model]]
-
 
 *This page was last modified at 2024-01-22T06:13:43.385Z*.

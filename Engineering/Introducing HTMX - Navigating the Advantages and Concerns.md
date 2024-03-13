@@ -16,7 +16,6 @@ HTMX is a hypermedia-oriented Javscript library for creating dynamic website wit
 Giving user access to `AJAX`, `Websocket`, `Server Sent Event (SSE)`, `Css Transition`, ...
 
 ## Hypermedia-Oriented
-
 `Hypermedia-Oriented` approach involves clients and servers sharing a common understanding of a set of hypermedia elements in data representations. Clients can use elements to trigger requests, navigate states while Servers provide the necessary hypermedia options in the responses. 
 In this way, any modification in server side wont break the client application as long as the client can recognize the defined hypermedia options.
 
@@ -61,6 +60,7 @@ htmx.ajax('GET', '/example', '#myDiv').then(() => {
     console.log('Content inserted successfully!');
 });
 ```
+
 ### Server Generate Events 
 HTMX also facilitates the triggering of events on the client-side, based on server responses. For instance, a response containing the header `HX-Trigger: contacts-updated` will trigger the `contacts-updated` event at the specified HTML element, and the corresponding event listener will be activated.
 ```html
@@ -88,15 +88,12 @@ document.body.addEventListener('htmx:beforeSwap', function(evt) { (1)
 
 ## The Advantages Of HTMX
 ### Minimal Of Javacsript - Reduce Development Complexity
-
 HTMX reduces an amount of Javascript code needed to create a dynamic Web applications. This approach leads to a more cleaner and maintainable code base.
 
 ### Improved Performance
-
 HTMX is lightweight, leading to faster initial page loads and reduced client-side processing. This results in a better user experience, especially for web applications with frequent UI updates. However, in large-scale applications with frequent UI updates, React is better in performance thanks to its virtual DOM.
 
 ### Locality of Behaviour (LoB)
-
 HTMX emphasizes the locality of behavior, enabling developers to understand code functionality within a small, self-contained portion. This enhances code transparency and maintainability while streamlining development efforts.
 
 ### Product Agility
@@ -104,7 +101,6 @@ HTMX works in improving product agility as it has been proven in [a real-world t
 
 ## The Concerns With HTMX
 ### Violation of Separation of Concerns (SOC)
-
 HTMX can blur the lines between data management and presentation, as backends must respond with HTMX content rather than traditional RESTful APIs with Json. As a result, some many different clients such as mobile app, browser, ... might not able to consume the API.
 
 ### Trade-Offs in Control
@@ -135,12 +131,11 @@ HTMX offers a fresh approach to web development, enhancing product agility and s
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

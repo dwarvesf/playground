@@ -10,11 +10,9 @@ icy: 10
 Unified Modeling Language (UML) is a powerful tool used in software engineering to visualize, design, and communicate the structure and behavior of systems. Among its various diagram types, the UML State Machine Diagram stands out as a fundamental representation of the dynamic behavior of an object or system. In this article, we will delve into the intricacies of UML State Machine Diagrams, exploring their components, symbols, applications, and benefits.
 
 ### Introduction to UML State Machine Diagrams
-
 At their core, UML State Machine Diagrams capture the state transitions and behaviors of objects or entities within a system. These diagrams provide a clear representation of how an object's state changes in response to events and conditions, ultimately leading to a better understanding of the system's behavior. UML State Machine Diagrams are particularly useful in modeling complex behaviors, especially those that involve multiple states and intricate transitions.
 
 ### Components of UML State Machine Diagrams
-
 1. **States:** A state represents a condition or mode that an object can be in. For example, in a traffic light system, states could include "Red," "Yellow," and "Green." Each state is depicted as a rounded rectangle with the state's name inside.
 
 2. **Transitions:** Transitions depict the change from one state to another due to events or conditions. These are represented by arrows connecting the states and are labeled with the triggering event or condition that leads to the transition. Transitions can also have associated actions or effects that occur when the transition takes place.
@@ -28,7 +26,6 @@ At their core, UML State Machine Diagrams capture the state transitions and beha
 6. **Initial and Final States:** An initial state indicates the starting point of the state machine, while a final state marks the end point. An object may enter the final state after reaching a specific state or completing its task.
 
 ### Symbols in UML State Machine Diagrams
-
 1. **State:** Rounded rectangle with the state's name inside.
 2. **Transition:** Arrow connecting states, labeled with the triggering event/condition.
 3. **Event:** Named occurrence that triggers transitions.
@@ -40,7 +37,6 @@ At their core, UML State Machine Diagrams capture the state transitions and beha
 ![Sample UML State machine diagram](_assets/uml-state-machine-diagram.png)
 
 ### Applications of UML State Machine Diagrams
-
 UML State Machine Diagrams find applications across various domains:
 
 1. **Software Development:** In software engineering, these diagrams model the behavior of objects or components within a system. They assist developers in understanding and implementing complex state transitions and behaviors.
@@ -54,7 +50,6 @@ UML State Machine Diagrams find applications across various domains:
 5. **Communication Protocols:** When designing communication protocols or network systems, state machine diagrams are invaluable for illustrating how devices or systems react to various messages and conditions.
 
 ### Benefits of Using UML State Machine Diagrams
-
 1. **Clarity and Understanding:** These diagrams provide a visual representation of dynamic behavior, making it easier for stakeholders to understand how a system operates.
 
 2. **Complexity Management:** UML State Machine Diagrams help manage complex behaviors by breaking them down into states, transitions, and actions, simplifying the design process.
@@ -66,7 +61,6 @@ UML State Machine Diagrams find applications across various domains:
 5. **Documentation:** These diagrams serve as comprehensive documentation for the system's behavior, aiding in future maintenance and updates.
 
 ### Conclusion
-
 UML State Machine Diagrams are a powerful tool for modeling and understanding the dynamic behavior of systems, objects, and entities. By visually representing states, transitions, events, and actions, these diagrams offer a clear picture of how a system behaves under different conditions. Their applications in software development, embedded systems, game design, and more make them a crucial asset for designers, developers, and stakeholders alike. With their ability to simplify complexity and improve communication, UML State Machine Diagrams continue to play a pivotal role in modern software engineering and system design.
 
 ### References
@@ -75,15 +69,13 @@ UML State Machine Diagrams are a powerful tool for modeling and understanding th
 - https://sparxsystems.com/resources/tutorials/uml2/state-diagram.html
 - https://www.lucidchart.com/pages/uml-state-machine-diagram
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

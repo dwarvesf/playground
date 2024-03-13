@@ -14,8 +14,8 @@ github_id: mickwan1234
 date: 2024-01-22
 icy: 10
 ---
-## Introduction
 
+## Introduction
 Google Data Fusion is a fully managed, cloud-native data integration service that enables users to efficiently build and manage ETL/ELT data pipelines. It is designed to streamline data engineering tasks for enterprise users and is built on top of the open-source project CDAP
 
 . Key features and benefits of Google Data Fusion include:
@@ -29,7 +29,6 @@ Google Data Fusion is a fully managed, cloud-native data integration service tha
 Overall, Google Data Fusion simplifies data engineering tasks and enables users to focus on data analytics and deriving insights for better customer service and operational efficiency
 
 ## Use Cases
-
 Google Cloud Data Fusion is a powerful tool for building and managing data pipelines, and its use cases are diverse and expanding. Here are some of the most common and impactful ways organizations are using it:
 
 **Data Integration and ETL:**
@@ -58,7 +57,6 @@ Google Cloud Data Fusion is a powerful tool for building and managing data pipel
 These are just a few examples, and the possibilities for using Data Fusion are vast. Its flexibility, scalability, and ease of use make it a valuable tool for organizations looking to unlock the potential of their data.
 
 ## Pricing
-
 Google Data Fusion have some pricing tier in the following table:
 ![[Google Data Fusion-20240122120201050.webp]]
 
@@ -66,15 +64,12 @@ Comparison between the tiers:
 ![[Google Data Fusion-20240122120216075.webp]]
 
 ## How to setup Data fusion:
-
 ### **Prerequisites:**
-
 1. **Google Cloud Platform Account:** Ensure that you have a Google Cloud Platform (GCP) account. If you don't have one, you can sign up [here](https://cloud.google.com/).
 2. **Enable the Cloud Data Fusion API:** In the GCP Console, navigate to the API & Services > Dashboard. Search for "Cloud Data Fusion API" and enable it.
 3. **Install and Configure Google Cloud SDK:** Install the [Google Cloud SDK](https://cloud.google.com/sdk) on your local machine. After installation, run **`gcloud init`** to set up your credentials and project.
 
 ### **Steps to Set Up Google Cloud Data Fusion:**
-
 1. **Create a Cloud Storage Bucket:** Create a Cloud Storage bucket to store the artifacts and metadata required by Cloud Data Fusion. Replace **`[BUCKET_NAME]`** with your desired bucket name.
     
     ```bash
@@ -116,16 +111,14 @@ Comparison between the tiers:
 Remember to replace placeholders like **`[REGION]`**, **`[BUCKET_NAME]`**, **`[INSTANCE_NAME]`**
 
 ## How to setup a simple ETL with Google Data Fusion ( with GCP console):
-
 In this demo we’ll setup a simple ETL pipeline to import, transform load a csv file to a Google Big query data table
 
 ### Step 1: go to the Big Query console page and create a dataset and table:
-
 - On the top left corner of the main page of Big query select add and add a dataset. Then click on the three dot simple on the left side of the data set name to add a table. Right after that. you should see this screem to add a table.
 	- ![[Google Data Fusion-20240122120312319.webp]]
 - Fill in the table name (the only mandatory field that left blank after you do the previous step). You can tweak others setting if you want to. Then click Create Table.
-## Step 2: Go to your Google Data Fusion instance
 
+## Step 2: Go to your Google Data Fusion instance
 - Go to your Data Fusion page and locate your data fusion instance. You should be see it listed right after you go the main page of Data fusion console.
 - Click on the instance you should be able to see a prompt like this:
 	- ![[Google Data Fusion-20240122120335588.webp]]
@@ -133,12 +126,10 @@ In this demo we’ll setup a simple ETL pipeline to import, transform load a csv
 	- ![[Google Data Fusion-20240122120406512.webp]]
 
 ## Step 3: Preparing you CSV file on GCS
-
 - Create a bucket and push you CSV to the storage. I prepared mine like this.
 	- ![[Google Data Fusion-20240122120426619.webp]]
 
 ### Step 4: Start designing your first pipeline
-
 - We’ll create a GCS as a source of data so on the search bar, search for ‘gcs’ and drag the ‘GCS’ simple in the `Source` section to the canvas
 	- ![[Google Data Fusion-20240122120526652.webp]]
 - Click on `Properties` and you should be able to see a screen like this.
@@ -165,7 +156,6 @@ In this demo we’ll setup a simple ETL pipeline to import, transform load a csv
 - Click on the `X` again to go back to the canvas. You completed your first pipeline.
 
 ### Step 5: Deploy and Run your pipeline
-
 - Naming your pipeline ( the name must be unique in the instance). Click on the `Name your pipeline` text on the top left of the screen.
 	- ![[Google Data Fusion-20240122120943004.webp]]
 - Then click on `Deploy` button on the top right to deploy the pipeline.
@@ -183,12 +173,11 @@ And that’s it, you’re done. Congrat on your first data pipeline with Google 
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

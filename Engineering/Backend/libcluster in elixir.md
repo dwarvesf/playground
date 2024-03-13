@@ -13,14 +13,12 @@ In the Dwarves Foundation, we applied some practices to decrease the operation c
 We have followed and used the Elixir stack for several years. In the beginning, we used docker for production and vertical scaling. We didn't use the super-powerful of [Erlang and OTP](https://www.erlang.org/). When constructing Elixir applications, setting up an Erlang node cluster could be required for several factors, including high availability, redundancy, or the requirement to share a global state without relying on an external DBMS.
 
 ## The problem and Motivation
-
 We consistently applied the latest practice in the development life cycle. Dwarves Foundation changed languages, toolsets, architectures, and development processes to build high-performance products. We're using Golang and Elixir in the production environment.
 - From Golang's side, the application(Server, CLI tool) is small and does a specific task. In the [microservices](https://microservices.io/patterns/microservices.html) architecture or [event sourcing](https://microservices.io/patterns/data/event-sourcing.html) architecture, Golang's applications as know as the workers. We can easy horizontal scale up the Golang workers; however, each worker is separated in the cluster. They don't communicate about their task to share the workload or collaboration. The Golang has no built-in technique for sending messages between servers.
 - On the other side, Elixir, we may create modularized applications with an excellent performance by building on top of GenServers and Supervision trees. The mindset changed from an imperative to a declarative paradigm. Each module in Elixir looks like a service in the microservice architecture; they do the separating tasks. Your production infrastructure is generally not designed to support OTP apps if you're only beginning to integrate Elixir into your stack.
 **Libcluster** makes it simple to accomplish this. It supports a variety of techniques, as can be seen [in the documentation](https://hexdocs.pm/libcluster/readme.html). In this document, we go through the Libcluster's feature and set up a cluster in Kubernetes.
 
 ## Setup K8s in the Elixir project
-
 - Prepare the environment.
 - Make `Dockerfile` to build a docker image.
 - Apply the configuration to K8s
@@ -60,7 +58,6 @@ RUN mix release
 ENV REPLACE_OS_VARS=true
 
 # Do not use CMD, leads to issues receiving SIGTERM properly
-
 ENTRYPOINT ["_build/prod/rel/ex_cluster/bin/ex_cluster", "start"]
 ```
 
@@ -206,7 +203,6 @@ spec:
 We can see the `ports` attribute is different with normal way. This configuration help Libcluster can communicate via port 4369.
 
 ### Setup the development and production config
-
 In Elixir, the configs are placed in the `config` folder. We can config the Libcluster's connection strategy for each environment. `Cluster.Strategy.Epmd` for development and `Cluster.Strategy.Kubernetes.DNS` for production.
 
 ```elixir
@@ -259,7 +255,6 @@ end
 ```
 
 ### Run locally
-
 ```bash
 iex --name a@127.0.0.1 --cookie secret -S mix
 
@@ -273,7 +268,6 @@ iex(b@127.0.0.1)> Node.list()
 We can see the `b@127.0.0.1` connect with `a@127.0.0.1` automatically.
 
 ### Apply configuration for K8s
-
 ```bash
 kubectl apply -f k8s/
 
@@ -283,7 +277,6 @@ kubectl logs ex-cluster-f8fcd4f46-22hkw
 The services will start completely.
 
 ## Conclusion
-
 In the meantime, we can take advantage of Elixir's power. We can easy to scale the service in a cluster using K8s, and they can communicate via the Erlang features. The cost-cutting may include reducing 3rd-party service and communication logic in the code base.
 
 ## References
@@ -293,15 +286,13 @@ In the meantime, we can take advantage of Elixir's power. We can easy to scale t
 - https://mbuffa.github.io/tips/20201022-elixir-clustering-on-kubernetes/
 - https://github.com/hieuphq/ex_cluster
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

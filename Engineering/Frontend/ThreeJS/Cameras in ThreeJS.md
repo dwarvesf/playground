@@ -10,7 +10,6 @@ date: 2022-09-15
 This article gives basic information about characteristics of the frequently used types of camera in ThreeJS.
 
 ## Most commonly used types of camera in ThreeJS
-
 You cannot use the `Camera` class directly to initialize a new camera in ThreeJS. Instead, use the `PerspectiveCamera` or `OrthographicCamera` specifically. The **perspective camera** gives information about depth, distances, etc. since it represents perspective in **real life**. On the other hand, with an **orthographic camera**, all sizes are projected the same way and we can easily compare them accurately.
 
 The image below shows the object viewed in **perspective camera** (upper) and in **orthographic camera** (lower).
@@ -22,7 +21,6 @@ Place them into the **Oxyz** coordinate...
 ![](_assets/uIocTAX.png)
 
 ### Perspective camera
-
 ![](_assets/OIpfGw7.png)
 
 Some crucial attributes:
@@ -42,7 +40,6 @@ Perspective camera visualization from [r105.threejsfundamentals.org](https://r10
 <iframe height="400" style="width: 100%;" scrolling="no" title="ThreeJS - Cameras - Perspective 2 views" src="https://codepen.io/nguyend-nam/embed/abGmYBp?default-tab=result" frameborder="no" allowfullscreen="true"></iframe>
 
 ### Orthographic camera
-
 ![](_assets/cX1U9zI.png)
 
 Some crucial attributes:
@@ -73,15 +70,13 @@ Beside those 2 most frequently used cameras, ThreeJS also provides various optio
 - https://wiki.freecadweb.org/index.php?title=File:Orthographic_Perspective.gif
 - https://www.celestron.com/blogs/knowledgebase/what-is-the-field-of-view-of-a-pair-of-binoculars
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -10,13 +10,11 @@ Data-fetching libraries are software tools or frameworks that can help improve t
 Let's dive in how it works.
 
 ## Deduplication
-
 Data-fetching libraries typically use caching strategies to reduce the number of network requests that need to be made, and improve the performance of the application. By using a unique key as the identifier and stale-while-revalidate as cache validation, the library will return responses from cached data or make a network request.
 
 ![[render-optimization-in-data-fetching-1.png]]
 
 ## Data selection
-
 Everytime a request is sent, the corresponding components will be updated by 3 very common stateful values:
 
 ```json
@@ -36,7 +34,6 @@ const { data, error } = useRequest(...)
 ```
 
 ## Structural sharing
-
 Structural sharing is the most advance feature that can optimize rendering over data selection. One of the data-fetching libraries has turned on out of the box is [React Query](https://tanstack.com/query/latest/). To use this feature, makes sure your data is kept referential identity on every level. As an example, suppose we have the following data structure:
 
 ```json
@@ -69,7 +66,6 @@ const { data } = useTodo(2)
 In some instances, especially when having very large datasets, structural sharing _can_ be a bottleneck. Let's use it carefully.
 
 ## References
-
 - https://tkdodo.eu/blog/react-query-render-optimizations
 - https://nextjs.org/docs/app/building-your-application/data-fetching
 - https://swr.vercel.app/docs/advanced/performance
@@ -77,12 +73,11 @@ In some instances, especially when having very large datasets, structural sharin
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

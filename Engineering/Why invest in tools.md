@@ -14,18 +14,15 @@ Experiments like this are risky because they could be not exciting to other or t
 Every single project could face considerable internal opposition. There will be people who want a project to admit failure earlier. And yet they continued. Facebook has both the engineering management philosophy as well as some great engineering managers who know how important it is to trust your people. Despite opposition from some trusted co-workers, despite not yet understanding the value, despite there being more important things to work on, good managers trust individuals to take the right risks and focus their time where they believe they will find impact.
 
 #### Reference
-
 - https://leebyron.com/why-invest-in-tools/
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

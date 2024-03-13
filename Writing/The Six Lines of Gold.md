@@ -6,11 +6,9 @@ date: 2022-09-26
 ---
 
 ## Introduction
-
 The Six Lines of Gold are a series of phrases organized by Tim Ferriss. It essentially includes a technique to learn, but not master, any language within an hour. Although time to learn varies per person, these lines hint at several distinctions related to variations in [[Syntax and Semantics in Language|syntax and semantics]] across languages.
 
 ## Reasoning
-
 The reasoning behind using these phrases is to cover a good portion of commonly spoken and written variations of related thematic roles. The technique helps to deconstruct the language to focus on key nuances and idiosyncracies that come with conversational and written languages.
 
 In essence, they ask the following questions (taken from [Tim's blog](https://tim.blog/2007/11/07/how-to-learn-but-not-master-any-language-in-1-hour-plus-a-favor/)):
@@ -32,7 +30,6 @@ The idea of finding similarities is to also help acquire fluency faster while al
 Fluency encompasses not only general understanding of the native writing system, but also sounds, phonetics, and tones.
 
 ## Examples
-
 ### Canonical example in English
 1) The apple is red.
 2) It is John’s apple.
@@ -52,15 +49,13 @@ Fluency encompasses not only general understanding of the native writing system,
 ## Reference
 - https://tim.blog/2007/11/07/how-to-learn-but-not-master-any-language-in-1-hour-plus-a-favor/
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

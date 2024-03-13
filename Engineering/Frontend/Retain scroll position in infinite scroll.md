@@ -7,7 +7,6 @@ icy: 10
 ---
 
 ## Infinite scroll - Benefits and Challenges
-
 Infinite scroll has become a popular web design technique in recent years, as it offers several benefits over traditional pagination models such as reducing page load times or minimizing the need for users to browse through multiple pages. However, it can also present some painful challenges for accessibility and usability. One of the most common issues happens when you are scrolling the list, then click on an item to view its detail (and of course, is navigated to another page). When going back to the list, you lose your previous scroll position and have to scroll all the way to find the item you clicked on before.
 
 ![](http://www.explainxkcd.com/wiki/images/5/56/infinite_scrolling.png)
@@ -15,7 +14,6 @@ Infinite scroll has become a popular web design technique in recent years, as it
 *Image Source: [https://www.explainxkcd.com](https://www.explainxkcd.com/wiki/index.php/1309:_Infinite_Scrolling)*
 
 ## Solution
-
 In this article, we will show you an approach using the session storage to store the scroll position, with the infinite scroll implemented using [`useSWRInfinite`](https://swr.vercel.app/docs/pagination.en-US#useswrinfinite).
 
 ```javascript
@@ -84,18 +82,15 @@ The hook `useRetainPosition` is called in the listing page that uses the infinit
 This makes sense since as mentioned above, when user clicks on an item and is navigated to the detail page, we will store those data to the session storage, and when user wants to go back to the listing page, `useRetainPosition` can retrieve those data and the page will be scrolled to the previous position. After calling `window.scrollTo(0, listStates.scrollPosition)`, don't forget to remove the relating data from the session storage to prevent unwanted scrolling behaviors of the page in the future.
 
 ## Reference
-
 - https://www.explainxkcd.com/wiki/index.php/1309:_Infinite_Scrolling
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

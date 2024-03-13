@@ -8,9 +8,7 @@ date: 2022-08-31
 The [[UIKit Builder pattern]] enables us to create and configure a UIView object. This article is part two of the series that explains how we can wrap a container element in Swift by using the builder pattern.
 
 ## How can we wrap the container elements using Swift builder?
-
 ### Function Builder
-
 Function Builders are used in SwiftUI to create VStacks. If you've heard about the VStack component, it was built using Function Builders.
 
 ```Swift
@@ -21,7 +19,6 @@ VStack {
 ```
 
 ### `@resultBuilder`
-
 Swift 5.4 introduces @resultBuilder, a new feature that makes it even easier to use SwiftUI. This new feature also extends Swift's DSL capabilities to standard Swift language, allowing you to take advantage of DSLs in more areas of your codebase (the detail can be found [here](https://github.com/apple/swift-evolution/blob/main/proposals/0289-result-builders.md)).
 
 From now on you can easily write HTML forms in Swift as follows:
@@ -61,7 +58,6 @@ UIHStack {
 ```
 
 ### Turn UIKit into DSL styling
-
 Let's define a DSL UIViewBuilder. A DSL UIViewBuilder turns a list of UIViews into a UIView.
 
 ```Swift
@@ -172,9 +168,7 @@ UIZStack(spacing: 16) {
 ```
 
 ### Bonus parts
-
 #### Support `if-else` and `loop`
-
 The `@resultBuilder` module has a static function named `buildEither` that can be used to add if-else statements to your DSL as well as a function named `builderArray` that can be used to loop through data. These two functions work just like `buildBlock` does:
 
 ```Swift
@@ -201,7 +195,6 @@ UIHStack {
 ```
 
 #### Config container
-
 Adding configuration to the init method to set the container view.
 
 ```Swift
@@ -220,15 +213,13 @@ UIHStack(alignment: .trailling, spacing: 8) {
 }
 ```
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

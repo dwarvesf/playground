@@ -18,7 +18,6 @@ This note aims to discuss such a pattern, made possible with:
 First, let's step back & take a quick look at what is a fragment.
 
 ## Fragments
-
 A [GraphQL fragment](http://graphql.org/learn/queries/#fragments) is a piece of logic that can be shared between multiple queries and mutations.
 
 Here's the declaration of a `NameParts` fragment that can be used with any `Person` object:
@@ -62,7 +61,6 @@ If we later _change_ which fields are included in the `NameParts` fragment, 
 That's it for fragment. Let's move on to how we actually implement a colocation pattern with fragments and React.
 
 ## Example: Animal Cards and Lists
-
 Let's consider an example where we're building an application that showcases cats and dogs. We want to implement reusable components to display individual animal cards (`CatCard` and `DogCard`) as well as lists of animals (`CatList` and `DogList`).
 
 For backend, let's say we are using [NestJS]([NestJS - A progressive Node.js framework](https://nestjs.com/). The schema consists of the following types:
@@ -245,7 +243,6 @@ In the above code, the `CatList` and `DogList` are using the query hooks generat
 All the types match perfectly.
 
 ## The Benefits
-
 This pattern offers several benefits:
 
 - **Code Reusability:** By defining fragments alongside their respective components, we can reuse the fragments in multiple queries and components. This avoids duplicating field definitions and promotes modular and reusable code.
@@ -255,7 +252,6 @@ This pattern offers several benefits:
 - **Automatic, Strict Typing**: Instead of manually defining types for the components, we are using types generated based on the fragments they are consuming. This ensure the types we are using will always map to a valid GraphQL model. Whenever we update a fragment, the corresponding type will also be updated.
 
 ## The Disadvantages
-
 While the Fragment Colocation Pattern provides several advantages, it's important to consider its limitations:
 
 - **Fragment Duplication:** If fragments are not organized and managed effectively, there is a risk of duplicating fragments across different components. This can lead to maintenance challenges and inconsistencies if modifications are required.
@@ -264,7 +260,6 @@ While the Fragment Colocation Pattern provides several advantages, it's importan
 	- *Personal take:* *When we bubble types from children to parent, as the component trees grow bigger, it could become harder and harder to trace the fragments back to where they actually begin, especially when we couldn't organize or reuse the components effectively. It's a top-down vs bottom-up way of looking at components. We can quickly find the top, but we might need to dig around for a bit to find the bottom.*
 
 ## Conclusion
-
 The pattern we have discussed provides an effective way to colocate fragments with their corresponding components, while also provides strict typing and other quality-of-life features with extra toolings. 
 
 This pattern enhances code reusability, consistency, and readability. By reusing fragments across components that share common fields, we can avoid duplication and ensure a more maintainable codebase.
@@ -275,12 +270,11 @@ All in all, personally I think this a pattern that's *easy to adopt, hard to mas
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

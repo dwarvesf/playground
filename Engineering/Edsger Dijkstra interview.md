@@ -4,7 +4,6 @@ author: Pham Duc Thanh
 github_id: zlatanpham
 date: 2022-05-09
 ---
-
 Edsger W. Dijkstra was an influential computer scientist and is well known for his contributions to graph theory algorithms. But, in fact, he also had a deep programming perspective. Here are notes extracted from one of his interviews that give us so much insight.
 
 1. Software version numbers 2.6 or 2.7 are nonsense. While version 1 should have been the finished product, software companies always try to sell incomplete versions first. It needs not be any good. As long as they can fool people into buying it, you can always make better versions later.
@@ -30,18 +29,15 @@ Edsger W. Dijkstra was an influential computer scientist and is well known for h
 11. Why do so few people pursue elegance? This is the truth of it: If there is a downside to elegance, it's that you need to work hard to get it, and good education to appreciate it.
 
 #### References
-
 - https://www.youtube.com/watch?v=mLEOZO1GwVc&ab_channel=HansOtten
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

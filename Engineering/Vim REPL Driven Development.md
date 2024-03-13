@@ -6,7 +6,6 @@ tags: vim, repl, bash, ocaml, python, javascript, vim-slime
 ---
 
 ## Introduction
-
 There are two ways that we can use to run computer programs: compiling and
 interpreting. Correspondingly, on workflow, for compiled languages, we have a
 Edit Compile Execute Loop, and for interpreted languages, we have a Read
@@ -46,7 +45,6 @@ However, in this post, I'm gonna be a heretic. I'm going to guide you on how to
 do REPL Driven Development on any language that has a REPL ready, using Vim.
 
 ## Prerequisites
-
 I'm gonna assume that you, the readers, are proficient command line users. Apart
 from working with Vim well (using Vim key bindings everywhere and understanding
 Vim plugin installation), you also need to be okay at using tmux (knowing what
@@ -59,7 +57,6 @@ the idea behind, `vim-slime` can be replaced with other plugin.
 https://github.com/jpalardy/vim-slime
 
 ## The General Idea
-
 ```mermaid
 sequenceDiagram
 autonumber
@@ -101,7 +98,6 @@ code block into the bottom REPL.
 ```
 
 ## Demonstrations
-
 > Talk is cheap. Show me the ~~code~~ GIFs.
 
 I guess my explanations bored you enough. Here are some demonstrations that I
@@ -109,23 +105,18 @@ created. `C-c C-c` (or double `Ctrl C`) is the key binding that I used to send
 a code block from Neovim to the second pane of tmux.
 
 ### Python
-
 ![[repl-driven-development-python.gif]]
 
 ### JavaScript
-
 ![[repl-driven-development-javascript.gif]]
 
 ### OCaml
-
 ![[repl-driven-development-ocaml.gif]]
 
 ### Shell
-
 ![[repl-driven-development-shell.gif]]
 
 ## Conclusion
-
 REPL Driven Development is an interesting and joyful approach to software
 development, but I think it has its drawbacks. The main one that I can think of
 is the limitations from a language's module implementation: while Clojure has a
@@ -139,12 +130,11 @@ with the language's syntax and standard library.
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

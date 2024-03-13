@@ -27,9 +27,7 @@ The main purpose of this architecture is Efficiency, the first strategy is incen
 - **LX-to-Ly Bridge** is a smart contract can help users transfer assets between two layers.
 
 ### How does it work?
-
 #### What is Proof of Efficiency?
-
 PoE solve the problem relate to decentralized and permissionless validators in Layer 2. Using zk-STARK for proving purpose, this proof are very fast but they are very big size. So, using zk-SNARK to attest to the correctness of the zk-STARK proofs. This help in reducing the gas cost from 5M to 350k.
 
 **Sequencer** create a batch of Layer 2 transaction from users and so select and pre-process a new L2 batch in network by sending a L1 tx with the data of all selected Layer 2 TXs. The transaction in L2 will be in format on L1 transaction with information in the **CALLDATA**, it will be used as the data available for the L2 network and L2 node will be able to synchronize the state. The new state is settled (validity proof of new state is generated and mined in L1) these data availability on L1 transaction define the L2 TXs that will be executed in specific order.
@@ -79,7 +77,6 @@ Prover generate verifiable proof process:
 You can read more [here](https://docs.hermez.io/zkEVM/zkProver/Overview/zkProver-Overview/#the-stark-recursion-component)
 
 #### Bridge flow
-
 **The Bridge L1 contract** have two operations, it requires two Merkle trees in order to work: globalExitTree and mainnet exit tree.
 - **bridge** transfer asset from one rollup to another
 - **claim** make claim from any rollup
@@ -89,15 +86,12 @@ You can read more [here](https://docs.hermez.io/zkEVM/zkProver/Overview/zkProver
 ![zkNode's](./../_assets/fig3-zkNode-arch-aa4d18996fba1849291ea18e3f11d955.png)
 
 #### RPC
-
 Provide a RPC interface compatible with ethereum so application like Metamask, etherscan can connect and interact. RPC also add transactions o the pool and interact with the state via read-only methods.
 
 #### State
-
 State implement a Merkle Tree and connect to DB backend. it checks integrity of block, transaction information. State also stores smart contract code in to the merkle tree and process transaction using EVM.
 
 ## Reference
-
 - [Polygon zkEVM documentation](https://docs.hermez.io/zkEVM/Basic-Concepts/Intro-zkProver%27s-Design-Approach/)
 - [Proof of Efficiency](https://ethresear.ch/t/proof-of-efficiency-a-new-consensus-mechanism-for-zk-rollups/11988)
 - [LX-to-LY Bridge](https://wiki.polygon.technology/docs/zkEVM/lx-ly-bridge)
@@ -107,12 +101,11 @@ State implement a Merkle Tree and connect to DB backend. it checks integrity of 
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

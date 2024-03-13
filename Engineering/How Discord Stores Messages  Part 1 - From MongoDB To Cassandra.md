@@ -7,13 +7,11 @@ icy: 10
 ---
 
 ## Introduction
-
 The story of how Discord stores data, what technologies they have used/ been using to "adapt" the continuously growing users data.
 
 <br/>
 
 ## Context
-
 In early 2015, Discord was built choosing MongoDB for its quick data iteration. All data was stored in a single MongoDB replica set intentionally - but planned everything for easy migration to a new database (MongoDB sharding is too complicated to use and not stable)
 
 Their MongoDB collection with a single compound index `(channel_id, created_at)` could no longer handle 100 million messages (around November 2015), therefore the migration to a new database.
@@ -21,7 +19,6 @@ Their MongoDB collection with a single compound index `(channel_id, created_at)`
 <br/>
 
 ## Choosing the right database
-
 To understand the read/write patterns and identify the current problems are prerequisite:
 - Discord's reads were mostly random and the read/write ratio was 50/50
 - Voice chat heavy Discord servers sent ~1000 messages a year at the time but returning these messages to a user could result in random seeks on disk, hence [disk cache eviction](https://www.mongodb.com/community/forums/t/how-to-check-cache-eviction-occurred-or-not-how-to-simulate-cache-eviction/172040)
@@ -43,7 +40,6 @@ Then the requirements:
 <br/>
 
 ## Data Modeling
-
 Bear in mind that [Cassandra is a distributed database](https://cassandra.apache.org/doc/latest/cassandra/data_modeling/intro.html) :
 **KKV database**  - the first K stands for partition key used to partition data among the nodes while the second K is clustering key used for sorting within a partition.
 
@@ -66,7 +62,6 @@ Bucket the messages by time (10 days - after estimation) would guarantee the siz
 ```
 DISCORD_EPOCH = 1420070400000
 BUCKET_SIZE = 1000 * 60 * 60 * 24 * 10
-
 
 def make_bucket(snowflake):
    if snowflake is None:
@@ -97,7 +92,6 @@ CREATE TABLE messages (
 <br/>
 
 ## Eventual Consistency
-
 Right after launching, the bug tracker found that the `author_id` was null despite of being a required field. It happens in the scenario that a user edits a message at the same time another one deletes the same message, the row only had values of primary key and the text while the rest is null.
 
 The explanation for this behavior of Cassandra is that Cassandra is an [AP](https://en.wikipedia.org/wiki/CAP_theorem) database which means it trades consistency for availability (as Discord wanted).
@@ -111,7 +105,6 @@ This has 1 flaw only realized after rolling out about 6 months that a public Dis
 <br/>
 
 ## Future Plan
-
 At the time, Discord were running 12-node cluster with a replica factor of 3. Continue to add new Cassandra nodes seems fine as Netflix and Apple were running hundreds of nodes.
 
 - Near term: 
@@ -124,7 +117,6 @@ At the time, Discord were running 12-node cluster with a replica factor of 3. Co
 <br/>
 
 ## References
-
 - https://www.mongodb.com/community/forums/t/how-to-check-cache-eviction-occurred-or-not-how-to-simulate-cache-eviction/172040
 - https://cassandra.apache.org/doc/latest/cassandra/data_modeling/intro.html
 - https://datacadamia.com/cassandra/cassandra#kkv_store
@@ -133,12 +125,11 @@ At the time, Discord were running 12-node cluster with a replica factor of 3. Co
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

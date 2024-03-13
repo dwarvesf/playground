@@ -6,11 +6,9 @@ date: 2023-06-19
 ---
 
 ## Introduction
-
 Mock Service Worker (MSW) is an API mocking library that leverages the Service Worker API to intercept requests. It offers unique features that set it apart from traditional mocking libraries, making it a go-to choice for developers. With MSW, you can seamlessly mock both RESTful and GraphQL APIs, providing flexibility for various API architectures. Additionally, MSW supports both Node.js and browser environments, enabling consistent API mocking across different parts of your application. Let's explore how MSW empowers developers to reliable web applications by seamlessly working in both Node.js and browser environments
 
 ## Applying MSW for API Interception in Development
-
 MSW operates client-side by using a Service Worker to intercept requests. However, we don't have to write any of the worker's code by ourselves, but rather copy the worker file distributed by the library. This CLI will help us to do that
 
 ```bash
@@ -89,7 +87,6 @@ export const handlers = [
 This allows us to verify that our component behaves correctly and handles various API responses or errors gracefully, even if the backend is not fully implemented or we want to test different scenarios without relying on the actual API response.
 
 ## Applying MSW for React Testing
-
 One of the most common use cases for MSW is leveraging its request handlers for integration tests. MSW allows you to seamlessly incorporate mocking into any Node process To configure the server:
 
 ```js
@@ -154,19 +151,16 @@ test('handle error responses', async () => {
 The `server.use` function allows us to add a runtime handler to our mock server. However, it's important to note that any handlers added in runtime will be removed when `server.resetHandlers()` is called.
 
 ## Reference
-
 - [Mocking API Servers with Mock Service Worker (MSW)](https://blog.openreplay.com/mocking-api-servers-with-mock-service-worker-msw/)
 - [MSW Documentation](https://mswjs.io/docs/)
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

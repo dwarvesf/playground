@@ -8,7 +8,6 @@ date: 2022-10-02
 The key to improving your website speed is to understand where the bottlenecks are, and how much time each step takes. When we talk about web performance basically we talk about either the two aspects: network latency and browser rendering.
 
 ## Network latency
-
 Network latency is related to how long it takes for a request to be sent from your computer to the server and back again, and then rendered by the browser. It is affected by many factors, including your ISP speed, DNS lookup, TCP handshakes, the number of hops between you and the server, request processing time on the server and so on. If your website uses a lot of static assets (images, videos, etc), it will take longer for all of these requests to be sent over the network, which can negatively impact page load times.
 
 There are numerous ways to improve network latency but following are the key points:
@@ -20,7 +19,6 @@ There are numerous ways to improve network latency but following are the key poi
 - Use a CDN
 
 ## Browser rendering
-
 Browser rendering is how long it takes for your browser to display your page after receiving all of its data. The process contains a series of steps that the browser performs on a web page to display on the screen. Each of these individual steps is complex and has been optimized over time by browser vendors.
 
 There are many different browsers out there, but they all perform the same basic set of steps when rendering a webpage. These steps can be broken down into 2 parts:
@@ -49,21 +47,18 @@ In addition to parsing, browsers also run pixel pipelines on each frame. Pixel p
 The goal of delivering a fast, smooth transition web application is **to do less work** during the rendering process. You need to understand how HTML, JavaScript and CSS are handled by browsers as each phase occurs. Then ensure that the code you write (and the other 3rd party code you include) runs as efficiently as possible. For example, to reduce the amount of time it takes for style calculations to be completed, understand [CSS specificity](https://web.dev/learn/css/specificity/) so you can write simple class names and reduce the number of styles that affect a given element.
 
 ## Reference
-
 - [Katie Sylor Miller :: Happy Browser, Happy User!](https://www.youtube.com/watch?v=VAKD_Ob0XTQ&t=568s&ab_channel=estellevw)
 - https://web.dev/rendering-performance/
 - https://codeburst.io/painting-and-rendering-optimization-techniques-in-browser-2e53a70e7ee
 - https://web.dev/critical-rendering-path-render-tree-construction/
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

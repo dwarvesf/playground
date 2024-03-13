@@ -11,13 +11,10 @@ During our research on applying LLM to real-world applications, we have observed
 ## History of vector database
 Vector databases have emerged as a crucial component in natural language processing and machine learning. They are built upon the idea of representing data as vectors in high-dimensional spaces. Vector databases efficiently store and retrieve vector representations, allowing for fast similarity-based searches. They have evolved from word embeddings to support various linguistic units and complex data structures. By leveraging vector databases, models like GPT can access and utilize pre-computed vector representations, enhancing their semantic understanding and information retrieval capabilities. The development of vector database technologies is expected to continue advancing, providing more sophisticated solutions for managing and utilizing vector representations in diverse applications.
 
-
 ## What is vector database
-
 A vector database is a specialized database designed to store, manage, and query vector data. Unlike traditional databases that focus on structured data, vector databases are optimized for the storage and manipulation of high-dimensional vector representations. They enable efficient handling of vector data, allowing for complex operations such as vector similarity search, clustering, and recommendation.
 
 ## Use case of vector database
-
 - Long term memory for LLM
 - Semantic search: search base on the meaning of the context
 - Similarity search for text, image, audio, video data
@@ -26,7 +23,6 @@ A vector database is a specialized database designed to store, manage, and query
 - Fraud Detection and Anomaly Detection: historical data or user behavior patterns to identify fraudulent activities, detect anomalies in data streams, and flag suspicious patterns
 
 ## Core concept of Vector database
-
 - Data is transformed into vectors using a specific algorithm, and similar data points on the same coordinate system have close distances.
 - Data is stored in a data structure optimized for vector queries.
 - Indexing in vector databases differs from traditional databases. Vector databases use algorithms like KD-tree and LSH for clustering and sorting.
@@ -38,13 +34,10 @@ A vector database is a specialized database designed to store, manage, and query
     - Selecting the suitable search algorithm (Cosine similarity, DotProduct, Euclidean distance).
 
 ## Using Vector Database with LLM
-
 ### Choosing the Right Vector Encoding
-
 LLMs typically use models like Word2Vec, BERT, and transformer-based variants.
 
 ### Configuring proper vector search parameter
-
 To achieve optimal efficiency, configure the search parameters appropriately. Pay attention to parameters such as:
 
 - Match threshold: 0.78
@@ -52,7 +45,6 @@ To achieve optimal efficiency, configure the search parameters appropriately. Pa
 - Minimum content length: 50
 
 ### Selecting the suitable Metric for content
-
 - Cosine Similarity:
     - Cosine Similarity calculates the cosine of the angle between two vectors. It measures the directional similarity of vectors.
     - The Cosine Similarity value ranges from [-1, 1], where 1 represents identical vectors and -1 represents completely opposite vectors.
@@ -69,7 +61,6 @@ To achieve optimal efficiency, configure the search parameters appropriately. Pa
     - Pinecone: Choose based on Pods and quantity.
 
 ## Compare popular vector database
-
 |  | Pinecone | Qdrant | Supabase | Weaviate | Milvus | Chroma |
 | --- | --- | --- | --- | --- | --- | --- |
 | Build for vector database | y | y | n | y | y | y |
@@ -93,12 +84,11 @@ These vector databases offer various features and optimizations to handle large-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

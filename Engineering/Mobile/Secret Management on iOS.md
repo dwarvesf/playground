@@ -16,7 +16,6 @@ So the purpose of this article is to answer for the question "How do I store sec
 There are several ways to manage secret info
 
 ### Level 1: Hard-Code Secrets in Source Code
-
 ```swift
 enum Secrets {
     static let apiKey = "6a0f0731d84afa4082031e3a72354991"
@@ -29,7 +28,6 @@ enum Secrets {
 - Live forever in source control
 
 ### Level 2: Store Secrets in Xcode Configuration and `Info.plist`
-
 We can use the xcconfig file to externalize configuration from code (12-Factor app). And then read them from `Info.plist`.
 
 ```swift
@@ -78,7 +76,6 @@ In this way, the reverse-engineer tools won't work. **BUT**
 - This still work in case our application's platform is iOS and our archive file is not leaked.
 
 ### Level 3: Obfuscate Secrets Using Code Generation
-
 We can use a combination of Swift and Python code (via GYB) to obfuscate secrets in a way that’s more difficult to reverse-engineer.
 
 Secrets are pulled from the environment and encoded by a Python function before being included in the source code as `[UInt8]` array literals. Those encoded values are then run through an equivalent Swift function to retrieve the original value without exposing any secrets directly in the source.
@@ -111,13 +108,11 @@ Secrets.apiKey // "6a0f0731d84afa4082031e3a72354991"
 ```
 
 ### Level 4: Don’t Store Secrets On-Device
-
 No matter how much we obfuscate a secret on the client, it’s only a matter of time before the secret gets out. Given enough time and sufficient motivation, an attacker will be able to reverse-engineer whatever you throw their way.
 
 The only true way to keep secrets in mobile apps is to store them on the server.
 
 ### Client Secrecy is Impossible
-
 **Rather than looking at client secret management as a problem to be solved, we should see it instead as an anti-pattern to be avoided.**
 
 Any third-party SDK that’s configured with a client secret is insecure by design. If your app uses any SDKs that fits this description, you should see if it’s possible to **move the integration to the server**.
@@ -127,22 +122,19 @@ Restating our original question: “How do I store secrets securely on the clien
 The answer is: “Don’t (but if you must, obfuscation wouldn’t hurt).”
 
 ## References
-
 - https://thoughtbot.com/blog/let-s-setup-your-ios-environments
 - https://sarunw.com/posts/how-to-set-up-ios-environments/
 - https://www.raywenderlich.com/21441177-building-your-app-using-build-configurations-and-xcconfig
 - https://nshipster.com/xcconfig/
 - https://nshipster.com/secrets/
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

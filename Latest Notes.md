@@ -16,19 +16,14 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[Engineering/Backend/The removal of Apache Kafka's dependency on Zookeeper.md|The removal of Apache Kafka's dependency on Zookeeper]]
 - [[Engineering/Frontend/From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree.md|From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree]]
 
-
 ## Top Contributors this month
-
 *Total ICY given out this month: **20 ICY***
 
 | authors | notes |
 | ------- | ----- |
-| [mickwan1234](https://github.com/mickwan1234) |  [[Google Dataproc]]<br> [[Google Data Fusion]]<br>|
-
-
+| [mickwan1234](https://github.com/mickwan1234) |  [[playground/Engineering/Google Dataproc]]<br> [[playground/Engineering/Google Data Fusion]]<br>|
 
 ## Newest Contributors
-
 - **haongo1#3632**: [[Ω Fleeting notes/202211141513 - Materialized View Pattern.md|202211141513 - Materialized View Pattern]]
 - **hieuvd#4261**: [[Ω Fleeting notes/202211141287 - Go JSON Parsing.md|202211141287 - Go JSON Parsing]]
 - **hmhoang13#5280**: [[Ω Fleeting notes/202301191192 - Multi-column index in DB.md|202301191192 - Multi-column index in DB]]
@@ -48,6 +43,5 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[trkhoi](https://github.com/trkhoi)**: [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
 - **[truong-dwarvesv](https://github.com/truong-dwarvesv)**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
-
 
 *This page was last modified at 2024-01-22T06:13:43.365Z*.

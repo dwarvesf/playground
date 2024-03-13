@@ -12,7 +12,6 @@ The WebDriver is an interface to automate browsers. We can use WebDriver impleme
 Hound is an Elixir library to write WebDriver. Writing End2End test with Hound is very similar to writing a normal ExUnit test. An advantage to writing automation tests is the same code base.
 
 ### Common Web Drivers
-
 https://github.com/HashNuke/hound/wiki/Starting-a-webdriver-server
 
 [**Selenium**](https://selenium-release.storage.googleapis.com/index.html)
@@ -46,7 +45,6 @@ $ phantomjs --wd
 ```
 
 ### Configure Hound
-
 Add dependency to `mix.exs`:
 
 ```elixir
@@ -70,7 +68,6 @@ Application.ensure_all_started(:hound)
 ```
 
 ### Make an unit test
-
 As any unit test we need a module to store the test cases. We implement the `setup` func for Web driver initial `Hound.Helpers` provides the functions to control the browser easier. We can navigate, inspect html element, make the click action via this package. Use `assert` to validate the result
 
 ```elixir
@@ -91,18 +88,15 @@ end
 ```
 
 ### Note
-
 Before run test we MUST start the web driver first https://hexdocs.pm/hound/Hound.Helpers.Navigation.html
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -6,7 +6,6 @@ date: 2022-06-28
 ---
 
 ## What is finite-state transducer?
-
 It is essentially a [[Finite-state automata]] that has both inputs and outputs. In [Turing machines](https://en.wikipedia.org/wiki/Turing_machine), these inputs and outputs are referred to as 2 separate tapes:
 
 - **input tape**: a set of strings or related data.
@@ -15,7 +14,6 @@ It is essentially a [[Finite-state automata]] that has both inputs and outputs. 
 This differs from a finite-state automaton which only has 1 (input) tape.
 
 ## Mathematical Model
-
 As per the general classification noted on [UC Davis outline on transducers](https://www.cs.ucdavis.edu/~rogaway/classes/120/spring13/eric-transducers) (formatted with similar variables to [[Finite-state automata]]s), a deterministic finite-state machine has 7 main variables associated with its definition (a septuple): ($\Sigma$, $S$, $\Gamma$, $\delta$, $\omega$, $s_0$, \_$F$).
 
 - $\Sigma$ is the _input alphabet_ (a finite non-empty set of symbols) -> our events;
@@ -58,7 +56,6 @@ $$
 Transducers that have a final state are used to recognize languages and have their use cases in [[Natural-Language Processing]].
 
 ### Simplified meaning
-
 There's actually quite a few ways to write up a transducer, at it is not always simply a beefed-up state machine. To oversimplify, we'll model it closer to a regular state machine:
 
 ```typescript
@@ -72,7 +69,6 @@ const transition = (state: State, input: Input): Output => ...
 Outputs that are product types of itself and the next state of a transition is referred to as a [[Mealy machine]].
 
 ## Examples of basic transducers
-
 Although we've mentioned before that [[Reducers]] are single state machines, the canonical method of creating one mentioned in [Redux](https://redux.js.org/) and [React](https://reactjs.org/docs/hooks-reference.html#usereducer) are pretty much transducers as they can return state or objects (as **notions** of outputs).
 
 ```typescript
@@ -137,7 +133,6 @@ let transition = (state, input) =>
 ```
 
 ## Reference
-
 - https://en.wikipedia.org/wiki/Turing_machine
 - https://t-pl.io/ddd-aggregates-processes-state-machines-and-transducers
 - https://en.wikipedia.org/wiki/Finite-state_transducer
@@ -146,15 +141,13 @@ let transition = (state, input) =>
 - https://dl.acm.org/doi/10.5555/972695.972698
 - https://web.stanford.edu/~laurik/publications/ciaa-2000/fst-in-nlp/fst-in-nlp.html
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

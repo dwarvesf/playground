@@ -10,7 +10,6 @@ Mixpanel is a powerful analytics platform that assists companies in monitoring a
 ![Mixpanel dashboard](_assets/dashboard.png)
 
 ## Key features
-
 Some key features of Mixpanel include:
 
 1. **Real-time analytics**: Mixpanel offers data on user activity in real-time, enabling organizations to instantly see patterns and take wise decisions.
@@ -22,7 +21,6 @@ Some key features of Mixpanel include:
 7. **Integration**: Mixpanel integrates with a wide range of tools, including popular CRM and marketing automation platforms, making it easy to use alongside other technologies.
 
 ## Integration with React
-
 1. Create a Mixpanel account and get a Mixpanel project token. To use Mixpanel, you need to sign up for an account and create a project. When you create a project, you receive a unique token that is used to identify your project.
 2. Install the Mixpanel library: You can install the Mixpanel library by running the following command in your terminal:
 
@@ -74,19 +72,16 @@ You can observe all the events created by the users.
 ![User activites](_assets/user_activites.png)
 
 ## References
-
 - <https://developer.mixpanel.com/docs>
 - <https://www.npmjs.com/package/mixpanel-browser>
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

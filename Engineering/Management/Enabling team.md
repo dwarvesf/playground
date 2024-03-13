@@ -16,7 +16,6 @@ An enabling team usually plays a key role in providing the stream-aligned team w
 Knowledge transfer can take place on a temporary basis (when a stream-aligned team adopts a new technology, such as containerization) or on a long-term basis (for continuously improving aspects, such as faster builds or faster test execution). Pairing can be quite effective for some types of practices, such as defining Infrastructure-as-Code.
 
 ## Expected behaviors
-
 The following are types of behaviors and outcomes to expect from an effective enabling team:
 
 - An enabling team works together with stream-aligned teams to understand their needs, establishing regular checkpoints and agreeing when more collaboration is needed.
@@ -28,18 +27,15 @@ The following are types of behaviors and outcomes to expect from an effective en
 The purpose of enabling teams is to help stream-aligned teams deliver working software in a sustainable, responsible way. Enabling teams do not exist to fix problems that arise from poor practices, poor prioritization choices, or poor code quality within stream-aligned teams. stream-aligned teams should expect to work with enabling teams for short periods of time (weeks or months) in order to increase their capabilities around a new technology, concept, or approach. After the new skills and understanding have been embedded in the stream-aligned team, the enabling team will switch its focus to a different team.
 
 ## Reference
-
 - _Team Topologies: Organizing Business and Technology Teams for Fast Flow by Manuel Pais and Matthew Skelton_
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

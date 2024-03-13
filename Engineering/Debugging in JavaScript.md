@@ -89,6 +89,7 @@ The `console.time()` method launches a timer that you may use to track the durat
 ```js
 console.time(label)
 ```
+
 #### Use-case
 These methods can be used to calculate how much time a function takes to run.
 ```js
@@ -107,6 +108,7 @@ The `debugger` statement activates any debugging capability available, such as s
 ```js
 debugger;
 ```
+
 #### Use-case
 The `debugger` statement can be use when you want to check the behavior of a potentially buggy function.
 ```js
@@ -125,15 +127,13 @@ When the `debugger` is invoked, execution is paused at the `debugger` statement 
  - [What is the difference between console.dir() and console.log()? - StackOverflow](https://stackoverflow.com/questions/11954152/whats-the-difference-between-console-dir-and-console-log)
  - [Tips and Tricks for Debugging JavaScript - James Q Quick](https://www.youtube.com/watch?v=_QtUGdaCb1c&t=701s)
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

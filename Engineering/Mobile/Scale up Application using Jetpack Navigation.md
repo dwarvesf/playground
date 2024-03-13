@@ -14,7 +14,6 @@ In the past, to implement based on fragment navigation, we used `FragmentManager
 In order to enhance stability for this approaching, we need to spend much time and effort, not to mention the UI testing compatibility 
 
 ## Jetpack Navigation
-
 From 2018, the Google introduced the navigation component alpha version and mark it stable version 1.0.0 in early 2019
 It wrapppers all complex scenarios in low tier, and provide some definitions to help developer easy to navigate between fragments
 
@@ -33,7 +32,6 @@ Beside above benefits, the navigation component also give us some disadvantages
 - The navigation graph included in XML, our fragment code in kotlin file. The time switching among them could take us more time. 
 - In addition, we need to define each action for each navigation and the argument for each navigation if you have.  
 - We need to add one more step it make it compatition with Firebase analysic automatically ([Guideline](https://techdroid.kbeanie.com/2020/08/30/jetpack-navigation-and-firebase-analytics/))
-
 
 ## Problems
 1. Imagine we build a fintech application having ~ 100 screens, the xml code to define action, argument, destination is large numbers, so it could make us a messive navigation graph file.
@@ -156,20 +154,19 @@ class EntryFragment : Fragment() {
         }
     }
 ```
-## References
 
+## References
 - [PROS and CONS of Android Jetpack Navigation Component](https://medium.com/accenture-ix-turkey/pros-and-cons-of-android-jetpack-navigation-component-d7a5e3bcfe50)
 - [Jetpack Navigation Documentation](https://developer.android.com/jetpack/androidx/releases/navigation)
 - [Firebase Analytics with Jetpack Navigation](https://techdroid.kbeanie.com/2020/08/30/jetpack-navigation-and-firebase-analytics/)
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

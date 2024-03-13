@@ -19,18 +19,15 @@ A key advantage of this process is the ability to customize it to individual pre
 The advantages of this strategy are manifold, with substantial savings in computational and financial resources being just one of the perks. It's a game-changer in tackling the ongoing speed issue that plagues large language models. Plus, the broad-reaching potential of this method for any application involving LLMs underscores its versatility across various sectors.
 
 ## References
-
 - https://github.com/zilliztech/GPTCache
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

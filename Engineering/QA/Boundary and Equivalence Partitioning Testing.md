@@ -13,7 +13,6 @@ icy: 10
 - The quantity of tests to be conducted in order to assure that an operation is correct may be virtually infinite.
 - Functional testing may use techniques to reduce the number of necessary tests without losing coverage. The most useful techniques for accomplishing that goal are equivalence partitioning and limit value analysis, which are explained in the following subsections.
 
-
 We need an easy way or special techniques that can select test cases intelligently from the pool of test-case, such that all test scenarios are covered. We use two techniques – **Equivalence Partitioning** & **Boundary Value Analysis** testing techniques to achieve this.
 
 ### Boundary Value Analysis
@@ -75,15 +74,13 @@ The hypothesis behind this technique is that if one condition/value in a partiti
 - [ISTQB Exam Questions On Equivalence Partitioning And Boundary Value Analysis](https://www.softwaretestinghelp.com/istqb-exam-questions-equivalence-partitioning-boundary-value-analysis/)
 - [Functional Testing Guide](https://www.softwaretestinghelp.com/guide-to-functional-testing/)
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

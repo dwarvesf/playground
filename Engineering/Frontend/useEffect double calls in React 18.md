@@ -8,19 +8,16 @@ date: 2022-06-11
 In the React 18 version, the `useEffect` hook has been updated to called twice compare to only one in the older version in StrictMode.
 
 ### What are the changes and why?
-
 - Beginning with React 18, when in development mode, the components will be mounted, unmounted, and then mounted once again in StrictMode.
 - In the future, React would support a functionality that allows React to add and remove sections of the UI while maintaining state in the future. For example, when a user back history from a screen and then revisit it, React should be able to show the previous screen right away. React would do this by un-mounting and re-mounting trees with the same component state as before.
 - This functionality will improve the performance of React projects out of the box, but necessitate components to be resilient to effects being mounted and un-mounted several times. The majority of effects will operate as-is, however some will presume they are only mounted or destroyed once (which means the new behavior might cause trouble for the existing use of useEffect that intends to trigger mount and unmount once).
 - React 18 adds a new development-only check in StrictMode to identify these issues. After a component mounts for the first time, this new check will immediately unmount and remount it, restoring the previous state on the second mount.
 
 ### What are the differences?
-
 - In React 17 the useEffect hook gets call every time the component is mounted.
 - In React 18 each component is mounted, then unmounted, and then remounted and an useEffect call with no dependencies will be run double-time in strict mode.
 
 ### Example of useEffect in React 18
-
 We can confirm the behavior by using the cleanup function of the useEffect hook.
 
 ```js
@@ -82,20 +79,17 @@ export const useEffectOnce = (effect: () => void | (() => void)) => {
 ```
 
 #### Reference
-
 - https://reactjs.org/blog/2022/03/29/react-v18.html#new-strict-mode-behaviors
 - https://www.techiediaries.com/react-18-useeffect/
 - https://dev.to/ag-grid/react-18-avoiding-use-effect-getting-called-twice-4i9e
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

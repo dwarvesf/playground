@@ -7,7 +7,6 @@ icy: 10
 ---
 
 ## What's variable font?
-
 Variable fonts - officially known as OpenType Font Variations - are a font format that allows for a single font file to contain multiple variations of a typeface, such as different weights, widths, and styles, that can be dynamically adjusted in real-time using font variations.
 
 ![[_assets/variable_fonts_01.png]]
@@ -15,7 +14,6 @@ Variable fonts - officially known as OpenType Font Variations - are a font forma
 Weights, widths and other properties are also called **"axes" of variations**.
 
 ### Axes of Variations
-
 In typography and font design, "axes of variation" refer to the different characteristics or parameters of a font that can be modified or adjusted to create different font styles or variations. These variations can include parameters such as font weight, width, slant, optical size, and more.
 
 Each axis of variation defines a range of possible values, and any combination of values within that range can be used to create a unique font style or variation. 
@@ -31,13 +29,11 @@ By adjusting these parameters within a defined range, designers can create custo
 These variations are also dependent on how the fonts were designed and built. Designers and developers should refer to the font's documentation or its creator to understand which variations are available and how they can be used.
 
 ## Why should we use variable fonts?
-
 - **Size and efficiency**: Font variations are contained within a single font file, leading to smaller file sizes and faster load times.
 - **Flexibility, customization, precision and control**: By allowing manipulating of various variation axes to match our needs
 - **Creativity**: Variable fonts provide designers with new opportunities to experiment and create unique font designs, resulting in visually distinct and more memorable typography
 
 ## Examples on variable fonts
-
 The best way to understand variable fonts is to start playing with them. Below are some examples from [an article](Introducing variable fonts – Fonts Knowledge - Google Fonts](https://fonts.google.com/knowledge/introducing_type/introducing_variable_fonts) from Google Fonts to get you started.
 
 Go to [etceteratype.co/epilogue](https://etceteratype.co/epilogue) and play with the **weight** axis of Epilogue to see how it affects the overall spacing of the type:
@@ -61,9 +57,7 @@ Go to [etceteratype.co/anybody](https://etceteratype.co/anybody) and play with
 -   [Very Able Fonts](https://www.very-able-fonts.com/)
 
 ## How do we use variable fonts (as a developer)?
-
 ### Load the fonts
-
 Variable fonts are loaded though the same `@font-face` mechanism as traditional static web fonts, with a new enhancement:
 
 ```css
@@ -76,7 +70,6 @@ Variable fonts are loaded though the same `@font-face` mechanism as traditional 
 We don't want the browser to download the font if it doesn't support variable fonts, so we add format and tech descriptions: once in the future syntax `(format('woff2') tech('variations'))`, once in the deprecated but supported among browsers syntax `(format('woff2-variations'))`. They both point to the same font file.
 
 ### Using variation axes
-
 To set value for the variations, we use `font-variation-settings`, specifying an array of `{{axis tag}} {{value}}` pairs:
 
 ```css
@@ -105,15 +98,13 @@ Beyond that, we depends on how the fonts were built & what custom axes they are 
 - https://fonts.google.com/knowledge/introducing_type/introducing_variable_fonts
 - https://web.dev/variable-fonts/
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -9,7 +9,6 @@ icy: 10
 Transformation is one of the most important process in building data warehouse. It will allow you to clean, combine, remove duplicates, reorganize, and filter all your data. The transformation will enable your enterprise to develop useful and reliable insights via analytics and There are several tools on market for it such as Striim, Pentaho,  Hevo Data..Yet, the one that clearly stands out, in particular, the data build tool. This article will introduce and review DBT in transforming data.
 According to DBT documentation, the tool is a development framework that combines modular SQL with software engineering best practices to make data transformation reliable, fast, and fun. It makes data engineering activities accessible to people with data analyst skills to transform the data in the warehouse using simple select statements,  effectively creating your entire transformation process with code. You can write custom business logic using SQL, automate data quality testing, deploy the code, and deliver trusted data with data documentation side-by-side with the code. In short, DBT (data build tool) turns your data analysts into engineers and allows them to own the entire  analytics engineering workflow.
 
-
 So what make DBT more powerful than other tools? There are some advantage when Data Engineer or Data Analyst using DBT:
 1.	DBT is an open-source application written in Python, giving the users the power to customize it as needed. By using Jinja macro and SQL, your code in DBT will be simple
 and short. We can see it in below example:
@@ -49,21 +48,17 @@ tools to do the extract and load steps to carry out the process since the Data B
 
 In conclusion, I think DBT is a good tool for transforming data. I think that this tool will continue developing more and becoming popular in the future
 
-
 ## References
-
 - https://www.analytics8.com/blog/dbt-overview-what-is-dbt-and-what-can-it-do-for-my-data-pipeline/
 - https://docs.getdbt.com/docs/get-started/learning-more/using-jinja
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

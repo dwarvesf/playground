@@ -7,13 +7,11 @@ icy: 10
 ---
 
 ## What is this?
-
 - **ZK-SNARKs** stands for **Zero-Knowledge Succinct Non-Interactive Argument of Knowledges**.
 
 - Nowadays, we often hear this word when mentioning [[ZK-Rollups]]. But it is actually a **Privacy-enhancing technology**, and has a lot of applications that we will delve into in another post.
 
 ## Decomposition
-
 - **ZK** aka **Zero-Knowledge** mean:
   - Prove possession of certain information.
   - Without revealing that information.
@@ -28,9 +26,7 @@ icy: 10
   - Now, by implementing this characteristic, the proof consists of a single message sent from the prover to the verifier.
 
 ## Implementation by Example
-
 ### Example 1: Function C
-
 - You have a program denoted `C`.
 - C have 2 input `C(x,w)`:
   - `x` is the public stuff, that can be shared with anyone.
@@ -40,7 +36,6 @@ icy: 10
 - **Can map this example to the example of the hash function of the previous part. Let's do it, and go to the next example.**
 
 ### Example 2: Bob, Alice, and Hash
-
 - Bob is given a hash `H`.
 - Alice is given the original string `S` satisfied the condition when hashing `S` by a hash function such as `SHA`, `H` is issued (aka `SHA(S) === H`).
 - How can Alice prove to Bob know that she knows the `S`?
@@ -56,7 +51,6 @@ icy: 10
     - **Note that `C(x,w)===true` is proved by the `proof`, not by itself. How can?**
 
 ### Example 3: Implementation of zk-SNARKs in simple words
-
 - A **ZK-SNARK** consists of three functions `G, P, V` defined as follows:
   - **Key generator** aka `G`
     - `G(lambda, C) = pk,vk`
@@ -102,7 +96,6 @@ icy: 10
     - A trusted independent group separate from Alice and Bob could run the generator and create the proving key pk and verification key vk in such a way that no one learns about lambda.
 
 ### Example 4: In Ethereum [[ZK-Rollups]]
-
 - Can add the building blocks of the verification algorithm to Ethereum in the form of precompiled contracts.
   - [[Layer 2]], run `G` to generate `pk` and `vk`
   - [[Layer 2]], the operator use `pk` to generate `proof`
@@ -110,20 +103,17 @@ icy: 10
   - [[Layer 1]], if valid -> trigger transaction / append ZK blocks / etc.
 
 ## References
-
 - https://consensys.net/blog/developers/introduction-to-zk-snarks/
 - https://ethereum.org/en/developers/docs/scaling/zk-rollups/
 - https://vitalik.ca/general/2022/06/15/using_snarks.html
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -7,7 +7,6 @@ icy: 10
 ---
 
 ## What & Why?
-
 The SOLID Principles are five principles of **object-oriented** class design. They are a set of rules and best practices to follow while designing a class structure. Even though the acronym "SOLID" was introduced by Michael Feathers, The concept of those 5 principles were first introduced by the famous Computer Scientist [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) (a.k.a Uncle Bob) in 2000.
 
 Uncle Bob is also known for his masterpieces of *Clean Code* and *Clean Architecture*, etc. Therefore it is not a surprise that all these concepts of clean coding, object-oriented architecture, and design patterns are somehow connected and complementary to each other.
@@ -22,7 +21,6 @@ Each principle of SOLID will be explained with example below:
 - [[#D - Dependency Inversion Principle]]
 
 ## S - Single Responsibility Principle
-
 Let's begin with the single responsibility principle. As we all figured out from the name, this principle states that **a class should only have one responsibility and therefore it should only have one reason to change.**
 
 For example, let's look at a class to represent a simple book:
@@ -89,7 +87,6 @@ Some developers might define the method `printCitation` inside the `Book` class,
 <iframe src="https://replit.com/@NguyenD-Nam/Single-Responsibility?lite=true" width="100%" height="680"></iframe>
 
 ## O - Open-Closed Principle
-
 The open-closed principle states that classes, modules, and functions should be **open for extension, but closed for modification**. It means you should be able to extend the functionality of them by adding more code without modifying the existing code.
 
 The code below violates this principle:
@@ -166,7 +163,6 @@ By creating a brand new class for the new behavior, we would know that the stuff
 <iframe src="https://replit.com/@NguyenD-Nam/Open-Closed?lite=true" width="100%" height="680"></iframe>
 
 ## L - Liskov Substitution Principle
-
 The Liskov Substitution principle is one of the most important principles to adhere to in object-oriented programming (OOP). It states that child classes or subclasses must be substitutable for their parent classes or super classes. Narrowing it down, we have **if class A is a subclass of class B, we should be able to replace B with A without disrupting the behavior of our program.**
 
 ```cpp
@@ -229,7 +225,6 @@ The idea behind the Liskov Substitution principle is that a derived class should
 <iframe src="https://replit.com/@NguyenD-Nam/Liskov-Substitution?lite=true" width="100%" height="680"></iframe>
 
 ## I - Interface Segregation Principle
-
 According to this principle, **a client should never be forced to implement an interface that it doesn’t use**, or a client shouldn’t be forced to depend on methods it does not use. More specifically, the principle suggests that software developers should break down large interfaces into smaller, more specific ones that are independent of other interfaces that are not relevant to them.
 
 Think about this as the same thing we do while working with [Micro-Frontend](https://dwarvesf.hashnode.dev/micro-frontend-what-why) architecture, we usually break down the codebase into views and furthermore, into components that hold specific responsibilities.
@@ -264,7 +259,6 @@ class Adult : public PersonGeneralInfo, public PersonWorkingInfo {};
 ```
 
 ## D - Dependency Inversion Principle
-
 This principle is about **decoupling modules, making them as separate from one another as possible**. The principle states that high-level modules should not depend on low-level modules. Instead, they should both depend on abstractions.
 
 Imagine we are having an application that uses the logger to log messages. Sometimes we just need to log to the console, but in some cases we want to export them to a text file, forming a short report.
@@ -332,26 +326,22 @@ We can see the message has been logged into a "log.txt" file and another one in 
 <iframe src="https://replit.com/@NguyenD-Nam/Dependency-Inversion?lite=true" width="100%" height="680"></iframe>
 
 ## Benefits
-
 We have taken a deep dive into the SOLID principles of object-oriented design. How do these principles help us to build better software? They encourage us to create more **maintainable**, **scalable**, and **flexible** software. As our applications grow in size, we can reduce their complexity and lower the effort we need to put to scaling and maintaining.
 
 Applying the Single Responsibility or Liskov Substitution principle helps us to keep track of the functionality of each module, boosts the process of testing and threfore makes the applications less likely to have unexpected behaviors. As for the principles like Open-Closed, Interface Segregation or Dependency Inversion, they make sure we create reusable components, reduce the coupling between different modules and increase flexibility of our system.
 
 ## Reference
-
 - https://www.freecodecamp.org/news/solid-design-principles-in-software-development/
 - https://www.baeldung.com/solid-principles
 - https://dev.to/galwaycoder/the-solid-principles-in-software-design-explained-53n
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

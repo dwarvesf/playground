@@ -8,7 +8,6 @@ icy: 10
 
 # Profiling in Go: Gotta catch 'em all
 
-
 ## Introduction
 Those of you who have watched the Pokemon series will undoubtedly recognize the famous catchphrase - "Gotta catch 'em all" - that refers to the main character's goal of catching all the Pokemon in the world. In the same way, profiling is a useful way to catch all the problems in your code and ensure that it's running smoothly. It's a powerful tool that can help you identify and fix the subtle issues in your code quickly and efficiently.
 
@@ -588,12 +587,11 @@ So go ahead, catch 'em all!
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

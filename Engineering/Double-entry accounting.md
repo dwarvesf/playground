@@ -6,7 +6,6 @@ date: 2022-08-24
 ---
 
 ## Introduction
-
 Double-entry accounting states that every financial transaction has equal and opposite effects in at least two different accounts. There are 3 main accounting types associated with this: _assets_, _liabilities_, and _equity_.
 
 Accountants have an **accounting equation**, and it is used to check whether the bookkeeper has made a mistake if it is ever out of balance. This equation is commonly used in balance sheets/statement of affairs:
@@ -22,11 +21,9 @@ $$
 > $$
 
 ### How is it different from single-entry?
-
 Single-entry accounting involves writing down all entity transactions (revenues, expenses, payroll, etc.) in a single ledger. The database equivalent is a list of transactions that add or subtract money from an account. This lack of detail in recording makes it **difficult** to track assets and liabilities, and it is prone to mistakes.
 
 ### Single-entry example
-
 The single-entry example allows us to calculate a closing balance, but it doesn't have the granularity to tell us whether this balance is from our bank balance or our total commodities.
 
 | Date         | Details                      | Amount (USD) |
@@ -47,7 +44,6 @@ The single-entry example allows us to calculate a closing balance, but it doesn'
 <!-- TBLFM: @>$3=sum(@I..@-1) -->
 
 ### Double-entry example
-
 The double-entry example allows us to derive balances for our assets and liabilities on top of checking whether our assets, liabilities, and equity balance each other out.
 
 | Date         | Details                      | Label (Account)             | Debit (USD) | Credit (USD) |
@@ -79,21 +75,17 @@ The double-entry example allows us to derive balances for our assets and liabili
 <!-- TBLFM: @>$5=sum(@I..@-1) -->
 
 ### Reasons and proponents for accounting in double-entry
-
 In a double-entry accounting system, a debit in one account offsets a credit in another, the sum of **all debits** must equal the sum of **all credits**. The system standardizes the accounting process and improves the accuracy of prepared financial statements, and enables us to detect errors in cases of fraud or laundering.
 
 Double-entry systems, regardless of whether we keep track of journal entries, allow us to create reports on income statements, balance sheets, statements of cash flows, and statements of retained earnings.
 
 ## Database Design
-
 For database design, refer to [[Database design for double-entry accounting | database design for double-entry accounting]].
 
 ---
 
 ## Accounting types
-
 ### Assets
-
 > **"How much do I have?"**
 
 Assets refer to anything of value that an entity owns. They are represented as a **debit balance**. Assets are generally divided into 2 categories:
@@ -105,7 +97,6 @@ Assets refer to anything of value that an entity owns. They are represented as a
 - **Fixed assets**: assets which are purchased for long-term use and are not likely to be converted quickly into cash within a year; these include, but are not limited to: buildings, land, machinery, vehicles, software, etc.
 
 ### Liabilities
-
 > **"How much do I owe?"**
 
 Liabilities refer to any debts the entity has. They are represented as a **credit balance**. Liabilities are divided into 3 categories:
@@ -124,7 +115,6 @@ Liabilities refer to any debts the entity has. They are represented as a **credi
   - _Product warrenties_: a guarantee a manufacture or similar party regarding the condition of the product
 
 ### Equity
-
 > **"How much is left over?"**
 
 If we follow the equation for net worth, assets minus liabilities would give us our total equity. However, equity from the perspective of a transaction refers to the value of something. Say, for instance, when you start a ledger, there was $100 in your checking account. Where will that money come from? The answer is **your equity**.
@@ -146,7 +136,6 @@ Equity also reflects all kinds of assets that have not been debited as assets. I
 ---
 
 ## Terminology
-
 | Basis for comparison | Debit                                                 | Credit                                                  |
 | -------------------- | ----------------------------------------------------- | ------------------------------------------------------- |
 | Meaning              | Refers to a record of money flowing _into_ an account | Refers to a record of money flowing _out of_ an account |
@@ -165,9 +154,7 @@ In accounting, every financial transaction of an entity is kept inside a **_jour
 | Granularity                        | Offers the highest granularity as all transactions are recorded | Offers little granularity in comparison as it only shows account data            |
 
 ## Appendix
-
 ### `hledger` for personal use
-
 [`hledger`](https://hledger.org/) is a multi-currency double-entry accounting software that is accessible through the command-line/terminal. It is mostly inspired by [ledger-cli](https://www.ledger-cli.org/), but rewritten in Haskell with build support for M1 Mac machines.
 
 ```sh
@@ -189,7 +176,6 @@ $ hledger -f transactions.journal balance -t
 
 ```
 # journal
-
 2020-01-01 Opening Balance
     Assets:Bank                          0 USD
     Equity:Opening Balance               0 USD
@@ -232,7 +218,6 @@ $ hledger -f transactions.journal balance -t
 ```
 
 ## Reference
-
 - https://www.freshbooks.com/hub/accounting/an-accounting-journal
 - https://bench.co/blog/accounting/double-entry-accounting/
 - https://online-accounting.net/single-entry-bookkeeping-system/
@@ -242,15 +227,13 @@ $ hledger -f transactions.journal balance -t
 - https://www.investopedia.com/terms/w/warranty.asp#:~:text=our%20editorial%20policies-,What%20Is%20a%20Warranty%3F,as%20originally%20described%20or%20intended.
 - https://www.ledger-cli.org/3.0/doc/ledger3.html#Understanding-Equity
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -8,11 +8,9 @@ date: 2022-09-06
 Starting from Kotlin 1.3, JetBrain introduces coroutine a light-weight thread. This article will focus on the basic concept of the coroutine and how you can use it in Kotlin.
 
 ## Coroutine overview
-
 Coroutine is an instance of suspendable computation that takes a block of code and run it concurrently with the rest of the program. The concept of the coroutine is familiar with thread but the coroutine does not bound to any particular thread. It can suspend its execution in this thread and resume it on another one.
 
 ## Structured concurrency
-
 Before we dive into how we can use Coroutine in Kotlin, let me first introduce `Structured concurrency`, the principle of coroutine.
 
 > Due to [wikipedia](https://en.wikipedia.org/wiki/Structured_concurrency), the core concept is to encapsulate the concurrent threads of execution, so that we can control the flow construct with clear entry and exit points. Also, ensure all children must be completed before exit. A scenario that proves this pattern:
@@ -28,7 +26,6 @@ While you put your bread into the toaster, you can start frying eggs while waiti
 Structured concurrency present that all sub-tasks shall be completed before the completion of their parent task(s). No sub-tasks can outlive its parent task(s). The principle also ensures that any errors that happen in its child are properly reported and are never leaked.
 
 ## Kotlin coroutines
-
 You can run the following code block on [Kotlin playground](https://play.kotlinlang.org/).
 
 ```kotlin
@@ -72,7 +69,6 @@ As we know the `structured concurrency` principle, all sub-tasks cannot outlive 
 But if we have a very important task that has to be completed even if its parent is going to cancel, can we do that? The answer is yes, but we have to understand why child tasks are canceled in the first place.
 
 ## Cancellation
-
 Not always the code inside the coroutine is canceled when its parent finish. We have two bullet points that need to be clear:
 
 - First, we are the one who chooses to continue to execute the child's task or not, even when the parent's task has been canceled
@@ -141,7 +137,6 @@ Parent job completed
 ```
 
 ## Light-weight thread
-
 The final thing to keep in mind, coroutines are light-weight threads which means they will use fewer resources than the JVM threads. One way to check this behavior is to spam threads and coroutines and check with one that uses more memory than the other. I have copied and pasted a block code from the Kotlin doc below, you can try to run it on the playground and see what happens lul.
 
 Try to launch 1000 coroutines:
@@ -175,19 +170,16 @@ fun main() {
 ```
 
 ## References
-
 - [Article - Structured concurrency](https://proandroiddev.com/structured-concurrency-in-action-97c749a8f755#:~:text=%E2%80%9CStructured%20concurrency%E2%80%9D%20refers%20to%20a,scope%20of%20a%20parent%20operation.)
 - [Kotlin doc - Coroutine basic](https://kotlinlang.org/docs/coroutines-basics.html)
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

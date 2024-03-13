@@ -6,7 +6,6 @@ date: 2022-10-24
 ---
 
 ## What is MapReduce?
-
 Let's start with an example.
 
 We are the head of census bureau for the state of California and tasked with finding the finding the population of all cities in California. All the resources we want are ready but we have only four months to finish the task. Calculating the population of all cities for a big state like california is not an easy task. The sensible thing to do is to divide the state by city and make individuals in charge of each city to calculate the population of each city where he is in charge of.
@@ -51,7 +50,6 @@ The phase where you aggregate the intermediate results from each city or mappers
 The phase in which the values from the different mappers are copied or transferred to reducers is known as the _Shuffle phase_. The shuffle phase comes in between map and the reduced phase. Therefore, map phase, shuffle phase and reduce face are the three phases of Mapreduce.
 
 ## Summary
-
 MapReduce is:
 
 - A distributed programming model for processing large data sets
@@ -60,15 +58,13 @@ MapReduce is:
 - Mapreduce is not a programming language, it is a programming model.
 - Hadoop implements Mapreduce so that the Mapreduce system in Hadoop manages the communicationsm, data transfer, parallel execution across the distributed servers or nodes.
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

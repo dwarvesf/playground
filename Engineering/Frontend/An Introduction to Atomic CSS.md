@@ -6,7 +6,6 @@ date: 2022-10-13
 ---
 
 ## Definition
-
 A definition to Atomic CSS:
 
 > Atomic CSS is the approach to CSS architecture that favors small, single-purpose classes with names based on visual function.
@@ -31,7 +30,6 @@ Similar to how we write normal CSS, we define a unit-based design system for spa
 
 ```css
 # 1 unit ~ 0.25rem
-
 .m-4 {
   margin: 1rem;
 }
@@ -47,7 +45,6 @@ Similar to how we write normal CSS, we define a unit-based design system for spa
 - Immutable styles that speak for themselves (by good naming convention).
 
 ### Programmatic
-
 This style involves using a build tool to automatically generate styles based on what it finds in the HTML.
 
 For example, given this:
@@ -77,14 +74,12 @@ Another example would be Tailwind's JIT mode:
 
 ## Purposes
 ### Atomic CSS keeps things simple
-
 - Classes are immutable. They only do one thing.
 - Naming is straight forward. It's easy to tell what a class does at a glance.
 - Using a utility class in an HTML file is unambiguous - we know what we are changing, without concern of breaking something, somewhere else.
 - Easy to pick-up without diving too deep into actual stylesheets.
 
 ### Atomic CSS keeps things consistent
-
 -  Unit-based so styles are consistent & scalable. Let's look into how Tailwind setup their default styles again:
 	- `m-4 -> margin: 1rem`, `m-8 -> margin: 2rem` -> 1 unit ~ 0.25rem. With this, when we see `m-40`, we can easily deduce that it's `10rem`.
 - Designs that follow an atomic system will be easier for developers to implement.
@@ -92,7 +87,6 @@ Another example would be Tailwind's JIT mode:
 	- With designers & developers agreeing on a common styling system, developers still know what they have to use when encountering "magic numbers" in the design. They can see a `padding: 63px` and know the designers actually meant `padding: 64px` (divisible by 4). 
 
 ### Atomic CSS is not inline styles
-
 Inline styles have long been deemed a bad practice, and many people dislike Atomic CSS because they think *it shares the same suffer with inline styles*.
 
 Here’s an example:
@@ -104,7 +98,6 @@ An easy solution would be finding all instances of `.black` with our Text Editor
 **But we do have reusability with Atomic CSS** (along with many other things).
 
 #### Reusability
-
 Reusability of Atomic CSS comes from the way we use them. With libraries such as React, it's easy to define a *reusable* component, with all the styles bundled inside. Now changing the color of a widely-used button is a one-line operation:
 
 ```jsx
@@ -147,7 +140,6 @@ export const CommonButton = ({ isActive }) => {
 As you can see, we are utilizing the strength of both Atomic CSS and [[CSS in JS]].
 
 #### Abstraction
-
 With atomic classes, it is possible to create abstractions that would be impossible with inline styles.
 
 ```html
@@ -165,19 +157,15 @@ With atomic classes, it is possible to create abstractions that would be impossi
 The first two examples shown above would require a manual find-and-replace in order to update styling were the design to change. The styles in the third example can be adjusted in a single place within a stylesheet.
 
 #### Tooling
-
 Sass, Less, PostCSS, Autoprefixer… The CSS community has created a lot of useful tools that weren’t available for inline styles.
 
 #### Brevity
-
 Rather than writing out verbose inline styles, atomic classes can be terse abbreviations of declarations. It’s less typing: `mt-0` vs `margin-top: 0`, `flex` vs `display: flex`, etc.
 
 #### Specificity
-
 Inline styles have the 2nd highest level of specificity (only less than `!important`) .The lower specificity of atomic classes compared to inline styles is a good thing. It allows more versatility. 
 
 #### Possibilities
-
 Utility classes can do things inline styles can't.
 
 Inline styles do not support media queries, pseudo selectors, `@supports`, or CSS animations. Perhaps you have a single hover effect you want to apply to disparate elements rather than to only one component.
@@ -200,9 +188,7 @@ Simple reusable media query rules can also be turned into a utility class. Its c
 }
 ```
 
-
 ## Atomic CSS is not all or nothing
-
 There's no doubt CSS utilities can cover a lot of common use-cases, but it's not all we need. There are plenty of cases where utility classes aren’t the best option:
 -   If you need to change a lot of styles for a particular component inside of a media query.
 -   If you want to change multiple styles conditionally during run-time, based on a component's state.
@@ -210,19 +196,17 @@ There's no doubt CSS utilities can cover a lot of common use-cases, but it's not
 Refer back to [this section](#Reusability) for a sample scenario. Utility classes can coexist with other approaches. It's just a good idea to define base styles and sane defaults globally.
 
 ## References
-
 - https://antfu.me/posts/reimagine-atomic-css
 - https://css-tricks.com/growing-popularity-atomic-css/
 - https://css-tricks.com/lets-define-exactly-atomic-css/
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

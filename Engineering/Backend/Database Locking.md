@@ -25,9 +25,7 @@ This is just a simple example. We also have many related scenarios like this, bu
 
 > *Note that I will approach the problem by using PostgreSQL, so every concept in this article should be biased towards this database. Different databases can be implemented in different ways with different concepts and names, but under the hood, they should be similar.*
 
-
 ## Firstly, what is the Explicit Locking in Database?
-
 Database locking is one of the most common mechanisms that helps us achieve concurrency control in a database by preventing multiple transactions from accessing the same data simultaneously. The first thing that we need to explore is the types of locking in SQL databases.
 
 As I know, we have two popular types of database locking
@@ -69,7 +67,6 @@ Besides the type, we also split database locking to a few level depends on the s
          +----------------------------------------------------+
 ```
 *Image 1: Locking scopes*
-
 
 | Locking Level | Description |
 | --- | --- |
@@ -125,7 +122,6 @@ In the implementation, advisory locks try to acquire an `EXCLUSIVE` lock on a sp
 We're good to move on to the next part, where we'll discuss the actual problem.
 
 ## Why do we need these lock, and how can we choose the right type of locking?
-
 **Firstly, we continue with the problem that is raised at the beginning of this post.**
 
 In this scenario, both transactions updated the balances of the same accounts at the same time, leading to a data conflict. The final balances of account X and account Y are different depending on which transaction committed first.
@@ -209,15 +205,13 @@ Explicit locking is the most accessible way to resolve concurrency control in hi
 - <a id="4">[4]</a>“Richard Clayton - Distributed Locking with Postgres Advisory Locks.” Richard Clayton, 16 February 2020, https://rclayton.silvrback.com/distributed-locking-with-postgres-advisory-locks. Accessed 23 April 2023.
 - <a id="5">[5]</a>“Locking in Databases and Isolation Mechanisms | by Denny Sam | inspiringbrilliance.” Medium, https://medium.com/inspiredbrilliance/what-are-database-locks-1aff9117c290. Accessed 23 April 2023.
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

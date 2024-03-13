@@ -8,7 +8,6 @@ date: 2022-09-10
 This article demonstrates how to use CSS transforms, perspective and some scaling trickery to create a pure CSS parallax scrolling website.
 
 ## Advantages of using pure CSS over JS
-
 Although using Javascript will give us more flexibility on how we want to construct our parallax effect, it also comes with the cost of performance & implementation complexity. We listen to the `scroll` event & modify the DOM with the handler, triggering needless reflows and paints.
 
 For more simple use cases, with pure CSS, we can:
@@ -18,7 +17,6 @@ For more simple use cases, with pure CSS, we can:
 - Combine with other CSS features (e.g. responsive)
 
 ## How it works
-
 First, let's establish some barebones markup:
 
 ```html
@@ -70,9 +68,7 @@ Check it out in the CodePen below:
 <iframe height="400" style="width:100%" scrolling="no" title="Pure CSS Parallax (1) - Barebones" src="https://codepen.io/ngolapnguyen/embed/wvjGRRp?default-tab=result" frameborder="no"></iframe>
 
 ## Common practices
-
 ### Parallax with multiple sections
-
 Most parallax sites break the page into distinct sections where different effects can be applied. Here's how to do that.
 
 First, we need a `group` element to group our layers together:
@@ -102,7 +98,6 @@ The property `transform-style: preserve-3d` prevents the browser from flattenin
 One important rule to keep in mind when grouping elements is, **we cannot clip the content of a group**. Setting `overflow: hidden` on a `group` will break the parallax effect. Unclipped content will result in descendant elements overflowing, so we need to be creative with the `z-index` values of the groups to ensure content is correctly revealed/hidden as the visitor scrolls through the document.
 
 ### Depth correction
-
 True to 3D transforms, elements that are farther away from the viewport will appear smaller than those that are closer. If we want them to appear to be rendered as their original size (e.g. same font-size and all), we can use the `scale` transform to do that:
 
 ```css
@@ -118,7 +113,6 @@ scale = 1 + (translateZ * -1) / perspective
 ```
 
 ### Debugging
-
 When you are working with parallax, it can be easier to get lost among the different layers. Taking a different perspective will allow you to know where everything is in the 3D space - which you can do by applying simple transform to the group elements:
 
 ```css
@@ -132,20 +126,17 @@ You can try out all the common practices I have mentioned in the CodePen below:
 <iframe height="400" style="width: 100%;" scrolling="no" title="Pure CSS Parallax (2) - Common Practices" src="https://codepen.io/ngolapnguyen/embed/XWqdOJr?default-tab=result" frameborder="no" allowfullscreen="true"></iframe>
 
 ## References
-
 - https://keithclark.co.uk/articles/pure-css-parallax-websites/
 - https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style
 - https://www.youtube.com/watch?v=1wfeqDyMUx4
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

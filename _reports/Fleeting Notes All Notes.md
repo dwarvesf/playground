@@ -1,5 +1,5 @@
-## Fleeting Notes
 
+## Fleeting Notes
 ```dataviewjs
 const query = dv.page("_queries").fleeting_notes_all;
 const pagesQuery = await dv.query(query);

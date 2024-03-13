@@ -6,11 +6,9 @@ date: 2022-07-12
 ---
 
 ## What is Full-text search?
-
 Full-Text Search refers to a technique in which you search for a single computer-stored document or a collection in your full-text database. It provides you with the capability to identify natural-language documents that satisfy a query.
 
 ## Why need Full-text search?
-
 Normally when we want to search for some words or text in a long sentence, we usually use `LIKE` operator.
 
 ```sql
@@ -20,25 +18,20 @@ SELECT * FROM tweets WHERE content ILIKE '%something%';
 However, using `LIKE` operator with the leading wildcard will make PostgreSQL perform `Seq Scan` which means database will skip using index for finding matched records. It will cause very low performance for big data tables. Therefore, it's where `FTS` can be used to boost the performance in queries.
 
 ## Indexing
-
 For normal columns, using [B-Tree index](https://dzone.com/articles/database-btree-indexing-in-sqlite) is the most common selection. However, in `FTS`, we should apply [GIN index](https://www.postgresql.org/docs/11/gin-intro.html) (**Generalized Inverted**). `GIN index` was designed to deal with data types that are subdividable and you want to search for individual component values (array elements, lexemes in a text document, etc). For simple explanation, `GIN index` like the table of contents in a book, where the heap pointers (to the actual table) are the page numbers. Multiple entries can be combined to yield a specific result.
 
 ## Stop words
-
 For most human languages, there are some words that do not have any value in searching or analyzing, those words are called stop-words. For example, In English, some stop-words can be: `is, the, and, in, so,... etc`. Therefore, when we filter text, it should not count in our search string.
 
 ## Hands-on
-
 Following are the step-by-step instruction to implement Full-text search in PostgresSQL:
 
 #### 1. Create `GIN INDEX` for `vector` column:
-
 ```sql
 CREATE INDEX idx_vector ON tweets USING GIN(vector);
 ```
 
 #### 2. Insert data into `vector` column
-
 ```sql
 UPDATE
       tweets t
@@ -153,13 +146,11 @@ Therefore, in the end, every vector column record will have a value like the bel
 ```
 
 #### 3. Query to find text (it will use default English stop-words)
-
 ```sql
 SELECT * FROM tweets WHERE vector @@ to_tsquery(REPLACE(LOWER('multiple words with no order'),' ', ' & '));
 ```
 
 #### 4. Custom Search configuration (OPTIONAL)
-
 We can also configure the search configuration on our own like a custom stop-words template:
 
 ```sql
@@ -181,11 +172,9 @@ SELECT * FROM tweets WHERE vector @@ to_tsquery('english_nostop',REPLACE(LOWER('
 ```
 
 ## Result
-
 It will be no sense if the result (performance) of this approach isn't better than the normal way which uses `LIKE` operator. So, let have a comparison:
 
 ### LIKE operator
-
 ```sql
 EXPLAIN ANALYZE SELECT * FROM tweets WHERE content ILIKE '%needles%' OR content ILIKE '%well%';
 ```
@@ -199,7 +188,6 @@ EXPLAIN ANALYZE SELECT * FROM tweets WHERE content ILIKE '%needles%' OR content 
 | Execution Time: 1445.618 ms                                                                                     |
 
 ### Full-text Search
-
 ```sql
 
 EXPLAIN ANALYZE SELECT * FROM tweets WHERE vector @@ to_tsquery(REPLACE(LOWER('needles well'),' ', ' & '));
@@ -218,7 +206,6 @@ EXPLAIN ANALYZE SELECT * FROM tweets WHERE vector @@ to_tsquery(REPLACE(LOWER('n
 The result shows that the planning time and execution time of `LIKE` operator are worse than `FTS` method. Because the demo is just an illustration of 200k records table. For a larger table (millions of records), the performance of using `LIKE` operator is much worse than using `FTS` method. Furthermore, you can notice that, with `FTS` we can search words with no orders required when in `LIKE` operator method, the words' order is also counted to the result.
 
 ## Note
-
 Examples in this post are demonstrated with `Postgresql >= 11.x` and use `tweets` table below with over 200k rows.
 
 ```sql
@@ -230,21 +217,18 @@ Examples in this post are demonstrated with `Postgresql >= 11.x` and use `tweets
 ```
 
 ## References
-
 - https://pganalyze.com/blog/gin-index
 - https://wiki.postgresql.org/images/2/25/Full-text_search_in_PostgreSQL_in_milliseconds-extended-version.pdf
 - https://www.compose.com/articles/mastering-postgresql-tools-full-text-search-and-phrase-search/
 - SQL Performance Explained by Markus Winand (Book)
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

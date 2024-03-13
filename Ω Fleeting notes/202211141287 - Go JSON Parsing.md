@@ -24,7 +24,6 @@ interfaceRaw, _ := json.Marshal(obj)
 fmt.Printf("version2 is %s\n", interfaceRaw) // {"id":98470950831393230 }
 ```
 
-
 Why
 The issue caused by default Go uses float64 for interface{} parsing
 Ref: https://cs.opensource.google/go/go/+/refs/tags/go1.19.3:src/encoding/json/decode.go;l=844;drc=a11cd6f69aec5c783656601fbc7b493e0d63f605

@@ -6,7 +6,6 @@ recurringTemplateName: engineering-frontend-moc
 This is a [[Map of Content]] related to the engineering concepts around frontend.
 
 ## General frontend
-
 - [[Engineering/Introducing HTMX - Navigating the Advantages and Concerns.md|Introducing HTMX - Navigating the Advantages and Concerns]]
 - [[Engineering/Frontend/useEffect double calls in React 18.md|useEffect double calls in React 18]]
 - [[Engineering/Frontend/Zaplib post-mortem.md|Zaplib post-mortem]]
@@ -46,15 +45,12 @@ This is a [[Map of Content]] related to the engineering concepts around frontend
 - [[Engineering/Frontend/A Fragment Colocation Pattern with React & Apollo GraphQL.md|A Fragment Colocation Pattern with React & Apollo GraphQL]]
 
 ## Fundamentals
-
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 - [[Engineering/Frontend/Why DOM manipulation is slow?.md|Why DOM manipulation is slow?]]
 - [[Engineering/Frontend/Why Virtual DOM is fast?.md|Why Virtual DOM is fast?]]
 
 ## Accessibility
-
 - [[Engineering/Frontend/Focus trap.md|Focus trap]]
 - [[Engineering/Frontend/HTML inert.md|HTML inert]]
-
 
 *This page was last modified at 2024-01-22T06:13:43.440Z*.

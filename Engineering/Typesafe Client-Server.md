@@ -12,7 +12,6 @@ icy: 10
 ---
 
 ### Motivation
-
 In traditional software development, defining models and API clients is a fundamental step when using strongly-typed languages.
 
 - **Models**: represent various data structures such as objects, request parameters, and response types.
@@ -26,14 +25,15 @@ Using API definitions in JSON or YAML format as the single source of truth, the 
 ![[typesafe-client-server.png]]
 
 This automated approach not only minimizes human error but also streamlines the development process, as developers can now focus on building features rather than fixing mismatches between the FE and BE. By adopting this typesafe client-server system, teams can enhance collaboration, accelerate time-to-market, and deliver a more reliable product.
-### Benefits
 
+### Benefits
 - **Enhanced Reliability**: The automatic code generation ensures consistency between the frontend and backend, reducing the risk of runtime failures.
 - **Early Error Detection**: Any inconsistencies or errors in the API are detected during the code generation process, allowing for early detection and resolution.
 - **Improved Developer Productivity**: Developers can focus on feature development instead of manual synchronization tasks, increasing overall productivity.
 - **Security Enhancements**: The typesafe client-server architecture helps prevent security vulnerabilities by ensuring that data is properly handled and transferred between the frontend and backend.
 - **Documentation and Collaboration**: API definitions serve as documentation and a common language for developers and stakeholders, facilitating collaboration and understanding.
 - **Refactoring and Scalability**: When changes are made to the API, the code generation process helps identify and update affected areas, making refactoring and scalability easier.
+
 ### How to use effectively
 - **API First Development**: Start by designing API definitions that accurately represent the desired functionality and data structures.
 - **Automate Code Generation**: Set up automation tools to generate code whenever changes are made to the API definitions. This ensures that the frontend and backend stay in sync.
@@ -43,7 +43,6 @@ This automated approach not only minimizes human error but also streamlines the 
 - **Version Control**: As the API evolves, make sure to version it to manage changes effectively and maintain backward compatibility.
 
 ### Supported frameworks/tools
-
 [openapi-generator](https://openapi-generator.tech/): Official tool to validate Swagger spec and generate clients. Using Axios for client requests.
 [Orval](https://next.orval.dev/): Generate code in various clients (axios, swr, react-query…). Support mock data with [msw](https://mswjs.io/) and [faker](https://fakerjs.dev/)
 
@@ -56,12 +55,11 @@ This automated approach not only minimizes human error but also streamlines the 
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

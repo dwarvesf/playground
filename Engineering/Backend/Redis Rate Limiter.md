@@ -7,17 +7,14 @@ icy: 10
 ---
 
 ## Introduction
-
 There are many use cases for an in-memory NoSQL database, such as Redis. One particular case that happens in enterprise applications is creating rate limits for labeled data sets. Below is a demonstration of how to set up basic rate limiting on Redis.
 
 ## Data types in Redis for Rate Limiting
-
 The idea is to have a data label such that it labels exactly which user is accessing a resource at any given time. The easiest case for us is to use the user’s IP address. We can hold their IP address as a key on Redis or a sub-item on any one of Redis’ data types.
 
 Two of the data types we will cover will be a simple key-value pair with a counter, and a LIST, both of which will have expiration dates to rate limit by a certain period of time.
 
 ## Case 1: using a counter
-
 ![](_assets/gWWpbQl.png)
 One simple implementation using LUA on Redis would be to use a response counter to check how many requests there are within a timespan. Below is an example of a counter with an expiry date of 10 seconds, with the idea that the counter will rate limit the data label 10 times every 10 seconds. This implementation is susceptible to race conditions:
 
@@ -62,15 +59,13 @@ Above are 2 simple examples exploring the usefulness of data types to help handl
 - https://redis.com/glossary/rate-limiting/
 - https://redis.io/docs/data-types/lists/
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

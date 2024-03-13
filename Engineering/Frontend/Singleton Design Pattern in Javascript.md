@@ -6,11 +6,9 @@ date: 2022-10-16
 ---
 
 ## Overview
-
 For global state management in some frameworks like ReactJs; we already have Redux, React Context, Recoil, and Mobx... for handling that. But if we only need the vanilla javascript for handling specific state and avoid using the library to manage the state (like minimizing the bundle-size, avoid on creating too many instances...), we can use the help of design patterns.
 
 ## What is the Singleton Design Pattern?
-
 ![singleton-pattern](_assets/singleton-pattern.png)
 
 Singleton design pattern is the pattern in that we only create one static instance of the class.
@@ -18,7 +16,6 @@ Singleton design pattern is the pattern in that we only create one static instan
 Which can be accessed in all components, and functions without recreating or conflicting the instances.
 
 ### Example
-
 ```javascript
 // Filename: singleton.js
 
@@ -86,30 +83,25 @@ main();
 - This time we will make a compare from the value to the instance, from the output that we can see the `name` from `instanceTwo` is same as the value we already set from `instanceOne`  (is `John Doe` and is not `undefined` value), and both instance is the same with the returned is `true`.
 
 ## Pros and Cons
-
 ### Pros
-
 - You can be sure that a class has only a single instance.
 - A global access point to that instance.
 - The singleton only initialized once.
 
 ### Cons
-
 - The Singleton is violate to the Single Responsibility Principle, via the SRP definition that a class only should only have one responsibility. But with the singleton pattern, it can carry too many responsibilities at the same time, this can make a deadlock when used in concurrency / multi-threads.
 - The singleton design is getting us difficult to write the unit test.
 
 ## Conclusion
-
 With the only initialized once and can use in the global context, the singleton design pattern is very useful for some specific cases where we only need to store the data that using in the global and fewer changes like database connection, user profile account config...
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

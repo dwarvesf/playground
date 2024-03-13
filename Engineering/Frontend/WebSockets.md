@@ -11,8 +11,8 @@ github_id: tonible14012002
 date: 2023-12-18
 icy: 10
 ---
-## What are WebSockets
 
+## What are WebSockets
 Previously, creating web applications that need bidirectional require a HTTP polling for updating the data from the server. 
 This result in lots of problems such as high overhead, latency, not-truthly realtime.
 
@@ -20,10 +20,10 @@ WebSocket is a simple solution that is invented to solve those problems as it he
 
 ## The Protocol Overview
 ### Handshake
-
 A HTTP Handshake is preformed before update to WebSocket connection. The client makes a GET request to the server with an upgrade header. The server then response with status 101 to upgrade the current connection to be WebSocket connection. Otherwise, the client has to end the connection.
 
 Example handshake
+
 #### From client
 ```javascript
 GET /chat HTTP/1.1
@@ -36,6 +36,7 @@ GET /chat HTTP/1.1
     Sec-WebSocket-Version: 13
 ```
 - `Sec-WebSocket-Key` is to ensure the server support WebSocket protocol, the key is generated random to preven proxy server to cache and follow the communication
+
 #### From server
 ```javascript
 HTTP/1.1 101 Switching Protocols
@@ -81,14 +82,13 @@ Note that the differences between `ws` and `wss`is:
 The browser provide an API for creating and managing WebSocket connection as well as exchange messages with a WebSocket server.
 
 ### Open WebSocket connection
-
 We can instantiate a new WebSocket connection, linking to the WebSocket server, and it will start connecting immediately. 
 
 ```typescript
 const socket = new WebSocket("ws://localhost:8080")
 ```
-### WebSocket Events
 
+### WebSocket Events
 In total, there are 4 events we can listen to are `open`, `message`, `error`, and `close`.
 ```typescript
 // Connection opened
@@ -124,6 +124,7 @@ socket.onmessage = (event) => {
   // Handling String message
 }
 ```
+
 ### Rate Limiting
 When user has a slow network connection. After calling `WebSocket.send(...)` the data will be buffered in memory and will be sent out as soon as connection get better
 
@@ -146,6 +147,7 @@ socket.onclose = (event) => {
   // { code: 1000, reason: "Complete", wasClean: true }
 }
 ```
+
 #### *Common code
 - 1000 - normal closure (default)
 - 1006 - connection was lost (this code cannot set manually, connection close abnormally by the browser and event go to `WebSocket.onerror`)
@@ -161,12 +163,11 @@ User can access `WebSocket.readyState` for getting the current state of a WebSoc
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -7,21 +7,17 @@ icy: 10
 ---
 
 ## What is Redis
-
 Redis is an in-memory key-value database. It is open-source software that can be used as a database, cache, and message broker. Redis supports a wide range of data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, and geospatial indexes with radius queries.
 
 ## What is Redis Streaming
-
 Redis Streaming is a feature of Redis, "A Redis stream is a data structure that acts like an **append-only** log". Redis Streaming uses a combination of Redis lists and Redis publish/subscribe to create a stream of data.
 
 ## Use cases for Redis Streaming
-
 -  Redis Streaming can be used as a quick-to-implement option for event-sourcing type systems that already have Redis integrated into the system architect.
 
 -  A messaging service that is quick to setup and use with Redis-CLI, provides fairly minimal latency and massive throughput
 
 ## Setting up Redis container
-
 **Prerequisites**: assume that you already have docker installed. If not then can refer to [Docker](https://www.docker.com/get-started/)
 
 First, we need to pull the Redis docker image:
@@ -54,8 +50,8 @@ Finally, you should be able to see the terminal with the current host and port o
 ➜  ~ docker exec -it 8876bd52e316 redis-cli
 127.0.0.1:6379>
 ```
-## Publish to a stream
 
+## Publish to a stream
 When inside the Redis-CLI, running:
 ```
 XADD mystream * sensor-id 1234
@@ -72,7 +68,6 @@ The result is the event entry's ID:
 ```
 
 ## Read entries from a stream
-
 To read all entries from `mystream`:
 ```
 XREAD STREAMS mystream 0
@@ -106,7 +101,6 @@ XREAD BLOCK 0 STREAMS mystream 1682082158921-0
 ```
 
 ## Consumer Group
-
 The case for the consumer group is that, for an event entry in the stream, we want to consume the event and perform different processes based on each group's functionality. 
 
 Exp: given an `item_payment_completed` event, we will have 2 consumer groups `update_item_stock` and `send_payment_notification`. Because they have different functionality, most of the time they will be represented as microservices, and one will be scaled up differently or replaced.
@@ -120,7 +114,6 @@ The `$` is the entry ID to set where the group should start reading from (`$` wi
 <br/>
 
 ### Read as a group's consumer
-
 To nominate a consumer to read messages from the stream:
 ```
 XREADGROUP GROUP mygroup Alice STREAMS mystream >
@@ -130,7 +123,6 @@ Where:
 - `Alice` is the consumer's name. (Redis will automatically create one if not exist)
 - `>` is the special ID to read only new messages never delivered to other consumers of the group so far.
 - After execution, the result entries will be put into the `PEL` with the consumer name.
-
 
 To see all the messages that are pending read of that consumer:
 ```
@@ -187,19 +179,16 @@ XAUTOCLAIM mystream mygroup Bob 3600000 0-0 COUNT 1
 We can automatically claim any pending messages in `mystream` that has the minimum of `3600000` idle time from `mygroup` and assign it to `Bob`. To split the `XAUTOCLAIM` payload, we can use the optional `COUNT` to limit the number of event claims.
 
 ## References
-
 - [Redis documentation](https://redis.io/docs/)
 - [Redis Streams tutorial](https://redis.io/docs/data-types/streams-tutorial/)
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

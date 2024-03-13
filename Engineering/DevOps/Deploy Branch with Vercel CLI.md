@@ -6,23 +6,19 @@ date: 2023-06-16
 ---
 
 ## Introduction
-
 When we have multiple applications within a monorepo project and we integrate Vercel with our version control system like GitHub, we may encounter a significant obstacle in deploying only a specific app for a particular branch. In this situation, all Vercel project applications will be built automatically whenever we push a commit to the branch. The only option available to us is manually canceling the build for the applications we do not intend to deploy across specific Vercel projects.
 
 To tackle this challenge, we can utilize a combination of GitHub Actions and the Vercel CLI. This article will explore the solutions to address and overcome these difficulties.
 
 ## Requirement
-
 To meet the primary requirement, we need to pre-configure the Vercel Projects settings to ensure the proper retrieval of environment variables and configure the projects for deployment on Vercel.
 
 ## Challenge
-
 The main challenge faced when using Vercel CLI is the inability to use a specific branch and environment exclusively for the target branch during deployment using the `vercel deploy` command, as this functionality is currently not supported.
 
 To overcome these challenges, the proposed solution focuses on building for a specific branch while considering the corresponding environment variables and configuration declared within the Vercel Project. Additionally, leveraging built cache and checking for ignored builds based on changes can optimize the deployment process.
 
 ## Approach
-
 The following steps outline the implementation approach:
 
 1. Execute the turbo repo `build dry` in order to generate a JSON file containing details about the workspaces affected by changes in application or shared package dependencies.
@@ -30,7 +26,6 @@ The following steps outline the implementation approach:
 3. Since the Vercel Deploy CLI lacks support for deploying to specific branches, an alternative method can be employed. Retrieve the Vercel Project Environment and configuration associated with the desired branch, and then use this information proceed to locally pre-build the application using within the GitHub Actions CI, and finally push the pre-built application to Vercel remotely.
 
 ## Implementation
-
 The implementation of this approach consists of the following steps:
 
 1. Setup Vercel Project Configuration for lately using on the vercel build with the build command, output direct, root directory and project environment matching with every single branch.
@@ -396,29 +391,24 @@ The implementation of this approach consists of the following steps:
    For the `push` and `pull_request` workflow events, we can reuse the same build jobs as mentioned earlier. The approach would involve detecting the changes and adding a job with a condition to build each application. The deployment has no comments for the PR by default, we can use a third-party action to comment and deploy replace for `vercel deploy` is `amondnet/vercel-action`. ![comment-pr](../../_assets/action-comment-pr.png)
 
 ## Diagrams
-
 ![deploy-diagram](../../_assets/deploy-vercel-diagram.png)
 
 ## Limitation
-
 Although the proposed solution provides significant advantages, it does come with some limitations:
 
 - The deployment is limited to a specific custom domain for a particular tag/release deployment, as the Vercel CLI only supports deployment based on the hashed branch reference.
 - Multiple steps need to be created to deploy multiple applications since each application has a different Vercel Project ID.
 
 ## Conclusion
-
 In summary, implementing the strategy of retrieving environment variables, configuring, building, and deploying on the established platform proves to be a successful solution for targeted branch deployments.
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -10,7 +10,6 @@ We all know that for web applications, perceived performance is highly importanc
 Fortunately for us, JavaScript provides a couple of tools to solve these problems with some new features: Threading (through Web Worker) and Coroutines (through generators).
 
 ## Threading with Web Worker
-
 If you don't know what a Web Worker is, check out [[Parallelism in JavaScript]] for a quick introduction.
 
 With Web Worker we can offload a bunch of processing to another thread and it will not impact the performance of the main thread. Sounds perfect, but it comes with a cost: `serialization`.
@@ -22,7 +21,6 @@ If `serialization` is not a problem for your app then Web Worker will probably d
 For real time apps that require continuously recalculation of data when new data comes, you can implement a game-loop-like updater function inside the web worker code to periodically emit data to main thread once per an interval time limit. That pattern works well because it allows you to control how often main thread should receive new data and UI should rerender.
 
 ## Coroutines with generators
-
 When you have a serialization problem with Web Worker, another tool you can reach for is coroutines.
 
 You are most likely already aware of coroutines in one form or another. A coroutine is basically a thread of programming logic that is working its way to completion at the same time as other things are doing the same. Or to put it simply: a coroutine is an execution that can be suspended and resumed.
@@ -49,21 +47,18 @@ console.log(sequence.next()) // Prints : { value: 99, done: true }
 So, ES6 generator allows us to run code and yield values whenever we like but it's still a rough tool, for our problem we need to combine generator with browser's `requestIdleCallback()` to request main thread to do an amount of work when it's idle, then see if there is enough time left to do more work, if not yield control back to main thread then queue another run the next time main thread is idle. Luckily somebody smart already thought of that, you can checkout [js-coroutines]([https://github.com/miketalbot/js-coroutines/) for a complete implementation and evaluate if it solves your app's problem.
 
 ## References
-
 - https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator
 - https://javascript.info/generators
 - https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

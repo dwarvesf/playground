@@ -12,7 +12,6 @@ One of the key advantages of progressive delivery is that it makes your release 
 ![[engineering-progressive-delivery.png]]
 
 ## Progressive delivery contract
-
 The practice of progressive delivery sounds good in theory but requires strict requirements to make it effective:
 
 - CI/CD is already part of your delivery pipeline
@@ -20,7 +19,6 @@ The practice of progressive delivery sounds good in theory but requires strict r
 - Every new feature includes a [[Feature flags | feature flag]]
 
 ### Mature CI/CD pipelines
-
 When starting out with progressive delivery, teams need mature CI/CD pipelines. A mature process includes:
 
 - Automated build and automated testing triggered for every commit.
@@ -28,7 +26,6 @@ When starting out with progressive delivery, teams need mature CI/CD pipelines. 
 - Deployment can be accomplished with a simple command or click.
 
 ### Master is always releasable
-
 Every change merged into `master` must preserve the releasability of `master`. Releasable means the revision can be released to production with the requirements of:
 
 - Changelog and documentation reflect the current feature set.
@@ -36,27 +33,23 @@ Every change merged into `master` must preserve the releasability of `master`. R
 - The regression test suite passes.
 
 ### A feature flag is required for every new feature
-
 Feature flags are one of the core components of progressive delivery. Without them, it is impossible to test in production on real users with very low risk. Feature flags achieve 2 things:
 
 - They allow continuous release to be maintained while still allowing big features to be merged into main (disabled by a feature flag) before they are fully tested.
 - They give us a quick way to disable features in the event that a feature breaks the release.
 
 ## Reference
-
 - https://www.optimizely.com/optimization-glossary/progressive-delivery/
 - https://handbook.sourcegraph.com/departments/engineering/dev/tools/continuous_releasability/
 - https://www.cloudbees.com/blog/progressive-delivery-vs-continuous-delivery
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

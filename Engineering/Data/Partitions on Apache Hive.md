@@ -20,7 +20,6 @@ Let's find out about partitions in Hive with the following two parts:
     - Benefits of dynamic partitions
 
 ## Partitions
-
 For example, we want to query the `stocks` table to look at the stock's details for symbol `XYZ` on 2000/07/03. Even though, as a user, we're only interested in one stock symbol for a specific date, this query, however, will run a MapReduce job which will scan the entire data set to get the result set. This means that the execution time will be longer. Wouldn't be so nice if we can Target the query to scan only the records that belong to the symbol `XYZ` to get the result set? There is a way to do exactly that in Hive and it is by using partitions. Now, the `stocks` table has no way of differentiating the records for symbol `XYZ` with records for symbol `ABC`. Using partitions in Hive, we can basically compartmentalize our data set. The syntax for creating a partition table is very similar to a regular table, the only difference is the partition table will have the `PARTITION BY` clause and we have to mention a new name to the partition column.
 
 ```sql
@@ -126,7 +125,6 @@ Hive will not validate the data that is loaded into partitions and also it will 
 It is the developer's responsibility to make sure the partition is loaded with correct set of records.
 
 ## Dynamic Partitions
-
 Imagining that we are trying to create partitions for thousands of symbols. Manually creating partitions one by one is a tedious exercise and also will eventually lead to errors like the one we just saw with Apple and Microsoft. Dynamic partition inserts solve that problem. So far we have been giving the values for the partition columns and this means that the values for the partition columns are known at compile time. When we use Dynamic partition inserts, however, the partition column values are known at execution time. To enable the dynamic partition, we set `hive.exec.dynamic.partition` to `true` with command `SET hive.exec.dynamic.partition=true;`.
 
 ```sql
@@ -224,18 +222,15 @@ WHERE exch_name = 'ABCSE' and volume > 10000;
 And this query with the where condition exchange name and volume will execute with no issues. In summary, partitions minimizes the execution time by helping MapReduce job to execute on targeted files or directories. We also consider few different ways to load partitions. We also understand how to load hundreds of partitions with just a simple insert select statement using dynamic partitions. Partitions are very powerful and when we design the tables with right partition columns, it will save a lot of execution time and our queries will be faster. So when designing a Hive table next time, let's always think of partitions.
 
 ## References
-
 - https://stackoverflow.com/questions/21876837/not-able-to-apply-dynamic-partitioning-for-a-huge-data-set-in-hive
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

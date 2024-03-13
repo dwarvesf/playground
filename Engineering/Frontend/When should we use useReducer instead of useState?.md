@@ -9,7 +9,6 @@ icy: 10
 Imagine we have a component with multiple states. It is simple enough not to use state management libraries. `useState` is surely a choice for the sake of brevity and clarity. But are there any issues we have to deal with? In this article, I want to make some improvements on `useState` hook and how we can replace it with `useReducer` as an alternative solution.
 
 ## The problem
-
 Let's take a look at the code below:
 
 ```jsx
@@ -36,7 +35,6 @@ The component is used to update a calendar event. Sadly, it has several problems
 - No safeguards. In other words, you may not guarantee that state is updated accurately. There’s nothing preventing you from choosing an end date that’s before the start date. You can validate other related states first but only if you remember (or even know) they exist.
 
 ## An improvement of `useState`
-
 To improve the code above, we can gather all states in one big object:
 
 ```jsx
@@ -91,7 +89,6 @@ function EditCalendarEvent() {
 Do not forget that there are two ways to update state now and make sure you pick the right one or else the curried function will be meaningless.
 
 ## Adopting `useReducer` as an alternative to `useState`
-
 Many people know `useReducer`, but a small number of them actually want to use it. With `useReducer`, we could rewrite the code to be like this:
 
 ```jsx
@@ -144,7 +141,6 @@ function EditCalendarEvent() {
 ```
 
 ## Other use cases for `useReducer`
-
 As can be seen from code above, `useReducer` might replace `useState` for "complex state", and moreover we do not need to follow the redux style. I still believe `useReducer` is underestimated.
 
 Here is an example of toggling state with `useReducer`:
@@ -166,22 +162,18 @@ The implementation is simple, and it really shows the flexibility of `useReducer
 If you love Redux, sure, you can adhere the action-based pattern as well. It is important to keep in mind that you must always treat the state value of the `useReducer` hook as immutable. To avoid running into this problem, `Immer` is one of the best choice.
 
 ## The conclusion
-
 In general, developers prefer `useState` to `useReducer`. It is not their fault since `useState` is more familiar and introduced from the very first tutorial of hooks. However, the ability to supply a function that controls state transitions of `useReducer` is great and surely worth your consideration.
 
 ## Reference
-
 - https://dev.to/builderio/a-cure-for-react-usestate-hell-1ldi
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

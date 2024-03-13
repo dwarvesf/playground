@@ -6,7 +6,6 @@ date: 2022-09-25
 ---
 
 ## What is Pomodoro Technique?
-
 The Pomodoro Technique is a time-management philosophy that aims to give the user maximum focus and creative freshness, enabling them to finish projects more quickly and with less mental exhaustion.
 
 It is an easy process. You allocate time for each project throughout the day in little bursts and take breaks as needed. 25 minutes of labor are followed by a 5-minute rest.
@@ -35,18 +34,15 @@ The arbitrary silliness of using a tomato as a stand-in for units of time belies
 The pomodoro approach urges you to do precisely that: break down your huge activities, projects, or ambitions into something you only have to perform for the next 25 minutes. It keeps you focused on the next task at hand rather than becoming overwhelmed by the vastness of what you're undertaking. Don't be concerned about the outcome; instead, take it one pomodoro at a time.
 
 ## Reference
-
 - Wikipedia Pomodoro_Technique [Link](https://en.wikipedia.org/wiki/Pomodoro_Technique).
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

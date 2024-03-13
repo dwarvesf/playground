@@ -7,11 +7,9 @@ icy: 10
 ---
 
 ## Why?
-
 With the rise of social platforms like Facebook, Twitter and LinkedIn, it's easier than ever to share URLs with a large audience quickly and efficiently. However, each social network has its own unique way of handling URLs, and understanding the correct formatting can make a significant difference in the visibility and engagement of your shared content.
 
 ## Facebook
-
 ```javascript
 `https://www.facebook.com/sharer.php?u=${url}`
 ```
@@ -21,7 +19,6 @@ This format allows you to share a specific URL with your [Facebook](https://abou
 ![](_assets/HMiJfth.png)
 
 ## Messenger
-
 Sharing via [Messenger](https://about.meta.com/technologies/messenger/) is another way to share a URL with your Facebook friends and contacts.
 
 ```javascript
@@ -35,7 +32,6 @@ To use this format, you'll need to replace `${appId}` with your Facebook app 
 ![](_assets/YRQ15EM.png)
 
 ## Zalo
-
 To share a URL via [Zalo](https://zalo.me/pc), a widely used messaging app in Vietnam, you need to create a JSON object containing a key of `"url"` and the value of the URL you want to share. Then stringify and encode the string in the base64 format.
 
 ```javascript
@@ -51,7 +47,6 @@ const sharingUrl = `https://button-share.zalo.me/share_external?d=${encodeB64(
 ![](_assets/5gTiFrK.png)
 
 ## Other platforms
-
 Check out some other formats that allow you to share a URL via some social networks.
 
 | Platform | URL format                                                              |
@@ -61,15 +56,13 @@ Check out some other formats that allow you to share a URL via some social netwo
 | Telegram | <pre>`https://telegram.me/share/?url=${url}`</pre>                      |
 | Reddit   | <pre>`https://www.reddit.com/submit?url=${url}&title=${title}`</pre>    |
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -10,12 +10,10 @@ date: 2022-09-12
 
 State is something that can change within a widget. For example, let’s say we have a like button. The button can either be filled in, or not filled in depending on whether it has been clicked. That’s a state right there. The state of that button can either be filled in or not filled in. If a widget is constant and does not change no matter what is done, then it does not have a State.
 
-
 ## Stateless Widget
 **Stateless Widget**: The widgets whose state can not be altered once they are built are called stateless widgets. These widgets are immutable once they are built i.e any amount of change in the variables, icons, buttons, or retrieving data can not change the state of the app. Below is the basic structure of a stateless widget. Stateless widget overrides the build() method and returns a widget. For example, we use Text or the Icon is our flutter application where the state of the widget does not change in the runtime. It is used when the UI depends on the information within the object itself. Other examples can be Text, RaisedButton, IconButtons.
 
 This widget needs a function `Widget build(BuildContext context)` to render data to the screen. The build function is only called once while the application is running, so the data is only rendered once and does not change throughout the application's life. The display data you can hard code or pass through the constructor function of the class and this data will not change during the display on the screen. Although the StatelessWidget cannot change itself, when the parent Widget changes, the StatelessWidget will be re-initialized.
-
 
 ```Dart
 import 'package:flutter/material.dart';
@@ -101,7 +99,6 @@ The `_MyAppState` class will override the `Widget build(BuildContext context)` m
 
 `StatefulWidget` provides the `setState()` method so you can change the State of the class. Simply put, when you want to Update UI of StatefulWidget, you need to call setState() method to notify StatefulWidget that I want you to update UI. Of course you can call `setState()` as many times as you need to change the UI during the life of your app.
 
-
 ## Differences Between Stateless and Stateful Widget:
 **Stateless Widget:**
   * Stateless Widgets are static widgets.
@@ -115,15 +112,13 @@ The `_MyAppState` class will override the `Widget build(BuildContext context)` m
   * Stateful Widgets have an internal state and can re-render if the input data changes or if Widget’s state changes.
   * For Example: Checkbox, Radio Button, Slider are Stateful Widgets
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -7,7 +7,6 @@ icy: 10
 ---
 
 ## The Problem Statement
-
 [[Redis streaming]] is to have multiple consumers processing incoming messages simultaneously. 
 
 The current system uses Redis streaming to quickly process incoming messages and is required to have the ability to scale up the processing power with concurrency, given specific time frames (exp: duplicating consumer pods). The order of processing incoming messages is ignored to push POC releases.
@@ -17,7 +16,6 @@ As the business model grows, we encounter a case where 2 or more messages need t
 <br/>
 
 ## The master, consumers pattern
-
 The master, consumers pattern is about having a master act as a **proxy to traffic control** to decide which consumers to delegate the incoming message to.
 
 In Redis streaming, only consumers in a group can pick up incoming messages in the stream, read then acknowledge the message as completed.
@@ -31,7 +29,6 @@ The reason the master must `XREADGROUP` is:
 <br/>
 
 ## Example implementation
-
 We will be handling messages containing `ticket_id`. Messages with the same `ticket_id` must be handled orderly one by one.
 
 This will also include saving the current session and failure recovery for pending messages.
@@ -39,7 +36,6 @@ This will also include saving the current session and failure recovery for pendi
 <br/>
 
 ### Redis configs
-
 - `ticket_stream`, business services will `XADD` messages to this stream. The master then delegates messages from this stream to consumers.
 
 - `concurrency_stream_group`, consumer group.
@@ -55,7 +51,6 @@ Redis objects for the master:
     - `consumer_name` key, data:
         - `healthURL`, the URL for the master to check if the consumer is alive.
         - `ticket_ids`, list of processing ticket ids.
-
 
 <br/>
 
@@ -141,19 +136,16 @@ Flow:
 <br/>
 
 ## References
-
 - [Redis documentation](https://redis.io/docs/)
 - [Redis Streams tutorial](https://redis.io/docs/data-types/streams-tutorial/)
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -8,7 +8,6 @@ date: 2022-05-22
 _This note refers to frontend reducers, and not to be confused with other reducers like from MapReduce._
 
 ## Prior art
-
 Although reducers can be represented as a simple switch case of events, the mainstream application of reducers happens either in React's `useReducer` hook, or on Redux in which many of its qualities were motivated from Facebook's Flux architecture.
 
 ![Flux architecture](_assets/Flux_architecture.png)
@@ -16,7 +15,6 @@ Although reducers can be represented as a simple switch case of events, the main
 Along with Elm, the composition of these architectures are very similar to union types (called custom types in Elm) in algebraic data types (ADTs). Unlike normal state machines, we don't encode state in our ADT and assume the initial state of the reducer is the only state.
 
 ## As a state machine
-
 With regard to state management, reducers are essentially single state machines. Although dispatched events doesn't change the initial state, we expect the events to progress the data "context" of the machine. We can refer this as non-deterministic states. For instance, the non-deterministic state of the counter is the incremented `value`:
 
 ![Counter reducer state machine](_assets/Counter_reducer_state_machine.png)
@@ -49,11 +47,9 @@ export let transition = (state, event) =>
 ```
 
 ### Tradeoffs vs a regular state machine
-
 Here a reducer has no concept of a "finite" state here, such that state can be represented finitely with a string. This is an inherent tradeoff that also gives us a useful advantage. Assuming the "context" or non-deterministic state of the reducer uses addition/multiplication, the reducer itself would follow the associative law. This gives us the benefit of converting any reducer that follows the associative law to parallelize its operations.
 
 #### Reference
-
 - https://en.wikipedia.org/wiki/Union_(set_theory)
 - https://guide.elm-lang.org/types/custom_types.html
 - https://erikras.com/blog/reducer-single-state-machine
@@ -61,15 +57,13 @@ Here a reducer has no concept of a "finite" state here, such that state can be r
 - https://redux.js.org/understanding/history-and-design/prior-art
 - https://github.com/jas-chen/rx-redux
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

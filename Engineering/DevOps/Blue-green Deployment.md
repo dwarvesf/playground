@@ -11,17 +11,14 @@ icy: 10
 ![[blue-green-deployment-model.gif]]
 
 ## How does blue-green deployment work?
-
 **Blue-green** deployment is a deployment strategy for software applications that involves maintaining two identical environments: one currently serving production traffic (the **blue** environment), and one that is newly deployed (the **green** environment"). The new version of the application is deployed to the **green** environment, which is tested and monitored. Once it is determined that the **green** environment is working correctly, traffic is routed to it and the **blue** environment is retired. This strategy allows for quick and easy switching between environments, minimizing downtime and reducing the risk of errors or bugs.
 
 ## Characteristic
-
 The following table summarizes the salient features of the **blue-green** strategy compared to other strategies:
 
 ![[bluegreen-compare.png]]
 
 ## Implementing blue-green deployment strategy in Kubernetes
-
 1. Preparing
 
 Before implementing blue-green deployment in Kubernetes, there are a few things you should do to prepare:
@@ -207,25 +204,21 @@ kubectl argo rollouts promote myapp
 Now, the application is deployed on active environment and you can view it on `myapp.bluegreen.xyz` domain.
 
 ## Conclusion
-
 Implementing blue-green deployment in Kubernetes requires preparation, including setting up a Kubernetes cluster, containerizing the application, defining application resources in manifests, setting up a CI/CD pipeline, and implementing monitoring and logging. However, once set up, blue-green deployment can help increase the reliability, availability, and quality of the deployed application. By minimizing downtime, reducing risks, and ensuring the smooth transition to new versions of the application, blue-green deployment can ultimately help organizations deliver more value to their customers.
 
 ## References
-
 - https://www.redhat.com/en/topics/devops/what-is-blue-green-deployment
 - https://cloud.google.com/architecture/application-deployment-and-testing-strategies
 - https://argoproj.github.io/argo-rollouts/
 - https://viblo.asia/p/kubernetes-practice-english-automating-bluegreen-deployment-with-argo-rollouts-GAWVpoGaL05
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

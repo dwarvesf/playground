@@ -6,7 +6,6 @@ date: 2022-03-21
 ---
 
 # Introduction
-
 State, explain, link is a basic style for organizing and explaining ideas in an understandable way. This technique may have many names, but in essence it is a way to organize paragraphs in roughly 3 sentences or more:
 
 | Notions | Coverage | Description                                           |
@@ -18,7 +17,6 @@ State, explain, link is a basic style for organizing and explaining ideas in an 
 Although this originally emerged to write concise paragraphs, the semantic style of the technique is seen almost everywhere, from theses to C4 diagrams.
 
 # How does it work?
-
 Given any general statement, we can construct more detailed points and give examples to support it. **State is in blue, Explain is in orange. Link is in purple**
 
 Here is a simple example concerning quality assurance through six sigma:
@@ -38,24 +36,20 @@ For a more complex example that may take more sentences to explain a topic, take
 ```
 
 # Other applications
-
 You can basically apply this semantic technique anywhere there is English. It is extremely convenient for outlining ideas as your outline statements are essentially **State** scoped sentences in which you can derive **Explain** and **Link** later on or improvise during speaks. You may have done this naturally while looking at the outlines of a slide on your presentation.
 
 #### Reference
-
 - [https://blog.masterofproject.com/six-sigma-method/](https://blog.masterofproject.com/six-sigma-method/)
 - [https://money.cnn.com/2016/10/11/technology/samsung-galaxy-note-7-what-next/index.html](https://money.cnn.com/2016/10/11/technology/samsung-galaxy-note-7-what-next/index.html)
 - [https://www.youtube.com/watch?v=x2-rSnhpw0g](https://www.youtube.com/watch?v=x2-rSnhpw0g)
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

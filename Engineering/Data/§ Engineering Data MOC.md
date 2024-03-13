@@ -6,7 +6,6 @@ recurringTemplateName: engineering-data-moc
 This is a [[Map of Content]] related to the engineering concepts around data.
 
 ## General data
-
 - [[Engineering/Data/Google Dataproc.md|Google Dataproc]]
 - [[Engineering/Data/Google Data Fusion.md|Google Data Fusion]]
 - [[Engineering/Data/Statistics in data analysis.md|Statistics in data analysis]]
@@ -25,12 +24,10 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Data/Buckets on Apache Hive.md|Buckets on Apache Hive]]
 
 ## Big data
-
 - [[Engineering/Data/Apache Hadoop and Big Data.md|Apache Hadoop and Big Data]]
 - [[Engineering/Data/Hadoop Distributed File System (HDFS).md|Hadoop Distributed File System (HDFS)]]
 
 ## State
-
 - [[Engineering/Finite-state transducer.md|Finite-state transducer]]
 - [[Engineering/Finite-state automata.md|Finite-state automata]]
 - [[Engineering/Frontend/Preserving and Resetting state in React.md|Preserving and Resetting state in React]]
@@ -42,6 +39,5 @@ This is a [[Map of Content]] related to the engineering concepts around data.
 - [[Engineering/Reducers.md|Reducers]]
 - [[Engineering/State explosion.md|State explosion]]
 - [[Engineering/UML state machine diagram.md|UML state machine diagram]]
-
 
 *This page was last modified at 2024-01-22T06:13:43.489Z*.

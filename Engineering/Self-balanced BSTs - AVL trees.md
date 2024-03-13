@@ -11,6 +11,7 @@ icy: 10
 - ![[A tree representation of a team.png]]
  - ![[A tree representation of a file system.png]]
 - Why do we use trees? The main advantage of using a tree over linear data structures like arrays or linked lists is that we do not have to search an element in linear team. 
+
 ## Important terms related to trees
 - ![[Key terminologies in a tree 1.png]]
 	- **Node**: The fundamental element of a tree. Each node has arbitrary data and two pointers that may point to null or its children.
@@ -25,6 +26,7 @@ icy: 10
 	- **Sibling**: Nodes that are children of the same parent are called sibling nodes.
 	- **Ancestor**: A node is said to be an ancestor node if it is reachable while moving from child to parent.
 	- **Level/Depth**: The depth/level of a node is the number of edges on the path from the root node to that node. The level of the leaf on the longest path from root is also the height of the tree. Take this in general we can say height of node X is maximum depth in subtree of node X.
+
 ## Type of trees
 - Generally, trees can be divided into two categories based on the number of children a node can have. They are as follows:
 	- **Non-Binary Trees**
@@ -35,6 +37,7 @@ icy: 10
 		- A binary tree is a type of tree in which each node has at **most two** children.
 		- Examples: BSTs, AVL trees, and red-black trees are all examples of binary trees.
 		- ![[Binary tree example.png]]
+
 ## Introduction to binary tree
 - As we discussed earlier, _a binary tree is a type of tree in which each node has at most two children_, which means a node in the binary tree can have one, two, or no children. These children are referred to as the **left child** and the **right child**. To give it a more general view, I would say every node in the tree all has a parent node, except the root or we could argue that parent of the root is nil or a nil node.
 - ![[A tree node example.png]]	- We can code the above node as follows: 
@@ -69,6 +72,7 @@ type compareFunc[T any] func(T, T) int
 	4. A tree with $n$ nodes has exactly $n−1$ edges connecting these nodes. Sketch proof: Take the base case, with one node that is the root itself and zero edge so $1-1=0$ still hold true for our proposion, with two nodes that are the root and either the left or the right child so we have one edge check $2-1 = 1$ still hold true for our proposition, with three nodes that are the root and its children so we have two edges to connect them all together so $3-1 = 2$ still hold  true for our proposition... so on and so forth.
 	5. The height of a complete/full (!= perfect) binary tree of $N$ nodes is $O(lgn)$. Sketch proof: Let's $n$ be the number of nodes in a complete binary tree and let $l_k$ denote the number of nodes on level $k$, where the levels are numbered 1,2,3, ..., h. The last level, $h$ represents the height of the tree. Note that: $l_k=2l_{k-1}$, i.e. each level has exactly twice as many nodes as the previous level (since each internal node has exactly two children). $l_1=1$ i.e. on the "first level" we have only node (the root node). Let's expand several case to find out the recurrence/pattern, $l_2=2, l_3=4,l_4=8,l_5=16,l_6=32...$ so the recurrence solves to $l_k=2^{k-1}$. Note also that the leaves are at the last level $l_h$, where h is the height of the tree, so from the previous bullets we know that the last level has $l_h=2^{h-1}$ nodes. The total number of nodes, $n$, in the tree is equal to the sum of the nodes on all the levels: $1+2^1+2^2+ ... + 2^{h-1}=n$, again let's expand several case to find out the recurrence on the left hand-side of the equation. We try with $$h=0, \quad \therefore 2^0 =1$$$$h=1, \quad \therefore 2^0+2^1=3$$$$h=2, \quad \therefore 2^0+2^1+2^2=7$$$$h=3, \quad \therefore 2^0+2^1+2^2+2^3=15$$so the recurrence is $2^h-1$. Therefore: $$2^h-1=n$$ $$\therefore 2^h=n+1$$ $$\therefore lg2^h=lg(n+1)$$ $$\therefore  hlg2= lg(n+1)$$ $$\therefore h=lg(n+1)$$ Ok, so now we know the height of the tree we can do one more thing that is to compute the number of leaves $l_h$ in the tree, we observed earlier that $l_h=l^{h-1}$ so we can substitute the value of h in this expressions $2^{h-1}=2^h/2^1=2^{lg(n+1)}/2=(n+1)/2$. In conclusion, for a complete binary tree $h$ is $O(lgn)$ and the number of leaves $l_h$ is roughly half of the nodes  $(n+1)/2$. In effect, perfect binary trees have the same properties as they obviously just have more nodes to complete the last level compare to the complete binary trees which have their last level not completely be filled.
 	- Notes: For convenient I will use the notation $lg$ as lograrithm of base 2 ($log2(n)$)since $lg$ also has two letters.
+
 ## Types of binary tree
 - There are many types of binary trees. Let’s discuss them one by one below.
 	- **Complete binary tree**
@@ -93,6 +97,7 @@ type compareFunc[T any] func(T, T) int
 		```
 		- ![[A height-balanced binary tree example.png]]
 	- 
+
 ## Binary search tree (BST)
 - A BST or a binary search tree is a binary tree in which nodes are ordered in the following way:
 		- ![[A binary search tree example.png]]
@@ -107,6 +112,7 @@ type compareFunc[T any] func(T, T) int
 		- Deletion in $O(h)$
 		- Queries for exact key or the predecessor or successor if that key is not exist in $O(h)$.
 		- We can easily return a sorted linear data structure by performing an in-order traversal on the BST which is only $O(n)$.
+
 ## How a BST can be helpful?
 - To talk about the reason behind existence of BST, I'd like to take a toy problem that you can imagine exists in all sorts of scheduling problems, it's a part of a runway reservation system:
 		- We'll assume an airport with a single runway, and we can imagine this runway is pretty busy. There's obviously safety issues associated with landing planes, and planes taking off. And so there are constraints associated with the system, that have to be obeyed. And we have to build these constraints in, and the checks for these constraints into our data structure. 
@@ -123,8 +129,10 @@ type compareFunc[T any] func(T, T) int
 	- This should give us a sense of the richness of the BST structure, we can have nodes to store more data in them than just these common pointers. Having this notion of augmentation on the data structure is very good, because of design admendments so specifications never stay the same, like we're working for someone, and they never really tell us what they want, they might but they will change their mind later on, so in that case we're going to change our mind too and do the augmentation. I'll take an extra example requirements added upon our "runway reservation system" problem above, we need to compute $rank(t)$ that is how many planes are scheduled to land at times less than or equal to $t$, perfectly reasonable additional requirement and it wasn't part of the original spec.
 	- With the notion of the aumented BST, we can refer to the normal BST as the vanilla BST such that each node encapsulates common basic fields like left,right pointer, key... while the aumented BSTs are usually bring together other fields or callbacks needed to make the algorithms work.
 	- If you're interested in the implementations of BST you can search your own in the internet, today we're going to focus only on a method to balance BST.
+
 ## BST needs to be balanced!
 - Almost operations for a vanilla BST is O(h) where h is the height of the BST but what we want is $O(lgn)$, so if $h = lgn$ where n is the total number of nodes in the BST then we will have $O(lgn)$ for operations attached to the BST which will truly satisfied our requirement for the "runway reservation system" problem. We have a concept of the balanceness of a tree, to say that a tree is balanced that is it's height must be $O(lgn)$, because almost . Because of the invariant of the BST that is not related to the height of the tree so that BST can become totally skewed to the right/left which is essentially a linked list and we know what's the problem with a linked list. Now this becomes our new problem as obstacles that we have to solve before we can have a data structure that efficiently acchieve $O(lgn)$ time in all attached operations in most of the time.
+
 ## The height of a node
 - The new question is, what do we need to do in order to guarantee the height of a BST to be $lgn$. And before getting to methods that help us to actually do that, I think it's useful to discuss about height of the BST or in general height of a node within a BST because height of node root is also height of the BST.
 - I will give out a hint that AVL require each node to store an additional integer field call `height` to store the height of each node, because the algorithm need to know that information instaneously in order to effecienly balance the tree (Simply we can't afford to go down the tree or sub-trees if you will to compute the height every time we need it). For a more intuitive view, let's look at the following picture:
@@ -133,12 +141,14 @@ type compareFunc[T any] func(T, T) int
 
 ## How to balance BST?
 - BSTs are augmented and added invariants in many different ways in order to achieve balanceness in their height and they have a common name "Self-balance binary search tree", the most famous are AVL trees which we're going to talk about today, Red-Black trees, Splay trees, treaps. Each type of self-balance BST either has their own idea (Red-Black trees have the idea of coloring nodes with red or black) or common idea (the node rotation is commonly used in variants of self balance  BST) to achieve balanceness in height.
+
 ## AVL tree
 - A little bit information about the origin of this data structure:
 	- Named after two Soviet inventors **A**delson-**V**elsky a computer scientist and **L**andis a mathematician.
 	- It was the first self-balance BST ever to be invented and was the original way people found to keep trees balanced back in the '60s so they're kind of the simplest among others.
 	- AVL trees are often compared with Red-Black trees because both support the same set of operations and take $O(lgn)$ time for the basic operations. For lookup-intensive applications, AVL trees are faster than red–black trees because they are more strictly balanced.
 - AVL tree has a little rule for the height of their nodes. That is if a node is missing its left or right child or both and the missing children is considered as an imaginary node and these nodes have height $h=-1$. In order for the formula to calculate the height of a binary node in a BST work with that base case.
+
 ## Rep invariant of an AVL
 - I will go with the definition of the authors of the algorithm first.
 - `First the tree itselft must be a BST, then the height of the left sub-tree for every nodes within the tree must not 1 apart from the height of the right sub-tree`
@@ -160,6 +170,7 @@ type compareFunc[T any] func(T, T) int
 	- $n_{h-2}$ is the right way to go because we want to know $n_h$ is greater than something in order to get a less than down here. So we have $n_h>2n_{h-2}+1$ because if we have a larger height we're going to have more nodes. We can even get rid of the $1$ because that only makes things bigger, so we have $n_h>2n_{h-2}$ . Now from this version of the recurrence, let's use inductive reasoning to solve it. 
 	- ![[Height of an AVL tree is bounded by O(lgn).png]]
 - All right, so far so good, now the next big question is how the heck can we maintain this AVL properties for our good old BST?
+
 ## How to maintain the AVL invariant when the BST tree is modified
 - **Insertion**:
 	- Step 1: Do simple BST insertion, and this one will not preserve the AVL property.
@@ -190,7 +201,6 @@ type compareFunc[T any] func(T, T) int
 - Suppose $X$ is the lowest node violating the AVL properties, the way we find this node is we start at the node that we changed (insert/delete), we update the height based on the heights of its children and check if it's ok as we go up, and we keep walking up until we see, oh, the left is $+2$ larger than the right or vice versa, then we fix it.
 - Phew, it's a long article though. Hope you get some sense of the idea of AVL trees. If you looking for an example implementation of it, I've coded a version of an AVL tree for storing integers in Go you can take it as reference: https://github.com/mirageruler/Data-Structures-and-Algorithms-Implementations/blob/main/data_structures/tree/avl.go. In the near future, I'm looking forward to augment it to support generic types and see if I can leverage concurrency to speed up the algorithms which mean to deal with all sorts of the concurrency related problems.
 
-
 ## References:
 - https://en.wikipedia.org/wiki/AVL_tree
 - https://www.youtube.com/watch?v=9Jry5-82I68&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=5
@@ -198,15 +208,13 @@ type compareFunc[T any] func(T, T) int
 - https://www.youtube.com/watch?v=r5pXu1PAUkI&list=PL-K_ib5mxHXnukhVpx_wMun21O2GQUEE0&index=5
 - https://www.youtube.com/watch?v=IWzYoXKaRIc&list=PL-K_ib5mxHXnukhVpx_wMun21O2GQUEE0&index=6
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -2,7 +2,6 @@
 #.obsidian/
 obsidian.zip
 
-
 # OR only to exclude workspace cache
 .obsidian/workspace
 .obsidian/workspace.json

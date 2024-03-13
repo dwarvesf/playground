@@ -10,15 +10,12 @@ The _**"parse, don't validate"**_ approach is all about processing incoming data
 
 Parsing is better than validation because it requires you to explicitly handle every incoming data. It provides a type-safe method of working and makes it difficult to spread harmful material throughout your apps and data storage. However, it is true that parsing frequently incorporates data validation.
 
-
 ## Overview
-
 ### What is parsing?
 - **Parsing** is the process of analyzing a string or symbol either in natural language, computer languages or data structures, conforming to the rules of a formal grammar.
 - The **"_process of analyzing_"** and **"_conforming to the rules of a_ [_thingy_]"** are crucial here. _Thingy_ is our schema and type, which in this instance may be thought of as forming our _formal grammar_ (don't worry if you don't know what it means). _Process of analyzing_ is the work our code does when trying to fit data to the schema & type. The reason why we are saying “schema & type” is that we want them somehow to be the same thing, instead of two separate things that may or may not be in sync.
 
 ### Examples in Typescript with yup
-
 #### Example
 ```ts
 import * as yup from "yup";
@@ -117,12 +114,11 @@ https://itnext.io/parse-dont-validate-incoming-data-in-typescript-d6d5bfb092c8
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -17,7 +17,6 @@ icy: 10
 ---
 
 ## What are random and sequential reads and writes?
-
 Random and sequential reads and writes refer to the way data is accessed, read, and written on hard disks
 
 ![[disk-sequential-random-access.png]]
@@ -29,7 +28,6 @@ Random read/write operations, on the other hand, involve accessing small files s
 TL;DR: Sequential reads and writes involve accessing data in a continuous, linear manner, while random reads and writes involve accessing small files scattered throughout the drive. Hard drives generally perform better in sequential operations compared to random operations due to the physical limitations of the read/write head.
 
 ## What does this mean for database design?
-
 Random and sequential reads and writes have implications for CQRS (Command Query Responsibility Segregation) and database design. CQRS is an architectural pattern that separates read and write operations for a data store, allowing for optimized performance, scalability, and security.
 
 In the context of random and sequential reads and writes, CQRS can benefit from the separation of read and write operations. For example, the read side can use a schema optimized for queries, which may involve more random reads, while the write side can use a schema optimized for updates, which may involve more sequential writes. This separation allows for independent scaling of read and write workloads, potentially reducing lock contentions and improving overall performance.
@@ -37,7 +35,6 @@ In the context of random and sequential reads and writes, CQRS can benefit from 
 Moreover, CQRS can take advantage of different storage technologies for read and write operations, such as using SSDs for random reads and traditional hard drives for sequential writes. This flexibility can lead to better performance and resource utilization, depending on the specific use case and requirements of the application.
 
 ## SQL Operation on Disk reads/writes
-
 In the context of SQL operations and hard disk actions, different SQL operations can result in either sequential or random read/write actions on the hard disk. Here's a breakdown of some common SQL operations and their corresponding hard disk actions:
 
 1. **SELECT**: Reading data from a table can be either sequential or random, depending on the query and the organization of the data on the disk. If the data is well-organized and the query accesses contiguous blocks, it can result in sequential reads. However, if the data is scattered across the disk, it can result in random reads.
@@ -51,7 +48,6 @@ In the context of SQL operations and hard disk actions, different SQL operations
 5. **INDEX**ing: Creating or updating indexes can result in both sequential and random read/write operations, depending on the organization of the data and the index structure. For example, creating a clustered index can result in sequential writes, while creating a non-clustered index can result in random writes.
 
 ## Optimizing SQL for better sequential reads/writes
-
 To optimize PostgreSQL database performance for sequential reads and writes, you can follow these general recommendations:
 
 1. **Table partitioning**: Partition large tables into smaller, more manageable pieces to improve query performance and reduce the amount of data that needs to be scanned.
@@ -73,12 +69,9 @@ To optimize PostgreSQL database performance for sequential reads and writes, you
 Remember that each PostgreSQL database server's environment is different, so it's essential to test and adjust these recommendations according to your specific needs and use case.
 
 ## Conclusion
-
 In summary, SQL operations can result in either sequential or random read/write actions on the hard disk, depending on the organization of the data, the table structure, and the specific operation being performed. The impact of sequential and random reads and writes on SQL database performance can be significant, and it is important to design the database disk storage in such a way that maximum sequential I/O may be performed to optimize performance.
 
-
 ## References
-
 -  https://www.redhat.com/architect/pros-and-cons-cqrs
 -  https://www.baeldung.com/cs/sequential-vs-random-write
 -  https://superuser.com/questions/1325962/sequential-vs-random-i-o-on-ssds
@@ -104,15 +97,13 @@ In summary, SQL operations can result in either sequential or random read/write 
 -  https://www.linkedin.com/pulse/how-cqrs-solves-problem-overloading-transactional-database-gontu-1e
 -  https://dba.stackexchange.com/questions/285809/do-databases-optimize-random-write-and-read-operations
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

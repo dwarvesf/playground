@@ -7,13 +7,11 @@ icy: 10
 ---
 
 ## StarkNet layer 2 solution
-
 StarkNet is a layer 2 blockchain solution using ZK rollup, it provides StarkDex technology for well-known applications such as dYdX, ImmutableX, Sorare. It allows decentralized exchanges to process transactions with fast speed and low costs. Its essence is to reduce computations, store on-chain, replace with off-chain computations and store off-chain, Store balance using merkle tree with root merkle tree stored on-chain
 
 ![](../_assets/starkdex.jpeg)
 
 ## StarkNet architecture overview
-
 The system consists of 6 main components:
 
 - **User account** is a smart contract and expands the ability to create a recovery mechanism that depends on social information such as friends, family, colleagues, can handle offline authentication instead of use seed phrases. There is now an Argent X wallet that uses this method.
@@ -24,7 +22,6 @@ The system consists of 6 main components:
 - **StarkNet Core** Is a smart contract running on layer 1 that receives changes to Layer 2 global state from StarkNet every time there is a new L2 block and its proof is successfully verified on-chain by Verifier. StarkNet Fullnode will decrypt the data in the "call data" to recreate the history of the network on the first sync
 
 ## How does it work
-
 The process consists of four steps:
 1. **Batching** is Sequencer, groups together multiple transactions into a batch for processing. The entired batch is submit on-chain as a single compressed state update with a proof.
 2. **Validating & Updating** The update is then compressed in the form of a hash on the entire state of the system : ℎ(ℎ(ℎ(class_hash,storage_root),0),0) 
@@ -36,7 +33,6 @@ Where:
 4. **On-chain Verification** Once the proof is verified, the state update is committed and settled on layer 1 Ethereum
 
 ## Messaging Mechanism
-
 Contracts on L2 can interact asynchronously with contracts on L1 via the L2→L1 messaging protocol.
 
 ![](../_assets/StarkNet-current-architecture.png)
@@ -45,9 +41,7 @@ Contracts on L1 can interact asynchronously with contracts on L2 via the L1→L2
 
 ![](../_assets/StarkNet-l1l2.png)
 
-
 ## StarkNet transaction lifecycle
-
 When the transaction is submitted to the StarkNet, it is sent to the Sequence node. **Sequencer** takes a batch of transactions and generates:
 
 - List of changes made by transactions (storage, balance, data...)
@@ -56,28 +50,24 @@ When the transaction is submitted to the StarkNet, it is sent to the Sequence no
 ![](../_assets/StarkNet-transactions-states.jpeg)
 
 ## Node clients
-
 StarkNet nodes use the [Pathfinder](https://github.com/eqlabs/pathfinder) or the [Juno](https://github.com/NethermindEth/juno) client and they are similar to the nodes running Go Ethereum
 
 ## Reference
-
 - [StarkDEX Deep Dive : Introduction](https://medium.com/starkware/starkdex-deep-dive-introduction-7b4ef0dedba8)
 - [StarkNet’s Architecture Review](https://david-barreto.com/StarkNets-architecture-review/)
 - [StarkNet docs](https://docs.StarkNet.io/documentation/)
 
 ### Smart contract 
-
 - [StarkNet core](https://etherscan.io/address/0xc662c410c0ecf747543f5ba90660f6abebd9c8c4)
 - [StarkNet Operator](https://etherscan.io/address/0x2c169dfe5fbba12957bdd0ba47d9cedbfe260ca7)
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -6,7 +6,6 @@ date: 2022-10-24
 ---
 
 ## Introduction
-
 [[MapReduce]] consists of four components:
 - Map Phase
 - Reduce Phase
@@ -14,7 +13,6 @@ date: 2022-10-24
 - Combiner
 
 ## Problem statement
-
 ![](stock-problem.png)
 
 Here's a problem we'd like to solve. We have a data set with information about several fictitious stock symbol. In each line in the data set, we have information about a stock symbol for a day: opening price, closing price, high, low, volume, etc.
@@ -34,7 +32,6 @@ If the end of the file is reached, print the results.
 The problem with this approach is that there is no parallelization. Thus, if we have a huge data set, we will have extremely long computation time which is not ideal.
 
 ### Input Split
-
 ![](distributed.png)
 
 Let's consider how we have worked out the same problem in the mapreduce world. From the article `What MapReduce is`, we got introduced to the faces of MapReduce, so we'll take this problem and go over each phase and see the technical details involved in the map phase, reduce phase and shuffle phase.
@@ -58,7 +55,6 @@ Therefore, when a mapper tries to read the data, it clearly knows where to start
 So that is why we have a concept of input split. Input split respects logical record boundary. During mapreduce execution hadoop scans through the blocks and create input splits which respects record boundaries.
 
 ### Map Phase
-
 ![](map-phase.png)
 
 With the understanding about input splits, we can take a look about the mapper in detail. A mapper in hadoop can be written in many different programming languages, it can be written in C++, python Scala and Java. In our case we'll look at Java, a mapper is a Java program in our case which is invoked by the Hadoop framework once per every record in the input split.
@@ -76,7 +72,6 @@ So a mapper is invoked for every single record in the input split and then the o
 But how do we decide what should be the key and what should be the value in our key value pair?
 
 ### Reduce Phase
-
 ![](reduce-phase.png)
 
 The reduce phase that will give us an answer. The reducers work on the output of the mappers. The output of individual mappers are grouped by the key, in our case, the stock symbol and pass to the reducer. Reducer will receive a key and a list of values for that key for input. The keys will be grouped.
@@ -98,7 +93,6 @@ We know the number of mappers equals to the number of input splits are not contr
 Assuming that data set is divided into 100 splits which means 100 mappers. Now we have only one reducer to process all the output from 100 mappers. In some cases it might be okay but we might run into performance bottleneck at the reduced phase because we're trying to reduce output from 100 mappers in one reducer.  So if we're dealing with large amount of data in the reduced phase it is advisable to have more than one reducer.
 
 ### Shuffle Phase
-
 ![](multiple-reducers.png)
 
 In the above picture, we have multiple reducers. Let's consider how the output of the individual mappers got grouped by symbols and reached the reducer. The magic happens in the shuffle phase.
@@ -141,7 +135,6 @@ Similarly you can find key value pairs for symbol `STT` in mapper 1 and also in 
 Each run will print the symbol and its maximum closing price. That's the end to end process in mapreduce.
 
 ### Combiner
-
 ![](combiner.png)
 
 We could also have an optional combiner at the map phase.
@@ -152,19 +145,16 @@ Since we are calculating the maximum closing price, we don't have to send the ke
 Intuitively, combiner is like a mini reducer that runs at the map phase. Combiners can be very helpful to reduce the load on the reduce side.  Since we're reducing the amount of data that are being sent to the reducers, thereby increasing performance. Combiners are optional.
 
 ## Summary
-
 - the internals of map shuffle and reduced phases.
 - the benefit of using a combiner.
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

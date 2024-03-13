@@ -9,7 +9,6 @@ icy: 10
 [Langchain](https://python.langchain.com/) is a framework that enables the development of applications that utilize language models. It provides support for various main modules, including Models, Prompts, Memory, Indexes, Chains, and Agents. LangChain believes that applications with the greatest power and differentiation will not only rely on calling out to a language model via an API but will also be aware of data and allow a language model to interact with its environment.
 
 ## What are document loaders in Langchain?
-
 The [document loaders](https://python.langchain.com/en/latest/modules/indexes/document_loaders.html) in Langchain are used to get around the [[Workaround with OpenAI's token limit with Langchain|~4K token limit on OpenAI]] by using several strategies such as stuffing, map-reduce, refining, and map-rerank. These strategies are used to split documents into smaller sections or summaries that can fit into the 4K token limit and consolidate them as a summary that can fit into the 4K token limit. These strategies are also used to refine prompts to ChatGPT to refine its context prior to composing a final summary that will then be used to prime the conversation for the response.
 
 These data are saved and indexed as vectors in a [[Vector Database|vector database]]. Vector indexes are used to capture word meaning and represent it in a continuous space. This helps the model to understand the context and generate more accurate responses.
@@ -17,7 +16,6 @@ These data are saved and indexed as vectors in a [[Vector Database|vector databa
 ![[langchain-document-loader-flow.png]]
 
 ### Question Answer Systems
-
 In order to get question and answering from prompts, we follow 4 steps with langchain:
 1.  Create an index
 2.  Create a Retriever from that index
@@ -25,7 +23,6 @@ In order to get question and answering from prompts, we follow 4 steps with lang
 4.  Ask questions!
 
 ## Example agent with CSVs
-
 Below is an example using a CSV file through an agent. This CSV contains `red-alert` channel data from Dwarves' discord as the context for our questions that we will be asking later.
 
 0. First we load all of our `pip` packages
@@ -102,7 +99,6 @@ openai_agent.run(query)
 ```
 
 ## Conclusion
-
 Hopefully, this gives you an idea of how langchain can be used to create an agent that take indexes and data from our transient vector database. A lot of the processing for generating these prompts happens behind the scenes, so that we only need to worry about loading and consolidating which data we need to use as indexes for LLMs.
 
 ## References
@@ -111,12 +107,11 @@ Hopefully, this gives you an idea of how langchain can be used to create an agen
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

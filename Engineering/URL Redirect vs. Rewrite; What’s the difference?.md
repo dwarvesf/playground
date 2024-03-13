@@ -15,7 +15,6 @@ icy: 10
 When working with websites and managing the computers that show them, we run into two important ideas: redirect URLs and rewrite URLs. These ideas are like tools that help us make websites work better for people. They help us make websites easier to find on search engines, and they help us make the paths on websites smoother. In this guide, we're going to explore these tools together. We'll learn what makes them different and how we can use them to make websites even cooler.
 
 ## Redirect URLs: Navigating the Path
-
 A redirect URL is a technique used to guide users from one URL to another, often due to a webpage's relocation, restructuring, or a change in content. Imagine it as a virtual signpost that ensures visitors reach their desired destination without wandering in the digital wilderness. Redirects come in various flavors, but the two most common types are:
 
 ### 1. 301 Permanent Redirect
@@ -31,7 +30,6 @@ The 302 redirect is more like a "Come back soon" note. It informs browsers and s
 4. The server provides the browser with the content of the new URL, which users can then view in their browser.
 
 ## Rewrite URLs: Crafting the Illusion
-
 If redirect URLs are signposts, then rewrite URLs are masterful illusions. URL rewriting involves modifying the URL that a user enters or clicks on, usually to make it more user-friendly, descriptive, or structured. This modification is typically done on the server side before the request is processed. The rewritten URL is then used to fetch the appropriate resource or content from the server.
 
 ### 1. Clean URLs
@@ -55,7 +53,6 @@ Now, let's delve into the process of how URL rewriting works using an example:
 2. The server follows predefined rules and rewrites http://my-app/product/macbook-pro to http://my-app/product?id=macbook-pro. The server processes the rewritten URL and returns the content to the browser.
 
 ## Key Differences and How to Choose
-
 Redirect URLs and rewrite URLs share a common goal: to lead users to the right place. However, they achieve this goal differently:
 
 - **Purpose**: Redirect URLs are about physically moving users from one URL to another, while rewrite URLs focus on altering the appearance of URLs.
@@ -76,12 +73,11 @@ Redirect URLs and rewrite URLs are threads that weave together seamless user exp
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

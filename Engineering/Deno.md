@@ -6,14 +6,12 @@ date: 2022-03-17
 ---
 
 ## What
-
 - A new JavaScript runtime, written in Rust (JsVM 💃🏻)
 - Built to follow the standard Web API
 - Take advantage of TypeScript, WASM and ESM module (and support them natively)
 - "Node" written weirdly backwards
 
 ## Why
-
 ![](_assets/kFo8ECL.png)
 
 - Deno follows the standard Web API [and is leading the industry in implementing them](https://github.com/denoland/deno/pull/11941)
@@ -25,14 +23,12 @@ date: 2022-03-17
 - Perfect to deploy on modern platforms like Cloudflare Workers and [Deno Deploy](https://deno.com/deploy/docs)
 
 ## Why not?
-
 - Although native ESM and `script type="module"` is widely supported in modern browsers, some very new APIs like `URLPattern` is not completely supported everywhere
 - dependencies on Deno are imported by URL, so it makes it somewhat messy, but [`import map`](https://deno.land/manual/linking_to_external_code/import_maps) can be used to improve readability
   - `import lodash from "https://deno.land/x/lodash@4.17.19"`
   - `deno` will download available imports online and cache locally before running
 
 ## What about Node.js?
-
 - Node.js and its ecosystem has grown into a messy place
 - History of inconsistent authoring/bundling [formats](https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm) (cjs, amd, umd)
 - Node 16 adds ESM support, but before moving to ESM format, 2 things needed to happen:
@@ -43,7 +39,6 @@ date: 2022-03-17
 - Non-standard & incompatible with modern JavaScript
 
 ## Extras
-
 Deno also removes one most confusing part when developing JavaScript: build tools.
 
 Webpack/Babel and their bundling process is the most over-engineered (albeit necessary) part of JavaScript development. Just needing to know how bundlers work to effectively leverage them is a crucial part of writing & authoring JavaScript projects/libraries, and has been over the recent decade.
@@ -55,7 +50,6 @@ Deno, on the other hand, strives to move along with the modern JavaScript standa
 > "Now we can sit down and write actual JavaScript instead of spending half a day initialize new project with Webpack, Babel, JSX and another half to configure Jest to read our `.babelrc` config. _Such. fresh. air._"
 
 ### Deno Deploy
-
 Similar to Cloudflare Workers, Deno Deploy is a serverless deployment platform using the Service Worker API to create deployments, currently in (free) public beta.
 
 What's really cool about Deno Deploy is that it only requires a link to your entry file to deploy, and deploy time is super fast.
@@ -67,15 +61,13 @@ Interesting projects to follow:
 - https://github.com/exhibitionist-digital/ultra
 - https://github.com/lucacasonato/fresh
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

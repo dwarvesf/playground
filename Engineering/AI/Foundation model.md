@@ -21,19 +21,16 @@ Nevertheless, challenges exist. Training these models can be cost-intensive, whi
 It's noteworthy that the use of foundation models isn't confined to language tasks. They are applicable across domains, whether it's image generation from text as seen with DALL-E 2, assisting in code writing like Copilot, discovering molecules in chemistry, or leveraging geospatial data in climate research.
 
 ## References
-
 - https://research.ibm.com/blog/what-are-foundation-models
 - [What are Generative AI models](https://www.youtube.com/watch?v=hfIUstzHs9A)
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

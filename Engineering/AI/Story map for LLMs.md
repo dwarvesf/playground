@@ -8,7 +8,6 @@ blog: https://dwarvesf.hashnode.dev/an-engineering-story-map-for-llms
 ---
 
 ## Story Map: Journey for Engineers Developing Applications on top of Large Language Models (LLMs)
-
 Below is a story map of a kind of simplified learning and execution path for engineers starting out in developing AI. Not every engineering story follows the same path, but hopefully below will give you a general idea as to where you are in your story and what is left ahead.
 
 ![[storymap_llm.jpg]]
@@ -137,15 +136,13 @@ The general idea of this story map is to help engineers develop a strong foundat
 - https://www.superannotate.com/blog/rlhf-for-llm
 - https://www.assemblyai.com/blog/the-full-story-of-large-language-models-and-rlhf/
 
-
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

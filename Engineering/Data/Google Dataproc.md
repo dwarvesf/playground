@@ -12,8 +12,8 @@ github_id: mickwan1234
 date: 2024-01-22
 icy: 10
 ---
-## Introduction
 
+## Introduction
 Google Dataproc is a fast and easy-to-use, fully managed cloud service for running Apache Spark and Hadoop workloads. It allows users to process and analyze large-scale data efficiently and at scale. Key features and benefits of Google Dataproc include:
 
 - **Fast and Scalable Processing**: Dataproc enables users to run Apache Spark and Hadoop workloads on Google Cloud Platform, taking advantage of its scalable infrastructure and resources.
@@ -24,7 +24,6 @@ Google Dataproc is a fast and easy-to-use, fully managed cloud service for runni
 Overall, Google Dataproc simplifies big data processing and analysis by providing a fast, scalable, and integrated platform for running Apache Spark and Hadoop workloads on Google Cloud Platform.
 
 ## Use cases
-
 Google Cloud Dataproc has a wide range of use cases for processing large datasets and running big data applications. Here are some of the most popular examples:
 
 **Batch processing:**
@@ -48,7 +47,6 @@ Google Cloud Dataproc has a wide range of use cases for processing large dataset
 - **Genomics:** Dataproc can be used to analyze large genomic datasets for research and clinical applications.
 
 ## Pricing
-
 [Dataproc on Compute Engine](https://cloud.google.com/dataproc) pricing is based on the size of Dataproc clusters and the duration of time that they run. The size of a cluster is based on the aggregate number of [virtual CPUs (vCPUs)](https://cloud.google.com/compute/docs/machine-types) across the entire cluster, including the master and worker nodes. The duration of a cluster is the length of time between cluster creation and cluster stopping or deletion.
 
 The Dataproc pricing formula is: `$0.010 * # of vCPUs * hourly duration`.
@@ -71,9 +69,7 @@ This Dataproc cluster has 24 virtual CPUs, 4 for the master and 20 spread across
 In this example, the cluster would also incur charges for Compute Engine and Standard Persistent Disk Provisioned Space in addition to the Dataproc charge (see [Use of other Google Cloud resources](https://cloud.google.com/dataproc/pricing#use_of_other_google_cloud_resources)). The [billing calculator](https://cloud.google.com/products/calculator) can be used to determine separate Google Cloud resource costs.
 
 ## How to setup a Dataproc cluster
-
 ### ****Prerequisites:****
-
 1. **Google Cloud Platform Account:**
     - You need a GCP account. If you don't have one, you can sign up for a free trial at [Google Cloud Console](https://console.cloud.google.com/).
 2. **Enable Billing:**
@@ -86,7 +82,6 @@ In this example, the cluster would also incur charges for Compute Engine and Sta
     - Enable the necessary APIs for Dataproc and other services. You can do this through the [APIs & Services > Dashboard](https://console.cloud.google.com/apis/dashboard) section in the GCP Console.
 
 ### **Set Up a Dataproc Cluster:**
-
 Now that you have the prerequisites in place, you can proceed to set up a Dataproc cluster:
 
 1. **Open Cloud Shell:**
@@ -127,13 +122,10 @@ Now that you have the prerequisites in place, you can proceed to set up a Datapr
         
 
 ## How to deploy a Spark job on Dataproc (Using Google cloud console)
-
 ### Step 1: In the created cluster click on `Submit Job` button on the top right of the main console screen
-
 ![[Google Dataproc-20240122130334062.webp]]
 
 ### Step 2: Fill all necessary field in the job creation modal:
-
 ![[Google Dataproc-20240122130408379.webp]]
 - Job ID: job unique name across the cluster
 - Job Type: the type of the job that you submit to Dataproc including (in this demo we’ll use PySpark):
@@ -146,7 +138,6 @@ Now that you have the prerequisites in place, you can proceed to set up a Datapr
 - Then press `Submit` to submit the job
 
 ### Step 3:
-
 After submitting the job you should be able to similar screen to this:
 ![[Google Dataproc-20240122130525347.webp]]
 
@@ -159,12 +150,11 @@ Full video step by step:
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

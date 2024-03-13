@@ -86,7 +86,6 @@ For the `<scroller>` argument:
 **root**: Uses the document viewport as the scroll container.
 **self**: Uses the element itself as the scroll container.
 
-
 For the `<axis>` argument:
 
 **block**: Measures the progress along the block axis of the scroll container (default).
@@ -104,6 +103,7 @@ Note: Make sure you run this example in Chrome 115 or above with the 'Experiment
 That's it! With just a few lines of CSS code, we've created an awesome scroll animation. 
 You can create many amazing animations with Scroll-driven Animation. To discover more examples, please check the reference link.
     
+
 ## References
 - https://scroll-driven-animations.style
 - https://developer.chrome.com/articles/scroll-driven-animations
@@ -111,12 +111,11 @@ You can create many amazing animations with Scroll-driven Animation. To discover
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

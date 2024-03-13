@@ -32,7 +32,6 @@ function Counter(name) {
 {isPlayerA && <Counter name="A" />}
 {!isPlayerA && <Counter name="B" />}
 
-
 ```
 
 ## The UI Tree
@@ -113,7 +112,6 @@ const [isPaused, setIsPaused] = useState(false);
 => **Different component + Same position -> Reset the state of its entire subtree**
 
 ## Resetting state at the same position
-
 By default, React preserves state of a component while it stays at the same position. But we have ability to reset the state.
 
 Back to the example at the beginning of the article
@@ -126,7 +124,6 @@ Back to the example at the beginning of the article
 - Q: If we use approach 1, what happens?
 - A: Because the counter component in two case is the same component + same position => The state still the same. That makes a bug, although the name props changed, but the `score` still stay. It's normal in React, but it isn't what we want, right? We have 2 options for it
 
-
 ### Option 1: Rendering component with different positions
 - It's exactly what Approach 2 does, rendering component with different positions
 
@@ -137,7 +134,6 @@ Back to the example at the beginning of the article
 ![Option 1](../../_assets/opt1-diff-position.png)
 
 ### Option 2: Resetting state with a key (recommendation)
-
 ```js
 {isPlayerA ? <Counter name="A" key="A" /> : <Counter name="B" key="B" />}
 ```
@@ -149,12 +145,11 @@ Back to the example at the beginning of the article
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

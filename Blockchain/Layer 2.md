@@ -7,7 +7,6 @@ icy: 10
 ---
 
 ## What?
-
 - [[Ethereum scaling solutions]]
 - Separate [[blockchain]]
   - Extends [[Ethereum]]
@@ -20,7 +19,6 @@ icy: 10
     - Dispute transaction of Layer 2
 
 ## Why?
-
 Blockchain has 3 desirable properties
 
 - Decentralized
@@ -33,13 +31,11 @@ High demand -> Need to scale without sacrificing decentralization and security
 => Need Layer 2 to scale Blockchain that takes advantage of robust decentralized security of [[Layer 1]]
 
 ## How?
-
 - Communicate with [[Layer 1]] by submitting bundles of transactions
 - [[Layer 1]] handles security, data availability, and decentralization
 - Layer 2 handles scaling by computing and sending finalized proofs to [[Layer 1]] -> Remove transaction loading.
 
 ### Rollup
-
 - Preferred layer 2 scaling solution in Ethereum
 - Reduce gas fees by up to 100x compared to [[Layer 1]]
 - Rollup bundle ("roll up") hundreds of transactions into a [[Layer 1 ]] transaction => Fee will be dived/distributed to all users (owners of these hundreds of transactions) -> Cheaper
@@ -52,24 +48,20 @@ High demand -> Need to scale without sacrificing decentralization and security
   - [[ZK Rollups]] aka Zero-knowledge Rollups
 
 ## Example
-
 - Arbitrum One
 - Optimism
 - Boba Network
 
 ## References
-
 - https://ethereum.org/en/layer-2
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

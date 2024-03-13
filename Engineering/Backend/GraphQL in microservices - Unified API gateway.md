@@ -7,7 +7,6 @@ icy: 10
 ---
 
 ## Preamble
-
 What if you could access all of your organization’s data by typing a single GraphQL query, even if that data lived in separate places? Up until now, this goal has been difficult to achieve without committing to a monolithic architecture or writing fragile schema stitching code.
 Ideally, we want to expose [one graph](https://principledgraphql.com/integrity#1-one-graph) for all of our organization’s data without experiencing the pitfalls of a monolith. What if we could have the best of both worlds: a complete schema to connect all of our data with a [distributed architecture](https://principledgraphql.com/integrity#2-federated-implementation) so teams can own their portion of the graph?
 Currently, GraphQL proposes two approachs with detailed specification to create a unified GraphQL API from multiple GraphQL APIs which are:
@@ -29,9 +28,7 @@ In my humble opinion, currently I'd prefer the schema federation approach since 
 
 I would like to introduce [Bramble](https://github.com/movio/bramble), an open-source project developed by engineers working at [Movio](https://www.movio.la/) and is released under the MIT license.
 
-
 ## Bramble
-
 As a GraphQL API gateway, Bramble supports the following features:
 - **GraphQL federation**  
 	Bramble allows you to federate the schemas of multiple services together, i.e. to create a single GraphQL API out of smaller ones. Note that this is different from schema stitching, in that federation allows multiple services to contribute fields to common types. The Apollo team [pioneered the concept of GraphQL federation](https://www.apollographql.com/blog/apollo-federation-f260cf525d21/) in mid-2019, and Bramble is largely inspired by their work.
@@ -46,9 +43,7 @@ As a GraphQL API gateway, Bramble supports the following features:
 
 The Bramble documentation has an easy to follow [getting started guide](https://movio.github.io/bramble/#/getting-started). In the rest of this blog post, we'll go through the history of the project, the motivations for creating it, and some comparisons to existing tools.
 
-
 ## Motivations
-
 The Movio team started this project because they wanted a better way of sharing data and functionality across multiple teams. Imagining that a lot of other teams have been or are faced with a similar situation: a large legacy database, or a set of legacy APIs that become a bottleneck for new developments, and a desire to build something better. 
 Here is what their infrastructure looked like after more than a decade of development:
 -  A primary database used as the source of truth for most data and also used as a communication channel between some services.
@@ -74,24 +69,17 @@ _Target infrastructure_
 
 Note that the requirements above are tailored to our needs at Movio. Each of them represents a trade-off between ease of use, consistency, and performance. Other organizations may require a different set of trade-offs.
 
-
 ## Why Bramble
-
 Once they decided to go with GraphQL federation as their new API framework, we considered the two existing implementations, [Apollo Federation](https://www.apollographql.com/docs/apollo-server/) and [Nautilus Gateway](https://gateway.nautilus.dev/).
 Apollo Federation seemed like the obvious choice at first glance, but for they it had two drawbacks. First, they wanted to be comfortable with extending and or modifying the gateway to suit their needs and they have little to no experience with high performance NodeJS backends[1](https://movio.co/blog/building-a-new-api-platform-for-movio/#1). Second, the [Apollo Federation syntax](https://www.apollographql.com/docs/federation/federation-spec/) is quite complex and we hoped to get away with using something simpler.
 Nautilus Gateway looked like a promising alternative to Apollo and is written in Go, which is their bread and butter. In the end, they decided against using it due to it being, at the time, a single developer project with a very short history.
 In the end, they decided to build their own implementation, using Nautilus as inspiration.
 
-
 ## Why GraphQL Federation
-
 During their initial design phase, they quickly narrowed down their choices for an API platform to just two technologies: REST + OpenAPI / Swagger, and GraphQL. In either case, they decided that the best solution would be to have a central API gateway to automatically aggregate all of their services together. Services would expose their API and the gateway would aggregate these services and expose a single unified API. They argued back and forth between those two options for a while, and finally decided to go with GraphQL after reading [Apollo's excellent blog](https://www.apollographql.com/blog/apollo-federation-f260cf525d21/) post on their new Federation concept for Apollo Server. 
 For they, GraphQL federation is a real game changer that greatly increases the benefit of using GraphQL, particularly in a microservice environment. The main reason for this is that federation allows for the creation of APIs that appear monolithic, even when implemented by a set of smaller services in the backend. In traditional REST, or when using GraphQL with schema stitching, it is not possible to divide APIs between different services without either making it visible to the API client, or having to write an additional adapter layer in between.
 
-
-
 ## How GraphQL Federation help us in designing better APIs
-
 To illustrate how GraphQL federation helps designing great APIs, here's a small example of a Movie API that returns information about movies such as title, director, etc. A traditional REST API for this, would look something like this:
 ```
 GET /api/v1/movie/583 ⇒
@@ -159,11 +147,8 @@ Contrast this to what GraphQL Federation makes possible:
 In the query above, it is completely transparent for the user that  `title`  comes from one service and that  `posterUrl`  comes from another. The API has the same number of top-level endpoints / fields as before, and is just as easy to use, only richer.
 ![[GraphQL schema federation example.png]]
 
-
 ## Demo
-
 - Follows README.md from this [repo](https://github.com/mirageruler/bramble_graphql_schema_federation_demo)
-
 
 ### Refs
 - https://movio.co/blog/building-a-new-api-platform-for-movio/
@@ -172,12 +157,11 @@ In the query above, it is completely transparent for the user that  `title`  
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)

@@ -17,18 +17,15 @@ your business uses Microsoft tools and you have your human resources who are Exc
 The last tool in my article is Google Data Studio. Data Studio is a business intelligence tool from Google provided as a completely managed web service. Data Studio provides an intuitive interface to explore and build insights using data. It is built on top of the Google app ecosystem and offers tight integrations to Google based data sources like Big Query, Google Analytics, Google Sheets, etc. Tight integration with Google ecosystem, free and easy to use may be the advantage of Google data studio. However, this app also lack of real-time updates in dashboard and lack of data modelling. Creating a complicated report with huge volume of live connections data may be difficult with Google data studio.
 
 ## References
-
 - https://improvado.io/blog/review-the-best-data-visualization-tools
-
 
 ---
 <!-- cta -->
-### Contributing
 
+### Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
 ### Love what we are doing?
-
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
