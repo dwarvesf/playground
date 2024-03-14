@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2017-06-10
 ---
 
 ## Create an Application with Golang

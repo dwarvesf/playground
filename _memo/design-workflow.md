@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2018-03-22
 ---
 
 ## 1. **Project Research**

@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2018-01-18
 ---
 
 ## Why is spacing important?

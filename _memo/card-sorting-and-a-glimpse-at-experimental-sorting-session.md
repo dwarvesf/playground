@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2018-08-26
 ---
 
 > As part of our team’s weekly activities is a knowledge sharing session. So, in this article I’d like to share a UX technique we practiced recently — Card Sorting.

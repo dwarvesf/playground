@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2016-03-01
 ---
 
 10x engineer is a concept sometimes used in Silicon Valley to describe an engineer that is 10x more productive than an average engineer although the 10x metric is figurative. Sometimes referred to as "Ninjas", these engineers are highly sought after by all tech companies.

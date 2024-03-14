@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2015-10-16
 ---
 
 ## An introduction to Vim and how to use Vim with Golang

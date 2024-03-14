@@ -9,7 +9,6 @@ menu: memo
 type: null
 hide_frontmatter: false
 author: Han 🐸
-created: 2022-08-26
 ---
 
 ## <span style='color:red'>The talent pool</span>

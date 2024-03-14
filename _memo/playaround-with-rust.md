@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2019-08-30
 ---
 
 Mozilla intends to use Rust as a platform for prototyping experimental browser architectures.

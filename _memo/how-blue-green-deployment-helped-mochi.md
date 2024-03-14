@@ -10,7 +10,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2023-04-03
 ---
 
 *At Dwarves Foundation, our team has always faced some bit of friction when deploying apps for our clients. We’ve known about blue-green deployments for a while and were recently given the chance to evaluate and demonstrate them for one of our Discord bot projects.*

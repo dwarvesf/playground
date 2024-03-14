@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-05-09
 ---
 
 Vendors may use the phrase "time and materials" (T&M) to describe how they engage in projects and invoice their clients.

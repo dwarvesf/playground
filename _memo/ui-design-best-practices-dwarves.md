@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-11-24
 ---
 
 One of the factors that could make or break a project is the process of communication between designers and developers. Designers and developers have their own working “*languages*.”

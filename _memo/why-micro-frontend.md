@@ -11,7 +11,6 @@ menu: memo
 type: null
 hide_frontmatter: false
 author: Mashiro
-created: 2023-03-20
 ---
 
 # Micro-Frontend - What & Why?

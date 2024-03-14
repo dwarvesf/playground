@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-01-12
 ---
 
 A Project Manager (PM) job starts right after a new project has been sealed and assigned with a starting date, a deadline and a Team. As a PM it is absolutely fundamental you are an expert about our working methodologies, processes and communication

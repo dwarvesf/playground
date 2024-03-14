@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2018-03-25
 ---
 
 Besides learning the UI design, the most important thing is to learn UX design to create a good user experience. Helps the user get the goal when in your app.

@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2021-02-16
 ---
 
 Before we dig through a detailed process, let's set some grounded knowledge about the CI/CD:

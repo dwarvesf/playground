@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2016-02-10
 ---
 
 ## **Sprint "milestones"**

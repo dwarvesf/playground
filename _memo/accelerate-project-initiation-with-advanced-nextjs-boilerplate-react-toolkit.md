@@ -11,7 +11,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2023-04-03
 ---
 
 # Accelerate Project Initiation with Advanced NextJS-Boilerplate & React-Toolkit

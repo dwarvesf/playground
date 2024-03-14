@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2019-05-15
 ---
 
 # What is Hyperledger

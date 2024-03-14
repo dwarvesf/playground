@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-02-05
 ---
 
 ## License detector tool: Glice

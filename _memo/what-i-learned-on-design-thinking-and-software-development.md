@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2021-05-10
 ---
 
 I'm Huyen Le - newcomer of Dwarves Foundation. Last week, I was taught under the instruction of Khai Le about design thinking and how it works in a design process of a software project. So I decided to write a recap of what I've learned.

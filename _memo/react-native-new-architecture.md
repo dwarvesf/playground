@@ -10,7 +10,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2022-06-14
 ---
 
 📖 Introducing react-native's new architecture changes that boost performance, bringing react-native back into the race with Flutter

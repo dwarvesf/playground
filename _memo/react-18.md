@@ -10,7 +10,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2022-06-06
 ---
 
 React 18 was released in March 2022. This release focuses on performance improvements and updating the rendering engine.

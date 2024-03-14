@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2018-11-01
 ---
 ## 1. Vertical spacing
 ### Spacing within each paragraph

@@ -10,7 +10,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2022-05-27
 ---
 
 📖 A brief comparison between Remix and Next.js frameworks

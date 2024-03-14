@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2023-04-24
 ---
 
 <!-- table_of_contents adbd9b7d-46a4-4a1f-ab90-ce4abf276231 -->

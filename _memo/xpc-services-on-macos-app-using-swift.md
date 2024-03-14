@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-11-05
 ---
 
 Before XPC we used to pick up Sockets and Mach Messages (Mach Ports).

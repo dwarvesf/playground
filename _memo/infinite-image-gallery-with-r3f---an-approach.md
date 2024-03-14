@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-09-14
 ---
 
 ![[eb91b6c0aa14997e1a88191e1acaa8dd_MD5.webp]]

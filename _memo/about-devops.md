@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2018-07-23
 ---
 
 ## **What is DevOps actually?**

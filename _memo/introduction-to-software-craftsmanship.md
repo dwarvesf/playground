@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-04-24
 ---
 
 Craftsmanship has been our motto since the first day. But to the newbies and even some current Dwarves, the real definition of software craftsmanship is still vague, or being understood in different ways.

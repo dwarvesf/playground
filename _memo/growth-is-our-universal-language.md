@@ -11,7 +11,6 @@ menu: memo
 type: null
 hide_frontmatter: false
 author: Han 🐸
-created: 2023-02-16
 ---
 
 At Dwarves, *the core team live and breathe growth*. We believe that growth is our universal language, and we're always striving to improve ourselves, both personally and professionally. It's not just a job for us; it's a way of life. We're hustlers with an extra hat, always pushing ourselves to be better and earn more.

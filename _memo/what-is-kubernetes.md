@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2019-09-27
 ---
 
 # What is Kubernetes

@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2023-05-04
 ---
 
 ![[c11c827159778f301fbd67b9d155b80b_MD5.avif]]

@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2022-11-22
 ---
 
 *Hosted by Nikki - Dwarves' COO, and Thanh Pham - Engineering Manager, Dwarves had a great lineup and gleaned insights on the new wave of healthcare through the immense knowledge and practical experience through inspiring stories from Ms. Ruby Nguyen and Mr. Binh Le.*

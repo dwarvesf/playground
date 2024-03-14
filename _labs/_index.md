@@ -21,9 +21,9 @@ hide_frontmatter: true
 <!-- forward-engineering-publications -->
 
 ## Forward Engineering Publications
-- [[Forward Engineering November 2023|Forward Engineering November 2023]]
-- [[Forward Engineering October 2023|Forward Engineering October 2023]]
-- [[Forward Engineering August 2023|Forward Engineering August 2023]]
+- [[newsletter/forward/Forward Engineering November 2023.md|Forward Engineering November 2023]]
+- [[newsletter/forward/Forward Engineering October 2023.md|Forward Engineering October 2023]]
+- [[newsletter/forward/Forward Engineering August 2023.md|Forward Engineering August 2023]]
 
 <!-- /forward-engineering-publications -->
 <!-- /col-2 #1-->
@@ -69,8 +69,11 @@ For Dwarves team members, engaging in future research projects is an excellent w
 
 ### Past Events
 - [[playground/_labs/events/Labs Weekly Catchup 2.md|Labs Weekly Catchup 2]]: Our second weekly catchup. We organize an agenda the day beforehand and consolidate our findings, notable research progress, possibly new tech, insight or technique everyone should know.
-- [[playground/_labs/events/Labs Weekly Catchup 3.md|Labs Weekly Catchup 3]]: Our third weekly catchup. We organize an agenda the day beforehand and consolidate our findings, notable research progress, possibly new tech, insight or technique everyone should know.
 - [[playground/_labs/events/Labs Weekly Catchup 1.md|Labs Weekly Catchup 1]]: Our first weekly catchup. We organize an agenda the day beforehand and consolidate our findings, notable research progress, possibly new tech, insight or technique everyone should know.
+- [[playground/_labs/events/DuckDB demo and showcase.md|DuckDB demo and showcase]]: DuckDB is a great starting point for modern stacks that don't need to worry about scalability, but want to derive hard analytics from the data that they have. This meeting will do a 3-part demo of DuckDB (15 minutes total):
+• Consolidate NYC taxi data in parallel (through map-reduce) over HTTPS
+• Aggregate IBM AML transactions (Anti-Money Laundering)
+• Some examples of how it is used to consolidate and do basic analytics on note.d and log.console.so
 
 
 <!-- /events -->

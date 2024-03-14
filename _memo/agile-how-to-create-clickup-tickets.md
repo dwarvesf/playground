@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2016-05-04
 ---
 
 To make sure everyone in the hood can understand the state of company task, the below fields are required to be filled:

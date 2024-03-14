@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2017-07-13
 ---
 
 ## 1. GENERAL WORKFLOW

@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-04-19
 ---
 
 ## T1: Retail 2.0

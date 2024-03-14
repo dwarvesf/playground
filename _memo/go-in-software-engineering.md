@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-08-07
 ---
 
 Go is a type-safe, cloud-native language designed for simplicity

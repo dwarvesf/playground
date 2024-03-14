@@ -13,7 +13,6 @@ menu: memo
 type: null
 hide_frontmatter: false
 author: Thanh Pham
-created: 2023-07-31
 ---
 
 ![[4601b8f71eebe7c7fbc4a6fc7925a8b6_MD5.webp]]

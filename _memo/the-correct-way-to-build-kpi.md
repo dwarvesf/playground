@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-11-03
 ---
 
 I have taken a week off from my office, packed up and headed to Dalat for a full-week meditation retreat. This method has been my sweet escape for the past 4 years, get-away from the chaotic pop-ups, notifications, messages, deadlines from work and normal life, to find the right balance for my energy and my mind as well. Yes, even meditation facilitators need their time to recover and enhance their vibes too.

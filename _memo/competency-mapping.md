@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2018-04-01
 ---
 
 We identified skills and actions showing someone has one competency or not.

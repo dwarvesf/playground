@@ -9,7 +9,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2023-03-27
 ---
 
 # Demystifying Monorepos: A Recap of Our Recent Sharing Session

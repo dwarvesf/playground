@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2019-09-20
 ---
 
 * **GRIT**: Look for a time the candidate wanted something so badly, they were unstoppable in pursuing it. Or a time they overcame an obstacle.

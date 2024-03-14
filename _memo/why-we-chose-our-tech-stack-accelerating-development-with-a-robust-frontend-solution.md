@@ -11,7 +11,6 @@ menu: memo
 type: null
 hide_frontmatter: false
 author: Thanh Pham
-created: 2023-03-20
 ---
 
 At Dwarves Foundation, we pride ourselves on being a team of seasoned technology experts, passionate about crafting innovative solutions for our clients. With years of experience in the technology industry, we understand the importance of selecting the right tools and technologies to deliver exceptional results. In today's fast-paced world, staying ahead of the competition requires building and deploying features quickly without sacrificing quality or stability. When selecting a technology for our frontend tech stack, the foremost question we ask is: "Has this technology achieved a certain level of stability and maturity?" Quick wins are important, but truly transformative products, teams, and infrastructures require years of sustained effort. In this article, we'll discuss the key components of our tech stack and explain how they contribute to our ability to develop high-quality, scalable applications at lightning-fast speeds.

@@ -8,7 +8,6 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
-created: 2020-02-25
 ---
 
 Security plays a vital role in software, maybe in any field of work. But when the coverage of software expands, the importance of security gets taken for granted, as it's embed and supported in frameworks and other low-level layers of the tech stacks. Hence, developers tend to spend time on the top-level layers. They buy in the fact that frameworks and libraries solve security issues. Consequently, security stays in a black box.
