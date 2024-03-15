@@ -7,6 +7,7 @@ author: Long Bui
 github_id: longbuivan
 date: 2024-03-15
 icy: 10
+discord_id: "1157659003527106630"
 ---
 
 ## Motivation of Vector Database
