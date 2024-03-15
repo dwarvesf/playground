@@ -6,29 +6,35 @@ recurringTemplateName: latest-notes
 This is where we keep track of our top 10 latest Brainery notes:
 
 - [[Engineering/Backend/Introduction to CRDT.md|Introduction to CRDT]]
+- [[Engineering/Data/Quick Learning Vector Database.md|Quick Learning Vector Database]]
+- [[Engineering/Data/Data Pipeline Design Framework.md|Data Pipeline Design Framework]]
+- [[_memo/how-to-push-content-on-note-d.md|how-to-push-content-on-note-d]]
+- [[_labs/Market Report Feb 2024.md|Market Report Feb 2024]]
+- [[_labs/Market Report Jan 2024.md|Market Report Jan 2024]]
+- [[Engineering/Google Dataproc.md|Google Dataproc]]
+- [[Engineering/Google Data Fusion.md|Google Data Fusion]]
 - [[Engineering/Data/Google Dataproc.md|Google Dataproc]]
 - [[Engineering/Data/Google Data Fusion.md|Google Data Fusion]]
-- [[Engineering/Introducing HTMX - Navigating the Advantages and Concerns.md|Introducing HTMX - Navigating the Advantages and Concerns]]
-- [[Engineering/Frontend/WebSockets.md|WebSockets]]
-- [[Engineering/Typesafe Client-Server.md|Typesafe Client-Server]]
-- [[Design/UX Research/Mastering UX Research - Essential Techniques for Successful Design.md|Mastering UX Research - Essential Techniques for Successful Design]]
-- [[Engineering/Backend/SQL Sargable Queries and Their Impact on Database Performance.md|SQL Sargable Queries and Their Impact on Database Performance]]
-- [[Engineering/Backend/The removal of Apache Kafka's dependency on Zookeeper.md|The removal of Apache Kafka's dependency on Zookeeper]]
-- [[Engineering/Frontend/From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree.md|From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree]]
+
 
 ## Top Contributors this month
-*Total ICY given out this month: **20 ICY***
+
+*Total ICY given out this month: **NaN ICY***
 
 | authors | notes |
 | ------- | ----- |
-| [mickwan1234](https://github.com/mickwan1234) |  [[playground/Engineering/Google Dataproc]]<br> [[playground/Engineering/Google Data Fusion]]<br>|
+| 1157659003527106630 |  [[Quick Learning Vector Database]]<br> [[Data Pipeline Design Framework]]<br>|
+| [longbuivan](https://github.com/longbuivan) |  [[Quick Learning Vector Database]]<br> [[Data Pipeline Design Framework]]<br>|
+
+
 
 ## Newest Contributors
-- **haongo1#3632**: [[202211141513 - Materialized View Pattern|202211141513 - Materialized View Pattern]]
-- **hieuvd#4261**: [[202211141287 - Go JSON Parsing|202211141287 - Go JSON Parsing]]
-- **hmhoang13#5280**: [[202301191192 - Multi-column index in DB|202301191192 - Multi-column index in DB]]
-- **hollow#3333**: [[202210162154 - The Best of CSS TLDR|202210162154 - The Best of CSS TLDR]]
-- **namth#6640**: [[202301091379 - Invoking Component Functions in React|202301091379 - Invoking Component Functions in React]]
+
+- **haongo1#3632**: [[_fleeting/202211141513 - Materialized View Pattern.md|202211141513 - Materialized View Pattern]]
+- **hieuvd#4261**: [[_fleeting/202211141287 - Go JSON Parsing.md|202211141287 - Go JSON Parsing]]
+- **hmhoang13#5280**: [[_fleeting/202301191192 - Multi-column index in DB.md|202301191192 - Multi-column index in DB]]
+- **hollow#3333**: [[_fleeting/202210162154 - The Best of CSS TLDR.md|202210162154 - The Best of CSS TLDR]]
+- **namth#6640**: [[_fleeting/202301091379 - Invoking Component Functions in React.md|202301091379 - Invoking Component Functions in React]]
 
 ---
 - **[cnhhoang850](https://github.com/cnhhoang850)**: [[Design/What Screens Want.md|What Screens Want]]
@@ -44,4 +50,5 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[truong-dwarvesv](https://github.com/truong-dwarvesv)**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
 
-*This page was last modified at 2024-01-22T06:13:43.365Z*.
+
+*This page was last modified at 2024-03-15T05:48:35.825Z*.

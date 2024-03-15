@@ -6,7 +6,17 @@ recurringTemplateName: engineering-management-moc
 This is a [[Map of Content]] related to the engineering concepts around management.
 
 ## Management
-- [[playground/Engineering/Conway's law.md|Conway's law]]
 
+<%*
+const dv = this.app.plugins.plugins["dataview"].api;
+const te = await dv.queryMarkdown(`LIST FROM #engineering/management`);
+tR += te.value;
+%>
 ## Fundamentals
-*This page was last modified at 2024-03-12T15:26:01.955Z*.
+
+<%*
+const te1 = await dv.queryMarkdown(`LIST FROM #fundamental`);
+tR += te1.value;
+%>
+
+*This page was last modified at <%* tR += new Date().toISOString();%>*.

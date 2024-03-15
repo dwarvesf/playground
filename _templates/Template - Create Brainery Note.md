@@ -1,6 +1,6 @@
 ---
 tags:
-authors:
+author:
 github_id:
 date: <% await tp.file.creation_date("YYYY-MM-DD") %>
 icy: 10

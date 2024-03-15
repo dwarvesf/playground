@@ -6,6 +6,7 @@ recurringTemplateName: engineering-management-moc
 This is a [[Map of Content]] related to the engineering concepts around management.
 
 ## Management
+
 - [[Engineering/Conway's law.md|Conway's law]]
 - [[Engineering/Management/Analysis document.md|Analysis document]]
 - [[Engineering/Management/Burnup and Burndown chart.md|Burnup and Burndown chart]]
@@ -22,8 +23,10 @@ This is a [[Map of Content]] related to the engineering concepts around manageme
 - [[Engineering/Management/Team toplogies.md|Team toplogies]]
 
 ## Fundamentals
+
 - [[Engineering/Frontend/The fundamental of web performance.md|The fundamental of web performance]]
 - [[Engineering/Frontend/Why DOM manipulation is slow?.md|Why DOM manipulation is slow?]]
 - [[Engineering/Frontend/Why Virtual DOM is fast?.md|Why Virtual DOM is fast?]]
 
-*This page was last modified at 2024-01-22T06:13:43.417Z*.
+
+*This page was last modified at 2024-03-15T05:48:35.886Z*.
