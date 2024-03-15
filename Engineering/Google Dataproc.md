@@ -23,7 +23,7 @@ github_id: mickwan1234
 ---
 
 ## Introduction
-![[Google Dataproc-20240124162722161 1.webp]]
+![[_assets/Google Dataproc/387aafdc8f7994ea37449a1015265907_MD5.webp]]
 
 Google Dataproc is a fast and easy-to-use, fully managed cloud service for running Apache Spark and Hadoop workloads. It allows users to process and analyze large-scale data efficiently and at scale. Key features and benefits of Google Dataproc include:
 
@@ -134,30 +134,30 @@ Now that you have the prerequisites in place, you can proceed to set up a Datapr
 
 ## How to deploy a Spark job on Dataproc (Using Google cloud console)
 ### Step 1: In the created cluster click on `Submit Job` button on the top right of the main console screen
-![[Google Dataproc-20240124134755469 1.webp]]
+![[_assets/Google Dataproc/63ff07262ca89f53636f0cbf3ac31e7f_MD5.webp]]
 
 ### Step 2: Fill all necessary field in the job creation modal:
-![[Google Dataproc-20240124134755545 1.webp]]
+![[_assets/Google Dataproc/bcea66253717094f382ba5f6a600ec5d_MD5.webp]]
 - Job ID: job unique name across the cluster
 - Job Type: the type of the job that you submit to Dataproc including (in this demo we’ll use PySpark):
-![[Google Dataproc-20240124134755561 1.webp]]
+![[_assets/Google Dataproc/f83159ba2f2f39b3012c233685a6944e_MD5.webp]]
 - Main file: the directory of main job file from GCS or HDFS or inside the compute engine.
 - All others field is optional.
 - After you fill in the necessary input i should be something like this:
-![[Google Dataproc-20240124134755653 1.webp]]
+![[_assets/Google Dataproc/6fa510f032671ede4c6f2958d31e4536_MD5.webp]]
 
 - Then press `Submit` to submit the job
 
 ### Step 3:
 After submitting the job you should be able to similar screen to this:
-![[Google Dataproc-20240124134755759 1.webp]]
+![[_assets/Google Dataproc/887de3a75e864cf1da75c2b91ac502cb_MD5.webp]]
 
 Wait for the job status change to succeeded (or failed):
-![[Google Dataproc-20240124134755832 1.webp]]
+![[_assets/Google Dataproc/062214d530d570f03dee791c4b32241e_MD5.webp]]
 
 And that is how you run a Spark ( or Hadoop) job on Google Cloud Dataproc.
 Full video step by step:
-![](830c086903ad2dcaf7bdece0af8e3647_MD5%201.mp4)
+![[830c086903ad2dcaf7bdece0af8e3647_MD5.mp4]]
 
 ---
 <!-- cta -->

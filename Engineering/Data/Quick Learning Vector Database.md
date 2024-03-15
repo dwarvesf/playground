@@ -1,14 +1,17 @@
-
 ---
-tags: engineering/data, vector-database, database
+tags:
+  - engineering/data
+  - vector-database
+  - database
 author: Long Bui
 github_id: longbuivan
 date: 2024-03-15
+icy: 10
 ---
 
 ## Motivation of Vector Database
 
-- The motivation of this t thoughts that trying to discover the LLMs and Generative AI
+- The motivation of this thoughts that trying to discover the LLMs and Generative AI
 - In order to create or build, train any models there are multiple factors will need to be considered: lakes of data, metadata, data management, infrastructure, etc.
 - Vector Databases are used like underlying of Gen AI
 - Where everything are tokenized, vectorized and serialized into a single language
@@ -31,7 +34,7 @@ date: 2024-03-15
 
 - Diagram to describe the Working Flow
 
-![Vector Database Flow](_assets/vectorDatabaseNotes.png)
+![[ab8dc870fb19553f7616442fe4e9e6c5_MD5.png]]
 
 - Benefits:
   - Flexibility: schemaless, non-structured

@@ -1,8 +1,12 @@
 ---
-tags: engineering/data, data-pipeline
+tags:
+  - engineering/data
+  - data-pipeline
 author: Long Bui
 github_id: longbuivan
 date: 2024-03-15
+icy: 15
+discord_id: "1157659003527106630"
 ---
 
 ## Motivation of Designing Data Pipeline Framework
