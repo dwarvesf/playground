@@ -7,7 +7,13 @@ author: Long Bui
 github_id: longbuivan
 date: 2024-03-15
 icy: 10
-discord_id: "1157659003527106630"
+discord_id: 1157659003527106600
+title: Quick Learning Vector Database
+description: The motivation of this thoughts that trying to discover the LLMs and Generative AI...
+authors:
+  - longddl
+menu: playground
+type: brainery
 ---
 
 ## Motivation of Vector Database
@@ -35,7 +41,7 @@ discord_id: "1157659003527106630"
 
 - Diagram to describe the Working Flow
 
-![[ab8dc870fb19553f7616442fe4e9e6c5_MD5.png]]
+![](assets/ab8dc870fb19553f7616442fe4e9e6c5_MD5.png)
 
 - Benefits:
   - Flexibility: schemaless, non-structured

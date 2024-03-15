@@ -1,8 +1,19 @@
 ---
-tags: engineering/data, mapreduce, distributed, hadoop
+tags:
+  - engineering/data
+  - mapreduce
+  - distributed
+  - hadoop
 author: Dung Ho
 github_id: dudaka
 date: 2022-10-24
+title: MapReduce
+description: We are the head of census bureau for the state of California and tasked with finding the finding the population of all cities in California. All the resources we want are ready but we have only four months to finish the task. Calculating the population of all cities for a big state like california is not an easy task. The sensible thing to do is to divide the state by city and make individuals in charge of each city to calculate the population of each city where he is in charge of...
+authors:
+  - dudaka
+menu: playground
+type: brainery
+icy: "10"
 ---
 
 ## What is MapReduce?
@@ -10,7 +21,7 @@ Let's start with an example.
 
 We are the head of census bureau for the state of California and tasked with finding the finding the population of all cities in California. All the resources we want are ready but we have only four months to finish the task. Calculating the population of all cities for a big state like california is not an easy task. The sensible thing to do is to divide the state by city and make individuals in charge of each city to calculate the population of each city where he is in charge of.
 
-![](_assets/mr-example-1.png)
+![](assets/mr-example-1.png)
 
 For illustration purpose, there are three cities: San Francisco (SFO), San Jose (SJOSE) and LA.
 
@@ -23,7 +34,7 @@ Same instructions will be carried out by everyone involved person 2 will go to S
 We'll have a person in the headquarters to receive the results from all cities and aggregate them by city to come up with population of each city for the entire state.
 Therefore, four months in with this strategy, we're able to calculate the population of california.
 
-![](_assets/mr-example-2.png)
+![](assets/mr-example-2.png)
 
 Next year, we're asked to do the same job, we have all the resources we want but this time we have two months to finish the task. So we would simply double the number of people to perform the task. We will divide SFO into two divisions and add one person to each division and we will do the same thing for San Jose and LA. Each person responsible for a division will perform the same task as before, we can also do the same thing at the headquarters.
 
@@ -38,7 +49,7 @@ If next year if we were asked to do the same thing in a month, we know exactly w
 
 The model we have here is called _MapReduce_. MapReduce is a programming model for distributed computing. It's not a programming language, it is a programming model which we can use to process huge data sets in a distributed fashion.
 
-![](_assets/mr-example-3.png)
+![](assets/mr-example-3.png)
 
 Now let's look at the faces involved in Mapreduce. The phase where individuals collect the population of their assigned city or part of the city is called a [[MapReduce Components#Map Phase|_Map phase]].
 
@@ -61,10 +72,10 @@ MapReduce is:
 ---
 <!-- cta -->
 
-### Contributing
+## Contributing
 At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
 
-### Love what we are doing?
+## Love what we are doing?
 - Check out our [products](https://superbits.co)
 - Hire us to [build your software](https://d.foundation)
 - Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
