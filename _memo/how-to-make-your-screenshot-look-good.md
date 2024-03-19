@@ -13,9 +13,9 @@ type: null
 hide_frontmatter: false
 ---
 ### How to make your screenshot look good
-I grab screenshots pretty often. Although, macOS’s native screenshot tool is decent for most cases, it’s still a very basic one. One good screenshot is worth a thousand words. Whether you want to quickly capture a sample of your work, send a reference visual, highlight a mistake or inconsistency, taking a screenshot is essential for efficient work.
+I frequently take screenshots. While macOS's built-in screenshot tool is generally sufficient, it's quite basic. One good screenshot is worth a thousand words. Whether you need to quickly capture your work, provide a visual reference, or point out errors, screenshots are crucial for efficiency.
 
-Taking screenshots of them shouldn’t be that challenging. Learn how to take crisp and detail-rich screenshots in no time. In this post, In this article, I’ll take you through my screenshot workflow with a handful of simple tools and techniques and grab screenshots with negligible effort.
+Taking screenshots of them shouldn’t be that challenging. Learn how to take crisp and detail-rich screenshots in no time. In this article, I’ll take you through my screenshot workflow with a handful of simple tool and techniques and grab screenshots with negligible effort.
 
 You will still be able to use the good old Print Screen key or a shortcut — but with better result.
 
@@ -39,9 +39,7 @@ CleanShot X is one of my favorite Mac apps, and it’s the app that I personally
 Its advanced features and intuitive interface make it easy to use for anyone who wants to enhance their screenshot quality. Let’s see how you can use CleanShot to have a more organized and efficient workflow.
 
 ### Getting start with CleanShot X
-CleanShot X is the best screenshot and screen recording app for Mac with a built-in annotation tool, Cloud uploading, scrolling capture, and a lot more.
-
-The app allows you to capture your screen in a variety of ways fit for most purposes — scrolling screenshot to capture those long presentations or web pages, easy GIF creation if you need to make an illustration for your landing page, product demo, or a blog post, and our favorite blurring feature to edit out personal information from screenshots.
+  CleanShot X, or just CleanShot for short, basically steps in for the screenshot and video tools that come with your Mac. To set it up right, one of the things you need to do is head over to your System Preferences. There, you'll want to turn off all the default shortcuts like Cmd+Shift+3 and Cmd+Shift+5. This way, CleanShot can handle everything smoothly.
 
 ### Setting up CleanShot X
 First things first, how do you take a screenshot with CleanShot X? You can simply click the app icon in your Mac’s menu bar and pick the screenshot you want to take from there.
@@ -90,7 +88,7 @@ Or you can add color scheme similar to Dwarves branding guidelines.
 
 ![[how to make a great screenshot-20240318142928163.webp]]
 
-Or adding Dwarves color scheme as a background 
+Or adding Dwarves color scheme as a background.
 
 ![[how to make a great screenshot-20240318142941029.webp]]
 
