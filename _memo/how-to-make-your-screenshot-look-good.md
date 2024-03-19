@@ -39,7 +39,7 @@ CleanShot X is one of my favorite Mac apps, and it’s the app that I personally
 Its advanced features and intuitive interface make it easy to use for anyone who wants to enhance their screenshot quality. Let’s see how you can use CleanShot to have a more organized and efficient workflow.
 
 ### Getting start with CleanShot X
-  CleanShot X, or just CleanShot for short, basically steps in for the screenshot and video tools that come with your Mac. To set it up right, one of the things you need to do is head over to your System Preferences. There, you'll want to turn off all the default shortcuts like Cmd+Shift+3 and Cmd+Shift+5. This way, CleanShot can handle everything smoothly.
+CleanShot X, or just CleanShot for short, basically steps in for the screenshot and video tools that come with your Mac. To set it up right, one of the things you need to do is head over to your System Preferences. There, you'll want to turn off all the default shortcuts like Cmd+Shift+3 and Cmd+Shift+5. This way, CleanShot can handle everything smoothly.
 
 ### Setting up CleanShot X
 First things first, how do you take a screenshot with CleanShot X? You can simply click the app icon in your Mac’s menu bar and pick the screenshot you want to take from there.
