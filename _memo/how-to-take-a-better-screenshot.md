@@ -3,7 +3,7 @@ tags:
   - tutorial
   - guideline
   - productivity
-title: How To Take Better Screenshot 
+title: How To Make Your Screenshot Look Good
 date: 2024-03-16
 description: null
 authors: 
