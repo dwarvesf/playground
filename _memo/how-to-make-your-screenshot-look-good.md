@@ -7,9 +7,9 @@ title: How To Make Your Screenshot Look Good
 date: 2024-03-16
 description: null
 authors: 
-- innno_
+  - innno_
 menu: memo
-type: null
+type: memo
 hide_frontmatter: false
 ---
 ### How to make your screenshot look good
@@ -34,7 +34,7 @@ For the clearest screenshots, fill your entire screen with the content you want 
 The specific approach might vary depending on the content you're capturing and the purpose of your screenshot.
 
 ### What app can you use to enhance a screenshot picture?
-CleanShot X is one of my favorite Mac apps, and it’s the app that I personally use to record basically everything on my Mac. The app allow you to capture your screen in of ways fit for most purposes and provides tons of options to do it. You can grab the area, fullscreen, window, or even a scrolling window. 
+CleanShot X is one of my favorite Mac apps, and it’s the app that I personally use to record basically everything on my Mac. The app allow you to capture your screen in of ways fit for most purposes and provides tons of options to do it. You can grab the are a, fullscreen, window, or even a scrolling window. 
 
 Its advanced features and intuitive interface make it easy to use for anyone who wants to enhance their screenshot quality. Let’s see how you can use CleanShot to have a more organized and efficient workflow.
 
