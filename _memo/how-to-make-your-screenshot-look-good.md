@@ -47,7 +47,6 @@ First things first, how do you take a screenshot with CleanShot X? You can simpl
 [[playground/_memo/assets/a9ae33276fcc49af164c16069dd43ff3_MD5.avif|Open: cleanshot-x-menu-bar-dropdown.avif]]
 ![[playground/_memo/assets/a9ae33276fcc49af164c16069dd43ff3_MD5.avif]]
 
-
 But that’s not always the best option if you want to take your screenshot instantly, before whatever it is that you are capturing is gone. Use keyboard shortcuts for quicker screenshot taking.
 
 To set them up, click Settings in the CleanShot X menu bar drop-down menu and go to Shortcuts.
