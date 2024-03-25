@@ -21,21 +21,21 @@ Plus, if you are interested in security, poking around **capture the flag (CTF)*
 ## SSH
 SSH, Secure Shell or Secure Socket Shell, is a network protocol that provides a secure channel to operate services over the unsecured network. It's used in authenticating to send remote command, log in or grant permission, ..etc.
 
-![[13c107925c2a38cd5786d6ae6022e104_MD5.webp]]
+![](assets/applied-security-basis_13c107925c2a38cd5786d6ae6022e104_md5.webp)
 
 Whenever a computer sends data to the network with SSH integrated, SSH automatically encrypts it. When the data reaches its intended recipient, SSH automatically decrypts (unscrambles) it. The result is transparent encryption: users can work while their communications are safely encrypted on the network.
 
 ## SSL
 SSL is a data transfer security protocol. And in the web hosting industry, the SSL term is often used as a synonym for HTTPS, which is not entirely correct. The difference between SSL and https is rather significant.
 
-![[3926657b13ba9a1d1738b03f91e4c134_MD5.webp]]
+![](assets/applied-security-basis_3926657b13ba9a1d1738b03f91e4c134_md5.webp)
 
 SSL protection is implemented through two main mechanisms: authentication and encryption. Scientifically, SSL Protocol uses asymmetric cryptography to authenticate exchange keys, symmetric encryption to preserve confidentiality, and message authentication codes to ensure message integrity.
 
 ## Blockchain Security
 This part covers the fundamental theory of how blockchain works and gets applied. Blockchain technology is utilized in the data structure as it prevents data from being exploited for bad purposes. In short, blockchain works when data immutability and security are highly valuable. Most likely notice in cryptocurrency, blockchain security avoids digital money from being destroyed or duplicated. A decentralized public ledger.
 
-![[7c1a02851e9358ad98e5876efefb7970_MD5.webp]]
+![](assets/applied-security-basis_7c1a02851e9358ad98e5876efefb7970_md5.webp)
 
 Blockchain uses blocks to store pieces of information. Each block is time-stamped and connected to the one generated before it generated time. There are three most popular feature that makes blockchain more secured:
 

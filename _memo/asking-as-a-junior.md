@@ -18,7 +18,7 @@ Being a junior is where everyone once began. It's the point where we start disco
 
 But more importantly. Should or Shouldn't? And how?
 
-![[e04f198b4f3729cac86ed127717fd1b6_MD5.webp]]
+![](assets/asking-as-a-junior_e04f198b4f3729cac86ed127717fd1b6_md5.webp)
 
 ## The Hesitation
 Of course, the upfront hesitance can fall into these three common thoughts.

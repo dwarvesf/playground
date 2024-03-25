@@ -25,7 +25,7 @@ Our discussions have led to the identification of several intriguing topics, eac
 | **MPC**          | Huy Nguyen | - [[applying-mpc-for-authentication-for-web3-console\|Applying MPC for authentication for web3 (Console)]]                                                                                                                                                                                                                                                |
 | **UI practices** | Thanh Pham | - [[mochi-ui\|Build mochi-ui]]                                                                                                                                                                                                                                                                                                                            |
 
-![[Labs Roadmap (Nov 23 update)-20231127143515779.webp]]
+![](assets/labs-roadmap-(nov-23-update)-20231127143515779.webp)
 
 As we concentrate on these topics, other potential areas will stay in our backlog for the time being. However, these are open for exploration by members of the Labs and Dwarves teams, should they spark interest:
 

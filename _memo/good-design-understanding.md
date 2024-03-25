@@ -23,7 +23,7 @@ User experience (UX) focuses on having a deep understanding of users, what they 
 * *[https://www.interaction-design.org/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706](https://www.interaction-design.org/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706)*
 
 ## **The 7 Factors that Influence User Experience**
-![[e75aeb9b90122499635bddc51805aca3_MD5.webp]]
+![](assets/good-design-understanding_e75aeb9b90122499635bddc51805aca3_md5.webp)
 
 Good design is not just what looks good. It also needs to perform, convert, astonish, and fulfill its purpose. It can be innovative or it might just get the job done.
 
@@ -91,7 +91,7 @@ Here are Jason Cranford Teague’s nine design principles for creating credibili
 ### 6. Findability
 Findable refers to the idea that the product must be easy to find and in the instance of digital and information products; the content within them must be easy to find too. If you cannot find a product, you’re not going to buy it and that is true for all potential users of that product.
 
-![[77e7ee12b43f15d452c133150959dd8f_MD5.webp]]
+![](assets/good-design-understanding_77e7ee12b43f15d452c133150959dd8f_md5.webp)
 
 ### 7. Value
 Value refers to being able to provide a user experience that is enriching the lives of your consumers.
@@ -99,7 +99,7 @@ Value refers to being able to provide a user experience that is enriching the li
 Finally, the product must deliver value. It must deliver value to the business which creates it and to the user who buys or uses it. Without value, it is likely that any initial success of a product will eventually be undermined.
 
 ## What is a good UI Design
-![[e474e00ace9a524ebdff60d52f5e944c_MD5.webp]]
+![](assets/good-design-understanding_e474e00ace9a524ebdff60d52f5e944c_md5.webp)
 
 User interface (UI) design is the design of user interfaces for software or machines, such as the look of a mobile app, with a focus on ease of use and pleasurability for the user. UI design usually refers to the design of graphical user interfaces—but can also refer to others, such as natural and voice user interfaces.
 

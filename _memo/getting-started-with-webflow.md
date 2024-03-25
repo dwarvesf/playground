@@ -10,7 +10,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[5386df53f5360ba922dbe2c4b467dfdb_MD5.webp]]
+![](assets/getting-started-with-webflow_5386df53f5360ba922dbe2c4b467dfdb_md5.webp)
 
 No-code platform has becoming a thing recently. With convenient and user-friendly workflow, no-code platform is a must to pick up for design and operation process, to shorten the development time and remove the misunderstanding between them with developers.
 
@@ -43,16 +43,16 @@ Okay, now that we have the lay of the land, let’s talk about diving in.
 # Setup before designing
 Let’s check the below image:
 
-![[aa6335d35ece7aa09c9484559131c433_MD5.webp]]
+![](assets/getting-started-with-webflow_aa6335d35ece7aa09c9484559131c433_md5.webp)
 
 Firstly, we’re recommended to fill in the default font, font size, and project name. The hosting, domain setup, embedded incode, SEO, Google analytic, and more benefits can be adjusted within the plans:
 
-![[15ed261870e05e4d45159ac062d63f5c_MD5.webp]]
+![](assets/getting-started-with-webflow_15ed261870e05e4d45159ac062d63f5c_md5.webp)
 
 # Getting Started
 
 ## Toolbar
-![[b7f3ef4d478ea5cb2f99e218854ea861_MD5.webp]]
+![](assets/getting-started-with-webflow_b7f3ef4d478ea5cb2f99e218854ea861_md5.webp)
 
 Let’s start with the first image. From left to right:
 
@@ -63,7 +63,7 @@ Let’s start with the first image. From left to right:
 1. **Background, Borders, and Effects:** like in Figma or sketch, we can edit the background image, radius, have fun with shadows.
 
 ## Navigator
-![[f8d5b754890ffc243e735a6e4fb21394_MD5.webp]]
+![](assets/getting-started-with-webflow_f8d5b754890ffc243e735a6e4fb21394_md5.webp)
 
 This point can be a red flag. In this case, we’re encouraged to create and name container components for regular-use ones.
 
@@ -73,11 +73,11 @@ This point can be a red flag. In this case, we’re encouraged to create and nam
 A website is divided into 3 parts: Header, Body, and Footer.
 
 ## Header
-![[ab1951972be3533d03fe024933236f17_MD5.webp]]
+![](assets/getting-started-with-webflow_ab1951972be3533d03fe024933236f17_md5.webp)
 
 To add a Header, click “Cmd+K” and search for the keyword “NavBar” or look at the left corner.
 
-![[435ece2b3f4f240af0512011540e7010_MD5.webp]]
+![](assets/getting-started-with-webflow_435ece2b3f4f240af0512011540e7010_md5.webp)
 
 NavBar is created with Brand, Nav Menu and Menu Button, located in one container.
 
@@ -87,22 +87,22 @@ NavBar is created with Brand, Nav Menu and Menu Button, located in one container
 
 ***Tips:***  Check out [“How to made a Navbar on Webflow”](https://www.youtube.com/watch?v=vj-B5MBAjIc&t=495s&ab_channel=DesignPilot) on Youtube for more information. It might hard sometimes for beginners.
 
-![[ad25c3727e62ea25c77238725e166cf3_MD5.webp]]
+![](assets/getting-started-with-webflow_ad25c3727e62ea25c77238725e166cf3_md5.webp)
 
 ## Body
-![[523f7073ae646470be25042035c8e949_MD5.webp]]
+![](assets/getting-started-with-webflow_523f7073ae646470be25042035c8e949_md5.webp)
 
 Example: Before doing design on Webflow, let’s define how these elements are grouped. The body should be divided into 4 areas.
 
-![[73ebf9dadeae2d52ba898a3fe0de296a_MD5.webp]]
+![](assets/getting-started-with-webflow_73ebf9dadeae2d52ba898a3fe0de296a_md5.webp)
 
 1. Grid and Layout
 
-![[683658131c557165d9023be3bbb4cf28_MD5.webp]]
+![](assets/getting-started-with-webflow_683658131c557165d9023be3bbb4cf28_md5.webp)
 
 1. Default Grid with padding/margins
 
-![[2259389132637c4db847b8143770adf4_MD5.webp]]
+![](assets/getting-started-with-webflow_2259389132637c4db847b8143770adf4_md5.webp)
 
 ***Tips***
 
@@ -111,16 +111,16 @@ Example: Before doing design on Webflow, let’s define how these elements are g
 * Create a large area (main container) to support div blocks in the website
 * Responsiveness
 
-![[f8fbcb003ce6c8b919bc0cc7235b3110_MD5.webp]]
+![](assets/getting-started-with-webflow_f8fbcb003ce6c8b919bc0cc7235b3110_md5.webp)
 
 ## Footer
-![[868bfa2a53c561cff2296e7b08665242_MD5.webp]]
+![](assets/getting-started-with-webflow_868bfa2a53c561cff2296e7b08665242_md5.webp)
 
-![[fe50e0a67aa39fa34b8ba639a068d7cf_MD5.webp]]
+![](assets/getting-started-with-webflow_fe50e0a67aa39fa34b8ba639a068d7cf_md5.webp)
 
 In this case, the grid layout is used to create an equal space for Div Block from 2 to 5, when Div Block No.1 needs a larger space. A Vertical direction can be used to help adjust this.
 
-![[483a7775cfee79b4bfb0d30f3cc2e5ea_MD5.webp]]
+![](assets/getting-started-with-webflow_483a7775cfee79b4bfb0d30f3cc2e5ea_md5.webp)
 
 This section is divided into 2 parts:
 
@@ -133,7 +133,7 @@ This section is divided into 2 parts:
 * Layouts are critical to better create responsiveness.
 
 # Responsive
-![[d458119ad0184eee89c1d611a1543c50_MD5.webp]]
+![](assets/getting-started-with-webflow_d458119ad0184eee89c1d611a1543c50_md5.webp)
 
 It always starts with a Base breakpoint screen. When you do the responsive for a bigger screen or mobile, it’s much effortless.
 
@@ -146,13 +146,13 @@ It always starts with a Base breakpoint screen. When you do the responsive for a
 # Animation
 You can play with default animation or create your own one. For more Page animation, this [youtube link](https://www.youtube.com/watch?v=69RRSEHWfCQ&ab_channel=Webflow) might help.
 
-![[05a4d54c84aaf4bbee7fca8473887937_MD5.webp]]
+![](assets/getting-started-with-webflow_05a4d54c84aaf4bbee7fca8473887937_md5.webp)
 
 Check out my **[full case study](https://kiwipay.webflow.io/)**. I added some effects at the burger menu and CTA:
 
-![[9ff9430476ddca3d674f41a53ec439ca_MD5.webp]]
+![](assets/getting-started-with-webflow_9ff9430476ddca3d674f41a53ec439ca_md5.webp)
 
-![[c1035a354ff1b911ba88d98c7815ad41_MD5.webp]]
+![](assets/getting-started-with-webflow_c1035a354ff1b911ba88d98c7815ad41_md5.webp)
 
 # Wrapping Up
 Within a month of designing with Webflow, I can learn and practice much more to produce a more high-end website. Besides, I found out that this tool's Preview is sometimes unstable, which annoyed me, but the output was outstanding.

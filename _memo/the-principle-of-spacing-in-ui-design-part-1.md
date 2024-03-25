@@ -25,5 +25,5 @@ Spacing has not only an impact directly on this factors but also on aesthetics d
 
 Now let’s check the below example:
 
-![[cdf0d4d3eccb21431ec5e9c04b336c24_MD5.webp]]
+![](assets/the-principle-of-spacing-in-ui-design-part-1_cdf0d4d3eccb21431ec5e9c04b336c24_md5.webp)
 

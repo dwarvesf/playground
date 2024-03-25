@@ -177,7 +177,7 @@ kubectl apply -f app/service.yaml
 kubectl apply -f app/ingress.yaml
 ```
 
-![[f711c252bf191800d3184c8839221899_MD5.webp]]
+![](assets/how-blue-green-deployment-helped-mochi_f711c252bf191800d3184c8839221899_md5.webp)
 
 When releasing a new version, we changed the image of the application and applied the changes to the cluster. Argo rollouts created a new ReplicaSet with the new image and initiated the rollout of the updated version in the preview environment, accessible at the preview domain - `preview-mochiapp.bluegreen.domain`.
 
@@ -200,13 +200,13 @@ kubectl argo rollouts promote mochi
 
 With the deployment complete, the updated application was accessible on the active environment in the blue domain - `mochiapp.bluegreen.domain`.
 
-![[dbebe30b5e9fa94fd865c1c66b41c5f6_MD5.webp]]
+![](assets/how-blue-green-deployment-helped-mochi_dbebe30b5e9fa94fd865c1c66b41c5f6_md5.webp)
 
 An alternative would be to utilize the ArgoCD UI for the promotion, as it could prove to be exceptionally helpful for those who may not be able to operate the CLI, including QC, during the release rollout. Additionally, any issues that may arise can quickly be reverted with just the click of the "Rollback" button.
 
-![[8a98dc8c92776e0f68f1db43bf3b4a9a_MD5.webp]]
+![](assets/how-blue-green-deployment-helped-mochi_8a98dc8c92776e0f68f1db43bf3b4a9a_md5.webp)
 
-![[8ee42dc2d4a9b07dbfc76db9b009a8cc_MD5.webp]]
+![](assets/how-blue-green-deployment-helped-mochi_8ee42dc2d4a9b07dbfc76db9b009a8cc_md5.webp)
 
 ## Conclusion
 This case study helped us demonstrate the value of blue-green deployment in reducing downtime, improving user experience, and streamlining the update process for applications like Mochi Bot.

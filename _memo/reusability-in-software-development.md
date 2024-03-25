@@ -81,11 +81,11 @@ The last one is called **“Not-invented-here” syndrome**, when you focus on 
 ## **The reuse landscape**
 After time passed, the reuse in software development has been increasingly supported by a lot of new techniques. The base of these techniques is the fact that the system in the same application domain are similar and have the potential for reuse. There are many different ways of Software reuse, from simple components such as class, object to complete system, and that standards for reusable components facilitate reuse. You can see an overall picture of the “reuse landscape”—different ways of implementing software reuse below.
 
-![[ea401e3ee43cf4ee90e7edc92fe83900_MD5.webp]]
+![](assets/reusability-in-software-development_ea401e3ee43cf4ee90e7edc92fe83900_md5.webp)
 
 if you feel unclear and want to walk into details of each approach of Software reuse, you can see the following figure.
 
-![[54089293152bc5fd40b4e0ddb7dd69e7_MD5.webp]]
+![](assets/reusability-in-software-development_54089293152bc5fd40b4e0ddb7dd69e7_md5.webp)
 
 After having an overview of the reuse landscape, for sure, you will wonder “which is the most appropriate technique to use in a particular situation?”.
 

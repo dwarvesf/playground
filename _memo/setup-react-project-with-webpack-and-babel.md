@@ -10,7 +10,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[1390995c704e49aab8915f9a87fcd7ce_MD5.webp]]
+![](assets/setup-react-project-with-webpack-and-babel_1390995c704e49aab8915f9a87fcd7ce_md5.webp)
 
 ## Introduction
 create-react-app is an official CLI to create react application sometime you need to customize it such as add an alias or add plugin babel config, you end up ejected.
@@ -23,7 +23,7 @@ First you need to config three file such as:
 * webpack.dev.js: this is our webpack config use in develop environment
 * webpack.prod.js: this is our webpack config use in production enviroment
 
-![[0eb458d1be6d0f37210105e714a1a304_MD5.webp]]
+![](assets/setup-react-project-with-webpack-and-babel_0eb458d1be6d0f37210105e714a1a304_md5.webp)
 
 ## Webpack development config
 In your webpack.config.js we will need to install babel to transpile javascript ES6 into ES5 and transpile react.js and jsx into javascript. You will also need to install css-loader to resolve import and style-loader to load your css into style tag in head tag.

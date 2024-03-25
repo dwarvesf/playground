@@ -44,23 +44,23 @@ Here’s a quick list of the disciplines that can be represented in your team to
 ## **2. Choosing the right team model**
 * **The solitary model:** an “overlord” rules the design system.
 
-![[cfe9acf6fd2d1adde475eac22289689b_MD5.webp]]
+![](assets/design-system_cfe9acf6fd2d1adde475eac22289689b_md5.webp)
 
 The team model that brings people together is as important as the team creating the design system. In “Team Models for Scaling a Design System,” design systems veteran Nathan Curtis outlines 3 popular team models used by many companies.
 
 * **The centralized team model:** a single team maintains the design system as their full-time job.
 
-![[29a2cbbe18c551fb6c02d550c7eba526_MD5.webp]]
+![](assets/design-system_29a2cbbe18c551fb6c02d550c7eba526_md5.webp)
 
 * **The federated model:** team members from across the company come together to work on the system.
 
-![[777f120275d29fe97d756a8d98d5be91_MD5.webp]]
+![](assets/design-system_777f120275d29fe97d756a8d98d5be91_md5.webp)
 
 * Other model
 
 A hybrid design system team model that we used at Salesforce—a central team and members of other teams come together to manage and govern the system.
 
-![[b187e07f45c64d9eabd7e524b39a31ed_MD5.webp]]
+![](assets/design-system_b187e07f45c64d9eabd7e524b39a31ed_md5.webp)
 
 ## **3. Interviewing customers**
 Like any product in a design process, it’s important to do your research. Who will be using your design system and how will they use it? Answer this question is the customer. [You should difference between the Customer and the User](https://www.uxpin.com/studio/blog/customer-experience-vs-user-experience-why-the-difference-matters/). The customer will use your design system. So your design system will get used much more often if you create it to fit into the workflow of other teams. By interviewing customers, you can pinpoint problems ahead of time, define principles that will help others use the system properly, and focus your energies on the most important things.
@@ -83,7 +83,7 @@ Creating the visual identity isn’t something that will be created overnight. I
 
 As we start to take inventory, it’s good practice to take a look at the CSS used to create all of those elements you just captured in your visual inventory. Use a tool like **[CSS Stats](http://cssstats.com/)** to see how many rules, selectors, declarations, and properties you have in your style sheets. More relevant, it will show you how many unique colors, font sizes, and font families you have. It also shows a bar chart for the number of spacing and sizing values. This is a great way to see where you can merge or remove values.
 
-![[a9cdca95e3ffef0e55cd90fdec84527a_MD5.webp]]
+![](assets/design-system_a9cdca95e3ffef0e55cd90fdec84527a_md5.webp)
 
 **Do a UI inventory audit**
 
@@ -99,7 +99,7 @@ Before you start anything, its best to identify how inconsistent the current bui
 
 An example of a UI Audit: Brad Frost has put together a great article around how you go about doing a UI audit.
 
-![[3e3694f6596e6a67a2a10b4bb6ea8eed_MD5.webp]]
+![](assets/design-system_3e3694f6596e6a67a2a10b4bb6ea8eed_md5.webp)
 
 Link source: [http://bradfrost.com/blog/post/interface-inventory/](http://bradfrost.com/blog/post/interface-inventory/)
 
@@ -122,13 +122,13 @@ Before we dive into visual design standards, you should discuss design tokens. D
 
 Example of design token: [https://www.lightningdesignsystem.com/design-tokens/](https://www.lightningdesignsystem.com/design-tokens/)
 
-![[0018d0d34bb133667d90e34ce27c5fd0_MD5.webp]]
+![](assets/design-system_0018d0d34bb133667d90e34ce27c5fd0_md5.webp)
 
 [https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71)
 
 The workflow of design tokens would look like: 
 
-![[d4b5482e66a2d78fe46a315c5d2a4646_MD5.webp]]
+![](assets/design-system_d4b5482e66a2d78fe46a315c5d2a4646_md5.webp)
 
 1) The designer would update the color in the design tool.
 
@@ -141,7 +141,7 @@ Currently, the only way to create a design tokens is by using [Theo](https://git
 ## **7. UI Library (Pattern Library)**
 After you complete the inventory, you can merge and remove what you don’t need (either in a spreadsheet or even directly in a code refactor if you want more immediate change). Also, document what the component is and when to use it. This will become your UI library (or pattern library, or component library, depending on what your organization chooses to call it.).
 
-![[b0d28b9d30e9d838276303ad69f6e89a_MD5.webp]]
+![](assets/design-system_b0d28b9d30e9d838276303ad69f6e89a_md5.webp)
 
 Most design system documentation includes the component’s name, description, example, and code. Others may show meta data, release histories, examples, and more. What matters most is that you show what’s necessary for your team to get your work done.
 

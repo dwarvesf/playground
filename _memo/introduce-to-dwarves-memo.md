@@ -20,7 +20,7 @@ The purpose of every story is to bring the audience a little closer to the autho
 ## What is Memo
 Memo is our medium, takes place as the 3rd tab on our current [Dwarves Website](https://dwarves.foundation/memo/). In other words, it's a blog for team researches, company updates, case studies, podcast transcript. Everything about us, in document form.
 
-![[239c060cb55e40fa10443ecf782af86b_MD5.webp]]
+![](assets/introduce-to-dwarves-memo_239c060cb55e40fa10443ecf782af86b_md5.webp)
 
 ## How to Use
 The CMS for Memo is [Outline](https://outline.d.foundation/home). The document tree is classified into these categories
@@ -42,7 +42,7 @@ A direct parse was conducted from Outline to Memo. Once you hit the 'publish' 
 
 A qualified draft for a blog post should appear like this
 
-![[3133939df6615e90808d5e5d62d1d44e_MD5.webp]]
+![](assets/introduce-to-dwarves-memo_3133939df6615e90808d5e5d62d1d44e_md5.webp)
 
 ### **Headlines**
 Headlines in Memo should follow the order of Markdown, which is H1 - H2 & H3. For those who haven't gotten familiarized with this:

@@ -89,7 +89,7 @@ That’s enough for you to pick Vim up from the ground.
 ## Basic Usage Instruction
 Vim is a text-editor program first built on UNIX, in order to work in non-user interface environment. At this time, the keyboard hasn’t been upgraded completely, which is why the action on Vim is still different from today.
 
-![[5ca1828b88d41d78ead1d47ac32aeabd_MD5.webp]]
+![](assets/connecting-vim-with-golang_5ca1828b88d41d78ead1d47ac32aeabd_md5.webp)
 
 You can practice using these keys by [vim game](https://vim-adventures.com/)
 
@@ -159,13 +159,13 @@ In these:
 
 * nerdtree: Help you organize the folders in vim in folder structure, which makes it easier to open file and folder. After finished setting up:
 
-![[ac42721e6ddb17d3204d4596f55f96ce_MD5.webp]]
+![](assets/connecting-vim-with-golang_ac42721e6ddb17d3204d4596f55f96ce_md5.webp)
 
 Thanks to plugin of git, you can know which file is under editing, which one has just been added up, and which one has not been committed yet.
 
 * neocomplete: Support auto complete vim
 
-![[db43f35dc945a8dde4b51e4b97221c86_MD5.webp]]
+![](assets/connecting-vim-with-golang_db43f35dc945a8dde4b51e4b97221c86_md5.webp)
 
 * autopair: Plugin that helps you to quick type using “ ( ‘ [ < by adding “” () “ [] <> as a pair
 

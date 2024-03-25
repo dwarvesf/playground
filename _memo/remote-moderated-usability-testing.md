@@ -21,7 +21,7 @@ Purchasing Care is one of the market leaders in Purchaser consulting and providi
 In this article, we would like to share about the testing of the MVP version of Vendor Hunt's work. It is an operational tool for Purchaser to source suppliers and manages Vendor Hunt projects. For brand new products, they tend to focus on frequently performed tasks (searching, sourcing supplier). These tasks are crucial for the operation of the product (send an inquiry, check the progress of the project).
 
 ## Personas
-![[c758a02d96ab191760c143e5770e7d9b_MD5.webp]]
+![](assets/remote-moderated-usability-testing_c758a02d96ab191760c143e5770e7d9b_md5.webp)
 
 ## The problem
 * It takes too much time to source suppliers because purchasers have to collect information from many sites.
@@ -31,15 +31,15 @@ In this article, we would like to share about the testing of the MVP version of 
 ## Our solution
 * Provide a search engine, which provides detailed information about most B2B companies in Vietnam. This product also recommends suitable suppliers, based on specific requirements of each product.
 
-![[ba8cd8431044e571ad786c4f3b208125_MD5.webp]]
+![](assets/remote-moderated-usability-testing_ba8cd8431044e571ad786c4f3b208125_md5.webp)
 
 * Potential suppliers list to manage suitable suppliers and send inquiries to each or all of them at the same time.
 
-![[9b9fbacb59ea16e62b05e8a8cd7d461a_MD5.webp]]
+![](assets/remote-moderated-usability-testing_9b9fbacb59ea16e62b05e8a8cd7d461a_md5.webp)
 
 * Management dashboard to track the performance of each employee and the project’s progress. In addition, managers can report expenses to the financial department.
 
-![[096e90b331b560e88f267337c92af6a4_MD5.webp]]
+![](assets/remote-moderated-usability-testing_096e90b331b560e88f267337c92af6a4_md5.webp)
 
 # Method
 
@@ -107,13 +107,13 @@ Create a project ⇒ Add new item (product) ⇒ Source suppliers for this item �
 ## Results
 **Task successful rates**
 
-![[1a275995943ea3ccb70e132a50132b62_MD5.webp]]
+![](assets/remote-moderated-usability-testing_1a275995943ea3ccb70e132a50132b62_md5.webp)
 
 Note: S = success, F = failure, P = partial success
 
 **Time-to-task measure**
 
-![[8bdc47d5f231e0cb5568bd2ee69ae639_MD5.webp]]
+![](assets/remote-moderated-usability-testing_8bdc47d5f231e0cb5568bd2ee69ae639_md5.webp)
 
 ## Analysis and user feedbacks
 There were many things to consider after each session, and it's hard to remember all. Therefore, debriefing at the right time helped us to capture our thoughts, which might be hard to write down. It also helped to think over what a participant showed and what they talked about. Regularly, what they did was the real key.

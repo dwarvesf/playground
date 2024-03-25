@@ -45,7 +45,7 @@ When you design a website or an app, you have to reply the question: What is thi
 ## **INTERACTION**
 Interaction design is specifically a discipline which examines the interaction (via an interface) between a system and its user. It may also incorporate design focused on how information should be presented within such a system to enable the user to best understand that information though this is often considered to be the separate discipline of “information design” too.
 
-![[4718c084b78a2e641043dff2ffb94dad_MD5.webp]]
+![](assets/ui-design-fundamental_4718c084b78a2e641043dff2ffb94dad_md5.webp)
 
 ### Visibility & Simplicity
 **Visual hierarchy** is the order in which a user processes information on a page; its function in user interface (UI) design is to allow users to understand information easily. By assigning different visual characteristics to sections of information (e.g., larger fonts for headings), a designer can influence what users will perceive as being further up in the hierarchy.
@@ -98,7 +98,7 @@ In the physical world, the ridges or dots of a bottle cap provides a high-grip s
 
 The following example will show how the individual bricks of the content type “event” can be mapped to different shapes of a “teaser” UI component in the target system (here: a website with desktop-like presentation). The teaser in the example is simplified and consists of four different text bricks, an image and metadata. (It’s the same for any other target UI component as with the teaser example.)
 
-![[5c2e41286c6c2f47ccdbe589a50c4033_MD5.webp]]
+![](assets/ui-design-fundamental_5c2e41286c6c2f47ccdbe589a50c4033_md5.webp)
 
 *Same content and different presentation: The three teaser variants extracted and isolated from the website with the individual UI bricks (except the image all exemplary available information is outputted textually).*
 
@@ -108,7 +108,7 @@ The following example will show how the individual bricks of the content type �
 
 *Different content and same presentation: The basically different content types “event” and “article” are structurally different, but generically identical. Thus the bricks of both content types can be mapped to a generic teaser component that can display these bricks. In short: Different content types can be displayed identically. Which also means that different UI types can be served by content bricks from the same content type (see above).*
 
-![[2f86f2fad6448f61bf19fa256a25c973_MD5.webp]]
+![](assets/ui-design-fundamental_2f86f2fad6448f61bf19fa256a25c973_md5.webp)
 
 ## Conclusion: 
 Intentional Design: Interface without User is not User Interface

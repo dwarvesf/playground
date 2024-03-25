@@ -82,7 +82,7 @@ Base on the properties of a peer, cryptography constructing a pair of public and
 
 **Certificate Revocation List(CRL)**: a list of references to certificates that a CA knows to be revoked.
 
-![[acecde099998e363519533076028fb4e_MD5.webp]]
+![](assets/fabric-hyperledger-architecture-explanation_acecde099998e363519533076028fb4e_md5.webp)
 
 ### MSP (Membership Service Provider)
 Identifies which Root CAs and Intermediate CAs are trusted to define the members of a trust domain. Also identify specific roles an actor might play either within the scope of the organization the MSP represents, defining access privileges in the context of a network and channel.
@@ -100,14 +100,14 @@ Identifies which Root CAs and Intermediate CAs are trusted to define the members
 * Peer MSP: is a local MSP provides private communications between peer belong to an Organization.
 * Orderer MSP: is a local MSP, function like Peer MSP, only apply for node.
 
-![[a9852ce4f9889dd96d9efe61fd1cdc0c_MD5.webp]]
+![](assets/fabric-hyperledger-architecture-explanation_a9852ce4f9889dd96d9efe61fd1cdc0c_md5.webp)
 
 ## Transaction Flow from Application
 * Applications generate a transaction proposal
 * Send it to required peers ( indicate by transaction it own )
 * These peers the n become endorsing peers, then independently executes a chaincode -> proposal responses(difference peers can return different, inconsistent transaction responses, application is free to discard inconsistent transaction responses)
 
-![[871c33102b9552789598d25986ccd406_MD5.webp]]
+![](assets/fabric-hyperledger-architecture-explanation_871c33102b9552789598d25986ccd406_md5.webp)
 
 * Orderer receives transactions containing endorsed transaction proposal responses from many applications
 * Orders each transaction relative to other transactions
@@ -115,10 +115,10 @@ Identifies which Root CAs and Intermediate CAs are trusted to define the members
 * Strict order: transactions can be packaged in any order into a block, and it’s this sequence that becomes the order of execution
 * No ledger fork: Once transactions are captured in a block, history cannot be rewritten for that transaction at a future point in time.
 
-![[4717184a9972241d126ccab41d22390e_MD5.webp]]
+![](assets/fabric-hyperledger-architecture-explanation_4717184a9972241d126ccab41d22390e_md5.webp)
 
 * Each transaction after order sending to peers within a block is validated by each peer.
 * Failed transactions are retained for audit, but are not applied to the ledger
 * Every time a block is committed to a peer's ledger, that peer generates an appropriate event(include full block content)
 
-![[2e60ff9cb71f5ecb312418e4228c7964_MD5.webp]]
+![](assets/fabric-hyperledger-architecture-explanation_2e60ff9cb71f5ecb312418e4228c7964_md5.webp)

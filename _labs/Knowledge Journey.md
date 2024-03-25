@@ -19,7 +19,7 @@ hide_frontmatter: false
 
 Our process for evaluating and integrating technology is designed to be thorough yet efficient, ensuring we adopt only the most effective tools into our operations. It consists of four key stages: Assess, Trial, Adopt, and Hold.
 
-![[Knowledge Journey-20231121174341579.webp]]
+![](assets/knowledge-journey-20231121174341579.webp)
 
 - **Assess:** is the initial state where a technology is being evaluated. The objective is to understand the potential and limitations of the technology before committing more resources.
 - **Trial:** is where the technology is tested in projects. The objective is to gain hands-on experience and assess the practicality and impact of the technology in a controlled environment.

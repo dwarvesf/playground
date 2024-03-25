@@ -12,7 +12,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[b6f4054793fd3b5ef748c5dcf072cc09_MD5.webp]]
+![](assets/exploring-machine-learning-approaches-for-fine-tuning-llama-models_b6f4054793fd3b5ef748c5dcf072cc09_md5.webp)
 
 *At Dwarves, we've been increasingly exposed to more state-of-the-art news coming from AI than ever before, of course, related to Large Language Models (LLM). We've had a taste of what AI has to offer with Stable Diffusion and more commercial apps, and have been eager to learn and hone our skillsets in applying these new AI breakthroughs in our everyday lives and our apps.*
 
@@ -46,7 +46,7 @@ One novel approach to enhancing the performance of LLMs involves the fine-tuning
 ### How does it work?
 PEFT LoRA works on top of pre-trained language models by adding LoRA weights to the feed-forward layer of the transformer. It does this in a way without needing to fine-tune all of the model's parameters. This is particularly great if the majority of the AI workload is in vector indexing and we just want a chatbot specialized for a particular dialogue path without sounding too stupid.
 
-![[20f6cea84bc8d93af997167eb7b3f224_MD5.webp]]
+![](assets/exploring-machine-learning-approaches-for-fine-tuning-llama-models_20f6cea84bc8d93af997167eb7b3f224_md5.webp)
 
 The trained weights from PEFT LoRA are significantly much smaller (within a few MBs depending on your data) and don't require as much CPU/GPU power to fine-tune existing frozen models.
 
@@ -178,7 +178,7 @@ All that is left to do is run the `trainer` to train our model. Thankfully that 
 trainer.train(resume_from_checkpoint=False)
 ```
 
-![[21b3ea87423ab6377aed99987dbad148_MD5.webp]]
+![](assets/exploring-machine-learning-approaches-for-fine-tuning-llama-models_21b3ea87423ab6377aed99987dbad148_md5.webp)
 
 Then if we want to save the file to our disk, we can use the `save_pretrained` method on our model to save it to a named folder.
 

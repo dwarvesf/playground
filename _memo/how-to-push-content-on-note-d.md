@@ -40,9 +40,9 @@ Install Obsidian from their website: https://obsidian.md/
 
 Once you have Obsidian installed, open the folder to where you cloned your repository:
 
-![[How to push content on note.d.foundation-20240304161351789.webp]]
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304161351789.webp)
 Load the vault to Obsidian:
-![[How to push content on note.d.foundation-20240304161404515.webp]]
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304161404515.webp)
 
 If you have any troubles, refer to the help page in Obsidian's documentation: https://help.obsidian.md/Home.
 
@@ -50,15 +50,15 @@ If you have any troubles, refer to the help page in Obsidian's documentation: ht
 Download GitHub desktop from their website: https://desktop.github.com/.
 
 1. Once you've installed it, open up and choose the `Current Repository` tab:
-![[How to push content on note.d.foundation-20240304161928987.webp]]
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304161928987.webp)
 
 2. Add an Existing Repo
 
-![[How to push content on note.d.foundation-20240304161951429.webp]]
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304161951429.webp)
 
 3. Choose the folder of the repo that you have cloned above
 
-![[How to push content on note.d.foundation-20240304162014223.webp]]
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304162014223.webp)
 If you have any issues, refer to setting up GitHub desktop here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8Dd7KRpKeaE?si=3Vda7G5d1Z1unITr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -69,7 +69,7 @@ Making a new post is fairly straightforward. We have a set of templates to help 
 
 1. First, create a new file and name it however you like:
 
-![[How to push content on note.d.foundation-20240304213439150.webp]]
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304213439150.webp)
 
 2. We have updated to make it so the metadata/frontmatter for new files will automatically be created.
 
@@ -87,6 +87,6 @@ Making a new post is fairly straightforward. We have a set of templates to help 
 1. Go to GitHub Desktop and open the repo df-content
 2. Choose the file that you have created or edited
 
-![[How to push content on note.d.foundation-20240304213737310.webp]]
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304213737310.webp)
 
 3. Click commit to main

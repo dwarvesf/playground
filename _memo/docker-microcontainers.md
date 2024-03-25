@@ -56,12 +56,12 @@ ENTRYPOINT ["/web/web"]
 * And link library by:`CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o web .`
 * Build with docker: `docker build -t beego-web .`
 
-![[9f15d2c4686cfe88873b99b117d8f372_MD5.webp]]
+![](assets/docker-microcontainers_9f15d2c4686cfe88873b99b117d8f372_md5.webp)
 
 * Creating an image only takes 17.5MB
 
-![[6e719ca68d6f109ffe4061996ee21aa6_MD5.webp]]
+![](assets/docker-microcontainers_6e719ca68d6f109ffe4061996ee21aa6_md5.webp)
 
 * Your laptop had an image, which is beego-web
 
-![[ae0b817a27464a31365a74e65dc37101_MD5.webp]]
+![](assets/docker-microcontainers_ae0b817a27464a31365a74e65dc37101_md5.webp)

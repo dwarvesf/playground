@@ -342,7 +342,7 @@ If the pipeline is not designed properly, it can result in data loss. For exampl
 Proper error handling should be implemented in each stage of the pipeline to handle any errors that may occur. This will help to prevent the pipeline from crashing and losing data.
 
 ## The Semaphore pattern
-![[6cff9e49452d4333171fa27c6f77cf90_MD5.webp]]
+![](assets/approaches-to-manage-concurrent-workloads-like-worker-pools-and-pipelines_6cff9e49452d4333171fa27c6f77cf90_md5.webp)
 
 As you spawn more Goroutines to process requests concurrently, this leaves us with another problem. What happens if all your Goroutines access the same shared resources, say a remote cache? Bombarding your cache with an unbounded number of concurrent requests is a surefire recipe to bring down your cache immediately. This is where the Semaphore comes in handy.
 

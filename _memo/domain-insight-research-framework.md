@@ -72,7 +72,7 @@ It is essential to choose the right methods, apply them flexibly to each industr
 
 There are different ways to conduct market research and collect data. Still, we don’t limit ourselves to just one research method. This is one of our simple methods we applied to our previous projects
 
-![[212c5cd2b79ff8385855412c63292329_MD5.webp]]
+![](assets/domain-insight-research-framework_212c5cd2b79ff8385855412c63292329_md5.webp)
 
 **Primary research**
 

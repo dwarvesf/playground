@@ -40,7 +40,7 @@ Process re-engineering is probably the most telling skill. Engineers are not bei
 ## SRE Table
 Availability is generally calculated based on how long a service was unavailable over some period. Assuming no planned downtime, Table 1-1 indicates how much downtime is permitted to reach a given availability level.
 
-![[9332ba5aa78b621a63f04a098e8ff602_MD5.webp]]
+![](assets/about-devops_9332ba5aa78b621a63f04a098e8ff602_md5.webp)
 
 Using an aggregate unavailability metric (i.e., "***X***% of all operations failed") is more useful than focusing on outage lengths for services that may be partially available—for instance, due to having multiple replicas, only some of which are unavailable—and for services whose load varies over the course of a day or week rather than remaining constant.
 
@@ -127,5 +127,5 @@ target environment.
 * Documentation
 
 ## Roadmap 2018
-![[3ff5afb2faea481c0d85fe0d0f4591b5_MD5.webp]]
+![](assets/about-devops_3ff5afb2faea481c0d85fe0d0f4591b5_md5.webp)
 

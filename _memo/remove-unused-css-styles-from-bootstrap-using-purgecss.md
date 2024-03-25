@@ -10,7 +10,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[50067f1125ee42d2d68068bd93443235_MD5.webp]]
+![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_50067f1125ee42d2d68068bd93443235_md5.webp)
 
 # Introduction
 Reducing assets size is one of the most practical ways to speed up your web application. I have a simple use case, lets imagine your HTML file looks like this
@@ -57,7 +57,7 @@ Basically, you run it against your CSS files and your HTML/JavaScript files. It 
 
 PurgeCSS can be used as a CLI. This is our project structure, we gonna need to transform CSS files so we have to download bootstrap distro and get file we want to transform.
 
-![[a903c03602f38038a2c4e4eb4344e0b9_MD5.webp]]
+![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_a903c03602f38038a2c4e4eb4344e0b9_md5.webp)
 
 CLI command syntax
 
@@ -86,9 +86,9 @@ Then create npm script to run purgecss
 
 Then run npm run build, you should see new bootstrap-grid.min.css in dist folder with unused CSS content being removed
 
-![[04ee21f4b60188ce76c21df96695e6cf_MD5.webp]]
+![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_04ee21f4b60188ce76c21df96695e6cf_md5.webp)
 
-![[dd640e027b4421ee74d88c2864f0c9ed_MD5.webp]]
+![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_dd640e027b4421ee74d88c2864f0c9ed_md5.webp)
 
 You can view full CLI options at [https://www.purgecss.com/cli\](https://www.purgecss.com/cli%5C)
 
@@ -154,7 +154,7 @@ In my index.js file, I simply import bootstrap grid CSS.
 
 Here is the build output which includes CSS grid file
 
-![[429bb8c82f4e38465293c6f79d782394_MD5.webp]]
+![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_429bb8c82f4e38465293c6f79d782394_md5.webp)
 
 To use PurgeCss with Webpack simply install this Webpack plugin:
 `npm i purgecss-webpack-plugin -D`
@@ -214,7 +214,7 @@ module.exports = {
 };
 ```
 
-![[97c7bfa1adf49d7c225f00976d99eb8c_MD5.webp]]
+![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_97c7bfa1adf49d7c225f00976d99eb8c_md5.webp)
 
 Full example repository: [https://github.com/PhmNgocNghia/purge\-css\-example\-webpack\](https://github.com/PhmNgocNghia/purge%5C-css%5C-example%5C-webpack%5C)
 

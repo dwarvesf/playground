@@ -21,7 +21,7 @@ That happens in a long-term project, and that's fine. We believe we're not the o
 * Demo of ADR and example
 * Support tools for ADR
 
-![[4d815bb79330db7c753064e343bbf411_MD5.webp]]
+![](assets/architecture-decision-record_4d815bb79330db7c753064e343bbf411_md5.webp)
 
 So first, the picture demonstrated a crew of soldiers in a room, seeking for bugs to destroy. Once the bugs were found and the boss asked his soldiers to put an end on it, they told him not to touch anything, because the whole room would collapse. And they all ran out. So no bugs were ended.
 

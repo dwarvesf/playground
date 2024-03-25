@@ -21,7 +21,7 @@ The broker pattern is an architectural pattern that can be used to structure dis
 1. Server-side proxy: calls services within the server, encapsulates system-specific functionality, mediates between server and the broker
 1. Bridge( responsible for communication among brokers): encapsulates network-specific functionality, mediates between the local broker and the bridge of a remote broker
 
-![[e4d47aa7182bbec713b6dc4f858fb1dd_MD5.webp]]
+![](assets/overview-on-broker-pattern-in-distributed-system_e4d47aa7182bbec713b6dc4f858fb1dd_md5.webp)
 
 # The role of Broker Patter
 * Our system need to be dynamically removing or adding new agent(server, client)

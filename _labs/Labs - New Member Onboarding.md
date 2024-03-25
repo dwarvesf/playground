@@ -21,6 +21,6 @@ During this probation, we expect two main deliverables from the new team member:
 
 We will do probation reviews based on the [review template](https://docs.google.com/spreadsheets/d/1Z0Wj3dy6bSHXHO8rCL7mrrjRvI4vbupcfyxRYSCtGFs/edit#gid=1586333671) or the chad diagram to evaluate their work.
 
-![[Labs - New Member Onboarding-20231121174522981.webp]]
+![](assets/labs---new-member-onboarding-20231121174522981.webp)
 
-![[Labs - New Member Onboarding-20231205185801920.webp]]
+![](assets/labs---new-member-onboarding-20231205185801920.webp)

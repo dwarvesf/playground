@@ -49,20 +49,20 @@ weekly meeting #3 - 20/12/2023:
 🔍 **Shared Query Processing through DuckDB WASM**
 - @Tom demo'ed DuckDB over WASM to introduce use cases for infographics and real-time analytics
 - @Tom's first demo uses DuckDB to process and convert data to readable arrays to pass to Observable Plot to plot the chart
-	- ![[Labs Weekly Catchup 3-20231221150754783.webp]]
+	- ![](assets/labs-weekly-catchup-3-20231221150754783.webp)
 - @Tom's second demo uses DuckDB inside Observable Notebooks to do real-time analytics inside the browser
-	- ![[Labs Weekly Catchup 3-20231221151400953.webp]]
+	- ![](assets/labs-weekly-catchup-3-20231221151400953.webp)
 
 🥽 **Bypassing reCaptcha using self-hosted AI model YoloV8**
 - @Toan Demo'ed YoloV8 over Tensorflow.js, using WebGPU as the backend, to do object detection over recaptcha images
-- ![[Labs Weekly Catchup 3-20231221150348859.webp]]
+- ![](assets/labs-weekly-catchup-3-20231221150348859.webp)
 
 🏗️ **Building Desktop apps with Tauri**
 - @Vy introduced Tauri, an app construction toolkit to help deploy frontend applications over multiple platforms
 - @Vy Demo'ed a simple Tauri app with React + Tailwind and will open source soon
-	- ![[Labs Weekly Catchup 3-20231221150359017.webp]]
+	- ![](assets/labs-weekly-catchup-3-20231221150359017.webp)
 - He also mentioned an app called Spacedrive is desktop app built with Tauri
-	- ![[Labs Weekly Catchup 3-20231221151543222.webp]]
+	- ![](assets/labs-weekly-catchup-3-20231221151543222.webp)
 - (Vy) RSPC is also an interesting typesafe router to build APIs in Rust for React or TypeScript frontends to call on it
 
 ---

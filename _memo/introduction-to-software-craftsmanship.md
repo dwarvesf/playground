@@ -75,11 +75,11 @@ I read in a meetup of Agile team in 2008, Uncle Bob once said: *Craftsmanship ov
 
 Years later, he came up with a Manifesto for Software Craftsmanship
 
-![[9484dea11666b2ee45cd5a11769bde32_MD5.webp]]
+![](assets/introduction-to-software-craftsmanship_9484dea11666b2ee45cd5a11769bde32_md5.webp)
 
 and people tried to compare it to the Manifesto for Agile Software Development
 
-![[f4dd9cc532dd7e1845e424a9274811d9_MD5.webp]]
+![](assets/introduction-to-software-craftsmanship_f4dd9cc532dd7e1845e424a9274811d9_md5.webp)
 
 I've noticed Craftsmanship would be a next level of Agile. Sure, people from Agile will get offended, or being under-looked.
 

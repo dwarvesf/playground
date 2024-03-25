@@ -29,7 +29,7 @@ However, zkEVM is not just a compilation but a zero-knowledge compilation. Its d
 
 State machines are best suited for repetitive deterministic computations, which are common in Ethereum. In contrast, arithmetic circuits will need unrolled loops and thus lead to undesired larger circuits.
 
-![[5c893d5303e63e3b680f53b79b2878de_MD5.svg]]
+![](assets/design-system-for-layer-2-using-zk-rollup_5c893d5303e63e3b680f53b79b2878de_md5.svg)
 
 ## System Requirements
 Since this isn’t a closed system, there are few requirements we need to meet in order to ensure its security, performance, and workability. The following are the essential requirements for a blockchain layer 2 system that we should have:
@@ -55,7 +55,7 @@ Similar to other blockchains, the system will include the main components of a r
 
 The Aggregator is responsible for aggregating and compressing user transactions into a single proof, which is then validated by the ZKProver and submitted to the Ethereum network via the Ethereum bridge. The Rollup smart contract is deployed on the Ethereum network and handles the creation and management of layer 2 transactions. The Ethereum bridge connects the layer 2 and layer 1 networks, enabling the transfer of assets between the two networks.
 
-![[63557ccfde06ef52ab5c8580590e6b8e_MD5.webp]]
+![](assets/design-system-for-layer-2-using-zk-rollup_63557ccfde06ef52ab5c8580590e6b8e_md5.webp)
 
 ## Components
 The main components we need for the layer 2 system (that also include components of a regular blockchain) includes:
@@ -73,7 +73,7 @@ The main components we need for the layer 2 system (that also include components
 ### ZkProver Component
 The proof and verification of transactions in Polygon zkEVM are both handled by a zero-knowledge proofing component called zkProver. All the rules for a valid transaction are implemented and executed in zkProver. Prover relies on the transactions to be processed, and the state of the network to calculate the proof. zkProver mainly interacts with two components i.e. Node and Database (DB). Therefore, before diving deeper into other components, we must understand the control flow between zkProver, Node and Database. Here is a diagram to explain the process clearly.
 
-![[6d0dcbf83e5dea68e8d346c66b1637bb_MD5.webp]]
+![](assets/design-system-for-layer-2-using-zk-rollup_6d0dcbf83e5dea68e8d346c66b1637bb_md5.webp)
 
 * Prover executes input data, calculates the result state, and generates proof. It calls the Stark component to generate proof of the Executor state machine committed polynomials.
 * Key components of zkProver for generating verifiable proof:
@@ -83,7 +83,7 @@ The proof and verification of transactions in Polygon zkEVM are both handled by 
 * Prove ZK-SNARK
 
 ### State machine Component
-![[6966283d889117a7e021bfd7d29d47a7_MD5.webp]]
+![](assets/design-system-for-layer-2-using-zk-rollup_6966283d889117a7e021bfd7d29d47a7_md5.webp)
 
 *[https://docs.hermez.io/zkEVM/zkProver/State-Machines/Overview/figures/fig-actions-sec-sm.png](https://docs.hermez.io/zkEVM/zkProver/State-Machines/Overview/figures/fig-actions-sec-sm.png)*
 
@@ -121,12 +121,12 @@ Once the Trusted Sequencer has committed the batch chains fetched directly from 
 
 Execution of off-chain batches will eventually be verified on-chain via Zero-Knowledge proof and the resulting L2 state root will be committed. As the zkEVM protocol evolves, new L2 state roots will be synchronized directly from L1 by the L2 network nodes.
 
-![[111fc823c12887002c2b8db6b1fb3bd1_MD5.webp]]
+![](assets/design-system-for-layer-2-using-zk-rollup_111fc823c12887002c2b8db6b1fb3bd1_md5.webp)
 
 ### Bridge Component
 The bridge is responsible for receiving and processing requests to transfer information across different blockchain networks. For example, the user wants to send ETH from the Ethereum network to the layer 2 blockchains, the user will send a request to a smart contract on Ethereum or smart contract on layer 2, Aggregator will listen for pre-registered events for processing. You can follow the diagram below:
 
-![[cf2dd7dd7ccbdbdb75fb3d0f31ca5d68_MD5.webp]]
+![](assets/design-system-for-layer-2-using-zk-rollup_cf2dd7dd7ccbdbdb75fb3d0f31ca5d68_md5.webp)
 
 * The bridge client creates a request to deposit or claim to Ethereum or zkEVM node (layer 2) to start transferring the token
 * The Aggregator will sync events with Ethereum and store bridge events to Bridge DB and update the Merkle tree root
@@ -160,7 +160,7 @@ RPC (Remote Procedure Call) is a JSON-RPC interface compatible with the Ethereum
 ### Final Node component diagram
 One node will include all the components as we have shown above. the components will be started and run simultaneously as a whole
 
-![[554108b34cb2175db1ecec15e3b7bfc3_MD5.webp]]
+![](assets/design-system-for-layer-2-using-zk-rollup_554108b34cb2175db1ecec15e3b7bfc3_md5.webp)
 
 The diagram represents the main components of the software and how they interact between them. Note that this reflects a single entity running a node, in particular a node that acts as the trusted sequencer. But there are many entities running nodes in the network, and each of these entities can perform different roles.
 

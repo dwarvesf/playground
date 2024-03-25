@@ -15,7 +15,7 @@ Many kinds of tasks that do not require user interaction are most effectively ha
 
 **Provide server functionality**, such serving web pages. Coordinate access to of a shared resource, such as a database. Perform work for a foreground application, such as file system access.
 
-![[8f72ec64cac909319e7fc79210c69563_MD5.webp]]
+![](assets/daemons-and-services-programming-guide_8f72ec64cac909319e7fc79210c69563_md5.webp)
 
 T**erminology Note**: The terms `service` and `daemon` have several meanings in different contexts, with further variation over time and from one development community to another.
 
@@ -29,7 +29,7 @@ There are four types of background processes in OS X. The differences are summar
 
 Whether it does something for the currently logged in user or for all users. Whether it will be used by single application or by multiple applications. Whether it ever needs to display a user interface or launch a GUI application.
 
-![[93dcafb893273d168521685e97d42ad8_MD5.webp]]
+![](assets/daemons-and-services-programming-guide_93dcafb893273d168521685e97d42ad8_md5.webp)
 
 /Login items are started by the per-user instance of launchd, but it doesn't take any actions to manage them.
 
@@ -75,4 +75,4 @@ If you want to see the daemons currently running on your system, use the Activit
 
 Note: If you want to know more about the services provided by a particular daemon, consult the man page for that daemon. You can also view the manual pages online by reading OS X Man Pages.
 
-![[6b7ebc46edfa8c99dbdbfb540f15bb11_MD5.webp]]
+![](assets/daemons-and-services-programming-guide_6b7ebc46edfa8c99dbdbfb540f15bb11_md5.webp)

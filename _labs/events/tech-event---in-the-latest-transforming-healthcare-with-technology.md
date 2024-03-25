@@ -30,7 +30,7 @@ hide_frontmatter: false
 ---
 
 “Momby wasn't perfect at first, it only became more evident as we keep going. What we did best was to start it. Up to now, Momby has been well-received by the community, and we’re lucky enough to have many new opportunities to test many new strategies for the product. Thanks to that imperfect start, the teammates that founded Momby trusted, and continued to stay to carry out the mission of serving the community.”
-![[5229aebc7cd27591813e0396644ef0bb_MD5.webp]]
+![](assets/tech-event---in-the-latest-transforming-healthcare-with-technology_5229aebc7cd27591813e0396644ef0bb_md5.webp)
 
 ### <span style='color:red'>**Young engineers, draw your own roadmap.**</span>
 ---

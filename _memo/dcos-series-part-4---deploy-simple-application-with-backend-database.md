@@ -89,37 +89,37 @@ Let’s go to our DC/OS and create a `postgres` service
 
 Go to DC/OS and choose package tab, then find `postgres`:
 
-![[7274a46eb1cff2f39783f79ef6352709_MD5.webp]]
+![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_7274a46eb1cff2f39783f79ef6352709_md5.webp)
 
 Customize your configuration after click `Advance setting` from pop-up page:
 
-![[efe59623d7bf4e6f6112c0d8b5fc2385_MD5.webp]]
+![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_efe59623d7bf4e6f6112c0d8b5fc2385_md5.webp)
 
-![[d235654ef8f0f428f5ecad332edb6148_MD5.webp]]
+![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_d235654ef8f0f428f5ecad332edb6148_md5.webp)
 
 Finally, you need to wait a few minutes and get the result like this:
 
-![[b987a78c85ca24c80127c39227dc905f_MD5.webp]]
+![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_b987a78c85ca24c80127c39227dc905f_md5.webp)
 
 You also need to config more a little bit to be able to backup data:
 
-![[bd74914f8224427cee07a129310fbe15_MD5.webp]]
+![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_bd74914f8224427cee07a129310fbe15_md5.webp)
 
 A very important thing is sharing volumes. You will need to set a specific node with public IP to make sure if service restart, it will only be deployed to a node that you have specified before. There are 2 things need to be config:
 
 1. Set a specific node in `Service` tab:
 
-![[fb4564d4758af4cc151fca604136180f_MD5.webp]]
+![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_fb4564d4758af4cc151fca604136180f_md5.webp)
 
 1. Share volumes
 
-![[3d03a4c6a74681114944d4f0cc0ca683_MD5.webp]]
+![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_3d03a4c6a74681114944d4f0cc0ca683_md5.webp)
 
 For me, I usually share volumes inside container to `/srv` in node: `/srv/todolist/postgresql:/var/lib/postgresql/data`
 
 Then, you also need to enable `LOAD BALANCED SERVICE ADDRESS`, it will allow your application connect to `postgres`
 
-![[07ae10e7b5195c92905e0901562cb533_MD5.webp]]
+![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_07ae10e7b5195c92905e0901562cb533_md5.webp)
 
 After all, click `REVIEW & RUN` to change setting
 
@@ -180,8 +180,8 @@ $ dcos marathon app add marathon.json
 
 As my expectation, it will be like this:
 
-![[b85d3535f4be0d3605d8d61ef3fcd21a_MD5.webp]]
+![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_b85d3535f4be0d3605d8d61ef3fcd21a_md5.webp)
 
 Everything is available now. Let’s check it:
 
-![[91935fc991d145d9dec0c0a5a1703c2e_MD5.webp]]
+![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_91935fc991d145d9dec0c0a5a1703c2e_md5.webp)

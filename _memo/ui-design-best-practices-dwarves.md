@@ -31,7 +31,7 @@ Each convention is written in a compact format so that designers can easily read
 # **Versions & File Organizations**
 
 ## Manage versions by releases
-![[1c3f1857f449f57c470ce40efff1bd01_MD5.webp]]
+![](assets/ui-design-best-practices-dwarves_1c3f1857f449f57c470ce40efff1bd01_md5.webp)
 
 On the management of Pages in Figma. This is a recommended structure:
 
@@ -49,7 +49,7 @@ On the management of Pages in Figma. This is a recommended structure:
 Devs and the client discuss the design with designers through Figma's comments, only designers can make changes in the Figma files.
 
 ## Manage Layers
-![[a46ebf821728ad559bf23e5e6bd7d5a9_MD5.webp]]
+![](assets/ui-design-best-practices-dwarves_a46ebf821728ad559bf23e5e6bd7d5a9_md5.webp)
 
 * Layers are often grouped and named by function or section. For example: hero image, slider, header, footer…
 * Asset (illustration, icon, vector ...) needs to be grouped so that devs can export to SVG files by themselves (without any help from designer).
@@ -71,14 +71,14 @@ Context: Minh pre-booked room 102 from 19:00 to 20:00
 * [Design Decision]
 * Booking time slots from 18:30 to 20:29 will no be shown as available
 
-![[016986df82ac5332b050a9cf55425f3b_MD5.webp]]
+![](assets/ui-design-best-practices-dwarves_016986df82ac5332b050a9cf55425f3b_md5.webp)
 
 # **Design System File presentation**
 
 ## **How to manage pages and master components using Figma software**
 Design System is a tool that makes the component management of the project clear and easy. For more details, please see [this example file](https://www.figma.com/file/6CuLQBxwh1QlLp386Ths7h/Blackpink-Example-for-Design-System-File?node-id=83%3A1098).
 
-![[9ebb07075efeda26bfeb2a82876bd2ef_MD5.webp]]
+![](assets/ui-design-best-practices-dwarves_9ebb07075efeda26bfeb2a82876bd2ef_md5.webp)
 
 ## **Naming Color Style**
 **Designers at Dwarves name colors based on their function (Primary, Secondary, Disabled,...)** Meanwhile, developers name colors based on light/dark levels with numbers (100, 200, 300...)
@@ -87,15 +87,15 @@ Design System is a tool that makes the component management of the project clear
 * Designers complete the color palette, inform developers to add a suffix to the name of the Color Styles
 * When designers make changes to the color palette, designers need to inform developers so they can update their code accordingly.
 
-![[a70427baf7d24194ab5037713ee0a063_MD5.webp]]
+![](assets/ui-design-best-practices-dwarves_a70427baf7d24194ab5037713ee0a063_md5.webp)
 
 **Naming Color Style for designer and developer are both convenient in the working process.**
 
 The developer has a way to name the color in the form of numbers (100,200,300 ...). Meanwhile, the designer names the color based on the color's function (Primary, Secondary, Disable….)
 
-![[f7bcaa80f7503bce54c8f48be4535454_MD5.webp]]
+![](assets/ui-design-best-practices-dwarves_f7bcaa80f7503bce54c8f48be4535454_md5.webp)
 
-![[b37bb057d318c523f8de54660823255a_MD5.webp]]
+![](assets/ui-design-best-practices-dwarves_b37bb057d318c523f8de54660823255a_md5.webp)
 
 ## **Tips when using the Design System file in Figma:**
 In order to kickstart a new project, we usually reproduce the Design System from previous projects where all the master components have been established and ready for use. All that’s left is to remove unnecessary components and adapt the Design System to the new project.

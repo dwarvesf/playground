@@ -13,7 +13,7 @@ hide_frontmatter: false
 
 <!-- table_of_contents 646286df-cb90-4d19-9c5b-c689bd3c14c6 -->
 
-![[c9a1b2c55d33bd432d3b0ace8d0a65e7_MD5.webp]]
+![](assets/database-designs-for-multilingual-apps_c9a1b2c55d33bd432d3b0ace8d0a65e7_md5.webp)
 
 *This story comes from the necessity of multi-language support across our applications. Dwarves Foundation handles a lot of international clients and there is always some level of concern for supporting multiple languages for certain apps. This is a concern not just from our clients, but also from us, which motivated our research for multilingual support.*
 
@@ -32,7 +32,7 @@ The column-based approach is the simplest solution for managing translations in 
 
 Here's an example of how a table using this approach might look:
 
-![[f257e0952b3c5b44d18722936afa96b6_MD5.webp]]
+![](assets/database-designs-for-multilingual-apps_f257e0952b3c5b44d18722936afa96b6_md5.webp)
 
 ### **Retrieving Translation**
 To query data you would need to use a COALESCE function to retrieve the translation in the desired language, with a fallback to the default column if the translation is not available.
@@ -67,7 +67,7 @@ In the column JSON-based approach, a single column is used to store all translat
 
 For example, if you have a table with columns for "title" and "description," you can use a single column named `translations` to store the translations in JSON format. The JSON object will have a key for each language, and each key will contain the translated column values for that language:
 
-![[41a7d2c490ccbd641b6c819e39fefdeb_MD5.webp]]
+![](assets/database-designs-for-multilingual-apps_41a7d2c490ccbd641b6c819e39fefdeb_md5.webp)
 
 ### **Retrieving Translation**
 To retrieve data, you need to use specific functions to extract data from the `**translations**`
@@ -123,11 +123,11 @@ The translation table approach involves creating a separate table for storing tr
 
 Here's an example of how a translation table might look:
 
-![[5a3973c10e77842fa50e038b4c9755b8_MD5.webp]]
+![](assets/database-designs-for-multilingual-apps_5a3973c10e77842fa50e038b4c9755b8_md5.webp)
 
-![[04501b291da585ce90758a6b363be5e9_MD5.webp]]
+![](assets/database-designs-for-multilingual-apps_04501b291da585ce90758a6b363be5e9_md5.webp)
 
-![[6b6695453f90a53f40ccc71a42275e36_MD5.webp]]
+![](assets/database-designs-for-multilingual-apps_6b6695453f90a53f40ccc71a42275e36_md5.webp)
 
 ### **Retrieving Translation**
 To retrieve translations using the translation table approach, you would typically use SQL queries with JOIN statements to combine the relevant data from multiple tables.

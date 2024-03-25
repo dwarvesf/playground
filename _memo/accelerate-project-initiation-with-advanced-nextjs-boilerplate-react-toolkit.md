@@ -32,14 +32,14 @@ With NextJS-Boilerplate, developers can follow a streamlined workflow that invol
 
 What sets NextJS-Boilerplate apart from other boilerplate solutions is its pre-configured tools and established best practices, which help developers save valuable time during the initial setup process. Additionally, by utilizing TypeScript and adhering to coding conventions, developers can maintain consistency, code maintainability, and predictability across various projects.
 
-![[playground/_memo/assets/accelerate-project-initiation-with-advanced-nextjs-boilerplate-react-toolkit/149cb7501d21ad52e476f168b93085cc_MD5.jpeg]]
+![](assets/accelerate-project-initiation-with-advanced-nextjs-boilerplate-react-toolkit_149cb7501d21ad52e476f168b93085cc_md5.jpeg)
 
 ## React Toolkit
 [React-Toolkit](https://github.com/dwarvesf/react-toolkit) is a specialized library of React hooks and utilities that simplifies the development of robust, scalable React applications. It includes a custom ESLint configuration to establish and enforce consistent coding standards across the development team, a collection of widely-used React hooks for state management, side effects, and other crucial functionality, and utility functions for handling common tasks like string manipulation, context creation, and data transformation.
 
 What makes React-Toolkit unique is its focus on reducing redundancy and increasing developer productivity. By integrating custom ESLint configurations and Prettier into the library, developers can enforce coding conventions and ensure that the codebase remains clean, readable, and maintainable. Additionally, the collection of pre-built hooks and utilities can help developers write high-quality, maintainable code without having to spend time on solving already-addressed problems or implementing redundant solutions for common tasks.
 
-![[playground/_memo/assets/accelerate-project-initiation-with-advanced-nextjs-boilerplate-react-toolkit/8b4ce5b2e752b7bbc96be21b6d2f1349_MD5.jpeg]]
+![](assets/accelerate-project-initiation-with-advanced-nextjs-boilerplate-react-toolkit_8b4ce5b2e752b7bbc96be21b6d2f1349_md5.jpeg)
 
 ## **The Outcomes**
 Investing in our custom NextJS-Boilerplate and React-Toolkit has yielded significant benefits:

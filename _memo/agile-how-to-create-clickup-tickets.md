@@ -59,5 +59,5 @@ In charge: Minh, Huy, An
 Created on: May 10th, 2018
 Due Date: May 20th, 2018
 
-![[0a0e01fd89063d645b741fc4020c6a5b_MD5.webp]]
+![](assets/agile-how-to-create-clickup-tickets_0a0e01fd89063d645b741fc4020c6a5b_md5.webp)
 

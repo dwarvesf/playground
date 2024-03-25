@@ -41,7 +41,7 @@ type: brainery
 
 - Diagram to describe the Working Flow
 
-![](assets/ab8dc870fb19553f7616442fe4e9e6c5_MD5.png)
+![](assets/quick-learning-vector-database_ab8dc870fb19553f7616442fe4e9e6c5_md5.png)
 
 - Benefits:
   - Flexibility: schemaless, non-structured

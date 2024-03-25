@@ -127,7 +127,7 @@ fn main() {
 }
 ```
 
-![[8b2e8ecd35a0b2b6be39e220dcb4c333_MD5.webp]]
+![](assets/playaround-with-rust_8b2e8ecd35a0b2b6be39e220dcb4c333_md5.webp)
 
 In order to correct the function, we just put the lifetime in parameter like:
 

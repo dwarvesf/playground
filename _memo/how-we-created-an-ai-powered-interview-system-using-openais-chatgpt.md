@@ -14,7 +14,7 @@ hide_frontmatter: false
 
 <!-- table_of_contents 5205cfd6-7c31-4925-96ea-fdaa4b7d7a99 -->
 
-![[7fbe880aa3a51713c213dc3db6043fc7_MD5.webp]]
+![](assets/how-we-created-an-ai-powered-interview-system-using-openais-chatgpt_7fbe880aa3a51713c213dc3db6043fc7_md5.webp)
 
 ### <span style='color:blue'>The Idea</span>
 ---
@@ -39,7 +39,7 @@ The concept of InterviewGPT revolves around leveraging AI to create a website th
 
 In the future, the system will incorporate additional features, including interview history storage, comprehensive evaluations of the entire process, suggestions for suitable positions and companies with active hiring needs. Furthermore, candidates will have the ability to submit their CVs for the system to automatically search for suitable positions.
 
-![[8d4d17b65a040f22cd2482f841361f93_MD5.webp]]
+![](assets/how-we-created-an-ai-powered-interview-system-using-openais-chatgpt_8d4d17b65a040f22cd2482f841361f93_md5.webp)
 
 Overall, the automated interview system, driven by ChatGPT, offers significant contributions towards an efficient and effective automated interview experience, fostering seamless interactions with users. 
 

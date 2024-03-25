@@ -232,8 +232,8 @@ So, your configuration file will be like this:
 
 1. Deploy it and let’s check `nginx.dwarvesf.com`
 
-![[93c6fdb9cee529cbeb2a4141d910bb8f_MD5.webp]]
+![](assets/dcos-series-part-3---service-discovery-and-load-balancing_93c6fdb9cee529cbeb2a4141d910bb8f_md5.webp)
 
 or, you also can access by this way `<public-node-elb>`:`<service-port>`
 
-![[d90d63eed205052f3f560b4a6ebd5fba_MD5.webp]]
+![](assets/dcos-series-part-3---service-discovery-and-load-balancing_d90d63eed205052f3f560b4a6ebd5fba_md5.webp)

@@ -40,7 +40,7 @@ When involving AI, mostly the idea of using `Python` popped out immediately. `Py
 For the CLI framework, We are using *[Cobra](https://github.com/spf13/cobra)*. This framework is great for creating CLI applications.
 
 ## Application flow
-![[898d0616614b4483301cd1793967a1ef_MD5.webp]]
+![](assets/build-an-assistant-on-the-terminal_898d0616614b4483301cd1793967a1ef_md5.webp)
 
 The tool takes the users' input and extracted its keywords using the TextRank algorithm. Then, the keywords are pushed through a layer of heuristic function to determine where it should get the answer and how to parse the answer. The answer was then summarized using the TF-IDF algorithm and formatted and returned to users.
 

@@ -17,7 +17,7 @@ hide_frontmatter: false
 Data & Backend
 
 Dwarves Apprentices, batch of 2022
-![[9b67e38d0c1276e257fa386d351c11a8_MD5.webp]]
+![](assets/from-data-to-backend-an-apprentice-sharing_9b67e38d0c1276e257fa386d351c11a8_md5.webp)
 
 ### <span style='color:red'>How did you first envision the Dwarves Apprenticeship Program?</span>
 ---

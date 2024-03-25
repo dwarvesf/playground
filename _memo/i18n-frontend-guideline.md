@@ -15,7 +15,7 @@ hide_frontmatter: false
 
 <!-- table_of_contents 9ea845dc-b680-426f-bc1f-0ddd87f93098 -->
 
-![[0d5e0a2c5a795b96f65caa5b7a360578_MD5.webp]]
+![](assets/i18n-frontend-guideline_0d5e0a2c5a795b96f65caa5b7a360578_md5.webp)
 
 In a front-end web application, locales are used to determine the language and geographic location of the user and to display the appropriate content to them.
 
@@ -53,7 +53,7 @@ Internationalized routing is a way to handle different URLs for the same page ba
 
 For example in React.js, the routing process can be implemented like this
 
-![[9354a1ef08eeec42a93ec4329cf358c4_MD5.webp]]
+![](assets/i18n-frontend-guideline_9354a1ef08eeec42a93ec4329cf358c4_md5.webp)
 
 With Next.js, there is built-in support for internationalized routing since `**v10.0.0**`
 

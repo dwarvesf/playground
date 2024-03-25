@@ -20,7 +20,7 @@ Software craftsmanship, by all means, is an approach to software development. It
 
 Craftsmanship plays a vital part in engineering excellence, and it's not a low hanging fruit to grab within a day. It takes time to master, it reveals a lifestyle that developers choose to be responsible for their  career path. It's about improving the crafts and be the best version you can. A craftsman takes pride in his work and strives to turn the best into better.
 
-![[871104804c16cbc9ea337a0b8c851035_MD5.webp]]
+![](assets/well-crafted-software_871104804c16cbc9ea337a0b8c851035_md5.webp)
 
 A problem knocks on the door, we dig into the root cause and draft the first version of a solution. Things can't be perfect. but it can always be optimized. We make things happen first, then make it right, then make it better. That flows among the organization DNA, or doesn't exist at all.
 

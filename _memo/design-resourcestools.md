@@ -92,19 +92,19 @@ Casual interviews with designers and product creators.
 Interviews with major influencers in design, business, and technology.
 
 # Books
-![[1d108bd8a65ff50110c20d550f63945e_MD5.webp]]
+![](assets/design-resourcestools_1d108bd8a65ff50110c20d550f63945e_md5.webp)
 
 A foundational book on UX and Design, introducing design as a competitive advantage in business.
 
-![[9863db6fd97f581087152cab779966e2_MD5.webp]]
+![](assets/design-resourcestools_9863db6fd97f581087152cab779966e2_md5.webp)
 
 A straightforward book on usability, serving as a great introduction to UX.
 
-![[35a07daafda041800eb792f9dfb52744_MD5.webp]]
+![](assets/design-resourcestools_35a07daafda041800eb792f9dfb52744_md5.webp)
 
 An introduction to statistics and data visualization (and how they can both be manipulated).
 
-![[22750df99a8ae9d95127999f8d41614b_MD5.webp]]
+![](assets/design-resourcestools_22750df99a8ae9d95127999f8d41614b_md5.webp)
 
 Part of the Lean Startup movement, this book introduces the process for Lean UX.
 

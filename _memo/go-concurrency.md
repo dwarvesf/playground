@@ -20,14 +20,14 @@ Concurrency means “out of order” execution. Another concept talk about concu
 
 Parallelism is doing lots of things at the same time like other running tasks on a multicore processor. Let’s come back with the example above. Instead of taking order my mother, I play the game and listen to music at once freely. In this case, playing game and listening to music is "lots of things".
 
-![[9cb01cacb1edc3373acd7570cc280cd7_MD5.webp]]
+![](assets/go-concurrency_9cb01cacb1edc3373acd7570cc280cd7_md5.webp)
 
 After understanding the way to compare concurrency with parallelism, we can research about Goroutines/channel and other well.
 
 ## Goroutines
 Goroutines can be understood like a light weight thread. Instead of OS, Goroutines exists only in the virtual space of Go runtime. A Goroutines is started up with initial 2KB of stack size (This is the location where store answer of the question "what is this Go routine's current state?". It is contains local variables as well as pointers to heap allocated variables). Because Go’s stacks are dynamically sized, growing and shrinking with the amount of data stored. So we need only 4KB memory for Goroutines.
 
-![[d82335b0ffffc63ae92aa7339a5867e8_MD5.webp]]
+![](assets/go-concurrency_d82335b0ffffc63ae92aa7339a5867e8_md5.webp)
 
 Goroutines are cheaper than others thing like it (thread) in other programming language because of ability growing and shrinking depend on programmer's desire. e.g a Java thread initially have 4MB while go-routine is somewhere around 2KB.
 
@@ -54,7 +54,7 @@ For buffered channel, providing the buffer length as the second argument to make
 
 Capacity should be greater than 0 for a channel to have a buffer and we can send data to our channel until this is full, similar receives will not block when we read data until empty.
 
-![[eb379f648c223af56819605adfeb118d_MD5.webp]]
+![](assets/go-concurrency_eb379f648c223af56819605adfeb118d_md5.webp)
 
 ## Under the hood
 ### Channel implementation
@@ -62,19 +62,19 @@ When we implement a Go channel, a struct will be created, then it looks like fol
 
 To have a comprehensive view, we have a few descriptions about the fields encountered in the channel structure.
 
-![[23c2cb6d27ce23dcdc500decd9a59398_MD5.webp]]
+![](assets/go-concurrency_23c2cb6d27ce23dcdc500decd9a59398_md5.webp)
 
 * **buf** is the location where our data is actually stored. It is a circular queue.
 * **dataqsize** is size of the circular queue. It represent capability of channel. When we declare make(chan int, N), **dataqsize** is N. It also let us know how many Goroutines can write data into this channel until blocked
 
-![[966768c61d35099632b9e31f581807c6_MD5.webp]]
+![](assets/go-concurrency_966768c61d35099632b9e31f581807c6_md5.webp)
 
 * **qcount** represents the number of slots in the buf currently filled up.
 * **elemsize** Is the size of a channel corresponding to a single element.
 * **elemtype** used when messages are copied over from one Go-routine to the other. It has a bunch of fields which provide type and size information for the type of values the channel can hold.
 * **closed** Indicates whether the current channel is in the closed state. After a channel is created, this field is set to 0, that is, the channel is open; by calling close to set it to 1, the channel is closed.
 
-![[80543471c1dd9c44e63c7fa281d4b6c0_MD5.webp]]
+![](assets/go-concurrency_80543471c1dd9c44e63c7fa281d4b6c0_md5.webp)
 
 * **sendx** and **recvx** indicates the current index of buffer — backing array from where it can send data and receive data.
 * **recvq** and **sendq** waiting queues, which are used to store the blocked Goroutines while trying to read data on the channel or while trying to send data from the channel.
@@ -84,23 +84,23 @@ To have a comprehensive view, we have a few descriptions about the fields encoun
 
 We mentioned about sudog struct above. What is sudog? See the following image:
 
-![[2ec27e55f9c531e5aab4f885f5915f30_MD5.webp]]
+![](assets/go-concurrency_2ec27e55f9c531e5aab4f885f5915f30_md5.webp)
 
 We have a full description for sudog struct in source. If something confuse, ignore it by looking at the original concept. Then we have a good description about sudog: sudog represents a Goroutine. recvq and sendq hold the information on the Goroutines which are currently blocking on the channel while receiving and sending respectively. They are pointers to sudog.
 
 An example to know what happen when we declare Goroutines and channel.
 
-![[026784030ef13c5d006328ea47cfc657_MD5.webp]]
+![](assets/go-concurrency_026784030ef13c5d006328ea47cfc657_md5.webp)
 
 What will be the structure of the channel before line **No 22?**
 
-![[28bee5f5381e186532a5ceda7746c017_MD5.webp]]
+![](assets/go-concurrency_28bee5f5381e186532a5ceda7746c017_md5.webp)
 
 In Our Example Code before line 22 there are two Goroutines (goroutineA and goroutineB ) trying to read data from the channel ch.
 
 Since before line 22 on a channel, there is no data we have put on the channel so both the Goroutines blocked for receive operation have been wrapped inside the **sudog** struct and is present on the recvq of the channel. **recvq** and **sendq** are basically linked list, which looks basically as below
 
-![[2da8e4e08c9af6c09a70149ce0bee0c1_MD5.webp]]
+![](assets/go-concurrency_2da8e4e08c9af6c09a70149ce0bee0c1_md5.webp)
 
 ### Go scheduler
 To understand Go scheduler quickly, we will review a few concepts in OS and OS scheduler that support a program is runnable. If you knew about OS thread and OS scheduler, you should skip following section and jump to next part.
@@ -115,7 +115,7 @@ If you are running on Linux, Mac or Windows, you are running on an OS that has a
 
 Existing a piece called Program Counter in a Thread that allows the thread keep track of the next instruction to execute.
 
-![[bf66c5b925d9c162acc9d0fb055c353e_MD5.webp]]
+![](assets/go-concurrency_bf66c5b925d9c162acc9d0fb055c353e_md5.webp)
 
 There are 3 states in thread
 
@@ -135,7 +135,7 @@ After surfing over above all things, we have ability to understand following par
 ### Getting started
 When our program start up, it’s given a Logical Processor (P) for every virtual core identified on the host machine. So how many virtual core exist in your computer? Suppose that we have a Macbook with following system report:
 
-![[8c56d98dd1917a5c479f487977ccfb9f_MD5.webp]]
+![](assets/go-concurrency_8c56d98dd1917a5c479f487977ccfb9f_md5.webp)
 
 We have 1 processor with total 4 cores. As you see the report don’t let us know directly how many virtual core here. But the Intel Core i7 processor has Hyper-Threading, which means there are 2 hardware threads per physical core. This will report to the Go program that 8 virtual cores are available for executing OS Threads in parallel. In another word, a hardware thread serve for a virtual cores.
 
@@ -147,7 +147,7 @@ Each P is given a Local Run Queue LRQ that manages the Goroutines assigned to be
 
 Following figure provides an image of all these components together
 
-![[ad2ef462e022466f3eab445763ef2bda_MD5.webp]]
+![](assets/go-concurrency_ad2ef462e022466f3eab445763ef2bda_md5.webp)
 
 The Go scheduler is part of the Go runtime, which is built into our application. This means the Go scheduler runs in user space. The current implementation of the Go schedule is a cooperating scheduler that needs well-defined user space events.
 

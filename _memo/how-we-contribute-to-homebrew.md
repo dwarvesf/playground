@@ -18,7 +18,7 @@ For now, you can access homebrew via
 * Homepage: http://brew.sh
 * Github: https://github.com/Homebrew/homebrew
 
-![[2cb764be7c789e87ab8df174d9e799e3_MD5.webp]]
+![](assets/how-we-contribute-to-homebrew_2cb764be7c789e87ab8df174d9e799e3_md5.webp)
 
 To install homebrew, you just need to run the `brew` and you will get brew command ready in couple of minutes.
 
@@ -53,14 +53,14 @@ Note: In this post, we just cover the command line or tool part of Homebrew. The
 
 When you look into the repo of Homebrew, you can easily find the doc directory in `homebrew/share/doc/homebrew/` which contains all the information. The most important file for this tutorial is the `Formula-Cookbook.md.`
 
-![[d720976fff56c521e1fb95eb8696c975_MD5.webp]]
+![](assets/how-we-contribute-to-homebrew_d720976fff56c521e1fb95eb8696c975_md5.webp)
 
 Basically, when you use homebrew, it will create a separate folder on your machine. Everything usually will be installed in `/usr/local/Cellar` and all formulas was stored at `/usr/local/Library/Formula.`
 
 So in short, if you want to contribute a new one, you need to create a new formula in your local and submit a pull request to `https://github.com/Homebrew/homebrew.`
 
 ## Fork from Homebrew
-![[023366a1f0837a41a52f37788092a6fa_MD5.webp]]
+![](assets/how-we-contribute-to-homebrew_023366a1f0837a41a52f37788092a6fa_md5.webp)
 
 For us, we will have a repo called `dwarvesf/homebrew` which we can clone and start from there.
 
@@ -140,7 +140,7 @@ $ brew cleanup
 ## Test the formula
 One note for the test block, there are still a lot of formula that try to cheat by printing out the help or version. As a good contributor, you should write good tests for your formulas or your pull request will be rejected (like us)
 
-![[8af79f8ad176a520effb9282ffd621de_MD5.webp]]
+![](assets/how-we-contribute-to-homebrew_8af79f8ad176a520effb9282ffd621de_md5.webp)
 
 ```javascript
 $ brew test $FORMULA
@@ -163,9 +163,9 @@ $ cp -f /usr/local/Library/Formula/glod-cli.rb ~/Workspace/dwarvesf/homebrew/Lib
 
 Commit and push your changes to **YOUR** Github. Then we open the Github Repo (still yours), click on button `New pull request` and we get
 
-![[6b2b8ce5d8671f85ddf41e15f637dd04_MD5.webp]]
+![](assets/how-we-contribute-to-homebrew_6b2b8ce5d8671f85ddf41e15f637dd04_md5.webp)
 
-![[096ad9e94b7139c6f99bdac0c463196d_MD5.webp]]
+![](assets/how-we-contribute-to-homebrew_096ad9e94b7139c6f99bdac0c463196d_md5.webp)
 
 ![[096ad9e94b7139c6f99bdac0c463196d_MD5.webp]]
 

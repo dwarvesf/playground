@@ -44,17 +44,17 @@ weekly meeting #5 - 03/01/2024:
 - A follow up of @Toan's demo ov YoloV8 over Tensorflow.js, using WebGPU as the backend, to do object detection over recaptcha images
 - @Toan demo includes image autodetection, keyword detection, object separation, and auto clicking.
 
-![[Labs Weekly Catchup 5-20240105153824098.webp]]
+![](assets/labs-weekly-catchup-5-20240105153824098.webp)
 
 🔒 **Passkey demo**
 - A continuation effort with @Tay
 - (@Tay) Uses Golang library instead for the backend server
 - (@Tay) Different from magic links where it uses JWT token and a verification flow
-![[Labs Weekly Catchup 5-20240105154513918.webp]]
+![](assets/labs-weekly-catchup-5-20240105154513918.webp)
 
 🚀 **Github Trending Analyzer use-case discussion**
 - @Hieu Scaffolded a repository for scraping web data from GitHub trending, user profile, stars, and contributions
-	- ![[Labs Weekly Catchup 5-20240105155035154.webp]]
+	- ![](assets/labs-weekly-catchup-5-20240105155035154.webp)
 - (@Hieu) Today is more of a general discussion as to what use-cases there should be for the app 
 - (@Hieu) The application uses TimescaleDB to allow for high ingest rates, currently requires a bit of remodeling and general constraints
-	- ![[Labs Weekly Catchup 5-20240105155040503.webp]]
+	- ![](assets/labs-weekly-catchup-5-20240105155040503.webp)

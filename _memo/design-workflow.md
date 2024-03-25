@@ -20,7 +20,7 @@ There are 2 types of research you can do to figure this out:
 
 You can create a provisional persona of potential user base on your research and people around you who you think they are able to your object of study.
 
-![[aad2cd76d88ab384bd09ba16793dab87_MD5.webp]]
+![](assets/design-workflow_aad2cd76d88ab384bd09ba16793dab87_md5.webp)
 
 ## 2. Job Story & Scenario
 After collecting information and figuring out the above expected goals, we continue to conduct Job Stories and come up with Wire-frames.  
@@ -54,17 +54,17 @@ After that, you should make statistical tables base on your test.
 ## 4. Identifying and Prioritizing Pain Points
 After you review the user interviews, you write each users' pain points onto Post-Its. Then you categorize pain points with Affinity Mapping and prioritize them with 2x2 Matrix.
 
-![[d8fe23347d8bff5a0be6ae56bd0fc438_MD5.webp]]
+![](assets/design-workflow_d8fe23347d8bff5a0be6ae56bd0fc438_md5.webp)
 
 ## 5. Flowchart
 Next step, you draw a flowchart what is a diagram of the sequence of movements or actions of people or things involved in a complex system or activity.
 
-![[1ce44520b17bffd06b033406e0d794a6_MD5.webp]]
+![](assets/design-workflow_1ce44520b17bffd06b033406e0d794a6_md5.webp)
 
 ## 6. Design Decisions
 **Sketch wire-frames**
 
-![[d6a68d2878bdf01a430afc77624683a2_MD5.webp]]
+![](assets/design-workflow_d6a68d2878bdf01a430afc77624683a2_md5.webp)
 
 Sketching wire-frames using pencil & paper make easier to iterate your design and get feedback. 
 
@@ -135,7 +135,7 @@ Delivering your design with a design system is a **MUST. **So keep that in mind 
 
 This step will support the development team to understand what system you are doing so that they can follow up faster.
 
-![[a19657465a449ff547f2c9008bbfab8c_MD5.webp]]
+![](assets/design-workflow_a19657465a449ff547f2c9008bbfab8c_md5.webp)
 
 ## 9. **Review, Feedback**
 1. Use tools like Marvel, Figma to present your design. Marvel should be used when you want to present the interactive prototypes, while Figma is better to present general designs, just import your final design here to present & collect feedback. Don't forget to let people know by shooting a link via Slack/Hygger.

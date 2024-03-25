@@ -23,7 +23,7 @@ AARRR funnel contains 5 stages: **Acquisition, Activation, Retention, Referral, 
 
 These 5 stages often change order, depends on what we want to attain. Sometimes you might want visitors first before turning them into your users and bring them your unique values. Sometimes you just want them to keep using your product as long as possible.
 
-![[68ba2966f6fa3c2f176e35fac09460a7_MD5.webp]]
+![](assets/aarrr-framework-in-a-nutshell_68ba2966f6fa3c2f176e35fac09460a7_md5.webp)
 
 As we can see the above image which is the AARRR ecosystem. Based on our assumption about Problem - Solution, we (and input from the Business owner) will decide the order of 5 stages and what need to do at each stage to drive the User into the funnel. We could know which metrics of each stage and which ones need to be focused first in a matter of time.
 
@@ -52,7 +52,7 @@ Keep in mind the current product stages and its goal then optimize the metrics.
 
 This could save you a lot of money.
 
-![[ad253f7dc9bffec98ab4c536f6cfc2d4_MD5.webp]]
+![](assets/aarrr-framework-in-a-nutshell_ad253f7dc9bffec98ab4c536f6cfc2d4_md5.webp)
 
 ## Conclusion
 With AARRR Framework, we could build a product based on a concrete foundation and minimize the risks by defining what it takes to get the business goal and how to get there (metrics).

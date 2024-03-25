@@ -26,14 +26,14 @@ Authentication can be one of the most significant sources of friction for your a
 Haravan: Support offline shop on online selling to trigger O2O (standardize data structure) ––> Create the foundation for big data and 4.0
 
 ### Retail 4.0
-![[9c8390ea196dd16d4d3dd5a56311ba94_MD5.webp]]
+![](assets/domain-glossary_9c8390ea196dd16d4d3dd5a56311ba94_md5.webp)
 
 ### O2O - Online to Offline
 * Originally, implies an online trigger which prompts the customer to go to a physical location to complete their purchase
 * Evolvingly, it is the ability to pay online and then pick up a product in an offline place, such as the retailers' physical store or 3rd party locations.
 * Another O2O feature is returning items purchased online to the retailers' offline location.Open banking is also known as "open bank data." Open banking is a banking practice that provides third-party financial service providers open access to consumer banking, transaction, and other financial data from banks and non-bank financial institutions through the use of application programming interfaces (APIs). Open banking will allow the networking of accounts and data across institutions for use by consumers, financial institutions, and third-party service providers. Open banking is becoming a major source of innovation that is poised to reshape the banking industry.
 
-![[4bc9024bc646f7b46a1675cd62ff9350_MD5.webp]]
+![](assets/domain-glossary_4bc9024bc646f7b46a1675cd62ff9350_md5.webp)
 
 ```javascript
 Takeway

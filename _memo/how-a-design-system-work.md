@@ -36,7 +36,7 @@ There are 2 types of color: Flat & Gradient. We use a slash to categorize the co
 ## Text Style Naming Convention
 Text Style Generator is a tool in Figma that helps to create text style easier using plugins. Naming convention for Text Style will be based on a front-end method - the Common Weight Name Mapping.
 
-![[eb3f1f53df6e5919ae30528c764a27ee_MD5.webp]]
+![](assets/how-a-design-system-work_eb3f1f53df6e5919ae30528c764a27ee_md5.webp)
 
 When Common Weight Name Mapping is used in UI, we need to know the ratio between the font weights, which one is bold and which one is light. What we need is the consistency of text style in the overall UI, and Text Style Generator in Figma plugin makes it possible. It generates a new unified style by writing overlay on the previous one, and have it updated for all.
 
@@ -70,4 +70,4 @@ If Variation and Type (kind) have complex modify, we can consider dividing the V
 * Turn UI file/ design system into document
 * Helps to note down a detailed instruction for the team (with >2 designers). This drives better communication between designer-designer and designer-developer.
 
-![[462d264e13a03129c48869ecadc606ed_MD5.webp]]
+![](assets/how-a-design-system-work_462d264e13a03129c48869ecadc606ed_md5.webp)

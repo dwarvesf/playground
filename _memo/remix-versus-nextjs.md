@@ -111,7 +111,7 @@ Next.js define some custom pages for certain status errors like 404 or 500 error
 
 Remix has an error boundary for handling errors. When we create a route component, we can also define an error boundary for catching any errors that occur in the route component. It likes having two components in a route file, with one being the actual route component and one being the fallback when errors happen in the former. One noteworthy thing is when there is an error in a nested component route and this route has no error boundary, the error bubbles up the nested tree until caught by a parent’s error boundary.
 
-![[a7d49c4d71418c892f72a5c2a7dbee19_MD5.webp]]
+![](assets/remix-versus-nextjs_a7d49c4d71418c892f72a5c2a7dbee19_md5.webp)
 
 ## **Conclusion**
 For React developers, Next.js is obviously the prior choice when it comes to server-side rendering for its familiar concepts and larger community. Has been around for a while, it seems like a steady pedestal and is not easy to be replaced in a short period.

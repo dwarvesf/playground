@@ -23,11 +23,11 @@ Let’s make it simple.
 
 Either you want your design looks like this:
 
-![[3bdce6d13717bd0834f92c4a79970069_MD5.webp]]
+![](assets/grid-and-layout_3bdce6d13717bd0834f92c4a79970069_md5.webp)
 
 Or this
 
-![[36c8e99a111f6eed2d177b9b0eb8228f_MD5.webp]]
+![](assets/grid-and-layout_36c8e99a111f6eed2d177b9b0eb8228f_md5.webp)
 
 There are several things that make your work turn into “not good looking design” and one of that is you didn’t choose and prepare your layout good enough. (It happened to me once when I first started working as a visual designer).
 
@@ -51,56 +51,56 @@ With **Row** and **Column,** we mostly have 12 counts, margin, width, gutter.
 ### Field elements
 It's a block of design, whether that be text, image, or both. Background colors don't count as field elements unless they are a container for your text/image. I've seen the name field element be interchangeable with units, elements, parent containers — they're all the same.
 
-![[1d7ff36ad43140f04c22a1344327120a_MD5.webp]]
+![](assets/grid-and-layout_1d7ff36ad43140f04c22a1344327120a_md5.webp)
 
 ### Columns
 Columns are the thick colored blocks that make up the content width of your design. Field elements are to sit on a certain number of columns. Traditionally in a design system, the column width doesn’t change. But the number of columns varies from 12 on a desktop or 8 on a tablet and 4 on mobile. You can use anything you want, but most grids have 60–80px column widths. Choosing a column width that works for you is the most important since it’s the main determinant of your content width.
 
-![[910a469e5bc586180f41f88680bba4bd_MD5.webp]]
+![](assets/grid-and-layout_910a469e5bc586180f41f88680bba4bd_md5.webp)
 
 ### Gutters
 Gutters are the space between the columns. 20px is a standard gutter size, and this spacing will be critical when you have a masonry design or a grid of card elements, a simple example being a photo gallery.
 
-![[024c62923ce47df299bd7ee36aa26a77_MD5.webp]]
+![](assets/grid-and-layout_024c62923ce47df299bd7ee36aa26a77_md5.webp)
 
 ### Side margins
 Side margins on mobile are usually 20–30px, and vary a lot between tablet and desktop. Whatever you choose as the side margin, will be the minimum white space you allow when you shrink your browser. When you expand your browser from this point, there will be white space until the next breakpoint.
 
-![[a043920fee14ac284854524a4e074fd1_MD5.webp]]
+![](assets/grid-and-layout_a043920fee14ac284854524a4e074fd1_md5.webp)
 
 # How to use grid in the right way
 I’ve learned a lot from my leader how to apply the grid in design. We can’t just put elements inside the grid in a messy way. There are rules for it.
 
 ## Field elements must sit on some number of columns
-![[99ba657b5b121158b61df8f51c3935df_MD5.webp]]
+![](assets/grid-and-layout_99ba657b5b121158b61df8f51c3935df_md5.webp)
 
 I mean, not all elements. As you see, just only the container must be between columns; the number of columns depended on the container’s size. It’s easier for the development team to code if we follow this rule, in case of force majeure (only if it make our UI better), we can create an exception.
 
 ## Do not leave field elements in the gutters
-![[c7cd9400e4b6a7c96f2df3c7f24791f9_MD5.webp]]
+![](assets/grid-and-layout_c7cd9400e4b6a7c96f2df3c7f24791f9_md5.webp)
 
-![[7417c8675f9f592d8b8fee0d635848e8_MD5.webp]]
+![](assets/grid-and-layout_7417c8675f9f592d8b8fee0d635848e8_md5.webp)
 
 Your elements should sit within the columns and not be bleeding into the gutters. You CANNOT leave things in the gutters, that defeats the purpose of the grid.
 
 ## It’s okay to nest elements inside fields that don’t align to the grid, as long as the parent field itself sits on columns
-![[7df1c65ee21b0bfe2452413491f8f9bf_MD5.webp]]
+![](assets/grid-and-layout_7df1c65ee21b0bfe2452413491f8f9bf_md5.webp)
 
 Sound weird right, everything I wrote about seems nonsense here. But It’s a trick to me, whenever you want to put an element that not fit to your grid (you should put them into the grid. But in case don’t do it make your design look better), all you need is creating a container fitted into a grid and put your elements into them.
 
 The Dev team always want our design put into a grid to save their time coding, with this little trick, we're no longer in a war-zone with them
 
 ## Do not use a column as outside padding unless intentional
-![[4052e7ff934548603afc4e9abb43548d_MD5.webp]]
+![](assets/grid-and-layout_4052e7ff934548603afc4e9abb43548d_md5.webp)
 
-![[a106abd338fb3f0957d15d343faef1c5_MD5.webp]]
+![](assets/grid-and-layout_a106abd338fb3f0957d15d343faef1c5_md5.webp)
 
 We actually don’t need to indented 1 column each side, it will make our main images smaller, that’s the margin jobs already.
 
 # How These Work in Responsive
 In a traditional design grid, the column widths and gutters stay the same, just the number of columns change. Why? And how does that work? This was to make things easier when you designed. If a set of three cards sat on 4 columns each on desktop, you would show two cards on a tablet and wrap the third one so that it’d show on a second row. Yay! You didn’t need to do any resizing, because you already knew that it sat on four columns. On mobile, the answer is easy too, you would show one card, and the rest stacked beneath it. If you wanted, you could also get creative and choose only to show one card on mobile or do a horizontal scroll. These breakpoints are the point of reference in code.
 
-![[f0045709ef2c31affbb508461c5229cd_MD5.webp]]
+![](assets/grid-and-layout_f0045709ef2c31affbb508461c5229cd_md5.webp)
 
 # Fixed & Fluid Grid
 [A simple video](https://youtu.be/T6MCkGWSXa0) to further understand Fixed & Fluid grid

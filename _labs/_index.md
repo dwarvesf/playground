@@ -81,4 +81,4 @@ For Dwarves team members, engaging in future research projects is an excellent w
 
 ---
 
-![[_base-20231130183110925.webp]]
+![](assets/_index__base-20231130183110925.webp)

@@ -150,4 +150,4 @@ curl -O http://<bootstrap-ip>:<your_port>/dcos_install.sh
 ## Step 4 - Launch the DC/OS
 You can access to web interface at `http://<master-node-public-ip>/`and bingo !
 
-![[7e7988a963f67f1005ed0e19e2b93e01_MD5.webp]]
+![](assets/dcos-series-part-1---quick-look-installation_7e7988a963f67f1005ed0e19e2b93e01_md5.webp)
