@@ -37,8 +37,8 @@ This workflow summarizes the **three recommended meetings** we must have to be a
 
 > To ensure these meetings are productive, it's vital to have a clear agenda outlining the topics and presenters. Participants should review the agenda in advance and prepare questions, fostering an environment of open discussion.
 
-![[Labs x Consulting Workflow-20231121174237957.webp]]
+![](assets/labs-x-consulting-workflow-20231121174237957.webp)
 
 The timeline for the adoption of new technology typically spans approximately 45 days, though this can vary depending on the complexity and nature of the technology. Here's a general outline of the process:
 
-![[Labs Topic Timeline-20231121174237957.webp]]
+![](assets/labs-x-consulting-workflow_labs-topic-timeline-20231121174237957.webp)

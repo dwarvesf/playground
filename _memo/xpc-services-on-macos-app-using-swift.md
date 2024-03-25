@@ -85,7 +85,7 @@ To use the NSXPCConnection API, you must create the following:
 * A connection object on both sides. On the service side, this was described previously in Creating the Service. On the client side, this is described in Connecting to and Using an Interface.
 * A listener. This code in the XPC service accepts connections. This is described in Accepting a Connection in the Helper. Messages.
 
-![[4f420a9f1bcea4a66160e3c83f2c0870_MD5.webp]]
+![](assets/xpc-services-on-macos-app-using-swift_4f420a9f1bcea4a66160e3c83f2c0870_md5.webp)
 
 ## Overall Architecture
 When working with NSXPCConnection-based helper apps, both the main application and the helper have an instance of NSXPCConnection. The main application creates its connection object itself, which causes the helper to launch. A delegate method in the helper gets passed its connection object when the connection is established. This is illustrated in Figure 4-1.
@@ -150,7 +150,7 @@ myConnection.remoteObjectInterface = myCookieInterface;
 
 Note: For communicating with XPC services outside your app bundle, you can also configure an XPC connection with the initWithMachServiceName: method.
 
-![[87c72866837ca130efa881629660714f_MD5.webp]]
+![](assets/xpc-services-on-macos-app-using-swift_87c72866837ca130efa881629660714f_md5.webp)
 
 At this point, the main application can call the remoteObjectProxy or remoteObjectProxyWithErrorHandler: methods on the myConnection object to obtain a proxy object.
 

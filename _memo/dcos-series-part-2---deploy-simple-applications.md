@@ -17,7 +17,7 @@ In this article, we will try to deploy applications to DC/OS and run it.
 # Universe packages
 The Universe tab shows all of the available DC/OS services from package repositories. You can install packages from the DC/OS Universe with a single click. The packages can be installed with defaults or customized directly in the web interface
 
-![[e84b0a38362cbe07380b58ee7adae02d_MD5.webp]]
+![](assets/dcos-series-part-2---deploy-simple-applications_e84b0a38362cbe07380b58ee7adae02d_md5.webp)
 
 # DC/OS CLI
 You also can use the DC/OS command-line interface (CLI) to manage your cluster nodes, install DC/OS packages, inspect the cluster state, and administer the DC/OS service subcommands, deploy application, etc.
@@ -27,11 +27,11 @@ You can quickly install the CLI from the DC/OS web interface.
 
 1. Click Install CLI from the top-left corner of the DC/OS web interface
 
-![[8f79be9b29c62d95fe90e2e03bc62284_MD5.webp]]
+![](assets/dcos-series-part-2---deploy-simple-applications_8f79be9b29c62d95fe90e2e03bc62284_md5.webp)
 
 1. Copy and paste the code snippets into your terminal.
 
-![[fad27ec33399ea4f93224edcc53bbfb3_MD5.webp]]
+![](assets/dcos-series-part-2---deploy-simple-applications_fad27ec33399ea4f93224edcc53bbfb3_md5.webp)
 
 ## Usage
 To list available commands, either run dcos with no parameters or run dcos help
@@ -114,8 +114,8 @@ ID      MEM  CPUS  TASKS  HEALTH  DEPLOYMENT  CONTAINER  CMD
 
 Click on `Services` tab, you will see list of applications that you are running. To check application’s information, just click on service and choose service ID that you want to see
 
-![[377366f7ddcabc286a3d6d1e505eb94f_MD5.webp]]
+![](assets/dcos-series-part-2---deploy-simple-applications_377366f7ddcabc286a3d6d1e505eb94f_md5.webp)
 
 As the picture above, you can check your application directly via `Endpoint`
 
-![[82cc4eeeaae867eb9bcafc54c0f7eda5_MD5.webp]]
+![](assets/dcos-series-part-2---deploy-simple-applications_82cc4eeeaae867eb9bcafc54c0f7eda5_md5.webp)

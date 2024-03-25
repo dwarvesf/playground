@@ -13,7 +13,7 @@ hide_frontmatter: false
 # What is Kubernetes
 Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.
 
-![[ca7490cb6fe10475c91a359a8177d29c_MD5.webp]]
+![](assets/what-is-kubernetes_ca7490cb6fe10475c91a359a8177d29c_md5.webp)
 
 ### **Traditional Deployment Era**
 Early on, organizations ran applications on physical servers. There was no way to define resource boundaries for applications in a physical server, and this caused resource allocation issues. For example, if multiple applications run on a physical server, there can be instances where one application would take up most of the resources, and as a result, the other applications would underperform. A solution for this would be to run each application on a different physical server. But this did not scale as resources were underutilized, and it was expensive for organizations to maintain many physical servers.

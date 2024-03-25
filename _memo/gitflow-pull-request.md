@@ -10,7 +10,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[0150827f46aae013c7fa3a68c509e812_MD5.webp]]
+![](assets/gitflow-pull-request_0150827f46aae013c7fa3a68c509e812_md5.webp)
 
 Git is one of the most popular source control. Github is one platform built over the top of Git and well adapted by lots of companies. Knowing the right workflow will help to increase the team productivity. In this post, I will try to cover some of the best practices from the community and the way we applied them at Dwarves Foundation.
 

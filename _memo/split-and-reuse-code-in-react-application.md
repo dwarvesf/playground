@@ -10,7 +10,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[5f86abdbff47c3d17d6258e3b001ceb8_MD5.webp]]
+![](assets/split-and-reuse-code-in-react-application_5f86abdbff47c3d17d6258e3b001ceb8_md5.webp)
 
 ## Introduction
 Sometimes you found that some piece of code that is very repetitive in your react application such as:
@@ -125,7 +125,7 @@ export default class HOCCOmponent extends React.Component {
 
 React component has some reserve props and children is one it’s. It’s represent anything pass in this component
 
-![[322e43365b34b2a13564d85a3adddcae_MD5.webp]]
+![](assets/split-and-reuse-code-in-react-application_322e43365b34b2a13564d85a3adddcae_md5.webp)
 
 For example, The Foo children prop ais the Bar component. The component above use child as a function since react is just the function that return react component. We pass repetitive data and methods that have been stored and processed in HOC Component to children function.
 

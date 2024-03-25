@@ -12,4 +12,4 @@ note: null
 person: Minh Luu
 ---
 
-![[758a3fecaf64221d92909aff3fe16bcf_MD5.jpg]]
+![](assets/sum-command_758a3fecaf64221d92909aff3fe16bcf_md5.jpg)

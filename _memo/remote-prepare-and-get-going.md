@@ -29,7 +29,7 @@ We want our Dwarves to wake up at 7am in the beach, grab a coffee and start doin
 
 > Pick the best location you would like to work.
 
-![[c02371c7846c1100e23ace26df8c0be1_MD5.webp]]
+![](assets/remote-prepare-and-get-going_c02371c7846c1100e23ace26df8c0be1_md5.webp)
 
 ### The good and the bad**Good**
 
@@ -42,7 +42,7 @@ We want our Dwarves to wake up at 7am in the beach, grab a coffee and start doin
 * Basic ability to do one’s job: Will I miss out on conversations in the office? How will communication work? Will people forget I exist?
 * Career growth: Can I take responsibility for really important projects? Can I get promoted? Can I be a leader?
 
-![[e1c5c0804d03534fa9d995ac7ba85c24_MD5.webp]]
+![](assets/remote-prepare-and-get-going_e1c5c0804d03534fa9d995ac7ba85c24_md5.webp)
 
 ## Things to prepare
 ### Prerequisite

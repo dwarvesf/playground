@@ -21,7 +21,7 @@ SwiftUI came with two companions, which I believe will be the game changers and 
 * Combine framework
 
 ## Xcode canvas
-![[120898c723705d91ebf2d810ceabc827_MD5.webp]]
+![](assets/swiftui_120898c723705d91ebf2d810ceabc827_md5.webp)
 
 Xcode canvas brings us some nice features.
 
@@ -34,7 +34,7 @@ So, what does this mean?
 * There would be no more time wasted to debug an explicit screen or now is a component, I guess
 
 ## Combine framework
-![[9763d9353b8111827278a5ac32b636ac_MD5.webp]]
+![](assets/swiftui_9763d9353b8111827278a5ac32b636ac_md5.webp)
 
 The Combine framework is a tool to help us make an app in a functional reactive programming (FRP) way. The FRP is just a “style“ of programming, which makes our code more declarative and intuitive. Before the Combine framework, iOS developers would use other third-party libraries like RxSwift or Reactive Cocoa to get the power of FRP.
 
@@ -92,7 +92,7 @@ struct SwiftUIView: View {
 }
 ```
 
-![[9d1afc2c27da03af1082096b35e05153_MD5.webp]]
+![](assets/swiftui_9d1afc2c27da03af1082096b35e05153_md5.webp)
 
 These are the steps for SwiftUI to layout our UI.
 
@@ -127,7 +127,7 @@ struct SwiftUIView: View {
 }
 ```
 
-![[015727996aa07cf040f8fe04573a0ab8_MD5.webp]]
+![](assets/swiftui_015727996aa07cf040f8fe04573a0ab8_md5.webp)
 
 There are 3 steps to process the above layout.
 

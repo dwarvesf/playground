@@ -39,7 +39,7 @@ Turbo, a purpose-built tool for managing monorepos, offers numerous benefits tha
 ## **Migration Process**
 Here is the diagram for the full flow of the migration process of our apps:
 
-![[8dc9116f98bf7a170ec249c0e63ad699_MD5.webp]]
+![](assets/from-multi-repo-to-monorepo-a-case-study-with-nghenhan-turbo-monorepo_8dc9116f98bf7a170ec249c0e63ad699_md5.webp)
 
 Our migration process entailed several well-planned steps to ensure a seamless transition to a monorepo using Turbo:
 

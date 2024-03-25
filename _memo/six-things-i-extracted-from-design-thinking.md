@@ -26,7 +26,7 @@ The same went for me. When I first started using Design Thinking, I could only a
 In my team, we discuss Design Thinking a lot. Everyone has a different point of view, but we all agree on one thing: if we're mindful about the non-linear, flexible quality of Design Thinking, it could become one of the most effective ways to working and living.
 
 ## Keep an open, curious mind
-![[79c08449fbd6f94151675d1e9b64eb98_MD5.webp]]
+![](assets/six-things-i-extracted-from-design-thinking_79c08449fbd6f94151675d1e9b64eb98_md5.webp)
 
 We fear what we don't know. It is a common human thing, to fall into a panic mode when we are faced with newness. When we start or encounter something we're not familiar with, we often feel stuck with not knowing where to start, and gradually, we avoid it.
 
@@ -39,7 +39,7 @@ To gather multiple outlooks, we need to keep an open mind of how and where we ob
 With information, now we have an idea what we’re dealing with, the panic should be gone, and we have hints on how to deal with it.
 
 ## Make sense of information
-![[d2c2897e585f20d406067bc9aa6d628d_MD5.webp]]
+![](assets/six-things-i-extracted-from-design-thinking_d2c2897e585f20d406067bc9aa6d628d_md5.webp)
 
 In "Things that make us smart: defending human attributes in the age of the machine", my favorite author Don Norman, shared:
 
@@ -49,12 +49,12 @@ Having a lot of information helps us understand, but without systemizing it, inf
 
 Everyone has their own method to organize data. Personally, I’ve found taking notes using the [Zettelkasten](https://zettelkasten.de/posts/your-first-note/) method to be the most effective. “The Zettelkasten note archive is the storage of your knowledge”. The great thing about this method is that we are able to create connections among data. That helps not only remember and process flows of data but also spark new ideas. This process is non-linear and potentially never-ending, as new information keeps being added as notes.
 
-![[41a4d5306abb2cbebf67b66af3bb7377_MD5.webp]]
+![](assets/six-things-i-extracted-from-design-thinking_41a4d5306abb2cbebf67b66af3bb7377_md5.webp)
 
 The Obsidian tool was designed based on the Zettelkasten method and deems to be one of the most fitting ones so far. At first, I didn't like writing, but obsidian notes made me come to it naturally. It soon became a habit to collect everyday data, organize, and analyze them.
 
 ## Make unbiased decisions
-![[9e4f26e9fc6da86f7941f0da35485279_MD5.webp]]
+![](assets/six-things-i-extracted-from-design-thinking_9e4f26e9fc6da86f7941f0da35485279_md5.webp)
 
 Most of the time, we are offered the power to make decisions. Either we could do this or we could do that. As humans, we perceive things and make decisions based on our personal set of values, including our upbringings, beliefs, cultures… Avoiding bias is a big challenge.
 
@@ -67,7 +67,7 @@ Is this the right decision? Is there a better decision? Any other options out th
 Relying on knowledge, context, and data to make decisions helps us avoid being biased and arrive at the most suitable decisions which ideally would be easy, take less time, and less effort.
 
 ## Make better decisions
-![[8f1780f4af0d9ab2db8f05e84a8d064a_MD5.webp]]
+![](assets/six-things-i-extracted-from-design-thinking_8f1780f4af0d9ab2db8f05e84a8d064a_md5.webp)
 
 Usually, we would think coming to a decision is the end of it. But as designers who solve problems using Design Thinking, we know tracking the effectiveness of our decisions is just as important as making decisions.
 
@@ -76,7 +76,7 @@ Usually, we would think coming to a decision is the end of it. But as designers 
 Testing and checking are not a waste of time, they are a way of improvement. Without testing and checking, we would never be able to know how to make better decisions
 
 ## Change. Adapt. Evolve
-![[a312bb97ae7e137118339c676689e1dc_MD5.webp]]
+![](assets/six-things-i-extracted-from-design-thinking_a312bb97ae7e137118339c676689e1dc_md5.webp)
 
 We live in an era of rapid change, especially in technology. Something we deem work today, might not be anymore tomorrow. Things change all the time, our decisions should too. We should always be aware of what‘s happening around us, so we could align and revolve as quickly as we can.
 

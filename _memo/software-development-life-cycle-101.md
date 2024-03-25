@@ -29,7 +29,7 @@ But the most important ones are
 * Budget
 * Time
 
-![[8d20afb24ee3dfc8607352f6574e549a_MD5.webp]]
+![](assets/software-development-life-cycle-101_8d20afb24ee3dfc8607352f6574e549a_md5.webp)
 
 ## Why does a project fail
 With a lot of constraints, the project is easy to fail. We could have plenty of reasons why a software project fails: team politics, overdue payment,... but three of them could be prevented easily with proper methodology, framework
@@ -73,7 +73,7 @@ In detail, the SDLC methodology focuses on the following phases of software deve
 
 Let's take a look back on what we have learned and how this methodology could guarantee project success.
 
-![[c9f99108433a5d2449ef51fb884a23dd_MD5.webp]]
+![](assets/software-development-life-cycle-101_c9f99108433a5d2449ef51fb884a23dd_md5.webp)
 
 ## Requirement Analysis
 “What are the current problems? What are we gonna build?” This stage of the SDLC means getting input from all stakeholders, including customers, salespeople, industry experts, and programmers. Learn the strengths and weaknesses of the current system with improvement as the goal.
@@ -83,11 +83,11 @@ The two most important artifacts of this stage that need to be well-documented i
 
 * **Lean Canvas:** a lean business model which defines problem - solution - market - cost - revenue of a digital product. Lean Canvas needs to be validated before moving to the next stage else we will develop software based on imaginary
 
-![[3a385622cfd9745a70201ab14b616a09_MD5.webp]]
+![](assets/software-development-life-cycle-101_3a385622cfd9745a70201ab14b616a09_md5.webp)
 
 * **AARRR Funnel**: after the Lean Canvas is validated, define funnel for each revenue stream. This artifact will be the foundation of the System Design Stage.
 
-![[fdea8ce098bbc365ecd7ffaaec9010a4_MD5.webp]]
+![](assets/software-development-life-cycle-101_fdea8ce098bbc365ecd7ffaaec9010a4_md5.webp)
 
 Those two will be generated with the agreement between **Product Managers, UX researchers, and Clients.** This stage would take time, but with well-documented artifacts in-hand, we could save a lot of time later on.
 
@@ -99,7 +99,7 @@ In other words, the team should determine the feasibility of the project and how
 
 > #Why: To manage project constraints :) (or we will fail real damn fast)
 
-![[40fe66c43cf65cacbed33cf70df11995_MD5.webp]]
+![](assets/software-development-life-cycle-101_40fe66c43cf65cacbed33cf70df11995_md5.webp)
 
 We have a validated business model, few funnels of revenue streams. We have things that need to be built. Now we need a plan to build it at top-quality within budget and time.
 
@@ -107,7 +107,7 @@ Product Manager and Technical Architecture need to sit down with Clients to defi
 
 * **Project Charter** (Product Roadmap, Milestone Release, People in charge...)
 
-![[2c5adf742029b611a1459c48c5d1ccb8_MD5.webp]]
+![](assets/software-development-life-cycle-101_2c5adf742029b611a1459c48c5d1ccb8_md5.webp)
 
 * **Work Breakdown Structure** (Job need to be done)
 * **Tech Stacks**
@@ -123,7 +123,7 @@ The list below is just as general as possible but those artifacts are the least 
 
 * **Information Architecture Design** **(IA): the** foundation of information which will be presented to connect the user to the content they're looking for when using the software.
 
-![[121f206d154f23e1049f0edd39e921cf_MD5.webp]]
+![](assets/software-development-life-cycle-101_121f206d154f23e1049f0edd39e921cf_md5.webp)
 
 * **Software Modeling** (Usecase Diagram, State Machine Diagram, Activity Diagram, High-level Architecture Diagram, ERD...)
 * **User flows, User stories, Wireframe**
@@ -145,7 +145,7 @@ This is the longest stage of SDLC Process. Work is divided into units or modules
 
 Make it count and share with the team what you have learned recently.
 
-![[c5d490b4e34e3a156230e0f702348538_MD5.webp]]
+![](assets/software-development-life-cycle-101_c5d490b4e34e3a156230e0f702348538_md5.webp)
 
 ## Testing
 “Did we get what we want?” In this stage, we test for defects and deficiencies. We fix those issues until the product meets the original specifications.
@@ -153,7 +153,7 @@ Make it count and share with the team what you have learned recently.
 In short, we want to verify if the code meets the defined requirements.
 Provide stakeholders information about the **project quality** then sign off application deliverable to release it to end-user.
 
-![[fce9cd7be98a3a0133ae89129f323211_MD5.webp]]
+![](assets/software-development-life-cycle-101_fce9cd7be98a3a0133ae89129f323211_md5.webp)
 
 ## Deployment
 > #“Let’s start using what we got.”

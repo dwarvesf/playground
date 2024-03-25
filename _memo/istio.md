@@ -18,7 +18,7 @@ Service mesh has been really a hot term recently, comparing to another microserv
 ## API gateway
 The key objective API Gateway is to expose microservices as managed API. API Gateways comes with a number of powerful features such as load balancing, health checks, API versioning and routing, authentication & authorization, data transformation, analytics, logging, SSL termination, etc. Kong, Ambassador is two of successful open source API gateways.
 
-![[72c7525c7279dec224c4d4a2fe92915e_MD5.webp]]
+![](assets/istio_72c7525c7279dec224c4d4a2fe92915e_md5.webp)
 
 **Pros**
 
@@ -36,7 +36,7 @@ The key objective API Gateway is to expose microservices as managed API. API Gat
 ### **Service Mesh**
 Unlike API Gateways, Service meshes are focus on decentralized and self-organizing networks between microservices. that handle load balancing, service discovery, health checks, monitoring, and tracing. The mesh work by attaching small agents container, also known as "sidecar" alongside with every instance that manipulate the inbound/outbound traffic and handles instance registration, metric collection, and tracing. Istio, Linkerd are the most known service meshes.
 
-![[c3a18948994827d122dccffab6bb925e_MD5.webp]]
+![](assets/istio_c3a18948994827d122dccffab6bb925e_md5.webp)
 
 **Pros**
 
@@ -63,23 +63,23 @@ Let's begin with Kubernetes - the famous container orchestration platforms To ma
 
 So we have the microservices the Kubernetes way:
 
-![[fea0e8efe47df6b5ee4ec298ca2af085_MD5.webp]]
+![](assets/istio_fea0e8efe47df6b5ee4ec298ca2af085_md5.webp)
 
 What if  I found microservices grow up like this?
 
-![[ff46797937114ab9f237e8a4e6c75717_MD5.webp]]
+![](assets/istio_ff46797937114ab9f237e8a4e6c75717_md5.webp)
 
 Definitely it will become a multiple points of failure. This is where the savior Service Mesh come in, and Istio can solve the problem. Istio injects a sidecar in every pod in the network:
 
-![[e9b3b350df578cb36174854b3cf061a7_MD5.webp]]
+![](assets/istio_e9b3b350df578cb36174854b3cf061a7_md5.webp)
 
 So instead of continuously writing code for the routing, the circuit breaker or every networking stuff, we can focus on the business logic of each application in the network.
 
-![[8bc273d9f58042ffc8b0dc8bcba5c4d7_MD5.webp]]
+![](assets/istio_8bc273d9f58042ffc8b0dc8bcba5c4d7_md5.webp)
 
 Our system's network now becomes more under controlled:
 
-![[5ad7aeee9b729f36ab6d6a0cb8c33acc_MD5.webp]]
+![](assets/istio_5ad7aeee9b729f36ab6d6a0cb8c33acc_md5.webp)
 
 # Istio Architecture
 
@@ -96,30 +96,30 @@ Istio utilizes an expanded Envoy proxy version which is a high-performance proxy
 * Fault injection
 * Rich metrics
 
-![[2d2ef1b3abadb1e298b1cde0c5614f6a_MD5.webp]]
+![](assets/istio_2d2ef1b3abadb1e298b1cde0c5614f6a_md5.webp)
 
 Envoy is deployed along side with every Kubernetes pods as a sidecar to the appropriate proxy. This deployment allows Istio to extract information about traffic behavior as attributes. Istio can, in turn, use these attributes in Mixer to enforce policy decisions, and send them to monitoring systems to provide information about the behavior of the entire mesh.
 
 ## Pilot
 Pilot provides service discovery for the Envoy sidecars, traffic management capabilities for intelligent routing (e.g., A/B tests, canary rollouts, etc.), and resiliency (timeouts, retries, circuit breakers, etc.).
 
-![[59b3a1cd6fd186a9203774101e1f6ab6_MD5.webp]]
+![](assets/istio_59b3a1cd6fd186a9203774101e1f6ab6_md5.webp)
 
 Pilot transforms high-level scheduling rules into Envoy-specific settings that regulate the traffic and propagates them in real time to the sidecars. Pilot summarizes and synthesizes platform-specific service discovery processes (Kubernetes, Consul, etc) into a normal file that can be consumed by any sidecar compliant with the APIs of the Envoy data plane. This loose coupling allows Istio to run on multiple environments while maintaining the same operator interface for traffic management.
 
 ## Mixer
 Mixer enforces access control and utilization strategies across the system mesh and gathers information from the Envoy Proxy and other facilities for telemetry. In another word, Mixer is the monitoring agent of Istio network.
 
-![[76c3d8d9b9ee843b5445a06359a73111_MD5.webp]]
+![](assets/istio_76c3d8d9b9ee843b5445a06359a73111_md5.webp)
 
-![[b26506ec8999334276375c45f5510191_MD5.webp]]
+![](assets/istio_b26506ec8999334276375c45f5510191_md5.webp)
 
 Mixer involves a versatile plugin system. It allows Istio to interact with multiple backend infrastructures. Istio therefore extracts from these information of the Envoy Proxy and Istio-managed facilities.
 
 ## Citadel
 Citadel enables strong service-to-service and end-user authentication with built-in identity and credential management. Citadel can be used to upgrade unencrypted traffic in the service mesh.
 
-![[44d2292a4e7d6391c544bfb68ad30f41_MD5.webp]]
+![](assets/istio_44d2292a4e7d6391c544bfb68ad30f41_md5.webp)
 
 ##  Galley
 Galley is Istio’s configuration validation, ingestion, processing and distribution component. It is responsible for insulating the rest of the Istio components from the details of obtaining user configuration from the underlying platform (e.g. Kubernetes).

@@ -31,4 +31,4 @@ e.g:
 
 Cheers.
 
-![](salary-advance.jpg)
+![](assets/salary-advance.jpg)

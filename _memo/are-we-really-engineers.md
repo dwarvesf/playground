@@ -10,7 +10,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[6cf3675a02ca90a8745a69479b359671_MD5.webp]]
+![](assets/are-we-really-engineers_6cf3675a02ca90a8745a69479b359671_md5.webp)
 
 Is software engineering "really" engineering? As the Dwarves asked this question during the [Apprenticeship Training Program](https://github.com/dwarvesf/WeAreHiring/blob/master/open-positions/Apprentice.md), we had a chance to dig more into the topic. Many professionals discuss this, but there's not a full answer. The engineers strictly follow the engineering process, apply math to solve the problem, and build products. We software engineers don't feel like the same as described. I found the originated articles from [Hillel Wayne](https://www.hillelwayne.com/post/crossover-project/are-we-really-engineers/), and it perfectly answers the question.
 
@@ -21,7 +21,7 @@ In software, we don’t use these things, leading to the conception that we don�
 
 This falls in line with the rest of engineering. Different branches use different kinds of math in different ways. Industrial engineers are concerned with very different things than mechanical engineers are. Just because we use a different branch of math doesn’t mean we’re not doing engineering.
 
-![[cfc74d29d5032e4015de69984f910062_MD5.webp]]
+![](assets/are-we-really-engineers_cfc74d29d5032e4015de69984f910062_md5.webp)
 
 ## The other differences
 Engineers work on predictable projects with a lot of upfront planning and rigorous requirements. Software is dynamic, constantly changing, unpredictable. If we try to apply engineering practice to software, then software would be 10 times as expensive and stuck in 1970.
@@ -38,7 +38,7 @@ Traditional is waterfall, software is agile. If there's one thing we think is un
 
 It's true that traditional engineers do a lot more upfront design and spend more time in dedicated testing than software engineers do. But this doesn't mean they have Waterfall level rigidity, nor does it mean that our Agile is alien to them. Rather, spending a lot of time in phases is a natural consequence of the economic model. When iterations are longer and more expensive it makes more sense to spend more time planning them out.
 
-![[22ca6a7a31c29b15355a09a6cbd7129b_MD5.webp]]
+![](assets/are-we-really-engineers_22ca6a7a31c29b15355a09a6cbd7129b_md5.webp)
 
 While there are many ways we are different, there's a difference between being "different" and being "special". Yes, mechanical and electrical engineers don't have to deal with the same security concerns we do. They also don't have to deal with weather patterns to the same degree that civil engineers need to, and none of those three need to deal with the problems inherent in chemical engineering. Every field of engineering has unique challenges and software is no different.
 

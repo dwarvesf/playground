@@ -85,7 +85,7 @@ TryXactLock:
 }
 ```
 
-![[d24c06b91424a0367b9728cd76f4c3fc_MD5.webp]]
+![](assets/lessons-learned-from-concurrency-practices-in-blockchain-projects_d24c06b91424a0367b9728cd76f4c3fc_md5.webp)
 
 *Source:* *[https://xkcd.com/](https://imgs.xkcd.com/comics/goto.png)*
 

@@ -14,7 +14,7 @@ In recent years, Kubernetes has exploded tremendously. At the same time, it crea
 
 **Helm is a Package Manager for Kubernetes**, analogous to NPM or YARN. However, it’s not just the Package Manager, it is also a Deployment Management for Kubernetes. In simpler terms, instead of having to define various Kubernetes resources to deploy an application, with Helm you just type a few commands in the terminal and enter, done.
 
-![[6a409c81c3372fda59fd6217eab2fabc_MD5.webp]]
+![](assets/kubernetes-helm-101_6a409c81c3372fda59fd6217eab2fabc_md5.webp)
 
 In this article, we will learn about Helm, a powerful tool that makes life working with Kubernetes easier than ever. Although these terms are quite common with developers today, we will skim a jiffy for those who don’t know:
 
@@ -33,20 +33,20 @@ Helm has 4 basic concepts:
 
 * ***Config***: a configuration in the values.yaml file, which contains configuration explicit to a release of Kubernetes application. It can be the config for service, ingress, deployment, etc. until specific applications such as Kafka, Consul, Vault, NATS-streaming, etc.
 
-![[ea686ec580638794529f8054ef266a45_MD5.webp]]
+![](assets/kubernetes-helm-101_ea686ec580638794529f8054ef266a45_md5.webp)
 
 * ***Release***: a chart instance is loaded into Kubernetes. It can be viewed as a version of the Kubernetes application running based on Chart and associated with a specific Config.
 
-![[17c2731e7fc3be306d1da3317bbee37a_MD5.webp]]
+![](assets/kubernetes-helm-101_17c2731e7fc3be306d1da3317bbee37a_md5.webp)
 
 * ***Repositories***: a repository of published Charts. These can be private repositories that are only used within the company or public through the Helm Hub. Some Charts may have different versions of many companies or publishers. Particularly, Charts in a Stable repository must always meet the criteria from the Technical Requirements of Helm.
 
-![[426db2b83abcad55d8b8ce46b11fa2d0_MD5.webp]]
+![](assets/kubernetes-helm-101_426db2b83abcad55d8b8ce46b11fa2d0_md5.webp)
 
 ## Architecture
 Helm has a fairly simple client-server architecture, including a CLI client and an in-cluster server running in the Kubernetes cluster:
 
-![[63fcd3d5115887bdd2e46fd0f8c337b7_MD5.webp]]
+![](assets/kubernetes-helm-101_63fcd3d5115887bdd2e46fd0f8c337b7_md5.webp)
 
 * *Helm Client*: Provides the developer to use it a command-line interface (CLI) to work with Charts, Config, Release, Repositories. Helm Client will interact with Tiller Server, to perform various actions such as *install*, *upgrade* and *rollback* with Charts, Release.
 * *Tiller Server*: an in-cluster server in the Kubernetes cluster, interacting with the Helm Client and communicating with the Kubernetes API server. Thus, Helm can easily manage Kubernetes with tasks such as *install*, *upgrade*, *query* and *remove* for Kubernetes resources.
@@ -102,7 +102,7 @@ helm install bitnami/kafka --name kafka --namespace queue
 
 Now, it already installed on your Kubernetes cluster, but it may not work properly for your needs. For me, I usually looking for a values.yaml file, and store it locally to save a specific configuration for instance of the application.
 
-![[cf8bf24ef2e60c2dbc46df36ee6a9639_MD5.webp]]
+![](assets/kubernetes-helm-101_cf8bf24ef2e60c2dbc46df36ee6a9639_md5.webp)
 
 Execute the following helm install command to deploy a Kafka with your Config in `values-prod.yaml`. It will download the Kafka helm chart from the Bitnami repo and apply your configuration via `values.yaml file`.
 
@@ -113,7 +113,7 @@ helm install bitnami/kafka \
   -f bitnami/values-prod.yaml
 ```
 
-![[playground/_memo/assets/kubernetes-helm-101/f864eb297f5f2ff0a55adc3876a07a3c_MD5.webp]]
+![](assets/kubernetes-helm-101_f864eb297f5f2ff0a55adc3876a07a3c_md5.webp)
 
 Check the install helm chart using this command
 

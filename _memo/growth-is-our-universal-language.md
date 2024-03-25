@@ -31,4 +31,4 @@ We don't believe in retaining people by creating a non-challenging environment o
 
 So, if you're looking for a place where growth is the norm, come join us at Dwarves. You'll be part of a team that's always hungry for more and committed to reaching new heights. We believe that growth is our universal language, and we can't wait to share it with you.
 
-![[aa45d5d9f6a7dc8c1d87e835a8be0f87_MD5.webp]]
+![](assets/growth-is-our-universal-language_aa45d5d9f6a7dc8c1d87e835a8be0f87_md5.webp)

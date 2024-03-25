@@ -11,7 +11,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[c090fa939fb85f75f0df5757eca321e4_MD5.webp]]
+![](assets/an-overview-of-micro-investment-in-real-estate_c090fa939fb85f75f0df5757eca321e4_md5.webp)
 
 # How is the real estate market moving?
 * When an industry begins this journey of digital transformation depends largely on the specific nature of its offering. As a rule of thumb, the more product-oriented and direct-to-customer an industry is, the sooner its digital transformation journey begins.
@@ -37,14 +37,14 @@ hide_frontmatter: false
 > A simple, efficient way to invest small amounts of money into an otherwise inaccessible market for many investors
 
 # Overview insight about Proptech in general micro-investing in Viet Nam
-![[2585fae6f148111f1bde12ffd49b9cb5_MD5.webp]]
+![](assets/an-overview-of-micro-investment-in-real-estate_2585fae6f148111f1bde12ffd49b9cb5_md5.webp)
 
 * The largest market share in the listing and marketplace niche
 * Micro-investing is very modest with five products just established in 2018-2019, the companies are very new and foreign-invested, or the founder is overseas Vietnamese has launched this business in Vietnam.
 * This shows that Proptech in the Vietnamese market is growing day by day because the rapid and outstanding development of technology has a great impact on changing consumer behavior, promoting the application of technology in real estate. As customers' behavior changes, real estate businesses need to grasp this trend to increase access to customers.
 
 # Target consumer
-![[b6ef22eca339a6bcd76f440bb4facf00_MD5.webp]]
+![](assets/an-overview-of-micro-investment-in-real-estate_b6ef22eca339a6bcd76f440bb4facf00_md5.webp)
 
 ### The challenge of the micro invest model for persona that this model is aiming for
 * Change user perception of changing real estate trading habits from traditional to digital
@@ -52,7 +52,7 @@ hide_frontmatter: false
 * Difficulties in eliminating the underlying fear of the risks involved in this field as well as the benefits of having more passive income sources, less risk, less volatile market prices than other forms
 
 # The impact does COVID-19 have on changing market trends and the opportunity for real estate to grow in the future
-![[15b159e5ae0649832e2dcd5c0db6a97e_MD5.webp]]
+![](assets/an-overview-of-micro-investment-in-real-estate_15b159e5ae0649832e2dcd5c0db6a97e_md5.webp)
 
 * Technology has a great impact on changing consumer behavior, especially in the context of the COVID epidemic affecting the real estate industry in general, promoting the application of technology in real estate to increase access to customers.
 * Some real estate businesses have changed their business plans, implemented sales applications, used video ads, 3D scanning; or Livestream brokers to introduce products to customers to support shoppers' partners. By applying technology, customers can know information about the project, visit the apartment through virtual reality with just a smartphone, and help customers save time and create flexibility. Be proactive to customers and limit the movement of crowded contacts during the epidemic season. This is a factor promoting online transactions in the field of real estate.

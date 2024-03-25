@@ -16,7 +16,7 @@ With the nature of consulting team, one member could be assigned to multiple pro
 
 Based on the Quality Software Management book of Gerald Weinberg, the resource context switching cost is shown as below:
 
-![[e10c107b698bfb55469b4d7252a98160_MD5.webp]]
+![](assets/resource-assignment_e10c107b698bfb55469b4d7252a98160_md5.webp)
 
 The column "Loss to Context Switching" is a total loss for your productivity. Therefore, one person should only be assigned to maximum 3 projects at the same time, and the total working hour of that person should NOT exceed 120% (meaning not more than 12 hours per day).
 

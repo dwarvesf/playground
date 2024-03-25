@@ -13,7 +13,7 @@ hide_frontmatter: false
 
 A Finite State Machine is a model of computation based on a hypothetical machine made of one or more states. Only one single state of this machine can be active at the same time. It means the machine has to transition from one state to another in to perform different actions
 
-![[db5600646453d67b0df29dfa3c9dc5b0_MD5.webp]]
+![](assets/finite-state-machine_db5600646453d67b0df29dfa3c9dc5b0_md5.webp)
 
 Above image is a simple FSM, each circle is a `state` and arrow is an `event` or `action`.
 
@@ -44,7 +44,7 @@ Before get into state machines, my workflow for building such a feature is somet
 * Show it to the user.
 * Or, if there is an error, display the error message and show the fetch-data button so that we can trigger the process again.
 
-![[93ba1268646d3675466aa8887079d580_MD5.webp]]
+![](assets/finite-state-machine_93ba1268646d3675466aa8887079d580_md5.webp)
 
 It seems pretty right for me, until there are a bunch of bugs coming because user dispatched an unexpected action
 
@@ -78,7 +78,7 @@ What if we think in the `states` way:
 error: We show an error message and display the fetch-data button. This state accepts one action:
 retry: When the user clicks the retry button, we fire the request again and transition the machine to the “fetching” state.
 
-![[b5d7d35ae8b3b4cbd6c0c9d8589d4dae_MD5.webp]]
+![](assets/finite-state-machine_b5d7d35ae8b3b4cbd6c0c9d8589d4dae_md5.webp)
 
 This simplifies the logic and makes it more predictable. It also solves some of the problems mentioned above. Notice that, while we are in “fetching” state, we are not accepting any clicks. So, even if the user clicks the button, nothing will happen because the machine is not configured to respond to that action while in that state. This approach automatically eliminates the unpredictable branching of our code logic
 

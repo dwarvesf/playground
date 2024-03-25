@@ -10,7 +10,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[b057b9816631efa15334f5edbd90c8ea_MD5.webp]]
+![](assets/different-ways-to-test-react-application_b057b9816631efa15334f5edbd90c8ea_md5.webp)
 
 ## Introduction
 There are 2 practical types of testing a front end application: test its implementation details (unit test, integration test combine with assert states of the component being tested) or testing its behavior base on perspective (e2e, integration test).
@@ -21,7 +21,7 @@ This is a repository link: https://github.com/phmngocnghia/TestReactComponent
 This repository contains source code for the carousel component which we gonna test.
 
 ## Carousel is specifications
-![[873b9dc0badda67e3d5ef65f63c7d160_MD5.webp]]
+![](assets/different-ways-to-test-react-application_873b9dc0badda67e3d5ef65f63c7d160_md5.webp)
 
 * When press right arrow, the next image will be displayed by the slide in animation
 * When press left arrow, the previous image will be displayed by the slide out animation

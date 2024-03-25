@@ -159,7 +159,7 @@ func (d *Discord) onReactionRemove(s *discordgo.Session, m *discordgo.MessageRea
 ```
 
 ### Demo
-![[3544e2b2c437826a3005b95909ec2795_MD5.gif]]
+![](assets/working-on-a-project-interview-assessment-at-dwarves_3544e2b2c437826a3005b95909ec2795_md5.gif)
 
 (you can see here that `message_count` increased after I sent a new message; the same went for `reaction_count` when I sent reactions)
 

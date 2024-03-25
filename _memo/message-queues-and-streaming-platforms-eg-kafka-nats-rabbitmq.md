@@ -29,11 +29,11 @@ There are 2 basic forms of communication with a Message Broker:
 
 * Publish and Subscribe (Topics)
 
-![[60a043f2ead4abd52c76f9fd47b0af68_MD5.webp]]
+![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_60a043f2ead4abd52c76f9fd47b0af68_md5.webp)
 
 * Point-to-Point (Queues)
 
-![[56d936f810e3423ac48427e1d7ca3f64_MD5.webp]]
+![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_56d936f810e3423ac48427e1d7ca3f64_md5.webp)
 
 # When and why to use Message Broker
 Message brokers are versatile tools that can address a wide range of business needs across industries and in a variety of enterprise computing environments.
@@ -56,7 +56,7 @@ A consumer takes a message from the queue and starts processing the PDF while a 
 1. An exchange is agreed upon by the producer application and leads them to the right PDF creation queue.
 1. A PDF creation worker (consumer) receives a task and starts processing the PDF.
 
-![[c17d6fd298e5729424b4b04d7cee315f_MD5.webp]]
+![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_c17d6fd298e5729424b4b04d7cee315f_md5.webp)
 
 ## Advantages and Disadvantages
 There are a few advantages and disadvantages with a job request messaging on message brokers:
@@ -85,7 +85,7 @@ RabbitMQ and messaging in general use some technical terms:
 * Consuming is similar to receiving. A **consumer** is a program that primarily waits to receive messages.
 * Between the publisher and queue, we also can put a component call **exchange **which has the main function to decide the message will go to which queues. I will explain more about that late.
 
-![[173f812d33c4807b85a655a67c0dbc04_MD5.webp]]
+![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_173f812d33c4807b85a655a67c0dbc04_md5.webp)
 
 ### Exchanges
 The core idea in the messaging model in RabbitMQ is that the producer never sends any messages directly to a queue. In fact, the producer often does not even know if a message will be delivered to any queue at all.
@@ -110,7 +110,7 @@ A header exchange will use the header attributes of the message to route it. Hea
 
 ## Common Pattern 
 ### Work Queue - **Distributing tasks among workers**
-![[59d782666f97eef826223c424dba2e03_MD5.webp]]
+![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_59d782666f97eef826223c424dba2e03_md5.webp)
 
 The main idea behind Work Queues (aka: Task Queues) is to avoid doing a resource-intensive task immediately and having to wait for it to complete. Instead we schedule the task to be done later. We encapsulate a task as a message and send it to a queue. A worker process running in the background will pop the tasks and eventually execute the job. When you run many workers the tasks will be shared between them.
 

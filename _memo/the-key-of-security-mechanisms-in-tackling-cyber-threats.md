@@ -39,7 +39,7 @@ Firstly, it is essential to have security measures in place from the very beginn
 Secondly, always check for security errors and vulnerabilities. Even the most well-protected systems can have weak points that hackers can exploit. 
 
 Thirdly, build a strong infrastructure. A solid foundation will make it much harder for attackers to penetrate your system. 
-![[fa62db10ed0a80b37040e7fd674e6a0b_MD5.webp]]
+![](assets/the-key-of-security-mechanisms-in-tackling-cyber-threats_fa62db10ed0a80b37040e7fd674e6a0b_md5.webp)
 
 Finally, all important accounts should enable 2-step security. In today's digital age, a single password is simply not enough to protect your data.
 

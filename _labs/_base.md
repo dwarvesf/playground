@@ -94,4 +94,4 @@ SORT event_date DESC
 
 ---
 
-![[_base-20231130183110925.webp]]
+![](assets/_base-20231130183110925.webp)

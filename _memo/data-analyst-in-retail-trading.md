@@ -25,7 +25,7 @@ After data is transferred to a data warehouse, I use query layer tools such as D
 For BI tools, I am familiar with Power BI, Tableau and Google Data Studio for making reports. All tools have their advantages and disadvantages. For instance, Power BI is good for portability, Tableau is often easy to use, and Google Data Studio has features specific to their ecosystem to help generate diagrams or consolidate data sources on Google Cloud.
 
 ## Data Science Hierarchy of Needs
-![[b51792aac952213b495c5a808756aaea_MD5.webp]]
+![](assets/data-analyst-in-retail-trading_b51792aac952213b495c5a808756aaea_md5.webp)
 
 This diagram show what all the general departments in data do. Firstly, **Data Infrastructure Engineers** will set up infrastructures for data systems such as setup for databases, Kafka, etc. Secondly, **Data Engineers** will then create data pipelines, ETL process and convert raw data to modeled data for transfer to data warehouses. Then **Data Analysts** prepare data from those sources. This involves cleaning, transforming, and analyzing data to curate and compose metrics, infographics, and insights for reports. After that, other tasks regarding machine learning, AI, and deep learning are handled by **Data Scientists**.
 
@@ -33,14 +33,14 @@ This diagram show what all the general departments in data do. Firstly, **Data I
 A good Data Analyst should understand how a company does business and an understanding of everything surrounding it. In order to get insight for a report, you will need to know how your company makes money. One case study I would like to cover is of a retail trading company, specifically of one that sell perishables such as beverages and snacks to small vendors. Our suppliers in this case will be companies that provide these beverages and snacks, such as Habeco, Coca-Cola, Tide, etc.
 
 ### System Overview
-![[14e655f71283c0bb4e3f9b48de8f69a0_MD5.webp]]
+![](assets/data-analyst-in-retail-trading_14e655f71283c0bb4e3f9b48de8f69a0_md5.webp)
 
 Understanding the overall system can help Data Analysts get a feel for where data resides across databases and how they relate with each other. Each system is designed differently fitted for its business use case, but there are typically 2 main types: the core system and services/microservices.
 
 Examples of core system solutions are Hybris, POS systems, SAP, TMS, etc. For services/microservices, these can be system for sales management, warehouse management, promotion services, etc.
 
 ## Data Process
-![[8e94c2b1eae7bec4aa0736af3576cca7_MD5.webp]]
+![](assets/data-analyst-in-retail-trading_8e94c2b1eae7bec4aa0736af3576cca7_md5.webp)
 
 The data process to creating the report as a data analyst is dependent on 12 steps, where responsibilities are shared between the Data Engineer, Analytics Engineer, and Data Analyst.
 
@@ -69,14 +69,14 @@ The data process to creating the report as a data analyst is dependent on 12 ste
 There are mainly 3 types of Data Analysts with regard to retail trading: Operation Data Analyst, Finance Data Analyst, and Marketing Data Analyst.
 
 ### Operation Data Analyst
-![[18cef87bd2e06e47fc4c26388b3b6897_MD5.webp]]
+![](assets/data-analyst-in-retail-trading_18cef87bd2e06e47fc4c26388b3b6897_md5.webp)
 
 Operation Data Analyst are responsible for tracking for daily sales of the company and its general operations. For instance, they need to be able to explain for volatility of company sales, give sale insights as to which product brings the highest Gross Merchandise Value (GMV), which vendor has the highest growth rate, etc.
 
 They also help track for risk and fraud. This includes, but is not limited to, tracking for fraud in marketing campaigns, anomalies in sales, vendor collusion, employee theft, etc. In addition, they also track for product and warehouse related concerns. This includes tracking for product performance, inventory in warehouse, warehouse operating expenses, etc.
 
 ### Finance Data Analyst
-![[3d7425b1a0728a1b0bb3464749880f6a_MD5.webp]]
+![](assets/data-analyst-in-retail-trading_3d7425b1a0728a1b0bb3464749880f6a_md5.webp)
 
 Finance Data Analysts have two main concerns: margin control and transport management system (TMS):
 
@@ -91,13 +91,13 @@ $ \text{Margin} = \text{Revenue} - \text{Cost} $
 
 Transportation cost is based on route distance, cargo volume, distribution rate of the distributor, bonus, or payoff for distributor with the data aggregated from the TMS system and manual input. Warehouse cost is based on amount of space, rental rate, operational cost, etc. Promotion costs refer to marketing campaign costs.
 
-![[7d514b708e3dd2bff8747f1a3adb3001_MD5.webp]]
+![](assets/data-analyst-in-retail-trading_7d514b708e3dd2bff8747f1a3adb3001_md5.webp)
 
 **Transport Management System**
 
 You need to optimize the rate of distributor gains against your company gains. If your company pays a low rate for the distributor, they may not distribute your product to your customer or settle with low quality service level agreement (SLA). By contrast, if you pay your distributor too high, your margins will be lower as a consequence.
 
-![[58bf592103e00d6b6caa5eead9bd4310_MD5.webp]]
+![](assets/data-analyst-in-retail-trading_58bf592103e00d6b6caa5eead9bd4310_md5.webp)
 
 ### Marketing Data Analyst
 Marketing Data Analysts are concerned with tracking consumer related data, that includes tracking customers through funnel processes and customer segmentation:
@@ -106,7 +106,7 @@ Marketing Data Analysts are concerned with tracking consumer related data, that 
 
 Tracking processes to acquire customer and customer conversion rate. In the example chart below, we can see the process of how a company acquires a customer. With this funnel and data, we can know which stage has the lowest conversion rate and improve upon it.
 
-![[3aca3432d1627444ce28b323e9773b65_MD5.webp]]
+![](assets/data-analyst-in-retail-trading_3aca3432d1627444ce28b323e9773b65_md5.webp)
 
 **Customer Segmentation**
 
@@ -114,7 +114,7 @@ Taken from the Pareto principle, we see that 20% of big customers will bring 80%
 
 For the improved customer and good customer group, we have different strategies to improve their standings, such as deploying marketing campaigns or investment in sales. For the rest, we see that 50% of all customers generally fill the low quality group. This group often trials the product and see few repeat purchases, so spending resources and money on improving their standing may prove wasteful.
 
-![[dfe1dcf3b249f0a1569997f9ba5a8f66_MD5.webp]]
+![](assets/data-analyst-in-retail-trading_dfe1dcf3b249f0a1569997f9ba5a8f66_md5.webp)
 
 ## Conclusion
 Hopefully, you were able to understand Data Analysts a little better, through the lens of retail trading. Data Analysts are one of the few jobs where they focus on gathering requirements and are dependent on those who collect and aggregate data. There are many types of Data Analysts, and they serve their role best in helping business gain better insight into how they operate and understand critical areas of concerns better.

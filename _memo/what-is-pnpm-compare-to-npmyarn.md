@@ -14,7 +14,7 @@ hide_frontmatter: false
 <!-- table_of_contents 90121e99-78c1-42f9-93e8-067cc9d793c4 -->
 
 ## What is PNPM?
-![[0f651d536ab6e1811cdf37eb2b15550d_MD5.webp]]
+![](assets/what-is-pnpm-compare-to-npmyarn_0f651d536ab6e1811cdf37eb2b15550d_md5.webp)
 
 *At Dwarves Foundation, we are always on the lookout for new tech. Researching PNPM was originally from research on what package manager **[Next.js](https://github.com/vercel/next.js/)** uses. We then tried to experiment with it for **[dwarves/react-toolkit](https://github.com/dwarvesf/react-toolkit/pull/46)**, which has given us some insights into some of the cost-benefits of using the package manager.*
 
@@ -37,7 +37,7 @@ Supposing you have 10 Node.js projects on your personal computer if you use NPM/
 
 If you use PNPM, things will be different. It introduces a new concept to us, called a *content-addressable store*. See the image below:
 
-![[949760adee1b7a897e0b53044b7b0a89_MD5.jpeg]]
+![](assets/what-is-pnpm-compare-to-npmyarn_949760adee1b7a897e0b53044b7b0a89_md5.jpeg)
 
 As you can see, PNPM does not store packages in the `node_modules` folder, but rather in the content-addressable store. Therefore, in the `node_modules` folders of projects using PNPM, the packages are *linked* from the global store.
 
@@ -50,11 +50,11 @@ PNPM performs installation in three stages:
 1. Directory structure calculation: determining the layout of the `node_modules` directory based on these dependencies.
 1. Linking dependencies: retrieving and establishing hard links from the store to `node_modules` for all remaining dependencies.
 
-![[4cde4958507a5ac4d8e7d614175b57de_MD5.jpeg]]
+![](assets/what-is-pnpm-compare-to-npmyarn_4cde4958507a5ac4d8e7d614175b57de_md5.jpeg)
 
 This approach is significantly faster than the conventional method of identifying, obtaining, and saving all dependencies directly to the `node_modules` directory.
 
-![[acaaed15e34c391a1ff6b81bbbf6163f_MD5.jpeg]]
+![](assets/what-is-pnpm-compare-to-npmyarn_acaaed15e34c391a1ff6b81bbbf6163f_md5.jpeg)
 
 ### **Creating a non-flat node_modules directory****[](https://pnpm.io/motivation#creating-a-non-flat-node_modules-directory)**
 First of all, we must ask why NPM chooses the flat `node_modules` structure approach.
@@ -124,7 +124,7 @@ Another potential issue with PNPM is that its nested dependency structure may no
 ## **Showcase**
 Thankfully, PNPM is employed by numerous large companies, demonstrating its effectiveness. For an updated list, you can visit [https://pnpm.io/users](https://pnpm.io/users).
 
-![[55e4a8514dc89f283ed5e6b77d839d42_MD5.webp]]
+![](assets/what-is-pnpm-compare-to-npmyarn_55e4a8514dc89f283ed5e6b77d839d42_md5.webp)
 
 ## Conclusion
 PNPM is a package manager for Node.js that offers several advantages over other popular package managers, including saving disk space and boosting installation speed. It also creates a non-flat `node_modules` directory, which can be helpful for larger projects. However, there are some potential disadvantages to using PNPM, such as compatibility issues with certain older packages and slower initial package installation times. Despite these drawbacks, PNPM is used by numerous large companies and may be worth considering for your own projects.

@@ -70,12 +70,12 @@ Based on the programming languages, mobile application can be categorized into 4
 
 Still, there are some researches claim that Hybrid App and Cross Platform are the same. Some said these two are different, so I'll put these into 4 types, so the traits of each type can be described clearer.
 
-![[56fa2f8d701c84b46a715ca629e77f27_MD5.webp]]
+![](assets/design-better-mobile-application_56fa2f8d701c84b46a715ca629e77f27_md5.webp)
 
 ### Pros & Cons of each Platform
-![[7c641059d4d0fad9e7fd2c85c45edbaa_MD5.webp]]
+![](assets/design-better-mobile-application_7c641059d4d0fad9e7fd2c85c45edbaa_md5.webp)
 
-![[3db029547cf3f0df87733d42e499f2b5_MD5.webp]]
+![](assets/design-better-mobile-application_3db029547cf3f0df87733d42e499f2b5_md5.webp)
 
 ## Useful tips to create effective Mobile Application
 ### Read the Human Interface Guidelines

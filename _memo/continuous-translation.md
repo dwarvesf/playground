@@ -11,7 +11,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[eaf982ca480d0677ec9d8fd34553b51a_MD5.webp]]
+![](assets/continuous-translation_eaf982ca480d0677ec9d8fd34553b51a_md5.webp)
 
 # Introduction
 Continuous Translation (CT) is a modern approach to translation management that involves synchronizing software development and translation workflows. This means that developers, translators, and product owners work together in a continuous cycle to ensure that all translations are up-to-date and aligned with the latest software developments.
@@ -21,7 +21,7 @@ Unlike traditional translation workflows, Continuous Translation eliminates the 
 # Working with localization
 
 ## How localization generally works
-![[0ca3440b9dbd840d349d587dd7fd6a1d_MD5.webp]]
+![](assets/continuous-translation_0ca3440b9dbd840d349d587dd7fd6a1d_md5.webp)
 
 The classical or typical approach in any software project will have translated data be coupled with the repository (plus its software release) and its access to the data. This data could exist in a database or directly as a file. Changes to the data would be dependent on the coupling of the git repository and the translation management system, which becomes a blocker for translation teams.
 
@@ -120,7 +120,7 @@ Here are what the steps to use Google Sheets would look like for managing transl
 ## Solution 2: Use a translation management platform
 For this approach, we can use [Locize](https://locize.com/) as our continuous localization management platform. This approach isn’t limited to Locize, but the idea is to have a platform to decouple software release from the translation work and minimize work friction for translation.
 
-![[memo/assets/continuous-translation/5d971ebb8af780ed2ad9e7626daf0d8c_MD5.png]]
+![](assets/continuous-translation_5d971ebb8af780ed2ad9e7626daf0d8c_md5.png)
 
 Locize has integration support for a variety of frontend systems. You can integrate Locize by following steps:
 

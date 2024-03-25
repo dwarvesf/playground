@@ -13,7 +13,7 @@ hide_frontmatter: false
 ### Array
 In Go language, the terminology `Array` has a bit different from another language like C, JS, ... In Go, the `array has a fixed length and type `Take a look of array implementation in Go.
 
-![[a650b13e6028a391f8acdc858b08c372_MD5.webp]]
+![](assets/slice-and-array-in-golang_a650b13e6028a391f8acdc858b08c372_md5.webp)
 
 Its length is part of its type ([4]int and [5]int are distinct, incompatible types). For example, you can compare two arrays have the same type [4]int.
 
@@ -52,7 +52,7 @@ fmt.Println(a == b) // true
 
 For representation for an array of [4]int in memory is for integer value laid out `sequentially`
 
-![[8327bf995dd32badeef1e1d0eb4eeda5_MD5.webp]]
+![](assets/slice-and-array-in-golang_8327bf995dd32badeef1e1d0eb4eeda5_md5.webp)
 
 So, in Go, the array is values. An array variable holds the entire array (not a pointer to the first element). Let's say the array is a struct ( but using index instead of named field). Because an array is not a pointer to the first element, so when we assign, pass an array to a function, it will make a copy of its content
 
@@ -140,7 +140,7 @@ type slice struct{
 
 For example, if we create a slice by using make([]byte,5), the slice will be structured like this: 
 
-![[f18621d9bf057f8c2ea818ca438379c3_MD5.webp]]
+![](assets/slice-and-array-in-golang_f18621d9bf057f8c2ea818ca438379c3_md5.webp)
 
 A slice cannot be grown beyond its capacity. Attempting to do so will cause a runtime panic, just as when indexing outside the bounds of a slice or array. Similarly, slices cannot be re-sliced below zero to access earlier elements in the array.
 
@@ -149,13 +149,13 @@ A slice cannot be grown beyond its capacity. Attempting to do so will cause a ru
 ### Append
 Let's dig into a source code (go/src/reflect/value)
 
-![[1f1383e462f5fa432205e471759c4051_MD5.webp]]
+![](assets/slice-and-array-in-golang_1f1383e462f5fa432205e471759c4051_md5.webp)
 
 so the `append` built in function do a few things here:
 
 First, it will check an input value, if it's not a `Slice` the program will throw a panic, then the interesting things here is `grow` function , it will take an old slice and length of the new slice we want to append. Let take a look at `grow` function:
 
-![[de7599e21a9ed4cf0e4a9d31169129e2_MD5.webp]]
+![](assets/slice-and-array-in-golang_de7599e21a9ed4cf0e4a9d31169129e2_md5.webp)
 
 So now we understand the mechanism behind the `append` function, it will allocate a `new Slice` which have more capacity than the old one
 

@@ -16,7 +16,7 @@ author: Thanh Pham
 At Dwarves Foundation, we pride ourselves on being a team of seasoned technology experts, passionate about crafting innovative solutions for our clients. With years of experience in the technology industry, we understand the importance of selecting the right tools and technologies to deliver exceptional results. In today's fast-paced world, staying ahead of the competition requires building and deploying features quickly without sacrificing quality or stability. When selecting a technology for our frontend tech stack, the foremost question we ask is: "Has this technology achieved a certain level of stability and maturity?" Quick wins are important, but truly transformative products, teams, and infrastructures require years of sustained effort. In this article, we'll discuss the key components of our tech stack and explain how they contribute to our ability to develop high-quality, scalable applications at lightning-fast speeds.
 
 ## Basic building blocks
-![[974445b14fdc44d726716ff2a1c499a0_MD5.webp]]
+![](assets/why-we-chose-our-tech-stack-accelerating-development-with-a-robust-frontend-solution_974445b14fdc44d726716ff2a1c499a0_md5.webp)
 
 ### React
 With a decade of evolution under its belt, **[React](https://reactjs.org/)** has proven itself as a stable, high-performance, and user-friendly frontend framework. It strikes the perfect balance of stability, performance, and usability, earning its place as our go-to choice for the frontend foundation. Although React has a steeper learning curve compared to some other frontend frameworks, its vast ecosystem, extensive documentation, and strong community support make it a worthwhile investment for long-term projects.
@@ -54,7 +54,7 @@ Although TailwindCSS may initially appear verbose and lead to larger HTML files,
 ## Architecture
 Our frontend applications rely on a thoughtfully designed, multi-layered architecture that guarantees production-readiness and exceptional results. Each layer plays a critical role in the overall performance and scalability of the application.
 
-![[1ff4c200530392d7cfd5ff04c8edb60a_MD5.webp]]
+![](assets/why-we-chose-our-tech-stack-accelerating-development-with-a-robust-frontend-solution_1ff4c200530392d7cfd5ff04c8edb60a_md5.webp)
 
 ### Service Connector: Fetch API
 The service connector layer is responsible for handling communication between the frontend and backend services. We utilize the Fetch API for all our API calls. By integrating the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) with SWR, we can efficiently manage API requests, caching, and error handling. This combination ensures a fast and reactive user experience while maintaining a clean and organized codebase.

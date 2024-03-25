@@ -15,7 +15,7 @@ hide_frontmatter: false
 author: Thanh Pham
 ---
 
-![[4601b8f71eebe7c7fbc4a6fc7925a8b6_MD5.webp]]
+![](assets/adoption-of-pnpm_4601b8f71eebe7c7fbc4a6fc7925a8b6_md5.webp)
 
 We're excited to share that the Dwarves team has officially decided to switch to [pnpm](https://radar.d.foundation/pnpm-198b80c6b5444f8cb1d11392ddc2bf63) as our primary package management tool. After careful evaluation, we found that pnpm is widely embraced by the development community and has been successfully used by great teams at Vercel, Nx, and Chakra UI.
 

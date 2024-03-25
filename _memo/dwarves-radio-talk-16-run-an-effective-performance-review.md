@@ -17,7 +17,7 @@ We perform bi-yearly reviews in July and January. The primary purpose of these r
 * Everyone writes up a **1-2 page summary** and sends it to the head of their team.
 * The head of your team reviews your summary and prepares their thoughts. He schedules a one-hour meeting to discuss.
 
-![[e46576a1c9314d3a36be38e50ae55763_MD5.webp]]
+![](assets/dwarves-radio-talk-16-run-an-effective-performance-review_e46576a1c9314d3a36be38e50ae55763_md5.webp)
 
 ### Inside the summary
 We run this practice with two spirits:

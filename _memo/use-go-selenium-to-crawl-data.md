@@ -10,7 +10,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[f963144e3cfac24481dbfeb02cf6a0e6_MD5.webp]]
+![](assets/use-go-selenium-to-crawl-data_f963144e3cfac24481dbfeb02cf6a0e6_md5.webp)
 
 ## Crawl data
 Crawl is a widespread issue occurring in making software. News, discount news, film ticket, etc are some examples of crawl. To be simple, it is analytics HTML, read cards, and extract data. The Go library I usually use is [goquery](https://github.com/PuerkitoBio/goquery).
@@ -32,7 +32,7 @@ To run it, we go to the folder containing file jar and run the command:
 java -jar selenium-server-standalone-2.50.1.jar -port 8081
 ```
 
-![[79536b2784ffffd405fdcbd54b56927f_MD5.webp]]
+![](assets/use-go-selenium-to-crawl-data_79536b2784ffffd405fdcbd54b56927f_md5.webp)
 
 \=> We have server selenium running at port 8081.
 Next, you pull Go-selenium in by Go get:

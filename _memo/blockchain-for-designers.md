@@ -36,14 +36,14 @@ Blockchain operates in a decentralized form, which makes all information and tra
 The capabilities that Blockchain offers to solve these problems are explained in how a blockchain is structured.
 
 ## What is Blockchain
-![[e1bfa96832cd4042e417869a7c426a77_MD5.webp]]
+![](assets/blockchain-for-designers_e1bfa96832cd4042e417869a7c426a77_md5.webp)
 
 As the name, it is a chain of blocks that store data. Each block of a chain is connected with the previous one by a key called "hash". In a nutshell, a block contains data, its own hash, and the previous block’s hash. This structure links all the blocks one by one, making the chain continuous and unbreakable
 
-![[fc723d7bffd27c3988c8b5ea62194db0_MD5.webp]]
+![](assets/blockchain-for-designers_fc723d7bffd27c3988c8b5ea62194db0_md5.webp)
 
 ## How it works
-![[d86795011c5ab5910ec0b5f6b55c74fe_MD5.webp]]
+![](assets/blockchain-for-designers_d86795011c5ab5910ec0b5f6b55c74fe_md5.webp)
 
 1. I want to send you money, so I create a transaction and submit it.
 1. The transaction information is recorded and published to the blockchain network.
@@ -67,7 +67,7 @@ When a user creates a transaction in a Blockchain network, everyone in that netw
 ### Immutability
 No one can tamper data in a Blockchain network and thus it’s an immutable platform since hashing converts any input data into an unmatched string of text. Immutability keeps data be privacy, unattackable and imperishable.
 
-![[a533a30cdbb6139ad9f5f98a57b9b558_MD5.webp]]
+![](assets/blockchain-for-designers_a533a30cdbb6139ad9f5f98a57b9b558_md5.webp)
 
 # Help user to believe in the value of Blockchain
 Blockchain is very complicated. Speaking of Blockchain, most people, especially not so tech-savvy ones, thought it was the movement of numbers, codes, magic, or whatever stored in some cloud in the sky. Some people even mistakenly believe that Blockchain is bitcoin and call it virtual money.
@@ -80,7 +80,7 @@ Like everything else, it starts with trust; the trust that this product helps me
 
 Besides, we designers also have to develop ways for prototyping, not only individual experience but also whole systems. Since Blockchain is a decentralized application, this is not for one persona only, but for a group of people collaborating and transfer value for one another.
 
-![[60e714810139595dfd5ee4591022b6cd_MD5.webp]]
+![](assets/blockchain-for-designers_60e714810139595dfd5ee4591022b6cd_md5.webp)
 
 ## Blockchain design principles
 As we researched and worked on multiple projects, we have analyzed through countless blockchain applications to come up with a list of current issues users encounter. Some cause users to approach these applications with a lot of distance.
@@ -94,7 +94,7 @@ It’s tough to convince people to believe in terms that they have never heard b
 **1. Steady, painless exposure to new technology**
 In order to create trust in the new technology, users need to understand and see how the application processes work. We also want users to understand how blockchain brings improvements to the way they normally do things. Those improvements could be data visibility. Be mindful of each piece of data we present on the app. In other words, shown-data must be straight-forward, desired call-to-actions are clear.
 
-![[bbdedf1451e87a0024ee6e71a138c663_MD5.webp]]
+![](assets/blockchain-for-designers_bbdedf1451e87a0024ee6e71a138c663_md5.webp)
 
 How to ease users into the blockchain domain?
 
@@ -113,7 +113,7 @@ Establishing visual consistency across products and the customer experience is e
 * A simple but concise language which aligns with users' natural communication patterns
 * Consistent experience through and through, regardless of platform and device
 
-![[83a093e62fa61b069e3ea4b2f22b407e_MD5.webp]]
+![](assets/blockchain-for-designers_83a093e62fa61b069e3ea4b2f22b407e_md5.webp)
 
 Colors have a significant impact on the psychology of users. When it comes to trustworthiness, we should consider using colors that bring stability. Avoid choosing the vibrant color to show the decrease or increase of transactions, it might create unnecessary stress to users. Since Blockchain is a peer-to-peer network, clean and simple minimalistic UI or whatever trending styles are not always the super idea that will satisfy all users. There're always many types of users in a Blockchain network, hence, user research is the most important step in Blockchain design, to ensure the final product does not miss any object.
 
@@ -124,13 +124,13 @@ With Blockchain application, all users want to complete the process without any 
 
 One important thing, don’t make users wait too long, though Blockchain is much lower than other traditional transactions, we need to keep updating the status to users, even if it is just a microcopy on the loading/processing screen. Otherwise, we can set proper expectations about the timing of tasks and activities within the product.
 
-![[19b7383d98cf76a0b76e3c19de34d88e_MD5.webp]]
+![](assets/blockchain-for-designers_19b7383d98cf76a0b76e3c19de34d88e_md5.webp)
 
 **4. Alert user about one-way actions **
 
 Blockchain is known as a one-way action that keeps the network safe and transparent. There are no take-backs or undo's in a blockchain system. Forgot private key, wrong recipient information, cancel a transaction, etc., these problems cannot be resolved in a blockchain network. Therefore, we should design purposeful notifications, alerts, and confirmation at each important step for users, without falsely giving off a sense of danger. Be responsible for the user’s mental experience and physical assets is one of our duties
 
-![[f7c25751bae3d7b1b87f6c7b94d141d2_MD5.webp]]
+![](assets/blockchain-for-designers_f7c25751bae3d7b1b87f6c7b94d141d2_md5.webp)
 
 **5. Guide users until they accomplish their tasks** As we mentioned at the beginning of this article, there is a large awareness gap in the public about Blockchain. We are here to help bridge this gap. We can help simplify the complexity of the Blockchain until it becomes invisible. Begin with the easiest-to-understand onboarding journey, provide knowledge/tips at every step where they might experience confusion or doubts, make help available, and easy to access, encourage and guide users through their journeys to meet their goals. Plus, don’t hide any information. Blockchain brings transparency, a key benefit for users which not any 3rd parties can compete with.
 

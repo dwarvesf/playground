@@ -10,7 +10,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![[460b62865d3bc638b0bb0c4f7e23260e_MD5.webp]]
+![](assets/docker-registry_460b62865d3bc638b0bb0c4f7e23260e_md5.webp)
 
 # Summary
 The Docker toolset to pack, ship, store, and deliver content.

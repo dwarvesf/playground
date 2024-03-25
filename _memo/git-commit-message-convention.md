@@ -12,7 +12,7 @@ hide_frontmatter: false
 
 I bumped into an article a few days ago. It was short and simple, related enough to make me wonder if we have the same thing in the team. [How a git commit message should look like.](https://dev.to/i5han3/git-commit-message-convention-that-you-can-follow-1709)
 
-![[3e7f02ebed61d22e2cade0e4c3c9ed61_MD5.webp]]
+![](assets/git-commit-message-convention_3e7f02ebed61d22e2cade0e4c3c9ed61_md5.webp)
 
 ## From the article
 The blog post states out what a typical git commit message looks like
@@ -53,14 +53,14 @@ Each project has its different commits. The commit either affects one part of th
 Examples for 2 scenarios:
 
 ### 1. The commit affects one small scope
-![[c3a26eeaa2a55880f60f0219fd54ecbe_MD5.webp]]
+![](assets/git-commit-message-convention_c3a26eeaa2a55880f60f0219fd54ecbe_md5.webp)
 
 * type: fix
 * scope: foundation
 * subject: ordered list doesn't show numbers
 
 ### 2. The commit affects the whole project
-![[a0d2b484d0d87baddace0446623c0af0_MD5.webp]]
+![](assets/git-commit-message-convention_a0d2b484d0d87baddace0446623c0af0_md5.webp)
 
 * type: chore
 * subject: upgrade tailwind and twin.macro
@@ -69,7 +69,7 @@ Examples for 2 scenarios:
 
 We have a playbook - our guides on getting things done. Here's the old flow we have on git commit message.
 
-![[822a84298b02559d0d1224f7aa82e039_MD5.webp]]
+![](assets/git-commit-message-convention_822a84298b02559d0d1224f7aa82e039_md5.webp)
 
 and I think it's time to update a new version. Check out our latest update at [dwarvesf/playbook/write-a-good-commit-message](https://github.com/dwarvesf/playbook/blob/master/engineering/git.md#write-a-good-commit-message).
 

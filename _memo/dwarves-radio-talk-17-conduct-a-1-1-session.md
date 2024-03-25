@@ -17,7 +17,7 @@ Why do we need to run this practice, and how to avoid wasting time? First of all
 
 When issues happen, without trust, they keep the information, breaking the flow of information among the team.
 
-![[06395a8d9f4970db75d51feef9c89fa0_MD5.webp]]
+![](assets/dwarves-radio-talk-17-conduct-a-1-1-session_06395a8d9f4970db75d51feef9c89fa0_md5.webp)
 
 ### How we conduct our 1-1 session
 **Timing**

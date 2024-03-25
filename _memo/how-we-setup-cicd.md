@@ -19,7 +19,7 @@ On the other hand, `CD` refers to either continuous delivery or continuous deplo
 A simple way to understand the CI/CD is to take it as a process, often visualized as a pipeline, that involves some job like testing, building, ..., etc.
 
 ## The overall process @ Dwarves
-![[playground/_memo/assets/how-we-setup-cicd/fa32c5b22664bf943dd7d4314b012a83_MD5.webp]]
+![](assets/how-we-setup-cicd_fa32c5b22664bf943dd7d4314b012a83_md5.webp)
 
 At Dwarves, most projects happen in Gitlab, so Gitlab-CI would be our first adaption. Lately, more and more Ventures projects land in Github, we have to look at Github Action. It doesn't mention that we also have a CI/CD for a Frontend-ers setup with Netlify or Vercel.
 
@@ -47,7 +47,7 @@ When things look right, we hit the merge button. This action will build a Docker
 When we have all the green lights, we pull the image from the Registry in our previous step into our Kubernetes cluster - a.k.a, where we run the servers.
 
 ## Test stack
-![[9dd15aea3c3de09d92b44754a736b607_MD5.webp]]
+![](assets/how-we-setup-cicd_9dd15aea3c3de09d92b44754a736b607_md5.webp)
 
 ## What to expect
 ### Simplify
@@ -68,7 +68,7 @@ It is a nice thing to do, but we’re still far from easily integrating that int
 
 Experiments are and will be made to get us close to the goal. For now, we are settling with the daily scheduled E2E run, and the QC team will provide us with the results every day.
 
-![[f38b955faad846c6c75b4252b56fe1b4_MD5.webp]]
+![](assets/how-we-setup-cicd_f38b955faad846c6c75b4252b56fe1b4_md5.webp)
 
 ## CI - Continuous Improving
 In the spirit of CI/CD, It's good to keep the final notes like this.

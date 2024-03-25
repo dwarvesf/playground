@@ -17,7 +17,7 @@ During our [recent sharing session](https://www.youtube.com/watch?v=wgKssBAfih8&
 ## Introduction
 A monorepo is a version control strategy where all the code for an organization's projects is stored in a single repository. This centralized approach simplifies code management and fosters greater collaboration across teams.
 
-![[31a12727d33e9854fbded1b9fbe36668_MD5.webp]]
+![](assets/radio-talk-61-monorepo_31a12727d33e9854fbded1b9fbe36668_md5.webp)
 
 ## Why choose a monorepo?
 The motivation for adopting a monorepo primarily stems from the desire for autonomy and to address communication problems often associated with breaking monoliths into multiple repositories.
