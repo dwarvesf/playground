@@ -13,7 +13,7 @@ The [document loaders](https://python.langchain.com/en/latest/modules/indexes/do
 
 These data are saved and indexed as vectors in a [[Vector Database|vector database]]. Vector indexes are used to capture word meaning and represent it in a continuous space. This helps the model to understand the context and generate more accurate responses.
 
-![[langchain-document-loader-flow.png]]
+![](assets/working-with-langchain-document-loaders_langchain-document-loader-flow.png)
 
 ### Question Answer Systems
 In order to get question and answering from prompts, we follow 4 steps with langchain:

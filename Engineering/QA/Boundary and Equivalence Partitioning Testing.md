@@ -26,7 +26,7 @@ Boundary testing is the process of testing between extreme ends or boundaries be
   4. Just below the maximum
   5. Maximum
 
-  ![Boundary Testing](../../_assets/Boundary-Testing.png)
+  ![](assets/boundary-and-equivalence-partitioning-testing_boundary-testing.png)
 - In Boundary Testing, Equivalence Class Partitioning plays a good role
 - Boundary Testing comes after the Equivalence Class Partitioning.
 
@@ -55,7 +55,7 @@ Here is the test condition (Partitions):
 - Numbers 1 to 10 are considered valid
 - Any 3 Digit Number say 100 is invalid.
 
-![Partitions](../../_assets/partition.png)
+![](assets/boundary-and-equivalence-partitioning-testing_partition.png)
 
 We **cannot test all the possible values** because if done, the number of test cases will be more than 100. To address this problem, we use equivalence partitioning hypothesis where we divide the possible values of tickets into groups or sets as shown below where the system behavior can be considered the same.
 

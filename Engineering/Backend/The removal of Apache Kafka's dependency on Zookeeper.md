@@ -35,12 +35,12 @@ One of the advantages of using Zookeeper is simpler deployment and configuration
 Despite the potential challenges, Kafka continues to rely on Zookeeper for its important functions, and many organizations continue to find it a valuable tool in managing their Kafka clusters.
 
 ## Architecture
-![[kafka_architecture.png]]
+![](assets/the-removal-of-apache-kafka's-dependency-on-zookeeper_kafka_architecture.png)
 
 ### In the old architecture
 The controller is a crucial component of the system that manages the state of the Kafka cluster. Upon election, the controller loads its state from a Zookeeper quorum consisting of multiple nodes. This state includes information about topics, their partitions, and the brokers that host these partitions. Once the controller has loaded its state, it begins pushing updates to other nodes in the cluster using `LeaderAndIsr` and `UpdateMetadata` messages. These updates ensure that all nodes in the cluster are aware of the latest state of the system, and that they can take appropriate actions in response to changes in this state. Overall, the controller plays a critical role in ensuring the smooth functioning and reliability of the Kafka cluster.
 
-![[kafka-controller-apis.png]]
+![](assets/the-removal-of-apache-kafka's-dependency-on-zookeeper_kafka-controller-apis.png)
 
 ### In **KRaft Mode**
 Kafka has been using Zookeeper for various critical tasks, such as keeping track of which brokers are part of the Kafka cluster, electing leaders for partitions, storing configurations for topics/permissions, and current offsets of each consumer group, and sending health-check notifications to Kafka.
@@ -55,7 +55,7 @@ Kafka's KRaft mode offers various advantages over Zookeeper, such as simpler dep
 
 In conclusion, KRaft mode is a crucial improvement to Kafka's architecture, ensuring smooth functioning and reliability of the Kafka cluster by providing a better alternative to Zookeeper for managing Kafka's metadata.
 
-![[time-shutdown-operations-kafka.png]]
+![](assets/the-removal-of-apache-kafka's-dependency-on-zookeeper_time-shutdown-operations-kafka.png)
 
 For simple local setup, can refer to [Apache Kafka's quickstart guide](https://kafka.apache.org/quickstart) . For more detailed configurations, you can refer to [Kafka's kraft config](https://kafka.apache.org/documentation/#kraft_config) 
 

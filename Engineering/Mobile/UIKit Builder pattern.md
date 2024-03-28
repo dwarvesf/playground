@@ -9,7 +9,7 @@ SwiftUI introduces a way to write UI code declaratively. Can we use the same par
 
 In this tutorial, we will explain how to create a user interface using the builder pattern, and [[UIKit Builder pattern|the second part]] will show how to wrap a container element in Swift builder. In the end of this tutorial, you will be able to build UIs like this one:
 
-![[ios_uikit_builder_pattern_banner.png]]
+![](assets/uikit-builder-pattern_ios_uikit_builder_pattern_banner.png)
 
 Below is sample code for your reference.
 

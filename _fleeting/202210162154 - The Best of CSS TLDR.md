@@ -26,6 +26,6 @@ TL;DR when in doubt use tailwind, if you're new to css it'll help you learn css 
 @brain master 
 #uilibraries
 
-![[Pasted image 20221016215600.png]]
-![[Pasted image 20221016215643.png]]
-![[Pasted image 20221016215646.png]]
+![](assets/202210162154---the-best-of-css-tldr_pasted-image-20221016215600.png)
+![](assets/202210162154---the-best-of-css-tldr_pasted-image-20221016215643.png)
+![](assets/202210162154---the-best-of-css-tldr_pasted-image-20221016215646.png)

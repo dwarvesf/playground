@@ -27,12 +27,12 @@ Overall, the LLM pre-trained model is a powerful tool for natural language proce
     - Config model in config.json
         - Example config model alpaca 7B
             
-            ![[_assets/build-chatbot-1.png]]
+            ![](assets/build-your-chatbot-with-open-source-large-language-models_build-chatbot-1.png)
 - Install node library and run
     - Run `yarn install` inside repository root folder
     - Start web and waiting load model, Run command: `yarn dev` to start the web.
     You will see the log after run command:
-    ![[_assets/build-chatbot-2.png]]
+    ![](assets/build-your-chatbot-with-open-source-large-language-models_build-chatbot-2.png)
     
 - Otherwise, you can use other bigger model to improve the output
     - Using Alpaca 13B model, it require more memory. Download Alpaca 13B from [here](https://huggingface.co/eachadea/ggml-gpt4-x-alpaca-13b-native-4bit/blob/main/gpt4-x-alpaca-13b-native-ggml-q4_0.bin)
@@ -41,7 +41,7 @@ Overall, the LLM pre-trained model is a powerful tool for natural language proce
     - Using Alpaca 7B tunning with GPT4 
 - Test chatbot
     - You can ask chatbot like this
-        ![[_assets/build-chatbot-3.png]]
+        ![](assets/build-your-chatbot-with-open-source-large-language-models_build-chatbot-3.png)
 
 ## Fine-tune your model
 To fine tune your model you need create your dataset depend on your data, you can clone our example at [here](https://github.com/thanhpn/df-dataset)

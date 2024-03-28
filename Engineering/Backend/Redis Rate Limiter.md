@@ -15,7 +15,7 @@ The idea is to have a data label such that it labels exactly which user is acces
 Two of the data types we will cover will be a simple key-value pair with a counter, and a LIST, both of which will have expiration dates to rate limit by a certain period of time.
 
 ## Case 1: using a counter
-![](_assets/gWWpbQl.png)
+![](assets/redis-rate-limiter_gwwpbql.png)
 One simple implementation using LUA on Redis would be to use a response counter to check how many requests there are within a timespan. Below is an example of a counter with an expiry date of 10 seconds, with the idea that the counter will rate limit the data label 10 times every 10 seconds. This implementation is susceptible to race conditions:
 
 ```lua
@@ -33,7 +33,7 @@ END
 ```
 
 ## Case 2: using `LIST`
-![](_assets/RkMMJtW.png)
+![](assets/redis-rate-limiter_rkmmjtw.png)
 Another implementation using LUA on Redis would be to use a LIST with an expiration time. Using LISTs here can help us avoid race conditions as RPUSHX helps only to push IPs if it exists on the list. On the other hand, this method can easily raise errors for cases where there are no IPs.
 ```lua
 current = LLEN(ip)

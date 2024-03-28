@@ -35,7 +35,7 @@ function Counter(name) {
 ```
 
 ## The UI Tree
-![UI Tree](../../_assets/ui_tree.png)
+![](assets/preserving-and-resetting-state-in-react_ui_tree.png)
 
 As you can see in the below picture, the rendering flow of React should be:
 
@@ -107,7 +107,7 @@ const [isPaused, setIsPaused] = useState(false);
 ```
 - In this example, we switch between *different* component types at the same position. Initially, the first child of `<div>` contained a `Counter`. But when swapped in a `p`, React removed the `Counter` from the UI tree and destroyed its state
 
-![`Counter` is deleted, and the `p` is added](../../_assets/diff-comp-same-position.png)
+![](assets/preserving-and-resetting-state-in-react_diff-comp-same-position.png)
 
 => **Different component + Same position -> Reset the state of its entire subtree**
 
@@ -131,7 +131,7 @@ Back to the example at the beginning of the article
 {isPlayerA && <Counter name="A" />}
 {!isPlayerA && <Counter name="B" />}
 ```
-![Option 1](../../_assets/opt1-diff-position.png)
+![](assets/preserving-and-resetting-state-in-react_opt1-diff-position.png)
 
 ### Option 2: Resetting state with a key (recommendation)
 ```js

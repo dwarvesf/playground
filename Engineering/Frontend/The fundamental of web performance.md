@@ -32,7 +32,7 @@ Parsing is a static process that doesn't depend on the state of the application.
 - Construct Cascading Style Sheet Object Model (CSSOM) based on the CSS
 - Combine DOM and CSSOM to generate the render tree. It has all the style properties for every node of the DOM that is needed to be rendered.
 
-![[the-fundamental-of-web-performance-render-tree.png]]
+![](assets/the-fundamental-of-web-performance-render-tree.png)
 
 In addition to parsing, browsers also run pixel pipelines on each frame. Pixel pipelines are basically a bunch of algorithms that take information from the DOM and apply it onto the screen. For example: painting backgrounds (CSS), applying effects (SVG filters) or animating things (CSS transitions). These algorithms are executed every single time there's a change in state (e.g. scroll position changes), causing them to be executed many times per second - even if nothing has changed. There are five major areas that you need to know about and be mindful of when you work
 
@@ -42,7 +42,7 @@ In addition to parsing, browsers also run pixel pipelines on each frame. Pixel p
 - **Paint**: Once the layout has been calculated, the browser paints every visible element on the screen.
 - **Compositing**: Once all elements have been painted, they are combined together into one image that contains everything that will be displayed onscreen at once — known as a frame.
 
-![[the-fundamental-of-web-performance-pixel-pipeline.png]]
+![](assets/the-fundamental-of-web-performance-pixel-pipeline.png)
 
 The goal of delivering a fast, smooth transition web application is **to do less work** during the rendering process. You need to understand how HTML, JavaScript and CSS are handled by browsers as each phase occurs. Then ensure that the code you write (and the other 3rd party code you include) runs as efficiently as possible. For example, to reduce the amount of time it takes for style calculations to be completed, understand [CSS specificity](https://web.dev/learn/css/specificity/) so you can write simple class names and reduce the number of styles that affect a given element.
 

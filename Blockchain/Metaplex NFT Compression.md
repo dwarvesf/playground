@@ -10,7 +10,7 @@ With the rise of NFTs on the Solana blockchain, there is a growing demand for th
 
 While the cost of renting NFTs on Solana is relatively cheap (at ◎0.012), it scales linearly, making it costly to have a large number of NFTs. However, through compression, the cost of on-chain storage for NFTs can be drastically reduced, enabling creators to fully leverage the technology to express themselves. For example, with compression, the cost of 10,000 NFTs at ◎3.5 (34x) reduces, as does the cost of 1 million NFTs at ◎5 (2,400x) and 1 billion NFTs at ◎500 (24,000x).
 
-![](_assets/metaplex-nft-compression-cost-comparation.png)
+![](assets/metaplex-nft-compression-cost-comparation.png)
 
 ## How Compression for NFTs works
 Compressed NFTs are stored in Merkle trees via the Gummyroll program where:

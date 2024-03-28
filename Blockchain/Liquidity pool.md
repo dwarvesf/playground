@@ -10,7 +10,7 @@ Basically, a liquidity pool is a pool of tokens that are locked in a smart contr
 
 The process could be illustrated by the picture below:
 
-![[Pasted image 20220322220453.png]]
+![](assets/liquidity-pool_pasted-image-20220322220453.png)
 
 ## 2. How do Liquidity Pools work?
 Liquidity pools form the backbone of DEX by applying the automated market maker (AMM) system. Here’s the main formula that mathematically determines what the market price of the token in the pool should be:

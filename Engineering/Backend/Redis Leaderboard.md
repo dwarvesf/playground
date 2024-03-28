@@ -53,7 +53,7 @@ HGETALL user:user1
 ## Tying It All Together
 Before we look at the specific commands to update both the sorted set and hash when a user achieves a new score, let's visualize the whole flow with the diagram below:
 
-![Flow Diagram](_assets/Flow_Diagram.png)
+![](assets/redis-leaderboard_flow_diagram.png)
 
 This diagram depicts the flow as follows:
 - The user achieves a new score and sends it to the application.

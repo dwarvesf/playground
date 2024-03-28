@@ -9,7 +9,7 @@ date: 2022-10-16
 For global state management in some frameworks like ReactJs; we already have Redux, React Context, Recoil, and Mobx... for handling that. But if we only need the vanilla javascript for handling specific state and avoid using the library to manage the state (like minimizing the bundle-size, avoid on creating too many instances...), we can use the help of design patterns.
 
 ## What is the Singleton Design Pattern?
-![singleton-pattern](_assets/singleton-pattern.png)
+![](assets/singleton-design-pattern-in-javascript_singleton-pattern.png)
 
 Singleton design pattern is the pattern in that we only create one static instance of the class.
 

@@ -105,16 +105,16 @@ created. `C-c C-c` (or double `Ctrl C`) is the key binding that I used to send
 a code block from Neovim to the second pane of tmux.
 
 ### Python
-![[repl-driven-development-python.gif]]
+![](assets/vim-repl-driven-development_repl-driven-development-python.gif)
 
 ### JavaScript
-![[repl-driven-development-javascript.gif]]
+![](assets/vim-repl-driven-development_repl-driven-development-javascript.gif)
 
 ### OCaml
-![[repl-driven-development-ocaml.gif]]
+![](assets/vim-repl-driven-development_repl-driven-development-ocaml.gif)
 
 ### Shell
-![[repl-driven-development-shell.gif]]
+![](assets/vim-repl-driven-development_repl-driven-development-shell.gif)
 
 ## Conclusion
 REPL Driven Development is an interesting and joyful approach to software

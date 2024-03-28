@@ -6,12 +6,12 @@ date: 2022-06-16
 ---
 
 ### Blocks
-![](_assets/LZRYlGx.png)
+![](assets/blocks_lzrylgx.png)
 
 ## 1. Define block in the blockchain
 A block is thus a permanent store of records that, once written, cannot be altered or removed. A Block has a limited size and transaction to avoid All Block are verified on the blockchain by all nodes and stored on the blockchain Block data are batches of transactions with a hash of the previous block in the chain. This links blocks together (in a chain) because hashes are cryptographically derived from the block data. This prevention fraud, because one change in any block in history would invalidate all the following blocks as all subsequent hashes would change and everyone running the blockchain would notice.
 
-![](_assets/sVIhd1p.png)
+![](assets/blocks_svihd1p.png)
 
 ## 2. Block data
 #### 2.1 Standard data
@@ -44,7 +44,7 @@ Block explorers provide information about uncle blocks like:
 - Who mined it.
 - The ETH reward.
 
-![](_assets/eqHPGHW.png)
+![](assets/blocks_eqhpghw.png)
 
 ## 3. Block Time
 Block time refers to the time it takes to mine a new block. In Ethereum, the average block time is between 12 to 14 seconds and is evaluated after each block. The expected block time is set as a constant at the protocol level and is used to protect the network's security when the miners add more computational power. The average block time gets compared with the expected block time, and if the average block time is higher, then the difficulty is decreased in the block header. If the average block time is smaller, then the difficulty in the block header will be increased.
@@ -57,7 +57,7 @@ A final important note is that blocks themselves are bounded in size. Each block
 ## 5. Mining's Relationship to Blocks
 Mining is the term used for solving the number that is the nonce, the only number that can be changed in a block header. It is also the process the cryptocurrency's network uses if proof-of-work is used in the protocol.
 
-![](_assets/qI5JTRd.png.jpg)
+![](assets/blocks_qi5jtrd.png.jpg)
 
 Cryptocurrency mining is commonly thought to be a complex mathematical problem; it is actually a random number generated through hashing. Hashing is the process of encrypting information using the encryption method a cryptocurrency uses. For example, Bitcoin uses SHA256 for its encryption algorithm. For a miner to generate the "winning" number, the mining program must use SHA 256 to hash random numbers and place them into the nonce to see if it is a match.
 

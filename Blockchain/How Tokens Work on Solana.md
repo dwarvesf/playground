@@ -12,17 +12,17 @@ date: 2022-06-07
 - On Solana, you don't need to create a new contract. There is a single token program (which was deployed by the Solana team) which responsible for creating, minting and transfering tokens.
 - In order to create a new token, you send the `create` instruction to the token program. This creates a new `mint account`. Each type of token is associated with exactly one `mint account` which holds metadata about the token (likes `total supply`, `decimals`, `mint authority` - who allowed to mint, `freeze authority` - who allowed to freeze account ).
 
-![](_assets/vuOcgc7h.png.jpg)
+![](assets/how-tokens-work-on-solana_vuocgc7h.png.jpg)
 
 - You've just created a new token but you don't own any amount of this token yet. From `mint account`, you have to create a `token account`. A `token account` stores how many tokens a particular user has, for a particular type of token.
 
-![](_assets/JrCKbIfh.jpg)
+![](assets/how-tokens-work-on-solana_jrckbifh.jpg)
 
 - Now, you have a `mint account` and a `token account`. Let's mint some tokens. To mint, you just send the `mint` instruction to the token program, which tells the program how many tokens to mint and whom to mint them to. Only one user is allowed to mint a token of a particular type (the `mint authority` which mentioned above)
 
 - To transfer tokens, no surprises, you send the `transfer` instruction to the token program, which tells it how many tokens to transfer and whom to transfer them. Note that the recipient must also own a `token account` for the type of token you're transferring.
 
-![](_assets/C2fZ6Whh.jpg)
+![](assets/how-tokens-work-on-solana_c2fz6whh.jpg)
 
 - What about NFTs? To create an NFT, you also use the same token program (what!!!), but these are some differences in how they are created and minted.
 - As you know, an NFT is just a token that has one `total supply` and zero `decimal`. To create an NFT, you just need to create a `mint account` which has zero `decimal`. After that, you mint only one token of this NFT and disable future minting. This ensures there will only ever be one.

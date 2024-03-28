@@ -51,7 +51,7 @@ Here is what their infrastructure looked like after more than a decade of develo
 -   Little documentation for internal APIs, and no standardisation between them.
 For the sake of brevity, let's don't dwell too much on the pain points of the above. In short, maintaining a single database across multiple teams is painful, and maintaining a vast array of internal APIs between all of their teams without a consistent framework for those APIs is also painful.
 
-![[Legacy old architecture example.png]]
+![](assets/graphql-in-microservices---unified-api-gateway_legacy-old-architecture-example.png)
 _Legacy infrastructure_
 
 When they began ideating the outline of a new architecture, they started by enumerating a number of requirements that were important to they:
@@ -64,7 +64,7 @@ When they began ideating the outline of a new architecture, they started by enum
 - **Human-readable**  
 	Finally, they wanted to have an API platform that was easy to evolve and introspect. They wanted to stay away from binary formats and favored technologies that allowed to add functionality easily.
 
-![[Backend architecture with GraphQL gateway example.png]]
+![](assets/graphql-in-microservices---unified-api-gateway_backend-architecture-with-graphql-gateway-example.png)
 _Target infrastructure_
 
 Note that the requirements above are tailored to our needs at Movio. Each of them represents a trade-off between ease of use, consistency, and performance. Other organizations may require a different set of trade-offs.
@@ -145,7 +145,7 @@ Contrast this to what GraphQL Federation makes possible:
 }
 ```
 In the query above, it is completely transparent for the user that  `title`  comes from one service and that  `posterUrl`  comes from another. The API has the same number of top-level endpoints / fields as before, and is just as easy to use, only richer.
-![[GraphQL schema federation example.png]]
+![](assets/graphql-in-microservices---unified-api-gateway_graphql-schema-federation-example.png)
 
 ## Demo
 - Follows README.md from this [repo](https://github.com/mirageruler/bramble_graphql_schema_federation_demo)
