@@ -16,7 +16,7 @@ With the rise of social platforms like Facebook, Twitter and LinkedIn, it's e
 
 This format allows you to share a specific URL with your [Facebook](https://about.meta.com/technologies/facebook-app/) friends and followers. By replacing `url` with the actual URL, you can create a link that shows a dialog with the content you want to share.
 
-![](_assets/HMiJfth.png)
+![](assets/url-formats-for-sharing-via-social-networks_hmijfth.png)
 
 ## Messenger
 Sharing via [Messenger](https://about.meta.com/technologies/messenger/) is another way to share a URL with your Facebook friends and contacts.
@@ -29,7 +29,7 @@ To use this format, you'll need to replace `${appId}` with your Facebook app 
 
 > Follow this [documentation](https://developers.facebook.com/docs/development/create-an-app) to create a Facebook app and get the app ID.
 
-![](_assets/YRQ15EM.png)
+![](assets/url-formats-for-sharing-via-social-networks_yrq15em.png)
 
 ## Zalo
 To share a URL via [Zalo](https://zalo.me/pc), a widely used messaging app in Vietnam, you need to create a JSON object containing a key of `"url"` and the value of the URL you want to share. Then stringify and encode the string in the base64 format.
@@ -44,7 +44,7 @@ const sharingUrl = `https://button-share.zalo.me/share_external?d=${encodeB64(
 )}`
 ```
 
-![](_assets/5gTiFrK.png)
+![](assets/url-formats-for-sharing-via-social-networks_5gtifrk.png)
 
 ## Other platforms
 Check out some other formats that allow you to share a URL via some social networks.

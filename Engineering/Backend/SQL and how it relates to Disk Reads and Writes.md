@@ -19,7 +19,7 @@ icy: 10
 ## What are random and sequential reads and writes?
 Random and sequential reads and writes refer to the way data is accessed, read, and written on hard disks
 
-![[disk-sequential-random-access.png]]
+![](assets/sql-and-how-it-relates-to-disk-reads-and-writes_disk-sequential-random-access.png)
 
 Sequential read/write operations involve accessing data in a continuous, linear manner. This typically occurs when transferring large files or accessing a large file on the drive. In sequential read/write operations, the drive can read or write data from a series of blocks, allowing for faster performance.
 

@@ -7,7 +7,7 @@ icy: 10
 ---
 
 ## Introduction
-![](_assets/Plonky-2-Website.jpg)
+![](assets/plonky2_plonky-2-website.jpg)
 Plonky2 is a non-Interactive Proof of Proof of Knowledge (NIPoPoK) chain developed to reduce the size of the blockchain and speed up transaction confirmations. It is built on the foundation of ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge), an advanced cryptographic technology that enables affirmative proofs without revealing inside information. Plonky2 allows transactions to be confirmed on the fly using certificates similar to Merkle trees, where only a small portion of data is needed to confirm the entire Merkle tree. Plonky2 certificates are very small, only about 1/20th of similar attestations used in traditional blockchain systems, thus helping to reduce blockchain size and speed up transaction processing. Plonky2 is being used in several blockchain projects such as Ethereum and Polkadot to improve the performance and scalability of the system.
 
 ## The target of Plonky2
@@ -44,7 +44,7 @@ To solve this problem, the system uses Plonky2 to reduce the size of the blockch
 
 ## Challenge of Plonky2
 ### Safety and security issues when using Plonky2
-![](_assets/Tradeoffs.png)
+![](assets/plonky2_tradeoffs.png)
 
 During authentication, Plonky2 asks the nodes to specify a specific number of Merkle tree elements. However, if a node sends incorrect elements or changes the Merkle tree, it can cause validation errors and affect the integrity of the blockchain. Therefore, ensuring the correctness of the Merkle tree is very important.
 

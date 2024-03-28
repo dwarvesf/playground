@@ -123,26 +123,26 @@ Now that you have the prerequisites in place, you can proceed to set up a Datapr
 
 ## How to deploy a Spark job on Dataproc (Using Google cloud console)
 ### Step 1: In the created cluster click on `Submit Job` button on the top right of the main console screen
-![[Google Dataproc-20240122130334062.webp]]
+![](assets/google-dataproc-20240122130334062.webp)
 
 ### Step 2: Fill all necessary field in the job creation modal:
-![[Google Dataproc-20240122130408379.webp]]
+![](assets/google-dataproc-20240122130408379.webp)
 - Job ID: job unique name across the cluster
 - Job Type: the type of the job that you submit to Dataproc including (in this demo we’ll use PySpark):
-![[Google Dataproc-20240122130427570.webp]]
+![](assets/google-dataproc-20240122130427570.webp)
 - Main file: the directory of main job file from GCS or HDFS or inside the compute engine.
 - All others field is optional.
 - After you fill in the necessary input i should be something like this:
-![[Google Dataproc-20240122130457028.webp]]
+![](assets/google-dataproc-20240122130457028.webp)
 
 - Then press `Submit` to submit the job
 
 ### Step 3:
 After submitting the job you should be able to similar screen to this:
-![[Google Dataproc-20240122130525347.webp]]
+![](assets/google-dataproc-20240122130525347.webp)
 
 Wait for the job status change to succeeded (or failed):
-![[Google Dataproc-20240122130542001.webp]]
+![](assets/google-dataproc-20240122130542001.webp)
 
 And that is how you run a Spark ( or Hadoop) job on Google Cloud Dataproc.
 Full video step by step:

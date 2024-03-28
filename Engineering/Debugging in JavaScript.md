@@ -9,7 +9,7 @@ date: 2022-10-16
 
 ## The `console` object
 The **` console`** object provides access to the browser's debugging console. You can view it by right-clicking on your Chrome browser, selecting **Inspect**, and choosing **Console** in the tab.
-![Chrome DevTools's console tab](_assets/Chrome_DevTools's_console_tab.png)
+![](assets/debugging-in-javascript_chrome_devtools's_console_tab.png)
 
 ### `console.log()`
 The `console.log()`  method writes to the web console. The message can be a single text (with optional replacement values) or any number of JavaScript objects.
@@ -118,7 +118,7 @@ function potentiallyBuggyFunction() {
 }
 ```
 When the `debugger` is invoked, execution is paused at the `debugger` statement just like a breaking point.
-![debugger example](_assets/debugger_example.png)
+![](assets/debugging-in-javascript_debugger_example.png)
 
 ## Reference
  - [Debugger's statement - Developer Mozilla Organization](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger?retiredLocale=vi)

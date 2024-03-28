@@ -5,21 +5,21 @@ github_id: thanhpn
 date: 2022-06-21
 ---
 
-![](https://blockruption.com/wp-content/uploads/2019/04/blockruption-blockchain-300h.png)
+![](assets/blockchain-bridge_blockruption-blockchain-300h.png)
 
 Web3 or Dapp has evolved into an ecosystem of L1 blockchains and L2 scaling solutions, each designed with unique tradeoffs and processing capabilities. As the number of blockchain protocols or applications increases rapidly, so does the need to move assets across chains. To meet this need, we need communication channels between chains that are bridges.
 
 ## What is a bridge?
 Blockchain bridges work just like a physical bridge connecting two physical locations, a blockchain bridge connecting two blockchain ecosystems. Bridges facilitate communication between blockchains through the transfer of message and assets.
 
-![[blockchain bridge.png]]
+![](assets/blockchain-bridge.png)
 
 ## Why do we need bridges?
 All blockchains have their limits. In order for Ethereum to scale and keep up with demand, it needs to have rollouts. In addition, L1s such as Solana and Avalanche are designed differently to allow higher throughput but at the expense of decentralization.
 
 However, all blockchains operate in an isolated environment and have different rules and consensus mechanisms. This means that they cannot communicate natively and tokens cannot move freely between blockchains (Networks can only send messages in one direction so it will not be able to talk to the other network directly). Bridges born to connect blockchains, allowing for the trustless transfer of message and tokens between them. Bridges need an authentication mechanism, so there are different types of bridges.
 
-![[offchain actors.png]]
+![](assets/blockchain-bridge_offchain-actors.png)
 
 ## Bridge use-case?
 - Transfer of assets and message across the chains
@@ -29,7 +29,7 @@ However, all blockchains operate in an isolated environment and have different r
 - Developers from different blockchain ecosystems to collaborate and build new platforms for users.
 - Own natural crypto assets
 
-![[bridge use cases.png]]
+![](assets/blockchain-bridge_bridge-use-cases.png)
 
 ## How does the bridge work?
 Basically a bridge works between 2 networks by listening for events arising from one network and forwarding information to the other network. So the basic problem is in the mechanism to ensure safety when forwarding information as well as message authentication and message monitoring.
@@ -41,17 +41,17 @@ Basically a bridge works between 2 networks by listening for events arising from
 - Signing: Agents need to cryptographically sign, individually or as part of a threshold signature scheme, the information sent to the destination chain.
 
 ## Classification of Bridges
-![[classify bridge.png]]
+![](assets/blockchain-bridge_classify-bridge.png)
 
 ### External links & validators
 There is usually a group of validators that monitor the "mailbox" address on the source chain, by consensus perform an action on the destination chain. Content transfer is usually done by locking the message in the mailbox and generating an equivalent message on the destination thread. These are usually bonded validators with a separate token as the security model.
 
-![[blockchain bridge external links.png]]
+![](assets/blockchain-bridge-external-links.png)
 
 ### Lightweight Client & Relays
 Agents monitor events on the source chain and generate cryptographic proof of past events that have been recorded on that chain. These proofs are then relayed, along with block headers, to contracts (i.e. "clients") on the target chain, which then verify that a given event was logged and executed. perform an action after that verification. There is a requirement for some actors to "forward" block headers and proofs. Although users can “self-forward” transactions, there is a realistic assumption that forwarders will continuously forward data. This is a relatively secure bridge design because it ensures trustless validating distribution without trusting intermediate entities, but it is also resource intensive because developers have to build build a new smart contract on each new destination chain that parses the proofs of state from the source chain and the confirmation itself is a lot of gas.
 
-![[Lightweight Client & Relays.png]]
+![](assets/blockchain-bridge_lightweight-client-&-relays.png)
 
 ### Liquidity Network
 This is similar to a peer-to-peer network where each node acts as a “router” containing a “store” of assets of both the source and destination chains. These networks typically leverage the security of the underlying blockchain; Through the use of locking and contention mechanisms, users are assured that routers cannot run away with user funds. As a result, liquidity networks like Connext may be a safer option for users who are transferring large amounts of value. Furthermore, this type of bridge may be most suitable for cross-chain asset transfers because the assets provided by the router are the origin of the destination chain and not a derivative, which are not fully interchangeable.
@@ -65,7 +65,7 @@ Security: Assumptions about reliability and viability, tolerance to malicious ac
 - Authenticity: Ability to transfer specific assets, more complex state, and/or make cross-chain contract calls.
 
 ## Interoperability dilemma
-![[Interoperability dilemma.png]]
+![](assets/blockchain-bridge_interoperability-dilemma.png)
 
 Similar to Trilemma in terms of scalability, there exists a Trilemma of interoperability in the Ethereum ecosystem. The Interop protocol can only have two of the following three properties:
 
@@ -81,7 +81,7 @@ Similar to Trilemma in terms of scalability, there exists a Trilemma of interope
 - The user makes a mistake when manipulating.
 - Congested or hacked chains will affect bridging.
 
-![[lock, mint and burn.png]]
+![](assets/blockchain-bridge_lock,-mint-and-burn.png)
 
 One recent hack was Solana's Wormhole Bridge, where 120k wETH ($325 million USD) was stolen in the hack. And Vitalik himself must have a reputation for the lack of safety of the bridges.
 

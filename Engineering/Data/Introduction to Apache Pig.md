@@ -33,7 +33,7 @@ Pig will solve this problem.
 As a user, we will provide a set of instructions that Pig understands and Pig will generate one or more MapReduce jobs for us and execute the same in the Hadoop cluster.
 Thereby avoiding the need to write even a single line of MapReduce code sounds very promising.
 
-![](problem-template.png)
+![](assets/introduction-to-apache-pig_problem-template.png)
 
 Question: how a tool can replace the need for programmer and programming? Most of our data problems will follow a problem template, as shown in the above diagram, we will load the data, then filter the data.
 It would be for removing bad records or removing some records like employees with salary greater than hundred thousand.

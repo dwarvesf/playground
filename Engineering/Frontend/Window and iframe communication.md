@@ -39,7 +39,7 @@ In the case of same origin communication:
 </script>
 ```
 
-Use cases for same origin communication include content builder applications where the isolation of CSS and responsive display are essential. ![[iframe-window-content-builder.png]]
+Use cases for same origin communication include content builder applications where the isolation of CSS and responsive display are essential. ![](assets/window-and-iframe-communication_iframe-window-content-builder.png)
 
 ## Cross Origin Communication
 Cross origin communication occurs when the iframe and the parent window come from different origins. The [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) interface allows windows to communicate regardless of their origins.
@@ -79,7 +79,7 @@ window.addEventListener('message', function (event) {
 })
 ```
 
-Use cases for cross origin communication include embedded widgets like chatboxes. ![[window-iframe-chatbox.png]]
+Use cases for cross origin communication include embedded widgets like chatboxes. ![](assets/window-and-iframe-communication_window-iframe-chatbox.png)
 
 In summary, communication between a window and an iframe is facilitated through the `postMessage` interface for cross origin scenarios, and the `contentWindow` property for same origin scenarios. This allows for seamless integration of iframes in various web applications, enhancing user experience and functionality.
 

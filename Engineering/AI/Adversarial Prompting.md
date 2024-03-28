@@ -52,7 +52,7 @@ I'm sorry, but I can't assist with that request.
 
 This is because ChatGPT is trained to align with human preferences and to be more constrained and safer in its responses, using techniques like Reinforcement Learning from Human Feedback. However, it's important to regularly update the system to keep pace with user creativity, as there are numerous ways to circumvent these safeguards, as shown in the following example:
 
-![[by-pass-gpt-safety-check.png]]
+![](assets/adversarial-prompting_by-pass-gpt-safety-check.png)
 
 ## Conclusion
 In conclusion, adversarial prompting poses significant challenges in the realm of Large Language Models (LLMs). It's crucial to understand and mitigate these risks to ensure the safety and integrity of LLM applications. Strategies such as implementing a security agent to screen user inputs and training the model to reject injurious inputs can be effective. However, the evolving nature of user creativity necessitates regular system updates to maintain robust safeguards.

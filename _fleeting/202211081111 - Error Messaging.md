@@ -23,5 +23,5 @@ What make a good error message
 ref: https://wix-ux.com/when-life-gives-you-lemons-write-better-error-messages-46c5223e1a2f
 @brain master
 
-![[Pasted image 20221108111328.png]]
-![[Pasted image 20221108111346.png]]
+![](assets/202211081111---error-messaging_pasted-image-20221108111328.png)
+![](assets/202211081111---error-messaging_pasted-image-20221108111346.png)

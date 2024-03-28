@@ -388,10 +388,10 @@ The implementation of this approach consists of the following steps:
              build-env-args: ${{ needs.check-app.outputs.branch == 'main' && '--prod' || '' }}
    ```
 
-   For the `push` and `pull_request` workflow events, we can reuse the same build jobs as mentioned earlier. The approach would involve detecting the changes and adding a job with a condition to build each application. The deployment has no comments for the PR by default, we can use a third-party action to comment and deploy replace for `vercel deploy` is `amondnet/vercel-action`. ![comment-pr](../../_assets/action-comment-pr.png)
+   For the `push` and `pull_request` workflow events, we can reuse the same build jobs as mentioned earlier. The approach would involve detecting the changes and adding a job with a condition to build each application. The deployment has no comments for the PR by default, we can use a third-party action to comment and deploy replace for `vercel deploy` is `amondnet/vercel-action`. ![](assets/deploy-branch-with-vercel-cli_action-comment-pr.png)
 
 ## Diagrams
-![deploy-diagram](../../_assets/deploy-vercel-diagram.png)
+![](assets/deploy-branch-with-vercel-cli_deploy-vercel-diagram.png)
 
 ## Limitation
 Although the proposed solution provides significant advantages, it does come with some limitations:

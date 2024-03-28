@@ -12,21 +12,21 @@ Familiar, easy-to-understand method for users to onboard and get started, and in
 
 **Sample** An intuitive and convenient login method.
 
-![[simple-web3-ux.png]]
+![](assets/triple-s-of-ux-in-web3_simple-web3-ux.png)
 
 ## Secure
 Give users the security assurance from start to end, as required.
 
 **Sample** Enable 2-factor authentication to increase the trust that users place on providers to safeguard their assets.
 
-![[secure-web3-ux.png]]
+![](assets/triple-s-of-ux-in-web3_secure-web3-ux.png)
 
 ## Self-custodial
 Ensure design communicates the empowerment users should have; allow them to benefit from the decentralized ecosystem.
 
 **Sample** Web3Auth Key Infrastructure ensures users can recover their accounts and no one entity can restrict access to their assets.
 
-![[Pasted image 20220805231955.png]]
+![](assets/triple-s-of-ux-in-web3_pasted-image-20220805231955.png)
 
 ## Reference
 - https://uxplanet.org/getting-started-in-web-3-0-as-a-ux-designer-fff849c47461

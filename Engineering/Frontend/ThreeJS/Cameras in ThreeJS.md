@@ -14,18 +14,18 @@ You cannot use the `Camera` class directly to initialize a new camera in ThreeJS
 
 The image below shows the object viewed in **perspective camera** (upper) and in **orthographic camera** (lower).
 
-![](_assets/Va74b4E.png)
+![](assets/cameras-in-threejs_va74b4e.png)
 
 Place them into the **Oxyz** coordinate...
 
-![](_assets/uIocTAX.png)
+![](assets/cameras-in-threejs_uioctax.png)
 
 ### Perspective camera
-![](_assets/OIpfGw7.png)
+![](assets/cameras-in-threejs_oipfgw7.png)
 
 Some crucial attributes:
 - **fov** (field of view): Camera frustum **vertical** field of view, i.e. the angle of the view in the yOz plane, in degree. The lower the number, the narrower the view.
-![](_assets/ZKOiIim.png)
+![](assets/cameras-in-threejs_zkoiiim.png)
 - **near** and **far**: Clipping planes at 2 points on the z axis. Note that objects with z position outside the `(near, far)` interval will **not** be displayed.
 
 ```javascript
@@ -40,7 +40,7 @@ Perspective camera visualization from [r105.threejsfundamentals.org](https://r10
 <iframe height="400" style="width: 100%;" scrolling="no" title="ThreeJS - Cameras - Perspective 2 views" src="https://codepen.io/nguyend-nam/embed/abGmYBp?default-tab=result" frameborder="no" allowfullscreen="true"></iframe>
 
 ### Orthographic camera
-![](_assets/cX1U9zI.png)
+![](assets/cameras-in-threejs_cx1u9zi.png)
 
 Some crucial attributes:
 - **left**, **right**, **top** and **bottom**: Horizontal and vertical position of 4 segments of the view.

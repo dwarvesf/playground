@@ -9,7 +9,7 @@ Progressive delivery is a modern software development methodology for gradually 
 
 One of the key advantages of progressive delivery is that it makes your release process more resilient to errors and negative user experiences. For instance, if you detect errors at 1% of your traffic, you've only potentially impacted 1% of revenue or 1% of customer satisfaction.
 
-![[engineering-progressive-delivery.png]]
+![](assets/progressive-delivery_engineering-progressive-delivery.png)
 
 ## Progressive delivery contract
 The practice of progressive delivery sounds good in theory but requires strict requirements to make it effective:

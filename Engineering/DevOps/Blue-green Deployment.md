@@ -8,7 +8,7 @@ icy: 10
 
 **Blue-green** deployment is a software deployment strategy that involves creating two identical environments: one **blue** environment serving production traffic, and another **green** environment that doesn't serve any traffic. Once the **green** environment is fully tested and verified, traffic is switched from the **blue** environment to the **green** environment, making it the new production environment. This approach reduces downtime, improves reliability and resilience, and provides a backup in case of issues.
 
-![[blue-green-deployment-model.gif]]
+![](assets/blue-green-deployment-model.gif)
 
 ## How does blue-green deployment work?
 **Blue-green** deployment is a deployment strategy for software applications that involves maintaining two identical environments: one currently serving production traffic (the **blue** environment), and one that is newly deployed (the **green** environment"). The new version of the application is deployed to the **green** environment, which is tested and monitored. Once it is determined that the **green** environment is working correctly, traffic is routed to it and the **blue** environment is retired. This strategy allows for quick and easy switching between environments, minimizing downtime and reducing the risk of errors or bugs.
@@ -16,7 +16,7 @@ icy: 10
 ## Characteristic
 The following table summarizes the salient features of the **blue-green** strategy compared to other strategies:
 
-![[bluegreen-compare.png]]
+![](assets/blue-green-deployment_bluegreen-compare.png)
 
 ## Implementing blue-green deployment strategy in Kubernetes
 1. Preparing
@@ -175,7 +175,7 @@ kubectl apply -f app/ingress.yaml
 
 Now, application is deployed on active environment and you can view it on `myapp.bluegreen.xyz` domain.
 
-![[bluegreen-green-application.png]]
+![](assets/blue-green-deployment_bluegreen-green-application.png)
 
 We change the image of the application to `argoproj/rollouts-demo:blue` and apply the changes to the cluster:
 
@@ -193,7 +193,7 @@ kubectl apply -f app/bluegreen-rollout.yaml
 
 Argo rollouts will create a new ReplicaSet with the new image and start to rollout the new version of the application to the preview environment. You can view the preview application on `myapp-preview.bluegreen.xyz` domain.
 
-![[bluegreen-blue-application.png]]
+![](assets/blue-green-deployment_bluegreen-blue-application.png)
 
 When the new version of the application is ready, you can promote it to the active environment by running the following command:
 

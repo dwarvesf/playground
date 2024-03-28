@@ -13,7 +13,7 @@ ACID is an acronym that generally describes the necessity for consistency of a t
 - **Isolation**: Transactions cannot affect or jeopardize the integrity of other transactions by interacting with them while they are still in progress. This means a majority of transactions that are ACID should run concurrently.
 - **Durability**: After a commit of a completed transaction, we can be assured that the transaction itself will be persisted in the event of a network partition or a power outage. _This does not assume or take in consideration single-upset events._
 
-![acid acronym diagram](_assets/acid_acronym_diagram.png)
+![](assets/acid-model_acid_acronym_diagram.png)
 
 ## Why use ACID?
 ACID is particularly important for businesses when there is a high requirement for consistent and durable data. Data consistency or loss of data would eventually translate to loss of revenue, especially if the software in question is critical for daily operations or strategic analysis. Thresholds for requiring an ACID compliant database would be:

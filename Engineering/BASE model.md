@@ -12,7 +12,7 @@ BASE is an acronym for describing a flexible way to manipulate data. With requir
 - **Soft-state:** Data stores don't have to be completely write-consistent or require mutual consistency between replicas.
 - **Eventual consistency**: The database is lazily consistent, meaning it ensures data consistency at a later point.
 
-![base model diagram](_assets/base_model_diagram.png)
+![](assets/base-model_base_model_diagram.png)
 
 BASE properties are significantly looser than ACID, but the tradeoff allows for scalability. Although BASE has loose consistency, it doesn't mean data will be completely inconsistent. However, it does require assistance from the developer when ensuring what the data should focus on being consistent in (e.g: consistent in time of activity or order of processing).
 

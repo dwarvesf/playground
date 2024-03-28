@@ -8,7 +8,7 @@ icy: 10
 
 Foundation models are the latest advancement in the AI realm, proposed by Stanford researchers. Unlike conventional AI systems, they aren't limited to specific tasks, making them a game-changer for a variety of applications.
 
-![[foundation-model.png]]
+![](assets/foundation-model.png)
 
 To simplify, think of these models as a utility that can be adapted for different tasks. They learn from a wealth of unstructured data in an unsupervised way, similar to a child learning a language by listening to conversations. Language models, for example, are fed countless sentences and learn to predict the following word from previous ones. This generative nature categorizes them under 'generative AI.'
 

@@ -163,7 +163,7 @@ To create Mock Object from the interface in the file main.go we use command:
 $ mockgen -source store/user.go -destination mocks/mocks.go
 ```
 
-![Untitled](../../_assets/gomock.png)
+![](assets/level-up-your-testing-game-with-gomock_gomock.png)
 
 After generating the `mocks/mocks.go` file, you will notice that it contains several `structs`. You don't need to understand all the code, but here are the `structs` that are created in the `mocks/mocks.go` file in the repository.
 

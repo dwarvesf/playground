@@ -17,21 +17,21 @@ HSL is the answer to resolving all of the painful points.
 
 - **Hue**: Think of a color wheel. Around 0<sup>o</sup> and 360<sup>o</sup> are reds. 120<sup>o</sup> is where greens are and 240<sup>o</sup> are blues. Use anything in between 0-360. Values above and below will be modulus 360.
 
-  ![[HLS-color.png]]
+  ![](assets/hsl-color_hls-color.png)
 
 - **Saturation**: 0% is completely desaturated (grayscale). 100% is fully saturated (full color).
 
-  ![[HLS-hue.png]]
+  ![](assets/hsl-color_hls-hue.png)
 
 - **Lightness**: 0% is completely dark (black). 100% is completely light (white). 50% is average lightness.
 
-  ![[HLS-lightest.png]]
+  ![](assets/hsl-color_hls-lightest.png)
 
 ## Using HSL
 ### Darker/lighter colors
 Imagine you're creating a button component and you want it to appear darker on hovering to increase its contrast. You can do this easily with the help of HSL.
 
-![[using-HLS.png]]
+![](assets/hsl-color_using-hls.png)
 
 ```css
 :root {
@@ -53,7 +53,7 @@ Imagine you're creating a button component and you want it to appear darker on h
 ### Color palette
 By altering the `lightness`, we can create a set of shades for a color that can be used throughout the UI where possible.
 
-![[HLS-color-pallete.png]]
+![](assets/hsl-color_hls-color-pallete.png)
 
 ## HSL transparency (HSLa)
 It works exactly the same as with RGB, just add `alpha` channel with a value from 0 to 1. 0 is fully transparent. 1 is fully opaque. 0.5 is 50% transparent.

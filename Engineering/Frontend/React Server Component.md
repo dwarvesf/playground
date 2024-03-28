@@ -29,7 +29,7 @@ To enhance code maintainability and readability, it is recommended to use the fi
 
 In Client components use the `use client` directive at the top of any file that contains client-side components or logic. This will mark the boundary between server-only and client.
 
-![ThinkingInSC](../../_assets/server-components-1.png)
+![](assets/react-server-component_server-components-1.png)
 
 Here is an example of a simple RSC that fetches some data from a database and renders it on the server:
 
@@ -64,7 +64,7 @@ export default function Homepage() {
 }
 ```
 
-![Untitled](../../_assets/server-components-2.png)
+![](assets/react-server-component_server-components-2.png)
 
 `use client` marks the transition from server-only to client code. It goes at the top of a file, before any imports, to indicate that everything below it belongs to the client bundle. This includes any modules or components that are imported in the file.
 

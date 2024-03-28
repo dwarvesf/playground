@@ -14,7 +14,7 @@ PoS indicates that a person can mine or confirm block transactions according to 
 
 The first cryptocurrency to adopt the PoS method was Peercoin. Nxt, Blackcoin and then ShadowCoin.
 
-![](_assets/JOUVtNM.png.jpg)
+![](assets/pos_jouvtnm.png.jpg)
 
 ## How proof of stake works
 The Proof of Stake algorithm uses a pseudo-random election process to select a node as the validator of the next block, based on a combination of factors that may include staking age, random and the size of the button. Users who wish to participate in this process must lock a certain number of native tokens into the network as their stake. The size of the stake determines the chance for a node to be selected as a validator to generate the next block – the larger the stake, the greater the chance. In order for the process not only to prioritize the wealthiest nodes in the network, unique methods are added to the selection process. The two most commonly used methods are 'Random Block Selection' and 'Coin Age Selection'. In the Random Block Pick method, validators are selected by looking for nodes with the combination of the lowest hash value and the highest stake, and since the stake size is public, the validator node The next real thing can usually be predicted by other nodes. The Coin Age Selection method selects nodes based on how long their coins have been staked. Coin age is calculated by multiplying the number of days the coin is held by the number of coins staked. When a node forges a block, their coin age is reset to zero and they have to wait a certain amount of time before they can generate another block – this prevents large stake nodes from dominating the blockchain.
@@ -30,7 +30,7 @@ Proof of stake was created as an alternative to proof of work (PoW), to solve th
 PoS seeks to solve the problem by reducing mining power to the percentage of coins a miner spends to join the nodes. This way, instead of using energy to solve the PoW problem, PoS miners are limited to mining by a transaction rate that reflects the number of shares the miner owns. For example, a miner who owns 3% of Bitcoins could theoretically only mine 3% of those blocks.
 
 #### Compare PoW and PoS
-![](_assets/XiUwh4m.png.jpg)
+![](assets/pos_xiuwh4m.png.jpg)
 
 ## About security
 The stake coin acts as a financial incentive for the forging node to not validate or generate fraudulent transactions. If the network detects a fraudulent transaction, the forging node will lose part of its stake and the right to participate in future block forging. So as long as the stake is higher than the reward, validators will lose more coins than they would have gained in case of a fraud attempt.
