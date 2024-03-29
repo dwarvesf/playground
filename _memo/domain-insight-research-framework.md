@@ -1,10 +1,13 @@
 ---
 tags: 
   - design
+  - UX-UI
+  - product
 title: Domain Insight Research Framework
 date: 2020-10-21
-description: null
-authors: null
+description: There are multiple ways to do UX research; our team also has one. However, there is a higher level, which helps UX Researchers process their works much faster, empathize with target users much easier, and save more effort and time; it is called Domain Insight Research.
+authors: 
+- anna
 menu: memo
 type: null
 hide_frontmatter: false
@@ -12,7 +15,7 @@ hide_frontmatter: false
 
 As a designer working in the Digital Product industry, I'm pretty sure we all hear about UX Research once at least. In this field, we learn about the business's strategy, users' behaviors, needs, pain points, etc. to build a product that meets the business's goal and solves users' existing problems. There are multiple ways to do UX research; our team also has one. However, there is a higher level, which helps UX Researchers process their works much faster, empathize with target users much easier, and save more effort and time; it is called Domain Insight Research.
 
-# What is Domain Insight Research (DIR)?
+## What is Domain Insight Research (DIR)?
 This Domain Insight Research Framework is a method for new approaches to understanding and getting insight into a new industry. This conceptual framework was designed to collect various types of information, including:
 
 * Definition
@@ -23,7 +26,7 @@ This Domain Insight Research Framework is a method for new approaches to underst
 * Potential solutions (technology, strategies,...) & revenue streams
 * Design principles in some specific industries
 
-# How we apply the DIR in our projects
+## How we apply the DIR in our projects
 Domain insight knowledge helps UX Researchers and Designers have an overview of a new industry; we can quickly analyze the market and business' chances to be a new entrant of the industry. Before and during the kick-off meeting with clients, this information helps:
 
 * Have some insight to talk to clients and explore more for a broader perspective
@@ -31,10 +34,11 @@ Domain insight knowledge helps UX Researchers and Designers have an overview of 
 * Propose some solutions for clients based on real information
 * Suggest suitable technology method to optimize workflow and cost
 
-# Three Steps of Domain Insight Research
+## Three Steps of Domain Insight Research
 
-## Understand the definition
-### 1. Definition
+### Understand the definition
+**1. Definition**
+
 When it comes to a new domain, finding out the definition is the first step we need to do to have a complete, accurate, and consistent look for that domain.
 
 To learn a new domain, we have been doing in several ways:
@@ -44,16 +48,19 @@ To learn a new domain, we have been doing in several ways:
 * Talking with various persons working on similar domains
 * While reading the articles, there will be many new jargon or terms used in a particular domain. Try to find out the definition of these terms and make a glossary for your own.
 
-### 2. How the domain works
+**2. How the domain works**
+
 Finding out how that domain works and how technology can help optimize their process. Learn the operational process from resource input to the final product delivered to the end-user and the revenue stream from that product/service.
 
-### 3. The technology methods being applied in the market
+**3. The technology methods being applied in the market**
+
 New technology trends are evolving and having a significant impact on business models; people are adopting technology in almost all industries. Responding to that development, besides understanding the workflow of any industry, we need to learn more about technology methods that the market is applying and consider the potential of other technologies, depending on whether that technology can solve the problems of a particular niche in the market.
 
-### 4. Value proposition & Problem solving
+**4. Value proposition & Problem solving**
+
 Technology is increasingly developed and applied to solve the problems and difficulties that humans face in life. Each technology product is created with at least one value proposition. In this session, we find out the value that the domain brings to our lives. For example, the ebook was created to reduce publishing books' cost and their impact on the environment through paper production. Or micro-investment helps people with middle and low income have opportunities to invest and practice saving habits. Understanding the value and problems the industry is solving will help us make a more accurate assessment of the potential entrant of a new product.
 
-## The second and the most valuable step of this framework: Market Research
+### The second and the most valuable step of this framework: Market Research
 Market research is a set of techniques which is used to gather information about an industry; also help us to:
 
 * Improve user experiences
@@ -63,11 +70,11 @@ Market research is a set of techniques which is used to gather information about
 ### Our insight after applying DIR into our projects
 There are many market research methods; you can try to find some on Google. However, the point is the knowledge we gain to accomplish our domain insight research goals.
 
-**There is no one-size-fits-all.**
+**There is no one-size-fits-all**
 
 It is essential to choose the right methods, apply them flexibly to each industry or product to maximize the time and cost.
 
-### How we do M**arket research**
+### How we do Market research
 **1. Gather information**
 
 There are different ways to conduct market research and collect data. Still, we don’t limit ourselves to just one research method. This is one of our simple methods we applied to our previous projects
@@ -147,3 +154,19 @@ We all aim to earn money by bringing the values and benefits for users. Therefor
 * Find the right balance between short-term and long-term growth opportunities.
 
 **7. Suitable technology**
+
+Despite there are many new and rapidly evolving technologies, not all technology trends can be used to optimize a product. We need to consider costs and resources carefully before suggesting a technology to build the product.
+
+## Design principles in some specific industries
+In some specific industries, design principles are also factors that bring the product to the right market. By learning design from our competitors and understanding users, we can build a set of design principles to comply. For example, the money-or-asset-related-domains require trustworthy design, or products for older users need to be easy to reach and accomplish tasks...
+
+The design principles are defined depending on the domain but usually will be included:
+
+- General characteristics of users
+- General elements (color, typo, style)
+- Context
+- Accessibility
+- Usability
+
+## Conclusion
+Product knowledge is so valuable. It increases our confidence as a problem-solver and clients’ trust that we are the right person to serve their needs. Clients today come armed with their level of product knowledge. The internet and competition have created a more educated consumer base. That is all the more reason we need to know more than our customers do about the things we're going to help them do

@@ -3,9 +3,8 @@ tags:
   - frontend
   - engineering
   - productivity
-  - DX
   - radar
-title: Adoption Of Pnpm
+title: Adoption Of PNPM
 date: 2023-07-31
 description: null
 authors: null

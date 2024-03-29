@@ -1,9 +1,11 @@
 ---
 tags: 
   - swift
+  - application
+  - software-engineer
 title: Draw Watch Face Using Swiftui
 date: 2020-03-23
-description: null
+description: SwiftUI are nice and fun to working with. You can read my previous article to get a bit knowledge about create circular control, it will make you easy to working with this article. This article also use Shape and Path, if you have worked with CoreGraphic before you will find it similar With CALayer, CAShapeLayer and UIBezierPath.
 authors: null
 menu: memo
 type: null

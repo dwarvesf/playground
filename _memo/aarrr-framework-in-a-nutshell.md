@@ -5,7 +5,7 @@ tags:
   - practice
 title: Aarrr Framework In A Nutshell
 date: 2020-06-30
-description: null
+description: We could find a bunch of AARRR frameworks definition across the internet (Thanks to Google). I don’t intend to create another one here.
 authors: null
 menu: memo
 type: null
@@ -16,10 +16,10 @@ We could find a bunch of AARRR frameworks definition across the internet (Thanks
 
 Today I just want to share the simplest definition of this framework and how we have done here at Dwarves. It is a jumping-off point to brainstorming what AARRR does, and why it’s the important step that needs to be done.
 
-## **What is AARRR framework by the way**
+## What is AARRR framework by the way
 AARRR is a revenue-driven funnel, what makes it different than other funnels? It’s revenue-driven. Yes, I said it twice because it is important. With AARRR as the backbone, we could make decisions that help drive the business into profits.
 
-AARRR funnel contains 5 stages: **Acquisition, Activation, Retention, Referral, **and** Revenue.**
+AARRR funnel contains 5 stages: **Acquisition, Activation, Retention, Referral, and Revenue.**
 
 These 5 stages often change order, depends on what we want to attain. Sometimes you might want visitors first before turning them into your users and bring them your unique values. Sometimes you just want them to keep using your product as long as possible.
 
@@ -29,7 +29,7 @@ As we can see the above image which is the AARRR ecosystem. Based on our assumpt
 
 Figure out which metrics are truly important, and focus on those. Keep in mind the current product stages and its goal then optimize those metrics: if we want to attract more users first focus on **#New visitors**, **Bounce rates**…etc, optimize the UX and Visual storytelling to increase those metrics.
 
-## **When could we apply this**
+## When could we apply this
 As soon as possible. Before any project, we spend 2-3 sessions with our clients to gather information and decide on a product strategy. Build based on data and evidence, if we want to build something that lasts for a long time. Our software development cycle starts with the Lean Business Model (aka Lean Canvas) and AARRR. While Business Model lets us know about the business goals and requirements (“What are the current problems? What are we gonna build? Who are the customers and how we could earn money?”), AARRR tells us what to do to get there and if we’re getting there (metrics).
 
 > “Do all the stages stay the same through all stages of a product?”

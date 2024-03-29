@@ -1,9 +1,11 @@
 ---
 tags: 
   - docker
+  - developer
+  - software
 title: Docker Registry
 date: 2016-07-21
-description: null
+description: This repository’s main product is the Docker Registry 2.0 implementation for storing and distributing Docker images. It supersedes the docker/docker-registry project with a new API design, focused around security and performance.
 authors: null
 menu: memo
 type: null
@@ -12,21 +14,20 @@ hide_frontmatter: false
 
 ![](assets/docker-registry_460b62865d3bc638b0bb0c4f7e23260e_md5.webp)
 
-# Summary
+## Summary
 The Docker toolset to pack, ship, store, and deliver content.
 
 This repository’s main product is the Docker Registry 2.0 implementation for storing and distributing Docker images. It supersedes the docker/docker-registry project with a new API design, focused around security and performance.
 
-# To be simple
-
-## Server
+## To be simple
+### Server
 Simply, just run below command:
 
 ```javascript
 $ docker run -d -p 5000:5000 --restart=always --name registry registry:2
 ```
 
-## Client
+### Client
 Get any image from the hub and tag it to point to the registry
 
 ```javascript
@@ -35,10 +36,10 @@ $ docker push your-domain:5000/ubuntu
 $ docker pull your-domain:5000/ubuntu
 ```
 
-## Running a domain registry
+### Running a domain registry
 While running on `localhost` has its uses, most people want their registry to be more widely available. To do so, the Docker engine requires you to secure it using TLS, which is conceptually very similar to configuring your web server with SSL.
 
-## Server
+### Server
 Let's create some directories
 
 ```javascript
@@ -85,7 +86,7 @@ registry:
 
 And run `$ docker-compose up -d`
 
-## Client
+### Client
 Create `ca.crt` for each client with content of `ca.crt` file that you’ve created above:
 
 ```javascript
@@ -101,7 +102,7 @@ $ docker login <your-hub-domain>
 
 That’s all, now you can login to your hub and pull, push whatever you want
 
-# Issue
+## Issue
 You may get some troubles like:
 
 ```javascript
@@ -113,15 +114,15 @@ In the case of HTTPS, if you have access to the registry's CA certificate, no ne
 simply place the CA certificate at /etc/docker/certs.d/myregistrydomain.com:5000/ca.crt
 ```
 
-# Solution
+## Solution
 
-## Insecure registry
+### Insecure registry
 * Linux
 * Redhat
 * On some distributions, e.g. Oracle Linux 6, the Shared System Certificates feature needs to be manually enabled:
 * or you can open /etc/default/docker and add the following at the end
 
-## Note
+### Note
 If you use `boot2docker` (Mac), you may do some steps below:
 
 ```javascript

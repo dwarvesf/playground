@@ -1,6 +1,7 @@
 ---
 tags: 
   - security
+  - engineering
 title: Applied Security Basis
 date: 2020-02-25
 description: null
@@ -46,4 +47,4 @@ Blockchain uses blocks to store pieces of information. Each block is time-stampe
 ## References
 * **[1] "SSH Reference - Unix Tutorial." ****[https://www.unixtutorial.org/reference/ssh](https://www.unixtutorial.org/reference/ssh)****. Accessed 30 Jul. 2020.**
 * **[2] "How Does SSL Work? | Entrust Datacard." ****[https://www.entrustdatacard.com/pages/ssl](https://www.entrustdatacard.com/pages/ssl)****. Accessed 30 Jul. 2020.**
-* **[3] "How does the blockchain work? • Infinity Economics Platform." ****[https://web.infinity-economics.org/how-does-the-blockchain-work/](https://web.infinity-economics.org/how-does-the-blockchain-work/)****. Accessed 30 Jul. 2020.**
+* **[3] "How does the blockchain work? • Infinity Economics Platform."[https://web.infinity-economics.org/how-does-the-blockchain-work/](https://web.infinity-economics.org/how-does-the-blockchain-work/). Accessed 30 Jul. 2020.**

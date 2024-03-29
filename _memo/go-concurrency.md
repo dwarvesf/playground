@@ -1,21 +1,24 @@
 ---
 tags: 
   - go
+  - programming
+  - software-engineer
 title: Go Concurrency
 date: 2019-12-04
-description: null
-authors: null
+description: When we talk about Golang, its most basic and popular characteristic is concurrency-support. Unlike other languages what is quite complex to build an concurrency system, Go concurrency primitives via Goroutines and channels make concurrent programming easy. So i am going to talk about Goroutines and similar things in other programming languages.
+authors: 
+- hieuphan
 menu: memo
 type: null
 hide_frontmatter: false
 ---
 
-# Golang concurrency
+## Golang concurrency
 When we talk about Golang, its most basic and popular characteristic is concurrency-support. Unlike other languages what is quite complex to build an concurrency system, Go concurrency primitives via Goroutines and channels make concurrent programming easy. So i am going to talk about Goroutines and similar things in other programming languages.
 
 Firstly, we need to know Go is a concurrent language and not a parallel one. So what is the difference from concurrency and parallelism?
 
-## Concurrency vs Parallelism
+### Concurrency vs Parallelism
 Concurrency means “out of order” execution. Another concept talk about concurrency as the capability to deal with lots of things at once. It's best explained with an example in real life: During playing Dota 2, let’s say, my mom asked me to buy something. Now i stop playing, go to the grocery and then starts playing again with rebuke of my team. This is a basic example of concurrency. In computing, concurrency is represented by the state when two or more tasks can start, run, and complete in overlapping time periods. It doesn't necessarily mean they'll ever both be running at the same time. Multitasking on a single-core machine is an example.
 
 Parallelism is doing lots of things at the same time like other running tasks on a multicore processor. Let’s come back with the example above. Instead of taking order my mother, I play the game and listen to music at once freely. In this case, playing game and listening to music is "lots of things".
@@ -24,7 +27,7 @@ Parallelism is doing lots of things at the same time like other running tasks on
 
 After understanding the way to compare concurrency with parallelism, we can research about Goroutines/channel and other well.
 
-## Goroutines
+### Goroutines
 Goroutines can be understood like a light weight thread. Instead of OS, Goroutines exists only in the virtual space of Go runtime. A Goroutines is started up with initial 2KB of stack size (This is the location where store answer of the question "what is this Go routine's current state?". It is contains local variables as well as pointers to heap allocated variables). Because Go’s stacks are dynamically sized, growing and shrinking with the amount of data stored. So we need only 4KB memory for Goroutines.
 
 ![](assets/go-concurrency_d82335b0ffffc63ae92aa7339a5867e8_md5.webp)
@@ -33,7 +36,7 @@ Goroutines are cheaper than others thing like it (thread) in other programming l
 
 While some languages take an "concurrency at OS level" approach. Go implemented its own scheduler in order to keep concurrency concept at language level.
 
-## Channel
+### Channel
 Channel is a communication tool for Goroutines. Channel can be understand like pipes. So similar to water flows from one end to another in pipes, a Goroutines write data in one end and we can get it in another by using Channel.
 
 Each channel has a type associated. This type decide data type that channel is allowed to transport and no other types can access into it.

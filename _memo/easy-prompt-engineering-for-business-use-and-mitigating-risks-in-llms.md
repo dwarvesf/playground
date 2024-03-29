@@ -2,10 +2,13 @@
 tags: 
   - engineering
   - LLM
+  - prompt-engieering
+  - learning
 title: Easy Prompt Engineering For Business Use And Mitigating Risks In Llms
 date: 2023-05-22
-description: null
-authors: null
+description: Prompt engineering involves creating prompts that guide the model to generate a desired output. This is needed for LLMs to increase the accuracy of a particular input prompt or avoid common risk factors when opening the app to users.
+authors: 
+- monotykamary
 menu: memo
 type: null
 hide_frontmatter: false

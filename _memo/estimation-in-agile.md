@@ -1,9 +1,11 @@
 ---
 tags: 
   - agile
+  - pm
+  - software-engineer
 title: Estimation In Agile
 date: 2016-02-12
-description: null
+description: Story points are a unit of measure for expressing an estimate of the overall effort that will be required to fully implement a product backlog item or any other piece of work.
 authors: null
 menu: memo
 type: null
@@ -17,7 +19,7 @@ The value is nonetheless usable because it is derived from the best information 
 ## Estimation units
 In our workflow we use two different units that are explained below.
 
-### **Story points**
+### Story points
 Story points are a unit of measure for expressing an estimate of the overall effort that will be required to fully implement a product backlog item or any other piece of work.
 
 When estimating using story points the team must include everything that can affect the effort such as :
@@ -32,7 +34,7 @@ The possible values that can be given as story points needs to be part of the Fi
 
 *The reason for using the Fibonacci sequence is to reflect the inherent uncertainty in estimating larger items*
 
-### **Time**
+### Time
 Estimation using time is also used for some specific [issue types](https://piemapping.atlassian.net/wiki/spaces/EN/pages/32997407/Issue+types). This estimation is the amount of time originally anticipated to resolve the issue.
 
 When estimating using time the team must consider how long something will take if:
@@ -50,7 +52,7 @@ The planning poker, is a consensus-based, gamified technique for estimating.
 
 The reason to use planning poker is to **avoid the influence of the other participants**. If a number is spoken, it can sound like a suggestion and influence the other participants' sizing. Planning poker should force people to think independently and propose their numbers simultaneously. This is accomplished by requiring that all participants show their card at the same time.
 
-### **Procedure**
+### Procedure
 1. A Moderator, who will not play, chairs the meeting.
 1. Each estimator knows the list of valid estimations and has a way to show to the other participants the number he chose. (Cards, mobile app, or post-it)
 1. A short overview of the story to be estimated will be given.
@@ -61,13 +63,13 @@ The reason to use planning poker is to **avoid the influence of the other parti
 1. We then repeat steps 5 to 7 up to 3 times or less if a consensus is reached.
 1. If a consensus if not reached within 3 rounds, the moderator will take a decision.
 
-### **Disclaimer**
+### Disclaimer
 * The planning poker is not a vote.
 * The highest value will not be taken by default by the moderator if a consensus is not reached. The decision will be based on the discussions the team had.
 * If a team member is not sure about his estimate and wants a value in the middle (ie. 10 but he can choose only between 8 and 13) then he must round up (ie. 13 here).
 * **During discussion, numbers must not be mentioned at all in relation to feature size**
 
-## Experimentation: safety plan
+### Experimentation: safety plan
 The current engineering focus at DF is to improve the quality of our product, and its associated quality assurance processes.
 
 The motivation is to ensure that every story developed is done so properly and ready to be released with confidence and on-time.

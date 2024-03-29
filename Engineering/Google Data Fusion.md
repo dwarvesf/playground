@@ -2,14 +2,11 @@
 tags:
   - brainery
   - engineering/data
-  - devops
   - google-cloud
   - Google-Data-Studio
   - google-data-fusion
   - ETL
   - reliability
-  - CDAP
-  - data-engineering
   - data
 title: Google Data Fusion
 date: 2024-01-24
@@ -26,8 +23,6 @@ github_id: mickwan1234
 ---
 
 ## Introduction
-![[_assets/Google Data Fusion/896575dd6ac0fba37e7e2c0771c3dd6d_MD5.webp]]
-
 Google Data Fusion is a fully managed, cloud-native data integration service that enables users to efficiently build and manage ETL/ELT data pipelines. It is designed to streamline data engineering tasks for enterprise users and is built on top of the open-source project CDAP
 
 . Key features and benefits of Google Data Fusion include:
@@ -70,18 +65,20 @@ These are just a few examples, and the possibilities for using Data Fusion are v
 
 ## Pricing
 Google Data Fusion have some pricing tier in the following table:
-![[_assets/Google Data Fusion/3af0d3138685ed2467a3d6edba263858_MD5.webp]]
+
+![price](image-12.png)
 
 Comparison between the tiers:
-![[_assets/Google Data Fusion/2276aa22c8381226ba65f2ef143bdd57_MD5.webp]]
+
+![price2](image-13.png)
 
 ## How to setup Data fusion:
-### **Prerequisites:**
+### Prerequisites
 1. **Google Cloud Platform Account:** Ensure that you have a Google Cloud Platform (GCP) account. If you don't have one, you can sign up [here](https://cloud.google.com/).
 2. **Enable the Cloud Data Fusion API:** In the GCP Console, navigate to the API & Services > Dashboard. Search for "Cloud Data Fusion API" and enable it.
 3. **Install and Configure Google Cloud SDK:** Install the [Google Cloud SDK](https://cloud.google.com/sdk) on your local machine. After installation, run **`gcloud init`** to set up your credentials and project.
 
-### **Steps to Set Up Google Cloud Data Fusion:**
+### Steps to Set Up Google Cloud Data Fusion
 1. **Create a Cloud Storage Bucket:** Create a Cloud Storage bucket to store the artifacts and metadata required by Cloud Data Fusion. Replace **`[BUCKET_NAME]`** with your desired bucket name.
     
     ```bash
@@ -127,71 +124,84 @@ In this demo we’ll setup a simple ETL pipeline to import, transform load a csv
 
 ### Step 1: go to the Big Query console page and create a dataset and table:
 - On the top left corner of the main page of Big query select add and add a dataset. Then click on the three dot simple on the left side of the data set name to add a table. Right after that. you should see this screem to add a table.
-	- ![[_assets/Google Data Fusion/0228e14fdc9b93e5c79eacc7a7ed89a6_MD5.webp]]
+
+	![setup](image-14.png)
+
 - Fill in the table name (the only mandatory field that left blank after you do the previous step). You can tweak others setting if you want to. Then click Create Table.
 
 ## Step 2: Go to your Google Data Fusion instance
 - Go to your Data Fusion page and locate your data fusion instance. You should be see it listed right after you go the main page of Data fusion console.
 - Click on the instance you should be able to see a prompt like this:
-	- ![[_assets/Google Data Fusion/2ff260eafe1164c146b66e07b719a065_MD5.webp]]
+	![prompt](image-15.png)
+
 - Click the View Instance link. You should see the landing page of Google Data Fusion instance. Click on Studio button to start designing pipelines. You should see a screen like this:
-	- ![[_assets/Google Data Fusion/3c40db19ec1af62c3c8afa9699051d72_MD5.webp]]
+	![prompt2](image-16.png)
 
 ## Step 3: Preparing you CSV file on GCS
 - Create a bucket and push you CSV to the storage. I prepared mine like this.
-	- ![[_assets/Google Data Fusion/1be5c2f7bb9170fd0267c2d30ee6388a_MD5.webp]]
+	![step3](image-17.png)
 
 ### Step 4: Start designing your first pipeline
 - We’ll create a GCS as a source of data so on the search bar, search for ‘gcs’ and drag the ‘GCS’ simple in the `Source` section to the canvas
-	- ![[_assets/Google Data Fusion/149533894219b81b80c9af8473dcb666_MD5.webp]]
+	![step4](image-18.png)
+
 - Click on `Properties` and you should be able to see a screen like this.
-	- ![[_assets/Google Data Fusion/5a415fd557838d4d98816e3cc25561e4_MD5.webp]]
+
+	![prop](image-19.png)
+
 - Click on `Browse` to browse through the files you uploaded to GCS. Locate your csv data source file and select it.
-	- ![[_assets/Google Data Fusion/e79e3ac84c23e2bf3f2358112b709abf_MD5.webp]]
+
+	![select](image-20.png)
+  
 - (Optional) Enable the `Enable Quoted Values` and `Use First Row as Header` toggles and click on `Get Schema`. You should able to find your data schema on the right side of the screen
-	- ![[_assets/Google Data Fusion/5f466ca7e1d9ebc587d1c83d4dc71f8b_MD5.webp]]
+	![screen](image-21.png)
+
 - You finished setting up the source CSV. Go on and click the `X` button on the top right next to `Validate` button.
 - Next, you’ll need to transform data to match you expected schema. Search for `wrangler` on the search bar and drag out `Wrangler` in the  `Transform` section and drag an arrow from `GCS` box to it for Wrangler to recognize the input schema.
-	- ![[_assets/Google Data Fusion/3c77659f8f80214120f60e97847544dd_MD5.webp]]
+
+	![schema](image-22.png)
+
 - Then click on `properties` of the the `Wrangler` box.
-	- ![[_assets/Google Data Fusion/acc19ad5ede5df8d029145c516c3ab45_MD5.webp]]
+
+	![box](image-23.png)
 - Here you can transform your data. Defines you output schema on the left and properties in the middle section. Here I’ll just left it like it is since it a simple demo.
 - Click on the top right `X` button to go back to the canvas.
 - Next, you’ll need a storage for you output data. Search `bigquery` in the search box and drag out `Bigquery` box from the `Sink` section and connect it to the `Wrangler` box.
-	- ![[_assets/Google Data Fusion/81e1fe6503f40c31fecc7c752d0e56ac_MD5.webp]]
+
+	![data](image-24.png)
+
 - Click on `Properties` of the Bigquery box you’ll find this screen.
-	- ![[_assets/Google Data Fusion/5ef7b2f2dd57fb04cfc2610003f96a00_MD5.webp]]
+	![box2](image-25.png)
+
 - You can find you input data schema on the left side of the screen. Here click on `Browse` to locate your Bigquery data table that you created in step 1 (Mine is `annual_enterprise_survey` in this case) and select it by double click.
-	- ![[_assets/Google Data Fusion/fc06439858c80d305ed6a7a1ed62b650_MD5.webp]]
+
+	![input](image-26.png)
+
 - (Optional) you can force the destination table of match you input schema by turn on these toggle.
-	- ![[_assets/Google Data Fusion/7dfdc307f3b75f41fb65ab0fa6bd683e_MD5.webp]]
+
+	![option](image-27.png)
+
 - Click on the `X` again to go back to the canvas. You completed your first pipeline.
 
 ### Step 5: Deploy and Run your pipeline
 - Naming your pipeline ( the name must be unique in the instance). Click on the `Name your pipeline` text on the top left of the screen.
-	- ![[_assets/Google Data Fusion/a86d6d3174b32df8be3ba475f8c65a7a_MD5.webp]]
+
+	![name](image-28.png)
+
 - Then click on `Deploy` button on the top right to deploy the pipeline.
-	- ![[_assets/Google Data Fusion/f77c1ab73acf0eb740cbd3f0fea3fe60_MD5.webp]]
+	![deploy](image-29.png)
+
 - Wait for the deploy process to complete. You will face this screen
-	- ![[_assets/Google Data Fusion/ebe7e25e86bc52a44be5beefcef5008c_MD5.webp]]
+	![deploy2](image-30.png)
+
 - Click on the `Run` button at the top center of the screen and wait for it to execute pipelines.
-	- ![[_assets/Google Data Fusion/5cf5dec00239ca3db4a54f690b8ae233_MD5.webp]]
+	![run](image-31.png)
+  
 - After the the status show `Succeeded` you can check your destination table for the output data.
-	- ![[_assets/Google Data Fusion/b06407f4aa745186225988b9d32881cc_MD5.webp]]
+	![output](image-32.png)
+
 - Here is the end result data in your Bigquery data table.
-	- ![[_assets/Google Data Fusion/c9056f816907b772d3da1ebd68ab328b_MD5.webp]]
+
+	![final](image-33.png)
 
 And that’s it, you’re done. Congrat on your first data pipeline with Google Data Fusion.
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and contributing to the Brainery is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [[202403121185|we are also hiring]]
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

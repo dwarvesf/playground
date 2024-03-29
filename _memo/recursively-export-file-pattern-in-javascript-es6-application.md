@@ -1,6 +1,8 @@
 ---
 tags: 
-  - js
+  - javascript
+  - software-engineer
+  - programming
 title: Recursively Export File Pattern In Javascript Es6 Application
 date: 2019-09-07
 description: null
@@ -10,9 +12,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![](assets/recursively-export-file-pattern-in-javascript-es6-application_08f14b555ce54599844167b5700622ca_md5.webp)
-
-# Introduction
+## Introduction
 Imagine you have a lot of components and you imported it like this:
 
 ![](assets/recursively-export-file-pattern-in-javascript-es6-application_c733b9fb01a2eb50f4a8895d2cd68acd_md5.webp)
@@ -30,7 +30,7 @@ Instead of importing component like above. You would want to import your compone
 
 * Can’t export members who name has been exported already. Eg: Component/A export A member so Component/B cannot export A member.
 
-# Implementation
+## Implementation
 To implement this style, We use re-export statement which is all feature of Javascript ES6: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
 It’s syntax like bellow. All named export or all export data from the module, whose path is something, will re-export from the file that use re-export syntax
@@ -96,7 +96,7 @@ Then in your app component, you can
 import { component1 as Component1, component2 as Component2, NestedComponent1, Nested} from "./components";
 ```
 
-## @Autogen-export Package
+## Autogen-export Package
 I implemented those packages to automation the create export file job. It’s work with any ES6 Code (React, Vue) as long as you provide a correct babel configuration file for @babel/core parsed the code properly.
 Auto-generate-export file is a utility tool which generates index file exported all of Its child folder (that contain exportable index file) and child file.
 
@@ -112,5 +112,3 @@ It has been published as an NPM package.
 * [https://www.npmjs.com/package/@autogen-export/cli](https://www.npmjs.com/package/@autogen-export/cli)
 
 I also created examples on how to use those packages: [https://github.com/phmngocnghia/AutoGenerateReExportFile/tree/master/examples](https://github.com/phmngocnghia/AutoGenerateReExportFile/tree/master/examples)
-
-What do you think about this pattern? Please express your idea

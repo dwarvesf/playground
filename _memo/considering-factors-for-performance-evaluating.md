@@ -1,11 +1,13 @@
 ---
 tags: 
   - performance
-  - people
+  - employee
+  - team
 title: Considering Factors For Performance Evaluating
 date: 2016-04-02
 description: null
-authors: null
+authors: 
+- han
 menu: memo
 type: null
 hide_frontmatter: false
@@ -89,4 +91,3 @@ By building this designation directly into the evaluation matrix, outstanding ni
 The key to understanding the Dark Triad is that while all three share a callousness toward others that encourages manipulativeness, they do so for distinct reasons. Psychopaths are driven by short-term tangible rewards, and engage in reckless, antisocial behavior to get it. Machiavellians are fueled by long-term tangible rewards and will strategize schemes to get them. Narcissists are motivated by whatever boosts their ego, whether tangible rewards or simple praise that validates their idealized self-image.
 
 ![](https://openpsychometrics.org/tests/SD3/)
-

@@ -2,10 +2,12 @@
 tags: 
   - tips
   - productivity
-title: The Correct Way To Build Kpi
+  - performance
+title: The Correct Way To Build KPI
 date: 2020-11-03
 description: null
-authors: null
+authors: 
+- duy
 menu: memo
 type: null
 hide_frontmatter: false

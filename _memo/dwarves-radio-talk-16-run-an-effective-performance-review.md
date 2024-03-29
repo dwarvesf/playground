@@ -1,11 +1,13 @@
 ---
 tags: 
   - team
-  - radio
+  - radiotalk
+  - performance
 title: Dwarves Radio Talk 16 Run An Effective Performance Review
 date: 2021-08-02
-description: null
-authors: null
+description: We perform bi-yearly reviews in July and January. The primary purpose of these reviews is to give feedback on career path advancement and recognize accomplishments.
+authors: 
+- duy
 menu: memo
 type: null
 hide_frontmatter: false
@@ -40,4 +42,4 @@ Feeling about yourself.
 * Happy or not?
 * Satisfied or not? etc.
 
-The Performance Indicator is usually the summary of **Responsible, Teamwork **and** Mastery***. *We don't judge team members from our point of view, we let them reflect their thought and propose their achievement. 
+The Performance Indicator is usually the summary of **Responsible, Teamwork and Mastery**. We don't judge team members from our point of view, we let them reflect their thought and propose their achievement. 

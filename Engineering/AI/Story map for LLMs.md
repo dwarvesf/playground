@@ -1,5 +1,5 @@
 ---
-tags: engineering/ai, ai, openai, chatgpt, langchain, tuning-llm, llm, prompt-engineering, fine-tuning, rlhf, story-map
+tags: engineering/ai, openai, chatgpt, langchain, tuning-llm, llm, prompt-engineering, fine-tuning
 author: Nguyen Xuan Anh
 github_id: monotykamary
 date: 2023-08-09
@@ -10,7 +10,7 @@ blog: https://dwarvesf.hashnode.dev/an-engineering-story-map-for-llms
 ## Story Map: Journey for Engineers Developing Applications on top of Large Language Models (LLMs)
 Below is a story map of a kind of simplified learning and execution path for engineers starting out in developing AI. Not every engineering story follows the same path, but hopefully below will give you a general idea as to where you are in your story and what is left ahead.
 
-![[storymap_llm.jpg]]
+![storymap](image-11.png)
 
 ### 1. Understanding AI, Machine Learning, and LLMs
 Most of us begin by learning about artificial intelligence (AI), machine learning, and their capabilities. We explore various applications, such as natural language processing, computer vision, and recommendation systems. Developing a strong foundation is needed in large language models and understanding the basics of LLMs will help us appreciate their potential and the wide range of applications they can be used for.
@@ -21,7 +21,7 @@ It's best to follow step-by-step guides and tutorials on various AI topics, incl
 - [DeepLearning.AI's YouTube playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
 - [Lex Fridman's up-to-date deep learning course](https://www.youtube.com/watch?v=0VH1Lim8gL8&list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf&ab_channel=LexFridman)
 
-#### a. Understand prompt engineering and why it's important for LLMs and generative AI
+#### Understand prompt engineering and why it's important for LLMs and generative AI
 Prompt engineering involves providing enough context, instruction, and examples to the model at inference time without changing the underlying weights of the model. It focuses on coaxing the model's latent space to produce the desired output. Prompt engineering uses manually-provided "hard prompts" to guide the model's behavior. It is about getting the model to do what you want without updating the model parameters. You can learn more about prompt engineering at:
 - https://learnprompting.org/docs/intro
 
@@ -50,12 +50,12 @@ Data collection is particularly important for AI, and especially LLMs. Data coll
 #### a. Through Prompt collection
 We can collect internal data through prompts inputted by users. Data collection of prompts in large language models refers to the process of gathering and curating input prompts that are used to guide the behavior and output of the language model. Prompts are the starting questions or instructions given to the model to condition its predictions for a specific task.
 
-![[prompt-data-collection.png]]
+![throughprompt](image-12.png)
 
 #### b. Through Data scraping
 We can gather external data through data scraping. Data scraping is commonly used to gather large amounts of data from websites for various purposes, such as market research, competitor analysis, price comparison, data analysis, and more. It allows users to extract specific information from websites without manually visiting each page and copying the data.
 
-![[data-scraping-n8n.png]]
+![scraping](image-13.png)
 
 ### 4. Reinforcement Learning
 Eventually, we want to reward certain behaviors from our augmented models. Although a more advanced approach to training a model, understanding the concept of reinforcement learning and its applications in AI is important for the following reasons::
@@ -79,7 +79,7 @@ Fine-tuning, involves updating the model parameters directly using a dataset tha
 
 It's also best to learn the process of fine-tuning AI models and LLMs like ChatGPT, LLaMA, and other alternatives for specific tasks and applications. Understand the benefits and challenges of fine-tuning AI models and LLMs, which will help optimize their performance and create more effective AI applications.
 
-![[fine-tuning-steps.png]]
+![finetuning](image-14.png)
 
 ## Conclusion
 The general idea of this story map is to help engineers develop a strong foundation in researching and creating AI applications, such as chatbots, code automation, personal assistants, and fine-tuning AI models with LLMs like ChatGPT and LLaMA. A lot of these skills involve a bit of ad-hoc ingenuity, but will help has a basic foundation of patterns we see in AI development.
@@ -135,16 +135,3 @@ The general idea of this story map is to help engineers develop a strong foundat
 - https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy
 - https://www.superannotate.com/blog/rlhf-for-llm
 - https://www.assemblyai.com/blog/the-full-story-of-large-language-models-and-rlhf/
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

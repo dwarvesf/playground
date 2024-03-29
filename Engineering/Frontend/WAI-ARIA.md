@@ -66,7 +66,8 @@ Note that WAI-ARIA attributes **do not** change the behavior of the supplied com
 
 WAI-ARIA will become handy in some cases as listed below:
 - WAI-ARIA roles are useful when defining specific **regions on a web page** (e.g. banner, navigation, main,...).
-![](_assets/R1s3rBm.jpg)
+
+![image](image-28.png)
 
 - `aria-live` can inform screen reader users when a component is **dynamically updated**.
 <iframe height="400" style="width: 100%;" scrolling="no" title="WAI-ARIA" src="https://codepen.io/nguyend-nam/embed/WNJKEvy?default-tab=result" frameborder="no" allowfullscreen="true"></iframe>
@@ -79,16 +80,3 @@ WAI-ARIA will become handy in some cases as listed below:
 - https://www.maxability.co.in/trainings/advanced-web-accessibility-testing/what-is-wai-aria
 - https://www.w3.org/WAI/ARIA/apg/example-index/button/button
 - https://pressbooks.library.torontomu.ca/wafd/chapter/wai-aria-landmarks/#:~:text=WAI%2DARIA%20landmarks%20are%20used,bypass%20links%20and%20page%20headings
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

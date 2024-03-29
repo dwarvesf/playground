@@ -22,7 +22,7 @@ Write a quick summary about what the technology entails and covers.
 Write what the output goal for this adoption is. It could be one of, but not limited to:
 
 * **Technical:** technical implementation to be used in a project and company-wide
-* **Communication & Collaboration: **tools or implementation to facilitate in the communication process between team members
+* **Communication & Collaboration:** tools or implementation to facilitate in the communication process between team members
 
 ## Timeline
 * (2022-08-25) …

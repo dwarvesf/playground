@@ -1,5 +1,5 @@
 ---
-tags: backend, engineering/backend, testing, golang, best-practices, maintainability, readability, test-cases, patterns, debugging
+tags: backend, engineering/backend, testing, golang, best-practices, test-cases
 author: Pham Van Dat
 github_id: datphamcode295
 date: 2023-08-08
@@ -8,7 +8,7 @@ icy: 10
 
 This article focuses on the best practices for testing in Golang. By following these recommended approaches, you can ensure the effectiveness and efficiency of your testing efforts. We will explore various aspects such as writing effective test cases, organizing tests and using test doubles. Implementing these best practices will help you write reliable, maintainable, and high-quality tests for your Golang projects.
 
-## 1. Writing Effective Test Cases With AAA pattern
+## Writing Effective Test Cases With AAA pattern
 Writing effective test cases requires careful consideration of their characteristics and structure. Good test cases exhibit readability, maintainability, independence, focus, and completeness. By following the AAA pattern, organizing test cases into Arrange, Act, and Assert sections, you enhance the readability, maintainability, and effectiveness of your test cases. The AAA pattern helps in isolating specific behaviors, focusing on desired outcomes, and providing a clear structure for test case development.
 
 The AAA pattern provides a structured approach for organizing test cases into three distinct sections: Arrange, Act, and Assert.
@@ -51,8 +51,8 @@ func TestAdd(t *testing.T) {
 
 By separating the test case into the Arrange, Act, and Assert sections, it becomes clear what inputs are used, what action is performed, and what outcome is expected. This clarity makes it easier to understand the purpose of the test and identify any issues that may arise.
 
-## 2. Test Organization and Structure
-### Organizing Test Files and Packages:
+## Test Organization and Structure
+### Organizing Test Files and Packages
 A common and convenient practice is to keep the test files in the same directory as the package files they are testing. This approach simplifies the organization of your project and makes it easier to locate and manage the associated tests. For example, consider a project with a package called **`myapp`** that contains multiple files. You can place the test files in the same directory as the package files, like this:
 
 ```
@@ -68,7 +68,7 @@ myapp
 		└──	user_test.go
 ```
 
-### Subtests and Test Helpers:
+### Subtests and Test Helpers
 Subtests and test helpers are powerful tools for improving test readability and maintainability. Let's consider an example of testing a **`Calculator`** struct with multiple operations.
 
 ```go
@@ -136,7 +136,7 @@ func TestCalculator(t *testing.T) {
 
 By extracting the assertion logic into a helper function, we improve code readability and ensure consistent and DRY (Don't Repeat Yourself) test code.
 
-### Table-Driven Tests:
+### Table-Driven Tests
 Table-driven tests are an effective technique for handling multiple inputs and expected outputs in a concise and structured manner. By defining a table of test cases, you can easily add new scenarios and maintain a clear overview of the different input-output combinations being tested.
 
 Let's consider an example of testing a function called **`IsValidEmailAddress`**, which validates whether an email address is valid or not:
@@ -200,7 +200,7 @@ By iterating over the **`testCases`** table, we run subtests using **`t.Run`** w
 The test function invokes **`IsValidEmailAddress`** with the provided input arguments and compares the returned error with the expected error. Any mismatch is reported as a test failure.
 By using this table-driven approach, you can easily add more test cases and maintain a clear overview of the scenarios being covered.
 
-## 3. [[Test Doubles]] and Mocking
+## Test Doubles and Mocking
 [[Test Doubles|Test doubles]] are objects that mimic the behavior of real dependencies in a controlled manner during testing. They are used to isolate the code under test from its actual dependencies, ensuring that the behavior of the code being tested can be observed and verified independently. Here are five common types of test doubles: 
 
 1. **Test Stubs:** Predefined responses to method calls used for simulating specific behaviors during testing.
@@ -229,16 +229,3 @@ This article outlines best practices for testing in Golang, including writing ef
 ## References
 - [https://google.github.io/styleguide/go/best-practices.html#tests](https://google.github.io/styleguide/go/best-practices.html#tests)
 - [https://climbtheladder.com/10-golang-testing-best-practices/](https://climbtheladder.com/10-golang-testing-best-practices/)
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

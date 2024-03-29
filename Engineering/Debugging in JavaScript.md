@@ -9,7 +9,8 @@ date: 2022-10-16
 
 ## The `console` object
 The **` console`** object provides access to the browser's debugging console. You can view it by right-clicking on your Chrome browser, selecting **Inspect**, and choosing **Console** in the tab.
-![Chrome DevTools's console tab](_assets/Chrome_DevTools's_console_tab.png)
+
+![tab](image-7.png)
 
 ### `console.log()`
 The `console.log()`  method writes to the web console. The message can be a single text (with optional replacement values) or any number of JavaScript objects.
@@ -80,7 +81,8 @@ console.dir(array);
         ... */
 ```
 Another useful difference in Chrome exists when sending **`DOM`** elements to the console:
-![console.dir() example](_assets/console.dir()_example.jpg)
+
+![example](image-8.png)
 
 ### `console.time()` and `console.timeEnd()`
 The `console.time()` method launches a timer that you may use to track the duration of the operation. You may have up to 10,000 timers running on a single page, giving each one a unique name. When you use `console.timeEnd()` with the same name, the browser returns the time in milliseconds since the timer was started.
@@ -118,7 +120,8 @@ function potentiallyBuggyFunction() {
 }
 ```
 When the `debugger` is invoked, execution is paused at the `debugger` statement just like a breaking point.
-![debugger example](_assets/debugger_example.png)
+
+![debug](image-9.png)
 
 ## Reference
  - [Debugger's statement - Developer Mozilla Organization](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger?retiredLocale=vi)
@@ -126,16 +129,3 @@ When the `debugger` is invoked, execution is paused at the `debugger` statement 
  - [What is assert in JavaScript? - StackOverflow](https://stackoverflow.com/questions/15313418/what-is-assert-in-javascript)
  - [What is the difference between console.dir() and console.log()? - StackOverflow](https://stackoverflow.com/questions/11954152/whats-the-difference-between-console-dir-and-console-log)
  - [Tips and Tricks for Debugging JavaScript - James Q Quick](https://www.youtube.com/watch?v=_QtUGdaCb1c&t=701s)
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

@@ -42,8 +42,7 @@ In the `stocks_partition` table, we are naming the partition column as `sym` as 
 ```sql
 DESCRIBE FORMATTED stocks_partition;
 ```
-
-![](describe_stocks_partition.png)
+![partion](image-85.png)
 
 As the above screenshot, the describe information for this table shows partition information the column name for our partition is `sym` and the data type of that is string. To load data into the partition table, it is slightly different from loading a regular table, we're selecting all the records from the `stocks` table with simple `B7J` and inserting those records into the `stocks_partition` table. The important thing to note here is that we're assigning `B7J` to be the value of the partition column `sym`.
 
@@ -54,7 +53,7 @@ SELECT * FROM stocks s
 WHERE s.symbol = 'B7J';
 ```
 
-![](inserting-B7J.png)
+![insert](image-86.png)
 
 When the execution of the above command is completed, as shown in the screenshot, Hive created a partition in `stocks_partition` table with the name `sym` equals `B7J`. Assume that another partition for symbol `BB3` is created with the following command:
 
@@ -67,11 +66,11 @@ WHERE s.symbol = 'BB3';
 
 We can list the partitions for a given table with `SHOW PARTITIONS stocks_partition;`, tthere are two partitions.
 
-![](show-partitions.png)
+![show](image-87.png)
 
 How the data is physically structured for this table `stocks_partition` in HDFS? We can get the value from the location attribute with the command `DESCRIBE FORMATTED stocks_partition;`.
 
-![](location.png)
+![location](image-88.png)
 
 Usually, we will see files under the tables directory, but the partition tables are structured and stored slightly differently. As shown in the above screenshot, under the directory `stocks_partitions`, we see two more directories one for symbol `B7J` and the other one for symbol `BB3`. These are partition directorie. In the directory `B7J`, there is a file which will have just the records for symbol `B7J` nicely stored in the partition directory. When we query the data for symbol `B7J` using the partition column `sym`, the MapReduce job will only scan this specific directory and that is quite powerful. Since we are not scanning the entire data set anymore, the execution time of this query will be much faster.
 
@@ -110,7 +109,8 @@ This instruction is very simple to understand but it also looks a little weird. 
 ALTER TABLE stocks_partition DROP IF EXISTS PARTITION(sym = 'GEL');
 ```
 
-As mentioned on the article ![Managed Table vs External Table](Managed%20Table%20vs%20External%20Table.md), we cannot delete records from a Hive table but with partition tables, we can drop partitions using the drop command, which will essentially result in deleting all the records for that partition. For instance, we want to delete all the records for symbol `GEL`. Usually, we will not be able to do that using Hive as we would do with the delete statement in SQL. But with the help of partition, we can drop the entire partition. Here, we're essentially dropping the partition `GEL` which has all the records for symbol `GEL`.
+As mentioned on the article 
+ Managed Table vs External Table, we cannot delete records from a Hive table but with partition tables, we can drop partitions using the drop command, which will essentially result in deleting all the records for that partition. For instance, we want to delete all the records for symbol `GEL`. Usually, we will not be able to do that using Hive as we would do with the delete statement in SQL. But with the help of partition, we can drop the entire partition. Here, we're essentially dropping the partition `GEL` which has all the records for symbol `GEL`.
 
 ```sql
 INSERT OVERWRITE TABLE stocks_partition
@@ -193,7 +193,7 @@ For symbol that starts with `B`, this insert command will create partitions for 
 
 Let's check how the directories are structured for each partition. Since we have more than one partition columns in the table, so we do HDFS listing on the table first.
 
-![](check-dynamic-partitions.png)
+![check](image-89.png)
 
 Under this table, we see the high level partition which is exchange name equals `ABCSE`. We can go into that partition and see what is inside that partition. As expected as shown in the above screenshot, there are three partitions under the first partition `ABCSE`: one for year 2001, 2002 and 2003. If we go into 2003 directory, there are several directories or partitions, one for each symbol. The symbol directories will have the files for that corresponding symbol.
 
@@ -223,16 +223,3 @@ And this query with the where condition exchange name and volume will execute wi
 
 ## References
 - https://stackoverflow.com/questions/21876837/not-able-to-apply-dynamic-partitioning-for-a-huge-data-set-in-hive
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

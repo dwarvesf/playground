@@ -2,16 +2,18 @@
 tags: 
   - engineering
   - web
+  - radiotalk
 title: Radio Talk 61 Monorepo
 date: 2023-03-27
 description: null
-authors: null
+authors: 
+- thanh
 menu: memo
 type: null
 hide_frontmatter: false
 ---
 
-# Demystifying Monorepos: A Recap of Our Recent Sharing Session
+## Demystifying Monorepos: A Recap of Our Recent Sharing Session
 During our [recent sharing session](https://www.youtube.com/watch?v=wgKssBAfih8&t=1s&ab_channel=DwarvesFoundation), we delved into the world of monorepos, exploring their benefits, challenges, and the tools available to manage them effectively. This recap aims to summarize the key points of the discussion and highlight some potential business outcomes of adopting monorepos.
 
 ## Introduction
@@ -44,7 +46,7 @@ Several tools have emerged to help manage monorepos effectively:
 
 Despite these tools, challenges remain, such as handling affected changes upon code updates and issues with task runner queues.
 
-### **Modern monorepo solutions**
+### Modern monorepo solutions
 Modern tools like [Turborepo](https://radar.d.foundation/Turborepo-0dd18b38468c4859a8beaae7bf6c511c) and [Nx](https://radar.d.foundation/nx-7abf6ad4f3044541afa649fd21238a80) address these challenges by incorporating local computation caching, task orchestration, and automatic handling of affected changes. They also provide remote caching capabilities for improved performance.
 
 ## Conclusion

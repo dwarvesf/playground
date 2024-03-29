@@ -8,35 +8,43 @@ icy: 10
 
 ## What are trees?
 - A **tree** is a non-linear data structure used to represent the hierarchical relationship between a paretn node and a child node. Each node in the tree is connected to another node by directed edges.
-- ![[A tree representation of a team.png]]
- - ![[A tree representation of a file system.png]]
+
+![tree1](image-46.png)
+![tree2](image-45.png)
+
 - Why do we use trees? The main advantage of using a tree over linear data structures like arrays or linked lists is that we do not have to search an element in linear team. 
 
 ## Important terms related to trees
-- ![[Key terminologies in a tree 1.png]]
-	- **Node**: The fundamental element of a tree. Each node has arbitrary data and two pointers that may point to null or its children.
-	- **Edge**: Another fundamental part of a tree used to connect two nodes.
-	- **Root**: The only node without incoming edges. It is the top node of a tree.
-	- **Leaf**: A node that has no children.
-	- **Path**: An ordered list of nodes that are connected by edges.
-	- **Height of a node** : The number of edges(in this case levels, everytime we go down by an edge we are going down one level of a tree) on the longest downward path between the node itselft to a leaf or the total number of nodes in that path exclude the node we're calculating the height for. Height of a binary tree is height of the root node. One more view to look at height of a node is to focus only the sub-tree where the focused node is the root, so it's height is the maximum depths of nodes within that sub-tree
-- ![[Key terminologies in a tree 2.png]]
-	- **Parent**: A node is said to be a parent node if it has outgoing edges to other nodes.
-	- **Child**: A node that has incoming edges from another node is said to be the child of that node.
-	- **Sibling**: Nodes that are children of the same parent are called sibling nodes.
-	- **Ancestor**: A node is said to be an ancestor node if it is reachable while moving from child to parent.
-	- **Level/Depth**: The depth/level of a node is the number of edges on the path from the root node to that node. The level of the leaf on the longest path from root is also the height of the tree. Take this in general we can say height of node X is maximum depth in subtree of node X.
+![tree3](image-47.png)
+
+- **Node**: The fundamental element of a tree. Each node has arbitrary data and two pointers that may point to null or its children.
+- **Edge**: Another fundamental part of a tree used to connect two nodes.
+- **Root**: The only node without incoming edges. It is the top node of a tree.
+- **Leaf**: A node that has no children.
+- **Path**: An ordered list of nodes that are connected by edges.
+- **Height of a node** : The number of edges(in this case levels, everytime we go down by an edge we are going down one level of a tree) on the longest downward path between the node itselft to a leaf or the total number of nodes in that path exclude the node we're calculating the height for. Height of a binary tree is height of the root node. One more view to look at height of a node is to focus only the sub-tree where the focused node is the root, so it's height is the maximum depths of nodes within that sub-tree.
+	
+![tree4](image-48.png)
+
+- **Parent**: A node is said to be a parent node if it has outgoing edges to other nodes.
+- **Child**: A node that has incoming edges from another node is said to be the child of that node.
+- **Sibling**: Nodes that are children of the same parent are called sibling nodes.
+- **Ancestor**: A node is said to be an ancestor node if it is reachable while moving from child to parent.
+- **Level/Depth**: The depth/level of a node is the number of edges on the path from the root node to that node. The level of the leaf on the longest path from root is also the height of the tree. Take this in general we can say height of node X is maximum depth in subtree of node X.
 
 ## Type of trees
 - Generally, trees can be divided into two categories based on the number of children a node can have. They are as follows:
 	- **Non-Binary Trees**
 		- A non-binary tree is a type of tree in which a node can have **more than two children**.
-		- Examples: **2-3 trees**, **2-3-4 trees**,B-trees, B+ trees**, and **B*** trees are all examples of non-binary trees. But today, we will not care about these guys.
-		- ![[Non-binary tree example.png]]
+		- Examples: **2-3 trees**, **2-3-4 trees**,B-trees, B+ trees**, and **B** trees are all examples of non-binary trees. But today, we will not care about these guys.
+	
+	![tree5](image-49.png)
+
 	- **Binary Trees**
 		- A binary tree is a type of tree in which each node has at **most two** children.
 		- Examples: BSTs, AVL trees, and red-black trees are all examples of binary trees.
-		- ![[Binary tree example.png]]
+
+![tree6](image-50.png)
 
 ## Introduction to binary tree
 - As we discussed earlier, _a binary tree is a type of tree in which each node has at most two children_, which means a node in the binary tree can have one, two, or no children. These children are referred to as the **left child** and the **right child**. To give it a more general view, I would say every node in the tree all has a parent node, except the root or we could argue that parent of the root is nil or a nil node.
@@ -77,34 +85,43 @@ type compareFunc[T any] func(T, T) int
 - There are many types of binary trees. Let’s discuss them one by one below.
 	- **Complete binary tree**
 		- This is a very important invariant of binary tree that we need to keep in mind. In a complete binary tree, in every level except possibly the last, is completely filled. All nodes on the left are filled first and the nodes on the right filled after, so all nodes in the last level are as far left as possible. So all internal nodes have exactly two children and all leaves are at the same level. A binary min/max heap is a great example of a complete binary tree.
-		- ![[A complete binary tree example.png]]
+
+		![tree7](image-52.png)
+		
 	- **Full/Strict binary tree**
 		- The full binary tree is a binary tree in which each node has exactly zero or two children.
-		- ![[A full-strict binary tree example.png]]
+
+		![tree8](image-53.png)
+
 	- **Perfect binary tree**
 		- The perfect binary tree is a type of full binary tree in which each non-leaf node has exactly two child nodes. All leaf nodes have identical path lengths and all possible node slots are occupied.
-		- ![[A perfect binary tree example.png]]
+		![tree9](image-54.png)
+
 	- **Right-skewed binary tree**
 		- A binary tree in which either each node has a right child or no child (leaf) is called a **right-skewed binary tree**.
-		- ![[A right-skewed binary tree example.png]]
+		![righttree](image-56.png)
+		
 	- **Left-skewed binary tree**
 		- A binary tree in which either each node has a left child or no child (leaf) is called a **left-skewed binary tree**.
-		- ![[A left-skewed binary tree example.png]]
+		![lefttree](image-57.png)
+
 	- **Height-balanced binary tree**
 		- A **height-balanced binary tree** is a binary tree such that the left and right subtrees for any given node differ in height by a maximum one. AVL trees and red-black trees are examples of height-balanced trees.
 		```
 		Note: Each complete binary tree is a height-blanaced binary tree
 		```
-		- ![[A height-balanced binary tree example.png]]
+		![height](image-58.png)
 	- 
 
 ## Binary search tree (BST)
 - A BST or a binary search tree is a binary tree in which nodes are ordered in the following way:
-		- ![[A binary search tree example.png]]
-		- Below are the invariants of a BST (an arbitrary tree need to satisfy these invariants/constraints in order to be considered as a BST):
+		![binary](image-59.png)
+
+	- Below are the invariants of a BST (an arbitrary tree need to satisfy these invariants/constraints in order to be considered as a BST):
 			- For all nodes x, if y is in the left sub-tree of x, we have key(y) <= key(x)
 			- For all nodes x, if y is in the right sub-tree of x, we have key(y) >= key(x)
 			- No duplicate key is allowed in the tree.
+
 	- Because a binary search tree is also a binary tree, all the algorithms of a binary tree are applicable to a binary search tree.
 	- `Note: There can be two separate key and value fields in the tree node(We can order the nodes by their key, and for any given key there's an associated arbitrary value). However, for simplicity of this article, we’ll consider the value as the key.`
 	- BST give us a several useful operations:
@@ -115,20 +132,21 @@ type compareFunc[T any] func(T, T) int
 
 ## How a BST can be helpful?
 - To talk about the reason behind existence of BST, I'd like to take a toy problem that you can imagine exists in all sorts of scheduling problems, it's a part of a runway reservation system:
-		- We'll assume an airport with a single runway, and we can imagine this runway is pretty busy. There's obviously safety issues associated with landing planes, and planes taking off. And so there are constraints associated with the system, that have to be obeyed. And we have to build these constraints in, and the checks for these constraints into our data structure. 
-		- What we'd like to do is reserve requests for landings, and each of them are going to specify landing time called $t$. So, in particular we're going to add $t$ to the set $R$ of landing times if no other landings are scheduled within $k$ minutes (k can either be constant or variable that will be changed depends on other business logic, but for simplicity we'll assume k is constant). So we need to be able to perform an insert operation to the data structure.
-		- We have the current notion of time, everytime we have a plane that's already landed, we'd like to remove that landing from the set $R$. So every once in a while, as time increments, we're going to be checking the data structure maybe 30 seconds or 1 minute, it doesn't matter, the fact that matters here is we must be able to perform a delete operation on the data structure.
-		- So we have set $R$ described as above, we don't quite know how to implement it yet. Assume, we're dealing with large inputs, we'd like to do all of these operations in $O(lgn)$ time where $n$ is the size of set $R$.
-		- ![[Runway reservation problem example.png]]
-	- Let's list out so called, basic data structures, that obviously exists before BST like: unsorted array, sorted array, linked list (singly/doubly/circular is not important in this particular problem), hash table, heap. We're going to shoot them down with respsect to not being able to make the efficiency requirement of $O(lgn)$ time for all attached operations.
-			- Unsorted list/array: Almost everything we want to do on this data structure is linear. Although for adding it only take constant time but to do the $k$ minutes check it's $O(n)$ time since the data have no order so we have to check with every other elements. Also for deletion, we have to traversed the whole data structure in the worst case (at the end of array) in order to find the element that we're going to delete. So basically, it's terrible.
-			- Sorted list/array: I bet binary search is the first thing comes into your mind with this data structure. For the array implementation, yes we can do that to find the desired position to insert in $O(lgn)$ time and do the $k$ minutes check in $O(1)$ time but still take $O(n)$ time to do the insertion because possibily we have to shift every index after that, symmetrically the same is true for deletion. So it's almost what we want, if we can somehow skip the "shift index" work if we can manage our data in a more strictful structure. Actually in the list implementation, we don't have to do the "shift index" work but we can not do the "go to the middle point" operation since there's no indexes and we're only maintaing references a.k.a pointers. Give yourself a view of combining the key properties of a sorted array and linked list, that's the good things about the BST when it enables binary search as well as remove the $O(n)$ time "shifting" index work after the data structure is modified.
-			- Heaps: Because of the logic of heap insertion and deletion methods, and  the invariant of max/min heap (all children node must be larger/less than their direct parent) is fairly simple therefore fairly weak, each time we go left or right on the traversal we're not effectively cut off the all the unnecessary nodes, so to do the $k$ minutes check it's still take $O(n)$ time - that is we have to traverse every elements one by one in the heap. So it fails our requirement.
-			- Hash table: Or dictionaries, hash map, whatever you wanna call it, supports $O(1)$ insertion, deletion, search exact all by a given key. But keys are not placed in order, actually they're in a randomized order so again if we want to do the $k$ minutes check it still $O(n)$ time. The good old hash table fails our requirement too.
-	- The beauty of a BST is that we can augment the tree to do more work as necessary without changing the efficiency of the attached methods. In short, we can easily do the $k$ minutes check while finding the place to insert. 
-	- This should give us a sense of the richness of the BST structure, we can have nodes to store more data in them than just these common pointers. Having this notion of augmentation on the data structure is very good, because of design admendments so specifications never stay the same, like we're working for someone, and they never really tell us what they want, they might but they will change their mind later on, so in that case we're going to change our mind too and do the augmentation. I'll take an extra example requirements added upon our "runway reservation system" problem above, we need to compute $rank(t)$ that is how many planes are scheduled to land at times less than or equal to $t$, perfectly reasonable additional requirement and it wasn't part of the original spec.
-	- With the notion of the aumented BST, we can refer to the normal BST as the vanilla BST such that each node encapsulates common basic fields like left,right pointer, key... while the aumented BSTs are usually bring together other fields or callbacks needed to make the algorithms work.
-	- If you're interested in the implementations of BST you can search your own in the internet, today we're going to focus only on a method to balance BST.
+  - We'll assume an airport with a single runway, and we can imagine this runway is pretty busy. There's obviously safety issues associated with landing planes, and planes taking off. And so there are constraints associated with the system, that have to be obeyed. And we have to build these constraints in, and the checks for these constraints into our data structure. 
+  - What we'd like to do is reserve requests for landings, and each of them are going to specify landing time called $t$. So, in particular we're going to add $t$ to the set $R$ of landing times if no other landings are scheduled within $k$ minutes (k can either be constant or variable that will be changed depends on other business logic, but for simplicity we'll assume k is constant). So we need to be able to perform an insert operation to the data structure.
+  - We have the current notion of time, everytime we have a plane that's already landed, we'd like to remove that landing from the set $R$. So every once in a while, as time increments, we're going to be checking the data structure maybe 30 seconds or 1 minute, it doesn't matter, the fact that matters here is we must be able to perform a delete operation on the data structure.
+  - So we have set $R$ described as above, we don't quite know how to implement it yet. Assume, we're dealing with large inputs, we'd like to do all of these operations in $O(lgn)$ time where $n$ is the size of set $R$.
+		![problem](image-60.png)
+
+  - Let's list out so called, basic data structures, that obviously exists before BST like: unsorted array, sorted array, linked list (singly/doubly/circular is not important in this particular problem), hash table, heap. We're going to shoot them down with respsect to not being able to make the efficiency requirement of $O(lgn)$ time for all attached operations.
+  - Unsorted list/array: Almost everything we want to do on this data structure is linear. Although for adding it only take constant time but to do the $k$ minutes check it's $O(n)$ time since the data have no order so we have to check with every other elements. Also for deletion, we have to traversed the whole data structure in the worst case (at the end of array) in order to find the element that we're going to delete. So basically, it's terrible.
+  - Sorted list/array: I bet binary search is the first thing comes into your mind with this data structure. For the array implementation, yes we can do that to find the desired position to insert in $O(lgn)$ time and do the $k$ minutes check in $O(1)$ time but still take $O(n)$ time to do the insertion because possibily we have to shift every index after that, symmetrically the same is true for deletion. So it's almost what we want, if we can somehow skip the "shift index" work if we can manage our data in a more strictful structure. Actually in the list implementation, we don't have to do the "shift index" work but we can not do the "go to the middle point" operation since there's no indexes and we're only maintaing references a.k.a pointers. Give yourself a view of combining the key properties of a sorted array and linked list, that's the good things about the BST when it enables binary search as well as remove the $O(n)$ time "shifting" index work after the data structure is modified.
+  - Heaps: Because of the logic of heap insertion and deletion methods, and  the invariant of max/min heap (all children node must be larger/less than their direct parent) is fairly simple therefore fairly weak, each time we go left or right on the traversal we're not effectively cut off the all the unnecessary nodes, so to do the $k$ minutes check it's still take $O(n)$ time - that is we have to traverse every elements one by one in the heap. So it fails our requirement.
+  - Hash table: Or dictionaries, hash map, whatever you wanna call it, supports $O(1)$ insertion, deletion, search exact all by a given key. But keys are not placed in order, actually they're in a randomized order so again if we want to do the $k$ minutes check it still $O(n)$ time. The good old hash table fails our requirement too.
+  - The beauty of a BST is that we can augment the tree to do more work as necessary without changing the efficiency of the attached methods. In short, we can easily do the $k$ minutes check while finding the place to insert. 
+  - This should give us a sense of the richness of the BST structure, we can have nodes to store more data in them than just these common pointers. Having this notion of augmentation on the data structure is very good, because of design admendments so specifications never stay the same, like we're working for someone, and they never really tell us what they want, they might but they will change their mind later on, so in that case we're going to change our mind too and do the augmentation. I'll take an extra example requirements added upon our "runway reservation system" problem above, we need to compute $rank(t)$ that is how many planes are scheduled to land at times less than or equal to $t$, perfectly reasonable additional requirement and it wasn't part of the original spec.
+  - With the notion of the aumented BST, we can refer to the normal BST as the vanilla BST such that each node encapsulates common basic fields like left,right pointer, key... while the aumented BSTs are usually bring together other fields or callbacks needed to make the algorithms work.
+  - If you're interested in the implementations of BST you can search your own in the internet, today we're going to focus only on a method to balance BST.
 
 ## BST needs to be balanced!
 - Almost operations for a vanilla BST is O(h) where h is the height of the BST but what we want is $O(lgn)$, so if $h = lgn$ where n is the total number of nodes in the BST then we will have $O(lgn)$ for operations attached to the BST which will truly satisfied our requirement for the "runway reservation system" problem. We have a concept of the balanceness of a tree, to say that a tree is balanced that is it's height must be $O(lgn)$, because almost . Because of the invariant of the BST that is not related to the height of the tree so that BST can become totally skewed to the right/left which is essentially a linked list and we know what's the problem with a linked list. Now this becomes our new problem as obstacles that we have to solve before we can have a data structure that efficiently acchieve $O(lgn)$ time in all attached operations in most of the time.
@@ -136,7 +154,9 @@ type compareFunc[T any] func(T, T) int
 ## The height of a node
 - The new question is, what do we need to do in order to guarantee the height of a BST to be $lgn$. And before getting to methods that help us to actually do that, I think it's useful to discuss about height of the BST or in general height of a node within a BST because height of node root is also height of the BST.
 - I will give out a hint that AVL require each node to store an additional integer field call `height` to store the height of each node, because the algorithm need to know that information instaneously in order to effecienly balance the tree (Simply we can't afford to go down the tree or sub-trees if you will to compute the height every time we need it). For a more intuitive view, let's look at the following picture:
-- ![[Height of a node in a BST.png]]
+
+![node](image-61.png)
+
 -  We need to update the height of each node in the AVL tree every once in awhile whenever insertions or deletions happen on the tree a.k.a the tree structure is modified.
 
 ## How to balance BST?
@@ -144,7 +164,7 @@ type compareFunc[T any] func(T, T) int
 
 ## AVL tree
 - A little bit information about the origin of this data structure:
-	- Named after two Soviet inventors **A**delson-**V**elsky a computer scientist and **L**andis a mathematician.
+	- Named after two Soviet inventors **Adelson-Velsky a computer scientist and **L**andis a mathematician.
 	- It was the first self-balance BST ever to be invented and was the original way people found to keep trees balanced back in the '60s so they're kind of the simplest among others.
 	- AVL trees are often compared with Red-Black trees because both support the same set of operations and take $O(lgn)$ time for the basic operations. For lookup-intensive applications, AVL trees are faster than red–black trees because they are more strictly balanced.
 - AVL tree has a little rule for the height of their nodes. That is if a node is missing its left or right child or both and the missing children is considered as an imaginary node and these nodes have height $h=-1$. In order for the formula to calculate the height of a binary node in a BST work with that base case.
@@ -155,47 +175,67 @@ type compareFunc[T any] func(T, T) int
 - Notice if we slightly change the above constraint to "must not 0 apart ..." which means the left sub-tree and the right sub-tree have the same height in effect essentially describe a perfect BST but this constraint is really hard to conform since there are only a certain number of nodes $n$ with a unique structure for each $n$ to be able to represent a perfect BST (level 1 require 1 node, level 2 require 3 nodes, level 3 requires 7 nodes, level 4 requires 15 nodes, level 5 requires 31 nodes... and with that number of nodes they have to presented in a perfect way so it's really hard to keep that, for example if we have 8 nodes then it's impossible to fix the invariant)
 - The above definition by words can be expressed as mathematical as follows: $\forall n\in AVL, |h(n.left) - h(n.right)| \leq 1$ 
 - This constraint will help ensures the height of the AVL tree in the worst case of its definition stays $O(lgn)$ or in other words the highest height of an AVL tree is bounded by $O(lgn)$. In my humble opinion, It's important to understand how this is achieved by the invariant of the AVL tree in order to fully understand the idea of AVL trees, so I'll try my best to proove this is true:
+
 	- The first claim is that `AVL trees are balanced`, balanced means height is always $O(lgn)$, so we're just going to assume for now that we can somehow achieve this property and we want to prove that it implies that the height is at most some constant times $O(lgn)$ while we know it's at least $O(lgn)$
 	- Let's think about the worst case for height of an AVL tree, say if we have $n$ nodes how  could we make the AVL tree as high as possible? Or conversely, if we have a particular height, how could we make it have as few nodes as possible? That'd be like the sparsest or the least balanced situation for AVL trees.
 	- To achieve the worst case, we can do this: For every node, let's the right side have a height of $1$ larger than the left side or symmetrically we can do the same on the conversely but I'll only take one example here. 
 	- We're going to define $n_{h}$ is the minimum number of nodes that's possible in an AVL tree of height $h$. This is sort of the inverse that we care about, but if we can solve the inverse, we can solve the thing. What we really care about is, for $n$ nodes, how large can the height be, we wanna prove that is bounded to $O(lgn)$. But it'll be a lot easier to think about the reverse, which is, if we fix the height to be $h$ then what's the fewest nodes that we can pack in? Because for a worst case of a BST a right/left degenerated BST, we have a height of $n$ so we only need to put $n$ nodes and we see that woulld be really bad. What we prefer is a situation where with heigh $h$, we have to put in $2^h$ nodes and that would be perfect balance, so when we take the inverse from that exponential equation we get a logarithm.
 	- Imagine a case where we want to build an AVL tree with a fixed height, and we want to have as few nodes as possible. If we have a tree with a big height and very few nodes, $h$ is going to be bad when we write it as a function of $n$ so those trees are unbalanced - big height, small number of nodes. So we will try to build up the next presentation of the AVL tree with minimum number of nodes for each level, let's look at the following picture: 
-	- ![[Minimum number of nodes for an AVL tree of height h.png]]
+
+	![minimum](image-62.png)
+
 	- Expanding the example to level 4,5,6,7 then you will regconize the pattern/recurrence. If we want to build an AVL tree with as few nodes as possible and height $h$, we start with the root and then at the right we build an AVL tree of height $h-1$ and at the left, we build an AVL tree of height $h-2$, because of the fact that we were also try to build left AVL sub-tree and right AVL sub-tree with minimum number of nodes then it turns out that the whole tree must has minimum number of nodes. Look at the following picture: 
-	- ![[The best way to build a tall AVL tree with as few nodes as possible.png]]
+
+	![picture](image-63.png)
+
 	- Suppose we want to write the number of nodes as a function of height, we have $n_h=n_{h-2}+n_{h-1}+1$ as the recurrence with the base case $n_{O(1)}=O(1)$. Now we need to solve it, what we would like is for it to be exponential, because that means there's a lot of nodes in a height $h$ AVL tree. Look at the recurrence, doesn't it look like something very familiar to our developers when we first come to some of the first problem when we learn how to write code? Yes, the good old Fibonacci, it's almost Fibonacci except we have our additional $+1$ in the recurrence. Well, that's actually good, because in particular, $n_h$ is bigger than Fibonacci. So we have $n_h>f_h$, if we add $1$ at every single level then certianly we get something bigger than the base Fibonacci sequence. Now, hopefully you know Fibonacci is exponential. Let's bring something that is already prooved in order to help us reduce the work here, we know that $f_h=\frac{\varphi^h}{\sqrt{5}}$ (refs:https://en.wikipedia.org/wiki/Fibonacci_number) the above method require rounding the result into the nearsest integer in order to give the exact result of the Fibonacci sequence, crazzy stuffs and obviously we don't need to know why that's true, just take it as fact. And conveniently $\varphi>1$, also we don't need to remember what $\varphi$ is($\approx1.618$), except it is bigger than 1. So we have an exponential bound, this is good news. What we really wanna know is how $h$ relates to $n$, which is just inverting the formula. So we have, on the other hand, $\frac{\varphi^h}{\sqrt{5}}<n_h$ , put on $log_\varphi$ on both sides seems like a good thing to do.  We get $h - log_{\varphi}\sqrt{5}<log_{\varphi}n$ with $log_{\varphi} \approx1.440\times lgn$, because after all, log base 2 is what computer scientists care about. So just to put it into perspective, now we claim that the height of an AVL tree is always less than $1.440\times lgn$ and $1.44$ is a reasonable constant I believe, maybe we'd like $1$, there are BSTs that achieve $1$ plus a very tiny thing.
+
 - Okay so this is kinda of the hard way to argue that the height of an AVL tree is bounded by $O(lgn)$, there's a much easier way to analyze this recurrence though $n_h=n_{h-2}+n_{h-1}+1$.
 	- This is the theorectical computer scientist way to solve this recurrence, we don't care about constants.
 	- And so we say, aw, this is hard, I've got $n_{h-1}$ and $n_{h-2}$, aw, so asymetric, let's symmetrify. Could we make them both $n_{h-1}$ or $n_{h-2}$ ?
-	- $n_{h-2}$ is the right way to go because we want to know $n_h$ is greater than something in order to get a less than down here. So we have $n_h>2n_{h-2}+1$ because if we have a larger height we're going to have more nodes. We can even get rid of the $1$ because that only makes things bigger, so we have $n_h>2n_{h-2}$ . Now from this version of the recurrence, let's use inductive reasoning to solve it. 
-	- ![[Height of an AVL tree is bounded by O(lgn).png]]
+	- $n_{h-2}$ is the right way to go because we want to know $n_h$ is greater than something in order to get a less than down here. So we have $n_h>2n_{h-2}+1$ because if we have a larger height we're going to have more nodes. We can even get rid of the $1$ because that only makes things bigger, so we have $n_h>2n_{h-2}$ . Now from this version of the recurrence, let's use inductive reasoning to solve it.
+
+	![tree10](image-64.png)
+
 - All right, so far so good, now the next big question is how the heck can we maintain this AVL properties for our good old BST?
 
 ## How to maintain the AVL invariant when the BST tree is modified
 - **Insertion**:
 	- Step 1: Do simple BST insertion, and this one will not preserve the AVL property.
 	- Step 2: Calculate the balance factor of the sub-tree related to the newly inserted node to check if it violates the AVL properties on that sub tree then we're going to fix that recursively when we going up from the first bottom of the recursive function. 
+
 - **Deletion**:
 	- Step 1: Do simple BST deletion, and this one will not preserve the AVL property.
 	- Step 2: Calculate the balance factor of the related sub-tree after the node is deleted to check if it violates the AVL properties on that sub tree then we're going to fix that recursively when we going up from the first bottom of the recursive function.
 - Ok, sound like we're gonna have ways or precisely tools to fix the AVL properties, and that tool is **rotations**, super cool tools.
-- ![[Rotations for binary tree nodes.png]]
+
+![rotation](image-65.png)
+
 - For left-rotate, whatever the parent of $X$ was becomes the parent of $Y$ and vice versa, in fact. The parent of $Y$ was $X$, and now the parent of $X$ is $Y$. The parent of $A$ is still $X$, the parent of $B$ changes, it used to be $Y$ now it's $X$. The parent of $C$ was $Y$, it's still $Y$. We call it left-rotate because the root moves to the left. 
 - For right-rotate, it a reverse operation with the left-rotate that let us manipulate the tree assymetrically.
 - So in a constant number of pointer changes, we can perform what so called node rotation and more importantly it satisfies the BST order property, if we do an in-order traversal of this we will get $A,X,B,Y,C$ at the first state, not just a coincident the same is true for the in-order traversal of the second state. $B$ was some number of nodes between $X$ and $Y$, and it still some number of nodes between $X$ and $Y$, and so on you can expand the example tree and check more on yourself.  
 - In my humble opinion, it's like the only thing you need to know in BST along with how to do the search.
 - Ok that's rotations by pictures, to talk about them in detail, we have to look at their specific cases:
+
 	- Case 1: I call this case "right child skewed to the right"
-	- ![[Right child skewed to the right.png]]
+	
+	![case1](image-66.png)
+
 	- We rotate-left self (parent of the right child that is skewed) to balance the sub-tree
 	- Case 2: I call this case "left child skewed to the left"
-	- ![[Left child skewed to the left.png]]
+
+	![case2](image-67.png)
+
 	- We rotate-right self (parent of the left child that is skewed) to balance the sub-tree
-	 - Case 3: I call this case "right child skewed to the left"
-	 - ![[Right child skewed to the left.png]]
+	- Case 3: I call this case "right child skewed to the left"
+
+	 ![case3](image-68.png)
+
 	 - We rotate-right the right child that is skewed to achieve case 1, then we perform solution for case 1.
 	 - Case 4: I call this case "left child skewed to the right"
-	 - ![[Left child skewed to the right.png]]
+
+	 ![case4](image-69.png)
+
 	 - We rotate-left the left child that is skewed to achieve case 2, then we perform solution for case 2.
 - The common pitfall here is to think that we only need to fix that one violated local sub-tree that related to the insertion/deletion, where we only fix the lowest violation of the AVL property there maybe violations higher up. We need to fix the violation all the way up to the root from the insertion/deletion point.
 - Suppose $X$ is the lowest node violating the AVL properties, the way we find this node is we start at the node that we changed (insert/delete), we update the height based on the heights of its children and check if it's ok as we go up, and we keep walking up until we see, oh, the left is $+2$ larger than the right or vice versa, then we fix it.
@@ -207,16 +247,3 @@ type compareFunc[T any] func(T, T) int
 - https://www.youtube.com/watch?v=FNeL18KsWPc&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=6
 - https://www.youtube.com/watch?v=r5pXu1PAUkI&list=PL-K_ib5mxHXnukhVpx_wMun21O2GQUEE0&index=5
 - https://www.youtube.com/watch?v=IWzYoXKaRIc&list=PL-K_ib5mxHXnukhVpx_wMun21O2GQUEE0&index=6
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

@@ -111,8 +111,6 @@ XGROUP CREATE mystream mygroup $
 ```
 The `$` is the entry ID to set where the group should start reading from (`$` will have the effect of the group consuming only new messages).
 
-<br/>
-
 ### Read as a group's consumer
 To nominate a consumer to read messages from the stream:
 ```
@@ -170,8 +168,6 @@ Where:
 
 After the event is claimed by `Bob`, `Bob` can now retrieve the event with `XREADGROUP 0` to process, and `XACK` it.
 
-<br/>
-
 In `XCLAIM` we will need the event ID (exp: retrieved from `XPENDING`) before claiming the message. With `XAUTOCLAIM`:
 ```
 XAUTOCLAIM mystream mygroup Bob 3600000 0-0 COUNT 1
@@ -181,16 +177,3 @@ We can automatically claim any pending messages in `mystream` that has the minim
 ## References
 - [Redis documentation](https://redis.io/docs/)
 - [Redis Streams tutorial](https://redis.io/docs/data-types/streams-tutorial/)
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

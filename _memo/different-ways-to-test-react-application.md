@@ -1,9 +1,12 @@
 ---
 tags: 
   - react.js
+  - application
+  - developer
+  - frontend
 title: Different Ways To Test React Application
 date: 2019-06-06
-description: null
+description: There are 2 practical types of testing a front end application: test its implementation details (unit test, integration test combine with assert states of the component being tested) or testing its behavior base on perspective (e2e, integration test).
 authors: null
 menu: memo
 type: null
@@ -347,7 +350,6 @@ To run e2e tests for the application in the repository above, you can run the co
 I’m writing this mainly as a reference for myself, but hopefully, other people will find this useful as well.
 
 Reference links:
-
 * [https://testing-library.com/docs/react-testing-library/api](https://testing-library.com/docs/react-testing-library/api)
 * [https://github.com/testing-library/react-testing-library](https://github.com/testing-library/react-testing-library)
 * [https://www.cypress.io/](https://www.cypress.io/)

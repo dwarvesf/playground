@@ -1,9 +1,12 @@
 ---
 tags: 
   - wasm
+  - engineering
+  - memo
+  - javascript
 title: A Quick Intro To Webassembly
 date: 2020-06-15
-description: null
+description: If you haven’t heard of WebAssembly yet, then you will soon. It’s one of the industry’s best-kept secrets, but it’s everywhere. It’s supported by all the major browsers, and it’s coming to the server-side, too.
 authors: null
 menu: memo
 type: null
@@ -63,7 +66,7 @@ As you can see from the diagram above, the job of the first JavaScript engine wa
 
 A rudimentary JavaScript engine contains a baseline compiler whose job is to compile JavaScript source code into an intermediate representation (IR) which is also called the bytecode and feeds this bytecode to the interpreter. The interpreter takes this bytecode and converts to the machine code which is eventually run on the machine’s hardware (CPU).
 
-This is *just like how Java works but the bytecode generation is done by the programmer and bytecode is shared universally rather than the source code*.
+*This is just like how Java works but the bytecode generation is done by the programmer and bytecode is shared universally rather than the source code.*
 
 A baseline compiler’s job is to compile code as fast as possible and generate less-optimized bytecode (or machine code in other cases). **Since the interpreter has an unoptimized bytecode to work with, the application speed will be slow, however, the application bootstrap time will be very less.**
 
@@ -88,7 +91,7 @@ Meanwhile, what JavaScript engine can also do is **gather profiling data of the
 
 As you can see from the above figure, the V8 team introduced a new interpreter pipeline Ignition whose job was to generate the bytecode from the JavaScript source code using a baseline compiler and later interpret that bytecode using an interpreter.
 
-The **TurboFan optimization compiler can optimize this bytecode in the background **(in separate threads) as the application is running and generate a very optimized machine code that will be replaced eventually. Turbofan receives the profiling data from the Ignition interpreter and looks for the code that is Hot. **It can make the guesses on how to optimize the code better (by guessing the data types) and optimize or de-optimize the code**.
+The TurboFan optimization compiler can optimize this bytecode in the background (in separate threads) as the application is running and generate a very optimized machine code that will be replaced eventually. Turbofan receives the profiling data from the Ignition interpreter and looks for the code that is Hot. It can make the guesses on how to optimize the code better (by guessing the data types) and optimize or de-optimize the code.
 
 ## The invention of asm.js
 So far we have understood that a lot of throughs, efforts and money have been put into developing JavaScript engines to cope up with complex JavaScript applications and somehow, make it faster.
@@ -123,7 +126,7 @@ If our JavaScript code contains `"use asm";` annotation and the JavaScript cod
 
 After the successful proof-of-concept demonstration by the Mozilla team, other browser vendors like Chrome and Edge rolled out support for the asm.js specifications. Applications written in asm.js were relatively faster than their counterparts written in normal JavaScript.
 
-Apart from a virtual type system, asm.js specification tells us to write our JavaScript code inside a function called as a module. We need to **instantiate this module by providing an ArrayBuffer which acts like a heap memory.** **By abstracting the memory of our module from the memory of the main JavaScript thread**, we don’t have the necessary overhead of dynamic memory management and garbage collection provided by the JavaScript engines. Let’s write a sample asm.js module by hand.
+Apart from a virtual type system, asm.js specification tells us to write our JavaScript code inside a function called as a module. We need to **instantiate this module by providing an ArrayBuffer which acts like a heap memory. By abstracting the memory of our module from the memory of the main JavaScript thread**, we don’t have the necessary overhead of dynamic memory management and garbage collection provided by the JavaScript engines. Let’s write a sample asm.js module by hand.
 
 But first, let's understand the asm.js module structure
 

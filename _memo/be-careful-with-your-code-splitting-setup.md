@@ -5,8 +5,9 @@ tags:
   - technique
 title: Be Careful With Your Code Splitting Setup
 date: 2017-07-17
-description: null
-authors: null
+description: It took me so long to notice this because chunks grouping are one of those easy-to-forget type of things, you did it once and rarely look back.
+authors: 
+- duy
 menu: memo
 type: null
 hide_frontmatter: false

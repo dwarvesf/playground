@@ -11,7 +11,7 @@ I'm currently working on a new application called Javis, which operates as a Chr
 ## What is Shadow DOM?
 Shadow DOM is a web standard that allows encapsulation of HTML, CSS, and JavaScript within a specific context. Shadow DOM allows hidden DOM trees to be attached to elements in the regular DOM tree — this shadow DOM tree starts with a shadow root, underneath which you can attach any element, in the same way as the normal DOM.
 
-![[_assets/shadow-dom.svg]] Source: https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM
+![shadowdom](image-17.png)
 
 There are some bits of shadow DOM terminology to be aware of:
 
@@ -38,16 +38,3 @@ Shadow DOM provides a powerful tool for developers creating website extensions, 
 
 ## References
 - https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

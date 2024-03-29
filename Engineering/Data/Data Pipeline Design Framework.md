@@ -16,7 +16,6 @@ type: brainery
 ---
 
 ## Motivation of Designing Data Pipeline Framework
-
 To improve and strongly go-live the data pipeline, besides apply best practices and pillar for Data Pipeline Native Solution, a design framework and pattern are robustly help us in:
 
 - Follow typical data pipeline
@@ -26,9 +25,7 @@ To improve and strongly go-live the data pipeline, besides apply best practices 
 Its easy to follow if we will discuss the pattern and solution with SWAT and pros/cons analysis and aks ourself for initiative questions such as: when to use and when not to use.
 
 ## Choosing your data pipeline by
-
 ### 1. Ask Question
-
 - Need historical data in output ?
   - Yes ? Replayable source ?
   - No ? Non-Replayable source ?
@@ -47,23 +44,19 @@ Its easy to follow if we will discuss the pattern and solution with SWAT and pro
   - If Idempotent pipeline possible: Source overwrite sink
 
 ### 2. Source and Sink
-
 Before designing data pipeline and perform magic in data movement, we have to understand where we are and where we will go to help us direct the proper direction.
 
 - Source: data systems where provide input(s) to data pipeline
 - Sink: data systems where retrieve output(s) from data pipeline
 
 #### 2.1 Source replayability
-
 Can we answer question **What did the data look like n period ago (n can be min/hour/day/months/years)** ?
 To able to answer that question, the data source need to support a data journey from every state of data. For example, Event stream, web server logs, delta change in database likes create/update/delete (CDC), ect.
 
 #### 2.2 Source Ordering
-
 Does source system is event streaming or log-out event and push data into data pipeline in order? Especially streaming data. List of techniques are using to handle such as "backoff", "watermaking", "handling late event" need to be address when dealing with order events.
 
 #### 2.3 Sink Overwritability
-
 Overwrite is required to prevent duplication of data processing and makes data more controllable and avoid partial data when pipeline fails. The unique key is used for tracking and overwriting data in:
 
 - Overwritable sinks:
@@ -72,7 +65,6 @@ Overwrite is required to prevent duplication of data processing and makes data m
 - Non-overwritable sinks: Kafka queue/Streaming queue, then we have to store immediately and post-process events
 
 ### 3. Data pipeline patterns
-
 Before jumping into any specific or pattern of system design for data pipeline, remember **Every solution need to be under consideration (pros/cons)**, there are 3 questions referred from experts in data foundation:
 
 1. Extraction: How the data in source systems will be ingested (pull/push) ?
@@ -82,9 +74,7 @@ Before jumping into any specific or pattern of system design for data pipeline, 
 Now, detailing what we are taking
 
 #### 3.1 Extraction
-
 ##### 3.1.1 Time ranged/Delta
-
 Data pipeline only pulls the data corresponding to a specific time frame like daily/hourly/...
 **Notes**: we need to update sink/destination reasonably by Slowly Changing on table to capture current state of data.
 - **Pros**
@@ -95,7 +85,6 @@ Data pipeline only pulls the data corresponding to a specific time frame like da
   - Rely on source system to support replayable where pipeline will capture the time frame and delta
 
 ##### 3.1.2 Snapshot
-
 Data pipeline scan and pull entire data from the source, and we need a additional column named **run_id** (on Database or new folder in cloud storage system) that uniquely identifies each pipeline run. Later used for data versioning.
 
 - **Pros**
@@ -111,7 +100,6 @@ Data pipeline scan and pull entire data from the source, and we need a additiona
   - Not suitable for event data and large data
 
 ##### 3.1.3 Lookback
-
 As an advanced data processing, lookback helps to handle source system which are continuously update and has late arriving events for particular record. That help to answer aggregate metric for the past n period because the data in fact table being changed.
 
 - **Pros**
@@ -121,7 +109,6 @@ As an advanced data processing, lookback helps to handle source system which are
   - Report and Dashboard makes confusion for end-user if data late events are come a lot
 
 ##### 3.1.4 Streaming
-
 Each record flows through data pipeline with enriched, registered, filtered, ect as needed. This is popular topic on market because users want to see the data as soon as possible
 
 - **Pros**
@@ -133,9 +120,7 @@ Each record flows through data pipeline with enriched, registered, filtered, ect
   - Decoupling pattern for data pipeline to isolate source - pipeline - sink
 
 #### 3.2 Behavioral
-
 ##### 3.2.1 Idempotent
-
 Data pipeline does not cause duplication data/partial data/schema changes whenever it runs numerous time with the same inputs.
 
 To implement the Idempotent data pipeline: the delete-write pattern is strongly recommended with highly carefulness. It require we understand sink systems mechanism.
@@ -174,7 +159,6 @@ DROP TEMP TABLE TEMP_YYYY_MM_DD;
   - Good fit for OLAP and Relational Database
 
 ##### 3.2.2 Self-healing
-
 The straightforward design for self-healing pipeline is all unprocessed data will be "catch-up" for the next cycle run when an error occurs during a run.
 Whereas time ranged pipeline simply automatically run from the last checkpoint failed run before starting the run, or full snapshot doesn't need to care historical data, or lookback pipeline will skip failed run, Self-healing behavior need a meta running table to control the checkpoint and run_id that it can be challenging during implementation.
 
@@ -189,9 +173,7 @@ Whereas time ranged pipeline simply automatically run from the last checkpoint f
   - Need to handle metadata of pipeline
 
 #### 3.3 Structural
-
 ##### 3.3.1 Multi-hop pipeline
-
 An idea of multi-hop is keeping data separated at different levals/layer of cleanliness. Multiple layers of transformation help:
 
 - Catch issues as soon as data quality checks after each layer with specific method for each layer
@@ -210,7 +192,6 @@ An idea of multi-hop is keeping data separated at different levals/layer of clea
   - Processing costs with large data and rerun data
 
 ##### 3.3.2 Conditional/ Dynamic pipeline
-
 Additional consideration when keep an eye on th exploding complexity when pipeline grows and evolves. The requirement may need complex flows and pipeline do have different tasks based on different condition based on input. For example, we organize tasks in pipeline when input from user changes frequently.
 
 - **Pros**
@@ -222,7 +203,6 @@ Additional consideration when keep an eye on th exploding complexity when pipeli
   - Difficult for testing when need to simulate all the different input scenarios
 
 ##### 3.3.3 Disconnected pipeline - Connected source storage
-
 Disconnected data pipeline depend on data sinks of other data pipelines, but careless data sources. Define boundary of data pipeline based on Ontology/Semantic
 
 - **Pros**
@@ -232,8 +212,7 @@ Disconnected data pipeline depend on data sinks of other data pipelines, but car
   - Hard to debug, tracking data lineage across system
   - Hard to define SLAs
 
-### 4. Conclusion
-
+## Conclusion
 The post provides idea how to get starting to consider and figure out the best fit for resolving problem, and how a typical question made when we are asked to create and organize data flows through data pipeline.
 
 Last but not least, because of making development go well and maintenance more efficiency, the communication and get feedback are critical important during design and implement. Apply Scum method in software development is the best of choice.

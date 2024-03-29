@@ -2,10 +2,12 @@
 tags: 
   - tips
   - operation
+  - team
 title: Objective
 date: 2020-01-15
-description: null
-authors: null
+description: The ultimate objective of operations is making sure the gears rolling smoothly and the car always move forward without any glitch.
+authors: 
+- duy
 menu: memo
 type: null
 hide_frontmatter: false

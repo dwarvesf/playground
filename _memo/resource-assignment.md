@@ -6,7 +6,8 @@ tags:
 title: Resource Assignment
 date: 2019-04-10
 description: null
-authors: null
+authors: 
+- han
 menu: memo
 type: null
 hide_frontmatter: false

@@ -2,6 +2,7 @@
 tags: 
   - SQL
   - database
+  - engineering
 title: Sql Practices Orm Vs Plain Sql
 date: 2021-07-07
 description: null

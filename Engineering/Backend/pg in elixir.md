@@ -1,5 +1,5 @@
 ---
-tags: engineering/backend, elixir, pg, process
+tags: engineering/backend, elixir
 author: Hieu Phan
 github_id: hieuphq
 date: 2022-11-01
@@ -8,7 +8,7 @@ icy: 10
 
 pg2 is an erlang module that implements **process groups**. Each message may be sent to one, some, or all group members.
 
-## pg
+## PG
 [Pg](https://www.erlang.org/doc/man/pg.html) is a replacement for pg2, which is deprecated from OTP 24. pg stands for Process Groups that can send sen message to one, some, or all group members.
 
 The simplest explanation is that pg enables the creation of a group and the subsequent connection of processes to the group. As a result, the **name** is mapped to the PID list. All local or remote processes are listed in the PID list. A pg group is made visible to all system-connected nodes the moment it is created. Each node can call create without making a mistake because a pg group can be established numerous times without failing.
@@ -182,16 +182,3 @@ Before OTP 23, we can use [pg2](https://www.erlang.org/docs/18/man/pg2.html) to 
 - https://stephenbussey.com/2018/02/17/pg2-basics-use-process-groups-for-orchestration-across-a-cluster.html
 - https://www.erlang.org/doc/man/pg.html
 - https://stackoverflow.com/questions/67957826/what-is-the-correct-way-to-start-pgs-default-scope-in-an-elixir-1-12-applica
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

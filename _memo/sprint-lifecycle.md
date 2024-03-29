@@ -1,6 +1,8 @@
 ---
 tags: 
   - agile
+  - pm
+  - management
 title: Sprint Lifecycle
 date: 2016-02-10
 description: null
@@ -10,7 +12,7 @@ type: null
 hide_frontmatter: false
 ---
 
-## **Sprint "milestones"**
+## Sprint "milestones"
 Below listed are the rules for each step of the sprint lifecycle. ***No exceptions will be made for any of the points.***
 
 **Start of the sprint**

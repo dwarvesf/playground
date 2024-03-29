@@ -2,10 +2,10 @@
 tags: 
   - engineering
   - frontend
-  - radio
+  - radiotalk
 title: React 18
 date: 2022-06-06
-description: null
+description: React 18 was released in March 2022. This release focuses on performance improvements and updating the rendering engine.
 authors: null
 menu: memo
 type: null
@@ -169,5 +169,3 @@ root.render(<App tab="home" />);
 ## Conclusion
 * In a summary, React 18 comes with a few breaking changes, depending on how you use it. But all in all, it also brings out-of-the-box performance improvements including batching more by default, which removes the need to manually batch updates in application or library code.
 * Upgrading to React 18 should be straightforward, give it a try and let us know what you think.
-
-### 

@@ -1,10 +1,13 @@
 ---
 tags: 
   - design-thinking
+  - software-development
+  - practice
 title: What I Learned On Design Thinking And Software Development
 date: 2021-05-10
-description: null
-authors: null
+description: According to my knowledge, the basic definition of design thinking is an iterative process in which we understand the user's needs and problems. Define the problems to bring out the most ideal solutions, then we prototype the idea and test.
+authors: 
+- huyenle
 menu: memo
 type: null
 hide_frontmatter: false

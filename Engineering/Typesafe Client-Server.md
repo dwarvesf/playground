@@ -22,7 +22,7 @@ To address this challenge, typesafe client-server architecture introduces a code
 
 Using API definitions in JSON or YAML format as the single source of truth, the code generator automatically validates and generates the necessary models and API clients for the frontend and corresponding models and API endpoints for the backend. This ensures that both ends of the application speak the same "data language," and any changes in the API are reflected on both sides promptly and accurately.
 
-![[typesafe-client-server.png]]
+![typeserver](image-71.png)
 
 This automated approach not only minimizes human error but also streamlines the development process, as developers can now focus on building features rather than fixing mismatches between the FE and BE. By adopting this typesafe client-server system, teams can enhance collaboration, accelerate time-to-market, and deliver a more reliable product.
 
@@ -52,16 +52,3 @@ This automated approach not only minimizes human error but also streamlines the 
 - https://docs.stoplight.io/docs/spectral/eb68e7afd463e-spectral-in-java-script
 - https://swagger.io/specification
 - https://trpc.io
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

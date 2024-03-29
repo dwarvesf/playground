@@ -23,14 +23,12 @@ github_id: mickwan1234
 ---
 
 ## Introduction
-![[_assets/Google Dataproc/387aafdc8f7994ea37449a1015265907_MD5.webp]]
-
 Google Dataproc is a fast and easy-to-use, fully managed cloud service for running Apache Spark and Hadoop workloads. It allows users to process and analyze large-scale data efficiently and at scale. Key features and benefits of Google Dataproc include:
 
 - **Fast and Scalable Processing**: Dataproc enables users to run Apache Spark and Hadoop workloads on Google Cloud Platform, taking advantage of its scalable infrastructure and resources.
-- **Integration with Google Cloud Services**: Dataproc integrates seamlessly with other Google Cloud services, such as BigQuery, Cloud Storage, and Cloud Spanner, allowing users to access and analyze data in a centralized manner**[1](https://cloud.google.com/dataproc)**
+- **Integration with Google Cloud Services**: Dataproc integrates seamlessly with other Google Cloud services, such as BigQuery, Cloud Storage, and Cloud Spanner, allowing users to access and analyze data in a centralized manne **[1](https://cloud.google.com/dataproc)**
 - **Data Analytics and Machine Learning**: Dataproc supports data scientists and engineers in building and deploying machine learning models, as well as analyzing data using custom-built applications and open-source libraries.
-- **Managed and Secure Environment**: Google Dataproc provides a fully managed and secure environment for running data processing workloads, ensuring that users can focus on their data analysis and insights without worrying about infrastructure management**[1](https://cloud.google.com/dataproc)**.
+- **Managed and Secure Environment**: Google Dataproc provides a fully managed and secure environment for running data processing workloads, ensuring that users can focus on their data analysis and insights without worrying about infrastructure management **[1](https://cloud.google.com/dataproc)**.
 
 Overall, Google Dataproc simplifies big data processing and analysis by providing a fast, scalable, and integrated platform for running Apache Spark and Hadoop workloads on Google Cloud Platform.
 
@@ -80,7 +78,7 @@ This Dataproc cluster has 24 virtual CPUs, 4 for the master and 20 spread across
 In this example, the cluster would also incur charges for Compute Engine and Standard Persistent Disk Provisioned Space in addition to the Dataproc charge (see [Use of other Google Cloud resources](https://cloud.google.com/dataproc/pricing#use_of_other_google_cloud_resources)). The [billing calculator](https://cloud.google.com/products/calculator) can be used to determine separate Google Cloud resource costs.
 
 ## How to setup a Dataproc cluster
-### ****Prerequisites:****
+### Prerequisites
 1. **Google Cloud Platform Account:**
     - You need a GCP account. If you don't have one, you can sign up for a free trial at [Google Cloud Console](https://console.cloud.google.com/).
 2. **Enable Billing:**
@@ -92,7 +90,7 @@ In this example, the cluster would also incur charges for Compute Engine and Sta
 5. **Enable APIs:**
     - Enable the necessary APIs for Dataproc and other services. You can do this through the [APIs & Services > Dashboard](https://console.cloud.google.com/apis/dashboard) section in the GCP Console.
 
-### **Set Up a Dataproc Cluster:**
+### Set Up a Dataproc Cluster
 Now that you have the prerequisites in place, you can proceed to set up a Dataproc cluster:
 
 1. **Open Cloud Shell:**
@@ -134,40 +132,34 @@ Now that you have the prerequisites in place, you can proceed to set up a Datapr
 
 ## How to deploy a Spark job on Dataproc (Using Google cloud console)
 ### Step 1: In the created cluster click on `Submit Job` button on the top right of the main console screen
-![[_assets/Google Dataproc/63ff07262ca89f53636f0cbf3ac31e7f_MD5.webp]]
+![step1](image-34.png)
 
 ### Step 2: Fill all necessary field in the job creation modal:
-![[_assets/Google Dataproc/bcea66253717094f382ba5f6a600ec5d_MD5.webp]]
+![step2](image-35.png)
+
 - Job ID: job unique name across the cluster
 - Job Type: the type of the job that you submit to Dataproc including (in this demo we’ll use PySpark):
-![[_assets/Google Dataproc/f83159ba2f2f39b3012c233685a6944e_MD5.webp]]
+
+![input](image-36.png)
+
 - Main file: the directory of main job file from GCS or HDFS or inside the compute engine.
 - All others field is optional.
 - After you fill in the necessary input i should be something like this:
-![[_assets/Google Dataproc/6fa510f032671ede4c6f2958d31e4536_MD5.webp]]
+
+![input2](image-37.png)
 
 - Then press `Submit` to submit the job
 
 ### Step 3:
 After submitting the job you should be able to similar screen to this:
-![[_assets/Google Dataproc/887de3a75e864cf1da75c2b91ac502cb_MD5.webp]]
+
+![submit](image-38.png)
 
 Wait for the job status change to succeeded (or failed):
-![[_assets/Google Dataproc/062214d530d570f03dee791c4b32241e_MD5.webp]]
+![submit2](image-39.png)
 
 And that is how you run a Spark ( or Hadoop) job on Google Cloud Dataproc.
 Full video step by step:
-![[830c086903ad2dcaf7bdece0af8e3647_MD5.mp4]]
 
----
-<!-- cta -->
+![submit3](image-40.png)
 
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and contributing to the Brainery is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [[202403121185|we are also hiring]]
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

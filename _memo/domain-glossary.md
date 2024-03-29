@@ -1,9 +1,11 @@
 ---
 tags: 
   - design
+  - mobile
+  - application
 title: Domain Glossary
 date: 2020-04-19
-description: null
+description: Open banking will allow the networking of accounts and data across institutions for use by consumers, financial institutions, and third-party service providers. Open banking is becoming a major source of innovation that is poised to reshape the banking industry.
 authors: null
 menu: memo
 type: null

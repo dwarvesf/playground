@@ -5,7 +5,8 @@ tags:
 title: What Is Pnpm Compare To Npmyarn
 date: 2023-04-11
 description: null
-authors: null
+authors: 
+- toanho
 menu: memo
 type: null
 hide_frontmatter: false
@@ -21,7 +22,7 @@ hide_frontmatter: false
 ## Introduction
 PNPM is a package manager for Node.js which stands for “Performant NPM”. It was introduced in 2016, the same year Yarn was released. PNPM is a fast, disk space efficient package manager that supports monorepos. It creates a non-flat `node_modules` by default, so code has no access to arbitrary packages. PNPM performs installation in three stages: 
 
-1. **Dependency resolution **- The package manager identifies and fetches all required dependencies to the store.
+1. **Dependency resolution** - The package manager identifies and fetches all required dependencies to the store.
 1. **Directory structure calculation** - Based on these dependencies, it calculates the layout of the `node_modules` directory.
 1. **Linking dependencies** - it retrieves and establishes hard links from the store to `node_modules` for all remaining dependencies.
 
@@ -43,7 +44,7 @@ As you can see, PNPM does not store packages in the `node_modules` folder, but r
 
 Thanks to this, package versions are only stored once on the disk
 
-### **Boosting installation speed****[](https://pnpm.io/motivation#boosting-installation-speed)**
+### Boosting installation speed[](https://pnpm.io/motivation#boosting-installation-speed)
 PNPM performs installation in three stages:
 
 1. Dependency resolution: identifying and obtaining all necessary dependencies for the store.
@@ -56,7 +57,7 @@ This approach is significantly faster than the conventional method of identifyin
 
 ![](assets/what-is-pnpm-compare-to-npmyarn_acaaed15e34c391a1ff6b81bbbf6163f_md5.jpeg)
 
-### **Creating a non-flat node_modules directory****[](https://pnpm.io/motivation#creating-a-non-flat-node_modules-directory)**
+### Creating a non-flat node_modules directory[](https://pnpm.io/motivation#creating-a-non-flat-node_modules-directory)
 First of all, we must ask why NPM chooses the flat `node_modules` structure approach.
 
 Going back in time, before the release of NPM version 3, at this point, `node_modules` in NPM were still in a non-flat structure. As shown in the example below:
@@ -121,7 +122,7 @@ PNPM's node_modules layout uses [symbolic links to create a nested structure of 
 
 Another potential issue with PNPM is that its nested dependency structure may not be compatible with certain older packages. [This can cause issues when trying to install packages that have dependencies that are not compatible with PNPM’s nested structure](https://pnpm.io/limitations).
 
-## **Showcase**
+## Showcase
 Thankfully, PNPM is employed by numerous large companies, demonstrating its effectiveness. For an updated list, you can visit [https://pnpm.io/users](https://pnpm.io/users).
 
 ![](assets/what-is-pnpm-compare-to-npmyarn_55e4a8514dc89f283ed5e6b77d839d42_md5.webp)

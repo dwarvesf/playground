@@ -1,10 +1,13 @@
 ---
 tags: 
   - swift
+  - product
+  - software 
 title: Reproduce Apple Find Me Bottom Menu View
 date: 2019-06-29
 description: null
-authors: null
+authors: 
+- trungphan
 menu: memo
 type: null
 hide_frontmatter: false

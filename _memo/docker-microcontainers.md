@@ -1,9 +1,11 @@
 ---
 tags: 
   - docker
+  - developer
+  - go
 title: Docker Microcontainers
 date: 2016-02-04
-description: null
+description: When using Docker, you will quickly realize that the image using to run a project takes a big capacity. A simple image ubuntu took nearly 200MB, but you don’t take full advantage of its available tools
 authors: null
 menu: memo
 type: null

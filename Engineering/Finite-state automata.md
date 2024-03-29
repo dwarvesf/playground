@@ -72,21 +72,8 @@ let transition = (state, input) =>
 ## States and relevance in the _domain_
 In [[Domain Driven Design]] (DDD) and in [[Event storming]], there doesn't seem to be space for states in the domain. This is most likely because there is a separation of concern between the behavior of commands against what gets updated in the aggregate. DDD does allow classification of entities, such as classifying customer statuses, and these of course have business meaning. However, DDD doesn't specify any technical concerns such as the persistence of state or where a state transition should occur and what effects should happen.
 
-# References
+## References
 - https://en.wikipedia.org/wiki/Finite-state_machine
 - https://wickstrom.tech/finite-state-machines/2017/11/10/finite-state-machines-part-1-modeling-with-haskell.html
 - https://dev.to/margaretkrutikova/modelling-domain-with-state-machines-in-reasonml-n29
 - https://blog.honosoft.com/2019/10/31/partial-state-machine/
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

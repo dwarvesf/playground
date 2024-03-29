@@ -1,6 +1,8 @@
 ---
 tags: 
   - react.js
+  - web
+  - software
 title: Setup React Project With Webpack And Babel
 date: 2019-05-02
 description: null
@@ -9,8 +11,6 @@ menu: memo
 type: null
 hide_frontmatter: false
 ---
-
-![](assets/setup-react-project-with-webpack-and-babel_1390995c704e49aab8915f9a87fcd7ce_md5.webp)
 
 ## Introduction
 create-react-app is an official CLI to create react application sometime you need to customize it such as add an alias or add plugin babel config, you end up ejected.

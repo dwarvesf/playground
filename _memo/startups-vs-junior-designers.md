@@ -1,10 +1,14 @@
 ---
 tags: 
   - tips
+  - startup
+  - design
 title: Startups Vs Junior Designers
 date: 2020-07-24
-description: null
-authors: null
+description: Now, before you throw bricks at me for hindering the opportunities for new aspiring designers to "explore the world"; I'm a designer myself, and I stand by my community. I write this not just for startup founders. I write this also for designers to make better judgments before deciding to join a startup environment.
+authors: 
+- nikki
+- duy
 menu: memo
 type: null
 hide_frontmatter: false
@@ -16,7 +20,7 @@ This might upset us designers, but reality hurts, and truths need to be told. To
 
 A couple of weeks ago, I was asked by a friend if he could send his designer to my team for training since he heard we thoroughly invest in upgrading our team's design skills. (If you're reading this, this is for you, bud.) He is running a startup in pre-seed stage, this designer is his first hire, and she is at a junior level. After a few questions and answers, I can tell right away that my friend is frustrated because he made the mistake of hiring a junior designer at such a crucial point of his startup.
 
-## Hiring a designer during the early stage is a bet and the odds are sky-high.
+## Hiring a designer during the early stage is a bet and the odds are sky-high
 Every hustler building their own things would agree with me on this: startups constantly struggle with their financial fund and time fund. Startups need to watch how they spend their bucks and get to market as fast as possible. Hiring a designer fast and cheap to get things done naturally becomes an ideal choice. Until 3 months later, you realize it isn't.
 
 ## A designer who wears one too many hats
@@ -28,7 +32,7 @@ You would expect your designer to handle design processes, workflows, user resea
 
 In simple words, you need a designer who knows how to wear many hats and wear them well. On top of that, you would probably want them to get things done fast too. Reality check: no one is good at everything at their first attempt, designers are no exceptions. But here you are, entrusting a scope of work required various expertise on one single designer. The results certainly won't look pretty.
 
-## “But the designer will get better as they keep working on it.”
+## But the designer will get better as they keep working on it
 We had the same mindset when we first started with our design team. We had the fantasy of recruiting fresh minds into our team, providing them with proper training and mentoring; then they would eventually become rockstars. You can probably guess it. We screwed up big time.
 
 Turned out training and mentoring people is a massive commitment that requires methods, attention, and time.

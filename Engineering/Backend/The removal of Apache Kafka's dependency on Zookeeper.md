@@ -35,14 +35,14 @@ One of the advantages of using Zookeeper is simpler deployment and configuration
 Despite the potential challenges, Kafka continues to rely on Zookeeper for its important functions, and many organizations continue to find it a valuable tool in managing their Kafka clusters.
 
 ## Architecture
-![[kafka_architecture.png]]
+![kafka](image-1.png)
 
 ### In the old architecture
 The controller is a crucial component of the system that manages the state of the Kafka cluster. Upon election, the controller loads its state from a Zookeeper quorum consisting of multiple nodes. This state includes information about topics, their partitions, and the brokers that host these partitions. Once the controller has loaded its state, it begins pushing updates to other nodes in the cluster using `LeaderAndIsr` and `UpdateMetadata` messages. These updates ensure that all nodes in the cluster are aware of the latest state of the system, and that they can take appropriate actions in response to changes in this state. Overall, the controller plays a critical role in ensuring the smooth functioning and reliability of the Kafka cluster.
 
-![[kafka-controller-apis.png]]
+![controller](image-2.png)
 
-### In **KRaft Mode**
+### In KRaft Mode
 Kafka has been using Zookeeper for various critical tasks, such as keeping track of which brokers are part of the Kafka cluster, electing leaders for partitions, storing configurations for topics/permissions, and current offsets of each consumer group, and sending health-check notifications to Kafka.
 
 Despite its advantages, using Zookeeper also poses challenges when it comes to performance and consistency in Kafka's metadata. For example, Zookeeper can be overloaded by a high number of leader elections, especially when a broker joins or leaves a cluster. Additionally, Kafka Controller state or metadata often does not match the Zookeeper state, leading to confusion and difficulty in determining the current state of the cluster.
@@ -65,16 +65,3 @@ For simple local setup, can refer to [Apache Kafka's quickstart guide](https://k
 - [https://raft.github.io/](https://raft.github.io/ "https://raft.github.io/")
 - [https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Self-Managed+Metadata+Quorum](https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Self-Managed+Metadata+Quorum "https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Self-Managed+Metadata+Quorum")
 - [https://kafka.apache.org/documentation/#zk](https://kafka.apache.org/documentation/#zk "https://kafka.apache.org/documentation/#zk")
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

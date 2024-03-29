@@ -1,6 +1,8 @@
 ---
 tags: 
   - modeling
+  - software
+  - engineering
 title: Software Modeling
 date: 2020-05-08
 description: null
@@ -17,31 +19,31 @@ hide_frontmatter: false
 
 This is how I approach a new topic or knowledge, starts with why, understand the concept and figure out how to make it happen.
 
-# Why do we need Software Modeling
+## Why do we need Software Modeling
 This can be summed up into 2 definitions:
 
 * Maintainability: Software Modeling helps to maintain a system, or a project. It ensures the based document for newbies to approach and get to know the system thoroughly.
 * Scalability: helps developers to add sub-system or new feature onto the current one, without creating conflicts.
 
-# What is Software Modeling
+## What is Software Modeling
 According to Wikipedia, Software Modeling came out in a lengthy definition. So I took the privilege to paraphrase it like below:
 
 → **Software Modeling is how to turn an activity of an object from reality to a form that computers can understand and execute.**
 
-# How to do Software Modeling
+## How to do Software Modeling
 People create things to help them solve a problem, instead of doing that themselves. Tools are made to help us do the work easier. The purpose of Software Modeling is to reconstruct the actions that an application needs to take, or the product owner wants to happen.
 
-## Action
+### Action
 I'll take the marketplace as an example of Action in the business world. A marketplace, such as Joolux & Purchasing Care, is a platform where buyer and seller exchanges the goods. An action in marketplace can be defined as:
 
 → Buyer buys Product from Seller
 
-## Model of a Marketplace System
+### Model of a Marketplace System
 After defining an action, we need to break it down and find the core objects. In this case:
 
-→ Core Object: **Buyer**-**Product**-**Seller**
+→ Core Object: **Buyer Product Seller**
 
-## AARRR Framework
+### AARRR Framework
 In the business world, AARRR is a habitual method. AARRR is a funnel to analyze the business growth and business development orientation of a company.
 
 Our Design team is using this to follow the final goal of an application or a system. By applying AARRR, designers won't get lost along the way, or happen to conduct redundant things. The action of an application/ system will go through the end of the AARRR funnel, which lets us know how that action derives revenue stream.
@@ -55,7 +57,7 @@ Our Design team is using this to follow the final goal of an application or a sy
 
 After that, we'll find out the relationship between them.
 
-## Entity Relationship Diagram (ERD)
+### Entity Relationship Diagram (ERD)
 A relationship between core objects is demonstrated in a form of an entity relationship diagram (ERD).
 
 ### ERD helps to show
@@ -127,7 +129,7 @@ To create a completed main action, every object needs its own SMD. The core of a
 * Backend: Module of each object to collect database
 * A place to log the arising situation during the process of calling API
 
-# Recap
+## Recap
 
 ### Software Modeling in Agile team
 * Helps teammate to possess the same base knowledge about a system

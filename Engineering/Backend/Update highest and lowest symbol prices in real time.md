@@ -1,5 +1,5 @@
 ---
-tags: engineering/backend, nghenhan, hedge-foundation, binance, web-socket
+tags: engineering/backend, nghenhan, hedge-foundation, binance
 author: Minh Tran
 github_id: thminhVN
 date: 2023-06-07
@@ -36,7 +36,7 @@ The implementation of the approach involves the following steps:
 ### Diagram
 A diagram depicting the flow of the implementation can be included here.
 
-![[../../_assets/update-highest-and-lowest-symbol-prices-in-real-time.png|500]]
+![diagram](image-3.png)
 
 ## Results and Limitations
 ### Results
@@ -55,16 +55,3 @@ To mitigate the limitations mentioned above and ensure accurate updates of the s
 
 - Implement a long polling service that continuously retrieves data from Binance at shorter intervals.
 - By reducing the interval between data retrievals, the likelihood of missing price movements during rapid market changes can be minimized, thus ensuring more accurate updates of the second and third peaks.
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

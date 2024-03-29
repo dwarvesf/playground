@@ -1,6 +1,8 @@
 ---
 tags: 
   - react.js
+  - programming
+  - software
 title: Split And Reuse Code In React Application
 date: 2019-05-02
 description: null
@@ -9,8 +11,6 @@ menu: memo
 type: null
 hide_frontmatter: false
 ---
-
-![](assets/split-and-reuse-code-in-react-application_5f86abdbff47c3d17d6258e3b001ceb8_md5.webp)
 
 ## Introduction
 Sometimes you found that some piece of code that is very repetitive in your react application such as:

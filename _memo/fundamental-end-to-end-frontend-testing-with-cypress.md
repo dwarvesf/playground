@@ -2,16 +2,15 @@
 tags: 
   - js
   - testing
+  - frontend
 title: Fundamental End To End Frontend Testing With Cypress
 date: 2019-08-02
-description: null
+description: End-to-end testing is a methodology used to test whether the flow of an application is performing as designed from start to finish. It’s like testing as a user perspective and not involve thing like assert internal code state or mock… etc
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
 ---
-
-![](assets/fundamental-end-to-end-frontend-testing-with-cypress_7578257d37750f65869976d63ebb2b57_md5.webp)
 
 ## Introduction
 End-to-end testing is a methodology used to test whether the flow of an application is performing as designed from start to finish. It’s like testing as a user perspective and not involve thing like assert internal code state or mock… etc

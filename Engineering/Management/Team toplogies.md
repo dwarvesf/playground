@@ -16,9 +16,9 @@ A software organization can be run with only four team types:
 - **[[Enabling team | Enabling]]**: a team that trains and supports other teams in adopting and modifying software as part of a transition or learning period.
 - **Complicated subsystem**: a team that is responsible for a subsystem too complicated (mathematics/calculation/...) to be handled by a normal stream-aligned team or platform team. Optional and only used when necessary.
 
-![[the-four-fundamental-team-topologies.png]]
+![fundamental](image-11.png)
 
-![[Four fundamental topologies shown with the flow of change.png]]
+![flow](image-12.png)
 
 Effective software delivery requires the combination of specific team types, but the interaction modes between these four fundamental team topologies are vitally important to understanding and nurturing effective software delivery:
 
@@ -26,21 +26,8 @@ Effective software delivery requires the combination of specific team types, but
 - **X-as-a-Service mode**: One team uses something provided by another team (such as an API, a tool, or a full software product). Collaboration is minimal.
 - **Facilitating mode**: one team (usually an enabling team) support another team in learning or adopting a new approach.
 
-![[3-team-interaction-modes.png]]
+![modes](image-13.png)
 
 ## References
 - _Team Topologies: Organizing Business and Technology Teams for Fast Flow by Manuel Pais and Matthew Skelton_
 - https://teamtopologies.com/key-concepts
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

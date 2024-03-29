@@ -1,6 +1,8 @@
 ---
 tags: 
   - scrum
+  - performance
+  - team
 title: Our Daily Standup Format
 date: 2018-07-23
 description: null

@@ -1,10 +1,13 @@
 ---
 tags: 
   - swift
+  - engineering
+  - developer
 title: Build A Passcode View With Swift
 date: 2019-06-22
-description: null
-authors: null
+description: The highlights before we are write our code
+authors: 
+- trungphan
 menu: memo
 type: null
 hide_frontmatter: false
@@ -74,7 +77,7 @@ Call our update stack when code changed
 
 ![](assets/build-a-passcode-view-with-swift_f4f7c7feb4ec4c1c638d716f2d270e5a_md5.webp)
 
-Create ViewController to test our stack:
+Create ViewController to test our stack
 
 ![](assets/build-a-passcode-view-with-swift_0f668d3c9f621a372a90657247d08e3a_md5.webp)
 

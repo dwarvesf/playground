@@ -10,7 +10,7 @@ date: 2022-06-12
 #### Volume
 "Big" is a relative term. We put Shaq next to almost everyone, but especially gymnast Simone Biles, and he looks enormous. But if he stands with Yao Ming ... suddenly he doesn't look so big.
 
-![[big data illustration.png]]
+![1TBofbigdata](image.png)
 
 The same applies to data. What is considered "Big"? 10GB? 100GB? Or 100TB? There is no straight number that defines big data. There are two reasons why there is no straightforward answer to this question:
 
@@ -56,11 +56,11 @@ Data is not only produced and analyzed in social media companies but also retail
 ### Big Data Challenges
 Big Data comes with big problems:
 
-- Since data sets are huge, we need to find a way to store them as efficiently as possible. It is not just about efficiency in terms of \***\*storage\*\*** space but also efficiency in storing the data set that is suitable for \***\*computation\*\***. The main purpose of storing data is to analyze them, right? How much time does it take to analyze and provide a solution to a problem using our big data? What's good in storing the data when you cannot analyze or process the data in a reasonable time? With big data set, computation with reasonable execution times is a challenge
+- Since data sets are huge, we need to find a way to store them as efficiently as possible. It is not just about efficiency in terms of **`storage`** space but also efficiency in storing the data set that is suitable for **`computation`**. The main purpose of storing data is to analyze them, right? How much time does it take to analyze and provide a solution to a problem using our big data? What's good in storing the data when you cannot analyze or process the data in a reasonable time? With big data set, computation with reasonable execution times is a challenge
 
-- Another problem when we deal with big data set is \***\*data loss\*\*** due to corruption and data or due to hardware failure. You need to have a proper recovery strategy in place.
+- Another problem when we deal with big data set is **`data loss`** due to corruption and data or due to hardware failure. You need to have a proper recovery strategy in place.
 
-- Finally, the \***\*cost\*\*** and the most important challenge you're going to need a lot of storage space and a lot of computational power. Therefore, the solution that you plan to use should be cost-effective.
+- Finally, the **`cost`** and the most important challenge you're going to need a lot of storage space and a lot of computational power. Therefore, the solution that you plan to use should be cost-effective.
 
 ### Traditional Solutions
 #### RDBMS
@@ -97,7 +97,7 @@ The gaps between Hadoop and RDBMS are closing in. Hadoop offers a cost-effective
 ### Sample Big Data Problem
 Imagine you work at one of the major exchanges like the New York Stock Exchange or NASDAQ. One morning someone from your Risk Department stops by your desk and asks you to calculate the maximum closing price of every stock symbol that is ever traded in the exchange since inception. Also, assume the size of the data set you are given is 1 TB, so your data set would look like the below image:
 
-![[sample big data problem.png]]
+![sample](image-1.png)
 
 Each line in this data set is information about a stock for a given date. Immediately the business user who gave this problem asks you for an ETA on when he can expect the results. There is a lot to think about here, so you ask him to give you some time, and you start to work. What would be your next steps? You have two things to figure out: storage and computation.
 
@@ -125,23 +125,23 @@ What if we replace HDDs with SSDs (Solid State Drives)? SSDs are a very powerful
 
 Let's consider how we can reduce the computation time. Hypothetically, the program will take 60 minutes to complete and is also already optimized for execution. We can divide the 1TB data set into 100 equal size chunks/blocks and have 100 computers/nodes to the computation parallelly. Theoretically, we cut the data access by the factor of 100 as well as the computation time. Hence, the data access time is reduced to less than 2 minutes (= 142 mins / 100), and the computation time is in less than 1 minute (= 60 mins / 100).
 
-![[1TB of big data.png]]
+![1tb](image-2.png)
 
 Furthermore, if you have more than one chunk of your data set stored in the same hard drive, you cannot get a true parallel read because there is only one head in your hard disk which does the actual read. For the sake of argument, assuming that we get a true parallel read, which means we have 100 nodes trying to read data at the same time. Assuming the data can be read parallelly, we will now have (100 x 122) MBs of data flowing through the network. Imagine what would happen when each one of your family members at home starts to stream their favorite TV show or movie at the same time using a single internet connection at your home? It would result in a very poor streaming experience with a lot of buffering such that no one in the family can enjoy their show. What we have essentially done is choked up your network; the download speed is requested by each one of the devices combinedly exceeded the download speed offered by the internet connection resulting in poor service. This is what will happen when 100 nodes try to transfer the data over the network at the same time.
 
-![[100 nodes of big data.png]]
+![100](image-3.png)
 
 To solve this, we can bring the data closer to the computation, i.e., store the data locally on each node's hard disk. Thus, you would store Block 1 of data in Node 1, block 2 of data in node 2, etc., as shown in the above image. Now we can achieve a true parallel read on all 100 nodes, and also, we have eliminated the network bandwidth issue. That's a significant improvement or design.
 
 How can we protect our data from hard disk failure or data loss, data corruption, etc. ? For example, you have a photo of your loved ones, and you treasure that picture. In your mind, there is no way you can lose the picture; how would you protect it? You would keep copies of your picture in different places, maybe one on your personal laptop, one copy in Picasa, one copy on your external hard drive, etc. If your laptop crashes, you can still get that picture from Picasa or your external hard drive. From the idea, we copy each block of data to two more nodes. In other words, we can replicate the block in two more nodes. In total, we have three copies of each block.
 
-![[Block of data notes.png]]
+![blockdata](image-4.png)
 
 As shown in the above image, Node 1 has Block 1, 7, and 10. Node 2 has Blocked 7, 11, and 42. Node 3 has blocks 1, 7, and 10. If block one is unavailable in Node 2 due to a hard disk failure or corruption in the block, it can be easily fetched From node 3. This means that Node 1, 2, and 3 must have access to one another, and they should be connected to a network. But there are some challenges in implementing it; how does Node 1 know that Node 3 has Block 1? And who decides Block 7, for instance, should be stored in Node 1, 2, and 3. First of all, who will break the 1TB into 100 blocks?
 
 That's just the storage part; computation brings other challenges. Node 1 can only compute the maximum close price from just Block 1. Similarly, Node 2 can only compute the maximum close price from Block 2. This brings up a problem because, for example, data for stock GE (a stock symbol) can be in Block 1 and can also be in Block 2 and could also be on block 82, for instance, right. Then, you have to consolidate the result from all the nodes together to compute the final result; who is going to coordinate all that? The solution we are proposing is distributed computing, and as we are seeing, there are several complexities involved in implementing the solution both at the storage layer and also at the computation layer.
 
-![[Hadoop infrastructure.png]]
+![hadoop](image-5.png)
 
 The answer to all these open questions and complexities is Hadoop. Hadoop offers a framework for distributed computing. Hadoop has two core components, HDFS and MapReduce. HDFS stands for Hadoop Distributed File System, and it takes care of all your storage-related complexities like splitting your data set into blocks, replicating each block to more than one node, and also keep track of which block is stored on which node, etc. MapReduce is a programming model, and Hadoop implements MapReduce, and it takes care of all the computational complexities. Therefore, Hadoop framework takes care of bringing all the intermediate results from every single node to offer a consolidated output.
 
@@ -152,7 +152,7 @@ Now, you know what Hadoop is and how it can offer an efficient solution to your 
 You don't need to have a 100 node cluster; we have seen successful Hadoop production environments from small 10 node cluster all the way to 100 to 1000 node cluster. You can simply even start with a 10 node cluster, and if you want to reduce the execution time even further, all you have to do is add more nodes to your cluster. That's simple. In other words, Hadoop will scale horizontally.
 
 ## History of Hadoop
-![[History of hadoop.png]]
+![history](image-6.png)
 
 In 2002, an excellent and smart programmer named Doug Cutting was working on an open-source project named Nutch. The purpose of the nudge is to crawl the internet, collect web pages then rank and index them so that we can run searches against the indexed web pages. That is exactly what Google's search engine does. Google's proprietary crawlers and algorithms crawl through the internet, collect web page ranks and index them and run searches against them. Nutch is a very similar project to that idea, but it's open-source.
 
@@ -166,16 +166,3 @@ Hadoop was truly given the ability to analyze volumes and volumes of data and he
 - https://hadoop.apache.org/
 - https://en.wikipedia.org/wiki/Apache_Hadoop
 - [Hadoop: The Definitive Guide: Storage and Analysis at Internet Scale](https://www.amazon.com/Hadoop-Definitive-Storage-Analysis-Internet/dp/1491901632/ref=sr_1_2?crid=2LTQHKE9WNBNC&keywords=Hadoop&qid=1657604708&sprefix=hadoop%2Caps%2C127&sr=8-2)
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

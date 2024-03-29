@@ -1,16 +1,18 @@
 ---
 tags: 
   - oss
+  - git
+  - software-engineer
 title: How We Contribute To Homebrew
 date: 2016-03-13
-description: null
+description: Homebrew (or brew) is one of the biggest repo on Github with more than 29k stars, 14k forks and 1k watches. It was started by Max Howell in 2009 to build the missing package manager for OS X.
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
 ---
 
-# Homebrew
+## Homebrew
 Homebrew (or brew) is one of the biggest repo on Github with more than 29k stars, 14k forks and 1k watches. It was started by Max Howell in 2009 to build the missing package manager for OS X. Back to before 2009, in Mac OSX, if we wanted to install something, we had to install it via pkg files or bin files. We didn’t have anything fancy like `apt-get` in Ubuntu or `yum` in Fedora. MacPort was an only option but it was not too good. Check the very old article about it: [Homebrew, the perfect gift for command line lovers](https://www.engadget.com/2009/12/25/homebrew-the-perfect-gift-for-command-line-lovers/)
 
 For now, you can access homebrew via
@@ -48,7 +50,7 @@ $ brew update
 $ brew upgrade
 ```
 
-# Contributing to Homebrew
+## Contributing to Homebrew
 Note: In this post, we just cover the command line or tool part of Homebrew. The example is taken from our **[glod-cli](https://github.com/dwarvesf/glod-cli)****.**
 
 When you look into the repo of Homebrew, you can easily find the doc directory in `homebrew/share/doc/homebrew/` which contains all the information. The most important file for this tutorial is the `Formula-Cookbook.md.`
@@ -59,12 +61,12 @@ Basically, when you use homebrew, it will create a separate folder on your machi
 
 So in short, if you want to contribute a new one, you need to create a new formula in your local and submit a pull request to `https://github.com/Homebrew/homebrew.`
 
-## Fork from Homebrew
+### Fork from Homebrew
 ![](assets/how-we-contribute-to-homebrew_023366a1f0837a41a52f37788092a6fa_md5.webp)
 
 For us, we will have a repo called `dwarvesf/homebrew` which we can clone and start from there.
 
-## Create new formula
+### Create new formula
 Make sure you have installed `brew` on your machine (you have to!) and your new formula must meets all their Acceptable Formulae requirements.
 
 Then we can start from create a new branch (like git workflow) or not. For us we skip it and use the master branch (plot twist: we forgot to do this step)
@@ -123,7 +125,7 @@ class GlodCli < Formula
 end
 ```
 
-## Install/ Debug local formula
+### Install/ Debug local formula
 ```javascript
 $ brew install --verbose --debug $FORMULA
 ```
@@ -137,7 +139,7 @@ $ brew unlink $FORMULA
 $ brew cleanup
 ```
 
-## Test the formula
+### Test the formula
 One note for the test block, there are still a lot of formula that try to cheat by printing out the help or version. As a good contributor, you should write good tests for your formulas or your pull request will be rejected (like us)
 
 ![](assets/how-we-contribute-to-homebrew_8af79f8ad176a520effb9282ffd621de_md5.webp)
@@ -154,7 +156,7 @@ Those tests should be passed to make sure your formula is qualified. The second 
 * More than 20 watchers
 * And initialized more than 30 days
 
-## Submit pull request
+### Submit pull request
 Bravo! It’s really great if you can get here, your formula is qualified. Let’s copy the local formula to your git repo. Example
 
 ```javascript
@@ -171,7 +173,7 @@ Commit and push your changes to **YOUR** Github. Then we open the Github Repo (s
 
 We did it! You only still need the feedback from Homebrew team. You can leave your keyboard and take a cup of coffee. If everything goes well, well done boss! you have just contribute to one of the famous repo in the internet. Congratulations!
 
-# Acknowledgement
+## Acknowledgement
 * Our pull request: [https://github.com/Homebrew/homebrew/pull/49843](https://github.com/Homebrew/homebrew/pull/49843)
 * [glod-cli](https://github.com/dwarvesf/glod-cli): A small cli written in Go to help download music/video from multiple resources: Youtube, Vimeo, Facebook, Soundcloud … [https://github.com/dwarvesf/glod-cli](https://github.com/dwarvesf/glod-cli)
 * Formula Cookbook

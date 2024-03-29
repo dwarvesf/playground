@@ -1,16 +1,18 @@
 ---
 tags: 
   - engineering
+  - software
+  - engineering
 title: Reusability In Software Development
 date: 2020-05-05
-description: null
+description:  A lot of new ideas about software were imagined and implement from the roots to resolve the corresponding matter. Because of this original, the reuse of software was uncommon.
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
 ---
 
-# Introduction
+## Introduction
 In the previous century, when the software market was also **immature**, the economy was grown with a large scale lead to more and more new business problems appear that demands software to solve such as management, automatic. So a lot of new ideas about software were imagined and implement from the roots to resolve the corresponding matter. Because of this original, the reuse of software was uncommon.
 
 Nowadays, after a long time for deeping in building something new to solve classic problems. The seniors in this software development field have concluded an engineering strategy that is called **Software reuse** where the development process is geared to reuse existing software. The move to reuse-based development has been in response to demand for lower software production and maintenance costs, faster delivery of systems, and increased software quality. There are also matters that are needed to solve when the answer to classic problems was completed increasingly.
@@ -37,9 +39,8 @@ Each function or component that includes generic functionality is potentially re
 
 In concept reuse, instead of component, you reuse ideas, working style, or algorithm. On the other hand, it means everything that is reused is represented in an abstract notation, which does not have an implementation detail. It can, therefore, be configured and adapted for a range of situations. A few methods that depend on concept reuse are design patterns, configurable system products, or program generator. The concept reuse process must contain an activity where the abstract concept is instantiated to create executable components.
 
-# Few Aspects of Software reuse
-
-## **The benefits**
+## Few Aspects of Software reuse
+### The benefits
 The first thing that everyone thinks about the reuse, is the fast development speed when applying another existing component in our system. The reuse provides the ability to bring an application or system to the market as early as possible because both development and validation time may be reduced. It is very helpful when overall development cost is not more priority than delivery speed.
 
 To the specialists, instead of doing the same work over and over again, they often develop reusable software that encapsulates their knowledge. It is very convenient for development and sharing source code.
@@ -63,7 +64,7 @@ Summary, basically, we have six benefits of Software reuse:
 * Reduced process risk
 * Standards compliance
 
-## **The problems**
+### The problems
 Besides a lot of benefits, every tool has its own matter, Software reuse is no exception.
 
 To the development team, it is a hard challenge to build a reusable component library that is favored by other software developers and ensure that the library is used. After building, maintaining this library is also a complex process that contains a few factors such as compatibility, comfortable, and easy to use.
@@ -78,7 +79,7 @@ Another bad stuff of reuse in software development is the lack of tool support. 
 
 The last one is called **“Not-invented-here” syndrome**, when you focus on cloning, rewriting, optimizing component with the belief that you will make it greater instead of trying to do another solution. This is partly to do with trust and partly to do with the fact that writing original software is seen as more challenging than reusing other people’s software.
 
-## **The reuse landscape**
+### The reuse landscape
 After time passed, the reuse in software development has been increasingly supported by a lot of new techniques. The base of these techniques is the fact that the system in the same application domain are similar and have the potential for reuse. There are many different ways of Software reuse, from simple components such as class, object to complete system, and that standards for reusable components facilitate reuse. You can see an overall picture of the “reuse landscape”—different ways of implementing software reuse below.
 
 ![](assets/reusability-in-software-development_ea401e3ee43cf4ee90e7edc92fe83900_md5.webp)
@@ -100,7 +101,7 @@ The answer to the above question depends on a lot of things such as system requi
 
 Above is a few stuff that building and groundwork for making a decision for the questions such as when we need Software reuse, or what is the best solution for our project. Where or not reuse is applied, is often decision by manager instead of engineer. Sometime, they evaluate the risks within their choice incorrectly. Others may prefer known risks of development to unknown risks of reuse. So i think if you want to perform a decision making, you must have all of your solution on the table, the more you understand your solutions the more accuracy your decisions are. In this context, this is reuse-related decision.
 
-# Application Framework
+## Application Framework
 Before explore about Application framework, let's revise object-oriented development. Following is an difinition of OOD that i see on [Quora](https://www.quora.com/). I think this is really good sentence for mentioning to it
 
 > Object-oriented Development (OOD) a group of methodologies that sees real world entities as objects and classes. For example, hospital is a real world entity, becomes hospital class and later multiple hospital objects are created, each with unique property values. [5]
@@ -139,7 +140,7 @@ Summary, framework is used for the reuse purpose, so, an application is construc
 
 Be a very effective approach to reuse but the framework approach also has corresponding disadvantages. Introducing a framework for another engineer or development team is expensive. I saw a lot of good framework being spanked until someone digs it up randomly. On the development team, it is difficult to approach a new framework and hard to debug if this framework's source code is not available.
 
-# Software Product Lines
+## Software Product Lines
 In real life, when going to the hospital, we see the medical management application on the doctor's desktop similarly. In the cafeteria, store management applications with the same features all time. Have you ever wonder why are they always like that? In short, these are the representations of product lines.
 
 What is product line?

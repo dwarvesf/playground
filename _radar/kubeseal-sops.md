@@ -23,5 +23,5 @@ tag: DevOps
 * Use as general tools for managing dangling secrets across projects and internal work
 
 ## Timeline
-* (2022-01-16) - **[Trial] **First listed for trial in projects
+* (2022-01-16) - **[Trial]** First listed for trial in projects
 * (2022-08-31) - (Nguyen) Create a post on learning-topics

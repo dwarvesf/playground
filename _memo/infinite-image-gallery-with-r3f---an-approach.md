@@ -1,6 +1,8 @@
 ---
 tags: 
   - tutorial
+  - web
+  - react
 title: Infinite Image Gallery With R3f An Approach
 date: 2020-09-14
 description: null
@@ -16,7 +18,7 @@ As I was looking for inspiration on Awwwards, I came across this beautiful littl
 
 The infinite gallery fascinated me, and I wondered if I could re-implement the gallery-part with [react-three-fiber](https://github.com/react-spring/react-three-fiber). After some experiment & fumbling around, I was able to put out a small “demo-able” app:
 
-**[DEMO](https://nnl-infinite-image-gallery.netlify.app/)****.**
+**[DEMO](https://nnl-infinite-image-gallery.netlify.app/)**
 
 It was a fun & challenging project, and I want to share my approach with you in this small memo. I’ll write about what I think are the two core problems we’d need to solve to make an infinite gallery possible:
 

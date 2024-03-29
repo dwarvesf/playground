@@ -1,10 +1,13 @@
 ---
 tags: 
   - blockchain
+  - design-seystem
+  - layer2
 title: Design System For Layer 2 Using Zk Rollup
 date: 2023-04-24
-description: null
-authors: null
+description: In this article, we will focus on the architecture design of a layer 2 blockchain. This approach involves aggregating multiple transactions into a single transaction proof, which is then validated on the main blockchain, allowing for a significant increase in throughput.
+authors:
+- phamngocthanh
 menu: memo
 type: null
 hide_frontmatter: false
@@ -20,7 +23,7 @@ Blockchain technology has revolutionized the way we think about trust and decent
 ## Approaching Blockchain Layer 2
 Blockchain layer 2 is being used to build applications that require high performance at reasonable costs, such as decentralized exchanges, supply chain management systems, decentralized gaming, and decentralized asset management. In this article, we will focus on the architecture design of a layer 2 blockchain. This approach involves aggregating multiple transactions into a single transaction proof, which is then validated on the main blockchain, allowing for a significant increase in throughput. We will focus on the design system for layer 2 using ZK rollup, with a particular emphasis on the Zero-Knowledge Ethereum Virtual Machine (zkEVM) and its various components.
 
-## Zero-Knowledge **Ethereum Virtual Machine** (zkEVM)
+## Zero-Knowledge Ethereum Virtual Machine (zkEVM)
 The overall design of zkEVM follows the State Machine model and, therefore, **emulates the Ethereum Virtual Machine (EVM)** with the aim of providing the same user experience as Ethereum. In addition to enabling ERC20 token payments and transfers, users can now run Ethereum smart contracts on it.
 
 The aggregate strategy is to** develop a zkProver **that executes a series of multiple transactions, proves their validity, and publishes only the minimum size valid proof for verification. This reduces transaction completion times and saves gas costs for Ethereum users.
@@ -63,12 +66,12 @@ The main components we need for the layer 2 system (that also include components
 * Blockchain Node
 * **Sequencer** - a type of rollup node that is responsible for collecting transactions and producing new blocks.
 * **ZkProver** - a prover and verifier of transactions using zkEVM and state machines
-* **RPC **- Remote Procedure Call holding set of protocols and interfaces that to access the blockchain
+* **RPC**- Remote Procedure Call holding set of protocols and interfaces that to access the blockchain
 * **Synchronizer** - helps nodes to stay up-to-date with the latest state on the blockchain
-* **ZK SNARK/STARK **- arguments of knowledge to prove transactions without revealing any information
-* **StateDB **- a database to store current states of all accounts and contracts on the Ethereum network
+* **ZK SNARK/STARK**- arguments of knowledge to prove transactions without revealing any information
+* **StateDB**- a database to store current states of all accounts and contracts on the Ethereum network
 * **Ethereum Bridge** - a mechanism to transfer assets between 2 blockchain networks
-* **ZKRollup smart contract **- a smart contract that takes hundreds of transactions off the main blockchain and bundles them into a single transaction, to then send a validity proof to the main blockchain
+* **ZKRollup smart contract**- a smart contract that takes hundreds of transactions off the main blockchain and bundles them into a single transaction, to then send a validity proof to the main blockchain
 
 ### ZkProver Component
 The proof and verification of transactions in Polygon zkEVM are both handled by a zero-knowledge proofing component called zkProver. All the rules for a valid transaction are implemented and executed in zkProver. Prover relies on the transactions to be processed, and the state of the network to calculate the proof. zkProver mainly interacts with two components i.e. Node and Database (DB). Therefore, before diving deeper into other components, we must understand the control flow between zkProver, Node and Database. Here is a diagram to explain the process clearly.
@@ -132,7 +135,7 @@ The bridge is responsible for receiving and processing requests to transfer info
 * The Aggregator will sync events with Ethereum and store bridge events to Bridge DB and update the Merkle tree root
 * The zkEVM node sync bridge event with Aggregator
 
-### Smart contract:
+### Smart contract
 The smart contract is used to execute the proof of layer 2 in layer 1, transfer assets between layers, and store proof and root Merkle Tree. In this case, we can learn from zkEVM smart contract:
 
 * Smart contract [Bridge.sol](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/contracts/PolygonZkEVMBridge.sol): 

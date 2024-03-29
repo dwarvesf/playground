@@ -138,7 +138,7 @@ const Text = <C extends React.ElementType = 'p' /* default type */>({
 ```
 
 The previous example we had should now throw an error, that is when you pass `htmlFor` to the `Text` component without an `as` prop.
-It's magic. ✨✨
+It's magic.
 
 We still can improve our `Text` component. As we know, some html tags have some internal properties like `color`, if we want to provide our own `color` property (or other properties), we just don't want to mess it up. We need to filter our own properties out of internal properties.
 
@@ -267,7 +267,7 @@ const Button = <C extends React.ElementType = 'button'>({
 
 ```
 
-Everything works like a charm. ✨✨
+Everything works like a charm.
 
 ## How about `ref`?
 To write a functional component which support Ref forwarding, we can use `React.forwardRef` function. The `Button` component will be look like
@@ -474,17 +474,4 @@ const Button: ButtonComponent = React.forwardRef(
 
 ```
 
-Congratulation, we have successfully built a strongly typed Polymorphic React Component with Typescript. 🎉🎉🎉🎉
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)
+Congratulation, we have successfully built a strongly typed Polymorphic React Component with Typescript.

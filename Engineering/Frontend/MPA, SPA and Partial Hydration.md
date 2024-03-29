@@ -54,16 +54,3 @@ Same old answer: it depends. If you’re building an analytics dashboard, sports
 Otherwise, if it's your landing site, similar to [netlify.com](http://netlify.com/) or [dwarves.foundation](https://dwarves.foundation/), which essentially just has only 1-2 pieces of UI that require JavaScript to run, and you’re building it with React: try to apply Partial Hydration where possible. While `react-static` or `gatsby` does not (yet) support partial hydration, you can try out [astro.build](https://astro.build/). Here, partial hydration is a first class citizen, and it comes with a decent static site generator with good React support.
 
 For MPA, if you prefer to keep building your site with React, you can still make it with an MPA. Just do SSR on the server and AVOID hydrating the whole page on the client. Obviously interactive components won't be interactive, but at least it's a good start.
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

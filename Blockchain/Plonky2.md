@@ -7,7 +7,6 @@ icy: 10
 ---
 
 ## Introduction
-![](_assets/Plonky-2-Website.jpg)
 Plonky2 is a non-Interactive Proof of Proof of Knowledge (NIPoPoK) chain developed to reduce the size of the blockchain and speed up transaction confirmations. It is built on the foundation of ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge), an advanced cryptographic technology that enables affirmative proofs without revealing inside information. Plonky2 allows transactions to be confirmed on the fly using certificates similar to Merkle trees, where only a small portion of data is needed to confirm the entire Merkle tree. Plonky2 certificates are very small, only about 1/20th of similar attestations used in traditional blockchain systems, thus helping to reduce blockchain size and speed up transaction processing. Plonky2 is being used in several blockchain projects such as Ethereum and Polkadot to improve the performance and scalability of the system.
 
 ## The target of Plonky2
@@ -20,8 +19,6 @@ Plonky2 is a new technology in the blockchain field, developed to reduce blockch
 The Merkle tree is a layered data structure that allows for fast and efficient data integrity checking. Using the Merkle tree structure in Plonky2, the blocks of the blockchain can be grouped into smaller "superblocks", which reduces the blockchain size significantly. The use of Plonky2 in the blockchain will help speed up transaction confirmations and reduce blockchain size, while reducing storage costs and increasing the scalability of the system. Plonky2 has been used in many blockchain projects, such as Ethereum and Bitcoin Cash.
 
 ## How Plonky2 work
-![](https://blog.polygon.technology/wp-content/uploads/2022/11/polygon_plonky2_deep_dive-1024x1009.jpeg)
-
 Non-Interactive attestation (NIPoPoK) is a method of attesting in the blockchain without interacting with other entities in the system. Instead of downloading the entire blockchain to confirm a block, NIPoPoK requires only a small number of blocks (usually only about 1% of the total block) called "superblocks" to verify the validity of a new block. The main difference between NIPoPoK and interactive attestation (PoK) is that PoK requires interaction between entities in the system for authentication. This means that entities must exchange information with each other to perform authentication. Meanwhile, NIPoPoK does not require interaction between entities, which minimizes communication and synchronization in the system. The other difference between NIPoPoK and PoK is that PoK typically uses more complex protocols for authentication, while NIPoPoK uses simpler maths to compute authentication. However, this does not mean that NIPoPoK is less secure, because NIPoPoK uses the latest techniques to ensure the safety and security of data. With the development of technology, NIPoPoK is being widely used in blockchain to minimize the interaction and synchronization in the system, while helping to speed up transaction confirmation and reduce blockchain size.
 
 Merkle tree is a binary tree data structure used to store data and perform data integrity validation efficiently. Merkle trees are widely used in blockchain systems to minimize data size and speed up transaction integrity validation. Merkle tree is created by breaking data into smaller elements, called leaf nodes, then creating pairs of these leaves and hashing them together to form new nodes, until there are only leaves left. a single node at the top of the tree, called the root node. When there is a change in the data, simply recalculate the hash of the affected nodes and the root node will change, helping to verify the integrity of the data quickly and efficiently.
@@ -29,7 +26,7 @@ Merkle tree is a binary tree data structure used to store data and perform data 
 Plonky2 uses a Merkle tree to verify transaction integrity. Instead of validating the entire blockchain like other methods, Plonky2 simply uses a small number of blocks (superblocks) created by the Merkle tree to verify the validity of a new transaction. Since then, Plonky2 reduces the size of data to be processed and speeds up transaction validation significantly. Merkle tree is used to generate superblocks, where each superblock is created by taking root nodes of Merkle trees for a certain period of time. Superblocks are stored in a linked list, and Plonky2 uses this list to verify the integrity of the new transaction. If a transaction is invalid, Plonky2 will re-query the superblock to find the invalid transaction and thereby confirm the integrity of the system.
 
 ## Application of Plonky2
-### Blockchain projects using Plonky2 and how Plonky2 improves system performance and scalability:
+### Blockchain projects using Plonky2 and how Plonky2 improves system performance and scalability
 - Mina Protocol: This is currently the smallest blockchain with a size of only about 22KB, using Plonky2 to reduce the size of the blockchain and increase transaction processing speed.
 - Coda Protocol: Similar to Mina Protocol, Coda Protocol uses Plonky2 to reduce the size of the blockchain and increase transaction processing speed.
 - Manta Network: Manta Network is a decentralized finance (DeFi) platform on the Polkadot network, using Plonky2 to reduce the size of the blockchain and increase transaction processing speed.
@@ -44,7 +41,8 @@ To solve this problem, the system uses Plonky2 to reduce the size of the blockch
 
 ## Challenge of Plonky2
 ### Safety and security issues when using Plonky2
-![](_assets/Tradeoffs.png)
+
+![plonky](image-12.png)
 
 During authentication, Plonky2 asks the nodes to specify a specific number of Merkle tree elements. However, if a node sends incorrect elements or changes the Merkle tree, it can cause validation errors and affect the integrity of the blockchain. Therefore, ensuring the correctness of the Merkle tree is very important.
 
@@ -62,7 +60,7 @@ In addition, Plonky2 also depends on the security of the hash system and the ell
 - Sharding: Sharding is a method of distributing data across many different nodes to reduce the load on each node and increase transaction processing speed. However, Sharding also faces many challenges in terms of security and compatibility with other systems.
 - Sidechain: Sidechain is a technology that allows the creation of sub-blockchains to process different transactions. These sub-blockchains are linked to the main blockchain and can offload the main blockchain. However, linking between the secondary blockchains and the main blockchain can cause some security issues.
 
-### Comparison between Plonky2 and other technologies in improving the performance and scalability of the blockchain system:
+### Comparison between Plonky2 and other technologies in improving the performance and scalability of the blockchain system
 - Plonky2 vs. SegWit: SegWit (Segregated Witness) is a solution used on the Bitcoin network to reduce transaction size and increase processing speed. However, SegWit cannot solve the problems related to network scalability. Meanwhile, Plonky2 uses a number of different techniques such as Merkle tree and non-interactive attestation to reduce blockchain size and speed up transaction processing, while improving the scalability of the system.
 - Plonky2 vs. Lightning Network: Lightning Network is a technology used to reduce costs and speed up transaction processing on the Bitcoin network. However, Lightning Network cannot solve the problem of network scalability. Meanwhile, Plonky2 reduces the blockchain size and increases transaction processing speed without compromising the safety and security of the system, while improving the scalability of the network.
 - Plonky2 vs. Sharding: Sharding is a solution used to improve the scalability of the blockchain system by dividing the blockchain into parts and processing them independently. However, Sharding has limitations on the safety and security of the system. Meanwhile, Plonky2 helps to reduce blockchain size and speed up transaction processing without affecting the safety and security of the system.
@@ -74,16 +72,3 @@ In addition, Plonky2 also depends on the security of the hash system and the ell
 - https://hackernoon.com/zero-knowledge-proof-algorithm-plonk-circuit-sin7y-tech-review-16
 - https://vitalik.ca/general/2019/09/22/plonk.html
 - https://zkresear.ch/t/composition-of-proof-systems/43
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

@@ -15,7 +15,7 @@ There are 2 different types of chart can follow up: Burnup and Burndown.
 ## What is a Burndown chart?
 For this chart, we are using for visualizing the amount of work left to complete in a specific project development, to see if how quickly a team is moving forward to reach the common goal.
 
-![Burndown-Chart-Example](_assets/burndown_chart_example.png)
+![chart](image-4.png)
 
 Based on the reference documents, those are 4 items to show how and when we use the Burndown chart:
 
@@ -27,7 +27,7 @@ Based on the reference documents, those are 4 items to show how and when we use 
 ## What is a Burnup chart?
 With this chart, it is used to track how much of a specific project, features has been completed within a planning timeline. To see if the product team is making thing on the exact timeline that they had planned.
 
-![Burnup-Chart-Example](_assets/burnup_chart.png)
+![chart2](image-5.png)
 
 Same with the Burndown chart, we will have 4 items to show how and when we use the Burnup chart as well:
 
@@ -42,16 +42,3 @@ Basically, when wanting to see what is left to be completed on the giving timeli
 ## Reference
 - [Burndown and Burnup charts: What's the Difference and How to use them](https://rindle.com/blog/burndown-and-burnup-charts-whats-the-difference-and-how-to-use-them)
 - [Burndown vs Burnup Chart](https://www.projectmanagement.com/blog/blogPostingView.cfm?blogPostingID=40731&thisPageURL=/blog-post/40731/Burndown-vs-Burnup-Chart#_=_)
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

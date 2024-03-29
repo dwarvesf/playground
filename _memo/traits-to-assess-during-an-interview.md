@@ -1,10 +1,13 @@
 ---
 tags: 
   - people
+  - hiring
+  - employee
 title: Traits To Assess During An Interview
 date: 2019-09-20
 description: null
-authors: null
+authors: 
+- han
 menu: memo
 type: null
 hide_frontmatter: false

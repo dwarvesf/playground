@@ -1,9 +1,11 @@
 ---
 tags: 
   - swift
+  - UX-UI
+  - frontend
 title: Swiftui
 date: 2020-02-07
-description: null
+description: This blog outlines my opinion about SwiftUI, such as how to layout views, handle user input, making a custom view, making a cross Apple platform apps, underlying architecture, integrate with UIKit (the old Apple UI framework).
 authors: null
 menu: memo
 type: null
@@ -12,7 +14,7 @@ hide_frontmatter: false
 
 Introduces by Apple in WWDC 2019, Swift UI impressed the technophiles with its convenience, as Apple aimed to help developers conduct code easier and spend more time working on other modified functions. This blog outlines my opinion about SwiftUI, such as how to layout views, handle user input, making a custom view, making a cross Apple platform apps, underlying architecture, integrate with UIKit (the old Apple UI framework). It won't be expanded on an advanced level like fancy animation or proposing any best architecture we should follow. No. Just the basic ones.
 
-# Definition
+## Definition
 [SwiftUI](https://github.com/dwarvesf/techradar/tree/master/SwiftUI) is a UI framework that lets developers create apps in a declarative way, *and it also supports multiple Apple platforms (iOS, iPadOS, macOS, watchOS, tvOS), or I can say “farewell UIKit, AppKit, and WatchKit“****.*** There are minimal code changes when we need to create an app for multiple platforms, as a lot of the same components on SwiftUI can be reused.
 
 SwiftUI came with two companions, which I believe will be the game changers and help developers a lot.
@@ -20,7 +22,7 @@ SwiftUI came with two companions, which I believe will be the game changers and 
 * Xcode Canvas
 * Combine framework
 
-## Xcode canvas
+### Xcode canvas
 ![](assets/swiftui_120898c723705d91ebf2d810ceabc827_md5.webp)
 
 Xcode canvas brings us some nice features.
@@ -33,7 +35,7 @@ So, what does this mean?
 * There would be no more war between building UI programmatically or Drag n Drop style.
 * There would be no more time wasted to debug an explicit screen or now is a component, I guess
 
-## Combine framework
+### Combine framework
 ![](assets/swiftui_9763d9353b8111827278a5ac32b636ac_md5.webp)
 
 The Combine framework is a tool to help us make an app in a functional reactive programming (FRP) way. The FRP is just a “style“ of programming, which makes our code more declarative and intuitive. Before the Combine framework, iOS developers would use other third-party libraries like RxSwift or Reactive Cocoa to get the power of FRP.
@@ -43,12 +45,12 @@ If you have never heard about the FRP, you should definitely take a look at thos
 * [https://github.com/kickstarter/native-docs/blob/master/learning-rx.md](https://github.com/kickstarter/native-docs/blob/master/learning-rx.md)
 * [https://github.com/kickstarter/native-docs/blob/master/learning-rx.md](https://github.com/kickstarter/native-docs/blob/master/learning-rx.md)
 
-## Learn once, Apply anywhere
+### Learn once, Apply anywhere
 Apple brought up SwiftUI with an important distinction: It's not a multi-platform framework. It's a framework to create apps on multiple platforms.
 
 It might sound confusing. The same thing happens when we first heard of Karl Marx's theory on capitalism. But here's a fact: Many parts of SwiftUI work great on iOS, but aren't available on macOS, or are designed specifically for watchOS and so aren't available anywhere else. Yet, the core of the apps can remain unchanged, but to build great apps that tailored for each Apple's platform, some platform-specific enhancement needs to be made.
 
-## Hello World
+### Hello World
 There are 3 basic things, which I believe any developer should know when using SwiftUI.
 
 * Inside of DSL SwiftUI syntax, how could Apple achieve that?
@@ -207,7 +209,7 @@ struct ProductsView: View {
 }
 ```
 
-**@Binding** provides reference like access for a value type. Sometimes we need to make the state of our View accessible for its children. But we can’t simply pass that value because it is a value type and Swift will pass the copy of that value. And this is where we can use **@Binding **Property Wrapper.
+**@Binding** provides reference like access for a value type. Sometimes we need to make the state of our View accessible for its children. But we can’t simply pass that value because it is a value type and Swift will pass the copy of that value. And this is where we can use **@Binding** Property Wrapper.
 
 **@ObserveObject** 
 
@@ -254,7 +256,7 @@ struct EpisodesView: View {
 
 **@ObservedObject** work very similarly to **@State** Property Wrapper, but the main difference is that we can share it between multiple independent Views which can subscribe and observe changes on that object, and as soon as changes appear SwiftUI rebuilds all Views bound to this object.
 
-Remember, we can share **ObservableObject** between multiple views, that’s why **it must be a reference type/class.**
+Remember, we can share **@ObservableObject** between multiple views, that’s why **it must be a reference type/class.**
 
 **@EnvironmentObject**
 
@@ -286,7 +288,7 @@ struct EpisodesView: View {
 
 As you can see, we have to pass PodcastPlayer object via environmentObject modifier of our View. By doing this, we can easily access PodcastPlayer by defining it with **@EnvironmentObject** Property Wrapper. **@EnvironmentObject** uses dynamic member lookup feature to find PodcastPlayer class instance in the Environment, that’s why you don’t need to pass it via init method of EpisodesView. The Environment is the right way of Dependency Injection in SwiftUI. It works like magic.
 
-**@Environment **
+**@Environment**
 
 ```javascript
 struct CalendarView: View {
@@ -304,25 +306,25 @@ SwiftUI already has an Environment populated with system-wide settings. We can e
 
 As soon as Locale, Calendar, or ColorScheme of the system change, SwiftUI recreates our CalendarView.
 
-## **However**
+## However
 Besides the advanced features for UI processing, SwiftUI still has some downside.
 
-### **Limited API Coverage**
+### Limited API Coverage
 SwiftUI does not currently have the same broad API coverage as UIKit. For example, if you want to show items in a grid, you would use UICollectionView in UIKit, but SwiftUI has no equivalent.
 
-### **Limited Adoption**
+### Limited Adoption
 SwiftUI was only announced at WWDC2019, and is available in iOS 13 devices or later. This immediately means that:
 
 * Almost every app written to date uses UIKit.
 * Any app that needs to support iOS n-1 or n-2 (e.g. iOS 12 and iOS 11) cannot even begin to switch to SwiftUI for a year or more.
 
-### **Limited Support**
+### Limited Support
 UIKit has been around over ten years now, which means:
 
 * Almost every problem you might face has probably already been faced and solved by others
 * There are lots of libraries out there that provide extensions and customizations.
 
-### **Default Behavior**
+### Default Behavior
 There are many things Apple gives us by default. This will cause some confusion when we look at the code. Sometimes, I believe that explicit is better than implicit. The default padding in HStack is one example of this.
 
 NoneBashCSSCC#HTMLJavaJavaScriptJSONPHPPowershellPythonRubyTypeScriptCopy

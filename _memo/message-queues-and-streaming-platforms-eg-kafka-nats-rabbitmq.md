@@ -5,8 +5,9 @@ tags:
   - engineering
 title: Message Queues And Streaming Platforms Eg Kafka Nats Rabbitmq
 date: 2023-05-04
-description: null
-authors: null
+description: Without message brokers, communication between systems and applications would be much more difficult. They provide a common language that different systems can use to communicate with each other, regardless of the programming language or the hardware used. They also help to ensure that messages are delivered in the correct order, and can handle large volumes of messages without overwhelming the system.
+authors: 
+- datpham
 menu: memo
 type: null
 hide_frontmatter: false
@@ -20,8 +21,8 @@ In today's digital world, the exchange of information between different systems 
 
 Without message brokers, communication between systems and applications would be much more difficult. They provide a common language that different systems can use to communicate with each other, regardless of the programming language or the hardware used. They also help to ensure that messages are delivered in the correct order, and can handle large volumes of messages without overwhelming the system.
 
-# What is a Message Broker?
-**A** **Message broker** is an intermediary program designed to validate, transform, and route messages. They serve the communication needs between applications.
+## What is a Message Broker?
+**A Message broker** is an intermediary program designed to validate, transform, and route messages. They serve the communication needs between applications.
 
 With a Message broker, the source application (producer) sends a message to a server process that can provide data sorting, routing, message translation, persistence, and delivery to all appropriate destinations (consumers).
 
@@ -35,7 +36,7 @@ There are 2 basic forms of communication with a Message Broker:
 
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_56d936f810e3423ac48427e1d7ca3f64_md5.webp)
 
-# When and why to use Message Broker
+## When and why to use Message Broker
 Message brokers are versatile tools that can address a wide range of business needs across industries and in a variety of enterprise computing environments.
 
 Here are some common ways message brokers are used:
@@ -109,7 +110,7 @@ Topic exchange will make a wildcard to match the routing key with a routing patt
 A header exchange will use the header attributes of the message to route it. Headers Exchange is very similar to Topic Exchange but it routes based on header values instead of routing keys. A message is considered a match if the value of the header matches the value specified when bound.
 
 ## Common Pattern 
-### Work Queue - **Distributing tasks among workers**
+### Work Queue - Distributing tasks among workers
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_59d782666f97eef826223c424dba2e03_md5.webp)
 
 The main idea behind Work Queues (aka: Task Queues) is to avoid doing a resource-intensive task immediately and having to wait for it to complete. Instead we schedule the task to be done later. We encapsulate a task as a message and send it to a queue. A worker process running in the background will pop the tasks and eventually execute the job. When you run many workers the tasks will be shared between them.
@@ -284,7 +285,7 @@ The function returns the following values:
 1. `**q**`: The name of the queue that was declared by the broker. If the `**name**` parameter was empty, the broker will generate a unique name for the queue.
 1. `**err**`: An error value if there was an error declaring the queue. If the queue was declared successfully, `**err**` will be `**nil**`.
 
-### **Publish/Subscribe - Sending messages to many consumers at once**
+### Publish/Subscribe - Sending messages to many consumers at once
 To create Publish/Subscribe we need to:
 
 * create a fanout exchange and a queue

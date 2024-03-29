@@ -6,7 +6,7 @@ date: 2023-05-28
 icy: 10
 ---
 
-# React Server Components, NextJs Route and Data Fetching
+## React Server Components, NextJs Route and Data Fetching
 React Server Components (RSCs) offer the flexibility to decide where to render components based on their purpose, diverging from the client-side rendering approach of Single-Page Applications. By breaking down the page into smaller components, it becomes evident that many components are non-interactive and can be rendered on the server as Server Components. This can improve performance, reduce bundle size and also improve the initial page loading time.
 
 ## What are React Server Components?
@@ -22,7 +22,7 @@ Server Components make your app load faster and use less JavaScript. The base ru
 
 Next.js renders the initial HTML on the server and sends it to the browser. The browser then enhances the HTML with interactivity by loading the Next.js and React runtime asynchronously. This lets the client take over the app and handle user interactions.
 
-## **How to use Server Components in Next.js?**
+## How to use Server Components in Next.js?
 In the latest release of Next.js, they have introduced Server Components as essential requirements to be utilized in the construction of their single-page applications (SPAs).
 
 To enhance code maintainability and readability, it is recommended to use the file naming convention of **`.server.(jsx|tsx)`** for Server components, and **`.client.(jsx|tsx)`**  for Client components.
@@ -155,16 +155,3 @@ In summary, React Server Components (RSCs) provide a powerful way to render Reac
 - [SSR | TanStack Query Docs](https://tanstack.com/query/v4/docs/react/guides/ssr#using-hydrate)
 - [Getting Started | Next.js (nextjs.org)](https://nextjs.org/docs/getting-started/react-essentials)
 - [Introducing Zero-Bundle-Size React Server Components – React](https://react.dev/blog/2020/12/21/data-fetching-with-react-server-components)
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

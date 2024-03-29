@@ -1,5 +1,5 @@
 ---
-tags: engineering/ai, ai, chatbot, tuning-llm, llm, alpaca, gpt4, open-source, chatgpt
+tags: ai, chatbot, llm, chatgpt
 author: Pham Ngoc Thanh
 github_id: thanhpn
 date: 2023-04-27
@@ -13,7 +13,7 @@ The LLM pre-trained model is designed to generate more coherent and contextually
 
 Overall, the LLM pre-trained model is a powerful tool for natural language processing tasks and has been used successfully in a variety of applications, including machine translation, summarization, and dialogue generation, chatbot, virtual assistant.
 
-## **Preparing for build AI chatbot:**
+## Preparing for build AI chatbot:
 - Use HuggingFace to download the model: Download the model from HuggingFace.
 - Download the chatbot interface source code: requires skill of git, running Node.js, and installing with yarn.
 - Update the model and run the chatbot: Update config.
@@ -27,12 +27,14 @@ Overall, the LLM pre-trained model is a powerful tool for natural language proce
     - Config model in config.json
         - Example config model alpaca 7B
             
-            ![[_assets/build-chatbot-1.png]]
+          ![alpaca](image-1.png)
+
 - Install node library and run
     - Run `yarn install` inside repository root folder
     - Start web and waiting load model, Run command: `yarn dev` to start the web.
     You will see the log after run command:
-    ![[_assets/build-chatbot-2.png]]
+
+ ![command](image-2.png)
     
 - Otherwise, you can use other bigger model to improve the output
     - Using Alpaca 13B model, it require more memory. Download Alpaca 13B from [here](https://huggingface.co/eachadea/ggml-gpt4-x-alpaca-13b-native-4bit/blob/main/gpt4-x-alpaca-13b-native-ggml-q4_0.bin)
@@ -41,7 +43,8 @@ Overall, the LLM pre-trained model is a powerful tool for natural language proce
     - Using Alpaca 7B tunning with GPT4 
 - Test chatbot
     - You can ask chatbot like this
-        ![[_assets/build-chatbot-3.png]]
+
+        ![chatbot](image-3.png)
 
 ## Fine-tune your model
 To fine tune your model you need create your dataset depend on your data, you can clone our example at [here](https://github.com/thanhpn/df-dataset)
@@ -55,16 +58,3 @@ For models with a large number of parameters, such as 30 billion or more, the re
 - https://huggingface.co/docs/timm/main/en/quickstart#finetune-a-pretrained-model
 - https://github.com/EwingYangs/awesome-open-gpt/tree/main
 - https://github.com/nomic-ai/gpt4all
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

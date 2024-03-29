@@ -2,17 +2,17 @@
 tags: 
   - engineering
   - go
+  - software-engineer
 title: Go In Software Engineering
 date: 2020-08-07
-description: null
+description: Go is a type-safe, cloud-native language designed for simplicity with first-class support for concurrency.
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
 ---
 
-Go is a type-safe, cloud-native language designed for simplicity
-with first-class support for concurrency.
+Go is a type-safe, cloud-native language designed for simplicity with first-class support for concurrency.
 
 The software community has been hungering for a small, simple, easy-to-learn and pragmatic programming language. Go fits the bill with:
 

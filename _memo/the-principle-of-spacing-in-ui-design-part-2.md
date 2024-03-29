@@ -2,15 +2,17 @@
 tags: 
   - design
   - technique
+  - UX-UI
 title: The Principle Of Spacing In Ui Design Part 2
 date: 2018-11-01
 description: null
-authors: null
+authors: 
+- anna
 menu: memo
 type: null
 hide_frontmatter: false
 ---
-## 1. Vertical spacing
+## Vertical spacing
 ### Spacing within each paragraph
 Firstly, I start the simplest content type — paragraph. One of the atoms decides aesthetic design. So you need to focus on them. You commonly depend on default line-height of the font to design the content. I have increased line by 2px to 3px in this way because they are too tight.
 
@@ -37,7 +39,7 @@ In the right, it seems perfect more and improves the legibility of the user. My 
 
 You usually start to add a bit of white space. If something is too cramped, you will add a bit more spacing until everything looks better in your design. By this way, you only have a minimum spacing. So you need more space. This way will take a lot of your time and not have a good result. One of the ways to have an elegant design is your design should start with too much white space.
 
-## 2. Horizontal spacing
+## Horizontal spacing
 ### Spacing inside components
 I suggested the bottom values of input and button to design better. You can see clearly with font-size 16px on phone screen or computer monitor. 16px of horizontal padding for both is a number that easy to remember when it defined in term of font-size.
 
@@ -58,4 +60,3 @@ I used 8px for spacing between components with icons. It is a great number that 
 * Developers will become faster as they know all the rules of your spacing system.
 
 You can follow me on [https://dribbble.com/Anna23593](https://dribbble.com/Anna23593) and thank you for taking the time to read it.
-

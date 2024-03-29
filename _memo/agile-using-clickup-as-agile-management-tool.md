@@ -1,6 +1,8 @@
 ---
 tags: 
   - agile
+  - engineering
+  - tooling
 title: Agile Using Clickup As Agile Management Tool
 date: 2016-05-08
 description: null
@@ -9,6 +11,7 @@ menu: memo
 type: null
 hide_frontmatter: false
 ---
+
 ClickUp is the powerful tool that we decided to stop by after Trello and the whole bundle of similar tool for Agile Management. With the fact that we pay ClickUp $9 per month because of their feature-rich platform, we still don't know how to use it to optimize our workflow.
 
 ## Introduction
@@ -38,13 +41,10 @@ We do Agile Scrumban. So there are several required steps when using Agile Manag
 * Deadline or due date is set.
 
 **New project**
-
 Create a new Space as Project
-
 Create a first list as Backlog
 
 **Sprint planning meeting**
-
 Create a list as Sprint #
 
 Do planning and create tickets in detailed with **Open** status or move them from backlog.
@@ -52,11 +52,9 @@ Do planning and create tickets in detailed with **Open** status or move them fro
 Use label to differentiate the ticket type e.g backend, frontend, design, ui, ux, etc.
 
 **Sprint release**
-
 Make sure every tickets is on the right side of the kanban board.
 
 **Sprint retrospective meeting**
-
 Archive the sprint.
 
 ## Suggestion on daily basis

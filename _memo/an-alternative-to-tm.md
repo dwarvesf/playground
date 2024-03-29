@@ -1,7 +1,8 @@
 ---
 tags: 
   - pm
-title: An Alternative To Tm
+  - engineering
+title: An Alternative To T&M
 date: 2020-05-09
 description: null
 authors: null
@@ -52,4 +53,4 @@ We push hard on our clients to build the right features, and build them to the r
 
 The right level of complexity is achieved by managing the depth, breadth and scope of features. When you represent your product in a story map, you can hit your project budget by subordinating the scope of total experiences (breadth), tasks within an experience (depth), and level of ease (polish).
 
-![[092695110fbd8d07129008b2f256b9d9_MD5.webp]]
+![t&m](assets/t&m.png)

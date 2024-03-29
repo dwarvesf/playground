@@ -1,15 +1,16 @@
 ---
 tags: 
   - tips
+  - engineering
+  - performance
 title: Asking As A Junior
 date: 2020-09-21
-description: null
-authors: null
+description: Being a junior is where everyone once began. It's the point where we start discovering things to learn and develop. And there comes a roadblock: When to raise a question?
+authors: 
+- duy
 menu: memo
 type: null
 hide_frontmatter: false
----
-
 ---
 
 Switching from schooling to the working world is not easy. New people, new culture, new workflow. The urge to learn quickly, prove one's self, and build up self-worth.
@@ -20,7 +21,7 @@ But more importantly. Should or Shouldn't? And how?
 
 ![](assets/asking-as-a-junior_e04f198b4f3729cac86ed127717fd1b6_md5.webp)
 
-## The Hesitation
+### The Hesitation
 Of course, the upfront hesitance can fall into these three common thoughts.
 
 "**I'm bothering people."** 
@@ -37,7 +38,7 @@ It's hard to resist the feeling of being proactive & talented, especially to tho
 
 Have you ever heard about the combination of enthusiasm and stupidity? Yes? Good.
 
-## So, what's next?
+### So, what's next?
 **Ask wisely**
 
 Try out every of your attempt. You'll be surprised by how much info you gather in this interim. Not to mention, you can even solve the puzzle yourself. Splendid, I know. 
@@ -56,17 +57,16 @@ And yes, the right time to ask. This might get a bit tricky since the timeline i
 
 Be specific about what you know and what you don't. Then convey it. Do everyone (and you yourself) a favor by asking all those queries at once. It's better to list an answer sheet in 30 minutes straight, rather than getting impeded every 5 minutes.
 
-## The truth
+### The truth
 We're not always surrounded by wisdom & creativity. Somebody has to ask questions. And stupid questions are one of them.
 
 Nothing wrong with clarification. Honesty saves everyone's time. Result-oriented is what we seek for and verify a problem's tactical helps us achieve it more quickly.
 
 Being honest won't hurt your chance of success. Being stubborn will. If you don't get it, ask it again. This only shows that you care about your work enough to overcome the fear and recalcitrance.
 
-## To sum up
+### To sum up
 Don't be afraid.
 
 Ask when you need.
 
 Ask open-ended questions.
-

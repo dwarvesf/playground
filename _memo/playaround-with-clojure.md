@@ -1,9 +1,11 @@
 ---
 tags: 
   - clojure
+  - software-engineer
+  - programming
 title: Playaround With Clojure
 date: 2019-09-06
-description: null
+description: Clojure is a compiled language, so one might wonder when you have to run the compiler. You don’t. Anything you enter into the REPL or load using load-file is automatically compiled to JVM bytecode on the fly. Compiling ahead-of-time is also possible, but not required.
 authors: null
 menu: memo
 type: null
@@ -95,8 +97,8 @@ Clojure combines of:
 * [Concurrent Programming](https://clojure.org/about/concurrent_programming)
 * [Hosted on the JVM](https://clojure.org/about/jvm_hosted)
 
-### **Dynamic Development**
+### Dynamic Development
 First and foremost, Clojure is dynamic. That means that a Clojure program is not just something you compile and run, but something with which you can interact. Clojure is not a language abstraction, but an environment, where almost all of the language constructs are reified, and thus can be examined and changed. This leads to a substantially different experience from running a program, examining its results (or failures) and trying again. In particular, you can grow your program, with data loaded, adding features, fixing bugs, testing, in an unbroken stream.
 
-### **Dynamic Compilation**
+### Dynamic Compilation
 Clojure is a compiled language, so one might wonder when you have to run the compiler. You don’t. Anything you enter into the REPL or load using load-file is automatically compiled to JVM bytecode on the fly. Compiling ahead-of-time is also possible, but not required.

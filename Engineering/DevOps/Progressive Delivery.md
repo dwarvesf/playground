@@ -9,7 +9,7 @@ Progressive delivery is a modern software development methodology for gradually 
 
 One of the key advantages of progressive delivery is that it makes your release process more resilient to errors and negative user experiences. For instance, if you detect errors at 1% of your traffic, you've only potentially impacted 1% of revenue or 1% of customer satisfaction.
 
-![[engineering-progressive-delivery.png]]
+![delivery](image-3.png)
 
 ## Progressive delivery contract
 The practice of progressive delivery sounds good in theory but requires strict requirements to make it effective:
@@ -42,16 +42,3 @@ Feature flags are one of the core components of progressive delivery. Without th
 - https://www.optimizely.com/optimization-glossary/progressive-delivery/
 - https://handbook.sourcegraph.com/departments/engineering/dev/tools/continuous_releasability/
 - https://www.cloudbees.com/blog/progressive-delivery-vs-continuous-delivery
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

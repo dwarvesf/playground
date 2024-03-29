@@ -27,22 +27,9 @@ After the meeting is done, Project Manager will prepare a document for Backlog G
 
 Then, this document will be sent out to the team members. So that they can take a look on it to have an overview, an idea for their future works or have any questions as well for the future's works.
 
-![Backlog-Grooming-Note-Example](_assets/backlog_grooming_note_example.png)
+![backlog](image-6.png)
 
 After everything is done, the team will start the Backlog Grooming as fast as possible since every members are already awared about the document which is provided before the meeting date. And, it also save everyone time as well.
 
 ## Reference
 - https://www.productplan.com/glossary/backlog-grooming/
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

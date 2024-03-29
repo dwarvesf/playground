@@ -2,6 +2,7 @@
 tags: 
   - swift
   - macos
+  - software
 title: Uidynamicanimator
 date: 2019-07-26
 description: null
@@ -11,7 +12,7 @@ type: null
 hide_frontmatter: false
 ---
 
-# Definition
+## Definition
 A **dynamic item** is any iOS or custom object that conforms to the [UIDynamicItem](https://developer.apple.com/documentation/uikit/uidynamicitem) protocol. The [UIView](https://developer.apple.com/documentation/uikit/uiview) and [UICollectionViewLayoutAttributes](https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes) classes implement this protocol in iOS 7 and later. You can implement this protocol to use a dynamic animator with custom objects for such purposes as reacting to rotation or position changes computed by an animator.
 
 To use dynamics, configure one or more dynamic behaviors—including providing each with a set of dynamic items—and then add those behaviors to a dynamic animator.
@@ -37,17 +38,16 @@ The three ways to initialize an animator, the dynamic items you can then use, an
 * A collection view animator automatically calls the [invalidateLayout()](https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617728-invalidatelayout) method as needed, and automatically pauses and resumes animation, as appropriate, when you change a collection view’s layout.
 * To employ a dynamic animator with other objects that conform to the [UIDynamicItem](https://developer.apple.com/documentation/uikit/uidynamicitem)protocol, create an animator with the inherited [init()](https://developer.apple.com/documentation/objectivec/nsobject/1418641-init) method. The resulting animator employs an abstract coordinate system, not tied to the screen or to any view.
 * There is no reference boundary to refer to when defining a collision boundary for use with this sort of animator. However, you can still, in a collision behavior, specify custom boundaries as described in [UICollisionBehavior](https://developer.apple.com/documentation/uikit/uicollisionbehavior).
-* 
 
-All types of dynamic animators share the following characteristics:
+* All types of dynamic animators share the following characteristics:
 
-* Each dynamic animator is independent of other dynamic animators you create
-* You can associate a given dynamic item with multiple behaviors, provided those behaviors belong to the same animator
-* An animator automatically pauses when all its items are at rest, and automatically resumes when a behavior parameter changes or a behavior or item is added or removed
+  * Each dynamic animator is independent of other dynamic animators you create
+  * You can associate a given dynamic item with multiple behaviors, provided those behaviors belong to the same animator
+  * An animator automatically pauses when all its items are at rest, and automatically resumes when a behavior parameter changes or a behavior or item is added or removed
 
 You can implement a delegate to respond to changes in animator pause/resumption status, using the [dynamicAnimatorDidPause(_:)](https://developer.apple.com/documentation/uikit/uidynamicanimatordelegate/1621193-dynamicanimatordidpause) and [dynamicAnimatorWillResume(_:)](https://developer.apple.com/documentation/uikit/uidynamicanimatordelegate/1621188-dynamicanimatorwillresume)methods of the [UIDynamicAnimatorDelegate](https://developer.apple.com/documentation/uikit/uidynamicanimatordelegate) protocol.
 
-# Key Features
+## Key Features
 To create real-life animation experience, Apple simulates it using UIDynamicAnimator
 
 **Features**
@@ -76,7 +76,7 @@ Besides, UIDynamicItem(object) features can also adjust the elasticity of the ob
 
 Combine all of these factors, we end up with real-life physical interaction simulation.
 
-# **UIDynamicBehavior**
+## UIDynamic Behavior
 A field behavior defines an area in which forces such as gravity, magnetism, drag, velocity, turbulence, and others can be applied. After creating a field behavior object of the appropriate type, configure the strength of the intended force along with any other field attributes.
 
 After creating a field behavior object, call the [addItem(_:)](https://developer.apple.com/documentation/uikit/uifieldbehavior/1624996-additem) method to associate the field with that item. For many types of fields, you must also configure a [UIDynamicItemBehavior](https://developer.apple.com/documentation/uikit/uidynamicitembehavior)object for the item to define relevant attributes of the item such as its density (mass) or charge. After configuring the field, add it to the [UIDynamicAnimator](https://developer.apple.com/documentation/uikit/uidynamicanimator) object associated with your interface to begin the animations.

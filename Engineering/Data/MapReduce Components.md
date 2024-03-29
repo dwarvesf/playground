@@ -13,7 +13,7 @@ date: 2022-10-24
 - Combiner
 
 ## Problem statement
-![](stock-problem.png)
+![map](image-71.png)
 
 Here's a problem we'd like to solve. We have a data set with information about several fictitious stock symbol. In each line in the data set, we have information about a stock symbol for a day: opening price, closing price, high, low, volume, etc.
 
@@ -21,7 +21,7 @@ Let's pick the first line in the above picture, it is going to be our record. Th
 
 Now, it is about the problem we would like to solve with this data set. For every stock symbol in the data set, we would like to find out its maximum closing price across several days.
 
-![](stock-algorithm.png)
+![map2](image-72.png)
 
 The above diagram shows the algorithm. We'll read a line, get the symbol on closing price from the line, then we need to check if the closing price is greater than the closing price we have for that symbol.
 
@@ -32,14 +32,14 @@ If the end of the file is reached, print the results.
 The problem with this approach is that there is no parallelization. Thus, if we have a huge data set, we will have extremely long computation time which is not ideal.
 
 ### Input Split
-![](distributed.png)
+![distribute](image-73.png)
 
 Let's consider how we have worked out the same problem in the mapreduce world. From the article `What MapReduce is`, we got introduced to the faces of MapReduce, so we'll take this problem and go over each phase and see the technical details involved in the map phase, reduce phase and shuffle phase.
 
 First, it is about the map phase, the central idea behind MapReduce is distributed processing. So, first thing is to divide the data set into chunks and you have separate process working on each chunk of data.  The chunks are called input splits and the process working on the chunks are called mappers, as show as in the above picture. Each mapper would process a record at a time and each mapper would execute the same set of code on every single record.
 The output of the mapper would be a key-value pair.
 
-![](input-splits-vs-blocks.png)
+![block](image-74.png)
 
 Is it true that input split is same as the block? Input split is not same as the block.
 A block is a hard division of data at the block size. If the block size in your cluster is 128 MB. Each block for the data set will be 128 MB except for the last block which could be less than the block size if the file size is not entirely divisible by the block size. Since a block is a hard cut at the block size, a block can end even before a record ends.
@@ -55,7 +55,7 @@ Therefore, when a mapper tries to read the data, it clearly knows where to start
 So that is why we have a concept of input split. Input split respects logical record boundary. During mapreduce execution hadoop scans through the blocks and create input splits which respects record boundaries.
 
 ### Map Phase
-![](map-phase.png)
+![maphase](image-75.png)
 
 With the understanding about input splits, we can take a look about the mapper in detail. A mapper in hadoop can be written in many different programming languages, it can be written in C++, python Scala and Java. In our case we'll look at Java, a mapper is a Java program in our case which is invoked by the Hadoop framework once per every record in the input split.
 
@@ -72,7 +72,7 @@ So a mapper is invoked for every single record in the input split and then the o
 But how do we decide what should be the key and what should be the value in our key value pair?
 
 ### Reduce Phase
-![](reduce-phase.png)
+![reduce](image-76.png)
 
 The reduce phase that will give us an answer. The reducers work on the output of the mappers. The output of individual mappers are grouped by the key, in our case, the stock symbol and pass to the reducer. Reducer will receive a key and a list of values for that key for input. The keys will be grouped.
 
@@ -84,7 +84,7 @@ But in an ideal scenario, we will have 1000 key value pairs because we have thou
 
 The work of the reducer becomes simple, it reads the key and calculate the maximum closing price from the list of closing prices for that symbol and output the result.
 
-***Question**: how do we decide what should be the key and what should be the value?*
+**Question: how do we decide what should be the key and what should be the value?**
 
 There is a simple trick: think about what needs to be reduced. In our example, we know if the reducer has the stock symbol and the list of closing prices for a given stock symbol, we can arrive at the maximum closing price and also we want the reducer to be called once per symbol that is why we made symbol as the key in mapper's output and closing price as the value.
 
@@ -93,7 +93,7 @@ We know the number of mappers equals to the number of input splits are not contr
 Assuming that data set is divided into 100 splits which means 100 mappers. Now we have only one reducer to process all the output from 100 mappers. In some cases it might be okay but we might run into performance bottleneck at the reduced phase because we're trying to reduce output from 100 mappers in one reducer.  So if we're dealing with large amount of data in the reduced phase it is advisable to have more than one reducer.
 
 ### Shuffle Phase
-![](multiple-reducers.png)
+![phase](image-77.png)
 
 In the above picture, we have multiple reducers. Let's consider how the output of the individual mappers got grouped by symbols and reached the reducer. The magic happens in the shuffle phase.
 
@@ -135,7 +135,7 @@ Similarly you can find key value pairs for symbol `STT` in mapper 1 and also in 
 Each run will print the symbol and its maximum closing price. That's the end to end process in mapreduce.
 
 ### Combiner
-![](combiner.png)
+![combiner](image-78.png)
 
 We could also have an optional combiner at the map phase.
 Combiners can be used to reduce the amount of data that is sent to the reduce phase. In our example, there is no reason to send all the closing prices for each symbol from each mapper.  As shown in the above picture, in mapper 1, we have three records for symbol `ABC`: one record with closing price `60`, one record with closing price `50` and one record with closing price `111`.
@@ -147,16 +147,3 @@ Intuitively, combiner is like a mini reducer that runs at the map phase. Combine
 ## Summary
 - the internals of map shuffle and reduced phases.
 - the benefit of using a combiner.
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

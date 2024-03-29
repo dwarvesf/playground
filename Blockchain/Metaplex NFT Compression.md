@@ -10,7 +10,7 @@ With the rise of NFTs on the Solana blockchain, there is a growing demand for th
 
 While the cost of renting NFTs on Solana is relatively cheap (at ◎0.012), it scales linearly, making it costly to have a large number of NFTs. However, through compression, the cost of on-chain storage for NFTs can be drastically reduced, enabling creators to fully leverage the technology to express themselves. For example, with compression, the cost of 10,000 NFTs at ◎3.5 (34x) reduces, as does the cost of 1 million NFTs at ◎5 (2,400x) and 1 billion NFTs at ◎500 (24,000x).
 
-![](_assets/metaplex-nft-compression-cost-comparation.png)
+![metaplex](image-10.png)
 
 ## How Compression for NFTs works
 Compressed NFTs are stored in Merkle trees via the Gummyroll program where:
@@ -23,24 +23,9 @@ The Merkle root's on-chain buffer in the Gummyroll program enables multiple writ
 
 The implementation of Compression for NFTs will have a significant impact on the Solana ecosystem, and Metaplex is working towards making this a reality. To achieve this, Metaplex is collaborating with various partners, including wallets and RPCs. Some of the partners that have already implemented solutions include Solflare for wallets, Crossmint for enterprise tools, and GenysysGo and Triton for RPCs. Additionally, partners such as Phantom for wallets and Quicknode and Alchemy for RPCs are expected to launch their solutions soon.
 
-![](_assets/metaplex-nft-compression-how-it-work.png.png)
-
 ## Conclusion
 This is just a brief overview of Compression for NFTs. There is much more to explore, whether from a technical perspective or in terms of potential use cases. Nevertheless, this technological advancement marks a significant shift in how users, developers, and businesses can approach NFTs in Solana blockchain.
 
 ## Reference
 - https://www.metaplex.com/posts/expanding-digital-assets-with-compression-for-nfts
 - https://metaplex.notion.site/Compression-for-NFTs-Public-94f9faa25f034110b513414a11a85bbe
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

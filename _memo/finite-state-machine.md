@@ -2,16 +2,17 @@
 tags: 
   - engineering
   - modeling
+  - developer
 title: Finite State Machine
 date: 2018-08-29
-description: null
+description: A Finite State Machine is a model of computation based on a hypothetical machine made of one or more states. Only one single state of this machine can be active at the same time. It means the machine has to transition from one state to another in to perform different actions.
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
 ---
 
-A Finite State Machine is a model of computation based on a hypothetical machine made of one or more states. Only one single state of this machine can be active at the same time. It means the machine has to transition from one state to another in to perform different actions
+A Finite State Machine is a model of computation based on a hypothetical machine made of one or more states. Only one single state of this machine can be active at the same time. It means the machine has to transition from one state to another in to perform different actions.
 
 ![](assets/finite-state-machine_db5600646453d67b0df29dfa3c9dc5b0_md5.webp)
 

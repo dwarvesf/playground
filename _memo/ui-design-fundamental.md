@@ -1,10 +1,13 @@
 ---
 tags: 
   - design
-title: Ui Design Fundamental
+  - UX-UI
+  - learning
+title: UI Design Fundamental
 date: 2018-03-20
-description: null
-authors: null
+description: When you design UI for an app or a website, the first thing that the designer needs to determine the purpose of the product and the target audience.  You should plan and calculate for your UI design.
+authors: 
+0 anna
 menu: memo
 type: null
 hide_frontmatter: false
@@ -12,11 +15,7 @@ hide_frontmatter: false
 
 When you design UI for an app or a website, the first thing that the designer needs to determine the purpose of the product and the target audience.  You should plan and calculate for your UI design.
 
-Creativity does not exceed the limits of design goals.
-
-Differentiate between customer and user: Put more on the role of the user than the customer
-
-Identify the user who will use your app, identify the behavior, user characteristics.
+Creativity does not exceed the limits of design goals. Differentiate between customer and user: Put more on the role of the user than the customer. Identify the user who will use your app, identify the behavior, user characteristics.
 
 So we need research:
 
@@ -24,17 +23,17 @@ So we need research:
 * Their behaviors
 * Their Preferences
 
-## **What users perceive from UI**
-USER INTERFACE: (has 3 main elements)
+## What users perceive from UI
+User Interface: (has 3 main elements)
 
-## **AESTHETICS:**
+### Aesthetics 
 You should reply this questions: Where/Why do you think that they are beautiful? You will see that each person has a different opinion. Aesthetics is only relative and bases on standards: layout, typography, color.  So, a beautiful design is a design that …?
 
 Aesthetics changes over time, mostly comes from trends, If you can’t create trends, just follow them. Some current trends:
 
 Futuristic ornamentalism; Simplicity & Comfort; Extra Depth (with Semi-Flat Design); Custom Illustrations; Animations, Gifts & Cinemagraphs; Micro Interactions; Integrated Animations; Obnoxious Bright Gradients; Semi Realistic 3D; One Color 3D Design; 80s-90s Color Palettes & Patterns; Big Bold Typography; Creative Typography; Particle Background; Modular Blank; Split Page Design; Vibrant & Saturated Color Page; Mondrianism.
 
-## **CONTENT**
+### Content
 When you design a website or an app, you have to reply the question: What is this site about? Because the user not only look at your website but also read content. One of the parts the user look most is landing page, the content should follow the items below:
 
 * Relevant & Useful
@@ -42,7 +41,7 @@ When you design a website or an app, you have to reply the question: What is thi
 * Credible & Finable
 * Scannable & Simple.
 
-## **INTERACTION**
+### Interaction
 Interaction design is specifically a discipline which examines the interaction (via an interface) between a system and its user. It may also incorporate design focused on how information should be presented within such a system to enable the user to best understand that information though this is often considered to be the separate discipline of “information design” too.
 
 ![](assets/ui-design-fundamental_4718c084b78a2e641043dff2ffb94dad_md5.webp)
@@ -65,15 +64,15 @@ When information design does not have a strong visual hierarchy, a user’s ey
 
 A designer has the opportunity to use visual hierarchy to reinforce these natural paths, or deliberately use visual characteristics to break such patterns so as to draw the viewer’s attention to a focal point. Thus, the successful manipulation of this hierarchy empowers designers to lead users, quite literally, along a cleverly devised visual journey to a goal.
 
-**Read more:** [https://www.interaction-design.org/literature/topics/visual-hierarchy](https://www.interaction-design.org/literature/topics/visual-hierarchy)
+* **Read more:** [https://www.interaction-design.org/literature/topics/visual-hierarchy](https://www.interaction-design.org/literature/topics/visual-hierarchy)
 
-**Readability** is whether an extended amount of text—such as an article, book, web page - is easy to read
+* **Readability** is whether an extended amount of text—such as an article, book, web page - is easy to read
 
-**Legibility** is whether a small burst of text such as a sign or a headline is instantly recognizable.
+* **Legibility** is whether a small burst of text such as a sign or a headline is instantly recognizable.
 
-**Differentiate dissimilar things**
+* **Differentiate dissimilar things**
 
-**Communicate in user language**
+* **Communicate in user language**
 
 ### Predictability
 **Affordance**
@@ -110,7 +109,7 @@ The following example will show how the individual bricks of the content type �
 
 ![](assets/ui-design-fundamental_2f86f2fad6448f61bf19fa256a25c973_md5.webp)
 
-## Conclusion: 
+## Conclusion
 Intentional Design: Interface without User is not User Interface
 
 3 pillars of UI Design: 

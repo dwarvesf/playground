@@ -14,11 +14,11 @@ Uncle Bob is also known for his masterpieces of *Clean Code* and *Clean Architec
 > See Uncle Bob's [publications](https://en.wikipedia.org/wiki/Robert_C._Martin#Publications).
 
 Each principle of SOLID will be explained with example below:
-- [[#S - Single Responsibility Principle]]
-- [[#O - Open-Closed Principle]]
-- [[#L - Liskov Substitution Principle]]
-- [[#I - Interface Segregation Principle]]
-- [[#D - Dependency Inversion Principle]]
+- #S - Single Responsibility Principle
+- #O - Open-Closed Principle
+- #L - Liskov Substitution Principle
+- #I - Interface Segregation Principle
+- #D - Dependency Inversion Principle
 
 ## S - Single Responsibility Principle
 Let's begin with the single responsibility principle. As we all figured out from the name, this principle states that **a class should only have one responsibility and therefore it should only have one reason to change.**
@@ -334,16 +334,3 @@ Applying the Single Responsibility or Liskov Substitution principle helps us to 
 - https://www.freecodecamp.org/news/solid-design-principles-in-software-development/
 - https://www.baeldung.com/solid-principles
 - https://dev.to/galwaycoder/the-solid-principles-in-software-design-explained-53n
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

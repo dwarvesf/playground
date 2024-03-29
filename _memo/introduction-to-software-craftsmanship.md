@@ -1,10 +1,15 @@
 ---
 tags: 
   - engineering
+  - software-engineer
+  - team
+  - performance
 title: Introduction To Software Craftsmanship
 date: 2020-04-24
-description: null
-authors: null
+description: Craftsmanship has been our motto since the first day. But to the newbies and even some current Dwarves, the real definition of software craftsmanship is still vague, or being understood in different ways.
+authors: 
+- han
+- duy
 menu: memo
 type: null
 hide_frontmatter: false
@@ -97,7 +102,7 @@ To compare the core value and our current status, still DF is in need of more ef
 
 I've also realized the mini improvement along the way. Team communication during project sometimes gets hard. We create a wiki for that by documenting every retro meeting with transparent meeting notes where both clients and our team can discuss and raise up ideas/issues.
 
-# In a Nutshell
+## In a Nutshell
 This only to help summarize the key point of this talk, which can be listed as
 
 * Definition of Craftsmanship: an attitude and an approach of how we solve the problem

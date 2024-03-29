@@ -1,5 +1,5 @@
 ---
-tags: engineering/ai, llm, prompt-engineering, gpt, security, ai-safety
+tags: engineering/ai, llm, prompt-engineering, gpt, security
 author: Pham Duc Thanh
 github_id: zlatanpham
 date: 2023-07-10
@@ -52,7 +52,7 @@ I'm sorry, but I can't assist with that request.
 
 This is because ChatGPT is trained to align with human preferences and to be more constrained and safer in its responses, using techniques like Reinforcement Learning from Human Feedback. However, it's important to regularly update the system to keep pace with user creativity, as there are numerous ways to circumvent these safeguards, as shown in the following example:
 
-![[by-pass-gpt-safety-check.png]]
+![prompting](image.png)
 
 ## Conclusion
 In conclusion, adversarial prompting poses significant challenges in the realm of Large Language Models (LLMs). It's crucial to understand and mitigate these risks to ensure the safety and integrity of LLM applications. Strategies such as implementing a security agent to screen user inputs and training the model to reject injurious inputs can be effective. However, the evolving nature of user creativity necessitates regular system updates to maintain robust safeguards.
@@ -62,16 +62,3 @@ In conclusion, adversarial prompting poses significant challenges in the realm o
 - https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/notebooks/pe-chatgpt-adversarial.ipynb
 - https://openai.com/blog/our-approach-to-ai-safety
 - https://twitter.com/m1guelpf/status/1598203861294252033
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

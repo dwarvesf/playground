@@ -6,14 +6,13 @@ date: 2023-03-28
 icy: 10
 ---
 
-# Profiling in Go: Gotta catch 'em all
-
-## Introduction
+## Profiling in Go: Gotta catch 'em all
+### Introduction
 Those of you who have watched the Pokemon series will undoubtedly recognize the famous catchphrase - "Gotta catch 'em all" - that refers to the main character's goal of catching all the Pokemon in the world. In the same way, profiling is a useful way to catch all the problems in your code and ensure that it's running smoothly. It's a powerful tool that can help you identify and fix the subtle issues in your code quickly and efficiently.
 
 In this article, we'll explore the world of profiling in Go and show you how you can use it to catch all the issues in your code.
 
-## Problem
+### Problem
 First, let's take a look at the problem we're facing. Check out this command:
 ```bash
 grep -wo love moby.txt | wc -l
@@ -125,7 +124,7 @@ There are multiple type of profiling we can apply to our program. These include:
 
 The most commonly used types of profiling in Go are CPU profiling and memory profiling, which are also considered the most useful. We will only apply these two.
 
-## Solution
+### Solution
 Go already has a package for profiling call `pprof`, but let's use Dave Cheney's package for simplicity. Run this command:
 ```bash
 go get github.com/pkg/profile
@@ -578,22 +577,9 @@ This is the result:
 ```
 Look at that! We've improved the runtime of our program significantly. This is the power of profiling: it shows you exactly where the problem is, so you know what to fix.
 
-## Summary
+### Summary
 In conclusion, profiling is an essential tool for any Go developer looking to build high-quality and efficient applications. By catching all the performance problems in your code, you can optimize it for better performance, improving the user experience and overall success of your application. Whether you're working on a small personal project or a large enterprise application, profiling should be a regular part of your development process.
 
 As you continue to work on your Go projects, keep in mind the importance of profiling and the various tools and techniques available to help you optimize your code. By doing so, you'll be well on your way to becoming a more efficient and effective developer.
 
 So go ahead, catch 'em all!
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

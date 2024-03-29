@@ -2,10 +2,12 @@
 tags: 
   - design
   - technique
+  - productivity
 title: Card Sorting And A Glimpse At Experimental Sorting Session
 date: 2018-08-26
-description: null
-authors: null
+description: As part of our team’s weekly activities is a knowledge sharing session. So, in this article I’d like to share a UX technique we practiced recently — Card Sorting.
+authors: 
+- han
 menu: memo
 type: null
 hide_frontmatter: false
@@ -15,15 +17,14 @@ hide_frontmatter: false
 
 And plus, a real lesson learned with our team’s workshop.
 
-# A brief intro to Card Sorting
-
-## Definition
+## A brief intro to Card Sorting
+### Definition
 Card sorting is a method used to help design or evaluate the information architecture of a site and broader a digital product (web-app and mobile app).
 
-## Information Architecture (IA)
+### Information Architecture (IA)
 As [Nielsen Norman Group](https://www.nngroup.com/articles/ia-vs-navigation/) defines, IA is the skeleton of a digital product, including the labelling of content and how they are organized in order for the user to find the content as easy as possible. A good IA, mostly presented as navigation, needs to be clear and intuitive enough to guide the users to the right flow.
 
-## Why
+### Why
 Curate more refined product for users by understanding more into their mental model by
 
 * Real feedback on how users understand the information we present
@@ -32,13 +33,13 @@ Curate more refined product for users by understanding more into their mental mo
 
 Cheap and not time-consuming (simple tools: paper, boards and around one hour/session)
 
-## How
-### Running it
+### How
+**Running it**
 In a card sorting session, participants organize topics into categories that make sense to them and they may also help you label these groups.
 
 Based on the phase and project, you might need to choose between two types of card sorting methods: Open or Closed
 
-### Differentiate the two approaches
+**Differentiate the two approaches**
 Open card sorting requires participants to write the tasks they want to perform with the product.
 
 ✔ Most suitable when establishing [IA](https://docs.google.com/document/d/1Je2rTihr-EJQe4S7hIwwHCLl903Axvqje60MoEkgRNY/edit#heading=h.jr5vgnejske) for a new website or digital product, where it’s more important that we get insights into users’ mental model and understand how they expect to interact with the product.
@@ -51,44 +52,51 @@ Sometimes, these two approaches can be merged and become a hybrid or semi-closed
 
 Here’s a summary of the three approaches.
 
-## Materials
+### Materials
 Based on the requirements and available resources, card sorting can be conducted in two ways:
 
-### Offline:
+**Offline**
+
 Actual cards (post-its, sticky notes, pens and boards)
 
-### Online (for remote teams or travel inconvenience):
+**Online (for remote teams or travel inconvenience)**
+
 Using one of the online card-sorting software tools.
 
 1. [Optimal Workshop](https://www.optimalworkshop.com/): a UX research platform, providing a full-range features for card sorting technique, from recruiting right users, sorting to generating reports.
 1. [Milanote](https://milanote.com/): the famous app for UX research and remote collaboration, also supporting card sorting with multiple users in real-time platform.
 
-## Our experience with card sorting
+### Our experience with card sorting
 One of our ongoing projects involving with a large scale of information and categories due to its multiple user roles. So, the navigation is an extremely important part to establish an easy guiding for them to use the platform.
 
-### Goal
+**Goal**
+
 1️⃣ Pilot test our initial hypotheses we created for the incoming workshop with our real users
 
 2️⃣ Get our team member familiar to a card sorting process with a real exercise
 
 3️⃣ Help the moderator to practice her skills as a workshop facilitator and better prepare for issues that may emerge in real workshop
 
-### About the project
+**About the project**
+
 The necessary information hotel employees needs for their everyday work.
 
-### Who’s involved in this workshop?
+**Who’s involved in this workshop?**
+
 * 6 designers of our team in three groups
 * 1 moderator to clarify the goal and help keeping the workshop on track
 
-### Types and platform used
+**Types and platform used**
+
 For the purpose of practicing and promote domain knowledge in hospitality, we chose Open method and use Post-it notes as our cards.
 
-### Action time
+**Action time**
+
 Our facilitator shared some brief description about the project (which role the user in the platform are working at and we should write all the information we think the users should be able to find in the app.
 
-1. **Instructing guidelines**
+**1. Instructing guidelines**
 
-### 🗒️ Lessons #1
+**🗒️ Lessons #1**
 * Each idea is on one card (we missed that requirement and ended up with varied format of content on each card)
 * Consider explaining the whole process of card sorting to participants to help them keep track with the workshop easier
 * Make sure the user know
@@ -97,13 +105,15 @@ Our facilitator shared some brief description about the project (which role the 
 * Start by explaining, remind constantly while the workshop is running
 
 **2. Generating ideas**
+
 Each group had 15 minutes to brainstorm and write down all the info based on the topic suggested.
 
-### 🗒️ Lessons #2
+**🗒️ Lessons #2**
 * Each idea is on one card
 * Take notice of the time, since people usually are concentrate for around 15 minutes at most (set the time-out based on this or a break is preferred if the content is too large / there are too many categories)
 
 **3. Grouping**
+
 After the brainstorming section, we took several minutes (approximately more than 15 minutes) to categorize roughly 18 cards/each group into two variants of taxonomy. (phew!).
 When the groups finished the grouping, all of us were asked to participate in reviewing and raising questions.
 
@@ -115,14 +125,14 @@ For instance, a card with the wording “status” led to a discussion.
 
 In this case, recalling our users were the hotel’s staff, the room status was the more suitable choice to choose.
 
-### #🗒️ Lessons #3
+**🗒️ Lessons #3**
 * No idea is wrong. Propose first, verify later.
 * Give more details to the cards: stay away from confusing wording, make short explanation to the labels. This would help shorten the time for the explanation.
 * Learned how a card sorting is operated
 * Discovered some new wordings for categories
 * Made a better preparation for the real workshop
 
-## #Beyond this session
+### Beyond this session
 1. Document the findings into digital version for optimal results overview (diagrams for more holistic view)
 1. Test the result with simple interactive prototype
 

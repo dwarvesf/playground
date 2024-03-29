@@ -20,7 +20,7 @@ tag: Frontend
 ### Description
 A package manager for JavaScript that aims to improve the performance of the installation process and reduce disk space usage. It uses a unique approach to store dependencies in a shared store, rather than installing them multiple times for different projects. pnpm supports features such as multi-registry support, global installation, and zero-disk installations.
 
-> *pnpm's unique approach to dependency management is based on the concept of a "shared store." Instead of installing each dependency separately in each project directory, pnpm creates a single, centralized store where all packages are installed. When a project requires a package, pnpm creates a symbolic link from the project's *`***node_modules***`* directory to the shared store. This means that multiple projects can share the same copy of a package, which can help to reduce disk usage and avoid redundancies.*
+> *pnpm's unique approach to dependency management is based on the concept of a "shared store." Instead of installing each dependency separately in each project directory, pnpm creates a single, centralized store where all packages are installed. When a project requires a package, pnpm creates a symbolic link from the project's *`node_modules`* directory to the shared store. This means that multiple projects can share the same copy of a package, which can help to reduce disk usage and avoid redundancies.*
 
 ### What’s better about this method or library
 1. Improved installation performance: pnpm's unique approach to dependency management can significantly reduce installation times, especially for monorepo projects with many dependencies.

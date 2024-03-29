@@ -82,8 +82,6 @@ Double-entry systems, regardless of whether we keep track of journal entries, al
 ## Database Design
 For database design, refer to [[Database design for double-entry accounting | database design for double-entry accounting]].
 
----
-
 ## Accounting types
 ### Assets
 > **"How much do I have?"**
@@ -226,16 +224,3 @@ $ hledger -f transactions.journal balance -t
 - https://www.investopedia.com/terms/m/mortgage.asp
 - https://www.investopedia.com/terms/w/warranty.asp#:~:text=our%20editorial%20policies-,What%20Is%20a%20Warranty%3F,as%20originally%20described%20or%20intended.
 - https://www.ledger-cli.org/3.0/doc/ledger3.html#Understanding-Equity
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

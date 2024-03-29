@@ -9,7 +9,7 @@ icy: 10
 ## What's variable font?
 Variable fonts - officially known as OpenType Font Variations - are a font format that allows for a single font file to contain multiple variations of a typeface, such as different weights, widths, and styles, that can be dynamically adjusted in real-time using font variations.
 
-![[_assets/variable_fonts_01.png]]
+![font](image-22.png)
 
 Weights, widths and other properties are also called **"axes" of variations**.
 
@@ -20,7 +20,7 @@ Each axis of variation defines a range of possible values, and any combination o
 
 > For example, the weight axis of a variable font might range from "Thin" to "Bold," and any value within that range can be selected to create a font style with a corresponding weight. 
 
-![[_assets/variable_fonts_02.png]]
+![font2](image-23.png)
 
 By adjusting these parameters within a defined range, designers can create custom font styles that fit their specific design needs.
 
@@ -38,15 +38,15 @@ The best way to understand variable fonts is to start playing with them. Below a
 
 Go to [etceteratype.co/epilogue](https://etceteratype.co/epilogue) and play with the **weight** axis of Epilogue to see how it affects the overall spacing of the type:
 
-![[_assets/variable_fonts_03.png]]
+![font3](image-24.png)
 
 Now go to [etceteratype.co/grandstander](https://etceteratype.co/grandstander) and compare that with Grandstander, which was designed to take up the same amount of horizontal space regardless of changes made to the weight axis. This shows how what happens within an axis of variation is determined by the typeface designer.
 
-![[_assets/variable_fonts_04.png]]
+![font4](image-25.png)
 
 Go to [etceteratype.co/anybody](https://etceteratype.co/anybody) and play with the weight **and** width axes on Anybody, to see how they can be combined, and how they affect each other in a subtle way:
 
-![[_assets/variable_fonts_05.png]]
+![font5](image-26.png)
 
  You can also visit these websites:
 -   [VariableFonts.io](https://variablefonts.io/)
@@ -91,22 +91,9 @@ By default, there are 5 [registered axes](https://docs.microsoft.com/en-us/typog
   
 Beyond that, we depends on how the fonts were built & what custom axes they are using. Check out [this site](https://v-fonts.com/fonts/roboto-flex) for another good example on all the axes a font can have.
 
-![[_assets/variable_fonts_06.png]]
+![font6](image-27.png)
 
 ## References
 - https://www.youtube.com/watch?v=0fVymQ7SZw0&list=WL&index=1&t=247s&ab_channel=KevinPowell
 - https://fonts.google.com/knowledge/introducing_type/introducing_variable_fonts
 - https://web.dev/variable-fonts/
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

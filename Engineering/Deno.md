@@ -12,7 +12,7 @@ date: 2022-03-17
 - "Node" written weirdly backwards
 
 ## Why
-![](_assets/kFo8ECL.png)
+![why](image-10.png)
 
 - Deno follows the standard Web API [and is leading the industry in implementing them](https://github.com/denoland/deno/pull/11941)
   - This is with the aim to make JS/TS project ideally more universal
@@ -54,22 +54,9 @@ Similar to Cloudflare Workers, Deno Deploy is a serverless deployment platform u
 
 What's really cool about Deno Deploy is that it only requires a link to your entry file to deploy, and deploy time is super fast.
 
-![](_assets/GygtLWs.png)
+![deploy](image-11.png)
 
 Interesting projects to follow:
 
 - https://github.com/exhibitionist-digital/ultra
 - https://github.com/lucacasonato/fresh
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

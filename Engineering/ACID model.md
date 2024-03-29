@@ -13,7 +13,7 @@ ACID is an acronym that generally describes the necessity for consistency of a t
 - **Isolation**: Transactions cannot affect or jeopardize the integrity of other transactions by interacting with them while they are still in progress. This means a majority of transactions that are ACID should run concurrently.
 - **Durability**: After a commit of a completed transaction, we can be assured that the transaction itself will be persisted in the event of a network partition or a power outage. _This does not assume or take in consideration single-upset events._
 
-![acid acronym diagram](_assets/acid_acronym_diagram.png)
+![flow](image-2.png)
 
 ## Why use ACID?
 ACID is particularly important for businesses when there is a high requirement for consistent and durable data. Data consistency or loss of data would eventually translate to loss of revenue, especially if the software in question is critical for daily operations or strategic analysis. Thresholds for requiring an ACID compliant database would be:
@@ -39,16 +39,3 @@ Most relational databases are ACID compliant, such as MySQL, PostgreSQL, Oracle,
 - https://database.guide/what-is-acid-in-databases/
 - https://phoenixnap.com/kb/acid-vs-base
 - https://www.indeed.com/career-advice/career-development/acid-database
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

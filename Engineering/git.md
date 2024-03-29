@@ -31,6 +31,7 @@ GitHub flow is a lightweight, branch-based workflow that supports teams and proj
 #### Git-flow
 - There're many members in your team, and they collaborate on the same project. Your team is building software that is explicitly versioned or needs to support multiple versions of your software in the wild, then git-flow is a good fit. Git-flow was first published and made popular by Vincent Driessen. The Git-flow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects. Git-flow focuses on stable and qualified products.
 - The central repo holds two main branches with an infinite lifetime is `master` and `develop` The development model uses a variety of supporting branches to aid parallel development between team members, ease tracking of features, prepare for production releases, and to assist in quickly fixing live production problems. These are `feature branches`, `release branches`, `hotfix branches`.
+
 ##### Develop feature flow
 - Base branch: develop
 - Merge back to: develop
@@ -38,6 +39,7 @@ GitHub flow is a lightweight, branch-based workflow that supports teams and proj
 - Person in-charge: developers
 - Objective: Implement a new feature of the software
 - Developers check out from the `develop` branch a new feature branch. They make an early merge request with a full description of the working task. Developers work on this branch and merge to `develop` after being reviewed by teammates or leaders.
+
 ##### Release flow
 - Base branch: develop
 - Merge back to: develop and master branch
@@ -45,6 +47,7 @@ GitHub flow is a lightweight, branch-based workflow that supports teams and proj
 - Person in-charge: leader
 - Objective: prepare and release a new version of the software
 - The leaders check out from the `develop` branch a release branch. They should pump the version and update the release note. After preparing the release information, they merge the changes to `master` and `develop` branches. The leader creates a new tag from `master` branch.
+
 ##### Hot-fix flow
 - Base branch: master
 - Merge back to: develop and master branch
@@ -55,6 +58,7 @@ GitHub flow is a lightweight, branch-based workflow that supports teams and proj
 
 #### Git-flow in Dwarves Foundation
 Dwarves Foundation team is using the git-flow and some customization. We base on the idea about git-flow when working with the features branches. However, our team applies a different release flow. There are 4 environments for the development of live-cycle in the Dwarves Foundation team: `develop`, `testing`, `staging`, and `production`. Instead of release on `develop` and `master` branches, we release the product on tags. `v*.*.*` tag for production, `v*.*.*-rc` for staging, and `v*.*.*-alpha` for testing.
+
 ##### Develop feature flow
 - Base branch: develop
 - Merge back to: develop
@@ -62,24 +66,28 @@ Dwarves Foundation team is using the git-flow and some customization. We base on
 - Person in-charge: developers
 - Objective: Implement a new feature of the software
 - Developers check out from the `develop` branch a new feature branch. They make an early merge request with a full description of the working task. Developers work on this branch and merge to `develop` after being reviewed by teammates or leaders.
+
 ##### Release Testing version
 - Base branch: develop
 - Merge back to: develop
 - Branch naming convention: `release/v*.*.*-alpha`
 - Tag: `v*.*.*-alpha`
 - Objective: prepare and release a new version for the testing. The QA team uses the testing environment to verify the features are a match with requirements.
+
 ##### Release Staging version
 - Base branch: `release/v*.*.*-alpha`
 - Merge back to: develop, `release/v*.*.*-alpha`
 - Branch naming convention: `release/v*.*.*-rc`
 - Tag: `v*.*.*-rc`
 - Objective: prepare and release a new version for the staging. The customers and our team make an acceptance test on the staging environment. The beta-testing is also deployed and released on it.
+
 ##### Release Production version
 - Base branch: `release/v*.*.*-rc`
 - Merge back to: develop, `release/v*.*.*-rc`, master
 - Branch naming convention: `release/v*.*.*`
 - Tag: `v*.*.*`
 - Objective: prepare and release a new version for the production. The end-users will be received the update after the features are verified through many protection checkpoints.
+
 ##### Hot-fix flow
 - Base branch: `release/*`
 - Merge back to: `release/*`, `develop` and `master`
@@ -110,23 +118,8 @@ There are a number of factors that have held developers back from becoming super
 
 Overall, Git acts like a time machine. When you travel from A to B in time, you should always expect there is a button to come back to A.
 
----
-
 #### Reference
 - https://learngitbranching.js.org
 - https://nvie.com/posts/a-successful-git-branching-model/
 - https://danielkummer.github.io/git-flow-cheatsheet/
 - https://github.com/k88hudson/git-flight-rules
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

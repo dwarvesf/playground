@@ -1,10 +1,14 @@
 ---
 tags: 
   - remote
+  - operations
+  - perfomance
+  - team
 title: Remote Prepare And Get Going
 date: 2016-01-15
-description: null
-authors: null
+description: With the deeply understanding that WORK - LIFE BALANCE is the real shit. We decided to pick this style of Remote Working as a main way to work for the whole company. And everyone can choose to follow it or not. It’s optional but highly recommended.
+authors: 
+- han
 menu: memo
 type: null
 hide_frontmatter: false
@@ -52,7 +56,7 @@ Required articles to read before getting your hand dirty:
 * [https://jvns.ca/blog/2018/02/18/working-remotely--4-years-in/](https://jvns.ca/blog/2018/02/18/working-remotely--4-years-in/)
 * [https://hackernoon.com/the-stress-of-remote-working-38be5bdcf4da](https://hackernoon.com/the-stress-of-remote-working-38be5bdcf4da)
 
-### **Time of Day**
+### Time of Day
 * Pick a suitable working time
 * Or as per agreed with project team
 

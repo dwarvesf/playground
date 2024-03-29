@@ -5,7 +5,7 @@ tags:
   - culture
 title: Growth Is Our Universal Language
 date: 2023-02-16
-description: null
+description: Everything we do is centered around growth discussions and opportunity-seeking as a team. We don't believe in playing too much the work-life balance card; instead, we're always on the lookout for new opportunities to elevate.
 authors: null
 menu: memo
 type: null

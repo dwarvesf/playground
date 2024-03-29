@@ -45,20 +45,7 @@ Another approach to apply the concurrency model for web applications is [WebCL](
 
 However, most of OpenCL based frameworks developed during the period are no longer being in active development as no browser vendors have a concrete plan to implement it in their environment at the moment. It seems the attention to boost the performance of the web is bet on different approaches such as [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) or [WebGPU](https://www.w3.org/TR/webgpu/). So, at the time of writing, Web Worker is the only approach to bring parallelism in web applications in production.
 
-#### References
+### References
 - https://www.khronos.org/registry/webcl/specs/latest/1.0/#3.1
 - https://en.wikipedia.org/wiki/WebCL
 - https://intellabs.github.io/RiverTrail/
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

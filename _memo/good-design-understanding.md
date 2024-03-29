@@ -1,9 +1,10 @@
 ---
 tags: 
   - design
+  - UX-UI
 title: Good Design Understanding
 date: 2018-04-02
-description: null
+description: Good design is not just what looks good. It also needs to perform, convert, astonish, and fulfill its purpose. It can be innovative or it might just get the job done.
 authors: null
 menu: memo
 type: null
@@ -22,7 +23,7 @@ User experience (UX) focuses on having a deep understanding of users, what they 
 * *[https://uxdesign.cc/good-design-vs-bad-design-examples-from-everyday-experiences-18a7d1ba002c](https://uxdesign.cc/good-design-vs-bad-design-examples-from-everyday-experiences-18a7d1ba002c)*
 * *[https://www.interaction-design.org/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706](https://www.interaction-design.org/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706)*
 
-## **The 7 Factors that Influence User Experience**
+## The 7 Factors that Influence User Experience
 ![](assets/good-design-understanding_e75aeb9b90122499635bddc51805aca3_md5.webp)
 
 Good design is not just what looks good. It also needs to perform, convert, astonish, and fulfill its purpose. It can be innovative or it might just get the job done.

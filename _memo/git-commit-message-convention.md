@@ -1,10 +1,13 @@
 ---
 tags: 
   - git
+  - engineering
+  - learning
 title: Git Commit Message Convention
 date: 2021-04-06
-description: null
-authors: null
+description: The blog post states out what a typical git commit message looks like
+authors: 
+- thanh
 menu: memo
 type: null
 hide_frontmatter: false

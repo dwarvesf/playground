@@ -2,10 +2,12 @@
 tags: 
   - design
   - process
+  - UX-UI
 title: Ui Design Best Practices Dwarves
 date: 2020-11-24
 description: null
-authors: null
+authors: 
+- minhtruong
 menu: memo
 type: null
 hide_frontmatter: false
@@ -28,9 +30,8 @@ Each convention is written in a compact format so that designers can easily read
 * Colors
 * General Figma tips
 
-# **Versions & File Organizations**
-
-## Manage versions by releases
+## Versions & File Organizations
+### Manage versions by releases
 ![](assets/ui-design-best-practices-dwarves_1c3f1857f449f57c470ce40efff1bd01_md5.webp)
 
 On the management of Pages in Figma. This is a recommended structure:
@@ -48,13 +49,13 @@ On the management of Pages in Figma. This is a recommended structure:
 
 Devs and the client discuss the design with designers through Figma's comments, only designers can make changes in the Figma files.
 
-## Manage Layers
+### Manage Layers
 ![](assets/ui-design-best-practices-dwarves_a46ebf821728ad559bf23e5e6bd7d5a9_md5.webp)
 
 * Layers are often grouped and named by function or section. For example: hero image, slider, header, footer…
 * Asset (illustration, icon, vector ...) needs to be grouped so that devs can export to SVG files by themselves (without any help from designer).
 
-# **Practical, context-conscious data**
+## Practical, context-conscious data
 To ensure team members understand the same problem and the provided design solution, each user flow should be presented as a story with practical characters and data.
 
 In complex cases when detailed explanations are needed, designers should have paragraphs (in the form of notes) in the Figma file for developers to read. You can refer to the formula Cause → Consequences → Design Solution.
@@ -73,14 +74,13 @@ Context: Minh pre-booked room 102 from 19:00 to 20:00
 
 ![](assets/ui-design-best-practices-dwarves_016986df82ac5332b050a9cf55425f3b_md5.webp)
 
-# **Design System File presentation**
-
-## **How to manage pages and master components using Figma software**
+## Design System File presentation
+### How to manage pages and master components using Figma software
 Design System is a tool that makes the component management of the project clear and easy. For more details, please see [this example file](https://www.figma.com/file/6CuLQBxwh1QlLp386Ths7h/Blackpink-Example-for-Design-System-File?node-id=83%3A1098).
 
 ![](assets/ui-design-best-practices-dwarves_9ebb07075efeda26bfeb2a82876bd2ef_md5.webp)
 
-## **Naming Color Style**
+### Naming Color Style
 **Designers at Dwarves name colors based on their function (Primary, Secondary, Disabled,...)** Meanwhile, developers name colors based on light/dark levels with numbers (100, 200, 300...)
 
 * The naming convention for colors at Dwarves: **Flat / BG / Neutral 1 (gray-400)** in which **Flat / BG / Neutral 1** is added by designers and **(gray-400)** is by added developers
@@ -97,10 +97,10 @@ The developer has a way to name the color in the form of numbers (100,200,300 ..
 
 ![](assets/ui-design-best-practices-dwarves_b37bb057d318c523f8de54660823255a_md5.webp)
 
-## **Tips when using the Design System file in Figma:**
+### Tips when using the Design System file in Figma
 In order to kickstart a new project, we usually reproduce the Design System from previous projects where all the master components have been established and ready for use. All that’s left is to remove unnecessary components and adapt the Design System to the new project.
 
 You should design the UI in the Design System file first, for convenience in creating and perfecting the Master Component. After the final UI is finalized, transfer the design to the UI file.
 
-# **Other conventions**
+## Other conventions
 Other conventions are added over time each time a designer discovers a new problem in the process of working with devs.

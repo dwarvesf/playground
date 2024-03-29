@@ -13,7 +13,7 @@ The [document loaders](https://python.langchain.com/en/latest/modules/indexes/do
 
 These data are saved and indexed as vectors in a [[Vector Database|vector database]]. Vector indexes are used to capture word meaning and represent it in a continuous space. This helps the model to understand the context and generate more accurate responses.
 
-![[langchain-document-loader-flow.png]]
+![loader](image-20.png)
 
 ### Question Answer Systems
 In order to get question and answering from prompts, we follow 4 steps with langchain:
@@ -104,16 +104,3 @@ Hopefully, this gives you an idea of how langchain can be used to create an agen
 ## References
 - https://python.langchain.com/en/latest/modules/indexes/getting_started.html
 - https://github.com/kenhuangus/ChatGPT-FAQ/blob/main/vectorDB.md
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

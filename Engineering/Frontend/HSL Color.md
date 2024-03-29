@@ -17,21 +17,21 @@ HSL is the answer to resolving all of the painful points.
 
 - **Hue**: Think of a color wheel. Around 0<sup>o</sup> and 360<sup>o</sup> are reds. 120<sup>o</sup> is where greens are and 240<sup>o</sup> are blues. Use anything in between 0-360. Values above and below will be modulus 360.
 
-  ![[HLS-color.png]]
+  ![color](image-7.png)
 
 - **Saturation**: 0% is completely desaturated (grayscale). 100% is fully saturated (full color).
 
-  ![[HLS-hue.png]]
+ ![color1](image-8.png)
 
 - **Lightness**: 0% is completely dark (black). 100% is completely light (white). 50% is average lightness.
 
-  ![[HLS-lightest.png]]
+  ![color2](image-9.png)
 
 ## Using HSL
 ### Darker/lighter colors
 Imagine you're creating a button component and you want it to appear darker on hovering to increase its contrast. You can do this easily with the help of HSL.
 
-![[using-HLS.png]]
+![color3](image-10.png)
 
 ```css
 :root {
@@ -53,7 +53,7 @@ Imagine you're creating a button component and you want it to appear darker on h
 ### Color palette
 By altering the `lightness`, we can create a set of shades for a color that can be used throughout the UI where possible.
 
-![[HLS-color-pallete.png]]
+![color4](image-11.png)
 
 ## HSL transparency (HSLa)
 It works exactly the same as with RGB, just add `alpha` channel with a value from 0 to 1. 0 is fully transparent. 1 is fully opaque. 0.5 is 50% transparent.
@@ -66,16 +66,3 @@ hsla(349, 73%, 56%, 0.5)
 - https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
 - https://www.smashingmagazine.com/2021/07/hsl-colors-css/
 - https://tsh.io/blog/why-should-you-use-hsl-color-representation-in-css/
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

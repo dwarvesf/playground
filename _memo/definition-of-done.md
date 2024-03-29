@@ -1,10 +1,13 @@
 ---
 tags: 
   - agile
+  - performance
+  - team
 title: Definition Of Done
 date: 2016-02-14
-description: null
-authors: null
+description: Definition of done also known as **DoD** is a list of criteria which must be met before a product increment (story) is considered "done".
+authors: 
+- han
 menu: memo
 type: null
 hide_frontmatter: false

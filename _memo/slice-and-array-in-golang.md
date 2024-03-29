@@ -1,6 +1,8 @@
 ---
 tags: 
   - go
+  - programming
+  - software
 title: Slice And Array In Golang
 date: 2018-03-13
 description: null
@@ -127,7 +129,7 @@ fmt.Println(len(a)) // 4
 fmt.Println(cap(a)) // 8
 ```
 
-# 2. Slice internal
+## Slice internal
 Let's take a look at `slice` implementation in Go.
 
 ```go

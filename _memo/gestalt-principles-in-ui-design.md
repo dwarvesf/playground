@@ -2,23 +2,23 @@
 tags: 
   - design
   - technique
+  - UX-UI
 title: Gestalt Principles In Ui Design
 date: 2020-07-13
 description: null
-authors: null
+authors: 
+- anna
 menu: memo
 type: null
 hide_frontmatter: false
 ---
 
-![](assets/gestalt-principles-in-ui-design_261d02efd9a855cdb1eed8a98112d3ae_md5.webp)
-
 Take a second to look at the image above. How do you feel? Do you see that it is similar to an owl face? The answer to this phenomenon is called Isomorphism which is part of the 12 Gestalt rules. Just like Isomorphism, you will sometimes feel that a cloud is similar to a horse or a branding logo which is created by different shapes that can finally turn out to be a meaning object. Those logos embrace the brand mission, character, and business. So what are Gestalt Rules and how we can apply it to our UI Design? Let’s dive into it.
 
-# **Introduction to Gestalt rules**
+## Introduction to Gestalt rules
 Gestalt is a word that is generated from Germany which means shape or form. Gestalt principles explain how humans perceive the outside world, how they recognize the pattern, and simplify complex images in daily life. In the User Interface Design field, we use Gestalt rules to make the design look more aesthetic and friendlier to users. In this article, we will discuss the 6 principles that are mostly used in every UI design.
 
-# **Proximity**
+## Proximity
 Elements that are closer to each other are considered to be more related. The Principle of Proximity explains that people perceive elements in the way that they are grouped according to the distance.
 
 **Applying the Proximity Principle in UI Design**
@@ -29,7 +29,7 @@ If you are new to UI Design, there would be sometimes you are quite confused abo
 
 The Proximity Principle is presented by white space to optimize and show the relationship, the visual hierarchy between components. Similar information and content are arranged near to each other so that it is perceived as a group. This way of organization creates good visual communication with users, helps them scan layout, read, and digest information quickly. Good applying of white space can enhance the interface appearance, support users to achieve goals faster as well as improve their user experiences.
 
-# **Common Fate**
+## Common Fate
 Elements that go in the same direction as part of a stimulus is considered to be in a group. For example, when you see a flock of birds or a shoal of fish you will automatically feel that they are related to each other or belong to a group.
 
 **Applying Common Fate Principle in UI Design**
@@ -38,7 +38,7 @@ The fact that the movement direction of elements shapes our perception of groupi
 
 ![](assets/gestalt-principles-in-ui-design_c25b23553a4fbc3e63707bb9a81d72c4_md5.webp)
 
-# **Similarity**
+## Similarity
 Similar elements are usually considered to be in a group. If you are given 10 candies with 3 of them are red and the others are green. How would you group them? Most of us will have the answer that 3 red candies are in the same group and the other group will have 7 green candies. As a normal reaction humans tend to organize objects that have the same character or attribute to the same group.
 
 **Applying Similarity Principle in UI Design**
@@ -51,7 +51,7 @@ Let’s imagine you are using an application, its button system changes in terms
 
 In website or application design the style, the color, as well as the character of the button are advised to be united so that users won’t get confused or take much effort to make a choice when interacting with your application or website.
 
-# **Closure**
+## Closure
 Our eyes will automatically fill in the missing parts between different shapes and turn them into a unified and meaningful whole. This principle is mainly used in designing icons and logos. The logo below is a well-explained example of the Closure Principle. The arrangement of those black shapes together with the white space successfully turned the unfinished panda image into a stunning and famous logo.
 
 **Applying the Closure Principle in UI Design**
@@ -60,7 +60,7 @@ The presence of the Closure Principle in UI design is shown through the iconogra
 
 ![](assets/gestalt-principles-in-ui-design_13186fb397ff23cfe63db16a8ece4846_md5.webp)
 
-# **Continuation**
+## Continuation
 The Continuation Principle explains that objects which are aligned with a straight or curved line usually are perceived to be related or in the same group. Take a look at the picture below, you can see that green dots which are on the right seem to be related than those on the left.
 
 **Applying the Continuation Principle in UI Design**
@@ -69,16 +69,14 @@ The continuation principle is best described in the UI field by the alignment of
 
 ![](assets/gestalt-principles-in-ui-design_0072fd89ad3c95ef57fb09a6299464ff_md5.webp)
 
-# **Figure/ Ground**
+## Figure/ Ground
 The Figure/Ground Principle demonstrates the human ability to visually separate the object from the background to place the focal point on the important element. This helps decrease our brain tension when it has to process too much information at the same time.
 
 **Applying the Figure/ Ground Principle in UI Design**
 
 There are a lot of ways to create the Figure/ Ground effect, for example, semi-transparent overlay, shadow, or blurring the background.
 
-![](assets/gestalt-principles-in-ui-design_e25d1641f846de4167a75b8640b83744_md5.webp)
-
-# **Conclusion**
+## Conclusion
 User Interface isn't only about aesthetics. It's also about usability, performance, and how users experience the product along the way.
 
 Gestalt Principles will be an active supporter for us during our UI design process. Before we fully understand UI's beauty and how to create it, those principles are our guidance.

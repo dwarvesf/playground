@@ -11,7 +11,7 @@ Blockchains have a fundamental limitation: they cannot natively communicate with
 ## What is a blockchain oracle?
 A blockchain oracle is a third-party service that connects smart contracts with the outside world, primarily to feed information in about the world around, but the reverse is also true.
 
-![ins and outs of the blockchain ecosystem](_assets/ins_and_outs_of_the_blockchain_ecosystem.png) _Blockchain oracles connect blockchains to inputs and outputs of the real world (Image source: [Chainlink](https://chain.link/))_
+![blockchain](image-4.png) _Blockchain oracles connect blockchains to inputs and outputs of the real world (Image source: [Chainlink](https://chain.link/))_
 
 ## Types of blockchain oracles
 ### Input oracles
@@ -33,20 +33,7 @@ This type of oracle provides decentralized services with secure, off-chain compu
 - Decentralized Information Asset (DIA)
 - API3
 
-#### Reference
+## Reference
 - [Wikipedia - Blockchain oracle](https://en.wikipedia.org/wiki/Blockchain_oracle#:~:text=A%20blockchain%20oracle%20is%20a,that%20decentralised%20knowledge%20is%20obtained.)
 - [https://chain.link/education/blockchain-oracles](https://chain.link/education/blockchain-oracles)
 - [https://coin98.net/what-is-blockchain-oracle](https://coin98.net/what-is-blockchain-oracle)
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

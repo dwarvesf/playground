@@ -1,7 +1,8 @@
 ---
 tags: 
   - engineering
-  - dwarves
+  - software-engineer
+  - fullstack
 title: Our View On Fullstack Engineering
 date: 2023-08-30
 description: null

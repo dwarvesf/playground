@@ -5,8 +5,9 @@ tags:
   - engineering
 title: How Blue Green Deployment Helped Mochi
 date: 2023-04-03
-description: null
-authors: null
+description: We had the chance to implement for the Mochi Bot application. Below is our case study that evaluates the cost and practicality of this deployment strategy in our current infrastructure.
+authors:
+- quang
 menu: memo
 type: null
 hide_frontmatter: false
@@ -14,10 +15,10 @@ hide_frontmatter: false
 
 *At Dwarves Foundation, our team has always faced some bit of friction when deploying apps for our clients. We’ve known about blue-green deployments for a while and were recently given the chance to evaluate and demonstrate them for one of our Discord bot projects.*
 
-# Applying Blue-green deployment for Mochi Bot
+## Applying Blue-green deployment for Mochi Bot
 Introducing [Mochi Bot](https://mochi.gg/) to the Web3 space, our team has developed a flexible and user-friendly product with features like NFT rarity queries, sales alerts on Discord and Twitter, and showing various tips. To enhance user experience and streamline deployment, we had the chance to implement [blue-green deployment](https://radar.d.foundation/Blue-green-deployment-a93ea5c3d4d8439ba8701aec57d7ea3c) for the Mochi Bot application. Below is our case study that evaluates the cost and practicality of this deployment strategy in our current infrastructure.
 
-## **Current Infrastructure & Implementation Plan**
+## Current Infrastructure & Implementation Plan
 Mochi Bot runs on a Kubernetes infrastructure managed by ArgoCD, with two pods. By implementing blue-green deployment, we aim to eliminate downtime and ensure consistent updates across pods. To achieve this, we set up two identical production environments (blue and green) and followed these steps:
 
 1. Evaluate current infrastructure and identify prerequisites.
@@ -25,7 +26,7 @@ Mochi Bot runs on a Kubernetes infrastructure managed by ArgoCD, with two pods. 
 1. Apply new configurations to clusters.
 1. Test deployment process, including traffic switching and rollback procedures.
 
-## **Preparation & Resource Definition**
+## Preparation & Resource Definition
 To implement blue-green deployment in Kubernetes, we needed to define the application resources and the rollout strategy. We defined the application resources using three YAML files:
 
 ```plain_text
@@ -214,16 +215,3 @@ This case study helped us demonstrate the value of blue-green deployment in redu
 Implementing a blue-green deployment strategy for Mochi Bot proved to be a smooth and hassle-free process. It provided an immediate benefit by eliminating inconsistencies between pod updates during deployment. Thankfully, as a result, the user experience remained seamless and uninterrupted during application updates.
 
 Moving forward, our team plans to integrate [K6](https://radar.d.foundation/k6-ce823e5b593c4850afc1153c1beefbed) for API testing to improve the performance and reliability of Mochi Bot. We aim to establish a quality gate for the green version to ensure that only thoroughly tested and stable releases are deployed to the live environment.
-
-### Come be with us
-We’d love to have you in our next chapter, by all means.
-
-* Discover what we do: [dwarves.foundation](http://dwarves.foundation/)
-* Meet our team: [discord.gg/dwarvesv](http://discord.gg/dwarvesv)
-* Join the squad: [careers.d.foundation](http://careers.d.foundation/)
-
-Follow our journey
-
-* Fanpage: [facebook.com/dwarvesf](http://facebook.com/dwarvesf)
-* LinkedIn: [linkedin.com/company/dwarvesf](http://linkedin.com/company/dwarvesf)
-* Substack: [https://note.d.foundation/](https://note.d.foundation/)

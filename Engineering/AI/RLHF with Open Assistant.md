@@ -24,7 +24,7 @@ Consists in three steps:
 One of the cloud providers we used to implement our RLHF flow is Redmond. Redmond.ai is a cloud computing service provider that specializes in offering accelerated cloud computing solutions for artificial intelligence (AI) and machine learning (ML) applications.
 - https://redmond.ai/
 
-## System requirements:
+## System requirements
 For our example, we use the [Pythia](https://www.eleuther.ai/papers-blog/pythia-a-suite-for-analyzing-large-language-modelsacross-training-and-scaling) as our LLM model. Mostly, system requirements are dependent on the model being used. For instance, 7 billion parameters may require a GPU that contains at least 400GB for RLHF learning. The important part is the amount of GPUs we have access to running our model. If there are other training steps and nuances, this requirement grows linearly.
 
 Our example uses 12 billion parameters. Along with a few requirements for testing our models, we've used the below recommended system requirements to have enough leeway to train our model as well as test its runtime.
@@ -139,16 +139,3 @@ In conclusion, Open Assistant (OA) is a chat-based, open-source assistant design
 - https://projects.laion.ai/Open-Assistant/docs/guides/developers
 - https://open-assistant.io/
 - https://huggingface.co/EleutherAI
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

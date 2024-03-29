@@ -34,7 +34,7 @@ At their core, UML State Machine Diagrams capture the state transitions and beha
 6. **Initial State:** Filled circle indicating the initial state.
 7. **Final State:** Bullseye-like symbol representing the final state.
 
-![Sample UML State machine diagram](_assets/uml-state-machine-diagram.png)
+![symbol](image-72.png)
 
 ### Applications of UML State Machine Diagrams
 UML State Machine Diagrams find applications across various domains:
@@ -68,16 +68,3 @@ UML State Machine Diagrams are a powerful tool for modeling and understanding th
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-state-machine-diagram/
 - https://sparxsystems.com/resources/tutorials/uml2/state-diagram.html
 - https://www.lucidchart.com/pages/uml-state-machine-diagram
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

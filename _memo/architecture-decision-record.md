@@ -4,7 +4,7 @@ tags:
   - architecture
 title: Architecture Decision Record
 date: 2020-03-27
-description: null
+description: There is an issue that every team will inevitably bump into. Newbies might get confused when a project is being developed. They wonder how that code was written, how we ended up choosing that architecture. We'd like to gather you all and tackle this today by a practice called Architecture Decision Record (ADR)
 authors: null
 menu: memo
 type: null

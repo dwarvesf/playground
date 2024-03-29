@@ -16,14 +16,10 @@ Vite takes full advantage of the availability of native ES modules in the browse
 #### Bundle based dev server
 Bundle-based dev server like Webpack built your application by combining all the source-code and modules into a JavaScript-based bundle, everything is done on the server-side and when you change something, the entire application has to build from the start.
 
-![](https://vitejs.dev/assets/bundler.37740380.png)
-
 #### Native ESM based dev server
 Vite's approach was instead of bundling all everything on the server, it only bundles modules when the browser requires them through HTTP request.
 
 This architecture provides a faster dev server by avoiding bundling all the application on the server and utilizing the power of modules handling of the browsers.
-
-![](https://vitejs.dev/assets/esm.3070012d.png)
 
 ### Update when built
 Rebuilding the whole bundle after making changes to your source code in a bundler-based build system is inefficient for the obvious reason that the update speed would degrade linearly with the app's size.
@@ -39,16 +35,3 @@ While `esbuild` is lightning-quick and a very capable bundler for libraries, som
 ### References
 - https://vitejs.dev/guide/why.html
 - https://www.telerik.com/blogs/whats-vite-guide-modern-super-fast-project-tooling
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

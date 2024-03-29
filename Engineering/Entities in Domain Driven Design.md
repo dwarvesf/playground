@@ -8,10 +8,10 @@ date: 2022-03-28
 ## Recap on DDD
 A software design focusing on the **Domain**, one of the keys to a program success, by removing _communication lag_ between **Developers** and **Domain Experts**, _separate important Domain-specific components_ for maintenance and scalability.
 
-## A) Entities Defined by **Identity**
+## Entities Defined by Identity
 _ID or Identity, identify 2 objects with the same attributes_ (2 persons with the same name, DoB but different ID card number).
 
-## B) Entities Defined by **Thread of continuity**
+## Entities Defined by Thread of continuity
 _A set of fingerprints or traces of an object when going through multiple systems._
 
 ### Examples
@@ -35,20 +35,7 @@ _Establish continuity so that behavior can be clear and predictable_, We need to
 
 - **A online shopping site for Furniture**, the user only check brand name, model number, maybe design, and color for comparison between chairs or tables. Having a separate ID for each item might impact the decision on how to implement checkout(that item with ID is sold out so the user will need to find a similar item with a different ID).
 
-#### References
+## References
 - https://herbertograca.com/category/development/book-notes/domain-driven-design-by-eric-evans/
 
 - Domain-driven design by Eric Evans
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

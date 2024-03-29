@@ -3,10 +3,12 @@ tags:
   - machine learning
   - LLM
   - engineering
+  - AI
 title: Exploring Machine Learning Approaches For Fine Tuning Llama Models
 date: 2023-05-04
-description: null
-authors: null
+description: For AI, a lot of us at Dwarves use available tools to help us to do extensive learning, get over writer's block, experiment, and generally make our lives a little bit easier. A handful of us, including myself, have dabbled a bit in Stable Diffusion, mostly to create fun pictures, but also to help us get an idea of the current landscape of generative art.
+authors: 
+- monotykamary
 menu: memo
 type: null
 hide_frontmatter: false

@@ -1,9 +1,11 @@
 ---
 tags: 
   - devops
+  - git
+  - software-engineer
 title: How We Setup Cicd
 date: 2021-02-16
-description: null
+description: At Dwarves, most projects happen in Gitlab, so Gitlab-CI would be our first adaption. Lately, more and more Ventures projects land in Github, we have to look at Github Action. It doesn't mention that we also have a CI/CD for a Frontend-ers setup with Netlify or Vercel.
 authors: null
 menu: memo
 type: null
@@ -18,7 +20,7 @@ On the other hand, `CD` refers to either continuous delivery or continuous deplo
 
 A simple way to understand the CI/CD is to take it as a process, often visualized as a pipeline, that involves some job like testing, building, ..., etc.
 
-## The overall process @ Dwarves
+## The overall process at Dwarves
 ![](assets/how-we-setup-cicd_fa32c5b22664bf943dd7d4314b012a83_md5.webp)
 
 At Dwarves, most projects happen in Gitlab, so Gitlab-CI would be our first adaption. Lately, more and more Ventures projects land in Github, we have to look at Github Action. It doesn't mention that we also have a CI/CD for a Frontend-ers setup with Netlify or Vercel.

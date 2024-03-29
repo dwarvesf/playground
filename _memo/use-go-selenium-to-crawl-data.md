@@ -1,6 +1,9 @@
 ---
 tags: 
   - go
+  - data
+  - software
+  - programming
 title: Use Go Selenium To Crawl Data
 date: 2016-06-02
 description: null
@@ -9,8 +12,6 @@ menu: memo
 type: null
 hide_frontmatter: false
 ---
-
-![](assets/use-go-selenium-to-crawl-data_f963144e3cfac24481dbfeb02cf6a0e6_md5.webp)
 
 ## Crawl data
 Crawl is a widespread issue occurring in making software. News, discount news, film ticket, etc are some examples of crawl. To be simple, it is analytics HTML, read cards, and extract data. The Go library I usually use is [goquery](https://github.com/PuerkitoBio/goquery).

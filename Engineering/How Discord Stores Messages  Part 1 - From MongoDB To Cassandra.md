@@ -9,14 +9,10 @@ icy: 10
 ## Introduction
 The story of how Discord stores data, what technologies they have used/ been using to "adapt" the continuously growing users data.
 
-<br/>
-
 ## Context
 In early 2015, Discord was built choosing MongoDB for its quick data iteration. All data was stored in a single MongoDB replica set intentionally - but planned everything for easy migration to a new database (MongoDB sharding is too complicated to use and not stable)
 
 Their MongoDB collection with a single compound index `(channel_id, created_at)` could no longer handle 100 million messages (around November 2015), therefore the migration to a new database.
-
-<br/>
 
 ## Choosing the right database
 To understand the read/write patterns and identify the current problems are prerequisite:
@@ -36,8 +32,6 @@ Then the requirements:
 - **Open source** - Independent
 
 **Cassandra** was the only database that fulfilled all of the requirements: can just add nodes to scale and tolerate a loss of nodes with no impact on the app, Netflix and Apple also have thousands of Cassandra nodes, minimum seeks as the related data is stored contiguously and it's open source.
-
-<br/>
 
 ## Data Modeling
 Bear in mind that [Cassandra is a distributed database](https://cassandra.apache.org/doc/latest/cassandra/data_modeling/intro.html) :
@@ -102,8 +96,6 @@ Deleting a column and writing null to a column are the exact same thing, that is
 
 This has 1 flaw only realized after rolling out about 6 months that a public Discord server has a channel with only 1 message left after the user deleted millions of messages before, causing the Cassandra to scan millions of tombstones every time a user loads this channel. The solution was just adjust the lifespan of tombstones from 10 days down to 2 days because of running the [builtin Cassandra repair](https://docs.datastax.com/en/archived/cassandra/2.1/cassandra/tools/toolsRepair.html#toolsRepair__description) every night and update the query code to track empty buckets.
 
-<br/>
-
 ## Future Plan
 At the time, Discord were running 12-node cluster with a replica factor of 3. Continue to add new Cassandra nodes seems fine as Netflix and Apple were running hundreds of nodes.
 
@@ -114,24 +106,9 @@ At the time, Discord were running 12-node cluster with a replica factor of 3. Co
 	- Explore [Scylla](https://www.scylladb.com/) - a Cassandra compatible database written in C++, as data grows the repair time increase and Scylla claims to have significantly lower repair time.
 	- Build a system to archive unused channels to flat files on Google Cloud Storage and load them back on-demand (most likely no need)
 
-<br/>
-
 ## References
 - https://www.mongodb.com/community/forums/t/how-to-check-cache-eviction-occurred-or-not-how-to-simulate-cache-eviction/172040
 - https://cassandra.apache.org/doc/latest/cassandra/data_modeling/intro.html
 - https://datacadamia.com/cassandra/cassandra#kkv_store
 - https://en.wikipedia.org/wiki/CAP_theorem
 - https://discord.com/blog/how-discord-stores-billions-of-messages
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

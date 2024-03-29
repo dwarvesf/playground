@@ -1,9 +1,11 @@
 ---
 tags: 
   - rust
+  - programming
+  -  software-engineer
 title: Playaround With Rust
 date: 2019-08-30
-description: null
+description: Rust is primarily an expression language. This means that most forms of value-producing or effect-causing evaluation are directed by the uniform syntax category of expressions.
 authors: null
 menu: memo
 type: null
@@ -14,9 +16,8 @@ Mozilla intends to use Rust as a platform for prototyping experimental browser 
 
 Specifically, the hope is to develop a browser that is more amenable to safe and parallel than the existing ones, while also being less prone to common C++ coding errors.
 
-# What makes Rust special
-
-## Ownership
+## What makes Rust special
+### Ownership
 * Each value in Rust has a variable that's called its **owner,** there can only be one owner at a time
 * When the owner goes out of scope, the value will be dropped
 * Variable scope is a range within a program for which an item is valid
@@ -43,7 +44,7 @@ let y = x;
 
 Therefore, Rust let users do this by implement `Copy` trait for some types that save in stack(integer type, boolean type, floating-point type, character type, tuple that only contain above types). Other types that allocating memory in the heap when implementing Drop trait. That mean variables of that type will drop if out of scope. And if a user tries to implement Copy trait for this will raise compile-time error.
 
-## **Immutable**
+### Immutable
 Variables in Rust immutable by default, can not change throughout its lifetime. Thus, it resolves the problem of safety in Rust. If things are immutable by default, Rust compiler can easily pick up any side-affect, mutability during compile-time and guarantee application correctness.
 
 ## Variable Declaration

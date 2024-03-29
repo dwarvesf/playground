@@ -2,10 +2,12 @@
 tags: 
   - research
   - engineering
+  -
 title: Database Designs For Multilingual Apps
 date: 2023-04-11
 description: null
-authors: null
+authors: 
+- hieuvu
 menu: memo
 type: null
 hide_frontmatter: false
@@ -24,17 +26,17 @@ In today's globalized world, many applications need to support multiple language
 In this article, we'll explore three common solutions for designing translation tables:
 
 * **the column-based approach** - incorporating languages in a different column as a text field of the same table
-* **the column JSON-based approach **- similar to the column based support, but using JSON data types as opposed to just a text field.
-* **the translation table approach **- a separate table to handle multiple languages and translation practices
+* **the column JSON-based approach** - similar to the column based support, but using JSON data types as opposed to just a text field.
+* **the translation table approach** - a separate table to handle multiple languages and translation practices
 
-## **Solution 1: Column-Based Approach**
+## Solution 1: Column-Based Approach
 The column-based approach is the simplest solution for managing translations in a database. For each column in a table, there is a corresponding column for translations in other languages. For example, if a column is in English, there will be another column that stores its translations in different languages such as Spanish, French, and so on.
 
 Here's an example of how a table using this approach might look:
 
 ![](assets/database-designs-for-multilingual-apps_f257e0952b3c5b44d18722936afa96b6_md5.webp)
 
-### **Retrieving Translation**
+### Retrieving Translation
 To query data you would need to use a COALESCE function to retrieve the translation in the desired language, with a fallback to the default column if the translation is not available.
 
 For example, to retrieve the French translation from the above table:
@@ -69,7 +71,7 @@ For example, if you have a table with columns for "title" and "description," you
 
 ![](assets/database-designs-for-multilingual-apps_41a7d2c490ccbd641b6c819e39fefdeb_md5.webp)
 
-### **Retrieving Translation**
+### Retrieving Translation
 To retrieve data, you need to use specific functions to extract data from the `**translations**`
  column.
 
@@ -129,7 +131,7 @@ Here's an example of how a translation table might look:
 
 ![](assets/database-designs-for-multilingual-apps_6b6695453f90a53f40ccc71a42275e36_md5.webp)
 
-### **Retrieving Translation**
+### Retrieving Translation
 To retrieve translations using the translation table approach, you would typically use SQL queries with JOIN statements to combine the relevant data from multiple tables.
 
 ```sql
@@ -144,7 +146,7 @@ FROM
 		AND lang = 'vi'
 ```
 
-### **Pros and Cons**
+### Pros and Cons
 **Pros**
 
 * Scalable and flexible, allowing for the addition of new languages without requiring a change to the database schema.
@@ -159,8 +161,7 @@ FROM
 
 The translation table approach is suitable for applications of any size that require support for multiple languages. It is especially useful for large applications where data duplication can become a problem with other approaches. However, it may not be the most efficient approach for small applications as it involves more complex queries and potentially slower performance due to the use of joins.
 
-## **Conclusion**
+## Conclusion
 In conclusion, designing a multilingual database involves several moving parts that need to be taken into account, such as character encoding, language-specific data storage requirements, and translation tables. The selection of an approach depends on the specific requirements of the application and the expected data volume. Small to medium-sized applications may use a column-based or column JSON-based approach, while larger applications may benefit from a translation table-based approach.
 
 In summary, the column-based approach is simple and easy to implement but not scalable, the column JSON-based approach reduces the number of columns needed, but can become difficult to manage, and the translation table approach is scalable and flexible but more complex to implement. By understanding the pros and cons of each approach, developers can make informed decisions about which solution best fits their needs.
-

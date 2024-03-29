@@ -3,10 +3,12 @@ tags:
   - engineering
   - practice
   - radar
+  - data-analyst
 title: Data Analyst In Retail Trading
 date: 2022-08-29
-description: null
-authors: null
+description: A Data Analyst is a gatekeeper for an organization’s data. They are tasked to explore, transform, aggregate data to create business insights from that data to then create reports to stakeholders. Thanks to these reports, companies can make more informed business decisions.
+authors: 
+- bachphuong
 menu: memo
 type: null
 hide_frontmatter: false

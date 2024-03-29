@@ -7,13 +7,11 @@ icy: 10
 ---
 
 ## The Problem Statement
-[[Redis streaming]] is to have multiple consumers processing incoming messages simultaneously. 
+Redis streaming is to have multiple consumers processing incoming messages simultaneously. 
 
 The current system uses Redis streaming to quickly process incoming messages and is required to have the ability to scale up the processing power with concurrency, given specific time frames (exp: duplicating consumer pods). The order of processing incoming messages is ignored to push POC releases.
 
 As the business model grows, we encounter a case where 2 or more messages need to be processed concurrently got pick up by 2 consumers, and processed at the same time, resulting in data conflict. The only restriction is we must use the current infrastructure and Redis, without introducing a new event messaging platform(exp: Kafka). 
-
-<br/>
 
 ## The master, consumers pattern
 The master, consumers pattern is about having a master act as a **proxy to traffic control** to decide which consumers to delegate the incoming message to.
@@ -26,14 +24,10 @@ The reason the master must `XREADGROUP` is:
 - The message needs to be processed to know which consumer to deliver to. 
 - To use `XCLAIM` on a message so other consumers can not read it, it must be in the `PEL`(Pending Entries List). A message can only be in `PEL` after a consumer runs `XREADGROUP`.
 
-<br/>
-
 ## Example implementation
 We will be handling messages containing `ticket_id`. Messages with the same `ticket_id` must be handled orderly one by one.
 
 This will also include saving the current session and failure recovery for pending messages.
-
-<br/>
 
 ### Redis configs
 - `ticket_stream`, business services will `XADD` messages to this stream. The master then delegates messages from this stream to consumers.
@@ -52,7 +46,6 @@ Redis objects for the master:
         - `healthURL`, the URL for the master to check if the consumer is alive.
         - `ticket_ids`, list of processing ticket ids.
 
-<br/>
 
 ### Master consumer service 
 An API service with access to Redis client.
@@ -102,8 +95,6 @@ Failure recovery flow:
         - If `ticket_id` does not exist, delegate the event to a random consumer.
     - Update `tickets`, and `consumers` with the `ticket_id` and `message_id`.
 
-<br/>
-
 ### Delegated consumers
 An API service with access to Redis client.
 
@@ -138,16 +129,3 @@ Flow:
 ## References
 - [Redis documentation](https://redis.io/docs/)
 - [Redis Streams tutorial](https://redis.io/docs/data-types/streams-tutorial/)
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

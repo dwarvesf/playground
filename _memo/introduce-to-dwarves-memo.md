@@ -1,15 +1,16 @@
 ---
 tags: 
   - updates
+  - memo
+  - team
 title: Introduce To Dwarves Memo
 date: 2020-05-17
-description: null
-authors: null
+description: The purpose of every story is to bring the audience a little closer to the author, to feel related at some kind of level. This is what we do here, to make you understand more about this woodland, in a variety of ways, on a platform called Memo.
+authors: 
+- duy
 menu: memo
 type: null
 hide_frontmatter: false
----
-
 ---
 
 Every company has a story. We just decide to have more than one. 
@@ -44,7 +45,7 @@ A qualified draft for a blog post should appear like this
 
 ![](assets/introduce-to-dwarves-memo_3133939df6615e90808d5e5d62d1d44e_md5.webp)
 
-### **Headlines**
+### Headlines
 Headlines in Memo should follow the order of Markdown, which is H1 - H2 & H3. For those who haven't gotten familiarized with this:
 
 * H1: put 1 # before your headline
@@ -54,4 +55,3 @@ Headlines in Memo should follow the order of Markdown, which is H1 - H2 & H3. Fo
 H3 should be the smallest level of headlines here. Any titles smaller than that can be marked as **bold**, or put it in numeric/ alphabetical order.
 
 Everyone is welcomed to craft their thoughts here. Actually, we encourage you to. Nothing reveals the company voice better than the people who live it.
-

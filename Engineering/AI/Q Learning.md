@@ -1,5 +1,5 @@
 ---
-tags: engineering/ai, machine-learning, q-learning, reinforcement-learning, deep-q-learning
+tags: engineering/ai, machine-learning, q-learning, deep-q-learning
 author: Pham Ngoc Thanh
 github_id: thanhpn
 date: 2023-06-22
@@ -10,10 +10,10 @@ Q-learning is a model-free reinforcement learning algorithm used to learn an opt
 
 Q-learning has applications in various domains, including autonomous robotics, traffic signal control, resource management, and more. The core idea behind Q-learning is to iteratively update the Q-values based on the agent's experiences. The agent explores the environment, takes actions, and receives rewards. With each interaction, the Q-values are updated using a formula that incorporates the reward received, the maximum Q-value of the next state, and a learning rate.
 
-![[q-learning-demo.jpg]]
+![demo](image-9.png)
 
 ## Main components
-![[Reinforcement-learning-architecture.png]]
+![maincomponents](image-10.png)
 
 - **Agent**: The entity that interacts with the environment and learns from it.
 - **Environment**: The external environment in which the agent operates and receives feedback.
@@ -45,15 +45,3 @@ It's important to note that while Q-learning has these limitations, there are te
 - https://www.techtarget.com/searchenterpriseai/definition/Q-learning
 - https://huggingface.co/learn/deep-rl-course/unit2/introduction
 
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

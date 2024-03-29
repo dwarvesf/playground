@@ -21,7 +21,7 @@ Google Data Fusion is a fully managed, cloud-native data integration service tha
 . Key features and benefits of Google Data Fusion include:
 
 - **Graphical User Interface**: Data Fusion offers a convenient drag-and-drop interface for building data pipelines, making it easier for users to focus on insights and actions rather than writing code.
-- **Flexibility**: While the UI provides a quick and easy way to create pipelines, Data Fusion is also extensible, allowing users to add custom code when needed**[2](https://gcloud.devoteam.com/blog/what-is-google-cloud-data-fusion/)**.
+- **Flexibility**: While the UI provides a quick and easy way to create pipelines, Data Fusion is also extensible, allowing users to add custom code when needed **[2](https://gcloud.devoteam.com/blog/what-is-google-cloud-data-fusion/)**.
 - **GCP-native Architecture**: Data Fusion is fully integrated and supported by Google Cloud Platform, unlocking the scalability, reliability, security, and privacy guarantees of Google Cloud.
 - **Data Governance**: Data Fusion includes built-in features for data governance, such as end-to-end data lineage, integration metadata, and cloud-native security and data protection services.
 - **Integration with Google Cloud Services**: Data Fusion connects with various Google Cloud services, such as Cloud Storage, BigQuery, and Cloud Spanner, allowing users to create, manage, and analyze data in a centralized manner.
@@ -58,10 +58,12 @@ These are just a few examples, and the possibilities for using Data Fusion are v
 
 ## Pricing
 Google Data Fusion have some pricing tier in the following table:
-![[Google Data Fusion-20240122120201050.webp]]
+
+![data](image-17.png)
 
 Comparison between the tiers:
-![[Google Data Fusion-20240122120216075.webp]]
+
+![data2](image-18.png)
 
 ## How to setup Data fusion:
 ### **Prerequisites:**
@@ -115,71 +117,93 @@ In this demo we’ll setup a simple ETL pipeline to import, transform load a csv
 
 ### Step 1: go to the Big Query console page and create a dataset and table:
 - On the top left corner of the main page of Big query select add and add a dataset. Then click on the three dot simple on the left side of the data set name to add a table. Right after that. you should see this screem to add a table.
-	- ![[Google Data Fusion-20240122120312319.webp]]
+
+![setting](image-19.png)
+
 - Fill in the table name (the only mandatory field that left blank after you do the previous step). You can tweak others setting if you want to. Then click Create Table.
 
 ## Step 2: Go to your Google Data Fusion instance
 - Go to your Data Fusion page and locate your data fusion instance. You should be see it listed right after you go the main page of Data fusion console.
 - Click on the instance you should be able to see a prompt like this:
-	- ![[Google Data Fusion-20240122120335588.webp]]
+
+![setting2](image-20.png)
+
 - Click the View Instance link. You should see the landing page of Google Data Fusion instance. Click on Studio button to start designing pipelines. You should see a screen like this:
-	- ![[Google Data Fusion-20240122120406512.webp]]
+
+![setting3](image-21.png)
 
 ## Step 3: Preparing you CSV file on GCS
 - Create a bucket and push you CSV to the storage. I prepared mine like this.
-	- ![[Google Data Fusion-20240122120426619.webp]]
+
+![file](image-22.png)
 
 ### Step 4: Start designing your first pipeline
 - We’ll create a GCS as a source of data so on the search bar, search for ‘gcs’ and drag the ‘GCS’ simple in the `Source` section to the canvas
-	- ![[Google Data Fusion-20240122120526652.webp]]
+
+![source](image-23.png)
+
 - Click on `Properties` and you should be able to see a screen like this.
-	- ![[Google Data Fusion-20240122120552908.webp]]
+	![setting1](image-24.png)
+
 - Click on `Browse` to browse through the files you uploaded to GCS. Locate your csv data source file and select it.
-	- ![[Google Data Fusion-20240122120615991.webp]]
+	![browse](image-25.png)
+
 - (Optional) Enable the `Enable Quoted Values` and `Use First Row as Header` toggles and click on `Get Schema`. You should able to find your data schema on the right side of the screen
-	- ![[Google Data Fusion-20240122120647202.webp]]
+
+![quotes](image-26.png)
+
 - You finished setting up the source CSV. Go on and click the `X` button on the top right next to `Validate` button.
 - Next, you’ll need to transform data to match you expected schema. Search for `wrangler` on the search bar and drag out `Wrangler` in the  `Transform` section and drag an arrow from `GCS` box to it for Wrangler to recognize the input schema.
-	- ![[Google Data Fusion-20240122120708508.webp]]
+
+![schema](image-27.png)
+
 - Then click on `properties` of the the `Wrangler` box.
-	- ![[Google Data Fusion-20240122120734801.webp]]
+
+![properties](image-29.png)
+
 - Here you can transform your data. Defines you output schema on the left and properties in the middle section. Here I’ll just left it like it is since it a simple demo.
 - Click on the top right `X` button to go back to the canvas.
 - Next, you’ll need a storage for you output data. Search `bigquery` in the search box and drag out `Bigquery` box from the `Sink` section and connect it to the `Wrangler` box.
-	- ![[Google Data Fusion-20240122120800866.webp]]
+
+![setting2](image-30.png)
+
 - Click on `Properties` of the Bigquery box you’ll find this screen.
-	- ![[Google Data Fusion-20240122120820157.webp]]
+
+![bigquery](image-31.png)
+
 - You can find you input data schema on the left side of the screen. Here click on `Browse` to locate your Bigquery data table that you created in step 1 (Mine is `annual_enterprise_survey` in this case) and select it by double click.
-	- ![[Google Data Fusion-20240122120841121.webp]]
+
+![setting3](image-32.png)
+
 - (Optional) you can force the destination table of match you input schema by turn on these toggle.
-	- ![[Google Data Fusion-20240122120859634.webp]]
+
+![toggle](image-33.png)
+  
 - Click on the `X` again to go back to the canvas. You completed your first pipeline.
 
 ### Step 5: Deploy and Run your pipeline
 - Naming your pipeline ( the name must be unique in the instance). Click on the `Name your pipeline` text on the top left of the screen.
-	- ![[Google Data Fusion-20240122120943004.webp]]
+
+![deploy](image-34.png)
+
 - Then click on `Deploy` button on the top right to deploy the pipeline.
-	- ![[Google Data Fusion-20240122120958563.webp]]
+
+![deploy2](image-35.png)
+
 - Wait for the deploy process to complete. You will face this screen
-	- ![[Google Data Fusion-20240122121014344.webp]]
+
+![deploy3](image-36.png)
+
 - Click on the `Run` button at the top center of the screen and wait for it to execute pipelines.
-	- ![[Google Data Fusion-20240122121132342.webp]]
+
+![deloy4](image-37.png)
+
 - After the the status show `Succeeded` you can check your destination table for the output data.
-	- ![[Google Data Fusion-20240122121149587.webp]]
+
+![deploy5](image-38.png)
+
 - Here is the end result data in your Bigquery data table.
-	- ![[Google Data Fusion-20240122121206926.webp]]
+
+![deploy6](image-39.png)
 
 And that’s it, you’re done. Congrat on your first data pipeline with Google Data Fusion.
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

@@ -27,6 +27,5 @@ ArgoCD simplifies the deployment process by providing a single source of truth f
 With ArgoCD, development teams can automate the deployment and management of applications in Kubernetes clusters, reducing the time and effort required to manage deployments manually. The tool provides a comprehensive solution for managing deployments across different environments, making it easy to test and deploy applications with confidence. Additionally, ArgoCD can help improve collaboration between development and operations teams, by providing a single source of truth for deployment configuration.
 
 ### How should we adopt it
-?
 
 <!-- child_database 288cd1ca-e566-47ac-8f38-998add819204 -->

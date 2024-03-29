@@ -15,7 +15,7 @@ hide_frontmatter: false
 
 <!-- table_of_contents b0b864d2-f3d0-41c7-b1dc-aea751ef35a0 -->
 
-# Introduction
+## Introduction
 Go provides us great and convenient ways to write concurrent programs with high performance to execute tasks concurrently (perhaps in parallel if the program is run on a machine with multiple physical cores, GOMAXPROCS are automatically set to the number of physical cores of the machine that the program is running on)
 
 While the Go concurrency primitives are easy to work with (it means it's easy to create the Go concurrency primitives and start using them), but they don't prevent us the developers to write something incorrectly or buggy. They should be used with great care and ideally they should be combined together to achieve some concurrency patterns to be fit in different use cases or contexts where we might solve/handle our problems/business concurrently.
@@ -24,9 +24,8 @@ Concurrency patterns in Go are different ways to put Go’s concurrency primitiv
 
 This post will explain these patterns with a simple example and walk you through the code as well as the decision-making when writing these codes.
 
-# The Patterns
-
-## The Workers Pool pattern
+## The Patterns
+### The Workers Pool pattern
 The first popular one should be the `workers pool` pattern. Goroutine pools are a way of limiting the number of goroutines that can run concurrently. This pattern involves creating a fixed number of goroutines at startup and then using a channel to queue up work. When a new task arrives, it is added to the channel, and one of the idle goroutines picks it up and executes it.
 
 ```go
@@ -75,8 +74,7 @@ func main() {
 }
 ```
 
-### The disadvantages of this pattern
-
+## The disadvantages of this pattern
 ### Limited scalability
 The worker pool pattern, with a fixed number of workers, can be limited in terms of scalability. If the workload increases beyond the capacity of the worker pool, performance may suffer. One solution to this problem is to use a **dynamic worker pool**. In a dynamic worker pool, the number of workers varies based on the workload. When there are more tasks to be processed, the pool increases the number of workers, and when the workload decreases, it reduces the number of workers.
 
@@ -191,7 +189,7 @@ Here’s a breakdown of the code:
 1. Define `simulateDownload(url string)` function, which simulates downloading a file from the provided URL and returns its content as a string.
 1. Define `downloader(urls []string)` function, which takes a slice of URLs and returns a channel that sends the content of each URL. It launches a goroutine that iterates over the URLs, simulates the download, and sends the content through the channel. The channel is closed after all URLs have been processed. *It will be* ***fan-out part***: the* `downloader` function creates a single `downloadStream` channel that sends the content of each downloaded file. Later, we will create multiple worker goroutines that listen to this shared channel, effectively fanning out the work to be done concurrently.
 1. Define `worker(in <-chan string)` function, which takes a channel of strings as input and returns a channel of integers. It launches a goroutine that reads the content from the input channel, prints the processing timestamp and content, counts the number of words in the content, and sends the count through the output channel. The output channel is closed after all content has been processed.
-1. Define `merger(ins ...<-chan int)` function, which takes a variadic parameter of channels with integer values and returns a channel with integer values. It merges the input channels into a single output channel. A `sync.WaitGroup` is used to wait for all input channels to be processed, after which the output channel is closed. *It will be* ***fan-in part***: the* `merger` function combines the results from multiple worker goroutines by listening to their individual output channels. It uses a `sync.WaitGroup` to ensure that it waits for all the worker goroutines to complete before closing its output channel.
+1. Define `merger(ins ...<-chan int)` function, which takes a variadic parameter of channels with integer values and returns a channel with integer values. It merges the input channels into a single output channel. A `sync.WaitGroup` is used to wait for all input channels to be processed, after which the output channel is closed. *It will be* ***fan-in part***: the `merger` function combines the results from multiple worker goroutines by listening to their individual output channels. It uses a `sync.WaitGroup` to ensure that it waits for all the worker goroutines to complete before closing its output channel.
 1. In the `main` function, seed the random generator, define a slice of URLs, and create a download stream by calling the `downloader()` function.
 1. Define the number of workers, create a slice of worker channels, and start the worker goroutines with the download stream as input.
 1. Merge the worker channels using the `merger()` function.

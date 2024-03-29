@@ -2,9 +2,10 @@
 tags: 
   - engineering
   - backend
+  - blockchain
 title: Lessons Learned From Concurrency Practices In Blockchain Projects
 date: 2023-04-17
-description: null
+description: This article covers some lessons learned from working on blockchain projects, with a team that was often optimistic about transparent distributed concurrency. Our API server was scaled to 3 replicas, which introduces a lot of concurrency nuance and race conditions in our app. This post mentions one of those problems, which we tackled with advisory locks. All examples are written in Go.
 authors: null
 menu: memo
 type: null
@@ -13,15 +14,15 @@ hide_frontmatter: false
 
 *This article covers some lessons learned from working on blockchain projects, with a team that was often optimistic about transparent distributed concurrency. Our API server was scaled to 3 replicas, which introduces a lot of concurrency nuance and race conditions in our app. This post mentions one of those problems, which we tackled with advisory locks. All examples are written in Go.*
 
-## **Introduction**
+## Introduction
 This story comes from a few projects with our teams optimistically setting more than one replica for a server on Kubernetes (heck, this still happens now). At first glance, this is a good thing, since we figure we can always have some failover once any one replica or server goes down. This is surprisingly common in many small and medium-sized projects that take advantage of Kubernetes.
 
 However, this expects that application to be more or less aware that there is more than one instance of itself. Any stateful application needs to know the current state of a requested entity. Having multiple instances of the app contending for the same state runs us into concurrency problems. Unfortunately, these Go projects weren’t designed to handle stateful workloads with replication. Hence, they fall victim to race conditions and write contentions.
 
-## **Concurrent Design**
+## Concurrent Design
 Concurrent design is critical to software development, for applications that are beginning to scale, which can help improve performance and scalability. However, designing concurrent systems for more distributed-like systems is not as trivial, especially when we can have combinations of Go instances on Kubernetes and likewise for their respective databases. This is in contrast to your average concurrency designs as we are more focused on handling application scalability as opposed to blocking/non-blocking requests.
 
-### **Being explicit with distributed concurrency**
+### Being explicit with distributed concurrency
 Handling concurrency is second nature to any gopher. Our problem is a bit more distributed, but not so much that we would call it a distributed system in the truest sense. However, this does mean we need to approach it a bit differently than your average pet project. There are two approaches to tackling this:
 
 * **Distributed messaging** - with messaging libraries like **[Ergo](https://github.com/ergo-services/ergo)** or **[RabbitMQ](https://www.rabbitmq.com/)**, we can create application-level protocols between Go servers to communicate which servers are working and what jobs need to be done sequentially or in parallel.
@@ -33,13 +34,13 @@ We need to keep in mind that this problem ends up being more common than we thin
 ### **PostgreSQL for the win**
 Luckily, one common thing across these projects is the use of PostgreSQL. Apart from Kafka and the occasional Redis, very rarely do regular-sized services use anything else other than Postgres. We can use this to our advantage, as we can leverage some of the application-specific features of Postgres, to use as mechanisms to control shared resources.
 
-## **Handling concurrency with PostgreSQL**
-### **Problem**
+## Handling concurrency with PostgreSQL
+### Problem
 In this project, we have a cronjob embedded in our API server as goroutines (don't ask why) that run **every 03:00 and 15:00 UTC**. These goroutines base their inputs on real-time prices of tokens and NFTs and effectively update configurations on our smart contracts through our master wallet.
 
 The initial assumption was that this API server should only have 1 replica instance, but for some reason, we decided to use 3 - meaning our cronjob will effectively run 3 times. In a normal application, we might have ignored it for redundancy, but each call costs a certain amount of gas fee which piles up very quickly if you look away long enough. Not to mention that we can't autoscale our app. Otherwise, we autoscale ourselves to bankruptcy.
 
-### **The use of advisory locks**
+### The use of advisory locks
 One very elegant solution in Postgres are advisory locks. Advisory locks are an application-level lock that handle shared resources in a blocking/non-blocking matter. These locks are particularly useful for our case because we can use them to label a job across all of our API server instances.
 
 ### Implementation
