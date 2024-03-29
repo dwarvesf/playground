@@ -6,7 +6,8 @@ tags:
   - LLM
 title: Market Report Mar 2024
 date: 2024-03-01
-description: 
+description: In this month’s market report, we explore the evolving landscape of artificial intelligence, API techniques, toolings, programming languages, and the intersection of design and engineering. Our insights shed light on the dynamic shifts and emerging trends across these domains, highlighting the advancements that are shaping the future of technology and software development.
+authors: 
   - monotykamary
   - thanh
 menu: labs
@@ -24,7 +25,7 @@ Apps like [Devin AI](https://preview.devin.ai/), [Devika](https://github.com/sti
 ## Open Source AI Repositories: A Surge in Innovation
 [Huyen Chip's comprehensive analysis](https://huyenchip.com/2024/03/14/ai-oss.html) of over 845 open-source repositories, each with more than 500 stars, reveals significant insights into the AI tools domain. Following the introduction of transformative technologies like Stable Diffusion and ChatGPT in 2023, there was a noticeable explosion in the creation of new AI tools. This surge began to stabilize by September 2023, indicating a shift in the competitive landscape of generative AI and a more grounded approach to AI development.
 
-![](https://i.postimg.cc/bv1Xht3d/lab-1.avif)
+![](assets/market-report-mar-2024_c93faba31b7c6dc9db58675306cf7632_md5.avif)
 
 ### Focused Evolution of AI Infrastructure
 In the realm of AI infrastructure, categories such as computing management (e.g., [skypilot](https://arc.net/l/quote/dlhznxrv)), serving (e.g., [vllm](https://github.com/vllm-project/vllm)), and monitoring (e.g., [uptrain](https://github.com/uptrain-ai/uptrain)) have seen steady growth. The explosion of interest in model development is particularly evident in areas related to inference optimization, evaluation, and parameter-efficient finetuning, highlighting a concentrated effort to refine AI operational efficiency.
@@ -47,7 +48,7 @@ The AI domain has witnessed projects that quickly capture significant attention,
 ### Scalable Vector Database for Enhanced LLM Applications
 The Scalable Vector Database emerges as a crucial solution to challenges associated with long-term memory and long-range context dependency in LLM applications. The demand for high-performance vector databases is on the rise, underscoring the importance of advanced indexing algorithms for efficient data retrieval.
 
-![](https://i.postimg.cc/fRG4pK76/labs-2.avif)
+![](assets/market-report-mar-2024_23d809fef0df666fc75d33ba2f85528f_md5.avif)
 
 ## AI Startups breaking the VC barrier
 There are a lot of growing startups that are making the scene with more compelling apps. Apps like [Patchwork](https://www.atpatchwork.com/), [PointOne](https://pointone.ai/) backed by YCombinator  - and growing apps on ProductHunt like [Saner.AI](https://www.producthunt.com/products/saner-ai), [Vapi](https://www.producthunt.com/products/vapi). Domains like Law, Medicine, Support Calling have their own set of challenges and although there isn't really any new technology in the AI space, disciplines in organizing and transforming data for use with AI has brought nuance and complexity to these apps that make them differentiate with other software.

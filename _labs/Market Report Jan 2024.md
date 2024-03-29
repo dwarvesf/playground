@@ -17,7 +17,7 @@ authors:
 menu: labs
 type: labs
 hide_frontmatter: false
-pinned: true
+pinned: false
 hide_title: false
 ---
 
