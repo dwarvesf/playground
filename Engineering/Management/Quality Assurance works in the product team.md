@@ -25,9 +25,9 @@ Usually, when a developer finish their ticket for the feature enhancement from D
     - Testing status - there are 4 common statues: Failed, Passed, N/A, and Haven't.
     - Test scenario(s): provide test cases for the ticket.
 
-![](assets/quality-assurance-works-in-the-product-team_mobile_testing_document_format.png)
+![](assets/quality-assurance-works-in-the-product-team_mobile_testing_document_format.webp)
 
-![](assets/quality-assurance-works-in-the-product-team_mobile_testing_doc_sample.png)
+![](assets/quality-assurance-works-in-the-product-team_mobile_testing_doc_sample.webp)
 
 - **For BackEnd/FrontEnd testing:**
   - Reference information(s)
@@ -37,9 +37,9 @@ Usually, when a developer finish their ticket for the feature enhancement from D
     - Testing status - there are 4 common statues: Failed, Passed, N/A, and Haven't.
     - Test scenario(s): provide test cases for the ticket.
 
-![](assets/quality-assurance-works-in-the-product-team_be_fe_testing_doc_format.png)
+![](assets/quality-assurance-works-in-the-product-team_be_fe_testing_doc_format.webp)
 
-![](assets/quality-assurance-works-in-the-product-team_be_fe_testing_doc_sample.png)
+![](assets/quality-assurance-works-in-the-product-team_be_fe_testing_doc_sample.webp)
 
 ---
 <!-- cta -->

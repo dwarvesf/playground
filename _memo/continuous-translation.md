@@ -120,7 +120,7 @@ Here are what the steps to use Google Sheets would look like for managing transl
 ## Solution 2: Use a translation management platform
 For this approach, we can use [Locize](https://locize.com/) as our continuous localization management platform. This approach isn’t limited to Locize, but the idea is to have a platform to decouple software release from the translation work and minimize work friction for translation.
 
-![](assets/continuous-translation_5d971ebb8af780ed2ad9e7626daf0d8c_md5.png)
+![](assets/continuous-translation_5d971ebb8af780ed2ad9e7626daf0d8c_md5.webp)
 
 Locize has integration support for a variety of frontend systems. You can integrate Locize by following steps:
 

@@ -50,7 +50,7 @@ From many problems we met in real project, we should know principles of SQA to d
 - Early testing: Need to test the feature ASAP from the very beginning like unit test in code, test the feature in local → develop → staging → uat → production. The later we test, the more we pay. The chart below show that.
 - Update test: As soon as the errors are fixed, the test scenarios become useless. It is important to review and update test regularly.
 
-![](assets/software-quality-assurance_errors-cost.png)
+![](assets/software-quality-assurance_errors-cost.webp)
 
 - Invalid and unexpected test: Need test all case can happen not only happy case or some basic invalid request.
 - Independent test environment: Should be no change during the process of testing
@@ -59,7 +59,7 @@ From many problems we met in real project, we should know principles of SQA to d
 ## Role of Agile in Software Quality Assurance
 We already know the spirit of Agile Development Lifecycle: `Retro and adapt`.  We run sprint, have a short planning for about 2 weeks. When have any issue then we figure it out and discuss what the best option for it. The cycle keeps continue to the final product (this means the product meets client’s requirement, …). This help us figure errors faster and fixed it ASAP.
 
-![](assets/software-quality-assurance_agile.png)
+![](assets/software-quality-assurance_agile.webp)
 
 ## Process of Software Quality Assurance
 We have known the importance of SQA then we should have effective plan for our software:
@@ -78,7 +78,7 @@ We have known the importance of SQA then we should have effective plan for our s
     - Test Execution: Testers execute their test cases and test scripts in the test environment to determine the quality of the software (Pass/Fail)
     - Test Reporting: Document the testing logs and status reports. Retrospective meeting will need to define and have solution to solve it.
 
-![](assets/software-quality-assurance_the-stage-of-software-testing.png)
+![](assets/software-quality-assurance_the-stage-of-software-testing.webp)
 
 - Maintain quality records to track issues.
 - Analyze and report on quality issues to management.

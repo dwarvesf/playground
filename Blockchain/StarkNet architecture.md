@@ -9,7 +9,7 @@ icy: 10
 ## StarkNet layer 2 solution
 StarkNet is a layer 2 blockchain solution using ZK rollup, it provides StarkDex technology for well-known applications such as dYdX, ImmutableX, Sorare. It allows decentralized exchanges to process transactions with fast speed and low costs. Its essence is to reduce computations, store on-chain, replace with off-chain computations and store off-chain, Store balance using merkle tree with root merkle tree stored on-chain
 
-![](assets/starknet-architecture_starkdex.jpeg)
+![](assets/starknet-architecture_starkdex.webp)
 
 ## StarkNet architecture overview
 The system consists of 6 main components:
@@ -35,7 +35,7 @@ Where:
 ## Messaging Mechanism
 Contracts on L2 can interact asynchronously with contracts on L1 via the L2→L1 messaging protocol.
 
-![](assets/starknet-architecture_starknet-current-architecture.png)
+![](assets/starknet-architecture_starknet-current-architecture.webp)
 
 Contracts on L1 can interact asynchronously with contracts on L2 via the L1→L2 messaging protocol. The protocol consists of the following stages:
 
@@ -47,7 +47,7 @@ When the transaction is submitted to the StarkNet, it is sent to the Sequence no
 - List of changes made by transactions (storage, balance, data...)
 - As a proof, if every transaction in the batch is successfully processed compared to the previous state of the network then the result will be the list of changes listed previously.
 
-![](assets/starknet-architecture_starknet-transactions-states.jpeg)
+![](assets/starknet-architecture_starknet-transactions-states.webp)
 
 ## Node clients
 StarkNet nodes use the [Pathfinder](https://github.com/eqlabs/pathfinder) or the [Juno](https://github.com/NethermindEth/juno) client and they are similar to the nodes running Go Ethereum

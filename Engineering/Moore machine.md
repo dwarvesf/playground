@@ -8,7 +8,7 @@ date: 2022-06-28
 ## What is a Moore machine?
 A Moore machine is a [[Finite-state automata]] where the output values are determined by only its current state. Moore machines are a restricted type of a [[Finite-state transducer]].
 
-![](assets/moore-machine_moore_machine.jpg)
+![](assets/moore-machine_moore_machine.webp)
 
 ## Mathematical Model
 As per the general classification noted on [UC Davis outline on transducers](https://www.cs.ucdavis.edu/~rogaway/classes/120/spring13/eric-transducers) (formatted with similar variables to [[Finite-state automata]]s), a deterministic Moore machine has 6 main variables associated with its definition (a sextuple): ($\Sigma$, $S$, $\Gamma$, $\delta$, $\omega$, $s_0$).

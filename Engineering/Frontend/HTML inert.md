@@ -11,7 +11,7 @@ When an element has `inert` attribute, it will be removed from the tab order (in
 
 The born of `inert` helps to eliminate the need for [[Focus trap | focus trap]] which is being combined with `aria-hidden` to improve the accessibility of a web page containing an open dialog (see the attachment), though we still have to manually move the focus to the dialog and return focus the element that triggered it after the dialog is closed.
 
-![](assets/html-inert_pasted-image-20220612104313.png)
+![](assets/html-inert_pasted-image-20220612104313.webp)
 
 ```html
 <!-- Before -->

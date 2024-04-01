@@ -22,7 +22,7 @@ To address this challenge, typesafe client-server architecture introduces a code
 
 Using API definitions in JSON or YAML format as the single source of truth, the code generator automatically validates and generates the necessary models and API clients for the frontend and corresponding models and API endpoints for the backend. This ensures that both ends of the application speak the same "data language," and any changes in the API are reflected on both sides promptly and accurately.
 
-![](assets/typesafe-client-server.png)
+![](assets/typesafe-client-server.webp)
 
 This automated approach not only minimizes human error but also streamlines the development process, as developers can now focus on building features rather than fixing mismatches between the FE and BE. By adopting this typesafe client-server system, teams can enhance collaboration, accelerate time-to-market, and deliver a more reliable product.
 

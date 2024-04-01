@@ -21,7 +21,7 @@ A circuit break revolves around 3 states: **Closed**, **Open**, and **Half-Open*
   - If the request success, increment the **success counter** until enough for the circuit breaker to switch to the **Closed** state.
   - If the request fails, return to the **Open** state.
 
-![](assets/circuit-breaker-in-go_circuit-breaker-diagram.png)
+![](assets/circuit-breaker-in-go_circuit-breaker-diagram.webp)
 
 ## Using circuit breaker in Go
 First, we need to init a new go project with [go mod init](https://go.dev/doc/tutorial/getting-started)

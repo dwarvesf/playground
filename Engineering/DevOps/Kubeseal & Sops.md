@@ -12,7 +12,7 @@ date: 2022-09-28
 - `Sops`: Sops is a binary able to encrypt configuration files. But rather than encrypting the whole file Sops understands format (JSON, YAML, INI, etc) and will only encrypt the values of each line (with AWS KMS, GCP KMS, Azure Key Vault, age, and PGP).
 
 ## How it works
-![](assets/kubeseal-&-sops_kubeseal_&_sops.png)
+![](assets/kubeseal-&-sops_kubeseal_&_sops.webp)
 
 - Source code repo: contains secret was encrypted by `sops`
 - Github action: use `sops` to decrypt secret and `kubeseal` to seal secret and push it to infrastructure repo

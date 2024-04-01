@@ -27,7 +27,7 @@ After the meeting is done, Project Manager will prepare a document for Backlog G
 
 Then, this document will be sent out to the team members. So that they can take a look on it to have an overview, an idea for their future works or have any questions as well for the future's works.
 
-![](assets/how-to-run-the-backlog-grooming-effectively_backlog_grooming_note_example.png)
+![](assets/how-to-run-the-backlog-grooming-effectively_backlog_grooming_note_example.webp)
 
 After everything is done, the team will start the Backlog Grooming as fast as possible since every members are already awared about the document which is provided before the meeting date. And, it also save everyone time as well.
 

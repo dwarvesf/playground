@@ -10,7 +10,7 @@ blog: https://dwarvesf.hashnode.dev/an-engineering-story-map-for-llms
 ## Story Map: Journey for Engineers Developing Applications on top of Large Language Models (LLMs)
 Below is a story map of a kind of simplified learning and execution path for engineers starting out in developing AI. Not every engineering story follows the same path, but hopefully below will give you a general idea as to where you are in your story and what is left ahead.
 
-![](assets/story-map-for-llms_storymap_llm.jpg)
+![](assets/story-map-for-llms_storymap_llm.webp)
 
 ### 1. Understanding AI, Machine Learning, and LLMs
 Most of us begin by learning about artificial intelligence (AI), machine learning, and their capabilities. We explore various applications, such as natural language processing, computer vision, and recommendation systems. Developing a strong foundation is needed in large language models and understanding the basics of LLMs will help us appreciate their potential and the wide range of applications they can be used for.
@@ -50,12 +50,12 @@ Data collection is particularly important for AI, and especially LLMs. Data coll
 #### a. Through Prompt collection
 We can collect internal data through prompts inputted by users. Data collection of prompts in large language models refers to the process of gathering and curating input prompts that are used to guide the behavior and output of the language model. Prompts are the starting questions or instructions given to the model to condition its predictions for a specific task.
 
-![](assets/story-map-for-llms_prompt-data-collection.png)
+![](assets/story-map-for-llms_prompt-data-collection.webp)
 
 #### b. Through Data scraping
 We can gather external data through data scraping. Data scraping is commonly used to gather large amounts of data from websites for various purposes, such as market research, competitor analysis, price comparison, data analysis, and more. It allows users to extract specific information from websites without manually visiting each page and copying the data.
 
-![](assets/story-map-for-llms_data-scraping-n8n.png)
+![](assets/story-map-for-llms_data-scraping-n8n.webp)
 
 ### 4. Reinforcement Learning
 Eventually, we want to reward certain behaviors from our augmented models. Although a more advanced approach to training a model, understanding the concept of reinforcement learning and its applications in AI is important for the following reasons::
@@ -79,7 +79,7 @@ Fine-tuning, involves updating the model parameters directly using a dataset tha
 
 It's also best to learn the process of fine-tuning AI models and LLMs like ChatGPT, LLaMA, and other alternatives for specific tasks and applications. Understand the benefits and challenges of fine-tuning AI models and LLMs, which will help optimize their performance and create more effective AI applications.
 
-![](assets/story-map-for-llms_fine-tuning-steps.png)
+![](assets/story-map-for-llms_fine-tuning-steps.webp)
 
 ## Conclusion
 The general idea of this story map is to help engineers develop a strong foundation in researching and creating AI applications, such as chatbots, code automation, personal assistants, and fine-tuning AI models with LLMs like ChatGPT and LLaMA. A lot of these skills involve a bit of ad-hoc ingenuity, but will help has a basic foundation of patterns we see in AI development.

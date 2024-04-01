@@ -14,9 +14,9 @@ In one Product team, we will receive quite a lot of requirements to do the enhan
 - First, we will list out the current behaviors from our current system that is related to the requirement as much as possible. Then, we start to point out the issues/requirements to verify what are the things that the team will need to do.
 - After that will be the list of solution to suggest with our client, as this point, from my own experience, I will share this one to Product Managers and Portfolio Leads to have a final alignment.
 
-![](assets/analysis-document_analysis-doc-sample-first.png)
-![](assets/analysis-document_analysis-doc-sample-second.png)
-![](assets/analysis-document_analysis-doc-sample-third.png)
+![](assets/analysis-document_analysis-doc-sample-first.webp)
+![](assets/analysis-document_analysis-doc-sample-second.webp)
+![](assets/analysis-document_analysis-doc-sample-third.webp)
 
 With this document, there are 2 things that we can be confident with:
 - We can finalize again the requirement from our client again before starting to work on the development.

@@ -24,7 +24,7 @@ But that bunch of text doesn't produce an actual website. Those characters are p
 
 > Check out this article for a more detailed understanding about this process: [How web browsers work - parsing the HTML (part 3, with illustrations)](https://dev.to/arikaturika/how-web-browsers-work-parsing-the-html-part-3-with-illustrations-45fi).
 
-![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_html-parser.png)
+![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_html-parser.webp)
 
 *Image Source: [How web browsers work - parsing the HTML (part 3, with illustrations)](https://dev.to/arikaturika/how-web-browsers-work-parsing-the-html-part-3-with-illustrations-45fi)*
 
@@ -33,7 +33,7 @@ As soon as the browser begins to parse the HTML, once encountering a `link` ta
 
 > For further information, please check out this article: [How web browsers work - parsing the CSS (part 4, with illustrations)](https://dev.to/arikaturika/how-web-browsers-work-parsing-the-css-part-4-with-illustrations-4c).
 
-![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_cssom.jpeg)
+![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_cssom.webp)
 
 *Image Source: [How web browsers work - parsing the CSS (part 4, with illustrations)](https://dev.to/arikaturika/how-web-browsers-work-parsing-the-css-part-4-with-illustrations-4c)*
 
@@ -44,14 +44,14 @@ The browser traverses every visible node starting from the root of the DOM tree.
 
 Now the Render Tree holds the information of the **visibility** of each node and its **styles**, but what needs to be done next to calculate the exact position of those elements and paint them to the screen?
 
-![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_render-tree.png)
+![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_render-tree.webp)
 
 *Image Source: [How web browsers work - the render tree (part 7, with illustrations)](https://dev.to/arikaturika/how-web-browsers-work-the-render-tree-part-7-with-illustrations-24h3)*
 
 ## The Layout/Reflow stage
 The **Layout**/**Reflow** is a process to find the **geometry** of elements. The main thread walks through the DOM and constructs a layout tree that stores details such as **x and y coordinates**, as well as **bounding box dimensions**.
 
-![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_layout-tree.png)
+![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_layout-tree.webp)
 
 *Image Source: [Inside look at modern web browser (part 3)](https://developer.chrome.com/blog/inside-browser-part3/)*
 
@@ -72,13 +72,13 @@ To determine which elements should be placed within specific layers, the main th
 
 > Learn more about the **Layers panel** of DevTools [here](https://blog.logrocket.com/eliminate-content-repaints-with-the-new-layers-panel-in-chrome-e2c306d4d752/).
 
-![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_layer-tree.png)
+![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_layer-tree.webp)
 
 *Image Source: [Inside look at modern web browser (part 3)](https://developer.chrome.com/blog/inside-browser-part3/)*
 
 Once the Layer tree is established and the orders of rendering are determined, the main thread transfers that information to the compositor thread. The compositor thread then begins the process of rendering each layer. Some layers, such as those having the entire length of a webpage, can be quite extensive. To handle this, the compositor thread breaks them down into smaller sections known as **tiles** and dispatches each tile to **raster threads**. These raster threads are responsible for rendering each tile and storing the results in the memory of the GPU.
 
-![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_compositing.png)
+![](assets/from-markup-to-pixels---a-look-inside-the-dom,-cssom,-and-render-tree_compositing.webp)
 
 *Image Source: [Inside look at modern web browser (part 3)](https://developer.chrome.com/blog/inside-browser-part3/)*
 

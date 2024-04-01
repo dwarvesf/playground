@@ -16,9 +16,9 @@ A software organization can be run with only four team types:
 - **[[Enabling team | Enabling]]**: a team that trains and supports other teams in adopting and modifying software as part of a transition or learning period.
 - **Complicated subsystem**: a team that is responsible for a subsystem too complicated (mathematics/calculation/...) to be handled by a normal stream-aligned team or platform team. Optional and only used when necessary.
 
-![](assets/team-toplogies_the-four-fundamental-team-topologies.png)
+![](assets/team-toplogies_the-four-fundamental-team-topologies.webp)
 
-![](assets/team-toplogies_four-fundamental-topologies-shown-with-the-flow-of-change.png)
+![](assets/team-toplogies_four-fundamental-topologies-shown-with-the-flow-of-change.webp)
 
 Effective software delivery requires the combination of specific team types, but the interaction modes between these four fundamental team topologies are vitally important to understanding and nurturing effective software delivery:
 
@@ -26,7 +26,7 @@ Effective software delivery requires the combination of specific team types, but
 - **X-as-a-Service mode**: One team uses something provided by another team (such as an API, a tool, or a full software product). Collaboration is minimal.
 - **Facilitating mode**: one team (usually an enabling team) support another team in learning or adopting a new approach.
 
-![](assets/team-toplogies_3-team-interaction-modes.png)
+![](assets/team-toplogies_3-team-interaction-modes.webp)
 
 ## References
 - _Team Topologies: Organizing Business and Technology Teams for Fast Flow by Manuel Pais and Matthew Skelton_

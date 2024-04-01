@@ -17,26 +17,26 @@ Atomic design is a methodology for crafting design systems with five key fundame
 ## How does it work?
 There are 5 distinct levels of atomic design which are: atoms, molecules, organisms, templates, and pages.
 
-![](assets/atomic-design-pattern_atom-design-structure.png)
+![](assets/atomic-design-pattern_atom-design-structure.webp)
 
 **Atoms**
 
 - Atoms are the basic building blocks of matter. When applied to web interfaces, they are our `HTML` tags like an `input` or a `button`.
 - These are fairly abstract elements which often not useful on their own but are good references in the context of a pattern if seen on a bigger picture.
 
-![](assets/atomic-design-pattern_atom-atomic-design.png)
+![](assets/atomic-design-pattern_atom-atomic-design.webp)
 
 **Molecules**
 
 Just like in chemistry, molecules are a set of atoms combined. This could include a form input with a title and input standing next to each other or a header containing multiple atoms like icons, buttons, or inputs.
 
-![](assets/atomic-design-pattern_molecule-atomic-design.png)
+![](assets/atomic-design-pattern_molecule-atomic-design.webp)
 
 **Organisms**
 
 Molecules give us some functional building blocks to work with, and they are a sub-set of organisms. Molecules when joined together create organisms which is a relatively complex and distinct section of an interface.
 
-![](assets/atomic-design-pattern_organisms-atomic-design.png)
+![](assets/atomic-design-pattern_organisms-atomic-design.webp)
 
 **Templates**
 
@@ -46,19 +46,19 @@ Templates begin their life as HTML wireframes, but over time become the final de
 
 t this stage we can really see the design coming together and making more sense for the clients to see the layout of the interface before finalizing it.
 
-![](assets/atomic-design-pattern_template-atomic-design.png)
+![](assets/atomic-design-pattern_template-atomic-design.webp)
 
 **Pages**
 
 Pages are specific instances of templates. Here, placeholder content is replaced with real representative content to give an accurate depiction of what a user will ultimately see.
 
-![](assets/atomic-design-pattern_page-atomic-design.png)
+![](assets/atomic-design-pattern_page-atomic-design.webp)
 
 **Atomic design folder structure**
 
 This is an example of an application folder structure using atomic design, as you can see there are 5 distinct layers and you can organize them in anyway you want following your own preference.
 
-![](assets/atomic-design-pattern_folder-structure-atomic-design.png)
+![](assets/atomic-design-pattern_folder-structure-atomic-design.webp)
 
 ## Reference
 - https://bradfrost.com/blog/post/atomic-web-design/#atoms

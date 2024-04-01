@@ -16,7 +16,7 @@ icy: 10
 ## Characteristic
 The following table summarizes the salient features of the **blue-green** strategy compared to other strategies:
 
-![](assets/blue-green-deployment_bluegreen-compare.png)
+![](assets/blue-green-deployment_bluegreen-compare.webp)
 
 ## Implementing blue-green deployment strategy in Kubernetes
 1. Preparing
@@ -175,7 +175,7 @@ kubectl apply -f app/ingress.yaml
 
 Now, application is deployed on active environment and you can view it on `myapp.bluegreen.xyz` domain.
 
-![](assets/blue-green-deployment_bluegreen-green-application.png)
+![](assets/blue-green-deployment_bluegreen-green-application.webp)
 
 We change the image of the application to `argoproj/rollouts-demo:blue` and apply the changes to the cluster:
 
@@ -193,7 +193,7 @@ kubectl apply -f app/bluegreen-rollout.yaml
 
 Argo rollouts will create a new ReplicaSet with the new image and start to rollout the new version of the application to the preview environment. You can view the preview application on `myapp-preview.bluegreen.xyz` domain.
 
-![](assets/blue-green-deployment_bluegreen-blue-application.png)
+![](assets/blue-green-deployment_bluegreen-blue-application.webp)
 
 When the new version of the application is ready, you can promote it to the active environment by running the following command:
 

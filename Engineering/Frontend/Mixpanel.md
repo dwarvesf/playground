@@ -7,7 +7,7 @@ icy: 10
 ---
 
 Mixpanel is a powerful analytics platform that assists companies in monitoring and analyzing user behavior on their websites and mobile applications. With Mixpanel, you can analyze user activity, evaluate the performance of your products, and improve user experience through data-driven decisions.
-![](assets/mixpanel_dashboard.png)
+![](assets/mixpanel_dashboard.webp)
 
 ## Key features
 Some key features of Mixpanel include:
@@ -66,10 +66,10 @@ mixpanel.people.set({
 ```
 
 As you can see in the images bellow all users interact with the app will be listed.
-![](assets/mixpanel_user_profiles.png)
+![](assets/mixpanel_user_profiles.webp)
 
 You can observe all the events created by the users.
-![](assets/mixpanel_user_activites.png)
+![](assets/mixpanel_user_activites.webp)
 
 ## References
 - <https://developer.mixpanel.com/docs>

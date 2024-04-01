@@ -39,7 +39,7 @@ When running the above program, the Javascript will run the function step-by-ste
 ## Javascript is a single-threaded language
 In reality, we always execute many tasks for a long time. These are opening a big file, downloading an image, or invoking a third-party service... We need to wait for the function call to be completed. How do we deal with the function call with the execution time too long? The Javascript runtime that is supported from the web browser, node.js. The web browser, or JS engines,... provides the APIs that help us run the task outside the `stack`. It means the long-time functions have already been finished in the stack, and the following function in the `stack` won't be blocked.
 
-![](assets/concurrency-in-javascript_javascript-concurrency-model.png)
+![](assets/concurrency-in-javascript_javascript-concurrency-model.webp)
 
 After the JS engine executes the task, it will push the callback onto the `callback queue`. If the `stack` is empty, it takes the first thing on the `callback queue` and makes it onto the `stack`. In conclusion, JavaScript code is single-threaded and only does one thing at a time; however, the **Javascript runtime** executes the task asynchronously as multi-threaded. Once that background thread completes, and the current call stack finishes executing, your callback function is pushed onto the (now empty) call stack and run to completion. However, the developer faced a new issue called Callback Hell. Which is essentially nested callbacks stacked below one another, forming a pyramid structure. Every callback depends/waits for the previous callback, thereby making a pyramid structure that affects the readability and maintainability of the code. We solved the problem by the data structures or built-in functions.
 

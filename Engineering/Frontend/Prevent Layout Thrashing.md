@@ -6,7 +6,7 @@ date: 2022-09-11
 ---
 
 ## What is Layout Thrashing
-![](assets/prevent-layout-thrashing_layout-thrashing.png)
+![](assets/prevent-layout-thrashing_layout-thrashing.webp)
 
 Layout thrashing means forcing the browser to calculate a layout that is never rendered to the screen, which hurts performance.
 
@@ -29,7 +29,7 @@ const color = getComputedStyle(someOtherBox).color
 
 Mixing Layout Read & Layout Mutation must wait for the browser to recalculate the layout and reflow to return your Layout value.
 
-![](assets/prevent-layout-thrashing_dont-touch-me.png)
+![](assets/prevent-layout-thrashing_dont-touch-me.webp)
 
 ## How to fix
 We can resolve the problem by isolating your reads from your writes. The steps would be:
@@ -67,7 +67,7 @@ function resizeAllParagraphsToMatchBoxWidth(paragraphs, box) {
 ## How to debug
 Open `Performance Tab` on Dev tool, slow down your CPU, and click `Start Profiling`.
 
-![](assets/prevent-layout-thrashing_layout-thrashing-debug.png)
+![](assets/prevent-layout-thrashing_layout-thrashing-debug.webp)
 
 Find purple tasks and get info in detail: 
 
