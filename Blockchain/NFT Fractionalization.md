@@ -12,7 +12,7 @@ date: 2022-06-18
 ## How does it work?
 To break this NFT into fractions, it must first be locked in a smart contract, which will split the ERC-721 token into multiple ERC-20 tokens as per the instructions the NFT owner has given. The owner specifies everything, from the number of ERC-20 tokens to be created, to their prices, to the metadata to be used, to any other property they deem important. Each fraction or ERC-20 token created represents partial ownership of the NFT. The fractions can then be put up for sale at a fixed price for a particular time or until they get sold out.
 
-![](assets/nft-fractionalization_y8tfcaq.png)
+![](assets/nft-fractionalization_y8tfcaq.webp)
 
 ## Benefits of fractional NFT
 - **Price discovery**: the asset is extremely valuable and they want help finding price discovery, fractionalizing the item and selling 20% on the market can be a valuable tool to help understand how the market values the NFT.

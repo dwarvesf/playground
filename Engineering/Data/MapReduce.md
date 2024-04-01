@@ -21,7 +21,7 @@ Let's start with an example.
 
 We are the head of census bureau for the state of California and tasked with finding the finding the population of all cities in California. All the resources we want are ready but we have only four months to finish the task. Calculating the population of all cities for a big state like california is not an easy task. The sensible thing to do is to divide the state by city and make individuals in charge of each city to calculate the population of each city where he is in charge of.
 
-![](assets/mapreduce_mr-example-1.png)
+![](assets/mapreduce_mr-example-1.webp)
 
 For illustration purpose, there are three cities: San Francisco (SFO), San Jose (SJOSE) and LA.
 
@@ -34,7 +34,7 @@ Same instructions will be carried out by everyone involved person 2 will go to S
 We'll have a person in the headquarters to receive the results from all cities and aggregate them by city to come up with population of each city for the entire state.
 Therefore, four months in with this strategy, we're able to calculate the population of california.
 
-![](assets/mapreduce_mr-example-2.png)
+![](assets/mapreduce_mr-example-2.webp)
 
 Next year, we're asked to do the same job, we have all the resources we want but this time we have two months to finish the task. So we would simply double the number of people to perform the task. We will divide SFO into two divisions and add one person to each division and we will do the same thing for San Jose and LA. Each person responsible for a division will perform the same task as before, we can also do the same thing at the headquarters.
 
@@ -49,7 +49,7 @@ If next year if we were asked to do the same thing in a month, we know exactly w
 
 The model we have here is called _MapReduce_. MapReduce is a programming model for distributed computing. It's not a programming language, it is a programming model which we can use to process huge data sets in a distributed fashion.
 
-![](assets/mapreduce_mr-example-3.png)
+![](assets/mapreduce_mr-example-3.webp)
 
 Now let's look at the faces involved in Mapreduce. The phase where individuals collect the population of their assigned city or part of the city is called a [[MapReduce Components#Map Phase|_Map phase]].
 

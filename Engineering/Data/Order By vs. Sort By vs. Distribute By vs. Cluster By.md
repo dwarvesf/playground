@@ -16,13 +16,13 @@ ORDER BY price_close DESC;
 
 However, this simple `ORDER BY` statement has some performance implication. When executed this query, the first thing we will notice in the below output snapshot is `Number of reduce tasks determined at compile time` equals to `1`.
 
-![](assets/order-by-vs.-sort-by-vs.-distribute-by-vs.-cluster-by_order-by-output-screenshot.png)
+![](assets/order-by-vs.-sort-by-vs.-distribute-by-vs.-cluster-by_order-by-output-screenshot.webp)
 
 Why Hive is choosing to run the `ORDER BY` statement with just one reducer? Because `ORDER BY` does a global ordering of all records in the data set, which means to do a global ordering all the records in our data set must be sent to one reduce. This is a serious problem if we have a very large data set and when all the records in our data set are sent to one reduce, this will lead to memory issues and the execution time of this reducer could be off the charts. Therefore, the solution is to use multiple reducers instead of just one.
 
 We can set the number of reducers that we would like to use using the property `mapreduce.job.reduces` in our Hive session. For example, let's set the number of reducers to 3 and run the `ORDER BY` query again. The output shows in the following snapshot.
 
-![](assets/order-by-vs.-sort-by-vs.-distribute-by-vs.-cluster-by_order-by-output-screenshot-set-property.png)
+![](assets/order-by-vs.-sort-by-vs.-distribute-by-vs.-cluster-by_order-by-output-screenshot-set-property.webp)
 
 Again, we are seeing that the number of reduced task is set to 1. Since the `ORDER BY` does global ordering of our data set the number of reducers will be always forced to one even when we specify to more than one reducer. So, what is the real solution here? The answer is `SORT BY`. When using `SORT BY`, it uses multiple reducers. Let's consider the following query:
 
@@ -46,7 +46,7 @@ SORT BY symbol ASC, price_close DESC;
 
 We're saying `INSERT OVERWRITE LOCAL DIRECTORY` and we are giving the location in the local file system and we're also saying the output has to be delimited by comma. Now the output of this select statement will be written into this directory delimited by comma. Before we execute this query, let's set the number of reducers to 3.
 
-![](assets/order-by-vs.-sort-by-vs.-distribute-by-vs.-cluster-by_order-by-output-screenshot-sort-by.png)
+![](assets/order-by-vs.-sort-by-vs.-distribute-by-vs.-cluster-by_order-by-output-screenshot-sort-by.webp)
 
 As shown in the above screenshot, the number of reducers is now set to 3. When the job is complete, the output of this job is copied to the local directory. We can go to the local directory and review the output. There are three files where are one for each reducer. If we open one of these files, we can see the records in this file are sorted by symbol first in ascending order and then sorted by closing price in descending order.
 

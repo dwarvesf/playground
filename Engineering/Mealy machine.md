@@ -8,7 +8,7 @@ date: 2022-06-28
 ## What is a Mealy machine?
 A Mealy machine is a [[Finite-state automata]] where the output values are determined by its current state and current inputs. It is the closest definition to a deterministic [[Finite-state transducer]].
 
-![](assets/mealy-machine_mealy_machine.jpg)
+![](assets/mealy-machine_mealy_machine.webp)
 
 ## Mathematical Model
 As per the general classification noted on [UC Davis outline on transducers](https://www.cs.ucdavis.edu/~rogaway/classes/120/spring13/eric-transducers) (formatted with similar variables to [[Finite-state automata]]s), a deterministic Mealy machine has 6 main variables associated with its definition (a sextuple): ($\Sigma$, $S$, $\Gamma$, $\delta$, $\omega$, $s_0$).

@@ -11,7 +11,7 @@ type: null
 hide_frontmatter: false
 ---
 
-![](assets/cost-of-react-native_69b49ec589ff19151408b8959ace27bd_md5.jpeg)
+![](assets/cost-of-react-native_69b49ec589ff19151408b8959ace27bd_md5.webp)
 
 *React Native is a popular cross-platform app development framework that allows developers to build mobile apps for both iOS and Android platforms using a single codebase. It has gained popularity in recent years due to its ability to provide a native-like experience while reducing development time and cost.*
 
@@ -60,7 +60,7 @@ Coinbase, a leading cryptocurrency exchange platform, uses React Native to build
 ### **Discord**
 Discord, a popular communication platform for gamers, adopted React Native for its mobile applications. React Native allowed Discord to develop and iterate their app quickly. However, they faced challenges in maintaining optimizing specific native features, such as voice and video chat, and needed to develop custom native modules to help address these issues.
 
-![](assets/cost-of-react-native_cb4a01ca2ab93832ae3ffec401441e07_md5.jpeg)
+![](assets/cost-of-react-native_cb4a01ca2ab93832ae3ffec401441e07_md5.webp)
 
 # **The development cost of React Native**
 The cost of developing a React Native application can vary depending on several factors, including the complexity of the application, design, features, and maintenance costs. The larger and more complex the application, the more expensive it is to develop. Similarly, applications with more advanced features, such as push notifications or in-app purchasing, will cost more to develop.
@@ -71,7 +71,7 @@ However, it’s essential to consider the trade-offs of outsourcing development 
 
 Furthermore, while React Native is a cost-effective option for mobile application development, it’s not always the best choice. For instance, if the application requires advanced hardware features, such as fingerprint scanning or camera functionality, native application development may be a better choice. Native development provides better access to platform-specific features, but it also increases development costs.
 
-![](assets/cost-of-react-native_076bec90671c2f71c0fdb93849498a01_md5.jpeg)
+![](assets/cost-of-react-native_076bec90671c2f71c0fdb93849498a01_md5.webp)
 
 # **Conclusion**
 In conclusion, React Native is a popular cross-platform app development framework that offers several advantages, including cross-platform compatibility, faster development time, and a large developer community. However, it also has some drawbacks, such as performance issues, a nuanced learning curve, and limitations on native functionality.

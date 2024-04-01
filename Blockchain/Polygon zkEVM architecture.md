@@ -9,7 +9,7 @@ icy: 10
 ## Polygon zkEVM Architecture
 The main purpose of this architecture is Efficiency, the first strategy is incentivize the most efficient aggregators to participate in the proof generation process. The second is move all computation off-chain but keep only the necessary data zk-proof on-chain. Make the bridge decentralize. Utilization of special cryptographic  primitive within the zkProver in order to speed up computation and minimize proof size. 
 
-![](assets/polygon-zkevm-architecture_polygon-zkevm.png)
+![](assets/polygon-zkevm-architecture_polygon-zkevm.webp)
 
 ### Main components:
 - **Proof of Efficiency** is a consensus mechanism based on an automatically conducted decentralized auction, with participants bidding on a certain amount of tokens to be selected to create the next batch added support for permissionless participation of multiple coordinators to create batches in L2
@@ -18,11 +18,11 @@ The main purpose of this architecture is Efficiency, the first strategy is incen
     - Sequencer & Aggregators
     - RPC
 
-![](assets/polygon-zkevm-architecture_fig3-zknode-arch-aa4d18996fba1849291ea18e3f11d955.png)
+![](assets/polygon-zkevm-architecture_fig3-zknode-arch-aa4d18996fba1849291ea18e3f11d955.webp)
 
 - **zkProver**  is techinal to create validity proof using zero-knowledge. it consists of a main state machine executor ( a collection of secondary state machines), a STARK proof builder, and a SNARK-proof builder. All valid batch must satisfy specific polynomial constraint.
 
-![](assets/polygon-zkevm-architecture_polygon-zkprover.png)
+![](assets/polygon-zkevm-architecture_polygon-zkprover.webp)
 
 - **LX-to-Ly Bridge** is a smart contract can help users transfer assets between two layers.
 
@@ -34,11 +34,11 @@ PoE solve the problem relate to decentralized and permissionless validators in L
 
 The batch is process when the sequencer to do base on the incentives they have:
 
-![](assets/polygon-zkevm-architecture_1b54ce784c821f34b8d5d7218850095a84c9e054.png)
+![](assets/polygon-zkevm-architecture_1b54ce784c821f34b8d5d7218850095a84c9e054.webp)
 
 **Aggregators** receives all transaction information form Sequencer and send it to prover to get proof and send proof to smart contract to check. The first aggregator submit the proof will earn the right to create the validity proof of new state of the Layer 2
 
-![](assets/polygon-zkevm-architecture_6066873078dcd11f9ef93601eba9237c52cbf11a.png)
+![](assets/polygon-zkevm-architecture_6066873078dcd11f9ef93601eba9237c52cbf11a.webp)
 
 This mechanism will avoid control of a single party and many of the potential attacks, since any Sequencer can propose a batch, but there is a cost on it.
 
@@ -61,7 +61,7 @@ The two permissionless participants of the zkEVM network are: Sequencers and Agg
 #### zkEVM
 zkEVM was design to take advantage of ZK folklore to minimize size validity proof for validation, reduce transaction finality time and save gas costs.
 
-![](assets/polygon-zkevm-architecture_polygon-zk-prover-design-approach.png)
+![](assets/polygon-zkevm-architecture_polygon-zk-prover-design-approach.webp)
 
 #### zkProver
 Have 4 main components:
@@ -72,7 +72,7 @@ Have 4 main components:
 
 Prover generate verifiable proof process:
 
-![](assets/polygon-zkevm-architecture_fig-main-prts-zkpr.png)
+![](assets/polygon-zkevm-architecture_fig-main-prts-zkpr.webp)
 
 You can read more [here](https://docs.hermez.io/zkEVM/zkProver/Overview/zkProver-Overview/#the-stark-recursion-component)
 

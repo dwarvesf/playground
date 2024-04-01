@@ -12,7 +12,7 @@ In the world of software development, testing plays a vital role in ensuring the
 Test Doubles, also known as Test Fakes or Test Stubs, are powerful techniques used to create substitutes for collaborating objects in our tests. These substitutes allow us to control the behavior of these dependencies, facilitating focused and reliable testing. In the context of Go programming, Test Doubles provide a way to enhance the effectiveness of our unit tests and improve the overall quality of our software.
 
 ### The five types of Test Doubles are:
-![https://jesusvalerareales.com/images/2020-06-11/2.png](https://jesusvalerareales.com/images/2020-06-11/2.png)
+![](assets/test-doubles_2.webp)
 
 - **Dummy**: It is used as a placeholder when an argument needs to be filled in.
 - **Stub**: It provides fake data to the SUT (System Under Test).

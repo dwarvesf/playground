@@ -8,7 +8,7 @@ date: 2022-09-10
 ## What is DiSC?
 DiSC is an acronym that stands for the four main personality profiles described in the DiSC model: (D)ominance, (i)nfluence, (S)teadiness and (C)onscientiousness.
 
-![](assets/disc-personality-types-in-team-work_communication-disc-personality-types.png)
+![](assets/disc-personality-types-in-team-work_communication-disc-personality-types.webp)
 
 ## About each personality type
 ### D = Dominance (RED)
@@ -89,11 +89,11 @@ _Keywords: Prefer to keep others at a distance, either stand or sit, often have 
 - Because of the steadiness and passive of Green, Red will find that working with Green will be pretty hard as they don’t see Green actively working toward their direction
 - Blue will finds that Yellow is too day dreaming, not base on logic and facts.
 
-![](assets/disc-personality-types-in-team-work_communication-disc-personality-types-2.png)
+![](assets/disc-personality-types-in-team-work_communication-disc-personality-types-2.webp)
 
 But after all, as a team:
 
-![](assets/disc-personality-types-in-team-work_communication-disc-personality-types-3.png)
+![](assets/disc-personality-types-in-team-work_communication-disc-personality-types-3.webp)
 
 ## Original source
 https://www.notion.so/huytieu/DiSC-Personality-Types-in-team-work-ee16782a9c2f4d5abf313a268af5acef

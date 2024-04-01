@@ -18,7 +18,7 @@ Consists in three steps:
 3. Optimize a policy against the reward model using reinforcement learning: A proximal policy optimization (PPO) algorithm is used to generate a new model from the fine-tuned model. The reward model obtained in the previous step is used to optimize the PPO, resulting in an RL model that is better at following instructions. This step is called "RL training"
 
 ### Open Assistant RLHF flow
-![](assets/rlhf-with-open-assistant_oa-rlhf-flow.png)
+![](assets/rlhf-with-open-assistant_oa-rlhf-flow.webp)
 
 ## Recommended cloud provider:
 One of the cloud providers we used to implement our RLHF flow is Redmond. Redmond.ai is a cloud computing service provider that specializes in offering accelerated cloud computing solutions for artificial intelligence (AI) and machine learning (ML) applications.

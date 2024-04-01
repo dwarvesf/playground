@@ -10,7 +10,7 @@ It's quite fascinating to see the increasingly pivotal role that Large Language 
 
 The ingenuity of this approach rests on the use of semantic vector databases, capitalizing on the semantic correlations among queries. To put it in practical terms, when an LLM processes a query and gives an answer, the response is stored away or 'cached' for potential use in the future. Should a subsequent query share semantic similarities with an earlier one, the system can simply pull out the cached answer, eliminating the necessity for additional, laborious computations.
 
-![](assets/llm-query-caching.png)
+![](assets/llm-query-caching.webp)
 
 To picture this in a real-life context, imagine an e-commerce scenario. When a customer asks an AI assistant, "What are the store's operating hours?", the AI's response gets cached. Later, if another customer poses a semantically similar question like "When does the store open and close?", the system uses the cached answer, sidestepping another processing cycle. The effectiveness of this method in reducing computational time and resources is impressive.
 

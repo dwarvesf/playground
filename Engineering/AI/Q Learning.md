@@ -10,10 +10,10 @@ Q-learning is a model-free reinforcement learning algorithm used to learn an opt
 
 Q-learning has applications in various domains, including autonomous robotics, traffic signal control, resource management, and more. The core idea behind Q-learning is to iteratively update the Q-values based on the agent's experiences. The agent explores the environment, takes actions, and receives rewards. With each interaction, the Q-values are updated using a formula that incorporates the reward received, the maximum Q-value of the next state, and a learning rate.
 
-![](assets/q-learning-demo.jpg)
+![](assets/q-learning-demo.webp)
 
 ## Main components
-![](assets/q-learning_reinforcement-learning-architecture.png)
+![](assets/q-learning_reinforcement-learning-architecture.webp)
 
 - **Agent**: The entity that interacts with the environment and learns from it.
 - **Environment**: The external environment in which the agent operates and receives feedback.

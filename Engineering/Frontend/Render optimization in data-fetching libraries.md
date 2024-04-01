@@ -12,7 +12,7 @@ Let's dive in how it works.
 ## Deduplication
 Data-fetching libraries typically use caching strategies to reduce the number of network requests that need to be made, and improve the performance of the application. By using a unique key as the identifier and stale-while-revalidate as cache validation, the library will return responses from cached data or make a network request.
 
-![](assets/render-optimization-in-data-fetching-libraries_render-optimization-in-data-fetching-1.png)
+![](assets/render-optimization-in-data-fetching-libraries_render-optimization-in-data-fetching-1.webp)
 
 ## Data selection
 Everytime a request is sent, the corresponding components will be updated by 3 very common stateful values:

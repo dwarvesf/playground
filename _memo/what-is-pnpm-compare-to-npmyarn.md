@@ -37,7 +37,7 @@ Supposing you have 10 Node.js projects on your personal computer if you use NPM/
 
 If you use PNPM, things will be different. It introduces a new concept to us, called a *content-addressable store*. See the image below:
 
-![](assets/what-is-pnpm-compare-to-npmyarn_949760adee1b7a897e0b53044b7b0a89_md5.jpeg)
+![](assets/what-is-pnpm-compare-to-npmyarn_949760adee1b7a897e0b53044b7b0a89_md5.webp)
 
 As you can see, PNPM does not store packages in the `node_modules` folder, but rather in the content-addressable store. Therefore, in the `node_modules` folders of projects using PNPM, the packages are *linked* from the global store.
 
@@ -50,11 +50,11 @@ PNPM performs installation in three stages:
 1. Directory structure calculation: determining the layout of the `node_modules` directory based on these dependencies.
 1. Linking dependencies: retrieving and establishing hard links from the store to `node_modules` for all remaining dependencies.
 
-![](assets/what-is-pnpm-compare-to-npmyarn_4cde4958507a5ac4d8e7d614175b57de_md5.jpeg)
+![](assets/what-is-pnpm-compare-to-npmyarn_4cde4958507a5ac4d8e7d614175b57de_md5.webp)
 
 This approach is significantly faster than the conventional method of identifying, obtaining, and saving all dependencies directly to the `node_modules` directory.
 
-![](assets/what-is-pnpm-compare-to-npmyarn_acaaed15e34c391a1ff6b81bbbf6163f_md5.jpeg)
+![](assets/what-is-pnpm-compare-to-npmyarn_acaaed15e34c391a1ff6b81bbbf6163f_md5.webp)
 
 ### **Creating a non-flat node_modules directory****[](https://pnpm.io/motivation#creating-a-non-flat-node_modules-directory)**
 First of all, we must ask why NPM chooses the flat `node_modules` structure approach.

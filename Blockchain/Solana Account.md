@@ -36,7 +36,7 @@ Technically, the Programs are special kinds of Accounts marked as `executable` w
 
 For example, if you create a counter program that lets you increment a counter, you must create two accounts, one account (account A) to store the program's code (`executable = true`), and one (account B) to store the counter value and account A must be the owner of account B.
 
-![](assets/solana-account_account_example.5b70d95a.jpeg.jpg)
+![](assets/solana-account_account_example.5b70d95a.jpeg.webp)
 
 ## Rent
 - Storing data on accounts costs SOL to maintain, and it is funded by what is called `rent`.

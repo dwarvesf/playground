@@ -31,10 +31,10 @@ Update test cases for feature about the payment flow, through 4 p​​ages, inc
 When it comes through the high level business flow, the user selects the product from **the seller details public page**. After selecting successfully, the **Payment page** displays. After submit, the product’s number will update accordingly in **Seller product’s management** ( logged in as a seller), also the **Admin transaction's management**( when logged in as an admin).
 
 - Flow:
-  ![](assets/test-cases-breakdown-structure_tc-breakdow-flow.png)
+  ![](assets/test-cases-breakdown-structure_tc-breakdow-flow.webp)
 
 - The test cases structure:
-  ![](assets/test-cases-breakdown-structure_tc-breakdow-structure.png)
+  ![](assets/test-cases-breakdown-structure_tc-breakdow-structure.webp)
 
 ## Reference
 - [Usage Of Heuristics And Mnemonics In Software Testing](https://testmatick.com/usage-of-heuristics-and-mnemonics-in-software-testing/)

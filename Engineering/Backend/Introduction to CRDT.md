@@ -18,7 +18,7 @@ icy: 10
 ## What is CRDT?
 Conflict-free Replicated Data Types (CRDTs) (aka convergent replicated data type or commutative replicated data type) are data structures that can be replicated across multiple computers in a network, where the replicas can be updated independently and concurrently without coordination between them, and enable operations to always converge to a final state consistent among all replicas.
 
-![](assets/introduction-to-crdt_b41416acdcc17fd248cefbd2f333fb6e_md5.jpg)
+![](assets/introduction-to-crdt_b41416acdcc17fd248cefbd2f333fb6e_md5.webp)
 
 ## Why CRDT?
 ### Addressing Data Modification Dilemma

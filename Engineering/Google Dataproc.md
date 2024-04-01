@@ -157,7 +157,7 @@ Wait for the job status change to succeeded (or failed):
 
 And that is how you run a Spark ( or Hadoop) job on Google Cloud Dataproc.
 Full video step by step:
-![](assets/google-dataproc_830c086903ad2dcaf7bdece0af8e3647_md5.mp4)
+![](assets/google-dataproc_830c086903ad2dcaf7bdece0af8e3647_md5_compressed.mp4)
 
 ---
 <!-- cta -->

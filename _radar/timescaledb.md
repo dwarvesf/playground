@@ -47,6 +47,6 @@ TimescaleDB is the open-source extension for PostgreSQL for time-series and anal
 
 * (2022-04-20) - **[Trial]** (Quang, Tom) Created production, staging, and development TimescaleDB databases for project MStation
 
-![](assets/timescaledb_5bf9a458b29d51da3cce200cef53df31_md5.jpg)
+![](assets/timescaledb_5bf9a458b29d51da3cce200cef53df31_md5.webp)
 
 * (2021-12-13) - **[Assess]** (Tom) First proposal to project LFW for using TimescaleDB
