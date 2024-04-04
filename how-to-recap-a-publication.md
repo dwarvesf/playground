@@ -8,7 +8,7 @@ date: 2024-03-27
 description: Recapping a publication is the work of summarizing its key points, analyzing why it matters, and providing insights or opinions on its content. At Dwarves, we follow a set of must-dos and set expectations for recapping a publication, to ensure we have a clear and insightful summary that can contribute to readers' understanding of the topic.
 authors:
   - nikki
-menu: memo
+menu: playground
 type: 
 hide_frontmatter: false
 hiring: false
