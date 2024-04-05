@@ -22,6 +22,7 @@ We follow the [Zettelkasten Method](https://www.google.com/url?sa=t&rct=j&q=&esr
 
 Fleeting notes can be personal to each team members, or can be shared through our Playground. When we need to craft a piece of content for a certain topic, we can just pull up related fleeting notes to start.
 
+![](assets/lifecycle-of-a-publication-20240329170011754.webp)
 
 ## Know our audience and objectives
 This step guides everything we do next. Before we start, think about who will read our work and what we want them to get from it. Here we can apply a simplified version of the [Virtuous Cycle](https://fourweekmba.com/virtuous-cycle/) to define our audience and objectives.
@@ -31,7 +32,7 @@ This step guides everything we do next. Before we start, think about who will re
 - What should we write to answer to what they want?
 - How should we write (tone, voice, word choices)?
 
-![](assets/lifecycle-of-a-publication-20240329170011754.webp)
+![](assets/lifecycle-of-a-publication-20240329170000789.webp)
 
 ## Create content
 Once we have in mind how we should shape our content:
@@ -42,8 +43,6 @@ Once we have in mind how we should shape our content:
 - Get reviewed: once we have a draft, submit it as a screenshot to our supervisor/manager for feeback for both content and visual.
 - Check and fix: go over our work carefully, several times to fix any errors and make sure it's clear and correct. Come back to our audience and objectives to check if what we write actually meet the brief.
 - Get approval: our supervior/manager needs to sign off on the work before we move forward.
-
-![](assets/lifecycle-of-a-publication-20240329170000789.webp)
 
 ## Publish content
 Once our work is approved, we have a **literature note** ready for sharing with others. Most written content goes through 5 stages:
