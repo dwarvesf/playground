@@ -6,8 +6,9 @@ tags:
 title: Design less, present more with Deckset
 date: 2024-04-05
 description: null
-authors: null
-menu: memo
+authors: 
+  - anna
+menu: playground
 type: null
 hide_frontmatter: false
 ---
