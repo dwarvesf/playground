@@ -11,7 +11,6 @@ authors:
 menu: playground
 type: 
 hide_frontmatter: false
-hiring: false
 ---
 
 Following the core theme of MMA (Mastery, Meaning, Autonomy), every piece of content we put out requires a strategic approach, so it can cut through the noise, serve purposes and meanings to readers. 

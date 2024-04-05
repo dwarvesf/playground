@@ -11,7 +11,6 @@ authors:
 menu: playground
 type: 
 hide_frontmatter: false
-hiring: false
 ---
 
 Recapping a publication is the work of summarizing its key points, analyzing why it matters, and providing insights or opinions on its content. 
