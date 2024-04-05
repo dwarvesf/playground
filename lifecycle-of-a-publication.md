@@ -31,6 +31,8 @@ This step guides everything we do next. Before we start, think about who will re
 - What should we write to answer to what they want?
 - How should we write (tone, voice, word choices)?
 
+![](assets/lifecycle-of-a-publication-20240329170011754.webp)
+
 ## Create content
 Once we have in mind how we should shape our content:
 - Research: dig deep into the topic by pulling up our fleeting notes, we might need to research further to enhance the quality of our content.
@@ -41,6 +43,8 @@ Once we have in mind how we should shape our content:
 - Check and fix: go over our work carefully, several times to fix any errors and make sure it's clear and correct. Come back to our audience and objectives to check if what we write actually meet the brief.
 - Get approval: our supervior/manager needs to sign off on the work before we move forward.
 
+![](assets/lifecycle-of-a-publication-20240329170000789.webp)
+
 ## Publish content
 Once our work is approved, we have a **literature note** ready for sharing with others. Most written content goes through 5 stages:
 - [**Internal recap**](how-to-recap-a-publication.md) within the communications team, so everyone understand it the same way, and can answer to any question readers have.
@@ -48,10 +52,6 @@ Once our work is approved, we have a **literature note** ready for sharing with 
 - Summary as slides, so we have training materials for everyone who's interested in the topic.
 - Workshop, tech event or radio talk with related experts/organizations to widen perspectives on the topic.
 - Social and newsletter promotion (optional).
-
-![](assets/lifecycle-of-a-publication-20240329170011754.webp)
-
-![](assets/lifecycle-of-a-publication-20240329170000789.webp)
 
 ![](assets/lifecycle-of-a-publication_pasted-image-20240404170305.webp)
 ## Talk to our audience
