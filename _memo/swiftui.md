@@ -100,11 +100,11 @@ These are the steps for SwiftUI to layout our UI.
 
 First, the root view offers the text a proposed size – in this case, the entire safe area of the screen, represented by an orange rectangle.
 
-1. **Child Chooses its Size**
+2. **Child Chooses its Size**
 
 Text only requires that much size to draw its content. The parent has to respect the child's choice. It doesn't stretch or compress the child.
 
-1. **Parent Places Child in Parent’s Coordinate Space**
+3. **Parent Places Child in Parent’s Coordinate Space**
 
 And now the root view has to put the child somewhere, so it puts in right in the middle.
 
@@ -132,9 +132,7 @@ struct SwiftUIView: View {
 There are 3 steps to process the above layout.
 
 1. Calculate space for child view after subtracting internal spacing.
-
 2. Divide the remaining space left equally, and propose available size for their child.
-
 3. All children have sizes. The stack lines them up with the spacing and aligns them according to the specified alignment.
 
 ### The State Management

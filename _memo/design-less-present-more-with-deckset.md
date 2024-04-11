@@ -20,8 +20,8 @@ Imagine being able to focus entirely on your message without having to worry abo
 
 I’ve also uploaded two resources which you may find helpful:
 
-- Deckset Documentation to learn more syntax for formatting text: https://docs.deckset.com/English.lproj/getting-started.html
-- The Deckset Guideline of DF: https://drive.google.com/drive/folders/1bakuk7-BRTaOlqVu5Jbk_QRbR42Ym2g6?usp=drive_link
+- [Deckset Documentation](https://docs.deckset.com/English.lproj/getting-started.html) to learn more syntax for formatting text.
+- [The Deckset Guideline](https://drive.google.com/drive/folders/1bakuk7-BRTaOlqVu5Jbk_QRbR42Ym2g6?usp=drive_link) to apply the theme that you can use to adapt your Deckset to DF's branding.
 
 So let’s get started.
 
@@ -51,20 +51,20 @@ Here's the cool part: you get a tiny Deckset preview window floating beside you 
 Deckset also provides a variety of tools to add content to your slides, including:
 
 **Images:** 
-```bash
-    # ![inline/left/right 100%] (image.png)
+```plain-text
+![inline/left/right 100%] (image.png)
 ```
 **Videos/Audio** 
-```bash
-    # ![] (video.mov)
-    # ![] (audio.mp3)
+```plain-text
+![] (video.mov)
+![] (audio.mp3)
 ```
 **Code block:** 
-```bash
-    ```javascript
-    $.ajax({
-    url: "/api/getWeather",
-    data: {
+````javascript
+```javascript
+$.ajax({
+  url: "/api/getWeather",
+  data: {
     zipcode: 97201
   },
   success: function( data ) {
@@ -72,12 +72,13 @@ Deckset also provides a variety of tools to add content to your slides, includin
   }
 });
 ```
+````
 **Table:** 
-```bash
-    | Header 1 | Header 2 | Header 3 |
-    | --- | --- | --- |
-    | Cell 1 | Cell 2 | Cell 3 |
-    | Cell 4 | Cell 5 | Cell 6 |
+```plain-text
+| Header 1 | Header 2 | Header 3 |
+| --- | --- | --- |
+| Cell 1 | Cell 2 | Cell 3 |
+| Cell 4 | Cell 5 | Cell 6 |
 ```
 **Custom theming** 
 
@@ -85,7 +86,7 @@ You can customize the formatting of your content using the tools on the toolbar.
 
 ![](assets/design-less-present-more-with-deckset._design-less-present-more-with-deckset_image2.webp)
 
-## Presenting your presentation
+## Present your presentation
 
 When you're ready to present, simply click **Play** or **Rehearse** on the toolbar. Deckset will switch to full screen and you can navigate between slides using the arrow buttons or keyboard shortcuts.
 

@@ -1,6 +1,6 @@
 ---
 tags: 
-  - react.js
+  - engineering
 title: Split And Reuse Code In React Application
 date: 2019-05-02
 description: null

@@ -11,9 +11,6 @@ menu: memo
 type: null
 hide_frontmatter: false
 ---
-
-****
-
 <!-- table_of_contents a2f93f20-d45e-4906-92a7-66296b684356 -->
 
 I had my fair share of interviews. Most of them are "traditional" QnA sessions, and unpaid take-home projects, and coding assessments. Dwarves's paid project is different and left a good impression on me.

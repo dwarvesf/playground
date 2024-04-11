@@ -1,6 +1,6 @@
 ---
 tags: 
-  - react.js
+  - engineering
 title: Setup React Project With Webpack And Babel
 date: 2019-05-02
 description: null
