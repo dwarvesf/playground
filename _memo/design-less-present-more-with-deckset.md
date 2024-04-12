@@ -18,10 +18,11 @@ My search for a simpler, more efficient solution led me to Deckset, a Markdown-b
 
 Imagine being able to focus entirely on your message without having to worry about complex design tools. Deckset is my "savior" that has freed me from the burden of slide design, allowing me to dedicate all my time and energy to creating quality content.
 
-I’ve also uploaded two resources which you may find helpful:
+I’ve also uploaded three resources which you may find helpful:
 
 - [Deckset Documentation](https://docs.deckset.com/English.lproj/getting-started.html) to learn more syntax for formatting text.
 - [The Deckset Guideline](https://drive.google.com/drive/folders/1bakuk7-BRTaOlqVu5Jbk_QRbR42Ym2g6?usp=drive_link) to apply the theme that you can use to adapt your Deckset to DF's branding.
+- [Download IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans) to set up the font used in the DF theme on your Mac.
 
 So let’s get started.
 
