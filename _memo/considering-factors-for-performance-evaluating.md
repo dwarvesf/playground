@@ -16,17 +16,12 @@ hide_frontmatter: false
 * False negatives: people who you thought would not fit your values, but would have if you had hired them
 
 If you get some false positives anyway, the solution is to fire quickly. To follow the "No Asshole Rule", we need to strictly apply this despite the common excuses: 
-
 * for that one bad trait, he has four good traits going for him.
 * [data scientists/engineers/product managers] are hard to replace, so we’ll make do.
 * We’ve decided that we’re not going to fire him because he’s a high performer.
 
 Other excuses we made:
-
-* For ineffective employee
-
-We rationalize this behavior with “lies we tell ourselves.” Here are a few lies people use to keep an ineffective employee:
-
+For ineffective employee, we rationalize this behavior with “lies we tell ourselves.” Here are a few lies people use to keep an ineffective employee:
 * He is trying really hard.
 * She deserves another chance.
 * People really like her.

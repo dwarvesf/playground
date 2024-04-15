@@ -43,21 +43,17 @@ Ledger is the sequenced, tamper-resistant record of all state transactions in th
 
 ### Permissioned Vs Permissionless
 **Similarities**
-
 Both are unalterable digitally signed ledgers which are distributed through peer-to-peer network Both maintain ledgers which are updated through a protocol named as consensus. Both claim to maintain an immutable ledger
 
 **Differences**
-
 1. Permissioned
-
 * Varying decentralization: members of the blockchain network are free to negotiate and come to a decision concerning the level of decentralization that the network will have
 * Close: consortia members have the ability to restrict access. Not required to be transparent, members can choose to do so freely, depending on the inner organization of the businesses.
 * Clean Governance structure: governance is decided by members of the business network. Decisions are made on a central level, where the entirety of the network must agree to a change
 
-=> More control on the central level, more private -> use for B2B business models
+→ More control on the central level, more private -> use for B2B business models
 
 2. Permissionless
-
 * Decentralized: no central entity has the authority to edit the ledger, shut down the network or change protocols.
 * Open: anyone can access, participate in the validation process
 * Public: anything running is verifiable on the networks by everybody, running full nodes, store full history of all transactions
@@ -74,27 +70,21 @@ Is a collection of internet technologies that provides secure communications in 
 
 Base on the properties of a peer, cryptography constructing a pair of public and private key(prevent reading messages by third parties), Certificate Authority(CA) is an entity that issues this digital certificates, allows relying parties to rely upon signatures or on assertions made about the private key that corresponds to the certified public key. So that, any message passing to a peer can only be read by this peer.
 
-**Root CAs**: CAs as root
-
-**Intermediate CAs**: issued by root CA.
-
-**Fabric CA**: is a private root CA provider capable of managing digital identities if Fabric participants.
-
-**Certificate Revocation List(CRL)**: a list of references to certificates that a CA knows to be revoked.
+* **Root CAs**: CAs as root
+* **Intermediate CAs**: issued by root CA.
+* **Fabric CA**: is a private root CA provider capable of managing digital identities if Fabric participants.
+* **Certificate Revocation List(CRL)**: a list of references to certificates that a CA knows to be revoked.
 
 ![](assets/fabric-hyperledger-architecture-explanation_acecde099998e363519533076028fb4e_md5.webp)
 
 ### MSP (Membership Service Provider)
 Identifies which Root CAs and Intermediate CAs are trusted to define the members of a trust domain. Also identify specific roles an actor might play either within the scope of the organization the MSP represents, defining access privileges in the context of a network and channel.
 
-**Organizational Unit**: is a managed group of members(multinational corporation, flower shop) under a single MSP.
-
-**Local MSPs**: hold Root CAs of an Organization, authenticate at organization level(communications between peer, node). Only one local MSP per node or peer.
-
-**Channel MSPs**: hold Root CAs of connected Organization through channel to identify each other, there will be a local copy of channel MSP in each node or peer.
+* **Organizational Unit**: is a managed group of members(multinational corporation, flower shop) under a single MSP.
+* **Local MSPs**: hold Root CAs of an Organization, authenticate at organization level(communications between peer, node). Only one local MSP per node or peer.
+* **Channel MSPs**: hold Root CAs of connected Organization through channel to identify each other, there will be a local copy of channel MSP in each node or peer.
 
 **MSP level**
-
 * Network MSP: defines who are the members in the network by defining the MSPs of the participants organization.
 * Channel MSP: provides private communications between a particular set of organizations.
 * Peer MSP: is a local MSP provides private communications between peer belong to an Organization.

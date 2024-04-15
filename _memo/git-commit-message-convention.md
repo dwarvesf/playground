@@ -22,13 +22,11 @@ The blog post states out what a typical git commit message looks like
 ```
 
 in which
-
 * type: stands for the main action
 * scope: stands for the codebase section
 * subject: short description on the commit
 
 and
-
 * `type` should follow some key actions: such as `build`,
 * `chore`, `feat`, `fix`, `refactor`, ...etc.; while `scope`
 * `subject` are optional.
@@ -66,7 +64,6 @@ Examples for 2 scenarios:
 * subject: upgrade tailwind and twin.macro
 
 **Which leads me to our current state**
-
 We have a playbook - our guides on getting things done. Here's the old flow we have on git commit message.
 
 ![](assets/git-commit-message-convention_822a84298b02559d0d1224f7aa82e039_md5.webp)

@@ -27,23 +27,23 @@ But overall, the process should be really the same (or at least, the mental thou
 
 In our ideal setup, the full process should be:
 
-### 1. Linting
+### Linting
 Make sure we have the same set of coding rules, formatter. The feedback will be provided automatically to the authors.
 
-### 2. Testing
+### Testing
 Needless to say, this one make sure we don't mess up and set a ground where things can't go south.
 
-### 3. Previewing
+### Previewing
 This one is interesting. We don't want the reviewers to pull the branch and test locally because it takes forever, and we are a lazy piece of crap.
 
 For frontend-ers, we set up a preview page to see and test the changes before merging it. Easily set up with Netlify or Vercel, the Pull Request will automatically bind with the URL.
 
 It is a bit more complicated when it comes to the system level. We have to mimic the servers, database, and other stuff to preview it.
 
-### 4. Building
+### Building
 When things look right, we hit the merge button. This action will build a Docker image of a new codebase and put it in the container registry. We use Google Container Registry by default, Dockerhub for any experiments, and recently Amazon Elastic Container Registry.
 
-### 5. Deploying
+### Deploying
 When we have all the green lights, we pull the image from the Registry in our previous step into our Kubernetes cluster - a.k.a, where we run the servers.
 
 ## Test stack
@@ -53,7 +53,7 @@ When we have all the green lights, we pull the image from the Registry in our pr
 ### Simplify
 We believe that setting up CI/CD is everyone's job. It should be a culture, not a DevOps thingy. Things should be simple, the process needs to be well-defined, we seek for tools that help us remove some of the obstacles.
 
-A year ago, if we want to build an image inside a CI environment, we must know about Docker-in-Docker concept or mount the socket port. That's crazy, if you think about it because all we need to do is run a `docker build` and `docker push`. Then we found **[kaniko](https://github.com/GoogleContainerTools/kaniko)**, a tool to build and push docker image without installing docker engine into our builder image.
+A year ago, if we want to build an image inside a CI environment, we must know about Docker-in-Docker concept or mount the socket port. That's crazy, if you think about it because all we need to do is run a `docker build` and `docker push`. Then we found [kaniko](https://github.com/GoogleContainerTools/kaniko), a tool to build and push docker image without installing docker engine into our builder image.
 
 Seeking for simplicity is a must in everything we do; setting up CI should be a 30-minute job instead of a long day waiting for Quang to come for the rescue.
 
@@ -61,7 +61,6 @@ Seeking for simplicity is a must in everything we do; setting up CI should be a 
 We want to do it for a long time. Imagine that all our code can adequately test, instant feedback will be provided to the author before any review. It guarantees that no matter what happens in the Pull Request, our application does not produce any regression bug or, worse, bring the whole application down.
 
 It is a nice thing to do, but we’re still far from easily integrating that into our CI, since:
-
 * The Automation Testing Framework sometimes does not reproducible.
 * It takes too long to run a full set of tests; we don't want to get to the phase that we spend 1 hour for a typo change.
 * We haven’t found a way to properly set it up in our workflow.

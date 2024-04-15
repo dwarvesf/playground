@@ -188,7 +188,7 @@ An important feature of marathon-lb is support for virtual hosts. This allows yo
 To do so, we need to do 2 things:
 
 1. Point your domain to public node which in running `marathon-lb`
-1. Add this config to marathon JSON configuration file:
+2. Add this config to marathon JSON configuration file:
 
 ```plain_text
   "HAPROXY_0_VHOST":"nginx.dwarvesf.com"
@@ -230,7 +230,7 @@ So, your configuration file will be like this:
 }
 ```
 
-1. Deploy it and let’s check `nginx.dwarvesf.com`
+3. Deploy it and let’s check `nginx.dwarvesf.com`
 
 ![](assets/dcos-series-part-3---service-discovery-and-load-balancing_93c6fdb9cee529cbeb2a4141d910bb8f_md5.webp)
 

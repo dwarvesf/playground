@@ -15,7 +15,7 @@ There is an issue that every team will inevitably bump into. Newbies might get c
 
 That happens in a long-term project, and that's fine. We believe we're not the only one who gets that, so we'd like to gather you all and tackle this today by a practice called Architecture Decision Record (ADR)
 
-### So the main list item would be
+## So the main list item would be
 * Why ADR?
 * What it contains
 * Demo of ADR and example
@@ -33,44 +33,40 @@ Take the currency as an example. Most people don't get why the government switch
 
 ADR helps provide a context of architecture, explaining why the previous PIC decided to make a move on it, with two main focuses: Context and Consequences
 
-### A kit of ADR
+## A kit of ADR
 * Architecture decision (AD): A software design choice to adjust the architecture.
 * Architecture decision log (ADL): A series of files that logs our decision through different versions. ADL helps to remind what the previous decision was to make the next one better
 * Requirement: the necessary condition for that architecture
 
-### How to write an ADR
+## How to write an ADR
 1. First, the decision must be brought up. This part is called AD, and that comes with two questions
-
 * with the current system, does this decision crucial and matter enough?
-* does this need to be done immediately?
-* → should we make the decision
+* does this need to be done immediately? → should we make the decision
+2. Decision making -> Finalized the decision
+3. Implement that decision with the system and have all the related-parties aware The decision must be agreed by many parties (stakeholder, business, design, dev)
 
-1. Decision making -> Finalized the decision
-1. Implement that decision with the system and have all the related-parties aware The decision must be agreed by many parties (stakeholder, business, design, dev)
-
-### Note down the ADR
+## Note down the ADR
 ADR can be in different ways. After full observation, we have selected the most simple yet combined mutual from all of them. In general, an ADR is made out of three components:
 
 1. Context: the environment and situation that leads to the decision, the current business requirement, the problem, and the constraint.
-1. Solution: the selected option that outweighs the others, explain its pros and cons
-1. Consequences: the impact of that decision, describe how that decision change the system or any change log to note down
+2. Solution: the selected option that outweighs the others, explain its pros and cons
+3. Consequences: the impact of that decision, describe how that decision change the system or any change log to note down
 
-### Good ADR
+## Good ADR
 * Point in Time: must be stated clearly
 * Rationality: explain the reason behind that decision
 * Immutable Record: the decision is finalized and cannot be altered
 * Specificity: and ADR should only be about *one* decision only
 
-### Good Context
+## Good Context
 Provide the ADR with the current system and business context.
 This helps drive the broader view and the business situation at that time.
 
-### Good Consequences
+## Good Consequences
 The right approach explains the result from making that decision and how it adjusts the current business status.
 
-### Template of an ADR
-**Alexandrian Pattern**
-
+## Template of an ADR
+### Alexandrian Pattern
 * Prologue (a summary)
 * Discussion (Context)
 * Solution

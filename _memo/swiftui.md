@@ -13,7 +13,7 @@ hide_frontmatter: false
 Introduces by Apple in WWDC 2019, Swift UI impressed the technophiles with its convenience, as Apple aimed to help developers conduct code easier and spend more time working on other modified functions. This blog outlines my opinion about SwiftUI, such as how to layout views, handle user input, making a custom view, making a cross Apple platform apps, underlying architecture, integrate with UIKit (the old Apple UI framework). It won't be expanded on an advanced level like fancy animation or proposing any best architecture we should follow. No. Just the basic ones.
 
 # Definition
-[SwiftUI](https://github.com/dwarvesf/techradar/tree/master/SwiftUI) is a UI framework that lets developers create apps in a declarative way, *and it also supports multiple Apple platforms (iOS, iPadOS, macOS, watchOS, tvOS), or I can say “farewell UIKit, AppKit, and WatchKit“****.*** There are minimal code changes when we need to create an app for multiple platforms, as a lot of the same components on SwiftUI can be reused.
+[SwiftUI](https://github.com/dwarvesf/techradar/tree/master/SwiftUI) is a UI framework that lets developers create apps in a declarative way, *and it also supports multiple Apple platforms (iOS, iPadOS, macOS, watchOS, tvOS), or I can say “farewell UIKit, AppKit, and WatchKit“*. There are minimal code changes when we need to create an app for multiple platforms, as a lot of the same components on SwiftUI can be reused.
 
 SwiftUI came with two companions, which I believe will be the game changers and help developers a lot.
 
@@ -100,11 +100,11 @@ These are the steps for SwiftUI to layout our UI.
 
 First, the root view offers the text a proposed size – in this case, the entire safe area of the screen, represented by an orange rectangle.
 
-1. **Child Chooses its Size**
+2. **Child Chooses its Size**
 
 Text only requires that much size to draw its content. The parent has to respect the child's choice. It doesn't stretch or compress the child.
 
-1. **Parent Places Child in Parent’s Coordinate Space**
+3. **Parent Places Child in Parent’s Coordinate Space**
 
 And now the root view has to put the child somewhere, so it puts in right in the middle.
 
@@ -304,25 +304,25 @@ SwiftUI already has an Environment populated with system-wide settings. We can e
 
 As soon as Locale, Calendar, or ColorScheme of the system change, SwiftUI recreates our CalendarView.
 
-## **However**
+## However
 Besides the advanced features for UI processing, SwiftUI still has some downside.
 
-### **Limited API Coverage**
+### Limited API Coverage
 SwiftUI does not currently have the same broad API coverage as UIKit. For example, if you want to show items in a grid, you would use UICollectionView in UIKit, but SwiftUI has no equivalent.
 
-### **Limited Adoption**
+### Limited Adoption
 SwiftUI was only announced at WWDC2019, and is available in iOS 13 devices or later. This immediately means that:
 
 * Almost every app written to date uses UIKit.
 * Any app that needs to support iOS n-1 or n-2 (e.g. iOS 12 and iOS 11) cannot even begin to switch to SwiftUI for a year or more.
 
-### **Limited Support**
+### Limited Support
 UIKit has been around over ten years now, which means:
 
 * Almost every problem you might face has probably already been faced and solved by others
 * There are lots of libraries out there that provide extensions and customizations.
 
-### **Default Behavior**
+### Default Behavior
 There are many things Apple gives us by default. This will cause some confusion when we look at the code. Sometimes, I believe that explicit is better than implicit. The default padding in HStack is one example of this.
 
 NoneBashCSSCC#HTMLJavaJavaScriptJSONPHPPowershellPythonRubyTypeScriptCopy

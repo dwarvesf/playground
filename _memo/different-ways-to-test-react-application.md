@@ -35,7 +35,7 @@ The react-hooks-testing-library allows you to create a simple test harness for R
 
 To run integration tests for the application in the repository above, you can run the command:
 
-* yarn test — This command will execute all unit test for the carousel component.
+`yarn test` — This command will execute all unit test for the carousel component.
 
 To test React component using react-testing-utility, we mount it with the render function exposed by the library @testing-library/react. Then we use object spread notation to extract utility functions such as getById, getByText… etc.
 
@@ -71,18 +71,13 @@ Different when compare to enzyme, we can’t assert and access states of the fun
   }
 ```
 
-**Pros:**
-
-* Blazing fast
+**Pros:** Blazing fast
 
 **Cons:**
-
 * Some DOM limitations such as Observer, no layout engine…
 * Not support feature to assert component hook detail
 
-**Best use for:**
-
-* Test implement detail while developing. Assert state by exposing the state to the global object
+**Best use for:** Test implement detail while developing. Assert state by exposing the state to the global object
 
 ## Testing react using react-testing-hook-library
 Hook function not only allows us to use features of the class component inside the functional component, extract and reuse many repetitive logic patterns but also allow us to extract the logic belong specific domain of that component to an isolated part.
@@ -263,17 +258,12 @@ import useCarouseImageIndex from '../../components/Carousel/useCarouseSetImageIn
 ```
 
 **Pros:**
-
 * Same as react testing library
 * Since we could extract hooks to test it in an isolated environment, we don’t have to manually expose it to the global variable.
 
-**Cons:**
+**Cons:** Can only use for test hook of functional react component.
 
-* Can only use for test hook of functional react component.
-
-**Best use for:**
-
-* Test implement detail while developing.
+**Best use for:** Test implement detail while developing.
 
 ## E2e test using Cypress
 End-to-end testing is awesome because it mirrors the user’s experience. Where you might need a ton of unit tests to get good coverage (the kind where you test that a function returns a value you expect).

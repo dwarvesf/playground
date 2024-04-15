@@ -15,7 +15,6 @@ hide_frontmatter: false
 Before I talk about spacing principle, you should know how spacing important is with our design.
 
 In design have four main factors in such as:
-
 * Content
 * Graphic
 * Navigation

@@ -10,16 +10,14 @@ type: null
 hide_frontmatter: false
 ---
 
-## **Sprint "milestones"**
+## Sprint "milestones"
 Below listed are the rules for each step of the sprint lifecycle. ***No exceptions will be made for any of the points.***
 
-**Start of the sprint**
-
+### Start of the sprint
 * The sprint will start at the end of the sprint planning.
 * Before the start of the sprint planning, engineers will be focused on the same set of actions as on the Friday of the second week of the sprint. (See below)
 
-**End of the sprint**
-
+### End of the sprint
 * The sprint is automatically closed on the second Thursday of the sprint at **6:00 PM**
 * All the tickets that aren't closed will go back at the top of the backlog
 * After the end of the sprint the actions for the engineers will be:

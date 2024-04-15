@@ -72,19 +72,19 @@ It's worth noting that while popular libraries like **[Ant Design](https://ant.d
 
 One potential drawback of using TailwindCSS and HeadlessUI is the need to assemble and style components from scratch, which may seem time-consuming initially. However, by investing in creating reusable and customizable components tailored to our design requirements, we ensure a more consistent and maintainable codebase. Additionally, this approach allows us to retain full control over the appearance and behavior of our components, avoiding the need to override default styles provided by pre-built component libraries.
 
-## **Prioritizing Testing**
+## Prioritizing Testing
 A critical aspect of developing robust and reliable applications is implementing thorough testing. We understand the importance of a comprehensive testing strategy that covers every aspect of our frontend applications, from unit tests to integration tests and end-to-end tests.
 
-### **Jest**
+### Jest
 **[Jest](https://jestjs.io/)** is our preferred testing framework for writing and running JavaScript tests. This feature-rich framework offers a straightforward setup, clear and concise error messages, and fast execution. However, Jest's performance can sometimes degrade when testing large applications with a high number of tests. To mitigate this issue, we make use of Jest's built-in support for test parallelization and selective test runs, which allow us to execute tests more efficiently and reduce overall test execution time.
 
-### **React Testing Library**
+### React Testing Library
 When testing React components, we utilize the **[React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)**. This library encourages best practices by focusing on testing components based on how they are used by the end-user, rather than testing implementation details. With React Testing Library, our tests are more resilient to changes in the codebase, reducing the maintenance burden and ensuring that our applications function as intended from a user's perspective.
 
-### **Cypress**
+### Cypress
 For end-to-end testing, we rely on **[Cypress](https://www.cypress.io/)**, a powerful and user-friendly testing framework designed specifically for modern web applications. While Cypress excels in many areas, it currently supports only the Chromium-based browsers for end-to-end testing. However, given that the majority of users utilize Chromium-based browsers, and since Cypress tests closely simulate real-world user interactions, we believe that this limitation does not significantly impact our ability to deliver high-quality applications. Cypress enables us to write reliable, easy-to-debug tests that run directly in the browser, closely simulating real-world user interactions. This allows us to identify and resolve issues that might not be caught by unit and integration tests, ensuring a seamless and bug-free user experience.
 
-## **Conclusion**
+## Conclusion
 Our meticulously selected frontend tech stack enables Dwarves Foundation to keep pace with the technology industry's rapid advancements and the growing demand for cutting-edge frontend solutions. By harnessing the strengths of React, Next.js, React Context, TypeScript, SWR, React Hook Forms, TailwindCSS, and HeadlessUI, we can develop high-quality, scalable applications with remarkable speed. These technologies, combined with our multi-layered architecture and commitment to comprehensive testing with Jest, React Testing Library, and Cypress, allow us to build and deploy features quickly without sacrificing quality or stability.
 
 Ultimately, our robust tech stack, architecture, and testing practices contribute to our ability to stay ahead of the competition and deliver exceptional user experiences that meet the dynamic and challenging demands of today's technology landscape.

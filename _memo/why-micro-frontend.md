@@ -13,23 +13,15 @@ hide_frontmatter: false
 author: Mashiro
 ---
 
-# Micro-Frontend - What & Why?
+## Micro-Frontend - What & Why?
 ![](assets/why-micro-frontend_a5bf635d4856ea99f487589001781c71_md5.webp)
 
 As web applications become more complex and feature-rich, traditional frontend architectures such as monolithic will become harder to maintain, scale, and evolve. Micro-frontend is an emerging front-end architecture that aims to address these challenges by breaking down the front-end into small, independent and reusable modules.
 
 In this article, we will explore the concept of micro-frontend, its benefits, design principles, tools and technologies, implementation strategies, and challenges. By the end of this article, you will have a good understanding of what micro-frontend is and why it is important for modern front-end development.
 
-***Table of content:***
-
-1. *What is Micro-Frontend?*
-1. *Advantages of Micro-Frontend*
-1. *Design Principles*
-1. *Challenges & Considerations*
-1. *Conclusion*
-
 ## What is Micro-Frontend?
-**Micro-Frontend is an architectural pattern for frontend development that emphasizes breaking down the frontend into small, independent and self-contained modules**. 
+Micro-Frontend is an architectural pattern for frontend development that emphasizes breaking down the frontend into small, independent and self-contained modules. 
 
 Each module is responsible for a specific feature or functionality and can be developed, tested, and deployed independently. The modules can then be composed into a complete frontend application, similar to how microservices are composed into a complete backend application.
 
@@ -80,8 +72,6 @@ Micro-frontend allows greater autonomy and ownership as each micro-frontend is m
 
 It also helps address challenges related to legacy code by enabling teams to rebuild and replace individual micro-frontends without having to rebuild the entire application from scratch.
 
----
-
 Of course, while there are many advantages to using a micro-frontend architecture, there are also several challenges and considerations that must be taken into account.
 
 ## Challenges and Considerations
@@ -104,8 +94,6 @@ Coordinating communication between different micro-frontends can be challenging,
 
 ### Tooling and infrastructure
 Building and deploying micro-frontends often requires a different set of tools and infrastructure than traditional monolithic applications. This can involve implementing new build processes, deploying microservices, and managing complex deployment pipelines, which can require additional expertise and resources.
-
----
 
 So, knowing full well the pros and cons of micro-frontend architecture, how should we approach building one? Let’s move on to some design principles.
 

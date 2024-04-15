@@ -38,12 +38,11 @@ This part covers the fundamental theory of how blockchain works and gets applied
 ![](assets/applied-security-basis_7c1a02851e9358ad98e5876efefb7970_md5.webp)
 
 Blockchain uses blocks to store pieces of information. Each block is time-stamped and connected to the one generated before it generated time. There are three most popular feature that makes blockchain more secured:
-
 * Decentralization: Copy of the blockchain ledger are stored and updated on each node-computer in the network, meaning that there is no central authority to make decisions
 * Consensus: The ability of nodes agrees on the true state of the network to ensure that the rules of the system are being followed and all parties involved agree on the current network’s state.
 * Immutability: Immutable means that something is unchanging over time or unable to be changed.
 
 ## References
-* **[1] "SSH Reference - Unix Tutorial." ****[https://www.unixtutorial.org/reference/ssh](https://www.unixtutorial.org/reference/ssh)****. Accessed 30 Jul. 2020.**
-* **[2] "How Does SSL Work? | Entrust Datacard." ****[https://www.entrustdatacard.com/pages/ssl](https://www.entrustdatacard.com/pages/ssl)****. Accessed 30 Jul. 2020.**
-* **[3] "How does the blockchain work? • Infinity Economics Platform." ****[https://web.infinity-economics.org/how-does-the-blockchain-work/](https://web.infinity-economics.org/how-does-the-blockchain-work/)****. Accessed 30 Jul. 2020.**
+* **[1] "SSH Reference - Unix Tutorial."** [https://www.unixtutorial.org/reference/ssh](https://www.unixtutorial.org/reference/ssh). Accessed 30 Jul. 2020.
+* **[2] "How Does SSL Work? | Entrust Datacard."** [https://www.entrustdatacard.com/pages/ssl](https://www.entrustdatacard.com/pages/ssl). Accessed 30 Jul. 2020.
+* **[3] "How does the blockchain work? • Infinity Economics Platform."** [https://web.infinity-economics.org/how-does-the-blockchain-work/](https://web.infinity-economics.org/how-does-the-blockchain-work/)****. Accessed 30 Jul. 2020.

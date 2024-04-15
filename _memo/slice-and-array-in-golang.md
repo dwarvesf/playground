@@ -11,6 +11,13 @@ hide_frontmatter: false
 ---
 
 ### Array
+**TL;DR:**
+The different between array in Go and C:
+
+* Arrays are values. Assigning one array to another copies all the elements.
+* In particular, if you pass an array to a function, it will receive a copy of the array, not a pointer to it.
+* The size of an array is part of its type. The types [4]int and [5]int are distinct.
+
 In Go language, the terminology `Array` has a bit different from another language like C, JS, ... In Go, the `array has a fixed length and type `Take a look of array implementation in Go.
 
 ![](assets/slice-and-array-in-golang_a650b13e6028a391f8acdc858b08c372_md5.webp)
@@ -55,14 +62,6 @@ For representation for an array of [4]int in memory is for integer value laid ou
 ![](assets/slice-and-array-in-golang_8327bf995dd32badeef1e1d0eb4eeda5_md5.webp)
 
 So, in Go, the array is values. An array variable holds the entire array (not a pointer to the first element). Let's say the array is a struct ( but using index instead of named field). Because an array is not a pointer to the first element, so when we assign, pass an array to a function, it will make a copy of its content
-
-**TL;DR:**
-
-The different between array in Go and C:
-
-* Arrays are values. Assigning one array to another copies all the elements.
-* In particular, if you pass an array to a function, it will receive a copy of the array, not a pointer to it.
-* The size of an array is part of its type. The types [4]int and [5]int are distinct.
 
 ### Slice
 In Go code, we don't often see array because of its inflexible, slice - on the other hand - is everywhere. Slice is an abstraction built on top the array. Unlike the Array, Slice type has no specified length; you can declare a slice like an array but `without the count element`.
@@ -127,7 +126,7 @@ fmt.Println(len(a)) // 4
 fmt.Println(cap(a)) // 8
 ```
 
-# 2. Slice internal
+### Slice internal
 Let's take a look at `slice` implementation in Go.
 
 ```go
@@ -144,7 +143,7 @@ For example, if we create a slice by using make([]byte,5), the slice will be str
 
 A slice cannot be grown beyond its capacity. Attempting to do so will cause a runtime panic, just as when indexing outside the bounds of a slice or array. Similarly, slices cannot be re-sliced below zero to access earlier elements in the array.
 
-**So the question is, What if we **`**append**`** an element to a slice which has reached its capacity?**
+**So the question is, What if we `*append*` an element to a slice which has reached its capacity?**
 
 ### Append
 Let's dig into a source code (go/src/reflect/value)

@@ -11,12 +11,12 @@ type: null
 hide_frontmatter: false
 ---
 
-## 1. GENERAL WORKFLOW
+## General workflow
 Click on attached URL below to get more details about our general workflow:
 
 [https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#G1jtKnGw5mpmGt31dFIoDOcGxVQrqxexF7](https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#G1jtKnGw5mpmGt31dFIoDOcGxVQrqxexF7)
 
-## 2. ACCESS TO TESTING RESOURCES
+## Access to testing resources
 After you have a permission on Team's Google Drive.
 
 Open `~/Dwarves Foundation/Document/QA`  Documents to get resource files including:
@@ -25,9 +25,9 @@ Open `~/Dwarves Foundation/Document/QA`  Documents to get resource files includi
 * Test Cases Template
 * Defect Summary Report Template
 
-## 3. Task Assigning Flows
+## Task Assigning Flows
 
-## 4. Tools
+## Tools
 Open `~/Dwarves Foundation/Document/QA Documents/Tools`  to get gitlab-issues-tools file
 
 After that, Run this command in your terminal to get help:

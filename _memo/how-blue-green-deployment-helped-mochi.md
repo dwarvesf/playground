@@ -14,7 +14,7 @@ hide_frontmatter: false
 
 *At Dwarves Foundation, our team has always faced some bit of friction when deploying apps for our clients. We’ve known about blue-green deployments for a while and were recently given the chance to evaluate and demonstrate them for one of our Discord bot projects.*
 
-# Applying Blue-green deployment for Mochi Bot
+## Applying Blue-green deployment for Mochi Bot
 Introducing [Mochi Bot](https://mochi.gg/) to the Web3 space, our team has developed a flexible and user-friendly product with features like NFT rarity queries, sales alerts on Discord and Twitter, and showing various tips. To enhance user experience and streamline deployment, we had the chance to implement [blue-green deployment](https://radar.d.foundation/Blue-green-deployment-a93ea5c3d4d8439ba8701aec57d7ea3c) for the Mochi Bot application. Below is our case study that evaluates the cost and practicality of this deployment strategy in our current infrastructure.
 
 ## **Current Infrastructure & Implementation Plan**
@@ -215,15 +215,13 @@ Implementing a blue-green deployment strategy for Mochi Bot proved to be a smoot
 
 Moving forward, our team plans to integrate [K6](https://radar.d.foundation/k6-ce823e5b593c4850afc1153c1beefbed) for API testing to improve the performance and reliability of Mochi Bot. We aim to establish a quality gate for the green version to ensure that only thoroughly tested and stable releases are deployed to the live environment.
 
-### Come be with us
+**Come be with us**
 We’d love to have you in our next chapter, by all means.
-
 * Discover what we do: [dwarves.foundation](http://dwarves.foundation/)
 * Meet our team: [discord.gg/dwarvesv](http://discord.gg/dwarvesv)
 * Join the squad: [careers.d.foundation](http://careers.d.foundation/)
 
 Follow our journey
-
 * Fanpage: [facebook.com/dwarvesf](http://facebook.com/dwarvesf)
 * LinkedIn: [linkedin.com/company/dwarvesf](http://linkedin.com/company/dwarvesf)
 * Substack: [https://note.d.foundation/](https://note.d.foundation/)

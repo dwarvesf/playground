@@ -10,7 +10,7 @@ menu: memo
 type: null
 hide_frontmatter: false
 ---
-## 1. Vertical spacing
+## Vertical spacing
 ### Spacing within each paragraph
 Firstly, I start the simplest content type — paragraph. One of the atoms decides aesthetic design. So you need to focus on them. You commonly depend on default line-height of the font to design the content. I have increased line by 2px to 3px in this way because they are too tight.
 
@@ -33,11 +33,11 @@ You can see difference spacing between the two consecutive input fields in label
 
 In the left, if you equalize spacing for all input fields, it seems tight and not look actively bad. The label doesn’t have a visual hierarchy. Moreover, the user can’t quickly scan them. The problem with the first card is the spacing of that labels don’t have breathing room necessary and divide the system-level sizing.
 
-In the right, it seems perfect more and improves the legibility of the user. My approach is to start designing something with too much spacing, then remove it until you have an eye-catching design. You need to notice that you should have some difference between the spacing and divide the least three formats in your design (small, medium and large spacing) ( I mentioned it in [part 1)](https://medium.com/dwarves-design/the-principle-of-spacing-in-ui-design-part-1-3354d0d65e51). In addition, they can support you to define the system. **16px** is a great number to start because it divides nicely ( 4px = **16** x 0.25, 8px = **16** x 0.5, 12px = **16** x 0.75, …)
+In the right, it seems perfect more and improves the legibility of the user. My approach is to start designing something with too much spacing, then remove it until you have an eye-catching design. You need to notice that you should have some difference between the spacing and divide the least three formats in your design (small, medium and large spacing) I mentioned it in [part 1)](https://medium.com/dwarves-design/the-principle-of-spacing-in-ui-design-part-1-3354d0d65e51). In addition, they can support you to define the system. **16px** is a great number to start because it divides nicely ( 4px = **16** x 0.25, 8px = **16** x 0.5, 12px = **16** x 0.75, …)
 
 You usually start to add a bit of white space. If something is too cramped, you will add a bit more spacing until everything looks better in your design. By this way, you only have a minimum spacing. So you need more space. This way will take a lot of your time and not have a good result. One of the ways to have an elegant design is your design should start with too much white space.
 
-## 2. Horizontal spacing
+## Horizontal spacing
 ### Spacing inside components
 I suggested the bottom values of input and button to design better. You can see clearly with font-size 16px on phone screen or computer monitor. 16px of horizontal padding for both is a number that easy to remember when it defined in term of font-size.
 

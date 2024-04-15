@@ -75,7 +75,6 @@ module.exports = {
 ```
 
 Then add some babel preset. Which babel preset include bunch of babel plugin.
-
 * babel-present: will automatically transpile es6 code into es5 code
 * babel-react: will transpile react code into es5 javascript code
 

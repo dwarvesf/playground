@@ -19,13 +19,11 @@ Above image is a simple FSM, each circle is a `state` and arrow is an `event` or
 
 ### Pros and Cons
 **Pros**
-
 * State machines are good firewalls
 * Let say, bugs in our software are the results of actions dispatched in the wrong state. They leave our app in the state that we don't know about, and this breaks our program or lead to incorrect behavior.
 * Straightforward
 
 **Cons**
-
 * Scalability is a nightmare
 * FSM works well when we have a well-organized set of states and transitions, when we add some additional states we have to re-define a logic between themConcurrency
 * When running multiple state machines in parallel, you either end up with deadlocks or you have edit them all in a way they are compatible.
@@ -36,7 +34,6 @@ Above image is a simple FSM, each circle is a `state` and arrow is an `event` or
 We will try to solve a very simple problem that we face everyday. We want to fetch data from a back-end API and display to the user
 
 Before get into state machines, my workflow for building such a feature is something like this:
-
 * We display a fetch-data button.
 * The user clicks the fetch-data button.
 * Fire the request to the back end.
@@ -47,7 +44,6 @@ Before get into state machines, my workflow for building such a feature is somet
 ![](assets/finite-state-machine_93ba1268646d3675466aa8887079d580_md5.webp)
 
 It seems pretty right for me, until there are a bunch of bugs coming because user dispatched an unexpected action
-
 * User hit button so many times
 * So many requests will be sent to backend ?
 * The request is succeed but data is being corrupted
@@ -56,7 +52,6 @@ It seems pretty right for me, until there are a bunch of bugs coming because use
 We will need to spend more effort to cover all these things that make our software much more complexity with a lot of business logic code also have to widen our testing cases
 
 What if we think in the `states` way:
-
 * **idle:** In this state, we display the fetch-data button, sit and wait. The possible action is:
 * **click**
 

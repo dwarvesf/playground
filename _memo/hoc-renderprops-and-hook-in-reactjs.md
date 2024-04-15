@@ -10,7 +10,7 @@ type: null
 hide_frontmatter: false
 ---
 
-# Introduction
+## Introduction
 HOC, Render-props, hook are different techniques to create reusable or composable logic in React.js.
 
 Take a look at the use case where we have a button to toggle the visibility of some text:
@@ -97,7 +97,7 @@ view rawApp.js hosted with ❤ by GitHub
 
 This work but it’s not DRY. We gonna refactor the code with some methods above that help us write code that doesn’t violate DRY principle.
 
-## Refactor the component with Render props:
+### Refactor the component with Render props:
 The term “[render prop](https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce)” refers to a technique for sharing code between React components using a prop whose value is a function.
 A component with a render prop takes a function that returns a React element and calls it instead of implementing its own render logic.
 
@@ -163,7 +163,7 @@ view rawApp.js hosted with ❤ by GitHub
 
 The cons of this approach is only component inside it’s scope which is its child component has access to its passed data to it’s child components
 
-## Refactor the component using HOC component
+### Refactor the component using HOC component
 A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API,. The are a pattern that emerges from React’s compositional nature.
 Concretely, **a higher-order component is a function that takes a component and returns a new component.**
 Component return by HOC Component is freely to modified it’s params components by actions such as:
@@ -265,7 +265,7 @@ While the second inject into first high-order component
 
 ![[c02d8b16fe8c6c8b864064441c8ac84d_MD5.webp]]
 
-## Refactor the component using hook
+### Refactor the component using hook
 Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class. You can read more about hook at [https://reactjs.org/docs/hooks-intro.html](https://reactjs.org/docs/hooks-intro.html)
 
 You can create a custom hook that implement toggle state via useState and the method to toggle that state then expose our component outside. **But remember that, custom hook can only be used in functional react.js component.**
@@ -332,7 +332,7 @@ export default withToggle(withToggle( App, 'Asd' ), 'Das');
 view rawApp.js hosted with ❤ by GitHub
 ```
 
-# Conclusion
+## Conclusion
 Although Hook is the best solution to reduce DRY in react.js application in mine opinion, HOC component and render props is still a viable choice in some specific or edge use case.
 
 Source code repository: [https://github.com/phmngocnghia/demo-hoc-render-props-hook](https://github.com/phmngocnghia/demo-hoc-render-props-hook)

@@ -33,7 +33,6 @@ State machines are best suited for repetitive deterministic computations, which 
 
 ## System Requirements
 Since this isn’t a closed system, there are few requirements we need to meet in order to ensure its security, performance, and workability. The following are the essential requirements for a blockchain layer 2 system that we should have:
-
 * Compatible with applications, platforms, and technologies ... that already working with the Ethereum network (Block, EVM)
 * Scalability of computation speed, transaction validation, proof building. The time to create a batch is optimized according to the network throughput of layer 2 (If the number of transactions / second increases, it is necessary to reduce the block time)
 * Data availability: data is saved off-chain, the proof is saved on-chain, and transaction information can be saved via call-data
@@ -42,7 +41,6 @@ Since this isn’t a closed system, there are few requirements we need to meet i
 
 ## Approach to solving the requirements
 In order to meet our system requirements, we are essentially creating a **zkProver**. The general approach to designing zkProver to realize a proof system based on State Machines is as follows:
-
 * Turn the necessary deterministic computation into **state machine computation**.
 * Describe state transitions according to **algebraic constraints**. These are like rules that every state transition must meet. 
 * Use **interpolation** state values to build state machine description polynomials.
@@ -88,7 +86,6 @@ The proof and verification of transactions in Polygon zkEVM are both handled by 
 *[https://docs.hermez.io/zkEVM/zkProver/State-Machines/Overview/figures/fig-actions-sec-sm.png](https://docs.hermez.io/zkEVM/zkProver/State-Machines/Overview/figures/fig-actions-sec-sm.png)*
 
 The system uses state machines with transactions with inputs transactions, the old and new state, sequencer’s chainID:
-
 * Main state machine executor
 * Secondary state machine
 * Binary SM
@@ -109,7 +106,6 @@ StateDB plays an important role in ensuring the integrity and reliability of the
 
 ### L2 State
 Design to update L2 State over time so that the state is always the most properly synchronized over time. There are three stages of the L2 State, each of which corresponds to three different ways that L2 nodes can update their state. All three cases depending on the format of the batch data used to update the L2 State.
-
 * In the first case, the update is only notified by information (i.e. the Lot consisting of sorted transactions) coming directly from the Trusted Sequencer, before any data is available on L1. The resulting L2 state is called the Trusted state.
 * In the second case, the update is based on the information obtained by the L2 nodes from the L1  network. After the plots have been sequenced and data have been made available on L1. The L2 state is called  Virtual State at this time.
 * The information used to update L2 State in the final case includes verified zero-knowledge proofs of computational integrity. After the Zero-Knowledge proof has been successfully verified in L1, L2 nodes synchronize their local L2 State root with the root committed in L1 by the Trusted Aggregate trust. As a result, such L2 State is called  Unified State 
@@ -132,13 +128,11 @@ The bridge is responsible for receiving and processing requests to transfer info
 * The Aggregator will sync events with Ethereum and store bridge events to Bridge DB and update the Merkle tree root
 * The zkEVM node sync bridge event with Aggregator
 
-### Smart contract:
+### Smart contract
 The smart contract is used to execute the proof of layer 2 in layer 1, transfer assets between layers, and store proof and root Merkle Tree. In this case, we can learn from zkEVM smart contract:
-
 * Smart contract [Bridge.sol](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/contracts/PolygonZkEVMBridge.sol): 
 
 The main functions: 
-
 * **bridgeAsset**: transfer token from L1 to L2, add leaf to Merkle tree, emit event
 * **bridgeMessage**: transfer message in bytes format that executable
 * **claimAssert**: verify Merkle proof and withdraw tokens/ether
@@ -166,21 +160,17 @@ The diagram represents the main components of the software and how they interact
 
 ### Transaction Flow
 **Submit transaction**
-
 Transactions in the zkEVM network are generated in the user's wallet and signed with their private key. Once created and signed, transactions are sent to the Trusted Sequencer node through their JSON-RPC interface. The transactions are then stored in the pending transaction pool, where they await the Sorter's selection to execu`te or discard.
 
 **Transactions and Blocks on zkEVM**
-
 In the current design,  a single transaction is equivalent to a block. This design strategy not only improves RPC and P2P communication between nodes but also enhances compatibility with the existing engines and facilitates rapid completion in L2. It also simplifies the process of locating user transactions.
 
 **Execute transaction**
-
 Trusted Sequencer reads transactions from the pool and decides whether to cancel them or sort and execute them. The executed transactions are added to a batch of transactions and the Local L2 State of the Sequencer is updated.
 
 After a transaction is added to the L2 State, it is broadcast to all other zkEVM nodes via the broadcast service. It is worth noting that by relying on Trusted Sequencer, we can reach the final transaction quickly (faster in L1). However, the resulting L2 State will remain in a trusted state until the batch is committed in the Consensus Contract.
 
 **Batch transaction**
-
 Trusted Sequencer must batch execute transactions using the following BatchData structure specified in the PolygonZkEVM.sol contract:
 
 ```solidity
@@ -193,11 +183,9 @@ struct BatchData {
 ```
 
 **Transactions**
-
 These are byte arrays containing concatenated batch transactions. Each transaction is encrypted in the Ethereum pre-EIP-115 or EIP-115 format using the RLP (Recursive-length prefix)  standard, but the signature values,  `v`, and `s`, are concatenated;
 
 **Batch sequencing**
-
 Plots need to be sequenced and validated before they can become part of the L2 Virtual State.
 
 Trusted Sequencer has successfully added a batch to a sequence of batches using the  L1 PolygonZkEVM.sol contract `sequencedBatches` map, which is essentially a  storage structure containing a queue of processes self-defined Virtual State.

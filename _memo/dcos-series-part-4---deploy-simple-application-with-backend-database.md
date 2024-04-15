@@ -84,7 +84,7 @@ $ docker build -t <namespace>/todolist .
 $ docker push <namespace>/todolist
 ```
 
-## #=Setting up database on DC/OS
+## Setting up database on DC/OS
 Let’s go to our DC/OS and create a `postgres` service
 
 Go to DC/OS and choose package tab, then find `postgres`:
@@ -111,7 +111,7 @@ A very important thing is sharing volumes. You will need to set a specific node 
 
 ![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_fb4564d4758af4cc151fca604136180f_md5.webp)
 
-1. Share volumes
+2. Share volumes
 
 ![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_3d03a4c6a74681114944d4f0cc0ca683_md5.webp)
 
@@ -185,3 +185,4 @@ As my expectation, it will be like this:
 Everything is available now. Let’s check it:
 
 ![](assets/dcos-series-part-4---deploy-simple-application-with-backend-database_91935fc991d145d9dec0c0a5a1703c2e_md5.webp)
+ 

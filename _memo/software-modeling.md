@@ -10,38 +10,33 @@ type: null
 hide_frontmatter: false
 ---
 
-## Agenda
-* Why do we need Software Modeling
-* What is Software Modeling
-* How to do Software Modeling
-
 This is how I approach a new topic or knowledge, starts with why, understand the concept and figure out how to make it happen.
 
-# Why do we need Software Modeling
+## Why do we need Software Modeling
 This can be summed up into 2 definitions:
 
 * Maintainability: Software Modeling helps to maintain a system, or a project. It ensures the based document for newbies to approach and get to know the system thoroughly.
 * Scalability: helps developers to add sub-system or new feature onto the current one, without creating conflicts.
 
-# What is Software Modeling
+## What is Software Modeling
 According to Wikipedia, Software Modeling came out in a lengthy definition. So I took the privilege to paraphrase it like below:
 
 → **Software Modeling is how to turn an activity of an object from reality to a form that computers can understand and execute.**
 
-# How to do Software Modeling
+## How to do Software Modeling
 People create things to help them solve a problem, instead of doing that themselves. Tools are made to help us do the work easier. The purpose of Software Modeling is to reconstruct the actions that an application needs to take, or the product owner wants to happen.
 
-## Action
+### Action
 I'll take the marketplace as an example of Action in the business world. A marketplace, such as Joolux & Purchasing Care, is a platform where buyer and seller exchanges the goods. An action in marketplace can be defined as:
 
 → Buyer buys Product from Seller
 
-## Model of a Marketplace System
+### Model of a Marketplace System
 After defining an action, we need to break it down and find the core objects. In this case:
 
 → Core Object: **Buyer**-**Product**-**Seller**
 
-## AARRR Framework
+### AARRR Framework
 In the business world, AARRR is a habitual method. AARRR is a funnel to analyze the business growth and business development orientation of a company.
 
 Our Design team is using this to follow the final goal of an application or a system. By applying AARRR, designers won't get lost along the way, or happen to conduct redundant things. The action of an application/ system will go through the end of the AARRR funnel, which lets us know how that action derives revenue stream.
@@ -55,18 +50,18 @@ Our Design team is using this to follow the final goal of an application or a sy
 
 After that, we'll find out the relationship between them.
 
-## Entity Relationship Diagram (ERD)
+### Entity Relationship Diagram (ERD)
 A relationship between core objects is demonstrated in a form of an entity relationship diagram (ERD).
 
-### ERD helps to show
+ERD helps to show
 * Main object: the core object in the scope system
 * The relationship between the objects
 
-### Components of ERD
+Components of ERD
 * Object
 * Relation arrow
 
-### An ERD should have these things to keep in mind
+An ERD should have these things to keep in mind
 * We don't need to re-draw the database in object field. The focus point of ERD is to show the core object and the connection between them.
 * Coloring. Using color will categorize the objects and visualize the system construction.
 * Arrange the objects based on the pipeline of the main action
@@ -75,18 +70,18 @@ ERD helps simplify the database, giving us the first impression on a system, wha
 To create an action, we need to add state - the status of how core object will change during the process of an action.
 
 ## State Machine Diagram (SMD)
-### Purpose
+Purpose
 * Demonstrates the status that an object will walk through
 * Demonstrates the response of objects during the process
 
-### Components
+Components
 * State: The hardest part. The definition of the object's status.
 * Action: What makes an object to change the status
 * Actor: Who will execute that action
 
 To create a completed main action, every object needs its own SMD. The core of a SMD is to define the correct state of an object, and whether or not if that state is related to the system. There are some state which the system doesn't cover. Based on the requirement and the business scope, we will decide which state is necessary.
 
-### Important Notes
+Important Notes
 * Display the actor and the action
 * A state must be an adjective
 
@@ -95,12 +90,12 @@ To create a completed main action, every object needs its own SMD. The core of a
 **Giang Vu**: So that means the state will need to be business-oriented?
 **Khiem Vo**: True. Another thing to remember is we only have to list out the states if it's a part of the system flow.
 
-## Use Cases Diagram (USD)
-### Definition
+### Use Cases Diagram (USD)
+Definition
 * A form of system requirement
 * To help design a system from end user's perspective, allowing developers/designers tp walk in the clients's shoes
 
-### Components
+Components
 * Actor: End users, people who will use the system
 * Use case: The system function
 * Boundary system: Letting designers/ developers know their current stage of Software Modeling. Boundary system groups the actions into sub-system, makes it more specific than in the ERD
@@ -112,24 +107,23 @@ To create a completed main action, every object needs its own SMD. The core of a
 **Giang Vu**: Does that mean each boundary system is made for one actor only?
 **Khiem Vo**: As I know, boundary system allows us to create different interfaces for different actors. It's about how many scenario can possibly happen. But I'm not sure one actor can involve in more than one interface at a time.
 
-## Component Diagram
-### Definition
+### Component Diagram
+Definition
 * Visualizing: The main components of a system
 * Constructing: How the system can be executed
 
-### Components
+Components
 * Component: Describe a module of a system
 * Provided interface: Represent an interface that the components provide
 * Require interface: Represent an interface that the components require
 
-### Through a component diagram, a source code can contain
+Through a component diagram, a source code can contain
 * Front-end: How many interface/ main module
 * Backend: Module of each object to collect database
 * A place to log the arising situation during the process of calling API
 
-# Recap
-
-### Software Modeling in Agile team
+## Recap
+Software Modeling in Agile team
 * Helps teammate to possess the same base knowledge about a system
 * Helps document the information for team discussion, research and understanding
 * Every change can create a big impact on the system. In Agile, a product can be modified continuously, Software Modeling needs to be updated during the whole cycle to make sure the newbies can catch up

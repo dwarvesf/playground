@@ -32,18 +32,13 @@ So let’s get started.
 To install Deckset, first download the [software version](https://drive.google.com/file/d/16aOzaQ6YxySsGEjCwVVDSVbt3dSYSdAT/view?usp=drive_link) compatible with your operating system from the Drive. Once the download is complete, run the installer and follow the on-screen instructions to complete the installation process.
 
 ## Import theme
-**Step 1:** Open Deckset and select **New Presentation**.
-
-**Step 2:** Select **Import Theme** from the **File** menu.
-
-**Step 3:** Select the theme file you want to add. Theme files are usually in **.dstheme** format.
-
-**Step 4:** Deckset will automatically install the theme and add it to the list of available themes.
-
-**Step 5:** Select the theme you want to use and start creating your presentation.
+* **Step 1:** Open Deckset and select **New Presentation**.
+* **Step 2:** Select **Import Theme** from the **File** menu.
+* **Step 3:** Select the theme file you want to add. Theme files are usually in **.dstheme** format.
+* **Step 4:** Deckset will automatically install the theme and add it to the list of available themes.
+* **Step 5:** Select the theme you want to use and start creating your presentation.
 
 ## Add content to slides
-
 The beauty of Deckset is, it lets you focus on what truly matters – the content of your presentation! Don't worry about fiddling with design elements; Deckset gives you a handy preview of each slide. Want to see a full view? Just double click on it. Made a typo or have more ideas? Click "Edit" and Deckset will open your presentation in your markdown document (like VSCode). 
 
 Here's the cool part: you get a tiny Deckset preview window floating beside you as you edit. Even better, the preview updates live as you make changes! This makes editing text a breeze and lets you experiment with quotes, code, and other content types to see how they translate into Deckset's stylish themes. It's a small feature, but a powerful one that builds confidence in your editing and lets you explore the unique styles your presentation can take.
@@ -86,7 +81,6 @@ You can customize the formatting of your content using the tools on the toolbar.
 ![](assets/design-less-present-more-with-deckset._design-less-present-more-with-deckset_image2.webp)
 
 ## Presenting your presentation
-
 When you're ready to present, simply click **Play** or **Rehearse** on the toolbar. Deckset will switch to full screen and you can navigate between slides using the arrow buttons or keyboard shortcuts.
 
 ![](assets/design-less-present-more-with-deckset._design-less-present-more-with-deckset_image3.webp)
@@ -94,11 +88,9 @@ When you're ready to present, simply click **Play** or **Rehearse** on the toolb
 Deckset takes Markdown presentations to the next level with presenter mode. This mode provides a clean interface, showing the current and upcoming slides alongside the elapsed time. Even better, [presenter notes](https://docs.deckset.com/English.lproj/Presenting/presenter-notes.html) embedded within your Markdown text will appear below the slide in this view. It’s everything you could have wanted from a simple Markdown presentations experience.
 
 ## Save your file
-
 Once you have finished presenting, select **File** > **Export Presentation...** to save your presentation. You can save your presentation as a **.md** file or export it to other formats such as **PDF, PNG**, or **JPEG**.
 
 **A set of export files to upload to Dwarves Drive will include:**
-
 - **PDF file:** This is the primary file format for documents, and it can be opened on any device with a PDF reader.
 - **Markdown file:** This is a text-based file format that can be used to create and edit documents. It is a popular format for technical documentation and README files (optional).
 - **Image folder:** This folder will contain all of the images that are used in the document. The images should be in a format that is supported by Deckset, such as JPEG, PNG, or GIF.

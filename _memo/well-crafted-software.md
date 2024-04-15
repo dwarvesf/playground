@@ -14,7 +14,7 @@ hide_frontmatter: false
 
 This post ain't gonna be a speech of Uncle Bob's Software Craftsmanship Manifesto. We've all known that. And to people who don't, for God's sake. Google.
 
-> <span style='color:gray'>*Well crafted software means that regardless how old the application is, developers can understand it easily, side effects are well known and controlled, high test coverage, clean design, business language well expressed in the code and adding or changing features does not take longer than it used to take at the beginning of the project when the codebase was small.*</span>
+> Well crafted software means that regardless how old the application is, developers can understand it easily, side effects are well known and controlled, high test coverage, clean design, business language well expressed in the code and adding or changing features does not take longer than it used to take at the beginning of the project when the codebase was small.
 
 Software craftsmanship, by all means, is an approach to software development. It features and highlights the coding skills of the developers themselves.
 

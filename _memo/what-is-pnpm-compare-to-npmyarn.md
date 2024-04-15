@@ -11,8 +11,6 @@ type: null
 hide_frontmatter: false
 ---
 
-<!-- table_of_contents 90121e99-78c1-42f9-93e8-067cc9d793c4 -->
-
 ## What is PNPM?
 ![](assets/what-is-pnpm-compare-to-npmyarn_0f651d536ab6e1811cdf37eb2b15550d_md5.webp)
 
@@ -22,8 +20,8 @@ hide_frontmatter: false
 PNPM is a package manager for Node.js which stands for “Performant NPM”. It was introduced in 2016, the same year Yarn was released. PNPM is a fast, disk space efficient package manager that supports monorepos. It creates a non-flat `node_modules` by default, so code has no access to arbitrary packages. PNPM performs installation in three stages: 
 
 1. **Dependency resolution **- The package manager identifies and fetches all required dependencies to the store.
-1. **Directory structure calculation** - Based on these dependencies, it calculates the layout of the `node_modules` directory.
-1. **Linking dependencies** - it retrieves and establishes hard links from the store to `node_modules` for all remaining dependencies.
+2. **Directory structure calculation** - Based on these dependencies, it calculates the layout of the `node_modules` directory.
+3. **Linking dependencies** - it retrieves and establishes hard links from the store to `node_modules` for all remaining dependencies.
 
 ## Advantages of PNPM
 PNPM is a very performant alternative to most package managers. Here are a few advantages of using PNPM:
@@ -47,8 +45,8 @@ Thanks to this, package versions are only stored once on the disk
 PNPM performs installation in three stages:
 
 1. Dependency resolution: identifying and obtaining all necessary dependencies for the store.
-1. Directory structure calculation: determining the layout of the `node_modules` directory based on these dependencies.
-1. Linking dependencies: retrieving and establishing hard links from the store to `node_modules` for all remaining dependencies.
+2. Directory structure calculation: determining the layout of the `node_modules` directory based on these dependencies.
+3. Linking dependencies: retrieving and establishing hard links from the store to `node_modules` for all remaining dependencies.
 
 ![](assets/what-is-pnpm-compare-to-npmyarn_4cde4958507a5ac4d8e7d614175b57de_md5.webp)
 
@@ -56,7 +54,7 @@ This approach is significantly faster than the conventional method of identifyin
 
 ![](assets/what-is-pnpm-compare-to-npmyarn_acaaed15e34c391a1ff6b81bbbf6163f_md5.webp)
 
-### **Creating a non-flat node_modules directory****[](https://pnpm.io/motivation#creating-a-non-flat-node_modules-directory)**
+### Creating a non-flat node_modules [directory](https://pnpm.io/motivation#creating-a-non-flat-node_modules-directory)
 First of all, we must ask why NPM chooses the flat `node_modules` structure approach.
 
 Going back in time, before the release of NPM version 3, at this point, `node_modules` in NPM were still in a non-flat structure. As shown in the example below:
@@ -73,7 +71,6 @@ node_modules
 ```
 
 This approach has some issues such as:
-
 * The issue of long directory paths on the Windows operating system occurred because the package created a dependency tree that was too deep
 * Packages were copy-pasted in many places because they were required in different dependencies
 

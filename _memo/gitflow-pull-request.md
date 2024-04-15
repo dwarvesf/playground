@@ -14,37 +14,37 @@ hide_frontmatter: false
 
 Git is one of the most popular source control. Github is one platform built over the top of Git and well adapted by lots of companies. Knowing the right workflow will help to increase the team productivity. In this post, I will try to cover some of the best practices from the community and the way we applied them at Dwarves Foundation.
 
-# Git branching mode
+## Git branching mode
 Source: https://nvie.com/posts/a-successful-git-branching-model/
 
 In sort, you will organize your repository into 5 types of branches:
 
-## The main branches
+### The main branches
 * master: the main branch where the source code of HEAD always reflects a production-ready state
 * develop: the main branch where the source code of HEAD always reflects a state with the latest delivered development changes for the next release. Some would call this the “integration branch”.
 
-## Feature
+### Feature
 * May branch off from: develop
 * Must merge back into: develop
 * Branch naming convention: anything except master, develop, release-*, or hotfix-*
 
 Feature branches (or sometimes called topic branches) are used to develop new features for the upcoming or a distant future release. When starting development of a feature, the target release in which this feature will be incorporated may well be unknown at that point.
 
-## Release
+### Release
 * May branch off from: develop
 * Must merge back into: develop and master
 * Branch naming convention: release-*
 
 Release branches are created from the develop branch. For example, say version 1.1.5 is the current production release and we have a big release coming up. The state of develop is ready for the “next release” and we have decided that this will become version 1.2 (rather than 1.1.6 or 2.0). So we branch off and give the release branch a name reflecting the new version number
 
-## Hotfix
+### Hotfix
 * May branch off from: master
 * Must merge back into: develop and master
 * Branch naming convention: hotfix-*
 
 Hotfix branches are very much like release branches in that they are also meant to prepare for a new production release, albeit unplanned. They arise from the necessity to act immediately upon an undesired state of a live production version. When a critical bug in a production version must be resolved immediately, a hotfix branch may be branched off from the corresponding tag on the master branch that marks the production version.
 
-## Gitflow
+### Gitflow
 Inspired by Vincent Driessen’s branching model, git-flow are a set of git extensions to provide high-level repository operations for it. Git-flow is a merge based solution. It doesn’t rebase feature branches.
 
 * Checkout gitflow cheatsheet: http://danielkummer.github.io/git-flow-cheatsheet/
@@ -54,7 +54,7 @@ Inspired by Vincent Driessen’s branching model, git-flow are a set of git exte
 
 For now, you can continue to read the article [GitFlow considered harmful](https://www.endoflineblog.com/gitflow-considered-harmful)to know more about the author issue.
 
-# How to write commit message
+## How to write commit message
 Source: http://chris.beams.io/posts/git-commit/
 
 Have you ever read some repos with commit messages like above?
@@ -63,7 +63,7 @@ While many repositories’ logs look like the former, there are exceptions. The 
 
 Being known that, a project’s long-term success rests (among other things) on its maintainability, reviewing others commits and pull requests is also the big reason that you should [write great commit messages](/6304b82ed7d34f23a0e7e4fe381e7996).
 
-# Pull Request
+## Pull Request
 Pull request is a feature that makes it easier for developers to collaborate. Pull request is a mechanism for a developer to notify team members that they have completed a feature.
 
 Some tricks to make Pull Requests more awesome for your project:
@@ -82,10 +82,10 @@ Pull Requests are easy to make and a great way to get feedback and track progres
 
 Hint: Based on an article [Type of Pull Request](https://ben.balter.com/2015/12/08/types-of-pull-requests/), there are 6 types of PR. But `WIP pattern` is the one that is using by lots of teams and companies. It follows the mantra of **“Open a Pull Request as early as possible”.**
 
-# Code Review
+## Code Review
 Source: https://github.com/thoughtbot/guides/tree/master/code-review
 
-## Everyone
+### Everyone
 * Accept that many programming decisions are opinions. Discuss tradeoffs, which you prefer, and reach a resolution quickly.
 * Ask questions; don’t make demands. (“What do you think about naming this :user_id?“)
 * Ask for clarification. (“I didn’t understand. Can you clarify?”)
@@ -98,7 +98,7 @@ Source: https://github.com/thoughtbot/guides/tree/master/code-review
 * Keep it real. If emoji, animated gifs, or humor aren’t you, don’t force them. If they are, use them with aplomb.
 * Talk synchronously (e.g. chat, screensharing, in person) if there are too many “I didn’t understand” or “Alternative solution:” comments. Post a follow-up comment summarizing the discussion.
 
-## Having Your Code Reviewed
+### Having Your Code Reviewed
 * Be grateful for the reviewer’s suggestions. (“Good call. I’ll make that change.”)
 * Don’t take it personally. The review is of the code, not you.
 * Explain why the code exists. (“It’s like that because of these reasons. Would it be more clear if I rename this class/file/- method/variable?”)
@@ -110,7 +110,7 @@ Source: https://github.com/thoughtbot/guides/tree/master/code-review
 * Wait to merge the branch until Continuous Integration tells you the test suite is green in the - branch.
 * Merge once you feel confident in the code and its impact on the project.
 
-## Reviewing code
+### Reviewing code
 Understand why the change is necessary (fixes a bug, improves the user experience, refactors the existing code). Then:
 
 * Communicate which ideas you feel strongly about and those you don’t.
@@ -120,32 +120,32 @@ Understand why the change is necessary (fixes a bug, improves the user experienc
 * Seek to understand the author’s perspective.
 * Sign off on the pull request with a 👍 or “Ready to merge” comment.
 
-# Rebase vs Merge
+## Rebase vs Merge
 Source: https://blog.sourcetreeapp.com/2012/08/21/merge-or-rebase/
 
 * Merging brings two lines of development together while preserving the ancestry of each commit history.
 * In contrast, rebasing unifies the lines of development by re-writing changes from the source branch so that they appear as children of the destination branch – effectively pretending that those commits were written on top of the destination branch all along.
 
-## Merging Pros
+### Merging Pros
 * Simple to use and understand.
 * Maintains the original context of the source branch.
 * The commits on the source branch remain separate from other branch commits, provided you don’t perform a fast-forward merge. This separation can be useful in the case of feature branches, where you might want to take a feature and merge it into another branch later.
 * Existing commits on the source branch are unchanged and remain valid; it doesn’t matter if they’ve been shared with others.
 
-## Merging Cons
+### Merging Cons
 * If the need to merge arises simply because multiple people are working on the same branch in parallel, the merges don’t serve any useful historic purpose and create clutter.
 
-## Rebase Pros
+### Rebase Pros
 * Simplifies your history.
 * Is the most intuitive and clutter-free way to combine commits from multiple developers in a shared branch
 
-## Rebase Cons
+### Rebase Cons
 * Slightly more complex, especially under conflict conditions. Each commit is rebased in order, and a conflict will interrupt the process of rebasing multiple commits. With a conflict, you have to resolve the conflict in order to continue the rebase. SourceTree guides you through this process, but it can still become a bit more complicated.
 * Rewriting of history has ramifications if you’ve previously pushed those commits elsewhere. In Mercurial, you simply cannot push commits that you later intend to rebase, because anyone pulling from the remote will get them. In Git, you may push commits you may want to rebase later (as a backup) but only if it’s to a remote branch that only you use. If anyone else checks out that branch and you later rebase it, it’s going to get very confusing.
 
 Note: Other post from Atlassian: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 
-# Git Templates
+## Git Templates
 To make things easier, we have adopted Issue template and Pull Request template that we think they are great to help the team to improve the productivity.
 
 [Issue Template]

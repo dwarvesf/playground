@@ -10,8 +10,6 @@ type: null
 hide_frontmatter: false
 ---
 
-# Micro-frontend
-
 ## What is Micro-frontend ?
 > An architectural style where independently deliverable frontend applications are composed into a greater whole
 
