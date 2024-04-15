@@ -113,7 +113,7 @@ In the process of crafting task lists, it is not uncommon to encounter specific 
 **Syntax errors:**
 
 - Missing `-` or `*`: Each line in a task list must start with a `-` or `*`character.
-- Incorrect use of `-` and `*`: `-`and **`***`characters cannot be mixed in the same task list.
+- Incorrect use of `-` and `*`: `-`and `*`characters cannot be mixed in the same task list.
 
 **Formatting errors:**
 
