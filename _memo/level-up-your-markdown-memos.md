@@ -135,28 +135,16 @@ For example:
 - [ ] Subtask 2
 ```
 
-## Images that flop
+## Screenshots that flop
 
-You have heard the saying "a picture is worth a thousand words." While visuals are important, they can also dramatically slow down your site's loading time. Here are some common mistakes people make when adding images to Memos and how to avoid them.
+The adage "a picture is worth a thousand words" holds true for screenshots as well. Visuals can be incredibly powerful for conveying information efficiently. However, just like any communication method, there are potential pitfalls to avoid when using screenshots:
 
-Common mistakes:
+- **Display images with incorrect aspect ratio:** Design your images in a horizontal rectangular frame with an aspect ratio of `21:9`, `16:9`, or `4:3`. Avoid using vertical rectangles as it will enlarge the image and affect the layout of your document.
+- **Low Resolution:** A blurry or pixelated screenshot can be frustrating and impede understanding. Make sure the screenshot resolution is high enough to clearly.
 
-- **Upload gigantic images:** Reduce the size of your images using Photoshop's "Save for Web & Devices" or Compressor.io (for those without Photoshop). Aim to keep your file size below 700KB.
-- **Not renaming files:** Give your files descriptive names that reflect the image content (e.g., "company-logo.png").
-- **Display images with incorrect aspect ratio:** Design your images in a horizontal rectangular frame with an aspect ratio of `21:9`, `16:9`, or `4:3`. Avoid using vertical rectangles as it will enlarge the image and affect the layout of your document
-- **Use the wrong syntax:** Use the `![] (assets/filename)` syntax to insert images into your document.
+For extended functionality and catering to diverse needs, you may leverage multiple screenshot applications. For example, I usually use screenshot tools like on Windows (ShareX) and on Mac (Cleanshot) in order to get the best of both worlds on different systems.
 
-How to insert them:
-
-**Image:** `![] (image.png)`
-
-**Video:** `![] (https://www.youtube.com/watch?v=videoID)`
-
-Embed videos from YouTube or other platforms to add visual interest and engagement.
-
-**Graphic:** `![] (graphic.svg)`
-
-Use graphics to highlight key points or draw attention to important information.
+[A well-crafted screenshot](https://memo.d.foundation/playground/how-to-take-better-screenshots-on-mac/) can be a powerful tool for presentations, tutorials, and any situation where visual clarity is key. Remember, a thoughtful screenshot can save you time and effort by conveying information more efficiently than words alone.
 
 > **Tip**: You can use [**Backr**](https://getbackr.vercel.app/) tool to set stunning backgrounds and create visuals that grab attention for your Memo posts.
 
