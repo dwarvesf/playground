@@ -41,7 +41,9 @@ Install Obsidian from their website: https://obsidian.md/
 Once you have Obsidian installed, open the folder to where you cloned your repository:
 
 ![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304161351789.webp)
+
 Load the vault to Obsidian:
+
 ![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304161404515.webp)
 
 If you have any troubles, refer to the help page in Obsidian's documentation: https://help.obsidian.md/Home.
