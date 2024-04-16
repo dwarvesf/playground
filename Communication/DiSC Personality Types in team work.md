@@ -57,7 +57,7 @@ _Keywords: Are relaxed and come close, act methodically, tend to lead backward, 
 - Be Careful when comment about Green behavior
 - Be patience, take command
 
-### **C = Conscientiousness (BLUE)**
+### C = Conscientiousness (BLUE)
 #### Blue indicator
 > A person in this DiSC quadrant places emphasis on quality and accuracy, expertise and competency. They enjoy their independence, demand the details, and often fear being wrong.
 

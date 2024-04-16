@@ -13,7 +13,7 @@ The LLM pre-trained model is designed to generate more coherent and contextually
 
 Overall, the LLM pre-trained model is a powerful tool for natural language processing tasks and has been used successfully in a variety of applications, including machine translation, summarization, and dialogue generation, chatbot, virtual assistant.
 
-## **Preparing for build AI chatbot:**
+## Preparing for build AI chatbot:
 - Use HuggingFace to download the model: Download the model from HuggingFace.
 - Download the chatbot interface source code: requires skill of git, running Node.js, and installing with yarn.
 - Update the model and run the chatbot: Update config.

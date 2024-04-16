@@ -64,12 +64,12 @@ Comparison between the tiers:
 ![](assets/google-data-fusion-20240122120216075.webp)
 
 ## How to setup Data fusion:
-### **Prerequisites:**
+### Prerequisites:
 1. **Google Cloud Platform Account:** Ensure that you have a Google Cloud Platform (GCP) account. If you don't have one, you can sign up [here](https://cloud.google.com/).
 2. **Enable the Cloud Data Fusion API:** In the GCP Console, navigate to the API & Services > Dashboard. Search for "Cloud Data Fusion API" and enable it.
 3. **Install and Configure Google Cloud SDK:** Install the [Google Cloud SDK](https://cloud.google.com/sdk) on your local machine. After installation, run **`gcloud init`** to set up your credentials and project.
 
-### **Steps to Set Up Google Cloud Data Fusion:**
+### Steps to Set Up Google Cloud Data Fusion:
 1. **Create a Cloud Storage Bucket:** Create a Cloud Storage bucket to store the artifacts and metadata required by Cloud Data Fusion. Replace **`[BUCKET_NAME]`** with your desired bucket name.
     
     ```bash

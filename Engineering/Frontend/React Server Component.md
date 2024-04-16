@@ -22,7 +22,7 @@ Server Components make your app load faster and use less JavaScript. The base ru
 
 Next.js renders the initial HTML on the server and sends it to the browser. The browser then enhances the HTML with interactivity by loading the Next.js and React runtime asynchronously. This lets the client take over the app and handle user interactions.
 
-## **How to use Server Components in Next.js?**
+## How to use Server Components in Next.js?
 In the latest release of Next.js, they have introduced Server Components as essential requirements to be utilized in the construction of their single-page applications (SPAs).
 
 To enhance code maintainability and readability, it is recommended to use the file naming convention of **`.server.(jsx|tsx)`** for Server components, and **`.client.(jsx|tsx)`**  for Client components.

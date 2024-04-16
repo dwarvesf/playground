@@ -80,7 +80,7 @@ This Dataproc cluster has 24 virtual CPUs, 4 for the master and 20 spread across
 In this example, the cluster would also incur charges for Compute Engine and Standard Persistent Disk Provisioned Space in addition to the Dataproc charge (see [Use of other Google Cloud resources](https://cloud.google.com/dataproc/pricing#use_of_other_google_cloud_resources)). The [billing calculator](https://cloud.google.com/products/calculator) can be used to determine separate Google Cloud resource costs.
 
 ## How to setup a Dataproc cluster
-### ****Prerequisites:****
+### Prerequisites:
 1. **Google Cloud Platform Account:**
     - You need a GCP account. If you don't have one, you can sign up for a free trial at [Google Cloud Console](https://console.cloud.google.com/).
 2. **Enable Billing:**
@@ -92,7 +92,7 @@ In this example, the cluster would also incur charges for Compute Engine and Sta
 5. **Enable APIs:**
     - Enable the necessary APIs for Dataproc and other services. You can do this through the [APIs & Services > Dashboard](https://console.cloud.google.com/apis/dashboard) section in the GCP Console.
 
-### **Set Up a Dataproc Cluster:**
+### Set Up a Dataproc Cluster:
 Now that you have the prerequisites in place, you can proceed to set up a Dataproc cluster:
 
 1. **Open Cloud Shell:**
