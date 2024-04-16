@@ -175,7 +175,7 @@ $ hledger -f transactions.journal balance -t
 ```
 
 ```
-# journal
+## journal
 2020-01-01 Opening Balance
     Assets:Bank                          0 USD
     Equity:Opening Balance               0 USD
