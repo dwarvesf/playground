@@ -3,7 +3,7 @@ tags:
   - content
   - instructions
   - guideline
-title: How to push content on note.d.foundation
+title: How to push content on memo.d.foundation
 date: 2024-03-04
 description: This is a guide on how to setup your environment and settings to push content to our notes website, note.d.foundation.
 authors:
@@ -15,78 +15,70 @@ pinned: true
 hide_title: false
 ---
 
-## Set up
-Our note.d.foundation site runs with submodules and is pulled through HTTPS as opposed to SSH, for security and easy onboarding.
+## Before edit or create a new post
+Before you can create a new post, please make sure that you have finished setting up the environment for editting memo in this [post](https://memo.d.foundation/playground/_memo/how-to-set-up-environment-for-editing-memo/), and you have the right access and edit the repository note.d.foundation. 
 
-### Clone the repository
-Clone the repository in the terminal by running this command in the Terminal
+Everytime you want to edit or create a new post, please make sure that the data of your local files is up-to-date by going to Source Control and Sync all the changes in the note.d.foundation repository.
 
-1. Run the `xcode-select` command:
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-memo-1.webp)
 
-    ```sh
-    xcode-select
-    ```
+## Create a post 
+1. Choose a folder that you want to nest your post in.
+2. Click to the icon New files, and enter the name of new file. Remember to add the suffix `.md` after the file name to segment the type of file. 
 
-2. Install [`git-credential-manager`](https://github.com/git-ecosystem/git-credential-manager/releases/tag/v2.4.1). For Apple-silicon Macs, download the [gcm-osx-arm64-2.4.1.pkg](https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.4.1/gcm-osx-arm64-2.4.1.pkg) file and run it. Otherwise, select the [gcm-osx-x64-2.4.1.pkg](https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.4.1/gcm-osx-x64-2.4.1.pkg) package.
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-memo-5.webp)
 
-3. Then clone the repo:
+3. Insert the code for metadata on the top of your post. 
 
-    ```sh
-    git clone https://github.com/dwarvesf/note.d.foundation.git
-    ```
+```md
+---
+tags: 
+  - [tag1]
+  - [tag2]
+  - [tag3]
+title: [The title]
+date: yyyy-mm-dd
+description: [your description]
+authors: [your name]
+menu: [folder]
+type: null
+hide_frontmatter: false
+---
+```
 
-### Open the folder in the Obsidian
-Install Obsidian from their website: https://obsidian.md/
+4. Start editing your post below metadata section.
+5. After finish editing, save the file by `Cmd+S`.
+6. To preview all the changes on website, open devbox by running command `devbox shell` in Terminal. Then use command `make watch-run` and open the localhost link. 
 
-Once you have Obsidian installed, open the folder to where you cloned your repository:
+![](assets/how-to-push-content-on-note-d_how-to-set-up-environment-for-editing-memo-2.webp)
 
-![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304161351789.webp)
-Load the vault to Obsidian:
-![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304161404515.webp)
+## Review process
+After you finish editing the post, you need to capture the whole page of your post on local link, then send it to your supervior and @anna to review. 
 
-If you have any troubles, refer to the help page in Obsidian's documentation: https://help.obsidian.md/Home.
+We suggest you to use Scrolling Capture of [Cleanshot](https://cleanshot.com/).
 
-### Setup Github Desktop
-Download GitHub desktop from their website: https://desktop.github.com/.
+## Commit changes 
+After editing, your post is only saved on local files. To post it to memo, you will need to create a request for administrator to approve. Before creating a request, you need to commit all changes first:
+1. Go to Source control section.
+2. Sync all changes in note.d.foundation and in the branch you edited.
+3. Stage all changes of the branch you edited.
+4. Name the commit and press Commit button.
 
-1. Once you've installed it, open up and choose the `Current Repository` tab:
-![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304161928987.webp)
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-memo-2.webp)
 
-2. Add an Existing Repo
+## Create Pull Request 
+Now, you should go to your [Github](https://github.com/) and log in. After that follow the guideline to create pull request: 
 
-![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304161951429.webp)
+1. Open the profile dropdown and open Your repositories section.
 
-3. Choose the folder of the repo that you have cloned above
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-memo-3.webp)
 
-![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304162014223.webp)
-If you have any issues, refer to setting up GitHub desktop here:
+2. Choose the branch that you have edited.
+3. Open the pull request list.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8Dd7KRpKeaE?si=3Vda7G5d1Z1unITr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+![](assets/how-to-push-content-on-note-d_how-to-push-content-on-memo-4.webp)
 
-###  Edit content on Obsidian
-#### Create a new post
-Making a new post is fairly straightforward. We have a set of templates to help you get started:
+4. Choose the commit and Create the pull request.
 
-1. First, create a new file and name it however you like:
 
-![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304213439150.webp)
-
-2. We have updated to make it so the metadata/frontmatter for new files will automatically be created.
-
-## Push content on note.d.foundation
-### Using Desktop browser
-1. Go to the [link](https://github.com/dwarvesf/note.d.foundation)
-
-2. Choose upload file and upload the .md file in the repo folder on your computer
-
-|  |  |
-| ---- | ---- |
-| ![[How to push content on note.d.foundation-20240304213547278.webp\|300]]| ![[How to push content on note.d.foundation-20240304213659347.webp\|300]] |
-
-### Using Github Desktop
-1. Go to GitHub Desktop and open the repo df-content
-2. Choose the file that you have created or edited
-
-![](assets/how-to-push-content-on-note-d_how-to-push-content-on-note.d.foundation-20240304213737310.webp)
-
-3. Click commit to main
+Now all you need is waiting for admin to review your request! 
