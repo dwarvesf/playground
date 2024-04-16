@@ -29,7 +29,6 @@ For AI, a lot of us at Dwarves use available tools to help us to do extensive le
 For research on LLMs, we've investigated vector databases and how to apply a basic form of indexing on them for use with OpenAI. You can check out our basic example at [https://df-doc-search.vercel.app/](https://df-doc-search.vercel.app/) and ask it some questions about our company, although don't expect too much 😶.
 
 Likewise, we've created a few Jupyter notebooks working on [Langchain](https://python.langchain.com/en/latest/index.html) and what strategies and utilities we use from it to generate more directed results. You can view some of what we've worked on and noted here:
-
 * [Workaround with OpenAI's token limit with Langchain - The Dwarves Brainery](https://brain.d.foundation/Engineering/AI/Workaround+with+OpenAI%27s+token+limit+with+Langchain)
 * [Working with langchain document loaders - The Dwarves Brainery](https://brain.d.foundation/Engineering/AI/Working+with+langchain+document+loaders)
 * [https://colab.research.google.com/drive/1FMbBYPLz01lLma4jK36-fABjQC2vhyRJ?usp=sharing](https://colab.research.google.com/drive/1FMbBYPLz01lLma4jK36-fABjQC2vhyRJ?usp=sharing)

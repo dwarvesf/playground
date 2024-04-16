@@ -18,11 +18,11 @@ A Project Manager (PM) job starts right after a new project has been sealed and 
 Keep everything neat and things where they are supposed to be. Being organised and keeping track of everything will make your life much easier.
 Create tasks and document them straight away. Don't let things get lost nor un-acted upon.
 
-### **Keep everything on record**
+### Keep everything on record
 After every meeting or every relevant chat, create a new entry at the *Client Communication* block.
 Getting every change request or feedback recorded and saved means it won't be lost either in your memory or on Slack's feed.
 
-### **Manage expectations**
+### Manage expectations
 This is a tricky one. Managing client's expectation has no recipe. In fact, it is more of a sensorial, *gut-feeling* capability rather than a technical skill that can be acquired.
 
 Of course, delivering things on time will have the greatest impact. Keeping open, steady communication channels and things transparent will be important too.
@@ -33,22 +33,22 @@ Things like providing feedback on time, providing content and/or assets in advan
 
 With this, you're letting the client know they have their own responsibilities on a successful, smoothly running project.
 
-### **Be the wall**
+### Be the wall
 Don't let the clients put pressure on the team. Reassure them if necessary.
 
 Even though we encourage each Team member to assess any ongoing issues directly with the client – and you should do the same – we don't want any extra pressure upon them.
 
 In such event, you must intervene and steer the communication from that moment on. Schedule a call if necessary, but don't let conversations spiral out of control between the Team and the client.
 
-### **Make sure the Team has everything they need, at all times**
+### Make sure the Team has everything they need, at all times
 As a PM you want the project to unroll as smoothly as possible and to be completed in a timely fashion. One key factor is the amount of time the Team will be blocked while waiting for you – either waiting for documentation, for the tasks to be created, for a conversation with the client or whatever it might be.
 
-### **Anticipate problems**
+### Anticipate problems
 Anticipating problems will help you Make sure the Team has everything they need at all times.
 
 Your ability to predict any unseen problems and act upon them in advanceby adjusting the planning in real-time will make the difference between a PM and a great PM.
 
-### **Manage Team Progress**
+### Manage Team Progress
 As a PM you must be the one person who knows everything about the project you are managing.
 
 Managing and tracking the Team's progress will help you determine whether or not you'll have to adjust your planning based on whether or not the Sprint will be completed successfully.
@@ -68,7 +68,7 @@ Therefore, you must not watch and control the Team's work like a hawk.
 
 When you micromanage you’re telling the Team that you don’t trust them enough to let them work on their own and still produce good results. This leads to annoyance and damaged trust.
 
-### **Always keep the client up-to-date**
+### Always keep the client up-to-date
 Everyone likes to feel they're in control. Our clients are no different.
 
 The best we can do is cope and keep the client in the light, every time. To achieve that, there's a couple of things you can do:

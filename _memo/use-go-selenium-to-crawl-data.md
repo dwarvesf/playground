@@ -45,7 +45,6 @@ After that, we need to set up a browser. I choose Firefox. Remember, when runnin
 Done! Now let’s code.
 
 We need:
-
 * Remote to server selenium
 * Access to Amazon deal link
 * Conduct analytics HTLM to get information. I will print page title and the image of the first product

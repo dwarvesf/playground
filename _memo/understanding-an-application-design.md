@@ -29,14 +29,12 @@ The critical factors that helps define the right framework
 
 ## Rendering Technique
 The process of taking HTML code and interprets it into visual results and interactive web pages. The technique can be chosen from three options
-
 * SSR - Server side rendering: Supports SEO
 * Hybrid rendering:
 * Client side rendering: Only suitable for Single page app, and isn’t good for SEO.
 
 ## Atomic Components
 The basic elements to construct a finetune website
-
 * Color
 * Font
 * Grid system

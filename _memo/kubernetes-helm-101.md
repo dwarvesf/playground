@@ -22,24 +22,24 @@ In this article, we will learn about Helm, a powerful tool that makes life worki
 * **Docker**: *a number one software to create, manage and run containers.* Most chosen for all popular *Containerization* applications today. Many large cloud solutions like Google Cloud, Amazon Web Services, Microsoft Azure are using it.
 * **Kubernetes**: *a famous open source used for container orchestration*. With the rise of *Containerization*, the management and coordination of container-based applications became complicated and difficult, making Kubernetes an effective and indispensable solution for systems using Containerization
 
-# Helm Overview
+## Helm Overview
 
-## Concepts
+### Concepts
 Helm has 4 basic concepts:
 
-* ***Chart***: a collection of YAML files; bundle of the Kubernetes resources needed to build a Kubernetes application. For ease of visualization, Helm Chart can be compared like a Docker Image. Of course, Helm also has a Helm Hub where to search and share Charts for popular apps
+* **Chart**: a collection of YAML files; bundle of the Kubernetes resources needed to build a Kubernetes application. For ease of visualization, Helm Chart can be compared like a Docker Image. Of course, Helm also has a Helm Hub where to search and share Charts for popular apps
 
 ![[6a409c81c3372fda59fd6217eab2fabc_MD5.webp]]
 
-* ***Config***: a configuration in the values.yaml file, which contains configuration explicit to a release of Kubernetes application. It can be the config for service, ingress, deployment, etc. until specific applications such as Kafka, Consul, Vault, NATS-streaming, etc.
+* **Config**: a configuration in the values.yaml file, which contains configuration explicit to a release of Kubernetes application. It can be the config for service, ingress, deployment, etc. until specific applications such as Kafka, Consul, Vault, NATS-streaming, etc.
 
 ![](assets/kubernetes-helm-101_ea686ec580638794529f8054ef266a45_md5.webp)
 
-* ***Release***: a chart instance is loaded into Kubernetes. It can be viewed as a version of the Kubernetes application running based on Chart and associated with a specific Config.
+* **Release**: a chart instance is loaded into Kubernetes. It can be viewed as a version of the Kubernetes application running based on Chart and associated with a specific Config.
 
 ![](assets/kubernetes-helm-101_17c2731e7fc3be306d1da3317bbee37a_md5.webp)
 
-* ***Repositories***: a repository of published Charts. These can be private repositories that are only used within the company or public through the Helm Hub. Some Charts may have different versions of many companies or publishers. Particularly, Charts in a Stable repository must always meet the criteria from the Technical Requirements of Helm.
+* **Repositories**: a repository of published Charts. These can be private repositories that are only used within the company or public through the Helm Hub. Some Charts may have different versions of many companies or publishers. Particularly, Charts in a Stable repository must always meet the criteria from the Technical Requirements of Helm.
 
 ![](assets/kubernetes-helm-101_426db2b83abcad55d8b8ce46b11fa2d0_md5.webp)
 
@@ -48,8 +48,8 @@ Helm has a fairly simple client-server architecture, including a CLI client and 
 
 ![](assets/kubernetes-helm-101_63fcd3d5115887bdd2e46fd0f8c337b7_md5.webp)
 
-* *Helm Client*: Provides the developer to use it a command-line interface (CLI) to work with Charts, Config, Release, Repositories. Helm Client will interact with Tiller Server, to perform various actions such as *install*, *upgrade* and *rollback* with Charts, Release.
-* *Tiller Server*: an in-cluster server in the Kubernetes cluster, interacting with the Helm Client and communicating with the Kubernetes API server. Thus, Helm can easily manage Kubernetes with tasks such as *install*, *upgrade*, *query* and *remove* for Kubernetes resources.
+* **Helm Client**: Provides the developer to use it a command-line interface (CLI) to work with Charts, Config, Release, Repositories. Helm Client will interact with Tiller Server, to perform various actions such as *install*, *upgrade* and *rollback* with Charts, Release.
+* **Tiller Server**: an in-cluster server in the Kubernetes cluster, interacting with the Helm Client and communicating with the Kubernetes API server. Thus, Helm can easily manage Kubernetes with tasks such as *install*, *upgrade*, *query* and *remove* for Kubernetes resources.
 
 Here are some basic concepts and architectures to help you understand and grasp Helm more quickly. In the next section, we’ll take some tutorials to deep dive into Helm. Let’s do it!
 
@@ -82,7 +82,7 @@ Check the tiller deployment in the kube-systems namespace using ***kubectl ***co
 kubectl get deployment tiller-deploy -n kube-system
 ```
 
-## **Deploy an Application using Helm**
+## Deploy an Application using Helm
 Now we’re going to deploy a Kafka cluster using helm.
 
 It’s many charts of Kafka when we search on the Helm Hub. Unfortunately, Kafka doesn’t have a Stable chart, so you can choose which one fits with your use case. For this tutorial, we’ll install the Kafka chart of Bitnami into queue-production namespace.
@@ -127,14 +127,14 @@ Delete the installation from Kubernetes cluster, use this command
 helm delete --purge kafka-prod
 ```
 
-# Conclusion
+## Conclusion
 We’ve witnessed the ecosystem around Kubernetes blossom, and new tools are appearing every day. Helm is an essential tool for DevOps and Developer using Kubernetes in their production environment. Tools like Helm are often used when considering quick deployment strategies and cost savings in operations.
 
 You can refer to more information in [the documentation of Helm](https://helm.sh/docs/). In the next article, I will show you how to create a Helm Chart of NATS-streaming. Hopefully, this article will help you who are intending to learn about Helm as well as the necessary tools of the DevOps. Thank you, please give me your commend if there are deficiencies and I will do better in the next articles.
 
-## Read more
-* *[What is Containerization?](https://hackernoon.com/what-is-containerization-83ae53a709a6#targetText=Containerization%20involves%20bundling%20an%20application,ecosystems%20are%20Docker%20and%20Kubernetes.)*
-* *[Helm documentation](https://helm.sh/docs/)*
-* *[Using Helm and Kubernetes](https://www.baeldung.com/kubernetes-helm)*
-* *[What is Helm and why is it important for Kubernetes deployments?](https://boxboat.com/2018/09/19/helm-and-kubernetes-deployments/)*
-* *[Helm Tutorial: How To Install and Configure Helm](https://devopscube.com/install-configure-helm-kubernetes/)*
+### Read more
+* [What is Containerization?](https://hackernoon.com/what-is-containerization-83ae53a709a6#targetText=Containerization%20involves%20bundling%20an%20application,ecosystems%20are%20Docker%20and%20Kubernetes.)
+* [Helm documentation](https://helm.sh/docs/)
+* [Using Helm and Kubernetes](https://www.baeldung.com/kubernetes-helm)
+* [What is Helm and why is it important for Kubernetes deployments?](https://boxboat.com/2018/09/19/helm-and-kubernetes-deployments/)
+* [Helm Tutorial: How To Install and Configure Helm](https://devopscube.com/install-configure-helm-kubernetes/)

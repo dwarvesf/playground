@@ -15,8 +15,6 @@ hide_frontmatter: false
 
 And plus, a real lesson learned with our team’s workshop.
 
-# A brief intro to Card Sorting
-
 ## Definition
 Card sorting is a method used to help design or evaluate the information architecture of a site and broader a digital product (web-app and mobile app).
 
@@ -83,12 +81,11 @@ The necessary information hotel employees needs for their everyday work.
 ### Types and platform used
 For the purpose of practicing and promote domain knowledge in hospitality, we chose Open method and use Post-it notes as our cards.
 
-### Action time
+## Action time
 Our facilitator shared some brief description about the project (which role the user in the platform are working at and we should write all the information we think the users should be able to find in the app.
 
-1. **Instructing guidelines**
-
-### 🗒️ Lessons #1
+### 1. Instructing guidelines
+**🗒️ Lessons #1**
 * Each idea is on one card (we missed that requirement and ended up with varied format of content on each card)
 * Consider explaining the whole process of card sorting to participants to help them keep track with the workshop easier
 * Make sure the user know
@@ -96,14 +93,14 @@ Our facilitator shared some brief description about the project (which role the 
 * The tasks they could perform on the platform
 * Start by explaining, remind constantly while the workshop is running
 
-**2. Generating ideas**
+### 2. Generating ideas
 Each group had 15 minutes to brainstorm and write down all the info based on the topic suggested.
 
-### 🗒️ Lessons #2
+**🗒️ Lessons #2**
 * Each idea is on one card
 * Take notice of the time, since people usually are concentrate for around 15 minutes at most (set the time-out based on this or a break is preferred if the content is too large / there are too many categories)
 
-**3. Grouping**
+### 3. Grouping
 After the brainstorming section, we took several minutes (approximately more than 15 minutes) to categorize roughly 18 cards/each group into two variants of taxonomy. (phew!).
 When the groups finished the grouping, all of us were asked to participate in reviewing and raising questions.
 
@@ -115,16 +112,16 @@ For instance, a card with the wording “status” led to a discussion.
 
 In this case, recalling our users were the hotel’s staff, the room status was the more suitable choice to choose.
 
-### #🗒️ Lessons #3
+**🗒️ Lessons #3**
 * No idea is wrong. Propose first, verify later.
 * Give more details to the cards: stay away from confusing wording, make short explanation to the labels. This would help shorten the time for the explanation.
 * Learned how a card sorting is operated
 * Discovered some new wordings for categories
 * Made a better preparation for the real workshop
 
-## #Beyond this session
+## Beyond this session
 1. Document the findings into digital version for optimal results overview (diagrams for more holistic view)
-1. Test the result with simple interactive prototype
+2. Test the result with simple interactive prototype
 
 *If you’d like to get deeper into this method, here are some sources that may help*
 

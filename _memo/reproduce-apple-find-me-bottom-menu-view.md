@@ -19,7 +19,7 @@ Device list Bottom Menu has three states: Collapsed, HalfExpanded and Expanded l
 What we should do:
 
 1. Bottom View can update itself height follow user finger position when dragging (Pan Gesture)
-1. Bottom View can automatically resize its height base on the direction of dragging and position compare to “half position”
+2. Bottom View can automatically resize its height base on the direction of dragging and position compare to “half position”
 
 Create an XCode project, add a new UIView and named it to BottomMenuView.
 

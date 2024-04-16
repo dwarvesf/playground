@@ -14,9 +14,9 @@ hide_frontmatter: false
 
 The highlights before we are write our code.
 
-* Our Passcode view can “becomeFirstResponder” and “resignFirstResponder” to show and hide virtual keyboard if needed.
+Our Passcode view can “becomeFirstResponder” and “resignFirstResponder” to show and hide virtual keyboard if needed.
 
-\=> Our Passcode nearly same with TextField.
+=> Our Passcode nearly same with TextField.
 
 Define our passcode view:
 

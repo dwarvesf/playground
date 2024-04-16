@@ -22,7 +22,6 @@ Cypress is an e2e testing framework that offers simplicity API and performant te
 ![](assets/fundamental-end-to-end-frontend-testing-with-cypress_706c9f06c1ddbab02d7e04195d24bc16_md5.webp)
 
 The application that we are going to test against is autocomplete textbox. Features
-
 * Enter filter text and render list item that has text match filter text
 * Select item in the list will replace filter text with text in the list item
 
@@ -30,12 +29,10 @@ The application that we are going to test against is autocomplete textbox. Featu
 Clone this project for application setup (This repo. Install project dependencies with yarn install) https://github.com/PhmNgocNghia/TestingReact
 
 Since this is a react project using custom webpack template. Here is some command to start the project:
-
 * yarn dev: start develop using webpack hot replacement server
 * yarn build: build production application
 
 We must first start run yarn dev for testing server at localhost:9000
-
 To start writing test, create a npm script that starts cypress with npm command: cypress open
 
 ```plain_text
@@ -113,7 +110,6 @@ After inserting e2e test into the spec file. Run yarn e2e again to see the resul
 
 ## Conclusion
 In this article, I didn’t cover all feature of cypress, mocha task runner and chai assertion library. You can check its document at:
-
 * Chai assertion: [https://www.chaijs.com/api/bdd/](https://www.chaijs.com/api/bdd/)
 * Cypress: [https://docs.cypress.io](https://docs.cypress.io/)
 

@@ -12,11 +12,6 @@ hide_frontmatter: false
 
 This workshop wraps up the useful information on 2 types of operating system for UX/UI designers, based on the personal research on iOS and Android. The purpose is to create an application that brings comfortability and a great experience to the end user.
 
-### Table of Content
-1. Introduction to iOS & Android
-1. The platforms to build application
-1. Useful tips to create an effective mobile application
-
 ## Introduction to iOS & Android 
 ### Adjustment & Privacy
 * iOS has better privacy protection since it belongs exclusively to iOS, but this leads to the limitation of function adjustment.
@@ -80,17 +75,12 @@ Still, there are some researches claim that Hybrid App and Cross Platform are th
 ## Useful tips to create effective Mobile Application
 ### Read the Human Interface Guidelines
 **Android:**
-
 * [Google Design](https://design.google/resources/)
 * [Material Design](https://material.io/design/introduction#goals)
 
-**Window:**
+**Window:** [Universal Windows Platform Apps](https://docs.microsoft.com/en-us/windows/win32/uxguide/how-to-design-desktop-ux)
 
-* [Universal Windows Platform Apps](https://docs.microsoft.com/en-us/windows/win32/uxguide/how-to-design-desktop-ux)
-
-**iOS:**
-
-* [iOS Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
+**iOS:** [iOS Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
 
 ### Talk to Developers
 * Understand the difficulties

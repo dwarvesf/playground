@@ -47,7 +47,6 @@ The logic is that whenever we "catch" a new message, we create a new record like
 From the design stage, Tom and I agreed that I would try to complete the AOT version in 2 weeks. I finished the AOT version in around 10 day-ish. My demonstration is to send a message in the private Discord server, and to see `message_count` increases by one. In the few days left, I worked a bit on the JIT version while waiting for the final assessment to come.
 
 ### Technical Implementation
-
 ### Fortress API
 On the [Fortress API](https://github.com/dwarvesf/fortress-api), one core function we use to get messages through a pull-based/polling design is through our `GetMessagesAfterCursor` function. Very similar to how we use block range in smart contract event fetching as a cursor to filter out the blockchain, we use a similar pull-based method for getting messages from Discord:
 

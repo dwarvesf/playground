@@ -25,7 +25,6 @@ This falls in line with the rest of engineering. Different branches use differen
 
 ## The other differences
 Engineers work on predictable projects with a lot of upfront planning and rigorous requirements. Software is dynamic, constantly changing, unpredictable. If we try to apply engineering practice to software, then software would be 10 times as expensive and stuck in 1970.
-
 * Traditional engineering is best done in a Waterfall style, while software is best done in an Agile one.
 * Trad engineering is very predictable, while software is very unpredictable.
 * Engineering is mostly about manufacture, while code is mostly about design, because "the code is the design".
@@ -82,13 +81,11 @@ Part of this is our preference for plaintext source code. Our VCS tools aren't n
 
 On top of this, our tooling surrounding version control is extraordinary. If I'm hosting a project on GitHub, I can make every pull request kick off a test suite for a dozen different OSes, check for merge conflicts, and ping a coworker for review. One chemical engineer talked about how, whenever he needed sign off on a project at his old job, he had to get everybody to physically sign an authorization form. If someone was working remotely that day, the authorization would be delayed by a day. He is very happy to now have pull requests and automated builds.
 
-## **To summary**
+## To summary
 So, we software engineers are "really" engineers. All the differences people give between software and "real" engineering don't accurately reflect what "real" engineering looks like. And the biggest difference, licensure, is a political construct, not a technical one. At the same time, there is a difference between the different ways people make software, and it makes sense to think of software developers and software engineers as distinct concepts. But even then, it's very easy for a software developer to become a software engineer and vice versa.
 
 Some aspects of software engineering are unique to software, such as the speed of iteration, loose constraints, and the consistency of our material. But software engineering has far more in common with the other forms of engineering than it has differences. The same ideas that engineers use to advance their craft are equally useful in our own domain.
 
 Engineering processes are more sophisticated than ours in ways that we can extract lessons from. Traditional engineers have a stronger sense of professionalism and responsibility than we tend to. In contrast, our culture is much more open and our communities much stronger than what exists in trad engineering. And our developments in version control have the potential to revolutionize traditional engineering.
-
----
 
 Back to the [Apprenticeship Program](https://github.com/dwarvesf/WeAreHiring/blob/master/open-positions/Apprentice.md), this primary question is once thing I feel necessary to discuss with apprentices and the practitioners. Getting to know the industry we are working on and might spend years with it, will help to form the foundation for the future. It will also help us as an engineer to make a better decisions

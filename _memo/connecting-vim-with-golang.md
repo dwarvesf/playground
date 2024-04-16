@@ -156,7 +156,6 @@ You can basically code Go with only Vim go, but to make things easier, and also 
 ```
 
 In these:
-
 * nerdtree: Help you organize the folders in vim in folder structure, which makes it easier to open file and folder. After finished setting up:
 
 ![](assets/connecting-vim-with-golang_ac42721e6ddb17d3204d4596f55f96ce_md5.webp)
@@ -215,7 +214,6 @@ You can read more at [mapping in vim](http://vimdoc.sourceforge.net/htmldoc/map.
 
 ## Conclusion
 Everything is ready! Your only job is to:
-
 * Experienced in using hjkl in vim, as well as the basic commands in vim.
 * Search for more plugins to support for vim. This is a page I find very interesting and useful for [plugins in vim](http://vimawesome.com/).
 * The key strong point in vim is customization, you should try to figure out how to create new mappings or function that helps fasten your coding process.

@@ -28,9 +28,9 @@ Each convention is written in a compact format so that designers can easily read
 * Colors
 * General Figma tips
 
-# **Versions & File Organizations**
+## Versions & File Organizations
 
-## Manage versions by releases
+### Manage versions by releases
 ![](assets/ui-design-best-practices-dwarves_1c3f1857f449f57c470ce40efff1bd01_md5.webp)
 
 On the management of Pages in Figma. This is a recommended structure:
@@ -48,13 +48,13 @@ On the management of Pages in Figma. This is a recommended structure:
 
 Devs and the client discuss the design with designers through Figma's comments, only designers can make changes in the Figma files.
 
-## Manage Layers
+### Manage Layers
 ![](assets/ui-design-best-practices-dwarves_a46ebf821728ad559bf23e5e6bd7d5a9_md5.webp)
 
 * Layers are often grouped and named by function or section. For example: hero image, slider, header, footer…
 * Asset (illustration, icon, vector ...) needs to be grouped so that devs can export to SVG files by themselves (without any help from designer).
 
-# **Practical, context-conscious data**
+### Practical, context-conscious data
 To ensure team members understand the same problem and the provided design solution, each user flow should be presented as a story with practical characters and data.
 
 In complex cases when detailed explanations are needed, designers should have paragraphs (in the form of notes) in the Figma file for developers to read. You can refer to the formula Cause → Consequences → Design Solution.
@@ -63,25 +63,25 @@ Example: Hotel room booking website where guests can book a room by the hour. A 
 
 Context: Minh pre-booked room 102 from 19:00 to 20:00
 
-* [Because]
+[Because]
 * Room 102 is booked from 19:00 to 20:00, Room 102 cannot be booked again during 19:00 to 20:00
 * It takes 30 minutes before and 29 minutes after to clear the room, Room 102 cannot be booked from 18:30 to 20:29
-* [Therefore]
+
+[Therefore]
 * Room 102 is disabled for booking from 18:30 to 20:30
 * [Design Decision]
 * Booking time slots from 18:30 to 20:29 will no be shown as available
 
 ![](assets/ui-design-best-practices-dwarves_016986df82ac5332b050a9cf55425f3b_md5.webp)
 
-# **Design System File presentation**
-
-## **How to manage pages and master components using Figma software**
+## Design System File presentation
+## How to manage pages and master components using Figma software
 Design System is a tool that makes the component management of the project clear and easy. For more details, please see [this example file](https://www.figma.com/file/6CuLQBxwh1QlLp386Ths7h/Blackpink-Example-for-Design-System-File?node-id=83%3A1098).
 
 ![](assets/ui-design-best-practices-dwarves_9ebb07075efeda26bfeb2a82876bd2ef_md5.webp)
 
-## **Naming Color Style**
-**Designers at Dwarves name colors based on their function (Primary, Secondary, Disabled,...)** Meanwhile, developers name colors based on light/dark levels with numbers (100, 200, 300...)
+## Naming Color Style
+**Designers at Dwarves name colors based on their function** (Primary, Secondary, Disabled,...) Meanwhile, developers name colors based on light/dark levels with numbers (100, 200, 300...)
 
 * The naming convention for colors at Dwarves: **Flat / BG / Neutral 1 (gray-400)** in which **Flat / BG / Neutral 1** is added by designers and **(gray-400)** is by added developers
 * Designers complete the color palette, inform developers to add a suffix to the name of the Color Styles
@@ -90,17 +90,16 @@ Design System is a tool that makes the component management of the project clear
 ![](assets/ui-design-best-practices-dwarves_a70427baf7d24194ab5037713ee0a063_md5.webp)
 
 **Naming Color Style for designer and developer are both convenient in the working process.**
-
 The developer has a way to name the color in the form of numbers (100,200,300 ...). Meanwhile, the designer names the color based on the color's function (Primary, Secondary, Disable….)
 
 ![](assets/ui-design-best-practices-dwarves_f7bcaa80f7503bce54c8f48be4535454_md5.webp)
 
 ![](assets/ui-design-best-practices-dwarves_b37bb057d318c523f8de54660823255a_md5.webp)
 
-## **Tips when using the Design System file in Figma:**
+## Tips when using the Design System file in Figma
 In order to kickstart a new project, we usually reproduce the Design System from previous projects where all the master components have been established and ready for use. All that’s left is to remove unnecessary components and adapt the Design System to the new project.
 
 You should design the UI in the Design System file first, for convenience in creating and perfecting the Master Component. After the final UI is finalized, transfer the design to the UI file.
 
-# **Other conventions**
+## Other conventions
 Other conventions are added over time each time a designer discovers a new problem in the process of working with devs.

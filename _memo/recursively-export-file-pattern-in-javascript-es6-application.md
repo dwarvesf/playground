@@ -12,7 +12,7 @@ hide_frontmatter: false
 
 ![](assets/recursively-export-file-pattern-in-javascript-es6-application_08f14b555ce54599844167b5700622ca_md5.webp)
 
-# Introduction
+## Introduction
 Imagine you have a lot of components and you imported it like this:
 
 ![](assets/recursively-export-file-pattern-in-javascript-es6-application_c733b9fb01a2eb50f4a8895d2cd68acd_md5.webp)
@@ -22,15 +22,13 @@ Instead of importing component like above. You would want to import your compone
 ![](assets/recursively-export-file-pattern-in-javascript-es6-application_024be7746f1d8a3f25ffad7888a47caf_md5.webp)
 
 **The pros of this style are**
-
 * Your project structure now grouped into multiple namespaces. You can image It’s like C# namespace. Each namespace is a root folder in our project.
 * Don’t have to remember exactly path of your components.
 
 **The cons are**
-
 * Can’t export members who name has been exported already. Eg: Component/A export A member so Component/B cannot export A member.
 
-# Implementation
+## Implementation
 To implement this style, We use re-export statement which is all feature of Javascript ES6: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
 It’s syntax like bellow. All named export or all export data from the module, whose path is something, will re-export from the file that use re-export syntax

@@ -20,7 +20,7 @@ In today's digital world, the exchange of information between different systems 
 
 Without message brokers, communication between systems and applications would be much more difficult. They provide a common language that different systems can use to communicate with each other, regardless of the programming language or the hardware used. They also help to ensure that messages are delivered in the correct order, and can handle large volumes of messages without overwhelming the system.
 
-# What is a Message Broker?
+## What is a Message Broker?
 **A** **Message broker** is an intermediary program designed to validate, transform, and route messages. They serve the communication needs between applications.
 
 With a Message broker, the source application (producer) sends a message to a server process that can provide data sorting, routing, message translation, persistence, and delivery to all appropriate destinations (consumers).
@@ -35,7 +35,7 @@ There are 2 basic forms of communication with a Message Broker:
 
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_56d936f810e3423ac48427e1d7ca3f64_md5.webp)
 
-# When and why to use Message Broker
+## When and why to use Message Broker
 Message brokers are versatile tools that can address a wide range of business needs across industries and in a variety of enterprise computing environments.
 
 Here are some common ways message brokers are used:
@@ -52,13 +52,13 @@ For example, when users are allowed to create PDF files for IT CV templates from
 A consumer takes a message from the queue and starts processing the PDF while a producer is adding new messages to the queue. A request can be created in one language and processed in another. The two applications exchange with each other through messages. Therefore, the sending and receiving applications will have low coupling.
 
 1. User sends a request to create a PDF on the web application.
-1. The web application (producer) sends a message to RabbitMQ containing the requested user data, such as name, email, phone number, etc.
-1. An exchange is agreed upon by the producer application and leads them to the right PDF creation queue.
-1. A PDF creation worker (consumer) receives a task and starts processing the PDF.
+2. The web application (producer) sends a message to RabbitMQ containing the requested user data, such as name, email, phone number, etc.
+3. An exchange is agreed upon by the producer application and leads them to the right PDF creation queue.
+4. A PDF creation worker (consumer) receives a task and starts processing the PDF.
 
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_c17d6fd298e5729424b4b04d7cee315f_md5.webp)
 
-## Advantages and Disadvantages
+### Advantages and Disadvantages
 There are a few advantages and disadvantages with a job request messaging on message brokers:
 
 Advantages:
@@ -272,19 +272,19 @@ q, err := ch.QueueDeclare(
 
 Function have params:
 
-1. `**name**`: The name of the queue to declare. It's a mandatory parameter and must be a string.
-1. `**durable**`: A boolean value that indicates if the queue should survive a broker restart or not. If `**durable**` is set to `**true**`, the queue will survive a broker restart, and if it's set to `**false**`, the queue will not.
-1. `**delete when unused**`: A boolean value that indicates if the queue should be deleted when it's no longer in use. If this is set to `**true**`, the queue will be deleted automatically when there are no more consumers subscribed to it.
-1. `**exclusive**`: A boolean value that indicates if the queue should be exclusive to the current connection. If this is set to `**true**`, only the current connection can access the queue. If set to `**false**`, other connections can also access the queue.
-1. `**no-wait**`: A boolean value that indicates if the queue should be declared as a passive queue or not. If this is set to `**true**`, the broker will not wait for a response from the server before sending the next command.
-1. `**arguments**`: A table of additional arguments to pass when declaring the queue. These arguments are optional and can be used to specify various queue properties such as message TTL (time-to-live), maximum length, and more.
+1. `name`: The name of the queue to declare. It's a mandatory parameter and must be a string.
+1. `durable`: A boolean value that indicates if the queue should survive a broker restart or not. If `durable` is set to `true`, the queue will survive a broker restart, and if it's set to `false`, the queue will not.
+1. `delete when unused`: A boolean value that indicates if the queue should be deleted when it's no longer in use. If this is set to `**true**`, the queue will be deleted automatically when there are no more consumers subscribed to it.
+1. `exclusive`: A boolean value that indicates if the queue should be exclusive to the current connection. If this is set to `true`, only the current connection can access the queue. If set to `false`, other connections can also access the queue.
+1. `no-wait`: A boolean value that indicates if the queue should be declared as a passive queue or not. If this is set to `true`, the broker will not wait for a response from the server before sending the next command.
+1. `arguments`: A table of additional arguments to pass when declaring the queue. These arguments are optional and can be used to specify various queue properties such as message TTL (time-to-live), maximum length, and more.
 
 The function returns the following values:
 
-1. `**q**`: The name of the queue that was declared by the broker. If the `**name**` parameter was empty, the broker will generate a unique name for the queue.
-1. `**err**`: An error value if there was an error declaring the queue. If the queue was declared successfully, `**err**` will be `**nil**`.
+1. `q`: The name of the queue that was declared by the broker. If the `name` parameter was empty, the broker will generate a unique name for the queue.
+1. `err`: An error value if there was an error declaring the queue. If the queue was declared successfully, `err` will be `nil`.
 
-### **Publish/Subscribe - Sending messages to many consumers at once**
+### Publish/Subscribe - Sending messages to many consumers at once
 To create Publish/Subscribe we need to:
 
 * create a fanout exchange and a queue

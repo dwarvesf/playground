@@ -15,7 +15,7 @@ hide_frontmatter: false
 
 <!-- table_of_contents b0b864d2-f3d0-41c7-b1dc-aea751ef35a0 -->
 
-# Introduction
+## Introduction
 Go provides us great and convenient ways to write concurrent programs with high performance to execute tasks concurrently (perhaps in parallel if the program is run on a machine with multiple physical cores, GOMAXPROCS are automatically set to the number of physical cores of the machine that the program is running on)
 
 While the Go concurrency primitives are easy to work with (it means it's easy to create the Go concurrency primitives and start using them), but they don't prevent us the developers to write something incorrectly or buggy. They should be used with great care and ideally they should be combined together to achieve some concurrency patterns to be fit in different use cases or contexts where we might solve/handle our problems/business concurrently.
@@ -24,7 +24,7 @@ Concurrency patterns in Go are different ways to put Go’s concurrency primitiv
 
 This post will explain these patterns with a simple example and walk you through the code as well as the decision-making when writing these codes.
 
-# The Patterns
+## The Patterns
 
 ## The Workers Pool pattern
 The first popular one should be the `workers pool` pattern. Goroutine pools are a way of limiting the number of goroutines that can run concurrently. This pattern involves creating a fixed number of goroutines at startup and then using a channel to queue up work. When a new task arrives, it is added to the channel, and one of the idle goroutines picks it up and executes it.
@@ -76,16 +76,15 @@ func main() {
 ```
 
 ### The disadvantages of this pattern
-
-### Limited scalability
+**Limited scalability**
 The worker pool pattern, with a fixed number of workers, can be limited in terms of scalability. If the workload increases beyond the capacity of the worker pool, performance may suffer. One solution to this problem is to use a **dynamic worker pool**. In a dynamic worker pool, the number of workers varies based on the workload. When there are more tasks to be processed, the pool increases the number of workers, and when the workload decreases, it reduces the number of workers.
 
 To implement a dynamic worker pool, we can use a combination of channels and goroutines. We can create a channel to receive tasks and another channel to send results. We can also create a goroutine that listens to the task channel and assigns tasks to available workers. Each worker is a goroutine that receives a task from the worker channel, processes it, and sends the result back to the result channel. To dynamically adjust the number of workers, we can use a separate goroutine that monitors the workload and adjusts the number of workers accordingly. By using a dynamic worker pool, we can achieve better scalability and utilization of resources. However, it requires careful tuning of parameters such as the workload threshold and the rate of worker creation/destruction to avoid overloading the system or creating too many unnecessary goroutines.
 
-### Resource management
+**Resource management**
 Managing resources such as memory and CPU usage can be challenging with the worker pool pattern. Since the number of workers is fixed, it can be difficult to optimize resource usage for different types of workloads. If a worker takes too long to complete a task, we can **use a timeout mechanism for tasks**, such that the task can be timed out and reassigned to another worker. This ensures that no worker is blocked for an extended period of time and helps maintain the overall performance of the system.
 
-### Task prioritization
+**Task prioritization**
 The worker pool pattern does not provide a built-in mechanism for task prioritization. This means that all tasks are treated equally, regardless of their importance or urgency. We can introduce a **priority queue** data structure to the workers pool pattern. A priority queue is a data structure that stores elements with associated priorities and allows for efficient retrieval of the element with the highest priority.
 
 ## The Fan-Out/Fan-In pattern
@@ -188,27 +187,24 @@ func main() {
 Here’s a breakdown of the code:
 
 1. Import necessary packages.
-1. Define `simulateDownload(url string)` function, which simulates downloading a file from the provided URL and returns its content as a string.
-1. Define `downloader(urls []string)` function, which takes a slice of URLs and returns a channel that sends the content of each URL. It launches a goroutine that iterates over the URLs, simulates the download, and sends the content through the channel. The channel is closed after all URLs have been processed. *It will be* ***fan-out part***: the* `downloader` function creates a single `downloadStream` channel that sends the content of each downloaded file. Later, we will create multiple worker goroutines that listen to this shared channel, effectively fanning out the work to be done concurrently.
-1. Define `worker(in <-chan string)` function, which takes a channel of strings as input and returns a channel of integers. It launches a goroutine that reads the content from the input channel, prints the processing timestamp and content, counts the number of words in the content, and sends the count through the output channel. The output channel is closed after all content has been processed.
-1. Define `merger(ins ...<-chan int)` function, which takes a variadic parameter of channels with integer values and returns a channel with integer values. It merges the input channels into a single output channel. A `sync.WaitGroup` is used to wait for all input channels to be processed, after which the output channel is closed. *It will be* ***fan-in part***: the* `merger` function combines the results from multiple worker goroutines by listening to their individual output channels. It uses a `sync.WaitGroup` to ensure that it waits for all the worker goroutines to complete before closing its output channel.
-1. In the `main` function, seed the random generator, define a slice of URLs, and create a download stream by calling the `downloader()` function.
-1. Define the number of workers, create a slice of worker channels, and start the worker goroutines with the download stream as input.
-1. Merge the worker channels using the `merger()` function.
-1. Iterate over the merged channel to compute the total word count.
-1. Print the total word count.
+2. Define `simulateDownload(url string)` function, which simulates downloading a file from the provided URL and returns its content as a string.
+3. Define `downloader(urls []string)` function, which takes a slice of URLs and returns a channel that sends the content of each URL. It launches a goroutine that iterates over the URLs, simulates the download, and sends the content through the channel. The channel is closed after all URLs have been processed. *It will be* ***fan-out part***: the* `downloader` function creates a single `downloadStream` channel that sends the content of each downloaded file. Later, we will create multiple worker goroutines that listen to this shared channel, effectively fanning out the work to be done concurrently.
+4. Define `worker(in <-chan string)` function, which takes a channel of strings as input and returns a channel of integers. It launches a goroutine that reads the content from the input channel, prints the processing timestamp and content, counts the number of words in the content, and sends the count through the output channel. The output channel is closed after all content has been processed.
+5. Define `merger(ins ...<-chan int)` function, which takes a variadic parameter of channels with integer values and returns a channel with integer values. It merges the input channels into a single output channel. A `sync.WaitGroup` is used to wait for all input channels to be processed, after which the output channel is closed. *It will be* ***fan-in part***: the* `merger` function combines the results from multiple worker goroutines by listening to their individual output channels. It uses a `sync.WaitGroup` to ensure that it waits for all the worker goroutines to complete before closing its output channel.
+6. In the `main` function, seed the random generator, define a slice of URLs, and create a download stream by calling the `downloader()` function.
+7. Define the number of workers, create a slice of worker channels, and start the worker goroutines with the download stream as input.
+8. Merge the worker channels using the `merger()` function.
+9. Iterate over the merged channel to compute the total word count.
+10. Print the total word count.
 
 ### The disadvantages of this pattern
 **Increased complexity**
-
 The fan-out/fan-in pattern can add complexity to your code, especially if you need to handle errors or timeouts. It can also make it harder to reason about the behavior of your program. To handle errors or timeouts, you can use the **context cancellation**, or use the context package to propagate cancellation signals to all the goroutines involved in the fan-out/fan-in pattern. This can help ensure that resources are released promptly and that your program doesn't hang indefinitely.
 
 **Resource consumption**
-
 Creating too many goroutines can lead to excessive resource consumption, which can cause performance issues or even crashes. This is particularly true if the sub-tasks are short-lived and the overhead of creating and managing goroutines outweighs the benefits. To avoid excessive resource consumption, you can **limit the number of goroutines** that are created at any given time. One way to do this is to use a worker pool, where a fixed number of goroutines are created upfront and then used to process tasks as they become available.
 
 **Synchronization overhead**
-
 Coordinating the results of multiple goroutines can introduce synchronization overhead, which can slow down your program and increase the likelihood of race conditions or deadlocks. If possible, try to design your program so that synchronization is only necessary when aggregating the results of the sub-tasks to **avoid unnecessary synchronization**. For example, you can use channels to pass data between goroutines instead of shared memory, which can reduce the likelihood of race conditions or deadlocks.
 
 ## The Pipeline pattern
@@ -235,11 +231,9 @@ func multiply(x int, y int) int {
 }
 ```
 
-The benefit of a pipeline is evident:
-
+### The benefit of a pipeline is evident
 * It separates the concerns of each stage in the pipeline. Each stage is responsible for one and only one thing.
 * The stages are modular and allow us to mix and match how stages are combined.
-
 The stages in the example above run sequentially. Each can only begin after the previous stage has processed all the data. Leveraging the Goroutine and channel, stages can run and process data concurrently. First, we transform our `add` and `multiply`function to take in an `inputCh` and outputs a `resultCh`.
 
 ```go
@@ -318,25 +312,21 @@ func main() {
 ```
 
 Here’s a breakdown of the code:
-
 1. We create a data stream using the `generator` function
-1. We create a `doneCh` and pass to all Goroutines for explicit cancellation
-1. We then chain the `add` and `multiply` stage together
-1. Whenever the `add` function has done processing an input. It will immediately pass the result to the multiply stage for further processing
+2. We create a `doneCh` and pass to all Goroutines for explicit cancellation
+3. We then chain the `add` and `multiply` stage together
+4. Whenever the `add` function has done processing an input. It will immediately pass the result to the multiply stage for further processing
 
 Each stage processes the data concurrently and immediately passes it to the next stage once it’s done. Moreover, the multiply and the add stage can be mixed and matched to produce different results.
 
 ### The disadvantages of this pattern
 **Increased complexity**
-
 The pipeline pattern can become complex when dealing with multiple stages and channels. This complexity can make it difficult to debug and maintain the code. To reduce the complexity of the pipeline pattern, it is important to keep each stage simple and focused on a specific task. This will make it easier to debug and maintain the code.
 
 **Blocking**
-
 If one stage of the pipeline is blocked, it can cause the entire pipeline to block. This can lead to performance issues and slow down the processing of data. To avoid blocking in the pipeline, non-blocking channels can be used. This will allow the pipeline to continue processing data even if one stage is blocked.
 
 **Data Loss**
-
 If the pipeline is not designed properly, it can result in data loss. For example, if a channel is not buffered and a stage is not ready to receive data, the data will be lost. To prevent data loss, buffered channels can be used. This will ensure that data is not lost if a stage is not ready to receive data.
 
 Proper error handling should be implemented in each stage of the pipeline to handle any errors that may occur. This will help to prevent the pipeline from crashing and losing data.
@@ -369,9 +359,9 @@ func (s *Semaphore) Release() {
 ```
 
 1. The `NewSemaphore` initiates a `Semaphore` by creating a buffered channel with the capacity of `maxReq`
-1. When a Goroutine `Acquire` a semaphore, we send an empty struct to `semaCh`
-1. When the buffered channel is full, call to `Acquire` will be blocked
-1. When a Goroutine `Release` a semaphore, an empty struct will be sent out of the channel, creating space in the buffered channel for subsequent `Acquire`
+2. When a Goroutine `Acquire` a semaphore, we send an empty struct to `semaCh`
+3. When the buffered channel is full, call to `Acquire` will be blocked
+4. When a Goroutine `Release` a semaphore, an empty struct will be sent out of the channel, creating space in the buffered channel for subsequent `Acquire`
 
 Let’s take a look at an example:
 
@@ -405,23 +395,20 @@ func main() {
 ```
 
 1. We create a semaphore with the capacity of `2`
-1. We spawn ten Goroutines to process certain task
-1. Each Goroutine acquires a semaphore before processing
-1. Since there are ten tasks and the maximum number of concurrent tasks is `2`, the total time needed to process all tasks will be five seconds (Each task takes one second)
+2. We spawn ten Goroutines to process certain task
+3. Each Goroutine acquires a semaphore before processing
+4. Since there are ten tasks and the maximum number of concurrent tasks is `2`, the total time needed to process all tasks will be five seconds (Each task takes one second)
 
 ### The disadvantages of this pattern
 **Deadlocks**
-
 One of the main disadvantages of the Semaphore pattern is the potential for deadlocks. Deadlocks occur when two or more processes are waiting for each other to release a resource, resulting in a deadlock situation where none of the processes can proceed. To avoid deadlocks, it is important to ensure that all resources are released after they have been used. In Golang, this can be achieved by using the `defer`statement to ensure that resources are always released, even if an error occurs.
 
 **Starvation**
-
 Another disadvantage of the Semaphore pattern is the potential for starvation. Starvation occurs when a process is unable to access a shared resource because other processes are constantly accessing it.
 
 To avoid starvation, it is important to implement a fair scheduling algorithm that ensures that all processes have equal access to the shared resource. In Golang, this can be achieved by using a `sync.Mutex` to lock the shared resource and a `sync.Cond` to signal when the resource is available.
 
 **Performance Overhead**
-
 The Semaphore pattern can also introduce performance overhead due to the additional synchronization mechanisms required to control access to the shared resource. To minimize performance overhead, it is important to use the Semaphore pattern only when necessary and to carefully consider the number of resources that need to be shared. In Golang, this can be achieved by using buffered channels to limit the number of goroutines that can access the shared resource at any given time.
 
 ## Considering the number of goroutines
@@ -430,7 +417,6 @@ Goroutines are considered to be lightweight because they use little memory and r
 The operating system schedules threads to run against available processors and the Go runtime schedules goroutines to run within a **[logical processor](https://www.ardanlabs.com/blog/2015/02/scheduler-tracing-in-go.html)** that is bound to a single operating system thread. By default, the Go runtime allocates a single logical processor to execute all the goroutines that are created for our program. Even with this single logical processor and operating system thread, hundreds of thousands of goroutines can be scheduled to run concurrently with amazing efficiency and performance. It is not recommended to add more that one logical processor, but if you want to run goroutines in parallel, Go provides the ability to add more via the GOMAXPROCS environment variable or runtime function.
 
 There are some problems and key notes to consider when running a huge number of goroutines with GOMAXPROCS(1) a.k.a running them on a single thread or logical processor:
-
 1. **Performance Issues:** Running a large number of goroutines on a single processor can cause performance issues due to the overhead of context switching between them. This can lead to slower execution times and increased memory usage.
 
 * The typical file descriptor limits of machines nowadays vary depending on the operating system and its configuration. Here are some examples:
@@ -440,8 +426,8 @@ There are some problems and key notes to consider when running a huge number of 
 
 It's important to note that increasing the file descriptor limit can have performance implications, as each open file consumes system resources. Therefore, it's generally recommended to only increase the limit if your application requires it and to monitor resource usage carefully.
 
-1. **Deadlocks and Race Conditions:** When multiple goroutines access shared resources concurrently, it can lead to deadlocks and race conditions. These issues can be difficult to debug and fix, especially when dealing with a large number of goroutines.
-1. **Resource Limitations:** Running a large number of goroutines can also lead to resource limitations, such as running out of memory or hitting file descriptor limits. It's important to monitor resource usage and adjust the number of goroutines accordingly.
+2. **Deadlocks and Race Conditions:** When multiple goroutines access shared resources concurrently, it can lead to deadlocks and race conditions. These issues can be difficult to debug and fix, especially when dealing with a large number of goroutines.
+3. **Resource Limitations:** Running a large number of goroutines can also lead to resource limitations, such as running out of memory or hitting file descriptor limits. It's important to monitor resource usage and adjust the number of goroutines accordingly.
 
 * When multiple goroutines are running on a single thread (logical processor), the operating system has to perform context switching between them. Context switching is the process of saving the current state of a running process or thread and restoring the saved state of another process or thread so that it can continue execution from where it left off.
 * The overhead of context switching between goroutines depends on several factors, including the number of goroutines running on the thread, the frequency of context switches, and the complexity of the tasks being performed by the goroutines.
@@ -449,7 +435,7 @@ It's important to note that increasing the file descriptor limit can have perfor
 * In addition, if the tasks being performed by the goroutines are complex and require a lot of CPU time, the overhead of context switching can be even higher. This is because each time a context switch occurs, the CPU has to spend time re-loading its caches with the data needed by the new goroutine, which can take longer if the data is not already in the cache.
 * To minimize the overhead of context switching between goroutines, it is important to carefully manage the number of goroutines running on a single thread and to ensure that they are performing tasks that are well-suited to concurrent execution. This can involve using techniques such as load balancing and task prioritization to ensure that the most important tasks are executed first and that the workload is evenly distributed across all available threads.
 
-1. **Design Considerations:** When designing an application that uses a large number of goroutines, it's important to consider the overall architecture and ensure that it is scalable and maintainable. This may involve breaking up tasks into smaller, more manageable pieces or using a distributed system architecture.
+4. **Design Considerations:** When designing an application that uses a large number of goroutines, it's important to consider the overall architecture and ensure that it is scalable and maintainable. This may involve breaking up tasks into smaller, more manageable pieces or using a distributed system architecture.
 
 * Use channels for communication: Goroutines communicate with each other using channels. Using channels instead of shared memory avoids race conditions and makes it easier to reason about your code.
 * Be mindful of blocking operations: If a goroutine blocks on an I/O operation, it will be paused and another goroutine will be scheduled to run. This can lead to inefficient use of resources if there are many goroutines waiting on I/O. Consider using non-blocking I/O or asynchronous I/O to avoid this issue.

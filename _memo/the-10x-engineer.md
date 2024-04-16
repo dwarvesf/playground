@@ -12,29 +12,28 @@ hide_frontmatter: false
 
 10x engineer is a concept sometimes used in Silicon Valley to describe an engineer that is 10x more productive than an average engineer although the 10x metric is figurative. Sometimes referred to as "Ninjas", these engineers are highly sought after by all tech companies.
 
-> *Jim: You gave me 100 resumes but none of these guys are 10x engineers. Why hire a few of these guys to slow us down when a 10x engineer is so much more productive?*
+> Jim: You gave me 100 resumes but none of these guys are 10x engineers. Why hire a few of these guys to slow us down when a 10x engineer is so much more productive?
 
 10x is a number. Despite the fact that a lot of people calls it a myth, we should know that there are real engineers **who can out perform others**. With that understanding, we do need metrics to keep track the productivity but as a Hiring Manager, **being open minded to look for those candidates is a must**.
 
 More:
-
 * [The mythical 10x programmer](http://antirez.com/news/112)
 * [10X Engineer](https://gorillalogic.com/blog/10x-engineer-series-part-1-2/)
 * [Becoming a 10X engineer](https://hackernoon.com/becoming-a-10x-engineer-is-it-possible-a8cf593392c3)
 
-# The depict of a 10x Engineer
+## The depict of a 10x Engineer
 
-## Definition
+### Definition
 10x engineers (10xe) must not be mediocre engineers who are in the middle of the pyramid of the ability, productivity and quality, instead they must be above the middle of the pyramid. 10xes are always obsessed with the quality of the output they deliver, outperform the mediocre engineers in terms of specialized (e.g technical/designing) skills, communication, entrepreneurship mindset and skills, and contribution. They are doers, creators, thing breakers, on the way or already innovators to create better things.
 
-## Mindset
+### Mindset
 * Growth Mindset
 * Creative
 * Innovative
 * Contributive
 
-## Skillset
-* Communication
+### Skillset
+Communication
 
 **Software Engineer**
 

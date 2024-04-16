@@ -31,13 +31,11 @@ This guy enables duck typing and dependency injection, two forms that extremely 
 
 ## Why Go
 Let's be frank, Go is not a language for everything.
-
 * It can't compare with Elixir in term of development speed.
 * Rust beats it hard when it comes to performance.
 * Simplicity alone? Try Python
 
 Go has its place and shines the brightest with the following application types:
-
 * Cloud application: Go's native feature set made it a naturally fit for the cloud, with concurrency built-in feature, Go is the best choice in the market for the two most common architecture in the cloud: micro-services and distributed system.
 * Utilities and stand-alone tools: Go was born to beat the compilation time. It's a savior that the program can be compiled in shorter time and minimal size compare to most of other languages, allow it to be packed and distributed quickly.
 

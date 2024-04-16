@@ -31,13 +31,12 @@ We want our Dwarves to wake up at 7am in the beach, grab a coffee and start doin
 
 ![](assets/remote-prepare-and-get-going_c02371c7846c1100e23ace26df8c0be1_md5.webp)
 
-### The good and the bad**Good**
-
+### The good and the bad
 * I have a lot of control over my working environment. It’s relatively easy to close Slack and focus.
 * I can work from another city/country if I want
 * I live in a slightly shifted timezone
-**Bad**
 
+**Bad**
 * Personal mental health/productivity concerns: Will I get lonely? Will I be too distracted when working from home? Can I maintain good work/life balance? Will the travel impact my personal life?
 * Basic ability to do one’s job: Will I miss out on conversations in the office? How will communication work? Will people forget I exist?
 * Career growth: Can I take responsibility for really important projects? Can I get promoted? Can I be a leader?
@@ -52,13 +51,12 @@ Required articles to read before getting your hand dirty:
 * [https://jvns.ca/blog/2018/02/18/working-remotely--4-years-in/](https://jvns.ca/blog/2018/02/18/working-remotely--4-years-in/)
 * [https://hackernoon.com/the-stress-of-remote-working-38be5bdcf4da](https://hackernoon.com/the-stress-of-remote-working-38be5bdcf4da)
 
-### **Time of Day**
+### Time of Day
 * Pick a suitable working time
 * Or as per agreed with project team
 
 ### Places to work
 **Noise Levels**
-
 If you’re doing creative work, research suggests you’ll want to be surrounded by **ambient noise**. A café or co-working space is the perfect choice in this case.
 
 If you need to focus on a specific task, however, you’re going to want silence as [quiet spaces help us focus on straightforward tasks](http://well.blogs.nytimes.com/2013/06/21/how-the-hum-of-a-coffee-shop-can-boost-creativity/).
@@ -70,7 +68,6 @@ If you need to focus on a specific task, however, you’re going to want silence
 In other studies, people has found that exposure to certain colors can play a role as well. Switching the color of your computer’s background screen to blue enhances performance on creative tasks, for example, while making it red helps with detail-oriented tasks. Large, open rooms with high ceilings may also promote creative thinking, they found.
 
 **At home**
-
 * Dedicated Workspace: separate your workspace from your living space
 * Put Some Clothes On
 * Fake a Commute
@@ -80,12 +77,9 @@ In other studies, people has found that exposure to certain colors can play a ro
 * Drink Up
 
 **At working space**
-
-[https://placestowork.net](https://placestowork.net/)
-
-[https://workfrom.co](https://workfrom.co/)
-
-[https://coworker.com](https://coworker.com/) 
+* [https://placestowork.net](https://placestowork.net/)
+* [https://workfrom.co](https://workfrom.co/)
+* [https://coworker.com](https://coworker.com/) 
 
 ### Tooling & Setup
 * Document: GDrive & Notion
@@ -96,6 +90,5 @@ In other studies, people has found that exposure to certain colors can play a ro
 * Meeting: Google Calendar
 
 ### Articles
-[https://blog.aha.io/remote-team-instant-message/](https://blog.aha.io/remote-team-instant-message/)
-
-[https://ux.shopify.com/remotely-remoting-cbdb68b2fb80](https://ux.shopify.com/remotely-remoting-cbdb68b2fb80)
+* [Remote team instant message](https://blog.aha.io/remote-team-instant-message/)
+* [Remotely Remoting](https://ux.shopify.com/remotely-remoting-cbdb68b2fb80)

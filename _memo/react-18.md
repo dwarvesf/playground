@@ -170,4 +170,3 @@ root.render(<App tab="home" />);
 * In a summary, React 18 comes with a few breaking changes, depending on how you use it. But all in all, it also brings out-of-the-box performance improvements including batching more by default, which removes the need to manually batch updates in application or library code.
 * Upgrading to React 18 should be straightforward, give it a try and let us know what you think.
 
-### 

@@ -24,11 +24,11 @@ Firstly, you have to install Visual Studio Code, [here](https://code.visualstudi
 
 ## B. Install the Devbox
 1. Open the Terminal on VScode
-You can use the shortcut `Control + ~`.
+You can use the shortcut `Control + ~` to open Terminal.
 
 ![](assets/how-to-set-up-environment-for-editing-memo_how-to-set-up-environment-for-editing-memo_bed95d63218ec145199cb308295a2d1e_md5.webp)
 
-Then run this command in the Terminal `curl -fsSL https://get.jetpack.io/devbox | bash`.
+Then run this command in the Terminal to install Devbox: `curl -fsSL https://get.jetpack.io/devbox | bash`.
 
 ## C. Pull the Github Source to your local disk 
 You have 2 ways to pull the Github source to the local disk:
@@ -44,13 +44,12 @@ You have 2 ways to pull the Github source to the local disk:
 ![](assets/how-to-set-up-environment-for-editing-memo_how-to-set-up-environment-for-editing-memo_23304a379655d944f94067137b95bae3_md5.webp)
 
 ### Method 2: Using the terminal 
-1. Run these 2 commands seperately in Terminal to config the account:
+1. Run these 2 commands seperately in Terminal to connect the Github account to the VScode:
 ```sh
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
-
-2. Run this command in Terminal
+2. Run this command in Terminal to clone the repository:
 ```sh
 git clone https://github.com/dwarvesf/note.d.foundation.git
 ```
@@ -68,8 +67,8 @@ git submodule foreach --recursive 'git checkout main || git checkout master
 
 ![](assets/how-to-set-up-environment-for-editing-memo_how-to-set-up-environment-for-editing-memo_8d8eabbbf8f91851e67750ab1d10138e_md5.webp)
 
-3. Run the this command in Terminal `devbox shell` and wait until all files are installed
-4. Run the command `make watch-run`
+3. Run the this command in Terminal `devbox shell` to set up the environment and wait until all files are installed
+4. Run the command `make watch-run` to rebuild the site and get the local link
 
 ## E. Sync all repo before editting 
 Everytime you want to edit or create a post, you have to go to `Source Control` and sync all file. 

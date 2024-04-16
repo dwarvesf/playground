@@ -13,17 +13,8 @@ hide_frontmatter: false
 
 This talk is created from my experiences & lesson learnt, the rule and self-code I've built and believe to be applicable. So I can guarantee you may not find some of it in any other places on the internet.
 
-### Table of Content
-* Color Style & Text Style Naming Convention
-* Component Naming Convention & Component Structure
-* Auto Layout Application
-* Description of Design System
-
-# Naming Convention
-
 ## Color Style Naming Convention
 There are 2 types of color: Flat & Gradient. We use a slash to categorize the color styles. Here are a few types we may go through:
-
 * Main color
 * Text color
 * Background/ Base
@@ -40,7 +31,7 @@ Text Style Generator is a tool in Figma that helps to create text style easier u
 
 When Common Weight Name Mapping is used in UI, we need to know the ratio between the font weights, which one is bold and which one is light. What we need is the consistency of text style in the overall UI, and Text Style Generator in Figma plugin makes it possible. It generates a new unified style by writing overlay on the previous one, and have it updated for all.
 
-# Component Naming Convention & Component Structure
+## Component Naming Convention & Component Structure
 
 ### Special Atom
 * Iconography (Atoms)
@@ -58,15 +49,15 @@ If Variation and Type (kind) have complex modify, we can consider dividing the V
 * Created from the micro elements, Atoms; then expand it through the levels: Molecules - Organisms - Templates
 * Possible cases: create folders for automatic show/hide function in UI
 
-# Auto Layout Application
+## Auto Layout Application
 
 ### Helps analyze the components
 1. Button (Molecules) / Button Group
-1. Table Row
-1. Breadcrumb
-1. Input Field
+2. Table Row
+3. Breadcrumb
+4. Input Field
 
-# Description of Design System
+## Description of Design System
 * Turn UI file/ design system into document
 * Helps to note down a detailed instruction for the team (with >2 designers). This drives better communication between designer-designer and designer-developer.
 

@@ -13,7 +13,6 @@ hide_frontmatter: false
 
 ### Performance Review 
 We perform bi-yearly reviews in July and January. The primary purpose of these reviews is to **give feedback **on career path advancement and **recognize accomplishments**. We follow a simple process:
-
 * Everyone writes up a **1-2 page summary** and sends it to the head of their team.
 * The head of your team reviews your summary and prepares their thoughts. He schedules a one-hour meeting to discuss.
 
@@ -21,21 +20,17 @@ We perform bi-yearly reviews in July and January. The primary purpose of these r
 
 ### Inside the summary
 We run this practice with two spirits:
-
 * It's on about learning knowledge and applying.
 * Result is evaluated higher than the process.
 
 There're two sessions we look forward to reading in the team member's summary
 
 **Accomplishment**
-
 * How do you apply your **self-capacity** in the real work?
 * Compared to six months or a year ago, did you level up your individual expertise?
 
 **Self-reflection**
-
 Feeling about yourself.
-
 * Good or bad?
 * Happy or not?
 * Satisfied or not? etc.

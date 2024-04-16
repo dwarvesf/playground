@@ -23,7 +23,7 @@ Clojure combines of:
 * symbiotic with an established Platform
 * designed for Concurrency
 
-**I. Lisp is a good thing**
+### 1. Lisp is a good thing
 
 * Often emulated/pillaged, still not duplicated
 * Lambda calculus yields an extremely small core
@@ -41,7 +41,7 @@ Clojure combines of:
 * Core data structures are extensible abstractions
 * Embraces a platform (JVM)
 
-**II. Languages and Platforms**
+### 2. Languages and Platforms
 
 * VMs, not OSes, are the platforms of the future, providing:
 * Type system
@@ -78,7 +78,7 @@ Clojure combines of:
 * Ability to call/consume Java is critical
 * Clojure is the language, JVM the platform
 
-**III. Concurrency and the multi-core future**
+### 3. Concurrency and the multi-core future
 
 * Immutability makes much of the problem go away
 * Share freely between threads
@@ -86,7 +86,7 @@ Clojure combines of:
 * Locking is too hard to get right over and over again
 * Clojure’s software transactional memory and agent systems do the hard part
 
-**IV. Features**
+### 4. Features
 
 * [Dynamic Development](https://clojure.org/about/dynamic)
 * [Functional Programming](https://clojure.org/about/functional_programming)
@@ -95,8 +95,8 @@ Clojure combines of:
 * [Concurrent Programming](https://clojure.org/about/concurrent_programming)
 * [Hosted on the JVM](https://clojure.org/about/jvm_hosted)
 
-### **Dynamic Development**
+### Dynamic Development
 First and foremost, Clojure is dynamic. That means that a Clojure program is not just something you compile and run, but something with which you can interact. Clojure is not a language abstraction, but an environment, where almost all of the language constructs are reified, and thus can be examined and changed. This leads to a substantially different experience from running a program, examining its results (or failures) and trying again. In particular, you can grow your program, with data loaded, adding features, fixing bugs, testing, in an unbroken stream.
 
-### **Dynamic Compilation**
+### Dynamic Compilation
 Clojure is a compiled language, so one might wonder when you have to run the compiler. You don’t. Anything you enter into the REPL or load using load-file is automatically compiled to JVM bytecode on the fly. Compiling ahead-of-time is also possible, but not required.

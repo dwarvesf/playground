@@ -20,8 +20,8 @@ This is absolutely one of those brilliant questions that have been on my mind al
 In the end, in that particular dharma talk, we were able to settle with these qualifications that we all agreed that true KPI should have, that are:
 
 1. **True KPI is settled by all 3 levels of management: Top, Middle and First**
-1. **True KPI should be an approved mutual interest across all members in the company**
-1. **True KPI should be a positive, fun and interesting challenge, not a mean to create stresses.**
+2. **True KPI should be an approved mutual interest across all members in the company**
+3. **True KPI should be a positive, fun and interesting challenge, not a mean to create stresses.**
 
 Evidently, we were in a meditation retreat, therefore we can only confine and agree to a major common ground. Otherwise, our daily discussion panel will become a session in an MBA course. Hence, it does not reflect every important aspect that one should seriously pay-attention, when it comes to construct suitable KPI for the organization. However, we were happy to agree that without clear and direct communication across the organization, KPI usually is perceived with frustration, anger, and dissatisfaction, instead of looking at it as achievable challenges.
 

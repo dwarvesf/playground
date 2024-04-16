@@ -21,15 +21,12 @@ When issues happen, without trust, they keep the information, breaking the flow 
 
 ### How we conduct our 1-1 session
 **Timing**
-
 A sharing hour weekly or biweekly.
 
 **Agenda**
-
 We discuss and try to know more each other, not about working status reports, definitely.
 
 In the first get-to-know, we do have a list of questions to learn about the Mentee:
-
 * The personality
 * What do they need from the company
 * Why did they choose Dwarves
@@ -37,7 +34,6 @@ In the first get-to-know, we do have a list of questions to learn about the Ment
 * How do they prefer receiving feedback
 * Their career goal
 * Their desire working environment
-
 Etc.
 
 In the following session, we mainly talk about technical development, communication skills and share the actual experience. In a nutshell, we hold this more like a discussion. The Mentor just leaves the Mentee the fishing rob. They have to solve problems by themselves.

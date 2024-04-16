@@ -10,11 +10,10 @@ type: null
 hide_frontmatter: false
 ---
 
-## **What is DevOps actually?**
+## What is DevOps actually?
 DevOps is a culture with only one goal which is "improving the software lifecycle" (bug fixes, features, configurations) to end-users more frequently but still keep software's reliable.
 
 It is a continuous process and contains various stages such as :
-
 * Continuous Integration
 * Continuous Development
 * Continuous Testing
@@ -49,9 +48,10 @@ See Equations [Time-based availability](https://landing.google.com/sre/book/cha
 Reference: [https://landing.google.com/sre/book/chapters/availability-table.html](https://landing.google.com/sre/book/chapters/availability-table.html)
 
 ## Role definitions
-* **Software Tester**: 
-* Goal of Automation Testing is to reduce number of test cases to be run manually and not eliminate Manual Testing all together.
-* Types of software testing:
+### Software Tester 
+Goal of Automation Testing is to reduce number of test cases to be run manually and not eliminate Manual Testing all together.
+
+Types of software testing:
 * Unit Testing
 * Functional Testing
 * Regression Testing
@@ -60,61 +60,69 @@ Reference: [https://landing.google.com/sre/book/chapters/availability-table.html
 * Keyword Testing
 * Data Driven Testing
 * Smoke Testing
-* The following category of test cases are not suitable for automation:
+
+The following category of test cases are not suitable for automation:
 * Test Cases that are newly designed and not executed manually atleast once
 * Test Cases for which the requirements are changing frequently
 * Test cases which are executed on ad-hoc basis.
-* Automation Testing Tools:
+
+Automation Testing Tools:
 * Selenium
 * QTP (MicroFocus UFT)
 * Rational Functional Tester
 * WATIR
 * SilkTest
-* **Security Engineer**
-* Below is a list of the top five DevOps practices and tooling that can help improve overall security when incorporated directly into your end-to-end continuous integration/continuous delivery (CI/CD) pipeline:
+
+### Security Engineer
+Below is a list of the top five DevOps practices and tooling that can help improve overall security when incorporated directly into your end-to-end continuous integration/continuous delivery (CI/CD) pipeline:
 * Code Analysis with Continuous Code Quality (consistency, readability, performance, test coverage, vulnerabilities…)
 * Security test automation 
 * Configuration and patch management 
 * Continuous monitoring 
-* Reference tools:
+
+Reference tools:
 * Code Quality:
-* Codebeat
-* Codacy
-* SonarQube
-* SonarLint for VS Code (Current support: JavaScript, PHP, Python, TypeScript)
-* Codeclimate
-* **Codebeat**
-* **gometalinter**
+  * Codebeat
+  * Codacy
+  * SonarQube
+  * SonarLint for VS Code (Current support: JavaScript, PHP, Python, TypeScript)
+  * Codeclimate
+  * Codebeat
+  * gometalinter
 * Monitoring:
-* Sentry
-* Datadog
-* Deploying security solutions meeting one or more of the following security standards: NIST/FedRAMP, ISO 27001, ISO 27002, PCI DSS, **[HIPAA Security Rules](http://www.onlinetech.com/resources/references/what-is-the-hipaa-security-rule)**
-* **Application Developers**
-* Goal: a new software release must be deployed quickly. We need to uses processes as well as tools to streamline the software delivery process and reduce the overall cycle time. To help automate and integrate all of the essential delivery steps in a holistic way, the DevOps approach also needs lightweight tool changes.
-* How do we do?
+  * Sentry
+  * Datadog
+
+Deploying security solutions meeting one or more of the following security standards: NIST/FedRAMP, ISO 27001, ISO 27002, PCI DSS, **[HIPAA Security Rules](http://www.onlinetech.com/resources/references/what-is-the-hipaa-security-rule)**
+
+### Application Developers
+Goal: a new software release must be deployed quickly. We need to uses processes as well as tools to streamline the software delivery process and reduce the overall cycle time. To help automate and integrate all of the essential delivery steps in a holistic way, the DevOps approach also needs lightweight tool changes.
+
+How do we do?
 * Think "automation"
 * Write tests for continuous integration (CI).
 * Sharing ideas, issues, processes, tools, and goals.
-* Code and scripts for DevOps include the following:
+
+Code and scripts for DevOps include the following:
 * Code and scripts for building the application.
 * Code and scripts for unit testing the application.
 * Code and scripts for acceptance testing the application.
 * Code and scripts for deploying the application.
 * Code and script configuration options for configuring the application for different target environments.
-* Code and scripts for programming the attributes and “behavior” of the
+* Code and scripts for programming the attributes and “behavior” of the target environment.
 
-target environment.
-
-* **System Admin**
-* Goal:
+### System Admin
+Goal:
 * Ability to apply their skills to entire IT infrastructures described and managed by code. 
 * Ability to manage cloud services and use automated deployment tools and code repositories - and to share their expertise with others.
-* How to have Devops skills:
+
+How to have Devops skills:
 * Needed: New technical skills
 * Coding skill
 * Cloud services: AWS, Azure, GCP, etc.
 * Configuration Management and Infrastructure as code
-* Reference tools:
+
+Reference tools:
 * Continuous integration servers: CircleCI, Gitlab runner, Jenkins, etc.
 * Ansible, Puppet, Chef
 * Orchestration tools: K8s, DC/OS, etc.

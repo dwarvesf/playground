@@ -20,7 +20,6 @@ This list will also allow us to reply to this question "Are you done with this f
 
 ## Checklist
 ***The following checklist is for the engineers and is meant to evolve overtime.***
-
 * Automated tests are created and pass
 * Code is peer-reviewed
 * Feature is tested against acceptance criteria
