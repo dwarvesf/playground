@@ -71,16 +71,3 @@ User flow is a visualization of the paths that users take as they interact with 
 ![](assets/mastering-ux-research---essential-techniques-for-successful-design_0263e564347de20cc7d75fafafb3c7d8_md5.webp)
 
 _In conclusion, UX research is essential for creating digital products and services that meet the needs of users. By using a variety of techniques, UX researchers can gain a deep understanding of their users and create products that offer unique value. Whether you are a seasoned UX researcher or just starting out, these eight UX research methods are essential tools for success._
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

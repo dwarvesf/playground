@@ -182,16 +182,3 @@ In this demo we’ll setup a simple ETL pipeline to import, transform load a csv
 	- ![](assets/google-data-fusion_c9056f816907b772d3da1ebd68ab328b_md5.webp)
 
 And that’s it, you’re done. Congrat on your first data pipeline with Google Data Fusion.
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and contributing to the Brainery is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [[202403121185|we are also hiring]]
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

@@ -72,16 +72,3 @@ The `ROWS BETWEEN 9 PRECEDING and CURRENT ROW` clause defines the frames. If we 
 The window and analytical functions are now powerful with frames, each record in the window has its own frame and it is dynamic at runtime. There is an important difference between window and frames: windows are not overlapping but frames could be overlapping. The row clause is optional, i.e. if it is not mentioned, rows between unbounded proceeding and current row is applied behind the scenes by default. This means a frame would include the current row and the rows behind the current row within the window.
 
 In summary, we understand the need for window and analytical functions. Then, we introduced the basics of window and frames. Finally, we learned the syntax for creating windows and using analytical functions in Hive by calculating a 10-day moving average with stocks data set.
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)

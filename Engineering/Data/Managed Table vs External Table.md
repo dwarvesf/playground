@@ -45,16 +45,3 @@ As shown in the screenshot, the table type is mentioned as external table. Next,
 Knowing when to use managed table and when to use external table is crucial. Question: Does using the location attribute when creating a table change the behavior of manage table or external table? The answer is no. When creating a table in Hive, by default, Hive creates a directory for the table under Hive's warehouse directory. For some reason, we don't want the tables directory to be under the warehouse directory, we can override the location using the location attribute during table creation. Another scenario, whereas a Pig script runs every night in our cluster and creates a data set in a HDFS location. Now we want Hive to use this data set. In this case, we would use an external table and use the location attribute to point to the location which is populated by Pig. In this scenario, we could have used managed table as well but external table is more appropriate because this location is also being used by the Pig script to populate the data set. Therefore, we won't drop the location when we decide to drop the table since the location is also being shared by Pig.
 
 In summary, there are two types of tables in Hive: managed table and external table. When a manage table is dropped, the underlying data will also be dropped. But dropping an external table doesn't drop the data set. Thus, the external table is a good choice when the Hive table is pointing to a data set which is shared by other applications.
-
----
-<!-- cta -->
-
-### Contributing
-At Dwarves, we encourage our people to read, write, share what we learn with others, and [[CONTRIBUTING|contributing to the Brainery]] is an important part of our learning culture. For visitors, you are welcome to read them, contribute to them, and suggest additions. We maintain a monthly pool of $1500 to reward contributors who support our journey of lifelong growth in knowledge and network.
-
-### Love what we are doing?
-- Check out our [products](https://superbits.co)
-- Hire us to [build your software](https://d.foundation)
-- Join us, [we are also hiring](https://github.com/dwarvesf/WeAreHiring)
-- Visit our [Discord Learning Site](https://discord.gg/dzNBpNTVEZ)
-- Visit our [GitHub](https://github.com/dwarvesf)
