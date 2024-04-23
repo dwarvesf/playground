@@ -11,6 +11,11 @@ menu: memo
 type: null
 hide_frontmatter: false
 ---
+This is the 1st post of Devbox series includes
+
+- [Devbox #1: The world before Docker](https://memo.d.foundation/playground/_memo/devbox-a-world-before-docker)
+- [Devbox #2: Our Docker adoption and its challenges](https://memo.d.foundation/playground/_memo/devbox-docker-adoption-and-challenges)
+- [Devbox #3: The overview into Nix & how we use Devbox @ Dwawrves](https://memo.d.foundation/playground/_memo/devbox-nix-and-our-devbox-adoption)
 
 ## The It-works-on-my-machine time
 
@@ -74,4 +79,4 @@ Consequently, Docker emerges as the quintessential choice for modern containeriz
 
 ## Final thoughts
 
-In summary, the transition from traditional Virtual Machines (VMs) to containerization, epitomized by Docker, represents a pivotal advancement in software development. Docker's lightweight, portable containers have revolutionized software development and deployment.
+In summary, the transition from traditional Virtual Machines (VMs) to containerization, epitomized by Docker, represents a pivotal advancement in software development. Docker's lightweight, portable containers have revolutionized software development and deployment. However, this transformation is not merely about adopting a new technology; it's a journey marked by adaptation and discovery. In the [Devbox #2: Our Docker adoption and its challenges](https://memo.d.foundation/playground/_memo/devbox-docker-adoption-and-challenges), we will uncover the story: how Docker is adopted in my development team and its challenges encountered along the way.
