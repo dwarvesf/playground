@@ -2,7 +2,7 @@
 tags: 
   - tooling
 title: "Devbox #3: The overview into Nix & how we use Devbox @ Dwawrves"
-date: 2024-04-19
+date: 2024-04-24
 description: The overview into Nix & how we use Devbox @ Dwawrves
 authors: 
   - hnh

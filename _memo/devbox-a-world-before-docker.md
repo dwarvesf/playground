@@ -3,7 +3,7 @@ tags:
   - tooling
 title: "Devbox #1: The world before Docker"
 date: 2024-04-09
-description: test description
+description: A brief history about the world before Docker and why we need devbox for local development
 authors: 
   - hnh
   - vhbien
