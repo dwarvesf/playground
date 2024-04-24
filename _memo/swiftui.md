@@ -1,19 +1,24 @@
 ---
 tags: 
   - swift
-title: Swiftui
+  - framwork
+  - playground
+  - UX-UI
+title: SwiftUI
 date: 2020-02-07
-description: null
+description: Introduces by Apple in WWDC 2019, Swift UI impressed the technophiles with its convenience, as Apple aimed to help developers conduct code easier and spend more time working on other modified functions
 authors: null
 menu: memo
-type: null
+type: programming
 hide_frontmatter: false
 ---
 
-Introduces by Apple in WWDC 2019, Swift UI impressed the technophiles with its convenience, as Apple aimed to help developers conduct code easier and spend more time working on other modified functions. This blog outlines my opinion about SwiftUI, such as how to layout views, handle user input, making a custom view, making a cross Apple platform apps, underlying architecture, integrate with UIKit (the old Apple UI framework). It won't be expanded on an advanced level like fancy animation or proposing any best architecture we should follow. No. Just the basic ones.
+Introduces by Apple in WWDC 2019, Swift UI impressed the technophiles with its convenience, as Apple aimed to help developers conduct code easier and spend more time working on other modified functions. 
 
-# Definition
-[SwiftUI](https://github.com/dwarvesf/techradar/tree/master/SwiftUI) is a UI framework that lets developers create apps in a declarative way, *and it also supports multiple Apple platforms (iOS, iPadOS, macOS, watchOS, tvOS), or I can say “farewell UIKit, AppKit, and WatchKit“*. There are minimal code changes when we need to create an app for multiple platforms, as a lot of the same components on SwiftUI can be reused.
+This blog outlines my opinion about SwiftUI, such as how to layout views, handle user input, making a custom view, making a cross Apple platform apps, underlying architecture, integrate with UIKit (the old Apple UI framework). It won't be expanded on an advanced level like fancy animation or proposing any best architecture we should follow. No. Just the basic ones.
+
+## Definition
+[SwiftUI](https://github.com/dwarvesf/radar/tree/master/vol-01/swift-ui) is a UI framework that lets developers create apps in a declarative way, *and it also supports multiple Apple platforms (iOS, iPadOS, macOS, watchOS, tvOS), or I can say “farewell UIKit, AppKit, and WatchKit“*. There are minimal code changes when we need to create an app for multiple platforms, as a lot of the same components on SwiftUI can be reused.
 
 SwiftUI came with two companions, which I believe will be the game changers and help developers a lot.
 
@@ -23,7 +28,7 @@ SwiftUI came with two companions, which I believe will be the game changers and 
 ## Xcode canvas
 ![](assets/swiftui_120898c723705d91ebf2d810ceabc827_md5.webp)
 
-Xcode canvas brings us some nice features.
+Xcode canvas brings us some nice features:
 
 * Building UI with drag and drop style, auto-sync with your code, and vice versa.
 * Live preview, this kinda likes the hot reload feature in the Flutter framework, but without simulator since it is a part of Xcode
@@ -43,7 +48,7 @@ If you have never heard about the FRP, you should definitely take a look at thos
 * [https://github.com/kickstarter/native-docs/blob/master/learning-rx.md](https://github.com/kickstarter/native-docs/blob/master/learning-rx.md)
 * [https://github.com/kickstarter/native-docs/blob/master/learning-rx.md](https://github.com/kickstarter/native-docs/blob/master/learning-rx.md)
 
-## Learn once, Apply anywhere
+## Learn once, apply anywhere
 Apple brought up SwiftUI with an important distinction: It's not a multi-platform framework. It's a framework to create apps on multiple platforms.
 
 It might sound confusing. The same thing happens when we first heard of Karl Marx's theory on capitalism. But here's a fact: Many parts of SwiftUI work great on iOS, but aren't available on macOS, or are designed specifically for watchOS and so aren't available anywhere else. Yet, the core of the apps can remain unchanged, but to build great apps that tailored for each Apple's platform, some platform-specific enhancement needs to be made.
@@ -82,7 +87,7 @@ After researching I found out there are four new features in Swift 5.1 which hel
 And if I explain all those things, this article would be very long, so you guys should check these new features in Swift's official documentation.
 
 ### The Layout Process
-**The basic one**
+#### The basic one
 
 ```javascript
 struct SwiftUIView: View {
@@ -108,9 +113,9 @@ Text only requires that much size to draw its content. The parent has to respect
 
 And now the root view has to put the child somewhere, so it puts in right in the middle.
 
-**The stack layout process**
+#### The stack layout process
 
-Stacks are the primary layout instrument in SwiftUI. The vast majority of layouts can be implemented using stacks. Stacks might seem almost too simple, and they are. But don’t underestimate them. You are going to use stacks *a lot* in SwiftUI. Understanding how they work is probably more important than anything
+Stacks are the primary layout instrument in SwiftUI. The vast majority of layouts can be implemented using stacks. Stacks might seem almost too simple, and they are. But don’t underestimate them. You are going to use stacks a lot in SwiftUI. Understanding how they work is probably more important than anything.
 
 ```javascript
 struct SwiftUIView: View {
@@ -146,7 +151,7 @@ There are five property wrappers that SwiftUI gives us for default to manage the
 * @EnvironmentObject
 * @Environment
 
-**@State**
+1. **@State**
 
 ```javascript
 struct ProductsView: View {
@@ -173,7 +178,7 @@ struct ProductsView: View {
 
 **@State** is a Property Wrapper which we can use to describe View’s state. SwiftUI will store it in special internal memory outside of View struct. Only the related View can access it. As soon as the value of **@State** property changes SwiftUI rebuilds View to respect state changes. Here is a simple example.
 
-**@Binding**
+2. **@Binding**
 
 ```javascript
 struct FilterView: View {
@@ -205,9 +210,9 @@ struct ProductsView: View {
 }
 ```
 
-**@Binding** provides reference like access for a value type. Sometimes we need to make the state of our View accessible for its children. But we can’t simply pass that value because it is a value type and Swift will pass the copy of that value. And this is where we can use **@Binding **Property Wrapper.
+**@Binding** provides reference like access for a value type. Sometimes we need to make the state of our View accessible for its children. But we can’t simply pass that value because it is a value type and Swift will pass the copy of that value. And this is where we can use **@Binding** Property Wrapper.
 
-**@ObserveObject** 
+3. **@ObserveObject** 
 
 ```javascript
 import Combine
@@ -254,7 +259,7 @@ struct EpisodesView: View {
 
 Remember, we can share **ObservableObject** between multiple views, that’s why **it must be a reference type/class.**
 
-**@EnvironmentObject**
+4. **@EnvironmentObject**
 
 ```javascript
 struct EpisodesView: View {
@@ -284,7 +289,7 @@ struct EpisodesView: View {
 
 As you can see, we have to pass PodcastPlayer object via environmentObject modifier of our View. By doing this, we can easily access PodcastPlayer by defining it with **@EnvironmentObject** Property Wrapper. **@EnvironmentObject** uses dynamic member lookup feature to find PodcastPlayer class instance in the Environment, that’s why you don’t need to pass it via init method of EpisodesView. The Environment is the right way of Dependency Injection in SwiftUI. It works like magic.
 
-**@Environment **
+5. **@Environment**
 
 ```javascript
 struct CalendarView: View {
@@ -331,3 +336,6 @@ HStack {
     Text("Avocado Toast").font(.title)
 }
 ```
+See the padding here? No? But look at the picture!
+
+![](assets/swift-ui.png)

@@ -1,7 +1,16 @@
 ---
-tags: engineering/data, mapreduce, distributed, hadoop, apache-hive, apache-pig
+tags: 
+- engineering/data
+- mapreduce
+- hadoop
+- apache-hive
+- brainery
+title: Introduction to Apache Hive
+description:  In this article, we're going to see a brief introduction to Hive and we're going to create a Hive table and query a dataset using the newly created Hive table.
 author: Dung Ho
 github_id: dudaka
+menu: playground
+type: brainery
 date: 2022-11-10
 icy: 10
 ---

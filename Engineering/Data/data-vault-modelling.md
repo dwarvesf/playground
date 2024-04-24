@@ -1,6 +1,16 @@
 ---
-tags: engineering/data, data-warehouse, data-vault, data-modelling, dimension-table, fact-table
+tags: 
+- engineering/data
+- data-vault
+- data-modelling
+- dimension-table
+- data-pipeline
+- brainer
 author: Bach Phuong
+title: Data Vault Modelling
+description: "While there are several traditional methodologies to consider when establishing a new data lake (from Inmon and Kimball, for example), one alternative presents a unique opportunity:  Data Vault. In this article, I will show basic knowledge of data vault and some pros and cons of it."
+menu: memo
+type: brainery
 github_id: Bachpx2911
 date: 2022-12-15
 icy: 10
@@ -8,8 +18,7 @@ icy: 10
 
 ## Introduction
 When looking to build out a new data lake, one of the most important factors is to establish the warehousing architecture that will be used as the foundation for the
-data platform. While there are several traditional methodologies to consider when establishing a new data lake (from Inmon and Kimball, for example), one alternative
-presents a unique opportunity:  Data Vault. In this article, I will show basic knowledge of data vault and some pros and cons of it.
+data platform. While there are several traditional methodologies to consider when establishing a new data lake (from Inmon and Kimball, for example), one alternative presents a unique opportunity:  Data Vault. In this article, I will show basic knowledge of data vault and some pros and cons of it.
 
 ## Overview of data vault
 Data Vault is created by Dan Linstedt and his team at Lockheed Martin in the early 90s. It includes 3 main cores: Hub, Link and Satellite. Hub represents a core business concept, such as they represent Customer Id/Product Number/Vehicle identification number (VIN). Users will use a business key to get information about a Hub. Hubs don’t contain any context data or details about the entity. They only contain the defined business key and a few mandated Data Vault fields. A critical attribute of a Hub is that they contain only one row per key.
@@ -138,7 +147,7 @@ Each hub will represent for entity in database. The primary key of each table is
 between link, hub and sat table.
 
 ## Pros and cons of data vault
-Pros: flexibility, maintainability and scalability both in terms of semantic complexity and sheer volume.
+**Pros:** flexibility, maintainability and scalability both in terms of semantic complexity and sheer volume.
 
 It aims to facilitate the above by introducing three major design principles that set it apart from an EDW based on 3NF or on dimensional modelling:
 - It decouples management of business keys from any attributes of business entities (Hubs/Links and their Satellites).
@@ -147,7 +156,7 @@ It aims to facilitate the above by introducing three major design principles tha
 
 These design principles allow the system to use MPP for any ETL processes (all entities can be loaded at the same time), facilitate Master Data Management (it offers great flexibility in adding/removing data sources) and provides a robust framework for recording historical data.
 
-Cons: 
+**Cons:**
  - Two to three-fold explosion of the number of tables compared to 3NF modelling
  - Data Vault EDW does not focus on read performance: large number of relationships between tables and complexity of joins often require separate layer of bridging tables to be maintained as materialised views of the data vault
 

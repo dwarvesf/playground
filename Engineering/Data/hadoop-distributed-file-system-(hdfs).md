@@ -1,6 +1,14 @@
 ---
-tags: engineering/data, big-data, hadoop
+tags: 
+- engineering/data
+- big-data
+- hadoop
+- brainery
 author: Dung Ho
+title: "Hadoop Distributed File System (HDFS)"
+description: HDFS (Hadoop Distributed File System) takes care of all the storage related complexities in Hadoop. Why is there a need for another file system like HDFS?
+menu: memo
+type: brainery
 github_id: dudaka
 date: 2022-06-15
 ---
@@ -9,11 +17,16 @@ date: 2022-06-15
 HDFS (Hadoop Distributed File System) takes care of all the storage related complexities in Hadoop. Why is there a need for another file system like HDFS?
 
 ### File System
+
 ![](assets/hadoop-distributed-file-system-(hdfs)_file-system-hdfs.png)
 
-File system is an integral part of every operating system, it basically governs the storage in your hard disk. For example, you give a person a book and you give another person pile of unordered papers from the same book, then ask each of them to go to chapter 34. Who do you think will get to chapter 34 faster? The one with the book because he can simply go to the index, look for chapter 34 look up the page number and go to the page. Whereas the one with the pile of papers has to go through the pile of papers and if he is lucky he might find chapter 34. Just like a well-organized book, a file system helps to navigate the data that is stored in your storage. Without the file system, the information stored in your hard disk will be one large body of data, but no way to tell where one piece of information stops and the next begins.
+File system is an integral part of every operating system, it basically governs the storage in your hard disk. For example, you give a person a book and you give another person pile of unordered papers from the same book, then ask each of them to go to chapter 34. Who do you think will get to chapter 34 faster? The one with the book because he can simply go to the index, look for chapter 34 look up the page number and go to the page. 
 
-There are some of the major functions of a file system. File system controls how the data is stored and retrieved. Basically, when you read and write files to your hard disk your request goes through a file system. Next, file system has the metadata about your files and folders. Metadata information like file name, size, owner, created/modified time, etc. File system also takes care of permissions and security. File system manages your storage space, so when you ask to write a file to hard disk file system helps figure out where in the hard disk it should write the file. And it should write the file as efficiently as possible.
+Whereas the one with the pile of papers has to go through the pile of papers and if he is lucky he might find chapter 34. Just like a well-organized book, a file system helps to navigate the data that is stored in your storage. Without the file system, the information stored in your hard disk will be one large body of data, but no way to tell where one piece of information stops and the next begins.
+
+There are some of the major functions of a file system. File system controls how the data is stored and retrieved. Basically, when you read and write files to your hard disk your request goes through a file system. Next, file system has the metadata about your files and folders. Metadata information like file name, size, owner, created/modified time, etc. 
+
+File system also takes care of permissions and security. File system manages your storage space, so when you ask to write a file to hard disk file system helps figure out where in the hard disk it should write the file. And it should write the file as efficiently as possible.
 
 ### Different File Systems
 The most legendary file system from Microsoft is FAT32. Maximum file size that a Fat32 file system can support is 4GB. If we have a file which is 5GB in size, we're out of luck with FAT32 and it has a 32GB volume limit or a logical drive limit. Thefore, our drive can be of size 32GB and not more with FAT32. The size limits can be more or less based on the file system configuration. So, if we use windows 95 or 98, we probably use FAT32.
@@ -24,7 +37,7 @@ How about file systems from MAC? HFS (Hierarchical File System) is a legacy file
 
 Now, that is about Linux, ext is the most popular file system in Linux. ext3 is the third generation file system in use since 2001, then came ext4. ext4 can support individual file sizes up to 16 Terabytes and volumes up to 1 Exabyte. Next, XFS is created by Silicon Graphics and it can support up to 8 exabytes in file and volume limit. We look up your file system in Linux with command `df -T`.
 
-Clearly, we have file systems where we can store big data sets. Then, what is the need for HDFS? From section Understanding Big Data Problem of [Apache Hadoop and Big Data article](Apache%20Hadoop%20and%20Big%20Data.md), we know that to support truly parallel computation, we had to divide the data set into blocks and store them in different nodes And to recover from data loss, we also replicated each block in more than one node.
+Clearly, we have file systems where we can store big data sets. Then, what is the need for HDFS? From section Understanding Big Data Problem of [Apache Hadoop and Big Data article](https://brain.d.foundation/Engineering/Data/Apache+Hadoop+and+Big+Data), we know that to support truly parallel computation, we had to divide the data set into blocks and store them in different nodes And to recover from data loss, we also replicated each block in more than one node.
 
 ![](assets/hadoop-distributed-file-system-(hdfs)_hadoop-distributed-file-system.png)
 
@@ -189,7 +202,9 @@ Copying from local to HDFS does a write operation to HDFS because from the local
 
 A Hadoop cluster has two types of nodes. The first type of node and the most important node in the hadoop cluster is called the name node, also known as the master. The second type of node is known as the data node also known as the slave.
 
-The master node has the metadata of HDFS meaning it has all the infomation about: list of files, the list of blocks, who created the files, when a file got created, when it was modified, the permission of the files, etc. In other words, it has all the information about hdfs and what is in HDFS. Hence, name node is a very important node in the cluster. Name node does not store the actual files or data sets. The files or data sets are stored in another type of nodes called the data nodes data nodes also known as the slaves stores the physical blocks for the files in HDFS. Usually there is only one active name node in the cluster and we can have as many data nodes as we like in the cluster depending on the amount of data we would like to store in HDFS. In short, if we take a file in HDFS, the data nodes will store the actual physical blocks for that file. Whereas the name node knows the list of blocks that make up the file and the list of data nodes that stores the blocks for that file and also information about the file like who created it, when it was created, its permissions, etc.
+The master node has the metadata of HDFS meaning it has all the infomation about: list of files, the list of blocks, who created the files, when a file got created, when it was modified, the permission of the files, etc. In other words, it has all the information about hdfs and what is in HDFS. Hence, name node is a very important node in the cluster. Name node does not store the actual files or data sets. The files or data sets are stored in another type of nodes called the data nodes data nodes also known as the slaves stores the physical blocks for the files in HDFS. Usually there is only one active name node in the cluster and we can have as many data nodes as we like in the cluster depending on the amount of data we would like to store in HDFS. 
+
+In short, if we take a file in HDFS, the data nodes will store the actual physical blocks for that file. Whereas the name node knows the list of blocks that make up the file and the list of data nodes that stores the blocks for that file and also information about the file like who created it, when it was created, its permissions, etc.
 
 ### Read operation
 For example, we want to read a file from HDFS and the file is made up of 10 blocks. We execute `hadoop fs -copyToLocal` command from one of the data nodes in the cluster to copy the file from HDFS to the local file system. When we execute `hadoop fs -copyToLocal`, a Java program is executed behind the scenes which does a series of operations to read the file from HDFS. All these operations happens behind the scenes and it is intransparent to us.
@@ -203,16 +218,22 @@ If you have 100 nodes in the cluster, how does the client know which node is the
 
 ![](assets/hadoop-distributed-file-system-(hdfs)_node-proximity.png)
 
-Let's consider to the example showing in the above image, we have two racks: Rack 1 and Rack 2. And our client who is trying to read the file is running on Rack 1 - Data Node 2. There will be 3 replicas for a block: for example, the first replica is stored in Rack 1 - Data node 2, the second replica is stored in Rack 1 - Data node 6 and the third replica in Rack 2 - Data node 5. Now Rack 1 - Data Node 2 is considered the closest data node to the client because the client is also running on the same node. The next closest node to the client will be the node which is on the same rack, in this case, it will be Rack 1 - Data Node 6. The next closest node to the client will be the node which is on a different rack in this case it will be Rack 2 - Data node 5. If the client runs on a data node which does not hold a copy of the block and if we have two data nodes on the same rack which holds the replica of the block then one of the data nodes from the same rack will be chosen at random. In essence, the closest node to the client is a node on the same rack as the client and the next closest node is a node on a different rack. For the read operation, the client will reach out to the data node which is closest and start reading the block. Once it is done reading block number 1, it will move on to block number 2 and then block number 3 and so on.
+Let's consider to the example showing in the above image, we have two racks: Rack 1 and Rack 2. And our client who is trying to read the file is running on Rack 1 - Data Node 2. There will be 3 replicas for a block: for example, the first replica is stored in Rack 1 - Data node 2, the second replica is stored in Rack 1 - Data node 6 and the third replica in Rack 2 - Data node 5. Now Rack 1 - Data Node 2 is considered the closest data node to the client because the client is also running on the same node. The next closest node to the client will be the node which is on the same rack, in this case, it will be Rack 1 - Data Node 6. 
 
-![Read Operation Crash](images/HDFS/read-operation-crash.png)
+The next closest node to the client will be the node which is on a different rack in this case it will be Rack 2 - Data node 5. If the client runs on a data node which does not hold a copy of the block and if we have two data nodes on the same rack which holds the replica of the block then one of the data nodes from the same rack will be chosen at random. In essence, the closest node to the client is a node on the same rack as the client and the next closest node is a node on a different rack. 
+
+For the read operation, the client will reach out to the data node which is closest and start reading the block. Once it is done reading block number 1, it will move on to block number 2 and then block number 3 and so on.
+
+![](image.png)
 
 For a crash scenario, client is reading block number 3 and the data node it is trying to read from is not responding. The client will take a note of the data node which is not responding, it will not try to reach the same data node again for the current read operation. And it will move on to the next data node that has the copy of the block from the list sent by the name node. Therefore, even when a data node is down during the read operation, the read operation continued to progress without any issues.
 
 ### Write Operation
 ![](assets/hadoop-distributed-file-system-(hdfs)_read-operation.png)
 
-Now, we want to write a file to HDFS using `hadoop fs -copyFromLocal` command. Behind the scenes, when a client request a write operation, it will request the name node to allocate blocks for the file and the list of data nodes for each block where the replicas for each block needs to be stored. The name node will do few checks to make sure whether the user requesting the right operation has proper permission to do so and whether the file name already exists in the directory etc. When all the checks are okay, it will proceed with the block allocation. The name node will now have to come up with a list of data nodes. While picking the data nodes to store the replica, the name node will pick the data nodes which are not busy and has enough space to hold the blocks.
+Now, we want to write a file to HDFS using `hadoop fs -copyFromLocal` command. Behind the scenes, when a client request a write operation, it will request the name node to allocate blocks for the file and the list of data nodes for each block where the replicas for each block needs to be stored. The name node will do few checks to make sure whether the user requesting the right operation has proper permission to do so and whether the file name already exists in the directory etc. 
+
+When all the checks are okay, it will proceed with the block allocation. The name node will now have to come up with a list of data nodes. While picking the data nodes to store the replica, the name node will pick the data nodes which are not busy and has enough space to hold the blocks.
 
 #### Replica Placement
 ![](assets/hadoop-distributed-file-system-(hdfs)_replica-placement.png)
@@ -227,7 +248,11 @@ When the nodes are selected, a data pipeline, as shown in the above image, is fo
 
 ![](assets/hadoop-distributed-file-system-(hdfs)_write-operation.png)
 
-For example, the block we are writing is named Block 123. While writing Block 123 on Node 2, Node 2 suddenly went down in the middle of the write operation. How do we handle this failure? First the packets for Block 123 are moved to the front so that Node 3 will not miss those packets. Next, the block name will be changed. If we keep the block name as Block 123 when Node 2 finally recovers, it will claim that it has Block 123. But the Block 123 is not complete since Node 2 went down in the middle of the write operation. Assuming that block name will be changed to Block 456. Hence, when Node 2 recovers and claims that it has Block 123, the name node will know that Block 123 is non-existent and will order Node 2 to remove Block 123. The parameter `dfs.namenode.replication.min` indicates the minimum number of replications that is needed for a block, by default, it is one. In case of such failure, the write operation will succeed as long as the block is returned to at least one node. Later, the name node will coordinate with the data nodes and arrange to write the missing replicas.
+For example, the block we are writing is named Block 123. While writing Block 123 on Node 2, Node 2 suddenly went down in the middle of the write operation. How do we handle this failure? First the packets for Block 123 are moved to the front so that Node 3 will not miss those packets. Next, the block name will be changed. If we keep the block name as Block 123 when Node 2 finally recovers, it will claim that it has Block 123. 
+
+But the Block 123 is not complete since Node 2 went down in the middle of the write operation. Assuming that block name will be changed to Block 456. Hence, when Node 2 recovers and claims that it has Block 123, the name node will know that Block 123 is non-existent and will order Node 2 to remove Block 123. 
+
+The parameter `dfs.namenode.replication.min` indicates the minimum number of replications that is needed for a block, by default, it is one. In case of such failure, the write operation will succeed as long as the block is returned to at least one node. Later, the name node will coordinate with the data nodes and arrange to write the missing replicas.
 
 ## References
 - [HDFS Architecture](http://svn.apache.org/repos/asf/hadoop/common/tags/release-0.19.2/docs/hdfs_design.pdf)

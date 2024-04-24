@@ -1,7 +1,16 @@
 ---
-tags: engineering/data, statistics, data-analysis, distribution, pareto
+tags: 
+- engineering/data
+- statistics
+- data-analysis
+- distribution
+- pareto
 author: Bach Phuong
 github_id: Bachpx2911
+title: Statistics in Data Analysis
+description: Statistical methods are mainly useful to ensure that your data are interpreted correctly. And that apparent relationships are really significant or meaningful and it is not simply happen by chance.
+menu: memo
+type: brainery
 date: 2022-10-24
 ---
 

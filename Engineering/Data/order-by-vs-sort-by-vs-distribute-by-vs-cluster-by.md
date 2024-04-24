@@ -1,7 +1,17 @@
 ---
-tags: engineering/data, mapreduce, distributed, hadoop, apache-hive
+tags: 
+- engineering/data
+- mapreduce
+- distributed
+- hadoop
+- apache-hive
+- brainery
 author: Dung Ho
 github_id: dudaka
+title: "Order By vs. Sort By vs. Distribute By vs. Cluster By"
+description: These are very interesting concepts which are about ordering records in a data set. What is so special about ordering? If we want to order the records in the stocks data set by closing price in descending order, we can write a simple query like...
+menu: memo
+type: brainery
 date: 2022-11-23
 icy: 10
 ---
@@ -64,7 +74,9 @@ DISTRIBUTE BY symbol
 SORT BY symbol ASC, price_close DESC;
 ```
 
-When executing this query, we can see the number of reducers is set to 3. And we may also notice, since we are using three reducers as opposed to just one, our job is completing much faster. When the job is complete, let's review the output in the output location and there are three files again. If we open the first file, the records are now sorted by symbol in ascending order and then sorted by closing price in descending order as exactly expected. Moreover, we can verify that each symbol is written into only one file. For example, let's pick up the same symbol that we used before `B3B` and make sure that the records for symbol `B3B` is only present in one file, in this case, file number one. Thus, if we go to file number two and file number three and check if whether there are records for `B3B`, technically, we should not see records for `B3B` in any other files since it is already present in file number one because we use `DISTRIBUTE BY` along with `SORT BY`.
+When executing this query, we can see the number of reducers is set to 3. And we may also notice, since we are using three reducers as opposed to just one, our job is completing much faster. When the job is complete, let's review the output in the output location and there are three files again. If we open the first file, the records are now sorted by symbol in ascending order and then sorted by closing price in descending order as exactly expected. Moreover, we can verify that each symbol is written into only one file. 
+
+For example, let's pick up the same symbol that we used before `B3B` and make sure that the records for symbol `B3B` is only present in one file, in this case, file number one. Thus, if we go to file number two and file number three and check if whether there are records for `B3B`, technically, we should not see records for `B3B` in any other files since it is already present in file number one because we use `DISTRIBUTE BY` along with `SORT BY`.
 
 Now the records are not only sorted properly but also do not see overlapping results between files. One last thing, if we have the same set of columns in `SORT BY` and `DISTRIBUTE BY` and we're sorting the records in ascending order, we can replace `SORT BY` and `DISTRIBUTE BY` with `CLUSTER BY`. For example, the following query, in which we have `DISTRIBUTE BY symbol` and `SORT BY symbol`, can be replaced `SORT BY` and `DISTRIBUTE BY` with `CLUSTER BY` as shown in the last query. Both two queries are essentially the same and will give the same output.
 

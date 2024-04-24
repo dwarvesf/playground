@@ -1,6 +1,15 @@
 ---
-tags: engineering/data, big-data, hadoop
+tags: 
+- engineering/data
+- big-data
+- hadoop
+- brainery
+- data-pipeline
 author: Dung Ho
+title: Apache Hadoop and Big Data
+description: Let's say we are defining big data problems in terms of pure Volume alone. In our opinion, 100GB is not big data since we have a hard disk greater than 100GB. How about 1TB? It is still not because a well-defined traditional database can handle 1TB or even more without any issue. Then, 100TB? Some would claim that 100TB is a big data problem, and others might disagree. It is relative! So, 1000TB? Now, this is on a scale of Petabytes, and it is definitely Big Data.
+menu: playground
+type: brainery
 github_id: dudaka
 date: 2022-06-12
 ---
@@ -56,11 +65,11 @@ Data is not only produced and analyzed in social media companies but also retail
 ### Big Data Challenges
 Big Data comes with big problems:
 
-- Since data sets are huge, we need to find a way to store them as efficiently as possible. It is not just about efficiency in terms of \***\*storage\*\*** space but also efficiency in storing the data set that is suitable for \***\*computation\*\***. The main purpose of storing data is to analyze them, right? How much time does it take to analyze and provide a solution to a problem using our big data? What's good in storing the data when you cannot analyze or process the data in a reasonable time? With big data set, computation with reasonable execution times is a challenge
+- Since data sets are huge, we need to find a way to store them as efficiently as possible. It is not just about efficiency in terms of **storage** space but also efficiency in storing the data set that is suitable for **computation**. The main purpose of storing data is to analyze them, right? How much time does it take to analyze and provide a solution to a problem using our big data? What's good in storing the data when you cannot analyze or process the data in a reasonable time? With big data set, computation with reasonable execution times is a challenge
 
-- Another problem when we deal with big data set is \***\*data loss\*\*** due to corruption and data or due to hardware failure. You need to have a proper recovery strategy in place.
+- Another problem when we deal with big data set is **data loss** due to corruption and data or due to hardware failure. You need to have a proper recovery strategy in place.
 
-- Finally, the \***\*cost\*\*** and the most important challenge you're going to need a lot of storage space and a lot of computational power. Therefore, the solution that you plan to use should be cost-effective.
+- Finally, the **cost** and the most important challenge you're going to need a lot of storage space and a lot of computational power. Therefore, the solution that you plan to use should be cost-effective.
 
 ### Traditional Solutions
 #### RDBMS

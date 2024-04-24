@@ -9,7 +9,7 @@ description: This is a guide on how to setup your environment and settings to pu
 authors:
   - minhcloud
 menu: memo
-type: memo
+type: guideline
 hide_frontmatter: false
 pinned: true
 hide_title: false
@@ -97,6 +97,3 @@ git submodule foreach --recursive 'git checkout main || git checkout master'
 Note: If the localhost link has error, please run `devbox shell` and `make watch-run` again
 
 On the next post, we will talk about [how to push content on memo.d.foundation](https://memo.d.foundation/playground/_memo/how-to-push-content-on-note-d/).
-
-
-

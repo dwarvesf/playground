@@ -1,8 +1,19 @@
 ---
-tags: engineering/data, mapreduce, distributed, hadoop, apache-hive, hdfs, partitions
+tags: 
+- engineering/data
+- mapreduce
+- hadoop
+- apache-hive
+- brainery
+title: Partitions on Apache Hive
+description: Have you ever been in a situation where you are trying to optimize a slow running query to make it run faster? In our case, we have been looking at that query for hours and realized that the query is scanning the entire table and we are thinking that this query will be super fast if it only targets specific set of records instead of the entire table. Thus, what we really want, hopefully you too, in such cases is partitions.
 author: Dung Ho
 github_id: dudaka
 date: 2022-12-02
+authors:
+  - Dung Ho
+menu: playground
+type: brainery
 icy: 10
 ---
 
@@ -20,7 +31,9 @@ Let's find out about partitions in Hive with the following two parts:
     - Benefits of dynamic partitions
 
 ## Partitions
-For example, we want to query the `stocks` table to look at the stock's details for symbol `XYZ` on 2000/07/03. Even though, as a user, we're only interested in one stock symbol for a specific date, this query, however, will run a MapReduce job which will scan the entire data set to get the result set. This means that the execution time will be longer. Wouldn't be so nice if we can Target the query to scan only the records that belong to the symbol `XYZ` to get the result set? There is a way to do exactly that in Hive and it is by using partitions. Now, the `stocks` table has no way of differentiating the records for symbol `XYZ` with records for symbol `ABC`. Using partitions in Hive, we can basically compartmentalize our data set. The syntax for creating a partition table is very similar to a regular table, the only difference is the partition table will have the `PARTITION BY` clause and we have to mention a new name to the partition column.
+For example, we want to query the `stocks` table to look at the stock's details for symbol `XYZ` on 2000/07/03. Even though, as a user, we're only interested in one stock symbol for a specific date, this query, however, will run a MapReduce job which will scan the entire data set to get the result set. This means that the execution time will be longer. Wouldn't be so nice if we can Target the query to scan only the records that belong to the symbol `XYZ` to get the result set?
+
+ There is a way to do exactly that in Hive and it is by using partitions. Now, the `stocks` table has no way of differentiating the records for symbol `XYZ` with records for symbol `ABC`. Using partitions in Hive, we can basically compartmentalize our data set. The syntax for creating a partition table is very similar to a regular table, the only difference is the partition table will have the `PARTITION BY` clause and we have to mention a new name to the partition column.
 
 ```sql
 CREATE TABLE IF NOT EXISTS stocks_partition (
@@ -73,7 +86,9 @@ How the data is physically structured for this table `stocks_partition` in HDFS?
 
 ![](assets/partitions-on-apache-hive_location.webp)
 
-Usually, we will see files under the tables directory, but the partition tables are structured and stored slightly differently. As shown in the above screenshot, under the directory `stocks_partitions`, we see two more directories one for symbol `B7J` and the other one for symbol `BB3`. These are partition directorie. In the directory `B7J`, there is a file which will have just the records for symbol `B7J` nicely stored in the partition directory. When we query the data for symbol `B7J` using the partition column `sym`, the MapReduce job will only scan this specific directory and that is quite powerful. Since we are not scanning the entire data set anymore, the execution time of this query will be much faster.
+Usually, we will see files under the tables directory, but the partition tables are structured and stored slightly differently. As shown in the above screenshot, under the directory `stocks_partitions`, we see two more directories one for symbol `B7J` and the other one for symbol `BB3`. These are partition directorie. 
+
+In the directory `B7J`, there is a file which will have just the records for symbol `B7J` nicely stored in the partition directory. When we query the data for symbol `B7J` using the partition column `sym`, the MapReduce job will only scan this specific directory and that is quite powerful. Since we are not scanning the entire data set anymore, the execution time of this query will be much faster.
 
 We can also load a partition from a HDFS location. For example, the records for symbol `ZUU` is in the directory `output/hive/stocks-zuu`, which we can load by using this insert command:
 
@@ -110,7 +125,7 @@ This instruction is very simple to understand but it also looks a little weird. 
 ALTER TABLE stocks_partition DROP IF EXISTS PARTITION(sym = 'GEL');
 ```
 
-As mentioned on the article ![Managed Table vs External Table](Managed%20Table%20vs%20External%20Table.md), we cannot delete records from a Hive table but with partition tables, we can drop partitions using the drop command, which will essentially result in deleting all the records for that partition. For instance, we want to delete all the records for symbol `GEL`. Usually, we will not be able to do that using Hive as we would do with the delete statement in SQL. But with the help of partition, we can drop the entire partition. Here, we're essentially dropping the partition `GEL` which has all the records for symbol `GEL`.
+As mentioned on the article [Managed Table vs External Table](https://brain.d.foundation/Engineering/Data/Managed+Table+vs+External+Table), we cannot delete records from a Hive table but with partition tables, we can drop partitions using the drop command, which will essentially result in deleting all the records for that partition. For instance, we want to delete all the records for symbol `GEL`. Usually, we will not be able to do that using Hive as we would do with the delete statement in SQL. But with the help of partition, we can drop the entire partition. Here, we're essentially dropping the partition `GEL` which has all the records for symbol `GEL`.
 
 ```sql
 INSERT OVERWRITE TABLE stocks_partition
@@ -125,7 +140,9 @@ Hive will not validate the data that is loaded into partitions and also it will 
 It is the developer's responsibility to make sure the partition is loaded with correct set of records.
 
 ## Dynamic Partitions
-Imagining that we are trying to create partitions for thousands of symbols. Manually creating partitions one by one is a tedious exercise and also will eventually lead to errors like the one we just saw with Apple and Microsoft. Dynamic partition inserts solve that problem. So far we have been giving the values for the partition columns and this means that the values for the partition columns are known at compile time. When we use Dynamic partition inserts, however, the partition column values are known at execution time. To enable the dynamic partition, we set `hive.exec.dynamic.partition` to `true` with command `SET hive.exec.dynamic.partition=true;`.
+Imagining that we are trying to create partitions for thousands of symbols. Manually creating partitions one by one is a tedious exercise and also will eventually lead to errors like the one we just saw with Apple and Microsoft. Dynamic partition inserts solve that problem. 
+
+So far we have been giving the values for the partition columns and this means that the values for the partition columns are known at compile time. When we use Dynamic partition inserts, however, the partition column values are known at execution time. To enable the dynamic partition, we set `hive.exec.dynamic.partition` to `true` with command `SET hive.exec.dynamic.partition=true;`.
 
 ```sql
 INSERT OVERWRITE TABLE stocks_partition
@@ -136,7 +153,9 @@ FROM stocks s;
 
 Now, in the above query, we're not hard coding symbols anymore. At runtime, the symbols will be resolved. For each symbol in the `stocks` table, a partition will be created and all the records for that symbol will be loaded into the appropriate partition.
 
-This is the interesting part! When executing the above insert query, it will give an exception. By default, `hive.exec.dynamic.partition.mode` parameter is set to `strict`, so in strict mode, we would need to have at least one partition column to be given a static value. This is to avoid careless errors by dynamically loading the partitions with, for instance, the `date` column since we'll end up with many number of partitions, one for each date in the dataset. Since we have only one partition column, we cannot load this table in strict mode. We can change the `hive.exec.dynamic.partition.mode` parameter to `non-strict` mode, but then we will leave the table vulnerable to errors. So, `strict` mode is recommeneded.
+This is the interesting part! When executing the above insert query, it will give an exception. By default, `hive.exec.dynamic.partition.mode` parameter is set to `strict`, so in strict mode, we would need to have at least one partition column to be given a static value. This is to avoid careless errors by dynamically loading the partitions with, for instance, the `date` column since we'll end up with many number of partitions, one for each date in the dataset. 
+
+Since we have only one partition column, we cannot load this table in strict mode. We can change the `hive.exec.dynamic.partition.mode` parameter to `non-strict` mode, but then we will leave the table vulnerable to errors. So, `strict` mode is recommeneded.
 
 ```sql
 CREATE TABLE IF NOT EXISTS stocks_dynamic_partition (
@@ -162,7 +181,9 @@ SELECT *, year(ymd), symbol
 FROM stocks;
 ```
 
-For the table `stocks_dynamic_partition`, with the above insert command, we are giving a static value of `ABCSE` for the first partition column exchange name. In the select statement, the dynamic partition column must be specified last and in the same order in which they appear in the partition clause. We have given a static value for the first partition column, the value for the next two column will be derived from the select statement. Technically, this query should execute but Hive is known to have stability issues when we try to create Dynamic partitions with huge data set. The link that talks about this issue is in References section. The later versions of Hive will fix this issue. So, to avoid this issue let's create partitions for records from 2001 to 2003 with the following insert command.
+For the table `stocks_dynamic_partition`, with the above insert command, we are giving a static value of `ABCSE` for the first partition column exchange name. In the select statement, the dynamic partition column must be specified last and in the same order in which they appear in the partition clause. We have given a static value for the first partition column, the value for the next two column will be derived from the select statement. 
+
+Technically, this query should execute but Hive is known to have stability issues when we try to create Dynamic partitions with huge data set. The link that talks about this issue is in References section. The later versions of Hive will fix this issue. So, to avoid this issue let's create partitions for records from 2001 to 2003 with the following insert command.
 
 ```sql
 INSERT OVERWRITE TABLE stocks_dynamic_partition

@@ -5,12 +5,12 @@ tags:
   - community
 title: How to transfer $DFG from Ethereum Mainnet to Base Network for staking
 date: 2024-04-19
-description: null
+description: This guide will show you how to use $DFG staking to earn $USDC, cool merch, and more. You'll need a computer with a browser. But first, let's understand why you're doing this.
 authors: 
 - minh
 - jack
 menu: memo
-type: null
+type: guideline
 hide_frontmatter: false
 ---
 
