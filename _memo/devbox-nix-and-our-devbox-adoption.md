@@ -48,13 +48,13 @@ RUN some-expensive-operation
 
 When you modify any line in a Dockerfile, the underlying layers are rebuilt from scratch, regardless of whether those lower layers have changed or not as in the following diagram. Once `RUN apt-get install -yq vim`  is modified to `RUN apt-get install -yq vim mc`, the big package is also rebuilt after that.
 
-![Image1](./assets/devbox-nix-and-our-devbox-adoption_1.webp)
+![Image1](assets/devbox-nix-and-our-devbox-adoption_1.webp)
 
 ## Nix build is dependency graph
 
 In contrast to Docker, Nix build works differently. It uses symlinks to achieve atomic deployment of new versions of the system configuration. This makes rollbacks easy to perform and reduces the complexity of managing dependencies. Under the hood, Nix creates a "map" of all the packages and their dependencies, providing a high-level view of the entire system.
 
-![Image2](./assets/devbox-nix-and-our-devbox-adoption_2.webp)
+![Image2](assets/devbox-nix-and-our-devbox-adoption_2.webp)
 
 Imagine you have a big box full of toys. Inside the box, there are lots of different toys that are connected to each other in different ways. For example, one toy might be connected to another toy by a string. If you want to play with just one toy, you need to find it in the box and take it out. But if you want to play with all the toys at once, you need to open the box and take them all out.
 
@@ -71,9 +71,9 @@ As we discussed in the [Devbox #2: Our Docker adoption and its challenges](https
 
 Take a look at the following diagram, we can see with the same build expression, Nix can result in the same images. In contrast, we can just only build a Docker Image one time and bring this result everywhere if don’t want any change to happen. How can Nix make it happen?
 
-![Image3](./assets/devbox-nix-and-our-devbox-adoption_3.webp)
+![Image3](assets/devbox-nix-and-our-devbox-adoption_3.webp)
 
-![Image4](./assets/devbox-nix-and-our-devbox-adoption_4.webp)
+![Image4](assets/devbox-nix-and-our-devbox-adoption_4.webp)
 
 Nix restricts external sources from being changed without being detected. As a result, Nix build always produces functionally the same output each time they are run. This also makes making changes safer, as a change requires a rebuild. The reason for this is that Nix provides the ability to configure the system state using Nix expressions in the Nix language. Essentially, it's an instruction to Nix on how should it build the package and what the final result should look like.
 
@@ -85,7 +85,7 @@ Nix can build Docker images better than Docker build, here's why: Nix takes adva
 
 A layered image puts every dependency into its own image layer so you only upload the parts of your image that have actually changed. For example, making an update to the webp library to fix a trivial bounds checking vulnerability because nobody writes those libraries in memory-safe languages? The only thing that'd need to be uploaded is that single webp library layer.
 
-![Image5](./assets/devbox-nix-and-our-devbox-adoption_5.webp)
+![Image5](assets/devbox-nix-and-our-devbox-adoption_5.webp)
 
 Additionally, if you have multiple services in the same repository, they'll share Docker layers with each other without any extra configuration. It's not possible to achieve this level of efficiency with Docker without creating multiple common base images, each containing a bunch of tools and unnecessary bloat that some of your services may never use.
 
@@ -95,7 +95,7 @@ After all, Nix looks superior to Docker. But not everything is perfect. Nix is m
 
 Powered by Nix, Devbox is a command-line tool that makes it easy to create isolated shells for development. By defining the list of packages needed for your development environment, Devbox creates a dedicated space for your application to run without anything related to container or VM.
 
-![Image6](./assets/devbox-nix-and-our-devbox-adoption_6.webp)
+![Image6](assets/devbox-nix-and-our-devbox-adoption_6.webp)
 
 In practice, Devbox works similarly to a package manager like Yarn - except the packages it manages are at the operating system level (something you would normally install with brew or apt-get). With Devbox, you can access over 400,000 package versions from the Nix Package Registry.
 
@@ -107,15 +107,15 @@ Looking at [memo.d.foundation](https://github.com/dwarvesf/memo.d.foundation), w
 
 All above ideas are proved by below transparent configuration file. 
 
-![Image7](./assets/devbox-nix-and-our-devbox-adoption_7.webp)
+![Image7](assets/devbox-nix-and-our-devbox-adoption_7.webp)
 
 Jut only need to bring it to anywhere then using `devbox shell` to setup an reproduced development environment without any outstanding steps likes following.
 
-![Image8](./assets/devbox-nix-and-our-devbox-adoption_8.webp)
+![Image8](assets/devbox-nix-and-our-devbox-adoption_8.webp)
 
 Finally, easy to run our project without installing any other stuffs
 
-![Image9](./assets/devbox-nix-and-our-devbox-adoption_9.webp)
+![Image9](assets/devbox-nix-and-our-devbox-adoption_9.webp)
 
 ## Case Study: docker-less development with Devbox services
 
@@ -144,7 +144,7 @@ If you familiar with docker-compose,  I think it is easy to understand process-c
 
 You also can run different Devbox shells parallel, but can’t run different services from different shells using the same port because we have no separate network here. Take a look at the following example when I try running 2 Postgresql services in different shells with the same port.
 
-![Image10](./assets/devbox-nix-and-our-devbox-adoption_10.webp)
+![Image10](assets/devbox-nix-and-our-devbox-adoption_10.webp)
 
 So depending on what applications you are running, you will have the proper way to config different ports. For example, can change add one more argument to change the default port of Postgresql in the `process-compose.yaml` to get parallel processes.
 
@@ -162,7 +162,7 @@ processes:
 
 ```
 
-![Image11](./assets/devbox-nix-and-our-devbox-adoption_11.webp)
+![Image11](assets/devbox-nix-and-our-devbox-adoption_11.webp)
 
 For now, this is the list of usecases I can provide. As I continue to learn and adapt, I will introduce more in the future.
 
