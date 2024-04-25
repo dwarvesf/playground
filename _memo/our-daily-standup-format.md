@@ -1,13 +1,16 @@
 ---
 tags: 
   - scrum
+  - management
 title: Our Daily Standup Format
 date: 2018-07-23
-description: null
-authors: null
+description: What did you work on the task yesterday and what is the status of the task
+authors:
+- han
 menu: memo
-type: null
+type: handbook
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Report Template

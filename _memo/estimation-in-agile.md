@@ -3,16 +3,17 @@ tags:
   - agile
 title: Estimation In Agile
 date: 2016-02-12
-description: null
+description: Estimation (or estimating) is the process of finding an estimate, or approximation, which is a value that is usable for some purpose even if input data may be incomplete, uncertain, or unstable.
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 **Estimation** (or **estimating**) is the process of finding an **estimate**, or approximation, which is a value that is usable for some purpose even if input data may be incomplete, uncertain, or unstable.
 
-The value is nonetheless usable because it is derived from the best information available. [[1]](https://piemapping.atlassian.net/wiki/spaces/EN/pages/37486626/Estimations#Estimations-source-1)
+The value is nonetheless usable because it is derived from the best information available. [[1](https://piemapping.atlassian.net/wiki/spaces/EN/pages/37486626/Estimations#Estimations-source-1)]
 
 ## Estimation units
 In our workflow we use two different units that are explained below.
@@ -63,7 +64,7 @@ The reason to use planning poker is to **avoid the influence of the other parti
 * The planning poker is not a vote.
 * The highest value will not be taken by default by the moderator if a consensus is not reached. The decision will be based on the discussions the team had.
 * If a team member is not sure about his estimate and wants a value in the middle (ie. 10 but he can choose only between 8 and 13) then he must round up (ie. 13 here).
-* **During discussion, numbers must not be mentioned at all in relation to feature size**
+* **During discussion, numbers must not be mentioned at all in relation to feature size.**
 
 ## Experimentation: safety plan
 The current engineering focus at DF is to improve the quality of our product, and its associated quality assurance processes.

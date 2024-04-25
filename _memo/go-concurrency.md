@@ -1,16 +1,19 @@
 ---
 tags: 
   - go
-title: Go Concurrency
+  - programming
+  - engineering
+title: Golang Concurrency
 date: 2019-12-04
-description: null
-authors: null
+description: When we talk about Golang, its most basic and popular characteristic is concurrency-support. Unlike other languages what is quite complex to build an concurrency system, Go concurrency primitives via Goroutines and channels make concurrent programming easy. So i am going to talk about Goroutines and similar things in other programming languages.
+authors: 
+- hieuphan
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
-## Golang concurrency
 When we talk about Golang, its most basic and popular characteristic is concurrency-support. Unlike other languages what is quite complex to build an concurrency system, Go concurrency primitives via Goroutines and channels make concurrent programming easy. So i am going to talk about Goroutines and similar things in other programming languages.
 
 Firstly, we need to know Go is a concurrent language and not a parallel one. So what is the difference from concurrency and parallelism?
@@ -80,9 +83,7 @@ To have a comprehensive view, we have a few descriptions about the fields encoun
 * **recvq** and **sendq** waiting queues, which are used to store the blocked Goroutines while trying to read data on the channel or while trying to send data from the channel.
 * **lock** protects all fields in **hchan**, as well as fields in sudogs blocked on this channel.
 * **sudog** struct is described in Golang source as a Go Routine in a wait list, such as for sending/receiving on a channel.
-* 
-
-We mentioned about sudog struct above. What is sudog? See the following image:
+* We mentioned about sudog struct above. What is sudog? See the following image:
 
 ![](assets/go-concurrency_2ec27e55f9c531e5aab4f885f5915f30_md5.webp)
 

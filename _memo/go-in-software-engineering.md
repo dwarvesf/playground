@@ -1,18 +1,20 @@
 ---
 tags: 
   - engineering
+  - software
   - go
 title: Go In Software Engineering
 date: 2020-08-07
-description: null
-authors: null
+description: Go is a type-safe, cloud-native language designed for simplicity with first-class support for concurrency. The software community has been hungering for a small, simple, easy-to-learn and pragmatic programming language.
+authors: 
+- hieuphan
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
-Go is a type-safe, cloud-native language designed for simplicity
-with first-class support for concurrency.
+Go is a type-safe, cloud-native language designed for simplicity with first-class support for concurrency.
 
 The software community has been hungering for a small, simple, easy-to-learn and pragmatic programming language. Go fits the bill with:
 
@@ -40,7 +42,7 @@ Go has its place and shines the brightest with the following application types:
 * Utilities and stand-alone tools: Go was born to beat the compilation time. It's a savior that the program can be compiled in shorter time and minimal size compare to most of other languages, allow it to be packed and distributed quickly.
 
 ## Go in Software Engineering
-> Software engineering is what happens to programming when you add time and other programmers.-Russ Cox
+> "Software engineering is what happens to programming when you add time and other programmers." Russ Cox
 
 Programming is hard. You have a problem, you write a program to solve it. Your program turns out great and works thing out - that's programming. But keeping your program work over time is struggling in many levels. More people coming, your business logic changes or some of your 3rd party library is no more working.
 

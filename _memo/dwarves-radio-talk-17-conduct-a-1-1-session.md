@@ -1,13 +1,17 @@
 ---
 tags: 
   - team
-title: Dwarves Radio Talk 17 Conduct A 1 1 Session
+  - radio 
+  - performance
+title: "Dwarves Radio Talk 17: Conduct A 1-1 Session"
 date: 2021-08-09
-description: null
-authors: null
+description: In this Radio Talk, Thanh Pham - our Head of Web, shared how he conducts a 1-1 meeting with the Fellows. Working already four years at Dwarves, he has mentored a bunch of Juniors and realized many lesson-learned.
+authors:
+- duy
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 In this Radio Talk, [Thanh Pham](https://github.com/zlatanpham) - our Head of Web, shared how he conducts a 1-1 meeting with the Fellows. Working already four years at Dwarves, he has mentored a bunch of Juniors and realized many lesson-learned.
@@ -20,10 +24,10 @@ When issues happen, without trust, they keep the information, breaking the flow 
 ![](assets/dwarves-radio-talk-17-conduct-a-1-1-session_06395a8d9f4970db75d51feef9c89fa0_md5.webp)
 
 ### How we conduct our 1-1 session
-**Timing**
+**Timing**\
 A sharing hour weekly or biweekly.
 
-**Agenda**
+**Agenda**\
 We discuss and try to know more each other, not about working status reports, definitely.
 
 In the first get-to-know, we do have a list of questions to learn about the Mentee:

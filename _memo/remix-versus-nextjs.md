@@ -10,6 +10,7 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 A brief comparison between Remix and Next.js frameworks

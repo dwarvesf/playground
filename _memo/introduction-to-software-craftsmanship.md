@@ -1,13 +1,17 @@
 ---
 tags: 
   - engineering
+  - craftmanship
+  - software
 title: Introduction To Software Craftsmanship
 date: 2020-04-24
-description: null
-authors: null
+description: Craftsmanship has been our motto since the first day. But to the newbies and even some current Dwarves, the real definition of software craftsmanship is still vague, or being understood in different ways.
+authors: 
+- han
 menu: memo
-type: null
+type: memo
 hide_frontmatter: false
+hide_title: false
 ---
 
 Craftsmanship has been our motto since the first day. But to the newbies and even some current Dwarves, the real definition of software craftsmanship is still vague, or being understood in different ways.
@@ -73,11 +77,11 @@ Before I hand over the next part to Huy, I'd like to look back the reason why pe
 ## Agile <> Craftsmanship 
 I read in a meetup of Agile team in 2008, Uncle Bob once said: *Craftsmanship over crap*.
 
-Years later, he came up with a Manifesto for Software Craftsmanship
+Years later, he came up with a Manifesto for Software Craftsmanship.
 
 ![](assets/introduction-to-software-craftsmanship_9484dea11666b2ee45cd5a11769bde32_md5.webp)
 
-and people tried to compare it to the Manifesto for Agile Software Development
+And people tried to compare it to the Manifesto for Agile Software Development.
 
 ![](assets/introduction-to-software-craftsmanship_f4dd9cc532dd7e1845e424a9274811d9_md5.webp)
 
@@ -93,11 +97,11 @@ I've attached some links on the slide, you may find that helpful in the case of 
 
 At our woodland, we live by the code of Craftsmanship. Beside, we don't eliminate other side values, such as the team collaboration. That is a big part in any process, along with the attention to detail. I always favor this saying: When you pay too much attention on perfection, there won't be any product. Perfect is the enemy of Good.
 
-To compare the core value and our current status, still DF is in need of more effort to match up the two. Which is why our main goal this year is to better the working process and build an environment where people can create the best product in their ability. To make that happen, we've launched some technical activities, such as TechRadar and TechTalk. QA team is conducting a Testframework, to create rules & guidelines for test cases creating & designing. This helps set up the new bar for testing process quality once the framework is finished and applied.
+To compare the core value and our current status, still DF is in need of more effort to match up the two. Which is why our main goal this year is to better the working process and build an environment where people can create the best product in their ability. To make that happen, we've launched some technical activities, such as Tech Radar and Tech Talk. QA team is conducting a Testframework, to create rules & guidelines for test cases creating & designing. This helps set up the new bar for testing process quality once the framework is finished and applied.
 
 I've also realized the mini improvement along the way. Team communication during project sometimes gets hard. We create a wiki for that by documenting every retro meeting with transparent meeting notes where both clients and our team can discuss and raise up ideas/issues.
 
-# In a Nutshell
+## In a Nutshell
 This only to help summarize the key point of this talk, which can be listed as
 
 * Definition of Craftsmanship: an attitude and an approach of how we solve the problem

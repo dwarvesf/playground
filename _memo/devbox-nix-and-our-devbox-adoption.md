@@ -8,8 +8,9 @@ authors:
   - hnh
   - vhbien
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 This is the 3rd post of Devbox series includes
@@ -23,7 +24,6 @@ In the previous session, that is [Devbox #2: Our Docker adoption and its challen
 As known as a command-line tool, Devbox lets you easily create isolated shells for development. But it doesn't work alone. Because of powering by Nix under the hood, whether you're a newbie or an experienced Nix user, we we need to dissect Devbox beginning by taking about Nix and it power that is superior than Docker.
 
 ## Nix is more than a cross-platform package manager
-
 From the [official Nix website](https://nixos.org/), we learn that Nix is a unique cross-platform package management tool that takes a reproducible, declarative and reliable approach to system configuration. However, there's more to Nix than just being a package manager. In fact, the holy trinity of Nix includes Nixpkgs, NixDSL, and NixOS. While they are all called Nix, you can break them down into their respective components for a clearer understanding. With Nix, you use the NixDLS to make Nixpkgs build packages that can be anything from software to entire NixOS images.
 
 Nix builds packages in isolation from each other. This means that if a package works on one machine, it will also work on another. Nix is also declarative and reliable, making it easy to share development and build environments for your projects regardless of the programming languages and tools you're using. Additionally, Nix ensures that installing or upgrading one package doesn't break other packages, allowing you to roll back to previous versions if needed and preventing any inconsistent state during upgrades.
@@ -31,7 +31,6 @@ Nix builds packages in isolation from each other. This means that if a package w
 So, what sets Nix apart from Docker?
 
 ## Docker build is linear history
-
 In Docker, each line in the Dockerfile is built into a separate Docker layer when it's executed. It's important to understand that even a minor change in any layer will prompt Docker to rebuild all subsequent layers, regardless of whether changes were made to those lower layers.
 
 Let's take a look at the following Dockerfile.
@@ -51,7 +50,6 @@ When you modify any line in a Dockerfile, the underlying layers are rebuilt from
 ![Image1](assets/devbox-nix-and-our-devbox-adoption_1.webp)
 
 ## Nix build is dependency graph
-
 In contrast to Docker, Nix build works differently. It uses symlinks to achieve atomic deployment of new versions of the system configuration. This makes rollbacks easy to perform and reduces the complexity of managing dependencies. Under the hood, Nix creates a "map" of all the packages and their dependencies, providing a high-level view of the entire system.
 
 ![Image2](assets/devbox-nix-and-our-devbox-adoption_2.webp)
@@ -68,7 +66,6 @@ The magic of Nix is that it makes sure that everything works together correctly.
 As we discussed in the [Devbox #2: Our Docker adoption and its challenges](https://memo.d.foundation/playground/_memo/devbox-docker-adoption-and-challenges), Docker builds can access the public internet, so we can't guarantee that the same image will be built every time, as everything on the internet can change in minutes. Additionally, there are no checks to ensure that the files being fetched are actually the ones you intended for your Docker image. Even if we can push the image to a registry and pull it for running identical containers on different computers. In some edge cases when we can’t access to the online repository so need to build another one,  we may not be able to build the required image again if some dependencies have changed on the internet.
 
 ## Nix ensures external sources are Immutable
-
 Take a look at the following diagram, we can see with the same build expression, Nix can result in the same images. In contrast, we can just only build a Docker Image one time and bring this result everywhere if don’t want any change to happen. How can Nix make it happen?
 
 ![Image3](assets/devbox-nix-and-our-devbox-adoption_3.webp)
@@ -80,7 +77,6 @@ Nix restricts external sources from being changed without being detected. As a r
 To further illustrate the point that Nix builds produce the same output each time, we can understand that Nix is implemented as a pure function that always returns the same result for the same input parameters. This means that if you run the same Nix expression multiple times, you will always get the same output.
 
 ## Nix also can build Docker image better than Docker build
-
 Nix can build Docker images better than Docker build, here's why: Nix takes advantage of a dirty secret deep within Docker - a content-aware store. However, since Docker build isn't designed to utilize this feature. Nix, on the other hand, can create layered images that only upload the changed layers, making updates more efficient.
 
 A layered image puts every dependency into its own image layer so you only upload the parts of your image that have actually changed. For example, making an update to the webp library to fix a trivial bounds checking vulnerability because nobody writes those libraries in memory-safe languages? The only thing that'd need to be uploaded is that single webp library layer.
@@ -90,7 +86,6 @@ A layered image puts every dependency into its own image layer so you only uploa
 Additionally, if you have multiple services in the same repository, they'll share Docker layers with each other without any extra configuration. It's not possible to achieve this level of efficiency with Docker without creating multiple common base images, each containing a bunch of tools and unnecessary bloat that some of your services may never use.
 
 ## But Nix needs effort, Devbox is more easy
-
 After all, Nix looks superior to Docker. But not everything is perfect. Nix is more complex, If you and your team do not want to destroy everything and start again, migrating to Nix needs a lot of effort. But we have another simple way to apply Nix in the local development environment, that is using Devbox.
 
 Powered by Nix, Devbox is a command-line tool that makes it easy to create isolated shells for development. By defining the list of packages needed for your development environment, Devbox creates a dedicated space for your application to run without anything related to container or VM.
@@ -102,7 +97,6 @@ In practice, Devbox works similarly to a package manager like Yarn - except the 
 Devbox offers an intuitive interface for creating development environments using the Nix Package Manager, without requiring any knowledge of the Nix language. So, how can we incorporate Devbox into our team's workflow?
 
 ## Case Study: memo.d.foundation
-
 Looking at [memo.d.foundation](https://github.com/dwarvesf/memo.d.foundation), we use Devbox as a tool to create reproducible development environments, making it easy for new team members to get started with minimal effort. By setting up a Devbox shell config with needed dependencies, new joiners can quickly get started without installing anything beyond Devbox. They can then focus on making the application run locally, avoiding the issue of "It works on my machine." Non-tech team members working on content for this repository can also easily run the project without any concerns.
 
 All above ideas are proved by below transparent configuration file. 
@@ -118,7 +112,6 @@ Finally, easy to run our project without installing any other stuffs
 ![Image9](assets/devbox-nix-and-our-devbox-adoption_9.webp)
 
 ## Case Study: docker-less development with Devbox services
-
 In addition, we use Devbox to create a containerless development environment by leveraging Devbox services. Under the hood, it takes advantage of Process-Compose, a simple and flexible scheduler and orchestrator written in Nix, to manage non-containerized applications. With Devbox, we can create and manage servers in the shell using a Docker-compose-like approach without any actual Docker containers needed.
 
 When we install a package using Devbox, it creates a file `process-compose.yaml` in the `./.devbox/virtualenv/` directory. This allows Devbox to manage every package installed inside the shell.
@@ -140,7 +133,6 @@ processes:
 ```
 
 If you familiar with docker-compose,  I think it is easy to understand process-compose as well. By standing all `process-compose.yaml` both from the root of project and in the  `.devbox/`, you can manage how many services are ready to serve by using `devbox services ls`. Then when you enter `devbox services up`, all services in this project will be instructed to run. The special point here is that you can custom the `process-compose.yaml` at the root of project to get the same result as docker-compose without using container.
-
 
 You also can run different Devbox shells parallel, but can’t run different services from different shells using the same port because we have no separate network here. Take a look at the following example when I try running 2 Postgresql services in different shells with the same port.
 
@@ -167,5 +159,4 @@ processes:
 For now, this is the list of usecases I can provide. As I continue to learn and adapt, I will introduce more in the future.
 
 ## Conclusion
-
 In summary, Nix and Devbox offer exciting new possibilities for streamlining software development processes. By providing a more efficient way to create reproducible development environments, Nix and Devbox can help teams overcome challenges and improve overall workflow. While they may not completely replace Docker, they can effectively address different problems and provide additional support where Docker may be struggling.

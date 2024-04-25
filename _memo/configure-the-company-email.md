@@ -1,16 +1,18 @@
 ---
 tags: 
-  - dwarves
   - team
   - process
   - updates
+  - security
 title: Configure The Company Email
 date: 2022-11-29
-description: null
-authors: null
+description: Google will verify your ownership with this app password. Select “Mail” under app, and “Mac” under device. Hit “Generate”. Copy and keep for later.
+authors: 
+- quang
 menu: memo
-type: null
+type: guidelines
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Make sure you have 2FA enabled
@@ -41,7 +43,7 @@ Set your forwarded email (example@d.foundation) and your sender’s name. Untick
 
 ![](assets/configure-the-company-email_a0083c2a2c03b49be443442fd9b9d388_md5.gif)
 
-## Confirm Ownership**
+## Confirm Ownership
 You will receive an email from GMail asking you to confirm ownership with a code. Fill in the code in the popup modal, and you are all set!
 
 ## Send emails from your alias

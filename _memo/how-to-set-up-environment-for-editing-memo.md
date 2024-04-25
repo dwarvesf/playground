@@ -9,7 +9,7 @@ description: This is a guide on how to setup your environment and settings to pu
 authors:
   - minhcloud
 menu: memo
-type: memo
+type: guideline
 hide_frontmatter: false
 pinned: true
 hide_title: false

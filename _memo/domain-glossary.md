@@ -3,11 +3,12 @@ tags:
   - design
 title: Domain Glossary
 date: 2020-04-19
-description: null
+description: Enhancing consumer engagement within brick and mortar - online/using mobile devices, moving beyond simply blending in the online and the mobile experience, all driven at the heart by sophisticated big data tools that truly enable contextual, personalized and real-time conversations between brands, retailers and consumers.
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## T1: Retail 2.0

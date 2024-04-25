@@ -1,13 +1,15 @@
 ---
 tags: 
   - devops
-title: How We Setup Cicd
+  - engineering
+title: "How We Setup CI/CD"
 date: 2021-02-16
-description: null
+description: Before we dig through a detailed process, let's set some grounded knowledge about the CI/CD..
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 Before we dig through a detailed process, let's set some grounded knowledge about the CI/CD:
@@ -18,7 +20,7 @@ On the other hand, `CD` refers to either continuous delivery or continuous deplo
 
 A simple way to understand the CI/CD is to take it as a process, often visualized as a pipeline, that involves some job like testing, building, ..., etc.
 
-## The overall process @ Dwarves
+## The overall process at Dwarves
 ![](assets/how-we-setup-cicd_fa32c5b22664bf943dd7d4314b012a83_md5.webp)
 
 At Dwarves, most projects happen in Gitlab, so Gitlab-CI would be our first adaption. Lately, more and more Ventures projects land in Github, we have to look at Github Action. It doesn't mention that we also have a CI/CD for a Frontend-ers setup with Netlify or Vercel.
@@ -76,4 +78,4 @@ Technology is eating the world. The technology we used yesterday may be deprecat
 
 We build a team that wants to do innovative things, but innovation does not happen in a vacuum. It happens through many thoughts, experiments, assessments.
 
-By the time we write this article, we are giving [Earthly](https://github.com/earthly/earthly) the shot to further upgrade our stacks. And we don't mean to stop exploring, pushing the boundaries so perhaps we will write a follow up article of this, maybe a year later
+By the time we write this article, we are giving [Earthly](https://github.com/earthly/earthly) the shot to further upgrade our stacks. And we don't mean to stop exploring, pushing the boundaries so perhaps we will write a follow up article of this, maybe a year later.

@@ -1,13 +1,17 @@
 ---
 tags: 
   - design
+  - practice
+  - UX-UI
 title: Design System
 date: 2018-03-23
-description: null
-authors: null
+description: Now having a Design System in place unites product teams around a common visual language, accelerates your design process ten-fold and gives you a strong foundation to build any project. Learn how you can create a design system and help your team improve product quality when increase the speed of your workflow.
+authors: 
+- anna
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 Now having a Design System in place unites product teams around a common visual language, accelerates your design process ten-fold and gives you a strong foundation to build any project. Learn how you can create a design system and help your team improve product quality when increase the speed of your workflow.
@@ -27,7 +31,7 @@ But honestly, if you devote one's time to create this Design System, you'll find
 ## Design
 Starting a design system can feel daunting. There are so many things to consider: the design style, how to design for modularity and scalability, how it will be used by other teams, how to sell the idea to the decision makers in the company. Where is a designer to start?
 
-### 1.Who should be involved
+### 1. Who should be involved
 Before beginning work on your design system, take a moment to think about the team you’ll need to bring it to life. Who needs to be involved? Spoiler alert! You’re going to need more than just designers.
 
 Here’s a quick list of the disciplines that can be represented in your team to create an effective design system:
@@ -55,9 +59,7 @@ The team model that brings people together is as important as the team creating 
 
 ![](assets/design-system_777f120275d29fe97d756a8d98d5be91_md5.webp)
 
-* Other model
-
-A hybrid design system team model that we used at Salesforce—a central team and members of other teams come together to manage and govern the system.
+* **Other model:** A hybrid design system team model that we used at Salesforce—a central team and members of other teams come together to manage and govern the system.
 
 ![](assets/design-system_b187e07f45c64d9eabd7e524b39a31ed_md5.webp)
 
@@ -82,7 +84,7 @@ As we start to take inventory, it’s good practice to take a look at the CSS us
 
 ![](assets/design-system_a9cdca95e3ffef0e55cd90fdec84527a_md5.webp)
 
-**Do a UI inventory audit**
+**Do a UI inventory audit**\
 Before you start anything, its best to identify how inconsistent the current build is. This works in two ways. It helps identify the reason as to why you’re doing it, to identify how inconsistent everything is but it should help you get the backing of the business as to why exactly you’re creating the design system; to create consistency across the platform.
 
 * **Colors:** What is the color palette used on the platform? Explain how, where and why we use certain colors.
@@ -146,4 +148,3 @@ Process: [https://medium.com/@jgunnison/pattern-library-workflow-ba9cc486159e](h
 
 After you understand this process of the design system, this guide will help you create a UI library in Sketch. 
 Let’s take a step-by-step below here how you can create your design system.
-

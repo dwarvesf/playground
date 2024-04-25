@@ -1,16 +1,20 @@
 ---
 tags: 
   - dcos
-title: Dcos Series Part 1 Quick Look Installation
+  - engineering
+  - practice
+title: "DC/OS Series [Part 1]: Quick Look & Installation"
 date: 2017-05-04
-description: null
-authors: null
+description: DC/OS - Data center OS is based on the production proven Apache Mesos distributed systems kernel, combining years of real-life experience with best practices for building and running modern applications in production.
+authors: 
+- quang
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
-## What is DC/OS ?
+## What is DC/OS?
 DC/OS - Data center OS is based on the production proven Apache Mesos distributed systems kernel, combining years of real-life experience with best practices for building and running modern applications in production.
 
 A DC/OS cluster is composed of three types of nodes: masters, private agents, and public agents.
@@ -22,13 +26,11 @@ There are some nodes that we will talk about:
 * Public agent: A public agent node is an agent node that is on a network that allows ingress from outside of the cluster via the cluster’s infrastructure networking.
 * Private agent: A private agent node is an agent node that is on a network that does not have ingress access from outside of the cluster via the cluster’s infrastructure networking.
 
-## Why DC/OS ?
+## Why DC/OS?
 Build modern apps using state of the art technologies such as containers and big data services, and confidently move from development to production.
 
-## How can we install it ?
-
-### System requirement -> Here
-
+## How can we install it?
+### System requirement
 ### Installing
 OK. Let’s go to the most excited section - Installing DC/OS!
 

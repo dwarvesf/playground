@@ -10,6 +10,7 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 With the nature of consulting team, one member could be assigned to multiple projects at once or handle the work of a member in one project that take more than 100% of his/her time per week.

@@ -1,16 +1,18 @@
 ---
 tags: 
   - blockchain
-title: Design System For Layer 2 Using Zk Rollup
+  - layer2
+  - engineering
+title: Design System For Layer 2 Using ZK Rollup
 date: 2023-04-24
-description: null
-authors: null
+description:  With more recent concerns on privacy and security, we wanted to understand how we could move tokens across blockchains without needing to know any other information about the transaction. This has motivated our research on Zero-Knowledge proofs and their possible applications for bridges.
+authors: 
+- ngocthanh
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
-
-<!-- table_of_contents adbd9b7d-46a4-4a1f-ab90-ce4abf276231 -->
 
 *At Dwarves, we are currently working on creating a bridge token in one of our blockchain projects. With more recent concerns on privacy and security, we wanted to understand how we could move tokens across blockchains without needing to know any other information about the transaction. This has motivated our research on Zero-Knowledge proofs and their possible applications for bridges.*
 
@@ -23,7 +25,7 @@ Blockchain layer 2 is being used to build applications that require high perform
 ## Zero-Knowledge **Ethereum Virtual Machine** (zkEVM)
 The overall design of zkEVM follows the State Machine model and, therefore, **emulates the Ethereum Virtual Machine (EVM)** with the aim of providing the same user experience as Ethereum. In addition to enabling ERC20 token payments and transfers, users can now run Ethereum smart contracts on it.
 
-The aggregate strategy is to** develop a zkProver **that executes a series of multiple transactions, proves their validity, and publishes only the minimum size valid proof for verification. This reduces transaction completion times and saves gas costs for Ethereum users.
+The aggregate strategy is to develop a zkProver that executes a series of multiple transactions, proves their validity, and publishes only the minimum size valid proof for verification. This reduces transaction completion times and saves gas costs for Ethereum users.
 
 However, zkEVM is not just a compilation but a zero-knowledge compilation. Its design utilizes the most famous techniques in ZK folklore while introducing novel ZK tools. One example of such tools is the new Polynomial Identification Language (PIL), which plays a key role in enabling zkProver to generate verifiable proofs.
 
@@ -59,14 +61,14 @@ The Aggregator is responsible for aggregating and compressing user transactions 
 The main components we need for the layer 2 system (that also include components of a regular blockchain) includes:
 
 * Blockchain Node
-* **Sequencer** - a type of rollup node that is responsible for collecting transactions and producing new blocks.
-* **ZkProver** - a prover and verifier of transactions using zkEVM and state machines
-* **RPC **- Remote Procedure Call holding set of protocols and interfaces that to access the blockchain
-* **Synchronizer** - helps nodes to stay up-to-date with the latest state on the blockchain
-* **ZK SNARK/STARK **- arguments of knowledge to prove transactions without revealing any information
-* **StateDB **- a database to store current states of all accounts and contracts on the Ethereum network
+  * **Sequencer** - a type of rollup node that is responsible for collecting transactions and producing new blocks.
+  * **ZkProver** - a prover and verifier of transactions using zkEVM and state machines
+  * **RPC** - Remote Procedure Call holding set of protocols and interfaces that to access the blockchain
+  * **Synchronizer** - helps nodes to stay up-to-date with the latest state on the blockchain
+   * **ZK SNARK/STARK** - arguments of knowledge to prove transactions without revealing any information
+  * **StateDB** - a database to store current states of all accounts and contracts on the Ethereum network
 * **Ethereum Bridge** - a mechanism to transfer assets between 2 blockchain networks
-* **ZKRollup smart contract **- a smart contract that takes hundreds of transactions off the main blockchain and bundles them into a single transaction, to then send a validity proof to the main blockchain
+* **ZKRollup smart contract** - a smart contract that takes hundreds of transactions off the main blockchain and bundles them into a single transaction, to then send a validity proof to the main blockchain
 
 ### ZkProver Component
 The proof and verification of transactions in Polygon zkEVM are both handled by a zero-knowledge proofing component called zkProver. All the rules for a valid transaction are implemented and executed in zkProver. Prover relies on the transactions to be processed, and the state of the network to calculate the proof. zkProver mainly interacts with two components i.e. Node and Database (DB). Therefore, before diving deeper into other components, we must understand the control flow between zkProver, Node and Database. Here is a diagram to explain the process clearly.
@@ -75,10 +77,10 @@ The proof and verification of transactions in Polygon zkEVM are both handled by 
 
 * Prover executes input data, calculates the result state, and generates proof. It calls the Stark component to generate proof of the Executor state machine committed polynomials.
 * Key components of zkProver for generating verifiable proof:
-* The executor is the main state machine executor
-* STARK recursive component
-* CIRCOM library
-* Prove ZK-SNARK
+  * The executor is the main state machine executor
+  * STARK recursive component
+  * CIRCOM library
+  * Prove ZK-SNARK
 
 ### State machine Component
 ![](assets/design-system-for-layer-2-using-zk-rollup_6966283d889117a7e021bfd7d29d47a7_md5.webp)
@@ -106,6 +108,7 @@ StateDB plays an important role in ensuring the integrity and reliability of the
 
 ### L2 State
 Design to update L2 State over time so that the state is always the most properly synchronized over time. There are three stages of the L2 State, each of which corresponds to three different ways that L2 nodes can update their state. All three cases depending on the format of the batch data used to update the L2 State.
+
 * In the first case, the update is only notified by information (i.e. the Lot consisting of sorted transactions) coming directly from the Trusted Sequencer, before any data is available on L1. The resulting L2 state is called the Trusted state.
 * In the second case, the update is based on the information obtained by the L2 nodes from the L1  network. After the plots have been sequenced and data have been made available on L1. The L2 state is called  Virtual State at this time.
 * The information used to update L2 State in the final case includes verified zero-knowledge proofs of computational integrity. After the Zero-Knowledge proof has been successfully verified in L1, L2 nodes synchronize their local L2 State root with the root committed in L1 by the Trusted Aggregate trust. As a result, such L2 State is called  Unified State 
@@ -124,29 +127,32 @@ The bridge is responsible for receiving and processing requests to transfer info
 
 ![](assets/design-system-for-layer-2-using-zk-rollup_cf2dd7dd7ccbdbdb75fb3d0f31ca5d68_md5.webp)
 
-* The bridge client creates a request to deposit or claim to Ethereum or zkEVM node (layer 2) to start transferring the token
-* The Aggregator will sync events with Ethereum and store bridge events to Bridge DB and update the Merkle tree root
-* The zkEVM node sync bridge event with Aggregator
+* The bridge client creates a request to deposit or claim to Ethereum or zkEVM node (layer 2) to start transferring the token.
+* The Aggregator will sync events with Ethereum and store bridge events to Bridge DB and update the Merkle tree root.
+* The zkEVM node sync bridge event with Aggregator.
 
 ### Smart contract
 The smart contract is used to execute the proof of layer 2 in layer 1, transfer assets between layers, and store proof and root Merkle Tree. In this case, we can learn from zkEVM smart contract:
-* Smart contract [Bridge.sol](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/contracts/PolygonZkEVMBridge.sol): 
 
-The main functions: 
-* **bridgeAsset**: transfer token from L1 to L2, add leaf to Merkle tree, emit event
-* **bridgeMessage**: transfer message in bytes format that executable
-* **claimAssert**: verify Merkle proof and withdraw tokens/ether
-* **claimMessage**: Verify Merkle proof and execute message
-* Smart contract [GlobalExitRoot.sol](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/contracts/PolygonZkEVMGlobalExitRoot.sol)
-* **updateExitRoot**: Update the exit root of one of the networks and the global exit root
-* **getLastGlobalExitRoot**: Return last global exit root
-* Smart contract [GlobalExitRootL2.sol](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/contracts/PolygonZkEVMGlobalExitRootL2.sol)
-* **updateExitRoot**: Update the exit root of one of the networks and the global exit root
-* Smart contract [zkEVM.sol](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/contracts/PolygonZkEVM.sol)
-* **sequenceBatches**: Allows a sequencer to send multiple batches
-* **verifyBatches**: Allows an aggregator to verify multiple batches
-* **trustedVerifyBatches**: Allows an aggregator to verify multiple batches
-* **sequenceForceBatches**: Allows anyone to sequence forced Batches if the trusted sequencer do not have done it in the timeout period
+- Smart contract [Bridge.sol](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/contracts/PolygonZkEVMBridge.sol)
+
+   The main functions: 
+  * **bridgeAsset**: transfer token from L1 to L2, add leaf to Merkle tree, emit event
+  * **bridgeMessage**: transfer message in bytes format that executable
+  * **claimAssert**: verify Merkle proof and withdraw tokens/ether
+  * **claimMessage**: Verify Merkle proof and execute message
+
+- Smart contract [GlobalExitRoot.sol](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/contracts/PolygonZkEVMGlobalExitRoot.sol)
+    * **updateExitRoot**: Update the exit root of one of the networks and the global exit root
+    * **getLastGlobalExitRoot**: Return last global exit root
+  * Smart contract [GlobalExitRootL2.sol](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/contracts/PolygonZkEVMGlobalExitRootL2.sol)
+  * **updateExitRoot**: Update the exit root of one of the networks and the global exit root
+
+- Smart contract [zkEVM.sol](https://github.com/0xPolygonHermez/zkevm-contracts/blob/main/contracts/PolygonZkEVM.sol)
+  * **sequenceBatches**: Allows a sequencer to send multiple batches
+  * **verifyBatches**: Allows an aggregator to verify multiple batches
+  * **trustedVerifyBatches**: Allows an aggregator to verify multiple batches
+  * **sequenceForceBatches**: Allows anyone to sequence forced Batches if the trusted sequencer do not have done it in the timeout period
 
 ### RPC
 RPC (Remote Procedure Call) is a JSON-RPC interface compatible with the Ethereum network. In order for a software application to interact with the Ethereum blockchain (by reading blockchain data and/or sending transactions to the network), that application must connect to an Ethereum node. RPC allows the integration of zkEVM with existing tools, such as Metamask, Etherscan, and Infura. It adds transactions to the Pool and interacts with the State using read-only methods. It allows interaction with the blockchain through methods similar to EVM. 
@@ -159,18 +165,18 @@ One node will include all the components as we have shown above. the components 
 The diagram represents the main components of the software and how they interact between them. Note that this reflects a single entity running a node, in particular a node that acts as the trusted sequencer. But there are many entities running nodes in the network, and each of these entities can perform different roles.
 
 ### Transaction Flow
-**Submit transaction**
+**Submit transaction**\
 Transactions in the zkEVM network are generated in the user's wallet and signed with their private key. Once created and signed, transactions are sent to the Trusted Sequencer node through their JSON-RPC interface. The transactions are then stored in the pending transaction pool, where they await the Sorter's selection to execu`te or discard.
 
-**Transactions and Blocks on zkEVM**
+**Transactions and Blocks on zkEVM**\
 In the current design,  a single transaction is equivalent to a block. This design strategy not only improves RPC and P2P communication between nodes but also enhances compatibility with the existing engines and facilitates rapid completion in L2. It also simplifies the process of locating user transactions.
 
-**Execute transaction**
+**Execute transaction**\
 Trusted Sequencer reads transactions from the pool and decides whether to cancel them or sort and execute them. The executed transactions are added to a batch of transactions and the Local L2 State of the Sequencer is updated.
 
 After a transaction is added to the L2 State, it is broadcast to all other zkEVM nodes via the broadcast service. It is worth noting that by relying on Trusted Sequencer, we can reach the final transaction quickly (faster in L1). However, the resulting L2 State will remain in a trusted state until the batch is committed in the Consensus Contract.
 
-**Batch transaction**
+**Batch transaction**\
 Trusted Sequencer must batch execute transactions using the following BatchData structure specified in the PolygonZkEVM.sol contract:
 
 ```solidity
@@ -182,10 +188,10 @@ struct BatchData {
 }
 ```
 
-**Transactions**
+**Transactions**\
 These are byte arrays containing concatenated batch transactions. Each transaction is encrypted in the Ethereum pre-EIP-115 or EIP-115 format using the RLP (Recursive-length prefix)  standard, but the signature values,  `v`, and `s`, are concatenated;
 
-**Batch sequencing**
+**Batch sequencing**\
 Plots need to be sequenced and validated before they can become part of the L2 Virtual State.
 
 Trusted Sequencer has successfully added a batch to a sequence of batches using the  L1 PolygonZkEVM.sol contract `sequencedBatches` map, which is essentially a  storage structure containing a queue of processes self-defined Virtual State.
@@ -196,3 +202,48 @@ mapping(uint64 => SequencedBatchData) public sequencedBatches;
 ```
 
 The batches must be part of an array of batches that are ordered sequentially. The Trusted Sequencer calls Contract PolygonZkEVM.sol, which uses the sequenceBatches mapping, which accepts an ordered array of batches as an argument. Please see the code snippet provided below.
+
+```solidity
+function sequenceBatches ( 
+    BatchData[] memory batches
+) public ifNotEmergencyState onlyTrustedSequencer
+```
+
+![](assets/design-system-for-layer-2-using-zk.png)
+
+**Minimum and maximum batch size**
+
+The contract's public constant,  MAX TRANSACTIONS BYTE LENGTH, defines the maximum number of transactions that can be included in a batch (300000).
+
+Similarly, the number of lots in a chain is limited by the contract's public constant MAX VERIFY BATCHES (1000). The batch array must contain at least one batch and no more than the value of the constant MAX VERIFY BATCHES.
+
+Only Trusted Sequencer Ethereum accounts can access `sequencedBatches` mapping. It is essential that the contract is not in a state of emergency. The function call will be reverted if the above conditions are not met.
+
+**Batch Validity & L2 State Integrity**
+
+The `sequencedBatches` function iterates through each batch of the sequence, checking its validity. A valid lot must meet the following criteria:
+
+- It must include a `globalExitRoot`GlobalExitRootMap `PolygonZkEVMGlobalExitRoot.sol`A lot is valid only if it includes a valid `globalExitRoot`. The value contained in the L1 bridge contract.
+- The length of the transaction byte array must be less than the value of constant MAX_TRANSACTIONS_BYTE_LENGTH
+- The batch timestamp must be greater than or equal to the timestamp of the last batch sequenced, but less than or equal to the timestamp of the block that executed the L1 transaction in the sequence. All lots must be ordered from time to time
+
+If a batch is invalid, the transaction reverts, dropping the entire chain. Otherwise, if all batches to be sequenced are valid, sequencing will continue.
+
+A stored variable called `lastBatchSequenced` is used as a batch counter and so it is incremented each time a batch is sequenced. It provides a batch-specific index number to be used as the position value in the batch sequence.
+
+The same hashing mechanism used in blockchains to link one block to the next is used in batches to ensure the cryptographic integrity of the batch chain. That is, include the aggregate message of the previous batch in the data used to calculate the aggregate message of the next batch.
+
+The message of a given batch is thus **cumulative hash of all previously sequenced batches**, hence the name **cumulative hash** of a batch, expressed equals `oldAccInputHash` for the old and `newAccInputHash` for the new.
+
+## Summary
+Blockchain Layer 2 is a solution to speed up transactions and reduce costs in the Ethereum network. It allows transactions to be processed faster using blocks contained in smart contracts, without having to wait for blocks to be mined.
+
+One of the advantages of layer 2 is its higher security compared to other traditional blockchain architectures. It uses Zero-Knowledge Proof to verify the validity of transactions without disclosing any information related to those transactions.
+
+The most important components in the system are the Prover and the smart contract, which are responsible for generating proofs and verifying proofs for transactions on the network in each batch, which enhances functionality and scalability. of the blockchain network, while minimizing security risks and increasing the security of the system.
+
+## Reference
+- https://docs.hermez.io/zkEVM/Overview/Overview/#zkprover
+- https://medium.com/iosg-ventures/zk-cross-chain-message-protocol-secure-cheap-foundation-of-multichain-dapps-66adc65cedc9
+- https://academy.binance.com/en/articles/zk-snarks-and-zk-starks-explained
+- https://en.wikipedia.org/wiki/Zero-knowledge_proof

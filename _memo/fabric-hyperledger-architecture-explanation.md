@@ -2,16 +2,19 @@
 tags: 
   - blockchain
   - architecture
+  - research
+  - framework
 title: Fabric Hyperledger Architecture Explanation
 date: 2019-05-15
-description: null
+description: Hyperledger is an open source community focused on developing a suite of stable frameworks, tools and libraries for enterprise-grade blockchain deployments.
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
-# What is Hyperledger
+## What is Hyperledger
 Hyperledger is an open source community focused on developing a suite of stable frameworks, tools and libraries for enterprise-grade blockchain deployments.
 
 It serves as a neutral home for various distributed ledger frameworks including Hyperledger Fabric, Sawtooth, Indy, as well as tools like Hyperledger Caliper and libraries like Hyperledger Ursa.

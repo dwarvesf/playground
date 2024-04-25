@@ -1,13 +1,15 @@
 ---
 tags: 
   - tutorial
+  - design
 title: Infinite Image Gallery With R3f An Approach
 date: 2020-09-14
-description: null
+description: It was a fun & challenging project, and I want to share my approach with you in this small memo. I’ll write about what I think are the two core problems we’d need to solve to make an infinite gallery possible.
 authors: null
 menu: memo
-type: null
+type: tutorial
 hide_frontmatter: false
+hide_title: false
 ---
 
 ![](assets/infinite-image-gallery-with-r3f---an-approach_eb91b6c0aa14997e1a88191e1acaa8dd_md5.webp)

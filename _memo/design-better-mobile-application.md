@@ -1,13 +1,16 @@
 ---
 tags: 
   - design
+  - mobile
+  - UX-UI
 title: Design Better Mobile Application
 date: 2020-05-01
-description: null
+description: This workshop wraps up the useful information on 2 types of operating system for UX/UI designers, based on the personal research on iOS and Android. The purpose is to create an application that brings comfortability and a great experience to the end user.
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 This workshop wraps up the useful information on 2 types of operating system for UX/UI designers, based on the personal research on iOS and Android. The purpose is to create an application that brings comfortability and a great experience to the end user.
@@ -59,7 +62,7 @@ The invention of studio later that supports developer to code on cross platform,
 Based on the programming languages, mobile application can be categorized into 4 types
 
 * **Native App**: applications written to work on a specific device platform, using the suitable language for each platform, such as Java for Android, Objective C for iOS, C# for Windows Phone. For example, games written for iOS cannot be used in Android.
-* **Web-based App**: A computer program that utilizes web browsers and web technology to perform tasks over the Internet. This type of application is run on web platform, written by web languages like HTML5, CSS, Javascript of jQuery Mobile. Basically this is a website with application interface and data is loaded from browser.
+* **Web-based App**: a computer program that utilizes web browsers and web technology to perform tasks over the Internet. This type of application is run on web platform, written by web languages like HTML5, CSS, Javascript of jQuery Mobile. Basically this is a website with application interface and data is loaded from browser.
 * **Hybrid App**: combines the elements of both native and Web applications. The basic parts of the application are still written in web language, but it will be placed on the native container.
 * **Cross Platform** **(Multi-platform)**: one codebase is applied for all platforms. Developers only need to write the codebase once, then translate or transpile it into different Native App versions that for each different platform. This is known as the most cost-optimized one.
 

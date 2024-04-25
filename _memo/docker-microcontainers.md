@@ -3,11 +3,13 @@ tags:
   - docker
 title: Docker Microcontainers
 date: 2016-02-04
-description: null
-authors: null
+description: When using Docker, you will quickly realize that the image using to run a project takes a big capacity. A simple image ubuntu took nearly 200MB, but you don’t take full advantage of its available tools. Other images like Node, Go, etc almost run in Ubuntu, debian and only set up more environments to easily deploy.
+authors: 
+- quang
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 When using Docker, you will quickly realize that the image using to run a project takes a big capacity. A simple image ubuntu took nearly 200MB, but you don’t take full advantage of its available tools. Other images like Node, Go, etc almost run in Ubuntu, debian and only set up more environments to easily deploy. However, downloading a new image takes more time because of its big capacity and it seems to be not necessary at all.

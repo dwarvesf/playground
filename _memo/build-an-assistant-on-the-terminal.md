@@ -3,11 +3,12 @@ tags:
   - tutorial
 title: Build An Assistant On The Terminal
 date: 2020-03-27
-description: null
+description: When coding, developers look for references constantly. "What does this snippet of code do?", "How to implement something in this programming language?", etc. According to the StackOverflow blog[1], the page itself saw more than 9 billion page views in 2019. There is also an unrecorded amount of views on other developer blogs and tutorials online. That was an enormous amount of developers searching for supports.
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Introduction

@@ -1,13 +1,15 @@
 ---
 tags: 
   - devops
+  - engineering
 title: About Devops
 date: 2018-07-23
-description: null
+description: DevOps is a culture with only one goal which is "improving the software lifecycle" (bug fixes, features, configurations) to end-users more frequently but still keep software's reliable.
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## What is DevOps actually?
@@ -135,5 +137,5 @@ Reference tools:
 * Documentation
 
 ## Roadmap 2018
-![](assets/about-devops_3ff5afb2faea481c0d85fe0d0f4591b5_md5.webp)
 
+![](assets/about-devops_3ff5afb2faea481c0d85fe0d0f4591b5_md5.webp)

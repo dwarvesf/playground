@@ -1,13 +1,17 @@
 ---
 tags: 
   - design
-title: Design Tips Tricks
+  - pracitce
+  - UX-UI
+title: "Design Tips & Tricks"
 date: 2018-03-24
-description: null
-authors: null
+description: design tips and tricks
+authors: 
+- anna
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 * [https://uxplanet.org/the-18-must-do-principles-in-the-form-design-fe89d0127c92](https://uxplanet.org/the-18-must-do-principles-in-the-form-design-fe89d0127c92)

@@ -1,22 +1,24 @@
 ---
 tags: 
   - micro-frontend
+  - frontend
 title: Micro Frontends Microservices For Frontend Development
 date: 2021-07-09
-description: null
+description: an architectural style where independently deliverable frontend applications are composed into a greater whole...
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## What is Micro-frontend ?
-> An architectural style where independently deliverable frontend applications are composed into a greater whole
+> An architectural style where independently deliverable frontend applications are composed into a greater whole.
 
 ## Benefits
-* Smaller, more cohesive, and maintainable codebases
-* More scalable organizations with decoupled, autonomous teams
-* The ability to upgrade, update, or even rewrite parts of the frontend in a more incremental fashion than was previously possible
+* Smaller, more cohesive, and maintainable codebases.
+* More scalable organizations with decoupled, autonomous teams.
+* The ability to upgrade, update, or even rewrite parts of the frontend in a more incremental fashion than was previously possible.
 * Easier maintenance: Keeping frontend repositories small and specialized allows them to be more easily understood, and this simplifies long-term maintenance and testing.
 
 ## Micro frontends in actions
@@ -215,7 +217,7 @@ hide_frontmatter: false
 * Server-side rendering is always a tricky problem.
 * Use [Server Side Includes](https://en.wikipedia.org/wiki/Server_Side_Includes) to plug in page-specific content from fragment HTML files
 
-# Conclusion
+## Conclusion
 * Duplication of dependencies => increase payload size
 * App performance
 * Learning curve

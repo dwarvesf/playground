@@ -3,13 +3,15 @@ tags:
   - web
   - framework
   - frontend
-title: Choosing The Right Javascript Framework A Deep Dive Into React Vs Angular Vs Vue
+title: "Choosing The Right Javascript Framework: A Deep Dive Into React vs Angular vs Vue"
 date: 2023-04-24
-description: null
-authors: null
+description: Selecting the ideal JavaScript framework can be a daunting task, particularly when faced with an abundance of highly resourceful and capable options. To make an informed decision that caters to specific project requirements, it's crucial to possess a deep understanding of various critical aspects. In this article, we'll shed light on some of these essential points by conducting a comprehensive comparison of Angular, React, and Vue.
+authors: 
+- Thanh Pham
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 Selecting the ideal JavaScript framework can be a daunting task, particularly when faced with an abundance of highly resourceful and capable options. To make an informed decision that caters to specific project requirements, it's crucial to possess a deep understanding of various critical aspects. In this article, we'll shed light on some of these essential points by conducting a comprehensive comparison of Angular, React, and Vue.
@@ -56,7 +58,6 @@ As we embark on our journey through the world of React, Angular, and Vue, it's c
 *Please note that the information provided in this table is an approximation and subject to change over time. It is always a good idea to keep up to date with the latest developments in these frameworks, as features and popularity may evolve.*
 
 ## Detailed comparison: React vs Angular vs Vue
-
 ### Rendering Performance
 **React**: React is renowned for its virtual DOM, which enables it to efficiently update and render components by comparing the changes with the actual DOM. This results in excellent rendering performance, particularly in large-scale applications. Additionally, React incorporates [concurrent rendering](https://react.dev/blog/2022/03/29/react-v18#what-is-concurrent-react), which further optimizes the rendering process by prioritizing updates based on their importance.
 

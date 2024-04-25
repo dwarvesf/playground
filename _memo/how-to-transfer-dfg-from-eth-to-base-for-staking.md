@@ -10,8 +10,9 @@ authors:
 - minh
 - jack
 menu: memo
-type: null
+type: guideline
 hide_frontmatter: false
+hide_title: false
 ---
 
 This guide will show you how to use $DFG staking to earn $USDC, cool merch, and more. You'll need a computer with a browser. But first, let's understand why you're doing this:
@@ -89,4 +90,6 @@ Now it’s time to stake your DFG on Base to earn rewards like USDC or merch wit
     
     ![](assets/how-to-transfer-dfg-from-eth-to-base-for-staking_tono_stake_successful_2.webp)
     
-And that's it! You now know how to move your DFG for staking from the Ethereum Mainnet to the Base Network and begin receiving rewards. In addition to protecting your coins, staking your DFG opens up chances to gain USDC, awesome merchandise, and other benefits. Please feel free to contact us on the [Dwarves Network](https://discord.gg/dwarvesv) Discord server if you need any help or if you have any questions. Have fun staking and relish your winnings!
+And that's it! You now know how to move your DFG for staking from the Ethereum Mainnet to the Base Network and begin receiving rewards. In addition to protecting your coins, staking your DFG opens up chances to gain USDC, awesome merchandise, and other benefits. 
+
+Please feel free to contact us on the [Dwarves Network](https://discord.gg/dwarvesv) Discord server if you need any help or if you have any questions. Have fun staking and relish your winnings!

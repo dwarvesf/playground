@@ -1,13 +1,15 @@
 ---
 tags: 
   - macos
+  - engineering
 title: Daemons And Services Programming Guide
 date: 2020-05-11
-description: null
+description: Many kinds of tasks that do not require user interaction are most effectively handled by a process that runs in the background. You can use a daemon or service to...
 authors: null
 menu: memo
-type: null
+type: programming
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## About Daemons and Services

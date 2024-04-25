@@ -1,13 +1,15 @@
 ---
 tags: 
-  - tool
+  - tooling
+  - software
 title: Istio
 date: 2019-06-09
-description: null
+description: Istio is an implementation of the Service mesh architecture, which is a network of microservices that interactive with each other to form an application. Besides Istio, there are several concept applying service mesh architecture such as Linkerd, Consul.
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 Istio is an implementation of the Service mesh architecture, which is a network of microservices that interactive with each other to form an application. Besides Istio, there are several concept applying service mesh architecture such as Linkerd, Consul.
@@ -78,7 +80,6 @@ Our system's network now becomes more under controlled:
 ![](assets/istio_5ad7aeee9b729f36ab6d6a0cb8c33acc_md5.webp)
 
 ## Istio Architecture
-
 ### Envoy
 Istio utilizes an expanded Envoy proxy version which is a high-performance proxy built in C++ for all facilities in the service mesh to mediate all inbound and outbound traffic of the entire mesh network. Istio leverages many integrated characteristics of Envoy, making it the core component in establishing service meshes, such as:
 

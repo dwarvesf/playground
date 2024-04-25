@@ -5,18 +5,19 @@ tags:
   - guideline
 title: 'Level Up Your Markdown Memos: Avoiding Common Pitfalls'
 date: 2024-04-05
-description: null
-authors: null
+description: This article will show you some common mistakes people make when writing Memo posts with Markdown and how to fix them. Here's what we'll cover...
+authors: 
+- annna
 menu: memo
-type: null
+type: guideline
 hide_frontmatter: false
+hide_title: false
 ---
 Markdown uses symbols and stuff to make your text look fancy. It's like learning a new skill, game, or design program - there will be bumps in the road before you're a pro. This article will show you some common mistakes people make when writing Memo posts with Markdown and how to fix them. Here's what we'll cover:
 
 ![](assets/level-up-your-markdown-memos_image0.webp)
 
 ## Mixed-up headings
-
 Headings might seem like a pain, but they actually make your writing awesome! Imagine your document as a house – headings are like the signs on each door, telling everyone what's inside. Using headings in order creates a clear structure, like a well-organized house. Readers can easily find the main points (like the kitchen!), understand the overall flow (living room to bedroom!), and jump straight to interesting sections (the game room!). Ordered headings also make your writing look sharp, keeping readers engaged.
 
 There are two main types of headings:
@@ -107,7 +108,6 @@ Result:
     - Unordered nested list item
 
 ## Task list glitches
-
 In the process of crafting task lists, it is not uncommon to encounter specific glitches that can hinder their functionality. These glitches can be categorized into two main areas:
 
 **Syntax errors:**
@@ -136,7 +136,6 @@ For example:
 ```
 
 ## Screenshots that flop
-
 We all know a picture is worth a thousand words, and screenshots are like tiny picture warriors fighting for clarity. But not all screenshots are created equal.
 
 - **Display images with incorrect aspect ratio:** Design your images in a horizontal rectangular frame with an aspect ratio of `21:9`, `16:9`, or `4:3`. Avoid using vertical rectangles as it will enlarge the image and affect the layout of your document.
@@ -149,7 +148,6 @@ Remember, a well-made screenshot can be a superhero in presentations, tutorials,
 > **Tip**: You can use [**Backr**](https://getbackr.vercel.app/) tool to set stunning backgrounds and create visuals that grab attention for your Memo posts.
 
 ## Buried in links
-
 While links are super helpful, including too many can throw a wrench in your reader's journey. A long list can be visually overwhelming, making it tough to find the key info they're after. Plus, with a bunch of links, it's easy to lose track of which ones they've already clicked. So, use links strategically to avoid information overload and keep your reader focused.
 
 ![](assets/level-up-your-markdown-memos_image5.webp)
@@ -166,7 +164,6 @@ References for links support two formats:
 - Internal links: `[text] (.file.md)`. Shows all links to `file.md`
 
 ## Code Blockception
-
 Nested code errors can occur when you use block code within another block code. This can happen when you're trying to format code within a code block, or when you're trying to include code within a blockquote.
 
 To avoid nested code errors, you can use triple backticks ``` in a fenced code block, wrap them inside quadruple backticks ````.
@@ -190,7 +187,6 @@ Look! You can see my backticks.
 ````
 
 ## Horizontal rule overload
-
 Horizontal rules (use three or more stars `***`, hyphens `---`, or underscore `___`) can be a great way to break up your text and make it easier to read. But too many can make your text look cluttered and hard to follow.
 
 Common mistakes to avoid:
@@ -203,7 +199,6 @@ Common mistakes to avoid:
 Remember, horizontal rules are a versatile tool that can be used to improve the readability and visual appeal of your writing. When using horizontal rules, be sure to use them consistently throughout your writing and they will be a masterpiece! 
 
 ## Blah text in callouts
-
 Callouts are like little spotlights for your writing. They help you shine a light on important information or give your readers some extra insider info. However, when using callouts, you may encounter some common mistakes that can affect the effectiveness and readability of your content.
 
 Here's a closer look at some of these mistakes:

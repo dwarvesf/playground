@@ -1,13 +1,15 @@
 ---
 tags: 
   - clojure
+  - programming
 title: Playaround With Clojure
 date: 2019-09-06
-description: null
+description: Clojure is a dynamic, general-purpose programming language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming.
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Definition
@@ -30,64 +32,62 @@ Clojure combines of:
 * Almost no syntax
 * Core advantage still code-as-data and syntactic abstraction
 * What about the standard Lisps (Common Lisp and Scheme)?
-* Slow/no innovation post standardization
-* Core data structures mutable, not extensible
-* No concurrency in specs
-* Good implementations already exist for JVM (ABCL, Kawa, SISC et al)
-* Standard Lisps are their own platforms
+   * Slow/no innovation post standardization
+   * Core data structures mutable, not extensible
+   * No concurrency in specs
+   * Good implementations already exist for JVM (ABCL, Kawa, SISC et al)
+   * Standard Lisps are their own platforms
 * Clojure is a Lisp not constrained by backwards compatibility
-* Extends the code-as-data paradigm to maps and vectors
-* Defaults to immutability
-* Core data structures are extensible abstractions
-* Embraces a platform (JVM)
+   * Extends the code-as-data paradigm to maps and vectors
+   * Defaults to immutability
+   * Core data structures are extensible abstractions
+   * Embraces a platform (JVM)
 
 ### 2. Languages and Platforms
 
 * VMs, not OSes, are the platforms of the future, providing:
-* Type system
-* Dynamic enforcement and safety
-* Libraries
-* Abstract away OSes
-* *Huge* set of facilities
-* Built-in and 3rd-party
-* Memory and other resource management
-* GC is platform, not language, facility
-* Bytecode + JIT compilation
-* Abstracts away hardware
+  * Type system
+    * Dynamic enforcement and safety
+  * Libraries
+    * Abstract away OSes
+    * *Huge* set of facilities
+    * Built-in and 3rd-party
+  * Memory and other resource management
+    * GC is platform, not language, facility
+  * Bytecode + JIT compilation
+    * Abstracts away hardware
 * Language as platform vs. language + platform
-* Old way - each language defines its own runtime
-* GC, bytecode, type system, libraries etc
-* New way (JVM, .Net)
-* Common runtime independent of language
+  * Old way - each language defines its own runtime
+    * GC, bytecode, type system, libraries etc
+  * New way (JVM, .Net)
+    * Common runtime independent of language
 * Language built for platform vs language ported-to platform
-* Many new languages still take 'Language as platform' approach
-* When ported, have platform-on-platform issues
-* Memory management, type-system, threading issues
-* Library duplication
-* If original language based on C, some extension libraries written in C don’t come over
+   * Many new languages still take 'Language as platform' approach
+   * When ported, have platform-on-platform issues
+     * Memory management, type-system, threading issues
+     * Library duplication
+     * If original language based on C, some extension libraries written in C don’t come over
 * Platforms are dictated by clients
-* 'Must run on JVM' or .Net vs 'must run on Unix' or Windows
-* JVM has established track record and trust level
-* Now also open source
-* Interop with other code required
-* C linkage insufficient these days
+   * 'Must run on JVM' or .Net vs 'must run on Unix' or Windows
+   * JVM has established track record and trust level
+     * Now also open source
+   * Interop with other code required
+     * C linkage insufficient these days
 * Java/JVM *is* language + platform
-* Not the original story, but other languages for JVM always existed, now embraced by Sun
-* Java can be tedious, insufficiently expressive
-* Lack of first-class functions, no type inference, etc
-* Ability to call/consume Java is critical
+   * Not the original story, but other languages for JVM always existed, now embraced by Sun
+   * Java can be tedious, insufficiently expressive
+     * Lack of first-class functions, no type inference, etc
+  * Ability to call/consume Java is critical
 * Clojure is the language, JVM the platform
 
 ### 3. Concurrency and the multi-core future
-
 * Immutability makes much of the problem go away
-* Share freely between threads
+   * Share freely between threads
 * But changing state a reality for simulations and for in-program proxies to the outside world
 * Locking is too hard to get right over and over again
 * Clojure’s software transactional memory and agent systems do the hard part
 
 ### 4. Features
-
 * [Dynamic Development](https://clojure.org/about/dynamic)
 * [Functional Programming](https://clojure.org/about/functional_programming)
 * [Lisp](https://clojure.org/about/lisp)

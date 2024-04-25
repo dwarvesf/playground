@@ -1,13 +1,17 @@
 ---
 tags: 
   - swift
+  - UX-UI 
+  - programming
 title: Draw Watch Face Using Swiftui
 date: 2020-03-23
-description: null
-authors: null
+description: SwiftUI are nice and fun to working with. You can read my previous article to get a bit knowledge about create circular control, it will make you easy to working with this article.
+authors: 
+- trungphan
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 SwiftUI are nice and fun to working with. You can read my previous article to get a bit knowledge about create circular control, it will make you easy to working with this article. This article also use Shape and Path, if you have worked with CoreGraphic before you will find it similar With CALayer, CAShapeLayer and UIBezierPath.
@@ -25,12 +29,13 @@ As usual, open Xcode and create new project, don’t forget to choose SwiftUI, a
 
 ### Draw Circular Bezel
 Path is similar to BenzierPath, you can draw Oval, rectangle, line, arc using Path.
+
 I choose Arc for now. Later on we can using Arc, Oval or Circle to make different watch face style.
 Add a new struct and named it Arc conform to Shape protocol.
+
 Xcode will guild you add missing path method to conform with Shape.
 
-Path methods provided us rect which is the frame we are using to draw on it.
-the Act function required center point, starting angle and ending angle, we need complete circle so let start with 0 and end with 2pi which 2 angle of circle in radiants
+Path methods provided us rect which is the frame we are using to draw on it.The Act function required center point, starting angle and ending angle, we need complete circle so let start with 0 and end with 2pi which 2 angle of circle in radiants.
 
 ![](assets/draw-watch-face-using-swiftui_9054ef9952d75edd68df70ced08a4374_md5.webp)
 
@@ -81,13 +86,13 @@ Try it and We got beautiful numbers indicator.
 ![](assets/draw-watch-face-using-swiftui_135752868b2e9b57c2e9b252a68d6a2d_md5.webp)
 
 ### Draw Hour, Minus, and Second Hands
-Make a pad circle for our Watch Hands. This completed by helping of building circle
+Make a pad circle for our Watch Hands. This completed by helping of building circle.
 
 ![](assets/draw-watch-face-using-swiftui_d61b193f367f89629d4d3f4637001158_md5.webp)
 
 Now the Hand, we draw a round rectangle from center to some where between center and top, depending on it is an hour, a minus or a second hand.
 
-Create new Shape, named Hand, to adjust height we adding offset property
+Create new Shape, named Hand, to adjust height we adding offset property.
 
 ![](assets/draw-watch-face-using-swiftui_8e0070c6558d165208af627d5d128e30_md5.webp)
 
@@ -97,7 +102,7 @@ Test minute hand, using frame width to adjust how wide it will.
 
 ![](assets/draw-watch-face-using-swiftui_677b0fdbf3eddf813c65c1a4b03facc8_md5.webp)
 
-Now repeat with hour and second hand
+Now repeat with hour and second hand.
 
 ![](assets/draw-watch-face-using-swiftui_cf25ca4271503a2598b2ee327ca1c5a1_md5.webp)
 
@@ -119,11 +124,11 @@ Add a method to automatically update “date” variable.
 
 ![](assets/draw-watch-face-using-swiftui_11774d63139169af2acacd716157c8dd_md5.webp)
 
-Call this on view appear event of ZStack
+Call this on view appear event of ZStack.
 
 ![](assets/draw-watch-face-using-swiftui_0f17e4f9c09fda63825ec1414269213e_md5.webp)
 
-The final thing is base on current date time, we calculate an angle for hour, minus and second hand
+The final thing is base on current date time, we calculate an angle for hour, minus and second hand.
 
 ![](assets/draw-watch-face-using-swiftui_4f565c4cc944f29623fe1fb8a9255d11_md5.webp)
 

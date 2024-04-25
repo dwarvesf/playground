@@ -3,11 +3,13 @@ tags:
   - swift
 title: Build A Passcode View With Swift
 date: 2019-06-22
-description: null
-authors: null
+description: By default, to show keyboard on the screen user should touch in TextField or TextView to edit. We can make our custom view as keyboard input view by override “canBecomeFirstReponder” method and conform to UIKeyInput Protocol
+authors: 
+- trungphan
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 ![](assets/build-a-passcode-view-with-swift_38059dcec9bd2edb9ac9b1433eb8870c_md5.webp)
@@ -40,7 +42,7 @@ To help user easy using our passcode view we can add a tap gesture and call beco
 
 Now we are going to build our logic to handle user input. There are 3 methods we need focus:
 
-![[e1f29ff96dcff1eabdaa75703feccaa7_MD5.webp]]
+![](assets/build-a-passcode-view-with-swift.png)
 
 Now append or delete our code string if needed.
 

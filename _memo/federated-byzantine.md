@@ -2,13 +2,15 @@
 tags: 
   - distributed
   - blockchain
+  - engineering
 title: Federated Byzantine
 date: 2019-05-18
-description: null
+description: Stellar is all about trust (validators). After all, when you have to trust somebody, you'd trust the reputated nodes, rather than a random stranger node on the internet.
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 Stellar is all about trust (validators). After all, when you have to trust somebody, you'd trust the reputated nodes, rather than a random stranger node on the internet.
@@ -28,12 +30,12 @@ Yes, the big brothers are forming a small circle. But Stellar is all about trust
 https://stellar.stackexchange.com/questions/160/how-does-the-stellar-consensus-protocol-prevent-sybil-attacks?rq=1
 
 ## Theoretical explanation (with illustration)
-**[Understanding the Stellar Consensus Protocol](https://medium.com/interstellar/understanding-the-stellar-consensus-protocol-423409aad32e)**
+### [Understanding the Stellar Consensus Protocol](https://medium.com/interstellar/understanding-the-stellar-consensus-protocol-423409aad32e)
 
 Nodes conduct rounds of federated voting on “nominees.” A round of federated voting means:
-• A node casts a vote for some statement, such as “I nominate value V”;
-• The node listens to votes from its peers until it finds one it can “accept”;
-• The node seeks a “quorum” that also accepts the statement. This “confirms” the statement.
+- A node casts a vote for some statement, such as “I nominate value V”;
+- The node listens to votes from its peers until it finds one it can “accept”;
+- The node seeks a “quorum” that also accepts the statement. This “confirms” the statement.
 
 As soon as a node can confirm one or more nominees, it starts trying to “prepare” a “ballot” via more rounds of federated voting.
 
@@ -45,13 +47,13 @@ Once a node can confirm that a ballot is committed, it can “externalize” the
 * [Understanding the Byzantines General Problems](https://medium.com/coinmonks/a-note-from-anthony-if-you-havent-already-please-read-the-article-gaining-clarity-on-key-787989107969)
 * [Origin paper](https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf)
 
-→ How do you make sure that multiple entities, which are separated by distance, are in absolute full agreement before an action is taken?
+How do you make sure that multiple entities, which are separated by distance, are in absolute full agreement before an action is taken?
 
 In other words, how can individual parties find a way to guarantee full consensus?
 
 Two open problems in Stellar are the mechanism by which quorums are chosen (peer selection) and how new arguments may be proposed such that contention is low (i.e. avoid dueling proposers).
 
-and
+And
 
 Stellar consensus can be extremely inefficient in terms of number of messages sent, especially with dueling proposers.
 

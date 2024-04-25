@@ -5,12 +5,13 @@ tags:
   - guideline
 title: Design less, present more with Deckset
 date: 2024-04-05
-description: null
+description: My search for a simpler, more efficient solution led me to Deckset, a Markdown-based presentation app for Mac. With Deckset, creating slides becomes easier than ever. You simply write your content using Markdown - a simple, easy-to-learn markup language, and Deckset automatically converts it into beautiful presentations
 authors: 
   - anna
 menu: playground
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 Do you ever feel overwhelmed by the myriad of design tools and options in PowerPoint, or the countless books and tutorials dedicated to beautifying a single sentence on a 100-inch screen?You're not alone! As a designer myself, I used to get caught up in the "beautification" trap, spending hours tweaking layouts, colors, fonts, and more, only to realize that the content of my presentation was the key factor.
 

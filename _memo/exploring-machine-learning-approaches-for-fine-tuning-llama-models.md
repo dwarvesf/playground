@@ -3,13 +3,15 @@ tags:
   - machine learning
   - LLM
   - engineering
-title: Exploring Machine Learning Approaches For Fine Tuning Llama Models
+title: Exploring Machine Learning Approaches For Fine Tuning LLaMa Models
 date: 2023-05-04
-description: null
-authors: null
+description: If 2021 was the year of blockchain, it's probably safe to say that 2023 is the year of generative AI. The pace and progress of AI, and by extension AGI, is becoming very hard to keep up. Apps using OpenAI ChatGPT are just saturating the market, but there are already fears that ChatGPT plugins could take over a good majority of their use cases...
+authors: 
+- monotykamary
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 ![](assets/exploring-machine-learning-approaches-for-fine-tuning-llama-models_b6f4054793fd3b5ef748c5dcf072cc09_md5.webp)

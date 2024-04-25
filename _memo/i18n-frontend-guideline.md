@@ -6,11 +6,13 @@ tags:
   - performance
 title: I18n Frontend Guideline
 date: 2023-04-03
-description: null
-authors: null
+description: To support multiple languages and locales, the application needs to have the necessary content available for each locale. This can be achieved by creating separate files or resources for each locale or by using a localization library like i18next that allows for dynamic localization based on the user's detected locale.
+authors: 
+- antran
 menu: memo
-type: null
+type: guideline
 hide_frontmatter: false
+hide_title: false
 ---
 
 ![](assets/i18n-frontend-guideline_0d5e0a2c5a795b96f65caa5b7a360578_md5.webp)
@@ -198,14 +200,3 @@ i18next.t('list', {
 Multilingual is a very important function for web or mobile applications nowadays, Users will come from all over the world and always ask for support for their language. Above is a guide to help you install multi-language for your application or website, You can implement it according to the instructions to automatically find the user's language, setup multi-language by domain or subpath, support LTR and RTL text, and finally format of number, currency, time, list…
 
 If you have a difficult problem that you would like us to help you on, please feel free to submit a challenge request here.
-
-**Come be with us**
-We’d love to have you in our next chapter, by all means.
-* Discover what we do: [dwarves.foundation](http://dwarves.foundation/)
-* Meet our team: [discord.gg/dwarvesv](http://discord.gg/dwarvesv)
-* Join the squad: [careers.d.foundation](http://careers.d.foundation/)
-
-Follow our journey
-* Fanpage: [facebook.com/dwarvesf](http://facebook.com/dwarvesf)
-* LinkedIn: [linkedin.com/company/dwarvesf](http://linkedin.com/company/dwarvesf)
-* Substack: [https://note.d.foundation/](https://note.d.foundation/)

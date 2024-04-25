@@ -5,14 +5,16 @@ tags:
   - productivity
   - DX
   - radar
-title: Adoption Of Pnpm
+title: Adoption Of PNPM
 date: 2023-07-31
-description: null
-authors: null
+description: We're excited to share that the Dwarves team has officially decided to switch to pnpm as our primary package management tool. After careful evaluation, we found that pnpm is widely embraced by the development community and has been successfully used by great teams at Vercel, Nx, and Chakra UI
+authors: 
+- thanh
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
 author: Thanh Pham
+hide_title: false
 ---
 
 ![](assets/adoption-of-pnpm_4601b8f71eebe7c7fbc4a6fc7925a8b6_md5.webp)

@@ -1,15 +1,18 @@
 ---
 tags: 
   - engineering
-  - dwarves
+  - software
+  - performance
 title: Our View On Fullstack Engineering
 date: 2023-08-30
-description: null
-authors: null
+description: In tackling challenges in the world of software development, the term "full-stack engineer" often evokes a sense of wonder. I'm reminded of my school days when our chemistry teacher explained the fundamental principles behind chemical reactions.
+authors: 
+- Thanh Pham
 menu: memo
 type: null
 hide_frontmatter: false
 author: Thanh Pham
+hide_title: false
 ---
 
 In tackling challenges in the world of software development, the term "full-stack engineer" often evokes a sense of wonder. I'm reminded of my school days when our chemistry teacher explained the fundamental principles behind chemical reactions. Just as every chemical reaction is governed by the behavior of atoms, there's an underlying principle in software development that defines full-stack engineering.

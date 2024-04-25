@@ -2,19 +2,20 @@
 tags: 
   - operation
   - pm
+  - management
 title: Project Management
 date: 2020-01-12
-description: null
+description: A Project Manager (PM) job starts right after a new project has been sealed and assigned with a starting date, a deadline and a Team. 
 authors: null
 menu: memo
-type: null
+type: memo
 hide_frontmatter: false
+hide_title: false
 ---
 
 A Project Manager (PM) job starts right after a new project has been sealed and assigned with a starting date, a deadline and a Team. As a PM it is absolutely fundamental you are an expert about our working methodologies, processes and communication
 
-**Be organised**
-
+### Be organised
 Keep everything neat and things where they are supposed to be. Being organised and keeping track of everything will make your life much easier.
 Create tasks and document them straight away. Don't let things get lost nor un-acted upon.
 

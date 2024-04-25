@@ -1,13 +1,17 @@
 ---
 tags: 
   - dcos
-title: Dcos Series Part 2 Deploy Simple Applications
+  - engineering
+  - practice
+title: "DC/OS Series [Part 2]: Deploy Simple Applications"
 date: 2017-05-05
-description: null
-authors: null
+description: In this article, we will try to deploy applications to DC/OS and run it.
+authors: 
+- quang
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 There are so many interesting things in DC/OS GUI (`Dashboard` with useful metrics/status from all nodes, `Services` tab help us to know which application/service is running on which node, its status, etc.).
@@ -82,7 +86,7 @@ OK. We will focus on command `dcos marathon app add <app-resource>`which help us
 }
 ```
 
-**Note**
+**Note**\
 By default, applications will be deployed to `private node`, so if you want to deploy to `public node`, you can add `"acceptedResourceRoles": ["slave_public"]` to `my-app.json`
 
 2. Add your app to Marathon:

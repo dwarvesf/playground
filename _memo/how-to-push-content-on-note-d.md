@@ -9,7 +9,7 @@ description: This is a guide on how to setup your environment and settings to pu
 authors:
   - minhcloud
 menu: memo
-type: memo
+type: guideline
 hide_frontmatter: false
 pinned: true
 hide_title: false
@@ -79,6 +79,5 @@ Now, you should go to your [Github](https://github.com/) and log in. After that 
 ![](assets/how-to-push-content-on-note-d_how-to-push-content-on-memo-4.webp)
 
 4. Choose the commit and Create the pull request.
-
 
 Now all you need is waiting for admin to review your request! 

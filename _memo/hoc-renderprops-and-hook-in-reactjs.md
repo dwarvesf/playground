@@ -1,13 +1,17 @@
 ---
 tags: 
   - react.js
-title: Hoc Renderprops And Hook In Reactjs
+  - programming
+  - engineering
+title: "HOC, RenderProps and Hook in React.js"
 date: 2019-04-12
-description: null
-authors: null
+description: HOC, Render-props, hook are different techniques to create reusable or composable logic in React.js.
+authors: 
+- phamngocnghia
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Introduction
@@ -46,11 +50,7 @@ export default App;
 view rawApp.js hosted with ❤ by GitHub
 ```
 
-![](assets/hoc-renderprops-and-hook-in-reactjs_c02d8b16fe8c6c8b864064441c8ac84d_md5.webp)
-
-But if i want to add more text like XYZ and i want another button that toggle the text XYZ, i will have to create visible state for button and the method for toggle its visibility
-
-![[c02d8b16fe8c6c8b864064441c8ac84d_MD5.webp]]
+But if i want to add more text like XYZ and i want another button that toggle the text XYZ, i will have to create visible state for button and the method for toggle its visibility.
 
 ```javascript
 import React, { Component } from 'react';
@@ -262,8 +262,6 @@ While the second inject into first high-order component
 
 * state: isAsdToggle
 * method: toggleAsd
-
-![[c02d8b16fe8c6c8b864064441c8ac84d_MD5.webp]]
 
 ### Refactor the component using hook
 Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class. You can read more about hook at [https://reactjs.org/docs/hooks-intro.html](https://reactjs.org/docs/hooks-intro.html)

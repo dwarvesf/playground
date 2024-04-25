@@ -5,11 +5,12 @@ tags:
   - radio
 title: React 18
 date: 2022-06-06
-description: null
+description: React 18 was released in March 2022. This release focuses on performance improvements and updating the rendering engine
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 React 18 was released in March 2022. This release focuses on performance improvements and updating the rendering engine.
@@ -107,7 +108,7 @@ startTransition(() => {
 
 ```
 
-* Updates wrapped in startTransition are handled as non-urgent and will be interrupted if more urgent updates like clicks or key presses come in. If a transition gets interrupted by the user (for example, by typing multiple characters in a row), React will throw out the stale rendering work that wasn’t finished and render only the latest update.
+* Updates wrapped in start transition are handled as non-urgent and will be interrupted if more urgent updates like clicks or key presses come in. If a transition gets interrupted by the user (for example, by typing multiple characters in a row), React will throw out the stale rendering work that wasn’t finished and render only the latest update.
 * `useTransition`: a hook to start transitions, including a value to track the pending state.
 * `startTransition`: a method to start transitions when the hook cannot be used.
 
@@ -169,4 +170,3 @@ root.render(<App tab="home" />);
 ## Conclusion
 * In a summary, React 18 comes with a few breaking changes, depending on how you use it. But all in all, it also brings out-of-the-box performance improvements including batching more by default, which removes the need to manually batch updates in application or library code.
 * Upgrading to React 18 should be straightforward, give it a try and let us know what you think.
-

@@ -1,13 +1,17 @@
 ---
 tags: 
   - dcos
-title: Dcos Series Part 3 Service Discovery And Load Balancing
+  - practice
+  - engineering
+title: "DC/OS Series [Part 3]: Service Discovery And Load Balancing"
 date: 2017-05-17
-description: null
-authors: null
+description: The Mesosphere Datacenter Operating System (DCOS) provides useful tooling for service discovery and load balancing. One of the primary tools is Marathon Load Balancer, which will be the focus of this post
+authors: 
+- quang
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 The Mesosphere Datacenter Operating System (DCOS) provides useful tooling for service discovery and load balancing. One of the primary tools is Marathon Load Balancer, which will be the focus of this post.

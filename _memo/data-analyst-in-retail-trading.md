@@ -3,13 +3,16 @@ tags:
   - engineering
   - practice
   - radar
+  - data-pipeline
 title: Data Analyst In Retail Trading
 date: 2022-08-29
-description: null
-authors: null
+description: A Data Analyst is a gatekeeper for an organization’s data. They are tasked to explore, transform, aggregate data to create business insights from that data to then create reports to stakeholders. Thanks to these reports, companies can make more informed business decisions.
+authors: 
+- Bach Phuong
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 > I am Bach Phuong and I work at Dwarves Foundation as a Data Analyst, helping partner companies realize insights and understand their business better.
@@ -46,24 +49,24 @@ The data process to creating the report as a data analyst is dependent on 12 ste
 
 **Steps 1–3: Data Engineer**
 
-1. Raw data : Acquired raw data from an object store or database
-2. ETL to Staging : Step to transform data near 1:1 from the object store or database to the staging environment in the data warehouse
-3. Incremental: The incremental step is where data is stored for a limited time period, in our case 7 days. It has the same metadata as the staging environment, but with lower capacity. The purpose of this is to increase the speed in which we load data into the model
+ 1. Raw data : Acquired raw data from an object store or database
+ 2. ETL to Staging : Step to transform data near 1:1 from the object store or database to the staging environment in the data warehouse
+ 3. Incremental: The incremental step is where data is stored for a limited time period, in our case 7 days. It has the same metadata as the staging environment, but with lower capacity. The purpose of this is to increase the speed in which we load data into the model
 
 **Steps 4–6: Analytics Engineer**
 
-4. Data Model: Models raw data into schemas in the data warehouse. We have 2 types of data models: Snowflake schema, and Star schema. (I had previous experience in modelling Star schemas in data warehouses.)
-5. Data Warehouse: A data repository consolidated from multiple sources.
-6. Data Mart : Transformed or mirrored data from data warehouses aimed for holding single subject or line of business data. The purpose of this is to allow users to access data and gain insights faster.
+ 4. Data Model: Models raw data into schemas in the data warehouse. We have 2 types of data models: Snowflake schema, and Star schema. (I had previous experience in modelling Star schemas in data warehouses.)
+ 5. Data Warehouse: A data repository consolidated from multiple sources.
+ 6. Data Mart : Transformed or mirrored data from data warehouses aimed for holding single subject or line of business data. The purpose of this is to allow users to access data and gain insights faster.
 
 **Steps 7–12: Data Analyst**
 
-7. Query Layer: Interface to get and use data from Data Marts
-8. BI Tool: Tool to compose dashboards from data sources
-9. Clean and transform data: A necessary step to make sure data is consistent across the mode
-10. Visualization: Reformat and repurpose clean data for better understanding
-11. Insight: Human step to acquire insight from dashboards and visual infographics
-12. Report: Final step to generate a general report of findings
+ 7. Query Layer: Interface to get and use data from Data Marts
+ 8. BI Tool: Tool to compose dashboards from data sources
+ 9. Clean and transform data: A necessary step to make sure data is consistent across the mode
+ 10. Visualization: Reformat and repurpose clean data for better understanding
+ 11. Insight: Human step to acquire insight from dashboards and visual infographics
+ 12. Report: Final step to generate a general report of findings
 
 ## Types of Data Analysts
 There are mainly 3 types of Data Analysts with regard to retail trading: Operation Data Analyst, Finance Data Analyst, and Marketing Data Analyst.
@@ -81,11 +84,12 @@ They also help track for risk and fraud. This includes, but is not limited to, t
 Finance Data Analysts have two main concerns: margin control and transport management system (TMS):
 
 **Margin Model**
+
 This model is used to track the margin of each product or transaction. We need to control this margin carefully as it directly affects the profit/loss of the company:
 
-$ \text{Margin} = \text{Revenue} - \text{Cost} $
+`Margin = Revenue - Cost`
 
-→ Revenues can consist of Sales, back margin from supplier, and other revenue;
+→ Revenues can consist of Sales, back margin from supplier, and other revenue;\
 → Costs can consist of TMS costs, warehouse costs, promotion costs, and cost of goods sold (COGS)
 
 Transportation cost is based on route distance, cargo volume, distribution rate of the distributor, bonus, or payoff for distributor with the data aggregated from the TMS system and manual input. Warehouse cost is based on amount of space, rental rate, operational cost, etc. Promotion costs refer to marketing campaign costs.
@@ -93,6 +97,7 @@ Transportation cost is based on route distance, cargo volume, distribution rate 
 ![](assets/data-analyst-in-retail-trading_7d514b708e3dd2bff8747f1a3adb3001_md5.webp)
 
 **Transport Management System**
+
 You need to optimize the rate of distributor gains against your company gains. If your company pays a low rate for the distributor, they may not distribute your product to your customer or settle with low quality service level agreement (SLA). By contrast, if you pay your distributor too high, your margins will be lower as a consequence.
 
 ![](assets/data-analyst-in-retail-trading_58bf592103e00d6b6caa5eead9bd4310_md5.webp)
@@ -101,11 +106,13 @@ You need to optimize the rate of distributor gains against your company gains. I
 Marketing Data Analysts are concerned with tracking consumer related data, that includes tracking customers through funnel processes and customer segmentation:
 
 **Customer Funnel**
+
 Tracking processes to acquire customer and customer conversion rate. In the example chart below, we can see the process of how a company acquires a customer. With this funnel and data, we can know which stage has the lowest conversion rate and improve upon it.
 
 ![](assets/data-analyst-in-retail-trading_3aca3432d1627444ce28b323e9773b65_md5.webp)
 
 **Customer Segmentation**
+
 Taken from the Pareto principle, we see that 20% of big customers will bring 80% of benefits to the company. We segment and compartmentalize customer behavior to find who are our most important customers for the company.
 
 For the improved customer and good customer group, we have different strategies to improve their standings, such as deploying marketing campaigns or investment in sales. For the rest, we see that 50% of all customers generally fill the low quality group. This group often trials the product and see few repeat purchases, so spending resources and money on improving their standing may prove wasteful.

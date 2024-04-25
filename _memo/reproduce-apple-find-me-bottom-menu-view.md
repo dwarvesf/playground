@@ -8,6 +8,7 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 Today we are going to recreate Find Me Bottom Menu view in few lines of code.

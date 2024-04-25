@@ -3,16 +3,16 @@ tags:
   - backend
   - go
   - engineering
-title: Message Queues And Streaming Platforms Eg Kafka Nats Rabbitmq
+title: "Message queues and streaming platforms (e.g., Kafka, NATS, RabbitMQ)"
 date: 2023-05-04
-description: null
-authors: null
+description: A message broker is a middleware solution that provides a platform for exchanging messages between applications, systems, and services. They act as intermediaries, ensuring that messages are delivered reliably and efficiently.
+authors: 
+- datpham
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
-
-<!-- table_of_contents 06b40d23-c5b2-457b-af47-eeb64436cb75 -->
 
 *At Dwarves Foundation, we host a few learning sessions to understand some of the technology around us. We regularly pick up topics we find interesting to dive deeper into to understand them better and present our findings. One topic that piqued my interest was the use of message brokers, due to how prevalent their use case is in our projects.*
 
@@ -21,7 +21,7 @@ In today's digital world, the exchange of information between different systems 
 Without message brokers, communication between systems and applications would be much more difficult. They provide a common language that different systems can use to communicate with each other, regardless of the programming language or the hardware used. They also help to ensure that messages are delivered in the correct order, and can handle large volumes of messages without overwhelming the system.
 
 ## What is a Message Broker?
-**A** **Message broker** is an intermediary program designed to validate, transform, and route messages. They serve the communication needs between applications.
+**A Message broker** is an intermediary program designed to validate, transform, and route messages. They serve the communication needs between applications.
 
 With a Message broker, the source application (producer) sends a message to a server process that can provide data sorting, routing, message translation, persistence, and delivery to all appropriate destinations (consumers).
 
@@ -83,7 +83,7 @@ RabbitMQ and messaging in general use some technical terms:
 * Producing means sending messages. A program that sends messages is called a **publisher(producer)**.
 * A producer sends messages to a **queue**, which is the equivalent of a post box in RabbitMQ. While messages flow through RabbitMQ and the applications, they can only be stored in a queue. A queue is limited by the host's memory and disk capacity and acts as a large message buffer. Many producers can send messages that go to a single queue, and many consumers can try to receive data from a single queue.
 * Consuming is similar to receiving. A **consumer** is a program that primarily waits to receive messages.
-* Between the publisher and queue, we also can put a component call **exchange **which has the main function to decide the message will go to which queues. I will explain more about that late.
+* Between the publisher and queue, we also can put a component call **exchange** which has the main function to decide the message will go to which queues. I will explain more about that late.
 
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_173f812d33c4807b85a655a67c0dbc04_md5.webp)
 
@@ -109,7 +109,8 @@ Topic exchange will make a wildcard to match the routing key with a routing patt
 A header exchange will use the header attributes of the message to route it. Headers Exchange is very similar to Topic Exchange but it routes based on header values instead of routing keys. A message is considered a match if the value of the header matches the value specified when bound.
 
 ## Common Pattern 
-### Work Queue - **Distributing tasks among workers**
+### Work Queue - Distributing tasks among workers
+
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_59d782666f97eef826223c424dba2e03_md5.webp)
 
 The main idea behind Work Queues (aka: Task Queues) is to avoid doing a resource-intensive task immediately and having to wait for it to complete. Instead we schedule the task to be done later. We encapsulate a task as a message and send it to a queue. A worker process running in the background will pop the tasks and eventually execute the job. When you run many workers the tasks will be shared between them.
@@ -274,7 +275,7 @@ Function have params:
 
 1. `name`: The name of the queue to declare. It's a mandatory parameter and must be a string.
 1. `durable`: A boolean value that indicates if the queue should survive a broker restart or not. If `durable` is set to `true`, the queue will survive a broker restart, and if it's set to `false`, the queue will not.
-1. `delete when unused`: A boolean value that indicates if the queue should be deleted when it's no longer in use. If this is set to `**true**`, the queue will be deleted automatically when there are no more consumers subscribed to it.
+1. `delete when unused`: A boolean value that indicates if the queue should be deleted when it's no longer in use. If this is set to `true`, the queue will be deleted automatically when there are no more consumers subscribed to it.
 1. `exclusive`: A boolean value that indicates if the queue should be exclusive to the current connection. If this is set to `true`, only the current connection can access the queue. If set to `false`, other connections can also access the queue.
 1. `no-wait`: A boolean value that indicates if the queue should be declared as a passive queue or not. If this is set to `true`, the broker will not wait for a response from the server before sending the next command.
 1. `arguments`: A table of additional arguments to pass when declaring the queue. These arguments are optional and can be used to specify various queue properties such as message TTL (time-to-live), maximum length, and more.
@@ -443,3 +444,206 @@ func main() {
 ```
 
 To declare an exchange, we use the function:
+
+```jsx
+        err = ch.ExchangeDeclare(
+                "logs",   // name
+                "fanout", // type
+                true,     // durable
+                false,    // auto-deleted
+                false,    // internal
+                false,    // no-wait
+                nil,      // arguments
+        )
+```
+
+1. **`name`**: The name of the exchange to declare. This is a mandatory parameter and must be a string.
+2. **`type`**: The type of the exchange to declare. There are four types of exchanges in RabbitMQ: **`fanout`**, **`direct`**, **`topic`**, and **`headers`**. In this case, we're using a **`fanout`** exchange, which will broadcast all messages to all bound queues.
+3. **`durable`**: A boolean value that indicates if the exchange should survive a broker restart or not. If **`durable`** is set to **`true`**, the exchange will survive a broker restart, and if it's set to **`false`**, the exchange will not.
+4. **`auto-deleted`**: A boolean value that indicates if the exchange should be deleted when it's no longer in use. If this is set to **`true`**, the exchange will be deleted automatically when there are no more queues bound to it.
+5. **`internal`**: A boolean value that indicates if the exchange should be marked as internal. If this is set to **`true`**, the exchange will not be directly accessible to clients, and it can only be used for internal purposes.
+6. **`no-wait`**: A boolean value that indicates if the exchange should be declared as passive or not. If this is set to **`true`**, the broker will not wait for a response from the server before sending the next command.
+7. **`arguments`**: A table of additional arguments to pass when declaring the exchange. These arguments are optional and can be used to specify various exchange properties such as message TTL (time-to-live), alternate exchange, and more.
+
+The function returns an error value if there was an error declaring the exchange. If the declaration was successful, the error value will be **`nil`**.
+
+After that, we need to binding queue and exchange to allow queue receive message from the exchange. To binding we use the function:
+
+```go
+err = ch.QueueBind(
+  q.Name, // queue name
+  "",     // routing key
+  "logs", // exchange
+  false,
+  nil,
+)
+```
+
+1. **`queue name`**: The name of the queue to which the binding should be applied. This is a mandatory parameter and must be a string.
+2. **`routing key`**: The routing key to use for the binding. If it's an empty string (**`""`**), the binding will receive all messages from the exchange. If it's a non-empty string, the binding will only receive messages with matching routing keys.
+3. **`exchange`**: The name of the exchange to which the queue should be bound. This is a mandatory parameter and must be a string.
+4. **`no-wait`**: A boolean value that indicates if the binding should be done asynchronously or not. If it's set to **`true`**, the broker will not wait for a response from the server before sending the next command.
+5. **`arguments`**: A table of additional arguments to pass when binding the queue. These arguments are optional and can be used to specify various binding properties such as headers, message TTL (time-to-live), and more.
+
+The function returns an error value if there was an error binding the queue. If the binding was successful, the error value will be **`nil`**.
+
+### Routing - Receiving messages selectively
+If with publish/subcribe we allow all queue which bind with the exchange can receive the message. In the routing, our target is limit the right to receive message by route's name. It means only the queue binding with the exchange by a specific name is allowed to receive the message.
+
+![](assets/message-queues-and-streaming-platforms.png)
+
+For example, in the above picture, the Q2 is only received message with the key route black and green, while the Q1 is received message with route's key orange. In addition, it is perfectly legal to bind multiple queues with the same binding key.
+
+![](assets/message-queues-and-streaming-platforms-2.png)
+
+About the exchange, instead of fanout we'll send messages to a direct exchange. And when public the message we also to provide with a list of route's name which we want to send the message through.
+
+### Topic - Receiving messages based on a pattern
+Messages sent to a topic exchange can't have an arbitrary routing_key - it must be a list of words, delimited by dots. The words can be anything, but usually they specify some features connected to the message. A few valid routing key examples: "stock.usd.nyse", "nyse.vmw", "quick.orange.rabbit". There can be as many words in the routing key as you like, up to the limit of 255 bytes.
+
+The binding key must also be in the same form. The logic behind the topic exchange is similar to a direct one - a message sent with a particular routing key will be delivered to all the queues that are bound with a matching binding key. However there are two important special cases for binding keys:
+
+- * (star) can substitute for exactly one word.
+- # (hash) can substitute for zero or more words.
+
+It's easiest to explain this in an example:
+
+![](assets/message-queues-and-streaming-platforms-4.png)
+
+### Delayed message
+Delaying a message means setting a time for the message to be sent that is not immediate. For example, we may want to send a message one minute after it is made public.
+
+By combining Time-To-Live (TTL) and Dead Letter Exchange, we can publish a message to a queue that will expire its message after the TTL and then reroute it to the exchange with the dead-letter routing key so that it ends up in a queue.
+
+Here are the step-by-step instructions:
+
+- Declare the pending queue.
+- Set the **x-dead-letter-exchange** argument property to the default value, "".
+- Set the argument property **x-dead-letter-routing-key** to the name of the destination queue.
+- Set the **x-message-ttl** argument property to the number of milliseconds you want the message to be delayed.
+
+```go
+package main
+
+import (
+	"log"
+
+	"github.com/streadway/amqp"
+)
+
+func main() {
+	// Connect to RabbitMQ server
+	conn, err := amqp.Dial("amqp://nprabbitmq:d8qSFi9pdsFQ53tH@localhost:5682/")
+	if err != nil {
+		log.Fatalf("Failed to connect to RabbitMQ server: %v", err)
+	}
+	defer conn.Close()
+
+	// Create a channel
+	ch, err := conn.Channel()
+	if err != nil {
+		log.Fatalf("Failed to open a channel: %v", err)
+	}
+	defer ch.Close()
+
+	// Set the x-dead-letter-exchange argument property to the default value “”.
+	args := make(amqp.Table)
+	args["x-dead-letter-exchange"] = ""
+
+	// Set the argument property x-dead-letter-routing-key to the name of the destination queue.
+	args["x-dead-letter-routing-key"] = "destination_queue"
+
+	// Set the x-message-ttl argument property to the number of milliseconds you want the message to be delayed.
+	args["x-message-ttl"] = 6000 // 1 minute
+
+	// Declare the pending queue
+	q, err := ch.QueueDeclare(
+		"pending_queue", // name
+		false,           // durable
+		false,           // delete when unused
+		false,           // exclusive
+		false,           // no-wait
+		args,            // arguments
+	)
+	if err != nil {
+		log.Fatalf("Failed to declare a queue: %v", err)
+	}
+
+	// Declare the destination queue
+	_, err = ch.QueueDeclare(
+		"destination_queue", // name
+		true,                // durable
+		false,               // delete when unused
+		false,               // exclusive
+		false,               // no-wait
+		nil,                 // arguments
+	)
+	if err != nil {
+		log.Fatalf("Failed to declare a queue: %v", err)
+	}
+
+	// Publish a message to the pending queue
+	body := "Hello, World!"
+	err = ch.Publish(
+		"",     // exchange
+		q.Name, // routing key
+		false,  // mandatory
+		false,  // immediate
+		amqp.Publishing{
+			ContentType: "text/plain",
+			Body:        []byte(body),
+		},
+	)
+	if err != nil {
+		log.Fatalf("Failed to publish a message: %v", err)
+	}
+
+	log.Println("Message published successfully!")
+}
+```
+
+The **`x-dead-letter-exchange`** and **`x-dead-letter-routing-key`** arguments are used to define where messages should be routed after they have expired in a RabbitMQ queue.
+
+When a message's time-to-live (TTL) expires in a queue, it becomes a "dead letter". The **`x-dead-letter-exchange`** argument specifies the name of the exchange where dead-lettered messages should be sent. The **`x-dead-letter-routing-key`** argument specifies the routing key that should be used to route these messages to the desired queue.
+
+In the code snippet provided, the **`x-dead-letter-exchange`** argument is set to an empty string, which means that dead-lettered messages will be routed to the default exchange. The **`x-dead-letter-routing-key`** argument is set to "destination_queue", which means that dead-lettered messages will be routed to the "destination_queue".
+
+By using these arguments, the program ensures that any messages that expire in the "pending_queue" will be automatically sent to the "destination_queue". This can be useful in cases where a delay is needed before processing a message, or when retrying failed messages.
+
+### Handle the process with many steps with rabbitMQ
+Problem: We have a banking system. It has many steps that need to handle in order (creating, confirming, get money from the source, sent it to the destination).
+
+![](assets/message-queues-and-streaming-platforms-5.png)
+
+The solution for it is to create the message with a command type. This type will use to determine the process in the future. In addition, to make sure the process handle in order, we have to create a function to check the state of the transaction is invalid or not. Then, we just need to handle the process base on the command type.
+
+## Compare RabbitMQ and Kafka
+
+| Parameter | RabbitMQ | Kafka |
+| --- | --- | --- |
+| Performance | Up to 10K messages per second | Up to 1 million messages per second |
+| Data Type | Transactional | Operational |
+| Synchronicity of messages | Can be synchronous/asynchronous | Durable message store that can replay messages |
+| Topology | Exchange type: Direct, Fan out, Topic, Header-based | Publish/subscribe based |
+| Payload Size | No constraints | Default 1MB limit |
+| Usage Cases | Simple use cases | Massive data/high throughput cases |
+| Data Flow | Distinct bounded data packets in the form of messages | Unbounded continuous data in the form of key-value pairs. |
+| Data Unit | Message | Continuous stream |
+| Data Tracking | Broker/Publisher keeps track of message status (read/unread) | Broker/Publisher keeps only unread messages; it doesn’t retain sent messages. |
+| Broker/Publisher Type | Smart | Dumb |
+| Consumer Type | Dumb | Smart |
+| Routing messages | Complex routing is possible based on event types | Complex routing is not possible; however, we can subscribe to individual topics. |
+| Topology | Exchange queue topology | publish/subscribe topology |
+| Message delivery system | Message pushed to specific queues | Pull-based model; consumer pulls messages as required |
+| Message management | Prioritize messages | Order/Retain/Guarantee messages |
+| Message Retention | Acknowledgment based | Policy-based (e.g., ten days) |
+| Event storage structure | Queue | Logs |
+| Consumer Queues | Decoupled Consumer queues | Coupled consumer partition/groups |
+
+## Conclusion
+This article provides a comprehensive overview of message brokers and their importance in today's software applications. It defines message brokers, their basic forms of communication, and when and why to use them. It then introduces RabbitMQ, a popular message broker, and explains some common patterns used with it, such as work queues and publish/subscribe. The article also covers some basic terms related to message brokers, such as exchanges, queues, routing keys, and bindings, and explains how they work together to facilitate message communication between different applications. Finally, the article compares RabbitMQ and Kafka, another popular message broker, in terms of performance, data type, synchronicity of messages, topology, payload size, usage cases, data flow, data unit, data tracking, broker/publisher type, consumer type, routing messages, topology, message delivery system, message management, message retention, event storage structure, and consumer queues. 
+
+## References
+https://www.rabbitmq.com/getstarted.html
+
+https://hevodata.com/learn/rabbitmq-delayed-message/#21

@@ -2,13 +2,17 @@
 tags: 
   - engineering
   - web
-title: Radio Talk 61 Monorepo
+  - radio-talk
+  - monorepo
+title: "Radio Talk #61: Monorepo"
 date: 2023-03-27
-description: null
-authors: null
+description: During our recent sharing session, we delved into the world of monorepos, exploring their benefits, challenges, and the tools available to manage them effectively
+authors: 
+- Thanh Pham
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Demystifying Monorepos: A Recap of Our Recent Sharing Session

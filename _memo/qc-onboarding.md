@@ -2,13 +2,15 @@
 tags: 
   - people
   - process
-title: Qc Onboarding
+title: QC Onboarding
 date: 2017-07-13
-description: null
-authors: null
+description: Click on attached URL below to get more details about our general workflow
+authors: 
+- minhth
 menu: memo
-type: null
+type: memo
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## General workflow
@@ -26,8 +28,7 @@ Open `~/Dwarves Foundation/Document/QA`  Documents to get resource files includi
 * Defect Summary Report Template
 
 ## Task Assigning Flows
-
-## Tools
+### Tools
 Open `~/Dwarves Foundation/Document/QA Documents/Tools`  to get gitlab-issues-tools file
 
 After that, Run this command in your terminal to get help:

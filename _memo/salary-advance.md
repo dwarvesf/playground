@@ -10,6 +10,7 @@ authors:
 menu: memo
 type: memo
 hide_frontmatter: false
+hide_title: false
 ---
 
 As we said in our recent post [[icy-in-2024|$icy in 2024 plan]]. Today, we're launching the first feature from our 2024 roadmap: an $icy salary advance.

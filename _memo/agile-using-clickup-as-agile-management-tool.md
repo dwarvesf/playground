@@ -1,14 +1,20 @@
 ---
 tags: 
   - agile
-title: Agile Using Clickup As Agile Management Tool
+  - engineering
+  - tooling
+title: "Agile: Using ClickUp as Agile Management Tool"
 date: 2016-05-08
-description: null
-authors: null
+description: ClickUp is the powerful tool that we decided to stop by after Trello and the whole bundle of similar tool for Agile Management. With the fact that we pay ClickUp $9 per month because of their feature-rich platform, we still don't know how to use it to optimize our workflow...
+authors: 
+- han
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
+hide_title: false
 ---
+
 ClickUp is the powerful tool that we decided to stop by after Trello and the whole bundle of similar tool for Agile Management. With the fact that we pay ClickUp $9 per month because of their feature-rich platform, we still don't know how to use it to optimize our workflow.
 
 ## Introduction

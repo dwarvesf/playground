@@ -1,13 +1,15 @@
 ---
 tags: 
   - k8s
+  - programming
 title: Kubernetes Helm 101
 date: 2019-10-30
-description: null
+description: In recent years, Kubernetes has exploded tremendously. At the same time, it creates new communities including ecosystems that make it easier to develop and deploy complex applications. If Kubernetes means the shipman of the ship, then Helm is the steering wheel of that shipman in the career of every DevOps and Developer.
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 In recent years, Kubernetes has exploded tremendously. At the same time, it creates new communities including ecosystems that make it easier to develop and deploy complex applications. If Kubernetes means the shipman of the ship, then Helm is the steering wheel of that shipman in the career of every DevOps and Developer.
@@ -23,13 +25,12 @@ In this article, we will learn about Helm, a powerful tool that makes life worki
 * **Kubernetes**: *a famous open source used for container orchestration*. With the rise of *Containerization*, the management and coordination of container-based applications became complicated and difficult, making Kubernetes an effective and indispensable solution for systems using Containerization
 
 ## Helm Overview
-
 ### Concepts
 Helm has 4 basic concepts:
 
 * **Chart**: a collection of YAML files; bundle of the Kubernetes resources needed to build a Kubernetes application. For ease of visualization, Helm Chart can be compared like a Docker Image. Of course, Helm also has a Helm Hub where to search and share Charts for popular apps
 
-![[6a409c81c3372fda59fd6217eab2fabc_MD5.webp]]
+![](assets/kubernetes-helm-101.png)
 
 * **Config**: a configuration in the values.yaml file, which contains configuration explicit to a release of Kubernetes application. It can be the config for service, ingress, deployment, etc. until specific applications such as Kafka, Consul, Vault, NATS-streaming, etc.
 
@@ -53,13 +54,13 @@ Helm has a fairly simple client-server architecture, including a CLI client and 
 
 Here are some basic concepts and architectures to help you understand and grasp Helm more quickly. In the next section, we’ll take some tutorials to deep dive into Helm. Let’s do it!
 
-# Helm in Action
+## Helm in Action
 Before we begin, we’ll need to prepare a few things for us to be able to practice with Helm.
 
 * Firstly, we need a Kubernetes cluster. At [Dwarves Foundation](https://dwarves.foundation/), we’re using the Google Kubernetes Engine for a production environment and the Kubernetes on-premise for a staging environment. If you don’t have any Kubernetes cluster, don’t worry. You can use [Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/), which offers an excellent way to work with a single-node Kubernetes cluster locally.
 * And, we’ll need a basic purpose that manages the application within the Kubernetes cluster. In fact, I have a responsibility for overseeing and configuring [Sol](https://solapp.io/), the Travel Log product of the [Dwarves Foundation](https://dwarves.foundation/). It using Kafka as a message streaming for communication between its’ microservices. For this tutorial, we’ll install Kafka to the Kubernetes cluster via Helm.
 
-## **Installing Helm**
+## Installing Helm
 There are multiple ways to install Helm that are obviously described on the [Helm documentation](https://helm.sh/docs/using_helm/#installing-helm). Helm has two parts: The Helm client (helm) and the Helm server (Tiller). **The quickest way to install helm on macOS is using** **[Homebrew](https://brew.sh/)**, a package manager for macOS platforms.
 
 It's a simple command to install Helm client locally via Homebrew
@@ -76,7 +77,7 @@ Initialize helm using the following command.
 helm init
 ```
 
-Check the tiller deployment in the kube-systems namespace using ***kubectl ***command
+Check the tiller deployment in the kube-systems namespace using ***kubectl*** command
 
 ```javascript
 kubectl get deployment tiller-deploy -n kube-system

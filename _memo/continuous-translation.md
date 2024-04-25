@@ -4,18 +4,20 @@ tags:
   - engineering
 title: Continuous Translation
 date: 2023-04-11
-description: null
-authors: null
+description: Continuous Translation (CT) is a modern approach to translation management that involves synchronizing software development and translation workflows. This means that developers, translators, and product owners work together in a continuous cycle to ensure that all translations are up-to-date and aligned with the latest software developments.
+authors: 
+- antran
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
-
-![](assets/continuous-translation_eaf982ca480d0677ec9d8fd34553b51a_md5.webp)
 
 Continuous Translation (CT) is a modern approach to translation management that involves synchronizing software development and translation workflows. This means that developers, translators, and product owners work together in a continuous cycle to ensure that all translations are up-to-date and aligned with the latest software developments.
 
 Unlike traditional translation workflows, Continuous Translation eliminates the need for file and space synchronization between different stakeholders, streamlining the translation process and promoting better collaboration. By implementing Continuous Translation, companies can achieve faster development cycles, higher-quality translations, and a better user experience for their customers.
+
+![](assets/continuous-translation_eaf982ca480d0677ec9d8fd34553b51a_md5.webp)
 
 ## Working with localization
 ### How localization generally works
@@ -37,7 +39,7 @@ Here are what the steps to use Google Sheets would look like for managing transl
 * **Step 1:** Create a Google Sheet that contains all supported translation items. Here is an example **[template](https://docs.google.com/spreadsheets/d/1jjVDCMAmS6WySmB7L25yNCZX-X3jEwrrqLhqOBzVEs0/edit?usp=sharing)** you can use.
 * **Step 2:** Fetch data from Google Sheets using the following code:
 
-*Make sure to replace the *`***sheetId***`* and *`***sheetName***`* with your own values*
+*Make sure to replace the *`sheetId`* and *`sheetName`* with your own values*
 
 ```javascript
 	// Save on './public/spreadsheet.ts' file
@@ -77,9 +79,9 @@ Here are what the steps to use Google Sheets would look like for managing transl
 	    console.log("New data added");
 	  });
 	});
-	```
+```
 
-* **Step 3: **After having obtaining the translation data, generate locale files for supported languages using the following code:
+* **Step 3:** After having obtaining the translation data, generate locale files for supported languages using the following code:
 
 ```javascript
 	// Save on './public/manage-translations.ts' file
@@ -113,7 +115,7 @@ Here are what the steps to use Google Sheets would look like for managing transl
 	    const data = {};
 	    jsonData.forEach((item) => {
 	      data[item.elementId] =
-	```
+```
 
 ### Solution 2: Use a translation management platform
 For this approach, we can use [Locize](https://locize.com/) as our continuous localization management platform. This approach isn’t limited to Locize, but the idea is to have a platform to decouple software release from the translation work and minimize work friction for translation.
@@ -130,14 +132,14 @@ There are three ways to use `Locize` in your app:
 * **Approach 1**: Use Locize live download on the client-side only. This option involves bundling translations in your app to prevent an elevated amount of downloads on the server-side. Before deploying your app, synchronize your translations with Locize so that they are bundled in your app. This way, your server-side will not generate any downloads to the Locize CDN during runtime, but only on the client-side.
 * **Approach 2:** Configure Locize to download translations live on both client (browser) and server (node.js). 
 
-> Do not use this option if you have a `serverless environment` as it can generate too many download requests and run up your bill.
+  > Do not use this option if you have a `serverless environment` as it can generate too many download requests and run up your bill.
 
 * **Approach 3:** Bundle translations with your app. This option involves bundling translations in your app at build time. It's recommended to use this option if you have a small number of translations or if your translations don't change frequently.
 
 ### Comparisons between solutions
-**Solution 1** recommends using a custom translation file and providing translations for each language in a separate JSON file. The translation file is then loaded on the server side and used to render the content in the appropriate language. This solution is relatively simple and straightforward to implement, but it can become cumbersome to manage as the number of languages and translations grows.
+**Solution 1**: recommends using a custom translation file and providing translations for each language in a separate JSON file. The translation file is then loaded on the server side and used to render the content in the appropriate language. This solution is relatively simple and straightforward to implement, but it can become cumbersome to manage as the number of languages and translations grows.
 
-**Solution 2** proposes using a translation management platform, with one example using Locize, which allows for continuous localization management. This solution involves integrating Locize into the application, synchronizing the existing translations with Locize, and then bundling the translations in the application using one of three different possibilities, depending on the specific use case. This solution requires more setup and configuration but can provide a more scalable and streamlined approach to managing translations.
+**Solution 2**: proposes using a translation management platform, with one example using Locize, which allows for continuous localization management. This solution involves integrating Locize into the application, synchronizing the existing translations with Locize, and then bundling the translations in the application using one of three different possibilities, depending on the specific use case. This solution requires more setup and configuration but can provide a more scalable and streamlined approach to managing translations.
 
 In summary, `Solution 1` is a simpler and cheaper approach to manage translations, while `Solution 2` is a more advanced solution that provides more flexibility and scalability in managing translations.
 
@@ -154,16 +156,7 @@ In summary, `Solution 1` is a simpler and cheaper approach to manage translation
 * **Requires specialized tools**: Implementing Continuous Translation requires specialized tools and technologies, which can add to the overall cost of the project.
 * **Not suitable for all projects**: Continuous Translation may not be suitable for all projects, particularly those with limited budgets or resources. Traditional translation workflows may be more appropriate for smaller projects or those with less frequent updates.
 
-# Conclusion
+## Conclusion
 Multilingual support is a very important function for web or mobile applications nowadays. Users will come from all over the world and always ask for support for their language. The two options above have different advantages and disadvantages, so you need to consider the exact scope of the product to have the best choice for your team. Both methods can meet the needs of constantly translating products to support new features or new products, but it will cost production as well as quality assurance.
 
 If you have a difficult problem that you would like us to help you on, please feel free to submit a challenge request here.
-
-**We’d love to have you in our next chapter, by all means.**
-* Discover what we do: dwarves.foundation 
-* Meet our team: [discord.gg/dwarvesv](http://discord.gg/dwarvesv) 
-* Join the squad: careers.d.foundation 
-
-**Follow our journey**
-* Fanpage: [facebook.com/dwarvesf](http://facebook.com/dwarvesf) 
-* LinkedIn: [linkedin.com/company/dwarvesf](http://linkedin.com/company/dwarvesf)

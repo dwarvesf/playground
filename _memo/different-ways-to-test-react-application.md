@@ -1,13 +1,18 @@
 ---
 tags: 
   - react.js
+  - pracitce 
+  - engineering
+  - framework
 title: Different Ways To Test React Application
 date: 2019-06-06
-description: null
-authors: null
+description: "There are 2 practical types of testing a front end application: test its implementation details (unit test, integration test combine with assert states of the component being tested) or testing its behavior base on perspective (e2e, integration test)."
+authors: 
+- phamngocnghia
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ![](assets/different-ways-to-test-react-application_b057b9816631efa15334f5edbd90c8ea_md5.webp)
@@ -317,7 +322,7 @@ You can view Its full API detail at https://docs.cypress.io/api/api/table-of-con
 To run e2e tests for the application in the repository above, you can run the command:
 
 * yarn e2e — It’s run cypress test in headless mode
-* yarn e2e:open — Open cypress dashboard which is a great feature of cypress when compare to other e2e testings tools.
+* yarn e2e: open — Open cypress dashboard which is a great feature of cypress when compare to other e2e testings tools.
 
 **Pros:**
 

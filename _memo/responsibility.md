@@ -7,4 +7,5 @@ authors:
 menu: memo
 type: 
 hide_frontmatter: false
+hide_title: false
 ---

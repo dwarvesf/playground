@@ -1,13 +1,16 @@
 ---
 tags: 
   - oss
+  - git
+  - practice
 title: How We Contribute To Homebrew
 date: 2016-03-13
-description: null
+description: Homebrew (or brew) is one of the biggest repo on Github with more than 29k stars, 14k forks and 1k watches. It was started by Max Howell in 2009 to build the missing package manager for OS X
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Homebrew
@@ -49,7 +52,7 @@ $ brew upgrade
 ```
 
 ## Contributing to Homebrew
-Note: In this post, we just cover the command line or tool part of Homebrew. The example is taken from our **[glod-cli](https://github.com/dwarvesf/glod-cli)****.**
+Note: In this post, we just cover the command line or tool part of Homebrew. The example is taken from our **[glod-cli](https://github.com/dwarvesf/glod-cli).**
 
 When you look into the repo of Homebrew, you can easily find the doc directory in `homebrew/share/doc/homebrew/` which contains all the information. The most important file for this tutorial is the `Formula-Cookbook.md.`
 
@@ -167,7 +170,7 @@ Commit and push your changes to **YOUR** Github. Then we open the Github Repo (s
 
 ![](assets/how-we-contribute-to-homebrew_096ad9e94b7139c6f99bdac0c463196d_md5.webp)
 
-![[096ad9e94b7139c6f99bdac0c463196d_MD5.webp]]
+![](assets/how-we-contribute-to-homebrew.png)
 
 We did it! You only still need the feedback from Homebrew team. You can leave your keyboard and take a cup of coffee. If everything goes well, well done boss! you have just contribute to one of the famous repo in the internet. Congratulations!
 

@@ -4,16 +4,16 @@ tags:
   - framework
   - engineering
   - frontend
-title: Accelerate Project Initiation With Advanced Nextjs Boilerplate React Toolkit
+title: "Accelerate Project Initiation With Advanced NextJS-Boilerplate & React-Toolkit"
 date: 2023-04-03
-description: null
+description: In today's fast-paced world of software development, project initiation can often be a challenging and time-consuming process, with teams facing issues such as inconsistent code quality, slow setup times, and suboptimal workflows...
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
-# Accelerate Project Initiation with Advanced NextJS-Boilerplate & React-Toolkit
 In today's fast-paced world of software development, project initiation can often be a challenging and time-consuming process, with teams facing issues such as inconsistent code quality, slow setup times, and suboptimal workflows. To address these obstacles and streamline the project initiation process, we've developed two powerful libraries, **NextJS-Boilerplate** and **React-Toolkit**, that can help teams get started quickly and efficiently.
 
 ## Challenges in Project Initiation
@@ -58,16 +58,3 @@ If you're looking to accelerate your project initiation process, optimize your o
 * [https://github.com/dwarvesf/nextjs-boilerplate](https://github.com/dwarvesf/nextjs-boilerplate)
 * [https://github.com/dwarvesf/react-toolkit](https://github.com/dwarvesf/react-toolkit)
 * [https://memo.d.foundation/Why-We-Chose-Our-Tech-Stack-Accelerating-Development-with-a-Robust-Frontend-Solution-93761293924d438c9a86bcd4d937eb7f](https://memo.d.foundation/Why-We-Chose-Our-Tech-Stack-Accelerating-Development-with-a-Robust-Frontend-Solution-93761293924d438c9a86bcd4d937eb7f)
-
----
-
-### Come be with us
-We’d love to have you in our next chapter, by all means.
-* Discover what we do: [dwarves.foundation](http://dwarves.foundation/)
-* Meet our team: [discord.gg/dwarvesv](http://discord.gg/dwarvesv)
-* Join the squad: [careers.d.foundation](http://careers.d.foundation/)
-
-Follow our journey
-* Fanpage: [facebook.com/dwarvesf](http://facebook.com/dwarvesf)
-* LinkedIn: [linkedin.com/company/dwarvesf](http://linkedin.com/company/dwarvesf)
-* Substack: [https://note.d.foundation/](https://note.d.foundation/)

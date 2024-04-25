@@ -1,13 +1,15 @@
 ---
 tags: 
   - git
+  - practice
 title: Gitflow Pull Request
 date: 2021-04-10
-description: null
+description: Git is one of the most popular source control. Github is one platform built over the top of Git and well adapted by lots of companies. Knowing the right workflow will help to increase the team productivity. In this post, I will try to cover some of the best practices from the community and the way we applied them at Dwarves Foundation.
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 ![](assets/gitflow-pull-request_0150827f46aae013c7fa3a68c509e812_md5.webp)
@@ -70,15 +72,15 @@ Some tricks to make Pull Requests more awesome for your project:
 
 * Open a Pull Request as early as possible
 
-Pull Requests are a great way to start a conversation of a feature, so start one as soon as possible- even before you are finished with the code. Your team can comment on the feature as it evolves, instead of providing all their feedback at the very end.
+  Pull Requests are a great way to start a conversation of a feature, so start one as soon as possible- even before you are finished with the code. Your team can comment on the feature as it evolves, instead of providing all their feedback at the very end.
 
 * Pull Requests work branch to branch
 
-No one has a fork of github/github. We make Pull Requests in the same repository by opening Pull Requests for branches.
+   No one has a fork of github/github. We make Pull Requests in the same repository by opening Pull Requests for branches.
 
 * A Pull Request doesn’t have to be merged
 
-Pull Requests are easy to make and a great way to get feedback and track progress on a branch. But some ideas don’t make it. It’s okay to close a Pull Request without merging; we do it all the time.
+   Pull Requests are easy to make and a great way to get feedback and track progress on a branch. But some ideas don’t make it. It’s okay to close a Pull Request without merging; we do it all the time.
 
 Hint: Based on an article [Type of Pull Request](https://ben.balter.com/2015/12/08/types-of-pull-requests/), there are 6 types of PR. But `WIP pattern` is the one that is using by lots of teams and companies. It follows the mantra of **“Open a Pull Request as early as possible”.**
 
@@ -182,4 +184,3 @@ You may write here the specifications like the version of the project, operating
 ### Logs / Stack trace
 Insert your log/stack trace here
 ```
-

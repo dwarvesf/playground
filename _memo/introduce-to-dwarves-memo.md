@@ -1,20 +1,22 @@
 ---
 tags: 
   - updates
+  - team
 title: Introduce To Dwarves Memo
 date: 2020-05-17
-description: null
-authors: null
+description: The purpose of every story is to bring the audience a little closer to the author, to feel related at some kind of level. This is what we do here, to make you understand more about this woodland, in a variety of ways, on a platform called Memo.
+authors: 
+- duy
 menu: memo
-type: null
+type: memo
 hide_frontmatter: false
----
-
+hide_title: false
 ---
 
 Every company has a story. We just decide to have more than one. 
 
 As the years go by, our stories get piled up. A story of how we build a team from scratch. A story of how we live, how we work, or how we survive the first milestone and get ready for the next chapter.
+
 The purpose of every story is to bring the audience a little closer to the author, to feel related at some kind of level. This is what we do here, to make you understand more about this woodland, in a variety of ways, on a platform called Memo.
 
 ## What is Memo
@@ -23,7 +25,7 @@ Memo is our medium, takes place as the 3rd tab on our current [Dwarves Website]
 ![](assets/introduce-to-dwarves-memo_239c060cb55e40fa10443ecf782af86b_md5.webp)
 
 ## How to Use
-The CMS for Memo is [Outline](https://outline.d.foundation/home). The document tree is classified into these categories
+The CMS for Memo is Outline. The document tree is classified into these categories
 
 * Company: company updates & year-end recaps
 * Culture: the culture values, or facts & figures
@@ -54,4 +56,3 @@ Headlines in Memo should follow the order of Markdown, which is H1 - H2 & H3. Fo
 H3 should be the smallest level of headlines here. Any titles smaller than that can be marked as **bold**, or put it in numeric/ alphabetical order.
 
 Everyone is welcomed to craft their thoughts here. Actually, we encourage you to. Nothing reveals the company voice better than the people who live it.
-

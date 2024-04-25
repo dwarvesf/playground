@@ -4,14 +4,15 @@ tags:
   - modeling
 title: Finite State Machine
 date: 2018-08-29
-description: null
+description: Stellar is all about trust (validators). After all, when you have to trust somebody, you'd trust the reputated nodes, rather than a random stranger node on the internet.
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
-A Finite State Machine is a model of computation based on a hypothetical machine made of one or more states. Only one single state of this machine can be active at the same time. It means the machine has to transition from one state to another in to perform different actions
+A Finite State Machine is a model of computation based on a hypothetical machine made of one or more states. Only one single state of this machine can be active at the same time. It means the machine has to transition from one state to another in to perform different actions.
 
 ![](assets/finite-state-machine_db5600646453d67b0df29dfa3c9dc5b0_md5.webp)
 
@@ -70,8 +71,11 @@ What if we think in the `states` way:
     If there is an error while making the request or parsing the data, we transition to an “error” state.
 ```
 
-error: We show an error message and display the fetch-data button. This state accepts one action:
-retry: When the user clicks the retry button, we fire the request again and transition the machine to the “fetching” state.
+`error`: We show an error message and display the fetch-data button. 
+
+This state accepts one action:
+
+`retry`: when the user clicks the retry button, we fire the request again and transition the machine to the “fetching” state.
 
 ![](assets/finite-state-machine_b5d7d35ae8b3b4cbd6c0c9d8589d4dae_md5.webp)
 

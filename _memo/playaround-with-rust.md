@@ -1,13 +1,16 @@
 ---
 tags: 
   - rust
+  - programming
+  - practice
 title: Playaround With Rust
 date: 2019-08-30
-description: null
+description: Mozilla intends to use Rust as a platform for prototyping experimental browser architectures. Specifically, the hope is to develop a browser that is more amenable to safe and parallel than the existing ones...
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 Mozilla intends to use Rust as a platform for prototyping experimental browser architectures.
@@ -15,7 +18,6 @@ Mozilla intends to use Rust as a platform for prototyping experimental browser 
 Specifically, the hope is to develop a browser that is more amenable to safe and parallel than the existing ones, while also being less prone to common C++ coding errors.
 
 ## What makes Rust special
-
 ### Ownership
 * Each value in Rust has a variable that's called its **owner,** there can only be one owner at a time
 * When the owner goes out of scope, the value will be dropped

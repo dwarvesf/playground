@@ -4,11 +4,12 @@ tags:
   - architecture
 title: Architecture Decision Record
 date: 2020-03-27
-description: null
+description: There is an issue that every team will inevitably bump into. Newbies might get confused when a project is being developed. They wonder how that code was written, how we ended up choosing that architecture. It somehow leads to finger-point, and even the decision-maker himself can't remember how that decision was taken.
 authors: null
-menu: memo
-type: null
+menu: playground
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 There is an issue that every team will inevitably bump into. Newbies might get confused when a project is being developed. They wonder how that code was written, how we ended up choosing that architecture. It somehow leads to finger-point, and even the decision-maker himself can't remember how that decision was taken.
@@ -39,9 +40,9 @@ ADR helps provide a context of architecture, explaining why the previous PIC dec
 * Requirement: the necessary condition for that architecture
 
 ## How to write an ADR
-1. First, the decision must be brought up. This part is called AD, and that comes with two questions
-* with the current system, does this decision crucial and matter enough?
-* does this need to be done immediately? → should we make the decision
+1. First, the decision must be brought up. This part is called AD, and that comes with two questions:
+   * with the current system, does this decision crucial and matter enough?
+   * does this need to be done immediately? → should we make the decision
 2. Decision making -> Finalized the decision
 3. Implement that decision with the system and have all the related-parties aware The decision must be agreed by many parties (stakeholder, business, design, dev)
 

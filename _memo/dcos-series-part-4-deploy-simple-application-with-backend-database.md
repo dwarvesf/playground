@@ -1,13 +1,17 @@
 ---
 tags: 
   - dcos
-title: Dcos Series Part 4 Deploy Simple Application With Backend Database
+  - practice
+  - engineering
+title: DC/OS Series [Part 4]: Deploy Simple Application With Backend Database
 date: 2017-06-10
-description: null
-authors: null
+description: First of all, we will go with Golang because Go is easy to implement backend server and deploy in 1 min. So we will have a few code to initialize todolist application that provide GET tasks
+authors: 
+- quang
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Create an Application with Golang
@@ -172,7 +176,7 @@ You also need to replace your configuration `DB_HOST`, `DB_USER`, `DB_PASSWORD`,
 }
 ```
 
-OK, we can deploy now !
+OK, we can deploy now!
 
 ```plain_text
 $ dcos marathon app add marathon.json

@@ -2,17 +2,20 @@
 tags: 
   - team
   - radio
-title: Dwarves Radio Talk 16 Run An Effective Performance Review
+  - practice
+title: "Dwarves Radio Talk 16: Run An Effective Performance Review"
 date: 2021-08-02
-description: null
-authors: null
+description: We perform bi-yearly reviews in July and January. The primary purpose of these reviews is to give feedback on career path advancement and recognize accomplishments.
+authors: 
+- duy
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 ### Performance Review 
-We perform bi-yearly reviews in July and January. The primary purpose of these reviews is to **give feedback **on career path advancement and **recognize accomplishments**. We follow a simple process:
+We perform bi-yearly reviews in July and January. The primary purpose of these reviews is to give feedback **on career path advancement and recognize accomplishments**. We follow a simple process:
 * Everyone writes up a **1-2 page summary** and sends it to the head of their team.
 * The head of your team reviews your summary and prepares their thoughts. He schedules a one-hour meeting to discuss.
 
@@ -30,9 +33,10 @@ There're two sessions we look forward to reading in the team member's summary
 * Compared to six months or a year ago, did you level up your individual expertise?
 
 **Self-reflection**
+
 Feeling about yourself.
 * Good or bad?
 * Happy or not?
 * Satisfied or not? etc.
 
-The Performance Indicator is usually the summary of **Responsible, Teamwork **and** Mastery***. *We don't judge team members from our point of view, we let them reflect their thought and propose their achievement. 
+The Performance Indicator is usually the summary of **Responsible, Teamwork and Mastery**. We don't judge team members from our point of view, we let them reflect their thought and propose their achievement. 

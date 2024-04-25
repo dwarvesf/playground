@@ -4,11 +4,13 @@ tags:
   - license
 title: Bunk License Check
 date: 2020-02-05
-description: null
-authors: null
+description: Golang license and dependency checker. Prints list of all dependencies (both from std and 3rd party), number of times used, their license and saves all the license files in /licenses.
+authors: 
+- han
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## License detector tool: Glice

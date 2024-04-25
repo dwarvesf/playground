@@ -3,11 +3,13 @@ tags:
   - docker
 title: Docker Registry
 date: 2016-07-21
-description: null
-authors: null
+description: The Docker toolset to pack, ship, store, and deliver content.
+authors: 
+- quang
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 ![](assets/docker-registry_460b62865d3bc638b0bb0c4f7e23260e_md5.webp)
@@ -18,7 +20,6 @@ The Docker toolset to pack, ship, store, and deliver content.
 This repository’s main product is the Docker Registry 2.0 implementation for storing and distributing Docker images. It supersedes the docker/docker-registry project with a new API design, focused around security and performance.
 
 ## To be simple
-
 ### Server
 Simply, just run below command:
 

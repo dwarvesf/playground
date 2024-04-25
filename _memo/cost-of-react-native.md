@@ -2,18 +2,24 @@
 tags: 
   - framework
   - web
+  - engineering
+  - react
 title: Cost Of React Native
 date: 2023-04-17
-description: null
-authors: null
+description: React Native is a popular cross-platform app development framework that allows developers to build mobile apps for both iOS and Android platforms using a single codebase. It has gained popularity in recent years due to its ability to provide a native-like experience while reducing development time and cost...
+authors: 
+- Khac Vy
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
+hide_title: false
 ---
 
-![](assets/cost-of-react-native_69b49ec589ff19151408b8959ace27bd_md5.webp)
 
 *React Native is a popular cross-platform app development framework that allows developers to build mobile apps for both iOS and Android platforms using a single codebase. It has gained popularity in recent years due to its ability to provide a native-like experience while reducing development time and cost.*
+
+![](assets/cost-of-react-native_69b49ec589ff19151408b8959ace27bd_md5.webp)
 
 ## Introduction
 At Dwarves, React Native has been on our radar and we use it in some of our projects. Lately, we have been investigating cost-benefits of using it and making light of some concerns we should be aware of. We haven’t seen many posts consolidating this in broader detail. So in this blog post, our focus will be on exploring the cost of React Native development, discussing the advantages and disadvantages of using the framework, and hopefully providing some insights for developers and engineering leaders to make more informed decisions on choosing React Native for their projects.
@@ -78,7 +84,7 @@ In conclusion, React Native is a popular cross-platform app development framewor
 
 Whether a developer should use React Native really depends on the needs of their application. The cost of developing a React Native application can vary depending on several factors, including complexity, design, features, and maintenance costs. As such, it may be something to consider whether you should stay on the web or going native.
 
-# References:
+## References
 * [https://reactnative.dev/](https://reactnative.dev/)
 * [https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)
 * [https://www.coinbase.com/blog/announcing-coinbases-successful-transition-to-react-native](https://www.coinbase.com/blog/announcing-coinbases-successful-transition-to-react-native)

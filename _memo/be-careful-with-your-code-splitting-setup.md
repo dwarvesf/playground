@@ -5,11 +5,12 @@ tags:
   - technique
 title: Be Careful With Your Code Splitting Setup
 date: 2017-07-17
-description: null
+description: I thought I have been through hell this evening. Took me 6 hours debugging in the deep dark of hell. Oh right. The app I have been worked on was a mobile-first PWA built with React, so naturally there is an infinite/virtual list somewhere in the app.
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 I thought I have been through hell this evening. Took me 6 hours debugging in the deep dark of hell. Oh right.

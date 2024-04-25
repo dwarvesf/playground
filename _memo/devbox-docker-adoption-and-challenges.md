@@ -10,6 +10,7 @@ authors:
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 This is the 2nd post of Devbox series includes
 
@@ -22,7 +23,6 @@ In the previous session that is [Devbox #1: The world before Docker](https://mem
 From the beginning, the desire to produce an isolated environment is raised to provide ability for multiple users accessing a computer concurrently with full resource utilization via a singular application. Over time, various other purposes have been explored and implemented. With the introduction of Docker, container technology became extensively utilized in software development. Two of the most popular uses are creating reproducible development environments and enabling continuous deployment.
 
 ## Container Deployment Era
-
 Compare to other traditional solutions for creating isolated environments, Docker container offers a lot of superior advantages. It requires a significantly smaller resource footprint with the ability to spin up and down faster by using the same OS kernel instead of encapsulating independent OS. This approach allows for leveraging numerous benefits of containerization in the software deployment process.
 
 ![](assets/devbox-docker-adoption-and-challenges_01.webp)
@@ -32,7 +32,6 @@ Currently, creating and deploying entire applications becomes simple through the
 Furthermore, owing to the preeminence of Docker containers, a lot of services supporting them have experienced robust growth. With millions of pre-packaged applications available on DockerHub, initiating a project becomes swift with just a few commands. Numerous public and private cloud providers offer managed container services, enabling immediate deployment of our applications online. Moreover, an extensive ecosystem has emerged around containers and Docker, providing support for monitoring, security, networking, storage, and integration, letting us have the ability to create a smooth process from development, integration to deployment and testing.
 
 ## Docker in Development
-
 Sounds massive! But I know some of us will never touch on the entire benefits of Docker containers except if we are a DevOps professional. So, to be more developer-friendly, why don't we take a closer look at the development environment aspect?
 
 When beginning my software development career, I had the opportunity to work in a team with almost all previous-generation developers. In this environment, durability and certainty are prioritized above all else, so everyone is fine with installing a bunch of stuff on their computers to get the project off the ground. I actually needed over 3 days to get the project running, despite having quite detailed documents. After that, I knew others also needed more time. It is acceptable when this is the onboarding phase. The nightmare actually begins when your laptop encounters issues and the deadline is looming. Regardless of how familiar you are with the project, you still need at least 1 day to reinstall everything the risk of not remembering the dependency version. But that's not even the end of it. After I left the project, my laptop became polluted, and I actually didn’t know how to deal with it except by reinstalling my OS.
@@ -50,7 +49,6 @@ It is not just for the backend side; on the frontend, containerization is also w
 However, nothing is perfect, Docker container has its own concerns.
 
 ## Nothing is perfect!
-
 Yeah, Docker is really fast. It only takes anywhere from a few milliseconds to a few seconds to start a Docker container from a Docker image. But how do you feel when every time you change the code, you have to rebuild the Docker image and restart the container again for debugging? That would be a real nightmare. To avoid it, you can only run the application locally with Docker container dependencies, or rack your brain to find a way to optimize the Dockerfile. Most of the time, it's fine, but the real problem occurs in edge cases.
 
 The same issue arises when our team tries to pack all related development tools into a Docker image. While it successfully avoids the problem of different versions of dependencies, this approach encounters a bottleneck as the time to start the application is longer than usual.
@@ -66,7 +64,6 @@ One significant issue that is often overlooked is that Docker builds have access
 For example, we often include something like `RUN apt-get install ...` in the Dockerfile. This command handles everything necessary for your container to successfully execute your application. However, as mentioned above, this approach doesn't ensure complete reproducibility of the Docker image over time. Each time this command is run, the version of dependencies installed may vary. To mitigate this, we can specify the version of dependencies. However, if that exact version is no longer available, Docker will throw an error.
 
 ## What’s new gate?
-
 So, with all the challenges mentioned above, do we have any way to avoid them in a peaceful manner? Certainly, there are various ways to address these problems, but none of them are perfect or bad.
 
 Most of them involve optimizing your approach to using Docker. However, I would like to introduce another approach that keeps us away from Docker during development but still allows us to leverage Docker for deployment. We'll explore that next time in the [Devbox #3: The overview into Nix & how we use Devbox @ Dwawrves](https://memo.d.foundation/playground/_memo/devbox-nix-and-our-devbox-adoption).

@@ -1,18 +1,22 @@
 ---
 tags: 
   - swift
+  - design
 title: Create Circular Text Using Swiftui
 date: 2020-03-23
 description: null
-authors: null
+authors: 
+- trungphan
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
+hide_title: false
 ---
 
-![](assets/create-circular-text-using-swiftui_6872696f92cc278214818c3e90f67383_md5.webp)
-
 This is what we have when finished.
+
+![](assets/create-circular-text-using-swiftui_6872696f92cc278214818c3e90f67383_md5.webp)
 
 Fire up your Xcode and create new SwiftUI Project.
 

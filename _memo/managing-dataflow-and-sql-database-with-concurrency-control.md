@@ -2,13 +2,15 @@
 tags: 
   - R&D
   - data
-title: Managing Dataflow And Sql Database With Concurrency Control
+title: Managing Dataflow and SQL Database With Concurrency Control
 date: 2023-05-04
-description: null
-authors: null
+description: In this post, we will discuss an issue in high-workload databases together. It is Concurrency Control.
+authors: 
+- bienvo
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ![](assets/managing-dataflow-and-sql-database-with-concurrency-control_c11c827159778f301fbd67b9d155b80b_md5.avif)

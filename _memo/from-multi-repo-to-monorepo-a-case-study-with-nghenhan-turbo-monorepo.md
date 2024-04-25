@@ -6,11 +6,13 @@ tags:
   - web
 title: From Multi Repo To Monorepo A Case Study With Nghenhan Turbo Monorepo
 date: 2023-03-20
-description: null
-authors: null
+description: In this case study, we share our experience of transitioning from multi-repository structure to a monorepo using Turbo in our project. This migration led to numerous benefits, including a 60% reduction in build times, a 40% increase in developer productivity...
+authors: 
+- Chinh Le
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 In this case study, we share our experience of transitioning from multi-repository structure to a monorepo using [Turbo](https://radar.d.foundation/Turborepo-0dd18b38468c4859a8beaae7bf6c511c) in our project. This migration led to numerous benefits, including a 60% reduction in build times, a 40% increase in developer productivity, and simplified dependency management. Our goal is to offer valuable insights and lessons learned throughout our journey to help others considering a similar transition.
@@ -68,10 +70,3 @@ Throughout the migration process, we learned several valuable lessons:
 
 ## Conclusion
 The migration to a monorepo using Turbo required significant effort, but the results have been overwhelmingly positive. Our team experienced improved collaboration, faster build times, simplified dependency management, and better code quality. We remain committed to continuously refining our code management practices and leveraging tools like Turbo to stay at the forefront of software development.
-
-**Follow us on**
-* Website: [https://dwarves.foundation](https://dwarves.foundation/)
-* Discord: [https://discord.gg/dwarvesv](https://discord.gg/dwarvesv)
-* Fanpage: [https://www.facebook.com/dwarvesf](https://www.facebook.com/dwarvesf)
-* LinkedIn: [https://www.linkedin.com/company/dwarvesf](https://www.linkedin.com/company/dwarvesf/)
-* Substack: [https://note.d.foundation/](https://note.d.foundation/)

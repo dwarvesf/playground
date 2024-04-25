@@ -4,11 +4,13 @@ tags:
   - micro-frontend
 title: Lessons Learned From Being A Part Of Corporate Micro Frontend Implementation
 date: 2023-04-24
-description: null
-authors: null
+description: In this article, we'll dive into the experiences and insights we've gained from a recent corporate micro-frontend implementation project, shedding light on the technical specifics and best practices that can be applied to comparable endeavors.
+authors: 
+- thanhpham
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Introduction
@@ -83,7 +85,7 @@ To manage versioning and dependencies, we utilized a dedicated package manager f
 1. **Make use of a shared UI library and maintain a strong design team** to ensure consistency in the application's appearance and functionality. Utilize a widely-used frontend framework and a dedicated package manager to streamline the management of shared components.
 2. **Prioritize communication and collaboration over strict conventions**. Encourage cross-team code review and establish common channels for sharing concerns and discussing solutions. Regular sync-up meetings can also be advantageous in keeping teams aligned and addressing emerging issues.
 3. **Guarantee that each team has a clear comprehension of their responsibilities** and the boundaries of their micro-frontends. Design micro-frontends to encompass specific business domains or user experiences, minimizing interdependencies and reducing coupling between different parts of the application.
-4. **Set up a CI system **to measure common testing outputs and ensure that the final deployment can pass the required regression tests. Treat each micro-frontend as an independently deployable unit to enable faster release cycles and reduce the impact of potential deployment issues.
+4. **Set up a CI system** to measure common testing outputs and ensure that the final deployment can pass the required regression tests. Treat each micro-frontend as an independently deployable unit to enable faster release cycles and reduce the impact of potential deployment issues.
 5. **Utilize a combination of shared libraries**, API calls, and event-driven architectures to handle communication and data sharing between micro-frontends. Create well-defined protocols for data exchange and implement robust error-handling strategies to gracefully manage unforeseen issues during communication or data sharing.
 
 ## Wrapping Up

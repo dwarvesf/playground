@@ -10,6 +10,7 @@ authors: null
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
 Introducing react-native's new architecture changes that boost performance, bringing react-native back into the race with Flutter

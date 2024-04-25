@@ -1,23 +1,26 @@
 ---
 tags: 
   - design
+  - performance
 title: Competency Mapping
 date: 2018-04-01
-description: null
+description: We identified skills and actions showing someone has one competency or not. Six levels to measure the level of knowledge...
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 We identified skills and actions showing someone has one competency or not.
 
 Six levels to measure the level of knowledge:
-**0 – Completely unfamiliar**: *Doesn’t understand the competency.*
-**1 – Novice**: *Understands the competency and its importance.*
-**2 – Advanced Beginner**: *Demonstrates this competency under supervision or with encouragement.*
-**3 – Competent**: *Demonstrates this competency independent of supervision or encouragement.*
-**4 – Proficient**: *Encourages or supervises others in this competency.*
+
+**0 – Completely unfamiliar**: *Doesn’t understand the competency.*<br>
+**1 – Novice**: *Understands the competency and its importance.*<br>
+**2 – Advanced Beginner**: *Demonstrates this competency under supervision or with encouragement.*<br>
+**3 – Competent**: *Demonstrates this competency independent of supervision or encouragement.*<br>
+**4 – Proficient**: *Encourages or supervises others in this competency.*<br>
 **5 – Expert**: *Develops new ways of applying this competence measured on the world stage.*
 
 ### General User Research

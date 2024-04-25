@@ -1,13 +1,15 @@
 ---
 tags: 
   - design
+  - framework
 title: Domain Insight Research Framework
 date: 2020-10-21
-description: null
+description: As a designer working in the Digital Product industry, I'm pretty sure we all hear about UX Research once at least. In this field, we learn about the business's strategy, users' behaviors, needs, pain points, etc. to build a product that meets the business's goal and solves users' existing problems
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 As a designer working in the Digital Product industry, I'm pretty sure we all hear about UX Research once at least. In this field, we learn about the business's strategy, users' behaviors, needs, pain points, etc. to build a product that meets the business's goal and solves users' existing problems. There are multiple ways to do UX research; our team also has one. However, there is a higher level, which helps UX Researchers process their works much faster, empathize with target users much easier, and save more effort and time; it is called Domain Insight Research.
@@ -32,7 +34,6 @@ Domain insight knowledge helps UX Researchers and Designers have an overview of 
 * Suggest suitable technology method to optimize workflow and cost
 
 ## Three Steps of Domain Insight Research
-
 ### Understand the definition
 When it comes to a new domain, finding out the definition is the first step we need to do to have a complete, accurate, and consistent look for that domain.
 
@@ -65,16 +66,19 @@ There are many market research methods; you can try to find some on Google. Howe
 
 It is essential to choose the right methods, apply them flexibly to each industry or product to maximize the time and cost.
 
-### How we do M**arket research**
+### How we do Market research
 **1. Gather information**
+
 There are different ways to conduct market research and collect data. Still, we don’t limit ourselves to just one research method. This is one of our simple methods we applied to our previous projects
 
 ![](assets/domain-insight-research-framework_212c5cd2b79ff8385855412c63292329_md5.webp)
 
 **Primary research**
+
 Primary research is any type of research that the researchers collect themselves. We conduct primary research by reading (books, journals, articles...). Sometimes, we also gather information directly from customers of the target market through surveys or interviews.
 
 **Secondary research**
+
 Secondary research is simply the act of seeking out existing research and data. It is sometimes called “desk research” because we can do it from our desks. Secondary data could be such as databases, survey reports, collected and published information,...
 
 **We are highly recommended secondary research because:**
@@ -84,6 +88,7 @@ Secondary research is simply the act of seeking out existing research and data. 
 In some specific cases, we couldn't find the secondary data suitable for our researched domain; therefore, we needed to conduct our primary one.
 
 **2. Market share**
+
 Market share is the percentage of a market accounted for by a specific entity. It helps us to:
 
 * Know the position an individual company holds in the industry
@@ -94,6 +99,7 @@ Market share is the percentage of a market accounted for by a specific entity. I
 We can collect information from many sources, newspapers, trade publications, industry associations, or even personal blogs. However, before using this information, we need to check out their accuracy and research more to ensure the data, report, or info is mentioned elsewhere. Be wary of numbers without a credible source.
 
 **3. Competitor analysis**
+
 Competitor analysis is a way to collect and compare data about existing products (and companies) in the industry. By learning insight from competitors, we can figure out the opportunities and avoid threats to bring the market's unique value.
 
 A typical competitor analysis that we have done often includes:
@@ -111,6 +117,7 @@ A typical competitor analysis that we have done often includes:
 * Compare visual and language styles.
 
 **4. Personas**
+
 Personas is a familiar term that we all know about its utility and importance in building a product. The purpose of working with personas is to offer solutions, products, and services based on the needs and goals of a specific set of users. In the DIR, we build personas and analyze them to:
 * **Get to know the users and how they feel —** their demographics, needs, and current pain-points.
 * **Get customer insights**: behaviors, incentives, decision-making points, and attitudes/emotions. Find out their perceptions of the value propositions, their expectations.
@@ -118,6 +125,7 @@ Personas is a familiar term that we all know about its utility and importance in
 * **Consistency** — Since every user has been classified, we can have a consistent understanding of the users. It helps analyze users' data and conclude it to make a better product.
 
 **5. Solutions & Features**
+
 With the information gathered above, we already have an overview of what people are doing out there. Next, we use it to validate clients' ideas and easily propose solutions for them, based on:
 * Their business value
 * Their resources
@@ -126,8 +134,24 @@ With the information gathered above, we already have an overview of what people 
 We can create products that the market does not yet meet. Or we should continue to build a product that is similar to the ones already on the market, but with better problem-solving capabilities, which focus correctly on the user's needs. Or we can come up with solutions for the hidden problems that not even users realize. Our suggestions have become more trustworthy since they are all based on our research and knowledge of the market.
 
 **6. Revenue opportunity**
+
 We all aim to earn money by bringing the values and benefits for users. Therefore, after having a sufficient amount of information, we can decide the revenue stream by providing better solutions within our capabilities. What we consult our clients
 * Identify available growth opportunities and determine the most attractive one.
 * Find the right balance between short-term and long-term growth opportunities.
 
 **7. Suitable technology**
+
+Despite there are many new and rapidly evolving technologies, not all technology trends can be used to optimize a product. We need to consider costs and resources carefully before suggesting a technology to build the product.
+
+In some specific industries, design principles are also factors that bring the product to the right market. By learning design from our competitors and understanding users, we can build a set of design principles to comply. For example, the money-or-asset-related-domains require trustworthy design, or products for older users need to be easy to reach and accomplish tasks...
+
+The design principles are defined depending on the domain but usually will be included:
+
+- General characteristics of users
+- General elements (color, typo, style)
+- Context
+- Accessibility
+- Usability
+
+## Conclusion
+Product knowledge is so valuable. It increases our confidence as a problem-solver and clients’ trust that we are the right person to serve their needs. Clients today come armed with their level of product knowledge. The internet and competition have created a more educated consumer base. That is all the more reason we need to know more than our customers do about the things we're going to help them do

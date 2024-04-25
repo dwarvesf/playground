@@ -2,13 +2,17 @@
 tags: 
   - engineering
   - LLM
-title: Easy Prompt Engineering For Business Use And Mitigating Risks In Llms
+  - AI
+  - engineering
+title: Easy Prompt Engineering For Business Use And Mitigating Risks In LLMS
 date: 2023-05-22
-description: null
-authors: null
+description: Prompt engineering involves creating prompts that guide the model to generate a desired output. This is needed for LLMs to increase the accuracy of a particular input prompt or avoid common risks...
+authors: 
+- monotykamary
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Preface
@@ -53,7 +57,7 @@ For example, we can format the chat to output Excel formulas, using a bit of [ro
 You can further edit the context to better fit your intended format. Then in the frontend application, we can parse the equation into a more usable format to display the answer in a different format, e.g: an embedded sheets view or an image of the Excel data.
 
 ### Pre-context to fix mistakes and errors
-At Dwarves, we are testing transcribing some of our old videos as well as more real-time transcriptions for our meetings using OpenAI Whisper. There are occasional hiccups when using Whisper without any extra tuning, which can be cleaned by ChatGPT during a summary report. The following transcript is from our recent **[Tech Event #7: "State of Frontend 2023: React vs Vue vs Angular"](https://www.youtube.com/live/orJVTAGj_OE?feature=share&t=2618)****:**
+At Dwarves, we are testing transcribing some of our old videos as well as more real-time transcriptions for our meetings using OpenAI Whisper. There are occasional hiccups when using Whisper without any extra tuning, which can be cleaned by ChatGPT during a summary report. The following transcript is from our recent **[Tech Event #7 - "State of Frontend 2023: React vs Vue vs Angular"](https://www.youtube.com/live/orJVTAGj_OE?feature=share&t=2618):**
 
 ![](assets/easy-prompt-engineering-for-business-use-and-mitigating-risks-in-llms_740406c5bc05b3862368401d46720e34_md5.webp)
 

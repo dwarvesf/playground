@@ -8,8 +8,9 @@ authors:
   - hnh
   - vhbien
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 This is the 1st post of Devbox series includes
 
@@ -18,7 +19,6 @@ This is the 1st post of Devbox series includes
 - [Devbox #3: The overview into Nix & how we use Devbox @ Dwawrves](https://memo.d.foundation/playground/_memo/devbox-nix-and-our-devbox-adoption)
 
 ## The It-works-on-my-machine time
-
 Sometimes, in my software development team, a strange issue is raised. Nobody can evaluate the issue because 'It works on their machine’.One of Docker's most powerful abilities is cross-platform compatibility, which enables seamless deployment across Linux, Windows, and macOS environments. In this way, it broadens adoption and facilitates interoperability in heterogeneous computing environments.
 
 ![](assets/devbox-a-world-before-docker_untitled.webp)
@@ -30,7 +30,6 @@ I believe it's not just my problem. Throughout the ongoing evolution of software
 Right, as software technology develops, we always have ways to improve the output. It encompasses more than just a solution, it represents a rich evolutionary history within the realm of software development.
 
 ## First bullet: Virtual machine
-
 During the 1960s, researchers at IBM's Cambridge Scientific Center delved into the development of the first virtual machine operating system. They aimed to address the burgeoning demand for time-sharing capabilities within the computing industry of that era. Despite initial setbacks encountered with the System/360 series, which lacked adequate time-sharing functionalities, persistent efforts eventually led to the creation of CP/CMS as the first virtual machine.
 
 As VM evolved and became more widely known, its benefits for software development processes would have become apparent. Developers and engineers outside of IBM, upon learning about CP/CMS and its virtual machine capabilities, began to explore how similar concepts could be applied to their development workflows.
@@ -58,7 +57,6 @@ Have a lot of things to discuss, but we can distill the variances between VMs an
 | Deployment | Highly portable | Flexible but heavier | VM is heavier |
 
 ## The opening act with Linux Containers
-
 As I mentioned above, Linux Containers (LXC) was perhaps the first implementation of a complete container manager. It provide a lightweight and efficient approach to deploying and isolating applications
 
 Unlike VM, which require the overhead of running multiple operating system instances, Linux containers share the host operating system's kernel while maintaining separate namespaces for processes, networking, and file systems. This results in faster startup times, lower resource consumption, and greater scalability compared to VMs. 
@@ -68,7 +66,6 @@ However, one disadvantage of using Linux Containers directly is the potential la
 In that situation, Docker was born with more innovations.
 
 ## Docker - Innovation of innovation
-
 One of Docker's most powerful abilities is cross-platform compatibility, which enables seamless deployment across Linux, Windows, and macOS environments. In this way, it broadens adoption and facilitates interoperability in heterogeneous computing environments.
 
 Moreover, Docker has a variety system of extensive tooling, and ecosystem that make a big improvement in container management. such as Docker CLI and Docker Hub. These resources streamline every facet of container deployment, from image creation to orchestration, significantly simplifying the development workflow.
@@ -78,5 +75,4 @@ Docker's robust ecosystem also garners widespread support from major cloud provi
 Consequently, Docker emerges as the quintessential choice for modern containerization needs, offering unparalleled flexibility, convenience, and efficiency to developers and organizations worldwide.
 
 ## Final thoughts
-
 In summary, the transition from traditional Virtual Machines (VMs) to containerization, epitomized by Docker, represents a pivotal advancement in software development. Docker's lightweight, portable containers have revolutionized software development and deployment. However, this transformation is not merely about adopting a new technology; it's a journey marked by adaptation and discovery. In the [Devbox #2: Our Docker adoption and its challenges](https://memo.d.foundation/playground/_memo/devbox-docker-adoption-and-challenges), we will uncover the story: how Docker is adopted in my development team and its challenges encountered along the way.

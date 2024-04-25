@@ -2,13 +2,16 @@
 tags: 
   - performance
   - people
+  - team
 title: Considering Factors For Performance Evaluating
 date: 2016-04-02
-description: null
-authors: null
+description: team performance review and standard for evaluate.
+authors: 
+- han
 menu: memo
-type: null
+type: performance
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Fire quickly

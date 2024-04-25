@@ -1,13 +1,16 @@
 ---
 tags: 
   - design
+  - UX-UI
+  - practice
 title: Good Design Understanding
 date: 2018-04-02
-description: null
+description: Good design is not just what looks good. It also needs to perform, convert, astonish, and fulfill its purpose. It can be innovative or it might just get the job done.
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 Good design is not just what looks good. It also needs to perform, convert, astonish, and fulfill its purpose. It can be innovative or it might just get the job done.
@@ -19,7 +22,7 @@ User experience (UX) focuses on having a deep understanding of users, what they 
 
 *Before taking a closer look on what is a good UX design, there are some examples for you to feel what is a good and bad UX design:*
 
-* [Good Design vs Bad Design Example from everyday experiences](https://uxdesign.cc/good-design-vs-bad-design-examples-from-everyday-experiences-18a7d1ba002c)*
+* [Good Design vs Bad Design Example from everyday experiences](https://uxdesign.cc/good-design-vs-bad-design-examples-from-everyday-experiences-18a7d1ba002c)
 * [5 example we can learn from bad design vs 5 example we can learn from good design](https://www.interaction-design.org/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706)
 
 ## **The 7 Factors that Influence User Experience**
@@ -106,6 +109,7 @@ User interface (UI) design is the design of user interfaces for software or mach
 This formula works because it creates a sense of balance and allows the eye to move comfortably from one focal point to the next. It’s also incredibly simple to use.
 
 **Color meaning**
+
 Scientists have studied the physiological effects of certain colors for centuries. Besides aesthetics, colors are the creators of emotions and associations. The meaning of colors can vary depending on culture and circumstances.
 
 * **Red:** Passion, Love, Danger
@@ -115,17 +119,19 @@ Scientists have studied the physiological effects of certain colors for centurie
 * **Green:** New, Fresh, Nature
 
 **Contrast**
+
 Color contrast is a key part of any visual composition. It brings the individuality for each UI element and makes all of them noticeable. User interfaces containing only shades from the same color family have fewer chances to draw users’ attention. Moreover, copy content in this UI will look illegible which make the interactions with a product almost impossible.
 
 ### Typography
 **Readability**
+
 Readable text affects how users process the information in the content. Poor readability scares readers away from the content. On the other hand, done correctly, readability allows users to efficiently read and take in the information in the text. You want users to be able to read your content and absorb it easily.
-* *Hierarchy* defines how to read through content. It shows the user were to start reading and where to read through. It differentiates headers from body text.
-* *Contrast* is the core factor in whether or not text is easy to read. Good contrasts will make text easy on the eyes, easy to scan quickly, and overall more readable. On the other hand, poor contrast will force the user to squint and make reading the body text almost painful, not to mention a lot slower.
-* Line height is a very common term meaning the space between individual lines of text. Line height is another factor in the readability of body text and even headers.
-* Letter Spacing Like line height, letter spacing affects readability in Web typography. Letter spacing is, as the name suggests, the space between each letter in words. In print layout, negative letter spacing is a common technique to add a more fun feel to the layout, but it should never be used in body text. In any text, letter spacing is an obvious factor in legibility.
-* Line length is, of course, the number of words per line. A good line length is one that allows the reader’s eyes to flow from the end of one line to the beginning of the next very easily and naturally.
-* Font size. The minimum font size you should be using is 12pt, with a good reading size around 16pt (1em). Make text too small and users will be straining to see what it says, especially on lower density screens which aren’t that sharp.
+* *Hierarchy*: defines how to read through content. It shows the user were to start reading and where to read through. It differentiates headers from body text.
+* *Contrast*: is the core factor in whether or not text is easy to read. Good contrasts will make text easy on the eyes, easy to scan quickly, and overall more readable. On the other hand, poor contrast will force the user to squint and make reading the body text almost painful, not to mention a lot slower.
+* *Line height*: is a very common term meaning the space between individual lines of text. Line height is another factor in the readability of body text and even headers.
+* *Letter Spacing*: like line height, letter spacing affects readability in Web typography. Letter spacing is, as the name suggests, the space between each letter in words. In print layout, negative letter spacing is a common technique to add a more fun feel to the layout, but it should never be used in body text. In any text, letter spacing is an obvious factor in legibility.
+* *Line length* is, of course, the number of words per line. A good line length is one that allows the reader’s eyes to flow from the end of one line to the beginning of the next very easily and naturally.
+* *Font size*: The minimum font size you should be using is 12pt, with a good reading size around 16pt (1em). Make text too small and users will be straining to see what it says, especially on lower density screens which aren’t that sharp.
 
 ### Layout
 Layout is the visual organization and composition you give to all the visual objects that make up your design.
@@ -150,4 +156,27 @@ Layout-&-design has three primary goals:
 Consistency is a key principle in life and in design. Without it we can’t get far. Even the mightiest of problems will fall if you keep hacking it everyday!
 
 Benefits of consistency:
-* Users will learn faster how to use your design
+- Users will learn faster how to use your design
+- Consistency eliminates confusion!
+- Consistency saves money and time!
+
+**Visual consistency**
+
+Similar elements that are perceived the same way make up the visual consistency. **It increases learnability of the product.** Fonts, sizes, buttons, labeling and similar need to be consistent across the product to keep visual consistency.
+
+**Voice and Tone**
+
+The language and tone you use throughout the user flow influences how your user perceives the product. Keep the voice and tone consistent so it feels as one voice speaking to the user.
+
+**Use familiar patterns**
+
+People who will be using our designs be it digital or not, have been around for some time. This means they have experienced and learned other designs, and know the patterns used in them.
+
+## Reference
+- [uxpin_the_23-point_ux_design_checklist.pdf](https://www.notion.so/d470ff65dcd0495b9fabf3f64bdcd4df?pvs=21)
+- Pixel Perfect Precision - http://cdn.ustwo.com/PPP/PP3.pdf
+- More Than Usability: The Four Elements of User Experience
+    - Part I: https://www.uxmatters.com/mt/archives/2012/04/more-than-usability-the-four-elements-of-user-experience-part-i.php
+    - Part II: https://www.uxmatters.com/mt/archives/2012/08/more-than-usability-the-four-elements-of-user-experience-part-ii.php
+    - Part III: https://www.uxmatters.com/mt/archives/2013/03/more-than-usability-the-four-elements-of-user-experience-part-iii.php
+    - Part IV: https://www.uxmatters.com/mt/archives/2013/11/more-than-usability-the-four-elements-of-user-experience-part-iv.php

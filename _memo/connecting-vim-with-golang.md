@@ -2,17 +2,20 @@
 tags: 
   - go
   - vim
+  - programming
+  - engineering
 title: Connecting Vim With Golang
 date: 2015-10-16
-description: null
+description: Vim is a powerful text-editor, usually used server environments with no graphical interfaces. In this post, I will layer a basic foundation of Vim and show you how to use Vim as an IDE for Go
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## An introduction to Vim and how to use Vim with Golang
-* Vim is a powerful text-editor, usually used server environments with no graphical interfaces. In this post, I will layer a basic foundation of Vim and show you how to use Vim as an IDE for Go.
+Vim is a powerful text-editor, usually used server environments with no graphical interfaces. In this post, I will layer a basic foundation of Vim and show you how to use Vim as an IDE for Go.
 
 ## What is Vim
 Vim is a highly configurable text editor built to enable efficient text editing, the next version of Vi (Vim = Vi Improved), written by Bram Moolenaar, first released in 1991.
@@ -24,7 +27,7 @@ Vim is a highly configurable text editor built to enable efficient text editing,
 ## Install and Config
 * Vim can be downloaded at [vim homepage](https://www.vim.org/download.php) or set up by [brew](https://brew.sh/)
 
-`brew install vim`
+  `brew install vim`
 
 * Since some plugins can be in needed of lua, you should set up with this command line`brew install vim --with-lua`
 * After finished setting, create a.vimrc file. This file is where you store every config, plugins or bundle, as well as other Vim related function.
@@ -79,10 +82,10 @@ filetype plugin indent on    " required
 
 Next, to install plugins, open vim and run this command line below (by pressing Esc)
 
-`:PluginInstall`
+   `:PluginInstall`
 
 To up date plugins, use
-`:PluginUpdate`
+   `:PluginUpdate`
 
 That’s enough for you to pick Vim up from the ground.
 
@@ -95,20 +98,20 @@ You can practice using these keys by [vim game](https://vim-adventures.com/)
 
 To open a new file with vim, use the command line: `vim file_name`
 
-There are 3 modes in vim:
+### There are 3 modes in vim:
 
 * **Normal mode** - appear when you press Ecs, usually has “.” in front of it. Vim will get this as what you type is the command for vim. For example: `:w` is “save document”, `:q` is “exit document”. Vim has its own language, which is called Vim script. Vim script can be executed at normal mode, for example, to print out Hello world, we use
 
-`:echo "hello world"`
+  `:echo "hello world"`
 
 * **Insert mode** -appear when you press one of these keys below
 
-a: Insert vào phía sau con trỏ hiện tại
-A: Insert vào cuối hàng
-i: Insert vào phía trước con trỏ hiện tại
-I: Insert vào đầu hàng
-o: Insert và mở một hàng trống phía dưới
-O: Insert và mở một hàng trống phía trên
+  a: Insert vào phía sau con trỏ hiện tại\
+  A: Insert vào cuối hàng\
+  i: Insert vào phía trước con trỏ hiện tại\
+  I: Insert vào đầu hàng\
+  o: Insert và mở một hàng trống phía dưới\
+  O: Insert và mở một hàng trống phía trên\
 
 * **Visual mode** – appear when you press v, usually used in selecting a big block text, can be used in copy paste or comment,..
 
@@ -155,7 +158,7 @@ You can basically code Go with only Vim go, but to make things easier, and also 
     auto-pairs
 ```
 
-In these:
+**In these:**
 * nerdtree: Help you organize the folders in vim in folder structure, which makes it easier to open file and folder. After finished setting up:
 
 ![](assets/connecting-vim-with-golang_ac42721e6ddb17d3204d4596f55f96ce_md5.webp)

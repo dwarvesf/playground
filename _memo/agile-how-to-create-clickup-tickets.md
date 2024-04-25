@@ -1,13 +1,18 @@
 ---
 tags: 
   - agile
-title: Agile How To Create Clickup Tickets
+  - engineering
+  - performance
+  - tooling
+title: "Agile: How To Create ClickUp Tickets"
 date: 2016-05-04
-description: null
-authors: null
+description: To make sure everyone in the hood can understand the state of company task, the below fields are required to be filled...
+authors: 
+- han
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 To make sure everyone in the hood can understand the state of company task, the below fields are required to be filled:
@@ -29,7 +34,6 @@ Description
 Checklist: EXPECTED OUTPUT
 
 ### Definition of DONE
-
 Output
 * The real output after the ticket is closed
 * The output could be one of these

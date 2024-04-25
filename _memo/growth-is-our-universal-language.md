@@ -5,11 +5,13 @@ tags:
   - culture
 title: Growth Is Our Universal Language
 date: 2023-02-16
-description: null
-authors: null
+description: At Dwarves, the core team live and breathe growth. We believe that growth is our universal language, and we're always striving to improve ourselves, both personally and professionally. It's not just a job for us; it's a way of life. We're hustlers with an extra hat, always pushing ourselves to be better and earn more.
+authors: 
+- han
 menu: memo
-type: null
+type: memo
 hide_frontmatter: false
+hide_title: false
 author: Han 🐸
 ---
 
@@ -19,7 +21,7 @@ Every time we hire, we're looking for like-minded individuals who share our grow
 
 Everything we do is centered around growth discussions and opportunity-seeking as a team. We don't believe in playing too much the work-life balance card; instead, we're always on the lookout for new opportunities to elevate.
 
-### **70/50**
+### 70/50
 Our unspoken culture at Dwarves is called [70/50](https://github.com/dwarvesf/handbook/blob/master/what-we-value.md#7050), and it's all about growth and opportunity. We don't live by a 9-5 schedule; we're committed to putting in an extra 20-50% effort to grow ourselves after our day job is done. It's not mandatory, but it's encouraged. The extra effort we put in increases our chances of reaching new heights, and it's rewarded when the things we build hit the market and bring value to our customers.
 
 As a company that's purely based on technological know-how, we spend our free time on hobby projects or exploring new technologies. It's not just about building our skills; it's about developing our passion for growth.

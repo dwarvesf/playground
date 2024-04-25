@@ -1,13 +1,15 @@
 ---
 tags: 
   - pm
-title: An Alternative To Tm
+  - engineering
+title: "An Alternative To T&M"
 date: 2020-05-09
-description: null
+description: The phrase t&m has been laid to rest at Atomic for several reasons. First, the phrase doesn’t accurately describe how we engage with our clients. At Atomic, we certainly don’t work without profit. And we have an innate desire to be more efficient.
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 Vendors may use the phrase "time and materials" (T&M) to describe how they engage in projects and invoice their clients.
@@ -52,4 +54,4 @@ We push hard on our clients to build the right features, and build them to the r
 
 The right level of complexity is achieved by managing the depth, breadth and scope of features. When you represent your product in a story map, you can hit your project budget by subordinating the scope of total experiences (breadth), tasks within an experience (depth), and level of ease (polish).
 
-![[092695110fbd8d07129008b2f256b9d9_MD5.webp]]
+![](assets/an-alternative-to-t&m.png)
