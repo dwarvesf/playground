@@ -15,7 +15,7 @@ This is the 1st post of Devbox series includes
 
 - [Devbox #1: The world before Docker](https://memo.d.foundation/playground/_memo/devbox-a-world-before-docker)
 - [Devbox #2: Our Docker adoption and its challenges](https://memo.d.foundation/playground/_memo/devbox-docker-adoption-and-challenges)
-- [Devbox #3: The overview into Nix & how we use Devbox @ Dwawrves](https://memo.d.foundation/playground/_memo/devbox-nix-and-our-devbox-adoption)
+- [Devbox #3: The overview into Nix & how we use Devbox @ Dwarves](https://memo.d.foundation/playground/_memo/devbox-nix-and-our-devbox-adoption)
 
 ## The It-works-on-my-machine time
 

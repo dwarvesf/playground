@@ -1,9 +1,9 @@
 ---
 tags: 
   - tooling
-title: "Devbox #3: The overview into Nix & how we use Devbox @ Dwawrves"
+title: "Devbox #3: The overview into Nix & how we use Devbox @ Dwarves"
 date: 2024-04-24
-description: The overview into Nix & how we use Devbox @ Dwawrves
+description: The overview into Nix & how we use Devbox @ Dwarves
 authors: 
   - hnh
   - vhbien
@@ -16,7 +16,7 @@ This is the 3rd post of Devbox series includes
 
 - [Devbox #1: The world before Docker](https://memo.d.foundation/playground/_memo/devbox-a-world-before-docker)
 - [Devbox #2: Our Docker adoption and its challenges](https://memo.d.foundation/playground/_memo/devbox-docker-adoption-and-challenges)
-- [Devbox #3: The overview into Nix & how we use Devbox @ Dwawrves](https://memo.d.foundation/playground/_memo/devbox-nix-and-our-devbox-adoption)
+- [Devbox #3: The overview into Nix & how we use Devbox @ Dwarves](https://memo.d.foundation/playground/_memo/devbox-nix-and-our-devbox-adoption)
 
 In the previous session, that is [Devbox #2: Our Docker adoption and its challenges](https://memo.d.foundation/playground/_memo/devbox-docker-adoption-and-challenges) , we talked about “How Docker is adopted in my development team and its challenges encountered along the way?” And I also talked about a solution to separate us from Docker and containers in setup a local software development environment. And now, It is coming!
 
