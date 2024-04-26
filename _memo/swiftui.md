@@ -1,13 +1,15 @@
 ---
 tags: 
   - swift
-title: Swiftui
+  - UX-UI
+title: SwiftUI
 date: 2020-02-07
-description: null
+description:  This blog outlines my opinion about SwiftUI, such as how to layout views, handle user input, making a custom view, making a cross Apple platform apps, underlying architecture, integrate with UIKit (the old Apple UI framework). 
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 Introduces by Apple in WWDC 2019, Swift UI impressed the technophiles with its convenience, as Apple aimed to help developers conduct code easier and spend more time working on other modified functions. This blog outlines my opinion about SwiftUI, such as how to layout views, handle user input, making a custom view, making a cross Apple platform apps, underlying architecture, integrate with UIKit (the old Apple UI framework). It won't be expanded on an advanced level like fancy animation or proposing any best architecture we should follow. No. Just the basic ones.
@@ -43,7 +45,7 @@ If you have never heard about the FRP, you should definitely take a look at thos
 * [https://github.com/kickstarter/native-docs/blob/master/learning-rx.md](https://github.com/kickstarter/native-docs/blob/master/learning-rx.md)
 * [https://github.com/kickstarter/native-docs/blob/master/learning-rx.md](https://github.com/kickstarter/native-docs/blob/master/learning-rx.md)
 
-## Learn once, Apply anywhere
+## Learn once, apply anywhere
 Apple brought up SwiftUI with an important distinction: It's not a multi-platform framework. It's a framework to create apps on multiple platforms.
 
 It might sound confusing. The same thing happens when we first heard of Karl Marx's theory on capitalism. But here's a fact: Many parts of SwiftUI work great on iOS, but aren't available on macOS, or are designed specifically for watchOS and so aren't available anywhere else. Yet, the core of the apps can remain unchanged, but to build great apps that tailored for each Apple's platform, some platform-specific enhancement needs to be made.
@@ -96,16 +98,13 @@ struct SwiftUIView: View {
 
 These are the steps for SwiftUI to layout our UI.
 
-1. **Parent Proposes Size for Child**
-
+1. **Parent Proposes Size for Child**\
 First, the root view offers the text a proposed size – in this case, the entire safe area of the screen, represented by an orange rectangle.
 
-2. **Child Chooses its Size**
-
+2. **Child Chooses its Size**\
 Text only requires that much size to draw its content. The parent has to respect the child's choice. It doesn't stretch or compress the child.
 
-3. **Parent Places Child in Parent’s Coordinate Space**
-
+3. **Parent Places Child in Parent’s Coordinate Space**\
 And now the root view has to put the child somewhere, so it puts in right in the middle.
 
 **The stack layout process**
@@ -205,7 +204,7 @@ struct ProductsView: View {
 }
 ```
 
-**@Binding** provides reference like access for a value type. Sometimes we need to make the state of our View accessible for its children. But we can’t simply pass that value because it is a value type and Swift will pass the copy of that value. And this is where we can use **@Binding **Property Wrapper.
+**@Binding** provides reference like access for a value type. Sometimes we need to make the state of our View accessible for its children. But we can’t simply pass that value because it is a value type and Swift will pass the copy of that value. And this is where we can use **@Binding** Property Wrapper.
 
 **@ObserveObject** 
 
@@ -282,9 +281,11 @@ struct EpisodesView: View {
 }
 ```
 
-As you can see, we have to pass PodcastPlayer object via environmentObject modifier of our View. By doing this, we can easily access PodcastPlayer by defining it with **@EnvironmentObject** Property Wrapper. **@EnvironmentObject** uses dynamic member lookup feature to find PodcastPlayer class instance in the Environment, that’s why you don’t need to pass it via init method of EpisodesView. The Environment is the right way of Dependency Injection in SwiftUI. It works like magic.
+As you can see, we have to pass PodcastPlayer object via environmentObject modifier of our View. By doing this, we can easily access PodcastPlayer by defining it with **@EnvironmentObject** Property Wrapper. 
 
-**@Environment **
+**@EnvironmentObject** uses dynamic member lookup feature to find PodcastPlayer class instance in the Environment, that’s why you don’t need to pass it via init method of EpisodesView. The Environment is the right way of Dependency Injection in SwiftUI. It works like magic.
+
+**@Environment**
 
 ```javascript
 struct CalendarView: View {

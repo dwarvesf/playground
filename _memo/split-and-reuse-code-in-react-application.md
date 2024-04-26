@@ -1,13 +1,17 @@
 ---
 tags: 
   - engineering
-title: Split And Reuse Code In React Application
+  - react
+  - application
+title: Split and Reuse Code in React Application
 date: 2019-05-02
-description: null
-authors: null
+description: In some Vue.js, you got the feature that allows you to encapsulate state and methods into the package that you can easily insert to your component logic called mixins. What have we got in React.js?
+authors: 
+- phamngocnghia
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 ![](assets/split-and-reuse-code-in-react-application_5f86abdbff47c3d17d6258e3b001ceb8_md5.webp)
@@ -123,7 +127,7 @@ export default class HOCCOmponent extends React.Component {
 }
 ```
 
-React component has some reserve props and children is one it’s. It’s represent anything pass in this component
+React component has some reserve props and children is one it’s. It’s represent anything pass in this component.
 
 ![](assets/split-and-reuse-code-in-react-application_322e43365b34b2a13564d85a3adddcae_md5.webp)
 
@@ -179,9 +183,9 @@ export default App;
 This method has some trade back such as only components inside the HOC Component can only access the data.
 
 ## React hooks
-React hooks is the feature that has been implemented in react 16.8. There is one hook that is called useState hooks that allow storing state inside functional react component
+React hooks is the feature that has been implemented in react 16.8. There is one hook that is called useState hooks that allow storing state inside functional react component.
 
-If that component is used useState hook then It can return not just react component but can return anything it one. When it return component then it’s just normal component utilize react hook. When it return not react component then it behaves like the custom hook: store and process data inside it and return new data back
+If that component is used useState hook then It can return not just react component but can return anything it one. When it return component then it’s just normal component utilize react hook. When it return not react component then it behaves like the custom hook: store and process data inside it and return new data back.
 
 Remember that (custom) hooks must be used inside **a function react components.**
 
@@ -299,7 +303,7 @@ export default () => {
 ```
 
 ## Conclusion
-Not only store data, you can also process data, fetch data from remote source, connect to internal source inside HOC Component and useState hooks
+Not only store data, you can also process data, fetch data from remote source, connect to internal source inside HOC Component and useState hooks.
 
 React hooks used to be proposed specification but since react 16.8: the one with hooks, It’s has been made to become official feature so your guys can just use it sparingly to splitting your repetitive code into.
 

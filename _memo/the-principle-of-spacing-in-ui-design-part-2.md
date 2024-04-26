@@ -2,13 +2,17 @@
 tags: 
   - design
   - technique
-title: The Principle Of Spacing In Ui Design Part 2
+  - UX-UI
+  - practice
+title: The Principle of Spacing in UI Design Part 2
 date: 2018-11-01
-description: null
-authors: null
+description: Firstly, I start the simplest content type — paragraph. One of the atoms decides aesthetic design. So you need to focus on them. You commonly depend on default line-height of the font to design the content. I have increased line by 2px to 3px in this way because they are too tight.
+authors: 
+- anna
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 ## Vertical spacing
 ### Spacing within each paragraph
@@ -58,4 +62,3 @@ I used 8px for spacing between components with icons. It is a great number that 
 * Developers will become faster as they know all the rules of your spacing system.
 
 You can follow me on [https://dribbble.com/Anna23593](https://dribbble.com/Anna23593) and thank you for taking the time to read it.
-

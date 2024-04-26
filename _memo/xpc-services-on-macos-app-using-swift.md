@@ -2,13 +2,15 @@
 tags: 
   - macos
   - swift
-title: Xpc Services On Macos App Using Swift
+title: XPC Services on MacOS App Using Swift
 date: 2020-11-05
-description: null
-authors: null
+description: Before XPC we used to pick up Sockets and Mach Messages (Mach Ports).
+authors: 
+- trungphan
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 Before XPC we used to pick up Sockets and Mach Messages (Mach Ports).
@@ -17,7 +19,9 @@ Before XPC we used to pick up Sockets and Mach Messages (Mach Ports).
 The XPC mechanism offers an alternative to sockets (or Mach Services using MIG) for IPC. We could have, for example, a process that acts as a “server” waiting for clients to access its API and provide some service.
 
 ## XPC Services on applications
-When we talk about XPC Services (capital ‘S’), we are referring to the bundle called XPC Service. Bundles in Apple ecosystem refers to entities represented by a specific directory structure. The most common Bundle you encounter are Application Bundles. If you right-click on any application (For example Chess.app) and select Show content, what you’ll find is a directory structure. Back to XPC, applications can have may XPC Service bundles. You’ll find them inside the Contents/XPCServices/ directory inside the application bundle. Yo can search in your /Applications directory and see how many of the applications rely on XPC Services.
+When we talk about XPC Services (capital ‘S’), we are referring to the bundle called XPC Service. Bundles in Apple ecosystem refers to entities represented by a specific directory structure. The most common Bundle you encounter are Application Bundles. If you right-click on any application (For example Chess.app) and select Show content, what you’ll find is a directory structure. 
+
+Back to XPC, applications can have may XPC Service bundles. You’ll find them inside the Contents/XPCServices/ directory inside the application bundle. Yo can search in your /Applications directory and see how many of the applications rely on XPC Services.
 
 You can also have XPC Services inside Frameworks (Which are another type of Bundle).
 
@@ -36,7 +40,6 @@ XPC Service can be stopped if it has been idle for a long time, or be spawned on
 launchd has information about system-wide resource availability and memory pressure, who best to make decisions on how to most effectively use our system’s resources than launchd
 
 ## Implement XPC Services
-
 ### Creating the Service
 An XPC service is a bundle in the Contents/XPCServices directory of the main application bundle; the XPC service bundle contains an Info.plist file, an executable, and any resources needed by the service. The XPC service indicates which function to call when the service receives messages by calling xpc_main(3) Mac OS X Developer Tools Manual Page from its main function.
 
@@ -148,7 +151,7 @@ myConnection.remoteObjectInterface = myCookieInterface;
 [myConnection resume];
 ```
 
-Note: For communicating with XPC services outside your app bundle, you can also configure an XPC connection with the initWithMachServiceName: method.
+**Note:** For communicating with XPC services outside your app bundle, you can also configure an XPC connection with the initWithMachServiceName: method.
 
 ![](assets/xpc-services-on-macos-app-using-swift_87c72866837ca130efa881629660714f_md5.webp)
 

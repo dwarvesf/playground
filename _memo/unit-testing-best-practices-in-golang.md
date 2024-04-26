@@ -6,17 +6,18 @@ tags:
   - go
 title: Unit Testing Best Practices In Golang
 date: 2023-04-11
-description: null
-authors: null
+description: In this article, we will explore the techniques for crafting effective tests in Go, discussing best practices for writing unit tests and utilizing mocks to achieve better isolation.
+authors: 
+- Tay Nguyen
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 *One common issue we often tackle in backend engineering is writing test cases. In this article, we will explore the techniques for crafting effective tests in Go, discussing best practices for writing unit tests and utilizing mocks to achieve better isolation. Although our primary focus lies in unit testing-related practices, it is important to note that Golang also supports integration testing. We will also tackle the subject of integration testing in a future article, where we will examine the details and best practices for integration testing in Golang.*
 
 ## Introduction
-
 ### Importance of testing in software development
 Testing is crucial in software development to catch bugs and errors, ensure maintainability and modularity, and improve security, and overall software quality. With the rise of cybersecurity threats, testing is becoming increasingly important to ensure software systems are secure and reliable.
 
@@ -25,15 +26,15 @@ What follows is a non-comprehensive list of the benefits you get from adopting u
 * **Unit tests enable earlier bug detection and resolution**
 * **Your suite of unit tests becomes a safety net for developers**
 
-A comprehensive suite of unit tests can act as a safety net for developers. By frequently running the tests, they can assure their recent modifications to the code haven’t broken anything
+  - A comprehensive suite of unit tests can act as a safety net for developers. By frequently running the tests, they can assure their recent modifications to the code haven’t broken anything
 
-* Unit tests can contribute to higher code quality
+* **Unit tests can contribute to higher code quality**
 
-**This item is a natural consequence of the previous one. Since unit tests act as a safety net, developers become more confident when changing the code. They can refactor the code without fear of breaking things, driving the general quality of the codebase up.
+  - This item is a natural consequence of the previous one. Since unit tests act as a safety net, developers become more confident when changing the code. They can refactor the code without fear of breaking things, driving the general quality of the codebase up.
 
 * **Detect code smells in your codebase**
 
-If the ease of adding unit tests to a codebase is a good sign, the opposite is also true. Having a hard time creating unit tests for a given piece of code might be a sign of code smells in the code—e.g. functions that are too complex.
+  - If the ease of adding unit tests to a codebase is a good sign, the opposite is also true. Having a hard time creating unit tests for a given piece of code might be a sign of code smells in the code—e.g. functions that are too complex.
 
 ### Overview of Golang Testing Framework
 The Golang testing package offers a user-friendly framework to create unit tests, benchmarks, and examples, streamlining the development process in Golang by enabling execution from the command line. Package testing allows for a variety of test types, including performance, parallel, and functional testing, as well as any combination these.
@@ -41,7 +42,7 @@ The Golang testing package offers a user-friendly framework to create unit tests
 **Steps for writing test suite in Golang:**
 * Create a file whose name ends with _test.go
 * Import package testing by import “testing” command
-* Write the test function of form* *<u>*func TestXxx(*testing.T)*</u> which uses any of Error, Fail, or related methods to signal failure.
+* Write the test function of form **func TestXxx(testing.T)** which uses any of Error, Fail, or related methods to signal failure.
 * Put the file in any package.
 * Run command go test
 
@@ -66,7 +67,6 @@ func TestYourFunc(t *testing.T) {
 ```
 
 ## Strategies for Writing Effective Tests
-
 ### Make your code testable and easy to test
 When working on code projects, developers often devote a large portion of their time to choosing the right frameworks, libraries, databases, and other third-party components, while the importance of testing is sometimes overlooked. 
 
@@ -80,6 +80,7 @@ Proper testing actually makes your project better because it encourages you to:
 One of the most important of a good test is easy to read and maintain, it should be taken in mind as important as implementing:
 
 **Naming test case**
+
 The name of your test should consist of three parts:
 * The name of the method being tested.
 * The scenario under which it's being tested.
@@ -90,6 +91,7 @@ Examples:
 * Good naming: `Should returns same number WHEN input single number`, `Should returns 0 WHEN emtpy string`
 
 **Table driven testing**
+
 A test can quickly become unreadable, repetitive, and overall annoying when the function you want to test is handling too many tasks, especially when there are many different cases you want to test, for example:
 
 ```go
@@ -138,6 +140,7 @@ func TestHadAGoodGame(t *testing.T) {
 When writing tests, it's important to use interfaces and avoid file I/O and API calls wherever possible. You want your tests to be fast, independent, isolated, consistent, and not flaky. Here are some best practices to keep in mind:
 
 **Use interfaces**
+
 By using interfaces, you can decouple your code from its dependencies, making it easier to test in isolation. Instead of calling concrete implementations, you can call interfaces that define the behavior you need, for example: 
 
 ```go
@@ -149,6 +152,7 @@ type repository interface {
 ```
 
 **Mock dependencies**
+
 To test code that relies on external dependencies, use mocks to simulate the behavior of those dependencies. This approach allows you to test your code in isolation, without relying on external resources.
 
 ```go
@@ -182,6 +186,7 @@ func Test_getFromDB(t *testing.T) {
 ```
 
 **Avoid API calls**
+
 Like file I/O, API calls can be slow and unreliable, making it difficult to test code that relies on them. Instead, consider using interfaces to abstract away API calls and using mocks to simulate API responses during testing.
 
 ```go

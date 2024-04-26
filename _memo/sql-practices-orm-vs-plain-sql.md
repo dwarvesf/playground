@@ -2,13 +2,15 @@
 tags: 
   - SQL
   - database
-title: Sql Practices Orm Vs Plain Sql
+  - practice
+title: "SQL Practices: ORM vs Plain SQL"
 date: 2021-07-07
-description: null
+description: "Raw: make all query by self from scratch ORM: Object relational mapping: programing technique for converting data between incompatible type systems using OOP. SQL Generator: utility sql tool for generate Entity model, query."
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Definition

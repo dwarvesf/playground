@@ -1,18 +1,24 @@
 ---
 tags: 
   - testing
+  - research
+  - case-study
+  - design
 title: Remote Moderated Usability Testing
 date: 2020-05-10
-description: null
-authors: null
+description: It's a given that the Usability Test is one of the most fundamental undertakings in building a product, which assists with approving the product before launching, reducing effort, and money. Notwithstanding, in the Covid-19 pandemic, it's difficult to direct a convenience testing up close and personal.
+authors: 
+- Ly Nguyen
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
 hide_title: false
 ---
 
 ## Intro
-It's a given that the Usability Test is one of the most fundamental undertakings in building a product, which assists with approving the product before launching, reducing effort, and money. Notwithstanding, in the Covid-19 pandemic, it's difficult to direct a convenience testing up close and personal. Many agencies, including Dwarves Design, are new to the remote testing methods. During the last Work From Home session, our team had an opportunity to make a remote moderated usability testing, although it was the very first time we try this method, the testing went smoothly and we really had an interesting experiment.
+It's a given that the Usability Test is one of the most fundamental undertakings in building a product, which assists with approving the product before launching, reducing effort, and money. Notwithstanding, in the Covid-19 pandemic, it's difficult to direct a convenience testing up close and personal. 
+
+Many agencies, including Dwarves Design, are new to the remote testing methods. During the last Work From Home session, our team had an opportunity to make a remote moderated usability testing, although it was the very first time we try this method, the testing went smoothly and we really had an interesting experiment.
 
 ## Our project
 ### About Purchasing Care
@@ -31,15 +37,15 @@ In this article, we would like to share about the testing of the MVP version of 
 ### Our solution
 * Provide a search engine, which provides detailed information about most B2B companies in Vietnam. This product also recommends suitable suppliers, based on specific requirements of each product.
 
-![](assets/remote-moderated-usability-testing_ba8cd8431044e571ad786c4f3b208125_md5.webp)
+ ![](assets/remote-moderated-usability-testing_ba8cd8431044e571ad786c4f3b208125_md5.webp)
 
 * Potential suppliers list to manage suitable suppliers and send inquiries to each or all of them at the same time.
 
-![](assets/remote-moderated-usability-testing_9b9fbacb59ea16e62b05e8a8cd7d461a_md5.webp)
+ ![](assets/remote-moderated-usability-testing_9b9fbacb59ea16e62b05e8a8cd7d461a_md5.webp)
 
 * Management dashboard to track the performance of each employee and the project’s progress. In addition, managers can report expenses to the financial department.
 
-![](assets/remote-moderated-usability-testing_096e90b331b560e88f267337c92af6a4_md5.webp)
+ ![](assets/remote-moderated-usability-testing_096e90b331b560e88f267337c92af6a4_md5.webp)
 
 ## Method
 ### Goal
@@ -129,14 +135,14 @@ There were many things to consider after each session, and it's hard to remember
 Since it was the first time trying moderated remote usability testing, we did make some mistakes. On top of that, we had some lessons learned and tips from our experience and other experts.
 
 * Before the testing session, end participants a document that contains:
-* Basic demographic question
-* A table of contents
-* Task scenarios
-* Estimation time
+  * Basic demographic question
+  * A table of contents
+  * Task scenarios
+  * Estimation time
 
 It's much easier for them to figure out the test and prepare their answers.
 
-* **Make a plan** Set specific and clear goals. Be sure all team members agree to the plan. Ensure the subject and focal point of the test are suitable for uncovering answers to the questions at hand.
+* **Make a plan**: set specific and clear goals. Be sure all team members agree to the plan. Ensure the subject and focal point of the test are suitable for uncovering answers to the questions at hand.
 * Do product testing several times before usability testing. The "bug" affects user experience and the result of performing tasks, it also causes difficulties for moderators.
 * In the middle of the test, our product had some problems while participants were doing his task. We had to ask the development team for support. In the meantime, we conducted him to the next task and back to the current task after it was fixed.
 * While participants doing their tasks, try to focus on their behavior to find the "point" bringing them to struggle. Concentrate on their gesture, hesitation, what they said while doing tasks... and note them down. Ask them whether they are having trouble and try to complete the task once again.
@@ -147,4 +153,4 @@ It's much easier for them to figure out the test and prepare their answers.
 ## Conclusion
 Thanks to the usability test, we were able to address the user's trouble. It lets us improve the information architecture and visual hierarchy along with product performance to bring users a better experience. This reduces their effort and time to the minimum, which, in return, should drive more sales.
 
-As we have no idea when the Covid-19 pandemic is over and work from home is strongly recommended, it's the right time to adopt some remote methods in UX design, including Remote Moderated Usability Testing. Although there are some drawbacks, it's still a good solution for our team, client, and test participants
+As we have no idea when the Covid-19 pandemic is over and work from home is strongly recommended, it's the right time to adopt some remote methods in UX design, including Remote Moderated Usability Testing. Although there are some drawbacks, it's still a good solution for our team, client, and test participants.

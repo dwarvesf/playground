@@ -3,17 +3,24 @@ tags:
   - engineering
   - web
   - technique
+  - frontend
 title: Why We Chose Our Tech Stack Accelerating Development With A Robust Frontend Solution
 date: 2023-03-20
-description: null
-authors: null
+description: In this article, we'll discuss the key components of our tech stack and explain how they contribute to our ability to develop high-quality, scalable applications at lightning-fast speeds.
+authors: 
+- thanhpham
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 author: Thanh Pham
 ---
 
-At Dwarves Foundation, we pride ourselves on being a team of seasoned technology experts, passionate about crafting innovative solutions for our clients. With years of experience in the technology industry, we understand the importance of selecting the right tools and technologies to deliver exceptional results. In today's fast-paced world, staying ahead of the competition requires building and deploying features quickly without sacrificing quality or stability. When selecting a technology for our frontend tech stack, the foremost question we ask is: "Has this technology achieved a certain level of stability and maturity?" Quick wins are important, but truly transformative products, teams, and infrastructures require years of sustained effort. In this article, we'll discuss the key components of our tech stack and explain how they contribute to our ability to develop high-quality, scalable applications at lightning-fast speeds.
+At Dwarves Foundation, we pride ourselves on being a team of seasoned technology experts, passionate about crafting innovative solutions for our clients. With years of experience in the technology industry, we understand the importance of selecting the right tools and technologies to deliver exceptional results. 
+
+In today's fast-paced world, staying ahead of the competition requires building and deploying features quickly without sacrificing quality or stability. When selecting a technology for our frontend tech stack, the foremost question we ask is: "Has this technology achieved a certain level of stability and maturity?" Quick wins are important, but truly transformative products, teams, and infrastructures require years of sustained effort. 
+
+In this article, we'll discuss the key components of our tech stack and explain how they contribute to our ability to develop high-quality, scalable applications at lightning-fast speeds.
 
 ## Basic building blocks
 ![](assets/why-we-chose-our-tech-stack-accelerating-development-with-a-robust-frontend-solution_974445b14fdc44d726716ff2a1c499a0_md5.webp)

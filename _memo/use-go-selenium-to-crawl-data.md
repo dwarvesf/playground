@@ -1,13 +1,16 @@
 ---
 tags: 
   - go
+  - data
+  - programming
 title: Use Go Selenium To Crawl Data
 date: 2016-06-02
-description: null
+description: Crawl is a widespread issue occurring in making software. News, discount news, film ticket, etc are some examples of crawl.
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ![](assets/use-go-selenium-to-crawl-data_f963144e3cfac24481dbfeb02cf6a0e6_md5.webp)

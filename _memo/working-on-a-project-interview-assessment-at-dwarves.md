@@ -5,13 +5,14 @@ tags:
   - community
 title: Working On A Project Interview Assessment At Dwarves
 date: 2023-06-08
-description: null
-authors: null
+description: I had my fair share of interviews. Most of them are "traditional" QnA sessions, and unpaid take-home projects, and coding assessments. Dwarves's paid project is different and left a good impression on me.
+authors: 
+- Thanh Nguyen
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
-<!-- table_of_contents a2f93f20-d45e-4906-92a7-66296b684356 -->
 
 I had my fair share of interviews. Most of them are "traditional" QnA sessions, and unpaid take-home projects, and coding assessments. Dwarves's paid project is different and left a good impression on me.
 

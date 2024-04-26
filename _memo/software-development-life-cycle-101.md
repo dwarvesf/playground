@@ -1,13 +1,16 @@
 ---
 tags: 
-  - SDLC
+  - software
+  - researching
 title: Software Development Life Cycle 101
 date: 2020-05-19
-description: null
-authors: null
+description: This workshop contains the basic knowledge on Software Development Life Cycle, provides people with a step-to-step guideline and the artifacts which will be created on the way. We don't dive in the details. Instead, we treat it as an overview look on how to build software successfully.
+authors: 
+- Thanh Pham
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 This workshop contains the basic knowledge on Software Development Life Cycle, provides people with a step-to-step guideline and the artifacts which will be created on the way. We don't dive in the details. Instead, we treat it as an overview look on how to build software successfully.
@@ -51,8 +54,10 @@ The secret sauce of a successful project lies in the answer to those questions:
 * Which step should we do next?
 
 So which steps are we talking about?
+
 We're talking about the Software Development Life Cycle, which sounds familiar to all CS, CE folks.
 For the rest of us who take a nap in class-time or for those who are new in the field, Software Development Life Cycle (SDLC) refers to a methodology with clearly defined processes for producing software with the highest quality and lowest cost in the shortest time possible.
+
 SDLC provides a well-structured flow of phases that help an organization to quickly produce high-quality software which is well-tested and ready for production use.
 
 In detail, the SDLC methodology focuses on the following phases of software development:
@@ -70,6 +75,7 @@ Let's take a look back on what we have learned and how this methodology could gu
 
 ### Requirement Analysis
 “What are the current problems? What are we gonna build?” This stage of the SDLC means getting input from all stakeholders, including customers, salespeople, industry experts, and programmers. Learn the strengths and weaknesses of the current system with improvement as the goal.
+
 Business-oriented is a key in this stage. There are plenty of technique being used **(Lean Canvas, AARRR Framework, Industry Research, User Research, Competitor Analysis, Personas, Problem Statement, User Journey Mapping)** and with a lot of deliverables to analyze requirements and validate the business model that the software aims to empower.
 
 The two most important artifacts of this stage that need to be well-documented is
@@ -88,6 +94,7 @@ Those two will be generated with the agreement between **Product Managers, UX re
 We need a plan (obviously) after the requirement analysis phase complete.
 
 “What do we want?” In this stage of the SDLC, the team determines the required cost and resources for implementing the analyzed requirements. It also details the risks involved and provides sub-plans for softening those risks.
+
 In other words, the team should determine the feasibility of the project and how they can implement the project successfully with the lowest risk in mind.
 
 > #Why: To manage project constraints: (or we will fail real damn fast)
@@ -112,7 +119,7 @@ Based on the produced artifacts (AARRR Funnel, Project scope, Product roadmap...
 
 “How will we get what we want?” This phase starts by turning the software specifications into a design plan called the Design Specification. All stakeholders then review this plan and offer feedback and suggestions. It’s crucial to have a plan for collecting and incorporating stakeholder input into this document. Failure at this stage will almost certainly result in cost overruns at best and the total collapse of the project at worst.
 
-The list below is just as general as possible but those artifacts are the least we could have after finishing System Design stage
+The list below is just as general as possible but those artifacts are the least we could have after finishing System Design stage.
 
 **Information Architecture Design** (IA): The foundation of information which will be presented to connect the user to the content they're looking for when using the software.
 
@@ -129,7 +136,7 @@ The roles
 * Visual Designer
 
 ### Implementation
-> #“Let’s create what we want.”
+> “Let’s create what we want.”
 
 At this stage, the actual development starts. Every developer must stick to the agreed blueprint. Also, make sure you have proper guidelines in place about the code style and practices.
 

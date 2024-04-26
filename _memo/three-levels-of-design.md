@@ -1,13 +1,18 @@
 ---
 tags: 
   - design
-title: Three Levels Of Design
+  - UX-UI
+  - practice
+  - research
+title: Three Levels of Design
 date: 2018-03-21
-description: null
-authors: null
+description: Don Norman in his book titled *The Design of Everyday Things* talks about three levels of design — Visceral Level, Behavioral Level and Reflective Level — on how they work together and play an important role in determining how people like or dislike the product. In other words, these three levels together determine...
+authors: 
+- anna
 menu: memo
-type: null
+type: memo
 hide_frontmatter: false
+hide_title: false
 ---
 
 Don Norman in his book titled *The Design of Everyday Things* talks about three levels of design — Visceral Level, Behavioral Level and Reflective Level — on how they work together and play an important role in determining how people like or dislike the product. In other words, these three levels together determine whether your product is successful or not.
@@ -18,7 +23,7 @@ Visceral Level is about...
 ### First impression
 [First impression is the best impression](http://en.wikipedia.org/wiki/First_impression_%28psychology%29). Working on building a great on-boarding experience helps you tell your users what your product is all about and make them like your product. It is about telling the story of why users should use your product.
 
-### Attraction*
+### Attraction
 The more attractive (pretty) your product is the more chances you are going to get users’ immediate attention. Its when you hear users say, “WoW! Look at that!”
 
 ### Immediate emotional impact
@@ -48,4 +53,3 @@ The joy users get using your product that lasts forever.
 
 ### Overall impression of the product
 The more users like the product, the more they are going to keep using it. Not only use it, but recommend it to others.
-

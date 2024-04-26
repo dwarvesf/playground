@@ -2,17 +2,20 @@
 tags: 
   - swift
   - macos
-title: Uidynamicanimator
+  - iOS
+title: UIDynamicAnimator
 date: 2019-07-26
-description: null
+description: A **dynamic item is any iOS or custom object that conforms to the [UIDynamicItem](https://developer.apple.com/documentation/uikit/uidynamicitem) protocol.
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
 ---
 
 ## Definition
-A **dynamic item** is any iOS or custom object that conforms to the [UIDynamicItem](https://developer.apple.com/documentation/uikit/uidynamicitem) protocol. The [UIView](https://developer.apple.com/documentation/uikit/uiview) and [UICollectionViewLayoutAttributes](https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes) classes implement this protocol in iOS 7 and later. You can implement this protocol to use a dynamic animator with custom objects for such purposes as reacting to rotation or position changes computed by an animator.
+A **dynamic item** is any iOS or custom object that conforms to the [UIDynamicItem](https://developer.apple.com/documentation/uikit/uidynamicitem) protocol. 
+
+The [UIView](https://developer.apple.com/documentation/uikit/uiview) and [UICollectionViewLayoutAttributes](https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes) classes implement this protocol in iOS 7 and later. You can implement this protocol to use a dynamic animator with custom objects for such purposes as reacting to rotation or position changes computed by an animator.
 
 To use dynamics, configure one or more dynamic behaviors—including providing each with a set of dynamic items—and then add those behaviors to a dynamic animator.
 
@@ -36,7 +39,6 @@ The three ways to initialize an animator, the dynamic items you can then use, an
 * A collection view animator automatically calls the [invalidateLayout()](https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617728-invalidatelayout) method as needed, and automatically pauses and resumes animation, as appropriate, when you change a collection view’s layout.
 * To employ a dynamic animator with other objects that conform to the [UIDynamicItem](https://developer.apple.com/documentation/uikit/uidynamicitem)protocol, create an animator with the inherited [init()](https://developer.apple.com/documentation/objectivec/nsobject/1418641-init) method. The resulting animator employs an abstract coordinate system, not tied to the screen or to any view.
 * There is no reference boundary to refer to when defining a collision boundary for use with this sort of animator. However, you can still, in a collision behavior, specify custom boundaries as described in [UICollisionBehavior](https://developer.apple.com/documentation/uikit/uicollisionbehavior).
-* 
 
 All types of dynamic animators share the following characteristics:
 * Each dynamic animator is independent of other dynamic animators you create

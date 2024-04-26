@@ -1,13 +1,15 @@
 ---
 tags: 
   - html
-title: Using Correct Html Element To Increase Website Accessibility
+  - web
+title: Using Correct HTML Element To Increase Website Accessibility
 date: 2019-08-23
-description: null
+description: Website Accessibility is a term for approaching a website of which the potential user are people with disabilities (eye disorders or illiterate). This audience type can’t be able to approach a visualize website. They must depend on keyboard or Screen Reader supporting tool instead.
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Website Accessibility

@@ -1,16 +1,20 @@
 ---
 tags: 
   - go
-title: Slice And Array In Golang
+  - programming
+  - software
+title: Slice and Array in Golang
 date: 2018-03-13
-description: null
-authors: null
+description: In Go language, the terminology Array has a bit different from another language like C, JS, ... In Go, the array has a fixed length and type. Take a look of array implementation in Go.
+authors: 
+- hnh
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
-### Array
+## Array
 **TL;DR:**
 The different between array in Go and C:
 
@@ -63,7 +67,7 @@ For representation for an array of [4]int in memory is for integer value laid ou
 
 So, in Go, the array is values. An array variable holds the entire array (not a pointer to the first element). Let's say the array is a struct ( but using index instead of named field). Because an array is not a pointer to the first element, so when we assign, pass an array to a function, it will make a copy of its content
 
-### Slice
+## Slice
 In Go code, we don't often see array because of its inflexible, slice - on the other hand - is everywhere. Slice is an abstraction built on top the array. Unlike the Array, Slice type has no specified length; you can declare a slice like an array but `without the count element`.
 
 ```go

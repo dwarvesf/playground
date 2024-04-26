@@ -1,13 +1,16 @@
 ---
 tags: 
   - design
+  - web
 title: Understanding An Application Design
 date: 2021-07-09
-description: null
-authors: null
+description: Requested by our Apprentices, and hosted by Thanh Pham - our Head of Web. Understanding an Application Design is the upfront work for every web project. An application design consists of different main parts, which we highlighted a few below..
+authors: 
+- Thanh Pham
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 Requested by our Apprentices, and hosted by Thanh Pham - our Head of Web. Understanding an Application Design is the upfront work for every web project. An application design consists of different main parts, which we highlighted a few below.

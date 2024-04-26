@@ -1,12 +1,16 @@
 ---
 tags: 
   - remote
+  - employee
+  - team
+  - performance
 title: Remote Prepare And Get Going
 date: 2016-01-15
-description: null
-authors: null
+description: remote working checklist
+authors: 
+- han
 menu: memo
-type: null
+type: handbook
 hide_frontmatter: false
 hide_title: false
 ---

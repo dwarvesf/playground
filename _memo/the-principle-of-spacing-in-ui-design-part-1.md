@@ -2,13 +2,17 @@
 tags: 
   - design
   - technique
-title: The Principle Of Spacing In Ui Design Part 1
+  - UX-UI
+  - practice
+title: The Principle of Spacing in UI Design Part 1
 date: 2018-01-18
-description: null
-authors: null
+description: Before I talk about spacing principle, you should know how spacing important is with our design...
+authors: 
+- anna
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Why is spacing important?
@@ -25,4 +29,3 @@ Spacing has not only an impact directly on this factors but also on aesthetics d
 Now let’s check the below example:
 
 ![](assets/the-principle-of-spacing-in-ui-design-part-1_cdf0d4d3eccb21431ec5e9c04b336c24_md5.webp)
-

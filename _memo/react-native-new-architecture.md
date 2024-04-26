@@ -5,15 +5,15 @@ tags:
   - radio
 title: React Native New Architecture
 date: 2022-06-14
-description: null
+description: Introducing react-native's new architecture changes that boost performance, bringing react-native back into the race with Flutter.
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
 hide_title: false
 ---
 
-Introducing react-native's new architecture changes that boost performance, bringing react-native back into the race with Flutter
+Introducing react-native's new architecture changes that boost performance, bringing react-native back into the race with Flutter.
 
 ![](assets/react-native-new-architecture_ca02c7ac30b22ad423bf3285f8cdaa16_md5.webp)
 
@@ -26,10 +26,10 @@ We will find out what changes this new architecture have made to improve the per
 
 The content of the post will include the following main sections:
 
-1. **Old architecture of react-native 
-1. **What's new in New Architecture 
-1. **Fabric - JSI - Turbo module  
-1. **Migrate to the new architecture? 
+1. Old architecture of react-native 
+2. What's new in New Architecture 
+3. Fabric - JSI - Turbo module  
+4. Migrate to the new architecture? 
 
 ## Old architecture of react-native 
 Basically, the old react-native architecture was standing on 3 threads running in parallel
@@ -70,7 +70,7 @@ Threads based on a JSON signal stream get sent over a Bridge asynchronously, but
 
 ![](assets/react-native-new-architecture_08f9602cedbc58744cf72fc3580bf068_md5.webp)
 
-ReactElementTree (JavaScript) --> ReactShadowTree(C++) --> HostViewTree(Native) 
+*ReactElementTree (JavaScript) --> ReactShadowTree(C++) --> HostViewTree(Native)*
 
 ## JSI - JavaScript Interface
 Through the JSI, Native methods will be exposed to JavaScript via C++ Host Objects. JavaScript can hold a reference to these objects. And can invoke the methods directly using that reference.
@@ -89,11 +89,11 @@ Through the JSI, Native methods will be exposed to JavaScript via C++ Host Objec
 
 ## The advantages of the New architecture
 1. Huge performance gains for your react-native apps
-1. Better app launch time
-1. Shorter app development time
-1. The possibility to use it for large system goals (with all that C++ power at your disposal)
+2. Better app launch time
+3. Shorter app development time
+4. The possibility to use it for large system goals (with all that C++ power at your disposal)
 
-# Should I migrate to the new architecture?
+## Should I migrate to the new architecture?
 Not yet!
 
 There are many libraries that support new architectures (Fabric not yet), for example reanimated library is an important animation library in react-native community, it doesn't support Fabric yet leading to many other UI libraries like gorhom/react-native-bottom-sheet also get error. 

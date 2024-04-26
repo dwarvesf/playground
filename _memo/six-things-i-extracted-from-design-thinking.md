@@ -1,12 +1,16 @@
 ---
 tags: 
   - design-thinking
+  - design
+  - practice
+  - UX-UI
 title: Six Things I Extracted From Design Thinking
 date: 2021-04-14
-description: null
-authors: null
+description: Six months of applying Design Thinking in real life turns out to be the best investment of my time and effort, for all the positive changes I’ve got (and documented). Cue this article.
+authors: 
+- minhtruong
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
 ---
 
@@ -71,9 +75,9 @@ Relying on knowledge, context, and data to make decisions helps us avoid being b
 
 Usually, we would think coming to a decision is the end of it. But as designers who solve problems using Design Thinking, we know tracking the effectiveness of our decisions is just as important as making decisions.
 
-> "The greatest originals are the ones who fail the most, because they're the ones who try the most," --Adam Grant--
+> "The greatest originals are the ones who fail the most, because they're the ones who try the most," Adam Grant.
 
-Testing and checking are not a waste of time, they are a way of improvement. Without testing and checking, we would never be able to know how to make better decisions
+Testing and checking are not a waste of time, they are a way of improvement. Without testing and checking, we would never be able to know how to make better decisions.
 
 ## Change. Adapt. Evolve
 ![](assets/six-things-i-extracted-from-design-thinking_a312bb97ae7e137118339c676689e1dc_md5.webp)

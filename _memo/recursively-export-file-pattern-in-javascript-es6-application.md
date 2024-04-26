@@ -1,12 +1,15 @@
 ---
 tags: 
   - js
-title: Recursively Export File Pattern In Javascript Es6 Application
+  - javascript
+  - programming
+title: Recursively Export File Pattern In Javascript ES6 Application
 date: 2019-09-07
-description: null
-authors: null
+description: I implemented those packages to automation the create export file job. It’s work with any ES6 Code (React, Vue) as long as you provide a correct babel configuration file for @babel/core parsed the code properly.
+authors: 
+- phamngocnghia
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
 hide_title: false
 ---
@@ -32,7 +35,7 @@ Instead of importing component like above. You would want to import your compone
 ## Implementation
 To implement this style, We use re-export statement which is all feature of Javascript ES6: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
-It’s syntax like bellow. All named export or all export data from the module, whose path is something, will re-export from the file that use re-export syntax
+It’s syntax like bellow. All named export or all export data from the module, whose path is something, will re-export from the file that use re-export syntax.
 
 ```javascript
 export {named export} from 'somthing'
@@ -47,7 +50,7 @@ In this example, I have a folder named component in the root folder. In the fold
 
 Inside that folder also have `nested-component1` and `nested-component2`.
 
-Let’s say from the app component in the directory I want to import component1,2; nested-component1,2. I have to import it like this
+Let’s say from the app component in the directory I want to import component1,2; nested-component1,2. I have to import it like this:
 
 ```javascript
 import React from "react";
@@ -97,6 +100,7 @@ import { component1 as Component1, component2 as Component2, NestedComponent1, N
 
 ## @Autogen-export Package
 I implemented those packages to automation the create export file job. It’s work with any ES6 Code (React, Vue) as long as you provide a correct babel configuration file for @babel/core parsed the code properly.
+
 Auto-generate-export file is a utility tool which generates index file exported all of Its child folder (that contain exportable index file) and child file.
 
 It’s work with Typescript, Javascript ES6. It has many configurable options that allow you to tweak all of Its aspects:
@@ -112,4 +116,4 @@ It has been published as an NPM package.
 
 I also created examples on how to use those packages: [https://github.com/phmngocnghia/AutoGenerateReExportFile/tree/master/examples](https://github.com/phmngocnghia/AutoGenerateReExportFile/tree/master/examples)
 
-What do you think about this pattern? Please express your idea
+What do you think about this pattern? Please express your idea.

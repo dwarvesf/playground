@@ -2,14 +2,16 @@
 tags: 
   - security
   - engineering
-  - dwarves
-title: The Key Of Security Mechanisms In Tackling Cyber Threats
+  - tech-event
+title: The Key of Security Mechanisms in Tackling Cyber Threats
 date: 2022-12-26
-description: null
-authors: null
+description: Hosted by Thanh Pham - Engineering Manager, Dwarves had a great time with the best minds in cybersecurity- Mr. Hieu PC to share his knowledge and experience. As someone who is always looking to improve skills, this event is extremely valuable. We learned a lot about the different elements of cybersecurity and how to better protect our code.
+authors: 
+- innno_
 menu: memo
-type: null
+type: recap
 hide_frontmatter: false
+hide_title: false
 ---
 
 *Hosted by Thanh Pham - Engineering Manager, Dwarves had a great time with the best minds in cybersecurity- Mr. Hieu PC to share his knowledge and experience. As someone who is always looking to improve skills, this event is extremely valuable. We learned a lot about the different elements of cybersecurity and how to better protect our code.*
@@ -22,19 +24,18 @@ There is a common misconception amongst programmers that product development is 
 Product development is an ongoing process that should never be considered complete. As new threats emerge, security vulnerabilities are discovered and new features are added, the product must continue to evolve to stay ahead of the curve. Failing to do so can have serious consequences for the project, the client, and the company.
 
 ### Elements of cybersecurity
-
 Cybersecurity is divided into four elements: credibility, intellectual property rights, computer abuse, and competence. Protecting customer data will increase the company's reputation. A company that has leaked user information has a very high rejection rate (30%). In this day and age, safeguarding your online presence is essential to maintaining a good reputation. 
 
 Customers are becoming more and more aware of the importance of their data security, and they will not hesitate to take their business elsewhere if they feel their information is at risk. By investing in a strong cybersecurity infrastructure, you can give your customers the peace of mind they need to stay with you for the long haul.
 
 ### Security should be built in, not bolt-on
-
 Security should be baked into every product, not bolted on as an afterthought. Too often, companies focus on making money and growth and forget about the importance of security. This guide will outline some of the most important aspects of security that businesses need to keep in mind.
 Firstly, it is essential to have security measures in place from the very beginning. It is much easier and more cost-effective to prevent attacks than it is to try to fix things after an attack has already happened. 
 
 Secondly, always check for security errors and vulnerabilities. Even the most well-protected systems can have weak points that hackers can exploit. 
 
 Thirdly, build a strong infrastructure. A solid foundation will make it much harder for attackers to penetrate your system. 
+
 ![](assets/the-key-of-security-mechanisms-in-tackling-cyber-threats_fa62db10ed0a80b37040e7fd674e6a0b_md5.webp)
 
 Finally, all important accounts should enable 2-step security. In today's digital age, a single password is simply not enough to protect your data.
@@ -50,13 +51,8 @@ The Teach Event #5 with Hieu PC was a great success, with everyone in attendance
 
 Hope to see you again at future events that promise to be even more exciting.
 
-📩 Reach out to Mr. Hieu PC and chongluadao: [chongluadao.vn](http://chongluadao.vn/) or [info@chongluadao.vn](mailto:info@chongluadao.vn)
-
-📍 We’re glad to hear your favorite topics at: [https://discord.gg/dwarvesv](https://discord.gg/dwarvesv)
-
-📍 For those who missed the session, please visit: [https://www.youtube.com/watch?v=8z33k8A-97g](https://www.youtube.com/watch?v=8z33k8A-97g)
+Reach out to Mr. Hieu PC and chongluadao: [chongluadao.vn](http://chongluadao.vn/) or [info@chongluadao.vn](mailto:info@chongluadao.vn)
 
 ---
-
 *Dwarves Foundation partners with communities and experts to bring real stories, professional points of view, and live-case practices in the tech talk series that accelerates your software career.*
 

@@ -1,12 +1,15 @@
 ---
 tags: 
   - engineering
-title: Setup React Project With Webpack And Babel
+  - react
+  - web
+title: Setup React Project with Webpack and Babel
 date: 2019-05-02
-description: null
-authors: null
+description: In this article, i’m going to demonstrate how to create simple webpack config to run react app. After reading this article, you will be able to create your own react webpack config and tweak it as you liked.
+authors: 
+- phamngocnghia
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
 hide_title: false
 ---
@@ -14,9 +17,9 @@ hide_title: false
 ![](assets/setup-react-project-with-webpack-and-babel_1390995c704e49aab8915f9a87fcd7ce_md5.webp)
 
 ## Introduction
-create-react-app is an official CLI to create react application sometime you need to customize it such as add an alias or add plugin babel config, you end up ejected.
+Create-react-app is an official CLI to create react application sometime you need to customize it such as add an alias or add plugin babel config, you end up ejected.
 
-In this article, i’m going to demonstrate how to create simple webpack config to run react app. After reading this article, you will be able to create your own react webpack config and tweak it as you liked
+In this article, i’m going to demonstrate how to create simple webpack config to run react app. After reading this article, you will be able to create your own react webpack config and tweak it as you liked.
 
 ## Setup projects
 First you need to config three file such as:
@@ -29,13 +32,13 @@ First you need to config three file such as:
 ## Webpack development config
 In your webpack.config.js we will need to install babel to transpile javascript ES6 into ES5 and transpile react.js and jsx into javascript. You will also need to install css-loader to resolve import and style-loader to load your css into style tag in head tag.
 
-You will also need to install webpack-dev-server which automatically reload your content in the
+You will also need to install webpack-dev-server which automatically reload your content in the:
 
 ```javascript
 yarn add -D babel-loader @babel/core @babel/preset-react webpack webpack-cli css-loader style-loader
 ```
 
-In your webpack.config.js specify entry in webpack config to point to index.js file then configure babel-loader to run with js file extension. Loader in webpack is a optimizer, transformer that run against some specific file type. Specify file type with use key(which use regular express) and loaders which specify which loader run with that type of file.
+In your `webpack.config.js` specify entry in webpack config to point to `index.js` file then configure babel-loader to run with js file extension. Loader in webpack is a optimizer, transformer that run against some specific file type. Specify file type with use key(which use regular express) and loaders which specify which loader run with that type of file.
 
 ```javascript
 const webpack = require('webpack')
@@ -197,4 +200,4 @@ The last thing is to create npm script to run your react application
 In dev script we run webpack-dev-server point to our index.js file with -hot to settings it to run it in HotModuleReplace mode. — config flag allow to make it use custom config. The same applied for build script
 
 ## Conclusion
-Here is the full repository that includes setup in this article: [https://github.com/PhmNgocNghia/SetupReactWebpack\](https://github.com/PhmNgocNghia/SetupReactWebpack%5C)
+Here is the full repository that includes setup in this article: https://github.com/PhmNgocNghia/SetupReactWebpack

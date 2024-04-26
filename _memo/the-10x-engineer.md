@@ -1,13 +1,17 @@
 ---
 tags: 
   - engineering
+  - performance
+  - employee
 title: The 10x Engineer
 date: 2016-03-01
-description: null
-authors: null
+description: 10x engineer is a concept sometimes used in Silicon Valley to describe an engineer that is 10x more productive than an average engineer although the 10x metric is figurative. Sometimes referred to as "Ninjas", these engineers are highly sought after by all tech companies.
+authors: 
+- han
 menu: memo
-type: null
+type: memo
 hide_frontmatter: false
+hide_title: false
 ---
 
 10x engineer is a concept sometimes used in Silicon Valley to describe an engineer that is 10x more productive than an average engineer although the 10x metric is figurative. Sometimes referred to as "Ninjas", these engineers are highly sought after by all tech companies.
@@ -22,7 +26,6 @@ More:
 * [Becoming a 10X engineer](https://hackernoon.com/becoming-a-10x-engineer-is-it-possible-a8cf593392c3)
 
 ## The depict of a 10x Engineer
-
 ### Definition
 10x engineers (10xe) must not be mediocre engineers who are in the middle of the pyramid of the ability, productivity and quality, instead they must be above the middle of the pyramid. 10xes are always obsessed with the quality of the output they deliver, outperform the mediocre engineers in terms of specialized (e.g technical/designing) skills, communication, entrepreneurship mindset and skills, and contribution. They are doers, creators, thing breakers, on the way or already innovators to create better things.
 
@@ -48,11 +51,11 @@ Communication
 * Programming
 * Tooling
 * 10x (spirit)
-* Tech: Linux; Docker; IDE; Modeling; Programming; Architect; Algo & DS; 
-* Process: Scrum; Development Process, SDLC
-* Communication
-* Make thing better
-* Entrepreneurship
-* Hand-on
-* Create / build sth people want: Inventor; Doer
-* Contribution: Bring value to people
+   * Tech: Linux; Docker; IDE; Modeling; Programming; Architect; Algo & DS; 
+   * Process: Scrum; Development Process, SDLC
+   * Communication
+   * Make thing better
+   * Entrepreneurship
+   * Hand-on
+   * Create / build sth people want: Inventor; Doer
+   * Contribution: Bring value to people

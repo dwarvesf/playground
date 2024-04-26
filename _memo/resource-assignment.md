@@ -5,10 +5,11 @@ tags:
   - productivity
 title: Resource Assignment
 date: 2019-04-10
-description: null
-authors: null
+description: With the nature of consulting team, one member could be assigned to multiple projects at once or handle the work of a member in one project that take more than 100% of his/her time per week.
+authors: 
+- han
 menu: memo
-type: null
+type: handbook
 hide_frontmatter: false
 hide_title: false
 ---

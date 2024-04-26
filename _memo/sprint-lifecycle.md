@@ -1,13 +1,16 @@
 ---
 tags: 
   - agile
+  - pm
+  - project-management
 title: Sprint Lifecycle
 date: 2016-02-10
-description: null
+description: Below listed are the rules for each step of the sprint lifecycle. No exceptions will be made for any of the points..
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## Sprint "milestones"
@@ -21,8 +24,8 @@ Below listed are the rules for each step of the sprint lifecycle. ***No except
 * The sprint is automatically closed on the second Thursday of the sprint at **6:00 PM**
 * All the tickets that aren't closed will go back at the top of the backlog
 * After the end of the sprint the actions for the engineers will be:
-* Prepare improvement notes (if not discussed with the team) and tickets for the sprint planning
-* Continuous learning
+   * Prepare improvement notes (if not discussed with the team) and tickets for the sprint planning
+   * Continuous learning
 
 ### Code release + Release notes
 * The code will be tagged and released as per the release flow on Friday morning after the end of the sprint

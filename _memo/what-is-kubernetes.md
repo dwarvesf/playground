@@ -1,13 +1,15 @@
 ---
 tags: 
   - engineering
+  - kubernetes
 title: What Is Kubernetes
 date: 2019-09-27
-description: null
+description: Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.
 authors: null
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
+hide_title: false
 ---
 
 ## What is Kubernetes

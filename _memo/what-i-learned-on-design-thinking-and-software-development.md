@@ -1,13 +1,17 @@
 ---
 tags: 
-  - design-thinking
+  - design
+  - UX-UI
+  - software
 title: What I Learned On Design Thinking And Software Development
 date: 2021-05-10
-description: null
-authors: null
+description: I'm Huyen Le - newcomer of Dwarves Foundation. Last week, I was taught under the instruction of Khai Le about design thinking and how it works in a design process of a software project. So I decided to write a recap of what I've learned.
+authors: 
+- Huyen Le
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
+hide_title: false
 ---
 
 I'm Huyen Le - newcomer of Dwarves Foundation. Last week, I was taught under the instruction of Khai Le about design thinking and how it works in a design process of a software project. So I decided to write a recap of what I've learned.

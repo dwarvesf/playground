@@ -1,13 +1,17 @@
 ---
 tags: 
   - people
+  - hiring
+  - employee
 title: Traits To Assess During An Interview
 date: 2019-09-20
-description: null
-authors: null
+description: Hiring the right people is extremely hard. Not only is the market tightly constrained — especially for tech companies, but the unwritten rules for how to hire are often plain wrong. With more candidates who “look good on paper” going on to flounder at startups, it’s time to rethink what qualities actually make someone a great employee.
+authors: 
+- han
 menu: memo
-type: null
+type: operations
 hide_frontmatter: false
+hide_title: false
 ---
 
 * **Grit**: Look for a time the candidate wanted something so badly, they were unstoppable in pursuing it. Or a time they overcame an obstacle.

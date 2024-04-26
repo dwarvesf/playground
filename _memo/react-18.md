@@ -3,9 +3,10 @@ tags:
   - engineering
   - frontend
   - radio
+  - react
 title: React 18
 date: 2022-06-06
-description: React 18 was released in March 2022. This release focuses on performance improvements and updating the rendering engine
+description: React 18 was released in March 2022. This release focuses on performance improvements and updating the rendering engine...
 authors: null
 menu: memo
 type: practice
@@ -109,15 +110,15 @@ startTransition(() => {
 ```
 
 * Updates wrapped in start transition are handled as non-urgent and will be interrupted if more urgent updates like clicks or key presses come in. If a transition gets interrupted by the user (for example, by typing multiple characters in a row), React will throw out the stale rendering work that wasn’t finished and render only the latest update.
-* `useTransition`: a hook to start transitions, including a value to track the pending state.
-* `startTransition`: a method to start transitions when the hook cannot be used.
+  * `useTransition`: a hook to start transitions, including a value to track the pending state.
+  * `startTransition`: a method to start transitions when the hook cannot be used.
 
 ## Suspense on the server
 * Server-side rendering (abbreviated to “SSR” in this post) lets you generate HTML from React components on the server, and send that HTML to your users. SSR lets your users see the page’s content before your JavaScript bundle loads and runs. SSR in React always happens in several steps:
-* On the server, fetch data for the entire app.
-* Then, on the server, render the entire app to HTML and send it in the response.
-* Then, on the client, load the JavaScript code for the entire app.
-* Then, on the client, connect the JavaScript logic to the server-generated HTML for the entire app (this is “hydration”).
+  * On the server, fetch data for the entire app.
+  * Then, on the server, render the entire app to HTML and send it in the response.
+  * Then, on the client, load the JavaScript code for the entire app.
+  * Then, on the client, connect the JavaScript logic to the server-generated HTML for the entire app (this is “hydration”).
 * The key part is that each step had to finish for the entire app at once before the next step could start. This is not efficient if some parts of your app are slower than others, as is the case in pretty much every non-trivial app.
 * React 18 lets you use `<Suspense>` to break down your app into smaller independent units which will go through these steps independently from each other and won’t block the rest of the app. As a result, your app’s users will see the content sooner and be able to start interacting with it much faster. The slowest part of your app won’t drag down the parts that are fast. These improvements are automatic, and you don’t need to write any special coordination code for them to work.
 

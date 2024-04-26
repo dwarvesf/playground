@@ -1,12 +1,15 @@
 ---
 tags: 
   - swift
+  - practice
+  - application
 title: Reproduce Apple Find Me Bottom Menu View
 date: 2019-06-29
-description: null
-authors: null
+description: Today we are going to recreate Find Me Bottom Menu view in few lines of code.
+authors: 
+- trungphan
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
 hide_title: false
 ---
@@ -59,4 +62,4 @@ Finally, test out the menu
 ![](assets/reproduce-apple-find-me-bottom-menu-view_097b369938a9fd77abad168060e62307_md5.webp)
 
 Full source code:
-[https://github.com/viettrungphan/BottomMenu.git\](https://github.com/viettrungphan/BottomMenu.git%5C)
+https://github.com/viettrungphan/BottomMenu.git

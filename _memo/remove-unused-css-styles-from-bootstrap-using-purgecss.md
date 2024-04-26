@@ -1,12 +1,14 @@
 ---
 tags: 
   - css
-title: Remove Unused Css Styles From Bootstrap Using Purgecss
+  - practice
+title: Remove Unused CSS Styles From Bootstrap Using Purgecss
 date: 2019-02-01
-description: null
-authors: null
+description: Reducing assets size is one of the most practical ways to speed up your web application. I have a simple use case, lets imagine your HTML file looks like this..
+authors: 
+- phamngocnghia
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
 hide_title: false
 ---
@@ -14,7 +16,7 @@ hide_title: false
 ![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_50067f1125ee42d2d68068bd93443235_md5.webp)
 
 ## Introduction
-Reducing assets size is one of the most practical ways to speed up your web application. I have a simple use case, lets imagine your HTML file looks like this
+Reducing assets size is one of the most practical ways to speed up your web application. I have a simple use case, lets imagine your HTML file looks like this:
 
 ```javascript
 <!DOCTYPE html>
@@ -43,7 +45,7 @@ Now look at
 bootstrap-grid.min.css
 ```
 
-![[50067f1125ee42d2d68068bd93443235_MD5.webp]]
+![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss-1.png)
 
 Quite huge isn’t it? Thanks to PurgeCss here is the CSS file after being purged will only contain parts of the CSS file (only used selectors), as you can see horizontal scrollbar is not very long:
 
@@ -68,7 +70,7 @@ Since Purgecss is installed in `/node_modules\` we must run this command through
 
 `<link rel="stylesheet" href="./dist/bootstrap-grid.min.css" />`
 
-Then create npm script to run purgecss
+Then create npm script to run purgecss.
 
 ```javascript
 {
@@ -85,7 +87,7 @@ Then create npm script to run purgecss
 }
 ```
 
-Then run npm run build, you should see new bootstrap-grid.min.css in dist folder with unused CSS content being removed
+Then run npm run build, you should see new bootstrap-grid.min.css in dist folder with unused CSS content being removed.
 
 ![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_04ee21f4b60188ce76c21df96695e6cf_md5.webp)
 
@@ -98,7 +100,7 @@ Example repository: [https://github.com/PhmNgocNghia/purge\-css\-demo\-cli\](htt
 ## Setup using Webpack
 Purge CSS can be used together with built tools such as webpack, gulp, grunt,… etc. You can view it’s documentation at [https://www.purgecss.com/\](https://www.purgecss.com/%5C)
 
-I’m going to demonstrate how to integrate with Webpack. This is my simple project which integrate project and Webpack
+I’m going to demonstrate how to integrate with Webpack. This is my simple project which integrate project and Webpack.
 
 ```javascript
 var UglifyJsPlugin = require("uglifyjs-webpack-plugin");
@@ -153,14 +155,14 @@ In my index.js file, I simply import bootstrap grid CSS.
 
 `import 'bootstrap/dist/css/bootstrap-grid.min.css'`
 
-Here is the build output which includes CSS grid file
+Here is the build output which includes CSS grid file.
 
 ![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_429bb8c82f4e38465293c6f79d782394_md5.webp)
 
 To use PurgeCss with Webpack simply install this Webpack plugin:
 `npm i purgecss-webpack-plugin -D`
 
-Then add it to plugin section in Webpack config file
+Then add it to plugin section in Webpack config file.
 
 ```javascript
 var UglifyJsPlugin = require("uglifyjs-webpack-plugin");
@@ -217,9 +219,7 @@ module.exports = {
 
 ![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_97c7bfa1adf49d7c225f00976d99eb8c_md5.webp)
 
-Full example repository: [https://github.com/PhmNgocNghia/purge\-css\-example\-webpack\](https://github.com/PhmNgocNghia/purge%5C-css%5C-example%5C-webpack%5C)
-
 ## Conclusion
-With PurgeCSS, our `bootstrap-grid.main.css` file reduce from **47kb** to **601byte**. All unused selectors has been removed. You can view the documentation at [https://www.purgecss.com/\](https://www.purgecss.com/%5C) which contain details instruction and api references.
+With PurgeCSS, our `bootstrap-grid.main.css` file reduce from **47kb** to **601byte**. All unused selectors has been removed. You can view the documentation at https://www.purgecss.com/ which contain details instruction and api references.
 
 Not only bootstrap, you can use PurgeCSS with many css libraries such as TailwindCSS, Zurb foundation,... etc.

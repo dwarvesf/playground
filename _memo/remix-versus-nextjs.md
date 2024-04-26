@@ -3,12 +3,14 @@ tags:
   - engineering
   - frontend
   - radio
-title: Remix Versus Nextjs
+  - nextjs
+title: "Remix vs Next.js"
 date: 2022-05-27
-description: null
-authors: null
+description: A brief comparison between Remix and Next.js frameworks
+authors: 
+- Hien Le
 menu: memo
-type: null
+type: engineering
 hide_frontmatter: false
 hide_title: false
 ---

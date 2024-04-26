@@ -1,12 +1,13 @@
 ---
 tags: 
   - engineering
-title: Reusability In Software Development
+  - technique
+title: Reusability in Software Development
 date: 2020-05-05
-description: null
+description: There are many kinds of field Software reuse that is being available. The Open-source movement is a representation of reuse where a lot of code that is reuse like libraries or a part of other systems.
 authors: null
 menu: memo
-type: null
+type: practice
 hide_frontmatter: false
 hide_title: false
 ---
@@ -20,9 +21,9 @@ So this strategy is now used extensively in the development of new business syst
 
 There are many kinds of field Software reuse that is being available. The Open-source movement is a representation of reuse where a lot of code that is reuse like libraries or a part of other systems.
 
-> Open-source: "Open source is a term that originally referred to open source software (OSS). Open-source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit." 
+> Open-source: "Open source is a term that originally referred to open source software (OSS). Open-source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit." [1]
 
-> Open-source movement: "The open-source movement is based on a radical retake on copyright law to create high-quality software whose use and development are guaranteed to the public." 
+> Open-source movement: "The open-source movement is based on a radical retake on copyright law to create high-quality software whose use and development are guaranteed to the public." [2]
 
 Another is the domain-specific application systems, such as ERP systems, are available that can be tailored and adapted to customer requirements. Some big companies have supplied the components that have the ability to be configured to demand each their specific customer.
 
@@ -103,13 +104,13 @@ Above is a few stuff that building and groundwork for making a decision for the 
 ## Application Framework
 Before explore about Application framework, let's revise object-oriented development. Following is an difinition of OOD that i see on [Quora](https://www.quora.com/). I think this is really good sentence for mentioning to it
 
-> Object-oriented Development (OOD) a group of methodologies that sees real world entities as objects and classes. For example, hospital is a real world entity, becomes hospital class and later multiple hospital objects are created, each with unique property values.
+> Object-oriented Development (OOD) a group of methodologies that sees real world entities as objects and classes. For example, hospital is a real world entity, becomes hospital class and later multiple hospital objects are created, each with unique property values.[5]
 
 For a long time, some enthusiasts for object-oriented development suggested that one of the key advantages when using an object-oriented approach is reusing previous work. That means you can use the same object for different systems. However, to me, in my work, when coding and developing a system, I see a truth is that we need specified objects or classes for a particular component or application. Another bad thing is that we often spent more time to understand and adapt the object than reimplement it.
 
 So, instead of using OOD directly, we have an object-oriented development process that is the best support for object-oriented reuse through larger-grain abstractions called frameworks.
 
-> Framework is an integrated set of software artifacts (such as classes, objects and components) that collaborate to provide a reusable architecture for a family of related applications.
+> Framework is an integrated set of software artifacts (such as classes, objects and components) that collaborate to provide a reusable architecture for a family of related applications.[6]
 
 The first characteristic that is bounced off when I think about the framework is framework provides support for generic features of the domain that is focused on this framework. For example, in my primary programing language - [Golang](https://github.com/dwarvesf/radar/blob/master/software-reuse/Documents), it has a web framework being named [Echo](https://github.com/dwarvesf/radar/blob/master/software-reuse/Documents) - a high performance, extensible, minimalist web framework for Go. Besides a lot of salient features, it has generic features of a web framework such as routing, database integration, authentication, data rendering.
 

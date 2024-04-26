@@ -2,24 +2,25 @@
 tags: 
   - engineering
   - web
-title: What Is Pnpm Compare To Npmyarn
+title: "What is PNPM? Compare to NPM/Yarn"
 date: 2023-04-11
 description: null
 authors: null
 menu: memo
 type: null
 hide_frontmatter: false
+hide_title: false
 ---
 
-## What is PNPM?
-![](assets/what-is-pnpm-compare-to-npmyarn_0f651d536ab6e1811cdf37eb2b15550d_md5.webp)
-
 *At Dwarves Foundation, we are always on the lookout for new tech. Researching PNPM was originally from research on what package manager **[Next.js](https://github.com/vercel/next.js/)** uses. We then tried to experiment with it for **[dwarves/react-toolkit](https://github.com/dwarvesf/react-toolkit/pull/46)**, which has given us some insights into some of the cost-benefits of using the package manager.*
+
+
+![](assets/what-is-pnpm-compare-to-npmyarn_0f651d536ab6e1811cdf37eb2b15550d_md5.webp)
 
 ## Introduction
 PNPM is a package manager for Node.js which stands for “Performant NPM”. It was introduced in 2016, the same year Yarn was released. PNPM is a fast, disk space efficient package manager that supports monorepos. It creates a non-flat `node_modules` by default, so code has no access to arbitrary packages. PNPM performs installation in three stages: 
 
-1. **Dependency resolution **- The package manager identifies and fetches all required dependencies to the store.
+1. **Dependency resolution** - The package manager identifies and fetches all required dependencies to the store.
 2. **Directory structure calculation** - Based on these dependencies, it calculates the layout of the `node_modules` directory.
 3. **Linking dependencies** - it retrieves and establishes hard links from the store to `node_modules` for all remaining dependencies.
 
@@ -41,7 +42,7 @@ As you can see, PNPM does not store packages in the `node_modules` folder, but r
 
 Thanks to this, package versions are only stored once on the disk
 
-### **Boosting installation speed****[](https://pnpm.io/motivation#boosting-installation-speed)**
+### [Boosting installation speed](https://pnpm.io/motivation#boosting-installation-speed)
 PNPM performs installation in three stages:
 
 1. Dependency resolution: identifying and obtaining all necessary dependencies for the store.
@@ -118,7 +119,7 @@ PNPM's node_modules layout uses [symbolic links to create a nested structure of 
 
 Another potential issue with PNPM is that its nested dependency structure may not be compatible with certain older packages. [This can cause issues when trying to install packages that have dependencies that are not compatible with PNPM’s nested structure](https://pnpm.io/limitations).
 
-## **Showcase**
+## Showcase
 Thankfully, PNPM is employed by numerous large companies, demonstrating its effectiveness. For an updated list, you can visit [https://pnpm.io/users](https://pnpm.io/users).
 
 ![](assets/what-is-pnpm-compare-to-npmyarn_55e4a8514dc89f283ed5e6b77d839d42_md5.webp)
@@ -128,7 +129,7 @@ PNPM is a package manager for Node.js that offers several advantages over other 
 
 Overall, PNPM offers some unique benefits and is a viable alternative to other package managers for Node.js. It's worth exploring whether it's the right choice for your specific use case.
 
-## References:
+## References
 * [https://pnpm.io/motivation](https://pnpm.io/motivation)
 * [https://blog.bitsrc.io/pnpm-javascript-package-manager-4b5abd59dc9](https://blog.bitsrc.io/pnpm-javascript-package-manager-4b5abd59dc9)
 * [https://pnpm.io/faq#what-does-pnpm-stand-for](https://pnpm.io/faq#what-does-pnpm-stand-for)
