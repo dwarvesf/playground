@@ -28,16 +28,16 @@ Dwarves’ website serves as the primary platform for visitors to discover who w
 - Tell the audience what you want them to do next (CTAs).
 - Speak our characteristics, whether it’s showing our expertise and skills or stating our value proposition.
 
-![web](assets/how-i-create-content-for-multiple-platforms-at-dwarves-tone-website.png)
+![web](assets/how-i-create-content-for-multiple-platforms-at-dwarves-tone-website.webp)
 
-![web-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-website-example.png)
+![web-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-website-example.webp)
 
 ## Writing for social media
 I use social media to build and maintain company relationships with our audience. It’s an open platform in which sharing and learning are welcomed and applauded. 
 
 Treating social media like a conversation, means I strive to be less serious, and more cheerful but at the same time, still polite and considerate of our audience.
 
-![tone social.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-tone-social.png)
+![tone social.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-tone-social.webp)
 
 ### Facebook
 - Facebook content aims to strike a balance between being informative, engaging, and algorithm-friendly.
@@ -45,14 +45,14 @@ Treating social media like a conversation, means I strive to be less serious, an
 - Keep posts concise and impactful, using minimal text and a short form.
 - Make posts actionable: try different tactics to grab your audience's attention.
 
-![facebook-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-facebook-example.png)
+![facebook-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-facebook-example.webp)
 
 ### LinkedIn
 - Focus on sharing industry knowledge and insights.
 - LinkedIn posts typically range from 100-150 words for regular posts, while longer articles can reach up to 1,300 characters.
 - Showcase professional achievements and milestones to highlight accomplishments and learning experiences.
 
-![linkedin-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-linkedin-example.png)
+![linkedin-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-linkedin-example.webp)
 
 ### X(Twitter) 
 - Verified accounts can exceed the 280-character limit, and utilizing tweet threads is encouraged.
@@ -60,7 +60,7 @@ Treating social media like a conversation, means I strive to be less serious, an
 - Share links to relevant articles and blog posts to boost website traffic.
 - Actively engage with retweets, replies, and mentions to foster audience interaction and appreciation.
 
-![twitter-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-twitter-example.png)
+![twitter-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-twitter-example.webp)
 
 ### Instagram
 - Get right to the point right away, a few lines of a caption.
@@ -68,7 +68,7 @@ Treating social media like a conversation, means I strive to be less serious, an
 - Use high-quality visuals, including images and videos, to captivate your audience.
 - Embrace trends, relevant hashtags to increase visibility.
 
-![instagram-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-instagram-example.png)
+![instagram-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-instagram-example.webp)
 
 ## Writing for blog posts
 The blog post is a format to share knowledge and offer in-depth insights into the tech & design world. A blog post from Dwarves is usually a collaborative effort - a summary of workshops we worked on together, a research report done by a sub-unit, or a case study put together by everyone on the project. Here's a brief guideline to get started:
@@ -81,7 +81,7 @@ The blog post is a format to share knowledge and offer in-depth insights into th
 - Proofread your work for flow and errors.
 - Full-length articles should still be professional.
 
-![blog](assets/how-i-create-content-for-multiple-platforms-at-dwarves-blog-example.png)
+![blog](assets/how-i-create-content-for-multiple-platforms-at-dwarves-blog-example.webp)
 
 ## Writing for newsletter
 Dwarves’ newsletter serves as an additional fresh voice that aims to provide more engineering-related insights and thoughts throughout our work cycles.
@@ -93,7 +93,7 @@ When crafting newsletter:
 - Maintain a consistent and appropriate tone of voice.
 - Include links and CTAs, and use visuals and font choices to draw the eye.
 
-![](assets/how-i-create-content-for-multiple-platforms-at-dwarves-newsletter.png)
+![](assets/how-i-create-content-for-multiple-platforms-at-dwarves-newsletter.webp)
 
 ## Writing for the Discord community
 Dwarves Discord network is where we discuss new tech, industry practices, hang out with friends, and spread positive vibes. If I want to use the platform reflected in what I do, then our copy needs to do just that.
@@ -104,9 +104,9 @@ Dwarves Discord network is where we discuss new tech, industry practices, hang o
 - Add a bit of joy, making memorable moments around Discord.
 - Set a fun warm-up or icebreaker tone of voice, sparking conversations among members.
 
-![discord](assets/how-i-create-content-for-multiple-platforms-at-dwarves-discord.png)
+![discord](assets/how-i-create-content-for-multiple-platforms-at-dwarves-discord.webp)
 
-![discord-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-discord-example.png)
+![discord-final.png](assets/how-i-create-content-for-multiple-platforms-at-dwarves-discord-example.webp)
 
 ## Best practices
 ### Stay focused
@@ -135,4 +135,4 @@ opportunity to put in a word of celebrating achievements or expressing our point
 If you're newish to posting - just post. Don't run around chasing algorithms or trends. It'll exhaust you in no time.
 
 ## Reference
-Adapted from [“Writing Content for Multimedia Guidelines”.](vault/playground/_memo/writing-content-for-multimedia-guidelines.md)
+Adapted from [“Writing Content for Multimedia Guidelines”.](playground/_memo/writing-content-for-multimedia-guidelines.md)
