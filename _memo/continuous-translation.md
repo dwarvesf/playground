@@ -2,10 +2,12 @@
 tags: 
   - web
   - engineering
+  - translation
 title: Continuous Translation
 date: 2023-04-11
-description: null
-authors: null
+description: Continuous Translation (CT) is a modern approach to translation management that involves synchronizing software development and translation workflows. This means that developers, translators, and product owners work together in a continuous cycle to ensure that all translations are up-to-date and aligned with the latest software developments.
+authors:
+  - antran
 menu: memo
 type: null
 hide_frontmatter: false
@@ -34,86 +36,86 @@ Google Sheets is a free and easy-to-use tool that allows us to manage translatio
 
 Here are what the steps to use Google Sheets would look like for managing translations:
 
-* **Step 1:** Create a Google Sheet that contains all supported translation items. Here is an example **[template](https://docs.google.com/spreadsheets/d/1jjVDCMAmS6WySmB7L25yNCZX-X3jEwrrqLhqOBzVEs0/edit?usp=sharing)** you can use.
-* **Step 2:** Fetch data from Google Sheets using the following code:
+**Step 1:** Create a Google Sheet that contains all supported translation items. Here is an example **[template](https://docs.google.com/spreadsheets/d/1jjVDCMAmS6WySmB7L25yNCZX-X3jEwrrqLhqOBzVEs0/edit?usp=sharing)** you can use.
+**Step 2:** Fetch data from Google Sheets using the following code:
 
 *Make sure to replace the *`***sheetId***`* and *`***sheetName***`* with your own values*
 
 ```javascript
-	// Save on './public/spreadsheet.ts' file
-	const sheetId = "<Sheet-ID>";
-	const sheetName = "<sheet-name>";
-	const baseUrl = `https://opensheet.elk.sh/${sheetId}/${sheetName}`;
-	
-	// Path to store all translation data
-	const translateDataPath = "./public/locales/translate-data.json"; 
-	
-	export const getJsonData = async () => {
-	  const res = await fetch(baseUrl, {
-	    method: "GET",
-	    headers: {
-	      "Content-Type": "application/json",
-	      accept: "*/*",
-	      authority: "opensheet.elk.sh",
-	    },
-	    mode: "cors",
-	    credentials: "omit",
-	  });
-	
-	  if (res.ok) {
-	    return await res.json();
-	  }
-	};
-	
-	getJsonData().then((data) => {
-	  const fs = require("fs");
-	  let myObject = data;
-	
-	  // Writing to our JSON file
-	  var newData = JSON.stringify(myObject, null, 2);
-	  fs.writeFile(translateDataPath, newData, (err) => {
-	    // Error checking
-	    if (err) throw err;
-	    console.log("New data added");
-	  });
-	});
-	```
+// Save on './public/spreadsheet.ts' file
+const sheetId = "<Sheet-ID>";
+const sheetName = "<sheet-name>";
+const baseUrl = `https://opensheet.elk.sh/${sheetId}/${sheetName}`;
 
-* **Step 3: **After having obtaining the translation data, generate locale files for supported languages using the following code:
+// Path to store all translation data
+const translateDataPath = "./public/locales/translate-data.json"; 
+
+export const getJsonData = async () => {
+	const res = await fetch(baseUrl, {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json",
+			accept: "*/*",
+			authority: "opensheet.elk.sh",
+		},
+		mode: "cors",
+		credentials: "omit",
+	});
+
+	if (res.ok) {
+		return await res.json();
+	}
+};
+
+getJsonData().then((data) => {
+	const fs = require("fs");
+	let myObject = data;
+
+	// Writing to our JSON file
+	var newData = JSON.stringify(myObject, null, 2);
+	fs.writeFile(translateDataPath, newData, (err) => {
+		// Error checking
+		if (err) throw err;
+		console.log("New data added");
+	});
+});
+```
+
+**Step 3: **After having obtaining the translation data, generate locale files for supported languages using the following code:
 
 ```javascript
-	// Save on './public/manage-translations.ts' file
-	import path from "path";
-	import fs from "node:fs/promises";
-	import fsExtra from "fs-extra";
-	import _ from "lodash";
-	
-	import dotenv from "dotenv";
-	dotenv.config({ path: ".env.local" });
-	dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
-	dotenv.config();
-	
-	const validLang = ["en-US", "de-DE", "fr-FR"];
-	const defaultLanguage =
-	  process.env.LOCALE == null ? "en-US" : validLang.includes(process.env.LOCALE) ? process.env.LOCALE : "en-US";
-	
-	const configs = {
-	  defaultLanguage,
-	  otherLanguages: validLang.filter((lang) => lang !== defaultLanguage),
-	  rootExportPath: "./public/locales",
-	};
-	
-	const allLocales = [];
-	
-	async function generateJSONFiles() {
-	  const data = await fs.readFile("./public/locales/translate-data.json", "utf8");
-	  const jsonData = JSON.parse(data);
-	  const locales = Object.keys(jsonData[0]).filter((key) => key !== "elementId");
-	  const result = locales.map((locale) => {
-	    const data = {};
-	    jsonData.forEach((item) => {
-	      data[item.elementId] =
-	```
+// Save on './public/manage-translations.ts' file
+import path from "path";
+import fs from "node:fs/promises";
+import fsExtra from "fs-extra";
+import _ from "lodash";
+
+import dotenv from "dotenv";
+dotenv.config({ path: ".env.local" });
+dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+dotenv.config();
+
+const validLang = ["en-US", "de-DE", "fr-FR"];
+const defaultLanguage =
+	process.env.LOCALE == null ? "en-US" : validLang.includes(process.env.LOCALE) ? process.env.LOCALE : "en-US";
+
+const configs = {
+	defaultLanguage,
+	otherLanguages: validLang.filter((lang) => lang !== defaultLanguage),
+	rootExportPath: "./public/locales",
+};
+
+const allLocales = [];
+
+async function generateJSONFiles() {
+	const data = await fs.readFile("./public/locales/translate-data.json", "utf8");
+	const jsonData = JSON.parse(data);
+	const locales = Object.keys(jsonData[0]).filter((key) => key !== "elementId");
+	const result = locales.map((locale) => {
+		const data = {};
+		jsonData.forEach((item) => {
+			data[item.elementId] =
+```
 
 ### Solution 2: Use a translation management platform
 For this approach, we can use [Locize](https://locize.com/) as our continuous localization management platform. This approach isn’t limited to Locize, but the idea is to have a platform to decouple software release from the translation work and minimize work friction for translation.
@@ -154,16 +156,5 @@ In summary, `Solution 1` is a simpler and cheaper approach to manage translation
 * **Requires specialized tools**: Implementing Continuous Translation requires specialized tools and technologies, which can add to the overall cost of the project.
 * **Not suitable for all projects**: Continuous Translation may not be suitable for all projects, particularly those with limited budgets or resources. Traditional translation workflows may be more appropriate for smaller projects or those with less frequent updates.
 
-# Conclusion
+## Conclusion
 Multilingual support is a very important function for web or mobile applications nowadays. Users will come from all over the world and always ask for support for their language. The two options above have different advantages and disadvantages, so you need to consider the exact scope of the product to have the best choice for your team. Both methods can meet the needs of constantly translating products to support new features or new products, but it will cost production as well as quality assurance.
-
-If you have a difficult problem that you would like us to help you on, please feel free to submit a challenge request here.
-
-**We’d love to have you in our next chapter, by all means.**
-* Discover what we do: dwarves.foundation 
-* Meet our team: [discord.gg/dwarvesv](http://discord.gg/dwarvesv) 
-* Join the squad: careers.d.foundation 
-
-**Follow our journey**
-* Fanpage: [facebook.com/dwarvesf](http://facebook.com/dwarvesf) 
-* LinkedIn: [linkedin.com/company/dwarvesf](http://linkedin.com/company/dwarvesf)
