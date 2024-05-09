@@ -59,15 +59,15 @@ There are a lot of growing startups that are making the scene with more compelli
 - **TailwindCSS v4 Alpha Release**: The [new version](https://tailwindcss.com/blog/tailwindcss-v4-alpha), rebuilt with Rust and integrated with the Lightning CSS parser, promises a significant performance boost, making it ten times faster than its predecessor.
 
 ## References
-- https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674
-- https://huyenchip.com/2024/03/14/ai-oss.html
-- https://gorilla.cs.berkeley.edu/blogs/9_raft.html
-- https://www.gartner.com/en/articles/30-emerging-technologies-that-will-guide-your-business-decisions
-- https://twitter.com/cognition_labs/status/1767548763134964000
-- twitter.com/amanrsanger/status/1772742457937060288
-- https://twitter.com/llama_index/status/1772662480210198809
-- https://arxiv.org/abs/2402.17764
-- https://security.googleblog.com/2024/03/secure-by-design-googles-perspective-on.html
-- https://microsoft.github.io/rust-for-dotnet-devs/latest/introduction.html
-- https://maggieappleton.com/design-engineer
-- https://www.proofofconcept.pub/p/design-engineering
+- [RAFT:  A new way to teach LLMs to be better at RAG](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674)
+- [What I learned from looking at 900 most popular open source AI tools](https://huyenchip.com/2024/03/14/ai-oss.html)
+- [RAFT: Adapting Language Model to Domain Specific RAG](https://gorilla.cs.berkeley.edu/blogs/9_raft.html)
+- [30 Emerging Technologies That Will Guide Your Business Decisions](https://www.gartner.com/en/articles/30-emerging-technologies-that-will-guide-your-business-decisions)
+- [Devin, the first AI software engineer](https://twitter.com/cognition_labs/status/1767548763134964000)
+- [Long context models with massive custom prompts](https://twitter.com/amanrsanger/status/1772742457937060288)
+- [RAFT - Retrieval Augmented Fine Tuning](https://twitter.com/llama_index/status/1772662480210198809)
+- [The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits](https://arxiv.org/abs/2402.17764)
+- [Secure by Design: Google’s Perspective on Memory Safety](https://security.googleblog.com/2024/03/secure-by-design-googles-perspective-on.html)
+- [Rust for C#/.NET Developers](https://microsoft.github.io/rust-for-dotnet-devs/latest/introduction.html)
+- [Design Engineer](https://maggieappleton.com/design-engineer)
+- [Design Engineer](https://www.proofofconcept.pub/p/design-engineering)

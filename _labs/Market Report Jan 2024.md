@@ -51,20 +51,20 @@ With an increase in cybercrime with the [‘Mother of all breaches’](https://w
 In the industry, there is a growing **skill gap** for cybersecurity engineers, creating demand on initiatives for upskilling and reskilling know-how on cybersecurity. The concept of [Zero Trust](https://www.isaca.org/resources/news-and-trends/industry-news/2023/track-these-7-trends-for-proactive-cybersecurity-in-2024)—where no one is automatically trusted, even within the organization—has gained much higher prominence leading up towards 2024.
 
 ## References
-- [mp.weixin.qq.com/s/LiygBJqMN8U_vSpAjxMibQ](https://mp.weixin.qq.com/s/LiygBJqMN8U_vSpAjxMibQ)
-- https://discord.com/channels/462663954813157376/788084358991970337/1200049567765368882
+- [穿越时空：2023年前端技术盘点与2024年技术展望](https://mp.weixin.qq.com/s/LiygBJqMN8U_vSpAjxMibQ)
+- [Increased investment in productivity and collaboration tools](https://discord.com/channels/462663954813157376/788084358991970337/1200049567765368882)
 - [‘Mother of all breaches’ data leak reveals 26 billion account records stolen from Twitter, LinkedIn, more (msn.com)](https://www.msn.com/en-us/money/other/mother-of-all-breaches-data-leak-reveals-26-billion-account-records-stolen-from-twitter-linkedin-more/ar-BB1h8uz2)
-- https://www.linkedin.com/pulse/growing-cybersecurity-skills-gap-recognizing-need-action-khatri
+- [The Growing Cybersecurity Skills Gap: Recognizing the Need for Action](https://www.linkedin.com/pulse/growing-cybersecurity-skills-gap-recognizing-need-action-khatri)
 - [A New Era of Galaxy AI is Coming — Here’s a Glimpse – Samsung Global Newsroom](https://news.samsung.com/global/a-new-era-of-galaxy-ai-is-coming-heres-a-glimpse)
 - [Freethink on X: "#CES2024: AI startup Rabbit’s R1 device sells out in 24 hours https://t.co/Wzr2lzuh68 @rabbit_hmi https://t.co/4l3omjGjfX" / X (twitter.com)](https://twitter.com/freethinkmedia/status/1745560844824396135)
 - [NPUs are essential for AI, but what are they, and how do they differ from GPUs? | Windows Central](https://www.windowscentral.com/hardware/what-is-npu-vs-gpu)
 - [Django, HTMX and Alpine.JS: A Match Made In Heaven - DEV Community](https://dev.to/nicholas_moen/what-i-learned-while-using-django-with-htmx-and-alpine-js-24jg)
-- [https://dev.to/matfrana/react-where-are-you-going-5284](https://dev.to/matfrana/react-where-are-you-going-5284 "https://dev.to/matfrana/react-where-are-you-going-5284")
-- [https://blog.cassidoo.co/post/annoyed-at-react/](https://blog.cassidoo.co/post/annoyed-at-react/ "https://blog.cassidoo.co/post/annoyed-at-react/")
-- [https://virtuslab.com/blog/trending-frontend-technologies/](https://virtuslab.com/blog/trending-frontend-technologies/ "https://virtuslab.com/blog/trending-frontend-technologies/")
-- [https://github.com/zed-industries/zed](https://github.com/zed-industries/zed "https://github.com/zed-industries/zed")
-- [https://github.com/servo/servo](https://github.com/servo/servo "https://github.com/servo/servo")
-- [https://venturebeat.com/ai/mistral-ceo-confirms-leak-of-new-open-source-ai-model-nearing-gpt-4-performance](https://venturebeat.com/ai/mistral-ceo-confirms-leak-of-new-open-source-ai-model-nearing-gpt-4-performance "https://venturebeat.com/ai/mistral-ceo-confirms-leak-of-new-open-source-ai-model-nearing-gpt-4-performance")
-- https://www.taskade.com/
+- [React, where are you going?](https://dev.to/matfrana/react-where-are-you-going-5284)
+- [Annoyed at React](https://blog.cassidoo.co/post/annoyed-at-react/)
+- [Trending Frontend Technologies](https://virtuslab.com/blog/trending-frontend-technologies/)
+- [Zed Repository](https://github.com/zed-industries/zed)
+- [Servo Repository](https://github.com/servo/servo)
+- [Mistral CEO confirms ‘leak’ of new open source AI model nearing GPT-4 performance](https://venturebeat.com/ai/mistral-ceo-confirms-leak-of-new-open-source-ai-model-nearing-gpt-4-performance)
+- [Taskade](https://www.taskade.com/)
 - [13 Best Trading Robots for February 2024 Reviewed (techopedia.com)](https://www.techopedia.com/investing/best-trading-robots)
-- https://www.isaca.org/resources/news-and-trends/industry-news/2023/track-these-7-trends-for-proactive-cybersecurity-in-2024
+- [Track These 7 Trends for Proactive Cybersecurity in 2024](https://www.isaca.org/resources/news-and-trends/industry-news/2023/track-these-7-trends-for-proactive-cybersecurity-in-2024)
