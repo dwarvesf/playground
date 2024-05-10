@@ -9,6 +9,7 @@ description: This guide will show you how to use $DFG staking to earn $USDC, coo
 authors: 
 - minh
 - jack
+- minh_cloud
 menu: memo
 type: null
 hide_frontmatter: false
@@ -58,21 +59,21 @@ Now it’s time to stake your DFG on Base to earn rewards like USDC or merch wit
     
 The reward will be calculated with the APY is 9.99%/year.
 
-## Withdraw $DFG and reward from the staking pool
+## Withdraw $DFG and claim reward from the staking pool
 Now, after a long time locking your DFG and having a decent claimable reward amount, it’s time to withdraw your $DFG and reward from the staking to the staking pool. 
 
 1. Go to [Dwarves Foundation Earning](https://tono.gg/dwarves), and log in. Once you’re logged in, if you have staked $DFG, you will see the staked amount in the Total Staked section. 
 2. Now hit “Unstake” button and choose amount you want to withdraw and hit “Unstake” again.
 
-    ![](assets/how-to-earn-reward-from-staking-dfg.webp)
+    ![](assets/how-to-earn-reward-from-staking-dfg.png)
 
-    ![](assets/how-to-earn-reward-from-staking-dfg-2.webp)
+    ![](assets/how-to-earn-reward-from-staking-dfg-2.png)
 
 3. Confirm 2 transactions on your Coinbase wallet. 
 
     ![](assets/how-to-earn-reward-from-staking-dfg-3.png)
 
-4. And that’s it! You’ve successfully withdraw $DFG and reward to your wallet. 
+4. And that’s it! You’ve successfully withdraw $DFG and all of the recent reward to your wallet. 
 
     ![](assets/how-to-earn-reward-from-staking-dfg-2.png)
 
