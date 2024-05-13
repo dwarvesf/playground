@@ -65,16 +65,16 @@ Now, after a long time locking your DFG and having a decent claimable reward amo
 1. Go to [Dwarves Foundation Earning](https://tono.gg/dwarves), and log in. Once you’re logged in, if you have staked $DFG, you will see the staked amount in the Total Staked section. 
 2. Now hit “Unstake” button and choose amount you want to withdraw and hit “Unstake” again.
 
-    ![](assets/how-to-earn-reward-from-staking-dfg.png)
+    ![](assets/how-to-earn-reward-from-staking-dfg_clean-shot-2024-05-13-at-16-34-02-2x.webp)
 
-    ![](assets/how-to-earn-reward-from-staking-dfg-2.png)
+    ![](assets/how-to-earn-reward-from-staking-dfg_clean-shot-2024-05-13-at-16-35-22-2x_1715619303.webp)
 
 3. Confirm 2 transactions on your Coinbase wallet. 
 
-    ![](assets/how-to-earn-reward-from-staking-dfg-3.png)
+    ![](assets/how-to-earn-reward-from-staking-dfg_clean-shot-2024-05-13-at-16-37-11-2x_1715619304.webp)
 
 4. And that’s it! You’ve successfully withdraw $DFG and all of the recent reward to your wallet. 
 
-    ![](assets/how-to-earn-reward-from-staking-dfg-2.png)
+    ![](assets/how-to-earn-reward-from-staking-dfg_clean-shot-2024-05-13-at-16-39-16-2x_1715619306.webp)
 
 
