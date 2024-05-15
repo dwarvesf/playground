@@ -5,7 +5,7 @@ tags:
   - AI
   - LLM
 title: Market Report April 2024
-date: 2024-04-01
+date: 2024-05-15
 description: In april’s market report, we explore the evolving landscape of Meta's Llama 3, LLM, the shirt to edge computing, the new Bun 1.1, the trend of copy-pates UI. 
 authors: 
   - monotykamary
