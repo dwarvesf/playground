@@ -8,19 +8,18 @@ description: Generative AI overview and the different stages of building an LLM-
 authors: 
   - antran
 menu: memo
-type: null
+type: ogif
 hide_frontmatter: false
 ---
 ## Generative AI
 
-![AI overview](assets/ai-eco.png)
+![AI overview](assets/developing-rapidly-with-generative-ai_ai-eco.webp)
 
 Generative AI is a subset of artificial intelligence that focuses on creating new content, such as images, text, or audio, based on patterns learned from existing data.
 
 ## Stages for Building LLM-powered Features
 
-![Stages for Building LLM-powered Features](assets/llm-building-stages.png)
-
+![Stages for Building LLM-powered Features](assets/developing-rapidly-with-generative-ai_llm-building-stages.webp)
 
 ### 1. Identify use cases
 The first stage is to identifying where generative AI can make an impact. The common challenges can be:
@@ -43,10 +42,10 @@ Selecting off-the-shelf LLM which use for the prototype. The general idea is tha
 
 The key step at this stage is to create the right prompt. To do this, a technique known as [AI-assisted evaluation](https://arize.com/blog-course/llm-evaluation-the-definitive-guide/) can help to pick the prompts that lead to better quality outputs by using metrics for measuring performance.
 
-![How AI-assisted evaluation works](assets/evaluating-prompts.png)
+![How AI-assisted evaluation works](assets/developing-rapidly-with-generative-ai_evaluating-prompts.webp)
 
 ### 4. Deploying at Scale
-![A high-level architecture for an LLM application](assets/llm-arch.png)
+![A high-level architecture for an LLM application](assets/developing-rapidly-with-generative-ai_llm-arch.webp)
 This involves setting up the infrastructure to handle the expected load, monitoring the system's performance, and ensuring that the feature continues to meet the requirements set in the previous stages. There are 2 ways to consider for deploying:
 
   - **Using commercial LLMs**: this is greate to accessing to top-notch models, don't have to worry about setting up the tech, but the expenses can add up quickly.
