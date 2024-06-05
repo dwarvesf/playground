@@ -8,6 +8,8 @@ date: 2024-06-05
 description: We’ve always wanted to visit SP Group, one of our partners, but the pandemic made it impossible until now. This year, the opportunity finally came when we decided to attend Echelon X in Singapore.
 authors:
   - innno_
+  - nikki
+  - huytq
 menu: changelog
 type: digest
 hide_frontmatter: false
