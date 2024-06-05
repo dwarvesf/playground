@@ -1,18 +1,15 @@
 ---
 tags: 
-  - techecosystem
-  - community
+  - partnership
+  - wala
   - summit
-  - market-report
-title: "Echelon X Singapore 2024: Where Innovations Meet Inspiration"
+title: "Dwarves x SPGroup WALA"
 date: 2024-06-05
 description: This year’s Echelon X in Singapore was a bustling hub of innovation, bringing together around 10,000 participants. Along with visiting SPGroup, our team also attended Echelon X to have a better understanding of how the tech and startup ecosystem is heading.
 authors: 
 - nikki
 - innno_
 - huytq
-- han
-- minh
 menu: playground
 type: recap
 hide_frontmatter: false
