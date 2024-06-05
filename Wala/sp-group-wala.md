@@ -7,11 +7,11 @@ title: "Dwarves x SP Group WALA"
 date: 2024-06-05
 description: We’ve always wanted to visit SP Group, one of our partners, but the pandemic made it impossible until now. This year, the opportunity finally came when we decided to attend Echelon X in Singapore.
 authors:
-  - innno_
   - nikki
+  - innno_
   - huytq
-menu: changelog
-type: digest
+menu: playground
+type: wala
 hide_frontmatter: false
 pinned: true
 hide_title: false
@@ -35,7 +35,7 @@ All in all, visiting SPG for us reinforced our direction of how we should grow o
 
 We are greatly grateful for how welcoming and open the SPG team was to us. We look forward to continue contributing to the changes SPG is making every day.
 
-![](assets/sp-group-wala.jpeg)
+![](assets/sp-group-wala.webp)
 ___
 
 **WALA: to walk around, learn around.** 
