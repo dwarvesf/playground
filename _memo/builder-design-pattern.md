@@ -2,7 +2,7 @@
 tags:
   - design pattern
   - creational design pattern
-title: 'Introduce the Builder pattern and its usecases'
+title: 'Introduce the Builder pattern and its use cases'
 date: 2024-06-09
 description: 'Builder, one of the creational patterns, allows user to construct complex object step by step while still maintaining flexibility.'
 authors:
@@ -73,7 +73,7 @@ new DrinkBuilder()
 Notice how by defining each step as method we (the consumer, one that uses the builder) can easily add/skip/modify certain properties of the object, this would all have been hidden away by the Factory class. And the method chaining helps with the readability too.
 
 ### Real life examples
-Jquery was one of the early pioneers to adopt this pattern in their APIs, those little `$(something).on("click", func).toggle("class")...` is the Builder pattern in action. In fact, the javascript ecosytem is very fond of this pattern, some other libraries that make use of this are:
+jQuery was one of the early pioneers to adopt this pattern in their APIs, those little `$(something).on("click", func).toggle("class")...` is the Builder pattern in action. In fact, the javascript ecosytem is very fond of this pattern, some other libraries that make use of this are:
 
 - [wretch](https://github.com/elbywan/wretch) - a wrapper for native Fetch API with intuitive syntax
 - [zod](https://github.com/colinhacks/zod) - a schema validation library
