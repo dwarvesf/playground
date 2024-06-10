@@ -17,13 +17,13 @@ hide_title: false
 
 ![](assets/prototype-design-pattern.pdf)
 
-### Problem statement
+## Problem statement
 
 We want a copy of an object, but the config only initialized at runtime, its fields and methods were private, or its properties were manipulated through multiple processes, so it is difficult to recreate the object. For example: 
 - DB Access Object with credentials only provide in runtime.
 - A ledger object has transaction histories, which are protected through private fields, and exposes a Total() function to get the total balance. To replicate the whole ledger, we must recreate all its transaction histories.
 
-### Prototype design pattern
+## Prototype design pattern
 
 Request a Clone of the object(Prototype) without the need to look up its class and implementation.
 
@@ -57,7 +57,7 @@ type (h *Hero) Clone() Hero {
 }
 ```
 
-### Case by case
+## Case by case
 
 When developing a system, the Prototype design pattern works in tandem with other creation patterns:
 - Factories, abstract factories, and builders help create the original object. Prototype provides a clone of the object without the need to call the above patterns
@@ -68,6 +68,6 @@ The most common use cases for Prototype design patterns are:
 - Ledger/Bank statement objects, we clone the object to the statistics and simulations.
 
 
-### Reference
+## Reference
 
 - https://refactoring.guru/design-patterns/prototype
