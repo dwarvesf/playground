@@ -8,7 +8,7 @@ title: "A tour of Singleton design pattern with Golang"
 description: "Singleton real-world problem, concept, solution, use cases, implementations, pros & cons, references"
 authors:
   - anhnh
-date: 2024-06-08
+date: 2024-06-10
 ---
 
 ![](assets/singleton-design-pattern.pdf)

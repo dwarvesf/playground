@@ -3,8 +3,8 @@ tags:
   - software-design
   - software-architecture
   - graphical-notation
-title: "Going Through use cases of the prototype design pattern and it place among the creational patterns "
-date: 2024-06-09
+title: "Going Through use cases of the prototype design pattern and it place among the creational patterns"
+date: 2024-06-10
 description: "Prototype, one of the creational patterns, minimize efforts when recreating new from the exist object by cloning the 'prototype' of it."
 authors:
   - jim
