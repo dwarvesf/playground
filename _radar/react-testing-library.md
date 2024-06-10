@@ -4,9 +4,6 @@ title: React Testing Library
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: High
 assign: Thanh Pham
 priority: null

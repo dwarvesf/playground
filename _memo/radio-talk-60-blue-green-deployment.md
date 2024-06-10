@@ -7,9 +7,6 @@ title: Radio Talk 60 Blue Green Deployment
 date: 2023-03-10
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 author: Thanh Pham
 ---
 

@@ -10,11 +10,6 @@ description: In april’s market report, we explore the evolving landscape of Me
 authors: 
   - monotykamary
   - thanh
-menu: labs
-type: labs
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 ## Key Takeaways

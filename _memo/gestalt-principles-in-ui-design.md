@@ -6,9 +6,6 @@ title: Gestalt Principles In Ui Design
 date: 2020-07-13
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/gestalt-principles-in-ui-design_261d02efd9a855cdb1eed8a98112d3ae_md5.webp)

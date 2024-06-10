@@ -9,11 +9,6 @@ date: 2024-05-31
 description: "Here's to hoping for a brighter and better month on this last day of May. We’re in the heat of a community offline meet-up today, gathering to discuss the month’s progress. Everyone's a bit busy arranging their travel to Saigon, a wild place we all call home. So, let’s dive into what we’ve been up to."
 authors:
   - innno_
-menu: playground
-type: digest
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 Here's to hoping for a brighter and better month on this last day of May. We’re in the heat of a community offline meet-up today, gathering to discuss the month’s progress.

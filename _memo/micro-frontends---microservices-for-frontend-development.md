@@ -5,9 +5,6 @@ title: Micro Frontends Microservices For Frontend Development
 date: 2021-07-09
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## What is Micro-frontend ?

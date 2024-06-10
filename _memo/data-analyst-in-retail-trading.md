@@ -7,9 +7,6 @@ title: Data Analyst In Retail Trading
 date: 2022-08-29
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 > I am Bach Phuong and I work at Dwarves Foundation as a Data Analyst, helping partner companies realize insights and understand their business better.

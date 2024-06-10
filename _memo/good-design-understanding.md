@@ -5,9 +5,6 @@ title: Good Design Understanding
 date: 2018-04-02
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Good design is not just what looks good. It also needs to perform, convert, astonish, and fulfill its purpose. It can be innovative or it might just get the job done.

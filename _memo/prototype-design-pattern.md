@@ -8,11 +8,6 @@ date: 2024-06-09
 description: "Prototype, one of the creational patterns, minimize efforts when recreating new from the exist object by cloning the 'prototype' of it."
 authors:
   - jim
-menu: memo
-type: memo
-hide_frontmatter: false
-pinned: false
-hide_title: false
 ---
 
 ![](assets/prototype-design-pattern.pdf)

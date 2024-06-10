@@ -6,9 +6,6 @@ title: An Overview Of Micro Investment In Real Estate
 date: 2020-08-26
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/an-overview-of-micro-investment-in-real-estate_c090fa939fb85f75f0df5757eca321e4_md5.webp)

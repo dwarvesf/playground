@@ -6,9 +6,6 @@ title: The Principle Of Spacing In Ui Design Part 2
 date: 2018-11-01
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 ## Vertical spacing
 ### Spacing within each paragraph

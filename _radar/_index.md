@@ -6,9 +6,6 @@ authors:
 tags:
   - dwarves
   - radar
-menu: 
-type: radar
-hide_frontmatter: false
 ---
 
 

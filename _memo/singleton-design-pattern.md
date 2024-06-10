@@ -9,11 +9,6 @@ description: "Singleton real-world problem, concept, solution, use cases, implem
 authors:
   - anhnh
 date: 2024-06-08
-menu: memo
-type: memo
-hide_frontmatter: false
-pinned: false
-hide_title: false
 ---
 
 ![](assets/singleton-design-pattern.pdf)

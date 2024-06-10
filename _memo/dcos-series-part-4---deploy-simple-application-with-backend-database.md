@@ -5,9 +5,6 @@ title: Dcos Series Part 4 Deploy Simple Application With Backend Database
 date: 2017-06-10
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Create an Application with Golang

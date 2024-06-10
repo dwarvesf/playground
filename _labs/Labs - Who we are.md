@@ -6,9 +6,6 @@ date: 2023-12-03
 description: Discover Labs team at Dwarves, where a passion for emerging technologies unites a diverse team dedicated to shaping a better future. Explore our human-centric approach, view technology as a catalyst for progress, and join our journey towards a technologically advanced, interconnected tomorrow.
 authors:
   - thanh
-menu: labs
-type: labs
-hide_frontmatter: false
 ---
 
 At Labs, our team is united by a shared passion for new technologies. We are a diverse group of individuals, each with unique backgrounds and personalities, but our common ground lies in our dedication to exploring and understanding emerging technologies. Our goal is to investigate and learn about advancements that have the potential to enhance our lives and contribute to a better future.

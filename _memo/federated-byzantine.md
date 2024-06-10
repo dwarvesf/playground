@@ -6,9 +6,6 @@ title: Federated Byzantine
 date: 2019-05-18
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Stellar is all about trust (validators). After all, when you have to trust somebody, you'd trust the reputated nodes, rather than a random stranger node on the internet.

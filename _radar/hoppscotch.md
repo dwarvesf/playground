@@ -4,9 +4,6 @@ title: Hoppscotch
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Low
 assign: Nam Nguyen
 priority: null

@@ -12,11 +12,6 @@ description: This month has been a continuation of AI and an upwards trend on Fi
 authors:
   - monotykamary
   - thanh
-menu: labs
-type: labs
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 ## Trends on our Radar

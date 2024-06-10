@@ -4,9 +4,6 @@ title: Blue Green Deployment
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Moderate
 assign: quang
 priority: null

@@ -5,9 +5,6 @@ title: Daemons And Services Programming Guide
 date: 2020-05-11
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## About Daemons and Services

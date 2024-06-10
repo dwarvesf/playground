@@ -9,9 +9,6 @@ description: This guide will show you how to move $DFG from Ethereum to Base usi
 authors: 
 - minh
 - jack
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 $DFG is a token that represents the shares of Dwarves Foundation for Dwarves and active contributors of our communitiy. Dwarves team introduced a [program](https://memo.d.foundation/playground/_memo/how-to-earn-reward-from-staking-dfg/) to help $DFG holders earn $USDC from staking $DFG on Base. However, the orgin $DFG is on Ethereum Network, which means to stake $DFG and earn reward, $DFG holders need to move $DFG from Ethereum to Base using a bridge. 

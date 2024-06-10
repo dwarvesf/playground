@@ -13,11 +13,6 @@ date: 2024-01-24
 description: Google Dataproc is a fast and easy-to-use, fully managed cloud service for running Apache Spark and Hadoop workloads. It allows users to process and analyze large-scale data efficiently and at scale.
 authors:
   - mickwan1234
-menu: brainery
-type: brainery
-hide_frontmatter: false
-pinned: 
-hide_title: false
 icy: "10"
 github_id: mickwan1234
 ---

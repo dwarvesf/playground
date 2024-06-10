@@ -16,11 +16,6 @@ date: 2024-01-24
 description: Google Data Fusion is a fully managed, cloud-native data integration service that enables users to efficiently build and manage ETL/ELT data pipelines. It is designed to streamline data engineering tasks for enterprise users and is built on top of the open-source project CDAP.
 authors:
   - mickwan1234
-menu: brainery
-type: brainery
-hide_frontmatter: false
-pinned: 
-hide_title: false
 icy: "10"
 github_id: mickwan1234
 ---

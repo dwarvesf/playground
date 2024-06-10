@@ -6,9 +6,6 @@ title: Blockchain For Designers
 date: 2020-05-04
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Intro

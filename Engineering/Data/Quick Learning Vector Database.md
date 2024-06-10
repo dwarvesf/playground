@@ -12,8 +12,6 @@ title: Quick Learning Vector Database
 description: The motivation of this thoughts that trying to discover the LLMs and Generative AI...
 authors:
   - longddl
-menu: playground
-type: brainery
 ---
 
 ## Motivation of Vector Database

@@ -7,9 +7,6 @@ date: 2023-11-21
 description: Selecting the right R&D topics is crucial for our organization's growth. Currently, we are inviting topic proposals specifically from members of our labs, consulting and operation teams. These team members are chosen for their deep understanding of our business and their ability to envision the application of new technologies.
 authors:
   - thanh
-menu: labs
-type: labs
-hide_frontmatter: false
 ---
 
 Selecting the right R&D topics is crucial for our organization's growth. Currently, we are inviting topic proposals specifically from members of our labs, consulting and operation teams. These team members are chosen for their deep understanding of our business and their ability to envision the application of new technologies.

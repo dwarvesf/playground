@@ -4,9 +4,6 @@ title: Wasm
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Low
 assign: An Tran
 priority: null

@@ -6,9 +6,6 @@ title: What Is Pnpm Compare To Npmyarn
 date: 2023-04-11
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## What is PNPM?

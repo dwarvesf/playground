@@ -5,9 +5,6 @@ title: Use Go Selenium To Crawl Data
 date: 2016-06-02
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/use-go-selenium-to-crawl-data_f963144e3cfac24481dbfeb02cf6a0e6_md5.webp)

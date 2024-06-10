@@ -6,9 +6,6 @@ title: Lessons Learned From Being A Part Of Corporate Micro Frontend Implementat
 date: 2023-04-24
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Introduction

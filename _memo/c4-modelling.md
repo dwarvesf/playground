@@ -8,11 +8,6 @@ date: 2024-05-23
 description: "Understanding and conveying software architecture can be a daunting task, especially when dealing with non-technical stakeholders or diverse development teams. This article delves into the challenges of traditional methods like complex UML diagrams and non-descriptive box-and-line drawings. We introduce the C4 model, a powerful framework that simplifies these challenges by using layered abstractions and visualizations. Explore how the model breaks down software architecture into comprehensible levels—Context, Container, Component, and Code—and offers guidelines on creating effective diagrams. Real-world examples illustrate the application of the C4 model, making it an invaluable tool for creating a shared understanding and ensuring clear, meaningful communication among all parties involved."
 authors:
   - jim
-menu: memo
-type: memo
-hide_frontmatter: false
-pinned: false
-hide_title: false
 ---
 
 ![](assets/c4-modelling.pdf)

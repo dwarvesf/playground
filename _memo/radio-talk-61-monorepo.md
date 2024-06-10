@@ -6,9 +6,6 @@ title: Radio Talk 61 Monorepo
 date: 2023-03-27
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Demystifying Monorepos: A Recap of Our Recent Sharing Session

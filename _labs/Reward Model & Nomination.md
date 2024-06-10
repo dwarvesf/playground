@@ -7,9 +7,6 @@ date: 2023-11-21
 description: Our Tech Labs is a hub of continuous learning and application of advanced technologies. This program is designed to celebrate contributions at various levels, from enhancing knowledge to contributing to business growth.
 authors:
   - thanh
-menu: labs
-type: labs
-hide_frontmatter: false
 ---
 
 Our Tech Labs is a hub of continuous learning and application of advanced technologies. This program is designed to celebrate contributions at various levels, from enhancing knowledge to contributing to business growth.

@@ -7,9 +7,6 @@ title: Why We Chose Our Tech Stack Accelerating Development With A Robust Fronte
 date: 2023-03-20
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 author: Thanh Pham
 ---
 

@@ -5,9 +5,6 @@ title: Reproduce Apple Find Me Bottom Menu View
 date: 2019-06-29
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Today we are going to recreate Find Me Bottom Menu view in few lines of code.

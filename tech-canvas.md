@@ -11,11 +11,6 @@ tags:
   - innovation
   - radar
   - bounty
-menu: playground
-type: playground
-hide_frontmatter: false
-hide_title: false
-pinned: false
 ---
 
 This is where we share our journey in the ever-evolving landscape of technology. It’s a space where we unveil our latest breakthroughs, discuss our research, and delve into our innovative projects. Just as an artist expresses their vision on a canvas, we use this platform to paint a picture of our technological advancements and how they’re shaping the future.

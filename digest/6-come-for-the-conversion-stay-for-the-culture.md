@@ -9,11 +9,6 @@ date: 2024-05-23
 description: "Hi, it’s @innno again. Summer is almost here. But don't worry, this update is all about making your day more comfortable. Now, onto this week’s updates."
 authors:
   - innno_
-menu: changelog
-type: digest
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 Hi, it’s @innno_ again. Summer is almost here. But don't worry, this update is all about making your day more comfortable. Now, onto this week’s updates.

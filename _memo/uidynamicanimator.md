@@ -6,9 +6,6 @@ title: Uidynamicanimator
 date: 2019-07-26
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Definition

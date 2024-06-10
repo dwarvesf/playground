@@ -7,11 +7,6 @@ date: 2024-06-09
 description: "Builder, one of the creational patterns, allows user to construct complex object step by step while still maintaining flexibility."
 authors:
   - vincent
-menu: memo
-type: memo
-hide_frontmatter: false
-pinned: false
-hide_title: false
 ---
 
 ![](assets/builder-design-pattern.pdf)

@@ -4,9 +4,6 @@ title: Devcontainers
 date: 2023-10-13
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: High
 assign: Tom X Nguyen
 priority: 🌟 NEW , 🎯FOCUS

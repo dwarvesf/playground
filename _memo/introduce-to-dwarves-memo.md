@@ -5,9 +5,6 @@ title: Introduce To Dwarves Memo
 date: 2020-05-17
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ---

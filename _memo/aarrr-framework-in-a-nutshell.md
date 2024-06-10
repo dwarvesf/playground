@@ -7,9 +7,6 @@ title: Aarrr Framework In A Nutshell
 date: 2020-06-30
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 We could find a bunch of AARRR frameworks definition across the internet (Thanks to Google). I don’t intend to create another one here.

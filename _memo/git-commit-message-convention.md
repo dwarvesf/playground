@@ -5,9 +5,6 @@ title: Git Commit Message Convention
 date: 2021-04-06
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 I bumped into an article a few days ago. It was short and simple, related enough to make me wonder if we have the same thing in the team. [How a git commit message should look like.](https://dev.to/i5han3/git-commit-message-convention-that-you-can-follow-1709)

@@ -5,9 +5,6 @@ title: Are We Really Engineers
 date: 2021-03-08
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/are-we-really-engineers_6cf3675a02ca90a8745a69479b359671_md5.webp)

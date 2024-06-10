@@ -4,9 +4,6 @@ title: React Query
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: null
 assign: An Tran
 priority: 🌟 NEW

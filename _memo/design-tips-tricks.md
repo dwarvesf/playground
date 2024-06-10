@@ -5,9 +5,6 @@ title: Design Tips Tricks
 date: 2018-03-24
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 * [https://uxplanet.org/the-18-must-do-principles-in-the-form-design-fe89d0127c92](https://uxplanet.org/the-18-must-do-principles-in-the-form-design-fe89d0127c92)

@@ -5,9 +5,6 @@ title: Six Things I Extracted From Design Thinking
 date: 2021-04-14
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 I’m Minh Truong, I've been working as a UI/UX Design for 2 years. I'm currently part of the [Dwarves Foundation](https://dwarves.foundation/) team. My intention has always been to become a better problem solver, with creativity and productivity being my main goals and focus.

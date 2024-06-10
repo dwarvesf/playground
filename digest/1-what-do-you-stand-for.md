@@ -9,11 +9,6 @@ date: 2024-04-09
 description: Our Discord crew is buzzing with energy after our last Friday community call, with folks sharing snapshots of their workspaces, Anna shared the movie quote and catch-up with peeps at lobby, random channels.
 authors:
   - innno_
-menu: changelog
-type: digest
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 ### Lock in Your Workspace. Show the World.

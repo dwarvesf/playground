@@ -5,9 +5,6 @@ title: Build An Assistant On The Terminal
 date: 2020-03-27
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Introduction

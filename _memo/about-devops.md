@@ -5,9 +5,6 @@ title: About Devops
 date: 2018-07-23
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## What is DevOps actually?

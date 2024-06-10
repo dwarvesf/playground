@@ -8,9 +8,6 @@ title: Configure The Company Email
 date: 2022-11-29
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Make sure you have 2FA enabled

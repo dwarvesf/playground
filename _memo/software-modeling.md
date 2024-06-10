@@ -5,9 +5,6 @@ title: Software Modeling
 date: 2020-05-08
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 This is how I approach a new topic or knowledge, starts with why, understand the concept and figure out how to make it happen.

@@ -6,9 +6,6 @@ title: Cost Of React Native
 date: 2023-04-17
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/cost-of-react-native_69b49ec589ff19151408b8959ace27bd_md5.webp)

@@ -6,9 +6,6 @@ title: Qc Onboarding
 date: 2017-07-13
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## General workflow

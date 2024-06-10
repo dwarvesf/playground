@@ -7,9 +7,6 @@ date: 2023-11-23
 description: A short-term credit benefit for full-time peeps.
 authors:
   - hnh
-menu: memo
-type: memo
-hide_frontmatter: false
 ---
 
 As we said in our recent post [[icy-in-2024|$icy in 2024 plan]]. Today, we're launching the first feature from our 2024 roadmap: an $icy salary advance.

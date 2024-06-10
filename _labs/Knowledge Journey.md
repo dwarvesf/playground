@@ -12,9 +12,6 @@ date: 2023-11-21
 description: "Our process for evaluating and integrating technology is designed to be thorough yet efficient, ensuring we adopt only the most effective tools into our operations. It consists of four key stages: Assess, Trial, Adopt, and Hold."
 authors:
   - thanh
-menu: labs
-type: labs
-hide_frontmatter: false
 ---
 
 Our process for evaluating and integrating technology is designed to be thorough yet efficient, ensuring we adopt only the most effective tools into our operations. It consists of four key stages: Assess, Trial, Adopt, and Hold.

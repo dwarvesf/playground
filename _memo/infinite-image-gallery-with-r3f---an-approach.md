@@ -5,9 +5,6 @@ title: Infinite Image Gallery With R3f An Approach
 date: 2020-09-14
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/infinite-image-gallery-with-r3f---an-approach_eb91b6c0aa14997e1a88191e1acaa8dd_md5.webp)

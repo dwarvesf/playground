@@ -5,9 +5,6 @@ title: Design Workflow
 date: 2018-03-22
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Project Research

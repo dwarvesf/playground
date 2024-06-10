@@ -7,9 +7,6 @@ description: Our second Devbox session, where we discussed our Docker adoption a
 authors: 
   - hnh
   - vhbien
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 This is the 2nd post of Devbox series includes
 

@@ -8,11 +8,6 @@ date: 2024-03-04
 description: This is a guide on how to setup your environment and settings to push content to our notes website, note.d.foundation.
 authors:
   - minhcloud
-menu: memo
-type: memo
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 ## Before edit or create a new post
@@ -40,9 +35,6 @@ title: [The title]
 date: yyyy-mm-dd
 description: [your description]
 authors: [your name]
-menu: [folder]
-type: null
-hide_frontmatter: false
 ---
 ```
 

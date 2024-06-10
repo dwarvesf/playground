@@ -8,9 +8,6 @@ title: I18n Frontend Guideline
 date: 2023-04-03
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/i18n-frontend-guideline_0d5e0a2c5a795b96f65caa5b7a360578_md5.webp)

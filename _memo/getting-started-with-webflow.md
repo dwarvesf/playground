@@ -5,9 +5,6 @@ title: Getting Started With Webflow
 date: 2021-01-23
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/getting-started-with-webflow_5386df53f5360ba922dbe2c4b467dfdb_md5.webp)
@@ -80,8 +77,7 @@ To add a Header, click “Cmd+K” and search for the keyword “NavBar” or lo
 NavBar is created with Brand, Nav Menu and Menu Button, located in one container.
 
 1. Brand: can be replaced with your company’s logo
-2. Nav menu: can be replaced with text. I use a burger menu in this case.
-3. Menu Button: I use a burger menu, but normally this could be a CTA.
+2. Nav 3. Menu Button: I use a burger menu, but normally this could be a CTA.
 
 ***Tips:***  Check out [“How to made a Navbar on Webflow”](https://www.youtube.com/watch?v=vj-B5MBAjIc&t=495s&ab_channel=DesignPilot) on Youtube for more information. It might hard sometimes for beginners.
 

@@ -4,9 +4,6 @@ title: Page Object Model
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: High
 assign: Steve Huynh
 priority: null

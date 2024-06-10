@@ -7,9 +7,6 @@ title: Message Queues And Streaming Platforms Eg Kafka Nats Rabbitmq
 date: 2023-05-04
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 <!-- table_of_contents 06b40d23-c5b2-457b-af47-eeb64436cb75 -->

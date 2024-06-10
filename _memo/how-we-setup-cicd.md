@@ -5,9 +5,6 @@ title: How We Setup Cicd
 date: 2021-02-16
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Before we dig through a detailed process, let's set some grounded knowledge about the CI/CD:

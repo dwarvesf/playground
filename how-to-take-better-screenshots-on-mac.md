@@ -8,14 +8,9 @@ date: 2024-03-13
 description: Taking screenshots of them shouldn’t be that challenging. In this article, I’ll take you through my screenshot workflow with a handful of simple tools and techniques and grab screenshots with negligible effort.
 authors:
   - innno_
-menu: playground
 toc: false
 notice: 
-type: 
-hide_frontmatter: false
 event_date: 
-pinned: 
-hide_title: false
 ---
 
 I grab screenshots pretty often. Although macOS’s native screenshot tool is decent for most cases, it’s still a very basic one. Here are a few tips on how to take great-looking screenshots with a simple tool and in less time. 

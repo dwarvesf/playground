@@ -9,11 +9,6 @@ description: To help all our Dwarves team members, create original, helpful, and
 authors:
   - innno_
   - nikki
-menu: playground
-type: guideline
-hide_frontmatter: false
-pinned: false
-hide_title: false
 ---
 
 Road to Discover Dwarves’ Voice: As you know, each individual at Dwarves represents craftsmanship and well-crafted products. I consider craftsmanship as one of the most fundamental aspects of our work, reflected in every piece of content we create.

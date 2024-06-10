@@ -6,9 +6,6 @@ title: Xpc Services On Macos App Using Swift
 date: 2020-11-05
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Before XPC we used to pick up Sockets and Mach Messages (Mach Ports).

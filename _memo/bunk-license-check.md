@@ -6,9 +6,6 @@ title: Bunk License Check
 date: 2020-02-05
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## License detector tool: Glice

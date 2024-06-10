@@ -7,9 +7,6 @@ title: Growth Is Our Universal Language
 date: 2023-02-16
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 author: Han 🐸
 ---
 

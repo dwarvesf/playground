@@ -4,9 +4,6 @@ title: React Hook Form
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Moderate
 assign: Thanh Pham
 priority: null

@@ -5,9 +5,6 @@ title: Estimation In Agile
 date: 2016-02-12
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 **Estimation** (or **estimating**) is the process of finding an **estimate**, or approximation, which is a value that is usable for some purpose even if input data may be incomplete, uncertain, or unstable.

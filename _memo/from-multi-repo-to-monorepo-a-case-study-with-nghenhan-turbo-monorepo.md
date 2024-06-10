@@ -8,9 +8,6 @@ title: From Multi Repo To Monorepo A Case Study With Nghenhan Turbo Monorepo
 date: 2023-03-20
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 In this case study, we share our experience of transitioning from multi-repository structure to a monorepo using [Turbo](https://radar.d.foundation/Turborepo-0dd18b38468c4859a8beaae7bf6c511c) in our project. This migration led to numerous benefits, including a 60% reduction in build times, a 40% increase in developer productivity, and simplified dependency management. Our goal is to offer valuable insights and lessons learned throughout our journey to help others considering a similar transition.

@@ -4,9 +4,6 @@ title: Large Language Model Llm
 date: 2023-04-10
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Moderate
 assign: Tom X Nguyen
 priority: 🎯FOCUS

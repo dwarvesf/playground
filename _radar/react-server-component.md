@@ -4,9 +4,6 @@ title: React Server Component
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: null
 assign: Chinh Le
 priority: null

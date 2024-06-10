@@ -7,9 +7,6 @@ description: The overview into Nix & how we use Devbox @ Dwarves
 authors: 
   - hnh
   - vhbien
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 This is the 3rd post of Devbox series includes

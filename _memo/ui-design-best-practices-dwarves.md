@@ -6,9 +6,6 @@ title: Ui Design Best Practices Dwarves
 date: 2020-11-24
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 One of the factors that could make or break a project is the process of communication between designers and developers. Designers and developers have their own working “*languages*.”

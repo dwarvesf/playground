@@ -5,9 +5,6 @@ title: Remix
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Moderate
 assign: Hien Le
 priority: null

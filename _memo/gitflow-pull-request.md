@@ -5,9 +5,6 @@ title: Gitflow Pull Request
 date: 2021-04-10
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/gitflow-pull-request_0150827f46aae013c7fa3a68c509e812_md5.webp)

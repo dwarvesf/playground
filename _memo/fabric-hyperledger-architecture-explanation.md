@@ -6,9 +6,6 @@ title: Fabric Hyperledger Architecture Explanation
 date: 2019-05-15
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 # What is Hyperledger

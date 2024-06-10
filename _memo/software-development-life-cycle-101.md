@@ -5,9 +5,6 @@ title: Software Development Life Cycle 101
 date: 2020-05-19
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 This workshop contains the basic knowledge on Software Development Life Cycle, provides people with a step-to-step guideline and the artifacts which will be created on the way. We don't dive in the details. Instead, we treat it as an overview look on how to build software successfully.

@@ -5,9 +5,6 @@ title: Sdk Event Sourcing
 date: 2020-05-21
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Software Development Kit (SDK)

@@ -9,11 +9,6 @@ date: 2024-05-25
 description: "The sun peeks over the horizon, Saturday vibes and good news – the perfect combo. We're about to spice up your weekend with a recap of all the awesome things we whipped up this week."
 authors:
   - innno_
-menu: playground
-type: digest
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 The sun peeks over the horizon, Saturday vibes and good news – the perfect combo. We're about to spice up your weekend with a recap of all the awesome things we whipped up this week.

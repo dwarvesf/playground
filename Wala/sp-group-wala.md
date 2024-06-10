@@ -10,11 +10,6 @@ authors:
   - nikki
   - innno_
   - huytq
-menu: playground
-type: wala
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 We’ve always wanted to visit [SP Group](http://spgroup.com.sg/), one of our partners, but the pandemic made it impossible until now. This year, the opportunity finally came when we decided to attend Echelon X in Singapore.

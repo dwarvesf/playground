@@ -7,9 +7,6 @@ date: 2024-05-02
 description: Generative AI overview and the different stages of building an LLM-powered feature
 authors: 
   - antran
-menu: memo
-type: ogif
-hide_frontmatter: false
 ---
 ## Generative AI
 

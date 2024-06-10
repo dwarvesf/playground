@@ -6,9 +6,6 @@ title: Database Designs For Multilingual Apps
 date: 2023-04-11
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/database-designs-for-multilingual-apps_c9a1b2c55d33bd432d3b0ace8d0a65e7_md5.webp)

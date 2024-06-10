@@ -4,9 +4,6 @@ title: Copilot
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Moderate
 assign: Tay DF
 priority: null

@@ -9,11 +9,6 @@ date: 2024-05-06
 description: "Welcome back to the #4 weekly digest after a long holiday. Those Discord channels are still buzzing with active messages. Without further ado, let’s see what I’ve got to share."
 authors:
   - innno_
-menu: changelog
-type: digest
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 Welcome back to the #4 weekly digest after a long holiday. Those Discord channels are still buzzing with active messages. Without further ado, let’s see what I’ve got to share. 

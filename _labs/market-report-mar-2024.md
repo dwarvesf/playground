@@ -10,11 +10,6 @@ description: In this month’s market report, we explore the evolving landscape 
 authors: 
   - monotykamary
   - thanh
-menu: labs
-type: labs
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 In this month's market report, we explore the evolving landscape of artificial intelligence, API techniques, toolings, programming languages, and the intersection of design and engineering. Our insights shed light on the dynamic shifts and emerging trends across these domains, highlighting the advancements that are shaping the future of technology and software development.

@@ -6,9 +6,6 @@ title: Sql Practices Orm Vs Plain Sql
 date: 2021-07-07
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Definition

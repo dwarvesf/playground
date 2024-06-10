@@ -4,9 +4,6 @@ title: Dapr
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: null
 assign: Tom X Nguyen
 priority: null

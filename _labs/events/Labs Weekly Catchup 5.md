@@ -14,9 +14,6 @@ date: 2024-01-03
 description: Our fifth weekly catchup to kick off the new year! We organize an agenda the day beforehand and consolidate our findings, notable research progress, possibly new tech, insight or technique everyone should know.
 authors:
   - monotykamary
-menu: labs
-type: labs
-hide_frontmatter: false
 event_date: 2023-12-13
 ---
 

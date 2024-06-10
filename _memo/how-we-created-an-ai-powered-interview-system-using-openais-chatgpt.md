@@ -7,9 +7,6 @@ title: How We Created An Ai Powered Interview System Using Openais Chatgpt
 date: 2023-05-29
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/how-we-created-an-ai-powered-interview-system-using-openais-chatgpt_7fbe880aa3a51713c213dc3db6043fc7_md5.webp)

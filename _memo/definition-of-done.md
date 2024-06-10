@@ -5,9 +5,6 @@ title: Definition Of Done
 date: 2016-02-14
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Definition of done also known as **DoD** is a list of criteria which must be met before a product increment (story) is considered "done".

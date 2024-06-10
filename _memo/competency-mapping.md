@@ -5,9 +5,6 @@ title: Competency Mapping
 date: 2018-04-01
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 We identified skills and actions showing someone has one competency or not.

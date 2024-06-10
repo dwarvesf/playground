@@ -4,9 +4,6 @@ title: Create Working Devcontainer For Nextjs Boilerplate
 date: 2023-10-11
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 status: Trial
 note: null
 person: Tom X Nguyen

@@ -5,9 +5,6 @@ title: Split And Reuse Code In React Application
 date: 2019-05-02
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/split-and-reuse-code-in-react-application_5f86abdbff47c3d17d6258e3b001ceb8_md5.webp)

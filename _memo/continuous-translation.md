@@ -8,9 +8,6 @@ date: 2023-04-11
 description: Continuous Translation (CT) is a modern approach to translation management that involves synchronizing software development and translation workflows. This means that developers, translators, and product owners work together in a continuous cycle to ensure that all translations are up-to-date and aligned with the latest software developments.
 authors:
   - antran
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/continuous-translation_eaf982ca480d0677ec9d8fd34553b51a_md5.webp)

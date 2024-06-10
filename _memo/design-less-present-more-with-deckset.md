@@ -8,9 +8,6 @@ date: 2024-04-05
 description: null
 authors: 
   - anna
-menu: playground
-type: null
-hide_frontmatter: false
 ---
 Do you ever feel overwhelmed by the myriad of design tools and options in PowerPoint, or the countless books and tutorials dedicated to beautifying a single sentence on a 100-inch screen?You're not alone! As a designer myself, I used to get caught up in the "beautification" trap, spending hours tweaking layouts, colors, fonts, and more, only to realize that the content of my presentation was the key factor.
 

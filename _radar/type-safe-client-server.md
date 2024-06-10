@@ -4,9 +4,6 @@ title: Type Safe Client Server
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: High
 assign: An Tran
 priority: 🎯FOCUS

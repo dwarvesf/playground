@@ -6,9 +6,6 @@ title: Easy Prompt Engineering For Business Use And Mitigating Risks In Llms
 date: 2023-05-22
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Preface

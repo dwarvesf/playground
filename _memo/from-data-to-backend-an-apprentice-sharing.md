@@ -6,9 +6,6 @@ title: From Data To Backend An Apprentice Sharing
 date: 2022-09-21
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 > *For *<span style='color:red'>*[My Anh](http://linkedin.com/in/anne-n-bb440116a)*</span>*, Dwarves Foundation Apprenticeship has surpassed a traditional training program concept. With her, it’s been a huge shift: A supportive team that embraces her for who she is and unlocks her capabilities to grow in ways she never imagined. *
 

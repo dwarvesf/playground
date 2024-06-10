@@ -5,9 +5,6 @@ title: Overview On Broker Pattern In Distributed System
 date: 2019-08-24
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Definition

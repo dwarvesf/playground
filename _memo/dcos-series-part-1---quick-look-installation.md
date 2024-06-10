@@ -5,9 +5,6 @@ title: Dcos Series Part 1 Quick Look Installation
 date: 2017-05-04
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## What is DC/OS ?

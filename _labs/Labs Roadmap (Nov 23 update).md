@@ -7,9 +7,6 @@ date: 2023-11-21
 description: Explore our November 2023 Labs Roadmap highlighting innovative technology projects and challenges for the upcoming month. Key focus areas include WebAssembly (WASM), Passwordless Authentication, Rust, AI, MPC, and UI practices.
 authors:
   - thanh
-menu: labs
-type: labs
-hide_frontmatter: false
 ---
 
 In a recent collaborative discussion between key members of the Labs and Consulting teams, we've made decisive strides in pinpointing key topics and potential projects for development. Each topic is paired with specific challenges to ensure we engage deeply with the technology, understanding its practical applications. The focal point for the coming month is WebAssembly (WASM), alongside a range of exciting use-cases we plan to implement and demonstrate.

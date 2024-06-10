@@ -5,9 +5,6 @@ title: Passing The Probation Get 3 Upvotes
 date: 2022-08-26
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 author: Han 🐸
 ---
 

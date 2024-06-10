@@ -5,9 +5,6 @@ title: How We Contribute To Homebrew
 date: 2016-03-13
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Homebrew

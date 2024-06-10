@@ -4,9 +4,6 @@ title: Apache Spark
 date: 2023-03-06
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Moderate
 assign: Dung Ho, minhth
 priority: null

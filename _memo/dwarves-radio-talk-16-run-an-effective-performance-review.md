@@ -6,9 +6,6 @@ title: Dwarves Radio Talk 16 Run An Effective Performance Review
 date: 2021-08-02
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ### Performance Review 

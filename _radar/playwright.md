@@ -4,9 +4,6 @@ title: Playwright
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: null
 assign: Steve Huynh, Tuan Tran, Ngan Le Kim
 priority: null

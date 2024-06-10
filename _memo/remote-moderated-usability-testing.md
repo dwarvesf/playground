@@ -5,9 +5,6 @@ title: Remote Moderated Usability Testing
 date: 2020-05-10
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Intro

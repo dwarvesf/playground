@@ -4,9 +4,6 @@ title: Reinforcement Learning From Human Feedback
 date: 2023-06-01
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Moderate
 assign: Thanh Pham
 priority: 🎯FOCUS

@@ -14,11 +14,6 @@ description: Here are some of the few trends we are seeing across the industry, 
 authors:
   - monotykamary
   - thanh
-menu: labs
-type: labs
-hide_frontmatter: false
-pinned: false
-hide_title: false
 ---
 
 ## Trends on our Radar

@@ -4,9 +4,6 @@ title: Codecept
 date: 2023-04-05
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Moderate
 assign: Steve Huynh, Tuan Tran, Ngan Le Kim
 priority: 🌟 NEW

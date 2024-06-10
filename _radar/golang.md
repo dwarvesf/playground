@@ -4,9 +4,6 @@ title: Golang
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: High
 assign: Andy Hieu Phan
 priority: null

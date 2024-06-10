@@ -4,9 +4,6 @@ title: K9s
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: null
 assign: quang
 priority: null

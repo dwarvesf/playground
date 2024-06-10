@@ -5,9 +5,6 @@ title: Remote Prepare And Get Going
 date: 2016-01-15
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Checklist

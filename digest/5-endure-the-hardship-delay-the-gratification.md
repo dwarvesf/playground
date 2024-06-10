@@ -9,11 +9,6 @@ date: 2024-05-14
 description: "Happy Monday, I’m here again, bringing you a lot of updates. There are big and small things brewing at Dwarves network. As we keep on crafting a better community day by day with you."
 authors:
   - innno_
-menu: changelog
-type: digest
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 Greetings from Saigon, I’m here again, bringing you a lot of updates. There are big and small things brewing at Dwarves network. As we keep on crafting a better community day by day with you. 

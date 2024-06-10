@@ -5,9 +5,6 @@ title: Remove Unused Css Styles From Bootstrap Using Purgecss
 date: 2019-02-01
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_50067f1125ee42d2d68068bd93443235_md5.webp)

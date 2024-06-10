@@ -5,9 +5,6 @@ title: Hoc Renderprops And Hook In Reactjs
 date: 2019-04-12
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Introduction

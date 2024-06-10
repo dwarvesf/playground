@@ -4,9 +4,6 @@ title: Fullstack Tracing
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: null
 assign: Andy Hieu Phan, Dat Pham
 priority: null

@@ -5,9 +5,6 @@ title: Build A Passcode View With Swift
 date: 2019-06-22
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/build-a-passcode-view-with-swift_38059dcec9bd2edb9ac9b1433eb8870c_md5.webp)

@@ -5,9 +5,6 @@ title: Ui Design Fundamental
 date: 2018-03-20
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 When you design UI for an app or a website, the first thing that the designer needs to determine the purpose of the product and the target audience.  You should plan and calculate for your UI design.

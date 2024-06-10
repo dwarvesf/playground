@@ -8,11 +8,6 @@ date: 2024-03-14
 description: This is a guide on how to setup your environment and settings to push content to our notes website, memo.d.foundation.
 authors:
   - minhcloud
-menu: memo
-type: memo
-hide_frontmatter: false
-pinned: true
-hide_title: false
 ---
 
 ## Set up SSH key

@@ -5,9 +5,6 @@ title: Playaround With Clojure
 date: 2019-09-06
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Definition

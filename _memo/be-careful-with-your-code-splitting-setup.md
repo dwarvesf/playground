@@ -7,9 +7,6 @@ title: Be Careful With Your Code Splitting Setup
 date: 2017-07-17
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 I thought I have been through hell this evening. Took me 6 hours debugging in the deep dark of hell. Oh right.

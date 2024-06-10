@@ -6,9 +6,6 @@ title: Considering Factors For Performance Evaluating
 date: 2016-04-02
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## Fire quickly

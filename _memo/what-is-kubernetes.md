@@ -5,9 +5,6 @@ title: What Is Kubernetes
 date: 2019-09-27
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## What is Kubernetes

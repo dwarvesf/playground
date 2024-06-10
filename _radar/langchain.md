@@ -4,9 +4,6 @@ title: Langchain
 date: 2023-04-29
 description: 
 authors: 
-menu: radar
-type: 
-hide_frontmatter: false
 confidence: Moderate
 assign: Thanh Pham
 priority: 

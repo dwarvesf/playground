@@ -5,9 +5,6 @@ title: Dcos Series Part 2 Deploy Simple Applications
 date: 2017-05-05
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 There are so many interesting things in DC/OS GUI (`Dashboard` with useful metrics/status from all nodes, `Services` tab help us to know which application/service is running on which node, its status, etc.).

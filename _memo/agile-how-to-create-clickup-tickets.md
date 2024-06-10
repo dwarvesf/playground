@@ -5,9 +5,6 @@ title: Agile How To Create Clickup Tickets
 date: 2016-05-04
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 To make sure everyone in the hood can understand the state of company task, the below fields are required to be filled:

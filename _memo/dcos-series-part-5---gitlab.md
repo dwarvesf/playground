@@ -5,9 +5,6 @@ title: Dcos Series Part 5 Gitlab
 date: 2017-06-11
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Gitlab an open source developer tool (like Github) that allows you to host git repositories, review code, track issues, host Docker images and perform continuous integration, and it is very compatible for a small team wit CE version.

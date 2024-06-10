@@ -6,9 +6,6 @@ title: Our View On Fullstack Engineering
 date: 2023-08-30
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 author: Thanh Pham
 ---
 

@@ -5,9 +5,6 @@ title: Setup React Project With Webpack And Babel
 date: 2019-05-02
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/setup-react-project-with-webpack-and-babel_1390995c704e49aab8915f9a87fcd7ce_md5.webp)

@@ -5,9 +5,6 @@ title: Design System For Layer 2 Using Zk Rollup
 date: 2023-04-24
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 <!-- table_of_contents adbd9b7d-46a4-4a1f-ab90-ce4abf276231 -->

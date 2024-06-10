@@ -5,9 +5,6 @@ title: Traits To Assess During An Interview
 date: 2019-09-20
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 * **Grit**: Look for a time the candidate wanted something so badly, they were unstoppable in pursuing it. Or a time they overcame an obstacle.

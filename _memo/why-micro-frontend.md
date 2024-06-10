@@ -7,9 +7,6 @@ title: Why Micro Frontend
 date: 2023-03-20
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 author: Mashiro
 ---
 

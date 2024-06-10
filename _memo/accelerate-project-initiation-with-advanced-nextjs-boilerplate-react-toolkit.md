@@ -8,9 +8,6 @@ title: Accelerate Project Initiation With Advanced Nextjs Boilerplate React Tool
 date: 2023-04-03
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 # Accelerate Project Initiation with Advanced NextJS-Boilerplate & React-Toolkit

@@ -4,9 +4,6 @@ title: Error Logging Convention
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: null
 assign: Andy Hieu Phan
 priority: null

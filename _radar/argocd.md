@@ -4,9 +4,6 @@ title: Argocd
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: High
 assign: quang
 priority: null

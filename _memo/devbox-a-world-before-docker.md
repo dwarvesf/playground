@@ -7,9 +7,6 @@ description: A brief history about the world before Docker and why we need devbo
 authors: 
   - hnh
   - vhbien
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 This is the 1st post of Devbox series includes
 

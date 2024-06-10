@@ -5,9 +5,6 @@ title: Docker Registry
 date: 2016-07-21
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ![](assets/docker-registry_460b62865d3bc638b0bb0c4f7e23260e_md5.webp)

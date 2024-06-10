@@ -5,9 +5,6 @@ title: Domain Glossary
 date: 2020-04-19
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## T1: Retail 2.0

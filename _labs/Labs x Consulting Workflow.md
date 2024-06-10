@@ -7,9 +7,6 @@ date: 2023-11-21
 description: This workflow consolidates how new tech is introduced through the Labs team and how it gets processed to Consulting team to apply for projects and bring awareness of our tech expertise.
 authors:
   - thanh
-menu: labs
-type: labs
-hide_frontmatter: false
 ---
 
 This workflow consolidates how new tech is introduced through the Labs team and how it gets processed to Consulting team to apply for projects and bring awareness of our tech expertise.

@@ -6,9 +6,6 @@ title: Connecting Vim With Golang
 date: 2015-10-16
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 ## An introduction to Vim and how to use Vim with Golang

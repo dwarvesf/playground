@@ -10,9 +10,6 @@ authors:
 - minh
 - jack
 - minh_cloud
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 This guide will show you how to use $DFG staking to earn $USDC, cool merch, and more. You'll need a computer with a browser. But first, let's understand why you're doing this:

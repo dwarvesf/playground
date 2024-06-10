@@ -5,9 +5,6 @@ title: An Alternative To Tm
 date: 2020-05-09
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Vendors may use the phrase "time and materials" (T&M) to describe how they engage in projects and invoice their clients.

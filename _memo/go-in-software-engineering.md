@@ -6,9 +6,6 @@ title: Go In Software Engineering
 date: 2020-08-07
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Go is a type-safe, cloud-native language designed for simplicity

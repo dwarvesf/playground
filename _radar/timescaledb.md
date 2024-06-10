@@ -4,9 +4,6 @@ title: Timescaledb
 date: null
 description: null
 authors: null
-menu: radar
-type: null
-hide_frontmatter: false
 confidence: Moderate
 assign: Tom X Nguyen
 priority: null

@@ -5,9 +5,6 @@ title: Playaround With Rust
 date: 2019-08-30
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Mozilla intends to use Rust as a platform for prototyping experimental browser architectures.

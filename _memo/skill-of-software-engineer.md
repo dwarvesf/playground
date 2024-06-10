@@ -5,9 +5,6 @@ title: Skill Of Software Engineer
 date: 2017-03-14
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 1. **Read Code**

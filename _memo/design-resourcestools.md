@@ -5,9 +5,6 @@ title: Design Resourcestools
 date: 2018-03-25
 description: null
 authors: null
-menu: memo
-type: null
-hide_frontmatter: false
 ---
 
 Besides learning the UI design, the most important thing is to learn UX design to create a good user experience. Helps the user get the goal when in your app.
