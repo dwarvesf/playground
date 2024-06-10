@@ -1,5 +1,9 @@
 ---
-tags: design-pattern, creational, golang, software-architecture
+tags: 
+  - design-pattern
+  - creational
+	- golang
+	- software-architecture
 title: "A tour of Singleton design pattern with Golang"
 description: "Singleton real-world problem, concept, solution, use cases, implementations, pros & cons, references"
 authors:
