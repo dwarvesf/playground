@@ -1,5 +1,7 @@
 ---
-tags: moc, personas
+tags:
+  - moc
+  - personas
 ---
 
 ## General information

@@ -1,5 +1,8 @@
 ---
-tags: moc, ux, design
+tags:
+  - moc
+  - ux
+  - design
 ---
 
 -   [[Three clicks rule is a myth]]

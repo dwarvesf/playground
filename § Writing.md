@@ -1,5 +1,7 @@
 ---
-tags: moc, writing
+tags:
+  - moc
+  - writing
 ---
 ## Write better
 

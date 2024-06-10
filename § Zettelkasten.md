@@ -1,5 +1,7 @@
 ---
-tags: zettelkasten, moc
+tags:
+  - zettelkasten
+	- moc
 ---
 
 Zettelkästen describes a method of personal knowledge management inspired by prolific sociologist Niklas Luhmann.

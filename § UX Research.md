@@ -1,5 +1,8 @@
 ---
-tags: moc, ux, research
+tags:
+  - moc
+  - ux
+  - research
 ---
 ## General
 
