@@ -7,11 +7,7 @@ This is a [[Map of Content]] related to the engineering.
 
 ## Engineering
 
-<%*
-const query = `LIST FROM #engineering AND -#engineering/data AND -#engineering/backend AND -#engineering/frontend AND -#engineering/management AND -#engineering/mobile`
-const dv = this.app.plugins.plugins["dataview"].api;
-const te = await dv.queryMarkdown(query);
-tR += te.value;
-%>
+- [[playbook/operations/focus-on-software-delivery.md|focus-on-software-delivery]]
 
-*This page was last modified at <%* tR += new Date().toISOString();%>*.
+
+*This page was last modified at 2024-06-10T10:37:41.037Z*.

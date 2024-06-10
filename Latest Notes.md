@@ -5,16 +5,16 @@ recurringTemplateName: latest-notes
 
 This is where we keep track of our top 10 latest Brainery notes:
 
-- [[Engineering/Backend/Introduction to CRDT.md|Introduction to CRDT]]
-- [[Engineering/Data/Quick Learning Vector Database.md|Quick Learning Vector Database]]
-- [[Engineering/Data/Data Pipeline Design Framework.md|Data Pipeline Design Framework]]
-- [[_memo/how-to-push-content-on-note-d.md|how-to-push-content-on-note-d]]
-- [[_labs/Market Report Feb 2024.md|Market Report Feb 2024]]
-- [[_labs/Market Report Jan 2024.md|Market Report Jan 2024]]
-- [[Engineering/Google Dataproc.md|Google Dataproc]]
-- [[Engineering/Google Data Fusion.md|Google Data Fusion]]
-- [[Engineering/Data/Google Dataproc.md|Google Dataproc]]
-- [[Engineering/Data/Google Data Fusion.md|Google Data Fusion]]
+- [[Introduction to CRDT|Introduction to CRDT]]
+- [[Quick Learning Vector Database|Quick Learning Vector Database]]
+- [[Data Pipeline Design Framework|Data Pipeline Design Framework]]
+- [[how-to-push-content-on-note-d|how-to-push-content-on-note-d]]
+- [[Market Report Feb 2024|Market Report Feb 2024]]
+- [[Market Report Jan 2024|Market Report Jan 2024]]
+- [[playground/01_literature/Engineering/Google Dataproc|Google Dataproc]]
+- [[playground/01_literature/Engineering/Google Data Fusion|Google Data Fusion]]
+- [[playground/01_literature/Engineering/Data/Google Dataproc|Google Dataproc]]
+- [[playground/01_literature/Engineering/Data/Google Data Fusion|Google Data Fusion]]
 
 
 ## Top Contributors this month
@@ -30,25 +30,25 @@ This is where we keep track of our top 10 latest Brainery notes:
 
 ## Newest Contributors
 
-- **haongo1#3632**: [[_fleeting/202211141513 - Materialized View Pattern.md|202211141513 - Materialized View Pattern]]
-- **hieuvd#4261**: [[_fleeting/202211141287 - Go JSON Parsing.md|202211141287 - Go JSON Parsing]]
-- **hmhoang13#5280**: [[_fleeting/202301191192 - Multi-column index in DB.md|202301191192 - Multi-column index in DB]]
-- **hollow#3333**: [[_fleeting/202210162154 - The Best of CSS TLDR.md|202210162154 - The Best of CSS TLDR]]
-- **namth#6640**: [[_fleeting/202301091379 - Invoking Component Functions in React.md|202301091379 - Invoking Component Functions in React]]
+- **haongo1#3632**: [[202211141513 - Materialized View Pattern|202211141513 - Materialized View Pattern]]
+- **hieuvd#4261**: [[202211141287 - Go JSON Parsing|202211141287 - Go JSON Parsing]]
+- **hmhoang13#5280**: [[202301191192 - Multi-column index in DB|202301191192 - Multi-column index in DB]]
+- **hollow#3333**: [[202210162154 - The Best of CSS TLDR|202210162154 - The Best of CSS TLDR]]
+- **namth#6640**: [[202301091379 - Invoking Component Functions in React|202301091379 - Invoking Component Functions in React]]
 
 ---
-- **[cnhhoang850](https://github.com/cnhhoang850)**: [[Design/What Screens Want.md|What Screens Want]]
-- **[hthai2201](https://github.com/hthai2201)**: [[Engineering/Frontend/Applying Mock Service Worker (MSW) for Seamless Web Development.md|Applying Mock Service Worker (MSW) for Seamless Web Development]]
-- **[huytieu](https://github.com/huytieu)**: [[Communication/DiSC Personality Types in team work.md|DiSC Personality Types in team work]]
-- **[knguyenuit](https://github.com/knguyenuit)**: [[Engineering/Mobile/Stateless and Stateful Widgets in Flutter.md|Stateless and Stateful Widgets in Flutter]]
-- **[nnhuyhoang](https://github.com/nnhuyhoang)**: [[Engineering/Full-text search with Postgresql.md|Full-text search with Postgresql]]
-- **[pthung1311](https://github.com/pthung1311)**: [[Engineering/Mobile/Data race and race condition.md|Data race and race condition]]
-- **[thangnt294](https://github.com/thangnt294)**: [[Engineering/Profiling in Go.md|Profiling in Go]]
-- **[thanhlmm](https://github.com/thanhlmm)**: [[Engineering/Frontend/Prevent Layout Thrashing.md|Prevent Layout Thrashing]]
-- **[thanhnguyen2187](https://github.com/thanhnguyen2187)**: [[Engineering/Vim REPL Driven Development.md|Vim REPL Driven Development]]
-- **[trkhoi](https://github.com/trkhoi)**: [[Engineering/Software Quality Assurance.md|Software Quality Assurance]]
-- **[truong-dwarvesv](https://github.com/truong-dwarvesv)**: [[Engineering/Mobile/Scale up Application using Jetpack Navigation.md|Scale up Application using Jetpack Navigation]]
-- **[yyyyaaa](https://github.com/yyyyaaa)**: [[Engineering/Frontend/Mitigate blocking the main thread.md|Mitigate blocking the main thread]]
+- **[cnhhoang850](https://github.com/cnhhoang850)**: [[What Screens Want|What Screens Want]]
+- **[hthai2201](https://github.com/hthai2201)**: [[Applying Mock Service Worker (MSW) for Seamless Web Development|Applying Mock Service Worker (MSW) for Seamless Web Development]]
+- **[huytieu](https://github.com/huytieu)**: [[DiSC Personality Types in team work|DiSC Personality Types in team work]]
+- **[knguyenuit](https://github.com/knguyenuit)**: [[Stateless and Stateful Widgets in Flutter|Stateless and Stateful Widgets in Flutter]]
+- **[nnhuyhoang](https://github.com/nnhuyhoang)**: [[Full-text search with Postgresql|Full-text search with Postgresql]]
+- **[pthung1311](https://github.com/pthung1311)**: [[Data race and race condition|Data race and race condition]]
+- **[thangnt294](https://github.com/thangnt294)**: [[Profiling in Go|Profiling in Go]]
+- **[thanhlmm](https://github.com/thanhlmm)**: [[Prevent Layout Thrashing|Prevent Layout Thrashing]]
+- **[thanhnguyen2187](https://github.com/thanhnguyen2187)**: [[Vim REPL Driven Development|Vim REPL Driven Development]]
+- **[trkhoi](https://github.com/trkhoi)**: [[Software Quality Assurance|Software Quality Assurance]]
+- **[truong-dwarvesv](https://github.com/truong-dwarvesv)**: [[Scale up Application using Jetpack Navigation|Scale up Application using Jetpack Navigation]]
+- **[yyyyaaa](https://github.com/yyyyaaa)**: [[Mitigate blocking the main thread|Mitigate blocking the main thread]]
 
 
 *This page was last modified at 2024-03-15T05:48:35.825Z*.
