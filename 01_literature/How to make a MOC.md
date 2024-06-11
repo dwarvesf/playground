@@ -2,7 +2,7 @@
 tags:
   - instructions
   - guideline
-  - MOC
+  - moc
 title: How to make a MOC
 date: 2024-06-10
 description: Learn how to create a Map of Content (MOC) for knowledge hubs. This guide introduces MOC's benefits and providing a step-by-step process for organizing and linking notes effectively
