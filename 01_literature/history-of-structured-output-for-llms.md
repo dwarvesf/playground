@@ -1,18 +1,19 @@
 ---
 tags:
-  - ai
-title: "History of structured output"
+  - llm
+  - history
+title: "History of Structured Outputs for LLMs"
 date: 2024-06-11
-description: "History of structured output and timeline development."
+description: "When Large Language Models (LLMs) becomes popular and an essential tool for growing businesses, it signals a transition toward more complex and efficient data processing. Instead of outputting raw text, the models may now generate structured data in formats such as JSON or XML. This allowed the information to be directly integrated into company databases, removing the need for human processing. Businesses can use structured outputs to streamline their data workflows, decrease processing time, and improve the accuracy and reliability of their analytics."
 authors:
   - datnguyennnx
 ---
 
-### Overview
+## Overview
 
 When Large Language Models (LLMs) becomes popular and an essential tool for growing businesses, it signals a transition toward more complex and efficient data processing. Instead of outputting raw text, the models may now generate structured data in formats such as JSON or XML. This allowed the information to be directly integrated into company databases, removing the need for human processing. Businesses can use structured outputs to streamline their data workflows, decrease processing time, and improve the accuracy and reliability of their analytics. 
 
-### Why Structured Output is Needed
+## Why Structured Output is Needed
 
 [A survey of 51 industry professionals](https://arxiv.org/pdf/2404.07362v1) investigated the contexts and motivations behind limitations placed on Large Language Models. The findings identified two key constraint categories: low-level and high-level. Low-level constraints focus on technical aspects, guaranteeing the generated content adheres to a specific format and length. High-level constraints, on the other hand, address semantic and stylistic aspects, ensuring the outputs are meaningful, avoid factual errors (hallucination), and maintain a desired style. By implementing these constraints, developers can streamline the development process, improve the user experience by ensuring consistent and clear outputs, and ultimately guarantee the quality and usability of what LLMs produce.
 
@@ -20,7 +21,7 @@ When Large Language Models (LLMs) becomes popular and an essential tool for grow
 - This allows for seamless integration with existing development tools. For instance, when an LLM generates product descriptions for an online store, structured outputs ensure the descriptions fit perfectly into the product database, saving developers time on reformatting.
 - Structured outputs provide pre-defined formats (e.g., JSON, XML). This allows developers to leverage LLMs for automated tasks. For instance, an LLM can generate financial reports in a structured format like JSON. Developers can then directly integrate this data into existing financial dashboards.
 
-### The first signals in the emergence of structured output
+## The first signals in the emergence of structured output
 
 **Pre-2022:**
 
@@ -52,11 +53,11 @@ When Large Language Models (LLMs) becomes popular and an essential tool for grow
     - Ensuring structured outputs adhere to specific formats. This repository provides tools and examples specifically focused on JSON schema validation.
     - By implementing an "acceptor" system, the repository verifies if the LLM's generated text conforms to a predefined JSON schema. This functionality promotes data accuracy and reliability in structured output generation, a key aspect for integrating LLMs into various applications
 
-![Timeline of structured output library](./assets/TimelineCycle.webp)
+![Timeline of structured output library](assets/history-of-structured-output-for-llms_timelinecycle.webp)
 
 There's been a clear progression from user workarounds and external frameworks to functionalities embedded directly within LLMs. We've seen increased control over output format, with advancements like JSON schemas and schema-example combinations. Research continues to address accuracy, flexibility, and seamless integration of structured output functionalities across LLM platforms.
 
-### Challenge and Future of structured output
+## Challenge and Future of structured output
 
 Structured output strives for a balance between two seemingly opposed forces:
 
@@ -77,7 +78,7 @@ By addressing these challenges and continuing research, structured output has th
 - **Wider Range of Applications:** Structured output will become more accessible and integrated into various platforms, enabling applications in data analysis, report generation, form completion, and more.
 - **Enhanced Human-AI Collaboration:** Humans and LLMs will work together more effectively to produce high-quality structured outputs. Human feedback can guide the LLM, leading to a more efficient and productive interaction.
 
-### Reference
+## Reference
 
 - https://arxiv.org/pdf/2404.07362v1
 - https://github.com/langchain-ai/langchain
