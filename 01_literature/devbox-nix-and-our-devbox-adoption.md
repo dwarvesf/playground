@@ -1,7 +1,11 @@
 ---
 tags: 
   - tooling
-title: "Devbox #3: The overview into Nix & how we use Devbox @ Dwarves"
+  - containerization
+  - virtualization
+  - docker
+  - devbox
+title: "The overview into Nix & how we use Devbox @ Dwarves"
 date: 2024-04-24
 description: The overview into Nix & how we use Devbox @ Dwarves
 authors: 
