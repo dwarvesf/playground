@@ -1,7 +1,11 @@
 ---
 tags: 
   - tooling
-title: "Devbox #2: Our Docker adoption and its challenges"
+  - containerization
+  - virtualization
+  - docker
+  - devbox
+title: "Our Docker adoption and its challenges"
 date: 2024-04-19
 description: Our second Devbox session, where we discussed our Docker adoption and challenges.
 authors: 
