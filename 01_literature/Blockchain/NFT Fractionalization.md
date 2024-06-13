@@ -1,6 +1,8 @@
 ---
-tags: blockchain, NFT
-authors: Tran Khac Vy
+tags:
+  - NFT
+authors:
+  - Tran Khac Vy
 github_id: trankhacvy
 date: 2022-06-18
 ---

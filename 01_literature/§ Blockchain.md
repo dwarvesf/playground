@@ -1,10 +1,10 @@
 ---
 recurringTemplate: true
 recurringTemplateName: blockchain-moc
+tags:
+  - blockchain
 ---
-
 This is a [[Map of Content]] related to the blockchain.
-
 ## Foundational Topics
 
 - [[Blocks|Blocks]]
@@ -12,7 +12,6 @@ This is a [[Map of Content]] related to the blockchain.
 - [[PoS|PoS]]
 - [[Smart Contract|Smart Contract]]
 - [[Topics|Topics]]
-
 
 ## General
 
