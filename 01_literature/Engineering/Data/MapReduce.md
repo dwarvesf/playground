@@ -4,7 +4,6 @@ tags:
   - mapreduce
   - distributed
   - hadoop
-authors: Dung Ho
 github_id: dudaka
 date: 2022-10-24
 title: MapReduce

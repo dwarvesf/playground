@@ -2,7 +2,6 @@
 tags:
   - engineering/data
   - data-pipeline
-authors: Long Bui
 github_id: longbuivan
 date: 2024-03-15
 icy: 15

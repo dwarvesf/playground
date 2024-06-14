@@ -3,7 +3,6 @@ tags:
   - engineering/data
   - vector-database
   - database
-authors: Long Bui
 github_id: longbuivan
 date: 2024-03-15
 icy: 10
