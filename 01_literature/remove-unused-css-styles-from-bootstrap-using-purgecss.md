@@ -38,7 +38,7 @@ Now look at
 bootstrap-grid.min.css
 ```
 
-![[50067f1125ee42d2d68068bd93443235_MD5.webp]]
+![](playground/01_literature/assets/remove-unused-css-styles-from-bootstrap-using-purgecss_50067f1125ee42d2d68068bd93443235_md5.webp)
 
 Quite huge isn’t it? Thanks to PurgeCss here is the CSS file after being purged will only contain parts of the CSS file (only used selectors), as you can see horizontal scrollbar is not very long:
 
