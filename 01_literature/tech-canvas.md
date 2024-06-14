@@ -56,10 +56,10 @@ Some of the problem spaces we face internally, we also share with our community.
 
 | Title                                                                                       | 💰 Bounty | Status | PIC                         | Function    |
 | ------------------------------------------------------------------------------------------- | --------- | ------ | --------------------------- | ----------- |
-| [Move internal notes to note.d.foundation](app://obsidian.md/careers/earn/obsidian-fork.md) | 🧊 75     | Doing  | monotykamary, hnh           | 🏗️ Chore   |
-| [$icy withdrawal](app://obsidian.md/careers/earn/withdrawl-icy.md)                          | 🧊 120    | Doing  | minhlq                      | 🛠️ Tooling |
-| [Rework Fortress Command](app://obsidian.md/careers/earn/rework-fortress-command.md)        | 🧊 100    | Open   | -                           | 🛠️ Tooling |
-| [$icy utility commands](app://obsidian.md/careers/earn/icy-utility-command.md)              | 🧊 50     | Doing  | bienvh, phucld              | 🛠️ Tooling |
-| [$icy store](app://obsidian.md/careers/earn/icy-store.md)                                   | 🧊 100    | Open   | minhlq                      | 🛠️ Tooling |
-| [$icy staking](app://obsidian.md/careers/earn/icy-staking.md)                               | 🧊 350    | Open   | phucld, minhlq, nam, bienvh | 🛠️ Tooling |
-| [Fortress Shanky Data](app://obsidian.md/careers/earn/fortress-shanky-data.md)              | 🧊 120    | Open   | nam                         | 🛠️ Tooling |
+| [Move internal notes to note.d.foundation](app://obsidian.md/earn/obsidian-fork.md) | 🧊 75     | Doing  | monotykamary, hnh           | 🏗️ Chore   |
+| [$icy withdrawal](app://obsidian.md/earn/withdrawl-icy.md)                          | 🧊 120    | Doing  | minhlq                      | 🛠️ Tooling |
+| [Rework Fortress Command](app://obsidian.md/earn/rework-fortress-command.md)        | 🧊 100    | Open   | -                           | 🛠️ Tooling |
+| [$icy utility commands](app://obsidian.md/earn/icy-utility-command.md)              | 🧊 50     | Doing  | bienvh, phucld              | 🛠️ Tooling |
+| [$icy store](app://obsidian.md/earn/icy-store.md)                                   | 🧊 100    | Open   | minhlq                      | 🛠️ Tooling |
+| [$icy staking](app://obsidian.md/earn/icy-staking.md)                               | 🧊 350    | Open   | phucld, minhlq, nam, bienvh | 🛠️ Tooling |
+| [Fortress Shanky Data](app://obsidian.md/earn/fortress-shanky-data.md)              | 🧊 120    | Open   | nam                         | 🛠️ Tooling |

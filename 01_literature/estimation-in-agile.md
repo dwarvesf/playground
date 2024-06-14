@@ -8,7 +8,7 @@ description: null
 
 **Estimation** (or **estimating**) is the process of finding an **estimate**, or approximation, which is a value that is usable for some purpose even if input data may be incomplete, uncertain, or unstable.
 
-The value is nonetheless usable because it is derived from the best information available. [[1]](https://piemapping.atlassian.net/wiki/spaces/EN/pages/37486626/Estimations#Estimations-source-1)
+The value is nonetheless usable because it is derived from the best information available. [1](https://piemapping.atlassian.net/wiki/spaces/EN/pages/37486626/Estimations#Estimations-source-1)
 
 ## Estimation units
 In our workflow we use two different units that are explained below.
