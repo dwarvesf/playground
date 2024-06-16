@@ -51,4 +51,4 @@ History does not repeat itself, but it does rhyme. This hype cycle is unlike any
 I cannot tell you when the current mania will end and this bubble will burst. If I could, you’d be reading this in my $100,000 per month subscribers-only trading strategy newsletter and not a public blog. What I _can_ tell you is that computers cannot think, and that the problems of the current instantation of the nebulously defined field of “AI” will not all be solved within “5 to 20 years”.
 
 ---
-https://blog.glyph.im/2024/05/grand-unified-ai-hype.html?utm_medium=mastodon
+https://blog.glyph.im/2024/05/grand-unified-ai-hype.html
