@@ -1,6 +1,8 @@
 ---
 tags:
   - ops
+  - workflow
+  - recording
 title: How We Set Up a Recording Workflow for Dwarves Office Hours
 date: 2024-06-15
 description: This memo is essentially a playbook and recipe on how to record the Discord events. 
@@ -18,6 +20,7 @@ Before diving into the workflow, we ensure that the following prerequisites are 
 This memo is essentially a playbook and recipe on how to record the Discord events.
  
 ### Record Video and Stream on YouTube
+
 ![](https://i.postimg.cc/44SH4X3j/Untitled-3.png)
 
 - We set up the recording screen on OBS as shown in the image below:
