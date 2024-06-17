@@ -21,14 +21,14 @@ This memo is essentially a playbook and recipe on how to record the Discord even
  
 ### Record Video and Stream on YouTube
 
-![](https://i.postimg.cc/44SH4X3j/Untitled-3.png)
+![](assets/recording-flow_untitled-3.webp)
 
 - We set up the recording screen on OBS as shown in the image below:
     - We choose the window to record.
     - We set up [streaming mode](https://restream.io/learn/obs-studio/how-to-multistream-with-obs/).
     - We set up the audio input (Mute the Mic/Aux).
 
-![](https://i.postimg.cc/ydNWBGCV/Untitled-4.png)
+![](assets/recording-flow_untitled-4.webp)
 
 - When the Ogif starts, we start recording on OBS and stream on YouTube.
 - When the Ogif ends, we stop the recording and save it.
@@ -37,12 +37,12 @@ This memo is essentially a playbook and recipe on how to record the Discord even
 ### Record Audio in the Background and Transcript
 Craig Bot is used to record audio in the background and split segments by user for AI transcription.
 
-![](https://i.postimg.cc/xdncpCsN/Untitled-5.png)
+![](assets/recording-flow_untitled-5.webp)
 
 - We invite the Craig Bot into the Dwarves Foundation server. If the bot is already in the server, this step can be skipped.
 - We invite the Craig Bot to the open voice channel to start recording by using the command `/join`.
 
-![](https://i.postimg.cc/dVM7dnrB/Untitled-6.png)
+![](assets/recording-flow_untitled-6.webp)
 
 - After the Ogif ends, we stop the recording and save the audio file.
 - Then, we use ChatGPT-4 to transcribe the recording and split it into parts, similar to the video segments.
