@@ -46,7 +46,7 @@ view rawApp.js hosted with ❤ by GitHub
 
 But if i want to add more text like XYZ and i want another button that toggle the text XYZ, i will have to create visible state for button and the method for toggle its visibility
 
-![](playground/01_literature/assets/hoc-renderprops-and-hook-in-reactjs_c02d8b16fe8c6c8b864064441c8ac84d_md5.webp)
+![](assets/hoc-renderprops-and-hook-in-reactjs_c02d8b16fe8c6c8b864064441c8ac84d_md5.webp)
 
 ```javascript
 import React, { Component } from 'react';
@@ -259,7 +259,7 @@ While the second inject into first high-order component
 * state: isAsdToggle
 * method: toggleAsd
 
-![](playground/01_literature/assets/hoc-renderprops-and-hook-in-reactjs_c02d8b16fe8c6c8b864064441c8ac84d_md5.webp)
+![](assets/hoc-renderprops-and-hook-in-reactjs_c02d8b16fe8c6c8b864064441c8ac84d_md5.webp)
 
 ### Refactor the component using hook
 Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class. You can read more about hook at [https://reactjs.org/docs/hooks-intro.html](https://reactjs.org/docs/hooks-intro.html)

@@ -36,7 +36,7 @@ To help user easy using our passcode view we can add a tap gesture and call beco
 
 Now we are going to build our logic to handle user input. There are 3 methods we need focus:
 
-![](playground/01_literature/assets/build-a-passcode-view-with-swift_e1f29ff96dcff1eabdaa75703feccaa7_md5.webp)
+![](assets/build-a-passcode-view-with-swift_e1f29ff96dcff1eabdaa75703feccaa7_md5.webp)
 
 Now append or delete our code string if needed.
 

@@ -25,7 +25,7 @@ Helm has 4 basic concepts:
 
 * **Chart**: a collection of YAML files; bundle of the Kubernetes resources needed to build a Kubernetes application. For ease of visualization, Helm Chart can be compared like a Docker Image. Of course, Helm also has a Helm Hub where to search and share Charts for popular apps
 
-![](playground/01_literature/assets/kubernetes-helm-101_6a409c81c3372fda59fd6217eab2fabc_md5.webp)
+![](assets/kubernetes-helm-101_6a409c81c3372fda59fd6217eab2fabc_md5.webp)
 
 * **Config**: a configuration in the values.yaml file, which contains configuration explicit to a release of Kubernetes application. It can be the config for service, ingress, deployment, etc. until specific applications such as Kafka, Consul, Vault, NATS-streaming, etc.
 

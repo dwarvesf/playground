@@ -26,7 +26,7 @@ Why is it a secret that founders get liquidity in many venture rounds? Because i
 
 This is a graph of cash compensation over time modeled off of a real scenario that happened over 4 years. This level of founder liquidity is fairly common.
 
-![](https://www.stefantheard.com/content/images/2024/06/founder-liquidity-chart-1.png)
+![](assets/founder-liquidity-chart-1.webp)
 
 The founder in this scenario was offered $400,000 of liquidity at Series A and $750,000 at Series B and encouraged to do so by their board of investors to de-risk their own life. Liquidity was not offered to any employees and the fact that this happened at all was only revealed to people on the cap table.
 

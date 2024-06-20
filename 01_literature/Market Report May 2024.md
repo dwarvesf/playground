@@ -31,7 +31,7 @@ Large Language Models (LLMs) like those from OpenAI are becoming foundational fo
 
 Moreover, we think there will be a growing trend of connecting LLM platforms with various data sources and types. For instance, integrating a chat interface with data services to extract insights from reports. This process involves reading diverse data sources and translating them into useful insights. Additionally, there is an increasing demand for optimizing frontend user experiences, such as rendering charts or 3D models based on processed data.
 
-![](playground/assets/may-2024-market-report-gpt4o.webp)
+![](assets/market-report-may-2024_may-2024-market-report-gpt4o.webp)
 
 _Integrate GPT-4o chatbot with Google Sheets to generate insights from reports._
 
@@ -53,7 +53,7 @@ The web development landscape is undergoing a transformative shift. React 19 has
 
 The seamless integration between the frontend and backend in React eliminates the need for developers to worry about data passing between them. Although it may seem unconventional for a frontend library to handle network and backend tasks, the "[Mind The Gap](https://www.youtube.com/watch?v=zqhE-CepH2g)" demo showcased React components rendered on the server and then teleported to the browser. This blurring of the network gap between frontend and backend frameworks, while maintaining high interactivity on the client side, is an approach worth exploring. Developers should stay curious about these new methodologies as they could potentially make traditional frontend-backend API connections obsolete.
 
-![](playground/assets/may-2024-market-report-react-19.webp)
+![](assets/market-report-may-2024_may-2024-market-report-react-19.webp)
 
 _React code can now interact with the network and a small part of the backend._
 
@@ -69,7 +69,7 @@ This month introduced [Bend](https://higherorderco.com/), a new programming lang
 
 Bend replaces traditional loops with the concept of “fold,” allowing recursive data types to be consumed in parallel. The performance gains are significant, with code execution times dropping from 30 seconds on a CPU to just 1.5 seconds on a GPU using Bend. Despite its high-level features akin to Python and Haskell, Bend supports fast object allocations, higher-order functions with closures, unrestricted recursion, and continuations, making it an exciting prospect for data processing and machine learning tasks.
 
-![](playground/assets/may-2024-market-report-ben-lang.webp)
+![](assets/market-report-may-2024_may-2024-market-report-ben-lang.webp)
 
 ## References
 

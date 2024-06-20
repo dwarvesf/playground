@@ -21,7 +21,7 @@ Welcome back to our Devbox series! Previously, we've explored the journey from t
 
 Beyond the theories, in this expanded part, we'll show how we use Devbox to create an isolated, reproducible, and portable local development environment.
 
-![](assets/devbox.gif)
+![](assets/devbox-local-development-env_devbox.gif)
 
 ## Engineering = Programming + Time + People
 

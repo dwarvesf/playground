@@ -163,7 +163,7 @@ Commit and push your changes to **YOUR** Github. Then we open the Github Repo (s
 
 ![](assets/how-we-contribute-to-homebrew_096ad9e94b7139c6f99bdac0c463196d_md5.webp)
 
-![](playground/01_literature/assets/how-we-contribute-to-homebrew_096ad9e94b7139c6f99bdac0c463196d_md5.webp)
+![](assets/how-we-contribute-to-homebrew_096ad9e94b7139c6f99bdac0c463196d_md5.webp)
 
 We did it! You only still need the feedback from Homebrew team. You can leave your keyboard and take a cup of coffee. If everything goes well, well done boss! you have just contribute to one of the famous repo in the internet. Congratulations!
 
