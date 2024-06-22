@@ -31,7 +31,7 @@ In a lot of cases, this approach is fine, it works if you do it right and a lot 
 
 There might be a need for a more efficient solution - by breaking it down:
 
-![](playground/_memo/assets/why-micro-frontend/149cb7501d21ad52e476f168b93085cc_MD5.jpeg)
+![](assets/149cb7501d21ad52e476f168b93085cc_MD5.jpeg)
 ![](assets/why-micro-frontend_149cb7501d21ad52e476f168b93085cc_md5.webp)
 
 We can see that the backend work has been broken into microservices - a term we are probably too familiar with at this point. However, front-end work is still one big chunk. This is where micro-frontend comes in.
@@ -39,9 +39,9 @@ We can see that the backend work has been broken into microservices - a term we 
 ### The Micro-Frontend Architecture
 Let’s take the previous monolithic example (The Shop Team), broken into micro-frontends:
 
-![](playground/_memo/assets/why-micro-frontend/8b4ce5b2e752b7bbc96be21b6d2f1349_MD5.jpeg)
+![](assets/8b4ce5b2e752b7bbc96be21b6d2f1349_MD5.jpeg)
 ![](assets/why-micro-frontend_8b4ce5b2e752b7bbc96be21b6d2f1349_md5.webp)
-![](Pasted image 20231101050539.webp)
+![](assets/Pasted image 20231101050539.webp)
 With micro-frontends, codebase, teams, and responsibilities are split vertically in a way that the coupling between them is very low. Each team owns a smaller codebase, and can individually test, deploy and scale according to the needs. Now the teams only need to coordinate the moving parts, which can be kept minimal with a good system design. The teams can easily manage their dependencies and even use a separate tech stack.
 
 Finally, all micro-frontends can be served to the users altogether through a container (shell) app:

@@ -44,8 +44,8 @@ DuckDB is a great starting point for modern stacks that don't need to worry abou
 ## Workshop Screenshots
 *This demo is from our pilot project, `note.d.foundation`, where we aggregate metadata from markdown notes imported from Notion into a parquet file to query data.*
 
-![](November Forward Engineering 2023-20231130164855761.webp)
+![](assets/November Forward Engineering 2023-20231130164855761.webp)
 
 *This demo is taken from Modal's example of using [DuckDB to analyze taxi NYC data in parallel over HTTPFS](https://modal.com/docs/examples/duckdb_nyc_taxi). It shows the power of DuckDB as a database engine and the flexibilities of having a local tool as opposed to a server-instantiated database.* 
 
-![](November Forward Engineering 2023-20231130165019170.webp)
+![](assets/November Forward Engineering 2023-20231130165019170.webp)
