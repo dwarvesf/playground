@@ -15,14 +15,14 @@ Whenever you dive into a topic, there's always a mix of what you know and what's
 ### What is Zettelkasten Method?
 Basically, the Zettelkasten Method revolves around capturing one idea per note and housing them all in one spot. You label and connect related concepts using tags and URL citations.
 
-![](https://i.postimg.cc/KcTKhYyD/Untitled-7.png)
+![](assets/organize-team-know-how-with-zettelkasten-method_untitled-7.webp)
 
 ### Components of a note
 1. **A unique identifier**. This gives your Zettel an unambiguous address. For example: unique ID, URL 
 2. **The body of the Zettel**. This is where you write down what you want to capture: The piece of knowledge.
 3. **References**. At the bottom of each Zettel, you either reference the source of the knowledge you capture or leave it blank if you capture your own thoughts.
 
-![](https://i.postimg.cc/jdrDxrx0/Untitled-8.png)
+![](assets/organize-team-know-how-with-zettelkasten-method_untitled-8.webp)
 
 ### Types of note included in Zettelkasten
 There are several different types of notes that you can add into your Zettelkasten. Here’s a quick overview:
@@ -42,13 +42,13 @@ There are several different types of notes that you can add into your Zettelkast
 ### The tags system
 When a user enters Homepage, all the tags are listed on the sidebar and nested in the section Popular Tags. Each tag represents a topic and contains all the post of that topic. All the memo will attached with at least 3 tags that are related to the memo topics which allow readers to find content easier and look for connections to other notes.
 
-![](https://i.postimg.cc/rFCKzYsd/Clean-Shot-2024-05-02-at-16-30-48-2x.png)
+![](assets/organize-team-know-how-with-zettelkasten-method_clean-shot-2024-05-02-at-16-30-48-2x.webp)
 
 When readers choose a tag, all the related post will be listed, with chart on the right side to show how all post are linked with each others and the tag. 
 
-![](https://i.postimg.cc/fTmDb3HB/Clean-Shot-2024-05-02-at-16-48-38-2x.png)
+![](assets/organize-team-know-how-with-zettelkasten-method_clean-shot-2024-05-02-at-16-48-38-2x.webp)
 
 ### The Map of content
 Our team use the Zettelkasten method to organize the map of content by usiing Obsidian. All of the files are stored in the form of markdown first, then they will be categorized into certain topics. The map of content provides a high-level view of interconnected notes which offers a flexible and connected way to organize notes. 
 
-![](https://i.postimg.cc/k5C90nqD/Clean-Shot-2024-06-25-at-17-20-27-2x.png)
+![](assets/organize-team-know-how-with-zettelkasten-method_clean-shot-2024-06-25-at-17-20-27-2x.webp)
