@@ -27,7 +27,7 @@ To effectively communicate and maximize the potential of ChatGPT, you need some 
 
 Here are two examples of prompt input for thesis topic about DeFi, and the resulting output from ChatGPT. It is obvious that instead of listing like the output of prompt 1, that of prompt 2 provides more valueable and usable information. 
 
-![](https://i.postimg.cc/DwcdFp24/COMPARE.png)
+![](assets/how-to-talk-to-chatgpt-effectively_compare.webp)
 
 What make the difference of these two?
 
@@ -43,7 +43,7 @@ Define what rules to follow, and the required structure of the response.
 ### Provide Examples
 Using prompts and examples can enhance the clarity of your question and guide Chat GPT in understanding the desired output. By providing sample inputs or expected formats, you can communicate your expectations effectively and receive more tailored responses.
 
-![](https://i.postimg.cc/ZnbnZHjj/prompt-1.png)
+![](assets/how-to-talk-to-chatgpt-effectively_prompt-1.webp)
 
 ### Evaluate Quality
 You need to identify errors and rate responses, testing what drives performance.
@@ -51,7 +51,7 @@ You need to identify errors and rate responses, testing what drives performance
 ### Divide Labor
 You should split tasks into multiple steps, chained together for complex goals.
 
-![](https://i.postimg.cc/sX9xtqPv/Clean-Shot-2024-06-11-at-17-07-19-2x.png)
+![](assets/how-to-talk-to-chatgpt-effectively_clean-shot-2024-06-11-at-17-07-19-2x.webp)
 
 ## Prompt Pattern
 ### Output customization
@@ -73,7 +73,7 @@ You should split tasks into multiple steps, chained together for complex goals.
     - Data need: [List of data metrics]
 - Output
     
-    ![template.png](https://i.postimg.cc/Xv5pgppK/template.png)
+    ![template.png](assets/how-to-talk-to-chatgpt-effectively_template.webp)
 
   **3. Provide Recipe**
 - **Use case**: When you want achieve a specific end result in a provided sequence of steps.
@@ -83,7 +83,7 @@ You should split tasks into multiple steps, chained together for complex goals.
 - **Example**:  Provide a step-by-step data analysis recipe to study the factors that affect employee satisfaction: 1. Identify problems 2. Data Collection 3. Data Cleaning 4. Data Analysis 5. Data Visualization.
 - **Output**
     
-    ![](https://i.postimg.cc/mgJPMQ22/recepie.png)
+    ![](assets/how-to-talk-to-chatgpt-effectively_recepie.webp)
 
 ### Context control
 - **Use case**: When you want to maintain and manage the context of the conversation to ensure coherence and relevance in ongoing interactions.
@@ -95,4 +95,4 @@ You should split tasks into multiple steps, chained together for complex goals.
 - **Structure and Key Ideas:** Instruct ChatGPT to ask a series of questions aimed at achieving a specific outcome.
 - **Example**: From now on, I would like you to ask me questions to diagnose and solve a computer performance issue. Please ask question once at a time. When you have enough information, provide a summary of the problem and a solution. For example, 'Is your computer running slow all the time or only during certain activities?
 
-- ![](https://i.postimg.cc/sDfGRjNy/Clean-Shot-2024-06-21-at-14-02-56-2x.png)
+- ![](assets/how-to-talk-to-chatgpt-effectively_clean-shot-2024-06-21-at-14-02-56-2x.webp)
