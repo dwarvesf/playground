@@ -1,11 +1,10 @@
 ---
 tags:
   - ops
-  - MOC
-  - writing 
+  - zettelkasten
 title: Organize team know-how with Zettelkasten Method
 date: 2024-06-25
-description: The post presents a method that our team uses to organize our notes on memo.d.foundation.
+description: At memo.d.foundation, we use the Zettelkasten Method to enhance engagement by capturing one idea per note and connecting concepts with tags and citations. This method improves clarity, consistency, memorization, and reduces bias. We organize notes with a tag system and content map in Obsidian, making it easy for readers to navigate and see connections between topics.
 authors: 
   - minh_cloud
 ---
