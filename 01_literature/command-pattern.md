@@ -2,14 +2,14 @@
 tags: 
   - design-patterns
   - behavior-patterns
-  - software-architecture
 title: "Command Pattern"
-description: "Enhancing Flexibility in Software Design"
+description: "Command is a behavioral design pattern that encapsulates a request as an object. This allows you to parameterize methods with different requests, delay or queue a request’s execution, and support undoable operations. This pattern promotes the decoupling of the sender and receiver of a request, enhancing flexibility and maintainability."
 authors:
   - hieuvd
 date: 2024-06-16
 ---
-![Command Pattern](https://refactoring.guru/images/patterns/content/command/command-en-2x.png)
+
+![Command Pattern](assets/command-pattern_command-en-2x.webp)
 
 ## What is the Command Design Pattern?
 
@@ -17,7 +17,7 @@ Command is a behavioral design pattern that encapsulates a request as an object.
 
 ## Key components of the Command Pattern
 
-![Structure of the Command design pattern](https://refactoring.guru/images/patterns/diagrams/command/structure-2x.png?id%3D1dfaa84354ffe49ef7ad46ce069482d2)
+![Structure of the Command design pattern](assets/command-pattern_structure-2x.webp)
 
 ### Command Interface
 **Purpose**
@@ -63,7 +63,7 @@ Command is a behavioral design pattern that encapsulates a request as an object.
 
 ## The real life example
 
-![Restaurent](https://refactoring.guru/images/patterns/content/command/command-comic-1-2x.png)
+![Restaurent](assets/command-pattern_command-comic-1-2x.webp)
 
 > Imagine you own a small restaurant where you are both the chef and the person  taking orders directly from your customers. As the chef, you prepare each meal  yourself.
 >
