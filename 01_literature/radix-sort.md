@@ -1,10 +1,9 @@
 ---
 tags: 
   - algorithms
-  - sort-algorithms
-  - non-comparative-sorting
+  - sorting
 title: "Radix Sort"
-description: "Radix Sort Overview"
+description: "Radix Sort is a non-comparative sorting algorithm that sorts integers by processing individual digits. Unlike comparison-based algorithms (like Quick Sort or Merge Sort), Radix Sort groups numbers by their individual digits."
 authors:
   - hieuvd
 date: 2024-06-24
@@ -12,13 +11,13 @@ date: 2024-06-24
 
 > Radix Sort is a non-comparative sorting algorithm that sorts integers by processing individual digits. Unlike comparison-based algorithms (like Quick Sort or Merge Sort), Radix Sort groups numbers by their individual digits.
 
-### Key Concepts
+## Key Concepts
 
 - **Digit Positioning**: Radix Sort processes digits from the `least significant digit (LSD)` to the `most significant digit (MSD)`.
 - **Stable Sorting**: It maintains the relative order of records with equal keys.
 - **Counting Sort as a Subroutine**: Radix Sort often uses Counting Sort for sorting digits, ensuring stable sorting at each digit level.
 
-### Steps of Radix Sort
+## Steps of Radix Sort
 
 - **Determine the Maximum Number of Digits**: Find the maximum number in the array to understand the number of digits.
 - **Sorting by Each Digit**: Use `Counting Sort` to sort based on each digit's place value
@@ -30,18 +29,18 @@ date: 2024-06-24
 
 ![radix sort example](assets/radix-sort.gif)
 
-### Big O notation
+## Big O notation
 If we take
   - `n` is the number of elements 
   - `k` is the number of digits in the largest number
 
 the time complexity for Radix sort will be `O(n×k)` and the space complexity will be `O(n+k)`
 
-### Advantages
+## Advantages
 - **Efficiency**: Linear time complexity O(n×k) when k is the number of digits.
 - **Predictable Performance**: Performs consistently regardless of the input data's initial order.
 
-### Disadvantages
+## Disadvantages
 - **Limited Scope**: Primarily useful for integers or fixed-length strings.
 - **Memory Usage**: Requires additional memory for the Counting Sort process.
 
