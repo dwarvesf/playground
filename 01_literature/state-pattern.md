@@ -2,14 +2,14 @@
 tags: 
   - design-patterns
   - behavior-patterns
-  - software-architecture
 title: "State Pattern"
-description: "Enhancing Flexibility in Software Design"
+description: "The State Design Pattern is a behavioral design pattern that allows an object to change its behavior when its internal state changes. This pattern is particularly useful for scenarios where an object can exist in multiple states and its behavior varies based on these states."
 authors:
   - hieuvd
 date: 2024-06-16
 ---
-![State Pattern](https://refactoring.guru/images/patterns/content/state/state-en-2x.png)
+
+![State Pattern](assets/state-pattern_state-en-2x.webp)
 
 > The State Design Pattern is a behavioral design pattern that allows an object to change its behavior when its internal state changes. This pattern is particularly useful for scenarios where an object can exist in multiple states and its behavior varies based on these states.
 
@@ -21,7 +21,7 @@ Consider a Document class with three states: Draft, Moderation, and Published. T
 - Moderation: Publishes the document if the current user is an administrator.
 - Published: Does nothing.
 
-![Document state change](https://refactoring.guru/images/patterns/diagrams/state/problem2-en-2x.png)
+![Document state change](assets/state-pattern_problem2-en-2x.webp)
 
 ### Common Implementation Issues
 
@@ -52,18 +52,18 @@ class Document is
 
 The State pattern addresses these issues by encapsulating state-specific behavior into separate state classes. This way, the context class delegates the behavior to the state objects, making the code cleaner and easier to manage.
 
-![Solution](https://refactoring.guru/images/patterns/diagrams/state/solution-en-2x.png)
+![Solution](assets/state-pattern_solution-en-2x.webp)
 
 ## Concept of State pattern
 
-![Finite-State Machine](https://refactoring.guru/images/patterns/diagrams/state/problem1-2x.png)
+![Finite-State Machine](assets/state-pattern_problem1-2x.webp)
 
 In the State Design Pattern, the state of an object is represented by a set of state-specific classes. The object, known as the context, delegates state-specific behavior to the current state object. As the state of the context changes, it transitions between different state objects, each of which implements a particular set of behaviors.
 
 
 ### Structure
 
-![Structure](https://refactoring.guru/images/patterns/diagrams/state/structure-en-2x.png)
+![Structure](assets/state-pattern_structure-en-2x.webp)
 
 - **Context**: Maintains an instance of a `ConcreteState` subclass that defines the current state.
 - **State**: Defines an interface for encapsulating the behavior associated with a particular state of the Context.
