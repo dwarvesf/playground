@@ -1,11 +1,16 @@
 ---
 tags:
-    - Golang
-author:
-    - fuatto
+  - golang
+  - kernel-programing
+  - go-weekly
+authors:
+  - fuatto
+title: "Go Weekly: Mastering Go Performance - eBPF and PGO Optimization Techniques"
+description: "Explore advanced Go optimization techniques using eBPF for kernel-level insights and Profile-Guided Optimization (PGO) for compiler enhancements. Learn how to boost performance and efficiency in Go applications."
+date: 2024-06-27
 ---
 
-# [An Applied Introduction to eBPF with Go](https://sazak.io/articles/an-applied-introduction-to-ebpf-with-go-2024-06-06)
+## [An Applied Introduction to eBPF with Go](https://sazak.io/articles/an-applied-introduction-to-ebpf-with-go-2024-06-06)
 
 - Context:
     - We usually write software in user space (outside the OS's kernel, e.g: user apps like utilities, programming languages, GUI...).
@@ -38,7 +43,7 @@ author:
     - Powerful tool to dive deep in Kernel therefore many applicable usecase: systems programming, observability, security...
     - For profiling usecase, can use existing projects: [Parca](https://www.parca.dev/docs/overview/), [Pyroscope](https://pyroscope.io/) or [PGO](https://go.dev/doc/pgo) (from Go 1.20) for convenience.
 
-# [The Profile-Guided Optimization Experience at Grab](https://engineering.grab.com/profile-guided-optimisation) 
+## [The Profile-Guided Optimization Experience at Grab](https://engineering.grab.com/profile-guided-optimisation) 
 
 - Context:
     - PGO (Profile-Guided Optimization) is introduced in Go version 1.20, a.k.a FDO (feedback-directed optimization), a technique collects and feeds the profile data back to the next compilier build.
@@ -62,11 +67,11 @@ author:
 
 ---
 
-https://sazak.io/articles/an-applied-introduction-to-ebpf-with-go-2024-06-06
-https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters
-https://ebpf.io/what-is-ebpf/
-https://www.parca.dev/docs/overview/
-https://pyroscope.io/
+- https://sazak.io/articles/an-applied-introduction-to-ebpf-with-go-2024-06-06
+- https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters
+- https://ebpf.io/what-is-ebpf/
+- https://www.parca.dev/docs/overview/
+- https://pyroscope.io/
 
-https://engineering.grab.com/profile-guided-optimisation
-https://go.dev/doc/pgo
+- https://engineering.grab.com/profile-guided-optimisation
+- https://go.dev/doc/pgo
