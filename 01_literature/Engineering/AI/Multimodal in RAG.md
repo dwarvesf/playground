@@ -1,6 +1,6 @@
 ---
 tags: engineering/ai, ai, chatgpt, llm, vector-database
-authors: Hoang Nguyen
+authors: hoangnnh
 github_id: nnhuyhoang
 date: 2024-06-27
 ---
