@@ -11,14 +11,14 @@ authors:
 ---
 
 ## Before edit or create a new post
-Before you can create a new post, please make sure that you have finished setting up the environment for editting memo in this [post](https://memo.d.foundation/playground/_memo/how-to-set-up-environment-for-editing-memo/), and you have the right access and edit the repository note.d.foundation. 
+Before you can create a new post, please make sure that you have finished setting up the environment for editting memo in this [post](https://memo.d.foundation/playground/01_literature/how-to-set-up-environment-for-editing-memo/), and you have the right access and edit the repository memo.d.foundation. 
 
 Everytime you want to edit or create a new post, please make sure that the data of your local files is up-to-date by going to Source Control and Sync all the changes in the note.d.foundation repository.
 
 ![](assets/how-to-push-content-on-note-d_how-to-push-content-on-memo-1.webp)
 
 ## Create a post 
-1. Choose a folder that you want to nest your post in.
+1. Choose a folder that you want to nest your post in. If you don't know where to place your note, just leave it in the folder `vault/playground/00_fleeting`.
 2. Click to the icon New files, and enter the name of new file. Remember to add the suffix `.md` after the file name to segment the type of file. 
 
 ![](assets/how-to-push-content-on-note-d_how-to-push-content-on-memo-5.webp)
@@ -52,7 +52,7 @@ We suggest you to use Scrolling Capture of [Cleanshot](https://cleanshot.com/).
 ## Commit changes 
 After editing, your post is only saved on local files. To post it to memo, you will need to create a request for administrator to approve. Before creating a request, you need to commit all changes first:
 1. Go to Source control section.
-2. Sync all changes in note.d.foundation and in the branch you edited.
+2. Sync all changes in memo.d.foundation and in the branch you edited.
 3. Stage all changes of the branch you edited.
 4. Name the commit and press Commit button.
 
