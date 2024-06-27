@@ -6,7 +6,7 @@ title: "Command Pattern"
 description: "Command is a behavioral design pattern that encapsulates a request as an object. This allows you to parameterize methods with different requests, delay or queue a request’s execution, and support undoable operations. This pattern promotes the decoupling of the sender and receiver of a request, enhancing flexibility and maintainability."
 authors:
   - hieuvd
-date: 2024-06-16
+date: 2024-06-27
 ---
 
 ![Command Pattern](assets/command-pattern_command-en-2x.webp)
