@@ -1,13 +1,18 @@
 ---
-tags: engineering/ai, ai, chatgpt, llm, vector-database
-authors: hoangnnh
-github_id: nnhuyhoang
+tags:
+  - llm
+  - vector-database
+  - rag
+authors:
+  - hoangnnh
 date: 2024-06-27
+title: "Multimodal in RAG"
+description: "In spite of having taken the world by storm, Large Language Models(LLM) still has some limitations such as limited context window and a knowledge cutoff date. Retrieval-Augmented Generation(RAG) steps in to bridge this gap by allowing LLMs to access and utilize external knowledge sources beyond their training data. However, data is not text based only, it also can be image, audio, table in docs,..."
 ---
 
 In spite of having taken the world by storm, Large Language Models(LLM) still has some limitations such as limited context window and a knowledge cutoff date. Retrieval-Augmented Generation(RAG) steps in to bridge this gap by allowing LLMs to access and utilize external knowledge sources beyond their training data. However, data is not text based only, it also can be image, audio, table in docs,... It make information captured is lost in most RAG application. Therefore, preprocess multimodal data is a problem we should not ignore in making RAG application. In this note, we will explore how to effectively preprocess and integrate multimodal data to enhance the performance and utility of RAG systems.
 
-### Challenge in Multimodal RAG
+## Challenge in Multimodal RAG
 Taking an example: Doing preprocessing for document(.pdf) file. the document contain a mixture of content types, including text, table and images. When we chunking and embedding data, text splitting may break up tables, corrupting the data in retrieval and the images can lose data in someway. 
 So how to do it properly. There are several method, but there are 2 main methods are currently used:
  - Use a multimodal embedding model to embed both text and images.
@@ -15,10 +20,10 @@ So how to do it properly. There are several method, but there are 2 main methods
 
 In this note, we will focus on second method.
 
-### Multimodal LLM
+## Multimodal LLM
 The main idea of this approach is transform all of your data into a single modality: text. This means that you only need to use a text embedding model to store all of your data within the same vector space.
 
-![Multimodal LLM](assets/multimodal-in-rag-multimodel-LLM.png)
+![Multimodal LLM](assets/multimodal-in-rag-multimodel-llm.webp)
 
 This method is involved following step:
 
@@ -27,7 +32,7 @@ This method is involved following step:
 3. Embedding images,table summaries and text to vectorDB and also raw data for reference.
 4. When searching similarity in retrieval step, get the relevant context and feed raw data to LLM to generate output.
 
-### Implementation
+## Implementation
 We take this [post](https://cloudedjudgement.substack.com/p/clouded-judgement-111023) for doing implementation cause it contain many chart images. We will follow steps above to do preprocessing for this document.
 
 1. **Extract data from document**: We use [Unstructured](https://unstructured.io/) - a great ELT tool well-suited for this because it can extract elements (tables, images, text) from numerous file types. And categorized them base on there types. 
@@ -60,7 +65,7 @@ We take this [post](https://cloudedjudgement.substack.com/p/clouded-judgement-11
   ```
   After summarizing, the sample result will similar to below.
 
-  ![Image summary](assets/multimodal-in-rag-img-summary.png)
+  ![Image summary](assets/multimodal-in-rag-img-summary.webp)
 
 3. **Embedding data**: We embedding tables and images summaries to vectorDB and also store raw data to get reference. Remember that we store embeded summarized data(vector) and its raw content but not summarized content.
    
@@ -100,11 +105,11 @@ We take this [post](https://cloudedjudgement.substack.com/p/clouded-judgement-11
 
 5. **Testing**: To testing what we have done so far, let take and image in document and findout our RAG can extract the information from it and answer correctly.
    
-    ![Testing](assets/multimodal-in-rag-testing.png)
+    ![Testing](assets/multimodal-in-rag-testing.webp)
    
   We take an image which is a table content data about reported revenue of tech companies in quarter. An then we ask some information inside that image. For example: "what is actual reported revenue of Datadog in quarter?" which we can see on the image is $547.5 million. Our RAG response the ansewr correctly.
 
-### Conclusion
+## Conclusion
 The integration of various data types, such as text and images, into LLMs enhances their ability to generate more wholistic responses to a user’s queries. More new model come and solve the problems realted to different type of data in LLM. This concept of multimodal RAG is an early but important step toward achieving human-like perception in machines.
 
 ## References
