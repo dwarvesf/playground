@@ -5,7 +5,7 @@ tags:
   - rag
 authors:
   - hoangnnh
-date: 2024-06-27
+date: 2024-06-28
 title: "Multimodal in RAG"
 description: "In spite of having taken the world by storm, Large Language Models(LLM) still has some limitations such as limited context window and a knowledge cutoff date. Retrieval-Augmented Generation(RAG) steps in to bridge this gap by allowing LLMs to access and utilize external knowledge sources beyond their training data. However, data is not text based only, it also can be image, audio, table in docs,..."
 ---
