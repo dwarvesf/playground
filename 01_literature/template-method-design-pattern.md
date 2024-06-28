@@ -18,7 +18,7 @@ Just imagine we need to implement a registration feature for our applications (w
 
 At the beginning, our apps only supported verification via email. After months, the team realized that the amount of mobile users significantly increased. So we decided to support more verification methods via SMS/authenticator app or allow to register without verification.
 
-![](assets/template-method-problem.png)
+![](assets/template-method-design-pattern_template-method-problem.webp)
 
 ## Concept
 
@@ -31,7 +31,7 @@ At the beginning, our apps only supported verification via email. After months, 
 
 The Template method offers us an answer to those issues from the above scenario. By applying the pattern, we break the operation (registration) down into multiple steps (receive user form, verify, welcome, redirect to login page, etc.) and create a method which invokes the steps in a specific order. Basically we construct a **template** by calling the steps inside a **method**. That's why the template is called **Template method**.
 
-![](assets/template-method-solution.png)
+![](assets/template-method-design-pattern_template-method-solution.webp)
 
 All work above can be put together inside a single place (aka base class/type). The steps can either be abstract, or have default implementation:
 - **For common steps**: code are identical, we define default implementation to avoid code duplication and let every subclasses to have the ability to reuse the code.
@@ -42,7 +42,7 @@ All work above can be put together inside a single place (aka base class/type). 
   *e.g.* The registration feature would behave normally even if we remove *welcome* step
 
 ### Structure
-![](assets/template-method-structure.jpg)
+![](assets/template-method-design-pattern_template-method-structure.webp)
 
 *Note*: We can have multiple template methods, in case we need to use those same steps but in different order
 
