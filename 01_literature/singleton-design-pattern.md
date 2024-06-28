@@ -26,7 +26,7 @@ When a user subscribes to a channel, we update the counter by +1. And we do the 
 
 ## Singleton Overview
 
-**Singleton** is one of the **Creational design patterns**. They have some characteristics:
+**Singleton** is one of **Creational design patterns**. It has some characteristics:
 
 - One class/type can only create/have one single instance
 - Provide a global access to that single instance
