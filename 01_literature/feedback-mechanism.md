@@ -3,8 +3,8 @@ tags:
   - llm
   - feedback
   - mechanism
-title: "History of Structured Outputs for LLMs"
-date: 2024-06-11
+title: "Feedback Mechanism"
+date: 2024-01-07
 description: "Understanding what large language models (LLMs) produce is important because they can give different answers to the same question. Collecting user feedback, both obvious and hidden, is key to improving these models. Implicit feedback includes actions like stopping the AI, checking Google, or regenerating responses. Explicit feedback involves direct input like likes, scores, surveys, and textual comments. This feedback helps improve AI through techniques like Reinforcement Learning from Human Feedback (RLHF). The process involves collecting logs, training, validating, deploying, and monitoring. Human-in-the-loop (HITL) feedback ensures quality, customization, ethical control, and clarity in LLMs."
 authors:
   - datnguyennnx
