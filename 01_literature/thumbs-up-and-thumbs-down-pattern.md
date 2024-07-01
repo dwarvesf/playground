@@ -13,26 +13,22 @@ authors:
 Collecting user feedback is importance for improving the accuracy and relevance of responses. One simple yet powerful feedback mechanism is the thumbs up and thumbs down system. This article explores how labeling feedback in this manner can enhance the training data for LLMs and provides a case study for obtaining human feedback.
 
 ### Pearson Correlation Coefficient
-
 The Pearson correlation coefficient is a statistical measure that quantifies the strength and direction of the relationship between two variables. It ranges from -1 to +1, where +1 indicates a perfect **positive** linear relationship, -1 indicates a perfect **negative** linear relationship, and 0 indicates no linear relationship. This coefficient is widely used in various fields to understand how variables are related and to make predictions based on these relationships.
 
 ![Pearson Correlation Coefficient Diagram](assets/Pearson-correlation-coefficient.webp)
 
 ### Thumbs Up and Thumbs Down Feedback
-
 - **Thumbs Up (Positive Feedback)**: When a user interacts with an LLM and receives a helpful, accurate, or satisfying response, they provide a "thumbs up" or a positive rating. This indicates that the LLM's output was valuable and aligned with the user's intent.
 - **Thumbs Down (Negative Feedback)**: Conversely, if a user receives an unhelpful, incorrect, offensive, or otherwise unsatisfactory response, they give a "thumbs down" or a negative rating. This feedback signals that the LLM's output needs improvement.
 
 ![Google feedback form](assets/Google-feedback-form.webp)
 
 ### Simplifying User Interaction and Increasing Engagement
-
 **User-Friendly Feedback Mechanism:** Using thumbs up and down is a simple way to get user feedback. When it's quick and easy, more people are likely to join in. This means more feedback, which gives the model better data to learn from.
 
 **Encouraging Consistent Feedback:** Since giving a thumbs up or down is so easy, people can keep giving feedback without feeling it's a hassle. This steady feedback is really important for models that need constant input to get better over time. The more feedback the model gets, the better it can understand and guess what users like.
 
 ### Case Studies
-
 **Sentiment Analysis in Review Systems:** In sentiment analysis, using thumbs up and down can really help in figuring out if reviews are positive or negative. For example, an algorithm that sorts product reviews can use this simple feedback to get better at understanding how people feel. This makes it easier for the model to catch the subtle ways people express their opinions, leading to more accurate results.
 
 ![Tiki feedback](assets/Tiki-collect.webp)
@@ -42,7 +38,6 @@ The Pearson correlation coefficient is a statistical measure that quantifies the
 ![Youtube feedback form](assets/Youtube-collect-form.webp)
 
 ### Reference
-
 - [Pearson Correlation Coefficient (r) | Guide & Examples (scribbr.com)](https://www.scribbr.com/statistics/pearson-correlation-coefficient/)
 - [What’s Missing to Evaluate Foundation Models at Scale - TruEra](https://truera.com/ai-quality-education/generative-ai-observability/whats-missing-to-evaluate-foundation-models-at-scale/)
 - [How Content Filtering Makes It Possible to Do Moderation at Scale – Besedo](https://besedo.com/blog/content-filtering-vs-moderation/)
