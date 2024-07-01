@@ -2,14 +2,14 @@
 tags:
   - ops
   - bounty
-title: Bounty: Push note from Discord to Github PR automatically
+title: "Bounty: Push note from Discord to Github PR automatically"
 date: 2024-07-01
-description: We open a bounty to automate the knowledge storage of the team. 
+description: "Seeking developers for an exciting bounty: Create an automation feature to automatically convert popular Discord links into fleeting notes. Implement a reward system, set up eligibility criteria, and develop an automated process for creating GitHub Pull Requests with article summaries. Enhance our tech community's knowledge sharing efficiency."
 authors: 
   - minh_cloud
 ---
 
-Last week, we announced about the reward system for fleetings notes, we understand that knowledge can come from everywhere: traninings, articles,... As there were thousand links shared in our channel #tech of our community, we want to take advantage of this activity to enrich our knowledge with the minimum effort. Therefore, we aim to build a feature in Tono bot which automatically transfer an endorsed link to a fleeting note. 
+Last week, we announced about the reward system for fleetings notes, we understand that knowledge can come from everywhere: trainings, articles,... As there were thousand links shared in our channel #tech of our community, we want to take advantage of this activity to enrich our knowledge with the minimum effort. Therefore, we aim to build a feature in Tono bot which automatically transfer an endorsed link to a fleeting note. 
 
 A link is eligible to be transfered to fleeting note when it has more than 5 star endorsed by community or when a member having senior role add to the fleeting note by the command /add-fleeting-note. 
 
@@ -19,7 +19,7 @@ This bounty expect you to deliver
 - For every eligibile and confirmed article, automatically generate the summary from that and create a Pull request in which the summary file nested in folder [00_fleeting of playground](https://github.com/dwarvesf/brain/tree/master/00_fleeting). 
 
 **Follow this flow**
-![](https://i.postimg.cc/XNw7GvnY/Untitled-9.png)
+![](assets/push-discord-to-github-bounty_untitled-9.webp)
 
 **Documents**
 - Detail instruction of UI: [here](https://www.notion.so/Push-from-Discord-to-Github-c405ccd051c141a79f424450e7278071)
