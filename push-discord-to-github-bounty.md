@@ -23,4 +23,4 @@ This bounty expect you to deliver
 
 **Documents**
 - Detail instruction of UI: [here](https://www.notion.so/Push-from-Discord-to-Github-c405ccd051c141a79f424450e7278071)
-- UI mock up: [here]() 
+- UI mock up: [here](https://share.discohook.app/go/739ex6n7) 
