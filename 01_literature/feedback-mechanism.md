@@ -14,11 +14,8 @@ Understanding what huge language models create is critical since they can genera
 
 ![Feedback Diagram](assets/Feedback-mechanism.webp)
 
-
 ## Implicit and Explicit Feedback: Collection and Utilization
-
 ### Implicit Feedback
-
 Implicit feedback comes from how users behave when they interact with an AI model, without them directly telling us what they think. There are a few main ways we notice this:
 
 1. **Stop Generate**: If users stop the AI from generating a response quickly, it usually means they don't like what it's saying or find it irrelevant. For example, if they read a few lines and feel it's not helpful, they might stop it.
@@ -26,7 +23,6 @@ Implicit feedback comes from how users behave when they interact with an AI mode
 3. **Regenerate**: If users ask for a new answer, it means they didn't like the first one. They might use a button to get a different response when the first one doesn't meet their needs. For instance, they might want a better answer to the same question.
 
 ### Explicit Feedback
-
 Explicit feedback involves users directly communicating their satisfaction or dissatisfaction with the AI’s responses. The methods include:
 
 1. **Like/Dislike**: Users can give a thumbs up if they like the response or thumbs down if they don’t. This quick feedback helps us know how well the AI’s answers are working. For example, a thumbs up means they found it useful, while a thumbs down means it wasn’t helpful.
@@ -37,7 +33,6 @@ Explicit feedback involves users directly communicating their satisfaction or di
 This feedback really helps improve the AI over time. We use techniques like Reinforcement Learning from Human Feedback ( RLHF ) to turn this feedback into rewards and ways to make the AI’s answers even better.
 
 ### Collecting and Utilizing Feedback for Model Training
-
 The feedback collected is logged meticulously to build a comprehensive dataset that informs the training and fine-tuning processes. Here’s how it works:
 
 1. **Collect Logs**: All interactions, implicit and explicit feedback, along with additional context like prompt history and model parameters, are logged.
@@ -49,16 +44,13 @@ Getting feedback from users is super important for making AI models like LLMs be
 
 ![Figure: ChatGPT asked user to choose response.](assets/Draft-choosing.webp)
 
-
 ### Advantages of Human in the Loop in LLMs
-
 - **Improved Quality and Trust:** Human reviewers can help improve the quality and accuracy of LLM outputs, making them more reliable and trustworthy. This is particularly important in applications where errors or biases can have significant consequences.
 - **Adaptability and Customization:** HITL allows LLMs to be customized for specific tasks or industries. Human input ensures the model aligns with domain-specific requirements and can handle nuances and complexities.
 - **Ethical Control:** HITL can prevent generating harmful, biased, or inappropriate content by providing human oversight and moderation. This is essential for maintaining ethical standards.
 - **Addressing Uncertainty:** LLMs can sometimes produce uncertain or ambiguous responses. Human reviewers can resolve such uncertainty, making the model more useful when clarity is essential.
 
 ### Reference
-
 - [Evaluating LLM Outputs (cohere.com)](https://cohere.com/blog/evaluating-llm-outputs)
 - [Human in the Loop feedback (orq.ai)](https://docs.orq.ai/docs/human-in-the-loop-feedback)
 - [Human in the Loop - Machine Learning - Definition & Examples | Encord](https://encord.com/blog/human-in-the-loop-ai/#:~:text=What%20is%20HITL%3F-,Human%2Din%2Dthe%2Dloop%20(HITL)%20is%20an,%2C%20accuracy%2C%20and%20training%20outcomes.)
