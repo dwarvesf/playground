@@ -4,7 +4,11 @@ tags:
   - go-weekly
 authors:
   - fuatto
+title: "Go Weekly: Go 1.23 Iterators"
+description: "Explore the new package for iterators. Learn what it is and how to use it."
+date: 2024-07-05
 ---
+
 
 ## [Why People are Angry over Go 1.23 Iterators](https://www.gingerbill.org/article/2024/06/17/go-iterator-design/)
 
