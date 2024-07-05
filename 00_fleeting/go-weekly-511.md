@@ -1,11 +1,12 @@
 ---
 tags:
   - golang
+  - iterators
   - go-weekly
 authors:
   - fuatto
 title: "Go Weekly: Go 1.23 Iterators"
-description: "Explore the new package for iterators. Learn what it is and how to use it."
+description: "Exploring the new Go package for iterators - learn what it is, what the controversy is about, and how to use it."
 date: 2024-07-05
 ---
 
@@ -78,6 +79,8 @@ date: 2024-07-05
     - Still the purpose is good, let's wait to see the adoption in community after awhile
 
 ---
-https://www.gingerbill.org/article/2024/06/17/go-iterator-design/
-https://github.com/golang/go/issues/61897
-https://en.wikipedia.org/wiki/Container_(abstract_data_type)
+
+## References
+- https://www.gingerbill.org/article/2024/06/17/go-iterator-design/
+- https://github.com/golang/go/issues/61897
+- https://en.wikipedia.org/wiki/Container_(abstract_data_type)
