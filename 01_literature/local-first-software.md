@@ -1,7 +1,6 @@
 ---
 tags: 
   - local-first
-  - software-architecture
   - crdt
   - data-synchronization
   - data-ownership
@@ -10,7 +9,7 @@ title: "Local-first Software"
 description: "Local-first software is an approach to software development that emphasizes data ownership, offline functionality, and real-time collaboration. This model ensures data is primarily stored on the user's device, enhancing privacy and control while enabling seamless synchronization and collaboration without relying on continuous internet connectivity"
 date: 2024-07-06
 authors: 
-  - ngolapnguyen
+  - mashiro5951
 ---
 
 ## What is Local-first Software?
@@ -19,7 +18,7 @@ Local-first software prioritizes storing data on the user's device, ensuring own
 
 Let's take a quick look at how local-first compares to the conventional stack:
 
-![[local-first-software-20240706221930408.webp]]
+![](assets/local-first-software-20240706221930408.webp)
 
 For a "traditional" app, the clients are a "thin" layer that depends on the servers for any read/write operations.
 
