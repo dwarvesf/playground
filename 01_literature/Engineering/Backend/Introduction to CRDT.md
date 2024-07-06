@@ -1,17 +1,15 @@
 ---
 tags:
-  - engineering
-  - engineering/backend
   - distributed-system
   - crdt
-  - eventual-consistency
-  - coordination
-  - replication
   - data-types
   - data-structures
-authors: Nguyen Tan Phat
+authors:
+  - fuatto
+title: "Introduction to CRDT"
+description: "Conflict-free Replicated Data Types (CRDTs) (aka convergent replicated data type or commutative replicated data type) are data structures that can be replicated across multiple computers in a network, where the replicas can be updated independently and concurrently without coordination between them, and enable operations to always converge to a final state consistent among all replicas."
+date: 2023-11-05
 github_id: fuatto
-date: 2023-11-5
 icy: 10
 ---
 

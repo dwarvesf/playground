@@ -28,7 +28,7 @@ Local-first shifts the roles between servers and clients, making clients the pri
 
 Generally, local-first is enabled by two core concepts:
 
-- **CRDTs (Conflict-free Replicated Data Types)**: These data structures allow multiple users to edit documents simultaneously, merging changes without conflicts. You can read more about CRDTs here: [[Introduction to CRDT]].
+- **CRDTs (Conflict-free Replicated Data Types)**: These data structures allow multiple users to edit documents simultaneously, merging changes without conflicts. You can read more about CRDTs here: [Introduction to CRDT](engineering/Backend/Introduction%20to%20CRDT.md).
 - **Data Synchronization**: Changes made offline are synced with other devices and the cloud when a connection is available.
 
 In most cases, end-to-end encryption is required to ensure data security during synchronization.
