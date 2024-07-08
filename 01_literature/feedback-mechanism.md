@@ -4,7 +4,7 @@ tags:
   - feedback
   - mechanism
 title: "Design feedback mechanism for LLM applications"
-date: 2024-08-07
+date: 2024-07-08
 description: "Improving AI models requires collecting accurate user feedback,which can be difficult. The article explores more into the importance of collecting human feedback and discusses the need for creating an organized database to effectively store and use this valuable input. We hope to continuously improve our large language models, ensuring they deliver greater performance and match user expectations more effectively."
 authors:
   - datnguyennnx
