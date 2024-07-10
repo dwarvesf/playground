@@ -19,7 +19,7 @@ We value the importance of sharing our work with other people at Dwarves. And it
 ### Meet the OGIF memo summarizer
 Working in collaboration with my colleague @innno_, we crafted a chatbot using Dify. This bot transcribes YouTube videos and extracts key points from our OGIF sessions. The result? A major boost in our ability to review and reference the knowledge shared during these meetings.
 
-![](assets/crafting-ogif-summarize-bot-7.png)
+![](assets/how-we-crafted-the-ogif-summarizer-bot-to-streamline-weekly-knowledge-sharing_crafting-ogif-summarize-bot-7.webp)
 
 ### How it works?
 **YouTube Transcription**: We integrated a YouTube transcription workflow as a function-calling tool for our chatbot.
@@ -30,32 +30,32 @@ Working in collaboration with my colleague @innno_, we crafted a chatbot using D
 
 1. **Short Summary**: 3-5 key timestamps with brief descriptions of the most important topics.
     
-  ![](assets/crafting-ogif-summarize-bot-1.png)
+  ![](assets/how-we-crafted-the-ogif-summarizer-bot-to-streamline-weekly-knowledge-sharing_crafting-ogif-summarize-bot-1.webp)
     
 2. **Detailed Summary**: Comprehensive timestamps, each with 2-3 bullet points providing in-depth information.
 
-  ![](assets/crafting-ogif-summarize-bot-2.png)
+  ![](assets/how-we-crafted-the-ogif-summarizer-bot-to-streamline-weekly-knowledge-sharing_crafting-ogif-summarize-bot-2.webp)
 
 3. **Languages:** The summary is available in both English and Vietnamese.
 
-  ![](assets/crafting-ogif-summarize-bot-3.png)
+  ![](assets/how-we-crafted-the-ogif-summarizer-bot-to-streamline-weekly-knowledge-sharing_crafting-ogif-summarize-bot-3.webp)
 
 ### The prompt
 The core of our summarizer is the prompt we’ve meticulously designed. Here’s what it does:
 
 - Generates structured summaries with accurate timestamps.
     
-    ![](assets/crafting-ogif-summarize-bot-4.png)
+    ![](assets/how-we-crafted-the-ogif-summarizer-bot-to-streamline-weekly-knowledge-sharing_crafting-ogif-summarize-bot-4.webp)
     
 - Creates clickable links to specific points in the video.
 - Offers both a quick overview and detailed insights.
 
- ![](assets/crafting-ogif-summarize-bot-5.png)
+ ![](assets/how-we-crafted-the-ogif-summarizer-bot-to-streamline-weekly-knowledge-sharing_crafting-ogif-summarize-bot-5.webp)
 
 - Maintains consistent formatting for easy reading.
 - Provides a comprehensive overview of the video content.
 
-![](assets/crafting-ogif-summarize-bot-6.png)
+![](assets/how-we-crafted-the-ogif-summarizer-bot-to-streamline-weekly-knowledge-sharing_crafting-ogif-summarize-bot-6.webp)
 
 ### Benefits
 - **Time-Saving**: Team members can quickly grasp the main points of a session without watching the entire video.
