@@ -4,8 +4,8 @@ tags:
   - blockchain
   - ton
 title: "Ton: Blockchain of blockchains"
-date: 2024-04-11
-description: Talk about TON and its core technologies. Why do we call TON the "Blockchain of blockchains"?
+date: 2024-07-11
+description: 'Talk about TON and its core technologies. Why do we call TON the "Blockchain of blockchains"?'
 authors: 
   - bievh
 ---
@@ -14,16 +14,16 @@ TON (The Open Network) is a blockchain platform originally developed by the team
 
 To understand what actually happen under these shiny names of technologies, this post will dissect one by one in the simplest way.
 
-#### Actor model, Everything is a Smart Contract
-![](./assets/ton-actor-model.png)
+## Actor model, Everything is a Smart Contract
+![](assets/ton_blockchain_of_blockchains_ton-actor-model.webp)
 Firstly, TON is a concurrency model that facilitates the efficient execution of smart contracts and other decentralized applications by organizing computational entities (actors) that interact through message passing. So technically, every actor in TON is represented as a smart contract including our wallet which can be considered as a simple actor.
 
 Each actor has its own storage and behavior. We can imagine that storage is the location where we will store the state of the actor or some other data. So we can temporarily avoid it here, and go to the detail in another post where we will prepare for writing our first smart contract on TON. The main point that I want to bring to you in this post is "What does the actor do?"
 
-#### Actor behavior
+## Actor behavior
 Take a look at the following image. It is actually the sequence of jobs that an actor actually does.
 
-![](./assets/ton-actor-behavior.png)
+![](assets/ton_blockchain_of_blockchains_ton-actor-behavior.webp)
 
 1.	Event Trigger: An actor is typically activated upon receiving a message.
 2.	Event Handling: The actor routes the event to the appropriate handler in its `contract code`, utilizing its properties to process the event in the TVM (TON Virtual Machine).
@@ -33,12 +33,12 @@ Take a look at the following image. It is actually the sequence of jobs that an 
 
 Finally, when we combine all the above steps together, it will result in a transaction.
 
-#### Chain and shard
-![](./assets/ton_chain_of_txs.png)
+## Chain and shard
+![](assets/ton_blockchain_of_blockchains_ton_chain_of_txs.webp)
 
 We basically have a transaction after the behavior of any actor is done. Then when there is more than one transaction in a sequence, it may be called a **chain**. In case it is a chain of transactions that is owned by a single account, it is called `AccountChain`.
 
-![](./assets/ton_account_chain.png)
+![](assets/ton_blockchain_of_blockchains_ton_account_chain.webp)
 
 Then a group of account chains will be stored in the same location called shard called **AccountShard**. In the same way build an **AccountChain**, **ShardChain** which is a chain of **AccountShard**, and **BlockChain** which is the chain of all shards.
 
@@ -48,9 +48,9 @@ In TON, we can consider that have 2 types of **BlockChain**
 
 Currently, TON has 2 chains, Masterchain and Basechain.
 
-![](./assets/ton_blockchain.png)
+![](assets/ton_blockchain_of_blockchains_ton_blockchain.webp)
 
-#### Splitting and Merging, What makes TON more scalable?
+## Splitting and Merging, What makes TON more scalable?
 Because a **ShardChain** is composed of distinct **AccountChains**, it can be easily divided. 
 
 For instance, if a **ShardChain** manages events for one million accounts but encounters a transaction volume too high for a single node to handle, we can split this chain. 
@@ -75,7 +75,7 @@ So TON needs an efficient way to deliver and process messages between **ShardCha
 
 If it is hard to imagine, in some aspects, you can take a look at **E-Cube Routing** to get the idea.
 
-![](./assets/e_cute_routing.png)
+![](assets/ton_blockchain_of_blockchains_e_cute_routing.webp)
 
-#### Conclusion 
+## Conclusion 
 In summary, TON stands out as a “blockchain of blockchains” due to its advanced architecture and design principles. Its use of unique technologies like sharding, the Actor model, and Instant Hypercube Routing allows it to achieve high scalability, fast transactions, and robust security. By seamlessly integrating multiple blockchains into a unified network, TON not only enhances interoperability but also paves the way for a more connected and efficient decentralized ecosystem. Whether you’re a developer or a blockchain enthusiast, understanding the inner workings of TON offers valuable insights into the future of blockchain technology.
