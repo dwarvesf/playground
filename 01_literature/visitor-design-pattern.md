@@ -1,8 +1,20 @@
-# Visitor Design Pattern
+---
+tags: 
+  - design-pattern
+  - behavior-pattern
+  - visitor-design-pattern
+title: "Visitor design pattern, the concept, problem solution and use cases"
+date: 2024-07-12
+description: "Visitor is a behavioral design pattern that lets you separate algorithms from the objects on which they operate."
+authors:
+  - .taipn
+---
 
-![Untitled](assets/visitor-design-pattern-1.webp)
+![](assets/visitor-design-pattern.pdf)
 
-# **What is the Visitor Design Pattern?**
+![illustration](assets/visitor-design-pattern-1.webp)
+
+# What is the Visitor Design Pattern?
 
 **Visitor** is a behavioral design pattern that lets you separate algorithms from the objects on which they operate.
 
@@ -11,7 +23,7 @@ Visitor design pattern is one of the [**behavioral design patterns**](https://w
 - a method called **Visit()** which is implemented by the visitor and is called for every element in the data structure
 - visitable classes providing **Accept()** methods that accept a visitor
 
-# **Problem statement**
+# Problem statement
 
 Imagine you're developing a simple text editing application. In this application, you have different types of document elements such as paragraphs, tables, and images. Each of these elements can perform certain operations, such as rendering to the screen, exporting to different formats (like HTML or plain text), and spell-checking.
 
@@ -21,14 +33,14 @@ As the application grows, more operations need to be supported for these element
 
 The Visitor Pattern allows us to define a new operation without changing the classes of the elements on which it operates. Instead of adding the new operation to each element, we create a visitor class that implements the operation. Each element class then has an `accept` method that takes a visitor and calls the visitor’s method corresponding to that element.
 
-# **Structure**
+# Structure
 
 - The Visitor interface declares a set of visiting methods that can take concrete elements of an object structure as arguments. These methods may have the same names if the program is written in a language that supports overloading, but the type of their parameters must be different.
 - Each Concrete Visitor implements several versions of the same behaviors, tailored for different concrete element classes.
 
-![Untitled](assets/visitor-design-pattern-2.webp)
+![structure](assets/visitor-design-pattern-2.webp)
 
-# Code example for problem**:
+# Code example for problem:
 
 ### Illustration:
 
@@ -180,7 +192,7 @@ function App() {
 
 By using the Visitor Pattern, we can easily add new operations without modifying the element classes, adhering to the Open/Closed Principle and making the code more maintainable and scalable.
 
-# **Applicability**
+# Applicability
 
 - **Use the Visitor pattern to perform operations on all elements of a complex object structure (e.g., an object tree).**
     
@@ -195,20 +207,20 @@ By using the Visitor Pattern, we can easily add new operations without modifying
     Extract this behavior into a separate visitor class, implementing only the visiting methods for the relevant classes, leaving the rest empty.
     
 
-# **Pros and Cons**
+# Pros and Cons
 
-## **Advantages**
+## Advantages
 
 - **Open/Closed Principle**: Introduce new behavior for objects of different classes without modifying those classes.
 - **Single Responsibility Principle**: Consolidate multiple versions of the same behavior into a single class.
 - A visitor object can gather useful information while working with various objects, which is beneficial for traversing complex structures like an object tree and applying the visitor to each object.
 
-## **Disadvantages**
+## Disadvantages
 
 - All visitors need updating whenever a class is added to or removed from the element hierarchy.
 - Visitors may lack access to private fields and methods of the elements they work with.
 
-# **Use Cases**
+# Use Cases
 
 Some use cases for the Visitor Pattern:
 
