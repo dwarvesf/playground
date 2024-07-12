@@ -4,7 +4,7 @@ tags:
   - feedback
   - pattern
 title: "Thumbs up and Thumbs down pattern"
-date: 2024-01-07
+date: 2024-07-12
 description: "The article talks about how important human feedback is for making large language models better, especially using thumbs up and down. It explains the Pearson correlation coefficient, which measures how variables are related. The thumbs system is an easy way for users to show if responses are helpful or not, which encourages more feedback and keeps users engaged. This feedback helps improve training data and makes the models more accurate. The article includes examples in sentiment analysis for reviews and content moderation, showing how this feedback helps understand user opinions and filter out bad content on sites like YouTube and Twitter."
 authors:
   - datnguyennnx
