@@ -3,6 +3,7 @@ tags:
   - design-pattern
   - listener
   - event-subscriber
+  - observer-pattern
 title: "Introduce the Observer pattern and its use cases"
 date: 2024-07-12
 description: "Concept of the Observer Pattern with its pros and cons."
@@ -10,7 +11,7 @@ authors:
   - hienld
 ---
 
-![](assets/observer-pattern.png)
+![](assets/observer-pattern.webp)
 
 
 ## Problem
@@ -19,7 +20,7 @@ Imagine that you have two types of objects: a Customer and a Store. The customer
 
 The customer could visit the store every day and check product availability. But while the product is still en route, most of these trips would be pointless.
 
-![](assets/observer-pattern-problem.png)
+![](assets/observer-pattern-problem.webp)
 
 On the other hand, the store could send tons of emails (which might be considered spam) to all customers each time a new product becomes available. This would save some customers from endless trips to the store. At the same time, it’d upset other customers who aren’t interested in new products.
 
