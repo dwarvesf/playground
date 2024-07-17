@@ -10,12 +10,12 @@ authors:
   - bievh
 ---
 
-In my previous post, [Ton: Blockchain of Blockchains](), I talked about some core technologies that make TON strong. However, it was just an overview. To begin developing on TON is not enough. Today, I will introduce some core concepts in TON that you will frequently work with as a TON developer.
+In my previous post, [Ton: Blockchain of Blockchains](ton_blockchain_of_blockchains.md), I talked about some core technologies that make TON strong. However, it was just an overview. To begin developing on TON is not enough. Today, I will introduce some core concepts in TON that you will frequently work with as a TON developer.
 
-#### Cells and Data Storage
+## Cells and Data Storage
 **Cells are the atomic unit of data storage in TON**. It is a data structure containing:
 
-![](./assets/ton_cell.png)
+![](assets/ton_core_concept_ton_cell.webp)
 
 - Up to 1023 bits of data
 - Up to 4 references to other cells
@@ -30,9 +30,9 @@ Currently, TON has 2 types of cells: ordinary and exotic
 
 When serializing cells into byte arrays, it is called  Bag of cells. **Every data stored on TON including blocks and the state of the network is a bag of cells.**
 
-![](./assets/ton_bag_of_cells.png)
+![](assets/ton_core_concept_ton_bag_of_cells.webp)
 
-#### Smart contract
+## Smart contract
 
 As mentioned in the previous post, everything in TON is a smart contract. That contains:
 - Address: (workchain_id, account_id) pairs present smart contract as a unique identifier.
@@ -41,9 +41,9 @@ As mentioned in the previous post, everything in TON is a smart contract. That c
 - Balance: the amount of TON held by the contract.
 - Others: flags requesting tick-tock calls at each block (active only for fundamental contracts), auto-splitting information and published library cells, etc.
 
-#### Message
+## Message
 
-![](./assets/ton_message_flow.png)
+![](assets/ton_core_concept_ton_message_flow.webp)
 
 To communicate between smart contracts aka actors on TON network, we need to send messages. A message is a package of data that contains the following elements:
 - Source Address: Sender’s address.
@@ -56,7 +56,7 @@ We have 2 types of messages:
 - Internal Messages: Facilitate communication and value transfer between smart contracts within the TON network. They are used for contract-to-contract interactions.
 - External Messages: Allow users and external entities to interact with smart contracts. They are typically used to invoke functions or services provided by the smart contracts.
 
-#### Transaction
+## Transaction
 
 On TON, we have the transaction that records the state changes of processing a message. That basically contains:
 -	Inbound Message: The message that triggered the transaction.
@@ -68,7 +68,7 @@ Not every transaction leads to outgoing messages or updates to the contract’s 
 
 One more important point to note is that unlike Ethereum or most other synchronous blockchains, where each transaction can contain several smart contract calls, in TON, **a transaction is executed on a single smart contract, and smart contracts communicate through messages.**
 
-#### Gas 
+## Gas 
 
 In Solidity, gas concerns are minimal for contract developers. If a user provides insufficient gas, the transaction will be completely reverted (though the gas spent will not be refunded). If sufficient gas is provided, the actual costs will be calculated and deducted from the user’s balance automatically.
 
@@ -90,6 +90,6 @@ TON does not automatically calculate gas. The entire transaction execution, with
     + action_fees
     + out_fwd_fees
 
-#### Conclusion
+## Conclusion
 
 With all the above concepts, we can now begin developing on TON. But these are actually not enough. We will continue diving deep into more complex concepts such as data format, transaction layout, or bounceable addresses when developing something in the next post.
