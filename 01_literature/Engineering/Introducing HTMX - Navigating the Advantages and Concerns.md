@@ -1,11 +1,11 @@
 ---
 tags:
-  - engineering
-  - frontend
   - htmx
-  - web
-  - engineering/frontend
-authors: Bui Ngoc Nam Anh
+  - frontend
+authors:
+  - namanh
+title: Introducing HTMX - Navigating the Advantages and Concerns
+description: A comprehensive exploration of HTMX, a JavaScript library that extends HTML as a hypermedia, addressing the limitations of legacy HTML applications.
 github_id: tonible14012002
 date: 2023-12-18
 icy: 10

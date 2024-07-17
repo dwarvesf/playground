@@ -1,14 +1,14 @@
 ---
 tags:
-  - engineering/frontend
-  - frontend
-  - web-browser
   - rendering
   - dom
   - cssom
   - render-tree
-authors: Nguyen Dinh Nam
+authors:
+  - namnd
 github_id: nguyend-nam
+title: From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree
+description: A deep dive into the rendering process of a web page, exploring the Document Object Model (DOM), CSS Object Model (CSSOM), and the Render Tree.
 date: 2023-09-11
 icy: 10
 ---

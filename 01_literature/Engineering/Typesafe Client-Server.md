@@ -1,11 +1,12 @@
 ---
 tags:
-  - engineering
-  - architecture
-  - code-generating
-  - quality
+  - code-generation
+  - typesafe
   - fullstack
-authors: An Tran
+authors:
+  - antran
+title: Typesafe Client Server
+description: A code generation layer that bridges the gap between frontend and backend more effectively.
 github_id: tienan92it
 date: 2023-12-06
 icy: 10
