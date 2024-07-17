@@ -6,7 +6,7 @@ tags:
   - duckdb
   - transformers.js
   - hybrid-search
-date: 2023-07-15
+date: 2023-07-17
 authors:
   - monotykamary
 ---
