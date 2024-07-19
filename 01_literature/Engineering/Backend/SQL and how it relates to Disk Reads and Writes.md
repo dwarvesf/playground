@@ -1,16 +1,15 @@
 ---
 tags:
   - engineering
-  - engineering/backend
-  - sql
-  - disk
-  - io
   - data-engineering
   - sequential-reads
   - sequential-writes
   - random-reads
   - random-writes
-authors: Nguyen Xuan Anh
+authors:
+  - monotykamary
+title: SQL and how it relates to Disk Reads and Writes
+description: 'Sequential read/write operations involve accessing data in a continuous, linear manner. This typically occurs when transferring large files or accessing a large file on the drive. In sequential read/write operations, the drive can read or write data from a series of blocks, allowing for faster performance...'
 github_id: monotykamary
 date: 2023-09-06
 icy: 10
