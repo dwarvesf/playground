@@ -1,6 +1,8 @@
 ---
 tags: 
   - subscription
+  - pricing
+  - product
 title: "Subscription Pricing Models"
 description: "Overview of Subscription Pricing Models"
 authors:
