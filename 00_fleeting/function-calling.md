@@ -27,6 +27,7 @@ Function calling introduces a third method to extend GPT’s capabilities. It al
 
 ## How to use Function Calling in AI Agents
 example of how to use function calling to format the response from the model. It's important to format the response so we can pass it to another api.
+
 ```python
 const gptResponse = await openai.chat.completions.create({
     model: "gpt-3.5-turbo-0613",
@@ -58,8 +59,8 @@ const gptResponse = await openai.chat.completions.create({
             }
         ],
     function_call: { name: "getData" }
-});'```
-
+});
+```
 
 ## Conclusion
 Integrating function calling into the architecture of AI agents significantly enhances their functionality and adaptability. By effectively utilizing external services, AI agents can transcend their initial limitations, providing more value and better performance in their respective applications.
