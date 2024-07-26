@@ -23,7 +23,7 @@ authors:
 - The software engineering landscape in 2024 is trending towards "boring" technology, full-stack development, and increased integration of AI tools in development workflows.
 - Despite being widely used, JavaScript has seen a drop in median salary, while niche languages like Erlang, Elixir, and Clojure command higher salaries.
 
-## Meta's Llama 3.1: Pushing the Boundaries of Open Source AI
+## Meta's Llama 3.1: Open Source AI for Everyone
 
 Meta's release of Llama 3.1, particularly the 405B parameter model, marks a significant leap in open source AI capabilities. This frontier-level model now competes with leading closed-source alternatives, offering comparable performance with the added benefits of transparency and customizability. The release includes improved 70B and 8B versions as well, catering to various computational needs. Meta's partnerships with tech giants like Amazon, Databricks, and NVIDIA for deployment support underscore the ecosystem-wide impact of this release.
 
@@ -59,7 +59,7 @@ Recent events have exposed significant vulnerabilities in enterprise cybersecuri
 
 From what we see, these incidents underscore the importance of diversified and resilient system designs. The widespread impact of the CrowdStrike outage serves as a stark reminder that we shouldn't put all our eggs in one basket, especially regarding critical infrastructure and security solutions. Moving forward, we must prioritize the development of more robust, distributed systems that can withstand single-point failures. This is not isolated to just these incidents, but similar events on our side have been clear indicators for us to better decentralize our subscriptions with vendors.
 
-## The Evolving Landscape of JavaScript and Software Engineering
+## Where JavaScript and Tech sits in Software Engineering
 
 The JavaScript ecosystem and broader software engineering field are undergoing significant shifts in 2024. The job market for software engineers has tightened, slowing career advancement and increasing competition. This climate is driving several key trends:
 
