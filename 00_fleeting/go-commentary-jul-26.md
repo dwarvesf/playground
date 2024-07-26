@@ -2,10 +2,11 @@
 tags:
   - golang
   - go-weekly
+  - networking
 authors:
   - fuatto
 title: "Go Commentary July 26"
-description: ""
+description: "This post explores two cutting-edge applications of Go programming. First, it details an ethical hacking project that successfully sent 500 million HTTP requests to 2.5 million hosts using Go's concurrency features and custom optimizations. The article then introduces DarwinKit, a powerful Go library for creating native Mac applications without Objective-C or Swift. Both examples demonstrate Go's versatility in handling high-performance networking tasks and cross-platform development, showcasing its potential for complex, scalable projects in cybersecurity and application development."
 date: 2024-07-26
 ---
 ## [Using Go to send 500 Million HTTP Requests to 2.5 Million Hosts](https://www.moczadlo.com/2024/how-i-sent-500-million-http-requests-in-under-24h)
