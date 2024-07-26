@@ -31,7 +31,7 @@ From an engineering standpoint, Llama 3.1 presents an intriguing shift in the AI
 
 ## OpenAI's GPT-4o-mini: A Leap in Cheap and Customizable AI
 
-OpenAI has taken a significant step in democratizing AI by introducing fine-tuning capabilities for GPT-4o-mini. This development allows users to customize the model for specific applications, potentially revolutionizing how businesses and developers interact with AI. The fine-tuning feature is currently available to tier 4 and 5 users, with plans to expand access gradually. Notably, OpenAI is offering the first 2 million training tokens per day free through September 23, 2024, lowering the barrier to entry for many organizations. ![[market-report-july-2024-20240726134331340.webp]]
+OpenAI has taken a significant step in democratizing AI by introducing fine-tuning capabilities for GPT-4o-mini. This development allows users to customize the model for specific applications, potentially revolutionizing how businesses and developers interact with AI. The fine-tuning feature is currently available to tier 4 and 5 users, with plans to expand access gradually. Notably, OpenAI is offering the first 2 million training tokens per day free through September 23, 2024, lowering the barrier to entry for many organizations. ![](market-report-july-2024-20240726134331340.webp)
 
 We believe this move presents exciting opportunities for optimizing AI applications. The benefits of fine-tuning include higher quality results, significant token savings, and lower latency - all crucial factors in production environments.
 
@@ -41,13 +41,13 @@ However, it's important to note that fine-tuning should be considered after expl
 
 The recent release of Claude Sonnet 3.5 is reshaping the landscape of software development for technical founders. This Large Language Model (LLM) stands out from its predecessors by offering an unprecedented level of comfort and efficiency in implementation tasks. Early adopters report a staggering 10x improvement in development speed for UI components and other technical aspects of popular applications. This acceleration in coding productivity allows founders to focus more on critical architectural and infrastructure decisions, potentially revolutionizing the pace of innovation in the startup ecosystem.
 
-The workflow enabled by Claude Sonnet 3.5 is very relatable, as we use similar methods with Claude to speed up development and design cycles, with thorough planning and prompting. However, it's crucial to note that while this tool significantly enhances coding efficiency, it doesn't replace the need for sound architectural decision-making. As we integrate this technology into our development processes, we'll need to carefully balance the rapid iteration capabilities with maintaining code quality and system integrity. ![[market-report-july-2024-20240726134447079.webp]]
+The workflow enabled by Claude Sonnet 3.5 is very relatable, as we use similar methods with Claude to speed up development and design cycles, with thorough planning and prompting. However, it's crucial to note that while this tool significantly enhances coding efficiency, it doesn't replace the need for sound architectural decision-making. As we integrate this technology into our development processes, we'll need to carefully balance the rapid iteration capabilities with maintaining code quality and system integrity. ![](market-report-july-2024-20240726134447079.webp)
 
 ## Advancements in AI for Sports and Audio: Enhancing Performance Analysis and Communication
 
 Recent developments in artificial intelligence have led to significant advancements in both sports analytics and audio processing. Roboflow has developed a suite of computer vision tools specifically tailored for sports applications, addressing challenges such as ball tracking, player identification, and camera calibration in high-resolution video analysis.
 
-![[july-2024-market-report-330751625-7ad414dd-cc4e-476d-9af3-02dfdf029205.mp4]]
+![](july-2024-market-report-330751625-7ad414dd-cc4e-476d-9af3-02dfdf029205_compressed.mp4)
 
 ElevenLabs has introduced Turbo v2.5, a state-of-the-art text-to-speech model that supports 32 languages, including new additions like Vietnamese, Hungarian, and Norwegian. This model offers high-quality, low-latency conversational AI capabilities, potentially revolutionizing multilingual communication in various fields, including sports commentary and analysis.
 
@@ -71,7 +71,7 @@ The 2024 Stack Overflow survey reveals interesting insights:
 
 - Erlang developers command the highest median salary at $100,836, followed closely by Elixir and Clojure.
 - AI tools are expected to become more integrated into development workflows, particularly in documenting code (81%), testing code (80%), and writing code (76%).
-- JavaScript, despite being the mainstay language of developers, has seen a drop in median salary: ![[market-report-july-2024-20240726134720795.webp]]
+- JavaScript, despite being the mainstay language of developers, has seen a drop in median salary: ![](market-report-july-2024-20240726134720795.webp)
 
 These trends suggest a software engineering landscape that values efficiency, reliability, and versatility. There is a necessity to adapt to these changes while maintaining a balanced approach to technology adoption. The increasing integration of AI tools presents both opportunities and challenges, particularly in areas of code documentation and testing. Moving forward, it's crucial to leverage these tools effectively while ensuring we don't overlook the importance of human expertise and hard skill in software development.
 
