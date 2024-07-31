@@ -1,11 +1,12 @@
 ---
 tags:
-  - research
-  - engineering
+  - directory-structure
+  - file-management
+  - file-system
 authors:
   - datpv
-date: 2024-07-26
-title: "Design file-sharing system part 1 (directory structure)"
+date: 2024-07-31
+title: "Design file-sharing system - Part 1: Directory Structure"
 description: "This system aims to provide users with the ability to store, access, and share files directly on our website, similar to Google Drive. This system aims to enhance user convenience and collaboration by allowing seamless file management and sharing capabilities."
 ---
 
@@ -13,7 +14,7 @@ This system aims to provide users with the ability to store, access, and share f
 
 ![File Sharing System](assets/design-file-sharing-system_1.webp)
 
-### Overview
+## Overview
 
 This file storage and sharing system enables users to:
 
