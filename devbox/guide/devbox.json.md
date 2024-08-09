@@ -7,7 +7,7 @@ description: Explanation of the structure and options available in the devbox.js
 authors:
   - bievh
 ---
-![config-ref](../assets/config-ref.webp)
+![config-ref](assets/config-ref.webp)
 
 ---
 #### References
