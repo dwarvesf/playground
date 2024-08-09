@@ -1,7 +1,11 @@
 ---
-tags: writing, english
-authors: Nguyen Xuan Anh
-github_id: monotykamary
+tags:
+  - writing
+  - english
+authors:
+  - monotykamary
+title: State, Explain, Link - An all-purpose writing technique
+description: State, explain, link is a basic style for organizing and explaining ideas in an understandable way. This technique may have many names, but in essence it is a way to organize paragraphs in roughly 3 sentences or more.
 date: 2022-03-21
 ---
 
