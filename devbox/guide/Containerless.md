@@ -178,7 +178,7 @@ By default, we can use `initdb` to initialize the database. But we can also expl
 After initializing the database with above instructions, we have two ways to run all available services:
 - To start services daemon: `devbox services start`
 - To start services with monitoring: `devbox services up`
-  ![](../assets/services-top.webp)
+  ![](assets/services-top.webp)
   
 If want to start specific service, use `devbox services start [service]` or `devbox services up [service]`. Then we can create new DB by using `createdb <db_name>` command.
 ```
