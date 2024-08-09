@@ -37,9 +37,9 @@ The workspace table contains basic information that is essential for understandi
 
 The Asset table is the primary storage for information about digital assets within the system. These assets could include various types of files, documents, or other digital content. This table stores essential metadata about each asset, including identifiers, timestamps, file details, ownership information, and organizational categorization (such as project and workspace associations).
 
-### Permission
+### Main Permission & Sub Permission
 
-The Permission table manages access control and authorization for various resources within the system, defining who has what level of access to different assets. This table stores comprehensive permission data, including roles, access levels, and the scope of permissions.
+The Permissions table manages access control and authorization for various resources within the system, defining who has what level of access to different assets. This table stores comprehensive permission data, including roles, access levels, and the scope of permissions.
 
 This data model ensures a flexible and comprehensive system for managing files and their public accessibility, providing the foundation for a robust file storage and sharing system.
 
