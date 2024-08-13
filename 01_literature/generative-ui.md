@@ -1,8 +1,12 @@
 ---
-tags: AI, UXUI
+tags: 
+  - AI
+  - ux
 title: "Generative UI"
 description: "Generative UI refers to a dynamic and adaptive user interface that is generated and adjusted in real-time by artificial intelligence (AI) to better meet user needs and preferences. Unlike static interfaces, where the layout and elements are predetermined, generative UIs leverage AI algorithms to create and modify interface components based on user interactions and contextual information."
-authors: namnanh14mn, TheCodister
+authors:
+  - namnanh14mn
+  - TheCodister
 date: 2024-08-08
 ---
 
