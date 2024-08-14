@@ -1,6 +1,7 @@
 ---
 tags: 
   - AI
+  - generative-ui
   - ux
 title: "Generative UI"
 description: "Generative UI refers to a dynamic and adaptive user interface that is generated and adjusted in real-time by artificial intelligence (AI) to better meet user needs and preferences. Unlike static interfaces, where the layout and elements are predetermined, generative UIs leverage AI algorithms to create and modify interface components based on user interactions and contextual information."
@@ -15,11 +16,11 @@ date: 2024-08-08
 - It offers a personalized experience based on the user's needs and context. Users can interact with this AI-generated interface and sometimes make requests through it.
 
 ### Examples
-![Untitled](assets/generative-ui/generative-ui-example1.png)
+![example1](assets/generative-ui-example1.webp)
 
 - Instead of generating text to tell you the weather in San Francisco, it will create a UI displaying all the information you need. This approach not only looks better but also delivers the information more effectively.
 
-![Untitled](assets/generative-ui/generative-ui-example2.png)
+![example2](assets/generative-ui-example2.webp)
 
 - In this case, when you ask about stock prices, a user interface will appear that lets you interact with it to view the price of Dogecoin at specific times. It can generate different types of UIs to deliver the information effectively.
 
@@ -95,7 +96,7 @@ By observing the behavior of Vercel AI SDK, we came up with a general idea and 2
 ## General Idea
 - [Video Explanation](https://www.youtube.com/watch?v=d3uoLbfBPkw&t=406s)
 
-![Untitled](assets/generative-ui/generative-ui-general-idea.png)
+![general-idea](assets/generative-ui-general-idea.webp)
 
 **Goal**
 
@@ -109,7 +110,7 @@ By observing the behavior of Vercel AI SDK, we came up with a general idea and 2
 - LLM supports streaming responses. There are two approaches:
 
 ### Approach 1
-![Untitled](assets/generative-ui/generative-ui-approach-1.png)
+![approach](assets/generative-ui-approach-1.webp)
 
 - The message will be constructed in the backend based on all event received, when it's complete, the message will be sent to the frontend
 
@@ -131,14 +132,14 @@ By observing the behavior of Vercel AI SDK, we came up with a general idea and 2
 ```
 
 ### Approach 2
-![Untitled](assets/generative-ui/generative-ui-approach-2.png)
+![approach](assets/generative-ui-approach-2.webp)
 
 - Directly forward stream events to the frontend to handle using (HTTP Streaming, Server-Sent Events, WebSocket, etc.)
 - After a tool is done, include the tool result data in the chat history to help the chatbot understand the context.
 
 ### Handle event flow
 Below is an example for handling event stream generated during LLM processing with langchain.
-![Untitled](assets/generative-ui/generative-ui-handle-event-flow.png)
+![event-flow](assets/generative-ui-handle-event-flow.webp)
 
 ## References
 - [What is GenerativeUI?](https://www.nngroup.com/articles/generative-ui/)
