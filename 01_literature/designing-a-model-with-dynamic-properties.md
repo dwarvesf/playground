@@ -4,7 +4,7 @@ tags:
   - database-modelling
 title: Designing a model with dynamic properties
 description: "When we started working on this project aimed at the creative community, we faced an interesting challenge. We needed to build a model that was similar to a task but with a key difference: it had to support custom, dynamic, and extensible properties. If you’ve ever used Notion and appreciated how flexible its objects are, you’ll know exactly what we were trying to achieve."
-date: 2024-08-20
+date: 2024-08-21
 authors:
   - mashiro5951
 ---
@@ -21,7 +21,7 @@ Another key consideration was making sure the model was easily query-able. We wa
 
 Here’s a brief overview of what we ended up with (for presentation purposes only):
 
-![[designing-a-model-with-dynamic-properties-20240820225604474.webp]]
+![](assets/designing-a-model-with-dynamic-properties-20240820225604474.webp)
 
 ### `tasks` table
 
