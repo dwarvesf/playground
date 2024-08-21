@@ -3,10 +3,11 @@ tags:
   - directory-structure
   - file-management
   - file-system
+  - permissions
 authors:
   - datpv
-date: 2024-08-09
-title: "Design file-sharing system - Part 1: Permission & Password"
+date: 2024-08-21
+title: "Design file-sharing system - Part 2: Permission & Password"
 description: "In this part, I will discuss how I handle the logic and design the data model for the following features: setting permissions, sharing files for public access, and setting a password for a file."
 ---
 In this section, I will discuss how I handle the logic and design the data model for the following features: setting permissions, sharing files for public access, and setting a password for a file. Refer to the diagram below to understand how permissions work in this system.
