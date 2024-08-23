@@ -15,13 +15,13 @@ date: 2024-08-23
 - Auto-complete and contextual help while coding.
 - Rich content display: HTML, markdown (with latex), images, javascript, svg, videos, etc.
 
-![alt text](assets/gonb-auto-complete.png)
+![alt text](assets/go-commentary-aug-23_gonb-auto-complete.webp)
 
 - Widgets (sliders, buttons) support: interact using HTML elements
 - Plotly integration using [go-plotly](https://github.com/go-echarts/go-echarts)
 - Apache ECharts integration using [gonb-echarts](https://github.com/janpfeifer/gonb-echarts) and [go-echarts](https://github.com/go-echarts/go-echarts)
 
-![alt text](assets/gonb-chart.png)
+![alt text](assets/go-commentary-aug-23_gonb-chart.webp)
 
 ## [kubetrim: Trim Your KUBECONFIG Automatically](https://github.com/alexellis/kubetrim)
 
