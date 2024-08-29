@@ -29,7 +29,7 @@ We believe the landscape of programming is undergoing a profound transformation 
 
 It feels like we're revisiting the basics, but with a modern twist: developers are relearning their craft through collaboration with AI. This "half-coding" approach is where human intuition meets machine precision, curating code rather than writing it entirely. We expect that in the near future, coding without AI might become a relic, as developers lean on AI to handle more of the mechanical aspects of their work.
 
-![[market-report-aug-2024-20240829141959101.webp]]
+![](assets/market-report-aug-2024-20240829141959101.webp)
 
 [https://x.com/karpathy/status/1827143768459637073](https://x.com/karpathy/status/1827143768459637073)
 
@@ -43,7 +43,7 @@ The implications are profound—by migrating to newer Java versions quickly, Ama
 
 As AI continues to evolve, we expect even more profound changes in how software is developed, maintained, and upgraded. Developers are increasingly becoming overseers and guides as AI takes on more of the heavy lifting.
 
-![[market-report-aug-2024-20240829142116844.webp]]
+![](assets/market-report-aug-2024-20240829142116844.webp)
 
 [https://x.com/ajassy/status/1826608791741493281](https://x.com/ajassy/status/1826608791741493281)
 
@@ -53,7 +53,7 @@ We’re seeing the future unfold right before our eyes with generative UI, but t
 
 We believe this development could fundamentally change how we interact with technology. A few powerful apps could rule them all. The convenience and flexibility of simply describing what you need and having an app materialize could revolutionize productivity, making this technology an essential part of daily lives.
 
-![[market-report-aug-2024-20240829142212118.webp]] The user’s prompt to create a Bill Splitting App in Claude Mobile App
+![](assets/market-report-aug-2024-20240829142212118.webp) The user’s prompt to create a Bill Splitting App in Claude Mobile App
 
 ## New Features Open More Opportunities
 
@@ -71,7 +71,7 @@ OpenAI's introduction of Structured Outputs is a significant step forward in ens
 
 We expect this development to shift industry standards, with developers favoring structured outputs over traditional methods, especially for tasks requiring meticulous data formatting. The impact will be particularly profound in data-sensitive fields like finance and healthcare, where the accuracy of data is crucial.
 
-![[market-report-aug-2024-20240829142256859.webp]]
+![](assets/market-report-aug-2024-20240829142256859.webp)
 
 [https://platform.openai.com/docs/guides/structured-outputs/supported-schemas](https://platform.openai.com/docs/guides/structured-outputs/supported-schemas)
 
@@ -91,13 +91,13 @@ Meanwhile, Deep Live Cam's real-time face-swapping capabilities signal the next 
 
 As deepfake technology proliferates, it's reasonable to expect financial institutions like Visa and Mastercard to extend their oversight to platforms dealing with AI-generated media. This could usher in a new era of compliance, where online platforms are required to implement robust measures against deepfake misuse.
 
-![[market-report-aug-2024-20240829142341673.webp]]
+![](assets/market-report-aug-2024-20240829142341673.webp)
 
 [https://github.com/hacksider/Deep-Live-Cam/blob/main/demo.gif](https://github.com/hacksider/Deep-Live-Cam/blob/main/demo.gif)
 
 ## Shadcn, v0, Tailwind: The New Standard for UI Development
 
-We are witnessing a significant shift in frontend development with a new workflow that blends cutting-edge tools and AI capabilities. Starting with a complex web app prototype using [v0.dev](<[http://v0.devhttps](http://v0.devhttps)://v0.dev/>) and shadcn UI, the process integrates into a Next.js project with React, but the real magic happens in the refinement stage. Tools like Cursor and Claude 3.5 Sonnet interpret and implement intricate design instructions, creating highly desirable web screens.
+We are witnessing a significant shift in frontend development with a new workflow that blends cutting-edge tools and AI capabilities. Starting with a complex web app prototype using [v0.dev](https://v0.dev/) and shadcn UI, the process integrates into a Next.js project with React, but the real magic happens in the refinement stage. Tools like Cursor and Claude 3.5 Sonnet interpret and implement intricate design instructions, creating highly desirable web screens.
 
 We think this approach will push the prototyping process further and faster, even designers can skip traditional design tools and jump directly into working on a live-action version of the mockup. Furthermore, we expect shadcn and Tailwind to gain traction, becoming essential components of the new toolkit in UI development.
 
