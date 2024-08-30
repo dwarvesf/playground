@@ -29,7 +29,7 @@ Devbox supports two main types of plugins:
 ## Plugin in Devbox Shell Life Cycle
 Plugins are activated whenever a developer runs devbox shell, runs a script with devbox run, or starts a service using devbox services start|restart. The lifecycle of a devbox shell with plugins works as follows:
 
-![](./assets/devboxshell_lifecycle.png)
+![](assets/devboxshell_lifecycle.webp)
 
 ## Plugin structure
 ```
