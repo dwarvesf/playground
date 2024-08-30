@@ -13,9 +13,9 @@ date: 2024-08-30
 # Go As Enterprise Standard Language
 
 
-## [What is An Enterprise standard language (From Java story)?](./why-enterprise-chose-java.md)?
+## [What is An Enterprise standard language (From Java story)?](./why-enterprise-chose-java.md)
 
-## [Why Go?](./why-go.md))
+## [Why Go?](./why-go.md)
 
 ## [How to use Go in enterprise?](./how-to-use-go-in-enterprise.md)
 
