@@ -16,6 +16,64 @@ By defining `flake.nix`, we can not only specify information about all the depen
 
 Finally, our application can be fetched and used by other Nix packages freely.
 
+Enough theory, let's look at an example of using flakes in practice. Basically, I want to serve my Backend server using a PostgreSQL database that supports the TimescaleDB extension. However, when searching around, I could only find empty PostgreSQL packages without TimescaleDB. So, I wrote a flake to customize the PostgreSQL database with TimescaleDB attached inside. With `postgresql_15` and the package `postgresql15Packages.timescaledb` at [Nixpkgs Githib repository](https://github.com/NixOS/nixpkgs), we can build a flake as following. 
+
+```nix
+{
+  description = "A flake that adds the timescaledb extension to Postgresql";
+
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
+  };
+
+  outputs = { self, nixpkgs, flake-utils }:
+    flake-utils.lib.eachDefaultSystem (system:
+      let
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
+        psqlExtensions = [
+          "timescaledb"
+        ];
+      in {
+        packages = {
+          postgresql = pkgs.postgresql_15.withPackages (ps:
+              (map (ext: ps."${ext}") psqlExtensions));
+        };
+
+        defaultPackage = self.packages.${system}.postgresql;
+      });
+}
+```
+
+Let's break it down:
+
+1. Description:
+   The flake is described as adding the TimescaleDB extension to PostgreSQL.
+
+2. Inputs:
+   - `nixpkgs`: Points to the unstable branch of the Nixpkgs repository.
+   - `flake-utils`: A utility library for working with flakes.
+
+3. Outputs:
+   The `outputs` function takes the inputs and returns a set of derivations for each default system supported by flake-utils.
+
+4. For each system:
+   - It imports `nixpkgs` with `allowUnfree = true`, which allows the use of non-free packages if needed.
+   - Defines `psqlExtensions` as a list containing only "timescaledb".
+
+5. Packages:
+   - Defines a `postgresql` package using PostgreSQL 15.
+   - Uses `withPackages` to customize PostgreSQL, adding the extensions listed in `psqlExtensions`.
+   - The `map` function is used to convert each extension name to its corresponding package in the PostgreSQL package set.
+
+6. Default Package:
+   Sets the default package for this flake to be the customized PostgreSQL package.
+
+In essence, this flake provides a way to easily create a PostgreSQL 15 installation with the TimescaleDB extension pre-installed. Users of this flake can simply reference it to get a PostgreSQL setup with TimescaleDB support without having to manually configure the extension.
+
 ---
 #### References
 *Flakes — nix.dev documentation*. (n.d.). nix.dev. Retrieved July 23, 2024, from https://nix.dev/concepts/flakes.html
