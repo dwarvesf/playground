@@ -5,8 +5,8 @@ tags:
   - networking
 authors:
   - fuatto
-title: "Go Commentary Aug 02"
-description: ""
+title: "Go Commentary #5: Features, Memory Optimization, Minecraft Server, Code Editor, and LLM Tool"
+description: "Explore Go version features, memory optimization techniques, a Go-powered Minecraft server, a pure Go source code editor, and a tool for running large language models."
 date: 2024-08-02
 ---
 ## [Go Features By Version](https://antonz.org/which-go/)
@@ -77,14 +77,10 @@ date: 2024-08-02
 
 
 ---
-https://antonz.org/which-go
 
-https://github.com/dkorunic/betteralign
-
-https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/fieldalignment
-
-https://github.com/ZeppelinMC/Zeppelin
-
-https://github.com/jmigpin/editor
-
-https://github.com/ollama/ollama
+- https://antonz.org/which-go
+- https://github.com/dkorunic/betteralign
+- https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/fieldalignment
+- https://github.com/ZeppelinMC/Zeppelin
+- https://github.com/jmigpin/editor
+- https://github.com/ollama/ollama

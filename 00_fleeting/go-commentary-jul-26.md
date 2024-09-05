@@ -5,7 +5,7 @@ tags:
   - networking
 authors:
   - fuatto
-title: "Go Commentary July 26"
+title: "Go Commentary #4: Ethical Hacking, HTTP Requests, Mac App Development"
 description: "This post explores two cutting-edge applications of Go programming. First, it details an ethical hacking project that successfully sent 500 million HTTP requests to 2.5 million hosts using Go's concurrency features and custom optimizations. The article then introduces DarwinKit, a powerful Go library for creating native Mac applications without Objective-C or Swift. Both examples demonstrate Go's versatility in handling high-performance networking tasks and cross-platform development, showcasing its potential for complex, scalable projects in cybersecurity and application development."
 date: 2024-07-26
 ---
@@ -145,6 +145,7 @@ date: 2024-07-26
     - For iOS and mobile devs, generated bindings are for MacOS for now. Any contribution is welcome.
 
 ---
-https://www.moczadlo.com/2024/how-i-sent-500-million-http-requests-in-under-24h
-https://dev.to/progrium/how-i-build-simple-mac-apps-using-go-104j
-https://github.com/progrium/darwinkit
+
+- https://www.moczadlo.com/2024/how-i-sent-500-million-http-requests-in-under-24h
+- https://dev.to/progrium/how-i-build-simple-mac-apps-using-go-104j
+- https://github.com/progrium/darwinkit

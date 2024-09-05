@@ -5,7 +5,7 @@ tags:
   - generics
 authors:
   - fuatto
-title: "Go Commentary July 08"
+title: "Go Commentary #3: Generic Collections, Generics Constraints, AI Bot"
 description: "Implementing generic collections in Go: challenges and solutions, with examples of sortable sets and constraints. Updates on Go's generics support and insights on a new AI bot being developed for the Go community. Stay current with Go's evolving ecosystem and best practices for using generics effectively."
 date: 2024-07-12
 ---
@@ -133,7 +133,8 @@ date: 2024-07-12
     - Source is not official nor open, can help snoop around in [this search](https://github.com/golang/go/issues?q=is%3Aissue+is%3Aopen+commenter%3Agabyhelp) and help send feedback.
 
 ---
-https://www.dolthub.com/blog/2024-07-01-golang-generic-collections/#the-solution
-https://go.dev/ref/spec
-https://github.com/golang/go/discussions/67901
-https://pkg.go.dev/rsc.io/gaby
+
+- https://www.dolthub.com/blog/2024-07-01-golang-generic-collections/#the-solution
+- https://go.dev/ref/spec
+- https://github.com/golang/go/discussions/67901
+- https://pkg.go.dev/rsc.io/gaby

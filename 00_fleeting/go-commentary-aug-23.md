@@ -5,8 +5,8 @@ tags:
   - networking
 authors:
   - fuatto
-title: "Go Commentary Aug 23"
-description: ""
+title: "Go Commentary #8: Jupyter Notebooks, Kubernetes Tools, GopherCon Talks"
+description: "Explore GoNB for Jupyter notebooks, kubetrim for KUBECONFIG management, and key highlights from GopherCon UK 2024 talks, covering performance testing, software design, event-driven workflows, and AI's impact on tech jobs."
 date: 2024-08-23
 ---
 
@@ -60,16 +60,11 @@ kind-2
 
 ---
 
-https://github.com/janpfeifer/gonb
-
-https://github.com/go-echarts/go-echarts
-
-https://github.com/janpfeifer/gonb-echarts
-
-https://github.com/go-echarts/go-echarts
-
-https://github.com/alexellis/kubetrim
-
-https://youtube.com/playlist?list=PLDWZ5uzn69ezR6D6FUj_iBSOyRc9xaZFP&si=IdFGYzOivQqFRsVb
+- https://github.com/janpfeifer/gonb
+- https://github.com/go-echarts/go-echarts
+- https://github.com/janpfeifer/gonb-echarts
+- https://github.com/go-echarts/go-echarts
+- https://github.com/alexellis/kubetrim
+- https://youtube.com/playlist?list=PLDWZ5uzn69ezR6D6FUj_iBSOyRc9xaZFP&si=IdFGYzOivQqFRsVb
 
 

@@ -5,8 +5,8 @@ tags:
   - networking
 authors:
   - fuatto
-title: "Go Commentary Aug 16"
-description: ""
+title: "Go Commentary #7: Releases, Websockets, and Struct Behavior"
+description: "Exploring Go 1.23 release notes, the new home for nhooyr/websocket, and common mistakes with Go structs and slices."
 date: 2024-08-16
 ---
 
@@ -93,12 +93,8 @@ func main() {
 
 ---
 
-https://go.dev/doc/go1.23
-
-https://coder.com/blog/websocket
-
-https://github.com/coder/websocket
-
-https://jvns.ca/blog/2024/08/06/go-structs-copied-on-assignment/
-
-https://100go.co/
+- https://go.dev/doc/go1.23
+- https://coder.com/blog/websocket
+- https://github.com/coder/websocket
+- https://jvns.ca/blog/2024/08/06/go-structs-copied-on-assignment/
+- https://100go.co/
