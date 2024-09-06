@@ -1,7 +1,8 @@
 ---
 tags:
   - llm
-  - AI integration
+  - ai-agents
+  - ai-integration
 authors:
   - hoangnnh
 date: 2024-09-06
@@ -9,11 +10,11 @@ title: "Multi-agent collaboration for task completion"
 description: "In AI integrated systems, instead of put all workload on a single agent, we can apply divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent.This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone"
 ---
 
-In AI integrated systems, instead of put all workload on a single agent, we can apply divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent.This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone.
+In AI integrated systems, instead of putting all the workload on a single agent, we can apply a divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent. This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone.
 
 ## Problems
 
-Imagine we plan to integrate AI into our application, we build an AI agent with tools which can access all features of our application. However, When the AI agent is asked to perform a complex task that requires multiple steps or involves multiple features of the application, it may struggle to complete the task effectively. It might be because the AI agent feel hard to understating the context of the task, or because the defined system prompt is too complex for the AI agent to understand specific instructions. Moreover, the AI agent may not have the ability to perform all the necessary steps or access all the required features of the application. That why we need to design AI system with multiple agents, each agent is responsible for a specific task or feature and when received a complex task, agents in system can collaborate with each other to complete the task.
+Imagine we plan to integrate AI into our application, we build an AI agent with tools which can access all features of our application. However, when the AI agent is asked to perform a complex task that requires multiple steps or involves multiple features of the application, it may struggle to complete the task effectively. It might be because the AI agent feels the task is hard and is understating the context of the task, or because the defined system prompt is too complex for the AI agent to understand specific instructions. Moreover, the AI agent may not have the ability to perform all the necessary steps or access all the required features of the application. That why we need to design AI system with multiple agents, each agent is responsible for a specific task or feature and when received a complex task, agents in system can collaborate with each other to complete the task.
 
 ## System design
 
