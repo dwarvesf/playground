@@ -30,7 +30,7 @@ Our primary security goals include:
 
 Security is an ongoing process that must be applied across three critical areas: application security, data security, and development & infrastructure security.
 
-![[a-holistic-guide-to-security-20240906110413200.webp]]
+![](assets/a-holistic-guide-to-security-20240906110413200.webp)
 
 ### 1. Application Security
 
