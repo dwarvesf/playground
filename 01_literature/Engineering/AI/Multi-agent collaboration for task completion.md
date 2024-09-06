@@ -67,7 +67,7 @@ Now, let's consider a user request: "I want to create event with title "Lady Gag
 
 ![Multi-agent result](assets/multi-agent-example-result.webp)
 
-With multi-agent AI, the task is completed successfully, 2 agents collabrate to complete the task, and the supervisor agent manage the workflow. So how supervior agent route the task to appropriate agents? Let's see inside the system.
+With multi-agent AI, the task is completed successfully, 2 agents collaborate to complete the task, and the supervisor agent manage the workflow. So how supervior agent route the task to appropriate agents? Let's see inside the system.
 
 ![Multi-agent routing](assets/multi-agent-example-inside.webp)
 
