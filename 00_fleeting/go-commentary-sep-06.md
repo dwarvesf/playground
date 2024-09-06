@@ -5,12 +5,12 @@ tags:
   - networking
 authors:
   - fuatto
-title: "Go Commentary #10: "
-description: ""
+title: "Go Commentary #10: Script, Telemetry"
+description: "Exploring a Go library for shell-like scripting and Go's telemetry feature."
 date: 2024-09-06
 ---
 
-## [script: Making it easy to write shell-like scripts in Go](https://github.com/bitfield/script)
+## [Script: Making it easy to write shell-like scripts in Go](https://github.com/bitfield/script)
 
 - Go library that simplifies writing shell-like scripts by providing a fluent API for common operations like file manipulation, text processing, and command execution.
 
