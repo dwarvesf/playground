@@ -11,8 +11,6 @@ authors:
 
 A comprehensive August 2024 update on key advancements in React 19, Next.js 15, and web development tools. Highlights include new async transitions, server components, SSR performance comparisons, and emerging technologies in the web development landscape.
 
-# Core Stack
-
 ## React
 
 ### [React 19 RC: Async Transitions, Server Components, and Optimistic Updates](https://react.dev/blog/2024/04/25/react-19#whats-new-in-react-19)
@@ -73,7 +71,7 @@ MUI v6 introduces CSS theme variables, container queries, and performance improv
 - [Why CSS-in-JS Can Be Slow](https://playfulprogramming.com/posts/why-is-css-in-js-slow)
 - [Announcing TypeScript 5.6 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6-rc/)
 
-# Trending
+## Trending
 
 ### [Top Programming Languages 2024: Typescript and Rust on the Rise](https://spectrum.ieee.org/top-programming-languages-2024)
 
@@ -93,7 +91,7 @@ InformAI allows developers to expose UI and component data to large language mod
 - [Structured Outputs in the OpenAI API](https://openai.com/index/introducing-structured-outputs-in-the-api/)
 - [GitHub Models: A New Generation of AI Engineers](https://github.blog/news-insights/product-news/introducing-github-models/)
 
-# New Tools
+## New Tools
 
 ### [Waku: Making React Development Fun Again](https://waku.gg/)
 

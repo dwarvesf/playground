@@ -11,8 +11,6 @@ authors:
 
 The report for July 2024 gives you a snapshot of what’s happening in the world of web development. React is evolving with Server Components, and Next.js continues to push the boundaries of performance. Vite is solidifying its position as a top build tool, while TypeScript and other frameworks hold steady. Whether you’re looking for the latest updates or just want to stay in the loop, this report has you covered with key trends, tools, and insights to keep you informed.
 
-# Core stack
-
 ## React
 
 ### [State of React: Aging like fine wine, now with Server Components](https://stateofreact.com/en-US)
@@ -78,7 +76,7 @@ Vite has achieved its goal of becoming a foundational tool in the web ecosystem,
 - [JavaScript — What’s new with ECMAScript® 2024 (ES15) — In Depth Guide | by Igor Komolov | Medium](https://medium.com/@yourfuse/javascript-whats-new-with-ecmascript-2024-es15-ef056d2f4bf1)
 - [Introducing Vercel AI SDK 3.2 – Vercel](https://vercel.com/blog/introducing-vercel-ai-sdk-3-2)
 
-# Trending
+## Trending
 
 ### [ViteConf 2024: Mark your calendars for October 3rd](https://viteconf.org/)
 
@@ -97,7 +95,7 @@ Their first offering, LLM101n, is an undergrad course that teaches students to t
 - [Accelerating Idea to Production: Using Visual Development + AI to Ship 10x Faster (youtube.com)](https://www.youtube.com/watch?v=SMlTRGbYadI)
 - [Popover API 101 — Amit Merchant — A blog on PHP, JavaScript, and more](https://www.amitmerchant.com/popover-api-101/)
 
-# New tools
+## New tools
 
 ### [TurboPack: The Next-Gen Bundler](https://turbo.build/pack/docs)
 
