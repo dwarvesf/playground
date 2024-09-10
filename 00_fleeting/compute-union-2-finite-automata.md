@@ -5,14 +5,14 @@ tags:
   - finite-automata
   - pattern-matching
   - state-machines
-title: Efficient Union of Finite Automata in Golang: A Practical Approach
+title: "Efficient Union of Finite Automata in Golang: A Practical Approach"
 date: 2024-09-05
 description: An in-depth guide on implementing the union of finite automata in Golang, focusing on practical efficiency and performance considerations.
 authors:
   - minhlq
 ---
 
-#3 1. What is Finite Automata? (A Simple Explanation)
+## 1. What is Finite Automata? (A Simple Explanation)
 
 Finite Automata (FA), also known as Finite State Machines, are abstract computational models used to recognize patterns or process sequences of symbols. They consist of:
 
