@@ -1,16 +1,18 @@
 ---
 tags:
-    - go
-    - programming
-    - techique
-title: Program to compute the union of two finite automata
+  - go
+  - golang
+  - finite-automata
+  - pattern-matching
+  - state-machines
+title: Efficient Union of Finite Automata in Golang: A Practical Approach
 date: 2024-09-05
-description:
+description: An in-depth guide on implementing the union of finite automata in Golang, focusing on practical efficiency and performance considerations.
 authors:
-    - minhlq
+  - minhlq
 ---
 
-# 1. What is Finite Automata? (A Simple Explanation)
+#3 1. What is Finite Automata? (A Simple Explanation)
 
 Finite Automata (FA), also known as Finite State Machines, are abstract computational models used to recognize patterns or process sequences of symbols. They consist of:
 
@@ -24,7 +26,7 @@ FAs can be deterministic (DFA) or nondeterministic (NFA). In a DFA, each state h
 
 FAs are widely used in text processing, pattern matching, and lexical analysis in compilers. They efficiently recognize regular languages, making them suitable for tasks like validating email addresses or searching for specific patterns in text.
 
-# 2. What is Computing the Union of Two Finite Automata?
+## 2. What is Computing the Union of Two Finite Automata?
 
 Computing the union of two finite automata means creating a new automaton that accepts all strings accepted by either of the original automata. In other words, if we have two FAs, A and B, their union FA will accept a string if it's accepted by either A or B (or both).
 
@@ -37,7 +39,7 @@ Theoretically, this is done by:
 
 This process essentially creates an NFA that represents the union of the languages recognized by the two input automata.
 
-# 3. What is Different Between the Academic Approach and Practical Approach?
+## 3. What is Different Between the Academic Approach and Practical Approach?
 
 The academic approach to computing the union of finite automata, as described above, is straightforward but can be inefficient in practice. The main differences are:
 
@@ -55,7 +57,7 @@ The academic approach to computing the union of finite automata, as described ab
 
 The practical approach, as implemented in Quamina, tries to balance theoretical correctness with performance considerations for large-scale pattern matching.
 
-# 4. How Do We Solve This Using Golang Code?
+## 4. How Do We Solve This Using Golang Code?
 
 The Quamina library implements the union of finite automata using a practical approach in the `mergeFAStates` function. Here's a detailed explanation of the implementation:
 
@@ -113,7 +115,7 @@ func mergeFAStates(state1, state2 *faState, keyMemo map[faStepKey]*faState, prin
 }
 ```
 
-### Key Aspects of This Implementation:
+## Key Aspects of This Implementation:
 1. **Memoization**: The function uses a `keyMemo` map to store already computed merged states, avoiding redundant computations and potential infinite recursion.
 2. **Combining Field Transitions**: The field transitions from both input states are combined immediately.
 3. **Table Unpacking**: The transition tables of both input states are unpacked into a more manageable format for merging.
@@ -125,14 +127,14 @@ func mergeFAStates(state1, state2 *faState, keyMemo map[faStepKey]*faState, prin
 5. **Packing the Combined Table**: After merging, the combined table is packed back into the efficient `smallTable` format.
 6. **Combining Epsilon Transitions**: Epsilon transitions from both input states are combined.
 
-### Advantages:
+## Advantages:
 - Avoids creating unnecessary states by only merging reachable states.
 - Handles both deterministic and nondeterministic aspects of the input automata.
 - The memoization technique prevents redundant computations, improving efficiency for large automata.
 - The use of the `smallTable` structure keeps the memory footprint low.
 - By merging transitions byte-by-byte, it maintains compatibility with UTF-8 encoded input.
 
-### Trade-offs:
+## Trade-offs:
 - The resulting automaton may not be minimal or fully deterministic.
 - The recursive nature of the function could lead to stack overflow for extremely large or complex automata.
 - Performance depends on the structure of the input automata and can vary significantly based on their complexity.
