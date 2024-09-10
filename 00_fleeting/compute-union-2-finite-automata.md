@@ -12,7 +12,11 @@ authors:
   - minhlq
 ---
 
+<<<<<<< HEAD
 ## 1. What is Finite Automata? (A Simple Explanation)
+=======
+## What is Finite Automata? (A Simple Explanation)
+>>>>>>> b157fd6 (feat: compute union of 2 finite automata)
 
 Finite Automata (FA), also known as Finite State Machines, are abstract computational models used to recognize patterns or process sequences of symbols. They consist of:
 
@@ -26,7 +30,11 @@ FAs can be deterministic (DFA) or nondeterministic (NFA). In a DFA, each state h
 
 FAs are widely used in text processing, pattern matching, and lexical analysis in compilers. They efficiently recognize regular languages, making them suitable for tasks like validating email addresses or searching for specific patterns in text.
 
+<<<<<<< HEAD
 ## 2. What is Computing the Union of Two Finite Automata?
+=======
+## What is Computing the Union of Two Finite Automata?
+>>>>>>> b157fd6 (feat: compute union of 2 finite automata)
 
 Computing the union of two finite automata means creating a new automaton that accepts all strings accepted by either of the original automata. In other words, if we have two FAs, A and B, their union FA will accept a string if it's accepted by either A or B (or both).
 
@@ -39,7 +47,11 @@ Theoretically, this is done by:
 
 This process essentially creates an NFA that represents the union of the languages recognized by the two input automata.
 
+<<<<<<< HEAD
 ## 3. What is Different Between the Academic Approach and Practical Approach?
+=======
+## What is Different Between the Academic Approach and Practical Approach?
+>>>>>>> b157fd6 (feat: compute union of 2 finite automata)
 
 The academic approach to computing the union of finite automata, as described above, is straightforward but can be inefficient in practice. The main differences are:
 
@@ -57,7 +69,11 @@ The academic approach to computing the union of finite automata, as described ab
 
 The practical approach, as implemented in Quamina, tries to balance theoretical correctness with performance considerations for large-scale pattern matching.
 
+<<<<<<< HEAD
 ## 4. How Do We Solve This Using Golang Code?
+=======
+## How Do We Solve This Using Golang Code?
+>>>>>>> b157fd6 (feat: compute union of 2 finite automata)
 
 The Quamina library implements the union of finite automata using a practical approach in the `mergeFAStates` function. Here's a detailed explanation of the implementation:
 
