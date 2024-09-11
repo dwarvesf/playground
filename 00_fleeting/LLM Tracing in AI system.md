@@ -11,14 +11,14 @@ authors:
 ## When
 Building software with Large Language Models (LLMs) involves several steps, from planning to deployment. LLM tracing emerges as a final step in this process, providing ongoing insights and enabling continuous improvement of LLM-powered applications.
 
-![[LLM Tracing Overview-20240823152243610.webp]]
+![[llm-tracing-build-steps.webp]]
 
 ## Why
 Before diving into tracing, it's important to understand the fundamental difference between traditional software and LLM-powered applications:
 - **Traditional software**: Deterministic, based on explicit instructions written by programmers.
 - **With LLMs**: Probabilistic, based on neural networks with weights determined through training.
 
-![[LLM Tracing Overview-20240823144957653.webp | a diagram of one possible architecture]]
+![[llm-tracing-architecture.webp| a diagram of one possible architecture]]
 
 Why LLM Tracing is Necessary:
 1. **Unpredictable Outputs**: LLMs can produce different outputs for the same input due to their probabilistic nature.
