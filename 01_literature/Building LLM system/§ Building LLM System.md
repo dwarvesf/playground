@@ -4,7 +4,7 @@ tags:
   - llm
 title: Foundation for building LLM System - Map of Content
 description: 'This Map of Content (MoC) outlines the critical components required to design and build a large language model (LLM) system, focusing on architecture, model customization, safeguarding, performance evaluation, and more.'
-date: 2024-11-09
+date: 2024-09-11
 authors:
   - thanh
 ---
