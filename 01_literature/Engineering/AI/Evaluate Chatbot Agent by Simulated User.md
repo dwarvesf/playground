@@ -18,7 +18,7 @@ User Simulation is a technique of using AI evaluating AI, which can be more effi
 
 ## System Design
 
-![Simulated User](assets/simulated-user.webp)
+![Simulated-User](assets/simulated-user.webp)
 
 The system will have two main components:
 
@@ -155,11 +155,11 @@ async function didSucceed(
 
 - Conversation:
 
-![Simulated Conversation](assets/eval-simulation-chatbot.webp)
+![Simulated-Conversation](assets/eval-simulation-chatbot.webp)
 
 As you can see, all 2 AI is play very good their play as a customer and customer support agent. Besides that, it seem the customer is failed to get a refund for the trip. Now let check whether the evaluator give a correct score or not.
 
-![Evaluator Result](assets/simulated-conversation-eval.webp)
+![Evaluator-Result](assets/simulated-conversation-eval.webp)
 
 As you can see, the evaluator give score 0 for the conversation with the reasoning explain why that score is given.
 
