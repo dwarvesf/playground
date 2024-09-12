@@ -1,9 +1,10 @@
 ---
 tags:
-  - llm/ai
+  - llm
+  - ai
   - tooling
 title: LLM tracing in AI system
-date: 2024-09-10
+date: 2024-09-11
 description: Understanding LLM Tracing - Principles, Techniques, and Applications
 authors:
   - antran
@@ -11,14 +12,14 @@ authors:
 ## When
 Building software with Large Language Models (LLMs) involves several steps, from planning to deployment. LLM tracing emerges as a final step in this process, providing ongoing insights and enabling continuous improvement of LLM-powered applications.
 
-![[llm-tracing-build-steps.webp]]
+![](assets/llm-tracing-build-steps.webp)
 
 ## Why
 Before diving into tracing, it's important to understand the fundamental difference between traditional software and LLM-powered applications:
 - **Traditional software**: Deterministic, based on explicit instructions written by programmers.
 - **With LLMs**: Probabilistic, based on neural networks with weights determined through training.
 
-![[llm-tracing-architecture.webp| a diagram of one possible architecture]]
+![](assets/llm-tracing-architecture.webp)
 
 Why LLM Tracing is Necessary:
 1. **Unpredictable Outputs**: LLMs can produce different outputs for the same input due to their probabilistic nature.
