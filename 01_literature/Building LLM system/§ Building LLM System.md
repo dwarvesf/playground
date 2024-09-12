@@ -21,7 +21,7 @@ The rise of AI applications, especially LLMs, has unlocked diverse use cases acr
 
 ## Model Select and Customization
 
-Selecting and customizing the right LLM is critical for addressing specific business needs, balancing between performance and cost
+Selecting and customizing the right LLM is critical for addressing specific business needs, balancing between performance and cost.
 
 - Choose the right model
 - Fine-tuning
@@ -29,7 +29,7 @@ Selecting and customizing the right LLM is critical for addressing specific busi
 
 ## Context Enhancement
 
-Methods for augmenting query context to improve model performance and accuracy
+Methods for augmenting query context to improve model performance and accuracy.
 
 - Retrieval-Augmented Generation (RAG)
 - RAG for multimodal data
@@ -46,7 +46,7 @@ Standardizing and managing the output of an LLM system ensures that responses ar
 
 ## Safeguarding
 
-Systems to prevent model misuse, sensitive data leaks, and bad outputs
+Systems to prevent model misuse, sensitive data leaks, and bad outputs.
 
 - Input Guardrails
 - Output Guardrails
@@ -54,7 +54,7 @@ Systems to prevent model misuse, sensitive data leaks, and bad outputs
 
 ## Model Routing and Gateway
 
-Managing multiple models and securing access to them through a unified system
+Managing multiple models and securing access to them through a unified system.
 
 - Intent Classifiers
 - Model Gateways
@@ -62,7 +62,7 @@ Managing multiple models and securing access to them through a unified system
 
 ## Caching for Latency Optimization
 
-Using caching techniques to reduce latency and costs in generative AI applications
+Using caching techniques to reduce latency and costs in generative AI applications.
 
 - Prompt Cache
 - Exact Cache
@@ -70,9 +70,9 @@ Using caching techniques to reduce latency and costs in generative AI applicatio
 
 ## Complex Logic and Write Actions
 
-Implementing conditional logic and task iteration in AI responses
+LLM systems need to handle complex reasoning, task delegation, and actions based on AI output.
 
-- conditional logic and task iteration
+- Conditional logic and task iteration
 - Write Actions
 - Prevent Prompt Injection
 - Supervior-Worker architecture ( Divide and Conquer)
@@ -80,14 +80,14 @@ Implementing conditional logic and task iteration in AI responses
 
 ## Evaluating Performance
 
-Using right metrics and method for specific use case in LLM
+Using right metrics and method for specific use case in LLM.
 
 - Evaluation Metrics
 - AI-as-a-Judge
 
 ## Observability and Orchestration
 
-Monitoring the system's performance and orchestrating the complex AI workflows that tie the components together
+Monitoring the system's performance and orchestrating the complex AI workflows that tie the components together.
 
 - Observability in AI Platforms
 - AI Pipeline Orchestration
