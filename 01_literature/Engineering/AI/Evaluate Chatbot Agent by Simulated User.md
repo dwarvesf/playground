@@ -86,7 +86,7 @@ function swapRoles(messages: any[]): any[] {
 }
 ```
 
-- The evaluator will be a judge who will evaluate the conversation based on predefined criteria and in this case is customer succesfully get a refund or not.
+- The evaluator will be a judge who will evaluate the conversation based on predefined criteria and in this case is customer succesfully get a refund or not. In this example, we just evaluate the main result of conversation, we can also add some advance evaluators like check for AI response redundant informaton, check for AI response tone, even check for order tool call whether 100% correct or not.
 
 ```ts
 const parser = StructuredOutputParser.fromZodSchema(
