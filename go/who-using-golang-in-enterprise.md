@@ -1,20 +1,128 @@
 ---
 tags:
   - enterprise
-  - java
+  - go
   - language
 authors:
   - fuatto
-title: "Why Enterprise Chose Java"
-description: "Java has been widely adopted as the primary programming language for enterprise-level software development, emphasizing its platform independence, robust ecosystem, and extensive libraries. This choice aims to enhance scalability, ensure long-term support, and leverage Java's strong object-oriented programming principles in large-scale enterprise applications."
-date: 2024-08-30
+title: "Who is using Go in enterprise?"
+description: "This content map explores the companies and organizations that have embraced Go as their primary programming language for enterprise-level applications."
+date: 2024-09-13
 ---
 
 ## Who is using Go in enterprise?
 
+### Technology Giants
 
-- [Companies using Golang (Blog post)](https://www.bairesdev.com/blog/companies-using-golang/)
+- Google
 
-- [Go usage in big companies (Reddit)](https://www.reddit.com/r/golang/comments/15jres3/go_usage_in_big_companies/)
+    Created Go in 2007
+    Uses Go for many internal tools and services
+    Examples: Kubernetes, Docker (partially)
+    Reference: [Go at Google: Language Design in the Service of Software Engineering](https://go.dev/talks/2012/splash.article)
 
-- [A Go library with PID controllers used in robotics (Reddit)](https://www.reddit.com/r/robotics/comments/m7lwmd/a_go_library_with_pid_controllers_used_in/)
+
+- Meta (Facebook)
+
+    Ent is a database schema as code tool written in Go
+    Reference: [Eli5: Ent schema as code](https://developers.facebook.com/blog/post/2021/04/26/eli5-ent-schema-as-code-go/)
+
+
+
+### Cloud Providers
+
+- Amazon Web Services (AWS)
+
+    Uses Go for several services
+    Example: AWS Lambda
+    Reference: [AWS Lambda Supports Go](https://aws.amazon.com/blogs/compute/announcing-go-support-for-aws-lambda/)
+
+
+- DigitalOcean
+
+    Command line tool for DigitalOcean API
+    Reference: [doctl](https://github.com/digitalocean/doctl)
+
+
+### Financial Services
+
+- American Express
+
+    Adopted Go for some of its backend services
+    Reference: [How American Express is using Go](https://go.dev/solutions/americanexpress)
+
+
+- Zerodha
+
+    Uses Go for its trading platform
+    Reference: [A Lesson in Niche Business DSLs at Scale](https://zerodha.tech/blog/a-lesson-in-niche-business-dsls-at-scale/)
+
+
+### Media and Entertainment
+
+- Netflix
+
+    Rend is a memcached-compatible server and proxy written in Go
+    Reference: [Rend: Memcached-Compatible Server and Proxy](https://github.com/Netflix/rend)
+
+
+- Twitch
+
+    Heavily relies on Go for its video streaming infrastructure
+    Reference: [Go's March to Low-Latency, GC-Agnostic](https://blog.twitch.tv/en/2016/07/05/gos-march-to-low-latency-gc-a6fa96f06eb7/)
+
+
+### Ride-sharing and Delivery
+
+- Uber
+
+    Uber's Go style guide
+    Reference: [uber-go/guide](https://github.com/uber-go/guide/blob/master/style.md)
+
+
+- Einride
+
+    Einride uses Go for its microservices architecture
+    Reference: [Einride's Tech Radar](https://einride.engineering/docs/tech-radar/backend#go)
+
+
+### Cybersecurity
+
+- Cloudflare
+
+    Extensively uses Go for its edge computing platform and other services
+    Reference: [Cloudflare's Go Projects](https://github.com/cloudflare?language=go)
+
+
+### Productivity Tools
+
+- Dropbox
+
+    Rewrote some core components in Go for better performance
+    Reference: [Dropbox Go's tools](https://github.com/dropbox?language=go)
+
+---
+
+https://go.dev/talks/2012/splash.article
+
+https://developers.facebook.com/blog/post/2021/04/26/eli5-ent-schema-as-code-go/
+
+https://aws.amazon.com/blogs/compute/announcing-go-support-for-aws-lambda/
+
+https://github.com/digitalocean/doctl
+
+https://go.dev/solutions/americanexpress
+
+https://zerodha.tech/blog/a-lesson-in-niche-business-dsls-at-scale/
+
+https://github.com/Netflix/rend
+
+https://blog.twitch.tv/en/2016/07/05/gos-march-to-low-latency-gc-a6fa96f06eb7/
+
+https://github.com/uber-go/guide/blob/master/style.md
+
+https://einride.engineering/docs/tech-radar/backend#go
+
+https://github.com/cloudflare?language=go
+
+https://github.com/dropbox?language=go
