@@ -107,3 +107,5 @@ The idea is that the user will get an `asset-file-token` by using `GET /assets/:
 
 ## Conclusion
 In conclusion, this system implements a robust and flexible permissions model for file management. It covers essential features such as upload, manage, setting permissions, public file sharing, and password protection. The design allows for granular control over access levels, inheritance of permissions, and secure sharing options. This comprehensive approach ensures that users can effectively manage their files while maintaining appropriate levels of security and collaboration within the workspace.
+
+[Back to Part 1: Directory Structure](https://memo.d.foundation/playground/01_literature/design-file-sharing-system-part-1-directory-structure/)
