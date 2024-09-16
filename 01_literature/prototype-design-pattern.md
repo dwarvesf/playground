@@ -1,6 +1,7 @@
 ---
 tags: 
   - software-design
+  - gang-of-four 
   - software-architecture
   - graphical-notation
 title: "Going Through use cases of the prototype design pattern and it place among the creational patterns"
