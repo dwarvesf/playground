@@ -1,7 +1,7 @@
 ---
 tags: 
   - design-pattern
-  - creational
+  - gang-of-four 
   - golang
   - software-architecture
 title: "A tour of Singleton design pattern with Golang"
@@ -14,7 +14,6 @@ date: 2024-06-10
 ![](assets/singleton-design-pattern.pdf)
 
 ## Problem
-
 Just imagine we need to build a simple web page to show live subscribers of a Youtube channel. Main object here is "subscriber" so we need a tool (counter) to update number of subscribers in real-time.
 
 There are 2 actors: subscribers (Youtube) and visitors (our web page)
@@ -25,7 +24,6 @@ When a user subscribes to a channel, we update the counter by +1. And we do the 
 - Use the same counter to update/get live subscriptions for all actors (subscribers & visitors)
 
 ## Singleton Overview
-
 **Singleton** is one of **Creational design patterns**. It has some characteristics:
 
 - One class/type can only create/have one single instance
@@ -33,18 +31,15 @@ When a user subscribes to a channel, we update the counter by +1. And we do the 
 - We have many Singleton implementations to be used in single/multi-thread environment based on specific use case
 
 ## What does Singleton resolve?
-
 Back to our above analogy with subscription counter, we can use Singleton to instatiate the counter and provide its global access.
 
 - All subscribers and visitors will access the same counter so data will be consistent
 - Since this is a multi-thread use case (e.g. multiple subscribers can subscribe simultaneously), we need to make sure the counter instantiation thread-safe
 
 ## Applicability
-
 Use Singleton when you need to manage one & only instance of a resource (e.g. configuration, logger, etc.)
 
 ## Approaches
-
 There are 2 ways to implement Singleton pattern:
 
 <table border="0">
@@ -114,15 +109,14 @@ func getCounter() *counter {
 ```
 
 ## Benefits & Drawbacks
-
 **Benefits**<br/>
-👍 You can assure that the class/type has only one instance if the implementation is done properly
+You can assure that the class/type has only one instance if the implementation is done properly.
 
 **Drawbacks**<br/>
-👎 Tight coupled codebase<br/>
-👎 Hard to debug<br/>
-👎 Write unit tests will be tricky<br/>
-👎 Limited use cases<br/>
+- Tight coupled codebase<br/>
+- Hard to debug<br/>
+- Write unit tests will be tricky<br/>
+- Limited use cases<br/>
 
 ## References
 - https://refactoring.guru/design-patterns/singleton

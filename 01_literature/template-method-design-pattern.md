@@ -2,6 +2,7 @@
 tags:
   - design-pattern
   - behavioral-pattern
+  - gang-of-four 
   - golang
 title: "A Tour of Template method pattern with Golang"
 description: "Template method: the problem, the concept, the solution, its use cases, implementations, pros & cons. The Template Method pattern in Go offers a powerful way to define algorithm skeletons and handle variations. We examine its application in user registration, showcasing code reusability and scalability in Golang development."
@@ -13,7 +14,6 @@ date: 2024-06-28
 ![](assets/template-method-design-pattern.pdf)
 
 ## Problem
-
 Just imagine we need to implement a registration feature for our applications (web, mobile). A typical registration will have some basic steps such as fill in the form, verify account, redirect to login page, etc.
 
 At the beginning, our apps only supported verification via email. After months, the team realized that the amount of mobile users significantly increased. So we decided to support more verification methods via SMS/authenticator app or allow to register without verification.
@@ -21,14 +21,12 @@ At the beginning, our apps only supported verification via email. After months, 
 ![](assets/template-method-design-pattern_template-method-problem.webp)
 
 ## Concept
-
 **Template method** is one of **Behavioral design patterns**. It can be defined by the followings:
 
 - Defines skeleton of an algorithm
 - Lets subclasses override specific steps of the algorithm without changing its overall structure
 
 ## Solution by Template method
-
 The Template method offers us an answer to those issues from the above scenario. By applying the pattern, we break the operation (registration) down into multiple steps (receive user form, verify, welcome, redirect to login page, etc.) and create a method which invokes the steps in a specific order. Basically we construct a **template** by calling the steps inside a **method**. That's why the template is called **Template method**.
 
 ![](assets/template-method-design-pattern_template-method-solution.webp)
@@ -48,7 +46,6 @@ All work above can be put together inside a single place (aka base class/type). 
 
 
 ## Applicability
-
 Use Template method pattern when you have multiple approaches to achieve your task, but they have many identical steps and just a few steps with minor differences
 
 Use Template method pattern when:
@@ -56,7 +53,6 @@ Use Template method pattern when:
 - You have multiple approaches/methods to achieve your task, but they have many identical steps and just few minor differences
 
 ## Pseudocode (golang)
-
 Since **Go** does not have abstract class and inheritance, the implementation will be a bit different
 
 **Step 1**: create an interface (instead of abstract class) declaring abstract methods which represent every step of registration process

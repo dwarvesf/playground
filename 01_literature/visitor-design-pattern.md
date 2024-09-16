@@ -1,6 +1,7 @@
 ---
 tags: 
   - design-pattern
+  - gang-of-four
   - behavior-pattern
   - visitor-design-pattern
 title: "Visitor design pattern, the concept, problem solution and use cases"
@@ -15,7 +16,6 @@ authors:
 ![illustration](assets/visitor-design-pattern-1.webp)
 
 ## What is the Visitor Design Pattern?
-
 **Visitor** is a behavioral design pattern that lets you separate algorithms from the objects on which they operate.
 
 Visitor design pattern is one of the [**behavioral design patterns**](https://www.geeksforgeeks.org/software-design-patterns/). It is used when we have to perform an operation on a group of similar kind of Objects. With the help of visitor pattern, we can move the operational logic from the objects to another class. The visitor pattern consists of two parts:
@@ -24,25 +24,21 @@ Visitor design pattern is one of the [**behavioral design patterns**](https://w
 - visitable classes providing **Accept()** methods that accept a visitor
 
 ## Problem statement
-
 Imagine you're developing a simple text editing application. In this application, you have different types of document elements such as paragraphs, tables, and images. Each of these elements can perform certain operations, such as rendering to the screen, exporting to different formats (like HTML or plain text), and spell-checking.
 
 As the application grows, more operations need to be supported for these elements. Without a proper design, adding new operations could lead to a bloated and hard-to-maintain codebase, especially if it involves modifying each element class every time a new operation is introduced.
 
-## Solution with Visitor Pattern:
-
+## Solution with Visitor Pattern
 The Visitor Pattern allows us to define a new operation without changing the classes of the elements on which it operates. Instead of adding the new operation to each element, we create a visitor class that implements the operation. Each element class then has an `accept` method that takes a visitor and calls the visitor’s method corresponding to that element.
 
 ## Structure
-
 - The Visitor interface declares a set of visiting methods that can take concrete elements of an object structure as arguments. These methods may have the same names if the program is written in a language that supports overloading, but the type of their parameters must be different.
 - Each Concrete Visitor implements several versions of the same behaviors, tailored for different concrete element classes.
 
 ![structure](assets/visitor-design-pattern-2.webp)
 
-## Code example for problem:
-
-### Illustration:
+## Code example for problem
+### Illustration
 
 ```tsx
                 +-----------------+
@@ -83,7 +79,7 @@ The Visitor Pattern allows us to define a new operation without changing the cla
 +-----------------+         +-----------------+         +-----------------+
 ```
 
-### Element Classes:
+### Element Classes
 
 ```tsx
 interface DocumentElement {
@@ -161,7 +157,7 @@ class SpellCheckVisitor implements DocumentVisitor {
 }
 ```
 
-### Usage:
+### Usage
 
 ```tsx
 function App() {
@@ -183,8 +179,7 @@ function App() {
 }
 ```
 
-### Explanation:
-
+### Explanation
 1. **Element Classes:** We have `Paragraph`, `Table`, and `Image` classes, each implementing the `accept` method which accepts a visitor.
 2. **Visitor Interface:** `DocumentVisitor` is an interface with methods to visit each type of element.
 3. **Concrete Visitors:** `RenderVisitor`, `ExportVisitor`, and `SpellCheckVisitor` are concrete implementations of the visitor interface. Each visitor class defines the operation for each type of element.
@@ -193,7 +188,6 @@ function App() {
 By using the Visitor Pattern, we can easily add new operations without modifying the element classes, adhering to the Open/Closed Principle and making the code more maintainable and scalable.
 
 ## Applicability
-
 - **Use the Visitor pattern to perform operations on all elements of a complex object structure (e.g., an object tree).**
     
     This pattern allows you to execute an operation across a set of objects of different classes by having a visitor object implement multiple variants of the same operation, tailored to each target class.
@@ -208,7 +202,6 @@ By using the Visitor Pattern, we can easily add new operations without modifying
     
 
 ## Pros and Cons
-
 ### Advantages
 
 - **Open/Closed Principle**: Introduce new behavior for objects of different classes without modifying those classes.
@@ -216,16 +209,13 @@ By using the Visitor Pattern, we can easily add new operations without modifying
 - A visitor object can gather useful information while working with various objects, which is beneficial for traversing complex structures like an object tree and applying the visitor to each object.
 
 ### Disadvantages
-
 - All visitors need updating whenever a class is added to or removed from the element hierarchy.
 - Visitors may lack access to private fields and methods of the elements they work with.
 
 ## Use Cases
-
 Some use cases for the Visitor Pattern:
 
 ### Use Case 1: Compiler Design
-
 **Context:** In a compiler, the abstract syntax tree (AST) represents the structure of the source code. The compiler needs to perform various operations on the AST, such as type checking, code generation, and optimization.
 
 **Solution:** The Visitor Pattern can be used to define these operations without changing the classes representing the AST nodes.
@@ -236,7 +226,6 @@ Some use cases for the Visitor Pattern:
 - **Visitors:** `TypeChecker`, `CodeGenerator`, `Optimizer`
 
 ### Use Case 2: Document Processing
-
 **Context:** In a text processing application, different document elements (e.g., paragraphs, images, tables) need to support various operations like rendering, exporting, and spell-checking.
 
 **Solution:** The Visitor Pattern allows new operations to be added without modifying the element classes.
@@ -269,7 +258,6 @@ Some use cases for the Visitor Pattern:
 - **Visitors:** `SearchVisitor`, `CompressionVisitor`, `EncryptionVisitor`
 
 ### Use Case 5: Game Development
-
 **Context:** In a game, different game entities (e.g., players, enemies, obstacles) need to support various operations like rendering, updating state, and collision detection.
 
 **Solution:** The Visitor Pattern can be used to define these operations without modifying the entity classes.
@@ -280,7 +268,6 @@ Some use cases for the Visitor Pattern:
 - **Visitors:** `RenderVisitor`, `UpdateVisitor`, `CollisionDetectionVisitor`
 
 ### Use Case 6: E-commerce System
-
 **Context:** In an e-commerce application, different product types (e.g., electronics, clothing, groceries) need to support operations like applying discounts, calculating shipping costs, and generating invoices.
 
 **Solution:** The Visitor Pattern allows new operations to be added without changing the product classes.
@@ -291,7 +278,6 @@ Some use cases for the Visitor Pattern:
 - **Visitors:** `DiscountVisitor`, `ShippingCostVisitor`, `InvoiceGeneratorVisitor`
 
 ### Use Case 7: Network Protocols
-
 **Context:** In a network protocol implementation, different types of packets (e.g., data packet, acknowledgment packet, control packet) need to support operations like serialization, deserialization, and logging.
 
 **Solution:** The Visitor Pattern can be used to add these operations without modifying the packet classes.
@@ -302,7 +288,6 @@ Some use cases for the Visitor Pattern:
 - **Visitors:** `SerializeVisitor`, `DeserializeVisitor`, `LoggingVisitor`
 
 ### Use Case 8: UI Component Management
-
 **Context:** In a GUI application, different UI components (e.g., buttons, text fields, checkboxes) need to support operations like rendering, event handling, and validation.
 
 **Solution:** The Visitor Pattern allows these operations to be added without changing the component classes.
