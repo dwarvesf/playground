@@ -79,3 +79,5 @@ This approach significantly reduces the computational overhead and complexity as
 ## Conclusion
 
 In this memo, I discuss the various requirements of the system, detailing what is necessary for its optimal performance. Additionally, I explain how I optimize the file structure to ensure efficient storage and retrieval of data. In the next part of this memo, I will continue the discussion by elaborating on how I handle permissions, manage file sharing, and set passwords to enhance the security and accessibility of the system. This comprehensive approach ensures that all aspects of system management are covered thoroughly.
+
+[Continue to Part 2: Permission & Password](https://memo.d.foundation/playground/01_literature/design-file-sharing-system-part-2-permission-and-password/)
