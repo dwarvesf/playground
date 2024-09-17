@@ -16,7 +16,7 @@ At Dwarves, technology is our passion. We create it, study it, test it, document
 
 ## Tech Radar
 
-![[august-forward-engineering-2024.mp4]]
+![](assets/august-forward-engineering-2024.mp4)
 
 ### Dify
 
@@ -26,7 +26,7 @@ At Dwarves, technology is our passion. We create it, study it, test it, document
 
 We've been using Dify to quickly prototype product ideas by scaffolding agent workflows and testing their output with various models. It's been a game-changer, especially in building workflow automations like a tech summarizer, memo chatbot, or report composer. Its simplicity and flexibility allow us to experiment with different models and agent workflows without getting bogged down by infrastructure concerns.
 
-![[forward-engineering-q3-2024-20240917163024269.webp]] _Our engineers have built and experimented with dozens of workflows on our self-hosted Dify server._
+![](assets/forward-engineering-q3-2024-20240917163024269.webp) _Our engineers have built and experimented with dozens of workflows on our self-hosted Dify server._
 
 ### LangGraph
 
@@ -68,7 +68,7 @@ Our engineers have been testing it out, and the results are promising, particula
 
 Devbox addresses common issues like version conflicts across projects and the resource-intensive nature of Docker on Windows/Mac by leveraging native applications built with Nix. It significantly enhances battery life and system performance, but it does require some familiarity with Nix and can present file permission challenges. We're giving Devbox a trial run, especially for teams seeking cleaner, more efficient development setups.
 
-![[forward-engineering-q3-2024-20240917163118424.webp]]
+![](assets/forward-engineering-q3-2024-20240917163118424.webp)
 
 _The journey of experimenting with Devbox is documented in [our memo](https://memo.d.foundation/playground/-devbox/)._
 
@@ -78,7 +78,7 @@ _The journey of experimenting with Devbox is documented in [our memo](https://me
 
 [Shadcn](https://ui.shadcn.com/) offers beautifully designed, accessible, and customizable UI components that you can easily copy and paste into your applications. This open-source tool enhances development speed by allowing developers to quickly scaffold UI components. In our recent projects, we saw significant time savings.
 
-Initially, we had concerns about maintaining consistency with a copy-paste model, but our experience proved otherwise. Customization at the Tailwind config level ensures a cohesive theme, and the lightweight nature of the tool keeps applications fast to load and build. While it may lack the comprehensive ecosystem of full-set frameworks like MUI or Chakra, its modularity and potential AI-backed features with [v0.dev](<[http://v0.devhttps](http://v0.devhttps)://v0.dev/>) position Shadcn as a compelling alternative.
+Initially, we had concerns about maintaining consistency with a copy-paste model, but our experience proved otherwise. Customization at the Tailwind config level ensures a cohesive theme, and the lightweight nature of the tool keeps applications fast to load and build. While it may lack the comprehensive ecosystem of full-set frameworks like MUI or Chakra, its modularity and potential AI-backed features with [v0.dev](http://v0.dev) position Shadcn as a compelling alternative.
 
 ## Highlights on Memo
 
@@ -153,7 +153,7 @@ Some of the companies announcing cuts include:
 
 The increasing trend in layoffs year-over-year is concerning. It suggests that the tech industry's job market instability is not a short-term phenomenon but potentially a longer-term restructuring. This could lead to a reimagining of workforce strategies in tech, possibly emphasizing more contract work or AI-augmented roles.
 
-![[forward-engineering-q3-2024-20240917163259274.webp]] _Source: [https://layoffs.fyi/_](https://layoffs.fyi/*)
+![](assets/forward-engineering-q3-2024-20240917163259274.webp) _Source: [https://layoffs.fyi/_](https://layoffs.fyi/*)
 
 ### The State of Tech Market in 2024
 
@@ -169,13 +169,13 @@ The 2024 Stack Overflow survey highlights intriguing data:
 - AI tools are poised to become integral to development workflows, with 81% of developers expecting AI to assist in documenting code, 80% in testing, and 76% in writing code.
 - While JavaScript remains a dominant language, its median salary has seen a decline.
 
-![[forward-engineering-q3-2024-20240917163336937.webp]]
+![](assets/forward-engineering-q3-2024-20240917163336937.webp)
 
 ### AI Makes a Real Impact in Programming
 
 AI is no longer just a buzzword; it's making a tangible impact in programming.
 
-![[forward-engineering-q3-2024-20240917163412653.webp]]
+![](assets/forward-engineering-q3-2024-20240917163412653.webp)
 
 As Amazon's CEO, Andy Jassy, noted:
 
@@ -191,7 +191,7 @@ Our thought on that:
 
 According to [a Reddit post](https://www.reddit.com/r/ycombinator/comments/1fbb9m0/the_rise_of_ai_companies_in_yc/), in the current Y Combinator batch (S24 - Summer 2024), a staggering 72% of startups are focused on AI—a dramatic increase from just 1% in the winter of 2012 (W12). Compared to the crypto trend, AI's momentum is exponentially greater.
 
-![[forward-engineering-q3-2024-20240917163441436.webp]]
+![](assets/forward-engineering-q3-2024-20240917163441436.webp)
 
 Some key takeaways:
 
