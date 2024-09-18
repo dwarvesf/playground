@@ -3,7 +3,7 @@ tags:
   - moc
   - devbox
   - nix
-title: Devbox: Your Ultimate Dev Environment Companion
+title: "Devbox: Your Ultimate Dev Environment Companion"
 description: "A comprehensive guide to Devbox: The tool that creates isolated, reproducible development environments anywhere, without Docker or VMs, powered by Nix."
 date: 2024-08-09
 authors:
