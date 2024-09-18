@@ -183,7 +183,7 @@ The increasing trend in layoffs year-over-year is concerning. It suggests that t
 
 ![](assets/forward-engineering-q3-2024-20240917163259274.webp)
 
-_Source from [https://layoffs.fyi/_](https://layoffs.fyi/*)
+_Source from [https://layoffs.fyi](https://layoffs.fyi)_
 
 ### The State of Tech Market in 2024
 
