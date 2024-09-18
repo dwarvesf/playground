@@ -1,215 +1,220 @@
 ---
 tags: 
   - devbox
-title: "Containerless Development with Devbox"
+title: "Ditch the Containers: Go Containerless with Devbox"
 date: 2024-08-01
-description: A guide on creating a container-less Devbox environment for local development, using Golang as an example
+description: Build a lean, mean Golang backend without the container bloat. Here's how.
 authors:
   - bievh
 ---
-By taking advantage of [Devbox Services](../introduction/¶%20Devbox%20Services.md) and [Devbox Plugins](../introduction/¶%20Devbox%20Plugins.md), we can create a container-less Devbox environment for local development.
 
-Let's go through a Golang Backend Application.
+# Ditch the Containers: Go Containerless with Devbox
 
-Assume we have a folder named "backend" to store our Golang Backend Application.
+Containers are great, but sometimes they're overkill. With Devbox Services and Plugins, you can create a sleek, containerless environment for local development. Let's build a Golang backend to show you how it's done.
 
-Firstly, init Devbox shell. Then we generated `devbox.json` as follows.
+## Setting the Stage
+
+First things first, let's init a Devbox shell:
+
+```bash
+devbox init
 ```
-> devbox init
-> ls
-devbox.json
 
-> cat devbox.json
+This gives you a bare-bones `devbox.json`:
+
+```json
 {
-    "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
-    "packages": [],
-    "shell": {
-      "init_hook": [
-        "echo 'Welcome to devbox!' > /dev/null"
-      ],
-      "scripts": {
-        "test": [
-          "echo \"Error: no test specified\" && exit 1"
-        ]
-      }
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
+  "packages": [],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
     }
   }
-  %
+}
 ```
 
-Open the shell and add `go` as the main program language.
-```
-> devbox shell
-Info: Ensuring packages are installed.
-✓ Computed the Devbox environment.
-Starting a devbox shell...
+## Adding Golang to the Mix
 
-(devbox) > devbox add go
-Info: Adding package "go@latest" to devbox.json
-✓ Computed the Devbox environment.
-Warning: Your shell environment may be out of date. Run `refresh` to update it.
+Fire up your Devbox shell and add Go:
 
-(devbox) > which go 
-/Users/sp.bean/Workspace/learn/devbox/backend/.devbox/nix/profile/default/bin/go
+```bash
+devbox shell
+devbox add go
 ```
 
-Now, Golang is installed inside the current shell root as we can see in the output of `which go`. Let init go mod and begin with following Golang code that builds a Golang Backend API to manage a list of Books.
+Boom! Go is now installed in your project root. Let's check:
 
-```GO
-package main
+```bash
+which go
+# /Users/you/your-project/.devbox/nix/profile/default/bin/go
+```
 
-import (
-    "database/sql"
-    "encoding/json"
-    "fmt"
-    "log"
-    "net/http"
+## The Database Dilemma
 
-    "github.com/gorilla/mux"
-    _ "github.com/lib/pq"
-)
+Let's say you've got a killer Go API for managing books. You try to run it:
 
+```bash
+go run main.go
+# 2024/07/28 17:00:10 Error connecting to database: "dial tcp 125.235.4.59:5432: connect: operation timed out"
+# exit status 1
+```
+
+Oops! No database. But don't worry, Devbox has your back.
+
+## PostgreSQL to the Rescue
+
+Add PostgreSQL to your Devbox:
+
+```bash
+devbox add postgresql
+```
+
+Devbox doesn't just install PostgreSQL. It sets up a whole environment:
+
+- Creates a `process-compose.yaml` for you
+- Sets up `PGHOST` and `PGDATA` environment variables
+- Gives you commands to manage your database
+
+Initialize your database:
+
+```bash
+initdb --username=yourusername
+```
+
+## Fire It Up
+
+Now you've got options to start your services:
+
+- For background mode: `devbox services start`
+- For monitoring mode: `devbox services up`
+
+Create your database:
+
+```bash
+createdb bookstore --username=yourusername --password
+# Enter your password when prompted
+```
+
+## The Moment of Truth
+
+Update your Go code with the new database details:
+
+```go
 const (
-    host     = "your_postgres_host"
+    host     = "localhost"
     port     = 5432
-    user     = "your_postgres_user"
-    password = "your_postgres_password"
-    dbname   = "your_postgres_db"
+    user     = "yourusername"
+    password = "yourpassword"
+    dbname   = "bookstore"
 )
+```
 
-type Book struct {
-    ID     int    `json:"id"`
-    Title  string `json:"title"`
-    Author string `json:"author"`
-}
+Run it:
 
-var db *sql.DB
+```bash
+go run main.go
+# Successfully connected to the database!
+# 2024/07/28 20:43:46 Starting server on :8080
+```
 
-func initDB() {
-    psqlInfo := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable",
-        host, port, user, password, dbname)
+## More than just Postgresql
 
-    var err error
-    db, err = sql.Open("postgres", psqlInfo)
-    if err != nil {
-        log.Fatalf("Error opening database: %q", err)
-    }
+Remember that `devbox.json` we started with? Forget it. Let's look at a real-world example that'll knock your socks off:
 
-    err = db.Ping()
-    if err != nil {
-        log.Fatalf("Error connecting to database: %q", err)
-    }
-
-    fmt.Println("Successfully connected to the database!")
-}
-
-func createBook(w http.ResponseWriter, r *http.Request) {
-    var book Book
-    err := json.NewDecoder(r.Body).Decode(&book)
-    if err != nil {
-        http.Error(w, err.Error(), http.StatusBadRequest)
-        return
-    }
-
-    sqlStatement := `INSERT INTO books (title, author) VALUES ($1, $2) RETURNING id`
-    id := 0
-    err = db.QueryRow(sqlStatement, book.Title, book.Author).Scan(&id)
-    if err != nil {
-        http.Error(w, err.Error(), http.StatusInternalServerError)
-        return
-    }
-
-    book.ID = id
-    w.Header().Set("Content-Type", "application/json")
-    json.NewEncoder(w).Encode(book)
-}
-
-func main() {
-    initDB()
-    defer db.Close()
-
-    router := mux.NewRouter()
-    router.HandleFunc("/books", createBook).Methods("POST")
-
-    log.Println("Starting server on :8080")
-    log.Fatal(http.ListenAndServe(":8080", router))
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/jetpack-io/devbox/0.10.1/.schema/devbox.schema.json",
+  "packages": {
+    "github:NixOS/nixpkgs#darwin.apple_sdk.frameworks.CoreText": "",
+    "nodejs": "18",
+    "pnpm_8": "8.15.9",
+    "pkg-config": "0.29.2",
+    "pango": {
+      "version": "1.52.2",
+      "outputs": ["dev"]
+    },
+    "libpng": "1.6.43",
+    "giflib": "5.2.2",
+    "librsvg": {
+      "version": "2.58.2",
+      "outputs": ["dev"]
+    },
+    "python3": "3.11.9",
+    "pixman": "0.43.4",
+    "cairo": {
+      "version": "1.18.0",
+      "outputs": ["dev"]
+    },
+    "libjpeg": {
+      "version": "3.0.3",
+      "outputs": ["dev"]
+    },
+    "elixir": "1.15.7",
+    "github:baenv/timescalepg-fake#postgresql": "",
+    "redis": "7.2.5",
+    "redis-plus-plus": "1.3.12",
+    "apacheKafka": {
+      "version": "2.13-3.8.0",
+      "outputs": ["out"]
+    },
+    "kafkactl": "5.0.6",
+    "zookeeper": "3.9.2"
+  },
+  // ... (env and shell configurations omitted for brevity)
 }
 ```
 
-Once we finish installing all Golang packages, we can try running `go run main.go` to see if it works. But the result will look like this.
-```
-(devbox) > go run main.go
-2024/07/28 17:00:10 Error connecting to database: "dial tcp 125.235.4.59:5432: connect: operation timed out"
-exit status 1
-```
+This isn't just a configuration file. It's a manifesto for containerless development.
 
-Sure, it does not work because we have no DB in this shell yet. So we need to install one.
-```
-(devbox) > devbox add postgresql
-Info: Adding package "postgresql@latest" to devbox.json
-✓ Computed the Devbox environment.
-Warning: Your shell environment may be out of date. Run `refresh` to update it.
+## Breaking It Down
 
-postgresql NOTES:
-To initialize the database run `initdb`.
+Let's unpack this beast:
 
-Services:
-* postgresql
+1. **Multiple Languages**: Node.js, Python, and Elixir all living in harmony. No "it works on my machine" excuses here.
 
-Use `devbox services start|stop [service]` to interact with services
+2. **Precise Versioning**: Every package is pinned to a specific version. Reproducibility? Check.
 
-This plugin creates the following helper files:
-* /Users/sp.bean/Workspace/learn/devbox/backend/.devbox/virtenv/postgresql/process-compose.yaml
+3. **System Libraries**: Pango, Cairo, libpng - we're not just installing runtimes, we're building a complete system.
 
-This plugin sets the following environment variables:
-* PGHOST=/Users/sp.bean/Workspace/learn/devbox/backend/.devbox/virtenv/postgresql
-* PGDATA=/Users/sp.bean/Workspace/learn/devbox/backend/.devbox/virtenv/postgresql/data
+4. **Databases and Messaging**: PostgreSQL, Redis, and Kafka. A full backend stack without a single `docker-compose.yml` in sight.
 
-To show this information, run `devbox info postgresql`
+5. **Custom Packages**: See that `github:baenv/timescalepg-fake#postgresql`? That's a custom package pulled straight from GitHub. Try doing that easily with Docker.
+
+## The Magic of Devbox Services
+
+With Devbox Services, you're not just installing these packages - you're orchestrating them. Check out these scripts:
+
+```json
+"scripts": {
+  "zookeeper": "sudo $DEVBOX_PACKAGES_DIR/bin/zkServer.sh --config $KAFKA_CONFIG start-foreground",
+  "kafka": "sudo $DEVBOX_PACKAGES_DIR/bin/kafka-server-start.sh $KAFKA_CONFIG/server.properties",
+  // ... more scripts omitted
+}
 ```
 
-After adding `postgresql`, we can see what's happening transparently. [Plugin](../introduction/¶%20Devbox%20Plugins.md) helps us create `process-compose.yaml` and 2 new environment variables `PGHOST` and `PGDATA` to manage our database easily. We can also override the `process-compose.yaml` with your own in the root folder of the project.
+Start Zookeeper and Kafka with a simple `devbox run zookeeper` and `devbox run kafka`. No Docker, no fuss.
 
-By default, we can use `initdb` to initialize the database. But we can also explore `initdb --help` for more advanced options. I will initdb with role `bean` by using following command:
-```
-(devbox) > initdb initdb --username=bean
-```
+## Why This Matters
 
-After initializing the database with above instructions, we have two ways to run all available services:
-- To start services daemon: `devbox services start`
-- To start services with monitoring: `devbox services up`
-  ![](assets/services-top.webp)
-  
-If want to start specific service, use `devbox services start [service]` or `devbox services up [service]`. Then we can create new DB by using `createdb <db_name>` command.
-```
-(devbox) > createdb bookstore  --username=bean--password
-// Then enter your password. If have no additional params to specify host, a new DB called `bookstore` will be created on default localhost and port 5432 with username `bean` and entered password.
-// You can also using --help to show more options.
-Password: 123456
-```
+1. **Speed**: No container overhead means faster startup times and lower resource usage.
+2. **Flexibility**: Need to add a system library? Just add it to your `devbox.json`. No need to rebuild a Docker image.
+3. **Transparency**: Everything is defined in one file. No hidden layers, no mysterious base images.
+4. **Reproducibility**: Every developer gets the exact same environment, down to the system libraries.
 
-Finally, we have a DB with below configuration.
-```
-HOST=localhost
-PORT=5432
-USER=bean
-PASSWORD=123456
-DB=bookstore
-```
+## The Bottom Line
 
-Now we can replace all DB connection information in `main.go` and try again. The server can now serve with local Posgresql supported without any running containers
-```
-(devbox) > go run main.go
-Successfully connected to the database!
-2024/07/28 20:43:46 Starting server on :8080
-```
+Containers had their moment. But for local development, Devbox offers a level of control and simplicity that containers can't match. It's not just about running your code - it's about crafting the perfect environment for it to thrive.
 
-> Side note: You can also manually custom the default configuration of services in the location where it is installed such as `.devbox/virtenv/postgresql/data/pg_hba.conf` for postgresql.
+Ready to leave containers behind? Give Devbox a shot. Your future self (and your team) will thank you.
 
-The rest implementation is all up to you. You can continue the above backend with any services you want. You can try custom your own plugin for Devbox depending on this [instruction](https://www.jetify.com/devbox/docs/guides/creating_plugins/) once you want to support serving other daemons applications that are not supported by Devbox, or define your backend to run as a daemon Devbox service to serve for the web application.
+## References
 
----
-#### References
-*Running Services | Devbox*, https://www.jetify.com/devbox/docs/guides/services/. Accessed 28 July 2024.
-
-*Using Plugins | Devbox*. (n.d.). Jetify. Retrieved July 28, 2024, from https://www.jetify.com/devbox/docs/guides/plugins/
+- [Devbox Services Guide](https://www.jetify.com/devbox/docs/guides/services/)
+- [Devbox Plugins Guide](https://www.jetify.com/devbox/docs/guides/plugins/)
+- [Creating Custom Devbox Plugins](https://www.jetify.com/devbox/docs/guides/creating_plugins/)
