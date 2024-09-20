@@ -10,8 +10,6 @@ authors:
   - bievh
 ---
 
-# Nix: Revolutionizing Docker Image Builds
-
 Docker's great, but let's face it: building images can be a pain. Enter Nix, the tool that's about to change your Docker game forever.
 
 ## The Docker Dilemma

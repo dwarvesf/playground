@@ -9,8 +9,6 @@ authors:
   - bievh
 ---
 
-# Devbox vs Nix: Why We Chose Simplicity
-
 Let's cut to the chase: Devbox is Nix with training wheels, and that's a good thing. Here's why we're all in on Devbox for building killer dev environments.
 
 ## The Power of Nix, Without the Pain

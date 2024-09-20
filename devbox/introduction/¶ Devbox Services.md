@@ -8,8 +8,6 @@ authors:
   - bievh
 ---
 
-# Devbox Services: Tame Your Daemons with process-compose
-
 Ever wished you could manage your development services as easily as with Docker Compose, but without all the Docker baggage? Say hello to Devbox Services, powered by process-compose.
 
 ## What's process-compose?

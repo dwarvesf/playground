@@ -9,8 +9,6 @@ authors:
   - bievh
 ---
 
-# Nix Shell: Bulletproof Development Environments
-
 Ever wished you could clone your perfect dev setup to any machine? Or test a new package without breaking your system? That's where Nix Shell shines. It's not just a tool; it's a game-changer for developers.
 
 ## What Makes Nix Shell Special?
