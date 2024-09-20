@@ -8,8 +8,6 @@ authors:
   - bievh
 ---
 
-# Devbox: Your Dev Environment on Steroids
-
 Remember the last time you onboarded a new developer? Or tried a new tool without wrecking your setup? Yeah, it probably sucked. But it doesn't have to.
 
 ## The Dev Environment Dream

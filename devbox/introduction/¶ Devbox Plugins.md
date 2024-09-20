@@ -8,9 +8,6 @@ authors:
   - bievh
 ---
 
-# Devbox Plugins: Turbocharge Your Dev Setup
-
-
 Ever spent hours configuring a new package in your dev environment? Yeah, we've all been there. It sucks. That's why we created Devbox Plugins.
 
 ## The Plugin Revolution

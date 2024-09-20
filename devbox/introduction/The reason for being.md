@@ -7,6 +7,7 @@ description: The reason why we use Devbox
 authors:
   - bievh
 ---
+
 ## The Pursuit of Consistency
 With the rise of cloud services, we first adapted Docker as a containerization tool to wrap our application into an isolated environment for running on the cloud for production. Then we begin setting up a development environment inside a container or take advantage of docker-compose to run multiple services without installing locally. This helps us share the environment easily, and run the same environment repeatably with minimum changes with just only 1-2 script files. 
 
