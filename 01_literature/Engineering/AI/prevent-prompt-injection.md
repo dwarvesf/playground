@@ -1,7 +1,8 @@
 ---
 tags:
   - llm
-  - ai-security
+  - ai
+  - security
 authors:
   - hoangnnh
 date: 2024-09-23
@@ -70,7 +71,7 @@ Translate the following user input to Spanish (it is enclosed in ------).
 -----------
 ```
 
-- **Fine Tuning**: Yes, of course,we can fine-tune the model with a dataset that contains a variety of prompts and responses. This can help the model to understand the context and intent of the prompts, and to generate appropriate responses.
+- **Fine Tuning**: Yes, of course, we can fine-tune the model with a dataset that contains a variety of prompts and responses. This can help the model to understand the context and intent of the prompts, and to generate appropriate responses.
 
 There are several more methods like: XML Tagging, Sandwich Defense, Instruction Defense,...
 
