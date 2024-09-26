@@ -24,19 +24,19 @@ By providing a structured way to assess the system’s performance, the checklis
 
 **In case RAG system:** 
 
-- [ ]  **Search Engine**
+- **Search Engine**
     - If a user searches for legal clauses related to "contract termination" the search engine should retrieve documents with high relevance (precision) and not miss any key documents (recall).
     - **Metric**: Precision = 85%, Recall = 90% in test dataset.
     - For a legal query, the system should retrieve and highlight clauses on "contract termination" and ignore irrelevant sections, like "payment terms."
     - **Task-Specific Accuracy**: 95% task-specific match in legal datasets.
-- [ ]  **Latency**
+- **Latency**
     - The system should retrieve documents within 2 seconds in a real-time customer support scenario.
     - **Expected Latency**: <2 seconds for 95% of queries.
-- [ ]  **Response Generation**
+- **Response Generation**
     - For a customer query about a "refund policy," the LLM should generate a response that directly references the correct clauses in the retrieved refund policy document.
     - **LLM Evaluation**: Coherence score >80% using a library evaluation metric.
     - **Human in the loop:** Annotate response of LLM.
-- [ ]  **Token Usage and Cost Efficiency**
+- **Token Usage and Cost Efficiency**
     - For a legal document retrieval and summarization task, the system should use fewer than 10,000 tokens per query to balance cost and performance.
     - **Max Token Usage**: 10,000 tokens per query to maintain cost-effectiveness. Comparing each model together to find cost effectively.
 
@@ -71,20 +71,20 @@ graph TD
 
 **In case of fine-tuning model:**
 
-- [ ]  **Fine-Tuning on Task-Specific Data**
+- **Fine-Tuning on Task-Specific Data**
     - **Example**: A financial chatbot should correctly identify and respond to "interest rate change" queries 90% of the time in a test set.
     - **Metric**: Fine-tuning loss should decrease steadily, with an accuracy improvement of at least 5% compared to the base model.
-- [ ]  **Evaluate Performance Post-Fine-Tuning**
+- **Evaluate Performance Post-Fine-Tuning**
     - **Example**: In a legal document retrieval system, the fine-tuned model should correctly identify relevant clauses with 95% task-specific accuracy.
     - **Metric**: Precision = 90%, Recall = 88% for post-fine-tuning tests.
-- [ ]  **Prevent Overfitting**
+- **Prevent Overfitting**
     - **Example**: If training accuracy is 95%, validation accuracy should be no lower than 93%. If the gap increases, early stopping should be applied.
     - **Metric**: Validation loss should stay within 2% of the training loss.
-- [ ]  **Optimize Model Efficiency**
+- **Optimize Model Efficiency**
     - **Example**: A customer support model should deliver responses in less than 1.5 seconds while using fewer than 8,000 tokens.
     - **Expected Latency**: The fine-tuned model should respond in under 1.5 seconds for 95% of queries.
     - **Max Token Usage**: Limit token usage to under 8,000 tokens per query for cost-efficient operation.
-- [ ]  **Task-Specific Generalization and User Feedback**
+- **Task-Specific Generalization and User Feedback**
     - **Example**: A medical chatbot, after fine-tuning, should correctly diagnose 90% of unseen cases based on the user feedback and test cases.
     - **Task-Specific Accuracy**: Achieve 93% accuracy in task-specific domains like healthcare diagnostics or legal assistance.
 
