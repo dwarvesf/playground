@@ -14,7 +14,7 @@ description: A scathing look at Go's compiler internals and the vector search go
 date: 2024-09-27
 ---
 
-## [https://blog.daxe.ai/p/bbqvec-a-scalable-vector-search-library](https://developers.redhat.com/articles/2024/09/24/go-compiler-register-allocation#go_s_register_allocator__a_high_level_view)
+## [Register Allocation in the Go Compiler](https://developers.redhat.com/articles/2024/09/24/go-compiler-register-allocation#go_s_register_allocator__a_high_level_view)
 
 Red Hat has graced us with a deep dive into Go's register allocation in the compiler. It's a fascinating peek under the hood, if you're into that sort of thing. But let's be real: how many of us are actually going to benefit from understanding the intricacies of register allocation? It's like knowing the exact chemical composition of the asphalt you're driving on – interesting, but ultimately irrelevant to most people's daily commute.
 
