@@ -15,7 +15,7 @@ In recent years, the emergence of Large Language Models (LLMs) has revolutionize
 
 The rise of AI applications, especially LLMs, has unlocked diverse use cases across industries like customer support, content generation, and programming assistance. Building a scalable LLM system requires not only choosing the right model but also following architecture best practices and integrating a robust tech stack.
 
-- [[the-rise-of-AI-applications-with-LLM|The rise of AI applications with LLM]]
+- [The rise of AI applications with LLM](the-rise-of-AI-applications-with-LLM.md)
 - Use cases
 - Architecture and stack
 
