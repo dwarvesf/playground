@@ -74,7 +74,7 @@ LLM systems need to handle complex reasoning, task delegation, and actions based
 
 - Conditional logic and task iteration
 - Write Actions
-- [[prevent-prompt-injection | Prevent Prompt Injection]]
+- [Prevent Prompt Injection](prevent-prompt-injection.md)
 - Supervior-Worker architecture ( Divide and Conquer)
 - ReWOO Reasoning without Observations
 
