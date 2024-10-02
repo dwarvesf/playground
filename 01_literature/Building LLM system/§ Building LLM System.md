@@ -32,7 +32,7 @@ Selecting and customizing the right LLM is critical for addressing specific busi
 Methods for augmenting query context to improve model performance and accuracy.
 
 - Retrieval-Augmented Generation (RAG)
-- RAG for multimodal data
+- [[multimodal-in-rag|RAG for multimodal data]]
 - Agentic RAG
 - Query rewriting
 
@@ -75,7 +75,7 @@ LLM systems need to handle complex reasoning, task delegation, and actions based
 - Conditional logic and task iteration
 - Write Actions
 - [Prevent Prompt Injection](prevent-prompt-injection.md)
-- Supervior-Worker architecture ( Divide and Conquer)
+- [Supervior-Worker architecture ( Divide and Conquer)](multi-agent-collaboration-for-task-completion.md)
 - ReWOO Reasoning without Observations
 
 ## Evaluating Performance
