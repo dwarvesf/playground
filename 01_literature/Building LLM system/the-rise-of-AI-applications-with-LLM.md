@@ -38,27 +38,27 @@ The impact of this AI revolution is evident in several key areas:
 
 The number of new repositories for model development has nearly tripled from 2022 to 2023. In the period from 2023 to 2024, four out of the five most starred repositories on GitHub were related to AI and LLMs, underscoring the community's intense focus on AI development.
 
-![[the-rise-of-AI-applications-with-LLM-20241001172500969.webp]]
+![](assets/the-rise-of-AI-applications-with-LLM-20241001172500969.webp)
 
-![[the-rise-of-AI-applications-with-LLM-20241001172538961.webp]]
+![](assets/the-rise-of-AI-applications-with-LLM-20241001172538961.webp)
 
 **Startup Funding**
 
 According to a recent analysis of Y Combinator's Summer 2024 batch, an astounding 72% of startups are focused on AI—a dramatic increase from just 1% in the winter of 2012. This trend far outpaces previous technology waves, such as the crypto boom.
 
-![[the-rise-of-AI-applications-with-LLM-20241001172602714.webp]]
+![](assets/the-rise-of-AI-applications-with-LLM-20241001172602714.webp)
 
 **Market Interest**
 
 The interest in AI within the corporate world has surged dramatically. More than 16% of companies in the Russell 3000 now mention AI technology on earnings calls, up from less than 1% in 2016. Notably, about half of this increase occurred after the release of ChatGPT in Q4 2022. This heightened interest is often predictive of increased company-level capital spending in the technology.
 
-![[the-rise-of-AI-applications-with-LLM-20241001172640265.webp]]
+![](assets/the-rise-of-AI-applications-with-LLM-20241001172640265.webp)
 
 **Economic Projections**
 
 The generative AI market is poised for explosive growth. Bloomberg Intelligence projects that the market will expand from $40 billion in 2022 to a staggering $1.3 trillion by 2032. This forecast underscores the immense economic potential and transformative power of AI technologies across industries.
 
-![[the-rise-of-AI-applications-with-LLM-20241001172713144.webp]]
+![](assets/the-rise-of-AI-applications-with-LLM-20241001172713144.webp)
 
 In conclusion, the rise of AI applications represents a paradigm shift in technology and business. The accessibility of powerful AI models through API services has democratized AI development, enabling a new wave of innovation. As AI continues to permeate various sectors, its impact on productivity, creativity, and economic growth is set to be profound. The coming years will likely see an acceleration of AI adoption and integration, reshaping industries and creating new opportunities for businesses and individuals alike. As we stand on the brink of this AI-driven future, the potential for groundbreaking applications and transformative technologies seems boundless.
 
