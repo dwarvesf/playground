@@ -21,7 +21,7 @@ The impact of AI on various domains is profound. Since AI can now write at a lev
 
 Furthermore, AI's capabilities extend to synthesizing training data and writing code, both of which contribute to the development of even more powerful models. The ability of AI to write code has been particularly transformative, enabling individuals without a software engineering background to rapidly turn their ideas into functional code and present them to users. The introduction of prompt engineering has further simplified interaction with these models, allowing users to work with them using plain English rather than traditional programming languages. This development has truly democratized AI application development, making it accessible to a much wider audience.
 
-As AI applications become more cost-effective to build and quicker to bring to market, the return on investment for AI initiatives has become increasingly attractive. This has led to a proliferation of AI applications and services across various domains, both in greenfield products and AI integration, including::
+As AI applications become more cost-effective to build and quicker to bring to market, the return on investment for AI initiatives has become increasingly attractive. This has led to a proliferation of AI applications and services across various domains, both in greenfield products and AI integration, including:
 
 - [Notion AI](https://www.notion.so/product/ai): search, summarize, generate, chat with AI within the note-taking app
 - [Klarna](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/): AI assistant to handle customer service chats
