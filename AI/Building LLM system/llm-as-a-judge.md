@@ -22,6 +22,7 @@ LLM-as-a-Judge is a powerful solution that uses LLMs to evaluate LLM responses b
 - **Pairwise Comparison**: the judge LLM compares two LLM-generated outputs and determines which is superior based on the given input. This approach requires a predefined set of criteria to establish what constitutes a "better" response.
 
 Example:
+
 ```python
 prompt= """
 Given the folowing question and answer, evaluate how good the answer is for the question. Use the score from 1 to 5:
@@ -73,7 +74,7 @@ Explain your reasoning step by step then answer (yes or no) the question:
 
 LLM-as-a-Judge contribute a significant impact to the field of AI evaluation. By leveraging the power of advanced language models to evaluate other models, we're entering a new era of more accurate, scalable, and insightful AI assessment. While challenges remain, such as potential biases and the need for careful prompt engineering, the benefits of this approach are clear.
 
-As LLMs continue to evolve and improve, as well as their ability to serve as judges. This symbiotic relationship between model development and evaluation promises to accelerate progress in the field of artificial intelligence, pushing the boundaries of what's possible in natural language processing and generation.
+As LLMs continue to evolve and improve, as well as their ability to serve as judges. The relationship between LLMs and AI evaluation is likely to become even more symbiotic, with each side benefiting from the other.
 
 ## References
 
