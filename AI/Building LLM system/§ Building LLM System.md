@@ -2,7 +2,7 @@
 tags:
   - moc
   - llm
-title: Foundation for building LLM System - Map of Content
+title: '§ Building LLM System'
 description: 'This Map of Content (MoC) outlines the critical components required to design and build a large language model (LLM) system, focusing on architecture, model customization, safeguarding, performance evaluation, and more.'
 date: 2024-09-11
 authors:
@@ -83,7 +83,7 @@ LLM systems need to handle complex reasoning, task delegation, and actions based
 Using right metrics and method for specific use case in LLM.
 
 - Evaluation Metrics
-- AI-as-a-Judge
+- [AI-as-a-Judge](llm-as-a-judge.md)
 
 ## Observability and Orchestration
 
