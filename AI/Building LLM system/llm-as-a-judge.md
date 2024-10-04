@@ -35,7 +35,7 @@ Score:
 
 The idea is simple: give an AI language model a set of criteria and let it evaluate responses for you.
 
-![LLM-as-a-judge](assets/llm-as-a-judge-architecture.webp)
+![](assets/llm-as-a-judge-architecture.webp)
 
 ## Problems
 
@@ -72,7 +72,7 @@ Instead of giving LLMs the entire generated output to evaluate, you can consider
 
 LLM judges can be and are currently most widely used to evaluate LLM systems by incorporating it as a scorer in an LLM evaluation metric.
 
-![LLM-as-a-judge-metrics](assets/llm-as-a-judge-metrics.webp)
+![](assets/llm-as-a-judge-metrics.webp)
 
 **Fine-tuning LLM Judges**
 
