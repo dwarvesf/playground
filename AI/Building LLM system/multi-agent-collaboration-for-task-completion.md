@@ -6,8 +6,8 @@ tags:
 authors:
   - hoangnnh
 date: 2024-09-06
-title: "Multi-agent collaboration for task completion"
-description: "In AI integrated systems, instead of put all workload on a single agent, we can apply divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent.This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone"
+title: 'Multi-agent collaboration for task completion'
+description: 'In AI integrated systems, instead of put all workload on a single agent, we can apply divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent.This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone'
 ---
 
 In AI integrated systems, instead of putting all the workload on a single agent, we can apply a divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent. This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone.
@@ -18,7 +18,7 @@ Imagine we plan to integrate AI into our application, we build an AI agent with 
 
 ## System design
 
-![Multi-agent system](assets/multi-agent-design.webp)
+![](assets/multi-agent-design.webp)
 
 A Multi-agent AI system can be designed as follows:
 
@@ -32,7 +32,7 @@ There are other variations of this design like add a layer of agent to become su
 
 Let's consider a scenario where we have an event management application, it has features like event creation, project management,... We want to create an AI agent that can handle a complex task of creating an event, creating project, event managements. We can design a multi-agent AI system as follows:
 
-![Multi-agent example](assets/multi-agent-example.webp)
+![](assets/multi-agent-example.webp)
 
 - Supervisor: Responsible for routing the task request to appropriate agents and collecting the results. We will defined its system prompt as below:
 
@@ -47,7 +47,7 @@ const systemPrompt = `You are a supervisor tasked with managing a conversation b
 - Event agent: Responsible for handling the Event module including creating, and managing events within projects. We will defined its system prompt similar like this:
 
 ```ts
-const systemPrompt=`You are an intelligent assistant responsible for handling the Event module. Given a Event struct format, you will collect event information and map it to the Event struct fields when processing requests. Your responses should be concise and focused on the event details.
+const systemPrompt = `You are an intelligent assistant responsible for handling the Event module. Given a Event struct format, you will collect event information and map it to the Event struct fields when processing requests. Your responses should be concise and focused on the event details.
   {event_struct_format}
 `
 ```
@@ -55,7 +55,7 @@ const systemPrompt=`You are an intelligent assistant responsible for handling th
 - Project agent: Responsible for handling the Project module including listing projects/workspaces/hubs, creating, updating, and managing projects. We will defined its system prompt similar like this:
 
 ```ts
-const systemPrompt= `You are an intelligent assistant responsible for handling the Project module. Given a project struct format, you will collect project information from user input and map it to the Project struct fields when processing requests. Your responses should be concise and focused on the project details.
+const systemPrompt = `You are an intelligent assistant responsible for handling the Project module. Given a project struct format, you will collect project information from user input and map it to the Project struct fields when processing requests. Your responses should be concise and focused on the project details.
   {project_struct_format}
 `
 ```
@@ -66,11 +66,11 @@ Now, let's consider a user request: "I want to create event with title "Lady Gag
 
 - Result:
 
-![Multi-agent result](assets/multi-agent-example-result.webp)
+![](assets/multi-agent-example-result.webp)
 
 With multi-agent AI, the task is completed successfully, 2 agents collaborate to complete the task, and the supervisor agent manage the workflow. So how supervior agent route the task to appropriate agents? Let's see inside the system.
 
-![Multi-agent routing](assets/multi-agent-example-inside.webp)
+![](assets/multi-agent-example-inside.webp)
 
 As you can see, the supervisor is divide tasks into smaller tasks, and handle them one by one. it route task to agents to reasoning, process task, when agents process task, they will user power of LLM to decide to call tool or not. After that, it will return result to supervisor, supervisor will collect result and combine them to continue reasoning, thiking to process request until it reach the final result.
 
@@ -79,5 +79,6 @@ As you can see, the supervisor is divide tasks into smaller tasks, and handle th
 Multi-agent AI system is a powerful tool that can be used to solve complex tasks. It allows us to distribute the workload to multiple agents, each of which is responsible for a specific scope of work. This can improve the efficiency and accuracy of the system. However, it also introduces new challenges such as coordination and communication between agents, and managing the workflow. To overcome these challenges, we need to design a well-defined system prompt for each agent, and a supervisor agent to manage the workflow.
 
 ## References
+
 - https://arxiv.org/abs/2308.08155
 - https://github.com/langchain-ai/langgraphjs/blob/main/examples/multi_agent/agent_supervisor.ipynb
