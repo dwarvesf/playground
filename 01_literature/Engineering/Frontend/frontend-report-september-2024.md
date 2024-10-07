@@ -111,9 +111,14 @@ This is not supposed to be a template, boilerplate or a framework, but more of a
 
 ## Commentary
 
-- [I am tired of AI](https://www.ontestautomation.com/i-am-tired-of-ai/)
-- [Legacy Modernization meets GenAI](https://martinfowler.com/articles/legacy-modernization-gen-ai.html)
-- [Why Copilot is Making Programmers Worse at Programming](https://www.darrenhorrocks.co.uk/why-copilot-making-programmers-worse-at-programming/)
 - [Why Gumroad Didn't Choose htmx](https://htmx.org/essays/why-gumroad-didnt-choose-htmx/)
+- [Something went wrong – Ways out of the JavaScript crisis](https://molily.de/something-went-wrong/)
 - [The hardest bug investigation of my career and the insane code that caused it](https://www.reddit.com/r/ExperiencedDevs/comments/1fu0e5q/the_hardest_bug_investigation_of_my_career_and/)
+<<<<<<< Updated upstream
 - [The Intelligence Age](https://ia.samaltman.com/)
+=======
+- [Legacy Modernization meets GenAI](https://martinfowler.com/articles/legacy-modernization-gen-ai.html)
+- [I am tired of AI](https://www.ontestautomation.com/i-am-tired-of-ai/)
+- [Why Copilot is Making Programmers Worse at Programming](https://www.darrenhorrocks.co.uk/why-copilot-making-programmers-worse-at-programming/)
+- [The Intelligence Age](https://ia.samaltman.com/)
+>>>>>>> Stashed changes
