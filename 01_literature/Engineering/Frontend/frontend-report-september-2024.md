@@ -33,6 +33,10 @@ Lazy loading with React Router can be tricky. Avoid common pitfalls by understan
 
 ## Next.js
 
+### [ChatGPT Ditches Next.js, Embraces Remix: What's the Deal?](https://www.youtube.com/watch?v=hHWgGfZpk00)
+
+OpenAI's ChatGPT has made a switch from Next.js to Remix. We're breaking down the possible reasons behind this intriguing move.
+
 ### [OpenNext: Sharing is Caring for Next.js Apps](https://opennext.js.org/)
 
 Next.js, unlike Remix, Astro, or the other modern frontends, doesn't have a way to self-host across different platforms. OpenNext is on a mission to make self-hosting Next.js apps a reality across different platforms. No more vendor lock-in!
@@ -41,13 +45,10 @@ Next.js, unlike Remix, Astro, or the other modern frontends, doesn't have a way 
 
 Progressive Web Applications (PWAs) offer the reach and accessibility of web applications combined with the features and user experience of native mobile apps. The new Next.js docs now make it easier than ever.
 
-### [Reliable date formatting in Next.js – Internationalization (i18n) for Next.js](https://next-intl-docs.vercel.app/blog/date-formatting-nextjs)
-
-Tired of hydration mismatches with dates? This article has the solution: use `next-intl` to keep your dates consistent across client and server environments.
-
 ### Quick Links
 
 - [Deploying a Next.js App to Production in any server](https://www.saybackend.com/blog/04-deploy-nextjs-to-production-without-vercel)
+- [Reliable date formatting in Next.js – Internationalization (i18n) for Next.js](https://next-intl-docs.vercel.app/blog/date-formatting-nextjs)
 
 ## Others
 
@@ -72,10 +73,6 @@ This Google engineer challenges the norm: Do we really need to transpile to ES5 
 - [CSS Masonry & CSS Grid](https://css-tricks.com/css-masonry-css-grid/)
 
 ## Trending
-
-### [The Intelligence Age](https://ia.samaltman.com/)
-
-Sam Altman talks about the exciting future of AI and how it's set to revolutionize everything from healthcare to fighting climate change.
 
 ### [Open Letter to Oracle: It's Time to Free JavaScript!](https://javascript.tm/)
 
@@ -119,4 +116,4 @@ This is not supposed to be a template, boilerplate or a framework, but more of a
 - [Why Copilot is Making Programmers Worse at Programming](https://www.darrenhorrocks.co.uk/why-copilot-making-programmers-worse-at-programming/)
 - [Why Gumroad Didn't Choose htmx](https://htmx.org/essays/why-gumroad-didnt-choose-htmx/)
 - [The hardest bug investigation of my career and the insane code that caused it](https://www.reddit.com/r/ExperiencedDevs/comments/1fu0e5q/the_hardest_bug_investigation_of_my_career_and/)
-- [Why Not Comments - Why not "why not" comments? Not why "not comments"](https://buttondown.com/hillelwayne/archive/why-not-comments/)
+- [The Intelligence Age](https://ia.samaltman.com/)
