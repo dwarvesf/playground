@@ -53,7 +53,9 @@ We’re seeing the future unfold right before our eyes with generative UI, but t
 
 We believe this development could fundamentally change how we interact with technology. A few powerful apps could rule them all. The convenience and flexibility of simply describing what you need and having an app materialize could revolutionize productivity, making this technology an essential part of daily lives.
 
-![](assets/market-report-aug-2024-20240829142212118.webp) The user’s prompt to create a Bill Splitting App in Claude Mobile App
+![](assets/market-report-aug-2024-20240829142212118.webp)
+
+The user’s prompt to create a Bill Splitting App in Claude Mobile App
 
 ## New Features Open More Opportunities
 

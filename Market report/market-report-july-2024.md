@@ -31,7 +31,9 @@ From an engineering standpoint, Llama 3.1 presents an intriguing shift in the AI
 
 ## OpenAI's GPT-4o-mini: A Leap in Cheap and Customizable AI
 
-OpenAI has taken a significant step in democratizing AI by introducing fine-tuning capabilities for GPT-4o-mini. This development allows users to customize the model for specific applications, potentially revolutionizing how businesses and developers interact with AI. The fine-tuning feature is currently available to tier 4 and 5 users, with plans to expand access gradually. Notably, OpenAI is offering the first 2 million training tokens per day free through September 23, 2024, lowering the barrier to entry for many organizations. ![](assets/market-report-july-2024-20240726134331340.webp)
+OpenAI has taken a significant step in democratizing AI by introducing fine-tuning capabilities for GPT-4o-mini. This development allows users to customize the model for specific applications, potentially revolutionizing how businesses and developers interact with AI. The fine-tuning feature is currently available to tier 4 and 5 users, with plans to expand access gradually. Notably, OpenAI is offering the first 2 million training tokens per day free through September 23, 2024, lowering the barrier to entry for many organizations.
+
+![](assets/market-report-july-2024-20240726134331340.webp)
 
 We believe this move presents exciting opportunities for optimizing AI applications. The benefits of fine-tuning include higher quality results, significant token savings, and lower latency - all crucial factors in production environments.
 
@@ -41,7 +43,9 @@ However, it's important to note that fine-tuning should be considered after expl
 
 The recent release of Claude Sonnet 3.5 is reshaping the landscape of software development for technical founders. This Large Language Model (LLM) stands out from its predecessors by offering an unprecedented level of comfort and efficiency in implementation tasks. Early adopters report a staggering 10x improvement in development speed for UI components and other technical aspects of popular applications. This acceleration in coding productivity allows founders to focus more on critical architectural and infrastructure decisions, potentially revolutionizing the pace of innovation in the startup ecosystem.
 
-The workflow enabled by Claude Sonnet 3.5 is very relatable, as we use similar methods with Claude to speed up development and design cycles, with thorough planning and prompting. However, it's crucial to note that while this tool significantly enhances coding efficiency, it doesn't replace the need for sound architectural decision-making. As we integrate this technology into our development processes, we'll need to carefully balance the rapid iteration capabilities with maintaining code quality and system integrity. ![](assets/market-report-july-2024-20240726134447079.webp)
+The workflow enabled by Claude Sonnet 3.5 is very relatable, as we use similar methods with Claude to speed up development and design cycles, with thorough planning and prompting. However, it's crucial to note that while this tool significantly enhances coding efficiency, it doesn't replace the need for sound architectural decision-making. As we integrate this technology into our development processes, we'll need to carefully balance the rapid iteration capabilities with maintaining code quality and system integrity.
+
+![](assets/market-report-july-2024-20240726134447079.webp)
 
 ## Advancements in AI for Sports and Audio: Enhancing Performance Analysis and Communication
 
