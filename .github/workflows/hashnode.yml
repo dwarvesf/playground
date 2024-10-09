@@ -1,0 +1,130 @@
+name: Sync Changed Files to Hashnode
+
+on:
+  push:
+    branches:
+      - main # or your default branch
+
+jobs:
+  sync-to-hashnode:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2 # To get the previous commit for comparison
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml requests
+
+      - name: Create sync script
+        run: |
+          cat << 'EOF' > sync_to_hashnode.py
+          import os
+          import sys
+          import subprocess
+          import yaml
+          import requests
+
+          def get_changed_files():
+              output = subprocess.check_output(['git', 'diff', '--name-status', 'HEAD^', 'HEAD']).decode('utf-8')
+              changed_files = [
+                  line.split('\t')[1]
+                  for line in output.split('\n')
+                  if (line.startswith('A') or line.startswith('M')) and line.endswith('.md')
+              ]
+              return changed_files
+
+          def sync_to_hashnode(file_path):
+              try:
+                  with open(file_path, 'r', encoding='utf-8') as file:
+                      content = file.read()
+
+                  parts = content.split('---')
+                  if len(parts) < 3:
+                      print(f"Skipping {file_path} as it doesn't contain proper frontmatter")
+                      return
+
+                  frontmatter = yaml.safe_load(parts[1])
+                  markdown = '---'.join(parts[2:]).strip()
+
+                  if frontmatter.get('sync') == 'hashnode':
+                      mutation = """
+                      mutation PublishPost($input: PublishPostInput!) {
+                          publishPost(input: $input) {
+                              post {
+                                  url
+                              }
+                          }
+                      }
+                      """
+
+                      variables = {
+                          "input": {
+                              "publicationId": os.environ['HASHNODE_PUBLICATION_ID'],
+                              "title": frontmatter['title'],
+                              "contentMarkdown": markdown,
+                          }
+                      }
+
+                      payload = {
+                          "query": mutation.strip(),
+                          "variables": variables
+                      }
+
+                      response = requests.post(
+                          'https://gql.hashnode.com',
+                          json=payload,
+                          headers={
+                              'Authorization': os.environ['HASHNODE_PAT'],
+                              'Content-Type': 'application/json'
+                          }
+                      )
+
+                      if response.status_code == 200 and response.json().get('data', {}).get('publishPost', {}).get('post', {}).get('url'):
+                          print(f"Successfully synced {file_path} to Hashnode")
+                          print(f"Post URL: {response.json()['data']['publishPost']['post']['url']}")
+                      else:
+                          raise Exception(f"Failed to sync {file_path}. Response: {response.json()}")
+                  else:
+                      print(f"Skipping {file_path} as it's not marked for Hashnode sync")
+
+              except Exception as e:
+                  print(f"Error processing {file_path}: {str(e)}")
+                  raise
+
+          def main():
+              changed_files = get_changed_files()
+              print('Changed Markdown files:', changed_files)
+
+              failed_syncs = []
+              for file in changed_files:
+                  try:
+                      sync_to_hashnode(file)
+                  except Exception as e:
+                      failed_syncs.append((file, str(e)))
+
+              if failed_syncs:
+                  print(f"Failed to sync {len(failed_syncs)} file(s):")
+                  for file, error in failed_syncs:
+                      print(f"{file}: {error}")
+                  sys.exit(1)
+              else:
+                  print('All files synced successfully')
+
+          if __name__ == '__main__':
+              main()
+          EOF
+
+      - name: Run sync script
+        env:
+          HASHNODE_PAT: ${{ secrets.HASHNODE_PAT }}
+          HASHNODE_PUBLICATION_ID: ${{ secrets.HASHNODE_PUBLICATION_ID }}
+        run: python sync_to_hashnode.py
