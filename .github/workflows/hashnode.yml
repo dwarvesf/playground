@@ -3,7 +3,7 @@ name: Sync Changed Files to Hashnode
 on:
   push:
     branches:
-      - main # or your default branch
+      - master
 
 jobs:
   sync-to-hashnode:
