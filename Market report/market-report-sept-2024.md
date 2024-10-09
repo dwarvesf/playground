@@ -34,7 +34,7 @@ The models seem to build on the "chain of thought" prompting pattern (which lite
 
 ### Contextual Retrieval: A New Embedding Technique for RAG system
 
-Anthropic's introduction of Contextual Retrieval marks a significant advancement in how AI models access and utilize background knowledge. Traditional Retrieval-Augmented Generation (RAG) solutions often strip away context when encoding information, leading to failures in retrieving relevant data.
+Anthropic's introduction of [Contextual Retrieval](https://www.anthropic.com/news/contextual-retrieval) marks a new advancement in how AI models access and utilize background knowledge. Traditional Retrieval-Augmented Generation (RAG) solutions often strip away context when encoding information, leading to failures in retrieving relevant data.
 
 We see Contextual Retrieval addressing this gap by:
 
@@ -96,11 +96,13 @@ We’ve been following the thought-provoking observations from [Mathias Schäfer
 - Your JavaScript should work across different runtimes and frameworks—vendor lock-in should be avoided.
 - Frameworks should share core APIs and primitives. The Vue community has done excellent work in this regard, with tools like [Vite](https://vitejs.dev/), [Nitro](https://nitro.unjs.io/), [Vinxi](https://github.com/nksaraf/vinxi), and [Vitest](https://vitest.dev/) proving useful across many stacks.
 
+We believe those takeaways should be taken into consideration by any builder who wants to build for the next web.
+
 ## Who is hiring?
 
 Our analysis of the latest [job posts](https://news.ycombinator.com/item?id=41425910) in Y Combinator’s hiring thread shows that while the number of job listings has remained steady, it's only a third of what it was in 2022. Some key trends:
 
-- Popular stacks: **Python**, **AWS**, **React**, **TypeScript**, and **C**.
+- Popular stacks: **Python**, **AWS**, **React**, **TypeScript**, and **C**. Following these are **Rust** and **AI/ML** stack.
 - Remote work remains the dominant offering.
 - Full-time roles make up the majority, with only 4% of job postings seeking contractors.
 
