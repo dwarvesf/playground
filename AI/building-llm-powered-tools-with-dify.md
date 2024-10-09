@@ -61,7 +61,7 @@ This tool turns everyday language into SQL queries, allowing non-technical team 
 
 ### 2. OGIF memo summarizer
 
-Specialized in extracting information from YouTube transcripts, this tool quickly generates time-stamped summaries with key points, saving hours of manual video analysis. We recently wrote an article about this tool, which you can read [here](notion://www.notion.so/dwarves/how-we-crafted-the-ogif-summarizer-bot-to-streamline-weekly-knowledge-sharing.md).
+Specialized in extracting information from YouTube transcripts, this tool quickly generates time-stamped summaries with key points, saving hours of manual video analysis. We recently wrote an article about this tool, which you can read [here](../01_literature/how-we-crafted-the-ogif-summarizer-bot-to-streamline-weekly-knowledge-sharing.md).
 
 ### 3. Discord summarizer assistant
 
