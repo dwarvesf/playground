@@ -1,6 +1,6 @@
 ---
-tags: 
-  - go 
+tags:
+  - golang
   - rag
   - llm
   - genkit
@@ -9,7 +9,7 @@ tags:
   - actor-model
 authors:
   - fuatto
-title: "Go Commentary #12: CLI Renaissance with Kubernetes, REST, and Terminal Readers in the Age of Complexity"
+title: 'Go Commentary #12: CLI Renaissance with Kubernetes, REST, and Terminal Readers in the Age of Complexity'
 description: A critical examination of Go's resurgence in CLI tool development, exploring recent projects in Kubernetes log viewing, REST API interaction, and terminal-based readers, while questioning the industry's shift back to command-line interfaces.
 date: 2024-09-20
 ---
@@ -23,10 +23,13 @@ An interactive Kubernetes log viewer for your terminal.
 kl --context my-context,other-context -n default,other-ns
 ```
 
-![alt text](assets/kl1.png)
-![alt text](assets/kl2.png)
-![alt text](assets/kl3.png)
-![alt text](assets/kl4.png)
+![](assets/kl1.png)
+
+![](assets/kl2.png)
+
+![](assets/kl3.png)
+
+![](assets/kl4.png)
 
 - This tool allows you to view logs across multiple containers, pods, and even clusters. It's like kubectl logs on steroids, which begs the question: why isn't this functionality built into kubectl itself? The fragmentation of the Kubernetes ecosystem continues unabated, with each new tool solving a problem that arguably shouldn't exist in the first place.
 
@@ -77,13 +80,11 @@ While it's undeniably clever, one has to wonder: are we solving real problems, o
 cast-text -rss https://lobste.rs/rss
 ```
 
-![alt text](assets/cast-text.png)
+![](assets/cast-text.png)
 
-The Pendulum Swings
-This trend towards CLI tools in Go is part of a larger pendulum swing in our industry. We've gone from command-line interfaces to graphical UIs, from desktop applications to web apps, and now we're seeing a resurgence of terminal-based tools. It's as if we're collectively suffering from option paralysis, overwhelmed by the complexity of modern software stacks and yearning for the perceived simplicity of text-based interfaces.
+The Pendulum Swings This trend towards CLI tools in Go is part of a larger pendulum swing in our industry. We've gone from command-line interfaces to graphical UIs, from desktop applications to web apps, and now we're seeing a resurgence of terminal-based tools. It's as if we're collectively suffering from option paralysis, overwhelmed by the complexity of modern software stacks and yearning for the perceived simplicity of text-based interfaces.
 
 But here's the rub: these new CLI tools are often just as complex as their graphical counterparts. They're built on layers of abstractions, requiring knowledge of specific command syntaxes and flags. We haven't simplified; we've just shifted the complexity to a different domain.
-
 
 ---
 

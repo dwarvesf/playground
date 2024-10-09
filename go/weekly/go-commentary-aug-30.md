@@ -5,7 +5,7 @@ tags:
   - networking
 authors:
   - fuatto
-title: "Go Commentary #9: TinyGo, SQLite Vector Search, and Authorization"
+title: 'Go Commentary #9: TinyGo, SQLite Vector Search, and Authorization'
 description: "Exploring TinyGo's latest release, a new vector search extension for SQLite, and an open-source authorization service inspired by Google Zanzibar."
 date: 2024-08-30
 ---
@@ -66,7 +66,6 @@ func main() {
 }
 ```
 
-
 ```sql
 .load ./vec0
 
@@ -119,4 +118,3 @@ limit 2;
 - https://github.com/asg017/sqlite-vec
 - https://github.com/Permify/permify/releases/tag/v1.0.0
 - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/41f08f03da59f5518802898f68730e247e23c331.pdf
-

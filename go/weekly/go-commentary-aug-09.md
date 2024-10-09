@@ -5,17 +5,18 @@ tags:
   - networking
 authors:
   - fuatto
-title: "Go Commentary #6: GUI Framework, Leadership Change"
-description: "Introducing Cogent Core, a new GUI framework for Go, and announcing Russ Cox stepping down as Tech Lead of Go after 12 years."
+title: 'Go Commentary #6: GUI Framework, Leadership Change'
+description: 'Introducing Cogent Core, a new GUI framework for Go, and announcing Russ Cox stepping down as Tech Lead of Go after 12 years.'
 date: 2024-08-09
 ---
+
 ## [Cogent Core: A New GUI Framework for Go](https://www.cogentcore.org/blog/initial-release)
 
 - GUI framework written in Go that allows you Code Once, Rune Everywhere (Core) (macOS, Windows, Linux, iOS, Android and web)
 
 - The same Cogent Core app running on many devices using the same code:
 
-![alt text](assets/cogent-core-multi-devices.png)
+![](assets/cogent-core-multi-devices.png)
 
 - Simple Hello World app:
 
@@ -30,7 +31,6 @@ func main() {
 	b.RunMainWindow()
 }
 ```
-
 
 - Supports all usual GUI widgets:
 
@@ -60,7 +60,7 @@ core.NewTable(b).SetSlice(&sl).OnChange(func(e events.Event) {
 })
 ```
 
-![alt text](assets/cogent-core-widgets.png)
+![](assets/cogent-core-widgets.png)
 
 - Interactive plots of data
 
@@ -78,11 +78,12 @@ plotcore.NewPlotEditor(b).SetSlice([]Data{
 })
 ```
 
-![alt text](assets/cogent-core-plots.png)
+![](assets/cogent-core-plots.png)
 
 - Key features:
 
   - A full set of GUI widgets, with built-in support for most elements of [Material 3](https://m3.material.io/) standard
+
     - tooltips
     - drag-and-drop
     - sprites
@@ -91,7 +92,7 @@ plotcore.NewPlotEditor(b).SetSlice([]Data{
     - ...
 
   - Extension styling properties makes styling easy
-  
+
   - Responsive widget elements enables 1 codebase run across platforms
 
   - Transparent implementation of widgets makes customization easy
@@ -102,11 +103,11 @@ plotcore.NewPlotEditor(b).SetSlice([]Data{
 
 - Full software ecosystem
 
-  ![alt text](assets/cogent-core-neural-network.png)
+  ![](assets/cogent-core-neural-network.png)
 
-  ![alt text](assets/cogent-core-cogent-code.png)
+  ![](assets/cogent-core-cogent-code.png)
 
-  ![alt text](assets/cogent-core-cogent-canvas.png)
+  ![](assets/cogent-core-cogent-canvas.png)
 
 ## [Russ Cox Steps Down as Tech Lead of Go](https://groups.google.com/g/golang-dev/c/0OqBkS2RzWw/m/GzWvX5u6AQAJ?pli=1)
 
@@ -124,4 +125,3 @@ plotcore.NewPlotEditor(b).SetSlice([]Data{
 - https://groups.google.com/g/golang-dev/c/0OqBkS2RzWw/m/GzWvX5u6AQAJ?pli=1
 - https://go.googlesource.com/oscar/+/refs/heads/master/README.md
 - https://go.googlesource.com/oscar/+/refs/heads/master/internal
-
