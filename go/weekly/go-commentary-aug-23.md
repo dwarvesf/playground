@@ -5,7 +5,7 @@ tags:
   - networking
 authors:
   - fuatto
-title: "Go Commentary #8: Jupyter Notebooks, Kubernetes Tools, GopherCon Talks"
+title: 'Go Commentary #8: Jupyter Notebooks, Kubernetes Tools, GopherCon Talks'
 description: "Explore GoNB for Jupyter notebooks, kubetrim for KUBECONFIG management, and key highlights from GopherCon UK 2024 talks, covering performance testing, software design, event-driven workflows, and AI's impact on tech jobs."
 date: 2024-08-23
 ---
@@ -15,13 +15,13 @@ date: 2024-08-23
 - Auto-complete and contextual help while coding.
 - Rich content display: HTML, markdown (with latex), images, javascript, svg, videos, etc.
 
-![alt text](assets/go-commentary-aug-23_gonb-auto-complete.webp)
+![](assets/go-commentary-aug-23_gonb-auto-complete.webp)
 
 - Widgets (sliders, buttons) support: interact using HTML elements
 - Plotly integration using [go-plotly](https://github.com/go-echarts/go-echarts)
 - Apache ECharts integration using [gonb-echarts](https://github.com/janpfeifer/gonb-echarts) and [go-echarts](https://github.com/go-echarts/go-echarts)
 
-![alt text](assets/go-commentary-aug-23_gonb-chart.webp)
+![](assets/go-commentary-aug-23_gonb-chart.webp)
 
 ## [kubetrim: Trim Your KUBECONFIG Automatically](https://github.com/alexellis/kubetrim)
 
@@ -35,7 +35,7 @@ kind-ingress
 
 $ kubetrim
 
-kubetrim (dev) by Alex Ellis 
+kubetrim (dev) by Alex Ellis
 
 Loaded: /home/alex/.kube/config. Checking..
   - kind-2: ✅
@@ -66,5 +66,3 @@ kind-2
 - https://github.com/go-echarts/go-echarts
 - https://github.com/alexellis/kubetrim
 - https://youtube.com/playlist?list=PLDWZ5uzn69ezR6D6FUj_iBSOyRc9xaZFP&si=IdFGYzOivQqFRsVb
-
-

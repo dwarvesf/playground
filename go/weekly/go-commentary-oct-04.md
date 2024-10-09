@@ -1,17 +1,17 @@
 ---
-tags: 
-  - go 
+tags:
+  - go
+  - go-weekly
 authors:
   - fuatto
-title: "Go Commentary #14: Golang compile-time evaluation and Go bindings to SQLite using wazero"
+title: 'Go Commentary #14: Golang compile-time evaluation and Go bindings to SQLite using wazero'
 description: A quick toolings for compile-time evaluation and SQLite wrapper with WebAssembly runtime for Go
 date: 2024-10-04
 ---
 
 ## [Prep: Golang comptime. Pure blasphemy](https://github.com/pijng/prep)
 
-
-- A small Go tool that enables compile-time function evaluation. By using ```prep.Comptime```, you can evaluate functions at build time, replacing them with their computed results. Just like ```comptime``` from Zig. Except it's not.
+- A small Go tool that enables compile-time function evaluation. By using `prep.Comptime`, you can evaluate functions at build time, replacing them with their computed results. Just like `comptime` from Zig. Except it's not.
 
 - Features
   - Compile-Time Evaluation: Replace function calls with their computed results at build time.
@@ -44,10 +44,10 @@ func fibonacci(n int) int {
 }
 ```
 
-- Build
-  ```go build -a -toolexec="prep <absolute/path/to/project>" main.go```
+- Build `go build -a -toolexec="prep <absolute/path/to/project>" main.go`
 
 - Limitations
+
   - Currently, prep.Comptime only supports basic literals as arguments.
 
   ```go
@@ -68,11 +68,9 @@ func fibonacci(n int) int {
 
 ## [go-sqlite3: Go bindings to SQLite using wazero](https://github.com/ncruces/go-sqlite3)
 
-- Go module **github.com/ncruces/go-sqlite3** is a cgo-free SQLite wrapper.
-It provides a **database/sql** compatible driver, as well as direct access to most of the C SQLite API.
+- Go module **github.com/ncruces/go-sqlite3** is a cgo-free SQLite wrapper. It provides a **database/sql** compatible driver, as well as direct access to most of the C SQLite API.
 
-- It wraps a Wasm build of SQLite, and uses wazero as the runtime.
-Go, [wazero](https://github.com/tetratelabs/wazero) and x/sys are the only runtime dependencies.
+- It wraps a Wasm build of SQLite, and uses wazero as the runtime. Go, [wazero](https://github.com/tetratelabs/wazero) and x/sys are the only runtime dependencies.
 
 ```go
 

@@ -1,6 +1,6 @@
 ---
-tags: 
-  - go 
+tags:
+  - golang
   - rag
   - llm
   - genkit
@@ -9,7 +9,7 @@ tags:
   - actor-model
 authors:
   - fuatto
-title: "Go Commentary #13: Compiler Quests and Vector Vexations"
+title: 'Go Commentary #13: Compiler Quests and Vector Vexations'
 description: A scathing look at Go's compiler internals and the vector search gold rush, exposing the industry's obsession with speed over substance
 date: 2024-09-27
 ---
@@ -53,7 +53,6 @@ type ModernAIStartup struct {
 BBQvec claims to be all about scale, handling "many billions of vectors." That's great, but let's pause for a moment. How many companies actually need to search through billions of vectors? And of those that do, how many are doing it for anything more than vanity metrics or to impress VCs?
 
 The algorithm itself is clever, I'll give them that. Using random orthonormal basis sets and bitmaps for indexing is an interesting approach. But it's telling that their big selling point is how fast they can build the index, not necessarily how accurate or fast the actual searches are.
-
 
 ---
 

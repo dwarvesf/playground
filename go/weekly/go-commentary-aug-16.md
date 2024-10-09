@@ -5,8 +5,8 @@ tags:
   - networking
 authors:
   - fuatto
-title: "Go Commentary #7: Releases, Websockets, and Struct Behavior"
-description: "Exploring Go 1.23 release notes, the new home for nhooyr/websocket, and common mistakes with Go structs and slices."
+title: 'Go Commentary #7: Releases, Websockets, and Struct Behavior'
+description: 'Exploring Go 1.23 release notes, the new home for nhooyr/websocket, and common mistakes with Go structs and slices.'
 date: 2024-08-16
 ---
 
@@ -21,7 +21,6 @@ date: 2024-08-16
 ## [Go structs are copied on assignment ](https://jvns.ca/blog/2024/08/06/go-structs-copied-on-assignment/)
 
 - Inspired by [Common Go Mistakes](https://100go.co/)
-
 
 ```go
 type Thing struct {
@@ -59,6 +58,7 @@ func main() {
 ```
 
 => fix:
+
 ```go
 func findThing(things []Thing, name string) *Thing {
   for i := range things {
@@ -81,6 +81,7 @@ func main() {
 ```
 
 => fix:
+
 ```go
 func main() {
 	x := []int{1, 2, 3, 4, 5}
