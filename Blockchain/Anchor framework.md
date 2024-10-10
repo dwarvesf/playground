@@ -1,6 +1,7 @@
 ---
 tags: blockchain, solana, anchor, tutorial
 authors: Pham Ngoc Thanh
+title: 'Anchor framework'
 github_id: thanhpn
 date: 2022-07-01
 ---
@@ -13,6 +14,7 @@ This article features a short tutorial to start smart contract development on So
 - Install and launch local network Solana
 
 ### What is Anchor?
+
 Anchor is a framework as well as a set of libraries that make developing applications on the Solana network faster and easier, However, you need to pay attention, the source code of the framework This has not been audited, please be careful when using. In addition, Anchor also provides a number of tools for developers.
 
 - Rust crates and eDSL for writing Solana programs
@@ -21,12 +23,14 @@ Anchor is a framework as well as a set of libraries that make developing applica
 - CLI command and workspace management for developing complete programs
 
 ### Why do we use Anchor?
+
 - Easy to use library
 - The ingredients are clear
 - Many utilities for faster build, test and deploy
 - Having IDL generate client on javascript or Golang easy
 
 ### Core components
+
 An Anchor program consists of 3 main parts:
 
 1. **Program**: where the logic of the program is stored
@@ -56,6 +60,7 @@ anchor cluster list
 ```
 
 #### Install Anchor and create a program:
+
 Step 1. Install the library
 
 - Rust
@@ -131,7 +136,9 @@ If you don't use the anchor, it will be equivalent to the command
 ```
 cargo build-bpf
 ```
+
 ##### Note if you build error, you need to update anchor-lang to version 0.24.2
+
 In addition, it will run additional commands to generate the IDL file
 
 ```
@@ -167,6 +174,7 @@ build successfully, you will get a log that looks like this: To deploy this prog
 ```
 
 #### Anchor CLI
+
 ```
 USAGE:
     anchor <SUBCOMMAND>
@@ -194,6 +202,7 @@ SUBCOMMANDS:
 ```
 
 #### Anchor Version Manager
+
 Anchor Version Manager (avm) is provided to manage multiple installations of the anchor-cli binary. This may be required to produce verifiable builds, or if you'd prefer to work with an alternate version. Like NVM, some command we should remember:
 
 ```
@@ -213,6 +222,7 @@ SUBCOMMANDS:
 ```
 
 #### Basic concepts to know before starting development
+
 - **Account**: A record in Solana Ledger to store information or a executable program, Save funds called lamports. expressed through an address by a key aka public key
 - **Account owner**: The address of the program that owns the account. Only the owner program can edit the account
 - **Block**: A block of data, continuously generated and covered by votes. Contains transaction information.
@@ -223,9 +233,11 @@ SUBCOMMANDS:
 - **leader schedule**: A sequence of validator public keys mapped to slots. The cluster uses the leader schedule to determine which validator is the leader at any moment in time.
 
 #### Example and template code
+
 - https://github.com/thanhpn/solana-anchor-template
 
 #### Reference
+
 - https://docs.rs/anchor-lang/latest/anchor_lang/accounts/account/struct.Account.html
 - https://book.anchor-lang.com/introduction/what_is_anchor.html
 - https://www.rust-lang.org

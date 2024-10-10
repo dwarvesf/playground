@@ -1,5 +1,6 @@
 ---
 tags: blockchain, solana, metaplex, nft-compression, nft, profile, merkle-trees, indexer
+title: 'Metaplex NFT Compression'
 authors: Tran Khac Vy
 github_id: trankhacvy
 date: 2023-03-13
@@ -13,6 +14,7 @@ While the cost of renting NFTs on Solana is relatively cheap (at ◎0.012), it s
 ![](assets/metaplex-nft-compression-cost-comparation.webp)
 
 ## How Compression for NFTs works
+
 Compressed NFTs are stored in Merkle trees via the Gummyroll program where:
 
 - Roots of Merkle trees are stored and updated on-chain in a buffer stored in a program account
@@ -23,11 +25,13 @@ The Merkle root's on-chain buffer in the Gummyroll program enables multiple writ
 
 The implementation of Compression for NFTs will have a significant impact on the Solana ecosystem, and Metaplex is working towards making this a reality. To achieve this, Metaplex is collaborating with various partners, including wallets and RPCs. Some of the partners that have already implemented solutions include Solflare for wallets, Crossmint for enterprise tools, and GenysysGo and Triton for RPCs. Additionally, partners such as Phantom for wallets and Quicknode and Alchemy for RPCs are expected to launch their solutions soon.
 
-![](_assets/metaplex-nft-compression-how-it-work.png.png)
+![](assets/metaplex-nft-compression-how-it-work.png)
 
 ## Conclusion
+
 This is just a brief overview of Compression for NFTs. There is much more to explore, whether from a technical perspective or in terms of potential use cases. Nevertheless, this technological advancement marks a significant shift in how users, developers, and businesses can approach NFTs in Solana blockchain.
 
 ## Reference
+
 - https://www.metaplex.com/posts/expanding-digital-assets-with-compression-for-nfts
 - https://metaplex.notion.site/Compression-for-NFTs-Public-94f9faa25f034110b513414a11a85bbe

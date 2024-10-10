@@ -1,11 +1,13 @@
 ---
 tags: blockchain, solana
 authors: Tran Khac Vy
+title: 'How Tokens Work on Solana'
 github_id: trankhacvy
 date: 2022-06-07
 ---
 
 ## How tokens work on solana - explain for EVM developers
+
 > **Let's say you want to create a new type of fungible token, mint some to yourself, and then transfer some to your friend. What would you do?**
 
 - As a EVM developer, you have to deploy a new ERC20 smart contract.
@@ -30,6 +32,7 @@ date: 2022-06-07
 - But how can I config the name and symbol for my token? To do that, you need to create a pull request to [Solana Token Registry](https://github.com/solana-labs/token-list). Include a JSON file containing your token metadata (chain id, address, symbol, logo, name ...). Click [here](https://github.com/solana-labs/token-list) for more information.
 
 ## Reference
+
 - https://spl.solana.com/token
 - https://spl.solana.com/associated-token-account
 - https://twitter.com/pencilflip/status/1454141877972779013
