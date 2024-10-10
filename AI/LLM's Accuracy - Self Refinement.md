@@ -1,10 +1,14 @@
 ---
-tags: engineering/ai, llm, accuracy, self-refinement, prompt-engineering, chatgpt
-authors: thanh
-title: 'LLM's Accuracy - Self Refinement'
+tags: 
+- ai
+- llm
+- prompt-engineering
+authors: 
+- thanh
+title: "LLM's Accuracy - Self Refinement"
+description: 'An overview of self-refinement, a technique where Large Language Models (LLMs) evaluate and improve their own output without the need for supervised data or reinforcement learning.'
 github_id: zlatanpham
 date: 2023-06-29
-icy: 10
 ---
 
 Self-refinement is a technique where the model evaluates and refines its own output. Normally, when using an LLM, you provide a prompt and the model generates a completion. With self-refinement, you can instruct the model to review the content it has generated, score it, and refine the output. This process can be repeated multiple times, allowing the model to iteratively improve its own output.

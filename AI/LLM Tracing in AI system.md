@@ -5,7 +5,7 @@ tags:
   - tooling
 title: 'LLM tracing in AI system'
 date: 2024-09-11
-description: Understanding LLM Tracing - Principles, Techniques, and Applications
+description: Understanding LLM Tracing - Principles, Techniques, and Applications in building LLM-powered AI systems.
 authors:
   - antran
 ---

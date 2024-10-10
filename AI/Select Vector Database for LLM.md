@@ -1,10 +1,14 @@
 ---
-tags: engineering/ai, vector database, llm, Word2Vec, BERT, Pinecone, Qdrant, Supabase, Weaviate, Milvus
-authors: Pham Ngoc Thanh
+tags: 
+- ai
+- vector database
+- llm
 title: 'Select Vector Database for LLM'
 github_id: thanhpn
 date: 2023-05-18
-icy: 10
+author: 
+- thanhpn
+description: 'An overview of vector databases and their application in LLM systems. This article covers the history and core concepts of vector databases, their use cases, implementation considerations with LLMs, and a comparison of popular vector database options.'
 ---
 
 During our research on applying LLM to real-world applications, we have observed the widespread usage and increasing popularity of Vector databases in various fields. Therefore, we have delved into understanding and summarizing what we have learned in this article.

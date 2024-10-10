@@ -1,6 +1,7 @@
 ---
 tags:
-  - llm/ai
+  - llm
+  - ai
   - tooling
 title: 'Developing rapidly with Generative AI'
 date: 2024-05-02

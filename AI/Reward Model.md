@@ -1,10 +1,13 @@
 ---
-tags: engineering/ai, ai, chatgpt, llm, reinforcement-learning, mdp, algorithms
+tags: 
+- ai
+- llm 
+- reinforcement-learning
 authors: Pham Ngoc Thanh
 github_id: thanhpn
 title: 'Reward Model'
 date: 2023-06-23
-icy: 10
+description: 'A Reward Model is a critical component in Reinforcement Learning for Large Language Models (LLMs), designed to evaluate and score the quality of generated responses. It plays a key role in aligning LLMs with human values and improving their output through iterative refinement.'
 ---
 
 In [Reinforcement Learning](Reinforcement%20Learning.md), we are familiar with the function that computes rewards for an agent's actions in an environment. And these rewards are becoming increasingly complex for different machine learning programs, especially for programs where rewards are hard to define. For large language models, this reward is represented as a scoring system evaluating the model's answer quality, which helps the model generate better responses. The combination of reward models and reinforcement learning has enabled the widespread use of large language models by aligning models with acceptable human values. Reward modeling and RLHF are the most common terms in AI since the release of GPT-3.5.

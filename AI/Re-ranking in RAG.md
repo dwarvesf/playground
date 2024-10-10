@@ -2,11 +2,12 @@
 tags:
   - llm
   - rag
+  - ai
 authors:
   - hoangnnh
 date: 2024-07-26
 title: 'Re-ranking in RAG'
-description: "One of the primary problems in RAG systems is the retrieval of a heterogeneous set of documents or pieces of information. These documents, while related to the query, often include extraneous details that can clutter the generation model's input. As a result, the generated text may lack coherence, accuracy, or pertinence, ultimately undermining the system's reliability and effectiveness. To ..."
+description: "Re-ranking is a crucial step in Retrieval-Augmented Generation (RAG) systems that addresses the challenge of retrieving heterogeneous and potentially irrelevant information. By evaluating and re-ordering retrieved documents, re-ranking ensures that only the most relevant and useful information is passed to the generation model. This process significantly improves the coherence, accuracy, and relevance of the generated text, ultimately enhancing the reliability and effectiveness of RAG systems."
 ---
 
 One of the primary problems in RAG systems is the retrieval of a heterogeneous set of documents or pieces of information. These documents, while related to the query, often include extraneous details that can clutter the generation model's input. As a result, the generated text may lack coherence, accuracy, or pertinence, ultimately undermining the system's reliability and effectiveness. To address this issue, the concept of re-ranking has emerged as a critical solution.
