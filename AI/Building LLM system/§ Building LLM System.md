@@ -56,7 +56,7 @@ Systems to prevent model misuse, sensitive data leaks, and bad outputs.
 
 Managing multiple models and securing access to them through a unified system.
 
-- Intent Classifiers
+- [Intent Classifiers](intent-classification-by-llm.md)
 - Model Gateways
 - Next-Action Prediction
 
