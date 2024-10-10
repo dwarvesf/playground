@@ -1,6 +1,7 @@
 ---
 tags: blockchain, evm, zk-proof
 authors: Pham Ngoc Thanh
+title: 'Zero-knowledge Proofs'
 github_id: thanhpn
 date: 2022-09-06
 ---
@@ -8,6 +9,7 @@ date: 2022-09-06
 Zero-knowledge proof is a way of proving the validity of a statement without disclosing the statement itself. A "validator" is the party attempting to prove a claim, while a "verifier" is responsible for validating the claim.
 
 ## Why do we need to demonstrate no knowledge?
+
 Zero-knowledge proofs represent a breakthrough in applied cryptography, as they promise to improve the security of information for individuals. Consider how you can prove the claim (for example, “I am a citizen of country X”) to another party (for example, a service provider). You'll need to provide "proof" to back up your claim, such as a national passport or driver's license. But this approach is not safe, can be hacked, personal information can be revealed
 
 Zero-knowledge proofs solve this problem by removing the need to disclose information to prove the validity of claims. The zero-knowledge protocol uses a statement (called a 'witness') as input to generate a succint proof of its validity. This proof provides firm assurance that a statement is true without revealing the information used to make it.
@@ -15,6 +17,7 @@ Zero-knowledge proofs solve this problem by removing the need to disclose inform
 Going back to our earlier example, the only proof you need to prove your citizenship claim is zero-knowledge proof. The verifier only has to check if certain properties of the proof are true to believe that the underlying statement is also true.
 
 ## How to prove Zero Knowledge works?
+
 To make this possible, zero-knowledge protocols rely on algorithms that take some data as input and return the 'true' or 'false' as output. A Zero-knowledge protocol must satisfy the following criteria:
 
 1. **Completeness**: If the input is valid, the zero-knowledge protocol always returns 'true'. Hence, if the underlying statement is true, and the prover and verifier act honestly, the proof can be accepted.
@@ -33,7 +36,9 @@ Interactive proof and non-interactive proof:
 - Non-interactive proof required only one round of communication between participants. the provers passes the secret information to a special algorithm to compute a zero-knowledge proof. this proof is sent to the verifier, who verify that the prover knows the secret information using other algorithm.
 
 ## Types of zero-knowledge proofs
+
 ### ZK-SNARKs
+
 ZK-SNARK is an acronym for Zero-Knowledge Succinct Non-Interactive Argument of Knowledge. The ZK-SNARK protocol has the following qualities:
 
 - **Zero-knowledge**: A verifier can validate the integrity of a statement without knowing anything else about the statement. The only knowledge the verifier has of the statement is whether it is true or false.
@@ -49,6 +54,7 @@ For the ZK-SNARK protocol to work, the creation of a Common Reference String (CR
 - Reliability assumptions aside, ZK-SNARK is very popular because of its small proof size and continuous time verification. Since verifying proofs on L1 constitutes a greater operating cost of ZK-rollup, L2 uses ZK-SNARK to generate proofs that can be quickly and cheaply verified on the Mainnet.
 
 ### ZK-STARKs
+
 Like ZK-SNARKs, ZK-STARKs demonstrate the validity of off-chain computation without revealing the input. However, ZK-STARK is considered an improvement on ZK-SNARK because of their scalability and transparency.
 
 - **Scalable**: ZK-STARK is faster than ZK-SNARK in generating and verifying evidence when witness size is larger. With STARK proofs, verification and proverb times only increase slightly as the witness grows (the times of the proverb and SNARK verifier increase linearly with witness size).
@@ -57,18 +63,21 @@ Like ZK-SNARKs, ZK-STARKs demonstrate the validity of off-chain computation with
 - **Security**: ZK-STARK is also secure against quantum computers, while Elliptic Curve Cryptography (ECC) used in ZK-SNARK is considered by many to be vulnerable to quantum computing attacks. The downside of ZK-STARKs is that they produce a larger proof size, which is more expensive to verify on Ethereum. Also, they don't support recursion, which is key to extending off-chain computation with zero-knowledge proofs.
 
 ## Application for ZK proof
+
 - Anonymous payments
 - Identity protection
 - Authentication
 - Verifiable computation
 
 ## Drawbacks of using ZK proofs
+
 - Hardware costs
 - Proof verification costs
 - Trust assumptions
 - Quantum computing threats
 
 ## References
+
 - [Zero-knowledge proofs](https://ethereum.org/en/zero-knowledge-proofs/)
 - [ZL-Rollup](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/zk-rollups/)
 - [ZK-SNARKs](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c)
