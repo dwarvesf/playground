@@ -1,5 +1,5 @@
 ---
-tags: 
+tags:
   - frontend
   - engineering
   - productivity
@@ -8,8 +8,8 @@ tags:
 title: Adoption Of Pnpm
 date: 2023-07-31
 description: null
-authors: 
-  - Thanh Pham
+authors:
+  - thanh
 ---
 
 ![](assets/adoption-of-pnpm_4601b8f71eebe7c7fbc4a6fc7925a8b6_md5.webp)
