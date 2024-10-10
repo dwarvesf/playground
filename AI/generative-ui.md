@@ -1,10 +1,10 @@
 ---
-tags: 
+tags:
   - AI
   - generative-ui
   - ux
-title: "Generative UI"
-description: "Generative UI refers to a dynamic and adaptive user interface that is generated and adjusted in real-time by artificial intelligence (AI) to better meet user needs and preferences. Unlike static interfaces, where the layout and elements are predetermined, generative UIs leverage AI algorithms to create and modify interface components based on user interactions and contextual information."
+title: 'Generative UI'
+description: 'Generative UI refers to a dynamic and adaptive user interface that is generated and adjusted in real-time by artificial intelligence (AI) to better meet user needs and preferences. Unlike static interfaces, where the layout and elements are predetermined, generative UIs leverage AI algorithms to create and modify interface components based on user interactions and contextual information.'
 authors:
   - namnanh14mn
   - TheCodister
@@ -12,24 +12,29 @@ date: 2024-08-08
 ---
 
 ## What is Generative UI?
+
 - A **generative UI** (genUI) is a user interface that responds to the user with AI-generated elements instead of just text messages.
 - It offers a personalized experience based on the user's needs and context. Users can interact with this AI-generated interface and sometimes make requests through it.
 
 ### Examples
-![example1](assets/generative-ui-example1.webp)
+
+![](assets/generative-ui-example1.webp)
 
 - Instead of generating text to tell you the weather in San Francisco, it will create a UI displaying all the information you need. This approach not only looks better but also delivers the information more effectively.
 
-![example2](assets/generative-ui-example2.webp)
+![](assets/generative-ui-example2.webp)
 
 - In this case, when you ask about stock prices, a user interface will appear that lets you interact with it to view the price of Dogecoin at specific times. It can generate different types of UIs to deliver the information effectively.
 
 ## Benefits
+
 - Enhances UI/UX when using chatbots.
 - Generative UI allows for highly personalized, tailor-made interfaces that suit the needs of each individual.
 
 ## Popular Solution for Generative UI
+
 ### Vercel AI SDK
+
 Currently, the most used solution is the Vercel AI SDK.
 
 - Utilizes the `server component` to handle event streaming on the Next.js server instead of on the browser.
@@ -37,66 +42,68 @@ Currently, the most used solution is the Vercel AI SDK.
 - Here is the pseudo code that simply explains what it does under the hood.
 
 #### Example
+
 ```tsx
 // use server
 const askGPT = async () => {
   const ui = createStreamableUI()(
     // invoke some task
     async () => {
-      workflow = createAgentExecutor();
+      workflow = createAgentExecutor()
       // handle stream events from LLM
-      for await (const streamEvent of (
-        runnable as Runnable<RunInput, RunOutput>
-      ).streamEvents(inputs, {
-        version: "v2",
+      for await (const streamEvent of (runnable as Runnable<RunInput, RunOutput>).streamEvents(inputs, {
+        version: 'v2',
       })) {
         // handle event stream from LLM
-        ui.update(<UI props={data} />);
+        ui.update(<UI props={data} />)
       }
-    }
-  )();
+    },
+  )()
 
-  return ui;
-};
+  return ui
+}
 ```
 
 ```tsx
 const Chat = () => {
-  const [elements, setElements] = useState([]);
+  const [elements, setElements] = useState([])
 
   const handleSubmit = (message: string) => {
     const ui = askGPT({
       message: message,
-    });
-    setElements([...elements, ui]);
-  };
+    })
+    setElements([...elements, ui])
+  }
 
   return (
     <form
       onSubmit={() => {
-        handleSubmit(inputValue);
+        handleSubmit(inputValue)
       }}
     >
       {elements}
       <input />
     </form>
-  );
-};
+  )
+}
 ```
 
 ### Pros:
+
 - Easy to use; everything is provided, so you only need to import the function or copy the code to use it.
 
 ### Cons:
+
 - Library is usable for Next.js with server component support.
 - Poorly documented for Next.js’s Page Router; it is recommended for the App Router.
 
 By observing the behavior of Vercel AI SDK, we came up with a general idea and 2 approches.
 
 ## General Idea
+
 - [Video Explanation](https://www.youtube.com/watch?v=d3uoLbfBPkw&t=406s)
 
-![general-idea](assets/generative-ui-general-idea.webp)
+![](assets/generative-ui-general-idea.webp)
 
 **Goal**
 
@@ -110,38 +117,41 @@ By observing the behavior of Vercel AI SDK, we came up with a general idea and 2
 - LLM supports streaming responses. There are two approaches:
 
 ### Approach 1
-![approach](assets/generative-ui-approach-1.webp)
+
+![](assets/generative-ui-approach-1.webp)
 
 - The message will be constructed in the backend based on all event received, when it's complete, the message will be sent to the frontend
 
 ```tsx
 // Example final message
-[
+;[
   {
-    type: "text",
-    data: "......",
+    type: 'text',
+    data: '......',
   },
   {
-    type: "movie-search-tool",
+    type: 'movie-search-tool',
     data: {
-      title: ".....",
-      description: "....",
+      title: '.....',
+      description: '....',
     },
   },
-];
+]
 ```
 
 ### Approach 2
-![approach](assets/generative-ui-approach-2.webp)
+
+![](assets/generative-ui-approach-2.webp)
 
 - Directly forward stream events to the frontend to handle using (HTTP Streaming, Server-Sent Events, WebSocket, etc.)
 - After a tool is done, include the tool result data in the chat history to help the chatbot understand the context.
 
 ### Handle event flow
-Below is an example for handling event stream generated during LLM processing with langchain.
-![event-flow](assets/generative-ui-handle-event-flow.webp)
+
+Below is an example for handling event stream generated during LLM processing with langchain. ![event-flow](assets/generative-ui-handle-event-flow.webp)
 
 ## References
+
 - [What is GenerativeUI?](https://www.nngroup.com/articles/generative-ui/)
 - [Vercel AI SDK RSC](https://sdk.vercel.ai/docs/reference/ai-sdk-rsc)
 - [Vercel AI SDK RSC: createStreamableUI()](https://sdk.vercel.ai/docs/reference/ai-sdk-rsc/create-streamable-ui)

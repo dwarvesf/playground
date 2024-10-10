@@ -13,6 +13,7 @@ Q-learning has applications in various domains, including autonomous robotics, t
 ![](assets/q-learning-demo.webp)
 
 ## Main components
+
 ![](assets/q-learning_reinforcement-learning-architecture.webp)
 
 - **Agent**: The entity that interacts with the environment and learns from it.
@@ -24,6 +25,7 @@ Q-learning has applications in various domains, including autonomous robotics, t
 - **Policy**: The strategy or set of rules that the agent uses to determine its actions in different states.
 
 ## How it works
+
 The working of Q-learning involves the following steps:
 
 - Initialize a Q-table: Create a table with rows representing states and columns representing actions. Initialize the Q-values arbitrarily.
@@ -35,6 +37,7 @@ The working of Q-learning involves the following steps:
 However, it has limitations, such as the need for large storage space for state-action pairs, difficulties in handling complex and interdependent environments, and challenges in dealing with continuous states (approximation techniques may be required). Thus Deep Q-Learning extends Q-learning was born by using a deep neural network as a function approximator to handle high-dimensional state spaces. It allows for learning in complex environments and can achieve better performance.The algorithm employs an epsilon-greedy action selection strategy to balance exploration and exploitation of the environment. The learning process is based on the Bellman equation, which updates the Q-value according to an optimal learning rule.
 
 ## Potential drawbacks
+
 - Storage limitations in complex environments: The storage requirements of Q-learning can become overwhelming when dealing with large state and action spaces, making it impractical for such scenarios.
 - Challenges in complex and interdependent environments: Q-learning may face difficulties in finding optimal strategies when actions have strong dependencies and long-term consequences, as it primarily focuses on immediate rewards and may not effectively capture long-term dependencies.
 - Incompatibility with continuous states: Q-learning is not directly applicable to problems with continuous state spaces. While approximation techniques like discretization or function approximation can be used, they often come at the cost of reduced performance and accuracy.
@@ -42,5 +45,6 @@ However, it has limitations, such as the need for large storage space for state-
 It's important to note that while Q-learning has these limitations, there are techniques and variations, such as Deep Q-learning, that aim to address some of these challenges and improve its applicability in complex and continuous environments.
 
 ## References
+
 - https://www.techtarget.com/searchenterpriseai/definition/Q-learning
 - https://huggingface.co/learn/deep-rl-course/unit2/introduction

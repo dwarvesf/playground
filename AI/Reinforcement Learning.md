@@ -1,5 +1,5 @@
 ---
-tags: engineering/ai, ai, chatgpt, llm, reinforcement learning, mdp, algorithms, 
+tags: engineering/ai, ai, chatgpt, llm, reinforcement learning, mdp, algorithms,
 authors: Pham Ngoc Thanh
 github_id: thanhpn
 date: 2023-06-05
@@ -7,9 +7,11 @@ icy: 10
 ---
 
 ## Introduction
+
 Reinforcement Learning (RL) is a machine learning method in which an automated system, known as an agent, interacts with a dynamic environment to learn and improve its action strategy. The goal of RL is to enable the agent to learn how to select actions in a variety of situations to maximize a reward function. Actions are iteratively repeated until the agent consistently chooses better actions for recurring situations.
 
 ## How Reinforcement learning work?
+
 In essence, the operation process of RL is as follows:
 
 1. The agent observes the current state of the environment through representations or features.
@@ -20,12 +22,14 @@ In essence, the operation process of RL is as follows:
 6. The above process is repeated until the agent achieves its goal or reaches optimal performance.
 
 ## Reinforcement learning algorithms
+
 RL algorithms typically employ a techique called “exploration-exploitation” to learn and improve the agent's strategy. During the exploration phase, the agent tries random actions to explore the environment and learn new information. In the exploitation phase, the agent selects actions based on the learned experience to maximize the obtained rewards.
 
-RL algorithms can utilize [[Q Learning | Q-Learning]], where the agent learns to evaluate actions based on a Q-Table that stores the estimated values of state-action pairs. The policy gradient algorithm focuses on learning the optimal policy by maximizing the expected reward value. Deep Q-Network (DQN) uses deep learning networks to estimate Q-values and enhances learning through reinforcement learning techniques and replay memory.
+RL algorithms can utilize [Q Learning](Q%20Learning.md), where the agent learns to evaluate actions based on a Q-Table that stores the estimated values of state-action pairs. The policy gradient algorithm focuses on learning the optimal policy by maximizing the expected reward value. Deep Q-Network (DQN) uses deep learning networks to estimate Q-values and enhances learning through reinforcement learning techniques and replay memory.
 
 ## How to train models incorporated with LLMs?
-Example of building a reinforcement learning algorithm for a stock trading application. We will use LLM (chatgpt) to evaluate the data and actions 
+
+Example of building a reinforcement learning algorithm for a stock trading application. We will use LLM (chatgpt) to evaluate the data and actions
 
 - Define the problem: Define the goals and scope of the system, this includes identifying the type of assets to trade, the trading horizon, and specific trading rules for generating actions such as placing buy/sell orders or cancelling orders.
 - Data Collection: Gather historical data on prices, trading volume, and relevant technical indicators related to the market. This data will be used to build the RL model and train the AI.
@@ -37,15 +41,18 @@ Example of building a reinforcement learning algorithm for a stock trading appli
 - Test and evaluate: Test the trained model and trading strategy on real-world data or a back test with dataset to evaluate performance and make adjustment if necessary. Continuously update the model and strategy over time to ensue ongoing performance and optimize trading outcomes.
 
 ## To be continued
+
 While RL can be applied to various domains, it requires significant time and computational resources to train the model. However, with its ability to learn and explore from experience, RL can achieve optimal performance in complex and uncertain tasks and purpose.
 
 ## References
+
 - https://www.andrew.cmu.edu/course/10-703/textbook/BartoSutton.pdf
 - https://github.com/jihoonerd/Deep-Reinforcement-Learning-with-Double-Q-learning/tree/master/paper
 - https://medium.com/ibm-data-ai/recommendation-systems-using-reinforcement-learning-de6379eecfde
 - https://towardsdatascience.com/how-to-create-a-fully-automated-ai-based-trading-system-with-python-708503c1a907
 
 ## Glossary
+
 - Agent: The interacting entity operates with the environment, and its actions are controlled by an algorithm.
 - MDP: Markov decision process
 - LLM: Large language model

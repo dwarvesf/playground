@@ -1,6 +1,6 @@
 ---
 tags: engineering/ai, llm, foundation-model, fine-tuning
-authors: Pham Duc Thanh
+authors: thanh
 github_id: zlatanpham
 date: 2023-05-18
 icy: 10
@@ -21,5 +21,6 @@ Nevertheless, challenges exist. Training these models can be cost-intensive, whi
 It's noteworthy that the use of foundation models isn't confined to language tasks. They are applicable across domains, whether it's image generation from text as seen with DALL-E 2, assisting in code writing like Copilot, discovering molecules in chemistry, or leveraging geospatial data in climate research.
 
 ## References
+
 - https://research.ibm.com/blog/what-are-foundation-models
 - [What are Generative AI models](https://www.youtube.com/watch?v=hfIUstzHs9A)

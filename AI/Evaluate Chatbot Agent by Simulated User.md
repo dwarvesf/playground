@@ -6,7 +6,7 @@ tags:
 authors:
   - hoangnnh
 date: 2024-09-12
-title: "Evaluate Chatbot Agent by User Simulation"
+title: 'Evaluate Chatbot Agent by User Simulation'
 description: "When building a chatbot agent, it's important to evaluate its performance and user satisfaction. One effective method is user simulation, which involves creating virtual users to interact with the chatbot and assess its responses. This approach allows for a more realistic evaluation of the chatbot's capabilities and user experience."
 ---
 
@@ -18,7 +18,7 @@ User Simulation is a technique of using AI evaluating AI, which can be more effi
 
 ## System Design
 
-![Simulated-User](assets/simulated-user.webp)
+![](assets/simulated-user.webp)
 
 The system will have two main components:
 
@@ -57,14 +57,11 @@ async function createSimulatedUser(): Promise<Runnable> {
 
   When you are finished with the conversation, respond with a single word 'FINISHED'`
 
-    const instructions = `Your name is Harrison. You are trying to get a refund for the trip you took to Alaska. \
+  const instructions = `Your name is Harrison. You are trying to get a refund for the trip you took to Alaska. \
   You want them to give you ALL the money back. \
   This trip happened 5 years ago.`
 
-  const prompt = ChatPromptTemplate.fromMessages([
-    ['system', systemPromptTemplate],
-    new MessagesPlaceholder('messages'),
-  ])
+  const prompt = ChatPromptTemplate.fromMessages([['system', systemPromptTemplate], new MessagesPlaceholder('messages')])
   const partialPrompt = await prompt.partial({ instructions })
 
   const chain = await partialPrompt.pipe(llm)
@@ -74,15 +71,11 @@ async function createSimulatedUser(): Promise<Runnable> {
 
 ### Step 3: Evaluator and helper functions
 
-- Because the conversation is actually between 2 AI, then we need a helper function to swap role for invoking LLM. 
+- Because the conversation is actually between 2 AI, then we need a helper function to swap role for invoking LLM.
 
 ```ts
 function swapRoles(messages: any[]): any[] {
-  return messages.map((m) =>
-    m instanceof AIMessage
-      ? new HumanMessage({ content: m.content })
-      : new AIMessage({ content: m.content }),
-  )
+  return messages.map((m) => (m instanceof AIMessage ? new HumanMessage({ content: m.content }) : new AIMessage({ content: m.content })))
 }
 ```
 
@@ -91,12 +84,8 @@ function swapRoles(messages: any[]): any[] {
 ```ts
 const parser = StructuredOutputParser.fromZodSchema(
   z.object({
-    reasoning: z
-      .string()
-      .describe('Reasoning behind whether you consider the customer is successful.'),
-    didSucceed: z
-      .boolean()
-      .describe('Whether the customer successfully refunded the trip or not.'),
+    reasoning: z.string().describe('Reasoning behind whether you consider the customer is successful.'),
+    didSucceed: z.boolean().describe('Whether the customer successfully refunded the trip or not.'),
   }),
 )
 
@@ -118,10 +107,7 @@ const createEvaluator = (instructions: string) => {
   ])
 }
 
-async function didSucceed(
-  rootRun: Run,
-  example: Example,
-): Promise<EvaluationResult> {
+async function didSucceed(rootRun: Run, example: Example): Promise<EvaluationResult> {
   const task = example.inputs['instructions']
   const conversation = rootRun.outputs?.['messages']
   const evaluator = createEvaluator(task)
@@ -144,22 +130,22 @@ async function didSucceed(
 - Now we can run the simulation.
 
 ```ts
-  await evaluate(simulation, {
-    data: "testing-simulated-user",
-    evaluators: [didSucceed as any],
-    experimentPrefix: 'testing-simulated-user-1',
-  })
+await evaluate(simulation, {
+  data: 'testing-simulated-user',
+  evaluators: [didSucceed as any],
+  experimentPrefix: 'testing-simulated-user-1',
+})
 ```
 
 ### 5. Result
 
 - Conversation:
 
-![Simulated-Conversation](assets/eval-simulation-chatbot.webp)
+![](assets/eval-simulation-chatbot.webp)
 
 As you can see, all 2 AI is play very good their play as a customer and customer support agent. Besides that, it seem the customer is failed to get a refund for the trip. Now let check whether the evaluator give a correct score or not.
 
-![Evaluator-Result](assets/simulated-conversation-eval.webp)
+![](assets/simulated-conversation-eval.webp)
 
 As you can see, the evaluator give score 0 for the conversation with the reasoning explain why that score is given.
 
@@ -168,7 +154,5 @@ As you can see, the evaluator give score 0 for the conversation with the reasoni
 In this article, we have go throught the technique to evaluate a chatbot/AI agent by using Simulated User. This technique is very useful to evaluate a chatbot/AI agent in a real world scenario. and it is also very flexible to be used in a variety of use case.
 
 ## References
+
 - https://github.com/langchain-ai/langgraph/blob/main/examples/chatbot-simulation-evaluation/agent-simulation-evaluation.ipynb
-
-
-

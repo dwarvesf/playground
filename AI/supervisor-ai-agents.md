@@ -1,12 +1,12 @@
 ---
-tags: 
+tags:
   - ai
   - llm
   - supervisor-architecture
-title: "Building Agent Supervisors to Generate Insights"
-description: "In the rapidly evolving field of artificial intelligence, the concept of agent supervisors has emerged as a powerful approach to orchestrating multiple AI agents for complex tasks. This article explores how building agent supervisors can lead to generating valuable insights, with a focus on a practical implementation in a Discord bot."
+title: 'Building Agent Supervisors to Generate Insights'
+description: 'In the rapidly evolving field of artificial intelligence, the concept of agent supervisors has emerged as a powerful approach to orchestrating multiple AI agents for complex tasks. This article explores how building agent supervisors can lead to generating valuable insights, with a focus on a practical implementation in a Discord bot.'
 date: 2024-07-11
-authors: 
+authors:
   - 0xm
 ---
 
@@ -14,7 +14,7 @@ authors:
 
 In the rapidly evolving field of artificial intelligence, the concept of agent supervisors has emerged as a powerful approach to orchestrating multiple AI agents for complex tasks. This article explores how building agent supervisors can lead to generating valuable insights, with a focus on a practical implementation in a Discord bot.
 
-![Agent Supervisor Architecture](assets/supervisor-ai-agents.webp)
+![](assets/supervisor-ai-agents.webp)
 
 ## Case Study: Discord Bot with Supervisor Architecture
 

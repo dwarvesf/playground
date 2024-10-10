@@ -9,19 +9,24 @@ description: Understanding LLM Tracing - Principles, Techniques, and Application
 authors:
   - antran
 ---
+
 ## When
+
 Building software with Large Language Models (LLMs) involves several steps, from planning to deployment. LLM tracing emerges as a final step in this process, providing ongoing insights and enabling continuous improvement of LLM-powered applications.
 
 ![](assets/llm-tracing-build-steps.webp)
 
 ## Why
+
 Before diving into tracing, it's important to understand the fundamental difference between traditional software and LLM-powered applications:
+
 - **Traditional software**: Deterministic, based on explicit instructions written by programmers.
 - **With LLMs**: Probabilistic, based on neural networks with weights determined through training.
 
 ![](assets/llm-tracing-architecture.webp)
 
 Why LLM Tracing is Necessary:
+
 1. **Unpredictable Outputs**: LLMs can produce different outputs for the same input due to their probabilistic nature.
 2. **Black Box Nature**: The decision-making process of an LLM is opaque.
 3. **Complex Interactions**: LLMs often interact with multiple components (e.g., retrieval systems, filters, classifiers, external APIs) in ways that aren't immediately obvious.
@@ -31,21 +36,25 @@ Why LLM Tracing is Necessary:
 7. **Continuous Improvement**: LLMs can be improved through better prompts, fine-tuning, or model updates.
 
 ## Key Metrics
-| **Basic** | **Evaluating** |
-| ---- | ---- |
+
+| **Basic**                                                                            | **Evaluating**                                                                                         |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | Latency<br>Throughput<br>Error Rate<br>Resource Utilization<br>Execution Time<br>... | Factual Accuracy<br>Relevance<br>Bias Detection and Fairness<br>Hallucination Rate<br>Coherence<br>... |
+
 While basic metrics like latency and throughput measure operational performance, evaluative metrics dig deeper into the actual output and behavior of the LLM.
 
 ## Tools
+
 Some popular tools that support various aspects of LLM tracing:
+
 - [LangSmith](https://docs.smith.langchain.com/)
 - [Phoenix (by Arize)](https://arize.com/)
 - [TraceLoop](https://arize.com/)
 - [OpenTelemetry](https://opentelemetry.io/blog/2024/llm-observability/)
 - [Portkey](https://portkey.ai/)
 
-
 ## References
+
 - https://colab.research.google.com/github/Arize-ai/phoenix/blob/main/tutorials/llm_ops_overview.ipynb
 - https://arize.com/blog-course/llm-evaluation-the-definitive-guide/
 - https://docs.smith.langchain.com/how_to_guides/tracing

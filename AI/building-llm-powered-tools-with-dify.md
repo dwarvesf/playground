@@ -1,5 +1,5 @@
 ---
-title: "Streamlining Internal Tool Development with Managed LLMOps: A Dify Case Study"
+title: 'Streamlining Internal Tool Development with Managed LLMOps: A Dify Case Study'
 description: Discover how managed LLMOps platforms like Dify streamline the development of AI-powered internal tools. Learn about the challenges of integrating LLMs, the benefits of managed solutions, and real-world examples of efficient AI tool creation. Perfect for businesses looking to enhance productivity with AI without extensive technical expertise."
 tags:
   - design patterns
@@ -69,7 +69,7 @@ Using large language models, this workflow helps translate and summarize convers
 
 ![assets/building-llm-powered-tools-with-dify-discord-summarizer.webp](assets/building-llm-powered-tools-with-dify-discord-summarizer.webp)
 
-These tools help us significantly increase our productivity. We extensively use Claude 3.5 Sonnet, and occasionally GPT-4 for more detailed instructions. Without the hard work of @innno_ and her efforts on our social media platforms, we wouldn't be able to build these tools.
+These tools help us significantly increase our productivity. We extensively use Claude 3.5 Sonnet, and occasionally GPT-4 for more detailed instructions. Without the hard work of @innno\_ and her efforts on our social media platforms, we wouldn't be able to build these tools.
 
 ## Best practices for developing internal LLM tools
 
