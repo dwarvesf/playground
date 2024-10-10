@@ -13,9 +13,11 @@ authors:
 User intent classification is a crucial aspect of conversational AI, start with machine learning models, but now advanced language models (LLMs) are being explored for this task. Unlike the old methods which is need to labeled datasets exhaustively, LLMs can understand what users mean without all that preparation. This memo explores the application of LLMs in intent classification, highlighting their potential to streamline the process and overcome traditional NLU limitations.
 
 ## Introduction
+
 Intent Classification is the process of determining the purpose or goal behind a user's input in a conversational AI system. There are many methods to capture it, it can be human involving, machine learning. With LLM, we take adavantage of its ability to understand context and nuance, allowing it to accurately classify user intents without the need for extensive labeled data.
 
-## Example 
+## Example
+
 We have an chatbot agent for an e-commerce platform. We will use LLM to classify user intent and based on that, the agent flow will be different.
 
 ```python
@@ -33,7 +35,7 @@ Respond with only the JSON object, nothing else.
 """
 ```
 
-As you can see, with user input, the LLM can process a different flow which may content multiple step behind. This is a simple example, but it illustrates the potential of LLMs to understand and respond to user intents accurately and efficiently. 
+As you can see, with user input, the LLM can process a different flow which may content multiple step behind. This is a simple example, but it illustrates the potential of LLMs to understand and respond to user intents accurately and efficiently.
 
 ## Usage tips
 
@@ -43,7 +45,7 @@ As you can see, with user input, the LLM can process a different flow which may 
 
 Example:
 
- - Without CoT:
+- Without CoT:
 
 ```python
 prompt="Classify the following user query into one of these intents: CheckBalance, Transfer, CustomerSupport, Loan, Invest"
@@ -68,7 +70,7 @@ prompt="Classify the following user query into one of these intents: CheckBalanc
 
 '''
 Input: I want to put $5000 into stocks. What are my options?
-Reasoning: 
+Reasoning:
 1. The user wants to put money into stocks, which is a form of investment.
 2. They're asking about options, seeking advice on investment choices.
 3. This is not about checking balance, transferring money, or customer support.
@@ -115,6 +117,7 @@ Besides the above tips, there are some limitations to consider when using LLMs f
 Intent classification is a crucial step in building a conversational AI system. Taking adavantage of LLM power, we can easy extract user intent, It support a lot in workflow of a LLM applications.
 
 ## References
+
 - https://www.vellum.ai/blog/how-to-build-intent-detection-for-your-chatbot
 - https://www.linkedin.com/pulse/leveraging-large-language-models-intent-bassel-mokabel-wj1vc/
 - https://docs.voiceflow.com/docs/llm-intent-classification-method
