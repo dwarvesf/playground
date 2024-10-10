@@ -1,7 +1,7 @@
 ---
 tags:
   - llm
-title: Intent Classification by LLM
+title: 'Intent Classification by LLM'
 date: 2024-10-09
 description: 'User intent classification is a crucial aspect of conversational AI, start with machine learning models, but now advanced language models (LLMs) are being explored for this task. Unlike the old methods which is need to labeled datasets exhaustively, LLMs can understand what users mean without all that preparation. This memo explores the application of LLMs in intent classification, highlighting their potential to streamline the process and overcome traditional NLU limitations.'
 authors:
@@ -17,7 +17,7 @@ Intent Classification is the process of determining the purpose or goal behind a
 We have an chatbot agent for an e-cormerce platform. We will use LLM to classify user intent and based on that, the agent flow will be different.
 
 ```python
-prompt=SYSTEM_PROMPT = """
+prompt= """
 You are an AI assistant for an e-commerce platform. Your task is to understand the user's intent and respond accordingly. The possible intents are:
 
 1. Product Search: User is looking for a product. Return a JSON object with "intent": "product_search" and "keywords": [list of search terms].
