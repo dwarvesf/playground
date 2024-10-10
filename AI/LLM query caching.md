@@ -1,10 +1,14 @@
 ---
-tags: engineering/ai, ai, chatgpt, llm, vector-database
-authors: thanh
-title: 'LLM query caching'
+tags: 
+- ai
+- llm
+- vector-database
+authors: 
+- thanh
+title: Query Caching for Large Language Models
+description: An exploration of query caching in Large Language Models (LLMs), focusing on how semantic vector databases can drastically improve efficiency and reduce computational costs by reusing cached answers for semantically similar queries.
 github_id: zlatanpham
 date: 2023-06-09
-icy: 10
 ---
 
 It's quite fascinating to see the increasingly pivotal role that Large Language Models (LLMs) are playing in various applications, covering the spectrum from natural language processing tasks to predictive typing, and more. An undeniable challenge, however, comes in the form of processing speed and computational cost associated with these models. But there's light at the end of the tunnel with a ground-breaking approach known as query caching, which holds potential for drastically transforming LLMs' efficiency and cost-effectiveness.

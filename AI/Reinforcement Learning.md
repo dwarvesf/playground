@@ -1,10 +1,15 @@
 ---
-tags: engineering/ai, ai, chatgpt, llm, reinforcement learning, mdp, algorithms,
-authors: Pham Ngoc Thanh
-title: 'Reinforcement Learning'
+tags: 
+- ai  
+- llm
+- reinforcement-learning
+authors: 
+- thanhpn
+title: 'Introduction to Reinforcement Learning and Its Application with LLMs'
 github_id: thanhpn
 date: 2023-06-05
 icy: 10
+description: 'An introduction to Reinforcement Learning (RL), a machine learning method where an agent learns to make decisions by interacting with an environment. This article covers the basics of RL, including how it works, common algorithms, and its application in training models with Large Language Models (LLMs).'
 ---
 
 ## Introduction
@@ -24,7 +29,7 @@ In essence, the operation process of RL is as follows:
 
 ## Reinforcement learning algorithms
 
-RL algorithms typically employ a techique called “exploration-exploitation” to learn and improve the agent's strategy. During the exploration phase, the agent tries random actions to explore the environment and learn new information. In the exploitation phase, the agent selects actions based on the learned experience to maximize the obtained rewards.
+RL algorithms typically employ a techique called "exploration-exploitation" to learn and improve the agent's strategy. During the exploration phase, the agent tries random actions to explore the environment and learn new information. In the exploitation phase, the agent selects actions based on the learned experience to maximize the obtained rewards.
 
 RL algorithms can utilize [Q Learning](Q%20Learning.md), where the agent learns to evaluate actions based on a Q-Table that stores the estimated values of state-action pairs. The policy gradient algorithm focuses on learning the optimal policy by maximizing the expected reward value. Deep Q-Network (DQN) uses deep learning networks to estimate Q-values and enhances learning through reinforcement learning techniques and replay memory.
 

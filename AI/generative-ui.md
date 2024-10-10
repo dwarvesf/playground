@@ -2,9 +2,9 @@
 tags:
   - AI
   - generative-ui
-  - ux
-title: 'Generative UI'
-description: 'Generative UI refers to a dynamic and adaptive user interface that is generated and adjusted in real-time by artificial intelligence (AI) to better meet user needs and preferences. Unlike static interfaces, where the layout and elements are predetermined, generative UIs leverage AI algorithms to create and modify interface components based on user interactions and contextual information.'
+  - llm
+title: What is Generative UI?
+description: An introduction to Generative UI (genUI), a user interface that generates interactive elements in response to user needs using AI, enhancing UX in chat applications. The article explores examples, benefits, and popular solutions like the Vercel AI SDK for implementing generative UI.
 authors:
   - namnanh14mn
   - TheCodister

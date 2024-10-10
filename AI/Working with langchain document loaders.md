@@ -1,10 +1,15 @@
 ---
-tags: engineering/ai, ai, langchain, tuning-llm, llm, document-loaders
-authors: Nguyen Xuan Anh
+tags: 
+  - ai
+  - langchain
+  - llm
+  - tuning-llm 
+authors: 
+- monotykamary
 github_id: monotykamary
 title: 'Working with langchain document loaders'
 date: 2023-04-21
-icy: 10
+description: 'This article explores Langchain document loaders, explaining their role in overcoming token limits, integrating with vector databases, and demonstrating how to build a question-answering system using CSV data and an AI agent.'
 ---
 
 [Langchain](https://python.langchain.com/) is a framework that enables the development of applications that utilize language models. It provides support for various main modules, including Models, Prompts, Memory, Indexes, Chains, and Agents. LangChain believes that applications with the greatest power and differentiation will not only rely on calling out to a language model via an API but will also be aware of data and allow a language model to interact with its environment.
@@ -13,7 +18,7 @@ icy: 10
 
 The [document loaders](https://python.langchain.com/en/latest/modules/indexes/document_loaders.html) in Langchain are used to get around the [[Workaround with OpenAI's token limit with Langchain|~4K token limit on OpenAI]] by using several strategies such as stuffing, map-reduce, refining, and map-rerank. These strategies are used to split documents into smaller sections or summaries that can fit into the 4K token limit and consolidate them as a summary that can fit into the 4K token limit. These strategies are also used to refine prompts to ChatGPT to refine its context prior to composing a final summary that will then be used to prime the conversation for the response.
 
-These data are saved and indexed as vectors in a [[Vector Database|vector database]]. Vector indexes are used to capture word meaning and represent it in a continuous space. This helps the model to understand the context and generate more accurate responses.
+These data are saved and indexed as vectors in a [[Vector Database|vector database]]. Vector indexes are used to capture word meaning and represent it in a continuous space. This helps the model to understand the context and generate more accurate responses.
 
 ![](assets/working-with-langchain-document-loaders_langchain-document-loader-flow.webp)
 
@@ -31,7 +36,6 @@ In order to get question and answering from prompts, we follow 4 steps with lang
 Below is an example using a CSV file through an agent. This CSV contains `red-alert` channel data from Dwarves' discord as the context for our questions that we will be asking later.
 
 0. First we load all of our `pip` packages
-
 ```sh
 pip install langchain openai huggingface_hub gitpython chromadb tiktoken google-api-python-client llama-cpp-python
 ```

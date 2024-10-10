@@ -1,10 +1,15 @@
 ---
-tags: engineering/ai, machine-learning, q-learning, reinforcement-learning, deep-q-learning
+tags: 
+- ai
+- machine-learning
+- llm
 authors: Pham Ngoc Thanh
 title: 'Q Learning'
 github_id: thanhpn
+authors:
+- thanhpn
 date: 2023-06-22
-icy: 10
+description: An introduction to Q-learning, a model-free reinforcement learning algorithm used to learn optimal policies in Markov Decision Processes.
 ---
 
 Q-learning is a model-free reinforcement learning algorithm used to learn an optimal policy in a Markov Decision Process (MDP). It is an off-policy method, meaning that it learns by observing and updating a value function based on the maximum expected future rewards.

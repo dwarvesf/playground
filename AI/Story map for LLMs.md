@@ -1,11 +1,14 @@
 ---
-tags: engineering/ai, ai, openai, chatgpt, langchain, tuning-llm, llm, prompt-engineering, fine-tuning, rlhf, story-map
-authors: Nguyen Xuan Anh
+tags: 
+- ai
+- llm
+- prompt-engineering
+authors: 
+- monotykamary
 title: 'Story map for LLMs'
 github_id: monotykamary
 date: 2023-08-09
-icy: 15
-blog: https://dwarvesf.hashnode.dev/an-engineering-story-map-for-llms
+description: 'A comprehensive guide outlining the journey for engineers developing applications on top of Large Language Models (LLMs), covering key stages from understanding AI basics to fine-tuning models.'
 ---
 
 ## Story Map: Journey for Engineers Developing Applications on top of Large Language Models (LLMs)

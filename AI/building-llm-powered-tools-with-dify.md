@@ -2,10 +2,9 @@
 title: 'Streamlining Internal Tool Development with Managed LLMOps: A Dify Case Study'
 description: Discover how managed LLMOps platforms like Dify streamline the development of AI-powered internal tools. Learn about the challenges of integrating LLMs, the benefits of managed solutions, and real-world examples of efficient AI tool creation. Perfect for businesses looking to enhance productivity with AI without extensive technical expertise."
 tags:
-  - design patterns
-  - software architecture
-  - object-oriented programming
-  - behavioral patterns
+  - ai-powered
+  - ai
+  - llm
 date: 2024-07-12
 authors:
   - monotykamary

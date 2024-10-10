@@ -1,9 +1,13 @@
 ---
 tags:
   - AI
+  - machine-learning
+  - llm
 authors:
   - tieubao
 title: 'A Grand Unified Theory of the AI Hype Cycle'
+description: An exploration of the cyclical nature of AI development, tracing the rise and fall of new technologies within the field, and how this pattern has repeated throughout history.
+date: 2024-06-13
 ---
 
 ## The Cycle
