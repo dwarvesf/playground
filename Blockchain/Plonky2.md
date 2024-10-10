@@ -1,10 +1,13 @@
 ---
-tags: blockchain, zk, plonky2, proof-of-knowledge, nipopok, scalability, polygon, polygon-zero, merkle-tree
-authors: Pham Ngoc Thanh
+tags: 
+ - blockchain
+ - proof-of-knowledge
+authors: 
+ - thanhpn
+description: Plonky2 is a non-Interactive Proof of Proof of Knowledge (NIPoPoK) chain that reduces blockchain size and speeds up transaction confirmations. This article explores Plonky2's technology, its applications in various blockchain projects, and compares it with other scaling solutions.
 title: 'Plonky2'
 github_id: thanhpn
 date: 2023-02-28
-icy: 10
 ---
 
 ## Introduction
@@ -77,7 +80,7 @@ In addition, Plonky2 also depends on the security of the hash system and the ell
 - Plonky2 vs. SegWit: SegWit (Segregated Witness) is a solution used on the Bitcoin network to reduce transaction size and increase processing speed. However, SegWit cannot solve the problems related to network scalability. Meanwhile, Plonky2 uses a number of different techniques such as Merkle tree and non-interactive attestation to reduce blockchain size and speed up transaction processing, while improving the scalability of the system.
 - Plonky2 vs. Lightning Network: Lightning Network is a technology used to reduce costs and speed up transaction processing on the Bitcoin network. However, Lightning Network cannot solve the problem of network scalability. Meanwhile, Plonky2 reduces the blockchain size and increases transaction processing speed without compromising the safety and security of the system, while improving the scalability of the network.
 - Plonky2 vs. Sharding: Sharding is a solution used to improve the scalability of the blockchain system by dividing the blockchain into parts and processing them independently. However, Sharding has limitations on the safety and security of the system. Meanwhile, Plonky2 helps to reduce blockchain size and speed up transaction processing without affecting the safety and security of the system.
-- Plonky2 vs. Plasma: Plasma is a solution used to improve Ethereum's scalability by layering and processing transactions on sidechains. However, Plasma still
+- Plonky2 vs. Plasma: Plasma is a solution used to improve Ethereum's scalability by layering and processing transactions on sidechains. 
 
 ## Reference
 

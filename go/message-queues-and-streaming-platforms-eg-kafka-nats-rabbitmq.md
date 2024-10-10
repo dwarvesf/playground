@@ -5,20 +5,19 @@ tags:
   - engineering
 title: Message Queues And Streaming Platforms Eg Kafka Nats Rabbitmq
 date: 2023-05-04
-description: null
+description: An in-depth exploration of message brokers, their use cases, and implementation examples using RabbitMQ in Go. Covers the basics of message queues, their advantages and disadvantages, and common patterns like work queues and publish/subscribe models.
+authors:
+  - datpv
 ---
 
-<!-- table_of_contents 06b40d23-c5b2-457b-af47-eeb64436cb75 -->
-
-_At Dwarves Foundation, we host a few learning sessions to understand some of the technology around us. We regularly pick up topics we find interesting to dive deeper into to understand them better and present our findings. One topic that piqued my interest was the use of message brokers, due to how prevalent their use case is in our projects._
+At Dwarves Foundation, we host a few learning sessions to understand some of the technology around us. We regularly pick up topics we find interesting to dive deeper into to understand them better and present our findings. One topic that piqued my interest was the use of message brokers, due to how prevalent their use case is in our projects._
 
 In today's digital world, the exchange of information between different systems and applications is becoming increasingly important. With the rise of cloud computing and the Internet of Things (IoT), there is a growing need for these systems to communicate with each other seamlessly. This is where message brokers come in. A message broker is a middleware solution that provides a platform for exchanging messages between applications, systems, and services. They act as intermediaries, ensuring that messages are delivered reliably and efficiently.
 
 Without message brokers, communication between systems and applications would be much more difficult. They provide a common language that different systems can use to communicate with each other, regardless of the programming language or the hardware used. They also help to ensure that messages are delivered in the correct order, and can handle large volumes of messages without overwhelming the system.
 
 ## What is a Message Broker?
-
-**A** **Message broker** is an intermediary program designed to validate, transform, and route messages. They serve the communication needs between applications.
+**A Message broker** is an intermediary program designed to validate, transform, and route messages. They serve the communication needs between applications.
 
 With a Message broker, the source application (producer) sends a message to a server process that can provide data sorting, routing, message translation, persistence, and delivery to all appropriate destinations (consumers).
 
@@ -33,7 +32,6 @@ There are 2 basic forms of communication with a Message Broker:
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_56d936f810e3423ac48427e1d7ca3f64_md5.webp)
 
 ## When and why to use Message Broker
-
 Message brokers are versatile tools that can address a wide range of business needs across industries and in a variety of enterprise computing environments.
 
 Here are some common ways message brokers are used:
@@ -43,7 +41,6 @@ Here are some common ways message brokers are used:
 - **Protecting highly sensitive data at rest and in transit:** If your industry is heavily regulated or your company faces significant security risks, it's important to choose a messaging solution that supports end-to-end encryption.
 
 ### Topdev’s online CV creation example
-
 Message Broker helps web servers to send responses to requests quickly instead of being forced to run a resource-consuming procedure on a system. Queuing messages is a good solution when we want to distribute messages to many recipients to reduce the load on processing workers.
 
 For example, when users are allowed to create PDF files for IT CV templates from TopDev's online CV creation software, the problem is when thousands of users click on the "create PDF" button at the same time, the server receives many requests that will cause some problems such as slow response, overload, and even not being able to create a PDF file due to congestion. In this case, we need to use Message Broker to push these requests into a queue. The mechanism is as follows:
@@ -58,7 +55,6 @@ A consumer takes a message from the queue and starts processing the PDF while a 
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_c17d6fd298e5729424b4b04d7cee315f_md5.webp)
 
 ### Advantages and Disadvantages
-
 There are a few advantages and disadvantages with a job request messaging on message brokers:
 
 Advantages:
@@ -74,7 +70,6 @@ Disadvantages:
 - Additional operational complexity: the message broker is another component in a system that must be installed, configured, and maintained.
 
 ## RabbitMQ
-
 RabbitMQ is a message broker that accepts and forwards messages, similar to a post office. When you put mail in a post box, you can be confident that the letter carrier will eventually deliver it to the recipient. RabbitMQ plays the roles of both the post box and post office, as well as the letter carrier.
 
 The main difference between RabbitMQ and the post office is that RabbitMQ doesn't handle physical paper but instead accepts, stores, and forwards binary data called messages.
@@ -111,7 +106,6 @@ Topic exchange will make a wildcard to match the routing key with a routing patt
 A header exchange will use the header attributes of the message to route it. Headers Exchange is very similar to Topic Exchange but it routes based on header values instead of routing keys. A message is considered a match if the value of the header matches the value specified when bound.
 
 ## Common Pattern
-
 ### Work Queue - **Distributing tasks among workers**
 
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_59d782666f97eef826223c424dba2e03_md5.webp)

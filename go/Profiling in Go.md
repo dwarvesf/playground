@@ -1,21 +1,23 @@
 ---
-tags: engineering, go, software, backend, basic, profiling, debugging
-authors: Nguyen Toan Thang
+tags: 
+- go
+- engineering
+- profiling
+authors: 
+  - thangnt294
 title: 'Profiling in Go'
-github_id: thangnt294
 date: 2023-03-28
-icy: 10
+description: Profiling in Go is a powerful tool that can help you identify and fix the subtle issues in your code quickly and efficiently. In this article, we'll explore the world of profiling in Go and show you how you can use it to catch all the issues in your code.
 ---
 
 ## Profiling in Go: Gotta catch 'em all
-
-## Introduction
+### Introduction
 
 Those of you who have watched the Pokemon series will undoubtedly recognize the famous catchphrase - "Gotta catch 'em all" - that refers to the main character's goal of catching all the Pokemon in the world. In the same way, profiling is a useful way to catch all the problems in your code and ensure that it's running smoothly. It's a powerful tool that can help you identify and fix the subtle issues in your code quickly and efficiently.
 
 In this article, we'll explore the world of profiling in Go and show you how you can use it to catch all the issues in your code.
 
-## Problem
+### Problem
 
 First, let's take a look at the problem we're facing. Check out this command:
 
@@ -144,7 +146,7 @@ There are multiple type of profiling we can apply to our program. These include:
 
 The most commonly used types of profiling in Go are CPU profiling and memory profiling, which are also considered the most useful. We will only apply these two.
 
-## Solution
+### Solution
 
 Go already has a package for profiling call `pprof`, but let's use Dave Cheney's package for simplicity. Run this command:
 

@@ -1,8 +1,13 @@
 ---
-tags: blockchain, blockchain-bridge
-authors: Pham Ngoc Thanh
+tags: 
+ - blockchain
+ - blockchain-bridge
+ - web3
+authors: 
+  - thanhpn
 title: 'Blockchain Bridge'
 github_id: thanhpn
+description: A comprehensive guide to understanding blockchain bridges, their types, and how they facilitate communication and asset transfers between different blockchain networks.
 date: 2022-06-21
 ---
 
@@ -66,7 +71,7 @@ Agents monitor events on the source chain and generate cryptographic proof of pa
 
 This is similar to a peer-to-peer network where each node acts as a “router” containing a “store” of assets of both the source and destination chains. These networks typically leverage the security of the underlying blockchain; Through the use of locking and contention mechanisms, users are assured that routers cannot run away with user funds. As a result, liquidity networks like Connext may be a safer option for users who are transferring large amounts of value. Furthermore, this type of bridge may be most suitable for cross-chain asset transfers because the assets provided by the router are the origin of the destination chain and not a derivative, which are not fully interchangeable.
 
-## Depending on the design, each bridge will have its own characteristics:
+## Depending on the design, each bridge will have its own characteristics
 
 Security: Assumptions about reliability and viability, tolerance to malicious actors, safety of user funds, and reflectiveness.
 
@@ -85,7 +90,7 @@ Similar to Trilemma in terms of scalability, there exists a Trilemma of interope
 - Scalability: can be supported on any domain.
 - Generalizability: capable of handling arbitrary cross-domain data.
 
-## Risks of using bridge:
+## Risks of using bridge
 
 - There is a bug in the smart contract.
 - The underlying blockchain is hacked or the block is rolledback: The data of a block is preserved in one chain but cannot be changed in the other chain.

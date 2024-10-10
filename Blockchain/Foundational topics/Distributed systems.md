@@ -1,6 +1,11 @@
 ---
-tags: blockchain, foundational-topics, distributed-systems
-authors: Pham Ngoc Thanh
+tags: 
+ - blockchain
+ - foundational-topics
+ - distributed-systems
+authors: 
+ - thanhpn
+description: This article provides an overview of distributed systems in blockchain technology, including their definition, advantages, and how they work.
 title: 'Distributed systems'
 github_id: thanhpn
 date: 2022-06-16
