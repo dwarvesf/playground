@@ -4,7 +4,9 @@ tags:
   - vim
 title: 'Connecting Vim With Golang'
 date: 2015-10-16
-description: null
+authors:
+  - tieubao
+description: A comprehensive guide on using Vim as an IDE for Go development. Learn about Vim basics, installation, configuration, essential plugins like vim-go, and customization techniques to enhance your Go coding workflow in Vim.
 ---
 
 ## An introduction to Vim and how to use Vim with Golang

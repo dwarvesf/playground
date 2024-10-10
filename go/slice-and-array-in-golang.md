@@ -1,14 +1,18 @@
 ---
 tags:
   - go
+  - data-structures
+  - golang
 title: 'Slice And Array In Golang'
 date: 2018-03-13
-description: null
+description: An in-depth exploration of arrays and slices in Go, covering their differences, internal implementations, and key operations like append. Learn about fixed-length arrays, flexible slices, and how Go manages memory allocation for growing slices.
+authors:
+ - hieuthu1
 ---
 
 ### Array
 
-**TL;DR:** The different between array in Go and C:
+**TL;DR:** The differences between array in Go and C:
 
 - Arrays are values. Assigning one array to another copies all the elements.
 - In particular, if you pass an array to a function, it will receive a copy of the array, not a pointer to it.
