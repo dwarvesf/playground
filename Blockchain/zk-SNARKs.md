@@ -1,10 +1,14 @@
 ---
-tags: blockchain, network, ethereum, zero-knowledge, snarks
-authors: Bien Vo
+tags: 
+ - blockchain
+ - ethereum
+ - zero-knowledge
+authors: 
+ - bienvh
 title: 'zk-SNARKs'
 github_id: vhbien000
 date: 2022-12-09
-icy: 10
+description: ZK-SNARKs is a type of zero-knowledge proof that allows one party to prove to another that a given statement is true, without revealing any additional information. This article provides an overview of zk-SNARKs, how they work, and their applications in blockchain technology.
 ---
 
 ## What is this?

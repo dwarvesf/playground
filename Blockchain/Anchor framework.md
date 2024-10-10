@@ -1,9 +1,15 @@
 ---
-tags: blockchain, solana, anchor, tutorial
-authors: Pham Ngoc Thanh
+tags: 
+ - blockchain
+ - solana
+ - anchor
+ - tutorial
+authors: 
+ - thanhpn
 title: 'Anchor framework'
 github_id: thanhpn
 date: 2022-07-01
+description: A comprehensive guide to getting started with smart contract development on Solana using the Anchor framework. This tutorial covers the basics of Anchor, its components, installation process, and provides step-by-step instructions for creating and deploying a simple program.
 ---
 
 This article features a short tutorial to start smart contract development on Solana using Anchor framework. Before you get started, we assume you already had the experience with:
@@ -236,7 +242,7 @@ SUBCOMMANDS:
 
 - https://github.com/thanhpn/solana-anchor-template
 
-#### Reference
+### Reference
 
 - https://docs.rs/anchor-lang/latest/anchor_lang/accounts/account/struct.Account.html
 - https://book.anchor-lang.com/introduction/what_is_anchor.html

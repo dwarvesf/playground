@@ -1,10 +1,12 @@
 ---
 tags:
   - NFT
+  - blockchain
 authors:
-  - Tran Khac Vy
+  - khacvy
 title: 'NFT Fractionalization'
 github_id: trankhacvy
+description: NFT Fractionalization is a process of dividing a non-fungible token (NFT) into smaller, fractional tokens that represent partial ownership of the original NFT. This article provides an overview of fractional NFTs, how they work, and their benefits.
 date: 2022-06-18
 ---
 

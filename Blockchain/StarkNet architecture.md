@@ -1,10 +1,15 @@
 ---
-tags: blockchain, evm, zk-rollup, zk, StarkNet, architecture
-authors: Pham Ngoc Thanh
+tags: 
+ - blockchain
+ - evm
+ - zk-rollup
+ - StarkNet
+authors: 
+ - thanhpn
 title: 'StarkNet architecture'
 github_id: thanhpn
 date: 2022-12-26
-icy: 10
+description: This article provides an overview of StarkNet's architecture, including its main components, how it works, and its transaction lifecycle. It also covers the messaging mechanism between Layer 1 and Layer 2, as well as the node clients used in the StarkNet network.
 ---
 
 ## StarkNet layer 2 solution

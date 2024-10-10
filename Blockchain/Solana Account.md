@@ -1,10 +1,13 @@
 ---
-tags: blockchain, solana
-authors: Tran Khac Vy
+tags: 
+ - blockchain
+ - solana
+authors: 
+ - khacvy
 title: 'Solana Account'
 github_id: trankhacvy
 date: 2022-11-17
-icy: 10
+description: This article provides an overview of Solana accounts, including their structure, types, and how they work.
 ---
 
 Unlike most blockchain, Solana separates logic and data into two separate components: Program and Account. What that means is that instead of storing data inside variables internally, Programs interact with external data stored in Accounts with the ability to mutate them.
