@@ -70,3 +70,7 @@ To conclude, it is evident that AI has become one of the most disruptive forces 
 - [https://huyenchip.com/2024/03/14/ai-oss.html](https://huyenchip.com/2024/03/14/ai-oss.html)
 - [https://huyenchip.com/llama-police](https://huyenchip.com/llama-police)
 - [https://www.bloomberg.com/company/press/generative-ai-to-become-a-1-3-trillion-market-by-2032-research-finds/](https://www.bloomberg.com/company/press/generative-ai-to-become-a-1-3-trillion-market-by-2032-research-finds/)
+
+---
+
+> Next: [Use cases](use-cases-for-LLM-applications.md)

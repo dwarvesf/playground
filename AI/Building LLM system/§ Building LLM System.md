@@ -82,7 +82,7 @@ LLM systems need to handle complex reasoning, task delegation, and actions based
 
 Using right metrics and method for specific use case in LLM.
 
-- Evaluation Metrics
+- [Evaluation Metrics](evaluation-guideline-for-LLM-application.md)
 - [AI-as-a-Judge](llm-as-a-judge.md)
 
 ## Observability and Orchestration
