@@ -5,10 +5,10 @@ tags:
 - llm
 authors: 
 - monotykamary
-title: 'Workaround with OpenAI's token limit with Langchain'
+title: "Workaround with OpenAI's token limit with Langchain"
 github_id: monotykamary
 date: 2023-04-21
-description: 'This article explores strategies to overcome OpenAI's token limit using Langchain, including stuffing, map-reduce, refining, and map-rerank methods. It discusses the advantages and drawbacks of each approach in handling large documents or prompts while working within the constraints of OpenAI's API.'
+description: "This article explores strategies to overcome OpenAI's token limit using Langchain, including stuffing, map-reduce, refining, and map-rerank methods. It discusses the advantages and drawbacks of each approach in handling large documents or prompts while working within the constraints of OpenAI's API."
 ---
 
 ## Problem
