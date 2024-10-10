@@ -1,6 +1,7 @@
 ---
 tags: engineering/ai, ai, chatgpt, llm, reinforcement learning, mdp, algorithms,
 authors: Pham Ngoc Thanh
+title: 'Reinforcement Learning'
 github_id: thanhpn
 date: 2023-06-05
 icy: 10

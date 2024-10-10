@@ -1,6 +1,7 @@
 ---
 tags: engineering/ai, machine-learning, q-learning, reinforcement-learning, deep-q-learning
 authors: Pham Ngoc Thanh
+title: 'Q Learning'
 github_id: thanhpn
 date: 2023-06-22
 icy: 10

@@ -1,6 +1,7 @@
 ---
 tags: engineering/ai, llm, accuracy, self-refinement, prompt-engineering, chatgpt
-authors: Pham Duc Thanh
+authors: thanh
+title: 'LLM's Accuracy - Self Refinement'
 github_id: zlatanpham
 date: 2023-06-29
 icy: 10

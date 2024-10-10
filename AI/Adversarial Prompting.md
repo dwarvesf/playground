@@ -1,6 +1,7 @@
 ---
 tags: engineering/ai, llm, prompt-engineering, gpt, security, ai-safety
-authors: Pham Duc Thanh
+authors: thanh
+title: 'Adversarial Prompting'
 github_id: zlatanpham
 date: 2023-07-10
 icy: 10

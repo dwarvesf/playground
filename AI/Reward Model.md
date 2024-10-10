@@ -2,6 +2,7 @@
 tags: engineering/ai, ai, chatgpt, llm, reinforcement-learning, mdp, algorithms
 authors: Pham Ngoc Thanh
 github_id: thanhpn
+title: 'Reward Model'
 date: 2023-06-23
 icy: 10
 ---

@@ -1,6 +1,7 @@
 ---
 tags: engineering/ai, llm, vector-database, chatbot, gpt
-authors: Pham Duc Thanh
+authors: thanh
+title: 'Dealing with Long-Term Memory in AI Chatbot'
 github_id: zlatanpham
 date: 2023-07-06
 icy: 10

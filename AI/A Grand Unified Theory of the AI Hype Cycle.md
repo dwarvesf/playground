@@ -3,6 +3,7 @@ tags:
   - AI
 authors:
   - tieubao
+title: 'A Grand Unified Theory of the AI Hype Cycle'
 ---
 
 ## The Cycle

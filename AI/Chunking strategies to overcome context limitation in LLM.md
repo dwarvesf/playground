@@ -1,6 +1,7 @@
 ---
 tags: engineering/ai, llm, chunking, gpt, token-limit, vector-database
 authors: thanh
+title: 'Chunking strategies to overcome context limitation in LLM'
 github_id: zlatanpham
 date: 2023-07-08
 icy: 10

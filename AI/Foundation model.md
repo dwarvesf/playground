@@ -1,6 +1,7 @@
 ---
 tags: engineering/ai, llm, foundation-model, fine-tuning
 authors: thanh
+title: 'Foundation model'
 github_id: zlatanpham
 date: 2023-05-18
 icy: 10

@@ -1,6 +1,7 @@
 ---
 tags: engineering/ai, ai, chatgpt, llm, vector-database
-authors: Pham Duc Thanh
+authors: thanh
+title: 'LLM query caching'
 github_id: zlatanpham
 date: 2023-06-09
 icy: 10
@@ -19,4 +20,5 @@ A key advantage of this process is the ability to customize it to individual pre
 The advantages of this strategy are manifold, with substantial savings in computational and financial resources being just one of the perks. It's a game-changer in tackling the ongoing speed issue that plagues large language models. Plus, the broad-reaching potential of this method for any application involving LLMs underscores its versatility across various sectors.
 
 ## References
+
 - https://github.com/zilliztech/GPTCache
