@@ -1,18 +1,18 @@
 ---
-tags: 
+tags:
   - go
-title: Slice And Array In Golang
+title: 'Slice And Array In Golang'
 date: 2018-03-13
 description: null
 ---
 
 ### Array
-**TL;DR:**
-The different between array in Go and C:
 
-* Arrays are values. Assigning one array to another copies all the elements.
-* In particular, if you pass an array to a function, it will receive a copy of the array, not a pointer to it.
-* The size of an array is part of its type. The types [4]int and [5]int are distinct.
+**TL;DR:** The different between array in Go and C:
+
+- Arrays are values. Assigning one array to another copies all the elements.
+- In particular, if you pass an array to a function, it will receive a copy of the array, not a pointer to it.
+- The size of an array is part of its type. The types [4]int and [5]int are distinct.
 
 In Go language, the terminology `Array` has a bit different from another language like C, JS, ... In Go, the `array has a fixed length and type `Take a look of array implementation in Go.
 
@@ -60,6 +60,7 @@ For representation for an array of [4]int in memory is for integer value laid ou
 So, in Go, the array is values. An array variable holds the entire array (not a pointer to the first element). Let's say the array is a struct ( but using index instead of named field). Because an array is not a pointer to the first element, so when we assign, pass an array to a function, it will make a copy of its content
 
 ### Slice
+
 In Go code, we don't often see array because of its inflexible, slice - on the other hand - is everywhere. Slice is an abstraction built on top the array. Unlike the Array, Slice type has no specified length; you can declare a slice like an array but `without the count element`.
 
 ```go
@@ -68,9 +69,9 @@ a := []int{1,2,3,4}
 
 A slice has three components (will be talking more detail in next section):
 
-* `pointer` : point to underlying array
-* `length ` : the number of elements referred to by the slice
-* `capacity` : the number of elements in the underlying array
+- `pointer` : point to underlying array
+- `length ` : the number of elements referred to by the slice
+- `capacity` : the number of elements in the underlying array
 
 Because slices hold references to an underlying array, so if you assign one slice to another, both refer to the same array.
 
@@ -123,6 +124,7 @@ fmt.Println(cap(a)) // 8
 ```
 
 ### Slice internal
+
 Let's take a look at `slice` implementation in Go.
 
 ```go
@@ -133,7 +135,7 @@ type slice struct{
 }
 ```
 
-For example, if we create a slice by using make([]byte,5), the slice will be structured like this: 
+For example, if we create a slice by using make([]byte,5), the slice will be structured like this:
 
 ![](assets/slice-and-array-in-golang_f18621d9bf057f8c2ea818ca438379c3_md5.webp)
 
@@ -142,6 +144,7 @@ A slice cannot be grown beyond its capacity. Attempting to do so will cause a ru
 **So the question is, What if we `*append*` an element to a slice which has reached its capacity?**
 
 ### Append
+
 Let's dig into a source code (go/src/reflect/value)
 
 ![](assets/slice-and-array-in-golang_1f1383e462f5fa432205e471759c4051_md5.webp)
@@ -157,5 +160,6 @@ So now we understand the mechanism behind the `append` function, it will allocat
 The interesting thing is how Go decide how much capacity the new slice is. As you can see if the old slice capacity is lesser than 1024, it will double the old slice's capacity, but when it grows bigger than 1024 Go adds `old slice's capacity / 4` to the old capacity
 
 ### Appendix
-* [https://golang.org/doc/effective_go.html#slices](https://golang.org/doc/effective_go.html#slices)
-* [https://blog.golang.org/slices](https://blog.golang.org/slices)
+
+- [https://golang.org/doc/effective_go.html#slices](https://golang.org/doc/effective_go.html#slices)
+- [https://blog.golang.org/slices](https://blog.golang.org/slices)

@@ -1,5 +1,5 @@
 ---
-tags: 
+tags:
   - backend
   - go
   - engineering
@@ -10,37 +10,40 @@ description: null
 
 <!-- table_of_contents 06b40d23-c5b2-457b-af47-eeb64436cb75 -->
 
-*At Dwarves Foundation, we host a few learning sessions to understand some of the technology around us. We regularly pick up topics we find interesting to dive deeper into to understand them better and present our findings. One topic that piqued my interest was the use of message brokers, due to how prevalent their use case is in our projects.*
+_At Dwarves Foundation, we host a few learning sessions to understand some of the technology around us. We regularly pick up topics we find interesting to dive deeper into to understand them better and present our findings. One topic that piqued my interest was the use of message brokers, due to how prevalent their use case is in our projects._
 
 In today's digital world, the exchange of information between different systems and applications is becoming increasingly important. With the rise of cloud computing and the Internet of Things (IoT), there is a growing need for these systems to communicate with each other seamlessly. This is where message brokers come in. A message broker is a middleware solution that provides a platform for exchanging messages between applications, systems, and services. They act as intermediaries, ensuring that messages are delivered reliably and efficiently.
 
 Without message brokers, communication between systems and applications would be much more difficult. They provide a common language that different systems can use to communicate with each other, regardless of the programming language or the hardware used. They also help to ensure that messages are delivered in the correct order, and can handle large volumes of messages without overwhelming the system.
 
 ## What is a Message Broker?
+
 **A** **Message broker** is an intermediary program designed to validate, transform, and route messages. They serve the communication needs between applications.
 
 With a Message broker, the source application (producer) sends a message to a server process that can provide data sorting, routing, message translation, persistence, and delivery to all appropriate destinations (consumers).
 
 There are 2 basic forms of communication with a Message Broker:
 
-* Publish and Subscribe (Topics)
+- Publish and Subscribe (Topics)
 
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_60a043f2ead4abd52c76f9fd47b0af68_md5.webp)
 
-* Point-to-Point (Queues)
+- Point-to-Point (Queues)
 
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_56d936f810e3423ac48427e1d7ca3f64_md5.webp)
 
 ## When and why to use Message Broker
+
 Message brokers are versatile tools that can address a wide range of business needs across industries and in a variety of enterprise computing environments.
 
 Here are some common ways message brokers are used:
 
-* **E-commerce order processing and fulfillment:** If your business operates online, the reliability of your website and e-commerce platform is crucial to your brand's reputation. Message brokers are an excellent choice for processing online orders because they improve fault tolerance and ensure messages are consumed only once.
-* **Financial transactions and payment processing:** It's essential to ensure that payments are sent only once. Using a message broker to handle the data from these transactions ensures that payment information is not lost or accidentally duplicated, provides proof of receipt, and allows systems to communicate reliably even when intermediary networks are unavailable.
-* **Protecting highly sensitive data at rest and in transit:** If your industry is heavily regulated or your company faces significant security risks, it's important to choose a messaging solution that supports end-to-end encryption.
+- **E-commerce order processing and fulfillment:** If your business operates online, the reliability of your website and e-commerce platform is crucial to your brand's reputation. Message brokers are an excellent choice for processing online orders because they improve fault tolerance and ensure messages are consumed only once.
+- **Financial transactions and payment processing:** It's essential to ensure that payments are sent only once. Using a message broker to handle the data from these transactions ensures that payment information is not lost or accidentally duplicated, provides proof of receipt, and allows systems to communicate reliably even when intermediary networks are unavailable.
+- **Protecting highly sensitive data at rest and in transit:** If your industry is heavily regulated or your company faces significant security risks, it's important to choose a messaging solution that supports end-to-end encryption.
 
 ### Topdev’s online CV creation example
+
 Message Broker helps web servers to send responses to requests quickly instead of being forced to run a resource-consuming procedure on a system. Queuing messages is a good solution when we want to distribute messages to many recipients to reduce the load on processing workers.
 
 For example, when users are allowed to create PDF files for IT CV templates from TopDev's online CV creation software, the problem is when thousands of users click on the "create PDF" button at the same time, the server receives many requests that will cause some problems such as slow response, overload, and even not being able to create a PDF file due to congestion. In this case, we need to use Message Broker to push these requests into a queue. The mechanism is as follows:
@@ -55,35 +58,38 @@ A consumer takes a message from the queue and starts processing the PDF while a 
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_c17d6fd298e5729424b4b04d7cee315f_md5.webp)
 
 ### Advantages and Disadvantages
+
 There are a few advantages and disadvantages with a job request messaging on message brokers:
 
 Advantages:
 
-* Loose coupling: the client can make a request without knowing about the other services. Therefore, it does not need to use a discovery mechanism to find the location of other service instances.
-* Message buffering: the broker is a buffer for messages until they are processed. This means that both sides do not need to be available at the same time for synchronous message exchange over HTTP (request/response protocol). Instead, the message is queued and is not processed until the consumer is ready. For example, an online store can accept orders even if the ordering service is slow or down because the orders are queued in the message broker and can be processed when the service is available again.
-* More flexible communication.
+- Loose coupling: the client can make a request without knowing about the other services. Therefore, it does not need to use a discovery mechanism to find the location of other service instances.
+- Message buffering: the broker is a buffer for messages until they are processed. This means that both sides do not need to be available at the same time for synchronous message exchange over HTTP (request/response protocol). Instead, the message is queued and is not processed until the consumer is ready. For example, an online store can accept orders even if the ordering service is slow or down because the orders are queued in the message broker and can be processed when the service is available again.
+- More flexible communication.
 
 Disadvantages:
 
-* Potential performance bottleneck: the message broker could be a performance bottleneck. However, modern message brokers are designed for scalability.
-* Potential single point of failure: the message broker must be continuously accessible. However, modern message brokers are designed for high availability.
-* Additional operational complexity: the message broker is another component in a system that must be installed, configured, and maintained.
+- Potential performance bottleneck: the message broker could be a performance bottleneck. However, modern message brokers are designed for scalability.
+- Potential single point of failure: the message broker must be continuously accessible. However, modern message brokers are designed for high availability.
+- Additional operational complexity: the message broker is another component in a system that must be installed, configured, and maintained.
 
 ## RabbitMQ
+
 RabbitMQ is a message broker that accepts and forwards messages, similar to a post office. When you put mail in a post box, you can be confident that the letter carrier will eventually deliver it to the recipient. RabbitMQ plays the roles of both the post box and post office, as well as the letter carrier.
 
 The main difference between RabbitMQ and the post office is that RabbitMQ doesn't handle physical paper but instead accepts, stores, and forwards binary data called messages.
 
 RabbitMQ and messaging in general use some technical terms:
 
-* Producing means sending messages. A program that sends messages is called a **publisher(producer)**.
-* A producer sends messages to a **queue**, which is the equivalent of a post box in RabbitMQ. While messages flow through RabbitMQ and the applications, they can only be stored in a queue. A queue is limited by the host's memory and disk capacity and acts as a large message buffer. Many producers can send messages that go to a single queue, and many consumers can try to receive data from a single queue.
-* Consuming is similar to receiving. A **consumer** is a program that primarily waits to receive messages.
-* Between the publisher and queue, we also can put a component call **exchange **which has the main function to decide the message will go to which queues. I will explain more about that late.
+- Producing means sending messages. A program that sends messages is called a **publisher(producer)**.
+- A producer sends messages to a **queue**, which is the equivalent of a post box in RabbitMQ. While messages flow through RabbitMQ and the applications, they can only be stored in a queue. A queue is limited by the host's memory and disk capacity and acts as a large message buffer. Many producers can send messages that go to a single queue, and many consumers can try to receive data from a single queue.
+- Consuming is similar to receiving. A **consumer** is a program that primarily waits to receive messages.
+- Between the publisher and queue, we also can put a component call **exchange **which has the main function to decide the message will go to which queues. I will explain more about that late.
 
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_173f812d33c4807b85a655a67c0dbc04_md5.webp)
 
 ### Exchanges
+
 The core idea in the messaging model in RabbitMQ is that the producer never sends any messages directly to a queue. In fact, the producer often does not even know if a message will be delivered to any queue at all.
 
 Instead, the producer can only send messages to an exchange. An exchange is a simple component that receives messages from producers on one side, and pushes them to queues on the other side. The exchange must know exactly what to do with a message it receives. Should it be routed to a specific queue or multiple queues, or should it be discarded? The rules for handling messages are defined by the exchange type.
@@ -98,14 +104,16 @@ The function of Fanout exchange is to push messages to all queues attached to it
 
 **Topic Exchange**
 
-Topic exchange will make a wildcard to match the routing key with a routing pattern declared in the binding. Consumers can register about topics they are interested in. The syntax used here is * and #.
+Topic exchange will make a wildcard to match the routing key with a routing pattern declared in the binding. Consumers can register about topics they are interested in. The syntax used here is \* and #.
 
 **Headers Exchange**
 
 A header exchange will use the header attributes of the message to route it. Headers Exchange is very similar to Topic Exchange but it routes based on header values instead of routing keys. A message is considered a match if the value of the header matches the value specified when bound.
 
-## Common Pattern 
+## Common Pattern
+
 ### Work Queue - **Distributing tasks among workers**
+
 ![](assets/message-queues-and-streaming-platforms-eg-kafka-nats-rabbitmq_59d782666f97eef826223c424dba2e03_md5.webp)
 
 The main idea behind Work Queues (aka: Task Queues) is to avoid doing a resource-intensive task immediately and having to wait for it to complete. Instead we schedule the task to be done later. We encapsulate a task as a message and send it to a queue. A worker process running in the background will pop the tasks and eventually execute the job. When you run many workers the tasks will be shared between them.
@@ -221,7 +229,7 @@ func main() {
                 1,// prefetch count0,// prefetch sizefalse,// global
         )
         failOnError(err, "Failed to set QoS"
-    
+
 				msgs, err := ch.Consume(
 				                q.Name, // queue
 				                "",     // consumer
@@ -253,7 +261,7 @@ func main() {
 
 worker.go, on the other hand, is responsible for consuming messages from the queue and processing them. When a worker starts, it declares a queue and binds it to the exchange, specifying the routing key that it wants to consume. The worker then waits for messages from the queue and processes them one by one. In this tutorial, the processing time is simulated using the time.Sleep() function.
 
-In the above example, we declare a queue with function: 
+In the above example, we declare a queue with function:
 
 ```go
 q, err := ch.QueueDeclare(
@@ -281,10 +289,11 @@ The function returns the following values:
 1. `err`: An error value if there was an error declaring the queue. If the queue was declared successfully, `err` will be `nil`.
 
 ### Publish/Subscribe - Sending messages to many consumers at once
+
 To create Publish/Subscribe we need to:
 
-* create a fanout exchange and a queue
-* create relationship between exchange and a queue is called a binding
+- create a fanout exchange and a queue
+- create relationship between exchange and a queue is called a binding
 
 The producer program that emits log messages doesn't differ much from the previous part. The most significant change is that we now want to publish messages to our logs exchange instead of the nameless one. We need to supply a routingKey when sending, but its value is ignored for fanout exchanges. Here's the code for the emit_log.go script:
 
@@ -435,7 +444,7 @@ func main() {
 
         log.Printf(" [*] Waiting for logs. To exit press CTRL+C")
         <-forever
-} 
+}
 ```
 
 To declare an exchange, we use the function:

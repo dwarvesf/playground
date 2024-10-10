@@ -1,5 +1,5 @@
 ---
-tags: 
+tags:
   - go
 title: Use Go Selenium To Crawl Data
 date: 2016-06-02
@@ -9,6 +9,7 @@ description: null
 ![](assets/use-go-selenium-to-crawl-data_f963144e3cfac24481dbfeb02cf6a0e6_md5.webp)
 
 ## Crawl data
+
 Crawl is a widespread issue occurring in making software. News, discount news, film ticket, etc are some examples of crawl. To be simple, it is analytics HTML, read cards, and extract data. The Go library I usually use is [goquery](https://github.com/PuerkitoBio/goquery).
 
 However, crawling an original HTML will not work in some cases: data loaded by ajax (when reading HTML, we will only see wrapper, not data), or must login when entering a page need crawl.
@@ -20,6 +21,7 @@ To these types, I use selenium to run the web in a real browser, take action to 
 Selenium running in JVM is quite famous in automation test. It allows me to run script test in a real browser. My method will be: Use selenium to run the Amazon page, wait for javascript to load, and then crawl the data normally.
 
 ## How to setup
+
 Firstly, you go to [seleniumhq](https://selenium.dev/downloads/) link to download and set up seleniumhq. Selenium plays a role like a server, receiving requests sent from my code Go.
 
 To run it, we go to the folder containing file jar and run the command:
@@ -30,20 +32,19 @@ java -jar selenium-server-standalone-2.50.1.jar -port 8081
 
 ![](assets/use-go-selenium-to-crawl-data_79536b2784ffffd405fdcbd54b56927f_md5.webp)
 
-\=> We have server selenium running at port 8081.
-Next, you pull Go-selenium in by Go get:
+\=> We have server selenium running at port 8081. Next, you pull Go-selenium in by Go get:
 
 ```javascript
 go get sourcegraph.com/github.com/sourcegraph/go-selenium
 ```
 
-After that, we need to set up a browser. I choose Firefox. Remember, when running locally, we only need to set up Firefox on the web. In contrast, running on the host we need to set up Firefox by Shell script. You can refer to [how to set up Selenium on Ubuntu 14.04](https://gist.github.com/curtismcmullan/7be1a8c1c841a9d8db2c)
-Done! Now let’s code.
+After that, we need to set up a browser. I choose Firefox. Remember, when running locally, we only need to set up Firefox on the web. In contrast, running on the host we need to set up Firefox by Shell script. You can refer to [how to set up Selenium on Ubuntu 14.04](https://gist.github.com/curtismcmullan/7be1a8c1c841a9d8db2c) Done! Now let’s code.
 
 We need:
-* Remote to server selenium
-* Access to Amazon deal link
-* Conduct analytics HTLM to get information. I will print page title and the image of the first product
+
+- Remote to server selenium
+- Access to Amazon deal link
+- Conduct analytics HTLM to get information. I will print page title and the image of the first product
 
 ```javascript
 func main() {
@@ -105,4 +106,5 @@ https://images-na.ssl-images-amazon.com/images/I/51eU5JrGAXL.\_AA210\_.jpg
 Well, we got all the needed information.
 
 ## Conclusion
+
 Above is my knowledge when having problems with crawl in developing software. Here is Go software programming language. Selenium also helps us in other cases, like pages need login, web pages request captcha, etc. If anyone has other experiences, I hope to hear from you.

@@ -1,30 +1,33 @@
 ---
-tags: 
+tags:
   - go
   - vim
-title: Connecting Vim With Golang
+title: 'Connecting Vim With Golang'
 date: 2015-10-16
 description: null
 ---
 
 ## An introduction to Vim and how to use Vim with Golang
-* Vim is a powerful text-editor, usually used server environments with no graphical interfaces. In this post, I will layer a basic foundation of Vim and show you how to use Vim as an IDE for Go.
+
+- Vim is a powerful text-editor, usually used server environments with no graphical interfaces. In this post, I will layer a basic foundation of Vim and show you how to use Vim as an IDE for Go.
 
 ## What is Vim
+
 Vim is a highly configurable text editor built to enable efficient text editing, the next version of Vi (Vim = Vi Improved), written by Bram Moolenaar, first released in 1991.
 
-* Vim is often called a "programmer's editor,"
-* Vim can be used as IDE for its plugins.
-* Vim can support for many platforms.
+- Vim is often called a "programmer's editor,"
+- Vim can be used as IDE for its plugins.
+- Vim can support for many platforms.
 
 ## Install and Config
-* Vim can be downloaded at [vim homepage](https://www.vim.org/download.php) or set up by [brew](https://brew.sh/)
+
+- Vim can be downloaded at [vim homepage](https://www.vim.org/download.php) or set up by [brew](https://brew.sh/)
 
 `brew install vim`
 
-* Since some plugins can be in needed of lua, you should set up with this command line`brew install vim --with-lua`
-* After finished setting, create a.vimrc file. This file is where you store every config, plugins or bundle, as well as other Vim related function.
-* Next, set up vim plugins manager. Currently, I’m using [Vundle](https://github.com/VundleVim/Vundle.vim), you can use [panthogen](https://github.com/tpope/vim-pathogen) if you like. Vundle will help in config those plugins in .vimrc, install or update and other tasks. In order to set up, clone vundle in the folder ~/.vim/bundle/ (folder .vim will appear when you finish installed vim)`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+- Since some plugins can be in needed of lua, you should set up with this command line`brew install vim --with-lua`
+- After finished setting, create a.vimrc file. This file is where you store every config, plugins or bundle, as well as other Vim related function.
+- Next, set up vim plugins manager. Currently, I’m using [Vundle](https://github.com/VundleVim/Vundle.vim), you can use [panthogen](https://github.com/tpope/vim-pathogen) if you like. Vundle will help in config those plugins in .vimrc, install or update and other tasks. In order to set up, clone vundle in the folder ~/.vim/bundle/ (folder .vim will appear when you finish installed vim)`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
 Copy some configs and basic plugins into .vimrc (please note that the “ in vim is comment)
 
@@ -77,12 +80,12 @@ Next, to install plugins, open vim and run this command line below (by pressing 
 
 `:PluginInstall`
 
-To up date plugins, use
-`:PluginUpdate`
+To up date plugins, use `:PluginUpdate`
 
 That’s enough for you to pick Vim up from the ground.
 
 ## Basic Usage Instruction
+
 Vim is a text-editor program first built on UNIX, in order to work in non-user interface environment. At this time, the keyboard hasn’t been upgraded completely, which is why the action on Vim is still different from today.
 
 ![](assets/connecting-vim-with-golang_5ca1828b88d41d78ead1d47ac32aeabd_md5.webp)
@@ -93,24 +96,20 @@ To open a new file with vim, use the command line: `vim file_name`
 
 There are 3 modes in vim:
 
-* **Normal mode** - appear when you press Ecs, usually has “.” in front of it. Vim will get this as what you type is the command for vim. For example: `:w` is “save document”, `:q` is “exit document”. Vim has its own language, which is called Vim script. Vim script can be executed at normal mode, for example, to print out Hello world, we use
+- **Normal mode** - appear when you press Ecs, usually has “.” in front of it. Vim will get this as what you type is the command for vim. For example: `:w` is “save document”, `:q` is “exit document”. Vim has its own language, which is called Vim script. Vim script can be executed at normal mode, for example, to print out Hello world, we use
 
 `:echo "hello world"`
 
-* **Insert mode** -appear when you press one of these keys below
+- **Insert mode** -appear when you press one of these keys below
 
-a: Insert vào phía sau con trỏ hiện tại
-A: Insert vào cuối hàng
-i: Insert vào phía trước con trỏ hiện tại
-I: Insert vào đầu hàng
-o: Insert và mở một hàng trống phía dưới
-O: Insert và mở một hàng trống phía trên
+a: Insert vào phía sau con trỏ hiện tại A: Insert vào cuối hàng i: Insert vào phía trước con trỏ hiện tại I: Insert vào đầu hàng o: Insert và mở một hàng trống phía dưới O: Insert và mở một hàng trống phía trên
 
-* **Visual mode** – appear when you press v, usually used in selecting a big block text, can be used in copy paste or comment,..
+- **Visual mode** – appear when you press v, usually used in selecting a big block text, can be used in copy paste or comment,..
 
 You can read [vim command](http://bullium.com/support/vim.html) to know more about the commands in vim
 
 ## Using Vim as Go IDE
+
 In order to use Vim as an IDE for Go, we need to set up some plugins for Go.
 
 The most important thing is [vim go](https://github.com/fatih/vim-go/). Vim Go contains a set of libraries that support Go for Vim, for example `godef`, `gofmt`, `go test`.
@@ -136,35 +135,37 @@ Next, continue typing command to install Go binaries
 You can basically code Go with only Vim go, but to make things easier, and also enhance its efficiency, you can research and add up some plugins as below
 
 ```javascript
-    ack.vim
-    bclose.vim
-    bufexplorer
-    nerdtree
-    nerdcommenter
-    csapprox
-    vim-fugitive
-    gitv
-    vim-gitgutter
-    syntastic
-    neocomplete.vim
-    neosnippet.vim
-    auto-pairs
+ack.vim
+bclose.vim
+bufexplorer
+nerdtree
+nerdcommenter
+csapprox
+vim - fugitive
+gitv
+vim - gitgutter
+syntastic
+neocomplete.vim
+neosnippet.vim
+auto - pairs
 ```
 
 In these:
-* nerdtree: Help you organize the folders in vim in folder structure, which makes it easier to open file and folder. After finished setting up:
+
+- nerdtree: Help you organize the folders in vim in folder structure, which makes it easier to open file and folder. After finished setting up:
 
 ![](assets/connecting-vim-with-golang_ac42721e6ddb17d3204d4596f55f96ce_md5.webp)
 
 Thanks to plugin of git, you can know which file is under editing, which one has just been added up, and which one has not been committed yet.
 
-* neocomplete: Support auto complete vim
+- neocomplete: Support auto complete vim
 
 ![](assets/connecting-vim-with-golang_db43f35dc945a8dde4b51e4b97221c86_md5.webp)
 
-* autopair: Plugin that helps you to quick type using “ ( ‘ [ < by adding “” () “ [] <> as a pair
+- autopair: Plugin that helps you to quick type using “ ( ‘ [ < by adding “” () “ [] <> as a pair
 
 ## Mapping Structure in Vim
+
 Vim has a definition called mapping, which allows its user to mode their keystrokes to support their personal purposes.
 
 ```javascript
@@ -179,8 +180,7 @@ Example: Type some sentences by vim, then run this command
 
 Put your mouse on the text paragraph and press `-`. Vim will instantly delete the characters right under the mouse pointer, as if you’ve just pressed `x`.
 
-At this time, your mapping only works on the text file that you’re editing. In order to mapping your action on all other files, put your mapping on file .vimrc
-Here are some of the common mappings:
+At this time, your mapping only works on the text file that you’re editing. In order to mapping your action on all other files, put your mapping on file .vimrc Here are some of the common mappings:
 
 ```javascript
 nmap    : used in normal mode
@@ -189,8 +189,7 @@ vmap    : used in visual mode
 noremap : can't be overridden by other mappings
 ```
 
-For example, when coding in Go, we usually use godef to find the definition of that function. In vim-go, we log into normal mode and type `GoDef`
-But we can mapping like this instead:
+For example, when coding in Go, we usually use godef to find the definition of that function. In vim-go, we log into normal mode and type `GoDef` But we can mapping like this instead:
 
 ```javascript
 nnoremap <silent> df :GoDef<cr>
@@ -209,9 +208,11 @@ That means when I type in insert mode `pp`, it will automatically switch into `p
 You can read more at [mapping in vim](http://vimdoc.sourceforge.net/htmldoc/map.html).
 
 ## Conclusion
+
 Everything is ready! Your only job is to:
-* Experienced in using hjkl in vim, as well as the basic commands in vim.
-* Search for more plugins to support for vim. This is a page I find very interesting and useful for [plugins in vim](http://vimawesome.com/).
-* The key strong point in vim is customization, you should try to figure out how to create new mappings or function that helps fasten your coding process.
+
+- Experienced in using hjkl in vim, as well as the basic commands in vim.
+- Search for more plugins to support for vim. This is a page I find very interesting and useful for [plugins in vim](http://vimawesome.com/).
+- The key strong point in vim is customization, you should try to figure out how to create new mappings or function that helps fasten your coding process.
 
 These aspects is what I have learnt about Vim and how to code Go using Vim. There are a lot of things to discover in the world of Vim and I would love to hear all of your comments or sharing.

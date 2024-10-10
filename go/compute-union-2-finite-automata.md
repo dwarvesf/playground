@@ -5,7 +5,7 @@ tags:
   - finite-automata
   - pattern-matching
   - state-machines
-title: "Efficient Union of Finite Automata in Golang: A Practical Approach"
+title: 'Efficient Union of Finite Automata in Golang: A Practical Approach'
 date: 2024-09-05
 description: An in-depth guide on implementing the union of finite automata in Golang, focusing on practical efficiency and performance considerations.
 authors:
@@ -44,11 +44,13 @@ This process essentially creates an NFA that represents the union of the languag
 The academic approach to computing the union of finite automata, as described above, is straightforward but can be inefficient in practice. The main differences are:
 
 **Academic Approach**:
+
 - Creates a new start state and adds epsilon transitions
 - Combines all states from both automata
 - Results in an NFA that may need further processing (e.g., determinization) for efficient matching
 
 **Practical Approach**:
+
 - Avoids creating unnecessary states
 - Focuses on reachable states only
 - Aims to create a more efficient structure for actual pattern matching
@@ -116,6 +118,7 @@ func mergeFAStates(state1, state2 *faState, keyMemo map[faStepKey]*faState, prin
 ```
 
 ## Key Aspects of This Implementation:
+
 1. **Memoization**: The function uses a `keyMemo` map to store already computed merged states, avoiding redundant computations and potential infinite recursion.
 2. **Combining Field Transitions**: The field transitions from both input states are combined immediately.
 3. **Table Unpacking**: The transition tables of both input states are unpacked into a more manageable format for merging.
@@ -128,6 +131,7 @@ func mergeFAStates(state1, state2 *faState, keyMemo map[faStepKey]*faState, prin
 6. **Combining Epsilon Transitions**: Epsilon transitions from both input states are combined.
 
 ## Advantages:
+
 - Avoids creating unnecessary states by only merging reachable states.
 - Handles both deterministic and nondeterministic aspects of the input automata.
 - The memoization technique prevents redundant computations, improving efficiency for large automata.
@@ -135,6 +139,7 @@ func mergeFAStates(state1, state2 *faState, keyMemo map[faStepKey]*faState, prin
 - By merging transitions byte-by-byte, it maintains compatibility with UTF-8 encoded input.
 
 ## Trade-offs:
+
 - The resulting automaton may not be minimal or fully deterministic.
 - The recursive nature of the function could lead to stack overflow for extremely large or complex automata.
 - Performance depends on the structure of the input automata and can vary significantly based on their complexity.

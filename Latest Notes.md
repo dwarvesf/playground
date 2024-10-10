@@ -16,17 +16,14 @@ This is where we keep track of our top 10 latest Brainery notes:
 - [[playground/01_literature/Engineering/Data/Google Dataproc|Google Dataproc]]
 - [[playground/01_literature/Engineering/Data/Google Data Fusion|Google Data Fusion]]
 
-
 ## Top Contributors this month
 
-*Total ICY given out this month: **NaN ICY***
+\*Total ICY given out this month: **NaN ICY\***
 
-| authors | notes |
-| ------- | ----- |
-| 1157659003527106630 |  [[Quick Learning Vector Database]]<br> [[Data Pipeline Design Framework]]<br>|
-| [longbuivan](https://github.com/longbuivan) |  [[Quick Learning Vector Database]]<br> [[Data Pipeline Design Framework]]<br>|
-
-
+| authors                                     | notes                                                                         |
+| ------------------------------------------- | ----------------------------------------------------------------------------- |
+| 1157659003527106630                         | [[Quick Learning Vector Database]]<br> [[Data Pipeline Design Framework]]<br> |
+| [longbuivan](https://github.com/longbuivan) | [[Quick Learning Vector Database]]<br> [[Data Pipeline Design Framework]]<br> |
 
 ## Newest Contributors
 
@@ -37,6 +34,7 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **namth#6640**: [[202301091379 - Invoking Component Functions in React|202301091379 - Invoking Component Functions in React]]
 
 ---
+
 - **[cnhhoang850](https://github.com/cnhhoang850)**: [[What Screens Want|What Screens Want]]
 - **[hthai2201](https://github.com/hthai2201)**: [[Applying Mock Service Worker (MSW) for Seamless Web Development|Applying Mock Service Worker (MSW) for Seamless Web Development]]
 - **[huytieu](https://github.com/huytieu)**: [[DiSC Personality Types in team work|DiSC Personality Types in team work]]
@@ -50,5 +48,4 @@ This is where we keep track of our top 10 latest Brainery notes:
 - **[truong-dwarvesv](https://github.com/truong-dwarvesv)**: [[Scale up Application using Jetpack Navigation|Scale up Application using Jetpack Navigation]]
 - **[yyyyaaa](https://github.com/yyyyaaa)**: [[Mitigate blocking the main thread|Mitigate blocking the main thread]]
 
-
-*This page was last modified at 2024-03-15T05:48:35.825Z*.
+_This page was last modified at 2024-03-15T05:48:35.825Z_.

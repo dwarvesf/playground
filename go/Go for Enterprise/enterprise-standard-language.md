@@ -5,13 +5,12 @@ tags:
   - language
 authors:
   - fuatto
-title: "Go as an Enterprise Standard Language"
+title: 'Go as an Enterprise Standard Language'
 description: "There is widespread adoption to take Go as the primary programming language for enterprise-level software development, emphasizing its simplicity, efficiency, and robust standard library. This initiative aims to streamline development processes, improve code maintainability, and leverage Go's strong support for concurrent programming in large-scale enterprise applications."
 date: 2024-08-30
 ---
 
 # Go As Enterprise Standard Language
-
 
 ## [What is An Enterprise standard language (From Java story)?](why-enterprise-chose-java.md)
 

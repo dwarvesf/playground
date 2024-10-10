@@ -5,7 +5,7 @@ tags:
   - language
 authors:
   - fuatto
-title: "How to use Go in the Enterprise"
+title: 'How to use Go in the Enterprise'
 description: "This content map explores strategies and best practices for implementing Go as a primary programming language in enterprise environments. It covers Go's strengths in scalability, concurrency, and performance, as well as addressing common challenges and considerations for large-scale adoption in corporate settings."
 date: 2024-08-30
 ---
@@ -13,7 +13,6 @@ date: 2024-08-30
 ## How to use Go in enterprise?
 
 - [uber-go/guide](https://github.com/uber-go/guide/blob/master/style.md)
-
 
 - [Golang for enterprise application (Reddit)](https://www.reddit.com/r/golang/comments/h8kfp0/golang_for_enterprise_application/)
 

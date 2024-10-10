@@ -1,6 +1,7 @@
 ---
 tags: engineering, go, software, backend, basic, profiling, debugging
 authors: Nguyen Toan Thang
+title: 'Profiling in Go'
 github_id: thangnt294
 date: 2023-03-28
 icy: 10
@@ -9,39 +10,49 @@ icy: 10
 ## Profiling in Go: Gotta catch 'em all
 
 ## Introduction
+
 Those of you who have watched the Pokemon series will undoubtedly recognize the famous catchphrase - "Gotta catch 'em all" - that refers to the main character's goal of catching all the Pokemon in the world. In the same way, profiling is a useful way to catch all the problems in your code and ensure that it's running smoothly. It's a powerful tool that can help you identify and fix the subtle issues in your code quickly and efficiently.
 
 In this article, we'll explore the world of profiling in Go and show you how you can use it to catch all the issues in your code.
 
 ## Problem
+
 First, let's take a look at the problem we're facing. Check out this command:
+
 ```bash
 grep -wo love moby.txt | wc -l
 ```
-The above command counts the number of occurrences of the word love in a file named `moby.txt` (you can get the file here: https://gist.github.com/ktnyt/734e32aab75a4f7df06538dac9f00a5a). 
 
-Run this command and we get a result of 24 (try it!).
-Next, create a file called `cmd.sh` to store the command above. The file should look like this:
+The above command counts the number of occurrences of the word love in a file named `moby.txt` (you can get the file here: https://gist.github.com/ktnyt/734e32aab75a4f7df06538dac9f00a5a).
+
+Run this command and we get a result of 24 (try it!). Next, create a file called `cmd.sh` to store the command above. The file should look like this:
 
 ```bash
 #!/bin/bash
 grep -wo love moby.txt | wc -l
 ```
+
 Now we can time the entire command by running this:
+
 ```bash
 time ./cmd.sh
 ```
+
 You should get back something similar to this:
+
 ```bash
 24
 ./cmd.sh 0.03s user 0.01s system 101% cpu 0.039 total
 ```
-0.039s - that was pretty fast!
-Now let's build something similar in Go. Run this command to set up Go modules:
+
+0.039s - that was pretty fast! Now let's build something similar in Go. Run this command to set up Go modules:
+
 ```bash
 go mod init grep-clone
 ```
+
 Next create a main.go file to write the code. Here's the Go implementation of the command we're trying to emulate:
+
 ```go
 package main
 
@@ -93,28 +104,36 @@ func main() {
  fmt.Println(count)
 }
 ```
+
 After reading the arguments, we open the file, and then start counting the number of occurrences of the word by reading each byte from the file at a time. Whenever we encounter a non-character byte, we compare the current string with the target word. If they're the same, we increment the count variable by one. If not, we do nothing. We then reset the current string so that we can start building the next word. The for loop is exited only when we reach the end of the file, after which the result will be printed to stdout.
 
 Now let's time this program! But before that, we need to build the binary file. Run this command:
+
 ```
 go build .
 ```
+
 You should see a binary file named `grep-clone`. Why not just time it directly using go run? Why do we need to build the binary first? Because we only want to measure the run time of the application, excluding the build time.
 
 Now run this command:
+
 ```bash
 time ./grep-clone love moby.txt
 ```
+
 You should see this output:
+
 ```bash
 24
 ./grep-clone love moby.txt  0.26s user 0.51s system 100% cpu 0.764 total
 ```
+
 0.764s - That's relatively slow compared to the original 0.039s.
 
 Why is that? And what can be done to improve our program? You can try to come up with the answer yourself, or call up your senior programmer friends and discuss with them. Heck, you can even paste the entire program in ChatGPT and ask for help. But wait, there's a much simpler way: Profiling! That's what we're here for.
 
 There are multiple type of profiling we can apply to our program. These include:
+
 - CPU Profile
 - Memory Profile (Heap)
 - Goroutine Profile
@@ -126,11 +145,15 @@ There are multiple type of profiling we can apply to our program. These include:
 The most commonly used types of profiling in Go are CPU profiling and memory profiling, which are also considered the most useful. We will only apply these two.
 
 ## Solution
+
 Go already has a package for profiling call `pprof`, but let's use Dave Cheney's package for simplicity. Run this command:
+
 ```bash
 go get github.com/pkg/profile
 ```
+
 Now let's modify the code. Add this line to the top of the main function:
+
 ```go
 package main
 
@@ -149,20 +172,27 @@ func main() {
   //rest of the code
 }
 ```
+
 The line of code will generate a CPU profile file for us. Now let's rebuild the code:
+
 ```bash
 go build .
 ```
+
 And then rerun the program:
+
 ```bash
 ./grep-clone love moby.txt
 ```
-When we run the code again, it will generate a file named `cpu.pprof`. This file contains the information of the CPU profile of our program.
-Now let's use the go tool to analyze this file:
+
+When we run the code again, it will generate a file named `cpu.pprof`. This file contains the information of the CPU profile of our program. Now let's use the go tool to analyze this file:
+
 ```bash
 go tool pprof cpu.pprof
 ```
+
 Next enter top 10 to see the top 10 function calls that take up the most CPU time. You should see something like this:
+
 ```
 (pprof) top 10
 Showing nodes accounting for 640ms, 100% of 640ms total
@@ -177,7 +207,9 @@ Showing nodes accounting for 640ms, 100% of 640ms total
          0     0%   100%      640ms   100%  syscall.Read (inline)
          0     0%   100%      640ms   100%  syscall.read
 ```
+
 As you can see, most of CPU time is spent running `syscall.syscall`. System calls take a lot of time to perform, so this is not ideal. Let's explore further:
+
 ```
 (pprof) list main.main
 Total: 640ms
@@ -213,8 +245,9 @@ ROUTINE ======================== main.main in /test/Projects/test/main.go
          .          .     40:           if err != nil {
          .          .     41:                   log.Fatal(err)
 ```
-When we explore the main function further by using the list command, we can see that the problem lies in line 36. Here, we are reading the file byte-by-byte, and each time we read a byte the program has to perform a system call to the OS. This is obviously not desirable, hence the need to reduce the number of system calls.
-Let's update the code:
+
+When we explore the main function further by using the list command, we can see that the problem lies in line 36. Here, we are reading the file byte-by-byte, and each time we read a byte the program has to perform a system call to the OS. This is obviously not desirable, hence the need to reduce the number of system calls. Let's update the code:
+
 ```go
  b := make([]byte, 1)
  r := bufio.NewReader(f)
@@ -236,9 +269,11 @@ Let's update the code:
   }
  }
 ```
+
 We fix this by using a **buffered reader** in `bufio`. The buffer has a default size of 4096 bytes. This way, whenever we try to read a byte from the file, the program will actually read 4096 bytes at a time, store it in the memory, and then return the one byte to us. On subsequent read, the program will return the byte from the memory instead of fetching it all the way from disk. This will reduce the number of system calls needed.
 
 Now let's redo all of the above steps. Rebuild the code, rerun the program, then use pprof to examine the file again. When running `list main.main`, you should see something like this:
+
 ```
 (pprof) list main.main
 Total: 50ms
@@ -283,8 +318,9 @@ ROUTINE ======================== main.main in /test/Projects/test/main.go
          .          .     50:                   }
          .          .     51:                   curr = ""
 ```
-From 640ms to 20ms! Looks like we've managed to reduce the number of system calls significantly.
-That is it for the CPU profiling. Now let's try to profile the memory instead. Change the code to this:
+
+From 640ms to 20ms! Looks like we've managed to reduce the number of system calls significantly. That is it for the CPU profiling. Now let's try to profile the memory instead. Change the code to this:
+
 ```go
 package main
 
@@ -303,11 +339,15 @@ func main() {
   //rest of the code
 }
 ```
+
 Rebuild and then rerun the program. This time, you will see a file named `mem.pprof`. We examine this file in the same way:
+
 ```bash
 go tool pprof mem.pprof
 ```
+
 List the main.main function again, this time you will see:
+
 ```
 (pprof) list main.main
 Total: 420.82kB
@@ -352,7 +392,9 @@ ROUTINE ======================== main.main in /Users/thomas/Projects/test/main.g
          .          .     50:                   }
          .          .     51:                   curr = ""
 ```
+
 Looks like we're allocating quite a lot of memory on line 46. To understand why, we need to look at the implementation of the string concatenation operation in Go. You can find it here: https://github.com/golang/go/blob/master/src/runtime/string.go
+
 ```go
 // The constant is known to the compiler.
 // There is no fundamental theory behind this number.
@@ -399,7 +441,9 @@ func concatstrings(buf *tmpBuf, a []string) string {
  return s
 }
 ```
+
 You can read the code yourself to understand what it does. The problem lies in this function:
+
 ```go
 func rawstringtmp(buf *tmpBuf, l int) (s string, b []byte) {
  if buf != nil && l <= len(buf) {
@@ -411,7 +455,9 @@ func rawstringtmp(buf *tmpBuf, l int) (s string, b []byte) {
  return
 }
 ```
+
 Here note that if the buf is nil, we will inevitably have to allocate new memory by calling the function rawstring. Here's the code of that function:
+
 ```go
 // rawstring allocates storage for a new string. The returned
 // string and byte slice both refer to the same storage.
@@ -422,8 +468,9 @@ func rawstring(size int) (s string, b []byte) {
  return unsafe.String((*byte)(p), size), unsafe.Slice((*byte)(p), size)
 }
 ```
-See the mallocgc call? It's allocating memory. Whether the buf is nil or not depends entirely on the compiler. This is something we don't have control of.
-Let's try to improve it by using a strings builder. Change the code to this:
+
+See the mallocgc call? It's allocating memory. Whether the buf is nil or not depends entirely on the compiler. This is something we don't have control of. Let's try to improve it by using a strings builder. Change the code to this:
+
 ```go
 // count the number of occurrences
  count := 0
@@ -451,9 +498,11 @@ Let's try to improve it by using a strings builder. Change the code to this:
   }
 }
 ```
+
 The logic is pretty much the same, only this time we're using a strings builder instead. The `sb.Grow(32)` is necessary because in order to avoid unnecessary resizing of the underneath slice, we need to pre-allocate some memory to contain the string. Removing this line will cause a lot of unnecessary allocation (you can try it out for yourself).
 
 Now rebuild and rerun the code. Examine the pprof file again, and you should see a significant improvement:
+
 ```
 (pprof) list main.main
 Total: 22.39kB
@@ -505,9 +554,11 @@ ROUTINE ======================== main.main in /test/Projects/test/main.go
          .          .     58:   fmt.Println(count)
          .          .     59:}
 ```
+
 If you can't see anything, just rerun the program. Sometimes the allocation is so small the program is not able to capture the profile.
 
 This is the final, improved version of our program:
+
 ```go
 package main
 
@@ -565,20 +616,26 @@ func main() {
  fmt.Println(count)
 }
 ```
+
 Note that I've removed the line of code that starts the profiling process. Profiling takes up CPU time as well, so after you're done, remember to remove it from your program!
 
 Rebuild the program, and then time it again:
+
 ```bash
 time ./grep-clone love moby.txt
 ```
+
 This is the result:
+
 ```bash
 24
 ./grep-clone love moby.txt  0.03s user 0.01s system 98% cpu 0.043 total
 ```
+
 Look at that! We've improved the runtime of our program significantly. This is the power of profiling: it shows you exactly where the problem is, so you know what to fix.
 
 ## Summary
+
 In conclusion, profiling is an essential tool for any Go developer looking to build high-quality and efficient applications. By catching all the performance problems in your code, you can optimize it for better performance, improving the user experience and overall success of your application. Whether you're working on a small personal project or a large enterprise application, profiling should be a regular part of your development process.
 
 As you continue to work on your Go projects, keep in mind the importance of profiling and the various tools and techniques available to help you optimize your code. By doing so, you'll be well on your way to becoming a more efficient and effective developer.

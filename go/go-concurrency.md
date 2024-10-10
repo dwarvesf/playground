@@ -1,17 +1,19 @@
 ---
-tags: 
+tags:
   - go
-title: Go Concurrency
+title: 'Go Concurrency'
 date: 2019-12-04
 description: null
 ---
 
 ## Golang concurrency
+
 When we talk about Golang, its most basic and popular characteristic is concurrency-support. Unlike other languages what is quite complex to build an concurrency system, Go concurrency primitives via Goroutines and channels make concurrent programming easy. So i am going to talk about Goroutines and similar things in other programming languages.
 
 Firstly, we need to know Go is a concurrent language and not a parallel one. So what is the difference from concurrency and parallelism?
 
 ### Concurrency vs Parallelism
+
 Concurrency means “out of order” execution. Another concept talk about concurrency as the capability to deal with lots of things at once. It's best explained with an example in real life: During playing Dota 2, let’s say, my mom asked me to buy something. Now i stop playing, go to the grocery and then starts playing again with rebuke of my team. This is a basic example of concurrency. In computing, concurrency is represented by the state when two or more tasks can start, run, and complete in overlapping time periods. It doesn't necessarily mean they'll ever both be running at the same time. Multitasking on a single-core machine is an example.
 
 Parallelism is doing lots of things at the same time like other running tasks on a multicore processor. Let’s come back with the example above. Instead of taking order my mother, I play the game and listen to music at once freely. In this case, playing game and listening to music is "lots of things".
@@ -21,6 +23,7 @@ Parallelism is doing lots of things at the same time like other running tasks on
 After understanding the way to compare concurrency with parallelism, we can research about Goroutines/channel and other well.
 
 ### Goroutines
+
 Goroutines can be understood like a light weight thread. Instead of OS, Goroutines exists only in the virtual space of Go runtime. A Goroutines is started up with initial 2KB of stack size (This is the location where store answer of the question "what is this Go routine's current state?". It is contains local variables as well as pointers to heap allocated variables). Because Go’s stacks are dynamically sized, growing and shrinking with the amount of data stored. So we need only 4KB memory for Goroutines.
 
 ![](assets/go-concurrency_d82335b0ffffc63ae92aa7339a5867e8_md5.webp)
@@ -30,6 +33,7 @@ Goroutines are cheaper than others thing like it (thread) in other programming l
 While some languages take an "concurrency at OS level" approach. Go implemented its own scheduler in order to keep concurrency concept at language level.
 
 ### Channel
+
 Channel is a communication tool for Goroutines. Channel can be understand like pipes. So similar to water flows from one end to another in pipes, a Goroutines write data in one end and we can get it in another by using Channel.
 
 Each channel has a type associated. This type decide data type that channel is allowed to transport and no other types can access into it.
@@ -53,30 +57,32 @@ Capacity should be greater than 0 for a channel to have a buffer and we can send
 ![](assets/go-concurrency_eb379f648c223af56819605adfeb118d_md5.webp)
 
 ## Under the hood
+
 ### Channel implementation
+
 When we implement a Go channel, a struct will be created, then it looks like following.
 
 To have a comprehensive view, we have a few descriptions about the fields encountered in the channel structure.
 
 ![](assets/go-concurrency_23c2cb6d27ce23dcdc500decd9a59398_md5.webp)
 
-* **buf** is the location where our data is actually stored. It is a circular queue.
-* **dataqsize** is size of the circular queue. It represent capability of channel. When we declare make(chan int, N), **dataqsize** is N. It also let us know how many Goroutines can write data into this channel until blocked
+- **buf** is the location where our data is actually stored. It is a circular queue.
+- **dataqsize** is size of the circular queue. It represent capability of channel. When we declare make(chan int, N), **dataqsize** is N. It also let us know how many Goroutines can write data into this channel until blocked
 
 ![](assets/go-concurrency_966768c61d35099632b9e31f581807c6_md5.webp)
 
-* **qcount** represents the number of slots in the buf currently filled up.
-* **elemsize** Is the size of a channel corresponding to a single element.
-* **elemtype** used when messages are copied over from one Go-routine to the other. It has a bunch of fields which provide type and size information for the type of values the channel can hold.
-* **closed** Indicates whether the current channel is in the closed state. After a channel is created, this field is set to 0, that is, the channel is open; by calling close to set it to 1, the channel is closed.
+- **qcount** represents the number of slots in the buf currently filled up.
+- **elemsize** Is the size of a channel corresponding to a single element.
+- **elemtype** used when messages are copied over from one Go-routine to the other. It has a bunch of fields which provide type and size information for the type of values the channel can hold.
+- **closed** Indicates whether the current channel is in the closed state. After a channel is created, this field is set to 0, that is, the channel is open; by calling close to set it to 1, the channel is closed.
 
 ![](assets/go-concurrency_80543471c1dd9c44e63c7fa281d4b6c0_md5.webp)
 
-* **sendx** and **recvx** indicates the current index of buffer — backing array from where it can send data and receive data.
-* **recvq** and **sendq** waiting queues, which are used to store the blocked Goroutines while trying to read data on the channel or while trying to send data from the channel.
-* **lock** protects all fields in **hchan**, as well as fields in sudogs blocked on this channel.
-* **sudog** struct is described in Golang source as a Go Routine in a wait list, such as for sending/receiving on a channel.
-* 
+- **sendx** and **recvx** indicates the current index of buffer — backing array from where it can send data and receive data.
+- **recvq** and **sendq** waiting queues, which are used to store the blocked Goroutines while trying to read data on the channel or while trying to send data from the channel.
+- **lock** protects all fields in **hchan**, as well as fields in sudogs blocked on this channel.
+- **sudog** struct is described in Golang source as a Go Routine in a wait list, such as for sending/receiving on a channel.
+-
 
 We mentioned about sudog struct above. What is sudog? See the following image:
 
@@ -99,6 +105,7 @@ Since before line 22 on a channel, there is no data we have put on the channel s
 ![](assets/go-concurrency_2da8e4e08c9af6c09a70149ce0bee0c1_md5.webp)
 
 ### Go scheduler
+
 To understand Go scheduler quickly, we will review a few concepts in OS and OS scheduler that support a program is runnable. If you knew about OS thread and OS scheduler, you should skip following section and jump to next part.
 
 Computer Program is just a series of machine instructions that need to be executed one after other sequentially. So thread was born in other to account and sequentially execute the set of instructions it was assigned.
@@ -114,18 +121,20 @@ Existing a piece called Program Counter in a Thread that allows the thread keep 
 ![](assets/go-concurrency_bf66c5b925d9c162acc9d0fb055c353e_md5.webp)
 
 There are 3 states in thread
-* **Waiting**: This means the Thread is stopped and waiting for something in order to continue. “Something” is waiting for the hardware (disk, network), system calls, synchronization calls (atomic, mutexes).
-* **Runnable**: This means the Thread wants time on a core so it can execute its assigned machine instructions.
-* **Executing**: This means the Thread has been placed on a core and is executing its machine instructions.
+
+- **Waiting**: This means the Thread is stopped and waiting for something in order to continue. “Something” is waiting for the hardware (disk, network), system calls, synchronization calls (atomic, mutexes).
+- **Runnable**: This means the Thread wants time on a core so it can execute its assigned machine instructions.
+- **Executing**: This means the Thread has been placed on a core and is executing its machine instructions.
 
 And 2 types of works
-* **CPU-Bound**: This is work that never creates a situation where the Thread may be placed in Waiting states.
-* **IO-Bound**: This is work that causes Threads to enter into Waiting states. This is work that consists in requesting access to a resource over the network or making system calls into the operating system.
-**Context switches** is the duration that we swap a thread on and of a core. It take between ~1000 and ~1500 nanoseconds to do its work while the hardware should be able to reasonably execute averagely 12 instructions per nanosecond per core. So a context switch can cost we ~12k to ~18k instructions of latency. In essence, a context switch make lower performance by losing ability to execute a lot of machine instructions. It look like suitable with IO-Bound work but not with CPU-Bound work that requires work constantly.
+
+- **CPU-Bound**: This is work that never creates a situation where the Thread may be placed in Waiting states.
+- **IO-Bound**: This is work that causes Threads to enter into Waiting states. This is work that consists in requesting access to a resource over the network or making system calls into the operating system. **Context switches** is the duration that we swap a thread on and of a core. It take between ~1000 and ~1500 nanoseconds to do its work while the hardware should be able to reasonably execute averagely 12 instructions per nanosecond per core. So a context switch can cost we ~12k to ~18k instructions of latency. In essence, a context switch make lower performance by losing ability to execute a lot of machine instructions. It look like suitable with IO-Bound work but not with CPU-Bound work that requires work constantly.
 
 After surfing over above all things, we have ability to understand following part quickly. It is the section that describe about GO scheduler and how it make Goroutines faster than threads.
 
 ### Getting started
+
 When our program start up, it’s given a Logical Processor (P) for every virtual core identified on the host machine. So how many virtual core exist in your computer? Suppose that we have a Macbook with following system report:
 
 ![](assets/go-concurrency_8c56d98dd1917a5c479f487977ccfb9f_md5.webp)
@@ -147,6 +156,7 @@ The Go scheduler is part of the Go runtime, which is built into our application.
 We can’t predict what the Go scheduler is going to do. This is because decision making for this cooperating scheduler doesn’t rest in the hands of developers, but in the Go runtime. It’s important to think of the Go scheduler as a preemptive scheduler and since the scheduler is non-deterministic, this is not much of a stretch.
 
 There are four classes of events that occur in your Go programs that allow the scheduler to make scheduling decisions. This doesn’t mean it will always happen on one of these events. It means the scheduler gets the opportunity.
-* The use of the keyword go
-* Garbage collection
-* System calls
+
+- The use of the keyword go
+- Garbage collection
+- System calls
