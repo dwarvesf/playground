@@ -6,13 +6,14 @@ tags:
   - go
 title: 'Unit Testing Best Practices In Golang'
 date: 2023-04-11
-description: null
+description: An in-depth exploration of arrays and slices in Go, covering their differences, internal implementations, and key operations like append. Learn about fixed-length arrays, flexible slices, and how Go manages memory allocation for growing slices.
+authors:
+  - taynguyen294
 ---
 
-_One common issue we often tackle in backend engineering is writing test cases. In this article, we will explore the techniques for crafting effective tests in Go, discussing best practices for writing unit tests and utilizing mocks to achieve better isolation. Although our primary focus lies in unit testing-related practices, it is important to note that Golang also supports integration testing. We will also tackle the subject of integration testing in a future article, where we will examine the details and best practices for integration testing in Golang._
+One common issue we often tackle in backend engineering is writing test cases. In this article, we will explore the techniques for crafting effective tests in Go, discussing best practices for writing unit tests and utilizing mocks to achieve better isolation. Although our primary focus lies in unit testing-related practices, it is important to note that Golang also supports integration testing. We will also tackle the subject of integration testing in a future article, where we will examine the details and best practices for integration testing in Golang.
 
 ## Introduction
-
 ### Importance of testing in software development
 
 Testing is crucial in software development to catch bugs and errors, ensure maintainability and modularity, and improve security, and overall software quality. With the rise of cybersecurity threats, testing is becoming increasingly important to ensure software systems are secure and reliable.
@@ -26,7 +27,7 @@ A comprehensive suite of unit tests can act as a safety net for developers. By f
 
 - Unit tests can contribute to higher code quality
 
-\*\*This item is a natural consequence of the previous one. Since unit tests act as a safety net, developers become more confident when changing the code. They can refactor the code without fear of breaking things, driving the general quality of the codebase up.
+This item is a natural consequence of the previous one. Since unit tests act as a safety net, developers become more confident when changing the code. They can refactor the code without fear of breaking things, driving the general quality of the codebase up.
 
 - **Detect code smells in your codebase**
 
@@ -40,7 +41,7 @@ The Golang testing package offers a user-friendly framework to create unit tests
 
 - Create a file whose name ends with \_test.go
 - Import package testing by import “testing” command
-- Write the test function of form\* *<u>*func TestXxx(_testing.T)_</u> which uses any of Error, Fail, or related methods to signal failure.
+- Write the test function of form\ <u>func TestXxx(_testing.T)_</u> which uses any of Error, Fail, or related methods to signal failure.
 - Put the file in any package.
 - Run command go test
 
