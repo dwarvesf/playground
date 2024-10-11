@@ -4,89 +4,117 @@ tags:
   - go-weekly
 authors:
   - fuatto
-title: 'Go Commentary #14: Golang compile-time evaluation and Go bindings to SQLite using wazero'
-description: A quick toolings for compile-time evaluation and SQLite wrapper with WebAssembly runtime for Go
-date: 2024-10-04
+title: 'Using Go embed, and Reflect'
+description: Quick notes on Go embed and Go Reflect
+date: 2024-10-11
 ---
 
-## [Prep: Golang comptime. Pure blasphemy](https://github.com/pijng/prep)
+## [Using Go Embed](https://www.bytesizego.com/blog/go-embed)
 
-- A small Go tool that enables compile-time function evaluation. By using `prep.Comptime`, you can evaluate functions at build time, replacing them with their computed results. Just like `comptime` from Zig. Except it's not.
+- The ```go:embed``` directive tells the Go compiler to include files and folders into the compiled binary at build time. This means your application can access these resources directly from memory without needing to read from the disk at runtime.
 
-- Features
-  - Compile-Time Evaluation: Replace function calls with their computed results at build time.
-  - Simple Integration: Use prep as both a Go library and a standalone executable.
-  - Tooling Support: Easily integrate prep with your Go build process using -toolexec.
+- Usage: 
 
-```go
-package main
-
-import (
-  "fmt"
-  "github.com/pijng/prep"
-)
-
-func main() {
-  // This will be evaluated at compile-time
-  result := prep.Comptime(fibonacci(300))
-
-  fmt.Println("Result:", result)
-}
-
-func fibonacci(n int) int {
-  fmt.Printf("calculating fibonacci for %d\n", n)
-
-  if n <= 1 {
-    return n
-  }
-
-  return fibonacci(n-1) + fibonacci(n-2)
-}
-```
-
-- Build `go build -a -toolexec="prep <absolute/path/to/project>" main.go`
-
-- Limitations
-
-  - Currently, prep.Comptime only supports basic literals as arguments.
+  - with a single file message.txt ("hello from bytesizego!")
 
   ```go
-  // Pass a basic literal directly
-  func job() {
-    prep.Comptime(myFunc(1))
+  package main
+
+  import (
+    _ "embed"
+    "fmt"
+  )
+
+  //go:embed message.txt
+  var message string
+
+  func main() {
+    fmt.Println(message) // hello from bytesizego!
   }
 
-  // Use a variable with the value of basic literal from the same scope as wrapped function
-  func job() {
-    x := 1
-    y := 2
-    prep.Comptime(myFunc(x, y))
+  ```
+
+  - with multiple files
+
+  ```go
+  package main
+
+  import (
+    _ "embed"
+    "fmt"
+  )
+
+  //go:embed messages/*.txt
+  var messages embed.FS
+
+  func main() {
+    files, _ := messages.ReadDir("messages")
+    for _, file := range files {
+      data, _ := messages.ReadFile("messages/" + file.Name())
+      fmt.Printf("File: %s\nContent: %s\n\n", file.Name(), data)
+    }
   }
   ```
 
-  - Only functions that can be fully resolved with the provided literal arguments can be evaluated at compile-time, therefore it is impossible to use any values from IO operations.
+  - with a directory (the path specified in ReadFile is relative to the embedded root.)
 
-## [go-sqlite3: Go bindings to SQLite using wazero](https://github.com/ncruces/go-sqlite3)
+  ```go
+  package main
 
-- Go module **github.com/ncruces/go-sqlite3** is a cgo-free SQLite wrapper. It provides a **database/sql** compatible driver, as well as direct access to most of the C SQLite API.
+  import (
+    "embed"
+    "fmt"
+  )
 
-- It wraps a Wasm build of SQLite, and uses wazero as the runtime. Go, [wazero](https://github.com/tetratelabs/wazero) and x/sys are the only runtime dependencies.
+  //go:embed static
+  var staticFiles embed.FS
 
-```go
+  func main() {
+    data, _ := staticFiles.ReadFile("static/index.html")
+    fmt.Println(string(data))
+  }
+  ```
 
-import "database/sql"
-import _ "github.com/ncruces/go-sqlite3/driver"
-import _ "github.com/ncruces/go-sqlite3/embed"
 
-var version string
-db, _ := sql.Open("sqlite3", "file:demo.db")
-db.QueryRow(`SELECT sqlite_version()`).Scan(&version)
-```
+- Limitations:
+
+  - File Size: Embedding large files can significantly increase your binary size.
+  - File Changes: Changes to the embedded files require recompilation.
+
+## [Reflecting on Go Reflection](https://www.dolthub.com/blog/2024-10-04-reflecting-on-reflect/)
+
+  - Context: using generative AI tooling, generated code using Reflect package
+
+  ```go
+  bsVal := reflect.ValueOf(blockStore).Elem()
+
+  tables := bsVal.FieldByName("tables")
+
+  typ := tables.Type()
+  fmt.Printf("tables.Type: %v\n", typ)
+  for i := 0; i < typ.NumField(); i++ {
+    fmt.Printf("tables %d: %s\n", i, typ.Field(i).Name)
+  }
+  for i := 0; i < typ.NumMethod(); i++ {
+    fmt.Printf("method %d: %s\n", i, typ.Method(i).Name)
+  }
+  ```
+
+  - [Laws of Reflection](https://go.dev/blog/laws-of-reflection)
+
+    - Reflection goes from interface value to reflection object
+
+    - Reflection goes from reflection object to interface value
+
+    - To modify a reflection object, the value must be settable
+
+    => In short, the *Interface* method is the inverse of the *ValueOf* function, except that its result is always of static type interface{}.
+    Reiterating: Reflection goes from interface values to reflection objects and back again.
+
+  - Zeroth Law: Use reflect at your own peril. Misuse it, and it will *panic* with no regrets.
 
 ---
 
-https://github.com/pijng/prep
+https://www.bytesizego.com/blog/go-embed
 
-https://github.com/ncruces/go-sqlite3
-
-https://github.com/tetratelabs/wazero
+https://www.dolthub.com/blog/2024-10-04-reflecting-on-reflect/
