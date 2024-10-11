@@ -2,9 +2,12 @@
 tags:
   - engineering
   - go
+  - golang
 title: 'Go In Software Engineering'
 date: 2020-08-07
-description: null
+authors:
+  - hieuthu1
+description: An overview of Go's key features, including simplicity, concurrency support, and interface-driven OOP. Explores Go's strengths in cloud applications and utility development, and its role in software engineering practices for maintaining resilient programs over time.
 ---
 
 Go is a type-safe, cloud-native language designed for simplicity with first-class support for concurrency.

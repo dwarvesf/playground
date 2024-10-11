@@ -1,8 +1,13 @@
 ---
-tags: blockchain, evm, zk-proof
-authors: Pham Ngoc Thanh
+tags: 
+ - blockchain 
+ - evm
+ - zk-proof
+authors: 
+ - thanhpn
 title: 'Zero-knowledge Proofs'
 github_id: thanhpn
+description: This article provides an overview of zero-knowledge proofs in blockchain technology, including their definition, how they work, and their advantages.
 date: 2022-09-06
 ---
 

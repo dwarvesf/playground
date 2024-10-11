@@ -2,9 +2,10 @@
 tags:
   - blockchain
   - solana
+  - defi
 title: 'Introduce to Solana Token 2022 - new standard to create a token in solana'
 date: 2024-06-19
-description: 'New standard to create a token in solana'
+description: Explore Solana Token 2022, the next-generation token standard on Solana blockchain. Learn about its key features like transfer fees, non-transferable tokens, and confidential transfers. Discover how Token Extensions enhance functionality, improve security, and enable regulatory compliance for developers and businesses in the Solana ecosystem.
 authors:
   - huymaius
 ---

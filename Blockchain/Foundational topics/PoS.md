@@ -1,9 +1,14 @@
 ---
-tags: blockchain, foundational-topics, PoS
-authors: Pham Ngoc Thanh
+tags: 
+ - blockchain
+ - foundational-topics
+ - PoS
+authors:
+ - thanhpn
 title: 'PoS'
 github_id: thanhpn
 date: 2022-06-16
+description: This article provides an overview of Proof of Stake (PoS) in blockchain technology, including its definition, how it works, and its advantages.
 ---
 
 ## The Proof of Stake
