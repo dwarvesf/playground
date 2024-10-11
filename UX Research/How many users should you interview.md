@@ -1,5 +1,10 @@
 ---
-tags: ux, research, interview
+tags: 
+ - ux
+ - research
+ - interview
+description: The number of interviews of participants you might need to engage with in a round of qualitative interviews to achieve data saturation can be difficult to estimate. But, there are a few variables that usually factor in.
+title: How many users should you interview
 ---
 
 The number of interviews of participants you might need to engage with in a round of qualitative interviews to achieve data saturation can be difficult to estimate. But, there are a few variables that usually factor in.
@@ -14,8 +19,8 @@ Finally, a more experienced researcher can do more with less. With qualitative r
 
 #### Related
 
--   [[UX researchers should care about strength of evidence]]
--   [[Qualitative researchers care more about data saturation than sample size]]
+-   [UX researchers should care about strength of evidence](./UX+researchers+should+care+about+strength+of+evidence)
+-   [Qualitative researchers care more about data saturation than sample size](./Qualitative+researchers+care+more+about+data+saturation+than+sample+size)
 
 #### Citations
 

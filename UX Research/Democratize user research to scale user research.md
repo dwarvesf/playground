@@ -1,5 +1,10 @@
 ---
-tags: ux, research, organization
+tags: 
+ - ux
+ - research
+ - organization
+description: Large organizations' demand for research can outstrip capacity. Unless research is able to scale in response, it's possible for it to become a bottleneck for design and development. However, it can be difficult and sometimes inefficient to grow the number of researchers. Democratizing research—that is, sharing research activities among non-researchers—can help scale research insights without having to expand the team.
+title: Democratize user research to scale user research
 ---
 
 Large organizations' demand for research can outstrip capacity. Unless research is able to scale in response, it's possible for it to become a bottleneck for design and development. However, it can be difficult and sometimes inefficient to grow the number of researchers.
@@ -8,8 +13,6 @@ Democratizing research—that is, sharing research activities among non-research
 
 This approach should be scaled in gradually, as it still requires effort to support. Start by democratizing lower complexity, evaluative research activities; research specialists can continue to perform generative research.
 
----
+###  Related
 
-#### Related
-
--   [[Make research insights easy to find, consume, and use]] - Research is pointless if it's not made accessible to those who need to act on it
+-   [Make research insights easy to find, consume, and use](./Make+research+insights+easy+to+find,+consume,+and+use) - Research is pointless if it's not made accessible to those who need to act on it
