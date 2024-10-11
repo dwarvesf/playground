@@ -1,6 +1,12 @@
 ---
-tags: engineering/frontend, wai-aria, accessibility
-authors: Nguyen Dinh Nam
+tags:
+  - frontend
+  - wai-aria
+  - accessibility
+description: WAI-ARIA is a technology that can help with the problems of modern websites and applications containing huge amounts of dynamic content and complex components with no semantics to describe what they mean.
+title: WAI-ARIA
+authors:
+  - nguyend-nam
 github_id: nguyend-nam
 date: 2022-09-30
 ---

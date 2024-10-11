@@ -1,9 +1,15 @@
 ---
-tags: engineering/frontend, frontend, graphql, apollo-graphql, reactjs, graphql-fragments, graphql-codegen
-authors: Ngo Lap Nguyen
+tags: 
+ - frontend, 
+ - graphql
+ - reactjs
+authors: 
+ - mashiro5951
+description: When working with complex GraphQL schemas, it's common to have shared fields across different types. A fragment colocation pattern allows us to define fragments alongside their corresponding components, resulting in a more cohesive and maintainable codebase.
+title: A Fragment Colocation Pattern with React & Apollo GraphQL
 github_id: ngolapnguyen
 date: 2023-06-04
-icy: 10
+
 ---
 
 When working with complex GraphQL schemas, it's common to have shared fields across different types. A fragment colocation pattern allows us to define fragments alongside their corresponding components, resulting in a more cohesive and maintainable codebase.

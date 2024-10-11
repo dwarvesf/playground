@@ -1,6 +1,13 @@
 ---
-tags: frontend, native-modules, vitejs, esm, engineering/frontend
-authors: Tran Hoang Nam
+tags:
+  - frontend
+  - native-modules
+  - vitejs
+  - esm
+description: ViteJS takes full advantage of the availability of native ES modules in the browser and the rise of JavaScript tools written in compile-to-native languages by introducing pre-bundles dependancies using esbuild.
+title: ViteJS native modules
+authors:
+  - namtrhg
 github_id: namtrhg
 date: 2022-07-04
 ---

@@ -1,9 +1,12 @@
 ---
 tags:
   - css
-title: Remove Unused Css Styles From Bootstrap Using Purgecss
+  - frontend
+title: Remove Unused CSS Styles From Bootstrap Using Purgecss
 date: 2019-02-01
-description: null
+description: This article demonstrates how to use PurgeCSS to remove unused CSS styles from Bootstrap.
+authors:
+ - nghiaphm
 ---
 
 ![](assets/remove-unused-css-styles-from-bootstrap-using-purgecss_50067f1125ee42d2d68068bd93443235_md5.webp)

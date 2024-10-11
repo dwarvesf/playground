@@ -1,9 +1,14 @@
 ---
-tags: engineering/frontend, frontend, parse, validation, typescript
-authors: Tran Hoang Nam
+tags: 
+ - frontend
+ - validation
+ - typescript
+authors: 
+ - namtrhg
+description: The "parse, don't validate" approach is about processing incoming data and failing in a controlled manner if parsing fails.
+title: Parse, don't validate in TypeScript
 github_id: namtrhg
 date: 2023-01-05
-icy: 10
 ---
 
 The _**"parse, don't validate"**_ approach is all about processing incoming data and failing in a controlled manner if parsing fails. It is all about leveraging trustworthy, secure, and typed data structures within your code and ensuring that all incoming data is handled at the very edges of your systems. Instead of passing receiving data deep into your code, parse it immediately and fail quickly if necessary.

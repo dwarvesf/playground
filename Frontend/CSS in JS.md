@@ -1,6 +1,11 @@
 ---
-tags: frontend, css-in-js, engineering/frontend
-authors: Tran Khac Vy
+tags: 
+ - frontend
+ - css-in-js
+authors: 
+ - khacvy
+description: CSS-in-JS is a styling technique where Javascript is used to style the component.
+title: CSS in JS
 github_id: trankhacvy
 date: 2022-08-11
 ---

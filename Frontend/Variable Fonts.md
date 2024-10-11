@@ -1,9 +1,15 @@
 ---
-tags: engineering/frontend, frontend, css, fonts, variable-fonts, typography, typeface
-authors: Ngo Lap Nguyen
+tags:
+  - frontend
+  - css
+  - fonts
+  - variable-fonts
+description: Variable fonts are a font format that allows for a single font file to contain multiple variations of a typeface.
+title: Variable Fonts
+authors:
+  - ngolapnguyen
 github_id: ngolapnguyen
 date: 2023-03-06
-icy: 10
 ---
 
 ## What's variable font?

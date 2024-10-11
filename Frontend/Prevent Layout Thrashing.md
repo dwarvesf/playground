@@ -1,6 +1,12 @@
 ---
-tags: engineering/frontend, web-performance, performance
-authors: Le Minh Thanh
+tags: 
+ - frontend
+ - web-performance
+ - performance
+authors: 
+ - thanhlmm
+description: Layout Thrashing happens, when you request layout information of an element or the document, while the layout is in an invalidated state.
+title: Prevent Layout Thrashing
 github_id: thanhlmm
 date: 2022-09-11
 ---

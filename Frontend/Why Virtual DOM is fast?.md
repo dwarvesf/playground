@@ -1,6 +1,13 @@
 ---
-tags: frontend, react, virtual-dom, performance, fundamental, engineering/frontend
-authors: thanh
+tags:
+  - frontend
+  - react
+  - virtual-dom
+  - performance
+authors:
+  - thanh
+description: "React and Vue, two popular front-end frameworks, both use Virtual DOM to improve page rendering efficiency. Understanding the concept of Virtual DOM sheds light on an important aspect of performance optimization on the client side."
+title: Why Virtual DOM is fast?
 github_id: zlatanpham
 date: 2022-08-09
 ---

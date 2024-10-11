@@ -1,6 +1,13 @@
 ---
-tags: frontend, polymorphic-component, reactjs, typescript, engineering/frontend
-authors: Tran Khac Vy
+tags: 
+ - frontend
+ - polymorphic-component
+ - reactjs
+ - typescript
+authors: 
+ - khacvy
+description: This article provides a step-by-step guide on how to build polymorphic React components with Typescript, covering the necessary concepts and techniques to create flexible and reusable components.
+title: Build polymorphic React components with Typescript
 github_id: trankhacvy
 date: 2022-09-26
 ---

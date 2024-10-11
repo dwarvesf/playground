@@ -1,9 +1,13 @@
 ---
-tags: engineering/frontend, frontend, social-networks, share, facebook, zalo, url, uri
-authors: Nguyen Dinh Nam
+tags:
+  - frontend
+  - social-networks
+description: Each social network has its own unique way of handling URLs, and understanding the correct formatting can make a significant difference in the visibility and engagement of your shared content.
+title: URL formats for sharing via social networks
+authors:
+  - nguyend-nam
 github_id: nguyend-nam
 date: 2023-05-26
-icy: 10
 ---
 
 ## Why?

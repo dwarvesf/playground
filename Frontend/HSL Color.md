@@ -1,7 +1,12 @@
 ---
-tags: frontend, hsl, engineering/frontend
-authors: Tran Khac Vy
+tags: 
+ - frontend
+ - hsl
+authors: 
+ - khacvy
 github_id: trankhacvy
+description: HSL is the answer to resolving all of the painful points of Hexadecimal color codes.
+title: HSL Color
 date: 2022-09-02
 ---
 

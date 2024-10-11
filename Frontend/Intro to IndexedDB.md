@@ -1,6 +1,12 @@
 ---
-tags: engineering/frontend, client-side, storage, indexedDB
-authors: Nguyen Dinh Nam
+tags: 
+ - frontend
+ - client-side
+ - storage
+authors: 
+ - nguyend-nam
+description: IndexedDB is a low-level API for client-side storage like localStorage and cookies. But this built-in non-relational database is much more powerful than those 2 counterparts.
+title: Intro to IndexedDB
 github_id: nguyend-nam
 date: 2022-10-13
 ---

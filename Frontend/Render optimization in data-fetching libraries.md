@@ -1,6 +1,12 @@
 ---
-tags: engineering, frontend, data-fetching
-authors: Tran Tien An
+tags: 
+  - engineering
+  - frontend
+  - data-fetching
+authors: 
+ - cor3.co
+description: Data-fetching libraries are software tools or frameworks that can help improve the performance and scalability of your application by handling network requests and data processing more efficiently.
+title: Render optimization in data-fetching libraries
 github_id: tienan92it
 date: 2023-06-08
 ---

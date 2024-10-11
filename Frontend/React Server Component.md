@@ -1,16 +1,23 @@
 ---
-tags: engineering/frontend, frontend, react, nextjs, server-component, caching-data, react-server-components, server-side-rendering
-authors: Le Duc Chinh
+tags: 
+ - frontend
+ - react
+ - nextjs
+ - server-component
+ - caching-data
+authors: 
+ - chinhld12
 github_id: chinhld12
 date: 2023-05-28
-icy: 10
+description: React Server Components (RSCs) offer the flexibility to decide where to render components based on their purpose, diverging from the client-side rendering approach of Single-Page Applications.
+title: React Server Components, NextJs Route and Data Fetching
 ---
 
-# React Server Components, NextJs Route and Data Fetching
+## React Server Components, NextJs Route and Data Fetching
 
 React Server Components (RSCs) offer the flexibility to decide where to render components based on their purpose, diverging from the client-side rendering approach of Single-Page Applications. By breaking down the page into smaller components, it becomes evident that many components are non-interactive and can be rendered on the server as Server Components. This can improve performance, reduce bundle size and also improve the initial page loading time.
 
-## What are React Server Components?
+### What are React Server Components?
 
 - React Server Components are server-side components that facilitate seamless collaboration between server and Client Components (”use client”) for rendering React applications. RSCs are stateless components designed to run on the server, enhancing the transition between server-rendered content and client-side interactivity.
 - RSCs also allow data fetching to be part of the component tree, using top-level await and server-side data serialization.
@@ -19,7 +26,7 @@ React Server Components (RSCs) offer the flexibility to decide where to render c
 - They depend on frameworks to implement them, and the React team expects them to become widely used and change the ecosystem.
 - They also support async/await for data fetching and plan to add a “use()” hook for client-side data loading.
 
-## Why Server Components?
+### Why Server Components?
 
 Server Components make your app load faster and use less JavaScript. The base runtime is fixed and cacheable, and more JavaScript is only added when you need client-side interactivity with Client Components.
 
@@ -82,7 +89,7 @@ Using RSC with Next.js can bring several benefits to your application, such as:
 - Reduced bundle size: this allows you to move large dependencies or logic that are only needed on the server to RSC files, which are not included in the client bundle. This can reduce the size of your client-side code and improve performance and caching.
 - Simplified data fetching: eliminate the need for using APIs or fetching data on the client for some parts of your application via access directly to backend resources. This can simplify your code, reduce dependencies complexity, errors and keep sensitive information on the backend.
 
-## Pattern for using Server Components
+### Pattern for using Server Components
 
 - To optimize our component tree, we aim to relocate client components to the leaf nodes whenever feasible. Rather than designating the entire component as a client component, we extract the interactive logic and place it in a client-specific component, such as `<SearchBar />, <Input />...` and so on. Meanwhile, we maintain static components like `<Layout />, <List />...` as server components. This approach eliminates the need to transmit the entire JavaScript code for the layout to the client.
 - Server and Client Components can be combined in the same component tree, which means:
@@ -114,7 +121,7 @@ export async function getData() {
 }
 ```
 
-## Server Components Data Fetching in Next.js
+### Server Components Data Fetching in Next.js
 
 With the new features implemented to the `fetch` WebAPI and make the use of `async/await` in Server Components, now the `fetch` can provide us a higher performance on caching/revalidating fetched data and prevent memory caching duplicate requests.
 

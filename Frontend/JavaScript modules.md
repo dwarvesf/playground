@@ -1,6 +1,12 @@
 ---
-tags: engineering/frontend, javascript, modules, iife, commonjs, esm
-authors: Tran Hoang Nam
+tags: 
+ - frontend
+ - javascript
+ - modules
+authors: 
+ - namtrhg
+description: Modules have always been a part of JavaScript development and providing mechanisms for splitting JavaScript programs up into separate modules that can be imported when needed was the absolutely necessity for JavaScript developers.
+title: JavaScript modules
 github_id: namtrhg
 date: 2022-06-27
 ---

@@ -3,7 +3,10 @@ tags:
   - micro-frontend
 title: Micro Frontends Microservices For Frontend Development
 date: 2021-07-09
-description: null
+description: Micro Frontends is an architectural style where independently deliverable frontend applications are composed into a greater whole.
+title: Micro Frontends Microservices For Frontend Development
+authors: 
+ - thanh
 ---
 
 ## What is Micro-frontend ?
@@ -85,14 +88,17 @@ description: null
 	  </body>
 
 	</html>
-	```
+	````  
+  
 
 ### Cons
-* Difficult to make the page responsive
-* Difficult to integrate between different parts of an application, make routing, history, and deep-linking more complicated
+
+- Difficult to make the page responsive
+- Difficult to integrate between different parts of an application, make routing, history, and deep-linking more complicated
 
 ## Run-time integration via JavaScript
-* Each micro frontend is included on the page using a `<script>` tag, and upon load exposes a global function as its entry-point. The container application then determines which micro frontend should be mounted, and calls the relevant function to tell a micro frontend when and where to render itself.
+
+-  Each micro frontend is included on the page using a `<script>` tag, and upon load exposes a global function as its entry-point. The container application then determines which micro frontend should be mounted, and calls the relevant function to tell a micro frontend when and where to render itself.
 
 ```javascript
 <html>

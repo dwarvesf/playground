@@ -1,6 +1,12 @@
 ---
-tags: engineering/frontend, frontend, frontend/performance, performance, fundamental
-authors: thanh
+tags:
+  - frontend
+  - frontend/performance
+  - performance
+authors:
+  - thanh
+description: The key to improving your website speed is to understand where the bottlenecks are, and how much time each step takes.
+title: The fundamental of web performance
 github_id: zlatanpham
 date: 2022-10-02
 ---

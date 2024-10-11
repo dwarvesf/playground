@@ -1,6 +1,12 @@
 ---
-tags: engineering/frontend, frontend, css
-authors: Ngo Lap Nguyen
+tags: 
+ - frontend
+ - css
+ - atomic-css
+authors: 
+ - mashiro5951
+title: An Introduction to Atomic CSS
+description: This article provides an overview of Atomic CSS, including its definition, variations, purposes, and how it compares to other CSS approaches.
 github_id: ngolapnguyen
 date: 2022-10-13
 ---

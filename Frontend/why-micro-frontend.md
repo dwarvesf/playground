@@ -5,9 +5,9 @@ tags:
   - architecture
 title: Why Micro Frontend
 date: 2023-03-20
-description: null
+description: "As web applications become more complex and feature-rich, traditional frontend architectures such as monolithic will become harder to maintain, scale, and evolve. Micro-frontend is an emerging front-end architecture that aims to address these challenges by breaking down the front-end into small, independent and reusable modules."
 authors:
-  - Mashiro
+  - mashiro5951
 ---
 
 ## Micro-Frontend - What & Why?

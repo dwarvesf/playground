@@ -1,9 +1,15 @@
 ---
-tags: engineering/frontend, frontend, react, hooks, state, state-management, reducer, component
-authors: Hien Le
+tags:
+  - frontend
+  - react
+  - state-management
+  - component
+authors:
+  - hienld
+description: "Imagine we have a component with multiple states. It is simple enough not to use state management libraries. `useState` is surely a choice for the sake of brevity and clarity. But are there any issues we have to deal with? In this article, I want to make some improvements on `useState` hook and how we can replace it with `useReducer` as an alternative solution."
+title: When should we use useReducer instead of useState?
 github_id: leduyhien152
 date: 2023-03-01
-icy: 10
 ---
 
 Imagine we have a component with multiple states. It is simple enough not to use state management libraries. `useState` is surely a choice for the sake of brevity and clarity. But are there any issues we have to deal with? In this article, I want to make some improvements on `useState` hook and how we can replace it with `useReducer` as an alternative solution.
