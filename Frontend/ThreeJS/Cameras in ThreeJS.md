@@ -1,6 +1,11 @@
 ---
-tags: engineering/frontend/threejs, threejs, camera
-authors: Nguyen Dinh Nam
+tags:
+  - frontend
+  - threejs
+authors:
+  - namnd
+description: "**ThreeJS** is a JavaScript 3D library that allows developers to develop and describe data in 3 dimensions, and then convert them into 2 dimensions and display them on [HTML Canvas](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement). [**Camera**](https://threejs.org/docs/index.html?q=camera#api/en/cameras/Camera) is one of the core elements of a ThreeJS project, beside [Scene](https://threejs.org/docs/index.html?q=scene#api/en/scenes/Scene), [Renderer](https://threejs.org/docs/index.html?q=renderer#api/en/renderers/WebGLRenderer) and 3D objects (can be formed with [Geometries](https://threejs.org/docs/index.html?q=geometry#api/en/geometries/BoxGeometry) and [Materials](https://threejs.org/docs/index.html?q=material#api/en/materials/MeshBasicMaterial))."
+title: Cameras in ThreeJS
 github_id: nguyend-nam
 date: 2022-09-15
 ---

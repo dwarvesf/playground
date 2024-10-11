@@ -1,7 +1,12 @@
 ---
-tags: engineering/frontend, frontend, react-18, react, hooks, useEffect
-authors: Tran Hoang Nam
-github_id: namtrhg
+tags:
+  - frontend
+  - react
+  - useEffect
+authors:
+  - namtrhg
+description: In the React 18 version, the `useEffect` hook has been updated to called twice compare to only one in the older version in StrictMode.
+title: useEffect double calls in React 18
 date: 2022-06-11
 ---
 

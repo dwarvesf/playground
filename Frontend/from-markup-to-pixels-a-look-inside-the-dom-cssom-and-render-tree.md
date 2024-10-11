@@ -10,7 +10,6 @@ github_id: nguyend-nam
 title: From Markup to Pixels - A look inside the DOM, CSSOM, and Render Tree
 description: A deep dive into the rendering process of a web page, exploring the Document Object Model (DOM), CSS Object Model (CSSOM), and the Render Tree.
 date: 2023-09-11
-icy: 10
 ---
 
 Inside a web browser, there exists a software component responsible for determining the content to show you based on the data it receives. This component is known as the browser engine.

@@ -1,6 +1,13 @@
 ---
-tags: CSS, guides, responsive-design, engineering/frontend
-authors: Tran Tien An
+tags: 
+ - frontend
+ - CSS
+ - guides
+ - responsive-design
+authors: 
+ - cor3.co
+description: Container Queries is a CSS feature that allows us to style elements based on the size of a container.
+title: CSS Container Queries
 github_id: tienan92it
 date: 2022-09-02
 ---

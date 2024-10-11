@@ -1,9 +1,15 @@
 ---
-tags: engineering/frontend, frontend, react, hooks, state, state-management
-authors: Ho Quang Toan
+tags: 
+ - fronten
+ - react
+ - hooks
+ - state-management
+authors: 
+ - toanbku
+description: State in React is tied to a position in the UI tree.
+title: Preserving and Resetting state in React
 github_id: toanbku
 date: 2023-02-27
-icy: 10
 ---
 
 ## Why should you read this article?

@@ -2,13 +2,13 @@
 tags:
   - websocket
   - protocols
+  - frontend
 authors:
-  - namanh
+  - namanh14mn
 title: WebSockets
 description: WebSockets are a simple solution that is invented to solve the problems of HTTP polling for updating the data from the server, which has caused in high overhead, latency, and not-truthly realtime. WebSocket helps to maintain one single TCP connection for traffic in both directions for bidirectional soft-realtime communication.
 github_id: tonible14012002
 date: 2023-12-18
-icy: 10
 ---
 
 ## What are WebSockets

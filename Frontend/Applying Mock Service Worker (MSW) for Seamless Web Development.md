@@ -1,6 +1,13 @@
 ---
-tags: frontend, mock-service-worker, api-mocking, web-development-tool, engineering/frontend
-authors: Huynh Thanh Hai
+tags: 
+ - frontend
+ - mock-service-worker
+ - api-mocking
+ - web-development-tool
+authors: 
+ - hthai2201
+description: Mock Service Worker (MSW) is an API mocking library that leverages the Service Worker API to intercept requests. It offers unique features that set it apart from traditional mocking libraries, making it a go-to choice for developers. With MSW, you can seamlessly mock both RESTful and GraphQL APIs, providing flexibility for various API architectures. Additionally, MSW supports both Node.js and browser environments, enabling consistent API mocking across different parts of your application.
+title: Applying Mock Service Worker (MSW) for Seamless Web Development
 github_id: hthai2201
 date: 2023-06-19
 ---

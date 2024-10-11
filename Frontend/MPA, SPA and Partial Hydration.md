@@ -1,7 +1,12 @@
 ---
-tags: engineering/frontend, frontend
-authors: Giang Ngoc Huy
+tags: 
+ - frontend
+ - engineering/frontend
+authors: 
+ - huygn
 github_id: huygn
+description: MPA, SPA and Partial Hydration are three different approaches to building web applications.
+title: MPA, SPA and Partial Hydration
 date: 2022-03-24
 ---
 

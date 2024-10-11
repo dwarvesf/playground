@@ -1,9 +1,15 @@
 ---
-tags: typescript, frontend, engineering, analytics-tools, analytics-platform, data-driven, event-tracking
-authors: Tran Hoang Nam
+tags: 
+ - typescript
+ - frontend
+ - analytics-tools
+ - analytics-platform
+authors: 
+ - namtrhg
+description: Mixpanel is a powerful analytics platform that assists companies in monitoring and analyzing user behavior on their websites and mobile applications.
+title: Mixpanel
 github_id: namtrhg
 date: 2023-02-13
-icy: 10
 ---
 
 Mixpanel is a powerful analytics platform that assists companies in monitoring and analyzing user behavior on their websites and mobile applications. With Mixpanel, you can analyze user activity, evaluate the performance of your products, and improve user experience through data-driven decisions. ![](assets/mixpanel_dashboard.webp)

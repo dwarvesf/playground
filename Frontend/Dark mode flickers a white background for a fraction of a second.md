@@ -1,6 +1,12 @@
 ---
-tags: frontend, tip, dark-mode, engineering/frontend
-authors: thanh
+tags: 
+ - frontend
+ - tip
+ - dark-mode
+authors: 
+ - thanh
+description: The dark mode feature uses local storage to store a user's preference for future usage. The problem is that when the dark mode is enabled and the page is reloaded, there's a flicker of white background all over the page before it turns dark. This happens for a fraction of a second and doesn't look natural.
+title: Dark mode flickers a white background for a fraction of a second
 github_id: zlatanpham
 date: 2022-08-11
 ---

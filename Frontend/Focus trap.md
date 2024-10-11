@@ -1,7 +1,13 @@
 ---
-tags: html, accessibility, modal, a11y, engineering/frontend
-authors: thanh
+tags: 
+ - frontend
+ - html
+ - accessibility
+authors: 
+ - thanh
 github_id: zlatanpham
+description: Focus trap is a web technique to improve accessibility by forcing keyboard focus inside a DOM element, to prevent the user navigating outside that element.
+title: Focus trap
 date: 2022-06-12
 ---
 

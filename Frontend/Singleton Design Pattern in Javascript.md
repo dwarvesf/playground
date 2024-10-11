@@ -1,6 +1,11 @@
 ---
-tags: frontend, design-pattern, engineering/frontend
-authors: Le Duc Chinh
+tags:
+  - frontend
+  - design-pattern
+authors:
+  - chinhld12
+description: The Singleton design pattern is a design pattern that restricts the instantiation of a class to one object.
+title: Singleton Design Pattern in Javascript
 github_id: chinhld12
 date: 2022-10-16
 ---
