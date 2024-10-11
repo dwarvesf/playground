@@ -1,6 +1,6 @@
 ---
 tags:
-  - ops
+  - operations
   - zettelkasten
 title: Organize team know-how with Zettelkasten Method
 date: 2024-06-25

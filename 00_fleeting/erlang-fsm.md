@@ -3,9 +3,9 @@ tags:
   - erlang
   - elixir
   - fsm
-title: "Erlang Finite State Machine"
+title: Erlang Finite State Machine
 date: 2024-07-12
-description: "The Power of Finite State Machines"
+description: The Power of Finite State Machines
 authors:
   - hieuphq
 ---

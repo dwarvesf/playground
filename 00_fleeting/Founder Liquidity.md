@@ -5,6 +5,9 @@ tags:
   - founder
 authors:
   - tieubao
+description: Founder liquidity is a secret that founders and investors don't want you to know
+title: Founder Liquidity
+date: 2024-10-11
 ---
 Ask most venture-backed founders why they get 10x more equity than employee #1, 100x more equity than employee #5, and 1000x more equity than employee #15, and you'll get the same answer: "I'M TAKING SO MUCH RISK, IT'S SO HARD TO START A COMPANY, I MADE A BIG MOVE!!!" And then you'll ask, "but why are you yelling?”
 

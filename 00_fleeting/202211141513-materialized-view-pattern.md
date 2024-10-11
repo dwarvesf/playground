@@ -1,9 +1,15 @@
 ---
-discord_id: haongo1#3632
-discord_channel: engineering
+authors:
+ - haongo1
+description: Materialized view is the cache of views. It pre-computes, stores, and optimizes data access when created, and automatically refreshes to ensure real-time data availability.
+title: Materialized View Pattern
 date: 2022-11-14
-tags: data, materialized-view, sql, database, data-warehouse
-icy: 5
+tags:
+ - data
+ - materialized-view
+ - sql
+ - database
+ - data-warehouse
 ---
 
 **Materialized View Pattern**
