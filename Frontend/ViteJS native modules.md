@@ -26,7 +26,7 @@ Vite takes full advantage of the availability of native ES modules in the browse
 
 Bundle-based dev server like Webpack built your application by combining all the source-code and modules into a JavaScript-based bundle, everything is done on the server-side and when you change something, the entire application has to build from the start.
 
-![](https://vitejs.dev/assets/bundler.37740380.png)
+![](assets/bundler.37740380.png)
 
 #### Native ESM based dev server
 
@@ -34,7 +34,7 @@ Vite's approach was instead of bundling all everything on the server, it only bu
 
 This architecture provides a faster dev server by avoiding bundling all the application on the server and utilizing the power of modules handling of the browsers.
 
-![](https://vitejs.dev/assets/esm.3070012d.png)
+![](assets/esm.3070012d.png)
 
 ### Update when built
 
