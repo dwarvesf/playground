@@ -4,7 +4,7 @@ tags:
   - go-weekly
 authors:
   - fuatto
-title: 'Using Go embed, and Reflect'
+title: 'Go Commentary #15: Using Go embed, and Reflect'
 description: Quick notes on Go embed and Go Reflect
 date: 2024-10-11
 ---
