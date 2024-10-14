@@ -59,7 +59,7 @@ Go’s compiler checks the types at compile time. If the provided type doesn’t
 
 Go also leverages underlying types in some constraints. For example, the `comparable` constraint ensures that the type parameter can be compared using `==` or `!=`. For this to work, the compiler ensures that any type passed to a function constrained by `comparable` supports these operations, preventing runtime errors.
 
-### 5. **Explicit and Simple Type Inference:**
+### 5. Explicit and Simple Type Inference
 
 Go simplifies type safety by inferring types when possible. If the compiler can deduce the type parameter from the context, you don’t need to explicitly specify it, but the compiler still checks that the type is valid according to the constraints.
 
@@ -73,13 +73,28 @@ func Add[T int | float64](a, b T) T {
 result := Add(3.0, 4.5) // Go infers T as float64
 ```
 
+### Commutative Diagram
+
+$$
+\begin{CD}
+\text{GenericCode} @>\text{Parse}>> \text{AST} @>\text{TypeCheck}>> \text{TypedAST} \\
+@V\text{Instantiate}VV @V\text{Infer}VV @VV\text{Compile}V \\
+\text{ConcreteCode} @>>\text{Verify}> \text{TypeSafeCode} @>>\text{Generate}> \text{ExecutableCode}
+\end{CD}
+$$
+
+This diagram shows the process of how Go handles generic code:
+
+1. Generic code is parsed into an Abstract Syntax Tree (AST).
+2. The AST undergoes type checking, which involves constraint checking and type inference.
+3. The resulting TypedAST is then compiled into executable code.
+4. Alternatively, generic code can be instantiated with concrete types, verified for type safety, and then generated into executable code.
+
 ### Summary
 
-Go achieves type safety with generics by using:
+In conclusion, Go achieves type safety with generics through a combination of compile-time type checking, constraint satisfaction, and type inference.
 
 1. **Type parameters** that allow flexibility.
 2. **Type constraints** to enforce rules about what types are allowed.
 3. **Compile-time type checking** to prevent invalid types from being used.
 4. **Simple and explicit type inference** while maintaining safety through constraints.
-
-These features ensure that even with generics, Go remains type-safe, preventing type-related runtime errors.
