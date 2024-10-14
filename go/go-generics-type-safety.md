@@ -75,7 +75,6 @@ result := Add(3.0, 4.5) // Go infers T as float64
 
 ### Commutative Diagram
 
-<span>
 $$
 \begin{CD}
 \text{GenericCode} @>\text{Parse}>> \text{AST} @>\text{TypeCheck}>> \text{TypedAST} \\
@@ -83,7 +82,6 @@ $$
 \text{ConcreteCode} @>>\text{Verify}> \text{TypeSafeCode} @>>\text{Generate}> \text{ExecutableCode}
 \end{CD}
 $$
-</span>
 
 This diagram shows the process of how Go handles generic code:
 
