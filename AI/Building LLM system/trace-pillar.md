@@ -6,7 +6,7 @@ tags:
   - pillar
 title: Trace Pillar
 date: 2024-10-11
-description: 'Traces map out the journey of requests in your app, showing how data flows and where delays or bottlenecks might pop up.'
+description: 'Tracing is like following your LLM’s journey, step by step. We will explain how tracing makes it easy to identify and address problems by allowing you to track the entire process.'
 authors:
   - datnguyennnx
 ---
@@ -21,7 +21,7 @@ Tracing helps you see how well an LLM app is performing, including details like 
 
 There are different tools available for tracing LLMs, like [Klu.ai](http://klu.ai/), [LangSmith](https://docs.smith.langchain.com/), which can log all calls made to LLMs, agents, and other tools, showing you visual breakdowns of inputs, outputs, and even tracking errors and costs. Besides performance and debugging, tracing is also useful for figuring out where LLMs come from, which is getting trickier as more companies release their own models.
 
-![image.png](assets/trace-pillar-tracing-roadmap.webp)
+![](assets/trace-pillar-tracing-roadmap.webp)
 
 ## Why tracing is necessary
 
@@ -34,7 +34,7 @@ Tracing can help you track down issues like:
 - **LLM parameters:** view the parameters used when calling out to an LLM to debug things like temperature and system prompts.
 - **Prompt templates:** determine which prompt template was used during the prompting step, as well as the variables used.
 
-![image.png](assets/trace-pillar-tracing-example.webp)
+![](assets/trace-pillar-tracing-example.webp)
 
 ## Element in tracing
 
@@ -55,7 +55,7 @@ Traces, also known as distributed traces, provide a view of a system by crossing
 
 A trace consists of a tree structure of spans, beginning with a root span that has no parent. This root span encapsulates the total time required to complete a task, representing a single logical operation such as adding an step to a get current weather. The root span serves as the foundation, with child spans branching off to provide more detailed information about specific subtasks or processes within the overall operation.
 
-![image.png](assets/trace-pillar-trace-explain.webp)
+![](assets/trace-pillar-trace-explain.webp)
 
 ### Span
 
@@ -68,7 +68,7 @@ Span help define the main operations within LLM applications. These types of ope
 - **Tool**: External tool calls, like grabbing info from a weather API or using a calculator to get real-time data.
 - **Agent**: In intelligent agent scenarios, this handles more dynamic workflows, making decisions based on LLM outputs.
 
-![image.png](assets/trace-pillar-span-explain.webp)
+![](assets/trace-pillar-span-explain.webp)
 
 ## Conclusion
 

@@ -6,7 +6,7 @@ tags:
   - pillar
 title: Metric Pillar
 date: 2024-10-11
-description: 'Metrics give you the numbers that matter, like performance stats and resource usage, helping you keep an eye on overall health and trends.'
+description: 'Metrics give you the rundown on how your LLM’s performing. We will show how to use these metrics to identify issues, increase efficiency, and make changes for improved outcomes.'
 authors:
   - datnguyennnx
 ---
@@ -29,7 +29,7 @@ System metrics are essential for understanding the overall health and performanc
 | Error Rate | Percentage of failed requests | Indicates system reliability |
 | Resource Utilization | CPU, memory, and disk usage | Helps identify performance bottlenecks |
 
-![image.png](assets/metric-pillar-monitoring-dashboard.webp)
+![](assets/metric-pillar-monitoring-dashboard.webp)
 
 ## Model Metrics
 
@@ -51,7 +51,7 @@ Evaluating the performance of an LLM requires specific metrics that quantify its
 | METEOR | Evaluates semantic similarity | Enhances BLEU's effectiveness |
 | ROUGE | Measures overlap in summarization | Useful for content generation tasks |
 
-![image.png](assets/metric-pillar-model-metric.webp)
+![](assets/metric-pillar-model-metric.webp)
 
 ### Scoring based on RAG systems
 
@@ -69,7 +69,7 @@ In retrieval-augmented generation systems, the effectiveness of information retr
 | Mean Reciprocal Rank | Average rank of the first relevant result | Improves user satisfaction |
 | Normalized Discounted Cumulative Gain | Evaluates ranking quality | Enhances overall user experience |
 
-![image.png](assets/metric-pillar-rag-metric.webp)
+![](assets/metric-pillar-rag-metric.webp)
 
 ### Metrics for Fine-Tuning model
 
@@ -89,7 +89,7 @@ Fine-tuning models is an essential step for improving performance when the RAG t
 | Loss Reduction | Change in the loss function | Reflects learning effectiveness |
 | User Feedback | Qualitative assessment of model performance | Provides context to quantitative data |
 
-![image.png](assets/metric-pillar-fine-tuning-metric.webp)
+![](assets/metric-pillar-fine-tuning-metric.webp)
 
 ## Cost Metrics
 
@@ -109,7 +109,7 @@ Finally, the operating system should mention cost and price of the amount of mod
 | Resource Costs | Expenses linked to resource utilization | Essential for cost management |
 | Service Rate Limits | Limits set by service providers | Important for usage planning |
 
-![image.png](assets/metric-pillar-management-resource.webp)
+![](assets/metric-pillar-management-resource.webp)
 
 ## Conclusion
 

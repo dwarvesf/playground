@@ -27,15 +27,15 @@ Understanding observability requires understanding its three pillars: **Metrics*
 
 ### Metrics
 
-Metrics are the foundation of AI observability, including system- and model-specific indications. System indicators like throughput and hardware usage are common, whereas model metrics like accuracy and hallucination rates are AI-specific. Cost tracking includes tracking query volumes and token usage. Using a combination of spot and extensive checks ensures complete monitoring. You can check out this [article](metric-pillar.md) for a deep dive into the Metric pillar.
+[Metrics](metric-pillar.md) are the foundation of AI observability, including system- and model-specific indications. System indicators like throughput and hardware usage are common, whereas model metrics like accuracy and hallucination rates are AI-specific. Cost tracking includes tracking query volumes and token usage. Using a combination of spot and extensive checks ensures complete monitoring.
 
 ### Logs
 
-The golden rule of AI logging is to record everything: system parameters, queries, outputs, and component lifecycles. Effective logging needs consistent tagging and identification assignment for traceability. Check out this [article](logs-pillar.md) for understanding more about the Logs pillar.
+[Logging](logs-pillar.md) in AI applications ensures detailed records are maintained, enabling effective monitoring and debugging throughout the system’s operation. The golden rule of logging is to record everything: system parameters, queries, outputs, and component lifecycles. Effective logging needs consistent tagging and identification assignment for traceability.
 
 ### Traces
 
-Tracing in AI applications provides a full picture of the execution path, from query to response. It includes document retrieval, prompting, and model interactions, as well as time and cost estimates for each step. Visualization tools such as Langsmith provide simple trace representations. This [article](trace-pillar.md) provides elements in the Tracing pillar.
+[Tracing](race-pillar.md) in AI applications provides a full picture of the execution path, from query to response. It includes document retrieval, prompting, and model interactions, as well as time and cost estimates for each step. Visualization tools such as Langsmith provide simple trace representations.
 
 ## Benefits of LLM bbservability
 
@@ -56,7 +56,7 @@ Monitoring LLMs presents several challenges:
 - **Dynamic Workloads:** LLM performance can change in response to shifting demands, requiring adaptive monitoring strategies.
 - **Data privacy:** Ensuring data privacy when monitoring LLMs is important because businesses must meet legal requirements without sacrificing insights.
 
-## Reference
+## References
 
 - https://theblue.ai/blog/llm-observability-en/
 - https://medium.com/@aiswaryasomanathan4/logging-traces-and-metrics-whats-the-difference-c796ea276c98
