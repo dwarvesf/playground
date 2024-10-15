@@ -89,5 +89,5 @@ Using right metrics and method for specific use case in LLM.
 
 Monitoring the system's performance and orchestrating the complex AI workflows that tie the components together.
 
-- Observability in AI Platforms
+- [Observability in AI Platforms](observability-in-AI-platforms.md)
 - AI Pipeline Orchestration
