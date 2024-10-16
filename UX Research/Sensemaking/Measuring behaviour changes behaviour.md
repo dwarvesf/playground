@@ -2,7 +2,7 @@
 tags:
  - ux-research
  - quantitative
-description: Measuring behaviour will provoke change in that behaviour. Something akin to the observer effect takes place: we adjust our behaviour to be "seen" by the measures.
+description: 'Measuring behaviour will provoke change in that behaviour. Something akin to the observer effect takes place: we adjust our behaviour to be "seen" by the measures.'
 title: Measuring behaviour changes behaviour
 ---
 

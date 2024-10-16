@@ -3,7 +3,7 @@ tags:
  - ux
  - research
  - method
-description: UX research methods can be organized according to a 3-dimensional framework with the following axes:
+description: UX research methods can be organized according to a 3-dimensional framework with the following axes
 title: Landscape of UX research methods
 ---
 

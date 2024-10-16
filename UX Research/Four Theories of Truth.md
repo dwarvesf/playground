@@ -3,7 +3,7 @@ tags:
  - epistemology
 description: In epistemology, there are generally four theories by which a claim may be evaluated as true. These are
 title: Four Theories of Truth
---
+---
 
 Understanding each of these methods provides a rubric by which a claim can be evaluated. Weighing the claim against each model in turn can help facilitate critical thought.
 
