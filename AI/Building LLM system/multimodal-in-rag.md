@@ -1,15 +1,18 @@
 ---
-tags:
-  - llm
-  - vector-database
-  - rag
 authors:
-  - hoangnnh
-date: 2024-06-28
-title: 'Multimodal in RAG'
-description: 'In spite of having taken the world by storm, Large Language Models(LLM) still has some limitations such as limited context window and a knowledge cutoff date. Retrieval-Augmented Generation(RAG) steps in to bridge this gap by allowing LLMs to access and utilize external knowledge sources beyond their training data. However, data is not text based only, it also can be image, audio, table in docs,...'
+  - "hoangnnh"
+date: "2024-06-28"
+description: "In spite of having taken the world by storm, Large Language Models(LLM) still has some limitations such as limited context window and a knowledge cutoff date. Retrieval-Augmented Generation(RAG) steps in to bridge this gap by allowing LLMs to access and utilize external knowledge sources beyond their training data. However, data is not text based only, it also can be image, audio, table in docs,..."
+hashnode_meta:
+  id: "670f4d4ad8a3cebb1d59a8a5"
+  slug: "multimodal-in-rag"
+sync: "hashnode"
+tags:
+  - "llm"
+  - "vector-database"
+  - "rag"
+title: "Multimodal in RAG"
 ---
-
 In spite of having taken the world by storm, Large Language Models(LLM) still has some limitations such as limited context window and a knowledge cutoff date. Retrieval-Augmented Generation(RAG) steps in to bridge this gap by allowing LLMs to access and utilize external knowledge sources beyond their training data. However, data is not text based only, it also can be image, audio, table in docs,... It make information captured is lost in most RAG application. Therefore, preprocess multimodal data is a problem we should not ignore in making RAG application. In this note, we will explore how to effectively preprocess and integrate multimodal data to enhance the performance and utility of RAG systems.
 
 ## Challenge in Multimodal RAG

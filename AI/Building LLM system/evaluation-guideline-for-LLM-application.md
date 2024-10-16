@@ -1,14 +1,17 @@
 ---
-tags:
-  - llm
-  - evaluation
-title: Evaluation Guidelines for LLM Applications
-date: 2024-09-26
-description: 'This guide offers a structured approach to evaluating and optimizing the integration of third-party Large Language Models (LLMs) into applications, ensuring alignment with business goals and user needs through detailed checklists and evaluation metrics.'
 authors:
-  - datnguyennnx
+  - "datnguyennnx"
+date: "2024-09-26"
+description: "This guide offers a structured approach to evaluating and optimizing the integration of third-party Large Language Models (LLMs) into applications, ensuring alignment with business goals and user needs through detailed checklists and evaluation metrics."
+hashnode_meta:
+  id: "670f4d4502b5ed292768354f"
+  slug: "evaluation-guidelines-for-llm-applications"
+sync: "hashnode"
+tags:
+  - "llm"
+  - "evaluation"
+title: "Evaluation Guidelines for LLM Applications"
 ---
-
 ## Overview
 
 Evaluation is a hard part of building an RAG system, especially for application-integrated LLM solving your business problem. This guide outlines a clear, step-by-step approach to effectively evaluating and optimizing the integration of a third-party Large Language Model (LLM) into your application. By following these articles, you'll make sure the model fits your business goals and technical needs.

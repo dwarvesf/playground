@@ -1,16 +1,19 @@
 ---
-tags: 
-- ai
-- tuning-llm
-- llm
-authors: 
-- monotykamary
-title: "Workaround with OpenAI's token limit with Langchain"
-github_id: monotykamary
-date: 2023-04-21
+authors:
+  - "monotykamary"
+date: "2023-04-21"
 description: "This article explores strategies to overcome OpenAI's token limit using Langchain, including stuffing, map-reduce, refining, and map-rerank methods. It discusses the advantages and drawbacks of each approach in handling large documents or prompts while working within the constraints of OpenAI's API."
+github_id: "monotykamary"
+hashnode_meta:
+  id: "670f4d40d8a3cebb1d59a8a3"
+  slug: "workaround-with-openais-token-limit-with-langchain"
+sync: "hashnode"
+tags:
+  - "ai"
+  - "tuning-llm"
+  - "llm"
+title: "Workaround with OpenAI's token limit with Langchain"
 ---
-
 ## Problem
 
 Tuning OpenAI's ChatGPT comes as a very finicky problem as we don't have access to the model and other forms of tuning GPT are very limited. Not to mention that OpenAI has a token limit, as of time of writing, of ~4,000 tokens (with each token being ~1.2 words). This limit is applied on both the prompt and response of the answer.

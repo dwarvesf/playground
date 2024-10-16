@@ -1,15 +1,18 @@
 ---
-tags:
-  - llm
-  - ai-agents
-  - ai-integration
 authors:
-  - hoangnnh
-date: 2024-09-06
-title: 'Multi-agent collaboration for task completion'
-description: 'In AI integrated systems, instead of put all workload on a single agent, we can apply divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent.This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone'
+  - "hoangnnh"
+date: "2024-09-06"
+description: "In AI integrated systems, instead of put all workload on a single agent, we can apply divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent.This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone"
+hashnode_meta:
+  id: "670f4d4447e618546b110b23"
+  slug: "multi-agent-collaboration-for-task-completion"
+sync: "hashnode"
+tags:
+  - "llm"
+  - "ai-agents"
+  - "ai-integration"
+title: "Multi-agent collaboration for task completion"
 ---
-
 In AI integrated systems, instead of putting all the workload on a single agent, we can apply a divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent. This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone.
 
 ## Problems

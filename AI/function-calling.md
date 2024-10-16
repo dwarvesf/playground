@@ -1,15 +1,18 @@
 ---
-tags:
-  - ai
-  - llm
-  - function-calling
-title: 'Function calling in AI agents'
-description: 'Function calling is a critical component in the architecture of AI agents, facilitating the integration of external functionalities and resources. This note explores how function calling is implemented in AI architectures and its role in enhancing agent capabilities'
-date: 2024-07-18
 authors:
-  - 0xm
+  - "0xm"
+date: "2024-07-18"
+description: "Function calling is a critical component in the architecture of AI agents, facilitating the integration of external functionalities and resources. This note explores how function calling is implemented in AI architectures and its role in enhancing agent capabilities"
+hashnode_meta:
+  id: "670f4d4bd8a3cebb1d59a8a7"
+  slug: "function-calling-in-ai-agents"
+sync: "hashnode"
+tags:
+  - "ai"
+  - "llm"
+  - "function-calling"
+title: "Function calling in AI agents"
 ---
-
 ## Introduction
 
 Function calling is a critical component in the architecture of AI agents, facilitating the integration of external functionalities and resources. This note explores how function calling is implemented in AI architectures and its role in enhancing agent capabilities.

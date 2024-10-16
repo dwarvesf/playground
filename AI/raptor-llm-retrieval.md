@@ -1,15 +1,18 @@
 ---
-tags:
-  - llm
-  - document-processing
-  - information-retrieval
 authors:
-  - monotykamary
-title: 'RAPTOR: Tree-based Retrieval for Language Models'
-description: 'An overview of RAPTOR, a novel approach for improving retrieval-augmented language models for long documents using hierarchical tree summaries.'
-date: 2024-07-10
+  - "monotykamary"
+date: "2024-07-10"
+description: "An overview of RAPTOR, a novel approach for improving retrieval-augmented language models for long documents using hierarchical tree summaries."
+hashnode_meta:
+  id: "670f4d40b868e6913d1b53e9"
+  slug: "raptor-tree-based-retrieval-for-language-models"
+sync: "hashnode"
+tags:
+  - "llm"
+  - "document-processing"
+  - "information-retrieval"
+title: "RAPTOR: Tree-based Retrieval for Language Models"
 ---
-
 ## What is it?
 
 RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval) is a new technique for improving retrieval-augmented language models, particularly for long documents: https://arxiv.org/html/2401.18059v1
