@@ -1,12 +1,18 @@
 ---
 discord_channel: engineering
-discord_id: 0xLight#0002
+authors:
+ - 0xlight
 date: 2022-10-13
-tags: BDD, behavior-driven-development, testing, TDD, ubiquitous-language, process, agile
-icy: 5
+tags:
+ - agile
+ - behavior-driven-development
+ - testing
+ - ubiquitous-language
+description: Behavior Driven Development (BDD) is a software development process that encourages collaboration among developers, QA, and non-technical stakeholders.
+title: Behavior Driven Development
 ---
 
-**Behavior Driven Development (BDD) Three Practices:**
+### Behavior Driven Development (BDD) Three Practices
 - First, take a small upcoming change to the system – a User Story – and talk about concrete examples of the new functionality to explore, discover and agree on the details of what’s expected to be done.
 - Next, document those examples in a way that can be automated, and check for agreement.
 - Finally, implement the behaviour described by each documented example, starting with an automated test to guide the development of the code.
@@ -37,5 +43,3 @@ Then I should be able to login successfully
 > - BDD borrows * ubiquitous language * concept from domain driven design so that everyone in the team can understand the term the same way.
 
 Source: https://cucumber.io/docs/bdd/
-@brain master 
-#BDD #behavior-driven-development #testing #TDD #ubiquitous-language #process #agile

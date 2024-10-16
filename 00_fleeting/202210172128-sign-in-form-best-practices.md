@@ -1,12 +1,15 @@
 ---
-discord_id: Mashiro#5951
-discord_channel: engineering
+authors:
+ - mashiro#5951
+description: "Use meaningful HTML elements: `<form>`, `<input>`, `<label>`, and `<button>`."
+title: 'Sign-in Form Best Practices'
 date: 2022-10-17
-tags: frontend, form
-icy: 5
+tags:
+ - frontend
+ - form
 ---
 
-**Sign-in Form Best Practices**
+### Sign-in Form Best Practices
 
 - Use meaningful HTML elements: `<form>`, `<input>`, `<label>`, and `<button>`.
 - Label each input with a `<label>`.
@@ -25,8 +28,6 @@ icy: 5
 - Test in the field as well as the lab: build page analytics, interaction analytics, and user-centric performance measurement into your sign-up and sign-in flow.
 - Test across browsers and devices: form behaviour varies significantly across platforms.
 
-**References**
-- https://web.dev/sign-in-form-best-practices
+### References
 
-#frontend #form
-@brain master
+- https://web.dev/sign-in-form-best-practices

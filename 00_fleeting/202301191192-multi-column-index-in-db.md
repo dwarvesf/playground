@@ -1,9 +1,14 @@
 ---
-discord_id: hmhoang13#5280
-discord_channel: engineering
+authors:
+ - hmhoang13
+description: Multi-column index in DB
+title: Multi-column index in DB
 date: 2023-01-19
-tags: database, multi-column-index, index, composite-index
-icy: 5
+tags:
+ - database
+ - multi-column-index
+ - index
+ - composite-index
 ---
 
 **Multi-column index in DB**
@@ -35,6 +40,3 @@ SELECT * FROM tbl_name WHERE col2=val2 AND col3=val3;
 ```
 
 **Summary**: If the table has a multiple-column index, any leftmost prefix of the index can be used by the optimizer to look up rows.
-
-#database, #multi-column-index, #index, #composite-index
-@brain master

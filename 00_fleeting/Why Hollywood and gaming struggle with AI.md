@@ -1,8 +1,12 @@
 ---
 tags:
   - AI
+  - entertainment
 authors:
   - tieubao
+description: Why Hollywood and gaming struggle with AI
+title: Why Hollywood and gaming struggle with AI
+date: 2024-10-11
 ---
 Incumbent entertainment and video game companies are experiencing friction in experimenting with generative AI, creating opportunities for startups to innovate. There are several reasons why big companies are hesitant to embrace AI aggressively:
 
@@ -12,7 +16,5 @@ Incumbent entertainment and video game companies are experiencing friction in ex
 4. **Creative resistance**: Artists and designers fear AI will disrupt their work, leading to pushback from creative departments.
 5. **Difficulty in hiring AI engineers**: The high demand and cost for top AI talent make it challenging for established companies to recruit necessary expertise.
 
-
 ---
 https://andrewchen.substack.com/p/why-hollywood-and-aaa-gaming-cant
-
