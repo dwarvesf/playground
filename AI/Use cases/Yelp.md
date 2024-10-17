@@ -1,14 +1,16 @@
 ---
 authors:
-- "datnguyennnx"
-date: "2024-10-17"
-description: "Yelp also had an ML platform before the LLM race, and to see what they are implementing LLM to increase the performance search and recommendation system to help moderators or businesses catch users easily. Let's go into the Yelp use case."
+- datnguyennnx
+date: 2024-10-17
+description: Yelp also had an ML platform before the LLM race, and to see what they are implementing LLM to increase the performance search and recommendation system to help moderators or businesses catch users easily. Let's go into the Yelp use case.
 tags:
-- "llm"
-- "yelp"
-- "use cases"
-title: "Yelp use cases"
+- llm
+- yelp
+- use cases
+title: Yelp use cases
 ---
+
+Yelp Inc. is a platform that helps users discover local businesses through reviews, ratings, and recommendations. Recently, they've integrated AI and large language models (LLMs) to improve content moderation, search capabilities, and user interactions with features like Yelp Assistant.
 
 ## Key Takeaway
 
@@ -18,7 +20,7 @@ title: "Yelp use cases"
 - Yelp Assistant helps users find service providers by using LLM with their ML system.
 
 ## Yelp contents as embeddings
-
+### Text embeddings
 Yelp’s platform has tons of user-generated content, like reviews, and to keep users trusting the site, they need to make sure inappropriate stuff (like hate speech, harassment, lewdness, or threats) gets spotted and removed. Relying only on human moderators isn’t enough, so they’ve turned to automated tools to help. They went with LLMs because these models are great at picking up on tricky, harmful language across different situations.
 
 They mainly looked at how well LLMs can catch bad content like:
@@ -41,7 +43,7 @@ Yelp put together a dataset ( you can find [this datasets at here](https://huggi
 
 Since incorporating LLMs to help detect harmful and inappropriate content, it enabled Yelp moderators to proactively prevent **23,600+ reviews from ever publishing to Yelp in 2023**.
 
-## How Yelp use CLIP model
+### Photo embeddings with CLIP model
 
 Yelp uses business and photo embeddings to enhance data accessibility and improve recommendations, semantic search, and clustering.
 
