@@ -1,6 +1,5 @@
 ---
 tags:
-  - go
   - golang
   - generics
 title: 'How does Go achieve type safety when it enables generics?'

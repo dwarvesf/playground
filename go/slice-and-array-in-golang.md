@@ -1,6 +1,5 @@
 ---
 tags:
-  - go
   - data-structures
   - golang
 title: 'Slice And Array In Golang'

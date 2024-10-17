@@ -1,7 +1,7 @@
 ---
 tags:
   - tool
-  - go
+  - golang
   - engineering
   - practice
 title: 'Approaches To Manage Concurrent Workloads Like Worker Pools And Pipelines'
