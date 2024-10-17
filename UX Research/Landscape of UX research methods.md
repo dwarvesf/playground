@@ -1,10 +1,5 @@
 ---
-tags: 
- - ux
- - research
- - method
-description: UX research methods can be organized according to a 3-dimensional framework with the following axes
-title: Landscape of UX research methods
+tags: ux, research, method
 ---
 
 UX research methods can be organized according to a 3-dimensional framework with the following axes:
@@ -32,14 +27,16 @@ Finally, research methods can be classified based on the degree to which partici
 
 When studying natural use, care should be taken to ensure that the environment is as close to the actual use case as possible. While this leaves more to chance, it improves the validity of the research. Scripted use of the product involves asking the participant to focus on specific elements or tasks, in accordance with the study's goals. Methods not involving the product in use are generally used to help uncover issues apart from usage or usability, such as cultural factors. Hybrid methods combine aspects of all of the above and may include participatory design methods or concept testing.
 
+![Landscape of User Research Methods.png](https://publish-01.obsidian.md/access/5bf4c22f8416d93237aa3630d0fd9c7c/assets/Landscape%20of%20User%20Research%20Methods.png)
+
 ---
 
 #### Related
 
--   [UX researchers should care about strength of evidence](./UX+researchers+should+care+about+strength+of+evidence)
--   [How many users should you interview](./How+many+users+should+you+interview)
+-   [[UX researchers should care about strength of evidence]]
+-   [[How many users should you interview]]
 -   [Qualitative research creates mental models about the problem space.](https://publish.obsidian.md/mobydiction/notes/Qualitative+research+creates+mental+models+about+the+problem+space.)
--   [Quant data is lossy](./Quant+data+is+lossy)
+-   [[Quant data is lossy]]
 -   [Quantitative analysis is not inherently more reliable than qualitative data](https://publish.obsidian.md/mobydiction/notes/Quantitative+analysis+is+not+inherently+more+reliable+than+qualitative+data)
 -   [Qualitative and quantitative research represent different philosophies of knowledge.](https://publish.obsidian.md/mobydiction/notes/Qualitative+and+quantitative+research+represent+different+philosophies+of+knowledge.)
 -   [UX research activities by product lifecycle](https://publish.obsidian.md/mobydiction/notes/UX+research+activities+by+product+lifecycle)

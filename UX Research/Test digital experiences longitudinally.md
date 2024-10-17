@@ -1,18 +1,10 @@
----
-tags:
- - ux
- - research
-description: A user's perception of an experience is not static. It can change over time. What upon first encounter seemed innovative or delightful can become familiar or even frustrating over time with repeated usage. For this reason, it is important to test experiences longitudinally in order to track changing perception.
-title: Test digital experiences longitudinally
----
-
 A user's perception of an experience is not static. It can change over time. What upon first encounter seemed innovative or delightful can become familiar or even frustrating over time with repeated usage. For this reason, it is important to test experiences longitudinally in order to track changing perception.
 
 ---
 
 #### Related
 
--   [Users perception of frequently used applications declines over time](./Users+perception+of+frequently+used+applications+declines+over+time) - As users become more familiar with an application the factors that contribute to their sense of value and that drive loyalty shift.
+-   [[Users perception of frequently used applications declines over time]] - As users become more familiar with an application the factors that contribute to their sense of value and that drive loyalty shift.
 
 #### Citations
 

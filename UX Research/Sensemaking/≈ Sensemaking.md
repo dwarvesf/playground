@@ -1,10 +1,3 @@
----
-tags: 
- - ux-research
-description: Sensemaking is a humanities-based approach to knowledge production that looks to build deep understanding of a people and what matters to them.
-title: Sensemaking
----
-
 ## Summary
 
 Madsbjerg argues that our culture—especially in the business world—has become to taken with a bias toward scientific or algorithmic thinking. This obsession with data has limited our ability to build deep understanding and intuition about people and culture, which are not so easily quantified. Madsbjerg describes sensemaking, a humanities-based method inspired by phenomenology, as an alternative approach that helps understand not just what people do but helps us understand how people relate to contexts around them through the acquisition of thick data.
@@ -13,9 +6,9 @@ Madsbjerg argues that our culture—especially in the business world—has becom
 
 ### What is sensemaking
 
--   [Sensemaking](./¶+Sensemaking)
--   [Sensemaking produces thick data](./Sensemaking+produces+thick+data)
--   [Four types of knowledge (Madsbjerg)](./Four+types+of+knowledge+(Madsbjerg))
+-   [[¶ Sensemaking]]
+-   [Sensemaking produces thick data](https://publish.obsidian.md/mobydiction/notes/Sensemaking+produces+thick+data)
+-   [Four types of knowledge (Madsbjerg)](https://publish.obsidian.md/mobydiction/notes/Four+types+of+knowledge+(Madsbjerg))
 -   [Different forms of empathy](https://publish.obsidian.md/mobydiction/notes/Different+forms+of+empathy)
 -   [Honing intuition](https://publish.obsidian.md/mobydiction/notes/Honing+intuition)
 

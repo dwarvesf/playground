@@ -1,12 +1,5 @@
 ---
-tags: 
-  - ux
-  - research
-  - quantitative
-title: Abundant data makes us jump to quantitative data as the solution to every problem
-description: Today, we arguably collect too much data. It's all around us. Our every movement, every click, is tracked and measured; we quantify the quality of our sleep, how much exercise we get, and how much time we spend looking at our phones. Never mind the copious data being collected by various devices connected to the internet of things. Data is cheap. It's now the detritus of our digital lives, or, as Davis and Davidson put it, "data exhaust." As Sam Ladner argues, we spend more time collecting data than asking good questions of it.
-authors:
- - tieubao
+tags: ux, research/quantitative
 ---
 
 Today, we arguably collect too much data. It's all around us. Our every movement, every click, is tracked and measured; we quantify the quality of our sleep, how much exercise we get, and how much time we spend looking at our phones. Never mind the copious data being collected by various devices connected to the [internet of things](https://publish.obsidian.md/mobydiction/internet+of+things). Data is cheap. It's now the detritus of our digital lives, or, as Davis and Davidson put it, "data exhaust." As Sam Ladner argues, we spend more time collecting data than asking good questions of it.
