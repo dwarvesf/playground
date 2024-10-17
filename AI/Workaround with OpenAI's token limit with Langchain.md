@@ -1,17 +1,19 @@
 ---
 authors:
-  - "monotykamary"
+- "monotykamary"
 date: "2023-04-21"
 description: "This article explores strategies to overcome OpenAI's token limit using Langchain, including stuffing, map-reduce, refining, and map-rerank methods. It discusses the advantages and drawbacks of each approach in handling large documents or prompts while working within the constraints of OpenAI's API."
 github_id: "monotykamary"
 hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/assets/workaround-with-openais-token-limit-with-langchain_openai-token-limit-prompts.webp"
   id: "670f4d40d8a3cebb1d59a8a3"
   slug: "workaround-with-openais-token-limit-with-langchain"
 sync: "hashnode"
 tags:
-  - "ai"
-  - "tuning-llm"
-  - "llm"
+- "ai"
+- "tuning-llm"
+- "llm"
 title: "Workaround with OpenAI's token limit with Langchain"
 ---
 ## Problem

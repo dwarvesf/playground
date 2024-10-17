@@ -1,18 +1,20 @@
 ---
 authors:
-  - "monotykamary"
-  - "innno_"
-  - "ics3rd"
+- "monotykamary"
+- "innno_"
+- "ics3rd"
 date: "2024-07-12"
 description: "Discover how managed LLMOps platforms like Dify streamline the development of AI-powered internal tools. Learn about the challenges of integrating LLMs, the benefits of managed solutions, and real-world examples of efficient AI tool creation. Perfect for businesses looking to enhance productivity with AI without extensive technical expertise.\""
 hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/assets/building-llm-powered-tools-with-dify-sql-sorcerer.webp"
   id: "670f4d50b25a9930f055161a"
   slug: "streamlining-internal-tool-development-with-managed-llmops-a-dify-case-study"
 sync: "hashnode"
 tags:
-  - "ai-powered"
-  - "ai"
-  - "llm"
+- "ai-powered"
+- "ai"
+- "llm"
 title: "Streamlining Internal Tool Development with Managed LLMOps: A Dify Case Study"
 ---
 Organizations are always looking for ways to improve efficiency and productivity. Large Language Models (LLMs) are a powerful technology that can help create smart internal tools. However, using LLMs in existing workflows can be complicated and resource-heavy. This is where managed LLMOps comes into play, providing a smoother way to develop and deploy LLM-powered tools. In this post, we'll see how platforms like Dify enhance the workflow for building internal AI tools.

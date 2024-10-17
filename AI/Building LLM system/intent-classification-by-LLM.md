@@ -1,6 +1,6 @@
 ---
 authors:
-  - "hoangnnh"
+- "hoangnnh"
 date: "2024-10-09"
 description: "User intent classification is a crucial aspect of conversational AI, start with machine learning models, but now advanced language models (LLMs) are being explored for this task. Unlike the old methods which is need to labeled datasets exhaustively, LLMs can understand what users mean without all that preparation. This memo explores the application of LLMs in intent classification, highlighting their potential to streamline the process and overcome traditional NLU limitations."
 hashnode_meta:
@@ -8,9 +8,9 @@ hashnode_meta:
   slug: "intent-classification-by-llm"
 sync: "hashnode"
 tags:
-  - "llm"
-  - "intent-classification"
-  - "prompting"
+- "llm"
+- "intent-classification"
+- "prompting"
 title: "Intent Classification by LLM"
 ---
 User intent classification is a crucial aspect of conversational AI, start with machine learning models, but now advanced language models (LLMs) are being explored for this task. Unlike the old methods which is need to labeled datasets exhaustively, LLMs can understand what users mean without all that preparation. This memo explores the application of LLMs in intent classification, highlighting their potential to streamline the process and overcome traditional NLU limitations.

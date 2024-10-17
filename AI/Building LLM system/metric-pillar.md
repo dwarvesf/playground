@@ -1,17 +1,19 @@
 ---
 authors:
-  - "datnguyennnx"
+- "datnguyennnx"
 date: "2024-10-11"
 description: "Metrics give you the rundown on how your LLM’s performing. We will show how to use these metrics to identify issues, increase efficiency, and make changes for improved outcomes."
 hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/building-llm-system/assets/metric-pillar-monitoring-dashboard.webp"
   id: "670f4d42a897de73067fab5a"
   slug: "metrics"
 sync: "hashnode"
 tags:
-  - "llm"
-  - "observability"
-  - "metric"
-  - "pillar"
+- "llm"
+- "observability"
+- "metric"
+- "pillar"
 title: "Metrics"
 ---
 When it comes to observability in Large Language Model (LLM) applications, metrics have significance delivering that these systems work correctly. Metrics provide information on both system performance and model efficiency, enabling developers and researchers to fine-tune their systems. In this article, we'll look at important metrics for monitoring and evaluating LLMs.

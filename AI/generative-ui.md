@@ -1,17 +1,19 @@
 ---
 authors:
-  - "namnanh14mn"
-  - "TheCodister"
+- "namnanh14mn"
+- "TheCodister"
 date: "2024-08-08"
 description: "An introduction to Generative UI (genUI), a user interface that generates interactive elements in response to user needs using AI, enhancing UX in chat applications. The article explores examples, benefits, and popular solutions like the Vercel AI SDK for implementing generative UI."
 hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/assets/generative-ui-example1.webp"
   id: "670f4d4eb25a9930f0551618"
   slug: "what-is-generative-ui"
 sync: "hashnode"
 tags:
-  - "AI"
-  - "generative-ui"
-  - "llm"
+- "AI"
+- "generative-ui"
+- "llm"
 title: "What is Generative UI?"
 ---
 ## What is Generative UI?

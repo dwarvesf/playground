@@ -1,16 +1,18 @@
 ---
 authors:
-  - "antran"
+- "antran"
 date: "2024-09-11"
 description: "Understanding LLM Tracing - Principles, Techniques, and Applications in building LLM-powered AI systems."
 hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/assets/llm-tracing-build-steps.webp"
   id: "670f4d51d5896edcae3c1258"
   slug: "llm-tracing-in-ai-system"
 sync: "hashnode"
 tags:
-  - "llm"
-  - "ai"
-  - "tooling"
+- "llm"
+- "ai"
+- "tooling"
 title: "LLM tracing in AI system"
 ---
 ## When

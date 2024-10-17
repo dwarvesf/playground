@@ -1,15 +1,17 @@
 ---
 authors:
-  - "thanh"
+- "thanh"
 date: "2024-10-01"
 description: "Discover how the rapid surge in artificial intelligence, led by models like ChatGPT, Claude, and Gemini, is reshaping industries and democratizing AI development. This article explores the rise of model-as-a-service, the economic impact of AI, and how accessible APIs are transforming productivity, creativity, and innovation across sectors."
 hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/building-llm-system/assets/the-rise-of-ai-applications-with-llm-20241001172500969.webp"
   id: "670f4d4a340553308e8ff9e7"
   slug: "the-rise-of-ai-applications-with-llm"
 sync: "hashnode"
 tags:
-  - "llm"
-  - "ai"
+- "llm"
+- "ai"
 title: "The rise of AI applications with LLM"
 ---
 In the course of technological history, few developments have captured the imagination and transformed industries as swiftly and profoundly as the recent surge in artificial intelligence. The release of ChatGPT marked a pivotal moment, followed by other tech giants entering the arena. Google introduced Gemini, Facebook unveiled Llama, and Anthropic launched Claude. These powerful AI foundation models have demonstrated an unprecedented ability to drive a wide array of tasks, significantly boosting productivity and creating substantial economic value. As a result, teams and individuals across various sectors have begun to explore innovative ways to harness AI for building a new wave of applications.

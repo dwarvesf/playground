@@ -1,16 +1,18 @@
 ---
 authors:
-  - "antran"
+- "antran"
 date: "2024-05-02"
 description: "Generative AI overview and the different stages of building an LLM-powered feature"
 hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/assets/developing-rapidly-with-generative-ai_ai-eco.webp"
   id: "670f4d514d1924a802ea893b"
   slug: "developing-rapidly-with-generative-ai"
 sync: "hashnode"
 tags:
-  - "llm"
-  - "ai"
-  - "tooling"
+- "llm"
+- "ai"
+- "tooling"
 title: "Developing rapidly with Generative AI"
 ---
 ## Generative AI

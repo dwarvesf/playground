@@ -1,17 +1,19 @@
 ---
 authors:
-  - "thanh"
+- "thanh"
 date: "2023-07-10"
 description: "An overview of adversarial prompting in prompt engineering, focusing on understanding risks associated with Large Language Models (LLMs) and strategies for mitigating them."
 github_id: "zlatanpham"
 hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/assets/adversarial-prompting_by-pass-gpt-safety-check.webp"
   id: "670f4d4faec5a6a939f51328"
   slug: "adversarial-prompting-in-prompt-engineering"
 sync: "hashnode"
 tags:
-  - "AI"
-  - "llm"
-  - "prompt-engineering"
+- "AI"
+- "llm"
+- "prompt-engineering"
 title: "Adversarial Prompting in Prompt Engineering"
 ---
 Adversarial prompting is a crucial aspect of prompt engineering, as it aids in understanding the risks and safety concerns associated with Large Language Models (LLMs). It's a vital field for identifying these risks and developing strategies to mitigate them.

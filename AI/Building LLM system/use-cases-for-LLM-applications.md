@@ -1,6 +1,6 @@
 ---
 authors:
-  - "thanh"
+- "thanh"
 date: "2024-10-04"
 description: "Explore the diverse applications of large language models (LLMs) and AI in both enterprise and consumer sectors. Learn about key use cases across data analysis, content creation, healthcare, education, and more."
 hashnode_meta:
@@ -8,8 +8,8 @@ hashnode_meta:
   slug: "use-cases-for-llm-applications"
 sync: "hashnode"
 tags:
-  - "llm"
-  - "ai"
+- "llm"
+- "ai"
 title: "Use cases for LLM applications"
 ---
 The potential applications of large language models (LLMs) and other AI foundation models seem truly endless. If you can dream it up, chances are there's an AI system out there that can help bring your vision to life. But attempting to categorize all the possible use cases is a daunting task - the possibilities are just too vast.

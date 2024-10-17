@@ -1,6 +1,6 @@
 ---
 authors:
-  - "datnguyennnx"
+- "datnguyennnx"
 date: "2024-09-26"
 description: "This guide offers a structured approach to evaluating and optimizing the integration of third-party Large Language Models (LLMs) into applications, ensuring alignment with business goals and user needs through detailed checklists and evaluation metrics."
 hashnode_meta:
@@ -8,8 +8,8 @@ hashnode_meta:
   slug: "evaluation-guidelines-for-llm-applications"
 sync: "hashnode"
 tags:
-  - "llm"
-  - "evaluation"
+- "llm"
+- "evaluation"
 title: "Evaluation Guidelines for LLM Applications"
 ---
 ## Overview

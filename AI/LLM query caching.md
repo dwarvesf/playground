@@ -1,17 +1,19 @@
 ---
 authors:
-  - "thanh"
+- "thanh"
 date: "2023-06-09"
 description: "An exploration of query caching in Large Language Models (LLMs), focusing on how semantic vector databases can drastically improve efficiency and reduce computational costs by reusing cached answers for semantically similar queries."
 github_id: "zlatanpham"
 hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/assets/llm-query-caching.webp"
   id: "670f4d50aec5a6a939f5132c"
   slug: "query-caching-for-large-language-models"
 sync: "hashnode"
 tags:
-  - "ai"
-  - "llm"
-  - "vector-database"
+- "ai"
+- "llm"
+- "vector-database"
 title: "Query Caching for Large Language Models"
 ---
 It's quite fascinating to see the increasingly pivotal role that Large Language Models (LLMs) are playing in various applications, covering the spectrum from natural language processing tasks to predictive typing, and more. An undeniable challenge, however, comes in the form of processing speed and computational cost associated with these models. But there's light at the end of the tunnel with a ground-breaking approach known as query caching, which holds potential for drastically transforming LLMs' efficiency and cost-effectiveness.

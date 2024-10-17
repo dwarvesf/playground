@@ -1,16 +1,18 @@
 ---
 authors:
-  - "monotykamary"
+- "monotykamary"
 date: "2024-07-10"
 description: "An overview of RAPTOR, a novel approach for improving retrieval-augmented language models for long documents using hierarchical tree summaries."
 hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/assets/raptor-llm-retrieval-excalidraw.webp"
   id: "670f4d40b868e6913d1b53e9"
   slug: "raptor-tree-based-retrieval-for-language-models"
 sync: "hashnode"
 tags:
-  - "llm"
-  - "document-processing"
-  - "information-retrieval"
+- "llm"
+- "document-processing"
+- "information-retrieval"
 title: "RAPTOR: Tree-based Retrieval for Language Models"
 ---
 ## What is it?
