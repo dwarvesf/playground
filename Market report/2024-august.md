@@ -5,6 +5,7 @@ tags:
   - AI
   - LLM
 title: Market Report August 2024
+short_title: August 2024
 date: 2024-08-29
 description: Explore the August 2024 Market Report to discover how AI and LLM tools like Cursor, Claude 3.5 Sonnet, and Amazon Q are transforming software development. Learn about the shift from generative UI to generative apps, the impact of prompt caching by Anthropic, and the rise of structured outputs in AI.
 authors:
