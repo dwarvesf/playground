@@ -6,6 +6,7 @@ tags:
 authors:
   - fuatto
 title: 'Go Commentary #7: Releases, Websockets, and Struct Behavior'
+short_title: '#7: Go 1.23, Websockets, and Structs'
 description: 'Exploring Go 1.23 release notes, the new home for nhooyr/websocket, and common mistakes with Go structs and slices.'
 date: 2024-08-16
 ---
