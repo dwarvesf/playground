@@ -6,6 +6,7 @@ tags:
 authors:
   - fuatto
 title: 'Go Commentary #3: Generic Collections, Generics Constraints, AI Bot'
+short_title: '#3: Generic Collections, Generics Constraints, AI Bot'
 description: "Implementing generic collections in Go: challenges and solutions, with examples of sortable sets and constraints. Updates on Go's generics support and insights on a new AI bot being developed for the Go community. Stay current with Go's evolving ecosystem and best practices for using generics effectively."
 date: 2024-07-12
 ---

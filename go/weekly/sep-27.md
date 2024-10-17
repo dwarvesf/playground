@@ -1,15 +1,12 @@
 ---
 tags:
   - golang
-  - rag
+  - go-weekly
   - llm
-  - genkit
-  - langchain
-  - ergo
-  - actor-model
 authors:
   - fuatto
 title: 'Go Commentary #13: Compiler Quests and Vector Vexations'
+short_title: '#13: Compiler Quests and Vector Vexations'
 description: A scathing look at Go's compiler internals and the vector search gold rush, exposing the industry's obsession with speed over substance
 date: 2024-09-27
 ---
