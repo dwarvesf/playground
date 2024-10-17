@@ -1,6 +1,5 @@
 ---
 tags:
-  - go
   - golang 
   - concurrency
 title: 'Go Concurrency'

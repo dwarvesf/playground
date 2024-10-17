@@ -1,6 +1,7 @@
 ---
 tags:
-  - go
+  - golang
+  - software
 title: Use Go Selenium To Crawl Data
 date: 2016-06-02
 description: Learn how to use Go with Selenium to crawl dynamic web pages, overcoming challenges like AJAX-loaded content and login requirements. This guide demonstrates setting up Selenium, writing Go code to interact with web elements, and extracting data from Amazon's deal page.

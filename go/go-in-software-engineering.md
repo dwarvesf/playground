@@ -1,7 +1,6 @@
 ---
 tags:
   - engineering
-  - go
   - golang
 title: 'Go In Software Engineering'
 date: 2020-08-07

@@ -1,7 +1,7 @@
 ---
 tags:
   - backend
-  - go
+  - golang
   - engineering
 title: Message Queues And Streaming Platforms Eg Kafka Nats Rabbitmq
 date: 2023-05-04

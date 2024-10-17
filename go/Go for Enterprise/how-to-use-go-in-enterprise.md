@@ -1,7 +1,7 @@
 ---
 tags:
   - enterprise
-  - go
+  - golang
   - language
 authors:
   - fuatto

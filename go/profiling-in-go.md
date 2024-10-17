@@ -1,6 +1,6 @@
 ---
 tags: 
-- go
+- golang
 - engineering
 - profiling
 authors: 
