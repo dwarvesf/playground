@@ -51,7 +51,7 @@ openRequest.onsuccess = () => {
 
 Object store is an individual bucket to store data. It is the **core concept** of IndexedDB. You can think of object stores as being similar to tables in traditional relational databases. A database may have multiple stores and each of them must have a name that is **unique** within its database.
 
-![](https://i.imgur.com/cYgLD5U.png)
+![](assets/cYgLD5U.png)
 
 ```javascript
 db.createObjectStore('books' /* name */, { keyPath: 'id' })
@@ -101,7 +101,7 @@ openRequest.onupgradeneeded = () => {
 }
 ```
 
-Search the `books` object store by `price` key: ![](https://i.imgur.com/TjHErHh.png)
+Search the `books` object store by `price` key: ![](assets/TjHErHh.png)
 
 ### Cursor
 

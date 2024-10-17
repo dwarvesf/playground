@@ -1,3 +1,10 @@
+---
+tags:
+ - ux-research
+description: Sensemaking is a humanities-based approach to knowledge production that looks to build deep understanding of a people and what matters to them.
+title: Sensemaking
+---
+
 Sensemaking is a humanities-based approach to knowledge production that looks to build deep understanding of a people and what matters to them. It is derived heavily from phenomenology, particularly Martin Heidegger's notion of "being" as a filter through which we understand and interpret the world around us.
 
 Focusing more heavily on cultures rather than individuals, sensemaking seeks to understand how people exist within the context of their culture and how that culture informs their understanding of their relationship to the world. Sensemaking is a rigorous methodology that involves consuming and understanding a culture's key texts and language and developing firsthand knowledge of how its people live. "When we practice sensemaking," Christian Madsbjerg writes, "we stop seeing a room as a space filled with individual items and we start seeing the structure that form a cultural reality."
@@ -12,8 +19,8 @@ Sensemaking helps us identify the most appropriate contexts for data collection,
 
 #### Related
 
--   [[¶ Abductive reasoning]]
--   [[Different forms of empathy]]
+-   [Abductive reasoning](./¶+Abductive+reasoning)
+-   [Different forms of empathy](./Different+forms+of+empathy)
 
 #### Citations
 

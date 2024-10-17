@@ -26,7 +26,7 @@ The Merkle tree is a layered data structure that allows for fast and efficient d
 
 ## How Plonky2 work
 
-![](https://blog.polygon.technology/wp-content/uploads/2022/11/polygon_plonky2_deep_dive-1024x1009.jpeg)
+![](assets/polygon_plonky2_deep_dive-1024x1009.jpeg)
 
 Non-Interactive attestation (NIPoPoK) is a method of attesting in the blockchain without interacting with other entities in the system. Instead of downloading the entire blockchain to confirm a block, NIPoPoK requires only a small number of blocks (usually only about 1% of the total block) called "superblocks" to verify the validity of a new block. The main difference between NIPoPoK and interactive attestation (PoK) is that PoK requires interaction between entities in the system for authentication. This means that entities must exchange information with each other to perform authentication. Meanwhile, NIPoPoK does not require interaction between entities, which minimizes communication and synchronization in the system. The other difference between NIPoPoK and PoK is that PoK typically uses more complex protocols for authentication, while NIPoPoK uses simpler maths to compute authentication. However, this does not mean that NIPoPoK is less secure, because NIPoPoK uses the latest techniques to ensure the safety and security of data. With the development of technology, NIPoPoK is being widely used in blockchain to minimize the interaction and synchronization in the system, while helping to speed up transaction confirmation and reduce blockchain size.
 

@@ -23,7 +23,7 @@ The rise of AI applications, especially LLMs, has unlocked diverse use cases acr
 
 Selecting and customizing the right LLM is critical for addressing specific business needs, balancing between performance and cost.
 
-- Choose the right model
+- [Choose the right model](model-selection.md)
 - Fine-tuning
 - Prompt engineering
 
@@ -89,5 +89,5 @@ Using right metrics and method for specific use case in LLM.
 
 Monitoring the system's performance and orchestrating the complex AI workflows that tie the components together.
 
-- Observability in AI Platforms
+- [Observability in AI Platforms](observability-in-AI-platforms.md)
 - AI Pipeline Orchestration

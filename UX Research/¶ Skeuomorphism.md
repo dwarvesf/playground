@@ -1,5 +1,9 @@
 ---
-tags: ux, design, research, skeuomorphism
+tags:
+ - ux-design
+ - research
+description: Skeuomorphism describes the creation of an object or design that contains elements that hearken back to attributes or structures of some other material or technique.
+title: Skeuomorphism
 ---
 
 Skeuomorphism describes the creation of an object or design that contains elements that hearken back to attributes or structures of some other material or technique.
@@ -17,8 +21,8 @@ Skeuomorphism can help create affordances that help us learn about or understand
 
 #### Related
 
--   [[Skeuoumorphic models limit possibilities for innovation]] - Skeuomorphic models can anchor us and limit the imagination, especially when moving from analog to digital
--   [[Metaphors structure our interpretation of the world]] - Skeuomorphism creates metaphors between objects and therefore structure how we understand them
+-   [Skeuoumorphic models limit possibilities for innovation](./Skeuoumorphic+models+limit+possibilities+for+innovation) - Skeuomorphic models can anchor us and limit the imagination, especially when moving from analog to digital
+-   [Metaphors structure our interpretation of the world](./Metaphors+structure+our+interpretation+of+the+world) - Skeuomorphism creates metaphors between objects and therefore structure how we understand them
 
 #### Citations
 

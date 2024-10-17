@@ -35,13 +35,13 @@ Smart contracts, also known as smart contracts, are computer programs that opera
 - Save state
 - Event/Log
 
-![](https://i.imgur.com/Voie7xm.png)
+![](assets/Voie7xm.png)
 
-Declare variable ![](https://i.imgur.com/2ADeNxC.png)
+Declare variable ![](assets/2ADeNxC.png)
 
-Function/Instruction ![](https://i.imgur.com/izkaluC.png)
+Function/Instruction ![](assets/izkaluC.png)
 
-Event/Log ![](https://i.imgur.com/mTMfjdI.png)
+Event/Log ![](assets/mTMfjdI.png)
 
 ## Invoke another smart contract:
 
@@ -50,7 +50,7 @@ Currently, Ethereum there are many contracts such as tokens, NFT-ERC721, games, 
 - Declare interface
 - Call command
 
-![](https://i.imgur.com/ezVDghs.png)
+![](assets/ezVDghs.png)
 
 ## The advance of smart contracts:
 

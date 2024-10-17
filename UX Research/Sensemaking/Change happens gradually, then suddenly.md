@@ -1,5 +1,9 @@
 ---
-tags: innovation
+tags:
+ - innovation
+ - ux-research
+description: Large-scale changes seem to happen quickly. However, changes generally gestate over long periods of time. In the beginning, there may be weak signals of change. These are usually on the periphery of our vision and can be difficult to observe as they occur outside of our typical frame of reference.
+title: Change happens gradually, then suddenly
 ---
 
 Large-scale changes seem to happen quickly. However, changes generally gestate over long periods of time. In the beginning, there may be weak signals of change. These are usually on the periphery of our vision and can be difficult to observe as they occur outside of our typical frame of reference.
@@ -14,12 +18,12 @@ William Gibson wrote, "The future is already here—it's not not evenly distribu
 
 #### Related
 
--   [Base strategy on leading, not lagging, indicators](https://publish.obsidian.md/mobydiction/notes/Base+strategy+on+leading%2C+not+lagging%2C+indicators)
--   [[Work backwards from a long-term vision of the future to define proximate objectives]]
--   [[Innovation cascades]]
--   [[De-risk innovation by making smaller bets]]
--   [[Strategic inflection points disrupt the underlying assumptions of a business or industry]]
--   [[¶ OODA Loop]]
+-   [Base strategy on leading, not lagging, indicators](./Base+strategy+on+leading%2C+not+lagging%2C+indicators)
+-   [Work backwards from a long-term vision of the future to define proximate objectives](./Work+backwards+from+a+long-term+vision+of+the+future+to+define+proximate+objectives)
+-   [Innovation cascades](./Innovation+cascades)
+-   [De-risk innovation by making smaller bets](./De-risk+innovation+by+making+smaller+bets)
+-   [Strategic inflection points disrupt the underlying assumptions of a business or industry](./Strategic+inflection+points+disrupt+the+underlying+assumptions+of+a+business+or+industry)
+-   [OODA Loop](./¶+OODA+Loop)
 
 #### Citation
 

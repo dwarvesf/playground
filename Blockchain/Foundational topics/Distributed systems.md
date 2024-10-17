@@ -11,7 +11,7 @@ github_id: thanhpn
 date: 2022-06-16
 ---
 
-![](_assets/blockruption-blockchain-300h.png)
+![](assets/blockruption-blockchain-300h.png)
 
 ## Distributed systems on blockchain
 
@@ -43,7 +43,7 @@ Each physical computer, due to various reasons, can experience problems while in
 
 ## Network problems
 
-![](https://blog.yugabyte.com/wp-content/uploads/2019/05/How-Does-YugaByte-DB-Handle-Network-Partitions-and-Failover-blogpreview.png)
+![](assets/How-Does-YugaByte-DB-Handle-Network-Partitions-and-Failover-blogpreview.png)
 
 A computer network is also a physical product and so problems can also occur. A common type of problem is the “network partitioning” problem, which is simulated by the figure above. This problem occurs when the transmission of one or more servers is cut off from the rest of the system, causing the system to be split into many parts that cannot communicate with each other. In fact, in data centers, a cluster of servers is usually connected by one or more switches. Failure of the switch port or wire can lead to one or more servers being disconnected, leading to the aforementioned partitioning situation.
 

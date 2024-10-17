@@ -1,15 +1,20 @@
 ---
-tags:
-  - llm
-  - ai-agents
-  - ai-evaluation
 authors:
-  - hoangnnh
-date: 2024-09-12
-title: 'Evaluate Chatbot Agent by User Simulation'
+- "hoangnnh"
+date: "2024-09-12"
 description: "When building a chatbot agent, it's important to evaluate its performance and user satisfaction. One effective method is user simulation, which involves creating virtual users to interact with the chatbot and assess its responses. This approach allows for a more realistic evaluation of the chatbot's capabilities and user experience."
+hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/assets/simulated-user.webp"
+  id: "670f4d4d340553308e8ff9eb"
+  slug: "evaluate-chatbot-agent-by-user-simulation"
+sync: "hashnode"
+tags:
+- "llm"
+- "ai-agents"
+- "ai-evaluation"
+title: "Evaluate Chatbot Agent by User Simulation"
 ---
-
 When building a chatbot agent, it's important to evaluate its performance and user satisfaction. One effective method is user simulation, which involves creating virtual users to interact with the chatbot and assess its responses. This approach allows for a more realistic evaluation of the chatbot's capabilities and user experience.
 
 ## Introduction
