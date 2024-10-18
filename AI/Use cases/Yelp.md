@@ -1,8 +1,8 @@
 ---
 authors:
 - datnguyennnx
-date: 2024-10-17
-description: Yelp also had an ML platform before the LLM race, and to see what they are implementing LLM to increase the performance search and recommendation system to help moderators or businesses catch users easily. Let's go into the Yelp use case.
+date: 2024-10-18
+description: Yelp already had a machine learning platform before the big push for large language models (LLMs). Now, they’re using LLMs to level up their search and recommendation systems, making it easier for moderators and businesses to track down users. Let’s dive into how Yelp is making it work.
 tags:
 - llm
 - yelp
@@ -12,7 +12,7 @@ title: Yelp use cases
 
 Yelp Inc. is a platform that helps users discover local businesses through reviews, ratings, and recommendations. Recently, they've integrated AI and large language models (LLMs) to improve content moderation, search capabilities, and user interactions with features like Yelp Assistant.
 
-## Key Takeaway
+## Key Takeaways
 
 - Yelp uses LLMs to catch inappropriate reviews, blocking 23,600+ bad ones in 2023.
 - Yelp uses the CLIP model to accurately categorize and understand the content of photos.
@@ -69,7 +69,7 @@ They’ve also improved the search experience with **AI and LLMs** (Large Langua
 
 Another cool addition is how Yelp’s making reviews more engaging. You can now **add videos to your reviews**, making them more immersive and interactive. They’ve also added **new review reactions** (think thumbs up or similar) and **review topics** to help you write better, more organized reviews.
 
-## Yelp’s Spring 2024 release introduces Yelp Assistant
+## Yelp Assistant
 
 Yelp is using Large Language Models (LLMs) in some cool ways to make things easier for both users and businesses. One of the main features powered by LLMs is **Yelp Assistant**, a conversational AI tool that helps you find and hire service pros. You can just tell Yelp Assistant what you need, and it’ll ask you follow-up questions, then match you with the best local pros for the job. It’s smart because it pulls from Yelp’s huge collection of business info and reviews, making sure you get the right fit.
 
