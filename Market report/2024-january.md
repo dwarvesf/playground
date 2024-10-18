@@ -8,7 +8,8 @@ tags:
   - htmx
   - LLM
   - cybersecurity
-title: Market Report Jan 2024
+title: Market Report January 2024
+short_title: January 2024
 date: 2024-01-26
 description: Here are some of the few trends we are seeing across the industry, in our projects, as well as our community. This market report isn't exhaustive, at least just yet, with certain trends not yet listed such as Blockchain, data management, DevEx, etc. We see a lot of promising trends and we hope that understanding what engineers and firms are becoming more passionate about that it will help us create a foundation of ideas and knowledge.
 authors:
