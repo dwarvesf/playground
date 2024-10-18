@@ -1,6 +1,5 @@
 ---
 tags:
-  - go
   - golang
   - finite-automata
   - pattern-matching

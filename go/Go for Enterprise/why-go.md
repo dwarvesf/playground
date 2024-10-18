@@ -1,6 +1,6 @@
 ---
 tags:
-  - go
+  - golang
   - programming
   - enterprise
 authors:
