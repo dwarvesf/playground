@@ -77,7 +77,7 @@ LLM systems need to handle complex reasoning, task delegation, and actions based
 - [Prevent Prompt Injection](prevent-prompt-injection.md)
 - [Supervior-Worker architecture ( Divide and Conquer)](multi-agent-collaboration-for-task-completion.md)
 - [ReAct](react-in-llm.md)
-- ReWOO Reasoning without Observations
+- [ReWOO (Reasoning without Observations)](rewoo-in-llm.md)
 
 ## Evaluating Performance
 
