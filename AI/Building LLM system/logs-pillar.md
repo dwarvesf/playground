@@ -1,17 +1,21 @@
 ---
-tags:
-  - llm
-  - observability
-  - log
-  - pillar
-title: Logs Pillar
-date: 2024-10-11
-description: ' Logs are like the footprints of your LLM, tracking every move it makes. We will look at how logging can help you see beneath the top layer of a system, which can help you troubleshoot problems and better understand the system behavior.'
 authors:
-  - datnguyennnx
+- "datnguyennnx"
+date: "2024-10-11"
+description: "Logs are like the footprints of your LLM, tracking every move it makes. We will look at how logging can help you see beneath the top layer of a system, which can help you troubleshoot problems and better understand the system behavior."
+hashnode_meta:
+  coverImageOptions:
+    coverImageURL: "https://memo.d.foundation/playground/ai/building-llm-system/assets/logs-pillar-sample-rag-system.webp"
+  id: "670f4d47aec5a6a939f51323"
+  slug: "logging"
+sync: "hashnode"
+tags:
+- "llm"
+- "observability"
+- "log"
+- "pillar"
+title: "Logging"
 ---
-
-
 When you’re working with generative AI application, one thing that often gets overlooked is logging. Logging helps you keep track of what’s happening under the hood and gives you the insights you need to improve your model. Whether it's detecting errors or maintaining your AI runs smoothly, logging is fundamental. In this article, we'll look at why logging is important and how to use it to improve your LLM application.
 
 ## Roles of logging in LLM application
@@ -38,7 +42,7 @@ When things go wrong - like a crash or a weird bug - logs are your find out then
 
 ### Better decision making
 
-Logs don’t just help with fixes - they also provide data to guide future decisions. By reviewing logs over time, you can see trends in how your AI performs, which features are working well, and where you might need to invest more effort. 
+Logs don’t just help with fixes - they also provide data to guide future decisions. By reviewing logs over time, you can see trends in how your AI performs, which features are working well, and where you might need to invest more effort.
 
 ![](assets/logs-pillar-sample-view-dashboard.webp)
 
@@ -77,9 +81,9 @@ Model parameters are the internal variables that the LLM adjusts during training
 
 ![](assets/logs-pillar-llm-parameters.webp)
 
-**Management agent** 
+**Management agent**
 
-Agents are like decision-makers in LLM systems. They take user input and decide how to handle it, often running multiple tasks to come up with a response. Logging the **input and output** of agents is key because it helps you track exactly what was asked and how the agent responded. 
+Agents are like decision-makers in LLM systems. They take user input and decide how to handle it, often running multiple tasks to come up with a response. Logging the **input and output** of agents is key because it helps you track exactly what was asked and how the agent responded.
 
 - **Debugging**: If something goes wrong (like incorrect task prioritization or tool selection), logs show exactly what input led to the error.
 - **Optimization**: With logs, you can monitor how well the agent manages tasks, interacts with external tools, and adapts based on the output, helping you improve its performance.
@@ -120,9 +124,9 @@ Now, let’s talk about feedback loops. This is all about taking what you learn 
 
 ## Conclusion
 
-While logging might feel like a small detail in the bigger picture of generative AI, it’s actually a powerful tool. By observing user interactions and looking into the data, you could discover valuable insights that not only increase accuracy but also improve the user experience. 
+While logging might feel like a small detail in the bigger picture of generative AI, it’s actually a powerful tool. By observing user interactions and looking into the data, you could discover valuable insights that not only increase accuracy but also improve the user experience.
 
-## Reference
+## References
 
 - https://www.honeyhive.ai/monitoring
 - https://neptune.ai/blog/llm-observability

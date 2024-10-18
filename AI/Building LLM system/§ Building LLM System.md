@@ -23,7 +23,7 @@ The rise of AI applications, especially LLMs, has unlocked diverse use cases acr
 
 Selecting and customizing the right LLM is critical for addressing specific business needs, balancing between performance and cost.
 
-- Choose the right model
+- [Choose the right model](model-selection.md)
 - Fine-tuning
 - Prompt engineering
 
