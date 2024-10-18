@@ -1,11 +1,5 @@
 ---
-tags: 
- - ux
- - design
- - research
- - skeuomorphism
-description: Skeuomorphism in design describes the rendering of digital items in terms of their real-life counterparts. For example, skeuomorphic design might render a notebook application such that it resembles a physical notebook. These metaphors can limit our capacity for understanding the possibility of digital and non-organic tools and agents.
-title: Skeuoumorphic models limit possibilities for innovation
+tags: ux, design, research, skeuomorphism
 ---
 
 Skeuomorphism in design describes the rendering of digital items in terms of their real-life counterparts. For example, skeuomorphic design might render a notebook application such that it resembles a physical notebook.

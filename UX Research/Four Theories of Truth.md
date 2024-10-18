@@ -1,9 +1,9 @@
----
-tags: 
- - epistemology
-description: In epistemology, there are generally four theories by which a claim may be evaluated as true. These are
-title: Four Theories of Truth
----
+In epistemology, there are generally four theories by which a claim may be evaluated as true. These are
+
+1.  The correspondence theory of truth: a claim is true if it conforms to observable nature
+2.  The coherence theory of truth: a claim is true if it is logically coherent
+3.  The consensus theory of truth: a claim is true if it conforms to the general consensus on the matter
+4.  The pragmatic theory of truth: a claim is true if it it is useful or otherwise beneficial to believe in it
 
 Understanding each of these methods provides a rubric by which a claim can be evaluated. Weighing the claim against each model in turn can help facilitate critical thought.
 

@@ -1,6 +1,6 @@
 ---
 tags:
-  - go
+  - golang
   - vim
 title: 'Connecting Vim With Golang'
 date: 2015-10-16

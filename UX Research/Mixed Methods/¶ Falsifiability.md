@@ -1,23 +1,19 @@
 ---
-tags: 
- - ux-research
- - mixed methods
-description: Faslifiability describes the capacity of a statement to be proven false.
-title: Falsifiability
+tags: ux, research
 ---
 
 _Faslifiability_ describes the capacity of a statement to be proven false. For example, the presence of a black swan _falsifies_ the statement "All swans are white." [Karl Popper](https://publish.obsidian.md/mobydiction/Karl+Popper) suggested that a focus on falsifiability may enable us to more quickly move from observation to scientific law. That is, it may be impossible to verify that all swans are white; however, finding a swan that is not white quickly invalidates the statement.  
 Rather than trying to prove that our ideas are correct, we should seek disconfirming evidence.
 
-[≈ Mixed Methods | Sam Ladner](./Mixed+Methods) suggests we should be skeptical of data that is designed and used without falsifiability in mind. She notes that we collect plenty of data "exhaust" today through internet-of-things devices and app analytics. But, collecting this information alone does not produce knowledge. That requires analysis and interpretation.
+[[≈ Mixed Methods | Sam Ladner]] suggests we should be skeptical of data that is designed and used without falsifiability in mind. She notes that we collect plenty of data "exhaust" today through internet-of-things devices and app analytics. But, collecting this information alone does not produce knowledge. That requires analysis and interpretation.
 
 ---
 
 #### Related
 
--   [Base strategy on leading, not lagging, indicators](./Base+strategy+on+leading,+not+lagging,+indicators)
--   [Four Theories of Truth](./Four+Theories+of+Truth) - Different ways to determine whether a claim is true or not
--   [Deductive reasoning](./¶+Deductive+reasoning) - A mode of reasoning that begins with a falsifiable hypothesis and seeks date to validate or invalidate it
+-   [[Base strategy on leading, not lagging, indicators]]
+-   [[Four Theories of Truth]] - Different ways to determine whether a claim is true or not
+-   [[¶ Deductive reasoning]] - A mode of reasoning that begins with a falsifiable hypothesis and seeks date to validate or invalidate it
 
 #### Citations
 
