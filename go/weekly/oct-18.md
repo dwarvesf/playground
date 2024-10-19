@@ -6,7 +6,7 @@ authors:
   - fuatto
 title: 'Go Commentary #16: Understand sync.Map'
 short_title: '#16: Understand sync.Map'
-description: Understand sync.Map
+description: Understanding sync.Map and using the right tools for atomic operations in Go.
 date: 2024-10-18
 ---
 

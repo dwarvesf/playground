@@ -5,7 +5,8 @@ tags:
 authors:
   - hoangnnh
 date: 2024-10-18
-title: "In the process of improving Large Language Model (LLM) performance, many techniques have been proposed. The Augmented Language Model (ALM) approach boosted LLM accuracy by enabling the attachment of external sources to enhance the model's knowledge. However, ALMs still had limitations in terms of time consumption and token resources. To address these issues, ReWOO was developed as a more efficient solution."
+title: "ReWOO: Reasoning WithOut Observation - A deeper look"
+description: "In the process of improving Large Language Model (LLM) performance, many techniques have been proposed. The Augmented Language Model (ALM) approach boosted LLM accuracy by enabling the attachment of external sources to enhance the model's knowledge. However, ALMs still had limitations in terms of time consumption and token resources. To address these issues, ReWOO was developed as a more efficient solution."
 ---
 
 In the process of improving Large Language Model (LLM) performance, many techniques have been proposed. The Augmented Language Model (ALM) approach boosted LLM accuracy by enabling the attachment of external sources to enhance the model's knowledge. However, ALMs still had limitations in terms of time consumption and token resources. To address these issues, ReWOO was developed as a more efficient solution.
@@ -23,13 +24,13 @@ ReWOO divided core 3-step reasoning process into 3 modules:
  - **Worker**: Executes the plan and collect evidence by calling external tools or APIs.
  - **Solver**: Examines all plans and evidences from worker to analyze and synthsize the final answer.
 
-![ReWOO](./assets/rewoo-in-llm.webp)
+![ReWOO](assets/rewoo-in-llm.webp)
 
 ReWOO can referring to plans from earlier stages in instructions to Workers. This allows next step and subsequent steps to build on the results of previous steps, enabling the model to handle complex tasks more effectively. The final solver prompt is designed to be concise and efficient, ensuring that the model can accurately synthesize the final answer based on the evidence provided by the workers.
 
 ## Example
 
-![Example](./assets/rewoo-in-llm-example.webp)
+![Example](assets/rewoo-in-llm-example.webp)
 
 As you can see in above example, The planner prompt list all the plans need to do. Then the task list will pass that list to Worker, Worker will execute each plan step by step, it can be a API call or external tools, in each step the result will be store to support the next plan if needed. At the end, the Solver prompt will be called to analyze all the evidences and synthesize the final answer. You can realize that the total LLM model call is just 2+(+ number of LLM call in tools if had). It reduce a lot of token usage when compare with other reasoning techniques(with number of LLM call = number of reasoning step + tool uses) when they have to call LLM model every step of reasoning to decide what to do next. Besides that, you can have an overview of all the process at the beginning, it can help you to understand the problem better snf support in debugging.
 
@@ -186,12 +187,12 @@ Now let test with question: "What is the mass of earth and how many natural sate
 Result: [Link](https://smith.langchain.com/public/624cb78d-e55e-40a6-8cd5-912a2046a864/r)
 
 ## Comparison with ReAct
-To demonstrate the token usage saving of ReWOO, we will make a comparision with traditional technique like ReAct(Reason + Act). If you do not know what is ReAct? Can take a look to this memo: [ReAct(Reason + Act) in LLM](./react-in-llm.md).
+To demonstrate the token usage saving of ReWOO, we will make a comparision with traditional technique like ReAct(Reason + Act). If you do not know what is ReAct? Can take a look to this memo: [ReAct(Reason + Act) in LLM](react-in-llm.md).
 We run a same question to ReAct, and see the difference:
 
 | ReAct    | ReWOO |
 | -------- | ------- |
-| ![](./assets/rewoo-in-llm-compare-react.webp)  | ![](./assets/rewoo-in-llm-compare-rewoo.webp)    |
+| ![](assets/rewoo-in-llm-compare-react.webp)  | ![](assets/rewoo-in-llm-compare-rewoo.webp)    |
 | Token usage: 3265 | Token usage: 2661     |
 
 As you can see, ReWOO save 604 tokens compared to ReAct. It because ReWOO not need to make LLM call for each step of reasoning. Image if we have more complicated task, it will have much more steps, then the tokens will be save much more.
