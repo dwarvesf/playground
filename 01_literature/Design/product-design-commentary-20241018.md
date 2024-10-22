@@ -10,12 +10,12 @@ authors:
   - nambui
 ---
 
-### Exploring Functional and Spatial Relationships in Generative AI Design
+## Exploring Functional and Spatial Relationships in Generative AI Design
 The integration of Generative AI into user experiences is transforming how we interact with digital systems. As we explore the intricate dynamics of AI and its role in enhancing human-computer interaction, it becomes essential to understand the functional and spatial relationships that AI establishes within systems. These relationships directly impact the effectiveness and intuitiveness of user interactions with AI-driven systems.
 
 This article explores the scope of relationships between Generative AI and other system elements, focusing on three key aspects: **System Scope Relationships**, **Spatial Relationships**, and **Functional Relationships**.
 
-### System Scope Relationship
+## System Scope Relationship
 The first layer in understanding how Generative AI fits into larger systems is to explore the **System Scope Relationships**. This relationship defines the scale at which AI integrates with other elements of a system and plays a crucial role in determining its interaction model. The five categories within system scope are
 
 ![](assets/4-product-design-weekly-system-scope-relationships.png)
@@ -33,7 +33,7 @@ The first layer in understanding how Generative AI fits into larger systems is t
 
 Each level of this scope reveals the depth at which AI interacts within a digital system—from individual elements to entire ecosystems. Designers should consider how AI features align with the scale of their product's experience.
 
-### Spatial Relationships
+## Spatial Relationships
 In terms of user interface (UI) design, **Spatial Relationships** describe the physical layout and placement of AI components relative to other features on a screen. This placement is crucial for ensuring a seamless interaction between AI elements and the rest of the user experience. The diagram highlights the following relationships
 
 ![](assets/4-product-design-weekly-system-spatial-relationships.png)
@@ -56,7 +56,7 @@ In terms of user interface (UI) design, **Spatial Relationships** describe the
 
 The spatial design directly impacts user navigation and interaction fluidity, and placing AI in the appropriate spatial relationship ensures a seamless user experience.
 
-### Functional Relationships
+## Functional Relationships
 Lastly, **Functional Relationships** refer to how Generative AI interacts with other features and content at a functional level. The interaction model can vary based on the role AI plays within the system. The different types of functional relationships include
 
 ![](assets/4-product-design-weekly-system-functional-relationships.png)
@@ -82,7 +82,7 @@ Lastly, **Functional Relationships** refer to how Generative AI interacts with
 
 These functional dynamics define how deeply integrated AI is with system features and user actions, guiding how AI can best support or enhance user experiences.
 
-### Conclusion
+## Conclusion
 The evolution of Generative AI within digital systems hinges on its **scope**, **spatial**, and **functional relationships**. Designers and developers must pay close attention to how these relationships manifest within their products to ensure that AI serves to enhance the user experience rather than disrupt it. By understanding how Generative AI fits into these relationships, we can design more intuitive, helpful, and powerful AI-driven experiences that feel natural and effortless for the user.
 
 Generative AI is a transformative tool, and its success relies on how well it integrates into the systems and experiences we create. As AI technology evolves, designers must constantly rethink these relationships to maintain an optimal balance between functionality and usability.
