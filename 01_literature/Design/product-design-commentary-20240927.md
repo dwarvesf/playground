@@ -7,7 +7,7 @@ title: "Product Design Commentary #1: New Technologies Changing UX/UI and Produc
 date: 2024-09-30
 description: New tools are changing how we design products. In the first edition, we look at voice controls, mixed reality, reusable design parts, and smart helpers. See how they're being used, what's popular, and why designers should care. Learn to make things that are easier and better to use. 
 authors:
-  - changtrailucluong
+  - nambui
 ---
 
 As technology evolves, design processes are being transformed by advancements like Voice User Interfaces (VUI), Augmented Reality (AR), Virtual Reality (VR), Modular Design Systems, and AI tools. These innovations are helping designers automate repetitive tasks, enhance user experiences, and ensure consistency across products. In this article, we explore how these tools are shaping the future of UX, UI, and product design, making interactions more intuitive and efficient.
