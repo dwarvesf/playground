@@ -9,11 +9,11 @@ title: Go extension interface pattern
 date: 2024-10-25
 ---
 
-The Extension Interface Pattern is when an interface embeds another one. The extension pattern helps to add new features to an existing object without changing its original code. 
+The extension interface pattern is when an interface embeds another one. The extension pattern helps to add new features to an existing object without changing its original code. 
 
-- Extending Third-Party Packages: When you are working with a third-party package, and you want to add new methods or modify the behavior of existing types without forking or modifying the original package.
-- Adding Functionality to Interfaces: When a package provides a minimal interface and you want to add additional behaviors on top of that without changing the underlying implementation.
-- Testing: You can use the Extension Interface Pattern to mock or adapt behaviors of a type for testing purposes, adding features like logging, metrics, or other cross-cutting concerns.
+- Extending third-party packages: When you are working with a third-party package, and you want to add new methods or modify the behavior of existing types without forking or modifying the original package.
+- Adding functionality to interfaces: When a package provides a minimal interface and you want to add additional behaviors on top of that without changing the underlying implementation.
+- Testing: You can use the extension interface pattern to mock or adapt behaviors of a type for testing purposes, adding features like logging, metrics, or other cross-cutting concerns.
 
 Whether you are working with the standard library (`io`, `http`, `sql`), third-party packages, or your own codebase, this pattern provides a way to add functionality in a flexible, non-intrusive manner.
 
@@ -21,9 +21,9 @@ Whether you are working with the standard library (`io`, `http`, `sql`), third-p
 
 The `io.Reader` and `io.Writer` interfaces are simple but versatile interfaces that are widely used in Go. You can extend them to add features like compression, encryption, logging, or even buffering.
 
-#### Example: Adding Logging to an `io.Writer`
+**Example: adding logging to an `io.Writer`**
 
-Let’s say you want to add logging functionality to an `io.Writer`. You can use the Extension Interface Pattern to wrap an existing `io.Writer` and log any data written to it.
+Let’s say you want to add logging functionality to an `io.Writer`. You can use the extension interface pattern to wrap an existing `io.Writer` and log any data written to it.
 
 ```go
 type LoggingWriter struct {
@@ -50,11 +50,11 @@ func main() {
 
 This allows you to add logging to any writer without modifying the original `io.Writer` type.
 
-### 2. **Extending HTTP Middleware in `http.Handler`**
+### 2. **Extending HTTP middleware in `http.Handler`**
 
-In web development with Go, the `http.Handler` interface is central to building web servers. It’s common to use the Extension Interface Pattern to create middleware that extends the behavior of `http.Handler`.
+In web development with Go, the `http.Handler` interface is central to building web servers. It’s common to use the extension interface pattern to create middleware that extends the behavior of `http.Handler`.
 
-#### Example: Adding a Request Logger Middleware
+**Example: Adding a request logger middleware**
 
 You can create middleware that wraps an `http.Handler` to log HTTP requests.
 
@@ -84,11 +84,11 @@ func main() {
 
 This example extends `http.Handler` to log incoming requests, wrapping the original handler without modifying it.
 
-### 3. **Extending `sql.DB` for Database Connections**
+### 3. **Extending `sql.DB` for database connections**
 
 You can extend the `sql.DB` type from Go’s `database/sql` package to add functionalities like logging, connection retries, or metrics tracking.
 
-#### Example: Adding Query Logging to `sql.DB`
+**Example: Adding query logging to `sql.DB`**
 
 ```go
 type LoggingDB struct {
@@ -114,11 +114,11 @@ func main() {
 
 This extension allows you to log SQL queries without altering the behavior of `sql.DB`.
 
-### 4. **Adding Caching to HTTP Clients**
+### 4. **Adding caching to HTTP clients**
 
 Go’s `http.Client` is a widely used type for making HTTP requests. You can extend `http.Client` to add caching, retries, or additional logging.
 
-#### Example: Adding Caching to an `http.Client`
+**Example: adding caching to an `http.Client`**
 
 You can wrap an `http.Client` to cache responses based on URLs.
 
@@ -160,11 +160,11 @@ func main() {
 
 This allows you to extend the functionality of the `http.Client` without altering the original type, adding caching behavior.
 
-### 5. **Adding Context or Timeouts to `http.Request`**
+### 5. **Adding context or timeouts to `http.Request`**
 
 Go's `http.Request` does not have built-in timeout functionality, but you can extend the `http.Request` type to add it.
 
-#### Example: Timeout Extension for `http.Request`
+**Example: timeout extension for `http.Request`**
 
 ```go
 type TimeoutRequest struct {
@@ -200,9 +200,9 @@ This allows you to extend `http.Request` with timeout functionality without modi
 
 ### 6. **Decorators for `fmt.Stringer`**
 
-Go’s `fmt.Stringer` is a simple but powerful interface used for customizing string representations of types. You can use the Extension Interface Pattern to add additional behaviors when printing.
+Go’s `fmt.Stringer` is a simple but powerful interface used for customizing string representations of types. You can use the extension interface pattern to add additional behaviors when printing.
 
-#### Example: Add a Prefix to `fmt.Stringer`
+**Example: Add a prefix to `fmt.Stringer`**
 
 You can wrap a `fmt.Stringer` type to add a prefix to its string representation.
 
