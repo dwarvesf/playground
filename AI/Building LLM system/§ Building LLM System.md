@@ -48,9 +48,7 @@ Standardizing and managing the output of an LLM system ensures that responses ar
 
 Systems to prevent model misuse, sensitive data leaks, and bad outputs.
 
-- Input Guardrails
-- Output Guardrails
-- Guardrail Tradeoffs
+- [Guardrails in LLM](guardrails-in-llm.md)
 
 ## Model Routing and Gateway
 
