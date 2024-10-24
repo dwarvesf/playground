@@ -10,7 +10,7 @@ date: 2024-10-22
 
 ### What are Finite State Automata and why should a programmer know about them?
 
-Formally, an FSA is a algebraic structure F = ⟨Σ, S, s0, F, δ⟩ where Σ is the input alphabet, S is a set of states, s0 ∈ S is a particular start state, F ⊆ S is a set of accepting states, and δ:S×Σ → S is the state transition function.
+Formally, an FSA is a algebraic structure `F = ⟨Σ, S, s0, F, δ⟩` where `Σ` is the input alphabet, `S` is a set of states, `s0 ∈ S` is a particular start state, `F ⊆ S` is a set of accepting states, and `δ:S×Σ → S` is the state transition function.
 
 1/ Short answer, it is a technique that you can use to express systems with concrete states (as opposed to quantum states / probability distributions).
 
