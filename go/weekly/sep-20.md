@@ -6,7 +6,7 @@ tags:
 authors:
   - fuatto
 title: 'Go Commentary #12: CLI Renaissance with Kubernetes, REST, and Terminal Readers in the Age of Complexity'
-short_title: '#12: CLI Tools for K8s, REST, and Terminals'
+short_title: '#12 CLI Tools for K8s, REST, and Terminals'
 description: A critical examination of Go's resurgence in CLI tool development, exploring recent projects in Kubernetes log viewing, REST API interaction, and terminal-based readers, while questioning the industry's shift back to command-line interfaces.
 date: 2024-09-20
 ---

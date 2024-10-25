@@ -6,7 +6,7 @@ tags:
 authors:
   - fuatto
 title: 'Go Commentary #8: Jupyter Notebooks, Kubernetes Tools, GopherCon Talks'
-short_title: '#8: GoNB, kubetrim, and GopherCon UK 2024'
+short_title: '#8 GoNB, kubetrim, and GopherCon UK 2024'
 description: "Explore GoNB for Jupyter notebooks, kubetrim for KUBECONFIG management, and key highlights from GopherCon UK 2024 talks, covering performance testing, software design, event-driven workflows, and AI's impact on tech jobs."
 date: 2024-08-23
 ---

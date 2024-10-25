@@ -5,7 +5,7 @@ tags:
 authors:
   - fuatto
 title: 'Go Commentary #15: Using Go embed, and Reflect'
-short_title: '#15: Go embed and Reflect'
+short_title: '#15 Go embed and Reflect'
 description: Quick notes on Go embed and Go Reflect
 date: 2024-10-11
 ---
