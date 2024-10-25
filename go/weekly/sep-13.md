@@ -5,7 +5,7 @@ tags:
 authors:
   - fuatto
 title: "Go Commentary #11: The Gopher's LLM Revolution - Actors, Frameworks, and the Future of Go"
-short_title: '#11: Actors, Frameworks, and the Future of Go'
+short_title: '#11 Actors, Frameworks, and the Future of Go'
 description: A critical look at Go's evolving role in the LLM ecosystem and the frameworks shaping its future
 date: 2024-09-13
 ---
