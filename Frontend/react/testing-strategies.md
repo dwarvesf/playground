@@ -25,13 +25,13 @@ Key Testing Strategies for React Applications:
 
 #### Setting Up Jest and React Testing Library
 
-1.  Install Jest and React Testing Library:
+Install Jest and React Testing Library:
 
 ```sh
 npm install --save-dev jest @testing-library/react
 ```
 
-1.  Add a basic test configuration in your `package.json`:
+Add a basic test configuration in your `package.json`:
 
 ```js
 { "scripts": { "test": "jest" } }
@@ -77,8 +77,6 @@ Explanation:
 
 - **Isolation**: Tests each component individually, ensuring independent functionality.
 - **User-Centric Testing**: React Testing Library encourages testing from a user's perspective, improving test relevancy.
-
----
 
 ### Integration Testing for Component Interactions
 
@@ -145,13 +143,13 @@ E2E tests simulate real user scenarios, covering the entire flow from start to f
 
 #### Setting Up Cypress
 
-1.  Install Cypress:
+Install Cypress:
 
 ```sh
 npm install --save-dev cypress
 ```
 
-2.  Open Cypress for the first time:
+Open Cypress for the first time:
 
 ```sh
 npx cypress open

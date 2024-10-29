@@ -11,7 +11,7 @@ short_title: 'Rendering Strategies'
 
 Client-Side Rendering (CSR), Server-Side Rendering (SSR), and Static-Site Generation (SSG) are three key rendering strategies in modern web development. Each approach has unique advantages and trade-offs, impacting application performance, SEO, and user experience.
 
-### 1. Client-Side Rendering (CSR)
+### Client-Side Rendering (CSR)
 
 CSR is the default rendering approach in React applications, where everything from data fetching to rendering happens in the browser. The server delivers a minimal HTML file with a JavaScript bundle, and React takes over from there, rendering the content on the client's side.
 
@@ -21,13 +21,13 @@ CSR is the default rendering approach in React applications, where everything fr
 - React builds the UI on the client by executing the JavaScript code.
 - Data fetching happens after the page loads, potentially leading to a delay before content appears.
 
-#### Advantages of CSR
+#### Advantages
 
 - **Fast Initial Deployment**: Easier to deploy and manage since there's no server-rendering setup.
 - **Rich Interactivity**: Great for SPAs (Single Page Applications) with dynamic, highly interactive UI elements.
 - **Simplified Development**: Client-side data fetching and rendering simplify development in many scenarios.
 
-#### Disadvantages of CSR
+#### Disadvantages
 
 - **Initial Load Time**: Users may experience a blank page or loading spinner until the JavaScript bundle downloads and renders.
 - **SEO Challenges**: Since the HTML is minimal, search engines may struggle to crawl and index content, although some modern crawlers can render JavaScript.
@@ -53,7 +53,7 @@ function UserProfile({ userId }) {
 }
 ```
 
-### 2. Server-Side Rendering (SSR)
+### Server-Side Rendering (SSR)
 
 SSR generates HTML on the server for each request. When the user requests a page, the server processes the JavaScript, fetches any necessary data, and returns a fully-rendered HTML page. React components are rendered to HTML strings on the server and sent to the client, where React "hydrates" (attaches event listeners) to the HTML.
 
@@ -63,13 +63,13 @@ SSR generates HTML on the server for each request. When the user requests a page
 - The client receives a fully-rendered HTML page and hydrates it, enabling interactivity.
 - Additional JavaScript for further user interactions loads in the background.
 
-#### Advantages of SSR
+#### Advantages
 
 - **Improved SEO**: The initial HTML page is fully rendered, making it easily crawlable by search engines.
 - **Faster Time to Interactive (TTI)**: The user sees the fully-rendered content sooner, as it doesn't rely solely on client-side JavaScript for initial render.
 - **Content Accessibility**: Even users on slow networks or with JavaScript disabled can see the initial page content.
 
-#### Disadvantages of SSR
+#### Disadvantages
 
 - **Server Load**: Each request requires the server to render the page, increasing server workload, especially with many requests.
 - **Complexity**: Requires server infrastructure and additional setup, which can increase complexity.
@@ -97,7 +97,7 @@ export default function UserProfile({ user }) {
 }
 ```
 
-### 3. Static-Site Generation (SSG)
+### Static-Site Generation (SSG)
 
 SSG generates HTML at build time. Unlike SSR, which renders HTML on each request, SSG pre-renders pages as static files and serves them on request. This is ideal for content that doesn't change frequently, as it combines the benefits of SSR with the speed of serving static files.
 
@@ -107,13 +107,13 @@ SSG generates HTML at build time. Unlike SSR, which renders HTML on each request
 - When a user requests a page, the server serves the static HTML directly from a CDN or hosting server.
 - Any dynamic content or interactivity can be added client-side, often using JavaScript to fetch data or modify the UI after load.
 
-#### Advantages of SSG
+#### Advantages
 
 - **Fast Performance**: Since the pages are static files, they load very quickly from a CDN or server.
 - **SEO-Friendly**: Like SSR, the static HTML is crawlable by search engines.
 - **Low Server Load**: No need to generate HTML per request, reducing server resources.
 
-#### Disadvantages of SSG
+#### Disadvantages
 
 - **Less Flexibility**: Pages are generated at build time, so content updates require a new build and deployment.
 - **Not Ideal for Highly Dynamic Content**: SSG is less suitable for frequently changing content, as updates won't appear until the next build.
@@ -224,4 +224,4 @@ export default function Product({ product }) {
 
 ### Summary
 
-Choosing between CSR, SSR, and SSG depends on your application's needs for **SEO**, **content freshness**, **interactivity**, and **performance**. In many modern apps, a hybrid approach allows you to take advantage of each strategy where it's most beneficial, creating a fast, SEO-friendly, and interactive experience. Leveraging frameworks like **Next.js** simplifies managing these different rendering methods in a single React application, making it easier to build performant, user-friendly applications.
+Choosing between CSR, SSR, and SSG depends on your application's needs for SEO, content freshness, interactivity, and performance. In many modern apps, a hybrid approach allows you to take advantage of each strategy where it's most beneficial, creating a fast, SEO-friendly, and interactive experience. Leveraging frameworks like Next.js simplifies managing these different rendering methods in a single React application, making it easier to build performant, user-friendly applications.
