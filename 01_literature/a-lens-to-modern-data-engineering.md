@@ -5,7 +5,7 @@ tags:
 - "architecture"
 - "etl"
 title: "Building a Data-Driven Project Reporting System: A Lens into Modern Data Engineering"
-description: "Learn how to transition from application development to data engineering by building a modern project reporting system. Discover essential mindset shifts, best practices, and hands-on implementation using tools like Apache Spark, DuckDB, and Modal. Master system-level architecture and data pipeline design for scalable enterprise solutions."
+description: "Learn how to transition from application development to data engineering by building a modern project reporting system. Discover essential mindset shifts, best practices, and hands-on look using tools like DuckDB, and Modal. Master system-level architecture and data pipeline design for scalable enterprise solutions."
 short_title: "A Lens to Modern Data Engineering"
 date: "2024-10-29"
 authors:
