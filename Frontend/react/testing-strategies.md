@@ -12,15 +12,14 @@ short_title: 'Testing Strategies'
 
 Testing is essential for ensuring that your code works as expected, is maintainable, and doesn't introduce bugs with future changes. React testing involves **unit tests, integration tests, and end-to-end (e2e) tests**, each targeting different aspects of your application's functionality.
 
-### Key Testing Strategies for React Applications
+Key Testing Strategies for React Applications:
 
-1.  **Unit Testing** with Jest and React Testing Library
-2.  **Integration Testing** for Component Interactions
-3.  **End-to-End (E2E) Testing** with Cypress
-4.  **Snapshot Testing** for UI Consistency
-5.  **Best Practices for Effective Testing**
+- **Unit Testing** with Jest and React Testing Library
+- **Integration Testing** for Component Interactions
+- **End-to-End (E2E) Testing** with Cypress
+- **Snapshot Testing** for UI Consistency
 
-### 1\. Unit Testing with Jest and React Testing Library
+### Unit Testing with Jest and React Testing Library
 
 **Unit testing** focuses on testing individual components or functions in isolation, ensuring they work as expected independently of other parts of the application. **Jest** is a popular testing framework for JavaScript that's fast and powerful, while **React Testing Library** provides utilities to interact with and assert on component output based on how a user would interact with it.
 
@@ -69,7 +68,7 @@ test('calls the onClick handler when clicked', () => {
 })
 ```
 
-**Explanation**:
+Explanation:
 
 - `screen.getByText("Click me")` selects the button by its text, simulating how a user would identify it.
 - `fireEvent.click` simulates a click event, testing that `onClick` is called when expected.
@@ -81,7 +80,7 @@ test('calls the onClick handler when clicked', () => {
 
 ---
 
-### 2. Integration Testing for Component Interactions
+### Integration Testing for Component Interactions
 
 Integration tests verify that multiple components work together as expected. For instance, testing a form component with multiple fields and a submit button ensures that they interact correctly and trigger the proper behaviors.
 
@@ -131,7 +130,7 @@ test('submits form with name and email', () => {
 })
 ```
 
-**Explanation**:
+Explanation:
 
 - We simulate typing into both input fields, then trigger the form submission to ensure `onSubmit` is called with the correct data.
 
@@ -140,7 +139,7 @@ test('submits form with name and email', () => {
 - **Interaction Testing**: Validates that components interact correctly, ensuring data flows as expected.
 - **Form and Input Testing**: Particularly useful for forms and multistep processes, verifying that all parts work in sequence.
 
-### 3. End-to-End (E2E) Testing with Cypress
+### End-to-End (E2E) Testing with Cypress
 
 E2E tests simulate real user scenarios, covering the entire flow from start to finish, including interactions with the backend if needed. **Cypress** is a powerful tool for E2E testing in JavaScript applications, allowing for testing of full workflows across pages.
 
@@ -152,7 +151,7 @@ E2E tests simulate real user scenarios, covering the entire flow from start to f
 npm install --save-dev cypress
 ```
 
-1.  Open Cypress for the first time:
+2.  Open Cypress for the first time:
 
 ```sh
 npx cypress open
@@ -177,7 +176,7 @@ describe('Login Flow', () => {
 })
 ```
 
-**Explanation**:
+Explanation:
 
 - **`cy.visit("/login")`** navigates to the login page.
 - **Assertions** check that the login was successful by verifying the URL and checking for a welcome message.
@@ -187,7 +186,7 @@ describe('Login Flow', () => {
 - **Real User Simulation**: Tests full workflows, covering real user interactions with the application.
 - **Cross-Page Coverage**: Ensures that transitions between pages work as expected and user data is preserved.
 
-### 4. Snapshot Testing for UI Consistency
+### Snapshot Testing for UI Consistency
 
 Snapshot tests capture the current state of a component's output (i.e., its rendered HTML) and compare it to a saved version. Snapshot testing is helpful for detecting unintended changes in the component's visual structure.
 
@@ -204,7 +203,7 @@ test('renders the header correctly', () => {
 })
 ```
 
-**Explanation**:
+Explanation:
 
 - `asFragment()` captures the component's current rendered state.
 - `toMatchSnapshot()` checks the current output against a previously saved snapshot.
@@ -218,19 +217,14 @@ test('renders the header correctly', () => {
 
 - Snapshots can be too sensitive to minor changes, so they are best used for components with stable layouts or infrequent updates.
 
-### 5. Best Practices for Effective Testing
+### Best Practices for Effective Testing
 
-1.  **Follow the Testing Pyramid**: Focus primarily on unit tests, followed by integration tests, and finally E2E tests. This balances test coverage with performance and maintainability.
-
-2.  **Test from the User's Perspective**: Use React Testing Library's queries like `getByText`, `getByRole`, and `getByLabelText` to mimic how users interact with your UI. Avoid testing internal implementation details, focusing on behavior instead.
-
-3.  **Avoid Overuse of Snapshot Tests**: Snapshot tests are helpful but can become brittle if overused. Use them selectively for components with complex or static UI.
-
-4.  **Mock External Dependencies**: For unit and integration tests, mock API calls, third-party libraries, and other dependencies to isolate the code under test. Libraries like **msw** (Mock Service Worker) can be used to mock API responses.
-
-5.  **Run Tests in CI/CD**: Automate tests in your CI/CD pipeline to catch bugs early in the development process. Run unit and integration tests for each commit and E2E tests periodically or before release.
-
-6.  **Structure Tests Closely to Source Files**: Place each test file alongside its component or module. This structure makes it easy to locate and update tests when refactoring.
+- **Follow the Testing Pyramid**: Focus primarily on unit tests, followed by integration tests, and finally E2E tests. This balances test coverage with performance and maintainability.
+- **Test from the User's Perspective**: Use React Testing Library's queries like `getByText`, `getByRole`, and `getByLabelText` to mimic how users interact with your UI. Avoid testing internal implementation details, focusing on behavior instead.
+- **Avoid Overuse of Snapshot Tests**: Snapshot tests are helpful but can become brittle if overused. Use them selectively for components with complex or static UI.
+- **Mock External Dependencies**: For unit and integration tests, mock API calls, third-party libraries, and other dependencies to isolate the code under test. Libraries like **msw** (Mock Service Worker) can be used to mock API responses.
+- **Run Tests in CI/CD**: Automate tests in your CI/CD pipeline to catch bugs early in the development process. Run unit and integration tests for each commit and E2E tests periodically or before release.
+- **Structure Tests Closely to Source Files**: Place each test file alongside its component or module. This structure makes it easy to locate and update tests when refactoring.
 
 ### Summary
 

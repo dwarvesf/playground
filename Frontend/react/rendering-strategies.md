@@ -13,27 +13,27 @@ Client-Side Rendering (CSR), Server-Side Rendering (SSR), and Static-Site Genera
 
 ### 1. Client-Side Rendering (CSR)
 
-**CSR** is the default rendering approach in React applications, where everything from data fetching to rendering happens in the browser. The server delivers a minimal HTML file with a JavaScript bundle, and React takes over from there, rendering the content on the client's side.
+CSR is the default rendering approach in React applications, where everything from data fetching to rendering happens in the browser. The server delivers a minimal HTML file with a JavaScript bundle, and React takes over from there, rendering the content on the client's side.
 
-#### How It Works:
+#### How It Works
 
 - The browser downloads the JavaScript bundle, which contains the React code.
 - React builds the UI on the client by executing the JavaScript code.
 - Data fetching happens after the page loads, potentially leading to a delay before content appears.
 
-#### Advantages of CSR:
+#### Advantages of CSR
 
 - **Fast Initial Deployment**: Easier to deploy and manage since there's no server-rendering setup.
 - **Rich Interactivity**: Great for SPAs (Single Page Applications) with dynamic, highly interactive UI elements.
 - **Simplified Development**: Client-side data fetching and rendering simplify development in many scenarios.
 
-#### Disadvantages of CSR:
+#### Disadvantages of CSR
 
 - **Initial Load Time**: Users may experience a blank page or loading spinner until the JavaScript bundle downloads and renders.
 - **SEO Challenges**: Since the HTML is minimal, search engines may struggle to crawl and index content, although some modern crawlers can render JavaScript.
 - **Performance**: Large bundles can lead to slow page load times, especially on low-bandwidth connections.
 
-#### Example in React:
+#### Example in React
 
 In CSR, data fetching happens on the client side, typically using hooks like `useEffect`.
 
@@ -55,27 +55,27 @@ function UserProfile({ userId }) {
 
 ### 2. Server-Side Rendering (SSR)
 
-**SSR** generates HTML on the server for each request. When the user requests a page, the server processes the JavaScript, fetches any necessary data, and returns a fully-rendered HTML page. React components are rendered to HTML strings on the server and sent to the client, where React "hydrates" (attaches event listeners) to the HTML.
+SSR generates HTML on the server for each request. When the user requests a page, the server processes the JavaScript, fetches any necessary data, and returns a fully-rendered HTML page. React components are rendered to HTML strings on the server and sent to the client, where React "hydrates" (attaches event listeners) to the HTML.
 
-#### How It Works:
+#### How It Works
 
 - The server generates HTML with the initial content and sends it to the client.
 - The client receives a fully-rendered HTML page and hydrates it, enabling interactivity.
 - Additional JavaScript for further user interactions loads in the background.
 
-#### Advantages of SSR:
+#### Advantages of SSR
 
 - **Improved SEO**: The initial HTML page is fully rendered, making it easily crawlable by search engines.
 - **Faster Time to Interactive (TTI)**: The user sees the fully-rendered content sooner, as it doesn't rely solely on client-side JavaScript for initial render.
 - **Content Accessibility**: Even users on slow networks or with JavaScript disabled can see the initial page content.
 
-#### Disadvantages of SSR:
+#### Disadvantages of SSR
 
 - **Server Load**: Each request requires the server to render the page, increasing server workload, especially with many requests.
 - **Complexity**: Requires server infrastructure and additional setup, which can increase complexity.
 - **Hydration Time**: The browser still needs to download JavaScript and hydrate the page, which can create a slight delay for interactivity.
 
-#### Example in Next.js:
+#### Example in Next.js
 
 Next.js is a React framework that simplifies SSR. With Next.js, you can use `getServerSideProps` to fetch data and render it on the server.
 
@@ -99,27 +99,27 @@ export default function UserProfile({ user }) {
 
 ### 3. Static-Site Generation (SSG)
 
-**SSG** generates HTML at build time. Unlike SSR, which renders HTML on each request, SSG pre-renders pages as static files and serves them on request. This is ideal for content that doesn't change frequently, as it combines the benefits of SSR with the speed of serving static files.
+SSG generates HTML at build time. Unlike SSR, which renders HTML on each request, SSG pre-renders pages as static files and serves them on request. This is ideal for content that doesn't change frequently, as it combines the benefits of SSR with the speed of serving static files.
 
-#### How It Works:
+#### How It Works
 
 - The pages are pre-rendered at build time, creating static HTML files.
 - When a user requests a page, the server serves the static HTML directly from a CDN or hosting server.
 - Any dynamic content or interactivity can be added client-side, often using JavaScript to fetch data or modify the UI after load.
 
-#### Advantages of SSG:
+#### Advantages of SSG
 
 - **Fast Performance**: Since the pages are static files, they load very quickly from a CDN or server.
 - **SEO-Friendly**: Like SSR, the static HTML is crawlable by search engines.
 - **Low Server Load**: No need to generate HTML per request, reducing server resources.
 
-#### Disadvantages of SSG:
+#### Disadvantages of SSG
 
 - **Less Flexibility**: Pages are generated at build time, so content updates require a new build and deployment.
 - **Not Ideal for Highly Dynamic Content**: SSG is less suitable for frequently changing content, as updates won't appear until the next build.
 - **Extra Build Time**: Large sites can have long build times if each page needs to be generated statically.
 
-#### Example in Next.js:
+#### Example in Next.js
 
 In Next.js, `getStaticProps` generates static pages at build time. This is perfect for content like blog posts or product pages.
 
@@ -176,7 +176,9 @@ In some cases, applications use a **hybrid approach** to leverage the strengths 
 - **Next.js** allows you to use SSG for pages with static content, SSR for dynamic pages, and CSR for client-specific interactions.
 - **Incremental Static Regeneration (ISR)** in Next.js enables automatic regeneration of static pages at a specified interval, combining the benefits of SSG and SSR for frequently updated content.
 
-**Example Hybrid Approach in Next.js**: In this example, we use SSG with ISR for product pages and CSR for interactive features like adding items to a cart.
+**Example Hybrid Approach in Next.js**
+
+In this example, we use SSG with ISR for product pages and CSR for interactive features like adding items to a cart.
 
 ```jsx
 // pages/product/[id].js

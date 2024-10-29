@@ -14,15 +14,12 @@ Hooks architecture in React refers to the systematic approach of using hooks to 
 
 ### Key Concepts in Hooks Architecture
 
-1.  **Separation of Concerns with Custom Hooks**
-2.  **Encapsulating Side Effects**
-3.  **Dependency Management in Hooks**
-4.  **Combining Multiple Custom Hooks**
-5.  **Best Practices for Custom Hooks**
+- Separation of Concerns with Custom Hooks
+- Encapsulating Side Effects
+- Dependency Management in Hooks
+- Combining Multiple Custom Hooks
 
----
-
-### 1. Separation of Concerns with Custom Hooks
+### Separation of Concerns with Custom Hooks
 
 By creating custom hooks, we can isolate specific pieces of logic or state, making components simpler and easier to test. Custom hooks follow the same naming conventions and usage patterns as built-in hooks but encapsulate domain-specific or app-specific logic.
 
@@ -49,7 +46,7 @@ function useFetch(url) {
 }
 ```
 
-**Usage**:
+Usage:
 
 ```js
 function UserProfile({ userId }) {
@@ -67,7 +64,7 @@ function UserProfile({ userId }) {
 - **Reusability**: The `useFetch` hook can be used in any component needing data from an API.
 - **Isolation of Concerns**: Data fetching logic is isolated, keeping components focused on UI and presentation.
 
-### 2. Encapsulating Side Effects
+### Encapsulating Side Effects
 
 Side effects (like fetching data, managing subscriptions, or setting timeouts) often clutter component code. By moving these side effects into custom hooks, we can encapsulate the logic and improve component readability.
 
@@ -83,7 +80,7 @@ function useDocumentTitle(title) {
 }
 ```
 
-**Usage**:
+Usage:
 
 ```js
 function HomePage() {
@@ -97,7 +94,7 @@ function HomePage() {
 - **Isolation of Side Effects**: The document title logic is separate from the component's main UI, simplifying the component.
 - **Reusability**: `useDocumentTitle` can be reused across pages or components that need to set the document title.
 
-### 3. Dependency Management in Hooks
+### Dependency Management in Hooks
 
 Custom hooks require careful handling of dependencies to avoid bugs, stale data, or unintended behaviors. `useEffect`, `useMemo`, and `useCallback` hooks depend on stable dependencies to function predictably.
 
@@ -118,7 +115,7 @@ function useExpensiveCalculation(data) {
 }
 ```
 
-**Usage**:
+Usage:
 
 ```js
 function Stats({ numbers }) {
@@ -134,7 +131,7 @@ function Stats({ numbers }) {
 
 > In the future, this step will be handled automatically by [React Compiler](https://react.dev/learn/react-compiler#what-does-the-compiler-do)
 
-### 4. Combining Multiple Custom Hooks
+### Combining Multiple Custom Hooks
 
 For more complex scenarios, multiple custom hooks can be combined, keeping components modular and avoiding deeply nested hooks. You can chain hooks to build up increasingly complex functionality without cluttering a single hook.
 
@@ -185,11 +182,11 @@ function Dashboard({ userId }) {
 - **Modularity**: Each hook handles a specific concern (auth or fetching data), so they're independently reusable and testable.
 - **Encapsulation**: The component doesn't need to understand the logic inside each hook, only the returned data and functions.
 
-### 5. Best Practices for Custom Hooks
+### Best Practices for Custom Hooks
 
-1.  **Use Clear Naming Conventions**: Name hooks descriptively, starting with `use`, such as `useAuth`, `useFetchData`, or `useToggle`. This helps with readability and code consistency.
+**Use Clear Naming Conventions**: Name hooks descriptively, starting with `use`, such as `useAuth`, `useFetchData`, or `useToggle`. This helps with readability and code consistency.
 
-2.  **Return Only Necessary Data and Functions**: Custom hooks should return only the data and functions the component actually needs. This minimizes the hook's API surface and reduces complexity.
+**Return Only Necessary Data and Functions**: Custom hooks should return only the data and functions the component actually needs. This minimizes the hook's API surface and reduces complexity.
 
 ```js
 // Better: return only what's needed
@@ -200,7 +197,7 @@ function useToggle(initialState = false) {
 }
 ```
 
-1.  **Handle Edge Cases and Errors Gracefully**: Build error handling directly into hooks, where applicable. This keeps components from dealing with low-level error handling, focusing only on displaying relevant information to the user.
+**Handle Edge Cases and Errors Gracefully**: Build error handling directly into hooks, where applicable. This keeps components from dealing with low-level error handling, focusing only on displaying relevant information to the user.
 
 ```js
 function useFetch(url) {
@@ -218,9 +215,7 @@ function useFetch(url) {
 }
 ```
 
-1.  **Encapsulate Complex State Logic**: If you find yourself managing complex state logic (e.g., multiple variables, resetting state), consider using `useReducer` within the hook.
-
-**Example: Managing Form State with `useReducer`**
+**Encapsulate Complex State Logic**: If you find yourself managing complex state logic (e.g., multiple variables, resetting state), consider using `useReducer` within the hook.
 
 ```jsx
 import { useReducer } from 'react'
@@ -246,7 +241,7 @@ function useForm(initialState) {
 }
 ```
 
-1.  **Testing Custom Hooks**: Test custom hooks in isolation to ensure they behave as expected under various scenarios. Tools like **React Testing Library's `renderHook`** make it easy to test hooks directly.
+**Testing Custom Hooks**: Test custom hooks in isolation to ensure they behave as expected under various scenarios. Tools like **React Testing Library's `renderHook`** make it easy to test hooks directly.
 
 ```js
 import { renderHook, act } from '@testing-library/react-hooks'
@@ -285,7 +280,6 @@ function useAuth() {
 }
 
 // useUserData.js
-
 import useFetch from './useFetch'
 
 function useUserData(userId) {

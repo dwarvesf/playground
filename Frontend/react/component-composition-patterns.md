@@ -57,7 +57,7 @@ function DataFetcher({ render }) {
 }
 
 // Usage:
-;<DataFetcher render={(data) => <DisplayData data={data} />} />
+<DataFetcher render={(data) => <DisplayData data={data} />} />
 ```
 
 **When to Use Render Props**:

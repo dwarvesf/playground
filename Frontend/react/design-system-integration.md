@@ -139,19 +139,22 @@ This approach allows the Button component to be reusable, enabling different col
 
 ### 4. Establish and Use a Component Library Framework (Storybook)
 
-**Storybook** is a popular tool for creating isolated component libraries, documenting components, and allowing team members to interact with components outside of the application environment.
+[Storybook](https://storybook.js.org/) is a popular tool for creating isolated component libraries, documenting components, and allowing team members to interact with components outside of the application environment.
 
-1. **Set up Storybook**: Install Storybook in your React project.
+**Set up Storybook**
+
+Install Storybook in your React project.
 
 ```sh
 npx sb init
 ```
 
-2. **Write Stories for Components**: Each component should have its own story, describing its appearance with various props and states.
+**Write Stories for Components**
 
-**Example: Button.stories.js**
+Each component should have its own story, describing its appearance with various props and states.
 
 ```jsx
+// Example: Button.stories.js
 import React from 'react'
 import { Button } from './Button'
 
@@ -178,9 +181,8 @@ Design systems must prioritize accessibility to create inclusive applications. F
 
 - **Aria Roles and Attributes**: Use ARIA attributes for interactive components like buttons, modals, and dialogs to improve screen reader support.
 
-**Example: Accessible Button with ARIA**
-
 ```jsx
+// Example: Accessible Button with ARIA
 const Button = ({ label, onClick, ariaLabel, variant = 'primary' }) => (
   <button onClick={onClick} style={{ backgroundColor: tokens.colors[variant] }} aria-label={ariaLabel}>
     {label}
@@ -190,9 +192,8 @@ const Button = ({ label, onClick, ariaLabel, variant = 'primary' }) => (
 
 - **Keyboard Navigation**: Ensure that all components can be navigated via keyboard. Focus management is crucial, especially for modal dialogs or dynamic components like carousels.
 
-**Example: Focus Management in a Modal**
-
 ```jsx
+// Example: Focus Management in a Modal
 import { useEffect, useRef } from 'react'
 
 const Modal = ({ isOpen, onClose, children }) => {
@@ -226,7 +227,7 @@ To support **themes** (e.g., dark and light modes), use **context providers** to
 
 **Example: Theming with Context**
 
-**1. Create Theme Context:**
+1. Create Theme Context:
 
 ```jsx
 import React, { createContext, useContext, useState } from 'react'
@@ -247,7 +248,7 @@ export const ThemeProvider = ({ children }) => {
 export const useTheme = () => useContext(ThemeContext)
 ```
 
-**2. Consume Theme Context in Components:**
+2. Consume Theme Context in Components:
 
 ```jsx
 const ThemedButton = ({ label }) => {
@@ -265,7 +266,7 @@ const ThemedButton = ({ label }) => {
 }
 ```
 
-**3. Switch Themes in App:**
+3. Switch Themes in App:
 
 ```jsx
 function App() {

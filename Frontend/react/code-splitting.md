@@ -69,7 +69,7 @@ function App() {
 }
 ```
 
-**Explanation:**
+Explanation:
 
 - `React.lazy` dynamically imports each component.
 - `Suspense` shows a fallback (loading spinner) while the component loads.
@@ -102,7 +102,7 @@ function App() {
 }
 ```
 
-**Explanation:**
+Explanation:
 
 - The `UserProfile` component only loads when showProfile is true.
 - `Suspense` ensures that a fallback UI (loading spinner) is displayed while `UserProfile` is being loaded.
@@ -133,7 +133,7 @@ function DateFormatter({ date }) {
 }
 ```
 
-**Explanation:**
+Explanation:
 
 - The date-fns library only loads when DateFormatter is rendered.
 - This avoids including the entire library in the initial bundle, saving on bundle size.
@@ -167,7 +167,7 @@ function App() {
 }
 ```
 
-**Explanation:**
+Explanation:
 
 - `react-loadable` provides a loading component that displays based on certain conditions, such as past delay time or error occurrence.
 - This allows you to handle cases where loading might take a long time or fail altogether, providing a better user experience.
@@ -219,9 +219,9 @@ module.exports = {
 }
 ```
 
-**Explanation**:
+Explanation:
 
-- SplitChunksPlugin creates a vendors chunk with common dependencies, reducing redundancy and improving caching.
+- `SplitChunksPlugin` creates a vendors chunk with common dependencies, reducing redundancy and improving caching.
 
 **Use Case:**
 
@@ -239,9 +239,9 @@ function ImageComponent() {
 }
 ```
 
-**Explanation:**
+Explanation:
 
-- The loading="lazy" attribute ensures the image loads only when it’s about to enter the viewport.
+- The `loading="lazy"` attribute ensures the image loads only when it’s about to enter the viewport.
 
 **Benefits:**
 

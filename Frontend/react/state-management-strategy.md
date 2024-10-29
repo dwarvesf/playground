@@ -163,7 +163,7 @@ function UserProfile({ userId }) {
 }
 
 // Usage in App:
-;<QueryClientProvider client={queryClient}>
+<QueryClientProvider client={queryClient}>
   <UserProfile userId={1} />
 </QueryClientProvider>
 ```
@@ -212,7 +212,7 @@ function UserComponent() {
 }
 
 // Usage:
-;<AppProvider>
+<AppProvider>
   <UserComponent />
 </AppProvider>
 ```
