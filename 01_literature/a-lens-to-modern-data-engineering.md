@@ -18,7 +18,7 @@ Picture yourself as a skilled carpenter who's mastered building beautiful furnit
 
 In this exploration, we'll examine how building an automated project reporting system reveals the fundamental mindset shifts required when moving from application to data engineering. More than just a technical guide, this case study illuminates the journey from component-level thinking to systems-level architecture.
 
-## When Bottom-Up Meets Top-Down
+## When bottom-up meets top-down
 
 Traditional application development is inherently bottom-up. You build features brick by brick, focusing on individual user interactions, single-record operations, and immediate feedback loops. It's like constructing a building one room at a time, perfecting each space before moving to the next.
 
@@ -31,11 +31,11 @@ Consider this scenario that might feel painfully familiar: Your technology consu
 
 Attempting to solve this with traditional application development patterns is like trying to understand a city's traffic patterns by watching a single intersection. You need to zoom out and see the entire system.
 
-## The Great Mindset Shift
+## The great mindset shift
 
 Let's examine how the same problem looks through different lenses:
 
-### The Application Developer's View:
+### The application developer's view:
 
 ```mermaid
 graph LR
@@ -70,7 +70,7 @@ This approach reflects typical bottom-up thinking: handle each request as it com
 
 When your system needs to process months of historical data across multiple channels while maintaining performance, you need a fundamentally different approach. Instead of thinking in terms of individual operations, you need to think in terms of events and data flows – much like how event sourcing captures the entire history of state changes rather than just the current state.
 
-### The Data Engineer's View:
+### The Data Engineer's view:
 
 Just as event sourcing maintains an immutable log of all events that have occurred in a system, data engineering thinks in terms of continuous data flows and transformations. Rather than asking "what is the current state?", we ask "how does our data evolve over time?"
 
@@ -114,11 +114,11 @@ This generalized flow demonstrates how data engineering systems typically operat
 4. Create optimized views for specific use cases
 5. Serve data through multiple interfaces
 
-## A Real-World Example: Project Reporting System
+## A real-world example: Project reporting
 
 Let's see how these principles apply to our specific use case of building an automated project reporting system. Here's how we can architect a solution that handles Discord communications, Git metrics, and team performance data:
 
-### Implementation Details
+### Implementation details
 
 ```mermaid
 graph LR
@@ -161,7 +161,7 @@ Notice the fundamental shift here – instead of reacting to individual requests
 3. **System Boundaries**: Where does our data come from, and where does it need to go?
 4. **Future Flexibility**: How can we design for unknown future requirements?
 
-## The Orchestra of Automation
+## The orchestra of automation
 
 Think of data engineering as conducting an orchestra rather than playing a single instrument. Every component must work in harmony, and the conductor must understand not just individual parts but how they create a cohesive whole.
 
@@ -204,7 +204,7 @@ graph LR
 
 This workflow demonstrates system thinking in action. Each component exists not in isolation but as part of a larger data symphony, where timing, coordination, and scalability are paramount.
 
-## The Data Engineer's Mental Models
+## The Data Engineer's mental models
 
 Looking back at our workflow diagrams, you might notice recurring patterns. This isn't coincidental – data engineers think in terms of fundamental data processing paradigms that appear across different scales and contexts:
 
@@ -215,9 +215,9 @@ Looking back at our workflow diagrams, you might notice recurring patterns. This
 
 These patterns become second nature to data engineers, forming a mental toolkit that can be applied to problems at any scale. Whether you're processing gigabytes or petabytes, the fundamental thinking remains the same – it's all about managing data flows, transformations, and scale.
 
-## Architectural Decisions That Shape Systems
+## Architectural decisions that shape systems
 
-### 1. Storage Format: The Foundation of Scale
+### 1. Storage format: The foundation of scale
 
 Choosing Parquet as our storage format isn't just about storing data – it's about anticipating how that data will be accessed, processed, and evolved over time:
 
@@ -226,7 +226,7 @@ Choosing Parquet as our storage format isn't just about storing data – it's ab
 - Schema enforcement ensures data consistency across your entire ecosystem
 - Predicate pushdown optimization means your queries work smarter, not harder
 
-### 2. Query Engine: The Power of Perspective
+### 2. Query engine: The power of perspective
 
 DuckDB serves as our primary query engine because it embodies the data engineering mindset:
 
@@ -235,7 +235,7 @@ DuckDB serves as our primary query engine because it embodies the data engineeri
 - Scale vertically within reasonable bounds before adding complexity
 - Integrate seamlessly with existing tools and workflows
 
-### 3. Orchestration: The Conductor's Podium
+### 3. Orchestration: The conductor's podium
 
 Modal as our orchestration framework reflects system-level thinking:
 
@@ -244,11 +244,11 @@ Modal as our orchestration framework reflects system-level thinking:
 - Monitor and log with a holistic view of system health
 - Optimize costs across the entire processing pipeline
 
-## The Data Engineering Toolbox: A Systems Approach
+## The data engineering toolbox: A systems approach
 
 The transition to data engineering requires an introductive or mastery look at the tools that support system-level thinking:
 
-### Processing Engines
+### Processing engines
 
 These aren't just query executors – they're system coordinators:
 
@@ -256,7 +256,7 @@ These aren't just query executors – they're system coordinators:
 - **DuckDB**: Analytical processing that thinks beyond rows and columns
 - **Apache Beam**: Unified processing patterns across batch and stream
 
-### Storage Solutions
+### Storage solutions
 
 Storage in data engineering isn't about files – it's about data flow:
 
@@ -264,7 +264,7 @@ Storage in data engineering isn't about files – it's about data flow:
 - **Data Warehouses**: Where raw data transforms into business insights
 - **Data Formats**: The communication protocol of your data ecosystem
 
-### Orchestration Tools
+### Orchestration tools
 
 These aren't task schedulers – they're system choreographers:
 
@@ -272,7 +272,7 @@ These aren't task schedulers – they're system choreographers:
 - **Dagster**: Data-aware process management
 - **Modal**: Serverless orchestration at scale
 
-## Understanding the Evolution
+## Understanding the evolution
 
 The transition from application development to data engineering represents a fundamental shift in how we approach problems:
 
@@ -285,7 +285,7 @@ The transition from application development to data engineering represents a fun
 | **Processing Mode** | Synchronous, immediate | Asynchronous, batch-oriented | Balance immediacy with efficiency |
 | **Development Flow** | Iterative feature addition | Holistic system evolution | Small changes have system-wide impacts |
 
-## The Path Forward: From Components to Systems
+## The path forward: From components to systems
 
 The journey from application development to data engineering demands more than learning new tools – it requires developing a new way of seeing. Like an architect who must consider both the individual bricks and the entire skyline, data engineers must balance immediate needs with system-level considerations.
 
