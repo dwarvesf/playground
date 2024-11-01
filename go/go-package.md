@@ -9,9 +9,11 @@ authors:
 description: In Go, packages serve as the basic building blocks for creating modular, reusable, and maintainable software.
 ---
 
-In Go, packages serve as the basic building blocks for creating modular, reusable, and maintainable software.
+Here's another article that I want to reassure everyone to know about it. As Go pushes more type [composition over inheritance](https://go.dev/doc/faq#Is_Go_an_object-oriented_language), the POV on building 'unit' is different compare to other languages.
 
-Go's philosophy encourages developers to organize their code in a package-oriented way. This means that, from the outset, you should structure your project into reusable, well-encapsulated packages, each with a clear purpose.
+In Go, packages serve as the basic building blocks for creating **modular, reusable**, and maintainable software. Go's philosophy encourages developers to organize their code in a package-oriented way. 
+
+Treat your packages as base units. This means that, from the outset, you should structure your project into reusable, well-encapsulated packages, each with a clear purpose.
 
 ### Key concepts
 
@@ -85,14 +87,6 @@ func TestAdd(t *testing.T) {
 5. **Modularity and reusability**
 
 By structuring your code into distinct packages, you create **reusable** building blocks. These packages can be easily shared across different projects or within teams, and since Go’s import system relies on unique paths, there’s no conflict as long as each package’s import path is unique.
-
-### Benefits
-
-- **Code organization**: Dividing functionality into small, focused packages keeps the code clean and organized.
-- **Reusability**: Once written, a package can be reused in many projects or different parts of a large project.
-- **Maintainability**: With a well-structured package layout, code becomes easier to maintain, modify, and extend.
-- **Collaboration**: Teams can work on separate packages concurrently, as each package represents an independent unit of functionality.
-- **Testing and debugging**: Since each package is modular, testing becomes easier, and debugging issues can be done within the context of specific packages.
 
 ### How to apply
 
@@ -174,4 +168,8 @@ Periodic refactoring keeps packages easy to understand, maintain, and reuse, avo
 
 ----
 
-By consistently focusing on reusability in package-oriented development, you’ll create a project structure that is **modular and adaptable**. Each package, whether domain-specific or utility-based, becomes a building block you can confidently use across different projects. This approach not only saves time but also ensures that your code is organized, easy to maintain, and scalable for future growth.
+- **Code organization**: Dividing functionality into small, focused packages keeps the code clean and organized.
+- **Reusability**: Once written, a package can be reused in many projects or different parts of a large project.
+- **Maintainability**: With a well-structured package layout, code becomes easier to maintain, modify, and extend.
+- **Collaboration**: Teams can work on separate packages concurrently, as each package represents an independent unit of functionality.
+- **Testing and debugging**: Since each package is modular, testing becomes easier, and debugging issues can be done within the context of specific packages.
