@@ -38,7 +38,7 @@ The hunger for AI has sparked unprecedented investment in physical infrastructur
 
 Some worry this could lead to a bubble like the one seen in the early days of the internet. But there are differences now: more computing power means smarter, more capable systems. And as infrastructure advances, its cost gradually drops. This paves the way for deeper integration of AI in daily operations, moving it from luxury to necessity. We might soon see these AI tools become as standard as operating systems, opening the door to endless possibilities.
 
-![[2024-october-20241104223344499.webp]]
+![](assets/2024-october-20241104223344499.webp)
 
 ## Python Becomes the No. 1 Programming Language
 
@@ -51,7 +51,7 @@ Some key trends from the report:
 - **Rust** is on the rise, showing the industry’s push for safer, more reliable code.
 - **Africa and Latin America** are making waves as emerging hubs for outsourcing and tech innovation.
 
-![[2024-october-20241104223429609.webp]]
+![](assets/2024-october-20241104223429609.webp)
 
 ## Coding Assistance Challenges
 
