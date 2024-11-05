@@ -32,7 +32,6 @@ Selecting and customizing the right LLM is critical for addressing specific busi
 Methods for augmenting query context to improve model performance and accuracy.
 
 - Retrieval-Augmented Generation (RAG)
-- [GraphRAG](graphrag.md)
 - [RAG for multimodal data](multimodal-in-rag.md)
 - Agentic RAG
 - Query rewriting

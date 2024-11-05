@@ -21,7 +21,7 @@ A knowledge graph is an organized representation of real-world entities and thei
 
 ## Why Knowledge Graph is used in RAG?
 
-Naive RAG systems built with keyword or similarity search-based retrieval fail in complex queries that require reasoning. Suppose user asks a query: "Who directed the sci-fi movie where the lead actor was also in The Revenant?", a standard RAG system will retrieve documents about The Revenant, then find information about cast and crew members, but it will fail identiy the lead actor, Leo DiCaprio who starred in other movies but not existed in the query to retrieve document. However, taking advantage of knowledge graph, the ideally process will be: identify the lead actor of The Revenant, then find other movies he starred in, then find the sci-fi movie which meet ciriteria.
+Naive RAG systems built with keyword or similarity search-based retrieval fail in complex queries that require reasoning. Suppose user asks a query: "What is the favorite food of Taylor Swift's cat?", a standard RAG system will search for documents containing keywords like "Taylor Swift", "cat", and "favorite food". It might find separate documents about Taylor Swift's pets or about cat foods because it cannot connect the dots in a logical sequence However, taking advantage of knowledge graph, the ideally process will be: Taylor Swift has a cat named Benjamin Button, then it looks for information about Benjamin Button's preferences. Finally, it finds out that Benjamin Button's favorite food is tuna.
 
 ## How GraphRAG works?
 
