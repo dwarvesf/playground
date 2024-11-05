@@ -32,7 +32,7 @@ GraphRAG workflow contain 2 main stage: Index and Query.
 ### Index
 
 Indexing in GraphRAG is data pipeline and transformation suite that is designed to extract meaningful, structured data from unstructured text using LLMs. Following above diagram, Index stage contain 6 main steps:
- - **Compose TextUnits**: TextUnit is a chunk of text that is used used for our graph extraction techniques. In this step, we will split the raw text into TextUnits.
+ - **Compose TextUnits**: TextUnit is a chunk of text that is used for our graph extraction techniques. In this step, we will split the raw text into TextUnits.
  - **Graph Extraction**: In this step, we will use LLM to extract entities and relationships from TextUnits. 
 ![Graph Extraction](assets/graphrag-graph-extraction.webp)
 Entity will have name, type, description propeties. Relationship will have source, target, descrption properties. Each entity and relationship will have a short summary description.
@@ -65,7 +65,7 @@ Following above diagrams, the user query will be extracted entities. Then, these
 In this mode, the collections of communiites will be used to generate response to user query in a map-reduce manner. At the Map step, community reports are segmented into text chunks of pre-defined size. Each text chunk is then used to produce an intermediate response containing a list of point, each of which is accompanied by a numerical rating indicating the importance of the point. And in Reduce step, the intermediate responses will be filtered and re-ranking and then aggregrated to produce the final answer.
 
 ## Conclusion
-GraphRAG is ideal for tackling complex tasks such as multi-hop reasoning and answering comprehensive questions that require linking disparate pieces of information. However, using a lot of LLM calls in both index and query stage make it expensive and should be consider.
+GraphRAG is ideal for tackling complex tasks such as multi-hop reasoning and answering comprehensive questions that require linking disparate pieces of information. However, using a lot of LLM calls in both index and query stage make it expensive and should be in consideration.
 
 ## References
 - https://arxiv.org/abs/2404.16130
