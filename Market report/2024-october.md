@@ -31,7 +31,7 @@ authors:
 
 October brought a wave of new developments in AI, showing just how far chat interfaces have come. **Anthropic** introduced a demo called [Computer Use](https://docs.anthropic.com/en/docs/build-with-claude/computer-use) where models can use software in a way that mirrors human interaction with computer. This breakthrough opens up new ways to streamline tasks and make work more efficient.
 
-**OpenAI also rolled out Canvas**, which takes ChatGPT from being a simple chat tool to a collaborative partner in writing and coding. Canvas gives users a shared space to work together, creating a more interactive experience. Meanwhile, **ChatGPT got an upgrade in its web search abilities**, delivering quicker, more accurate answers supported by solid sources. The plan is to continue improving this feature to cover areas like shopping and travel, making it even more practical for everyday use.
+**OpenAI also rolled out [Canvas](https://openai.com/index/introducing-canvas/)**, which takes ChatGPT from being a simple chat tool to a collaborative partner in writing and coding. Canvas gives users a shared space to work together, creating a more interactive experience. Meanwhile, **ChatGPT got an upgrade in its [web search](https://openai.com/index/introducing-chatgpt-search/) abilities**, delivering quicker, more accurate answers supported by solid sources. The plan is to continue improving this feature to cover areas like shopping and travel, making it even more practical for everyday use.
 
 We’re observing a single chat interface that can manage various types of tasks, paving the way for the imminent release of a focused tool like LLM browser or even OS.
 
@@ -85,11 +85,12 @@ Looking at job descriptions, common areas of expertise include **platform buildi
 
 ## References
 
-- [https://github.blog/news-insights/octoverse/octoverse-2024/](https://github.blog/news-insights/octoverse/octoverse-2024/)
+- [https://github.blog/news-insights/octoverse/octoverse-2024](https://github.blog/news-insights/octoverse/octoverse-2024/)
 - [https://newsletter.pragmaticengineer.com/p/leaving-big-tech](https://newsletter.pragmaticengineer.com/p/leaving-big-tech)
 - [Thoughworks Tech Radar Vol 31](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2024/10/tr_technology_radar_vol_31_en.pdf)
 - [https://www.thoughtworks.com/insights/blog/technology-strategy/macro-trends-tech-industry-october-2024](https://www.thoughtworks.com/insights/blog/technology-strategy/macro-trends-tech-industry-october-2024)
-- [https://openai.com/index/introducing-canvas/](https://openai.com/index/introducing-canvas/)
+- [https://openai.com/index/introducing-canvas](https://openai.com/index/introducing-canvas/)
+- [https://openai.com/index/introducing-chatgpt-search](https://openai.com/index/introducing-chatgpt-search/)
 - [https://docs.anthropic.com/en/docs/build-with-claude/computer-use](https://docs.anthropic.com/en/docs/build-with-claude/computer-use)
 - [https://www.apricitas.io/p/the-ai-investment-boom](https://www.apricitas.io/p/the-ai-investment-boom)
 - [Alphabet 2024 Q3 Earnings Call](https://www.youtube.com/watch?v=wjkf4t8BfLM)
