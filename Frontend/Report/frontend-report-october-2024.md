@@ -5,7 +5,7 @@ tags:
 title: Frontend Report October 2024
 short_title: October 2024
 description: This month’s newsletter highlights React’s new compiler beta, key updates from Next.js Conf 2024, and industry shifts toward full-stack roles and modern CSS. AI-driven tools like GitHub Copilot and Project IDX are further advancing development workflows.
-date: 2024-10-05
+date: 2024-11-05
 authors:
   - mashiro5951
 ---
