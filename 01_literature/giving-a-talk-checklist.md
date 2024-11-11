@@ -9,6 +9,8 @@ authors:
   - thanh
 ---
 
+Use this checklist as a practical guide to prepare for your talk
+
 ### Presentation
 
 - [ ] Clear articulation of information
