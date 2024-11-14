@@ -1,7 +1,7 @@
 ---
 authors:
 - "monotykamary"
-date: "2024-09-11"
+date: "2024-11-14"
 description: "Project Operations Copilots is a suite of AI assistants designed to streamline project management and reporting processes. These copilots, built using Dify and custom implementations, help teams generate insightful project reports, create comprehensive project charters, and facilitate smooth project handovers. This approach represents a shift towards AI-assisted project management, enhancing team efficiency and project success rates."
 tags:
 - "ai"
@@ -18,7 +18,7 @@ Managing projects effectively requires careful attention to documentation, repor
 
 ### 1. Monthly Project Report Copilot
 
-This copilot specializes in analyzing project data and generating comprehensive monthly reports. It helps teams by:
+This copilot specializes in analyzing project data and generating comprehensive monthly reports. We've written up a detailed use case [here](../../Data/project-report-use-case.md). It helps teams by:
 
 - Aggregating project metrics and KPIs
 - Identifying key achievements and milestones
