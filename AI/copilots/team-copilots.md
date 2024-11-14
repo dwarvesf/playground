@@ -20,28 +20,28 @@ Effective team management requires efficient task management, clear communicatio
   - Assists in creating concise and informative newsletter summaries.
     - Insert a link to the chatbot.
 
-[](https://prompt.d.foundation/chat/8tzVYl7FKIPUBiLU)
+[Newsletter Summary Copilot](https://prompt.d.foundation/chat/8tzVYl7FKIPUBiLU)
 ![Newsletter Summary Copilot](assets/newsletter-summary.mp4)
 
 - **Frontend Commentary Copilot**
   - Provides insights and feedback on frontend news.
     - Type `/fr` in Discord.
 
-[](https://discord.com/invite/dwarvesv)
+[Frontend Commentary Copilot](https://discord.com/invite/dwarvesv)
 ![Frontend Commentary Copilot](assets/frontend-commentary.mp4)
 
 - **Tech Drama Writer Copilot**
   - Specializes in crafting engaging narratives around tech-related topics.
     - Insert a link to the chatbot.
 
-[](https://prompt.d.foundation/chat/FYfSi5KZKtLeuslM)
+[Tech Drama Writer Copilot](https://prompt.d.foundation/chat/FYfSi5KZKtLeuslM)
 ![Tech Drama Writer Copilot](assets/tech-drama-writer.mp4)
 
 
 - **Onboarding Support Agent Copilot**
   - Aids in the onboarding process by providing support and guidance to new team members.
 
-[](https://prompt.d.foundation/chat/TViEjaA3piQL576V)
+[Onboarding Support Agent Copilot](https://prompt.d.foundation/chat/TViEjaA3piQL576V)
 ![Onboarding Support Agent Copilot](assets/onboarding-support-agent.mp4)
 
 - **Community Round-Up Copilot**
@@ -53,12 +53,12 @@ Effective team management requires efficient task management, clear communicatio
     - **Max words count**: Limit words for one changelog (e.g., 400)
     - **Number of version(s)**: How many versions you want to generate
 
-[](https://prompt.d.foundation/completion/cskRmAz3ZPLIcbex)
-[](https://prompt.d.foundation/completion/FpSyX3iocUVo2s1N)
+[Community Round-Up Copilot Discord](https://prompt.d.foundation/completion/cskRmAz3ZPLIcbex)
+[Community Round-Up Copilot Memo](https://prompt.d.foundation/completion/FpSyX3iocUVo2s1N)
 ![Community Round-Up Copilot](assets/community-round-up-memo.mp4)
 
 - **YouTube Transcript Copilot**
   - Generates transcripts for YouTube videos, enhancing accessibility and content review.
 
-[](https://prompt.d.foundation/chat/cZmU6hYmwWpk2AmW)
+[YouTube Transcript Copilot Discord](https://prompt.d.foundation/chat/cZmU6hYmwWpk2AmW)
 ![YouTube Transcript Copilot](assets/youtube-transcriber.mp4)
