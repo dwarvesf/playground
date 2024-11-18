@@ -2,8 +2,8 @@
 title: "Transfer Mapping: Enhancing Loggers for Better Transparency"
 date: 2024-11-18
 tags:
-  - logger
   - data
+  - blockchain
 description: A comprehensive guide on improving cryptocurrency transfer logging systems to provide better transparency and traceability for users and developers.
 authors:
   - bievh
