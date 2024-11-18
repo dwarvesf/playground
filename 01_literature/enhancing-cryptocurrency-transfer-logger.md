@@ -1,5 +1,5 @@
 ---
-title: "Transfer Mapping: Enhancing Loggers for Better Transparency"
+title: "Transfer mapping: Enhancing loggers for better transparency"
 date: 2024-11-18
 tags:
   - data
@@ -9,39 +9,39 @@ authors:
   - bievh
 ---
 
-### **What is a Logger, and Why Does It Matter?**
+### **What is a logger, and why does it matter?**
 
 A **logger** is a fundamental component of modern software systems, designed to record system events, user actions, and issues in real-time. It’s like the memory of an application, enabling both users and administrators to trace activities. Loggers serve two main purposes:
 
-> - **For Users**: They provide notifications or updates about events like successful transfers, errors, or system changes.
-> - **For Developers and Support Teams**: They offer a detailed record of system behavior, aiding in debugging and monitoring.
+> - **For users**: They provide notifications or updates about events like successful transfers, errors, or system changes.
+> - **For developers and support teams**: They offer a detailed record of system behavior, aiding in debugging and monitoring.
 
 Without a logger, understanding the flow of actions or diagnosing issues would be like navigating a dark room without a flashlight.
 
 ---
 
-### **What Makes an Effective Logger?**
+### **What makes an effective logger?**
 
 An effective logger goes beyond simply storing data. It organizes and presents information in a way that’s **useful and easy to understand**. To be effective, a logger must have the following qualities:
 
-- **Consistency in Format**  
+- **Consistency in format**  
 	   Logs should maintain a uniform structure across the application, much like a well-organized manual where every chapter follows the same layout. This consistency makes it easier to identify patterns and quickly interpret information.
 
-- **Clarity and Self-Documentation**  
+- **Clarity and self-documentation**  
 	   Logs should be *self-explanatory*, requiring little to no additional context to understand their meaning. For instance, a good log entry is like a well-written headline: concise, clear, and informative.
 
-- **Purposefulness and Informativeness**  
+- **Purposefulness and informativeness**  
 	   Every log entry should serve a purpose. For example, instead of simply stating, "Transfer completed," a log should provide actionable insights, such as the accounts involved, the amount transferred, and timestamps.
 
 ---
 
-### **Context: Transfer Logs in Cryptocurrency Applications**
+### **Context: transfer logs in cryptocurrency applications**
 
 Imagine a **cryptocurrency trading application** that enables users to manage multiple accounts on one platform. One of its core features is handling **transfers**, which can be categorized as follows:
 
 - *Deposits*: Funds added to an account from an external source.
 - *Withdrawals*: Funds removed from an account to an external destination.
-- *Internal Transfers*: Movement of funds between two accounts belonging to the same user.
+- *Internal transfers*: Movement of funds between two accounts belonging to the same user.
 
 Here’s an example scenario:  
 A user transfers **$1,000 USDT** from their main account (**Account\_A**) to their savings account (**Account\_B**). The system generates two records in the database:  
@@ -60,17 +60,17 @@ From this log, users cannot deduce that the two entries are part of the same tra
 
 ---
 
-### **Why is This Problematic?**
+### **Why is this problematic?**
 
 The lack of clear relationships between log entries creates the following issues:  
 
-1. **User Confusion**: Without context, users may struggle to understand the flow of their funds.
-2. **Reduced Trust**: Ambiguous logs can erode user confidence, especially in financial systems.
-3. **Limited Debugging Capability**: Developers and support teams cannot efficiently diagnose issues or trace transactions without meaningful, connected data.
+1. **User confusion**: Without context, users may struggle to understand the flow of their funds.
+2. **Reduced trust**: Ambiguous logs can erode user confidence, especially in financial systems.
+3. **Limited debugging capability**: Developers and support teams cannot efficiently diagnose issues or trace transactions without meaningful, connected data.
 
 ---
 
-### **Why Does This Happen? A Look at the Current System**
+### **Why does this happen? A look at the current system**
 
 The existing system focuses on individual transactions, treating withdrawals and deposits as **isolated events**. The process is outlined below:
 
@@ -113,7 +113,7 @@ This method records events but fails to link related transactions. For example, 
 
 ---
 
-### **A Solution: Enhanced Logging System**
+### **A solution: enhanced logging system**
 
 To resolve these limitations, we propose an **enhanced logging system** that links related transactions and provides a clear view of asset movement. The process is illustrated below:
 
@@ -148,13 +148,13 @@ flowchart TD
 
 ---
 
-### **Key Steps in the Enhanced System**
+### **Key steps in the enhanced system**
 
-1. **Data Sources (Input)**
-   2. **Future Incomes**: Primary source of transfer records containing the raw transaction data including amounts, timestamps, and account IDs
-   3. **Balance Snapshots (ACBS)**: Historical balance records at specific timestamps
+1. **Data sources (input)**
+   2. **Future incomes**: Primary source of transfer records containing the raw transaction data including amounts, timestamps, and account IDs
+   3. **Balance snapshots**: Historical balance records at specific timestamps
 
-2. **Transfers Pairing**
+2. **Transfers pairing**
 ```sql
 WITH ranked_transfers AS (
     SELECT
@@ -167,7 +167,7 @@ WITH ranked_transfers AS (
    - Creates pairs of transactions by matching withdrawals with corresponding deposits
    - Examines transactions within a period window to identify related transfers
 
-3. **Type Detection**
+3. **Type detection**
 ```sql
 CASE
     WHEN amount < 0
@@ -183,7 +183,7 @@ CASE
    - Uses some simple time-based matching logic combining amount matching and timing
    - Considers both previous and next transactions to ensure accurate classification
 
-4. **Transfer Grouping**
+4. **Transfer grouping**
 ```sql
 SUM(CASE
     WHEN sender_time_gap > interval '20 seconds' THEN 1
@@ -198,7 +198,7 @@ END) OVER (
    - Helps handle high-frequency trading scenarios
    - Ensures accurate balance tracking during concurrent transfers
 
-5. **Find First Balance of Group**
+5. **Find first balance of group**
 ```sql
 FIRST_VALUE(
     COALESCE(
@@ -217,7 +217,7 @@ FIRST_VALUE(
    - Handles both sender and receiver balances independently
    - Ensures accurate balance baseline for calculations
 
-6. **Calculate Balance For Each Transfer**
+6. **Calculate balance for each transfer**
 ```sql
 GREATEST(0, (
     sender_initial_balance +
@@ -235,17 +235,17 @@ GREATEST(0, (
 
 ---
 
-### **Benefits of the Enhanced Logger**
+### **Benefits of the enhanced logger**
 
-1. **Enhanced Clarity**
+1. **Enhanced clarity**
    2. Logs clearly link related transactions.
    3. Users see the complete flow of funds, from source to destination.
 
-2. **Improved Accuracy**
+2. **Improved accuracy**
    2. Tracks balances with precision, even during concurrent transfers.
    3. Uses historical snapshots to ensure reliable calculations.
 
-3. **Better User Experience**
+3. **Better user experience**
    2. Provides actionable insights in a user-friendly format.
    3. Differentiates between internal and external transactions.
 
