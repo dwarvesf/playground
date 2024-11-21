@@ -8,7 +8,7 @@ tags:
   - 'data-engineering'
   - 'project-management'
   - 'case-study'
-title: 'Building data pipeline for OGIF Transcriber'
+title: 'Building data pipeline for OGIF transcriber'
 ---
 
 At Dwarves, we needed an automated way to transcribe and summarize the recordings of our weekly OGIF events for our Brainery knowledge hub. The key challenge was to build a scalable data pipeline that could efficiently process YouTube videos, extract audio, transcribe the content using AI models, and store the results for downstream analysis and search.

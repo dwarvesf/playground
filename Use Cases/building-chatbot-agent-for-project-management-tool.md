@@ -8,7 +8,7 @@ tags:
   - 'ai'
   - 'project-management'
   - 'case-study'
-title: 'Building chatbot agent to streamline Project Management'
+title: 'Building chatbot agent to streamline project management'
 ---
 
 Umbrella is a project management platform tailored for athletes, musicians, creatives, and businesses alike, bringing everything from team collaboration to secure document sharing under one roof. As our user base grew to a substantial number of active users managing a significant volume of projects and tasks, we identified an opportunity to leverage generative AI to enhance our platform's capabilities and streamline project management workflows.
