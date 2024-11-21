@@ -33,9 +33,15 @@ Two primary approaches exist for LLM quantization:
 
 ## Linear Quantization: A Deep Dive
 
-This section explores Linear Quantization, the most prevalent quantization technique. There are 2 main modes in this technique: *A-symmetric* and *Symmetric*. In this part, we will focus on *A-symmetric* mode.
+![Linear Quantization Formula](assets/quantization-in-llm-linear.webp)
 
-![Linear Quantization Formula](assets/quantization-in-llm-formula.webp)
+This section explores Linear Quantization, the most prevalent quantization technique. There are 2 main modes in this technique: 
+ - **Symmetric**: the zero-point is zero — i.e. 0.0 of the floating point range is the same as 0 in the quantized range. Typically, this is more efficient to compute at runtime but may result in lower accuracy if the floating point range is unequally distributed around the floating point 0.0.
+ -  **Asymmetric**: zero-point that is non-zero in value. This can result in higher accuracy but may be less efficient to compute at runtime.
+
+In this part, we focus on the asymmetric mode.
+
+![Asymmetric mode](./assets/quantization-in-llm-formula.webp)
 
 The fundamental formula is:
 
