@@ -1,21 +1,22 @@
 ---
 authors:
-- "datnguyennnx"
-date: "2024-10-11"
-description: "Tracing is like following your LLM’s journey, step by step. We will explain how tracing makes it easy to identify and address problems by allowing you to track the entire process."
+  - 'datnguyennnx'
+date: '2024-10-11'
+description: 'Tracing is like following your LLM’s journey, step by step. We will explain how tracing makes it easy to identify and address problems by allowing you to track the entire process.'
 hashnode_meta:
   coverImageOptions:
-    coverImageURL: "https://memo.d.foundation/playground/ai/building-llm-system/assets/trace-pillar-tracing-roadmap.webp"
-  id: "670f4d46b25a9930f0551616"
-  slug: "tracing"
-sync: "hashnode"
+    coverImageURL: 'https://memo.d.foundation/playground/ai/building-llm-system/assets/trace-pillar-tracing-roadmap.webp'
+  id: '670f4d46b25a9930f0551616'
+  slug: 'tracing'
+sync: 'hashnode'
 tags:
-- "llm"
-- "observability"
-- "tracing"
-- "pillar"
-title: "Tracing"
+  - 'llm'
+  - 'observability'
+  - 'tracing'
+  - 'pillar'
+title: 'Tracing'
 ---
+
 ## What is tracing
 
 Tracing is a way to keep track of, debug, and get a clear picture of how an LLM app is running. It gives a detailed snapshot of a specific action, like making a call to the LLM, formatting a prompt, or running a function.
@@ -48,10 +49,10 @@ We should be making clear the difference between trace and span.
 | **Attribute**       | **Trace**                                               | **Span**                                                                      |
 | ------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | **Scope**           | Covers the entire lifecycle of a request                | Focuses on individual operations or steps                                     |
-| **Level of Detail** | High-level overview                                     | Detailed, includes specific metrics                                           |
+| **Level of detail** | High-level overview                                     | Detailed, includes specific metrics                                           |
 | **Granularity**     | Includes multiple spans                                 | Captures single actions                                                       |
-| **Primary Use**     | Understanding overall application flow and dependencies | Debugging or optimizing specific components/tasks                             |
-| **Data Collected**  | Timeline of operations, parent-child relationships      | Duration, input/output, token usage, errors, attributes like provider, scores |
+| **Primary use**     | Understanding overall application flow and dependencies | Debugging or optimizing specific components/tasks                             |
+| **Data collected**  | Timeline of operations, parent-child relationships      | Duration, input/output, token usage, errors, attributes like provider, scores |
 | **Examples**        | Full document retrieval process                         | Querying a database, calling an API, embedding query                          |
 
 ### Trace
@@ -66,7 +67,7 @@ A trace consists of a tree structure of spans, beginning with a root span that h
 
 Span help define the main operations within LLM applications. These types of operations are broken down into different categories to keep things organized and easy to understand.
 
-- **Chain ( Workflow )**: This is like a roadmap of static steps, which can include things like retrieving data, embedding text, or making LLM calls.
+- **Chain (Workflow)**: This is like a roadmap of static steps, which can include things like retrieving data, embedding text, or making LLM calls.
 - **Embedding**: This deals with embedding tasks, such as working with text embeddings, often used for making similarity-based queries or refining questions.
 - **Retrieval**: In setups like RAG system, this fetches data from a vector database to give the LLM more context for better, more accurate responses.
 - **LLM**: Calls to the LLM itself for things like generating text or getting inferences, often using various APIs or SDKs.

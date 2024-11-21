@@ -1,20 +1,21 @@
 ---
 authors:
-- "hoangnnh"
-date: "2024-09-06"
-description: "In AI integrated systems, instead of put all workload on a single agent, we can apply divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent.This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone"
+  - 'hoangnnh'
+date: '2024-09-06'
+description: 'In AI integrated systems, instead of put all workload on a single agent, we can apply divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent.This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone'
 hashnode_meta:
   coverImageOptions:
-    coverImageURL: "https://memo.d.foundation/playground/ai/building-llm-system/assets/multi-agent-design.webp"
-  id: "670f4d4447e618546b110b23"
-  slug: "multi-agent-collaboration-for-task-completion"
-sync: "hashnode"
+    coverImageURL: 'https://memo.d.foundation/playground/ai/building-llm-system/assets/multi-agent-design.webp'
+  id: '670f4d4447e618546b110b23'
+  slug: 'multi-agent-collaboration-for-task-completion'
+sync: 'hashnode'
 tags:
-- "llm"
-- "ai-agents"
-- "ai-integration"
-title: "Multi-agent collaboration for task completion"
+  - 'llm'
+  - 'ai-agents'
+  - 'ai-integration'
+title: 'Multi-agent collaboration for task completion'
 ---
+
 In AI integrated systems, instead of putting all the workload on a single agent, we can apply a divide and conquer strategy to distribute workload to multiple agents. This approach can enhance task completion by leveraging the unique skills and capabilities of each agent. This approach allows for more complex and nuanced problem-solving, as well as increased efficiency and scalability. By coordinating and communicating effectively, agents can work together to achieve common goals, divide labor, and overcome challenges that a single agent might face alone.
 
 ## Problems
@@ -25,7 +26,7 @@ Imagine we plan to integrate AI into our application, we build an AI agent with 
 
 ![](assets/multi-agent-design.webp)
 
-A Multi-agent AI system can be designed as follows:
+A multi-agent AI system can be designed as follows:
 
 - Supervisor: The supervisor agent is responsible for coordinating and managing the workflow of the system. It receives the task request, route the request to appropiate agents, after agents complete their tasks, the supervisor agent will collect the results and continue making decision whether route the task to another agent or return the final result to the user.
 
@@ -49,7 +50,7 @@ const systemPrompt = `You are a supervisor tasked with managing a conversation b
     Given the following user request, analyze it carefully to determine which worker is most appropriate to handle the specific action requested, respond with the worker to act next. Each worker will perform task and respond with their results and status. When finished, respond with FINISH.`
 ```
 
-- Event agent: Responsible for handling the Event module including creating, and managing events within projects. We will defined its system prompt similar like this:
+- Event agent: Responsible for handling the event module including creating, and managing events within projects. We will defined its system prompt similar like this:
 
 ```ts
 const systemPrompt = `You are an intelligent assistant responsible for handling the Event module. Given a Event struct format, you will collect event information and map it to the Event struct fields when processing requests. Your responses should be concise and focused on the event details.
@@ -57,7 +58,7 @@ const systemPrompt = `You are an intelligent assistant responsible for handling 
 `
 ```
 
-- Project agent: Responsible for handling the Project module including listing projects/workspaces/hubs, creating, updating, and managing projects. We will defined its system prompt similar like this:
+- Project agent: Responsible for handling the project module including listing projects/workspaces/hubs, creating, updating, and managing projects. We will defined its system prompt similar like this:
 
 ```ts
 const systemPrompt = `You are an intelligent assistant responsible for handling the Project module. Given a project struct format, you will collect project information from user input and map it to the Project struct fields when processing requests. Your responses should be concise and focused on the project details.
@@ -65,9 +66,9 @@ const systemPrompt = `You are an intelligent assistant responsible for handling 
 `
 ```
 
-- Tools: Each agent will have a set of tools that they can use to perform their tasks. For example, the Event agent will have tools for creating events, updating events, and managing events. The Project agent will have tools for listing projects, creating projects, invite member to project.
+- Tools: Each agent will have a set of tools that they can use to perform their tasks. For example, the event agent will have tools for creating events, updating events, and managing events. The project agent will have tools for listing projects, creating projects, invite member to project.
 
-Now, let's consider a user request: "I want to create event with title "Lady Gaga show" at 5am tomorrow and end at 7pm at the same date, I not remember the project I want to put this event in, but you can set my most recent visited project to this event, other optional information is no need to add.". As you can see, to complete this task, we need to use Project agent to get the most recent visited project and Event agent to create the event. The supervisor agent will route the task to appropriate agents and collect the results untils the task is completed.
+Now, let's consider a user request: "I want to create event with title "Lady Gaga show" at 5am tomorrow and end at 7pm at the same date, I not remember the project I want to put this event in, but you can set my most recent visited project to this event, other optional information is no need to add.". As you can see, to complete this task, we need to use project agent to get the most recent visited project and event agent to create the event. The supervisor agent will route the task to appropriate agents and collect the results untils the task is completed.
 
 - Result:
 

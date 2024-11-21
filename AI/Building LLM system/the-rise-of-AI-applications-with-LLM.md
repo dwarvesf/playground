@@ -1,19 +1,20 @@
 ---
 authors:
-- "thanh"
-date: "2024-10-01"
-description: "Discover how the rapid surge in artificial intelligence, led by models like ChatGPT, Claude, and Gemini, is reshaping industries and democratizing AI development. This article explores the rise of model-as-a-service, the economic impact of AI, and how accessible APIs are transforming productivity, creativity, and innovation across sectors."
+  - 'thanh'
+date: '2024-10-01'
+description: 'Discover how the rapid surge in artificial intelligence, led by models like ChatGPT, Claude, and Gemini, is reshaping industries and democratizing AI development. This article explores the rise of model-as-a-service, the economic impact of AI, and how accessible APIs are transforming productivity, creativity, and innovation across sectors.'
 hashnode_meta:
   coverImageOptions:
-    coverImageURL: "https://memo.d.foundation/playground/ai/building-llm-system/assets/the-rise-of-ai-applications-with-llm-20241001172500969.webp"
-  id: "670f4d4a340553308e8ff9e7"
-  slug: "the-rise-of-ai-applications-with-llm"
-sync: "hashnode"
+    coverImageURL: 'https://memo.d.foundation/playground/ai/building-llm-system/assets/the-rise-of-ai-applications-with-llm-20241001172500969.webp'
+  id: '670f4d4a340553308e8ff9e7'
+  slug: 'the-rise-of-ai-applications-with-llm'
+sync: 'hashnode'
 tags:
-- "llm"
-- "ai"
-title: "The rise of AI applications with LLM"
+  - 'llm'
+  - 'ai'
+title: 'The rise of AI applications with LLM'
 ---
+
 In the course of technological history, few developments have captured the imagination and transformed industries as swiftly and profoundly as the recent surge in artificial intelligence. The release of ChatGPT marked a pivotal moment, followed by other tech giants entering the arena. Google introduced Gemini, Facebook unveiled Llama, and Anthropic launched Claude. These powerful AI foundation models have demonstrated an unprecedented ability to drive a wide array of tasks, significantly boosting productivity and creating substantial economic value. As a result, teams and individuals across various sectors have begun to explore innovative ways to harness AI for building a new wave of applications.
 
 However, a significant roadblock has emerged on this path of innovation: **the cost**. Training large language models (LLMs) requires vast amounts of data, immense computational power, and specialized talent—resources that only a select few organizations can afford. This scenario is reminiscent of the early days of cloud computing, drawing parallels to the story of Amazon Web Services. In response to this challenge, a new paradigm has emerged: model-as-a-service. This approach allows models to be provided for others to use as a service, democratizing access to AI capabilities.
@@ -39,7 +40,7 @@ As AI applications become more cost-effective to build and quicker to bring to m
 
 The impact of this AI revolution is evident in several key areas:
 
-**Open Source Dominance**
+**Open source dominance**
 
 The number of new repositories for model development has nearly tripled from 2022 to 2023. In the period from 2023 to 2024, four out of the five most starred repositories on GitHub were related to AI and LLMs, underscoring the community's intense focus on AI development.
 
@@ -47,19 +48,19 @@ The number of new repositories for model development has nearly tripled from 202
 
 ![](assets/the-rise-of-AI-applications-with-LLM-20241001172538961.webp)
 
-**Startup Funding**
+**Startup funding**
 
 According to a recent analysis of Y Combinator's Summer 2024 batch, an astounding 72% of startups are focused on AI—a dramatic increase from just 1% in the winter of 2012. This trend far outpaces previous technology waves, such as the crypto boom.
 
 ![](assets/the-rise-of-AI-applications-with-LLM-20241001172602714.webp)
 
-**Market Interest**
+**Market interest**
 
 The interest in AI within the corporate world has surged dramatically. More than 16% of companies in the Russell 3000 now mention AI technology on earnings calls, up from less than 1% in 2016. Notably, about half of this increase occurred after the release of ChatGPT in Q4 2022. This heightened interest is often predictive of increased company-level capital spending in the technology.
 
 ![](assets/the-rise-of-AI-applications-with-LLM-20241001172640265.webp)
 
-**Economic Projections**
+**Economic projections**
 
 The generative AI market is poised for explosive growth. Bloomberg Intelligence projects that the market will expand from $40 billion in 2022 to a staggering $1.3 trillion by 2032. This forecast underscores the immense economic potential and transformative power of AI technologies across industries.
 
