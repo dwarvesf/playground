@@ -8,7 +8,7 @@ tags:
   - 'platform'
   - 'monitoring'
   - 'case-study'
-title: 'Setup centralized monitoring system for Nghenhan trading platform'
+title: 'Setup centralized monitoring system for Nghenhan Trading Platform'
 ---
 
 Nghenhan is a privately-owned trading platform used by a select group of traders. Given the high-stakes nature of trading and the significant financial implications of system failures, it is crucial for Nghenhan to implement a robust, centralized monitoring system. This system must ensure platform reliability, minimize downtime, and prevent data loss to protect traders from substantial monetary losses.

@@ -3,7 +3,7 @@ tags:
   - UX-UI
   - product-design
   - report
-title: "Product Design Commentary #6: AI in Design - Cool Ideas and How to Make Them Happen"
+title: "Product Design Commentary #6: AI in Design - Cool ideas and how to make them happen"
 date: 2024-11-21
 description: Artificial Intelligence (AI) brings boundless opportunities to enhance both user experience and daily life. While foundational technologies often seem under the purview of data scientists and engineers, designers play a crucial role in bridging the gap between user needs and emerging technologies. This article explores the role of UX and how to determine which user problems are best solved with AI while assessing their effectiveness.
 authors:

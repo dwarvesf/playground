@@ -3,7 +3,7 @@ tags:
   - UX-UI
   - product-design
   - report
-title: "Product Design Commentary #5: Figma to SwiftUI (Functional Code) with Claude AI"
+title: "Product Design Commentary #5: Figma to SwiftUI (functional code) with Claude AI"
 date: 2024-11-07
 description: This article provides a guide on using Claude AI to build user interfaces in SwiftUI, transforming Figma designs into complete, production-ready code. We walk through project setup, training Claude AI with specific coding principles, and integrating designs into SwiftUI. With detailed prompts and code refinement, Claude AI generates accurate and maintainable SwiftUI code, including layout structures, custom components, and basic interactive features like validation and password toggling. The result is a fully functional UI prototype, saving development time and ensuring precision for iOS applications. 
 authors:
@@ -12,7 +12,7 @@ authors:
 
 This article provides a guide on using Claude AI to build user interfaces in SwiftUI, transforming Figma designs into complete, production-ready code. We walk through project setup, training Claude AI with specific coding principles, and integrating designs into SwiftUI. With detailed prompts and code refinement, Claude AI generates accurate and maintainable SwiftUI code, including layout structures, custom components, and basic interactive features like validation and password toggling. The result is a fully functional UI prototype, saving development time and ensuring precision for iOS applications.
 
-## Setup Project & Train AI Knowledge
+## Setup project & train AI knowledge
 To begin our project, we’ll create a new project within Claude AI, establishing a strong foundation of AI knowledge to support our design and coding efforts.
 
 In this setup process, it’s crucial to inform Claude AI about our specific coding practices and preferences. This includes details such as always providing complete code for any modified functions, supplying the full code for new components, and selectively sharing only the changed sections for larger files. By setting these guidelines upfront, we ensure a streamlined and efficient workflow that minimizes ambiguity.
