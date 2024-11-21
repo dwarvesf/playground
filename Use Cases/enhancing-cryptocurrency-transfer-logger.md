@@ -1,5 +1,5 @@
 ---
-title: "Transfer mapping: Enhancing loggers for better transparency"
+title: "Transfer mapping: enhancing loggers for better transparency"
 date: 2024-11-18
 tags:
   - data

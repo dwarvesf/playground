@@ -1,5 +1,5 @@
 ---
-title: "Reconstructing historical trading PnL: A data pipeline approach"
+title: "Reconstructing historical trading PnL: a data pipeline approach"
 date: 2024-11-18
 tags:
   - data

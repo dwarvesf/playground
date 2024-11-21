@@ -7,7 +7,7 @@ tags:
 - "data-engineering"
 - "project-management"
 - "case-study"
-title: "Project reports system: A case study"
+title: "Project reports system: a case study"
 ---
 
 At Dwarves, we've developed a monthly Project Reports system - a lean, efficient system that transforms our communication data into actionable intelligence for our Operations team. This system orchestrates multiple data streams into comprehensive project insights while maintaining enterprise-grade security and cost efficiency.
