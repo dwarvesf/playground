@@ -7,8 +7,8 @@ title: "Product Design Commentary #6: AI in Design - Cool Ideas and How to Make 
 date: 2024-11-21
 description: Artificial Intelligence (AI) brings boundless opportunities to enhance both user experience and daily life. While foundational technologies often seem under the purview of data scientists and engineers, designers play a crucial role in bridging the gap between user needs and emerging technologies. This article explores the role of UX and how to determine which user problems are best solved with AI while assessing their effectiveness.
 authors:
-  - nambui
   - anna
+  - nambui
 ---
 
 Artificial Intelligence (AI) brings boundless opportunities to enhance both user experience and daily life. While foundational technologies often seem under the purview of data scientists and engineers, designers play a crucial role in bridging the gap between user needs and emerging technologies. This article explores **the role of UX** and **how to determine which user problems are best solved with AI** while assessing their effectiveness.
@@ -45,7 +45,7 @@ Every AI model is guided by a reward function, also called an “objective funct
 
 ## Where to Integrate AI into Products and Solutions
 ### Enhancing Efficiency
-AI can learn user behaviors, identify patterns, and make actionable suggestions to save time and resources. For instance, **Siri** suggests apps based on daily habits, like opening a fitness tracker at 6 a.m. if the user jogs at that time. Similarly, platforms like Netflix and YouTube recommend content based on viewing history.
+AI can learn user behaviors, identify patterns, and make actionable suggestions to save time and resources. For instance, [**Siri**](https://support.apple.com/en-vn/guide/iphone/iph6f94af287/ios) suggests apps based on daily habits, like opening a fitness tracker at 6 a.m. if the user jogs at that time. Similarly, platforms like Netflix and YouTube recommend content based on viewing history.
 
 ![](assets/6-product-design-weekly-siri.png)
 
@@ -56,7 +56,7 @@ AI is ideal for automating repetitive, low-value tasks. For example, AI tools in
 
 ![](assets/6-product-design-weekly-mundane-task.png)
 
-In finance, AI-powered tools consolidate data from various crypto exchanges, generate weekly portfolio reports, and issue alerts for sudden price changes. These tools enable investors to make informed decisions faster, automating tedious tracking processes.
+In finance, AI-powered tools consolidate data from various crypto exchanges, [generate weekly portfolio reports](https://medium.com/@batuhansenerr/ai-powered-financial-analysis-multi-agent-systems-transform-data-into-insights-d94e4867d75d), and issue alerts for sudden price changes. These tools enable investors to make informed decisions faster, automating tedious tracking processes.
 
 ![](assets/6-product-design-weekly-finance.png)
 
@@ -82,9 +82,16 @@ AI enhances user safety through real-time data processing. Apple devices analyze
 
 ![](assets/6-product-design-weekly-health.png)
 
-In healthcare, AI systems like DeepMind's retinal disease detection analyze medical images to diagnose conditions early. With accuracy rivaling specialists, such tools empower healthcare providers to deliver faster, more reliable care.
+In healthcare, AI systems like DeepMind's retinal disease detection analyze medical images to [diagnose conditions](https://deepmind.google/discover/blog/using-ai-to-predict-retinal-disease-progression/) early. With accuracy rivaling specialists, such tools empower healthcare providers to deliver faster, more reliable care.
 
 ![](assets/6-product-design-weekly-deep-mind.png)
+*AI system for predicting exAMD. Predictions from the raw and segmented retina scans are combined to calculate the risk of AMD progression within 6 months.*
 
 ## Conclusion
 AI is not a silver bullet for every problem. As designers, our ultimate goal is to solve user challenges and help them achieve their objectives. By understanding their needs and developing comprehensive solutions, we can identify where AI best fits to amplify outcomes. Start with the problem, then let AI elevate the solution.
+
+**Learn more:**
+
+- A chapter from Google's guide on [User Needs + Defining Success (Responsible AI)](https://pair.withgoogle.com/chapter/user-needs/), focusing on understanding and meeting user needs during the development of AI systems.
+
+- The article ["Applications Of Machine Learning For Designers"](https://www.smashingmagazine.com/2017/04/applications-machine-learning-designers/) on Smashing Magazine discusses the applications of machine learning for designers, helping them understand how to integrate this technology into their design process.
