@@ -4,16 +4,16 @@ tags:
   - market-report
   - AI
   - LLM
-title: Market Report August 2024
+title: Market report August 2024
 short_title: August 2024
 date: 2024-08-29
-description: Explore the August 2024 Market Report to discover how AI and LLM tools like Cursor, Claude 3.5 Sonnet, and Amazon Q are transforming software development. Learn about the shift from generative UI to generative apps, the impact of prompt caching by Anthropic, and the rise of structured outputs in AI.
+description: Explore the August 2024 market report to discover how AI and LLM tools like Cursor, Claude 3.5 Sonnet, and Amazon Q are transforming software development. Learn about the shift from generative UI to generative apps, the impact of prompt caching by Anthropic, and the rise of structured outputs in AI.
 authors:
   - thanh
   - monotykamary
 ---
 
-## Key Takeaways
+## Key takeaways
 
 - Tools like Cursor and Claude 3.5 Sonnet are redefining programming by shifting focus from manual coding to guiding AI-generated code, signaling a move toward AI-driven development.
 - The transition from generative UI to generative apps is already here, with AI tools generating mini applications from prompts, potentially revolutionizing app creation.
@@ -22,9 +22,9 @@ authors:
 - OpenAI’s fine-tuning for GPT-4o allows for tailored the AI model, offering customization and control, crucial for industries focused on data privacy.
 - Tools like shadcn, v0.dev, and Tailwind are setting new standards in frontend development, with AI-driven workflows accelerating prototyping and design.
 
-## AI and LLM Are Starting to Make a Real Impact on Programming
+## AI and LLM are starting to make a real impact on programming
 
-### Cursor + Claude 3.5 Sonnet: The Future of Programming Is English and Tab-Tab
+### Cursor + Claude 3.5 Sonnet: The future of programming is English and tab-tab
 
 We believe the landscape of programming is undergoing a profound transformation with AI tools like Cursor and Claude 3.5 Sonnet. These tools aren't just speeding up workflows; they’re redefining what coding means. The shift towards using English prompts and reviewing AI-generated code diffs is changing the game—programming is becoming less about writing every line and more about guiding AI to do the heavy lifting.
 
@@ -36,7 +36,7 @@ It feels like we're revisiting the basics, but with a modern twist: developers a
 
 Looking ahead, we see a future where software development revolves less around manual coding and more around directing AI to create optimal solutions. The challenge will be preserving the creativity and problem-solving that make development rewarding, while still embracing AI's efficiencies. For many of us, the idea of coding without AI is already hard to imagine, signaling a significant shift in software engineering.
 
-### Amazon Developers Embrace 79% of Auto-Generated Code Reviews for Upgrading Foundation Software
+### Amazon developers embrace 79% of auto-generated code reviews for upgrading foundation software
 
 Amazon's GenAI assistant, Amazon Q, is revolutionizing software maintenance by slashing upgrade times from 50 developer-days to mere hours. We think this efficiency is a game-changer, allowing developers to focus on more valuable tasks instead of getting stuck on version upgrades. In less than six months, Amazon modernized over half its production Java systems with minimal developer involvement, proving the power of AI-driven automation.
 
@@ -48,7 +48,7 @@ As AI continues to evolve, we expect even more profound changes in how software 
 
 [https://x.com/ajassy/status/1826608791741493281](https://x.com/ajassy/status/1826608791741493281)
 
-## The Next Thing After Generative UI is Generative Apps
+## The next thing after generative UI is generative apps
 
 We’re seeing the future unfold right before our eyes with generative UI, but the next big leap is already here: generative apps. Claude and ChatGPT are already capable of generating mini applications from a user prompt and allowing direct access to them. Imagine this: a super app where you describe out loud the app you need, and it’s built for you in moments. This could be incredibly useful for a lot of random one-off tasks, and we’re basically there.
 
@@ -58,9 +58,9 @@ We believe this development could fundamentally change how we interact with tech
 
 The user’s prompt to create a Bill Splitting App in Claude Mobile App
 
-## New Features Open More Opportunities
+## New features open more opportunities
 
-### **Prompt Caching by Anthropic**
+### **Prompt caching by Anthropic**
 
 Anthropic's prompt caching is a game-changer in optimizing AI application efficiency. By caching frequently used context, this feature dramatically reduces costs and latency—up to 90% and 85%, respectively. We see this as a significant boost for scenarios like conversational agents and coding assistants, where repeated context is crucial.
 
@@ -68,9 +68,9 @@ Early adopters are already reporting substantial improvements, showing the pract
 
 With prompt caching now in public beta for various Claude versions, developers have the chance to experiment and find the best fit for their needs. We think this flexibility will drive broader adoption, positioning prompt caching as a central tool in the next wave of AI adoption.
 
-### Structured Output by OpenAI
+### Structured output by OpenAI
 
-OpenAI's introduction of Structured Outputs is a significant step forward in ensuring the precision of AI-generated data. By enabling outputs to adhere to developer-supplied JSON Schemas, this feature addresses the challenge of generating reliable JSON, particularly in fields where precision is paramount.
+OpenAI's introduction of structured outputs is a significant step forward in ensuring the precision of AI-generated data. By enabling outputs to adhere to developer-supplied JSON Schemas, this feature addresses the challenge of generating reliable JSON, particularly in fields where precision is paramount.
 
 We expect this development to shift industry standards, with developers favoring structured outputs over traditional methods, especially for tasks requiring meticulous data formatting. The impact will be particularly profound in data-sensitive fields like finance and healthcare, where the accuracy of data is crucial.
 
@@ -78,7 +78,7 @@ We expect this development to shift industry standards, with developers favoring
 
 [https://platform.openai.com/docs/guides/structured-outputs/supported-schemas](https://platform.openai.com/docs/guides/structured-outputs/supported-schemas)
 
-### GPT-4o Supports Fine-Tuning
+### GPT-4o supports fine-tuning
 
 OpenAI’s fine-tuning for GPT-4o is a powerful step that we expect will enable developers to tailor AI models to their specific needs. With 1 million free training tokens per day through September 23, this offering presents a compelling opportunity for organizations to enhance AI performance without immediate costs.
 
@@ -86,7 +86,7 @@ Fine-tuning is especially valuable for applications where out-of-the-box models 
 
 What makes this offering particularly appealing is the customization and control it provides. Developers retain full ownership of their business data, which is crucial in industries like finance and healthcare, where data privacy and security are top priorities.
 
-## Flux 1 and Deep Live Cam: New Achievements in Open Media Models
+## Flux 1 and Deep Live Cam: New achievements in open media models
 
 Black Forest Labs' Flux model marks a significant leap in open-source text-to-image AI. With 12 billion parameters, Flux is pushing the new achievement of image generation, especially in text and positioning. However, complex prompt adherence remains a challenge, reminding us that there's still room for improvement.
 
@@ -98,7 +98,7 @@ As deepfake technology proliferates, it's reasonable to expect financial institu
 
 [https://github.com/hacksider/Deep-Live-Cam/blob/main/demo.gif](https://github.com/hacksider/Deep-Live-Cam/blob/main/demo.gif)
 
-## Shadcn, v0, Tailwind: The New Standard for UI Development
+## Shadcn, v0, Tailwind: The new standard for UI development
 
 We are witnessing a significant shift in frontend development with a new workflow that blends cutting-edge tools and AI capabilities. Starting with a complex web app prototype using [v0.dev](https://v0.dev/) and shadcn UI, the process integrates into a Next.js project with React, but the real magic happens in the refinement stage. Tools like Cursor and Claude 3.5 Sonnet interpret and implement intricate design instructions, creating highly desirable web screens.
 

@@ -2,16 +2,16 @@
 authors:
   - 'thanh'
 date: '2024-10-29'
-description: 'Discover State Management strategies, best practices, and when to use each approach for scalable, efficient React applications'
+description: 'Discover state management strategies, best practices, and when to use each approach for scalable, efficient React applications'
 tags:
-  - 'react'
-title: 'State Management Strategy in React'
-short_title: 'State Management Strategy'
+  - 'React'
+title: 'State management strategy in React'
+short_title: 'State management strategy'
 ---
 
 State management is a core architectural topic in React, especially as applications grow in complexity. While local component state (using `useState` or `useReducer`) is suitable for small to medium apps, more sophisticated state management strategies become essential as your app scales.
 
-### Local Component State with Hooks
+### Local component state with hooks
 
 React’s native `useState` and `useReducer` are sufficient for managing state at the component level and are efficient for isolated, reusable components. However, challenges arise when dealing with deeply nested or cross-component data dependencies.
 
@@ -57,16 +57,16 @@ function SignupForm() {
 }
 ```
 
-**When to Use Local State**:
+**When to use local state**:
 
 - Isolated components with minimal data dependencies.
 - Simple, short-lived UI states, such as form inputs, toggles, or animations.
 
-### Global State with Context API
+### Global state with context API
 
 The React Context API is suitable for small to medium global state needs, such as user authentication or theme settings. It’s lightweight but can cause re-rendering issues if used improperly in large applications.
 
-**Example of Centralized Authentication State**
+**Example of centralized authentication state**
 
 ```jsx
 const AuthContext = React.createContext()
@@ -91,16 +91,16 @@ function Navbar() {
 }
 ```
 
-**When to Use Context API**:
+**When to use context API**:
 
 - Lightweight global state, like theme, user, or language settings.
 - Avoid for complex or frequently updated data, as it can lead to excessive re-renders.
 
-### Redux or Zustand for Complex Global State
+### Redux or Zustand for complex global state
 
 Redux is well-suited for applications with highly structured, complex, or cross-cutting state needs. It provides predictable state management via a single store and supports middleware for logging, async actions, and more. Alternatively, **Zustand** is a lightweight state management library that’s simpler to set up and more flexible than Redux.
 
-**Example of Global Cart Management with Redux Toolkit**
+**Example of global cart management with Redux Toolkit**
 
 Using Redux Toolkit, you can simplify Redux by automatically generating action creators and reducers.
 
@@ -132,12 +132,12 @@ export default store
 - **Redux**: More verbose but provides structure, middleware support, and a strong ecosystem (dev tools, middleware for async actions).
 - **Zustand**: Minimal boilerplate, straightforward API, and avoids creating a global Redux-like store by encouraging state encapsulation.
 
-**When to Use Redux or Zustand**:
+**When to use Redux or Zustand**:
 
 - Cross-cutting data dependencies that multiple components need access to.
 - Scenarios that benefit from immutability (Redux) or a reactive, hook-based approach (Zustand).
 
-### Async Data and Server State with React Query or SWR
+### Async data and server state with React Query or SWR
 
 Tools like `React Query` and `SWR` are ideal for handling server data. They help manage caching, re-fetching, and synchronization with server data, which is particularly useful in data-intensive applications.
 
@@ -173,12 +173,12 @@ function UserProfile({ userId }) {
 - **React Query**: More feature-rich and configurable; supports pagination, optimistic updates, and complex cache invalidation.
 - **SWR**: Lightweight with a more declarative approach; suitable for simpler use cases.
 
-**When to Use React Query or SWR**:
+**When to use React Query or SWR**:
 
 - Server-side data that needs caching, synchronization, and refresh-on-focus.
 - Use React Query for applications with complex server data dependencies and SWR for simpler needs.
 
-### Combined Approach with Context + React Query
+### Combined approach with context + React Query
 
 For scalable applications, a hybrid approach works well, where:
 
@@ -186,7 +186,7 @@ For scalable applications, a hybrid approach works well, where:
 - React Query or SWR manages server state (API data).
 - Local state and custom hooks organize isolated or ephemeral component-specific state.
 
-**Example Hybrid Structure**:
+**Example hybrid structure**:
 
 ```jsx
 const UserContext = React.createContext()
@@ -217,15 +217,15 @@ function UserComponent() {
 </AppProvider>
 ```
 
-**Benefits of the Combined Approach**:
+**Benefits of the combined approach**:
 
 - Avoids overloading context with complex state management.
 - Improves separation of concerns by delegating responsibilities: local state for UI, context for global app state, and React Query for async/server state.
 
-### Key Takeaways
+### Key takeaways
 
 - **Local state** for isolated, ephemeral data.
 - **Context API** for lightweight global state that rarely changes.
 - **Redux/Zustand** for structured, complex state management across large applications.
 - **React Query/SWR** for async data, caching, and server-side synchronization.
-- **Combined Approach** for scalable, maintainable architecture.
+- **Combined approach** for scalable, maintainable architecture.
