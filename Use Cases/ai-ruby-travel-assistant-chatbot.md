@@ -8,18 +8,18 @@ tags:
 - "ai-engineering"
 - "ai"
 - "case-study"
-title: "AI-Powered Ruby Travel Assistant"
+title: "AI-powered Ruby travel assistant"
 ---
 
 > "When the easy path isn't the right path, true engineering shines in adapting the right tools for the job."
 
-## The Challenge: Beyond the Obvious Choice
+## The challenge: Beyond the obvious choice
 
 In AI development, Python is often the default choice. A leading financial services provider approached us to build an AI-powered travel assistant, their initial technical specification centered around Python's rich AI ecosystem. However, reality proved more complex.
 
 The client's infrastructure wasn't just built on Ruby—it was deeply entrenched in it. Their security systems, authentication layers, and core services were all Ruby-based. Their choice of AWS Bedrock as the AI provider was intrinsically tied to their security requirements. The seemingly simple option of using Python would have meant creating unnecessary complexity, additional security layers, and potential points of failure.
 
-## The Vision: More Than Just a Chatbot
+## The vision: More than just a chatbot
 
 The client's vision extended beyond a simple query-response system. They wanted an intelligent travel assistant that could not only answer questions but actively engage users with relevant suggestions based on their context, location, and historical interactions. This dual approach of reactive responses and proactive suggestions would set their platform apart from conventional travel booking systems.
 
@@ -48,7 +48,7 @@ graph LR
 
 ```
 
-## Building an Engaging Experience
+## Building an engaging experience
 
 The system architecture reflected this dual nature. The core Travel Assistant handled direct interactions through the Messages API, providing detailed responses to user queries. Alongside this, we implemented a Suggestion System that continuously generated contextual prompts to spark user engagement.
 
@@ -74,7 +74,7 @@ module LLM
 end
 ```
 
-## The Technical Implementation
+## The technical implementation
 
 Instead of forcing Python into an environment optimized for Ruby, we enhanced Ruby's AI capabilities to meet our needs. Working with LangchainRB alongside with their team, we evolved it from a promising library into an enterprise-grade solution.
 
@@ -91,7 +91,7 @@ def create_an_assistant(messages, context)
 end
 ```
 
-## Intelligent Caching Strategy
+## Intelligent caching strategy
 
 One key innovation was implementing a caching system that served both the main assistant and the suggestion system. We used Redis here, as some of their previous architecture had integrated that as their main KV database. Location-based suggestions were cached with appropriate time-to-live values, ensuring quick response times while maintaining relevance:
 
@@ -104,7 +104,7 @@ def fetch_cached_suggestions(location)
 end
 ```
 
-## Security and Integration
+## Security and integration
 
 By staying within the Ruby ecosystem, we leveraged the client's existing security infrastructure seamlessly. Both the main assistant and the suggestion system inherited all the security benefits of the main application, from authentication to audit logging.
 
@@ -123,17 +123,17 @@ graph TD
 
 ```
 
-## The Results
+## The results
 
 The dual approach of reactive assistance and proactive suggestions proved highly effective. We found that:
 
 The suggestion system successfully prompted users to explore new travel possibilities they hadn't considered. The contextual relevance of suggestions led to higher conversion rates compared to static prompts. The caching strategy ensured that both systems maintained quick response times even under heavy load, albeit costing a bit to cache combinatronically every variation.
 
-## Impact on the Ruby Community
+## Impact on the Ruby community
 
 Both the client and our work has had lasting effects beyond this project. The improvements both of us contributed to LangchainRB have made enterprise-grade AI more accessible to the Ruby community. We've shown that organizations heavily invested in Ruby don't need to pivot to Python for AI capabilities—they can build sophisticated AI applications while leveraging their existing expertise and infrastructure.
 
-## Key Learnings
+## Key learnings
 
 This project taught us valuable lessons about choosing the right tool for the context rather than the most obvious tool for the task. The decision to enhance Ruby's capabilities rather than introduce Python complexity paid dividends in terms of system reliability, security, and maintainability.
 
