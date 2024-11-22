@@ -93,6 +93,8 @@ $$q = [-128, -100, 41, 86]$$
 
 $$w = \frac{q - z}{s}$$
 
+Resulting values:
+
 ![Quantization Conversion Process](assets/quantization-in-llm-convert.webp)
 
 ## GGUF: Generic GPT Unified Format
