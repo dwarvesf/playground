@@ -18,8 +18,6 @@ This report provides a detailed look at the significant developments in frontend
 
 TanStack Start is emerging as a formidable competitor to Next.js, focusing on its client-first approach, while providing a full-featured server-side capable system, which contrasts with Next.js's server-first model.
 
-
-
 ### [XState in React: Streamlining state management for complex UIs](https://www.frontendundefined.com/posts/monthly/xstate-in-react/)
 
 Dive into the power of XState in React applications. Learn how this state machine library simplifies handling complex state logic, enhances UI reliability, and integrates seamlessly with React for predictable and scalable state management.
@@ -70,9 +68,9 @@ Growing trend in UI library development, focusing on separation of logic and pre
 
 TanStack Start is a powerful full-stack React framework featuring type-safe APIs, robust routing, full-document SSR, streaming, and server functions—perfect for building modern, scalable web applications.
 
-### [WebSocket optimization](https://www.recall.ai/post/how-websockets-cost-us-1m-on-our-aws-bill)
+### [How Recall.ai Cut AWS Costs by $1M with Shared Memory Optimization](https://www.recall.ai/post/how-websockets-cost-us-1m-on-our-aws-bill)
 
-Case study on optimizing WebSocket implementations for cost efficiency.
+Recall.ai reduced AWS costs by $1M annually and cut CPU usage by 50% by leveraging Shared Memory for direct access between processes, eliminating the need for data copying
 
 ### Quick links
 
