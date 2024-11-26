@@ -53,6 +53,7 @@ Comprehensive guide on implementing search parameter filtering using App Router 
 Explore the fundamental limitations of Web Components compared to modern frameworks like React, including issues with state management, integration challenges, server-side rendering, and real-world adoption. Understand why frameworks remain the practical choice for developers today.
 
 ### [Enhancing web design with Container queries and the Containment API](https://www.joshwcomeau.com/css/container-queries-introduction/)
+
 Container queries enable responsive design by allowing elements to adjust based on their parent’s size. With widespread browser support, these tools promise to transform design practices, and the author will share practical examples in a future post.
 
 ### Quick links
@@ -62,7 +63,6 @@ Container queries enable responsive design by allowing elements to adjust based 
 
 ## Trending
 
-Growing trend in UI library development, focusing on separation of logic and presentation.
 
 ### [TanStack Start: A Full-Stack React framework for modern web apps](https://tanstack.com/start/latest)
 
@@ -70,7 +70,7 @@ TanStack Start is a powerful full-stack React framework featuring type-safe APIs
 
 ### [How Recall.ai Cut AWS Costs by $1M with Shared Memory Optimization](https://www.recall.ai/post/how-websockets-cost-us-1m-on-our-aws-bill)
 
-Recall.ai reduced AWS costs by $1M annually and cut CPU usage by 50% by leveraging Shared Memory for direct access between processes, eliminating the need for data copying
+Recall.ai reduced AWS costs by $1M annually and cut CPU usage by 50% by leveraging Shared Memory for direct access between processes, eliminating the need for data copying.
 
 ### Quick links
 
