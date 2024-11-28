@@ -3,24 +3,24 @@ tags:
   - UX-UI
   - product-design
   - report
-title: "Product Design Commentary #7: Hyper-Personalization - How AI Improves User Experience Personalization"
+title: "Product Design Commentary #7: Hyper-personalization - How AI improves user experience personalization"
 date: 2024-11-28
-description: Hyper-Personalization represents the future of product development, delivering personalized experiences that adapt to each user's needs. In this model, everyone will have their own version of the internet, shaped by AI interfaces that understand their preferences, goals, and personal context.
+description: Hyper-personalization represents the future of product development, delivering personalized experiences that adapt to each user's needs. In this model, everyone will have their own version of the internet, shaped by AI interfaces that understand their preferences, goals, and personal context.
 authors:
   - anna
 ---
 
-Hyper-Personalization represents the future of product development, **delivering personalized experiences that adapt to each user's needs**. In this model, everyone will have their own version of the internet, shaped by AI interfaces that understand their preferences, goals, and personal context. These smart systems automatically adjust the user interface, showing up when needed and disappearing after completing tasks ( called [Ephemeral Web-Based Applications](https://www.nngroup.com/articles/ephemeral-web-based-applications/)). This approach creates unique experiences that fit specific use cases.
+Hyper-personalization represents the future of product development, **delivering personalized experiences that adapt to each user's needs**. In this model, everyone will have their own version of the internet, shaped by AI interfaces that understand their preferences, goals, and personal context. These smart systems automatically adjust the user interface, showing up when needed and disappearing after completing tasks (called [Ephemeral Web-Based Applications](https://www.nngroup.com/articles/ephemeral-web-based-applications/)). This approach creates unique experiences that fit specific use cases.
 
 By using AI, we can create more personal moments, experiences, and interactions. This level of deep personalization promises to change how we use technology, making our digital experiences better, more efficient, and more suited to our individual needs and preferences.
 
 ![](assets/7-product-design-weekly-hyper-personalization.png)
 
-## Hyper-Personalization vs. Traditional Personalization
+## Hyper-personalization vs. traditional personalization
 
 The main difference between Hyper-Personalization and basic Personalization is that it **uses many different types of data** to create a complete picture of each user. Basic Personalization only makes suggestions based on groups of users using basic information. On the other hand, Hyper-Personalization focuses on each person with more detailed analysis, using up-to-the-minute data along with AI and data processing. This helps understand users better and predict what they might do next, allowing for a more personal experience across websites, emails, and mobile apps.
 
-| **Criteria** | **Hyper-Personalization** | **Traditional Personalization** |
+| **Criteria** | **Hyper-personalization** | **Traditional personalization** |
 | --- | --- | --- |
 | **Level of customization** | Very detailed, uses real-time data, behavior, and specific context for each user. | Based on common traits or basic data like name, gender, or age. |
 | **Data sources** | Real-time data, behavior history, personal preferences, location, current context | Basic user info (age, gender, location), general purchase history. |
@@ -30,7 +30,7 @@ The main difference between Hyper-Personalization and basic Personalization is t
 | **Goal** | Make customers happier by better understanding their personal needs and situation. | Make products/services more relevant to target customers. |
 | **Examples** | - Amazon's product suggestions based on what you're searching for right now | - Netflix showing movies based on what you like to watch | - Marketing emails that start with your name | - Product suggestions based on customer groups |
 
-## How Hyper-Personalization Makes Things Personal
+## How hyper-personalization makes things personal
 
 Hyper-Personalization works through four main steps:
 
@@ -76,7 +76,7 @@ Hyper-Personalization works through four main steps:
 
 *Source: [LinkedIn](https://www.linkedin.com/pulse/leveling-up-personalization-maturity-curve-amir-yazdanpanah)*
 
-Hyper-Personalization has 3 main real-world uses:
+Hyper-personalization has 3 main real-world uses:
 
 1. **Adaptive content:** It can tailor content to fit each person. This works well for product marketing and especially in education. For example, [Sesame Workshop](https://techcrunch.com/2017/06/07/sesame-workshop-and-ibm-team-up-to-test-a-new-a-i-powered-teaching-method/) tested an AI-powered vocabulary learning app with kindergarten students. The app uses Sesame Street characters in games and videos to help kids learn new words. The AI adjusts lessons based on each student's ability and lets parents and teachers track progress. Students learned better, even with difficult words. This personalized learning approach helps make education more effective, where students of all levels can learn and grow together.
 2. **Personalized recommendations:** Streaming apps like [Spotify](https://sea.mashable.com/tech/34358/spotify-wants-to-make-you-an-ai-playlist-for-every-occasion) and Netflix use AI to suggest songs and movies based on what you watch. Amazon's product suggestions are another good example. Amazon looks at what customers buy, view, and rate to understand what each person likes. This kind of suggestion can work for many services that need to match individual needs. Here are some examples:
