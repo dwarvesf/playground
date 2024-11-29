@@ -18,7 +18,7 @@ Managing projects effectively requires careful attention to documentation, repor
 
 ### 1. Monthly Project Report Copilot
 
-This copilot specializes in analyzing project data and generating comprehensive monthly reports. We've written up a detailed use case [here](../../Data/project-report-use-case.md). It helps teams by:
+This copilot specializes in analyzing project data and generating comprehensive monthly reports. We've written up a detailed use case [here](../../Use%20Cases/ai-powered-monthly-project-reports.md). It helps teams by:
 
 - Aggregating project metrics and KPIs
 - Identifying key achievements and milestones

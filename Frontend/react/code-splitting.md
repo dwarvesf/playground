@@ -6,17 +6,17 @@ description: 'Optimize JavaScript performance with code splitting techniques lik
 tags:
   - 'react'
   - 'performance'
-title: 'Code Splitting in React'
-short_title: 'Code Splitting'
+title: 'Code splitting in React'
+short_title: 'Code splitting'
 ---
 
 Code splitting is a technique used to optimize JavaScript bundles by breaking them into smaller chunks, loading only the necessary parts when they’re needed. This reduces the initial loading time for users, as they only download the essential code to render the initial view. Code splitting is particularly valuable in large applications where bundling everything together can lead to slow load times and performance issues.
 
 We will explore various code splitting techniques, including their use cases and practical implementation examples.
 
-## Code Splitting Techniques
+## Code splitting techniques
 
-### Entry Point Splitting
+### Entry point splitting
 
 Entry point splitting involves separating the main application entry points. In Webpack, you can specify multiple entry points, each generating a separate bundle. This technique is helpful in multi-page applications (MPAs) or if you have clearly separate sections within a single-page app (SPA) that can load independently.
 
@@ -36,11 +36,11 @@ module.exports = {
 
 Here, Webpack creates `home.bundle.js` and `dashboard.bundle.js`, loading only the necessary code when the user navigates to either the home page or dashboard.
 
-**Use Case:**
+**Use case:**
 
 - Ideal for MPAs or complex SPAs where different parts of the app can load independently.
 
-### Route-Based Code Splitting
+### Route-based code splitting
 
 Route-based code splitting is common in SPAs. Instead of loading the entire app at once, only the components needed for the current route are loaded initially. Additional routes are loaded only when the user navigates to them.
 
@@ -79,7 +79,7 @@ Explanation:
 - Reduces initial load time, as only the code for the first route is loaded.
 - Each route loads on demand, improving perceived performance for users.
 
-### Component-Level Code Splitting with React.lazy and Suspense
+### Component-level code splitting with React.lazy and Suspense
 
 If you have a large component that doesn’t need to load right away (e.g., a modal or sidebar), you can split it out and load it only when it’s needed. This helps reduce the initial bundle size, as non-essential components load asynchronously.
 
@@ -107,15 +107,15 @@ Explanation:
 - The `UserProfile` component only loads when showProfile is true.
 - `Suspense` ensures that a fallback UI (loading spinner) is displayed while `UserProfile` is being loaded.
 
-**Use Cases:**
+**Use cases:**
 
 - Large, non-essential components such as modals, drawers, or other sections that users may not access right away.
 
-### Splitting Large Dependencies or Utilities
+### Splitting large dependencies or utilities
 
 Sometimes a single library or utility can significantly increase your bundle size. Instead of loading the entire library, use dynamic `import()` to load only the necessary part of the code when needed. This is particularly useful for utilities like date formatting or image processing libraries that may not be required on every page.
 
-**Example: Lazy Loading a Utility Library**
+**Example: Lazy Loading a utility library**
 
 ```jsx
 function DateFormatter({ date }) {
@@ -147,7 +147,7 @@ Explanation:
 
 For more complex loading scenarios, `react-loadable` offers additional features such as delayed loading, error boundaries, and preloading. It’s especially helpful if you want to provide a custom loading experience or handle loading errors gracefully.
 
-**Example Using react-loadable**
+**Example using react-loadable**
 
 ```jsx
 import Loadable from 'react-loadable'
@@ -172,7 +172,7 @@ Explanation:
 - `react-loadable` provides a loading component that displays based on certain conditions, such as past delay time or error occurrence.
 - This allows you to handle cases where loading might take a long time or fail altogether, providing a better user experience.
 
-**Use Cases:**
+**Use cases:**
 
 - Components that may take longer to load due to their size or network conditions.
 - Error-prone components that need error handling.
@@ -190,7 +190,7 @@ Preloading and prefetching are useful when you want to load components in advanc
 const UserProfile = lazy(() => import(/* webpackPrefetch: true */ './UserProfile'))
 ```
 
-**Use Case:**
+**Use case:**
 
 - Preload the next route’s component in the background while the user is interacting with the current route.
 
@@ -198,7 +198,7 @@ const UserProfile = lazy(() => import(/* webpackPrefetch: true */ './UserProfile
 
 Bundling tools, such as Webpack, that have the `SplitChunksPlugin` component can be configured to automatically separate common dependencies (like react or lodash) into distinct bundles. This avoids redundant code in each chunk and reduces the total bundle size.
 
-**Example Configuration in Webpack:**
+**Example configuration in Webpack:**
 
 ```js
 module.exports = {
@@ -227,7 +227,7 @@ Explanation:
 
 - In large applications with many shared dependencies.
 
-### Lazy Loading Images and Assets
+### Lazy loading images and assets
 
 For non-JavaScript assets like images and fonts, you can also improve performance by loading them only when they’re in the viewport.
 

@@ -1,3 +1,4 @@
+```markdown
 ---
 authors:
   - 'thanh'
@@ -5,26 +6,26 @@ date: '2024-10-29'
 description: 'Explore essential techniques like props drilling, Context API, custom hooks, and event emitters'
 tags:
   - 'react'
-title: 'Component Communication and Decoupling in React'
-short_title: 'Component Communication and Decoupling'
+title: 'Component communication and decoupling in React'
+short_title: 'Component communication and decoupling'
 ---
 
 Component communication and decoupling are crucial in React, especially for large applications where components may need to share data or trigger actions without being tightly coupled. Decoupling allows components to be reusable, maintainable, and flexible, reducing the risk of cascading changes across the app.
 
-**Core Patterns for Component Communication and Decoupling**
+**Core patterns for component communication and decoupling**
 
-1. Props Drilling (Direct Parent-Child Communication)
-2. Lifting State Up
-3. Context API for Shared State
-4. Event Emitter (Pub/Sub) Pattern for Loose Coupling
-5. Redux, Zustand, or Global Store for Cross-Component State
-6. Custom Hooks for Shared Logic
+1. Props drilling (direct parent-child communication)
+2. Lifting state up
+3. Context API for shared state
+4. Event emitter (pub/sub) pattern for loose coupling
+5. Redux, Zustand, or global store for cross-component state
+6. Custom hooks for shared logic
 
-### Props Drilling (Direct Parent-Child Communication)
+### Props drilling (direct parent-child communication)
 
 Props drilling refers to passing data through multiple component layers until it reaches the intended child component. While simple, it can quickly become unmanageable as the component tree grows deeper.
 
-**Example: Direct Data Passing through Props**
+**Example: Direct data passing through props**
 
 ```js
 function Parent() {
@@ -42,7 +43,7 @@ function GrandChild({ message }) {
 }
 ```
 
-**When to Use Props Drilling**:
+**When to use props drilling**:
 
 - When the data is only needed by a single child or a small subtree.
 - Avoid in deeply nested trees or large apps where data needs to be accessed at many levels.
@@ -52,11 +53,11 @@ function GrandChild({ message }) {
 - Scalability issues as the app grows.
 - Makes refactoring difficult since any change in the middle component chain affects multiple components.
 
-### Lifting State Up
+### Lifting state up
 
 Lifting state up means moving the shared state to the closest common ancestor of the components that need to share it. This approach encourages clear data flow and keeps the components tightly coupled only to the extent needed.
 
-**Example: Managing Form State Across Fields**
+**Example: Managing form state across fields**
 
 ```js
 function Form() {
@@ -84,7 +85,7 @@ function EmailField({ value, onChange }) {
 }
 ```
 
-**When to Use Lifting State Up**:
+**When to use lifting state up**:
 
 - Useful when a group of sibling components needs to share data or rely on a single source of truth.
 - Works well for managing form data, settings, or small sections of shared UI state.
@@ -93,7 +94,7 @@ function EmailField({ value, onChange }) {
 
 - Can make parent components bulky and harder to manage if used excessively in large apps.
 
-### Context API for Shared State
+### Context API for shared state
 
 The Context API enables you to share data across components without drilling props down through multiple layers. It’s ideal for relatively static or infrequently updated global state, such as theme or user settings.
 
@@ -120,7 +121,7 @@ function ThemedComponent() {
 }
 ```
 
-**When to Use Context API**:
+**When to use Context API**:
 
 - When you need to share relatively static data or infrequent updates across multiple components (e.g., theme, language, auth).
 - Avoid for frequently updated data as it can lead to unnecessary re-renders across the component tree.
@@ -130,11 +131,11 @@ function ThemedComponent() {
 - Overusing context for dynamic or frequently changing state can lead to performance bottlenecks.
 - Context is less suitable for data that changes rapidly or is complex (consider Redux/Zustand for such cases).
 
-### Event Emitter (Pub/Sub) Pattern for Loose Coupling
+### Event emitter (pub/sub) pattern for loose coupling
 
 The event emitter pattern allows components to communicate by publishing and subscribing to events. This decouples the components, as they don’t need to know each other’s presence—only the event itself.
 
-**Example: Basic Event Emitter**
+**Example: Basic event emitter**
 
 You could create a simple event emitter utility to allow different parts of the app to subscribe to and emit events.
 
@@ -169,7 +170,7 @@ function ComponentB() {
 }
 ```
 
-**When to Use Event Emitters**:
+**When to use event emitters**:
 
 - Useful when you need decoupled communication between non-related components.
 - Ideal for notifications, global events, or handling loosely coupled actions.
@@ -179,7 +180,7 @@ function ComponentB() {
 - Overuse can make the data flow unpredictable and hard to trace.
 - Debugging is more complex, as event emissions are asynchronous and may be harder to track down.
 
-### Global Store (Redux/Zustand) for Cross-Component State
+### Global store (Redux/Zustand) for cross-component state
 
 Global stores like Redux or Zustand provide a single source of truth for application-wide state. This is essential when different parts of the app need to access or manipulate shared data, especially if it’s complex or requires consistent behavior.
 
@@ -230,7 +231,7 @@ function NotificationList() {
 }
 ```
 
-**When to Use Global Store**:
+**When to use global store**:
 
 - When multiple parts of the app need access to complex, consistent data.
 - For cross-cutting data like notifications, authentication, or async data that requires global consistency.
@@ -240,11 +241,11 @@ function NotificationList() {
 - Can be overkill for small or medium applications.
 - Adds complexity and boilerplate, though libraries like Redux Toolkit reduce some of this overhead.
 
-### Custom Hooks for Shared Logic
+### Custom hooks for shared logic
 
 Custom hooks are a highly effective way to encapsulate and share logic, especially side effects, across components. Hooks allow shared functionality to be implemented in multiple components without duplication or tight coupling.
 
-**Example: Shared Fetching Logic with Custom Hook**
+**Example: Shared fetching logic with custom hook**
 
 ```jsx
 function useFetch(url) {
@@ -281,7 +282,7 @@ function UserList() {
 }
 ```
 
-**When to Use Custom Hooks**:
+**When to use custom hooks**:
 
 - For sharing logic that involves side effects or reusable state management.
 - To avoid HOCs or render props in cases where hooks are simpler and more readable.
@@ -291,10 +292,11 @@ function UserList() {
 - Custom hooks should be modular and focused on a single concern to avoid complexity.
 - Managing dependencies in hooks can be challenging and requires careful planning.
 
-### Key Takeaways
+### Key takeaways
 
-- **Direct Communication** (props drilling, lifting state) works for small, simple hierarchies.
+- **Direct communication** (props drilling, lifting state) works for small, simple hierarchies.
 - **Context API** suits lightweight shared state, avoiding heavy re-renders.
-- **Event Emitters** allow decoupled, loosely coupled communication but can lead to debugging complexity.
-- **Global Store (Redux, Zustand**) is essential for complex, cross-cutting state needs.
-- **Custom Hooks** are ideal for encapsulating reusable side effects and shared logic without extra component layers.
+- **Event emitters** allow decoupled, loosely coupled communication but can lead to debugging complexity.
+- **Global store (Redux, Zustand**) is essential for complex, cross-cutting state needs.
+- **Custom hooks** are ideal for encapsulating reusable side effects and shared logic without extra component layers.
+```

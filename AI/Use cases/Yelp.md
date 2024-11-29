@@ -1,12 +1,12 @@
 ---
 authors:
-- datnguyennnx
+  - datnguyennnx
 date: 2024-10-18
 description: Yelp already had a machine learning platform before the big push for large language models (LLMs). Now, they’re using LLMs to level up their search and recommendation systems, making it easier for moderators and businesses to track down users. Let’s dive into how Yelp is making it work.
 tags:
-- llm
-- yelp
-- use cases
+  - llm
+  - yelp
+  - use cases
 title: Yelp use cases
 ---
 
@@ -20,7 +20,9 @@ Yelp Inc. is a platform that helps users discover local businesses through revie
 - Yelp Assistant helps users find service providers by using LLM with their ML system.
 
 ## Yelp contents as embeddings
+
 ### Text embeddings
+
 Yelp’s platform has tons of user-generated content, like reviews, and to keep users trusting the site, they need to make sure inappropriate stuff (like hate speech, harassment, lewdness, or threats) gets spotted and removed. Relying only on human moderators isn’t enough, so they’ve turned to automated tools to help. They went with LLMs because these models are great at picking up on tricky, harmful language across different situations.
 
 They mainly looked at how well LLMs can catch bad content like:
@@ -37,25 +39,24 @@ Yelp put together a dataset ( you can find [this datasets at here](https://huggi
 - **Sentence Embeddings**: They used LLMs to find reviews that were similar to high-quality examples to bulk up the dataset.
 - **Sampling Techniques**: They adjust the dataset by over-sampling and under-sampling to boost recall, especially for rare types of inappropriate content. **They also used zero-shot and few-shot technique** to handle cases where there wasn’t enough data for certain categories.
 
-**Yelp used a curated dataset and LLM model from HuggingFace to classify inappropriate reviews.** They evaluated model performance by visualizing sentence embeddings and fine-tuned the model to improve accuracy. 
+**Yelp used a curated dataset and LLM model from HuggingFace to classify inappropriate reviews.** They evaluated model performance by visualizing sentence embeddings and fine-tuned the model to improve accuracy.
 
 ![](assets/Yelp-embedding-vector.webp)
 
-Since incorporating LLMs to help detect harmful and inappropriate content, it enabled Yelp moderators to proactively prevent **23,600+ reviews from ever publishing to Yelp in 2023**.
+Since incorporating LLMs to help detect harmful and inappropriate content, it enabled Yelp moderators to proactively prevent **23,600+ reviews from ever publishing to Yelp in 2023**.
 
 ### Photo embeddings with CLIP model
 
 Yelp uses business and photo embeddings to enhance data accessibility and improve recommendations, semantic search, and clustering.
 
-1. **Business Embeddings**: These are created by averaging the vector embeddings of the 50 most recent reviews of a business, representing its metadata. Before LLM trends grows, they are apply ML for this feature. 
+1. **Business Embeddings**: These are created by averaging the vector embeddings of the 50 most recent reviews of a business, representing its metadata. Before LLM trends grows, they are apply ML for this feature.
 2. **Photo Embeddings**: Yelp uses **OpenAI's CLIP model** to generate semantic representations of images. CLIP is a zero-shot model that pairs images with relevant text, helping classify photos more accurately with minimal data.
 
-
-**Semantic Understanding:** CLIP is employed to generate semantic embeddings of images, enabling the system to understand and categorize the content of photos effectively. For example from Yelp, we observe that many **Interior** and **Exterior** photos get classified as **Other** by the CLIP model. Here are some examples for **Interior**.
+**Semantic Understanding:** CLIP is employed to generate semantic embeddings of images, enabling the system to understand and categorize the content of photos effectively. For example from Yelp, we observe that many **Interior** and **Exterior** photos get classified as **Other** by the CLIP model. Here are some examples for **Interior**.
 
 ![](assets/Yelp-detect-background.webp)
 
-**Category Identification:** The model classifies photos into predefined categories such as **Food**, **Drinks**, **Menu**. For example, Images labeled **Waffles** in Yelp dataset were considered misclassified as **Chicken Wings or Fried Chicken** by the CLIP model.
+**Category Identification:** The model classifies photos into predefined categories such as **Food**, **Drinks**, **Menu**. For example, Images labeled **Waffles** in Yelp dataset were considered misclassified as **Chicken Wings or Fried Chicken** by the CLIP model.
 
 ![](assets/Yelp-category-food.webp)
 

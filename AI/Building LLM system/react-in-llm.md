@@ -5,8 +5,8 @@ tags:
 authors:
   - hoangnnh
 date: 2024-10-18
-title: "ReAct(Reason + Act) in LLM"
-description: "Working with Large Language Models (LLMs) may seem straightforward at first glance. Initially, we might think that simply prompting the AI model with a task is sufficient for it to assist us. However, when faced with more complex tasks, we need to break down the problem into smaller sub-tasks and guide the AI model to solve them sequentially. This is where the ReAct approach comes into play."
+title: 'ReAct(Reason + Act) in LLM'
+description: 'Working with Large Language Models (LLMs) may seem straightforward at first glance. Initially, we might think that simply prompting the AI model with a task is sufficient for it to assist us. However, when faced with more complex tasks, we need to break down the problem into smaller sub-tasks and guide the AI model to solve them sequentially. This is where the ReAct approach comes into play.'
 ---
 
 Working with Large Language Models (LLMs) may seem straightforward at first glance. Initially, we might think that simply prompting the AI model with a task is sufficient for it to assist us. However, when faced with more complex tasks, we need to break down the problem into smaller sub-tasks and guide the AI model to solve them sequentially. This is where the ReAct approach comes into play.
@@ -24,7 +24,7 @@ To demonstrate the diﬀerence between CoT and ReAct, let's consider a simple ex
 Question: "Finding the Capital of France and Its Population"
 
 - Chain-of-Thought(CoT):
-  
+
 ```
 Reason:
   - The question asks for the capital of France and its population.
@@ -55,6 +55,7 @@ Step 3:
 
 Answer: The capital of France is Paris, with a population of approximately 2.16 million people in the city proper (or 12.6 million in the metropolitan area).
 ```
+
 As you can see, when Chain-of-Thought just only reasoning step by step in its own knowledge, ReAct interact with external tools to gather needed information to support next reasoning step.
 
 ## Implementation
@@ -62,7 +63,7 @@ As you can see, when Chain-of-Thought just only reasoning step by step in its ow
 To implement ReAct, we can use Langgraph - a famous library for building applications with LLMs. First let construct a main prompt:
 
 ```ts
-const prompt=`You run in a loop of Thought, Action, PAUSE, Observation.
+const prompt = `You run in a loop of Thought, Action, PAUSE, Observation.
 At the end of the loop you output an Answer
 Use Thought to describe your thoughts about the question you have been asked.
 Use Action to run one of the tools available to you - then return PAUSE.
@@ -76,7 +77,7 @@ returns search results in JSON format
 
 llm_tool:
 e.g. llm_tool: "3 + 3"
-returns the result of the general knowledge 
+returns the result of the general knowledge
 
 
 Example session:
@@ -84,7 +85,7 @@ Example session:
 Question: what is the hometown of the winner of the 2023 men australian open
 Thought: I need to find the 2023 Australian Open winner
 Action: tavily_search_results_json: "2023 Australian Open winner"
-PAUSE 
+PAUSE
 
 You will be called again with this:
 
@@ -94,7 +95,7 @@ Thought: I need to find the hometown of Novak Djokovic
 Action: tavily_search_results_json: "Novak Djokovic hometown"
 PAUSE
 
-You will be called again with this: 
+You will be called again with this:
 
 Observation: Belgrade, Serbia
 
@@ -109,12 +110,8 @@ messages: {input}`
 
 Now let start with Nodes:
 
-
 ```ts
-const toolNode = async (
-  data: typeof AgentState.State,
-  config?: RunnableConfig,
-): Promise<Partial<typeof AgentState.State>> => {
+const toolNode = async (data: typeof AgentState.State, config?: RunnableConfig): Promise<Partial<typeof AgentState.State>> => {
   const { messages } = data
   const lastMsg = messages[messages.length - 1].content.toString()
 
@@ -135,14 +132,10 @@ const toolNode = async (
     messages: [new AIMessage({ content: 'Invalid tool call' })],
   }
 }
-
 ```
 
 ```ts
-const callModel = async (
-  data: typeof AgentState.State,
-  config?: RunnableConfig,
-): Promise<Partial<typeof AgentState.State>> => {
+const callModel = async (data: typeof AgentState.State, config?: RunnableConfig): Promise<Partial<typeof AgentState.State>> => {
   const { messages } = data
   const lastMsg = messages[messages.length - 1]
   if (lastMsg._getType() !== 'human') {
@@ -193,5 +186,6 @@ Result: [Link](https://smith.langchain.com/public/ba3f7dd2-4c99-44d9-9b64-7cd7ad
 ReAct play a significant role of the LLM development, it leverage the power of LLM to solve complex problem by breaking down into sub-problem and solve them step by step. Nowadays, many LLM framwork support ReAct out of the box, such as LangChain, LlamaIndex, etc.
 
 ## Reference
+
 - https://arxiv.org/abs/2210.03629
 - https://www.promptingguide.ai/techniques/react

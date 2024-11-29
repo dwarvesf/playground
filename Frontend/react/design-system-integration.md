@@ -7,26 +7,26 @@ tags:
   - 'react'
   - 'design-system'
   - 'storybook'
-title: 'Design System Integration in React'
-short_title: 'Design System Integration'
+title: 'Design system integration in react'
+short_title: 'Design system integration'
 ---
 
 Design system integration in React involves creating a set of reusable, consistent, and easily maintainable components that reflect your app’s design guidelines. Integrating a design system helps ensure visual and functional consistency across your application while allowing for scalability as new components and features are added. Design systems often include UI components, design tokens, typography, colors, icons, spacing guidelines, and accessibility standards.
 
-**Key Steps and Concepts for Design System Integration in React**
+**Key steps and concepts for design system integration in react**
 
-1. Define the Core Design Tokens (colors, typography, spacing, etc.)
-2. Build Atomic Components (buttons, inputs, typography)
-3. Create Composable, Flexible Components
-4. Establish and Use a Component Library Framework (Storybook)
-5. Implement Accessibility Standards
-6. Use Context and Theming for Adaptable Designs
+1. Define the core design tokens (colors, typography, spacing, etc.)
+2. Build atomic components (buttons, inputs, typography)
+3. Create composable, flexible components
+4. Establish and use a component library framework (Storybook)
+5. Implement accessibility standards
+6. Use context and theming for adaptable designs
 
-### 1. Define Core Design Tokens
+### 1. Define core design tokens
 
 **Design tokens** are the fundamental building blocks of your design system. They represent design decisions like colors, typography, and spacing in a consistent, reusable format. By defining tokens, you create a single source of truth that makes updates and adjustments easy across the app.
 
-**Example: Design Tokens in a JSON Format**
+**Example: Design tokens in a JSON format**
 
 ```json
 {
@@ -54,7 +54,7 @@ Design system integration in React involves creating a set of reusable, consiste
 
 You can then access and apply these tokens in your components, ensuring they follow consistent visual guidelines.
 
-**In a React Component:**
+**In a React component:**
 
 ```js
 import tokens from './tokens.json'
@@ -74,18 +74,18 @@ const Button = ({ children }) => (
 )
 ```
 
-### 2. Build Atomic Components
+### 2. Build atomic components
 
 Atomic design breaks down UI elements into **atoms**, **molecules**, **organisms**, **templates**, and **pages**. This approach helps in building reusable, low-level components that can be combined and customized to create more complex components and layouts.
 
-**Atomic Design Hierarchy:**
+**Atomic design hierarchy:**
 
 - **Atoms**: Smallest, single-purpose components like buttons, inputs, or labels.
 - **Molecules**: Combinations of atoms, such as an input field with a label.
 - **Organisms**: Groups of molecules that form distinct sections, like a header or a form.
-- **Templates and Pages**: Higher-level layouts or complete screens that use organisms and molecules.
+- **Templates and pages**: Higher-level layouts or complete screens that use organisms and molecules.
 
-**Example: Button Component (Atom)**
+**Example: Button component (atom)**
 
 ```jsx
 const Button = ({ label, onClick, variant = 'primary' }) => {
@@ -108,7 +108,7 @@ const Button = ({ label, onClick, variant = 'primary' }) => {
 }
 ```
 
-**Example: Form Component (Molecule)**
+**Example: Form component (molecule)**
 
 ```jsx
 const FormField = ({ label, type = 'text', value, onChange }) => (
@@ -119,7 +119,7 @@ const FormField = ({ label, type = 'text', value, onChange }) => (
 )
 ```
 
-### 3. Create Composable, Flexible Components
+### 3. Create composable, flexible components
 
 Design systems benefit from **flexible components** that can adapt to different use cases without being overly rigid. Use **props** and **styled-system** libraries (e.g., styled-components or emotion) to make your components customizable.
 
@@ -137,7 +137,7 @@ const Button = styled.button`
 
 This approach allows the Button component to be reusable, enabling different colors and backgrounds with minimal code.
 
-### 4. Establish and Use a Component Library Framework (Storybook)
+### 4. Establish and use a component library framework (Storybook)
 
 [Storybook](https://storybook.js.org/) is a popular tool for creating isolated component libraries, documenting components, and allowing team members to interact with components outside of the application environment.
 
@@ -149,7 +149,7 @@ Install Storybook in your React project.
 npx sb init
 ```
 
-**Write Stories for Components**
+**Write stories for components**
 
 Each component should have its own story, describing its appearance with various props and states.
 
@@ -159,7 +159,7 @@ import React from 'react'
 import { Button } from './Button'
 
 export default {
-  title: 'Design System/Button',
+  title: 'Design system/Button',
   component: Button,
 }
 
@@ -173,16 +173,16 @@ export const Secondary = () => <Button variant="secondary" label="Secondary Butt
 - Enables interactive testing of each component’s variations, ensuring they meet design requirements.
 - Encourages consistency across components, as each component variation is clearly documented.
 
-### 5. Implement Accessibility Standards
+### 5. Implement accessibility standards
 
 Design systems must prioritize accessibility to create inclusive applications. Follow **WCAG guidelines** and use accessible components, ensuring that all users can interact with your app.
 
-- **Color Contrast**: Use tokens that meet accessibility standards for contrast. Tools like axe can test for color contrast and other accessibility issues.
+- **Color contrast**: Use tokens that meet accessibility standards for contrast. Tools like axe can test for color contrast and other accessibility issues.
 
-- **Aria Roles and Attributes**: Use ARIA attributes for interactive components like buttons, modals, and dialogs to improve screen reader support.
+- **Aria roles and attributes**: Use ARIA attributes for interactive components like buttons, modals, and dialogs to improve screen reader support.
 
 ```jsx
-// Example: Accessible Button with ARIA
+// Example: Accessible button with ARIA
 const Button = ({ label, onClick, ariaLabel, variant = 'primary' }) => (
   <button onClick={onClick} style={{ backgroundColor: tokens.colors[variant] }} aria-label={ariaLabel}>
     {label}
@@ -190,10 +190,10 @@ const Button = ({ label, onClick, ariaLabel, variant = 'primary' }) => (
 )
 ```
 
-- **Keyboard Navigation**: Ensure that all components can be navigated via keyboard. Focus management is crucial, especially for modal dialogs or dynamic components like carousels.
+- **Keyboard navigation**: Ensure that all components can be navigated via keyboard. Focus management is crucial, especially for modal dialogs or dynamic components like carousels.
 
 ```jsx
-// Example: Focus Management in a Modal
+// Example: Focus management in a modal
 import { useEffect, useRef } from 'react'
 
 const Modal = ({ isOpen, onClose, children }) => {
@@ -221,13 +221,13 @@ Tools:
 - `axe-core` and `eslint-plugin-jsx-a11y` for testing accessibility issues.
 - `Storybook accessibility addon` to validate and fix issues while developing components.
 
-### 6. Use Context and Theming for Adaptable Designs
+### 6. Use context and theming for adaptable designs
 
 To support **themes** (e.g., dark and light modes), use **context providers** to pass theme values down to components. This enables consistent theming and allows the user to switch themes easily.
 
-**Example: Theming with Context**
+**Example: Theming with context**
 
-1. Create Theme Context:
+1. Create theme context:
 
 ```jsx
 import React, { createContext, useContext, useState } from 'react'
@@ -248,7 +248,7 @@ export const ThemeProvider = ({ children }) => {
 export const useTheme = () => useContext(ThemeContext)
 ```
 
-2. Consume Theme Context in Components:
+2. Consume theme context in components:
 
 ```jsx
 const ThemedButton = ({ label }) => {
@@ -266,7 +266,7 @@ const ThemedButton = ({ label }) => {
 }
 ```
 
-3. Switch Themes in App:
+3. Switch themes in app:
 
 ```jsx
 function App() {
@@ -284,11 +284,11 @@ function App() {
 
 | Technique                           | Purpose                                                                                  |
 | ----------------------------------- | ---------------------------------------------------------------------------------------- |
-| **Design Tokens**                   | Centralize colors, typography, and spacing for consistent styling                        |
-| **Atomic Components**               | Build scalable, reusable components from basic building blocks                           |
-| **Composable, Flexible Components** | Ensure flexibility for various use cases using props and dynamic styling                 |
+| **Design tokens**                   | Centralize colors, typography, and spacing for consistent styling                        |
+| **Atomic components**               | Build scalable, reusable components from basic building blocks                           |
+| **Composable, flexible components** | Ensure flexibility for various use cases using props and dynamic styling                 |
 | **Storybook**                       | Document, test, and showcase all components, ensuring design and functionality alignment |
-| **Accessibility Standards**         | Improve usability for all users, following WCAG and ARIA best practices                  |
-| **Context and Theming**             | Support adaptable designs, allowing for light and dark themes or other custom themes     |
+| **Accessibility standards**         | Improve usability for all users, following WCAG and ARIA best practices                  |
+| **Context and theming**             | Support adaptable designs, allowing for light and dark themes or other custom themes     |
 
 By integrating these techniques, you can build a design system that is robust, adaptable, and consistent, making it easier to scale and maintain the UI over time.

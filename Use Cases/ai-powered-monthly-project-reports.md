@@ -7,18 +7,18 @@ tags:
 - "data-engineering"
 - "project-management"
 - "case-study"
-title: "Project Reports System: A Case Study"
+title: "Project reports system: a case study"
 ---
 
 At Dwarves, we've developed a monthly Project Reports system - a lean, efficient system that transforms our communication data into actionable intelligence for our Operations team. This system orchestrates multiple data streams into comprehensive project insights while maintaining enterprise-grade security and cost efficiency.
 
-## The Need for Orchestrated Intelligence
+## The need for orchestrated intelligence
 
 Our engineering teams generate thousands of Discord messages daily across multiple projects. These messages contain critical technical discussions, architectural decisions, and implementation details that traditionally remained trapped in chat histories. While Discord excels as a communication platform, its real-time nature makes it challenging to track project progress against client requirements or ensure alignment between ongoing discussions and formal documentation.
 
 This challenge sparked the development of our Project Reports system. Like a skilled conductor bringing order to complex musical pieces, our system coordinates multiple data streams into clear, actionable project intelligence
 
-## The Foundation: Data Architecture
+## The foundation: Data architecture
 
 Our architecture follows a simple yet powerful approach to data management, emphasizing efficiency and practicality over complexity. We've built our system on three core principles:
 

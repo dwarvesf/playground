@@ -6,24 +6,24 @@ description: 'React hooks architecture with in-depth coverage of custom hooks, s
 tags:
   - 'react'
   - 'hook'
-title: 'Hook Architecture in React'
-short_title: 'Hook Architecture'
+title: 'Hook architecture in react'
+short_title: 'Hook architecture'
 ---
 
 Hooks architecture in React refers to the systematic approach of using hooks to manage state, side effects, and reusable logic across components. **Custom hooks** are one of the most powerful features, allowing you to encapsulate and reuse complex logic independently of component structure. Custom hooks improve code readability, keep components lean, and make stateful logic portable and composable.
 
-### Key Concepts in Hooks Architecture
+### Key concepts in hooks architecture
 
-- Separation of Concerns with Custom Hooks
-- Encapsulating Side Effects
-- Dependency Management in Hooks
-- Combining Multiple Custom Hooks
+- Separation of concerns with custom hooks
+- Encapsulating side effects
+- Dependency management in hooks
+- Combining multiple custom hooks
 
-### Separation of Concerns with Custom Hooks
+### Separation of concerns with custom hooks
 
 By creating custom hooks, we can isolate specific pieces of logic or state, making components simpler and easier to test. Custom hooks follow the same naming conventions and usage patterns as built-in hooks but encapsulate domain-specific or app-specific logic.
 
-**Example: `useFetch` Hook for Data Fetching**
+**Example: `useFetch` hook for data fetching**
 
 ```jsx
 import { useState, useEffect } from 'react'
@@ -62,13 +62,13 @@ function UserProfile({ userId }) {
 **Benefits**:
 
 - **Reusability**: The `useFetch` hook can be used in any component needing data from an API.
-- **Isolation of Concerns**: Data fetching logic is isolated, keeping components focused on UI and presentation.
+- **Isolation of concerns**: Data fetching logic is isolated, keeping components focused on UI and presentation.
 
-### Encapsulating Side Effects
+### Encapsulating side effects
 
 Side effects (like fetching data, managing subscriptions, or setting timeouts) often clutter component code. By moving these side effects into custom hooks, we can encapsulate the logic and improve component readability.
 
-**Example: `useDocumentTitle` Hook for Updating the Document Title**
+**Example: `useDocumentTitle` hook for updating the document title**
 
 ```js
 import { useEffect } from 'react'
@@ -91,14 +91,14 @@ function HomePage() {
 
 **Benefits**:
 
-- **Isolation of Side Effects**: The document title logic is separate from the component's main UI, simplifying the component.
+- **Isolation of side effects**: The document title logic is separate from the component's main UI, simplifying the component.
 - **Reusability**: `useDocumentTitle` can be reused across pages or components that need to set the document title.
 
-### Dependency Management in Hooks
+### Dependency management in hooks
 
 Custom hooks require careful handling of dependencies to avoid bugs, stale data, or unintended behaviors. `useEffect`, `useMemo`, and `useCallback` hooks depend on stable dependencies to function predictably.
 
-**Example: Managing Dependencies with `useMemo`**
+**Example: Managing dependencies with `useMemo`**
 
 Suppose we need to calculate an expensive value in a hook, which depends on certain props or state. Using `useMemo` ensures the computation only runs when necessary.
 
@@ -127,15 +127,15 @@ function Stats({ numbers }) {
 **Benefits**:
 
 - **Efficiency**: By memoizing the result, we avoid recalculating every render, improving performance.
-- **Stable Dependencies**: Carefully setting dependencies ensures the calculation only reruns when `data` changes.
+- **Stable dependencies**: Carefully setting dependencies ensures the calculation only reruns when `data` changes.
 
-> In the future, this step will be handled automatically by [React Compiler](https://react.dev/learn/react-compiler#what-does-the-compiler-do)
+> In the future, this step will be handled automatically by [React compiler](https://react.dev/learn/react-compiler#what-does-the-compiler-do)
 
-### Combining Multiple Custom Hooks
+### Combining multiple custom hooks
 
 For more complex scenarios, multiple custom hooks can be combined, keeping components modular and avoiding deeply nested hooks. You can chain hooks to build up increasingly complex functionality without cluttering a single hook.
 
-**Example: Using `useAuth` and `useFetch` Together**
+**Example: Using `useAuth` and `useFetch` together**
 
 ```js
 // useAuth.js import { useState } from "react";
@@ -182,11 +182,11 @@ function Dashboard({ userId }) {
 - **Modularity**: Each hook handles a specific concern (auth or fetching data), so they're independently reusable and testable.
 - **Encapsulation**: The component doesn't need to understand the logic inside each hook, only the returned data and functions.
 
-### Best Practices for Custom Hooks
+### Best practices for custom hooks
 
-**Use Clear Naming Conventions**: Name hooks descriptively, starting with `use`, such as `useAuth`, `useFetchData`, or `useToggle`. This helps with readability and code consistency.
+**Use clear naming conventions**: Name hooks descriptively, starting with `use`, such as `useAuth`, `useFetchData`, or `useToggle`. This helps with readability and code consistency.
 
-**Return Only Necessary Data and Functions**: Custom hooks should return only the data and functions the component actually needs. This minimizes the hook's API surface and reduces complexity.
+**Return only necessary data and functions**: Custom hooks should return only the data and functions the component actually needs. This minimizes the hook's API surface and reduces complexity.
 
 ```js
 // Better: return only what's needed
@@ -197,7 +197,7 @@ function useToggle(initialState = false) {
 }
 ```
 
-**Handle Edge Cases and Errors Gracefully**: Build error handling directly into hooks, where applicable. This keeps components from dealing with low-level error handling, focusing only on displaying relevant information to the user.
+**Handle edge cases and errors gracefully**: Build error handling directly into hooks, where applicable. This keeps components from dealing with low-level error handling, focusing only on displaying relevant information to the user.
 
 ```js
 function useFetch(url) {
@@ -215,7 +215,7 @@ function useFetch(url) {
 }
 ```
 
-**Encapsulate Complex State Logic**: If you find yourself managing complex state logic (e.g., multiple variables, resetting state), consider using `useReducer` within the hook.
+**Encapsulate complex state logic**: If you find yourself managing complex state logic (e.g., multiple variables, resetting state), consider using `useReducer` within the hook.
 
 ```jsx
 import { useReducer } from 'react'
@@ -241,7 +241,7 @@ function useForm(initialState) {
 }
 ```
 
-**Testing Custom Hooks**: Test custom hooks in isolation to ensure they behave as expected under various scenarios. Tools like **React Testing Library's `renderHook`** make it easy to test hooks directly.
+**Testing custom hooks**: Test custom hooks in isolation to ensure they behave as expected under various scenarios. Tools like **React testing library's `renderHook`** make it easy to test hooks directly.
 
 ```js
 import { renderHook, act } from '@testing-library/react-hooks'
@@ -258,15 +258,15 @@ test('should toggle state', () => {
 })
 ```
 
-### Combining Techniques in a Custom Hook System
+### Combining techniques in a custom hook system
 
 Imagine you need a custom hook system for managing user authentication, including login, logout, fetching user data, and handling user permissions. We'll create modular hooks that interact but remain individually reusable.
 
-1.  **`useAuth` for Authentication**: Manages login and logout functions and holds user session data.
-2.  **`useUserData` for Data Fetching**: Fetches user-specific data from the server.
-3.  **`usePermissions` for Role-Based Access**: Checks permissions based on the user's roles.
+1.  **`useAuth` for authentication**: Manages login and logout functions and holds user session data.
+2.  **`useUserData` for data fetching**: Fetches user-specific data from the server.
+3.  **`usePermissions` for role-based access**: Checks permissions based on the user's roles.
 
-**Combining Custom Hooks**:
+**Combining custom hooks**:
 
 ```js
 // useAuth.js
@@ -293,7 +293,7 @@ function usePermissions(userRoles = []) {
   return { hasPermission }
 }
 
-// Usage in a Component
+// Usage in a component
 function AdminDashboard({ userId }) {
   const { user, login, logout } = useAuth()
   const { data: userData, loading: dataLoading } = useUserData(userId)

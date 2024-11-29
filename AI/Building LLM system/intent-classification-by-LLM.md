@@ -1,27 +1,28 @@
 ---
 authors:
-- "hoangnnh"
-date: "2024-10-09"
-description: "User intent classification is a crucial aspect of conversational AI, start with machine learning models, but now advanced language models (LLMs) are being explored for this task. Unlike the old methods which is need to labeled datasets exhaustively, LLMs can understand what users mean without all that preparation. This memo explores the application of LLMs in intent classification, highlighting their potential to streamline the process and overcome traditional NLU limitations."
+  - 'hoangnnh'
+date: '2024-10-09'
+description: 'User intent classification is a crucial aspect of conversational AI, start with machine learning models, but now advanced language models (LLMs) are being explored for this task. Unlike the old methods which is need to labeled datasets exhaustively, LLMs can understand what users mean without all that preparation. This memo explores the application of LLMs in intent classification, highlighting their potential to streamline the process and overcome traditional NLU limitations.'
 hashnode_meta:
-  id: "670f4d434d1924a802ea8935"
-  slug: "intent-classification-by-llm"
-sync: "hashnode"
+  id: '670f4d434d1924a802ea8935'
+  slug: 'intent-classification-by-llm'
+sync: 'hashnode'
 tags:
-- "llm"
-- "intent-classification"
-- "prompting"
-title: "Intent Classification by LLM"
+  - 'llm'
+  - 'intent-classification'
+  - 'prompting'
+title: 'Intent classification by LLM'
 ---
+
 User intent classification is a crucial aspect of conversational AI, start with machine learning models, but now advanced language models (LLMs) are being explored for this task. Unlike the old methods which is need to labeled datasets exhaustively, LLMs can understand what users mean without all that preparation. This memo explores the application of LLMs in intent classification, highlighting their potential to streamline the process and overcome traditional NLU limitations.
 
 ## Introduction
 
-Intent Classification is the process of determining the purpose or goal behind a user's input in a conversational AI system. There are many methods to capture it, it can be human involving, machine learning. With LLM, we take adavantage of its ability to understand context and nuance, allowing it to accurately classify user intents without the need for extensive labeled data.
+Intent classification is the process of determining the purpose or goal behind a user's input in a conversational AI system. There are many methods to capture it, it can be human involving, machine learning. With LLM, we take advantage of its ability to understand context and nuance, allowing it to accurately classify user intents without the need for extensive labeled data.
 
 ## Example
 
-We have an chatbot agent for an e-commerce platform. We will use LLM to classify user intent and based on that, the agent flow will be different.
+We have a chatbot agent for an e-commerce platform. We will use LLM to classify user intent and based on that, the agent flow will be different.
 
 ```python
 prompt= """
@@ -109,15 +110,15 @@ Intent: CustomerSupport
 
 Besides the above tips, there are some limitations to consider when using LLMs for intent classification:
 
-**Handling Multiple Intents**: It is easy to understand right? Too many lalbel will make the variation of output increase. It can make model confuse when making decision.
+**Handling multiple intents**: It is easy to understand right? Too many label will make the variation of output increase. It can make model confuse when making decision.
 
 **Hallucination**: The common problem of any LLM model, hallucination can lead to incorrect intent classifications.
 
-**Lack of Explainability**: Sometime, without CoT applied, the underlying decision-making process of LLMs is still largely a black box.
+**Lack of explainability**: Sometime, without CoT applied, the underlying decision-making process of LLMs is still largely a black box.
 
 ## Conclusion
 
-Intent classification is a crucial step in building a conversational AI system. Taking adavantage of LLM power, we can easy extract user intent, It support a lot in workflow of a LLM applications.
+Intent classification is a crucial step in building a conversational AI system. Taking advantage of LLM power, we can easy extract user intent, It support a lot in workflow of a LLM applications.
 
 ## References
 
