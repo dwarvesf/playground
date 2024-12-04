@@ -18,9 +18,9 @@ A second half of November 2024 frontend development digest covering major update
 
 React Router v7 introduces `framework mode` with features from Remix, including server rendering and improved type safety. It also includes enhanced templates for starting new projects, and comprehensive upgrade guides for React Router v6 and Remix v2 users.
 
-### [Expo DOM: Bridging the gap between web and mobile](https://expo.dev/blog/the-magic-of-expo-dom-components)
+### [React Anti-Pattern: Stop Passing Setters Down the Components Tree](https://matanbobi.dev/posts/stop-passing-setter-functions-to-components)
 
-Expo DOM Components allows running React websites as-is in native apps and incrementally migrating them to native views. The `use dom` directive uses Metro bundler to convert files to a native WebView proxy component, creating a new Expo website with the root React component as the DOM component, it simplifies migration while supporting debugging, customization, and offline functionality.
+Passing `useState` setters as props can lead to abstraction leaks, reducing clarity and reusability, making it harder to reason about the state. A better approach is to use callback functions to handle state changes, making your code more maintainable and flexible.
 
 ### Quick links
 
@@ -32,7 +32,7 @@ Expo DOM Components allows running React websites as-is in native apps and incre
 
 ### [Next Cloudinary: A game-changer for client-side file handling](https://robiul.dev/next-cloudinary-a-game-changer-for-client-side-file-handling)
 
-Next Cloudinary is a flexible tool that simplifies file handling and image optimization in Next.js applications. It supports various file sources  like Google Drive and offers advanced image effects, real-time adjustments, video transformations, watermarking and responsive rendering.
+Next Cloudinary is a flexible tool that simplifies file handling and image optimization in Next.js applications. It supports various file sources like Google Drive and offers advanced image effects, real-time adjustments, video transformations, watermarking and responsive rendering.
 
 ### [Solito 4.3: Bridge the gap between React Native and Next.js](https://solito.dev)
 
