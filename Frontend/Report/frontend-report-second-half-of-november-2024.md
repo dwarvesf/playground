@@ -44,10 +44,6 @@ Solito enables seamless development of universal React Native and web applicatio
 
 ## Others
 
-### [Building React forms with ease using React Hook Form, Zod and Shadcn](https://wasp-lang.dev/blog/2024/11/20/building-react-forms-with-ease-using-react-hook-form-and-zod)
-
-React Hook Form, Zod, and Shadcn can be used to create adaptable forms with ease. A Zod validation schema defines validation rules, while React Hook Form manages form state and validation. Shadcn provides reusable UI components with built-in support for React Hook Form and Zod.
-
 ### [Mastering JavaScript Symbols: Unique keys, custom behaviors, and advanced usages](https://www.trevorlasn.com/blog/symbols-in-javascript)
 
 Delve into JavaScript Symbols, the powerful tool for creating unique property keys and enabling custom behaviors in your objects. Explore practical applications, from controlling primitive conversions with `Symbol.toPrimitive` to building specialized arrays with `Symbol.species`. Learn about their uniqueness, serialization quirks, and how `Symbol.for()` enables global sharing. Perfect your JavaScript knowledge with these essential insights!
@@ -60,8 +56,24 @@ This guide walks you through importing JavaScript libraries like Chart.js and @a
 
 - [Essential TypeScript for React: Quick productivity tips](https://www.jacobparis.com/content/react-ts)
 - [Easy Light/Dark Modes: No fuss!](https://frontendmasters.com/blog/no-fuss-light-dark-modes/)
+- [Building Reddit's frontend with Vite](https://www.reddit.com/r/RedditEng/comments/1dhztk8/building_reddits_frontend_with_vite/)
+- [Vitest vs. Jest: The ultimate showdown](https://www.speakeasy.com/post/vitest-vs-jest)
 
 ## Trending
+
+### [Evaluating Browser Support: A Framework for Deciding When to Use New CSS Features](https://www.joshwcomeau.com/css/browser-support)
+
+This blog post presents a framework for deciding whether to use new CSS features based on browser support. The framework considers three factors: the fallback experience if the feature isn't supported, the actual browser usage statistics for the specific audience (which may differ from global averages), and the potential harm caused by a broken experience for unsupported browsers. Devs can simulate unsupported browsers by temporarily removing the CSS declaration to assess the fallback and use `@supports` for custom fallbacks when necessary.
+
+### [Crafting a new web performance score: Designing for scalability and clarity](https://csswizardry.com/2024/11/designing-and-evolving-a-new-performance-score/?utm_source=tldrwebdev)
+
+This blog highlights the limitations of comparing websites solely based on their Core Web Vitals (CWV) scores, as each metric employs a distinct unit and scale. This disparity in measurement units, including seconds for LCP, milliseconds for INP, and unitless decimals for CLS, makes it challenging to assess a site's overall performance. The author introduces CrRRUX, a new metric that normalizes each CWV metric onto a comparable 0-1 scale. The normalized values are then averaged to produce a single score, providing a comprehensive assessment of a website's performance relative to other websites within a cohort.
+
+### Quick links
+
+- [Framer Motion goes solo: New adventures in animation!](https://motion.dev/)
+
+## New Tools
 
 ### [Tailwind CSS v4 Beta: Built for speed and modern web development](https://tailwindcss.com/blog/tailwindcss-v4-beta)
 
@@ -71,14 +83,6 @@ Tailwind CSS v4 Beta introduces a revolutionary engine with 5x faster full build
 
 Vite 6 brings groundbreaking updates, including a 10M+ weekly npm downloads milestone, faster builds, and a new experimental Environment API for better development experiences. With modern features, broader framework support, and seamless upgrades, it's the most significant release since Vite 2.
 
-### Quick links
-
-- [Building Reddit's frontend with Vite](https://www.reddit.com/r/RedditEng/comments/1dhztk8/building_reddits_frontend_with_vite/)
-- [Vitest vs. Jest: The ultimate showdown](https://www.speakeasy.com/post/vitest-vs-jest)
-- [Framer Motion goes solo: New adventures in animation!](https://motion.dev/)
-
-## New Tools
-
 ### [Extism: Unlocking WebAssembly for everyone](https://extism.org/)
 
 Extism is a lightweight, universal framework for building with WebAssembly (Wasm), supporting its use across various platforms. It offers a flexible, plug-in system designed to make all software programmable.
@@ -86,12 +90,12 @@ Extism is a lightweight, universal framework for building with WebAssembly (Wasm
 ### Quick links
 
 - [SmarkForm: Effortless markup-driven and extendable forms](https://smarkform.bitifet.net/)
-- [SVG to Font generator](https://wangchujiang.com/svgtofont/)
-- [Nova: A JavaScript engine built with Rust](https://trynova.dev/)
+- [SVG to Font: Generator of fonts from SVG icons](https://wangchujiang.com/svgtofont/)
+- [Effortlessly Transform JSON into Stunning Interactive Tree Diagrams with jsontr.ee](https://github.com/xzitlou/jsontr.ee)
 
 ## Commentary
 
 - [Which IDEs do devs actually love? (And why!)](https://substack.com/redirect/cd81c4f0-4acd-4366-b3d4-896fe33c2d65)
-- [Web platform challenges](https://bkardell.com/blog/debt.html)
-- [An Elixir/Elm dev's take on React](https://korban.net/posts/elm/2024-11-16-typescript-react-impressions/)
+- [Technical Debt and Interop Challenges in the Web Platform](https://bkardell.com/blog/debt.html)
+- [Impressions of React and TypeScript from an Elixir/Elm Developer: A Tale of Two Ecosystems](https://korban.net/posts/elm/2024-11-16-typescript-react-impressions/)
 - [PostHog's Engineering: Solving challenges with trust and future-focused tech decisions](https://dub.link/bytes-nov25)
