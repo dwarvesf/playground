@@ -16,7 +16,7 @@ Guardrails in LLM are a set of techniques and strategies designed to control and
 
 ## Types of guardrails
 
-![Guardrails in LLM](./assets/guardrails-in-llm.webp)
+![Guardrails in LLM](assets/guardrails-in-llm.webp)
 
 1. **Input guardrails**: This involves pre-processing the input to the model to remove or modify any potentially harmful or inappropriate content. This can include filtering out profanity, hate speech, or sensitive information. Some common usecases:
    - **Topical guardrails**: Limit the model's responses to a specific topic or domain to prevent it from generating off-topic or irrelevant content.

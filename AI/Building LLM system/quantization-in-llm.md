@@ -34,17 +34,17 @@ Two primary approaches exist for LLM quantization:
 
 ![Linear Quantization](assets/quantization-in-llm-linear.webp)
 
-There are many quantization schema to reduce the size of the model. One technique is called Linear Qunatization - which is used to map the floating point values to the smaller range of values by shifting and scaling. There are 2 main modes in this technique: 
+There are many quantization schema to reduce the size of the model. One technique is called Linear Qunatization - which is used to map the floating point values to the smaller range of values by shifting and scaling. There are 2 main modes in this technique:
  - **Symmetric**: The zero-point is zero — i.e. 0.0 of the floating point range is the same as 0 in the quantized range. Typically, this is more efficient to compute at runtime but may result in lower accuracy if the floating point range is unequally distributed around the floating point 0.0.
  - **Asymmetric**: Zero-point that is non-zero in value. This can result in higher accuracy but may be less efficient to compute at runtime.
 
 In this part, we focus on the asymmetric mode.
 
-![Asymmetric mode](./assets/quantization-in-llm-formula.webp)
+![Asymmetric mode](assets/quantization-in-llm-formula.webp)
 
 In this part, we focus on the asymmetric mode.
 
-![Asymmetric mode](./assets/quantization-in-llm-formula.webp)
+![Asymmetric mode](assets/quantization-in-llm-formula.webp)
 
 The fundamental formula is:
 
