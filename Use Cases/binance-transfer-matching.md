@@ -12,7 +12,7 @@ authors:
 
 Binance is one of the most popular Decentralized Exchanges worldwide, so the demand for building Binance-integrated applications is growing daily. My team is also onboarding. We have a deal that requires us to build a Binance trading application with the ability to trade on multiple accounts simultaneously. In this way, our clients can optimize their trading progress as much as possible.
 
-Everything worked well at the beginning, motivating the clients to increase the amount of trading accounts and assets. The nightmare came at this moment. The funds began transferring between accounts to balance the strategies, making the client hard to control the fund and its flow. They must log in to each Binance account to track the transfer history manually. This behavior looks bad. 
+Everything worked well at the beginning, motivating the clients to increase the amount of trading accounts and assets. The nightmare came at this moment. The funds began transferring between accounts to balance the strategies, making the client hard to control the fund and its flow. They must log in to each Binance account to track the transfer history manually. This behavior looks bad.
 
 This emergency lets us begin record every transfers between accounts in the system, then notify to the clients continuously.
 
@@ -28,13 +28,13 @@ To record every transfers, we need the help of Binance APIs, specifically is [Ge
     	"income": "-0.37500000",  // income amount
     	"asset": "USDT",				// income asset
     	"info":"TRANSFER",			// extra information
-    	"time": 1570608000000,		
+    	"time": 1570608000000,
     	"tranId":9689322392,		// transaction id
     	"tradeId":""					// trade id, if existing
 	},
 	{
    		"symbol": "BTCUSDT",
-    	"incomeType": "COMMISSION", 
+    	"incomeType": "COMMISSION",
     	"income": "-0.01000000",
     	"asset": "USDT",
     	"info":"COMMISSION",
@@ -48,12 +48,12 @@ To record every transfers, we need the help of Binance APIs, specifically is [Ge
 
 Our job is just passing `TRANSFER` as `incomeType` to filter out other types of Binance transactions. Then we can store these records for use later. But when looking at this response, can you imagine the limitations that I mentioned in the title of this part? Yes! you actually can't know where the fund comes from or move to? Just only can detect whether it is a deposit or withdrawal by using the sign, which is not enough in our system where every account is under our control. If it is hard for you to understand, the result of the transfer notification is look sus as below screenshot.
 
-![Sporadic and confusing transfer logs](./assets/nghenhan-bad-logging.png)
+![Sporadic and confusing transfer logs](assets/nghenhan-bad-logging.png)
 *Figure 1: Sporadic and confusing transfer logs that lack clear relationships between transactions*
 
 To me, it looks bad. Ignore the wrong destination balance because of another issue with the data, this logging is too sporadic, hard to understand, and confusing. We can't understand how the fund is transferred. In my expectation, at least, it should like following.
 
-![Clear and connected transfer logs showing fund flow between accounts](./assets/nghenhan-better-logging.png)
+![Clear and connected transfer logs showing fund flow between accounts](assets/nghenhan-better-logging.png)
 *Figure 2: Clear and connected transfer logs that show the complete flow of funds between accounts*
 
 If you pay attention to the `JSON` response of Binance API, an idea can be raised in your mind that "*Hmm, it looks easy to get the better version of logging by just only matching the transaction ID aka tranId field value*". Yes, it is the first thing that popped into my mind. Unfortunately, once the transfer happens between two accounts, different transaction IDs are produced on each account side.
@@ -136,7 +136,7 @@ It is not enough, we can list the following types, and each type has a separate 
 * External transfers out (withdrawals)
 * External transfers in (deposits)
 
-Everything is fine, from the two above queries, we can produce the record of the transfer with sender and receiver information. But don't miss the balance change. To do it, we need to select proper before and after balances depending on the time of transfer. Imagine we have 100 transfers, and the total amount of records of balance snapshot reaches million or more, it is a real nightmare. 
+Everything is fine, from the two above queries, we can produce the record of the transfer with sender and receiver information. But don't miss the balance change. To do it, we need to select proper before and after balances depending on the time of transfer. Imagine we have 100 transfers, and the total amount of records of balance snapshot reaches million or more, it is a real nightmare.
 
 There is a more subtle way. We can group close transactions of the same account together into a group, then just only need to query the balance of the account at the beginning of the group and calculate other balances by accumulating the amount.
 
@@ -166,7 +166,7 @@ FIRST_VALUE(
 ```
 *Code 5: SQL to find balance for the first record of each transfer group that is the result of Code 4*
 
-Now, we have transfer history, in this, each record has its type, and information of the records before and after it. These records are also grouped together, and the leader of each group has its balanced information. Everything readies for querying the final result. Before going to the result, we may be missing a important step that is calculate balance for each transfer in the transfer group. To do it, Postgresql provides us some other interesting window functions. Tale a look following code. 
+Now, we have transfer history, in this, each record has its type, and information of the records before and after it. These records are also grouped together, and the leader of each group has its balanced information. Everything readies for querying the final result. Before going to the result, we may be missing a important step that is calculate balance for each transfer in the transfer group. To do it, Postgresql provides us some other interesting window functions. Tale a look following code.
 
 ```sql
 GREATEST(0, (
@@ -178,7 +178,7 @@ GREATEST(0, (
     )
 ))
 ```
-*Code 6: SQL to calculate balance for each transfer in the transfer group by using window functions ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW* 
+*Code 6: SQL to calculate balance for each transfer in the transfer group by using window functions ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW*
 
 Let's break down the window frame `ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`:
 - `UNBOUNDED PRECEDING` means "start from the very first row in the partition". In our case, it starts from the first transfer in the group

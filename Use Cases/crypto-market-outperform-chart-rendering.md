@@ -20,9 +20,9 @@ The real strategy is more complex than my example. But we can understand that **
 
 Performance, in our context, represents the token's profit and loss. For example, if I say, *Performance of BTC is 10%,* it means BTC has profited 10% since we placed the order. This number closely relates to the asset's liquidity in the market. If you can't imagine the relationship between them, try thinking about the price first. The price of an asset only increases when its total liquidity in the market rises. The change can come from scenarios such as the following:
 - Liquidity is moved from other assets to this asset
-- Liquidity from new buyers entering the market 
+- Liquidity from new buyers entering the market
 
-![alt text](./assets/liq-price-pnl-relationship.png)  
+![alt text](assets/liq-price-pnl-relationship.png)
 *Figure 1: Relationship between asset liquidity, price, and trading PnL*
 
 Price movements serve as indicators of liquidity flows between assets. When capital moves between Bitcoin and Altcoins, it triggers price changes that result in trading profits or losses. This chain reaction works in reverse too. Trading PnL patterns reveal price movements, which in turn expose the underlying liquidity shifts in the market.
@@ -30,7 +30,7 @@ Price movements serve as indicators of liquidity flows between assets. When capi
 Finally, market performance can be calculated using the following formula:
 
 ```math
-market_{perf} = BTC_{perf} - Alt_{perf} = \frac{BTC_{pnl}}{BTC_{init}} - \frac{\sum {Alt_{pnl}}}{\sum{Alt_{init}}} 
+market_{perf} = BTC_{perf} - Alt_{perf} = \frac{BTC_{pnl}}{BTC_{init}} - \frac{\sum {Alt_{pnl}}}{\sum{Alt_{init}}}
 ```
 *Formula 1: Formula to calculate market performance*
 
@@ -43,19 +43,19 @@ Now we have our framework to hedge. How can we obtain this data? Based on *Formu
 ### From data to dashboard: implementing a Go web interface to render performance charts
 At the end of the previous part, we mentioned the data gathering. Let me show you how was it constructed.
 
-![alt text](./assets/market-perf.png)
+![alt text](assets/market-perf.png)
 *Figure 2: Market performance data*
 
-In *Figure 2*, you can easily see that a large amount of liquidity has been pumped into the market. So, how easy is it to get an overview of the market when these figures are visualized? This is the reason why we are trying to do it here, until now. 
+In *Figure 2*, you can easily see that a large amount of liquidity has been pumped into the market. So, how easy is it to get an overview of the market when these figures are visualized? This is the reason why we are trying to do it here, until now.
 
-Market performance alone is not enough. In addition to estimating future market trends for trading, we also need to evaluate the performance of past trades. To achieve this, I have integrated our trading history into the charts. These include:  
+Market performance alone is not enough. In addition to estimating future market trends for trading, we also need to evaluate the performance of past trades. To achieve this, I have integrated our trading history into the charts. These include:
 
-- **Trade round**: The time period from the beginning to the end of each trade.  
-- **Trading account PnL history**: The PnL changes of a specific Binance account over time.  
+- **Trade round**: The time period from the beginning to the end of each trade.
+- **Trading account PnL history**: The PnL changes of a specific Binance account over time.
 
 By visualizing both market trends and historical trading data, we gain a more comprehensive understanding of our trading efficiency and decision-making process. The first step is selecting the most appropriate type of chart. It must ensure that when multiple data sources are combined, the visualization retains clarity, readability, and meaning. A mixed chart is ideal for this purpose, combining lines to represent market performance and trading PnL changes over time with a double bar chart that juxtaposes BTC and Altcoin performance to highlight their variations. Finally, scoping each trade within a separate window allows us to analyze individual trading periods in detail.
 
-![alt text](./assets/perf-chart.png)
+![alt text](assets/perf-chart.png)
 *Figure 3: The mixed chart that represent the relationship between market performance and trading effective*
 
 #### Aggregating lines from multiple sources
@@ -126,7 +126,7 @@ After all, we may still missing something. Yes it is the area to represent the b
 ```go
 opts.MarkAreaNameCoordItem{
 				Coordinate0: []interface{}{trade.OpenedTime.Format("2006-01-02 15:04:05"), -maxYAxis},
-				Coordinate1: []interface{}{trade.ClosedTime.Format("2006-01-02 15:04:05"), maxYAxis}, 
+				Coordinate1: []interface{}{trade.ClosedTime.Format("2006-01-02 15:04:05"), maxYAxis},
 				ItemStyle: &opts.ItemStyle{
 					Color: "rgba(255, 255, 255, 0.3)", // White color with blur effect
 				},
