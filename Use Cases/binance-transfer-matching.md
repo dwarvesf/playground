@@ -1,5 +1,5 @@
 ---
-title: "Building Better Crypto Transfer Tracking"
+title: "Building better Binance transfer tracking"
 date: 2024-11-18
 tags:
   - data
