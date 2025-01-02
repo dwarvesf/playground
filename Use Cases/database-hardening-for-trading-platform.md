@@ -18,21 +18,21 @@ This case study explores how a trading platform identified and mitigated critica
 
 The current database access and control practices pose the following challenges:
 
-1. **Unrestricted access to sensitive data**
+**Unrestricted access to sensitive data**
 
-   Developer accounts can access sensitive information, including user funding and personal data. This unrestricted access risks intentional misuse or unintentional exposure.
+Developer accounts can access sensitive information, including user funding and personal data. This unrestricted access risks intentional misuse or unintentional exposure.
 
-2. **Data manipulation**
+**Data manipulation**
 
-   Developer accounts with write permissions can inadvertently or maliciously alter critical data, such as trade records, causing inconsistencies and potential financial discrepancies.
+Developer accounts with write permissions can inadvertently or maliciously alter critical data, such as trade records, causing inconsistencies and potential financial discrepancies.
 
-3. **Data loss**
+**Data loss**
 
-   Permissions to perform destructive actions, such as dropping tables, expose the system to irreversible data loss, service outages, and heightened recovery costs, especially in the absence of adequate backups.
+Permissions to perform destructive actions, such as dropping tables, expose the system to irreversible data loss, service outages, and heightened recovery costs, especially in the absence of adequate backups.
 
-4. **Lack of auditability**
+**Lack of auditability**
 
-   The absence of logging and traceability mechanisms hinders the ability to identify or attribute actions, creating accountability gaps when database issues arise.
+The absence of logging and traceability mechanisms hinders the ability to identify or attribute actions, creating accountability gaps when database issues arise.
 
 > Developer accounts refer to accounts from the development team, which includes both developers and system administrators (devops). We use the term “account” to denote that it can potentially be exploited by unauthorized individuals.
 
@@ -68,9 +68,9 @@ Unrestricted developer access leads to fund loss and information loss.
 - Enforce least-privilege principles to ensure developers only access data relevant to their role
 - Provide standby database for debugging (read-only)
 - Differentiate access levels:
-  - **Read-only access**: For troubleshooting non-sensitive data.
-  - **Sensitive data access**: Granted with explicit approval.
-  - **Write permissions**: Restricted to authorized roles with explicit approval.
+  - **Read-only access**: For troubleshooting non-sensitive data
+  - **Sensitive data access**: Granted with explicit approval
+  - **Write permissions**: Restricted to authorized roles with explicit approval
 
 ### **Network isolation**
 
@@ -78,7 +78,7 @@ Unregulated access points create opportunities for data loss and operational dis
 
 **Solution**:
 
-- Restrict database access to approved endpoints and IP addresses
+- Restrict database access to approved endpoints or IP addresses
 - Mandate VPN usage or secure proxy for all database interactions
 
 ### **Multi-factor authentication**
@@ -139,17 +139,15 @@ The technical implementation leverages [**Teleport**](https://goteleport.com/) a
 1. A developer logs in via HTTPS, `tsh`, or a database client. After successful authentication, they get a certificate.
 2. The developer accesses the system through the Teleport proxy, which enforces role-based permissions.
 3. Inside the private network, Teleport services handle requests, manage resources, and record logs.
-4. Logs and events go to the **Event aggregator (fluentd)**, which processes and forwards them to security and log channels.
+4. Logs and events go to the **Event aggregator**, which processes and forwards them to security and log channels.
 5. Database operations are controlled by roles, ensuring data access is limited to read-only or write-only permissions.
 
 ### Masking data
 
 We hide some sensitive information in our tables to keep data safe. Most of these fields stay hidden forever. However, a few can be accessed with special permissions when needed. Right now, we use [postgresql-anonymizer](https://postgresql-anonymizer.readthedocs.io/en/latest/) for data masking and follow this process:
 
-**How to request access**
-
-1. Identify the Table: Find out which table you need access to.
-2. Request the Right Role: Use the table name with ﻿unmasked\_ as the role name.
+1. **Identify the table**: Find out which table you need access to.
+2. **Request the tight role**: Use the table name with `unmasked_` as the role name.
 
 For example, if you need to see hidden fields in the `deposits` table, request the `unmasked_deposits` role.
 
