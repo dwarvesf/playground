@@ -80,6 +80,14 @@ Open access points created opportunities for unauthorized interactions with the 
 
 Insufficient authentication measures left accounts vulnerable to compromise. Implementing MFA added an extra layer of security by requiring developers to verify their identities using multiple factors before accessing the database.
 
+### **Data masking**
+
+To further protect sensitive data, even when accessed by authorized personnel, we implemented data masking:
+
+- **Selective masking**: Sensitive data like client Personally Identifiable Information (PII) or financial details were masked or obfuscated.
+- **Granular control**: Masking rules were applied based on user roles and specific data fields.
+- **Dynamic masking**: Data was masked in real-time during queries, ensuring that sensitive information was never exposed in its raw form.
+
 ### **Database observability and audit logging**
 
 Lack of visibility into database interactions hindered accountability. To address this, we:
