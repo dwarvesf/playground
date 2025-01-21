@@ -14,7 +14,7 @@ authors:
 
 ### [React 19 is officially here](https://react.dev/blog/2024/12/05/react-19)
 
-The moment we've all been waiting for! React 19 has officially landed. React 19 is here with game-changing features! Actions simplify state management with built-in handling for errors and optimistic updates. New hooks like useOptimistic and useActionState make development smoother than ever. Plus, enhanced Suspense boosts performance for better user experiences. Dive into the future of React now!
+The moment we've all been waiting for! React 19 has officially landed. React 19 is here with game-changing features! Actions simplify state management with built-in handling for errors and optimistic updates. New hooks like useOptimistic and useActionState make development smoother than ever. Plus, enhanced Suspense boosts performance for better user experiences.
 
 ### [React 19: Ref callbacks - More than just DOM access](https://tkdodo.eu/blog/ref-callbacks-react-19-and-the-compiler)
 
