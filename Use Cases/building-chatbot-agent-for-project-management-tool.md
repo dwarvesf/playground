@@ -5,8 +5,9 @@ authors:
 date: '2024-11-21'
 description: 'A technical case study detailing the implementation of an AI chatbot agent in a project management platform. Learn how the team leveraged LangChain, LangGraph, and GPT-4 to build a multi-agent system using the supervisor-worker pattern. '
 tags:
-  - 'ai'
-  - 'project-management'
+  - 'ai-agents'
+  - 'aiops'
+  - 'langchain'
   - 'case-study'
 title: 'Building chatbot agent to streamline project management'
 ---
@@ -18,7 +19,6 @@ The challenge was to natively integrate a generative AI chatbot that could assis
 Implementing the chatbot agent involved key technical domains such as developing an interface to communicate with external AI platforms like OpenAI, creating an agentic system to interpret and execute user requests, and setting up usage monitoring to control AI token consumption and track chatbot performance.
 
 ## System requirements
-
 ### Business requirements
 
 - Chatbot should be able to answer general questions about project management, such as writing project proposals or epic planning.
@@ -87,7 +87,6 @@ Implementing the chatbot agent involved key technical domains such as developing
 The data flows from the user to the Supervisor, which routes the request to the appropriate worker agent. The worker agent processes the request, interacting with the necessary tools and the database, and generates a response. The response is then returned to the Supervisor and finally to the user.
 
 ## Technical implementation
-
 ### Core workflows
 
 ```mermaid
@@ -147,7 +146,6 @@ To address the need for displaying custom UI elements instead of text-only respo
   - **MongoDB**: NoSQL database for storing chat history, token usage, and other relevant data, offering flexibility and scalability.
 
 ## Lessons learned
-
 ### What worked well
 
 1. Implementing the supervisor-worker pattern using LangGraph allowed us to build a scalable and extensible multi-agent AI system that could handle increasing functionalities without compromising performance.

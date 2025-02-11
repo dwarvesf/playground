@@ -1,8 +1,10 @@
 ---
-title: "Implementing data snapshot pattern to persist historical data"
+title: "Implementing data snapshot pattern to persist historical data" 
 date: 2024-12-11
-tags:
-  - data-persistence
+tags: 
+  - 'data-engineering'
+  - fintech
+  - blockchain
   - snapshot-pattern
 description: "A technical exploration of implementing the data snapshot pattern for efficient historical data persistence"
 authors:
@@ -21,10 +23,7 @@ The common point is the requirement of reporting each time a phase is completed.
 The "report" and "summary" are the "historical data" that is mentioned in the title. This post is the strange yet familiar journey to remind the name of the techniques we use to "persist historical data" in our transactional system.
 
 ### Data persistence, why do we need to persist our historical data?
----
-
 The longevity of data after the application or process that created it is done or crashed is the data persistence. Once data is persisted, each time the application is opened again, the same data is retrieved from the data storage, giving a seamless experience to the user no matter how much time has passed.
-
 
 ![alt text](assets/binance-order-history.png)
 *Figure 1: Order history on the Binance, a popular trading marketplace. Each transaction is affected by the asset's price. If it is not persisted, it may wrong in the next query*
@@ -36,12 +35,10 @@ But the marketplace is more than just normal transactions. Imagine, I am not a n
 The idea of long-time reports brings us to another question. Unlike a nascent market like cryptocurrencies, the stock market has hundreds of years of history. How much computing power is enough for us to analyze the market trend over 50 years? This question is another aspect that we will answer later.
 
 ### Snapshot pattern, data snapshot
----
-
 A snapshot aka memento is normally mentioned as a complete copy of a dataset or system at a specific point in its life cycle. As a "photograph" of the data that represents its exact state at that moment. It is typically used in rolling back to the previous object's state once something goes wrong; running tests or analysis data in the production-like environment; or backup and preserving data for compliance or audit purposes. Data snapshot means the applying of snapshot pattern in the data processing. Depending on the use case, we choose proper strategy type of snapshot.
 
 ![alt text](assets/aws-ebs-snapshot-function.png)
-*Figure 2: The snapshot function in the EBS that is the virtual storage in AWS. This function grants us the ability to take a full snapshot of entire data and store it in the Amazon Simple Storage Service to be used to recover this state at any time*
+*Figure 2: AWS EBS snapshot mechanism showing how complete data states are captured and stored in S3 for recovery purposes*
 
 These are 3 popular types of data snapshots. Firstly, the **full snapshot** copies all data in the system at a specific time. Because of its data integrity characteristic,  it is often used in backup and restore data before major upgrades, compliance audits that require the complete system state, or data warehouse periodic loads. 
 
@@ -61,8 +58,6 @@ Imagine our system has implemented all 3 types of snapshot strategies: full snap
 After Tuesday, a problem happens in the system that requires us to recover data. We can choose to use the incremental Tuesday snapshot to recover Tuesday's data or use the differential Tuesday snapshot to recover data for both Monday and Tuesday. It depends on the use case and your strategy.
 
 ## Use snapshot pattern to persist historical data
----
-
 Back to the problem at the beginning of this post, we don't want to re-calculate our finance report which is affected by multiple factors over time, each time a user makes a new request. So we need to persist the summary to historical data. In simple words, it is the progress of collecting transactional data, aggregating and calculating the report for each period. Finally, we store these reports in the database as snapshot records.
 
 You may think that this progress looks familiar to your experiences when developing applications in your career. And it does not relate to any strategy that is mentioned above. If you feel it, you are right but wrong. Firstly, it is actually a normal practice when developing this type of application. We implement this feature as a feasible part of our database. But rarely think about it seriously. Second, the next story is one of the cases in which we use **incremental snapshot** to persist our historical data. Lets go to our hypothetical problem.
@@ -100,8 +95,6 @@ Instead of recalculating the sum of profit and loss from a massive volume of tra
 We can considered that we are using DB-lvl **memoization** incidentally. That is an optimization technique used in programming where the results of expensive function calls are stored in a cache. When the function is called again with the same inputs, the result is retrieved from the cache instead of recomputing it.
 
 ### Conclusions
----
-
 The snapshot pattern is deceptively simple. This is the reason why it is often overlooked during development. We are often focus on solving immediate problems, implementing features without considering the long-term implications of recalculations and data inconsistency. The simplicity of this approach masks its power to address complex issues like historical data accuracy and computational efficiency.
 
 It ensures accurate and consistent data, reduces computational overhead, and improves user experience by delivering faster query responses. Moreover, by persisting historical data, businesses gain a robust foundation for long-term analytics, such as trend analysis and strategic decision-making. It highlights the importance of viewing data as a long-term asset, requiring strategies like snapshots to ensure its reliability and usability over time.

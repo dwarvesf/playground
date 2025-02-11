@@ -1,19 +1,20 @@
 ---
 authors:
   - 'thanh'
-  - 'quang'
+  le new content discovery and analytics capabilities.- 'quang'
 date: '2024-11-21'
 description: 'A technical case study of creating an automated system that downloads videos, processes audio, and generates transcripts using AI services like Groq and OpenAI.'
 tags:
-  - 'data-engineering'
-  - 'project-management'
+  - 'aiops'
+  - 'ai-agents'
+  - llm
   - 'case-study'
 title: 'Building data pipeline for OGIF transcriber'
 ---
 
-At Dwarves, we needed an automated way to transcribe and summarize the recordings of our weekly OGIF events for our Brainery knowledge hub. The key challenge was to build a scalable data pipeline that could efficiently process YouTube videos, extract audio, transcribe the content using AI models, and store the results for downstream analysis and search.
+At Dwarves, we faced the challenge of efficiently transcribing and summarizing our weekly OGIF event recordings for our Brainery knowledge hub. This required developing a scalable data pipeline capable of processing YouTube videos, extracting audio, and leveraging AI models for transcription.
 
-The pipeline needed to handle diverse video formats and lengths, support high-volume concurrent requests, and integrate with our existing data storage and access patterns. The solution would democratize access to valuable OGIF content, reduce manual transcription effort, and enable new content discovery and analytics capabilities.
+Our solution needed to handle diverse video formats, support concurrent processing, and integrate seamlessly with existing infrastructure. The goal: democratize access to OGIF content while enabling powerful search and analytics capabilities.
 
 ## Data pipeline design
 
@@ -162,16 +163,16 @@ The API acts as the intermediary between User and backend components. The Databa
 
 The workflow ensures efficient job processing through asynchronous processing and job locking. The separation of Downloader and Transcriber allows for parallel processing and scalability. The optional typo correction step with OpenAI enhances transcription quality.
 
-## Performance and scaling
+## Performance benchmarks
 
 The system is designed to handle the following benchmarks:
 
-- 100 simultaneous transcription jobs
-- Videos from 5 minutes to 2 hours in length
-- Processing time under 5 minutes per video
-- Transcription accuracy of 90% or higher
-- API response times under 500ms
-- Job completion within 15 minutes
+- Process 100 simultaneous transcription jobs
+- Handle videos from 5 minutes to 2 hours
+- Complete processing within 5 minutes per video
+- Maintain 90%+ transcription accuracy
+- Ensure sub-500ms API response times
+- Complete jobs within 15 minutes
 
 To ensure the pipeline could handle the expected scale and provide timely results, several optimizations were implemented:
 
@@ -190,16 +191,40 @@ Robust error handling and monitoring were critical to ensure pipeline reliabilit
 
 The transcription service leverages the following technologies and tools:
 
-- **Core**: Python 3.9+, Flask framework, Asynchronous processing with Python threading
-- **AI/ML**: Groq AI for transcription, OpenAI for text refinement
-- **Data**: PostgreSQL database, AWS S3 storage
-- **Infrastructure**: Docker, Gunicorn HTTP server, Token-based authentication
-- **CI/CD**: GitHub Actions
+**Core platform**
+- Python 3.9+
+- Flask/FastAPI for RESTful APIs 
+- Celery + Redis for task queue
+- Gunicorn for WSGI server
 
-Key libraries used include `psycopg2` for Postgres, `Boto3` for S3, and `yt-dlp` + `pydub` for video downloading and audio processing.
+**AI/ML services**
+- Groq AI for transcription
+- OpenAI GPT-4 for text refinement
+- Custom rate limiting and retry logic
+
+**Data & storage**
+- PostgreSQL for persistent storage
+- Redis for caching/queues
+- AWS S3 for file storage
+- `Boto3` for AWS operations
+
+**Media processing**
+- `yt-dlp` for video downloading
+- `FFmpeg` for video manipulation
+- `pydub` for audio processing
+
+**Infrastructure & devOps**
+- Docker + Docker Compose
+- GitHub Actions for CI/CD
+- Prometheus + Grafana monitoring
+- Nginx reverse proxy
+
+**Security & documentation**
+- JWT authentication
+- SSL/TLS encryption
+- OpenAPI/Swagger documentation
 
 ## Lessons learned
-
 Key successes of the project include:
 
 1. Modular decoupling of downloader, transcriber and API logic improved scalability and maintainability. Issues could be identified and fixed quickly in each module.
