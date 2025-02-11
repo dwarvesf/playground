@@ -1,10 +1,11 @@
 ---
-title: "Visualizing crypto market outperform BTC-Alt indicators with Golang"
+title: "Visualizing crypto market performance: BTC-Alt dynamic indicators in Golang"
 date: 2024-11-18
 tags:
   - data
+  - blockchain
+  - fintech
   - crypto
-  - golang
 description: "Implementing a Golang-based visualization for crypto market performance indicators, focusing on Bitcoin vs Altcoin dynamics and trading strategy effectiveness through interactive charts and data analysis"
 authors:
   - bievh

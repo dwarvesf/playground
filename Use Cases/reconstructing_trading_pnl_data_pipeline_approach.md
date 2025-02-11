@@ -2,7 +2,8 @@
 title: "Reconstructing historical trading PnL: a data pipeline approach"
 date: 2024-11-18
 tags:
-  - data
+  - 'data-engineering'
+  - fintech
   - blockchain
 description: A detailed look at how we rebuilt historical trading PnL data through an efficient data pipeline approach, transforming a complex problem into a maintainable solution.
 authors:
@@ -10,13 +11,9 @@ authors:
 ---
 
 ## Executive summary
-
 Recovering historical trading profit and loss (PnL) data is a critical challenge for finance and cryptocurrency platforms. When historical records are unavailable, users cannot validate past trading strategies, assess long-term performance, or reconcile discrepancies. This blog details how I tackled this problem by transforming a technically daunting challenge into a robust, maintainable data pipeline solution.
 
----
-
 ## Background and context
-
 ### What is trading PnL?
 
 In trading, **Profit and loss (PnL)** represents financial outcomes:
@@ -26,17 +23,13 @@ In trading, **Profit and loss (PnL)** represents financial outcomes:
 For instance, when you close a Bitcoin position at a higher price than you entered, your realized PnL reflects the profit after fees. If the position is still open, unrealized PnL tracks potential outcomes as prices fluctuate.
 
 ### Why does historical PnL matter?
-
 Historical PnL data provides traders with:
 1. **Performance insights**: Understanding which strategies worked and which didn’t.
 2. **Compliance and reporting**: Regulatory or internal needs often require accurate historical data.
 3. **Strategy validation**: Testing new algorithms against past market conditions relies on accurate PnL records.
 
-### The problem at Hand
-
+### The problem at hand
 While designing a trading PnL chart for my platform, a significant gap emerged: historical PnL data for certain periods was missing. The existing system calculated PnL in real-time but didn’t store intermediary data, making reconstruction impossible without extensive changes to the codebase.
-
----
 
 ## The challenge
 
@@ -48,8 +41,6 @@ This question encapsulated two core issues:
 
 Moreover, the system’s reliance on multiple data sources (trades, market prices, fees) and the sheer volume of transactions compounded the problem.
 
----
-
 ## Technical requirements
 
 To reconstruct PnL, the following were essential:
@@ -58,10 +49,7 @@ To reconstruct PnL, the following were essential:
 - **Fee details**: Trading commissions, funding rates, and other costs affecting PnL.
 - **Efficient processing**: Handling massive datasets without overloading system resources.
 
----
-
 ## System analysis
-
 ### From complex code to data flows
 
 Instead of delving into intricate application logic, I reimagined the system as a series of **data flows**, where data is ingested, transformed, and stored across multiple layers. Below is the existing flow:
@@ -101,7 +89,6 @@ flowchart LR
 - **Outputs**: Processed data powers analytics and reporting tools.
 
 ### Reconstructing the flow
-
 From the above flow of data, we can easily determine which parts of the flow we should reproduce to find the old PnLs. 
 - Firstly, data comes from Binance
 - Second, data passes through ETS before processing
@@ -154,8 +141,6 @@ flowchart LR
     C -->|Results| PNL
 ```
 
----
-
 ## Implementation
 
 The reconstruction process involves five major steps:
@@ -200,8 +185,6 @@ flowchart TD
     C --> A
 ```
 
----
-
 ## Outstanding challenges
 
 **Volume of data**  
@@ -212,8 +195,6 @@ Minute-level Kline data is essential for accuracy, but retrieving and processing
 
 **PnL accuracy**  
 PnL, specifically realized PnL, is stuck to the trade set to help us know the total PnL of this trade set by accumulating the closed trade PnL and fee over time. So if we retrieve the list of user trades randomly, it may produce the wrong PnL and let our report make nonsense.
-
----
 
 ## Optimization strategies
 - **Time-series state reconstruction**: Our trading events naturally fall into their proper timeline. Each trade, fee, and price change finds its proper place in the chronological sequence. So our system can reconstruct a trading position's PnL at any moment. 
@@ -239,8 +220,6 @@ To validate the reconstruction process:
 - **Unit testing**: Test with small data samples, validating each step with detailed logs.
 - **Cross-validation**: Compare reconstructed PnL with existing records in the database.
 - **Visual analysis**: Render reconstructed data onto charts to ensure trends align with expected strategies.
-
----
 
 ## Conclusion
 

@@ -2,14 +2,15 @@
 title: "Transfer mapping: enhancing loggers for better transparency"
 date: 2024-11-18
 tags:
-  - data
+  - 'data-engineering'
   - blockchain
+  - fintech
 description: A comprehensive guide on improving cryptocurrency transfer logging systems to provide better transparency and traceability for users and developers.
 authors:
   - bievh
 ---
 
-### **What is a logger, and why does it matter?**
+## What is a logger, and why does it matter?
 
 A **logger** is a fundamental component of modern software systems, designed to record system events, user actions, and issues in real-time. It’s like the memory of an application, enabling both users and administrators to trace activities. Loggers serve two main purposes:
 
@@ -18,25 +19,19 @@ A **logger** is a fundamental component of modern software systems, designed to 
 
 Without a logger, understanding the flow of actions or diagnosing issues would be like navigating a dark room without a flashlight.
 
----
-
-### **What makes an effective logger?**
-
+## What makes an effective logger?
 An effective logger goes beyond simply storing data. It organizes and presents information in a way that’s **useful and easy to understand**. To be effective, a logger must have the following qualities:
 
-- **Consistency in format**  
-	   Logs should maintain a uniform structure across the application, much like a well-organized manual where every chapter follows the same layout. This consistency makes it easier to identify patterns and quickly interpret information.
+### Consistency in format
+Logs should maintain a uniform structure across the application, much like a well-organized manual where every chapter follows the same layout. This consistency makes it easier to identify patterns and quickly interpret information.
 
-- **Clarity and self-documentation**  
-	   Logs should be *self-explanatory*, requiring little to no additional context to understand their meaning. For instance, a good log entry is like a well-written headline: concise, clear, and informative.
+### Clarity and self-documentation
+Logs should be *self-explanatory*, requiring little to no additional context to understand their meaning. For instance, a good log entry is like a well-written headline: concise, clear, and informative.
 
-- **Purposefulness and informativeness**  
-	   Every log entry should serve a purpose. For example, instead of simply stating, "Transfer completed," a log should provide actionable insights, such as the accounts involved, the amount transferred, and timestamps.
+### Purposefulness and informativeness
+Every log entry should serve a purpose. For example, instead of simply stating, "Transfer completed," a log should provide actionable insights, such as the accounts involved, the amount transferred, and timestamps.
 
----
-
-### **Context: transfer logs in cryptocurrency applications**
-
+## Context: transfer logs in cryptocurrency applications
 Imagine a **cryptocurrency trading application** that enables users to manage multiple accounts on one platform. One of its core features is handling **transfers**, which can be categorized as follows:
 
 - *Deposits*: Funds added to an account from an external source.
@@ -58,19 +53,14 @@ Account_B | +1000 USDT | 2024-01-01 10:00:01
 
 From this log, users cannot deduce that the two entries are part of the same transfer. This ambiguity can cause confusion, especially in financial applications where clarity and transparency are paramount.
 
----
-
-### **Why is this problematic?**
-
+## Why is this problematic?
 The lack of clear relationships between log entries creates the following issues:  
 
 1. **User confusion**: Without context, users may struggle to understand the flow of their funds.
 2. **Reduced trust**: Ambiguous logs can erode user confidence, especially in financial systems.
 3. **Limited debugging capability**: Developers and support teams cannot efficiently diagnose issues or trace transactions without meaningful, connected data.
 
----
-
-### **Why does this happen? A look at the current system**
+## Why does this happen? A look at the current system
 
 The existing system focuses on individual transactions, treating withdrawals and deposits as **isolated events**. The process is outlined below:
 
@@ -111,9 +101,7 @@ flowchart LR
 
 This method records events but fails to link related transactions. For example, a withdrawal from one account and a deposit into another might appear as two separate, unrelated logs.
 
----
-
-### **A solution: enhanced logging system**
+## A solution: enhanced logging system
 
 To resolve these limitations, we propose an **enhanced logging system** that links related transactions and provides a clear view of asset movement. The process is illustrated below:
 
@@ -146,9 +134,7 @@ flowchart TD
     TWB --> FR
 ```
 
----
-
-### **Key steps in the enhanced system**
+## Key steps in the enhanced system
 
 1. **Data sources (input)**
    2. **Future incomes**: Primary source of transfer records containing the raw transaction data including amounts, timestamps, and account IDs
@@ -233,9 +219,7 @@ GREATEST(0, (
    - Calculates both before and after states for each transfer
    - Uses window functions for running totals within groups
 
----
-
-### **Benefits of the enhanced logger**
+## Benefits of the enhanced logger
 
 1. **Enhanced clarity**
    2. Logs clearly link related transactions.

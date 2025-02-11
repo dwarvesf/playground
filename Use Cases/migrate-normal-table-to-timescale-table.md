@@ -2,10 +2,10 @@
 title: "Migrate regular tables into TimescaleDB hypertables to improve query performance"
 date: 2025-01-15
 tags:
-  - postgresql
+  - 'data-engineering'
+  - blockchain
+  - fintech
   - timescaledb
-  - database
-  - hedge-foundation
 description: "How do we migrate normal table to timescale table to optimized data storage"
 authors:
   - minhth

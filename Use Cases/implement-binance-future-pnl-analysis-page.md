@@ -1,11 +1,11 @@
 ---
-title: "Implement Binance Futures PNL Analysis page by Phoenix LiveView"
+title: "Implement Binance Futures PNL analysis page by Phoenix LiveView"
 date: 2025-01-15
 tags:
-  - phoenix-live-view
-  - binance
+  - blockchain
+  - fintech
   - future-pnl-calculation
-  - data
+  - phoenix-live-view
 description: "Implementing Binance Futures PNL Analysis page with Phoenix LiveView to optimize development efficiency. This approach reduces the need for separate frontend and backend resources while enabling faster real-time data updates through WebSocket connections and server-side rendering."
 authors:
   - minhth
@@ -13,7 +13,6 @@ authors:
 As Binance doesn't allow Master Account see MSA account Future PNL Analysis, so we decide to clone Binance Future PNL Analysis page with Phoenix Live View to show all Account Future PNL
 
 ## Why we use Phoenix Live View for Binance Future PNL Analysis page
-
 ### Real-Time Data Handling
 - Phoenix Live View has built-in Websocket management so we can update data realtime with price or position update
 - Efficient handling of continuous data streams from Binance
@@ -35,7 +34,6 @@ As Binance doesn't allow Master Account see MSA account Future PNL Analysis, so 
 - Simplified state management
 
 ## How to optimize query with timescale
-
 ### Data Source
 Base on [Binance Docs](https://www.binance.com/en/support/faq/how-are-pnl-calculated-on-binance-futures-and-options-pnl-analysis-dbb171c4db1e4626863ec8bc545be46a) we have compound data from 2 timescale tables: `ts_user_trades` and `ts_future_incomes`
 
@@ -124,7 +122,7 @@ Because timescale table will be spitted into multiple chunks so if we use normal
 
 - With this cronjob it will help us no need to recalculate from 2 tables every request so it will be fast and don't make database pressure
 
-## Screenshots
+## User interface implementation
 ![Overview](assets/analysis-page/overview.jpg)
 *Figure 1: Future PNL Analysis Overview Tab*
 
