@@ -1,52 +1,62 @@
 ---
-title: "Implement Binance Futures PNL analysis page by Phoenix LiveView"
+title: 'Implement Binance Futures PNL analysis page by Phoenix LiveView'
 date: 2025-01-15
 tags:
   - blockchain
   - fintech
-  - future-pnl-calculation
+  - real-time
   - phoenix-live-view
-description: "Implementing Binance Futures PNL Analysis page with Phoenix LiveView to optimize development efficiency. This approach reduces the need for separate frontend and backend resources while enabling faster real-time data updates through WebSocket connections and server-side rendering."
+description: 'Implementing Binance Futures PNL Analysis page with Phoenix LiveView to optimize development efficiency. This approach reduces the need for separate frontend and backend resources while enabling faster real-time data updates through WebSocket connections and server-side rendering.'
 authors:
   - minhth
 ---
+
 As Binance doesn't allow Master Account see MSA account Future PNL Analysis, so we decide to clone Binance Future PNL Analysis page with Phoenix Live View to show all Account Future PNL
 
 ## Why we use Phoenix Live View for Binance Future PNL Analysis page
+
 ### Real-Time Data Handling
+
 - Phoenix Live View has built-in Websocket management so we can update data realtime with price or position update
 - Efficient handling of continuous data streams from Binance
 - Automatic connection management and recovery
 
 ### Server-Side State Management
+
 - Keeps sensitive trading data secure on the server
 - Ensures calculation accuracy for PNL computations
 - Prevents client-side manipulation of important data
 
 ### Complex Calculations
+
 - Handles all PnL calculations server-side
 - Better precision for financial calculations
 - Centralized calculation logic
 
 ### Development Efficiency
+
 - Single technology stack (Elixir)
 - No need for separate frontend framework
 - Simplified state management
 
 ## How to optimize query with timescale
+
 ### Data Source
+
 Base on [Binance Docs](https://www.binance.com/en/support/faq/how-are-pnl-calculated-on-binance-futures-and-options-pnl-analysis-dbb171c4db1e4626863ec8bc545be46a) we have compound data from 2 timescale tables: `ts_user_trades` and `ts_future_incomes`
 
 - ts_user_trades: to calculate realized pnl, commission, and trading volume
 - ts_future_incomes: to calculate funding fee and net inflow
 
 ### Timescale table
+
 - ts_user_trades and ts_future_incomes are large data tables so if we use normal table with indexing it will be slower by time that why we use timescale to hyper chunks to prevent this issue
 
 - ts_user_trades is hyper by 1 day
 - ts_future_incomes is hyper by 30 days
 
 ### Use timescale style query to get summary data in date range
+
 Ecto query to calculate PnL data from `ts_user_trades` and `ts_future_incomes`
 
 ```elixir
@@ -116,6 +126,7 @@ from(i in TsFutureIncomes,
 Because timescale table will be spitted into multiple chunks so if we use normal query it will have timeout issue if range too long. So we have to use `time_bucket` to let it join multiple chunks.
 
 ### Create cronjob to fill ts_account_pnl_analysis
+
 - We implement account_pnl_analysis_cronjob to backfill from today until oldest date has ts_user_trades order ts_future_incomes to calculate daily pnl
 
 - For current day, we will run interval 1 hour to update data
@@ -123,14 +134,11 @@ Because timescale table will be spitted into multiple chunks so if we use normal
 - With this cronjob it will help us no need to recalculate from 2 tables every request so it will be fast and don't make database pressure
 
 ## User interface implementation
-![Overview](assets/analysis-page/overview.jpg)
-*Figure 1: Future PNL Analysis Overview Tab*
 
-![Detail](assets/analysis-page/detail.png)
-*Figure 2: Future PNL Detail Tab*
+![Overview](assets/analysis-page/overview.jpg) _Figure 1: Future PNL Analysis Overview Tab_
 
-![Symbol Analysis](assets/analysis-page/symbol-analysis.png)
-*Figure 3: Future PNL Analysis Symbol Tab*
+![Detail](assets/analysis-page/detail.png) _Figure 2: Future PNL Detail Tab_
 
-![Symbol Analysis](assets/analysis-page/funding-and-transaction.png)
-*Figure 4: Future PNL Funding and Transaction Tab*
+![Symbol Analysis](assets/analysis-page/symbol-analysis.png) _Figure 3: Future PNL Analysis Symbol Tab_
+
+![Symbol Analysis](assets/analysis-page/funding-and-transaction.png) _Figure 4: Future PNL Funding and Transaction Tab_

@@ -1,8 +1,8 @@
 ---
-title: "Building better Binance transfer tracking"
+title: 'Building better Binance transfer tracking'
 date: 2024-11-18
 tags:
-  - "data-engineering"
+  - data
   - fintech
   - defi
 description: A deep dive into building a robust transfer tracking syste m for Binance accounts, transforming disconnected transaction logs into meaningful fund flow narratives through SQL and data analysis
@@ -44,22 +44,23 @@ To record every transfers, we need the help of Binance APIs, specifically is [Ge
 	}
 ]
 ```
-*Code 1: JSON response of Binance API Get Income History (USER_DATA)*
+
+_Code 1: JSON response of Binance API Get Income History (USER_DATA)_
 
 Our job is just passing `TRANSFER` as `incomeType` to filter out other types of Binance transactions. Then we can store these records for use later. But when looking at this response, can you imagine the limitations that I mentioned in the title of this part? Yes! you actually can't know where the fund comes from or move to? Just only can detect whether it is a deposit or withdrawal by using the sign, which is not enough in our system where every account is under our control. If it is hard for you to understand, the result of the transfer notification is look sus as below screenshot.
 
-![Sporadic and confusing transfer logs](assets/nghenhan-bad-logging.png)
-*Figure 1: Sporadic and confusing transfer logs that lack clear relationships between transactions*
+![Sporadic and confusing transfer logs](assets/nghenhan-bad-logging.png) _Figure 1: Sporadic and confusing transfer logs that lack clear relationships between transactions_
 
 To me, it looks bad. Ignore the wrong destination balance because of another issue with the data, this logging is too sporadic, hard to understand, and confusing. We can't understand how the fund is transferred. In my expectation, at least, it should like following.
 
-![Clear and connected transfer logs showing fund flow between accounts](assets/nghenhan-better-logging.png)
-*Figure 2: Clear and connected transfer logs that show the complete flow of funds between accounts*
+![Clear and connected transfer logs showing fund flow between accounts](assets/nghenhan-better-logging.png) _Figure 2: Clear and connected transfer logs that show the complete flow of funds between accounts_
 
-If you pay attention to the `JSON` response of Binance API, an idea can be raised in your mind that "*Hmm, it looks easy to get the better version of logging by just only matching the transaction ID aka tranId field value*". Yes, it is the first thing that popped into my mind. Unfortunately, once the transfer happens between two accounts, different transaction IDs are produced on each account side.
+If you pay attention to the `JSON` response of Binance API, an idea can be raised in your mind that "_Hmm, it looks easy to get the better version of logging by just only matching the transaction ID aka tranId field value_". Yes, it is the first thing that popped into my mind. Unfortunately, once the transfer happens between two accounts, different transaction IDs are produced on each account side.
 
 ## Our approach to transfer history mapping
+
 ### Current implementation
+
 It can make you a bit of your time at the beginning when looking at the response of Binance API and ask yourself "Why does Binance give us a bad API response?". Bit it is not a dilemma. And Binance API is not as bad as when I mentioned it. This API serves things enough for its demand in the Biance. And more general means can serve more use cases at all.
 
 Enough to explain, now, we get to the important part: matching transfers to make the transfer history logging becomes more robust. I think we have more than two ways to do it. But because this issue comes from a data aspect, we will use a database solution to make it better.
@@ -98,13 +99,16 @@ flowchart LR
     AB --> FR
     TD --> FR
 ```
-*Figure 3: Current flow to build transfer history*
+
+_Figure 3: Current flow to build transfer history_
 
 The flow chart above shows how the current system produced transfer tracking logging.
+
 - From `Future Incomes`, we simply query transfer information such as amount, time, and its sign.
 - Using the time of transfer, query `Balance snapshots` to detect balance before and after it is changed by the transfer.
 
 ### How to make it better?
+
 To do it better, we need to match the transfers together to know the source and destination of the fund. To match the transfers together, we need to specify what is the transfer before and after it (**with the assumption that transfers of the same fund on the send and receive side happen in a small gap of time, and two transfers can't happen in the same time**). We are lucky that Postgresql provides us with two convenient window functions, LEAD and LAG. LEAD is used to access a row following the current row at a specific physical offset. On the other hand, LAG helps with previous row access. With simple syntax and better performance, it is our choice to do transfer paring.
 
 ```sql
@@ -114,7 +118,8 @@ WITH matched_transfers AS (
         LEAD(...) OVER (ORDER BY fi.time) AS next_...,
         LAG(...) OVER (ORDER BY fi.time) AS prev_...,
 ```
-*Code 2: SQL query to match transfer by using LEAD and LAG*
+
+_Code 2: SQL query to match transfer by using LEAD and LAG_
 
 Once we match each transfer with its previous and follows, we can easily detect type of each transfer by following script.
 
@@ -126,13 +131,14 @@ CASE
         AND (next_time - time < interval '5 seconds')
     THEN 'INTERNAL_TRANSFER'
 ```
-*Code 3: SQL query to detect type of each transfer depend on it transaction before and after it*
 
+_Code 3: SQL query to detect type of each transfer depend on it transaction before and after it_
 
 It is not enough, we can list the following types, and each type has a separate way of detecting:
-* Internal transfers (between accounts)
-* External transfers out (withdrawals)
-* External transfers in (deposits)
+
+- Internal transfers (between accounts)
+- External transfers out (withdrawals)
+- External transfers in (deposits)
 
 Everything is fine, from the two above queries, we can produce the record of the transfer with sender and receiver information. But don't miss the balance change. To do it, we need to select proper before and after balances depending on the time of transfer. Imagine we have 100 transfers, and the total amount of records of balance snapshot reaches million or more, it is a real nightmare.
 
@@ -147,7 +153,8 @@ END) OVER (
     ORDER BY time
 ) AS sender_group
 ```
-*Code 4: SQL to group transfers of the same account and order by time*
+
+_Code 4: SQL to group transfers of the same account and order by time_
 
 ```sql
 FIRST_VALUE(
@@ -162,7 +169,8 @@ FIRST_VALUE(
     )
 ) OVER (...)
 ```
-*Code 5: SQL to find balance for the first record of each transfer group that is the result of Code 4*
+
+_Code 5: SQL to find balance for the first record of each transfer group that is the result of Code 4_
 
 Now, we have transfer history, in this, each record has its type, and information of the records before and after it. These records are also grouped together, and the leader of each group has its balanced information. Everything readies for querying the final result. Before going to the result, we may be missing a important step that is calculate balance for each transfer in the transfer group. To do it, Postgresql provides us some other interesting window functions. Tale a look following code.
 
@@ -176,9 +184,11 @@ GREATEST(0, (
     )
 ))
 ```
-*Code 6: SQL to calculate balance for each transfer in the transfer group by using window functions ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW*
+
+_Code 6: SQL to calculate balance for each transfer in the transfer group by using window functions ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW_
 
 Let's break down the window frame `ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`:
+
 - `UNBOUNDED PRECEDING` means "start from the very first row in the partition". In our case, it starts from the first transfer in the group
 - `CURRENT ROW` specifies "up to the transfer we're currently calculating"
 - Together, they create a sliding window that grows as we move through the transfers, always starting from the first transfer and including all transfers up to the current one
@@ -215,10 +225,13 @@ flowchart TD
     GFB --> TWB
     TWB --> FR
 ```
-*Figure 4: Upgraded process to build transfer history*
+
+_Figure 4: Upgraded process to build transfer history_
 
 ## Conclusions
+
 From the problem to the idea and finally is the implementation, nothing is too difficult. Every normal software developer can do it even better. But to do the huge thing, we first should begin from the smaller and make it done subtly and carefully. From this small problem, I learned some things:
+
 - **The answer may lie in the question itself.** Instead of blaming Binance API for being so bad, we can take a sympathetic look at it, and see if there is anything we can get out of it.
 - **One small change can make everything better.** When comparing the original transfer tracking log, and the version after upgrading with some small changes in the DB query, there is a huge difference when seeing the new one. This reminds uss that impactful solutions don't always require complex architectures – sometimes they just need careful refinement of existing approaches.
 - **Data challenges are often best addressed through data-driven solutions**. Rather than seeking fixes elsewhere, the key is to leverage the inherent patterns and structure within the data itself.

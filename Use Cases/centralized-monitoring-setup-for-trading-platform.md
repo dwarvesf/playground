@@ -5,10 +5,8 @@ authors:
 date: '2024-11-21'
 description: 'A technical case study for implementing centralized monitoring for a trading platform using Grafana and Prometheus, focusing on real-time alerts, data integrity, and resource optimization to prevent financial losses.'
 tags:
-  - 'devops'
-  - 'fintech'
-  - 'blockchain'
-  - 'case-study'
+  - monitoring
+  - fintech
 title: 'Setup centralized monitoring system for Hedge Foundation trading platform'
 ---
 
@@ -18,17 +16,17 @@ Hedge Foundtion, a private trading platform serving select traders, required a r
 
 As a privately-owned platform with a limited user base, Nghenhan faces unique challenges:
 
-1. **High-Stakes Trading**: Each user represents a significant portion of the platform's trading volume. Any system failure or data loss can lead to substantial financial losses for these traders.
-2. **Reputational Risk**: With a smaller user base, any issues with the platform can quickly erode trust and lead to user attrition. Maintaining a stellar reputation is essential for Nghenhan's long-term success.
-3. **Resource Allocation**: While the user base is limited, the platform must still be equipped to handle peak usage times and spikes. Efficient resource allocation is critical to ensure reliable performance without overspending on infrastructure.
+1. **High-stakes trading**: Each user represents a significant portion of the platform's trading volume. Any system failure or data loss can lead to substantial financial losses for these traders.
+2. **Reputational risk**: With a smaller user base, any issues with the platform can quickly erode trust and lead to user attrition. Maintaining a stellar reputation is essential for Nghenhan's long-term success.
+3. **Resource allocation**: While the user base is limited, the platform must still be equipped to handle peak usage times and spikes. Efficient resource allocation is critical to ensure reliable performance without overspending on infrastructure.
 
 ## Mitigating financial losses through proactive monitoring
 
 To address these challenges, Nghenhan must implement a proactive monitoring strategy that focuses on:
 
-1. **Real-time Alerts**: The monitoring system must provide instant notifications for any anomalies or threshold breaches. This allows the team to react swiftly and minimize the duration and impact of any issues.
-2. **Data Integrity**: Ensuring the accuracy and synchronization of trading data is paramount. Any data loss or discrepancies can trigger false alarms or missed opportunities, leading to financial losses for traders.
-3. **Resource Optimization**: Monitoring resource utilization helps Nghenhan allocate resources effectively during peak times while avoiding over-provisioning during normal usage.
+1. **Real-time alerts**: The monitoring system must provide instant notifications for any anomalies or threshold breaches. This allows the team to react swiftly and minimize the duration and impact of any issues.
+2. **Data integrity**: Ensuring the accuracy and synchronization of trading data is paramount. Any data loss or discrepancies can trigger false alarms or missed opportunities, leading to financial losses for traders.
+3. **Resource optimization**: Monitoring resource utilization helps Nghenhan allocate resources effectively during peak times while avoiding over-provisioning during normal usage.
 
 ## Implementing Grafana and Prometheus for robust monitoring
 
@@ -36,11 +34,11 @@ Integrating Grafana and Prometheus provides Nghenhan with a powerful centralized
 
 ![](assets/nghenhan-monitoring-system-diagram.webp)
 
-- **Backend Services**: The backend services of Nghenhan's trading platform expose metrics through an HTTP endpoint, which Prometheus scrapes at regular intervals.
-- **Prometheus Server**: The Prometheus server scrapes the metrics from the backend services and stores them as time series data. It also handles the querying and alerting functionality.
-- **Alert Manager**: The Alert Manager is a component of Prometheus that handles the routing and management of alerts. It receives alerts from Prometheus and sends notifications to the configured receivers, such as the admin or notification channels.
+- **Backend services**: The backend services of Nghenhan's trading platform expose metrics through an HTTP endpoint, which Prometheus scrapes at regular intervals.
+- **Prometheus server**: The Prometheus server scrapes the metrics from the backend services and stores them as time series data. It also handles the querying and alerting functionality.
+- **Alert manager**: The Alert Manager is a component of Prometheus that handles the routing and management of alerts. It receives alerts from Prometheus and sends notifications to the configured receivers, such as the admin or notification channels.
 - **Grafana**: Grafana fetches data from Prometheus to create visualizations and dashboards. It also allows users to set up alerts and explore historical data.
-- **Notification Receivers**: The notification receivers are the endpoints or channels where alerts are sent, such as email, Discord, or custom webhooks. The admin can also receive notifications and take appropriate actions based on the alerts.
+- **Notification receivers**: The notification receivers are the endpoints or channels where alerts are sent, such as email, Discord, or custom webhooks. The admin can also receive notifications and take appropriate actions based on the alerts.
 
 ### Prometheus as Data collector
 

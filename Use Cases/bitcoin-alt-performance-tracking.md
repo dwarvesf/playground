@@ -1,12 +1,11 @@
 ---
-title: "Tracking Bitcoin-Altcoin Performance Indicators in BTC Hedging Strategy"
+title: 'Tracking Bitcoin-Altcoin Performance Indicators in BTC Hedging Strategy'
 date: 2025-01-02
 tags:
   - data
   - fintech
   - blockchain
-  - crypto
-description: "This article provides an overview of the importance of tracking Bitcoin-Altcoin performance indicators in a trading strategy known as Hedge, and explains how to visualize this data effectively. It also demonstrates how to render a chart for this strategy using Matplotlib and Seaborn"
+description: 'This article provides an overview of the importance of tracking Bitcoin-Altcoin performance indicators in a trading strategy known as Hedge, and explains how to visualize this data effectively. It also demonstrates how to render a chart for this strategy using Matplotlib and Seaborn'
 authors:
   - bievh
 ---
@@ -17,7 +16,7 @@ In recent years, alongside the growth of blockchain technology, the cryptocurren
 
 In financial markets, tradeable assets are categorized as **financial instruments**. These instruments primarily fall into two categories: **cash instruments** and **derivatives instruments**, distinguished by how their value is determined.
 
-Cash instruments, including stocks, bonds, or currencies, derive their value directly from the underlying asset through market supply and demand. While these values fluctuate, investors maintain ownership of the actual asset, providing inherent value. 
+Cash instruments, including stocks, bonds, or currencies, derive their value directly from the underlying asset through market supply and demand. While these values fluctuate, investors maintain ownership of the actual asset, providing inherent value.
 
 > Example: When you own 100 shares of Apple stock, your investment value changes based on Apple's market price. Even during price declines, you retain ownership of these shares, including rights to potential dividends and future value appreciation. Similarly, bondholders receive ongoing interest payments and principal at maturity, regardless of market price fluctuations.
 
@@ -29,8 +28,7 @@ In volatile markets like cryptocurrency, derivative risks increase substantially
 
 ### How "Hedge" works?
 
-![alt text](assets/hedge.png)
-*Figure 1: How Hedge works in general*
+![alt text](assets/hedge.png) _Figure 1: How Hedge works in general_
 
 Let’s dive into the hedging in cryptocurrency markets to understand it clearly through a practical example.
 
@@ -39,18 +37,17 @@ Imagine you’re an investor excited about **Bitcoin (BTC)**. The current price 
 To protect against potential losses, you implement a hedge by investing \$50,000 in various alternative cryptocurrencies (altcoins). This decision stems from the observation that altcoins often exhibit different price movements from Bitcoin. This diversification creates a secondary position that can offset potential losses in your primary Bitcoin position.
 
 The hedging mechanism functions through balanced exposure:
-- When Bitcoin's price decreases, negatively affecting your derivative contract, your altcoin investments may appreciate, providing compensatory gains. 
+
+- When Bitcoin's price decreases, negatively affecting your derivative contract, your altcoin investments may appreciate, providing compensatory gains.
 - Conversely, during Bitcoin price increases, profits from your BTC position can offset potential decreases in altcoin values.
 
 This balanced approach reduces exposure to Bitcoin's price volatility. Portfolio diversification across altcoins serves as protection against significant losses in Bitcoin positions. **Hedging** functions as a risk management tool, allowing continued market participation while maintaining a safety margin against adverse price movements.
 
 ### The nature of price volatility
 
-After exploring the example, you might wonder *Why do we chose Bitcoin and Altcoins?*, and *Why do their price movements behave this way in the scenario?* To answer this, let’s look at the nature of price volatility and the dynamics between Bitcoin and Altcoins.
+After exploring the example, you might wonder _Why do we chose Bitcoin and Altcoins?_, and _Why do their price movements behave this way in the scenario?_ To answer this, let’s look at the nature of price volatility and the dynamics between Bitcoin and Altcoins.
 
-
-![alt text](assets/btc-dominance.png)
-*Figure 2: The dominance of Bitcoin (BTC) in the cryptocurrency market*
+![alt text](assets/btc-dominance.png) _Figure 2: The dominance of Bitcoin (BTC) in the cryptocurrency market_
 
 Bitcoin functions as the cryptocurrency market's cornerstone. According to CoinMarketCap:
 
@@ -59,19 +56,21 @@ Bitcoin functions as the cryptocurrency market's cornerstone. According to CoinM
 In simpler terms, Bitcoin’s dominance reflects its central role in the market. When BTC’s price moves, it often triggers a ripple effect across other cryptocurrencies (altcoins). However, the exact behavior of BTC and altcoins can vary depending on market scenarios. Here are some common scenarios that explain the interplay between Bitcoin and Altcoins:
 
 **Money Flow Scenarios:**
+
 - BTC to Altcoins: Fund transfers from Bitcoin to altcoins typically result in decreased Bitcoin prices alongside altcoin appreciation.
 - Altcoins to BTC: Capital movement back to Bitcoin often leads to Bitcoin appreciation while altcoin values decline.
 
 **Market Entry Scenarios:**
+
 - BTC-Focused: New capital entering primarily through Bitcoin can increase BTC prices while altcoin values remain stable.
 - Altcoin-Focused: Fresh investments targeting altcoins may drive their prices upward without significantly affecting Bitcoin.
 
 **Market Exit Scenarios:**
+
 - BTC Withdrawal: Bitcoin liquidation for external markets can decrease BTC prices.
 - Altcoin Withdrawal: Altcoin selloffs may reduce their values while Bitcoin maintains stability.
 
 Understanding these market scenarios proves crucial for effective hedging. The strategy works optimally when price movements follow predictable patterns. For instance, during fund flows between Bitcoin and altcoins, losses in one position often balance with gains in the other. However, certain market conditions can challenge hedging effectiveness.
-
 
 ### The downside of hedging
 
@@ -82,6 +81,7 @@ Furthermore, market-wide withdrawals can negate hedging benefits when both Bitco
 These limitations emphasize the importance of reliable market indicators for guiding hedging decisions. Performance metrics, particularly the outperforming chart comparing Bitcoin and altcoin movements, provide essential data for strategy refinement. These tools enable traders to navigate market volatility while optimizing their risk-reward balance.
 
 ### Why use BTC-Altcoin outperformance?
+
 The significance of performance indicators in derivative market hedging stems from the direct relationship between contract values and underlying asset performance. This connection makes performance analysis fundamental to precise hedging strategy execution.
 
 The BTC-Altcoin outperformance metric is comprised of two key components: Bitcoin performance (BTCp) and altcoin performance (ALTp). These components are calculated separately and then compared to determine the relative strength of the two assets.
@@ -90,8 +90,7 @@ Bitcoin performance (BTCp) measures the performance of Bitcoin relative to its h
 
 Altcoin performance (ALTp) measures the performance of altcoins relative to their historical average. It is also calculated as a percentage change from the historical mean. A positive ALTp indicates that altcoins are outperforming their historical average, while a negative ALTp suggests that they are underperforming.
 
-$$BTC/Altcoin_{outperformance} = \frac{BTC_{profit}}{BTC_{init}}-\frac{Altcoin_{profit}}{Altcoin_{init}}$$
-*Formula 1: BTC-Altcoin outperformance calculation*
+$$BTC/Altcoin_{outperformance} = \frac{BTC_{profit}}{BTC_{init}}-\frac{Altcoin_{profit}}{Altcoin_{init}}$$ _Formula 1: BTC-Altcoin outperformance calculation_
 
 The BTCp - ALTp calculation provides clear insight into Bitcoin's relative market position, enabling strategic hedge adjustments. For example, a positive BTCp - ALTp indicates Bitcoin outperformance, suggesting capital flow from altcoins to Bitcoin. This scenario requires adjusting hedge positions to favor Bitcoin exposure. A negative BTCp - ALTp suggests altcoin outperformance, indicating the need to protect altcoin positions more actively.
 
@@ -119,8 +118,7 @@ To visualize the BTC-Altcoin outperformance metric, we need to systematically tr
 
 **9. Render the Data as a Chart:** Plot this BTC-Altcoin outperformance metric on a line chart over time. This chart will visually represent whether Bitcoin is outperforming or underperforming relative to altcoins at each interval.
 
-![alt text](assets/perf-chart.png)
-*Figure 3: BTC-Altcoin outperformance chart*
+![alt text](assets/perf-chart.png) _Figure 3: BTC-Altcoin outperformance chart_
 
 ### Conclusions
 

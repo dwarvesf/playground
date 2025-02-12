@@ -4,17 +4,19 @@ authors:
 date: '2025-01-02'
 description: 'Discover how a trading platform mitigated database access risks, enhanced security, and ensured data integrity through role-based access control, network isolation, MFA, and robust logging. Learn about the strategies and tools, like Teleport, that transformed operational efficiency and reinforced client trust.'
 tags:
-  - 'blockchain'
-  - 'fintech'
-  - 'database'
-  - 'case-study'
+  - blockchain
+  - fintech
+  - database
+  - security
 title: 'Database hardening for a trading platform'
 ---
 
 ## Introduction
+
 Database vulnerabilities are a silent threat in trading platforms. They lurk in unrestricted access controls, posing risks of data breaches, operational disruptions, and loss of client trust. This case study examines how we identified these risks and implemented a structured, practical approach to mitigate them. By integrating tools like Teleport, enforcing strict access controls, and embedding detailed logging mechanisms, we significantly enhanced our security posture and operational resilience.
 
 ## Problem statement
+
 Every trading platform depends on its database to handle sensitive operations—from storing client funds to managing trade records. Yet, our initial access controls had critical gaps:
 
 **Unrestricted access to sensitive data**
@@ -55,9 +57,11 @@ These activities must be conducted under strict safeguards to prevent "oops" mom
 | **Operational cost**       | Increased expenses for data recovery, incident response, and breach mitigation | Lack of log trails and recovery mechanism         |
 
 ## Proposed approach
+
 Addressing these risks required a phased approach. Each step introduced a new layer of security, designed to mitigate specific vulnerabilities.
 
 ### Role-based access control
+
 Unrestricted developer access was the root cause of several risks. To address this:
 
 - Enforce least-privilege principles: Developers accessed only the data essential to their roles.
@@ -67,15 +71,18 @@ Unrestricted developer access was the root cause of several risks. To address th
 - Provide standby databases: Developers used a read-only copy of the production database for debugging.
 
 ### Network isolation
+
 Open access points created opportunities for unauthorized interactions with the database. To minimize exposure:
 
 - Restricted database access to approved endpoints or IP addresses.
 - Mandated VPN usage or secure proxy connections for all database interactions.
 
 ### Multi-factor authentication
+
 Insufficient authentication measures left accounts vulnerable to compromise. Implementing MFA added an extra layer of security by requiring developers to verify their identities using multiple factors before accessing the database.
 
 ### Data masking
+
 To further protect sensitive data, even when accessed by authorized personnel, we implemented data masking:
 
 - **Selective masking**: Sensitive data like client Personally Identifiable Information (PII) or financial details were masked or obfuscated.
@@ -83,6 +90,7 @@ To further protect sensitive data, even when accessed by authorized personnel, w
 - **Dynamic masking**: Data was masked in real-time during queries, ensuring that sensitive information was never exposed in its raw form.
 
 ### Database observability and audit logging
+
 Lack of visibility into database interactions hindered accountability. To address this, we:
 
 - **Implemented robust logging**: Tracked every database interaction, including queries, data changes, and administrative actions.
@@ -90,6 +98,7 @@ Lack of visibility into database interactions hindered accountability. To addres
 - **Made logs tamper-proof**: Ensured secure storage to prevent alterations.
 
 ### Break glass access
+
 In emergencies, developers needed immediate access to resolve critical issues. However, such access carried risks if not carefully managed. We implemented a "break-glass" process:
 
 - **Multi-party approval**: Emergency access required sign-offs from multiple stakeholders.
@@ -97,6 +106,7 @@ In emergencies, developers needed immediate access to resolve critical issues. H
 - **Comprehensive logging**: Every action during emergency access was logged for accountability.
 
 ## Technical implementation
+
 ### System architecture
 
 We used [**Teleport**](https://goteleport.com/) as the central platform for managing access controls and monitoring database interactions. The architecture featured:
@@ -121,6 +131,7 @@ We used [**Teleport**](https://goteleport.com/) as the central platform for mana
 4. Alerts were sent to the security team for any suspicious activities.
 
 ### Masking data
+
 We hide some sensitive information in our tables to keep data safe. Most of these fields stay hidden forever. However, a few can be accessed with special permissions when needed. Right now, we use [postgresql-anonymizer](https://postgresql-anonymizer.readthedocs.io/en/latest/) for data masking and follow this process:
 
 1. **Identify the table**: Find out which table you need access to.
@@ -129,6 +140,7 @@ We hide some sensitive information in our tables to keep data safe. Most of thes
 For example, if you need to see hidden fields in the `deposits` table, request the `unmasked_deposits` role.
 
 ### Request a new role for extensive access
+
 If there is a special request for an action beyond the permissions of the existing role, the requester must follow this protocol to perform the action:
 
 ```mermaid

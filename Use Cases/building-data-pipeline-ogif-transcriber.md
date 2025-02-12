@@ -1,14 +1,13 @@
 ---
 authors:
   - 'thanh'
-  le new content discovery and analytics capabilities.- 'quang'
+  - 'quang'
 date: '2024-11-21'
 description: 'A technical case study of creating an automated system that downloads videos, processes audio, and generates transcripts using AI services like Groq and OpenAI.'
 tags:
-  - 'aiops'
-  - 'ai-agents'
-  - llm
-  - 'case-study'
+  - ai
+  - agents
+  - data
 title: 'Building data pipeline for OGIF transcriber'
 ---
 
@@ -192,39 +191,46 @@ Robust error handling and monitoring were critical to ensure pipeline reliabilit
 The transcription service leverages the following technologies and tools:
 
 **Core platform**
+
 - Python 3.9+
-- Flask/FastAPI for RESTful APIs 
+- Flask/FastAPI for RESTful APIs
 - Celery + Redis for task queue
 - Gunicorn for WSGI server
 
 **AI/ML services**
+
 - Groq AI for transcription
 - OpenAI GPT-4 for text refinement
 - Custom rate limiting and retry logic
 
 **Data & storage**
+
 - PostgreSQL for persistent storage
 - Redis for caching/queues
 - AWS S3 for file storage
 - `Boto3` for AWS operations
 
 **Media processing**
+
 - `yt-dlp` for video downloading
 - `FFmpeg` for video manipulation
 - `pydub` for audio processing
 
 **Infrastructure & devOps**
+
 - Docker + Docker Compose
 - GitHub Actions for CI/CD
 - Prometheus + Grafana monitoring
 - Nginx reverse proxy
 
 **Security & documentation**
+
 - JWT authentication
 - SSL/TLS encryption
 - OpenAPI/Swagger documentation
 
 ## Lessons learned
+
 Key successes of the project include:
 
 1. Modular decoupling of downloader, transcriber and API logic improved scalability and maintainability. Issues could be identified and fixed quickly in each module.
