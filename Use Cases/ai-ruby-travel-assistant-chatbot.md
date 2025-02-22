@@ -74,7 +74,7 @@ end
 
 ## The technical implementation
 
-Instead of forcing Python into an environment optimized for Ruby, we enhanced Ruby's AI capabilities to meet our needs. Working with LangchainRB alongside with their team, we evolved it from a promising library into an enterprise-grade solution.
+Instead of forcing Python into an environment optimized for Ruby, we enhanced Ruby's AI capabilities to meet our needs. Working with LangchainRB alongside their team, we evolved it from a promising library into an enterprise-grade solution.
 
 The core assistant implementation showcased Ruby's elegant syntax while handling complex operations:
 
@@ -129,7 +129,7 @@ The suggestion system successfully prompted users to explore new travel possibil
 
 ## Impact on the Ruby community
 
-Both the client and our work has had lasting effects beyond this project. The improvements both of us contributed to LangchainRB have made enterprise-grade AI more accessible to the Ruby community. We've shown that organizations heavily invested in Ruby don't need to pivot to Python for AI capabilities—they can build sophisticated AI applications while leveraging their existing expertise and infrastructure.
+Both the client and our work have had lasting effects beyond this project. The improvements both of us contributed to LangchainRB have made enterprise-grade AI more accessible to the Ruby community. We've shown that organizations heavily invested in Ruby don't need to pivot to Python for AI capabilities—they can build sophisticated AI applications while leveraging their existing expertise and infrastructure.
 
 ## Key learnings
 
