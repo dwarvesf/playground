@@ -12,7 +12,7 @@ authors:
 
 TON (The Open Network) is a blockchain platform originally developed by the team behind Telegram Messenger. By taking advantage of unique sharding technology, Multi-blockchain architecture and Instant Hypercube Routing protocol, TON aims to enable fast transactions and smart contracts with a high level of scalability and security.
 
-To understand what actually happen under these shiny names of technologies, this post will dissect one by one in the simplest way.
+To understand what actually happens under these shiny names of technologies, this post will dissect one by one in the simplest way.
 
 ## Actor model, Everything is a Smart Contract
 
