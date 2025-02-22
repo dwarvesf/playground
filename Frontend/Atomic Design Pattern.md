@@ -14,7 +14,7 @@ date: 2022-06-15
 
 Atomic design is a methodology for crafting design systems with five key fundamental building blocks, which, when combined, promote consistency, modularity, and scalability.
 
-### Why using atomic design
+### Why use atomic design
 
 - Atomic design provides frontend engineers with flexible and consistent designs from the beginning.
 - We can move from the abstract to the concrete thanks to Atomic design. As a result, we can design systems that encourage consistency and scalability while also displaying information in its final context. Additionally, by putting a system together rather than taking it apart, we avoid picking out the best patterns later.
@@ -29,7 +29,7 @@ There are 5 distinct levels of atomic design which are: atoms, molecules, organi
 ### Atoms
 
 - Atoms are the basic building blocks of matter. When applied to web interfaces, they are our `HTML` tags like an `input` or a `button`.
-- These are fairly abstract elements which often not useful on their own but are good references in the context of a pattern if seen on a bigger picture.
+- These are fairly abstract elements which are often not useful on their own but are good references in the context of a pattern if seen on a bigger picture.
 
 ![](assets/atomic-design-pattern_atom-atomic-design.webp)
 
