@@ -35,5 +35,5 @@ The born of `inert` helps to eliminate the need for [[Focus trap | focus trap]] 
 
 #### References
 
-- https://developer.chrome.com/articles/inert/
+- https://web.dev/articles/inert
 - https://patrickhlauke.github.io/aria/demos/modal/index-aria-inert.html
