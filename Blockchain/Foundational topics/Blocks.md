@@ -16,7 +16,7 @@ date: 2022-06-16
 
 ### 1. Define block in the blockchain
 
-A block is thus a permanent store of records that, once written, cannot be altered or removed. A Block has a limited size and transaction to avoid All Block are verified on the blockchain by all nodes and stored on the blockchain Block data are batches of transactions with a hash of the previous block in the chain. This links blocks together (in a chain) because hashes are cryptographically derived from the block data. This prevention fraud, because one change in any block in history would invalidate all the following blocks as all subsequent hashes would change and everyone running the blockchain would notice.
+A block is thus a permanent store of records that, once written, cannot be altered or removed. A Block has a limited size and transaction to avoid All Block are verified on the blockchain by all nodes and stored on the blockchain Block data are batches of transactions with a hash of the previous block in the chain. This links blocks together (in a chain) because hashes are cryptographically derived from the block data. This prevents fraud, because one change in any block in history would invalidate all the following blocks as all subsequent hashes would change and everyone running the blockchain would notice.
 
 ![](assets/blocks_svihd1p.webp)
 
