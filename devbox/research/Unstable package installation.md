@@ -9,16 +9,16 @@ description: An explanation of the challenges with package versioning that lets 
 authors:
   - bievh
 ---
-For example, lets suppose that we have following `Dockerfile`.
+For example, let's suppose that we have the following `Dockerfile`.
 
 ```Dockerfile
 FROM ubuntu:20.04
 RUN apt-get update && apt-get install -y python3
 ```
 
-Imagine that the first time you build your Docker image, the version of Python is 3.8.1. However, today when the latest version of Python is 3.9.1, you want to build Docker image again. Transparently, your two images are different no matter that you are using the same Dockerfile. It means you can’t reproduce the same environment where your application is running.
+Imagine that the first time you build your Docker image, the version of Python is 3.8.1. However, today when the latest version of Python is 3.9.1, you want to build Docker image again. Transparently, your two images are different no matter that you are using the same Dockerfile. It means you can’t reproduce the same environment in which your application is running.
 
-If you are familiar with Docker, it is more than one solution pops into your mind. The easiest way is to specify a specific version to install like the following.
+If you are familiar with Docker, more than one solution pops into your mind. The easiest way is to specify a specific version to install like the following.
 
 ```Dockerfile
 FROM ubuntu:20.04
