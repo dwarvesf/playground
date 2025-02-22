@@ -2,7 +2,7 @@
 tags: writing, story-telling
 ---
 
-In _Mastering the Process: From Idea to Novel_ Elizabeth George suggests that wo ingredients that help understand characters are their **core need** and their **psychopathology** or psychological maneuver.
+In _Mastering the Process: From Idea to Novel_ Elizabeth George suggests that two ingredients that help understand characters are their **core need** and their **psychopathology** or psychological maneuver.
 
 Core needs are emotional, physical, or psychological. The core need grows out of the character analysis; knowing what need is driving the character can help give depth and shading to a character, making him or her multidimensional.
 
