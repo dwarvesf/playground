@@ -275,7 +275,7 @@ We're expanding the system's capabilities in several key areas:
 - **Enhanced Analytics**: Implementation of advanced pattern recognition and trend analysis will improve our predictive capabilities.
 - **Automated Insights**: Deeper AI integration will enable more sophisticated report generation and context understanding.
 
-We also don’t plan to be vendor-locked using entirely Modal. The foundations we’ve layed out to create our landing zones and data lake makes it very easy to swap in-and-out query and API architectures.
+We also don’t plan to be vendor-locked using entirely Modal. The foundations we’ve laid out to create our landing zones and data lake make it very easy to swap in-and-out query and API architectures.
 
 ## Conclusion
 
