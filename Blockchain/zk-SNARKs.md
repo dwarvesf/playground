@@ -124,4 +124,4 @@ description: ZK-SNARKs is a type of zero-knowledge proof that allows one party t
 
 - https://consensys.net/blog/developers/introduction-to-zk-snarks/
 - https://ethereum.org/en/developers/docs/scaling/zk-rollups/
-- https://vitalik.ca/general/2022/06/15/using_snarks.html
+- https://vitalik.eth.limo/general/2022/06/15/using_snarks.html
