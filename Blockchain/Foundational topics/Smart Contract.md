@@ -29,7 +29,7 @@ Smart contracts, also known as smart contracts, are computer programs that opera
 
 - Declare solidity version
 - Declare libraries, interfaces
-- Declare variable
+- Declare variables
 - Declare constructor
 - Processing instructions
 - Save state
@@ -52,14 +52,14 @@ Currently, Ethereum there are many contracts such as tokens, NFT-ERC721, games, 
 
 ![](assets/ezVDghs.png)
 
-## The advance of smart contracts:
+## The advantages of smart contracts:
 
 - Efficiency: Smart contracts promise to automate business processes at a corporate level. This reduces operating costs and saves resources, including the staff needed to oversee complex operations involving multiple companies.
 - Processing speed: Smart contracts help improve the processing speed of processes between many different companies and corporations.
 - Autonomy: Smart contracts are executed automatically by a network and help reduce the need for a 3rd party to manage transactions between companies.
 - Reliability: Smart contracts also leverage blockchain ledger and other distributed ledger technologies to store all the information and operations involved in complex processing after it has been executed presently. This technology also supports automated trading which eliminates human errors and ensures accuracy in contract execution.
 
-## The limitation of smart contracts:
+## The limitations of smart contracts:
 
 - Security issues: Smart contracts play certain important roles in a business involving many parties. However, this technology is still new and hackers are constantly exploiting new attack directions to penetrate. In the early days of Ethereum, hackers hacked and stole a large amount of virtual currency worth $50 million. The IEEE Consortium of Electrical and Electronic Engineers has also expressed concern about the weakness of the tools used to detect vulnerabilities in smart contracts.
 - Integrity: An oracle (a data source that sends event updates) should be protected from hackers creating fake events to trigger the processing of contracts even though they are not allowed. The system needs to be programmed to generate the correct events, which can be quite difficult in complex cases.
