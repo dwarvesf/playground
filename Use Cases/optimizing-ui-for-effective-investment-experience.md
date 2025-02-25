@@ -116,7 +116,7 @@ From research and UI optimization, we have identified several important takeaway
 1. **Good information layout speeds up decision-making**: Investors can understand data faster when charts and information are shown in a clear way.
 2. **Show less information**: By hiding less important data and only showing what's needed, we help users focus better.
 3. **Color and layout choices significantly impact UX**: Even small design adjustments can change how users interpret data and make investment decisions.
-4. **AI in Design workflow**: Automates repetitive tasks to help designers focus on key improvements. It evaluates designs based on industry standards, detects usability issues, and generates predictive heatmaps to improve user engagement.
+4. **AI in design workflow**: Automates repetitive tasks to help designers focus on key improvements. It evaluates designs based on industry standards, detects usability issues, and generates predictive heatmaps to improve user engagement.
 
 ## Conclusion
 
