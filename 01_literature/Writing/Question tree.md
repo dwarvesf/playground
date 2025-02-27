@@ -8,7 +8,7 @@ date: 2022-04-18
 ## What is a question tree?
 The purpose of a question tree is to brainstorm questions and identify research approaches to gather content about the client’s problem space. The idea is to generate a tree outline of important and miscellaneous questions regarding the problem to explore what business domains and which stakeholders to ask in order to answer our questions.
 
-In consulting, this eventually leads into a decision tree to decide critical business decisions, in which may be presented in a deliverable. Question trees can serve as a pre-process step for decision trees, as it helps more in the research process to allow better evaluation of business decisions.
+In consulting, this eventually leads into a decision tree to decide critical business decisions, which may be presented in a deliverable. Question trees can serve as a pre-process step for decision trees, as it helps more in the research process to allow better evaluation of business decisions.
 
 ### What’s the difference between a question tree and a decision tree?
 Decision trees hold polar questions, meaning they mainly branch with yes or no answers. Question trees hold content questions in which are interrogative by nature and elicit specific answers much broader than yes or no.
