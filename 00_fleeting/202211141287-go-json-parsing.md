@@ -2,7 +2,7 @@
 discord_id: hieuvd#4261
 authors:
  - hieuvd
-description: 'TLDR; becareful when using  map[string]interface{} to hold json number value, use custom decoder with newDecoder.UseNumber() to decode the json string.'
+description: 'TLDR; be careful when using  map[string]interface{} to hold json number value, use custom decoder with newDecoder.UseNumber() to decode the json string.'
 title: 'Go JSON parser: number <-> interface'
 discord_channel: engineering
 date: 2022-11-14
@@ -15,7 +15,7 @@ tags:
 
 ### Go JSON parser: number <-> interface
 
-**TLDR**; becareful when using  map[string]interface{} to hold json number value, use custom decoder with newDecoder.UseNumber() to decode the json string.
+**TLDR**; be careful when using  map[string]interface{} to hold json number value, use custom decoder with newDecoder.UseNumber() to decode the json string.
 
 The problem
 ```go
