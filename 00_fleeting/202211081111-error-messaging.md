@@ -16,7 +16,7 @@ What makes a bad error message
 - Passing the blame
 - Generic for no reason
 
-What make a good error message
+What makes a good error message
 - Say what happened and why
 - Provide reassurance
 - Be empathetic
