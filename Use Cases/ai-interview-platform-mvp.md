@@ -19,7 +19,7 @@ Our engineering team collaborated with a confidential HRTech client to create an
 
 ### Our MVP solution
 
-We developed an automated interview system using real-time voice processing to evaluate candidates. By integrating with ElevenLabs’ voice technology, the platform simulates realistic sales conversations and measures performance through consistent AI-driven scoring. Key benefits include:
+We developed an automated interview system using real-time voice processing to evaluate candidates. By integrating with [ElevenLabs](https://elevenlabs.io/)’ voice technology, the platform simulates realistic sales conversations and measures performance through consistent AI-driven scoring. Key benefits include:
 
 - **Faster hiring**: Automated screening accelerates the time-to-hire.
 - **Objective evaluations**: AI-driven scoring removes bias and maintains uniform standards.
@@ -30,15 +30,15 @@ We developed an automated interview system using real-time voice processing to e
 1. **Serverless backend**: A Node.js (Next.js) backend processes interviews and orchestrates AI-based evaluations.
 2. **Real-time voice processing**: Integrations with ElevenLabs’ API handle immediate speech input and feedback.
 3. **Data storage**: TimescaleDB provides scalable, high-performance data management for sessions and analytics.
-4. **Analytics & frontend**: Retool dashboards offer real-time insights, while a Next.js interface ensures a smooth user experience
+4. **Analytics & frontend**: [Retool](https://retool.com/) dashboards offer real-time insights, while a Next.js interface ensures a smooth user experience
 
 ![](assets/ai-interview-architecture.webp)
 
-<p style="text-align: center">Architecture diagram</p>
+<p style="text-align: center; margin-top: 0">Architecture diagram</p>
 
 ![](assets/ai-interview-flow.webp)
 
-<p style="text-align: center">Main flow</p>
+<p style="text-align: center; margin-top: 0">Main flow</p>
 
 ### Screenshots
 
