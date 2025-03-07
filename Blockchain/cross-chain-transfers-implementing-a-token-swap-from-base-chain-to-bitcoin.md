@@ -4,7 +4,7 @@ tags:
   - btc
   - swap
   - blockchain
-title: Cross-Chain Transfers: Implementing a Token Swap from Base Chain to Bitcoin
+title: Implement a Token Swap from the base chain to Bitcoin for cross-chain transactions
 date: 2025-03-07
 description: This guide shows how to implement a token swap from the Base Chain to Bitcoin.
 authors:
