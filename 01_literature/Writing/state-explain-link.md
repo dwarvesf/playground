@@ -14,7 +14,7 @@ State, explain, link is a basic style for organizing and explaining ideas in an 
 
 | Notions | Coverage | Description                                           |
 | ------- | -------- | ----------------------------------------------------- |
-| State   | breadth  | introduce briefly about what the paragraph will cover |
+| State   | breadth  | introduce briefly what the paragraph will cover       |
 | Explain | depth    | go into depth about what you want to cover            |
 | Link    | relation | link a related item such as giving an example         |
 
