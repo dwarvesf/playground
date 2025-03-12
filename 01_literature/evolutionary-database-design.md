@@ -1,15 +1,12 @@
 ---
-tags: 
+tags:
   - software-development
   - database-management
-title: "Evolutionary Database Design: Managing Change and Scaling with the System"
+title: 'Evolutionary Database Design: Managing Change and Scaling with the System'
 date: 2025-03-07
-description: "As systems scale to meet growing demands, databases must evolve alongside them to maintain performance and integrity. This document explores best practices for managing database changes, maintaining knowledge, and ensuring smooth integration. Topics covered include knowledge sharing, repository structuring, continuous integration, and database refactoring, with real-world examples illustrating their application."
+description: 'As systems scale to meet growing demands, databases must evolve alongside them to maintain performance and integrity. This document explores best practices for managing database changes, maintaining knowledge, and ensuring smooth integration. Topics covered include knowledge sharing, repository structuring, continuous integration, and database refactoring, with real-world examples illustrating their application.'
 authors:
   - jim
----
-
-![](assets/evo-db.pdf)
 ---
 
 ## Problem Statement
@@ -20,8 +17,7 @@ As your application scales, demands rise: more users, expanding datasets, and co
 
 If database evolution isn’t carefully managed, your asset becomes a liability. Is your schema outgrowing its design? Are change histories getting lost? Are integrations breaking as services fall out of sync? Refactoring risks could ripple across your ecosystem.
 
-How will you scale your database without sacrificing stability? What strategies will safeguard your growth while keeping risks in check?
-We must tackle these key challenges:
+How will you scale your database without sacrificing stability? What strategies will safeguard your growth while keeping risks in check? We must tackle these key challenges:
 
 - Databases growing beyond initial design assumptions, requiring schema modifications and optimizations.
 
@@ -95,10 +91,9 @@ Refactoring involves updating schema, migrating data, and modifying database acc
 - **Non-breaking changes** (e.g., adding a column) can be implemented without affecting existing services.
 - **Breaking changes** (e.g., splitting tables, enforcing non-null constraints) require transitional phases to prevent failures.
 
-
 ### Example:
 
-A company decides to split the "Orders" table into **Customer\_Orders** and **Product\_Orders**. A transitional phase allows both old and new structures to coexist until all services update their queries.
+A company decides to split the "Orders" table into **Customer_Orders** and **Product_Orders**. A transitional phase allows both old and new structures to coexist until all services update their queries.
 
 ## Summary
 
@@ -107,4 +102,3 @@ Effective database evolution requires structured communication, versioned change
 ## References
 
 - [https://martinfowler.com/articles/evodb.html#DbasCollaborateCloselyWithDevelopers](https://martinfowler.com/articles/evodb.html#DbasCollaborateCloselyWithDevelopers)
-
