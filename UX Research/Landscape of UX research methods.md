@@ -14,7 +14,7 @@ Attitudinal research uncovers what people say, or their stated beliefs; behaviou
 
 ## Qualitative vs quantitative
 
-Qualitative data-gathering generally involves direct observation of the subject, whereas quantitative data-gathering gathers information indirectly through measurement, analytics, or surveys. In general, qualitative methods are used to answer questions of why or how; quantitative method are used to uncover how many or how much.
+Qualitative data-gathering generally involves direct observation of the subject, whereas quantitative data-gathering gathers information indirectly through measurement, analytics, or surveys. In general, qualitative methods are used to answer questions of why or how; quantitative methods are used to uncover how many or how much.
 
 ## Context of use
 
