@@ -24,91 +24,43 @@ Foundry is a blazingly fast, portable, and modular toolkit for Ethereum applicat
 ![alt text](assets/web3-development-with-foundry-00.jpg)
 
 ## Why Not Just Hardhat/Truffle?
-While Hardhat and Truffle are established tools, Foundry offers several compelling advantages:
-
-1. **Performance**: Written in Rust, Foundry executes tests up to 20x faster than JavaScript-based alternatives
-2. **Native Solidity Testing**: Write tests in Solidity instead of JavaScript, reducing context switching
-3. **Debugging Capabilities**: Superior debugging tools with detailed stack traces and gas reports
-4. **Fuzz Testing**: Built-in fuzzing capabilities for robust contract testing
+While Hardhat and Truffle are established tools, Foundry distinguishes itself through its Rust-based architecture, executing tests up to 20x faster than JavaScript alternatives. It enables native Solidity testing, reducing context switching, while providing superior debugging tools with detailed stack traces and gas reports. The built-in fuzzing capabilities ensure robust contract testing.
 
 ![alt text](assets/web3-development-with-foundry-01.jpg)
 
-
 ## Core Benefits of Foundry
 
-1. **Development Speed**
-   - Fast compilation and testing
-   - Native Solidity testing environment
-   - Quick feedback loop for development
+**Development Speed**
+Foundry accelerates development through fast compilation, native Solidity testing, and quick feedback loops.
 
-2. **Modern Developer Experience**
-   - Built-in fuzzing
-   - Powerful debugging tools
-   - Gas optimization features
+**Modern Developer Experience**
+The platform offers built-in fuzzing, powerful debugging tools, and comprehensive gas optimization features.
 
-3. **Flexibility**
-   - Works with existing tools
-   - Supports multiple EVM chains
-   - Easy integration with CI/CD pipelines
+**Flexibility**
+Foundry seamlessly integrates with existing tools, supports multiple EVM chains, and fits naturally into CI/CD pipelines.
 
 ## Dealing with Dependencies and Remapping
 
-Foundry offers multiple approaches to manage dependencies. Here's a comprehensive comparison:
-
-### 1. Git Submodules (Traditional Approach)
+**Git Submodules (Traditional Approach)**
 ```bash
-# Initialize submodules
 forge install OpenZeppelin/openzeppelin-contracts --no-commit
-
-# Update submodules
 git submodule update --init --recursive
 ```
 
-**Pros:**
-- Native Foundry support
-- Version control integration
-- Precise version pinning
-- Recommended by Foundry documentation
-
-**Cons:**
-- Complex submodule management
-- Steeper learning curve for Git submodules
-- Can be cumbersome in CI/CD pipelines
-
-### 2. Package Managers (Modern Approach)
-
-#### Using Bun
+**Modern Package Management with Bun**
 ```bash
-# Initialize project
 bun init
-
-# Add dependencies
 bun add -d @openzeppelin/contracts
 ```
 
-**Pros:**
-- Familiar npm-like workflow
-- Simpler dependency management
-- Better integration with JavaScript tooling
-- Faster installation speeds
-
-**Cons:**
-- Requires additional setup
-- Not officially supported by Foundry
-
-### Remapping Configuration
-
-Regardless of the approach chosen, you'll need to configure remappings. Create a `remappings.txt` file:
-
+Configure remappings in `remappings.txt`:
 ```text:remappings.txt
-# For package manager approach
 @openzeppelin/=node_modules/@openzeppelin/
-...
-...
+ds-test/=lib/forge-std/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
 ```
 
 ![alt text](assets/web3-development-with-foundry-02.jpg)
-
 
 ## Deploying and Testing a Smart Contract
 
@@ -296,41 +248,27 @@ forge script script/GameItems.s.sol \
     -vvvv
 ```
 
-This implementation showcases:
-- Upgradeable ERC-1155 contract using UUPS pattern
-- Comprehensive test suite covering initialization, minting, and transfers
-- Deployment script handling both implementation and proxy contracts
-- Usage of OpenZeppelin's upgradeable contracts
-- Proper access control with `onlyOwner` modifier
+### Deployment and Upgrade Flow
 
 ![alt text](assets/web3-development-with-foundry-03.jpg)
 
 
 ## Limitations
 
-1. **Learning Curve**
+- **Learning Curve**
    - New tooling ecosystem to learn
    - Rust-based architecture might be unfamiliar
    - Different testing paradigm from JavaScript
 
-2. **Ecosystem Maturity**
+- **Ecosystem Maturity**
    - Younger ecosystem compared to Hardhat
    - Fewer plugins and integrations
    - Still evolving best practices
 
-3. **Documentation Gaps**
+- **Documentation Gaps**
    - Some advanced features lack detailed documentation
    - Community resources still growing
 
 ## Conclusion
-
-Foundry represents a significant advancement in Ethereum development tooling, offering superior performance and developer experience. While it has some limitations and a learning curve, the benefits of faster testing, native Solidity testing, and powerful debugging capabilities make it an excellent choice for modern smart contract development.
-
-Key takeaways:
-- Exceptional performance for testing and deployment
-- Native Solidity testing reduces context switching
-- Modern features like fuzzing and detailed gas reports
-- Growing ecosystem with strong community support
-- Successfully integrates with modern package managers like Bun
-
+Foundry represents a significant advancement in Ethereum development tooling. Its superior performance, native Solidity testing, and powerful debugging capabilities make it an excellent choice for modern smart contract development. Despite initial learning curves, teams gain access to exceptional testing speed, comprehensive debugging tools, and seamless integration with modern package managers like Bun.
 For teams willing to invest in learning the tooling, Foundry provides a robust foundation for professional Ethereum development.
