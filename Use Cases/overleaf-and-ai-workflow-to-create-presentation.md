@@ -15,7 +15,7 @@ This blog post introduces an innovative and remarkably efficient workflow that s
 
 ## Overleaf - the collaborative, online LaTeX editor that anyone can use
 
-![Overleaf](./assets/overleaf.png)
+![Overleaf](assets/overleaf.png)
 
 **Overleaf** empowers users to create visually engaging presentations using LaTeX's Beamer class. Its popularity stems from providing simplified access to LaTeX through both visual and code editors, alongside an extensive library of professionally designed templates for academic presentations. Overleaf also facilitates seamless real-time collaboration with features like integrated commenting and in-document chat, and ensures reliable version control to track changes. Furthermore, its unrestricted cloud accessibility allows users to work on their presentations from any location or device. Ultimately, Overleaf ensures academic presentations benefit from LaTeX's impeccable formatting and adherence to rigorous academic standards.
 
@@ -27,7 +27,7 @@ This blog post introduces an innovative and remarkably efficient workflow that s
 
 Here's how you can leverage the synergy between **Dify** and **Overleaf** to revolutionize your academic presentation creation process.
 
-![Workflow](./assets/workflow.png)
+![Workflow](assets/workflow.png)
 
 **Step 1: Content analysis with LLM**
 
