@@ -54,13 +54,16 @@ WITH search_results AS (
 ### 2. Advanced Filtering
 Users can apply filters using special syntax, a feature created by our engineer, @vincent:
 
-- `author:name` to filter by author
-- `tag:topic` to filter by tag
+- `author:name` or `@name` to filter by author
+- `tag:topic` or `#topic` to filter by tag
 - `title:keyword` to filter by title
 
 For example, a user could search for:
 ```
 machine learning tag:AI author:Jane
+```
+```
+#ai @monotykamary
 ```
 
 This query would search for "machine learning" within documents tagged with "AI" and authored by Jane.
