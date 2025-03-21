@@ -16,7 +16,10 @@ authors:
 should_deploy_perma_storage: true
 perma_storage_id: TRzq4jh-vxxd5I93gKHmg_qYVkHF_MlcFCo-rh_6vzY
 should_mint: true
+minted_at: '2025-03-21'
+token_id: '3'
 ---
+
 
 
 ## My workflow with Overleaf and ChatGPT
