@@ -15,6 +15,7 @@ authors:
   - tieubao
 should_deploy_perma_storage: true
 perma_storage_id: TRzq4jh-vxxd5I93gKHmg_qYVkHF_MlcFCo-rh_6vzY
+should_mint: true
 ---
 
 
