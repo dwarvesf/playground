@@ -9,6 +9,7 @@ description: This article shares a workflow for making slide decks with Overleaf
 authors:
   - bievh
   - tieubao
+should_deploy_perma_storage: true
 ---
 
 ## My workflow with Overleaf and ChatGPT
