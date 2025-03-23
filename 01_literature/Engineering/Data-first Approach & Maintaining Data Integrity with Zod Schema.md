@@ -70,7 +70,7 @@ type Product = z.infer<typeof ProductSchema>;
 
 ## Practices for Maintaining Data Integrity with Zod
 
-### 1. Define Single Source of Truth
+### Define Single Source of Truth
 Maintain a centralized schema definition that can be shared across different parts of your application. This ensures consistency and makes updates easier to manage.
 
 ```typescript
@@ -82,7 +82,7 @@ export const UserSchema = z.object({
 export type User = z.infer<typeof UserSchema>;
 ```
 
-### 2. Compose Complex Schemas
+### Compose Complex Schemas
 Break down complex schemas into smaller, reusable components for better maintainability and reusability.
 
 ```typescript
@@ -100,7 +100,7 @@ const UserSchema = z.object({
 });
 ```
 
-### 3. Implement Custom Validations
+### Implement Custom Validations
 Create custom validation rules for specific business requirements.
 
 ```typescript
@@ -113,7 +113,7 @@ const PhoneSchema = z
   }, "Invalid phone number");
 ```
 
-### 4. Error Handling
+### Error Handling
 Implement proper error handling and meaningful error messages.
 
 ```typescript
