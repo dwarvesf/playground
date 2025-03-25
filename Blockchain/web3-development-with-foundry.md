@@ -250,7 +250,7 @@ forge script script/GameItems.s.sol \
 
 ### Deployment and Upgrade Flow
 
-![alt text](assets/web3-development-with-foundry-03.jpg)
+![alt text](assets/web3-development-with-foundry-03.png)
 
 
 ## Limitations
