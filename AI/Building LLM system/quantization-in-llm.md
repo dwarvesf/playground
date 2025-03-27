@@ -48,7 +48,9 @@ In this part, we focus on the asymmetric mode.
 
 The fundamental formula is:
 
-$$q = round(s * w + z)$$
+$$
+q = round(s * w + z)
+$$
 
 where:
 
@@ -73,31 +75,47 @@ The process maps values from higher to lower precision (e.g., `FP32` to `INT8`).
 
 2. **Scale factor calculation**: Scaling factor represent for 1 unit of the original value, how many units of the quantized value it corresponds to.
 
-$$s = \frac{q_{max} - q_{min}}{w_{max} - w_{min}}$$
+$$
+s = \frac{q_{max} - q_{min}}{w_{max} - w_{min}}
+$$
 
 Example calculation:
-$$s = \frac{127-(-128)}{12.654-(-24.43)} = 6.8763$$
+$$
+s = \frac{127-(-128)}{12.654-(-24.43)} = 6.8763
+$$
 
 3. **Zero point calculation**: Zero point is the value that corresponds to the original value of 0.0 in the quantized value range.
 
-$$z = q_{min} - round(s * w_{min})$$
+$$
+z = q_{min} - round(s * w_{min})
+$$
 
 Example calculation:
-$$z = -128 - round(6.8763 * (-24.43)) = 40$$
+$$
+z = -128 - round(6.8763 * (-24.43)) = 40
+$$
 
 1. **Quantization application**:
 
-$$q = round(s * w + z)$$
+$$
+q = round(s * w + z)
+$$
 
 Resulting values:
-$$q = [-128, -100, 41, 86]$$
+$$
+q = [-128, -100, 41, 86]
+$$
 
 5. **De-quantization process**:
 
-$$w = \frac{q - z}{s}$$
+$$
+w = \frac{q - z}{s}
+$$
 
 To reproduce the 1st original value:
-$$w = \frac{-128 - 40}{6.8763} = -24.431743$$
+$$
+w = \frac{-128 - 40}{6.8763} = -24.431743
+$$
 
 You can see there is some difference between the original value and the de-quantized value. This is called **quantization error**. The quantization error is a result of the fact that we are mapping a continuous range of values to a discrete range of values. The quantization error is usually small and can be ignored in most cases. However, it can accumulate over time and cause a significant error in the final result. To minimize the quantization error, we can use a larger quantized range or a higher precision.
 
