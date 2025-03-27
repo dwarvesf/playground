@@ -14,7 +14,12 @@ authors:
   - bievh
   - tieubao
 should_deploy_perma_storage: true
+perma_storage_id: 4GVkldu9UdEN5Yaguw79Z5-nBykrQ-YkeGizSV4_rz0
+minted_at: '2025-03-27'
+token_id: '1'
 ---
+
+
 
 
 
