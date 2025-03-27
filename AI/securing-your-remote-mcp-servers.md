@@ -11,6 +11,8 @@ date: 2025-03-27
 description: 'This guide explores implementing robust authorization for Model Context Protocol (MCP) over Server-Sent Events (SSE) transport, providing a standardized framework for secure AI-to-tool communication while maintaining vendor independence.'
 ---
 
+![](assets/securing-your-remote-mcp-servers-1.webp)
+
 The AI ecosystem is rapidly evolving beyond isolated systems toward integrated networks of AI models and tools. At the core of this evolution lies the **Model Context Protocol (MCP)**, a standardized communication framework that enables AI systems to interact with external tools and services. However, as we build these powerful interconnections, security becomes paramount.
 
 This guide explores how to implement robust authorization for MCP over **Server-Sent Events (SSE)** transport. While the core MCP specification establishes a foundation for AI-to-tool communication, it intentionally leaves security implementation details to system architects. Here, we'll extend the MCP draft authorization guidelines while maintaining vendor independence.

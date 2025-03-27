@@ -11,6 +11,8 @@ date: 2025-03-27
 description: 'A comprehensive guide to implementing granular access control for Model Context Protocol (MCP) servers, allowing organizations to securely expose tool capabilities based on user roles and permissions while maintaining data privacy.'
 ---
 
+![](assets/tool-level-security-for-remote-mcp-servers.webp)
+
 The Model Context Protocol (MCP) has emerged as a powerful standardized framework for AI-to-tool communication, enabling more sophisticated interactions between LLMs and external systems. As organizations deploy MCP servers in production environments, implementing robust access control becomes essential to protect sensitive data and operations while enabling the right level of access for different user groups.
 
 This guide explores how to implement **Role-Based Access Control (RBAC)** for MCP servers, allowing you to grant precisely the right level of access to each user or system while maintaining strong security boundaries around your tools and data.
