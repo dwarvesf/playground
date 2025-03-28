@@ -104,12 +104,12 @@ flowchart TB
     Client[Client AI System] <--> FW
     RES --> Client
 
-    style OA fill:#f96,stroke:#333,stroke-width:2px
-    style SA fill:#f96,stroke:#333,stroke-width:2px
-    style PF fill:#f9f,stroke:#333,stroke-width:2px
-    style PC fill:#f9f,stroke:#333,stroke-width:2px
-    style DAP fill:#f9f,stroke:#333,stroke-width:2px
-    style DF fill:#f9f,stroke:#333,stroke-width:2px
+    style OA fill:#f96,stroke:#333,stroke-width:2px,color:black
+    style SA fill:#f96,stroke:#333,stroke-width:2px,color:black
+    style PF fill:#f9f,stroke:#333,stroke-width:2px,color:black
+    style PC fill:#f9f,stroke:#333,stroke-width:2px,color:black
+    style DAP fill:#f9f,stroke:#333,stroke-width:2px,color:black
+    style DF fill:#f9f,stroke:#333,stroke-width:2px,color:black
 ```
 
 At the heart of this system sits the **tool registry**, a central configuration that maps each MCP tool to its required permissions and data access policies. This registry serves as the single source of truth for all permission checks throughout the system. When tools are requested or executed, **permission enforcement** applies runtime checks to ensure the requesting user has sufficient authorization for the attempted operation. Beyond simply allowing or denying access, **data access policies** implement row-level security and field-level filtering to ensure users only see data elements they're authorized to access, even within results from allowed tools.
