@@ -126,6 +126,85 @@ The foundation of our security model lies in a carefully designed data structure
 
 In this model, we create separate tables for **users**, **roles**, and **permissions**, with junction tables mapping the many-to-many relationships between them. The **users** table captures identity information for authenticated users, while the **roles** table defines named responsibility sets like "Admin" or "Analyst." The **permissions** table defines granular access rights such as "slack:read" or "analytics:execute" that can be combined into roles. The **user_roles** table establishes which users have which roles, while **role_permissions** maps which permissions are included in each role.
 
+```mermaid
+erDiagram
+    USERS {
+        uuid id PK
+        string email
+        string name
+        timestamp created_at
+        timestamp last_login
+    }
+
+    ROLES {
+        uuid id PK
+        string name
+        string description
+        timestamp created_at
+    }
+
+    PERMISSIONS {
+        uuid id PK
+        string name
+        string description
+        string resource_type
+        string action
+        timestamp created_at
+    }
+
+    USER_ROLES {
+        uuid user_id FK
+        uuid role_id FK
+        uuid granted_by FK
+        timestamp granted_at
+    }
+
+    ROLE_PERMISSIONS {
+        uuid role_id FK
+        uuid permission_id FK
+    }
+
+    RESOURCE_ACCESS_RULES {
+        uuid id PK
+        string resource_type
+        string resource_id
+        uuid role_id FK
+        string access_level
+    }
+
+    SECURITY_AUDIT_LOG {
+        uuid id PK
+        string action_type
+        uuid actor_id FK
+        string target_type
+        uuid target_id
+        json details
+        timestamp performed_at
+    }
+
+    TOOLS {
+        uuid id PK
+        string name
+        string description
+        json input_schema
+        json security_metadata
+    }
+
+    TOOL_PERMISSIONS {
+        uuid tool_id FK
+        uuid permission_id FK
+    }
+
+    USERS ||--o{ USER_ROLES : "has"
+    ROLES ||--o{ USER_ROLES : "assigned to"
+    ROLES ||--o{ ROLE_PERMISSIONS : "includes"
+    PERMISSIONS ||--o{ ROLE_PERMISSIONS : "granted to"
+    ROLES ||--o{ RESOURCE_ACCESS_RULES : "controls access to"
+    USERS ||--o{ SECURITY_AUDIT_LOG : "performs"
+    TOOLS ||--o{ TOOL_PERMISSIONS : "requires"
+    PERMISSIONS ||--o{ TOOL_PERMISSIONS : "enables"
+```
+
 Beyond basic role-permission mapping, the **resource_access_rules** table implements fine-grained control over specific resources. This table allows us to define which roles can access particular data elements, implementing row-level security across the system. For example, we can specify that the "Sales" role can only view Slack channels in the sales department, while the "Engineering" role can access engineering channels.
 
 ```sql
