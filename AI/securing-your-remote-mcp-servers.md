@@ -1,14 +1,14 @@
 ---
+title: 'Securing your remote MCP servers'
+date: 2025-03-27
+description: 'This guide explores implementing robust authorization for Model Context Protocol (MCP) over Server-Sent Events (SSE) transport, providing a standardized framework for secure AI-to-tool communication while maintaining vendor independence.'
+authors:
+- monotykamary
+github_id: monotykamary
 tags:
 - ai
 - security
 - mcp
-authors:
-- monotykamary
-github_id: monotykamary
-title: 'Securing your remote MCP servers'
-date: 2025-03-27
-description: 'This guide explores implementing robust authorization for Model Context Protocol (MCP) over Server-Sent Events (SSE) transport, providing a standardized framework for secure AI-to-tool communication while maintaining vendor independence.'
 ---
 
 ![](assets/securing-your-remote-mcp-servers-1.webp)
@@ -17,7 +17,7 @@ The AI ecosystem is rapidly evolving beyond isolated systems toward integrated n
 
 This guide explores how to implement robust authorization for MCP over **Server-Sent Events (SSE)** transport. While the core MCP specification establishes a foundation for AI-to-tool communication, it intentionally leaves security implementation details to system architects. Here, we'll extend the MCP draft authorization guidelines while maintaining vendor independence.
 
-## TL;DR: Speedrunning MCP Auth with SSE Transport
+## TL;DR: Speedrunning MCP auth with SSE transport
 
 Here is a practical implementation of authorization for the Model Context Protocol (MCP) following Anthropic's [specifications](https://spec.modelcontextprotocol.io/specification/draft/basic/authorization/). We use standard OAuth 2.1 with PKCE for authentication while leveraging SSE for transport. The approach uses Bearer token authorization in request headers to secure the connection.
 
@@ -71,13 +71,13 @@ The [typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk) pro
 
 ---
 
-## Understanding the Security Challenge
+## Understanding the security challenge
 
 When deploying MCP in production environments, we need comprehensive security controls to protect access to potentially sensitive tools and data. The unique properties of SSE transport—which establishes an asymmetric communication channel where the server streams data to clients while clients initiate communication through standard HTTP requests—require specialized security considerations.
 
 Our approach creates a vendor-neutral security framework for MCP over SSE by defining precise authorization flows that integrate with existing security standards. We'll provide concrete implementation guidance for both server and client developers while ensuring a frictionless authentication experience for end users.
 
-## Security Architecture Foundation
+## Security architecture foundation
 
 The authorization architecture consists of three principal components working together to establish secure connections:
 
@@ -87,13 +87,13 @@ The authorization architecture consists of three principal components working to
 
 The MCP Server functions in a dual role as both an **OAuth Resource Server** that consumes access tokens and potentially an **Authorization Server** that issues tokens. For organizations with existing identity infrastructure, the MCP Server may additionally act as an **OAuth Client** to external identity providers, creating a federated security model.
 
-## Building the Connection Pipeline
+## Building the connection pipeline
 
 The cornerstone of our implementation is a dedicated SSE endpoint that functions as the primary communication channel between clients and tools. This endpoint accepts standard HTTP requests to initiate connections, then transitions to a persistent stream for event delivery.
 
 When a client makes its initial connection request, the server performs comprehensive authorization validation, verifying the presence and validity of the provided access token. After successful authentication, the server maintains a persistent connection, allowing bidirectional communication through a combination of the SSE event stream and separate HTTP endpoints for command submission.
 
-## Implementing OAuth 2.1 Authorization Flow
+## Implementing OAuth 2.1 authorization flow
 
 Our security model implements the **OAuth 2.1** authorization framework with **PKCE (Proof Key for Code Exchange)** enhancement to protect against authorization code interception attacks. The complete authorization sequence unfolds through seven distinct stages:
 
@@ -107,7 +107,7 @@ Our security model implements the **OAuth 2.1** authorization framework with **P
 
 This approach creates a secure channel while maintaining compatibility with existing OAuth infrastructure and providing a smooth user experience.
 
-## Server Implementation
+## Server implementation
 
 Let's examine a functional implementation of the authorization server using Node.js and Express:
 
@@ -281,7 +281,7 @@ app.listen(3000, () => {
 
 This implementation provides a foundation for secure MCP communication. The server exposes essential OAuth endpoints while maintaining the stateful connections needed for SSE transport. When deployed in production environments, you would enhance this implementation with persistent storage, proper user authentication interfaces, and additional security hardening.
 
-## Client Implementation
+## Client implementation
 
 The client component of our authorization system must handle the OAuth flow, manage tokens securely, and maintain persistent connections. Here's how we can implement a robust MCP client using the Mastra framework:
 
@@ -509,7 +509,7 @@ class AuthenticatedMCPClient {
 
 This client implementation handles the complete OAuth flow, including PKCE security, token management, and browser-based authentication. Once connected, it provides access to the Mastra API for interacting with the available MCP tools.
 
-## Integrating with Existing Identity Systems
+## Integrating with existing identity systems
 
 Many organizations maintain existing identity management systems which they wish to leverage for MCP authorization. The MCP Server can be designed to function as an **OAuth client** to external identity providers, creating a federation pattern. This architecture establishes a two-level authorization hierarchy where the MCP Server delegates the authentication to external providers while maintaining control over MCP-specific permissions.
 
@@ -517,7 +517,7 @@ When implementing this federated model, the MCP client initiates the standard OA
 
 This approach enables MCP Server administrators to leverage existing enterprise identity infrastructure while maintaining granular control over MCP-specific permissions and access policies.
 
-## Security Considerations
+## Security considerations
 
 Implementing a robust MCP authorization system requires attention to several critical security aspects:
 
@@ -533,7 +533,7 @@ Implementing a robust MCP authorization system requires attention to several cri
 
 **Audit logging** provides essential visibility into authentication events for security monitoring. Each authentication attempt, token issuance, token validation, and connection establishment should generate audit records with appropriate detail.
 
-## Deployment Considerations
+## Deployment considerations
 
 A production-ready MCP Server must address several critical infrastructure concerns:
 
@@ -545,7 +545,7 @@ A production-ready MCP Server must address several critical infrastructure conce
 
 **User management** typically integrates with existing organizational identity systems. This integration must account for user provisioning, deprovisioning, and permission changes that occur in the primary identity system.
 
-## Conclusion
+## Building the secure AI-tool bridge
 
 By implementing this authorization framework for MCP over SSE, you establish a secure foundation for AI-to-tool communication that balances robust security with practical implementation requirements. The standardized approach enables seamless integration with existing identity infrastructure while maintaining the flexibility needed in diverse deployment environments.
 
