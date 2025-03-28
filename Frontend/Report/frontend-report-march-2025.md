@@ -4,7 +4,7 @@ tags:
   - market-report
 title: "Frontend Report March 2025"
 short_title: "March 2025"
-description: "March 2025 brings critical frontend updates! Learn about the Next.js security exploit you must patch nows. Explore TypeScript's upcoming 10x speed boost with Corsa, React Router's game-changing middleware, and why prefetching can surprisingly slow down your site. Plus: CSS functions are finally here, Node.js is dropping Corepack, and TanStack Start finds an official deployment home!"
+description: "March 2025 brings critical frontend updates! Learn about the Next.js security exploit you must patch nows. Explore TypeScript's upcoming 10x speed boost with Corsa, React Router's game-changing middleware, and why prefetching can surprisingly slow down your site. Plus: CSS functions are finally here, new in Chrome 133, Node.js is dropping Corepack, and TanStack Start finds an official deployment home!"
 date: 2025-03-31
 authors:
   - hthai2201
@@ -20,13 +20,13 @@ Most React libraries share a similar architecture: a core with the main logic an
 
 Redux might be holding your app back! Most **state** is actually API data better handled with caching tools. Modern React can handle complex UI state with useState and custom hooks - no global store needed. Skip the boilerplate and complexity; your team will thank you when they don't have to trace actions through multiple files anymore.
 
-### [Beyond React.memo: Smart performance optimization that actually works](https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimization/)
+### [Use React 19's cache() to kill waterfall fetching](https://aurorascharff.no/posts/avoiding-server-component-waterfall-fetching-with-react-19-cache/)
 
-Stop slapping React.memo everywhere! The real performance win comes from better component structure - move state down and use composition to prevent re-render cascades. The secret weapon? The children prop prevents unnecessary re-renders by preserving element references.
+React 19's cache() API for Server Components caches data fetches/computations per render, preventing redundant requests. This reduces data coupling between components and enables data preloading to avoid waterfall fetching, improving performance. Use cache() for custom data fetching functions (like database calls), as the built-in fetch() API in Next.js already handles caching
 
 ### Quick links
 
-- [Use React 19's cache() to kill waterfall fetching](https://aurorascharff.no/posts/avoiding-server-component-waterfall-fetching-with-react-19-cache/)
+- [Beyond React.memo: Smart performance optimization that actually works](https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimization/)
 - [The URL: React's underrated state manager](https://iamsahaj.xyz/blog/react-state-in-the-url/)
 - [React: The unexpected perfect engine for LLM workflows](https://www.gensx.com/blog/why-react-is-the-best-backend-workflow-engine)
 - [Server Actions with Toast: React's useActionState explained](https://www.robinwieruch.de/react-server-actions-useactionstate-toast/)
@@ -51,7 +51,6 @@ Sometimes the popular choice isn't right! This team abandoned Next.js and found 
 
 ### Quick links
 
-- [Next.js vs TanStack: The framework showdown](https://www.kylegill.com/essays/next-vs-tanstack)
 - [Vercel's Fluid Compute: How it slashes AI costs](https://vercel.com/blog/how-fluid-compute-works-on-vercel)
 - [How Preply boosted INP without App Router](https://medium.com/preply-engineering/how-preply-improved-inp-on-a-next-js-application-without-react-server-components-and-app-router-491713149875)
 
@@ -112,9 +111,9 @@ React Router v7 introduces middleware - a game-changing approach to handling rou
 
 TypeScript 5.8 enhances code checks with granular return expression analysis, improving bug detection. It boosts Node.js ESM/CJS interop under `--module nodenext`. The `--erasableSyntaxOnly` flag aids Node.js direct TS execution
 
-### [DuckDB UI: Your local data playground is here!](https://duckdb.org/2025/03/12/duckdb-ui.html)
+### [Chrome 133: Enhanced attr() for styling any CSS property](https://css-tricks.com/chrome-133-goodies/)
 
-DuckDB has released a new local web UI, providing an easy-to-use alternative to the CLI for querying, exploring, and managing DuckDB databases.
+Chrome 133 enhances CSS with two main features: `attr()` for all properties and scroll state container queries. The `attr()` function can now use HTML attribute values to style any CSS property, not just content. This includes specifying data types and fallback values. Additionally, container queries can now style elements based on their scroll state (e.g., "stuck", "snapped") within a defined container. This allows dynamic styling of elements like sticky headers
 
 ### Quick links
 
