@@ -23,7 +23,7 @@ There may be intonation or inflections that are needed for certain punctuation, 
 
 > How similar is it to languages I already understand? What will help and what will interfere? (Will acquisition erase a previous language? Can I borrow structures without fatal interference like Portuguese after Spanish?)
 
-The idea of finding similarities is to also help acquire fluency faster while also identifying what key differences that should we look out for.
+The idea of finding similarities is to also help acquire fluency faster while also identifying what the key differences that we should look out for.
 
 > All of which answer: How difficult will it be, and how long would it take to become functionally fluent?
 
