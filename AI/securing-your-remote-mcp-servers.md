@@ -85,7 +85,56 @@ The authorization architecture consists of three principal components working to
 2. The **MCP Server** delivers MCP tools and capabilities, exposing functionality through a standardized interface.
 3. The **Authorization Server** implements OAuth 2.1 compliance, authenticating users and issuing security tokens.
 
+```
++----------+                               +---------------+
+|          |                               |               |
+|          |---(A) Initial Connection----->|               |
+|          |                               |               |
+|          |<--(B) 401 Unauthorized------  |               |
+|          |                               |               |
+|          |---(C) /authorize (Browser)--->|               |
+|  MCP     |                               |  MCP Server   |
+|  Client  |<--(D) Auth Code-------------  |               |
+|          |                               |               |
+|          |---(E) Token Exchange--------->|               |
+|          |                               |               |
+|          |<--(F) Access Token----------  |               |
+|          |                               |               |
+|          |---(G) Connect with Token----->|               |
+|          |                               |               |
++----------+                               +---------------+
+```
+
 The MCP Server functions in a dual role as both an **OAuth Resource Server** that consumes access tokens and potentially an **Authorization Server** that issues tokens. For organizations with existing identity infrastructure, the MCP Server may additionally act as an **OAuth Client** to external identity providers, creating a federated security model.
+
+```mermaid
+sequenceDiagram
+    participant B as User-Agent (Browser)
+    participant C as Client
+    participant M as MCP Server
+
+    C->>M: GET /.well-known/oauth-authorization-server
+    alt Server Supports Discovery
+        M->>C: Authorization Server Metadata
+    else No Discovery
+        M->>C: 404 (Use default endpoints)
+    end
+
+    alt Dynamic Client Registration
+        C->>M: POST /register
+        M->>C: Client Credentials
+    end
+
+    Note over C: Generate PKCE Parameters
+    C->>B: Open browser with authorization URL + code_challenge
+    B->>M: Authorization Request
+    Note over M: User /authorizes
+    M->>B: Redirect to callback with authorization code
+    B->>C: Authorization code callback
+    C->>M: Token Request + code_verifier
+    M->>C: Access Token (+ Refresh Token)
+    C->>M: API Requests with Access Token
+```
 
 ## Building the connection pipeline
 
@@ -104,6 +153,26 @@ Our security model implements the **OAuth 2.1** authorization framework with **P
 5. The client exchanges this code for access and refresh tokens.
 6. The client establishes an authenticated SSE connection using the access token.
 7. Throughout the connection lifetime, the client monitors token expiration and refreshes credentials proactively.
+
+```mermaid
+sequenceDiagram
+    participant B as User-Agent (Browser)
+    participant C as Client
+    participant M as MCP Server
+
+    C->>M: MCP Request
+    M->>C: HTTP 401 Unauthorized
+    Note over C: Generate code_verifier and code_challenge
+    C->>B: Open browser with authorization URL + code_challenge
+    B->>M: GET /authorize
+    Note over M: User logs in and authorizes
+    M->>B: Redirect to callback URL with auth code
+    B->>C: Callback with authorization code
+    C->>M: Token Request with code + code_verifier
+    M->>C: Access Token (+ Refresh Token)
+    C->>M: MCP Request with Access Token
+    Note over C,M: Begin standard MCP message exchange
+```
 
 This approach creates a secure channel while maintaining compatibility with existing OAuth infrastructure and providing a smooth user experience.
 
@@ -282,6 +351,22 @@ app.listen(3000, () => {
 This implementation provides a foundation for secure MCP communication. The server exposes essential OAuth endpoints while maintaining the stateful connections needed for SSE transport. When deployed in production environments, you would enhance this implementation with persistent storage, proper user authentication interfaces, and additional security hardening.
 
 ## Client implementation
+
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant S as Server
+
+    C->>S: GET /.well-known/oauth-authorization-server
+    alt Discovery Success
+        S->>C: 200 OK + Metadata Document
+        Note over C: Use endpoints from metadata
+    else Discovery Failed
+        S->>C: 404 Not Found
+        Note over C: Fall back to default endpoints
+    end
+    Note over C: Continue with authorization flow
+```
 
 The client component of our authorization system must handle the OAuth flow, manage tokens securely, and maintain persistent connections. Here's how we can implement a robust MCP client using the Mastra framework:
 

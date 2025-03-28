@@ -71,6 +71,47 @@ MCP servers often serve as gateways to powerful capabilities—from querying dat
 
 Building upon the OAuth authentication framework described in our previous guide, we need to implement a comprehensive RBAC system that operates across multiple dimensions of security. The foundation begins with **role definitions** – named collections of permissions such as "Admin," "Developer," or "Analyst" that map to organizational responsibilities. These roles contain **permissions** that represent fine-grained access controls mapped to specific tool operations and data access patterns.
 
+```mermaid
+flowchart TB
+    subgraph "Security Perimeter"
+        direction TB
+        subgraph "Network Security"
+            FW[Firewall] --> VPN[VPN Gateway]
+            VPN --> LB[Load Balancer]
+        end
+
+        subgraph "MCP Server"
+            LB --> OA[OAuth Authentication]
+            OA --> SA[Session Authorization]
+            SA --> TR[Tool Registry]
+        end
+
+        subgraph "Tool Access Control"
+            TR --> TE{Tools Endpoint}
+            TE --> |List Request| PF[Permission Filter]
+            TE --> |Call Request| PC[Permission Checker]
+            PC --> |Authorized| DAP[Data Access Policy]
+            PC --> |Unauthorized| RJ[Reject Request]
+        end
+
+        subgraph "Backend Resources"
+            DAP --> |Filtered Request| BE[Backend Services]
+            BE --> |Raw Response| DF[Data Filter]
+            DF --> |Filtered Response| RES[Response Handler]
+        end
+    end
+
+    Client[Client AI System] <--> FW
+    RES --> Client
+
+    style OA fill:#f96,stroke:#333,stroke-width:2px
+    style SA fill:#f96,stroke:#333,stroke-width:2px
+    style PF fill:#f9f,stroke:#333,stroke-width:2px
+    style PC fill:#f9f,stroke:#333,stroke-width:2px
+    style DAP fill:#f9f,stroke:#333,stroke-width:2px
+    style DF fill:#f9f,stroke:#333,stroke-width:2px
+```
+
 At the heart of this system sits the **tool registry**, a central configuration that maps each MCP tool to its required permissions and data access policies. This registry serves as the single source of truth for all permission checks throughout the system. When tools are requested or executed, **permission enforcement** applies runtime checks to ensure the requesting user has sufficient authorization for the attempted operation. Beyond simply allowing or denying access, **data access policies** implement row-level security and field-level filtering to ensure users only see data elements they're authorized to access, even within results from allowed tools.
 
 This architecture creates a defense-in-depth approach where multiple security layers work in concert. Initially, OAuth authentication establishes the user's identity with confidence. Once authenticated, role assignments determine which permissions the user holds within the system. During operation, permission checks filter which tools are exposed to the user through the ListTools endpoint. Finally, when tools are executed, data access policies restrict which specific data elements are visible within the tool results.
