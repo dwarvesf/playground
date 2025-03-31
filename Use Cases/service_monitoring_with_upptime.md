@@ -72,42 +72,7 @@ Upptime uses several GitHub actions workflows (located in `.github/workflows/`) 
 
 ## 3. Workflow and data flow diagram
 
-```mermaid
-graph LR
-    subgraph "Configuration & Secrets"
-        A[".upptimerc.yml"] --> B{GitHub Actions<br>Workflows};
-        C["GitHub Secrets<br>(Sensitive URLs)"] --> B;
-    end
-
-    subgraph "Monitoring & Data Storage (Repo - main branch)"
-        B -- "Run Checks<br>(uptime.yml)" --> D["history/ files<br>(Status Data)"];
-        B -- "Generate Summary<br>(summary.yml)" --> E["history/summary.json"];
-        B -- "Update Readme<br>(summary.yml)" --> F["README.md"];
-    end
-
-    subgraph "Status Page Generation & Deployment"
-        D --> G{Build & Deploy Site<br>(site.yml)};
-        E --> G;
-        H["assets/"] --> G;
-        G -- "Deploy" --> I["gh-pages branch<br>(Static Files)"];
-    end
-
-    subgraph "Viewing the Status Page"
-        J[User Browser] -- "Visits<br>status.d.foundation" --> K["Live Site (Served from gh-pages)"];
-        K -- "Fetches Data<br>(via Proxy)" --> I;
-    end
-
-    %% Style - Optional, can make boxes clearer
-    classDef repo fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef action fill:#ccf,stroke:#333,stroke-width:2px;
-    classDef deploy fill:#cfc,stroke:#333,stroke-width:2px;
-    classDef user fill:#ffc,stroke:#333,stroke-width:2px;
-
-    class A,C,D,E,F,H,I repo;
-    class B,G action;
-    class I deploy;
-    class J,K user;
-```
+![alt text](assets/service_monitoring_with_upptime.png)
 
 ## 4. How the static status page gets data
 
