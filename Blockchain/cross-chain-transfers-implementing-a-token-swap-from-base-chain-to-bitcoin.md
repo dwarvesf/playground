@@ -4,7 +4,7 @@ tags:
   - btc
   - swap
   - blockchain
-title: Implement a Token Swap from the base chain to Bitcoin for cross-chain transactions
+title: Implement a Token Swap from the Base chain to Bitcoin for cross-chain transactions
 date: 2025-03-07
 description: This guide shows how to implement a token swap from the Base Chain to Bitcoin.
 authors:
@@ -42,16 +42,8 @@ The backend regularly checks events on the Swap Contract to detect your swap req
 ![alt text](assets/cross-chain-transfers-implementing-a-token-swap-from-base-chain-to-bitcoin-1.png)
 
 ## How the Price Is Set
-An oracle determines the swap price by evaluating:
 
-**Circulating Supply of ICY**: The total number of ICY tokens still available. As more tokens are burned, this supply shrinks, which may influence the price.
-
-**Available Bitcoin**: The amount of Bitcoin in the treasury wallet ready for swaps.
-
-The oracle uses this information to calculate a fair amount of Bitcoin for your ICY tokens.
-
-### Adjusting for Bitcoin Price Changes
-When Bitcoin’s market price drops, the system adjusts to keep the swap fair. Additional Bitcoin is deposited into the treasury wallet, updating the internal swap price. This ensures you receive the right amount of Bitcoin, even if its value decreases.
+For more details on how the price is set, please refer to the [How much is your ICY worth](https://memo.d.foundation/playbook/community/how-to-swap-icy-to-btc-copy/) guide.
 
 ## Conclusion
 This process uses specialized tools and steps to securely swap ICY tokens for Bitcoin, overcoming the challenges of their different blockchain systems while maintaining fairness in pricing.
