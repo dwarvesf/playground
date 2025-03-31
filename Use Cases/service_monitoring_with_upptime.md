@@ -1,6 +1,6 @@
 ---
 title: 'Secure and transparent uptime monitoring with Upptime and GitHub secrets'
-date: 2025-31-03
+date: 2025-03-31
 tags:
   - monitoring
   - uptime
