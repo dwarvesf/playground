@@ -79,8 +79,5 @@ Upptime uses several GitHub actions workflows (located in `.github/workflows/`) 
 1.  A user visits `status.d.foundation`.
 2.  The browser loads the static HTML, CSS, and JavaScript from the `gh-pages` branch (served by GitHub Pages).
 3.  The site's JavaScript needs uptime data (e.g., `summary.json`) to display status.
-4.  It makes requests to the configured `apiBaseUrl`: `https://proxy.status.d.foundation`.
-5.  The proxy service receives these requests.
-6.  The proxy fetches the corresponding files (like `/history/summary.json`) from the `gh-pages` branch of the `dwarvesf/upptime` repository.
-7.  The proxy returns the file content to the browser's JavaScript.
-8.  The JavaScript parses the data and dynamically updates the status page.
+4.  It makes requests to the `https://api.github.com/` and `https://raw.githubusercontent.com/` endpoints to fetch the required data.
+5.  The JavaScript parses the data and dynamically updates the status page.
