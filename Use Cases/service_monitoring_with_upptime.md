@@ -57,7 +57,7 @@ i18n:
 
 *   `owner`/`repo`: Identifies the repository.
 *   `sites`: Lists services to monitor. Public URLs can be listed directly.
-*   `status-website`: Configures the generated static status page, including the custom domain (`status.d.foundation`) and the `apiBaseUrl` used for data fetching.
+*   `status-website`: Configures the generated static status page, including the custom domain (`status.d.foundation`).
 *   `runner: self-hosted`: Indicates reliance on your own infrastructure for running checks.
 
 ## 2. GitHub actions workflow overview
