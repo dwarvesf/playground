@@ -5,7 +5,7 @@ tags:
   - foundry
   - blockchain
 title: Web3 Development with Foundry
-date: 2025-03-19
+date: 2025-04-01
 description: Provides a comprehensive guide to Web3 development using Foundry, a modern, Rust-based toolkit for Ethereum smart contract development.
 authors:
   - haongo1
@@ -23,26 +23,28 @@ Foundry is a blazingly fast, portable, and modular toolkit for Ethereum applicat
 
 ![alt text](assets/web3-development-with-foundry-00.jpg)
 
-## Why others not using Hardhat ? 
-While Hardhat and Truffle are established development frameworks with strong ecosystems, Foundry brings significant advantages that make it worth considering as your primary Ethereum development environment.
+## Why others not using Hardhat ?
+Foundry's Rust-based architecture makes testing much faster than JavaScript alternatives. Security teams and auditors prefer working directly in Solidity without translation layers. The framework's adoption has grown quickly in 2024, especially for high-value contracts where performance and reliability matter.
 
-According to recent developer reports and benchmarks, Foundry executes tests substantially faster than JavaScript alternatives thanks to its Rust-based architecture, making it ideal for projects requiring rapid iteration cycles. The framework's native Solidity testing approach has gained significant traction among security researchers and auditors who prefer working directly in the contract language without translation layers that can introduce subtle bugs. Foundry has seen remarkable adoption growth in 2024, becoming the preferred choice for developers conducting advanced smart contract analysis, auditing, and performance-critical applications. The streamlined, terminal-based workflow appeals to developers who value efficiency and prefer working "closer to the metal" without the overhead of JavaScript frameworks. Security teams particularly value Foundry's testing capabilities and deterministic environment when working on high-value contracts where reliability is paramount.
+Foundry's terminal-based workflow cuts out JavaScript overhead, making it perfect for developers who want to work closer to the metal. Security teams love its deterministic environment when dealing with complex contracts.
 
 ![alt text](assets/web3-development-with-foundry-01.jpg)
 
 ## Why we not using Hardhat ?
-We're moving to Foundry because Hardhat doesn't support TypeScript with ESModules, a critical limitation for our modern development stack. According to Hardhat's official documentation, "Hardhat doesn't support ESM in TypeScript projects," forcing developers to use outdated CommonJS modules when working with TypeScript. This restriction creates significant friction in our development workflow since our frontend and other services already use ESM, leading to inconsistent module systems across our codebase. Foundry eliminates this pain point with its language-agnostic approach, allowing our team to maintain a consistent ESM-based architecture.
+Hardhat's lack of ESM support in TypeScript projects forced us to use outdated CommonJS modules. Since our frontend and services already use ESM, this created unnecessary friction in our development workflow. Foundry's language-agnostic approach lets us maintain a consistent ESM-based architecture across our entire stack.
 
-## Core Benefits of Foundry
-**Development Speed**: Foundry accelerates development through fast compilation, native Solidity testing, and quick feedback loops, with benchmarks showing it's consistently 1.5-11x faster than Hardhat and up to 335x faster than Dapptools. 
+## Core benefits of Foundry
+**Development Speed**: Foundry accelerates development through fast compilation, native Solidity testing, and quick feedback loops, with benchmarks showing it's consistently 1.5-11x faster than Hardhat and up to 335x faster than Dapptools. 
 
-The platform offers **Modern Developer Experience** with built-in fuzzing that can run 10,000 tests in seconds to find edge cases, powerful debugging tools for precise error identification, and comprehensive gas optimization features that help create efficient contracts.
+The platform offers **Modern Developer Experience** with built-in fuzzing that can run 10,000 tests in seconds to find edge cases, powerful debugging tools for precise error identification, and comprehensive gas optimization features that help create efficient contracts.
 
-For **Flexibility**, Foundry seamlessly integrates with existing toolchains while supporting multiple EVM chains through its comprehensive toolkit consisting of Forge (for testing), Cast (for contract interaction), and Anvil (local Ethereum node), making it adaptable to various project requirements and easily incorporated into CI/CD pipelines for automated testing and deployment.
+For **Flexibility**, Foundry seamlessly integrates with existing toolchains while supporting multiple EVM chains through its comprehensive toolkit consisting of Forge (for testing), Cast (for contract interaction), and Anvil (local Ethereum node), making it adaptable to various project requirements and easily incorporated into CI/CD pipelines for automated testing and deployment.
+
+In our projects, we've seen these benefits firsthand. Our team uses Foundry's fast testing to catch issues early in development, while the native Solidity testing helps us write more accurate tests. The gas optimization features have helped us reduce deployment costs by up to 30% in some cases. We particularly value the deterministic environment when working on complex DeFi contracts where every gas optimization matters.
 
 ## What we actually do?
 
-### Dealing with Dependencies and Remapping
+### Dealing with dependencies and remapping
 
 **Git Submodules (Traditional Approach)**
 ```bash
@@ -50,7 +52,7 @@ forge install OpenZeppelin/openzeppelin-contracts --no-commit
 git submodule update --init --recursive
 ```
 
-**Modern Package Management with Bun**
+**Modern package management with Bun**
 ```bash
 bun init
 bun add -d @openzeppelin/contracts
@@ -67,7 +69,12 @@ forge-std/=lib/forge-std/src/
 
 ### Deploying and Testing a Smart Contract
 
-**Contract Implementation**
+We'll build an upgradeable ERC-1155 contract for game items (GOLD, SILVER, SWORD, SHIELD) using Foundry. This example shows how to:
+- Implement and test smart contracts
+- Set up deployment scripts
+- Handle contract upgrades using the UUPS upgrade pattern
+
+**Implement a basic ERC-1155 contract**
 
 First, let's create an upgradeable ERC-1155 contract:
 
@@ -119,7 +126,7 @@ contract GameItems is Initializable, ERC1155Upgradeable, OwnableUpgradeable, UUP
 }
 ```
 
-**Testing Implementation**
+**Writing tests for our contract**
 
 Create comprehensive tests for the contract:
 
@@ -196,7 +203,7 @@ contract GameItemsTest is Test {
 }
 ```
 
-**Deployment Script**
+**Add a deployment script**
 
 Create a deployment script that handles both the implementation and proxy deployment:
 
@@ -237,7 +244,7 @@ contract GameItemsScript is Script {
 }
 ```
 
-**Deployment Commands**
+**Run the deployment**
 
 ```bash
 # Deploy to local network
@@ -251,17 +258,16 @@ forge script script/GameItems.s.sol \
     -vvvv
 ```
 
-**Deployment and Upgrade Flow**
+**Contract Lifecycle: From Development to Deployment**
 
 ![alt text](assets/web3-development-with-foundry-03.png)
-
 
 ## Limitations
 Despite Foundry's impressive performance, it faces several significant limitations. The framework lacks multi-network configuration in a single file, making deployment across various chains more cumbersome than with Hardhat's streamlined approach. Foundry's debugging capabilities are more limited than Truffle's native debugger with its breakpoints and step-in/out functionality, requiring developers to rely heavily on console logs for troubleshooting. The plugin ecosystem remains significantly smaller than Hardhat's extensive library of integrations, which can slow development when specific tooling is needed.
 
 Additionally, Foundry requires writing tests in Solidity rather than JavaScript/TypeScript, creating a steeper learning curve for developers from web backgrounds and those already familiar with JavaScript testing frameworks. The documentation, while improving, remains less comprehensive than Hardhat's, with certain advanced features lacking detailed explanations and community resources still developing.
 
-## Our Assessment
+## Our assessment
 Foundry represents a significant advancement in Ethereum development tooling. Its superior performance, native Solidity testing, and powerful debugging capabilities make it an excellent choice for modern smart contract development. Despite initial learning curves, teams gain access to exceptional testing speed, comprehensive debugging tools, and seamless integration with modern package managers like Bun.
 
 After struggling with Hardhat's ESModule limitations in our TypeScript stack for months, our team made the switch to Foundry. The transition required investment—rewriting tests in Solidity instead of JavaScript wasn't trivial, and we missed some familiar plugins initially. However, the performance gains were immediate and substantial; our test suite execution time dropped from 7 minutes to under 40 seconds. This transformed our development workflow, enabling much faster iteration cycles.
