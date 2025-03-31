@@ -46,6 +46,8 @@ In our projects, we've seen these benefits firsthand. Our team uses Foundry's fa
 
 ### Dealing with dependencies and remapping
 
+![alt text](assets/web3-development-with-foundry-02.jpg)
+
 **Git Submodules (Traditional Approach)**
 ```bash
 forge install OpenZeppelin/openzeppelin-contracts --no-commit
@@ -65,9 +67,7 @@ ds-test/=lib/forge-std/lib/ds-test/src/
 forge-std/=lib/forge-std/src/
 ```
 
-![alt text](assets/web3-development-with-foundry-02.jpg)
-
-### Deploying and Testing a Smart Contract
+### Deploying and testing a Smart Contract
 
 We'll build an upgradeable ERC-1155 contract for game items (GOLD, SILVER, SWORD, SHIELD) using Foundry. This example shows how to:
 - Implement and test smart contracts
@@ -263,13 +263,11 @@ forge script script/GameItems.s.sol \
 ![alt text](assets/web3-development-with-foundry-03.png)
 
 ## Limitations
-Despite Foundry's impressive performance, it faces several significant limitations. The framework lacks multi-network configuration in a single file, making deployment across various chains more cumbersome than with Hardhat's streamlined approach. Foundry's debugging capabilities are more limited than Truffle's native debugger with its breakpoints and step-in/out functionality, requiring developers to rely heavily on console logs for troubleshooting. The plugin ecosystem remains significantly smaller than Hardhat's extensive library of integrations, which can slow development when specific tooling is needed.
+While Foundry shines in performance, it has its drawbacks. The lack of multi-network config files makes cross-chain deployments more tedious than Hardhat. The debugging tools, though functional, can't match Truffle's step-by-step debugger. We've also felt the smaller plugin ecosystem - you'll often need to build custom tooling that would be readily available in Hardhat.
 
-Additionally, Foundry requires writing tests in Solidity rather than JavaScript/TypeScript, creating a steeper learning curve for developers from web backgrounds and those already familiar with JavaScript testing frameworks. The documentation, while improving, remains less comprehensive than Hardhat's, with certain advanced features lacking detailed explanations and community resources still developing.
+Writing tests in Solidity instead of JavaScript creates a steeper learning curve, especially for web developers on our team. The docs are improving but still leave gaps around advanced features, and community resources are still catching up to Hardhat's mature ecosystem.
 
 ## Our assessment
-Foundry represents a significant advancement in Ethereum development tooling. Its superior performance, native Solidity testing, and powerful debugging capabilities make it an excellent choice for modern smart contract development. Despite initial learning curves, teams gain access to exceptional testing speed, comprehensive debugging tools, and seamless integration with modern package managers like Bun.
+After months of wrestling with Hardhat's ESM limitations in our TypeScript stack, switching to Foundry was a game-changer. Sure, rewriting our JavaScript tests in Solidity took time, and we missed some familiar plugins. But the payoff was worth it - our test suite now runs in 40 seconds instead of 7 minutes.
 
-After struggling with Hardhat's ESModule limitations in our TypeScript stack for months, our team made the switch to Foundry. The transition required investment—rewriting tests in Solidity instead of JavaScript wasn't trivial, and we missed some familiar plugins initially. However, the performance gains were immediate and substantial; our test suite execution time dropped from 7 minutes to under 40 seconds. This transformed our development workflow, enabling much faster iteration cycles.
-
-The debugging experience, while different, ultimately proved more powerful for smart contract development. We found writing tests in the same language as our contracts led to more precise tests and fewer translation errors. For teams willing to invest in learning the tooling, Foundry provides a robust foundation for professional Ethereum development that pays dividends in development velocity and contract quality.
+Writing tests in Solidity turned out to be a blessing in disguise. It eliminated translation errors and made our tests more precise. For teams ready to invest in learning Foundry, it offers a rock-solid foundation that pays off in both development speed and contract quality.
