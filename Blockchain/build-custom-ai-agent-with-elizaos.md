@@ -1,14 +1,11 @@
 ---
 tags:
   - icy
-  - btc
-  - swap
   - blockchain
-  - elizaos
   - AI
-title: Build custom Ai Agent with Elizaos
-date: 2025-03-24
-description: This guide shows how to build a custom ai agent with elizaos.
+title: Build custom AI Agent with ElizaOS
+date: 2025-03-31
+description: This guide shows how to build a custom AI Agent with ElizaOS.
 authors:
   - huymaius
 ---
@@ -18,28 +15,26 @@ DeFAI stands for Decentralized Finance Artificial Intelligence, which combines t
 With ElizaOS, you can build and deploy a DeFAI Agent—an AI persona that interacts with users on online platforms, assists with transactions, analyzes market trends, and executes financial tasks in a decentralized and automated manner.
 
 
-## What is a Elizaos?
+## What is a ElizaOS?
 A comprehensive framework for building AI agents with persistent personalities across multiple platforms. ElizaOS provides the architecture, tools, and systems needed to create sophisticated agents that maintain consistent behavior, learn from interactions, and seamlessly integrate with a variety of services.
 
-## How Elizaos works?
+## How ElizaOS works?
 ![](assets/build_custom_ai_agent_with_elizaos_system.webp)
 
-When a user message is received:
+When a user message is received, here's what happens behind the scenes:
 
-1. **Service Reception**: Platform service (Discord, Telegram, etc.) receives the message
-2. **Runtime Processing**: Agent runtime coordinates the response generation
-3. **Context Building**: Providers supply relevant context (time, recent messages, knowledge)
-4. **Action Selection**: The agent evaluates and selects appropriate actions
-5. **Response Generation**: The chosen action generates a response
-6. **Learning & Reflection**: Evaluators analyze the conversation for insights and learning
-7. **Memory Storage**: New information is stored in the database
-8. **Response Delivery**: The response is sent back through the service
+1. **Service reception**: Platform service (Discord, Telegram, etc.) receives the message
+2. **Runtime processing**: Agent runtime coordinates the response generation
+3. **Context building**: Providers supply relevant context (time, recent messages, knowledge)
+4. **Action selection**: The agent evaluates and selects appropriate actions
+5. **Response generation**: The chosen action generates a response
+6. **Learning & reflection**: Evaluators analyze the conversation for insights and learning
+7. **Memory storage**: New information is stored in the database
+8. **Response delivery**: The response is sent back through the service
 
 
-## Build Custom AI Agent With Elizaos
-![](assets/build_custom_ai_agent_with_elizaos_flow.webp)
-
-To build custom AI Agent with Elizaos, we focus on four concepts:
+## Build Custom AI Agent With ElizaOS
+To build AI Agent with ElizaOS, we focus on four concepts:
 
 - **Characters**: JSON config files defining AI personality and behavior
 - **Agents**: Runtime components managing memory and executing behaviors
@@ -47,13 +42,9 @@ To build custom AI Agent with Elizaos, we focus on four concepts:
 - **Actions**: Executable behaviors that agents can perform
 
 ### Characters
-The section where we define the characteristics of the AI agent we aim to create. It allows us to set the purpose, tone, AI modules, conversation samples, and more to be used in the system prompt.
-In example, we will create a DeFi degen character who lived through the 2021 bull run and survived multiple rug pulls. This character will:
+Characters are the personality profiles that define how an agent behaves and responds. Think of them as the "script" your AI follows to maintain consistent behavior.
 
-- Have battle-tested experience from DeFi summer
-- Know common rug pull patterns
-- Share stories from farmer days (its honest work)
-
+For example, we created a battle-hardened DeFi veteran called "YieldMaxoor" who had survived multiple market crashes and could spot scams from a mile away. Here's a simplified version of the character configuration:
 ```json
 {
     "name": "YieldMaxoor",
@@ -104,6 +95,35 @@ In example, we will create a DeFi degen character who lived through the 2021 bul
                     "action": "ANALYZE_FARM"
                 }
             }
+        ],
+        [
+            {
+                "user": "{{user1}}",
+                "content": {
+                    "text": "How do I avoid IL?"
+                }
+            },
+            {
+                "user": "YieldMaxoor",
+                "content": {
+                    "text": "fren, IL is just a temporary state of mind. but if you're ngmi with that, stick to stables farming or single-sided staking. this is financial advice because i'm already poor 😅",
+                    "action": "EXPLAIN_IL"
+                }
+            }
+        ],
+        [
+            {
+                "user": "{{user1}}",
+                "content": {
+                    "text": "Is this protocol safe?"
+                }
+            },
+            {
+                "user": "YieldMaxoor",
+                "content": {
+                    "text": "anon, i've been rugged so many times i can smell them coming. this one's based - doxxed team, good tvl, clean code. but always DYOR and don't put in more than you can lose ser 🤝"
+                }
+            }
         ]
     ],
     "postExamples": [
@@ -113,11 +133,12 @@ In example, we will create a DeFi degen character who lived through the 2021 bul
     ]
 }
 ```
+The character definition includes not just knowledge areas, but also speaking style and sample interactions that help the AI maintain consistency.
 
 ### Agents
 Agents are the runtime components that bring your characters to life. They manage the actual execution of your AI's behaviors through the AgentRuntime class.
 
-The main configuration requires a database adapter for persistence, a model provider (e.g., openai, anthropic, etc.) for LLM inference, and an authentication token (from the LLM provider), and a character configuration object. Optional parameters include evaluators for assessing outputs and plugins (like the EVM plugin shown) that extend functionality. Here's an example:
+The main configuration requires a database adapter for persistence (e.g., mongodb, postgres, sqlite, etc.) , a model provider (e.g., openai, anthropic, etc.) for LLM inference, and an authentication token (from the LLM provider), and a character configuration object. Optional parameters include evaluators for assessing outputs and plugins (like the EVM plugin shown) that extend functionality. Here's an example:
 ```typescript
     return new AgentRuntime({
         databaseAdapter: db,
@@ -175,33 +196,11 @@ const timeProvider: Provider = {
     },
 };
 ```
-Combining Actions, Providers and various other components enables us to create plugins—modular extensions that enhance ElizaOS agents' capabilities. These plugins offer a flexible approach to adding new functionality, integrating external services, and customizing agent behavior across multiple platforms.
 
-### Plugin structure
-Each plugin repository should follow this structure:
-```
-plugin-name/
-├── images/                # Branding assets
-│   ├── logo.png           # Square logo (400x400px)
-│   ├── banner.png         # Banner image (1280x640px)
-│   └── screenshots/       # Feature screenshots
-├── src/
-│   ├── index.ts           # Main plugin entry point
-│   ├── service.ts         # Service implementation
-│   ├── actions/           # Plugin-specific actions
-│   ├── providers/         # Data providers
-│   ├── types.ts           # Type definitions
-│   └── environment.ts     # Configuration validation
-├── tests/                 # Test suite
-├── package.json           # Plugin configuration and dependencies
-└── README.md              # Plugin documentation
-```
+## What we achieved?
+We have developed an ICY Swap AI Agent that allows users to check their ICY balance and seamlessly exchange ICY for BTC by implementing a `degen` character and the `plugin-icy-swap` plugin, fully integrated with the ElizaOS ecosystem.
 
-
-## What we achieved
-We have developed an Icy Swap AI Agent that allows users to check their Icy balance and seamlessly exchange Icy for BTC by implementing a `degen` character and the `plugin-icy-swap` plugin, fully integrated with the ElizaOS ecosystem. 
-
-![](assets/build_custom_ai_agent_with_elizaos_result.gif)
+![](assets/building_custom_ai_agent_with_elizaos_result.gif)
 
 [Source code](https://github.com/quanghuynguyen1902/eliza-icy-swap)
 
