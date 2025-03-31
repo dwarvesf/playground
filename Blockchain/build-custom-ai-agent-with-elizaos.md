@@ -34,6 +34,7 @@ When a user message is received, here's what happens behind the scenes:
 
 
 ## Build Custom AI Agent With ElizaOS
+![](assets/build_custom_ai_agent_with_elizaos_flow.webp)
 To build AI Agent with ElizaOS, we focus on four concepts:
 
 - **Characters**: JSON config files defining AI personality and behavior
