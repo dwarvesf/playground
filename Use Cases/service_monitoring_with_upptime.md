@@ -15,12 +15,9 @@ authors:
 
 At Dwarves Foundation, ensuring our services are up and running is crucial. But how do you monitor *everything*, including internal tools and sensitive APIs, without exposing them to the world? This is the story of how we adopted Upptime, leveraging the power of GitHub Actions and Secrets to achieve comprehensive and secure uptime monitoring.
 
-## The challenge: monitoring public and private services
+## Monitor public and private services
 
-We needed a reliable way to track the uptime and performance of all our services. This included:
-
-1.  **Public-facing services:** Like our website and public APIs, where transparency is key. Users and customers need to know if something is down.
-2.  **Internal services & sensitive endpoints:** These are tools used by our team or APIs that shouldn't be publicly accessible. Exposing their status endpoints directly could create security risks or attract unwanted attention.
+We needed a reliable way to monitor the uptime and performance of all our services, which included both public-facing services and internal services with sensitive endpoints. For public-facing services, such as our website and public APIs, transparency was crucial. Users rely on knowing if there's a disruption. On the other hand, internal services and sensitive endpoints, which include tools used by our team or APIs that should remain inaccessible to the public, had to be handled more discreetly. Directly exposing their status endpoints could lead to security vulnerabilities or invite unwanted attention.
 
 **Why hide certain endpoints?**
 
@@ -31,17 +28,11 @@ We needed a reliable way to track the uptime and performance of all our services
 
 We needed a solution that could handle both scenarios: transparent monitoring for public services and secure, hidden monitoring for private ones.
 
-## Enter Upptime: monitoring as code
+## Using Upptime as a monitoring tool
 
-We found our answer in [Upptime](https://upptime.js.org). It's an open-source uptime monitor and status page powered entirely by GitHub Actions, Issues, and Pages. Here's why it fit perfectly:
+We found our answer in [Upptime](https://upptime.js.org). It's an open-source uptime monitor and status page powered entirely by GitHub Actions, Issues, and Pages. The **GitOps approach** allows configuration to live in a Git repository, making changes trackable and collaborative. It's **cost-effective**, as it runs primarily on free GitHub Actions tiers, although we use self-hosted runners for more control. **Automation** is another benefit, with checks running automatically on a schedule. Additionally, **transparency** is enhanced as it generates a static status page easily deployable via GitHub Pages. Lastly, it excels in **secret management** by integrating seamlessly with GitHub Secrets.
 
-*   **GitOps approach:** Configuration lives in a Git repository, making changes trackable and collaborative.
-*   **Cost-effective:** It runs primarily on free GitHub Actions tiers (though we use self-hosted runners for more control).
-*   **Automation:** Checks run automatically on a schedule.
-*   **Transparency:** Generates a static status page easily deployable via GitHub Pages.
-*   **Secret management:** Crucially, it integrates seamlessly with GitHub Secrets.
-
-## Configuration: The `.upptimerc.yml` File
+## Configure `.upptimerc.yml` File
 
 The heart of our Upptime setup is the `.upptimerc.yml` file in our `dwarvesf/upptime` repository:
 
@@ -86,7 +77,7 @@ i18n:
 
 **The Key:** Notice how `My Secret API` uses `url: ${{ secrets.SECRET_API_URL }}`. When the GitHub Actions workflow runs, it securely injects the actual URL from the repository's secrets settings. The sensitive URL *never* appears in the public configuration file.
 
-## How It Works: GitHub Actions Automation
+## How GitHub Actions automation actually works
 
 Upptime relies on a set of workflows defined in `.github/workflows/`:
 
@@ -99,12 +90,9 @@ Upptime relies on a set of workflows defined in `.github/workflows/`:
 
 ## A transparent (and secure) status page
 
-When you visit `status.d.foundation`:
-
-1.  Your browser loads the static site built by `site.yml` from the `gh-pages` branch.
-2.  The JavaScript on the page fetches *public* status data (like `summary.json` and recent history) directly from the `dwarvesf/upptime` repository via GitHub's raw file access or API.
-3.  The page dynamically displays the status of our *public* services.
+Upon visiting `status.d.foundation`, your browser retrieves the static website constructed using `site.yml` from the `gh-pages` branch. The JavaScript code on the page directly fetches public status data, including `summary.json` and recent history, from the `dwarvesf/upptime` repository via GitHub’s raw file access or API. Subsequently, the page dynamically displays the status of our publicly available services.
 
 Crucially, the status page *only* displays information about the services configured with public URLs in `.upptimerc.yml`. The sensitive endpoints, while monitored constantly by the `uptime.yml` workflow using secrets, are never exposed on the public status page or in the repository's version history.
 
 This setup gives us the best of both worlds: transparent, real-time status updates for our public-facing services, and secure, automated monitoring for our internal infrastructure, all managed through a simple, code-based system.
+
