@@ -3,15 +3,15 @@ tags:
   - frontend
   - market-report
 title: "Frontend Report March 2025"
-short_title: "March 2025"
 description: "March 2025 brings critical frontend updates! Learn about the Next.js security exploit you must patch nows. Explore TypeScript's upcoming 10x speed boost with Corsa, React Router's game-changing middleware, and why prefetching can surprisingly slow down your site. Plus: CSS functions are finally here, new in Chrome 133, Node.js is dropping Corepack, and TanStack Start finds an official deployment home!"
 date: 2025-03-31
 authors:
   - hthai2201
 ---
 
-## React
+![](assets/northflank_next_js_design_system.png)
 
+## React
 ### [Common React libraries architecture](https://www.felgus.dev/blog/common-react-lib-architecture)
 
 Most React libraries share a similar architecture: a core with the main logic and a binding (hooks/components) for React integration. The core object is often created externally and connected via Context API. Libraries use the Observer pattern to notify React of changes, triggering re-renders with useSyncExternalStore or custom hooks
