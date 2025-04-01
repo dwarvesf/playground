@@ -9,7 +9,7 @@ authors:
   - hthai2201
 ---
 
-![](assets/northflank_next_js_design_system.png)
+![](assets/frontend-report.png)
 
 ## React
 ### [Common React libraries architecture](https://www.felgus.dev/blog/common-react-lib-architecture)
