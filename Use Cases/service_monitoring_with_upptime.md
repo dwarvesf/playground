@@ -11,7 +11,7 @@ tags:
   - security
 ---
 
-At Dwarves Foundation, ensuring our services are up and running is crucial. But how do you monitor *everything*, including internal tools and sensitive APIs, without exposing them to the world? This is the story of how we adopted Upptime, leveraging the power of GitHub Actions and Secrets to achieve comprehensive and secure uptime monitoring.
+Ensuring services are up and running is crucial. But how do you monitor *everything*, including internal tools and sensitive APIs, without exposing them to the world? This is the story of how we adopted Upptime, leveraging the power of GitHub Actions and Secrets to achieve comprehensive and secure uptime monitoring.
 
 ## Monitor public and private services
 
@@ -28,7 +28,7 @@ We needed a solution that could handle both scenarios: transparent monitoring fo
 
 ## Using Upptime as a monitoring tool
 
-We found our answer in [Upptime](https://upptime.js.org). It's an open-source uptime monitor and status page powered entirely by GitHub Actions, Issues, and Pages. The **GitOps approach** allows configuration to live in a Git repository, making changes trackable and collaborative. It's **cost-effective**, as it runs primarily on free GitHub Actions tiers, although we use self-hosted runners for more control. **Automation** is another benefit, with checks running automatically on a schedule. Additionally, **transparency** is enhanced as it generates a static status page easily deployable via GitHub Pages. Lastly, it excels in **secret management** by integrating seamlessly with GitHub Secrets.
+We found our answer in [Upptime](https://upptime.js.org). It's an open-source uptime monitor and status page powered entirely by GitHub Actions, Issues, and Pages. The GitOps approach allows configuration to live in a Git repository, making changes trackable and collaborative. It's cost-effective, as it runs primarily on free GitHub Actions tiers, although we use self-hosted runners for more control. Automation is another benefit, with checks running automatically on a schedule. Additionally, transparency is enhanced as it generates a static status page easily deployable via GitHub Pages. Lastly, it excels in secret management by integrating seamlessly with GitHub Secrets.
 
 ## Configure `.upptimerc.yml` File
 
