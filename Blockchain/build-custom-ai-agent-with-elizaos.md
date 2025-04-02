@@ -1,13 +1,13 @@
 ---
+title: Build custom AI Agent with ElizaOS
+date: 2025-04-02
+description: This guide shows how to build a custom AI Agent with ElizaOS.
+authors:
+  - huymaius
 tags:
   - icy
   - blockchain
   - AI
-title: Build custom AI Agent with ElizaOS
-date: 2025-03-31
-description: This guide shows how to build a custom AI Agent with ElizaOS.
-authors:
-  - huymaius
 ---
 ![](assets/build_custom_ai_agent_with_elizaos_intro.webp)
 
