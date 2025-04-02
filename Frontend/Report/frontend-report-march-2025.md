@@ -9,7 +9,7 @@ authors:
   - hthai2201
 ---
 
-![](assets/frontend-report.png)
+![](assets/frontend-report-202503.png)
 
 ## React
 ### [Common React libraries architecture](https://www.felgus.dev/blog/common-react-lib-architecture)
