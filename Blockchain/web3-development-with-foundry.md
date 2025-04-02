@@ -1,40 +1,42 @@
 ---
-tags:
-  - evm
-  - web3
-  - foundry
-  - blockchain
 title: Web3 Development with Foundry
 date: 2025-04-01
 description: Provides a comprehensive guide to Web3 development using Foundry, a modern, Rust-based toolkit for Ethereum smart contract development.
 authors:
   - haongo1
+tags:
+  - evm
+  - web3
+  - foundry
+  - blockchain
 toc: false
-notice:
-event_date:
 ---
 
 ## Overview of Foundry
+
 Foundry is a blazingly fast, portable, and modular toolkit for Ethereum application development written in Rust. It consists of three main components:
 
 - **Forge**: Testing framework for Ethereum smart contracts
 - **Cast**: Swiss army knife for interacting with EVM smart contracts
 - **Anvil**: Local Ethereum node designed for development
 
-![alt text](assets/web3-development-with-foundry-00.jpg)
+![](assets/web3-development-with-foundry-00.jpg)
 
-## Why others not using Hardhat ?
+## Why others not using Hardhat?
+
 Foundry's Rust-based architecture makes testing much faster than JavaScript alternatives. Security teams and auditors prefer working directly in Solidity without translation layers. The framework's adoption has grown quickly in 2024, especially for high-value contracts where performance and reliability matter.
 
 Foundry's terminal-based workflow cuts out JavaScript overhead, making it perfect for developers who want to work closer to the metal. Security teams love its deterministic environment when dealing with complex contracts.
 
-![alt text](assets/web3-development-with-foundry-01.jpg)
+![](assets/web3-development-with-foundry-01.jpg)
 
-## Why we not using Hardhat ?
+## Why we not using Hardhat?
+
 Hardhat's lack of ESM support in TypeScript projects forced us to use outdated CommonJS modules. Since our frontend and services already use ESM, this created unnecessary friction in our development workflow. Foundry's language-agnostic approach lets us maintain a consistent ESM-based architecture across our entire stack.
 
 ## Core benefits of Foundry
-**Development Speed**: Foundry accelerates development through fast compilation, native Solidity testing, and quick feedback loops, with benchmarks showing it's consistently 1.5-11x faster than Hardhat and up to 335x faster than Dapptools. 
+
+**Development Speed**: Foundry accelerates development through fast compilation, native Solidity testing, and quick feedback loops, with benchmarks showing it's consistently 1.5-11x faster than Hardhat and up to 335x faster than Dapptools.
 
 The platform offers **Modern Developer Experience** with built-in fuzzing that can run 10,000 tests in seconds to find edge cases, powerful debugging tools for precise error identification, and comprehensive gas optimization features that help create efficient contracts.
 
@@ -46,21 +48,24 @@ In our projects, we've seen these benefits firsthand. Our team uses Foundry's fa
 
 ### Dealing with dependencies and remapping
 
-![alt text](assets/web3-development-with-foundry-02.jpg)
+![](assets/web3-development-with-foundry-02.jpg)
 
-**Git Submodules (Traditional Approach)**
+#### Git Submodules (Traditional Approach)
+
 ```bash
 forge install OpenZeppelin/openzeppelin-contracts --no-commit
 git submodule update --init --recursive
 ```
 
-**Modern package management with Bun**
+#### Modern package management with Bun
+
 ```bash
 bun init
 bun add -d @openzeppelin/contracts
 ```
 
 Configure remappings in `remappings.txt`:
+
 ```text:remappings.txt
 @openzeppelin/=node_modules/@openzeppelin/
 ds-test/=lib/forge-std/lib/ds-test/src/
@@ -70,11 +75,12 @@ forge-std/=lib/forge-std/src/
 ### Deploying and testing a Smart Contract
 
 We'll build an upgradeable ERC-1155 contract for game items (GOLD, SILVER, SWORD, SHIELD) using Foundry. This example shows how to:
+
 - Implement and test smart contracts
 - Set up deployment scripts
 - Handle contract upgrades using the UUPS upgrade pattern
 
-**Implement a basic ERC-1155 contract**
+#### Implement a basic ERC-1155 contract
 
 First, let's create an upgradeable ERC-1155 contract:
 
@@ -126,7 +132,7 @@ contract GameItems is Initializable, ERC1155Upgradeable, OwnableUpgradeable, UUP
 }
 ```
 
-**Writing tests for our contract**
+#### Writing tests for our contract
 
 Create comprehensive tests for the contract:
 
@@ -203,7 +209,7 @@ contract GameItemsTest is Test {
 }
 ```
 
-**Add a deployment script**
+#### Add a deployment script
 
 Create a deployment script that handles both the implementation and proxy deployment:
 
@@ -244,7 +250,7 @@ contract GameItemsScript is Script {
 }
 ```
 
-**Run the deployment**
+#### Run the deployment
 
 ```bash
 # Deploy to local network
@@ -258,16 +264,18 @@ forge script script/GameItems.s.sol \
     -vvvv
 ```
 
-**Contract Lifecycle: From Development to Deployment**
+#### Contract Lifecycle: From Development to Deployment
 
-![alt text](assets/web3-development-with-foundry-03.png)
+![](assets/web3-development-with-foundry-03.png)
 
 ## Limitations
+
 While Foundry shines in performance, it has its drawbacks. The lack of multi-network config files makes cross-chain deployments more tedious than Hardhat. The debugging tools, though functional, can't match Truffle's step-by-step debugger. We've also felt the smaller plugin ecosystem - you'll often need to build custom tooling that would be readily available in Hardhat.
 
 Writing tests in Solidity instead of JavaScript creates a steeper learning curve, especially for web developers on our team. The docs are improving but still leave gaps around advanced features, and community resources are still catching up to Hardhat's mature ecosystem.
 
 ## Our assessment
+
 After months of wrestling with Hardhat's ESM limitations in our TypeScript stack, switching to Foundry was a game-changer. Sure, rewriting our JavaScript tests in Solidity took time, and we missed some familiar plugins. But the payoff was worth it - our test suite now runs in 40 seconds instead of 7 minutes.
 
 Writing tests in Solidity turned out to be a blessing in disguise. It eliminated translation errors and made our tests more precise. For teams ready to invest in learning Foundry, it offers a rock-solid foundation that pays off in both development speed and contract quality.
