@@ -13,6 +13,7 @@ Being a self-learned designer, I research and read a lot. One of my all-time fav
 Six months of applying Design Thinking in real life turns out to be the best investment of my time and effort, for all the positive changes I’ve got (and documented). Cue this article.
 
 ## The six things I learned from Design Thinking
+
 The hype around Design Thinking started a couple of years back, along with “UIUX Design”. For some of you who haven't got used to the Design Thinking concept, you can [read more about it here](https://www.interaction-design.org/literature/article/what-is-design-thinking-and-why-is-it-so-popular).
 
 Almost everyone knows Design Thinking is a non-linear process for solving problems. Sadly though, hardly anyone has the chance to go through the entire process from beginning to end. We still yet to realize the full effectiveness of Design Thinking.
@@ -22,6 +23,7 @@ The same went for me. When I first started using Design Thinking, I could only a
 In my team, we discuss Design Thinking a lot. Everyone has a different point of view, but we all agree on one thing: if we're mindful about the non-linear, flexible quality of Design Thinking, it could become one of the most effective ways to working and living.
 
 ## Keep an open, curious mind
+
 ![](assets/six-things-i-extracted-from-design-thinking_79c08449fbd6f94151675d1e9b64eb98_md5.webp)
 
 We fear what we don't know. It is a common human thing, to fall into a panic mode when we are faced with newness. When we start or encounter something we're not familiar with, we often feel stuck with not knowing where to start, and gradually, we avoid it.
@@ -35,6 +37,7 @@ To gather multiple outlooks, we need to keep an open mind of how and where we ob
 With information, now we have an idea what we’re dealing with, the panic should be gone, and we have hints on how to deal with it.
 
 ## Make sense of information
+
 ![](assets/six-things-i-extracted-from-design-thinking_d2c2897e585f20d406067bc9aa6d628d_md5.webp)
 
 In "Things that make us smart: defending human attributes in the age of the machine", my favorite author Don Norman, shared:
@@ -50,6 +53,7 @@ Everyone has their own method to organize data. Personally, I’ve found taking 
 The Obsidian tool was designed based on the Zettelkasten method and deems to be one of the most fitting ones so far. At first, I didn't like writing, but obsidian notes made me come to it naturally. It soon became a habit to collect everyday data, organize, and analyze them.
 
 ## Make unbiased decisions
+
 ![](assets/six-things-i-extracted-from-design-thinking_9e4f26e9fc6da86f7941f0da35485279_md5.webp)
 
 Most of the time, we are offered the power to make decisions. Either we could do this or we could do that. As humans, we perceive things and make decisions based on our personal set of values, including our upbringings, beliefs, cultures… Avoiding bias is a big challenge.
@@ -63,6 +67,7 @@ Is this the right decision? Is there a better decision? Any other options out th
 Relying on knowledge, context, and data to make decisions helps us avoid being biased and arrive at the most suitable decisions which ideally would be easy, take less time, and less effort.
 
 ## Make better decisions
+
 ![](assets/six-things-i-extracted-from-design-thinking_8f1780f4af0d9ab2db8f05e84a8d064a_md5.webp)
 
 Usually, we would think coming to a decision is the end of it. But as designers who solve problems using Design Thinking, we know tracking the effectiveness of our decisions is just as important as making decisions.
@@ -72,6 +77,7 @@ Usually, we would think coming to a decision is the end of it. But as designers 
 Testing and checking are not a waste of time, they are a way of improvement. Without testing and checking, we would never be able to know how to make better decisions
 
 ## Change. Adapt. Evolve
+
 ![](assets/six-things-i-extracted-from-design-thinking_a312bb97ae7e137118339c676689e1dc_md5.webp)
 
 We live in an era of rapid change, especially in technology. Something we deem work today, might not be anymore tomorrow. Things change all the time, our decisions should too. We should always be aware of what‘s happening around us, so we could align and revolve as quickly as we can.
@@ -87,6 +93,7 @@ In fewer words,
 Design Thinking definitely can be a way of living. It can be used anytime, anywhere. It doesn’t have to be something we practice just inside the workspace. At first, it might be difficult, but with enough patience and focus, this concept will guide endless opportunities for an efficient life.
 
 ## Take away
+
 * Information is everything around us. It’s not restricted to academic papers or thick books. It exists in news, videos, even conversations with other people.
 * Data doesn’t have to be scary, as long as we can make sense of it with the right method and the right tool.
 * Multiple perspectives allow us to see things at a more complete level. That’s where we discover hidden problems and opportunities.
@@ -94,6 +101,6 @@ Design Thinking definitely can be a way of living. It can be used anytime, anywh
 
 How is your experience with Design Thinking? Join our [Discord](https://discord.gg/Ffarda5FD9) and let us know!
 
-If there are any topics you would like us to cover next, send us a message at [minhtk@dwarvesv.com](mailto:minhtk@dwarvesv.com)
+If there are any topics you would like us to cover next, send us a message at [minhtk@d.foundation](mailto:minhtk@d.foundation)
 
 Thank you for taking the time.
