@@ -29,7 +29,7 @@ Before you can withdraw ICY, please make sure that you have already had the cryp
 Note:
 
 - To swap ICY to USDT in the next step, you will need some Ethereum on Base Network.
-- Therefore, buy, some Ethereum or withdraw it from your balance. If you need to faucet some Ethereum for gas fee, please open a ticket in [Dwarves Foundation Discord](https://discord.gg/dwarvesv).
+- Therefore, buy, some Ethereum or withdraw it from your balance. If you need to faucet some Ethereum for gas fee, please open a ticket in [Dwarves Foundation Discord](https://discord.gg/dfoundation).
 
 ### Convert ICY to USDT
 

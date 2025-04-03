@@ -23,7 +23,6 @@ We work with a lot of firms that have very nuanced, but engaging problems. A han
 - **Full-text and vector indexing strategies**: Using full-text and vector databases to better semantically match intent and direction of user queries.
 - **Subscription and Onboarding**: Logic designing for subscription monthly/annual plans where the problem space becomes complex really quickly with more feature switches.
 
-
 ## Lab topics that are on our radar
 
 Like with everyone else, we're really interested in the Artificial Intelligence (AI) and Large Language Model (LLM) space. Some of the things we are currently researching encompass system and software designs on how to implement coherent and rich outputs from LLMs:
@@ -56,7 +55,7 @@ Some of the problem spaces we face internally, we also share with our community.
 
 | Title                                                                                       | 💰 Bounty | Status | PIC                         | Function    |
 | ------------------------------------------------------------------------------------------- | --------- | ------ | --------------------------- | ----------- |
-| [Move internal notes to note.d.foundation](earn/obsidian-fork.md) | 🧊 75     | Doing  | monotykamary, hnh           | 🏗️ Chore   |
+| [Move internal notes to memo.d.foundation](earn/obsidian-fork.md) | 🧊 75     | Doing  | monotykamary, hnh           | 🏗️ Chore   |
 | [$icy withdrawal](earn/withdrawl-icy.md)                          | 🧊 120    | Doing  | minhlq                      | 🛠️ Tooling |
 | [Rework Fortress Command](earn/rework-fortress-command.md)        | 🧊 100    | Open   | -                           | 🛠️ Tooling |
 | [$icy utility commands](earn/icy-utility-command.md)              | 🧊 50     | Doing  | bienvh, phucld              | 🛠️ Tooling |

@@ -12,11 +12,13 @@ description: null
 In this case study, we share our experience of transitioning from multi-repository structure to a monorepo using [Turbo](https://radar.d.foundation/Turborepo-0dd18b38468c4859a8beaae7bf6c511c) in our project. This migration led to numerous benefits, including a 60% reduction in build times, a 40% increase in developer productivity, and simplified dependency management. Our goal is to offer valuable insights and lessons learned throughout our journey to help others considering a similar transition.
 
 ## Introduction
+
 Over the past two years, we have developed NgheNhan - a trading platform that not only enables users to manage their accounts efficiently but also allows them to analyze market data and trading performance in realtime.
 
 As the project expanded, our team faced challenges in managing dependencies and deploying updates across multiple repositories. Coordinating changes between components and maintaining consistency across codebases became increasingly difficult as our engineering team grew. This prompted our decision to migrate to a monorepo structure using Turbo.
 
 ## Challenges
+
 Throughout the migration process, we encountered several challenges such as updating reusable components, including integrating different codebases into the new monorepo structure, refactoring code and dependency packages to ensure compatibility, caching previous builds to speed up build times with minimizing the Javascript bundle size, and updating development processes to reflect the new workflow.
 
 These challenges necessitated updating references to files and components to match the new structure and ensuring the correct integration of all code into the new repository.
@@ -24,6 +26,7 @@ These challenges necessitated updating references to files and components to mat
 As we move forward, we may face challenges related to scalability and flexibility. However, we firmly believe that the benefits of the monorepo approach far outweigh these challenges, and we are confident in our ability to address them proactively.
 
 ## Solution: Turbo and the Monorepo Advantage
+
 Turbo, a purpose-built tool for managing monorepos, offers numerous benefits that streamline the development process. Some of these advantages include:
 
 * **Simplified dependency management:** Managing dependencies is much easier with Turbo's automatic dependency management features, ensuring that all components use the correct versions of shared libraries and frameworks.
@@ -33,6 +36,7 @@ Turbo, a purpose-built tool for managing monorepos, offers numerous benefits tha
 * **Reduced complexity:** The monorepo structure simplifies the development process, making it easier for team members to navigate and comprehend the codebase.
 
 ## Migration Process
+
 Here is the diagram for the full flow of the migration process of our apps:
 
 ![](assets/from-multi-repo-to-monorepo-a-case-study-with-nghenhan-turbo-monorepo_8dc9116f98bf7a170ec249c0e63ad699_md5.webp)
@@ -46,6 +50,7 @@ Our migration process entailed several well-planned steps to ensure a seamless t
 1. **Extensive testing and deployment:** After completing the migration and refactoring efforts, we thoroughly tested and deployed our codebase to ensure that everything was working as expected. We resolved any issues that arose during the testing process and made certain that our apps ran smoothly in the live environment.
 
 ## Results and Key Learnings
+
 The migration to a monorepo with Turbo was a success, with several noteworthy benefits:
 
 * **Improved collaboration**: Our developers experienced a 40% increase in productivity due to better code sharing and a unified codebase.
@@ -63,11 +68,13 @@ Throughout the migration process, we learned several valuable lessons:
 > The transition to a monorepo with Turbo has been a game-changer for our team. We can now collaborate more effectively, build faster, and manage dependencies with ease, enabling us to focus on delivering high-quality software. — *An Tran, Lead Developer at NgheNhan*
 
 ## Conclusion
+
 The migration to a monorepo using Turbo required significant effort, but the results have been overwhelmingly positive. Our team experienced improved collaboration, faster build times, simplified dependency management, and better code quality. We remain committed to continuously refining our code management practices and leveraging tools like Turbo to stay at the forefront of software development.
 
 **Follow us on**
+
 * Website: [https://dwarves.foundation](https://dwarves.foundation/)
-* Discord: [https://discord.gg/dwarvesv](https://discord.gg/dwarvesv)
+* Discord: [https://discord.gg/dfoundation](https://discord.gg/dfoundation)
 * Fanpage: [https://www.facebook.com/dwarvesf](https://www.facebook.com/dwarvesf)
 * LinkedIn: [https://www.linkedin.com/company/dwarvesf](https://www.linkedin.com/company/dwarvesf/)
-* Substack: [https://note.d.foundation/](https://note.d.foundation/)
+* Substack: [https://memo.d.foundation/](https://memo.d.foundation/)

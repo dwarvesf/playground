@@ -20,6 +20,7 @@ To support multiple languages and locales, the application needs to have the nec
 In this frontend guideline, we will discuss general principles and provide examples using `i18next` with `React.js`
 
 ## Locale detection
+
 There are several ways to detect the user's locale (i.e., their language and geographic location) in a front-end application:
 
 * **Browser settings**: The user's browser settings may indicate their preferred language. This information can be accessed through the `navigator.language` or `navigator.userLanguage` property in JavaScript.
@@ -40,6 +41,7 @@ There are a few libraries where that offer locale detection based on the setting
 Another example would be Next.js, where the locale will be automatically detected based on the `Accept-Language` header and the current domain. Locale detection is enabled by default.
 
 ## Internationalized routing
+
 Internationalized routing is a way to handle different URLs for the same page based on the user's detected locale. There are two types of URL routing:
 
 * **Sub-path routing** (e.g. example.com/en/home, example.com/fr/home)
@@ -80,6 +82,7 @@ module.exports = {
 ```
 
 ## Supports LTR and RTL text
+
 For some languages, such as Arabic, the letters are arranged from right to left. To ensure that your application supports Right-To-Left (**RTL**) layout rendering for such languages, you need to add **LTR** or **RTL** support.
 
 To add **LTR** or **RTL** support to the application, we will set the `dir` attribute on the `body` element dynamically in the `index.html` file.
@@ -122,7 +125,7 @@ const Header = () => {
 
   return (
     <header>
-				{...}
+    {...}
     </header>
   );
 };
@@ -131,6 +134,7 @@ export default Header;
 ```
 
 ## Formatting
+
 Starting from **i18next version 21.3.0**, you can take advantage of the built-in formatting functions based on the **[Intl API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)** for the following formats:
 
 * **Number**
@@ -191,17 +195,20 @@ i18next.t('list', {
 ```
 
 ## Conclusion
+
 Multilingual is a very important function for web or mobile applications nowadays, Users will come from all over the world and always ask for support for their language. Above is a guide to help you install multi-language for your application or website, You can implement it according to the instructions to automatically find the user's language, setup multi-language by domain or subpath, support LTR and RTL text, and finally format of number, currency, time, list…
 
 If you have a difficult problem that you would like us to help you on, please feel free to submit a challenge request here.
 
 **Come be with us**
 We’d love to have you in our next chapter, by all means.
+
 * Discover what we do: [dwarves.foundation](http://dwarves.foundation/)
-* Meet our team: [discord.gg/dwarvesv](http://discord.gg/dwarvesv)
+* Meet our team: [discord.gg/dfoundation](http://discord.gg/dfoundation)
 * Join the squad: [careers.d.foundation](http://careers.d.foundation/)
 
 Follow our journey
+
 * Fanpage: [facebook.com/dwarvesf](http://facebook.com/dwarvesf)
 * LinkedIn: [linkedin.com/company/dwarvesf](http://linkedin.com/company/dwarvesf)
-* Substack: [https://note.d.foundation/](https://note.d.foundation/)
+* Substack: [https://memo.d.foundation/](https://memo.d.foundation/)
