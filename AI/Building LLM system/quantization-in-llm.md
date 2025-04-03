@@ -26,17 +26,18 @@ While precision reduction may introduce some accuracy loss and output noise, qua
 
 Two primary approaches exist for LLM quantization:
 
-* **Post-training quantization (PTQ)**: Applied to pre-trained models after training completion. Weights and activations undergo quantization to lower-precision representations for inference purposes.
+- **Post-training quantization (PTQ)**: Applied to pre-trained models after training completion. Weights and activations undergo quantization to lower-precision representations for inference purposes.
 
-* **Quantization-aware training (QAT)**: Implemented during the training process itself. The model learns with simulated low-precision operations, utilizing the quantized format for both training and inference.
+- **Quantization-aware training (QAT)**: Implemented during the training process itself. The model learns with simulated low-precision operations, utilizing the quantized format for both training and inference.
 
 ## How quantization works
 
 ![Linear Quantization](assets/quantization-in-llm-linear.webp)
 
 There are many quantization schema to reduce the size of the model. One technique is called Linear Qunatization - which is used to map the floating point values to the smaller range of values by shifting and scaling. There are 2 main modes in this technique:
- - **Symmetric**: The zero-point is zero — i.e. 0.0 of the floating point range is the same as 0 in the quantized range. Typically, this is more efficient to compute at runtime but may result in lower accuracy if the floating point range is unequally distributed around the floating point 0.0.
- - **Asymmetric**: Zero-point that is non-zero in value. This can result in higher accuracy but may be less efficient to compute at runtime.
+
+- **Symmetric**: The zero-point is zero ,  i.e. 0.0 of the floating point range is the same as 0 in the quantized range. Typically, this is more efficient to compute at runtime but may result in lower accuracy if the floating point range is unequally distributed around the floating point 0.0.
+- **Asymmetric**: Zero-point that is non-zero in value. This can result in higher accuracy but may be less efficient to compute at runtime.
 
 In this part, we focus on the asymmetric mode.
 
@@ -54,10 +55,10 @@ $$
 
 where:
 
-* $q$ represents the quantized value
-* $s$ denotes the scale factor
-* $w$ indicates the original value
-* $z$ signifies the zero point
+- $q$ represents the quantized value
+- $s$ denotes the scale factor
+- $w$ indicates the original value
+- $z$ signifies the zero point
 
 The process maps values from higher to lower precision (e.g., `FP32` to `INT8`). `FP32` values range from $[-3.402823466 \times 10^{38}, +3.402823466 \times 10^{38}]$, while quantized values fall within $[-128, +127]$. The process follows these steps:
 
@@ -133,9 +134,9 @@ Introduced in 2023, GGUF (Generic GPT Unified Format) facilitates efficient stor
 
 GGUF's core objectives include:
 
-* **Efficiency**: Enabling large model deployment on resource-constrained devices
-* **Compatibility**: Supporting diverse model architectures, sizes, and quantization levels
-* **Scalability**: Managing extensive models beyond GGML limitations
+- **Efficiency**: Enabling large model deployment on resource-constrained devices
+- **Compatibility**: Supporting diverse model architectures, sizes, and quantization levels
+- **Scalability**: Managing extensive models beyond GGML limitations
 
 ## Naming quantizated model
 
@@ -147,7 +148,7 @@ Quantization stands as a pivotal technique in LLM optimization, enabling efficie
 
 ## References
 
-* https://medium.com/@lmpo/understanding-model-quantization-for-llms-1573490d44ad
-* https://www.datacamp.com/tutorial/quantization-for-large-language-models
-* https://medium.com/@vimalkansal/understanding-the-gguf-format-a-comprehensive-guide-67de48848256
-* https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization
+- <https://medium.com/@lmpo/understanding-model-quantization-for-llms-1573490d44ad>
+- <https://www.datacamp.com/tutorial/quantization-for-large-language-models>
+- <https://medium.com/@vimalkansal/understanding-the-gguf-format-a-comprehensive-guide-67de48848256>
+- <https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization>
