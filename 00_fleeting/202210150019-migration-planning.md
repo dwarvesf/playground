@@ -22,6 +22,6 @@ What do we need to consider?
 Common steps
 - Dual reads / writes -> old database is primary
 - Backfilling
-- Compare and validate new database
+- Compare and validate the new database
 - Dual reads / writes -> new database is primary
 - Remove old database
