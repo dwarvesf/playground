@@ -168,7 +168,7 @@ The response demonstrated that our system prompt was effective:
 
 When asked "which guild using vault?", Claude followed our exploration protocol to discover relationships between guilds and vaults, then provided comprehensive information about the guild, its vault configuration, and transaction patterns.
 
-![test-system-prompt](assets/build-a-system-prompt-3.mp4)
+![test-system-prompt](assets/build-a-system-prompt-3.gif)
 
 ## Key takeaways for effective system prompts
 
