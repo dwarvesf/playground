@@ -15,7 +15,7 @@ event_date:
 To withdraw ICY to Vietnam Bank or other fiat, you need set up 2 types of wallet in advance. 
 1. On-chain wallet (Non-custodial wallet, such as: Coinbase, Metamask): This kind of wallet is needed to receive ICY and swap ICY to USDT.
 2. Custodial wallet (such as: Binance): This kind of wallet is used to convert USDT to VND. 
-After setup these two wallet, please follow this [guidline](https://memo.d.foundation/playbook/community/how-to-withdraw-icy/) to withdraw ICY.
+After setup these two wallet, please follow this [guidline](https://memo.d.foundation/playground/01_literature/_how-to-withdraw-icy) to withdraw ICY.
 
 ### Set up Coinbase wallet 
 1. **Install extension**: Go to [this site](https://www.coinbase.com/wallet/downloads) to download Coinbase wallet. Then, add the wallet extension to the Chrome on Firefox Browser (DO NOT use Safari).
