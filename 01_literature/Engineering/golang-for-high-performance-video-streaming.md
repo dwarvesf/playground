@@ -3,11 +3,11 @@ title: 'Leveraging Golang and WebRTC for High-Performance Video Streaming'
 description: 'Explores using Golang and the Pion WebRTC library to build high-performance, scalable, low-latency video streaming infrastructure. Covers WebRTC basics (ICE, STUN, TURN), Go''s concurrency benefits, Pion''s native Go implementation, and a real-world multi-stream security monitoring use case.'
 date: '2023-11-22'
 authors:
-	- monotykamary
+  - monotykamary
 tags:
-	- 'golang'
-	- 'webrtc'
-	- 'video-streaming'
+  - 'golang'
+  - 'webrtc'
+  - 'video-streaming'
 ---
 
 When you need to get video from point A to point B *fast* and reliably, directly in a browser without extra installs, **WebRTC** (**Web Real-Time Communication**) is fundamentally the right tool. It establishes direct peer-to-peer connections between browsers for media, which drastically cuts latency compared to constantly relaying video through a central server. It's built into browsers, no plugins needed. Simple concept, powerful results.
