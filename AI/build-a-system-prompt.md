@@ -139,7 +139,7 @@ After achieving correct results through iterative exploration, I asked Claude to
 
 This request initiated the crystallization of practical experience into formal instruction. Starting with the database discovery techniques that had worked in practice, Claude developed a comprehensive framework that covered the sequence of queries that successfully identified available databases and their contents, techniques for preventing the catalog errors encountered during our session, templates for the successful joins across different databases, and structured methods for organizing complex multi-database results.
 
-![generate-system-prompt](assets/build-a-system-prompt-2.png)
+![generate-system-prompt](assets/build-a-system-prompt-2.gif)
 
 The resulting system prompt wasn't theoretical - it was anchored in the actual steps that had successfully answered complex queries spanning multiple data sources. Each component was directly informed by our experience working through real database challenges.
 
