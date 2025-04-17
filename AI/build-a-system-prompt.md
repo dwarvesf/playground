@@ -1,17 +1,13 @@
 ---
-authors:
-- "quang"
+title: "Building the use case: how to use Claude to build the system prompt"
 date: "2025-04-18"
 description: "Building the use case: how to use Claude to build the system prompt"
-hashnode_meta:
-  id: "???"
-  slug: "build-a-system-prompt"
-sync: "hashnode"
+authors:
+- "quang"
 tags:
 - "ai"
 - "mcp"
 - "system-prompt"
-title: "Building the use case: how to use Claude to build the system prompt"
 ---
 ## Introduction
 
