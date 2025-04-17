@@ -141,12 +141,7 @@ After achieving correct results through iterative exploration, I asked Claude to
 
 "After confirming that you could successfully query and connect data across multiple databases, please generate a system prompt that would capture this process systematically," I explained. "The goal was to transform the ad-hoc exploration we had just witnessed into a repeatable methodology that could be applied to similar multi-database scenarios."
 
-This request initiated the crystallization of practical experience into formal instruction. Starting with the database discovery techniques that had worked in practice, Claude developed a comprehensive framework that covered:
-
-1. **Initial exploration**: The sequence of queries that successfully identified available databases and their contents
-2. **Error avoidance strategies**: Techniques for preventing the catalog errors encountered during our session
-3. **Cross-database query patterns**: Templates for the successful joins across different databases
-4. **Presentation approaches**: Structured methods for organizing complex multi-database results
+This request initiated the crystallization of practical experience into formal instruction. Starting with the database discovery techniques that had worked in practice, Claude developed a comprehensive framework that covered the sequence of queries that successfully identified available databases and their contents, techniques for preventing the catalog errors encountered during our session, templates for the successful joins across different databases, and structured methods for organizing complex multi-database results.
 
 ![generate-system-prompt](assets/build-a-system-prompt-2.png)
 
@@ -156,17 +151,7 @@ By asking for this formalization, I effectively transformed a single successful 
 
 ## Testing the system prompt
 
-After creating our system prompt, we tested it with a practical query: "How many ICY token amount is emitted in the last week?"
-
-The response demonstrated that our system prompt was effective:
-
-1. Claude identified relevant databases and tables
-2. Located the ICY token information across databases
-3. Constructed appropriate cross-database queries
-4. Presented the findings in a clear, organized manner
-5. Provided context and insights beyond the raw data
-
-When asked "which guild using vault?", Claude followed our exploration protocol to discover relationships between guilds and vaults, then provided comprehensive information about the guild, its vault configuration, and transaction patterns.
+After creating our system prompt, we tested it with a practical query: "Which guild using vault?", Claude followed our exploration protocol to discover relationships between guilds and vaults, then provided comprehensive information about the guild, its vault configuration, and transaction patterns.
 
 ![test-system-prompt](assets/build-a-system-prompt-3.gif)
 
