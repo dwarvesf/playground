@@ -41,7 +41,7 @@ The part about these stories that feels unfair is not that the founders are gett
 
 There are a lot of odd perceptions surrounding founder liquidity:
 
-1. Investors and founders both tend to think that if employees knew founders were getting liquidity that that would negatively impact employee morale (**it wouldn’t**)
+1. Investors and founders both tend to think that if employees knew founders were getting liquidity that would negatively impact employee morale (**it wouldn’t**)
 2. Founders often feel guilty that they are getting liquidity (**they shouldn’t**)
 3. Investors think that the liquidity could taint the perception of future investors negatively (**it doesn’t**)
 4. Investors, founders, and employees all believe that founders are taking more risk than early employees (**this isn’t true once founders have exclusive access to liquidity**)
